@@ -505,6 +505,30 @@
                         </li>
                     </ul>
                 </li>
+                <li>Necklaces
+                    <ul>
+                        <li>
+                            <input type="radio" id="necklace-none" name="necklace" checked>
+                            <label for="necklace-none">No Necklace</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="necklace-bronze" name="necklace" data-required="sex=female" data-file="accessories/necklaces_female_ no_th-sh/bronze.png">
+                            <label for="necklace-bronze">Bronze Necklace <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="necklace-iron" name="necklace" data-required="sex=female" data-file="accessories/necklaces_female_ no_th-sh/iron.png">
+                            <label for="necklace-iron">Iron Necklace <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="necklace-silver" name="necklace" data-required="sex=female" data-file="accessories/necklaces_female_ no_th-sh/silver.png">
+                            <label for="necklace-silver">Silver Necklace <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="necklace-gold" name="necklace" data-required="sex=female" data-file="accessories/necklaces_female_ no_th-sh/gold.png">
+                            <label for="necklace-gold">Gold Necklace <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                        </li>
+                    </ul>
+                </li>
                 <li>Bracelet
                     <ul>
                         <li>
@@ -517,11 +541,23 @@
                         </li>
                     </ul>
                 </li>
+                <li>Quiver
+                    <ul>
+                        <li>
+                            <input type="radio" id="quiver-none" name="quiver" checked>
+                            <label for="quiver-none">No Quiver</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="quiver-on" name="quiver" data-file="behind_body/quiver.png" data-behind="true">
+                            <label for="quiver-on">Quiver</label>
+                        </li>
+                    </ul>
+                </li>
             </ul>                    
         </section>
         <section id="preview">
             <canvas width="832" height="1344">HTML5 Browser required.</canvas>
-            <p><input type="button" onclick="Canvas2Image.saveAsPNG(document.getElementsByTagName('canvas')[0])" value="Save Result As PNG"> Note: You may have to change the extension to png.</p>
+            <p><input type="button" id="saveAsPNG" value="Save Result As PNG"> Note: You may have to change the extension to png.</p>
         </section>
     </body>
 </html>

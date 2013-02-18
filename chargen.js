@@ -3,6 +3,10 @@ $(document).ready(function() {
         $(this).click(redraw);
     });
     
+    $("#saveAsPNG").click(function() {
+        Canvas2Image.saveAsPNG(document.getElementsByTagName('canvas')[0]);
+    });        
+    
     var ctx = $("canvas").get(0).getContext("2d");
 
     function redraw() {
@@ -12,7 +16,12 @@ $(document).ready(function() {
             var isFemale = $("#sex-female").prop("checked");
             if ($(this).data("file")) {
                 var img = getImage($(this).data("file"));
-                ctx.drawImage(img, 0, 0);
+                if ($(this).data("behind")) {
+                    ctx.globalCompositeOperation = "destination-over";
+                    ctx.drawImage(img, 0, 0);
+                    ctx.globalCompositeOperation = "source-over";
+                } else
+                    ctx.drawImage(img, 0, 0);
             }
             if (isMale && $(this).data("file_male")) {
                 var img = getImage($(this).data("file_male"));
