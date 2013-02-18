@@ -22,7 +22,23 @@ h3 {
 
 p {
     margin: 10px 0px;
-}   
+}
+
+#save {
+    width: 60%;
+    min-width: 832px;
+    margin: 40px 0;
+    float: right;
+}
+
+#source {
+    width: 30%;
+    min-width: 200px;
+    margin: 40px 0;
+    clear: both;
+    float: left;
+    font-size: 16pt;
+}
 
 #chooser {
     width: 30%;
