@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 10px 15px;
+}
+
+#chooser {
+    width: 30%;
+    min-width: 200px;
+    margin: 10px;
+    padding-left: 15px;
+    float: left;
+    font-size: 14pt;
+}
+#preview {
+    width: 60%;
+    min-width: 832px;
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+}
+#chooser>ul>li {
+    cursor: pointer;
+    font-size: 16pt;
+}
+#chooser>ul>li>ul {
+    display: none;
+}
+#chooser>ul>li:hover ul {
+    display: block !important;
+}
+#chooser>ul>li>ul>li {
+    font-size: 14pt;
+    padding-left: 15px;
+}

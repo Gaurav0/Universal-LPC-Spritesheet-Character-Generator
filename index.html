@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+        <title>Universal LPC Sprite Sheet Character Generator</title>
+        <link rel="stylesheet" type="text/css" href="chargen.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="chargen.js"></script>
+    </head>
+    <body>
+        <h1>Character Generator</h1>
+        <h2>Based on <a href="https://github.com/makrohn/Universal-LPC-spritesheet">Universal LPC Sprite Sheet</a></h2>
+        <h3>All art is dual licensed: GPL3 and CC-BY-SA3</h3>
+        <section id="chooser">
+            <ul>
+                <li>Sex
+                    <ul>
+                        <li>
+                            <input type="radio" id="sex-male" name="sex" checked>
+                            <label for="sex-male">Male</label>
+                        </li>
+                        <li>
+                        <li>
+                            <input type="radio" id="sex-female" name="sex">
+                            <label for="sex-female">Female</label>
+                        </li>
+                    </ul>
+                </li>
+                <li>Body
+                    <ul>
+                        <li>
+                            <input type="radio" id="body-light" name="body" checked data-file_female="body/female/light.png" data-file_male="body/male/light.png" data-hs_male="hair/male/plain/shadows-lightbody.png" data-hs_female="hair/female/ponytail2/shadows-lightbody.png">
+                            <label for="body-light">Light</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="body-dark" name="body" data-file_female="body/female/dark.png" data-file_male="body/male/dark.png" data-hs_male="hair/male/plain/shadows-darkbody.png" data-hs_female="hair/female/ponytail2/shadows-darkbody.png">
+                            <label for="body-dark">Dark</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="body-tanned" name="body" data-file_female="body/female/tanned.png" data-file_male="body/male/tanned.png" data-hs_male="hair/male/plain/shadows-tannedbody.png" data-hs_female="hair/female/ponytail2/shadows-tannedbody.png">
+                            <label for="body-tanned">Tanned</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="body-tanned2" name="body" data-file_female="body/female/tanned2.png" data-file_male="body/male/tanned2.png"data-hs_male="hair/male/plain/shadows-tanned2body.png" data-hs_female="hair/female/ponytail2/shadows-tanned2body.png">
+                            <label for="body-tanned2">Tanned 2</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="body-orc" name="body" data-file_female="body/female/orc.png" data-file_male="body/male/orc.png">
+                            <label for="body-orc">Orc</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="body-skeleton" name="body" data-required="sex=male" data-file="body/male/skeleton.png">
+                            <label for="body-skeleton">Skeleton (Male only)</label>
+                        </li>
+                    </ul>
+                </li>
+                <li>Eyes
+                    <ul>
+                        <li>
+                            <input type="radio" id="eyes-none" name="eyes" checked>
+                            <label for="eyes-none">Default</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="eyes-blue" name="eyes" data-file_female="body/female/eyes/blue.png" data-file_male="body/male/eyes/blue.png">
+                            <label for="eyes-blue">Blue</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="eyes-brown" name="eyes" data-file_female="body/female/eyes/brown.png" data-file_male="body/male/eyes/brown.png">
+                            <label for="eyes-brown">Brown</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="eyes-green" name="eyes" data-file_female="body/female/eyes/green.png" data-file_male="body/male/eyes/green.png">
+                            <label for="eyes-green">Green</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="eyes-red" name="eyes" data-file_female="body/female/eyes/red.png" data-file_male="body/male/eyes/red.png">
+                            <label for="eyes-red">Red</label>
+                        </li>
+                    </ul>
+                </li>
+                <li>Hair
+                    <ul>
+                        <li>
+                            <input type="radio" id="hair-none" name="hair" checked>
+                            <label for="hair-none">No Hair</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="hair-plain-blonde" name="hair" data-file="hair/male/plain/blonde.png" data-required="sex=male">
+                            <label for="hair-plain-blonde">Plain Blonde (Male only)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="hair-plain-blue" name="hair" data-file="hair/male/plain/blue.png" data-required="sex=male">
+                            <label for="hair-plain-blue">Plain Blue (Male only)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="hair-plain-brunnette" name="hair" data-file="hair/male/plain/brunette.png" data-required="sex=male">
+                            <label for="hair-plain-brunette">Plain Brunette (Male only)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="hair-plain-green" name="hair" data-file="hair/male/plain/green.png" data-required="sex=male">
+                            <label for="hair-plain-green">Plain Green (Male only)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="hair-plain-pink" name="hair" data-file="hair/male/plain/pink.png" data-required="sex=male">
+                            <label for="hair-plain-pink">Plain Pink (Male only)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="hair-plain-raven" name="hair" data-file="hair/male/plain/raven.png" data-required="sex=male">
+                            <label for="hair-plain-raven">Plain Raven (Male only)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="hair-plain-red" name="hair" data-file="hair/male/plain/redhead.png" data-required="sex=male">
+                            <label for="hair-plain-red">Plain Redhead (Male only)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="hair-plain-white" name="hair" data-file="hair/male/plain/white-blonde.png" data-required="sex=male">
+                            <label for="hair-plain-white">Plain White Blonde (Male only)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="hair-ponytail2-blonde" name="hair" data-file="hair/female/ponytail2/blonde.png" data-required="sex=female">
+                            <label for="hair-ponytail2-blonde">Blonde Ponytail (Female only)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="hair-ponytail2-blue" name="hair" data-file="hair/female/ponytail2/blue.png" data-required="sex=female">
+                            <label for="hair-ponytail2-blue">Blue Ponytail (Female only)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="hair-ponytail2-brunette" name="hair" data-file="hair/female/ponytail2/brunette.png" data-required="sex=female">
+                            <label for="hair-ponytail2-brunette">Brunette Ponytail (Female only)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="hair-ponytail2-green" name="hair" data-file="hair/female/ponytail2/green.png" data-required="sex=female">
+                            <label for="hair-ponytail2-green">Green Ponytail (Female only)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="hair-ponytail2-pink" name="hair" data-file="hair/female/ponytail2/pink.png" data-required="sex=female">
+                            <label for="hair-ponytail2-pink">Pink Ponytail (Female only)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="hair-ponytail2-raven" name="hair" data-file="hair/female/ponytail2/raven.png" data-required="sex=female">
+                            <label for="hair-ponytail2-raven">Raven Ponytail (Female only)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="hair-ponytail2-red" name="hair" data-file="hair/female/ponytail2/redhead.png" data-required="sex=female">
+                            <label for="hair-ponytail2-red">Redhead Ponytail (Female only)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="hair-ponytail2-white" name="hair" data-file="hair/female/ponytail2/white-blonde.png" data-required="sex=female">
+                            <label for="hair-ponytail2-white">White Blonde Ponytail (Female only)</label>
+                        </li>
+                    </ul>
+                </li>
+            </ul>                    
+        </section>
+        <section id="preview">
+            <canvas width="832" height="1344">HTML5 Browser required.</canvas>
+        </section>
+    </body>
+</html>
