@@ -441,6 +441,70 @@
                         </li>
                     </ul>
                 </li>
+                <li>Belts
+                    <ul>
+                        <li>
+                            <input type="radio" id="belts-none" name="belt" checked>
+                            <label for="belts-none">No Belts</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="belt-leather" name="belt" data-file_male="belt/leather_male.png" data-file_female="belt/leather_female.png">
+                            <label for="belt-leather">Leather Belt</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="belt-rope" name="belt" data-file_male="belt/rope_male.png" data-file_female="belt/rope_female.png">
+                            <label for="belt-rope">Rope Belt</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="belt-black" name="belt" data-required="sex=female" data-file="belt/black_female_no_th-sh.png">
+                            <label for="belt-black">Black Belt <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="belt-brown" name="belt" data-required="sex=female" data-file="belt/brown_female_no_th-sh.png">
+                            <label for="belt-brown">Brown Belt <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="belt-bronze" name="belt" data-required="sex=female" data-file="belt/bronze_female_no_th-sh.png">
+                            <label for="belt-bronze">Bronze Belt <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="belt-iron" name="belt" data-required="sex=female" data-file="belt/iron_female_no_th-sh.png">
+                            <label for="belt-iron">Iron Belt <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="belt-silver" name="belt" data-required="sex=female" data-file="belt/silver_female_no_th-sh.png">
+                            <label for="belt-silver">Silver Belt <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="belt-gold" name="belt" data-required="sex=female" data-file="belt/gold_female_no_th-sh.png">
+                            <label for="belt-gold">Gold Belt <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                        </li>
+                    </ul>
+                </li>
+                <li>Buckles
+                    <ul>
+                        <li>
+                            <input type="radio" id="buckle-none" name="buckle" checked>
+                            <label for="buckle-none">No Buckle</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="buckle-bronze" name="buckle" data-required="sex=female" data-file="belt/buckles_female_no_th-sh/bronze.png">
+                            <label for="buckle-bronze">Bronze Buckle <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="buckle-iron" name="buckle" data-required="sex=female" data-file="belt/buckles_female_no_th-sh/iron.png">
+                            <label for="buckle-iron">Iron Buckle <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="buckle-silver" name="buckle" data-required="sex=female" data-file="belt/buckles_female_no_th-sh/silver.png">
+                            <label for="buckle-silver">Silver Buckle <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="buckle-gold" name="buckle" data-required="sex=female" data-file="belt/buckles_female_no_th-sh/gold.png">
+                            <label for="buckle-gold">Gold Buckle <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                        </li>
+                    </ul>
+                </li>
                 <li>Bracelet
                     <ul>
                         <li>
@@ -456,8 +520,8 @@
             </ul>                    
         </section>
         <section id="preview">
-            <canvas width="832" height="1344">HTML5 Browser required.</canvas><br>
-            <input type="button" onclick="Canvas2Image.saveAsPNG(document.getElementsByTagName('canvas')[0])" value="Save Result As PNG"> Note: You may have to change the extension to png.
+            <canvas width="832" height="1344">HTML5 Browser required.</canvas>
+            <p><input type="button" onclick="Canvas2Image.saveAsPNG(document.getElementsByTagName('canvas')[0])" value="Save Result As PNG"> Note: You may have to change the extension to png.</p>
         </section>
     </body>
 </html>
