@@ -153,11 +153,219 @@
                         </li>
                     </ul>
                 </li>
+                <li>Legs
+                    <ul>
+                        <li>
+                            <input type="radio" id="legs-none" name="legs" checked>
+                            <label for="legs-none">No Legs</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="legs-pants-green" name="legs" data-file_male="legs/green_pants_male.png" data-file_female="legs/green_pants_female.png">
+                            <label for="legs-pants-green">Green Pants</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="legs-pants-red" name="legs" data-required="sex=male" data-file="legs/red_pants_male.png">
+                            <label for="legs-pants-red">Red Pants (Male only)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="legs-robe-skirt" name="legs" data-required="sex=male" data-file="legs/robe_skirt_male.png">
+                            <label for="legs-robe-skirt">Robe Skirt (Male only)</label>
+                        </li>
+                    </ul>
+                </li>
+                <li>Torso
+                    <ul>
+                        <li>
+                            <input type="radio" id="torso-none" name="torso" checked>
+                            <label for="torso-none">No Torso</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="torso-tabard" name="torso" data-file_male="torso/chain/tabard/jacket_male.png" data-file_female="torso/chain/tabard/jacket_female.png">
+                            <label for="torso-tabard">Tabard</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="torso-chain-mail" name="torso" data-file_male="torso/chain/mail_male.png" data-file_female="torso/chain/mail_female.png">
+                            <label for="torso-chain-mail">Chain Mail</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="torso-gold-chest" name="torso" data-file_male="torso/gold/chest_male.png" data-file_female="torso/gold/chest_female.png">
+                            <label for="torso-gold-chest">Gold Chest</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="torso-leather-chest" name="torso" data-file_male="torso/leather/chest_male.png" data-file_female="torso/leather/chest_female.png">
+                            <label for="torso-leather-chest">Leather Chest</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="torso-plate-chest" name="torso" data-file_male="torso/plate/chest_male.png" data-file_female="torso/plate/chest_female.png">
+                            <label for="torso-plate-chest">Plate Chest</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="torso-brown-shirt" name="torso" data-required="sex=male" data-file="torso/brown_shirt_male.png">
+                            <label for="torso-brown-shirt">Brown Shirt (Male only)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="torso-white-shirt" name="torso" data-required="sex=male" data-file="torso/white_shirt_male.png">
+                            <label for="torso-white-shirt">White Shirt (Male only)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="torso-dress-sash" name="torso" data-required="sex=female" data-file="torso/dress_w_sash_female.png">
+                            <label for="torso-dress-sash">Dress with Sash (Female only)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="torso-pirate-shirt" name="torso" data-required="sex=female" data-file="torso/pirate_shirt_female.png">
+                            <label for="torso-pirate-shirt">Pirate Shirt (Female only)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="torso-blue-vest" name="torso" data-required="sex=female" data-file="torso/dress_female/blue_vest.png">
+                            <label for="torso-blue-vest">Blue Vest (Female only)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="torso-overskirt" name="torso" data-required="sex=female" data-file="torso/dress_female/overskirt.png">
+                            <label for="torso-overskirt">Overskirt (Female only)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="torso-underdress" name="torso" data-required="sex=female" data-file="torso/dress_female/underdress.png">
+                            <label for="torso-underdress">Underdress (Female only)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="torso-robe-black" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/black.png">
+                            <label for="torso-robe-black">Black Robe (Female only) (No Thrust/Shoot)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="torso-robe-blue" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/blue.png">
+                            <label for="torso-robe-blue">Blue Robe (Female only) (No Thrust/Shoot)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="torso-robe-brown" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/brown.png">
+                            <label for="torso-robe-brown">Brown Robe (Female only) (No Thrust/Shoot)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="torso-robe-dark-brown" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/dark brown.png">
+                            <label for="torso-robe-dark-brown">Dark Brown Robe (Female only) (No Thrust/Shoot)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="torso-robe-dark-gray" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/dark gray.png">
+                            <label for="torso-robe-dark-gray">Dark Gray Robe (Female only) (No Thrust/Shoot)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="torso-robe-light-gray" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/light gray.png">
+                            <label for="torso-robe-light-gray">Light Gray Robe (Female only) (No Thrust/Shoot)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="torso-robe-forest-green" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/forest green.png">
+                            <label for="torso-robe-forest-green">Forest Green Robe (Female only) (No Thrust/Shoot)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="torso-robe-purple" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/purple.png">
+                            <label for="torso-robe-purple">Purple Robe (Female only) (No Thrust/Shoot)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="torso-robe-red" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/red.png">
+                            <label for="torso-robe-red">Red Robe (Female only) (No Thrust/Shoot)</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="torso-robe-white" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/white.png">
+                            <label for="torso-robe-white">White Robe (Female only) (No Thrust/Shoot)</label>
+                        </li>
+                    </ul>
+                </li>
+                <li>Arms
+                    <ul>
+                        <li>
+                            <input type="radio" id="arms-none" name="arms" checked>
+                            <label for="arms-none">No Torso</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="arms-gold" name="arms" data-file_male="torso/gold/arms_male.png" data-file_female="torso/gold/arms_female.png">
+                            <label for="arms-gold">Gold Arms</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="arms-plate" name="arms" data-file_male="torso/plate/arms_male.png" data-file_female="torso/plate/arms_female.png">
+                            <label for="arms-plate">Plate Arms</label>
+                        </li>
+                    </ul>
+                </li>
+                <li>Shoulders
+                    <ul>
+                        <li>
+                            <input type="radio" id="shoulders-none" name="shoulders" checked>
+                            <label for="shoulders-none">No Shoulders</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="shoulders-leather" name="shoulders" data-file_male="torso/leather/shoulders_male.png" data-file_female="torso/leather/shoulders_female.png">
+                            <label for="shoulders-leather">Leather Shoulders</label>
+                        </li>
+                    </ul>
+                </li>
+                <li>Spikes
+                    <ul>
+                        <li>
+                            <input type="radio" id="spikes-none" name="spikes" checked>
+                            <label for="spikes-none">No Spikes</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="spikes-gold" name="spikes" data-required="sex=male" data-file="torso/gold/spikes_male.png">
+                            <label for="torso-gold-spikes">Gold Spikes (Male only)</label>
+                        </li>
+                    </ul>
+                </li>
+                <li>Bracers
+                    <ul>
+                        <li>
+                            <input type="radio" id="bracers-none" name="bracers" checked>
+                            <label for="bracers-none">No Shoulders</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="bracers-leather" name="bracers" data-file_male="torso/leather/bracers_male.png" data-file_female="torso/leather/bracers_female.png">
+                            <label for="bracers-leather">Leather Bracers</label>
+                        </li>
+                    </ul>
+                </li>
+                <li>Greaves
+                    <ul>
+                        <li>
+                            <input type="radio" id="greaves-none" name="greaves" checked>
+                            <label for="greaves-none">No Greaves</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="greaves-golden" name="greaves" data-file_male="legs/golden_greaves_male.png" data-file_female="legs/golden_greaves_female.png">
+                            <label for="greaves-golden">Golden Greaves</label>
+                        </li>
+                    </ul>
+                </li>
+                <li>Gloves
+                    <ul>
+                        <li>
+                            <input type="radio" id="gloves-none" name="gloves" checked>
+                            <label for="gloves-none">No Gloves</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="gloves-metal" name="gloves" data-file_male="hands/metal_gloves_male.png" data-file_female="hands/metal_gloves_female.png">
+                            <label for="gloves-metal">Metal Gloves</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="gloves-golden" name="gloves" data-file_male="hands/golden_gloves_male.png" data-file_female="hands/golden_gloves_female.png">
+                            <label for="gloves-golden">Golden Gloves</label>
+                        </li>
+                    </ul>
+                </li>
+                <li>Bracelet
+                    <ul>
+                        <li>
+                            <input type="radio" id="bracelet-none" name="bracelet" checked>
+                            <label for="bracelet-none">No Bracelet</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="bracelet-on" name="bracelet" data-file_male="torso/leather/bracelet_male.png" data-file_female="torso/leather/bracelet_female.png">
+                            <label for="bracelet-on">Bracelet</label>
+                        </li>
+                    </ul>
+                </li>
             </ul>                    
         </section>
         <section id="preview">
             <canvas width="832" height="1344">HTML5 Browser required.</canvas><br>
-            <input type="button" onclick="Canvas2Image.saveAsPNG(document.getElementsByTagName('canvas')[0])" value="Save Image As PNG"> Note: You may have to change the extension to png.
+            <input type="button" onclick="Canvas2Image.saveAsPNG(document.getElementsByTagName('canvas')[0])" value="Save Result As PNG"> Note: You may have to change the extension to png.
         </section>
     </body>
 </html>
