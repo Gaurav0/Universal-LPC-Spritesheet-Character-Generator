@@ -40,6 +40,10 @@ p {
     font-size: 16pt;
 }
 
+input[type=button] {
+    padding: 2px 1em;
+}
+
 #chooser {
     width: 30%;
     min-width: 200px;
