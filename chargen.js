@@ -58,6 +58,15 @@ $(document).ready(function() {
                         ctx.clearRect(0, 0, 832, 1344);
                 }
             }
+            if ($(this).data("prohibited")) {
+                var requirement = $(this).data("prohibited").replace("=", "-");
+                if ($("#" + requirement).prop("checked")) {
+                    $(this).prop("disabled", true);
+                    if ($(this).prop("checked"))
+                        ctx.clearRect(0, 0, 832, 1344);
+                } else
+                    $(this).prop("disabled", false);
+            }
         });
     }
     
