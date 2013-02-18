@@ -6,6 +6,8 @@
         <title>Universal LPC Sprite Sheet Character Generator</title>
         <link rel="stylesheet" type="text/css" href="chargen.css">
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="canvas2image.js"></script>
+        <script type="text/javascript" src="base64.js"></script>
         <script type="text/javascript" src="chargen.js"></script>
     </head>
     <body>
@@ -154,7 +156,8 @@
             </ul>                    
         </section>
         <section id="preview">
-            <canvas width="832" height="1344">HTML5 Browser required.</canvas>
+            <canvas width="832" height="1344">HTML5 Browser required.</canvas><br>
+            <input type="button" onclick="Canvas2Image.saveAsPNG(document.getElementsByTagName('canvas')[0])" value="Save Image As PNG"> Note: You may have to change the extension to png.
         </section>
     </body>
 </html>
