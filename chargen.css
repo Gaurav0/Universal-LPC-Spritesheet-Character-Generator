@@ -37,5 +37,7 @@ ul {
 }
 #chooser>ul>li>ul>li {
     font-size: 14pt;
-    padding-left: 15px;
+    padding-left: 48px;
+    text-indent: -18px;
+    
 }
