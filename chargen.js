@@ -31,8 +31,11 @@ $(document).ready(function() {
                 var img = getImage($(this).data("file_female"));
                 ctx.drawImage(img, 0, 0);
             }
-            if ($(this).attr("id").substr(0, 5) == "body-")
-                if (!$("#hair-none").prop("checked")) {
+            var id = $(this).attr("id");
+            if (id.substr(0, 5) == "hair-" && id != "hair-none") {
+                $("input[type=radio]:checked").filter(function() {
+                    return $(this).attr("id").substr(0, 5) == "body-";
+                }).each(function() {
                     if (isMale && $(this).data("hs_male")) {
                         var img = getImage($(this).data("hs_male"))
                         ctx.drawImage(img, 0, 0);
@@ -41,7 +44,8 @@ $(document).ready(function() {
                         var img = getImage($(this).data("hs_female"))
                         ctx.drawImage(img, 0, 0);
                     }
-                }
+                });
+            }
         });
         $("input[type=radio]").each(function(index) {
             if ($(this).data("required")) {
