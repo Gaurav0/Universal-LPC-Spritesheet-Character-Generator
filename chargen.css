@@ -61,16 +61,22 @@ input[type=button] {
 ul {
     list-style-type: none;
 }
+
 #chooser>ul>li {
     cursor: pointer;
     font-size: 16pt;
 }
+
 #chooser>ul>li>ul {
     display: none;
 }
+
+/*
 #chooser>ul>li:hover ul {
     display: block !important;
 }
+*/
+
 #chooser>ul>li>ul>li {
     font-size: 12pt;
     padding-left: 48px;

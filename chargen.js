@@ -1,6 +1,11 @@
 $(document).ready(function() {
+
     $("input[type=radio]").each(function(index) {
         $(this).click(redraw);
+    });
+    
+    $("#chooser>ul>li").click(function() {
+        $(this).find("ul").toggle('slow');
     });
     
     $("#saveAsPNG").click(function() {
