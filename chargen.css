@@ -67,6 +67,10 @@ ul {
     font-size: 16pt;
 }
 
+#chooser>ul>li>ul>li>ul {
+    display: none;
+}
+
 #chooser>ul>li>ul {
     display: none;
 }

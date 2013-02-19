@@ -1,11 +1,26 @@
+function startsWith(str, prefix) {
+    return str.indexOf(prefix) === 0;
+}
+
 $(document).ready(function() {
 
     $("input[type=radio]").each(function(index) {
         $(this).click(redraw);
     });
     
+    $("#chooser>ul>li>ul>li>ul>li").click(function(event) {
+        event.stopPropagation();
+    });
+    
+    $("#chooser>ul>li>ul>li").click(function(event) {
+        var $ul = $(this).children("ul");
+        $ul.toggle('slow');
+        event.stopPropagation();
+    });
+    
     $("#chooser>ul>li").click(function() {
-        $(this).find("ul").toggle('slow');
+        var $ul = $(this).children("ul");
+        $ul.toggle('slow');
     });
     
     $("#saveAsPNG").click(function() {
@@ -37,7 +52,10 @@ $(document).ready(function() {
                 ctx.drawImage(img, 0, 0);
             }
             var id = $(this).attr("id");
-            if (id.substr(0, 5) == "hair-" && id != "hair-none") {
+            var hsm_prefix = "hair-plain-";
+            var hsf_prefix = "hair-ponytail2-";
+            if (startsWith(id, hsm_prefix) ||
+                startsWith(id, hsf_prefix)) {
                 $("input[type=radio]:checked").filter(function() {
                     return $(this).attr("id").substr(0, 5) == "body-";
                 }).each(function() {
