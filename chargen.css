@@ -87,3 +87,8 @@ ul {
     text-indent: -18px;
     
 }
+
+#collapse {
+    display: block;
+    margin: 50px 0;
+}

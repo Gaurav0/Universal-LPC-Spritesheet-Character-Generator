@@ -23,6 +23,10 @@ $(document).ready(function() {
         $ul.toggle('slow');
     });
     
+    $("#collapse").click(function() {
+        $("#chooser>ul ul").hide('slow');
+    });
+    
     $("#saveAsPNG").click(function() {
         Canvas2Image.saveAsPNG(document.getElementsByTagName('canvas')[0]);
     });        
