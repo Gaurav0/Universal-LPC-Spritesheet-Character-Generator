@@ -92,3 +92,13 @@ ul {
     display: block;
     margin: 50px 0;
 }
+
+#github {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+a {
+    border: 0;
+}
