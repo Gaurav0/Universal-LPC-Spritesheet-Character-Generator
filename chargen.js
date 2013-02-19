@@ -47,6 +47,14 @@ $(document).ready(function() {
                 } else
                     ctx.drawImage(img, 0, 0);
             }
+            if ($(this).data("file_hat") && $("#hat_chain").prop("checked")) {
+                var img = getImage($(this).data("file_hat"));
+                ctx.drawImage(img, 0, 0);
+            }
+            if ($(this).data("file_no_hat") && !$("#hat_chain").prop("checked")) {
+                var img = getImage($(this).data("file_no_hat"));
+                ctx.drawImage(img, 0, 0);
+            }
             if (isMale && $(this).data("file_male")) {
                 var img = getImage($(this).data("file_male"));
                 ctx.drawImage(img, 0, 0);
