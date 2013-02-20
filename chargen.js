@@ -31,11 +31,39 @@ $(document).ready(function() {
         Canvas2Image.saveAsPNG(document.getElementsByTagName('canvas')[0]);
     });        
     
-    var ctx = $("canvas").get(0).getContext("2d");
+    var canvas = $("canvas").get(0);
+    var ctx = canvas.getContext("2d");
+    var oversize = $("input[type=radio]").filter(function() {
+        return $(this).data("oversize");
+    }).length > 0;
+    
+    if (oversize) {
+        canvas.width = 1536;
+        canvas.height = 1344 + 768;
+    } else {
+        canvas.width = 832;
+        canvas.height = 1344;
+    }
 
     function redraw() {
-        ctx.clearRect(0, 0, 832, 1344);
-        $("input[type=radio]:checked").each(function(index) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        oversize = $("input[type=radio]:checked").filter(function() {
+            return $(this).data("oversize");
+        }).length > 0;        
+        if (oversize) {
+            canvas.width = 1536;
+            canvas.height = 1344 + 768;
+            oversize = true;
+        } else {
+            canvas.width = 832;
+            canvas.height = 1344;
+            oversize = false;
+        }
+            
+        $("input[type=radio]:checked").filter(function() {
+            return !$(this).data("oversize");
+        }).each(function(index) {
             var isMale = $("#sex-male").prop("checked");
             var isFemale = $("#sex-female").prop("checked");
             if ($(this).data("file")) {
@@ -82,6 +110,40 @@ $(document).ready(function() {
                 });
             }
         });
+        
+        if (oversize) {
+            $("input[type=radio]:checked").filter(function() {
+                return $(this).data("oversize");
+            }).each(function(index) {
+                var type = $(this).data("oversize");
+                if (type == 1) {
+                    for (var i = 0; i < 8; ++i)
+                        for (var j = 0; j < 4; ++j) {
+                            var imgData = ctx.getImageData(64 * i, 264 + 64 * j, 64, 64);
+                            ctx.putImageData(imgData, 64 + 192 * i, 1416 + 192 * j);
+                        }
+                    if ($(this).data("file")) {
+                        var img = getImage($(this).data("file"));
+                        ctx.drawImage(img, 0, 1344);
+                    }
+                } else if (type == 2) {
+                    for (var i = 0; i < 6; ++i)
+                        for (var j = 0; j < 4; ++j) {
+                            var imgData = ctx.getImageData(64 * i, 776 + 64 * j, 64, 64);
+                            ctx.putImageData(imgData, 64 + 192 * i, 1416 + 192 * j);
+                        }
+                    if ($("#sex-male").prop("checked") && $(this).data("file_male")) {
+                        var img = getImage($(this).data("file_male"));
+                        ctx.drawImage(img, 0, 1344);
+                    }
+                    if ($("#sex-female").prop("checked") && $(this).data("file_female")) {
+                        var img = getImage($(this).data("file_female"));
+                        ctx.drawImage(img, 0, 1344);
+                    }
+                }
+            });
+        }
+        
         $("input[type=radio]").each(function(index) {
             if ($(this).data("required")) {
                 var requirement = $(this).data("required").replace("=", "-");
@@ -90,7 +152,7 @@ $(document).ready(function() {
                 else {
                     $(this).prop("disabled", true);
                     if ($(this).prop("checked"))
-                        ctx.clearRect(0, 0, 832, 1344);
+                        ctx.clearRect(0, 0, canvas.width, canvas.height);
                 }
             }
             if ($(this).data("prohibited")) {
@@ -98,7 +160,7 @@ $(document).ready(function() {
                 if ($("#" + requirement).prop("checked")) {
                     $(this).prop("disabled", true);
                     if ($(this).prop("checked"))
-                        ctx.clearRect(0, 0, 832, 1344);
+                        ctx.clearRect(0, 0, canvas.width, canvas.height);
                 } else
                     $(this).prop("disabled", false);
             }
