@@ -15,1313 +15,1318 @@
         <h1>Character Generator</h1>
         <h2>Based on <a href="https://github.com/makrohn/Universal-LPC-spritesheet">Universal LPC Sprite Sheet</a></h2>
         <h3>All art is dual licensed: GPL3 and CC-BY-SA3</h3>
-        <section id="chooser">
-            <ul>
-                <li>Sex
-                    <ul>
-                        <li>
-                            <input type="radio" id="sex-male" name="sex" checked>
-                            <label for="sex-male">Male</label>
-                        </li>
-                        <li>
-                        <li>
-                            <input type="radio" id="sex-female" name="sex">
-                            <label for="sex-female">Female</label>
-                        </li>
-                    </ul>
-                </li>
-                <li>Body
-                    <ul>
-                        <li>
-                            <input type="radio" id="body-light" name="body" checked data-file_female="body/female/light.png" data-file_male="body/male/light.png" data-hs_male="hair/male/plain/shadows-lightbody.png" data-hs_female="hair/female/ponytail2/shadows-lightbody.png">
-                            <label for="body-light">Light</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="body-dark" name="body" data-file_female="body/female/dark.png" data-file_male="body/male/dark.png" data-hs_male="hair/male/plain/shadows-darkbody.png" data-hs_female="hair/female/ponytail2/shadows-darkbody.png">
-                            <label for="body-dark">Dark</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="body-tanned" name="body" data-file_female="body/female/tanned.png" data-file_male="body/male/tanned.png" data-hs_male="hair/male/plain/shadows-tannedbody.png" data-hs_female="hair/female/ponytail2/shadows-tannedbody.png">
-                            <label for="body-tanned">Tanned</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="body-tanned2" name="body" data-file_female="body/female/tanned2.png" data-file_male="body/male/tanned2.png"data-hs_male="hair/male/plain/shadows-tanned2body.png" data-hs_female="hair/female/ponytail2/shadows-tanned2body.png">
-                            <label for="body-tanned2">Tanned 2</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="body-orc" name="body" data-file_female="body/female/orc.png" data-file_male="body/male/orc.png">
-                            <label for="body-orc">Orc</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="body-skeleton" name="body" data-required="sex=male" data-file="body/male/skeleton.png">
-                            <label for="body-skeleton">Skeleton <small>(Male only)</small></label>
-                        </li>
-                    </ul>
-                </li>
-                <li>Eyes
-                    <ul>
-                        <li>
-                            <input type="radio" id="eyes-none" name="eyes" checked>
-                            <label for="eyes-none">Default</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="eyes-blue" name="eyes" data-file_female="body/female/eyes/blue.png" data-file_male="body/male/eyes/blue.png">
-                            <label for="eyes-blue">Blue</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="eyes-brown" name="eyes" data-file_female="body/female/eyes/brown.png" data-file_male="body/male/eyes/brown.png">
-                            <label for="eyes-brown">Brown</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="eyes-green" name="eyes" data-file_female="body/female/eyes/green.png" data-file_male="body/male/eyes/green.png">
-                            <label for="eyes-green">Green</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="eyes-red" name="eyes" data-file_female="body/female/eyes/red.png" data-file_male="body/male/eyes/red.png">
-                            <label for="eyes-red">Red</label>
-                        </li>
-                    </ul>
-                </li>
-                <li>Torso
-                    <ul>
-                        <li>
-                            <input type="radio" id="torso-none" name="torso" checked>
-                            <label for="torso-none">No Torso</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="torso-chain-mail" name="torso" data-file_male="torso/chain/mail_male.png" data-file_female="torso/chain/mail_female.png">
-                            <label for="torso-chain-mail">Chain Mail</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="torso-brown-shirt" name="torso" data-required="sex=male" data-file="torso/brown_shirt_male.png">
-                            <label for="torso-brown-shirt">Brown Shirt <small>(Male only)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="torso-white-shirt" name="torso" data-required="sex=male" data-file="torso/white_shirt_male.png">
-                            <label for="torso-white-shirt">White Shirt <small>(Male only)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="torso-formal" name="torso" data-required="sex=male">
-                            <label for="torso-formal">Formal Wear <small>(Male only)</small> <small>(No Thrust/Shoot)</small></label>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" id="formal-shirt" name="formal-shirt" data-required="torso=formal" data-file="formal_male_no_th-sh/shirt.png">
-                                    <label for="formal-shirt">Shirt</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="formal-pants" name="formal-pants" data-required="torso=formal" data-file="formal_male_no_th-sh/pants.png">
-                                    <label for="formal-pants">Pants</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="formal-vest" name="formal-vest" data-required="torso=formal" data-file="formal_male_no_th-sh/vest.png">
-                                    <label for="formal-vest">Vest</label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <input type="radio" id="torso-dress-sash" name="torso" data-required="sex=female" data-file="torso/dress_w_sash_female.png">
-                            <label for="torso-dress-sash">Dress with Sash <small>(Female only)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="torso-pirate-shirt" name="torso" data-required="sex=female" data-file="torso/pirate_shirt_female.png">
-                            <label for="torso-pirate-shirt">Pirate Shirt <small>(Female only)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="torso-gown" name="torso" data-required="sex=female">
-                            <label for="torso-gown">Gown <small>(Female only)</small></label>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" id="gown-underdress" name="gown-underdress" data-required="torso=gown" data-file="torso/dress_female/underdress.png">
-                                    <label for="gown-underdress">Underdress</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="gown-overskirt" name="gown-overskirt" data-required="torso=gown" data-file="torso/dress_female/overskirt.png">
-                                    <label for="gown-overskirt">Overskirt</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" id="gown-blue-vest" name="gown-blue-vest" data-required="torso=gown" data-file="torso/dress_female/blue_vest.png">
-                                    <label for="gown-blue-vest">Blue Vest</label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <input type="radio" id="torso-robe-black" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/black.png">
-                            <label for="torso-robe-black">Black Robe <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="torso-robe-blue" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/blue.png">
-                            <label for="torso-robe-blue">Blue Robe <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="torso-robe-brown" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/brown.png">
-                            <label for="torso-robe-brown">Brown Robe <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="torso-robe-dark-brown" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/dark brown.png">
-                            <label for="torso-robe-dark-brown">Dark Brown Robe <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="torso-robe-dark-gray" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/dark gray.png">
-                            <label for="torso-robe-dark-gray">Dark Gray Robe <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="torso-robe-light-gray" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/light gray.png">
-                            <label for="torso-robe-light-gray">Light Gray Robe <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="torso-robe-forest-green" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/forest green.png">
-                            <label for="torso-robe-forest-green">Forest Green Robe <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="torso-robe-purple" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/purple.png">
-                            <label for="torso-robe-purple">Purple Robe <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="torso-robe-red" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/red.png">
-                            <label for="torso-robe-red">Red Robe <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="torso-robe-white" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/white.png">
-                            <label for="torso-robe-white">White Robe <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                    </ul>
-                </li>
-                <li>Armor
-                    <ul>
-                        <li>
-                            <input type="radio" id="armor-none" name="armor" checked>
-                            <label for="armor-none">No Armor</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="armor-tabard" name="armor" data-file_male="torso/chain/tabard/jacket_male.png" data-file_female="torso/chain/tabard/jacket_female.png">
-                            <label for="armor-tabard">Tabard</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="armor-gold-chest" name="armor" data-file_male="torso/gold/chest_male.png" data-file_female="torso/gold/chest_female.png">
-                            <label for="armor-gold-chest">Gold Chest</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="armor-leather-chest" name="armor" data-file_male="torso/leather/chest_male.png" data-file_female="torso/leather/chest_female.png">
-                            <label for="armor-leather-chest">Leather Chest</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="armor-plate-chest" name="armor" data-file_male="torso/plate/chest_male.png" data-file_female="torso/plate/chest_female.png">
-                            <label for="armor-plate-chest">Plate Chest</label>
-                        </li>
-                    </ul>
-                </li>
-                <li>Tie
-                    <ul>
-                        <li>
-                            <input type="radio" id="tie-none" name="tie" checked>
-                            <label for="tie-none">No Tie</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="tie-on" name="tie" data-required="sex=male" data-file="formal_male_no_th-sh/tie.png">
-                            <label for="tie-on">Tie <small>(Male only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="tie-bow" name="tie" data-required="sex=male" data-file="formal_male_no_th-sh/bowtie.png">
-                            <label for="tie-bow">Bow Tie <small>(Male only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                    </ul>
-                </li>
-                </li>
-                <li>Hair
-                    <ul>
-                        <li>
-                            <input type="radio" id="hair-none" name="hair" checked>
-                            <label for="hair-none">No Hair</label>
-                        </li>
-                        <li>Plain <small>(Male only)</small>
-                            <ul>
-                                <li>
-                                    <input type="radio" id="hair-plain-blonde" name="hair" data-file="hair/male/plain/blonde.png" data-required="sex=male">
-                                    <label for="hair-plain-blonde">Blonde</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-plain-blue" name="hair" data-file="hair/male/plain/blue.png" data-required="sex=male">
-                                    <label for="hair-plain-blue">Blue</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-plain-brunette" name="hair" data-file="hair/male/plain/brunette.png" data-required="sex=male">
-                                    <label for="hair-plain-brunette">Brunette</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-plain-green" name="hair" data-file="hair/male/plain/green.png" data-required="sex=male">
-                                    <label for="hair-plain-green">Green</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-plain-pink" name="hair" data-file="hair/male/plain/pink.png" data-required="sex=male">
-                                    <label for="hair-plain-pink">Pink</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-plain-raven" name="hair" data-file="hair/male/plain/raven.png" data-required="sex=male">
-                                    <label for="hair-plain-raven">Raven</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-plain-red" name="hair" data-file="hair/male/plain/redhead.png" data-required="sex=male">
-                                    <label for="hair-plain-red">Redhead</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-plain-white" name="hair" data-file="hair/male/plain/white-blonde.png" data-required="sex=male">
-                                    <label for="hair-plain-white">White Blonde</label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>Bedhead <small>(Male only)</small>
-                            <ul>
-                                <li>
-                                    <input type="radio" id="hair-bedhead-blonde" name="hair" data-file="hair/male/bedhead/blonde.png" data-required="sex=male">
-                                    <label for="hair-bedhead-blonde">Blonde</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-bedhead-blue" name="hair" data-file="hair/male/bedhead/blue.png" data-required="sex=male">
-                                    <label for="hair-bedhead-blue">Blue</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-bedhead-brunette" name="hair" data-file="hair/male/bedhead/brunette.png" data-required="sex=male">
-                                    <label for="hair-bedhead-brunette">Brunette</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-bedhead-green" name="hair" data-file="hair/male/bedhead/green.png" data-required="sex=male">
-                                    <label for="hair-bedhead-green">Green</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-bedhead-pink" name="hair" data-file="hair/male/bedhead/pink.png" data-required="sex=male">
-                                    <label for="hair-bedhead-pink">Pink</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-bedhead-raven" name="hair" data-file="hair/male/bedhead/raven.png" data-required="sex=male">
-                                    <label for="hair-bedhead-raven">Raven</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-bedhead-red" name="hair" data-file="hair/male/bedhead/redhead.png" data-required="sex=male">
-                                    <label for="hair-bedhead-red">Redhead</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-bedhead-white" name="hair" data-file="hair/male/bedhead/white-blonde.png" data-required="sex=male">
-                                    <label for="hair-bedhead-white">White Blonde</label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>Long <small>(Male only)</small>
-                            <ul>
-                                <li>
-                                    <input type="radio" id="hair-long-blonde" name="hair" data-file="hair/male/long/blonde.png" data-required="sex=male">
-                                    <label for="hair-long-blonde">Blonde</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-long-blue" name="hair" data-file="hair/male/long/blue.png" data-required="sex=male">
-                                    <label for="hair-long-blue">Blue</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-long-brunette" name="hair" data-file="hair/male/long/brunette.png" data-required="sex=male">
-                                    <label for="hair-long-brunette">Brunette</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-long-green" name="hair" data-file="hair/male/long/green.png" data-required="sex=male">
-                                    <label for="hair-long-green">Green</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-long-pink" name="hair" data-file="hair/male/long/pink.png" data-required="sex=male">
-                                    <label for="hair-long-pink">Pink</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-long-raven" name="hair" data-file="hair/male/long/raven.png" data-required="sex=male">
-                                    <label for="hair-long-raven">Raven</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-long-red" name="hair" data-file="hair/male/long/redhead.png" data-required="sex=male">
-                                    <label for="hair-long-red">Redhead</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-long-white" name="hair" data-file="hair/male/long/white-blonde.png" data-required="sex=male">
-                                    <label for="hair-long-white">White Blonde</label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>Longhawk <small>(Male only)</small>
-                            <ul>
-                                <li>
-                                    <input type="radio" id="hair-longhawk-blonde" name="hair" data-file="hair/male/longhawk/blonde.png" data-required="sex=male">
-                                    <label for="hair-longhawk-blonde">Blonde</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-longhawk-blue" name="hair" data-file="hair/male/longhawk/blue.png" data-required="sex=male">
-                                    <label for="hair-longhawk-blue">Blue</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-longhawk-brunette" name="hair" data-file="hair/male/longhawk/brunette.png" data-required="sex=male">
-                                    <label for="hair-longhawk-brunette">Brunette</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-longhawk-green" name="hair" data-file="hair/male/longhawk/green.png" data-required="sex=male">
-                                    <label for="hair-longhawk-green">Green</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-longhawk-pink" name="hair" data-file="hair/male/longhawk/pink.png" data-required="sex=male">
-                                    <label for="hair-longhawk-pink">Pink</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-longhawk-raven" name="hair" data-file="hair/male/longhawk/raven.png" data-required="sex=male">
-                                    <label for="hair-longhawk-raven">Raven</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-longhawk-red" name="hair" data-file="hair/male/longhawk/redhead.png" data-required="sex=male">
-                                    <label for="hair-longhawk-red">Redhead</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-longhawk-white" name="hair" data-file="hair/male/longhawk/white-blonde.png" data-required="sex=male">
-                                    <label for="hair-longhawk-white">White Blonde</label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>Messy1 <small>(Male only)</small>
-                            <ul>
-                                <li>
-                                    <input type="radio" id="hair-messy1-blonde" name="hair" data-file="hair/male/messy1/blonde.png" data-required="sex=male">
-                                    <label for="hair-messy1-blonde">Blonde</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-messy1-blue" name="hair" data-file="hair/male/messy1/blue.png" data-required="sex=male">
-                                    <label for="hair-messy1-blue">Blue</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-messy1-brunette" name="hair" data-file="hair/male/messy1/brunette.png" data-required="sex=male">
-                                    <label for="hair-messy1-brunette">Brunette</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-messy1-green" name="hair" data-file="hair/male/messy1/green.png" data-required="sex=male">
-                                    <label for="hair-messy1-green">Green</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-messy1-pink" name="hair" data-file="hair/male/messy1/pink.png" data-required="sex=male">
-                                    <label for="hair-messy1-pink">Pink</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-messy1-raven" name="hair" data-file="hair/male/messy1/raven.png" data-required="sex=male">
-                                    <label for="hair-messy1-raven">Raven</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-messy1-red" name="hair" data-file="hair/male/messy1/redhead.png" data-required="sex=male">
-                                    <label for="hair-messy1-red">Redhead</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-messy1-white" name="hair" data-file="hair/male/messy1/white-blonde.png" data-required="sex=male">
-                                    <label for="hair-messy1-white">White Blonde</label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>Messy2 <small>(Male only)</small>
-                            <ul>
-                                <li>
-                                    <input type="radio" id="hair-messy2-blonde" name="hair" data-file="hair/male/messy2/blonde.png" data-required="sex=male">
-                                    <label for="hair-messy2-blonde">Blonde</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-messy2-blue" name="hair" data-file="hair/male/messy2/blue.png" data-required="sex=male">
-                                    <label for="hair-messy2-blue">Blue</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-messy2-brunette" name="hair" data-file="hair/male/messy2/brunette.png" data-required="sex=male">
-                                    <label for="hair-messy2-brunette">Brunette</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-messy2-green" name="hair" data-file="hair/male/messy2/green.png" data-required="sex=male">
-                                    <label for="hair-messy2-green">Green</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-messy2-pink" name="hair" data-file="hair/male/messy2/pink.png" data-required="sex=male">
-                                    <label for="hair-messy2-pink">Pink</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-messy2-raven" name="hair" data-file="hair/male/messy2/raven.png" data-required="sex=male">
-                                    <label for="hair-messy2-raven">Raven</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-messy2-red" name="hair" data-file="hair/male/messy2/redhead.png" data-required="sex=male">
-                                    <label for="hair-messy2-red">Redhead</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-messy2-white" name="hair" data-file="hair/male/messy2/white-blonde.png" data-required="sex=male">
-                                    <label for="hair-messy2-white">White Blonde</label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>Mohawk <small>(Male only)</small>
-                            <ul>
-                                <li>
-                                    <input type="radio" id="hair-mohawk-blonde" name="hair" data-file="hair/male/mohawk/blonde.png" data-required="sex=male">
-                                    <label for="hair-mohawk-blonde">Blonde</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-mohawk-blue" name="hair" data-file="hair/male/mohawk/blue.png" data-required="sex=male">
-                                    <label for="hair-mohawk-blue">Blue</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-mohawk-brunette" name="hair" data-file="hair/male/mohawk/brunette.png" data-required="sex=male">
-                                    <label for="hair-mohawk-brunette">Brunette</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-mohawk-green" name="hair" data-file="hair/male/mohawk/green.png" data-required="sex=male">
-                                    <label for="hair-mohawk-green">Green</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-mohawk-pink" name="hair" data-file="hair/male/mohawk/pink.png" data-required="sex=male">
-                                    <label for="hair-mohawk-pink">Pink</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-mohawk-raven" name="hair" data-file="hair/male/mohawk/raven.png" data-required="sex=male">
-                                    <label for="hair-mohawk-raven">Raven</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-mohawk-red" name="hair" data-file="hair/male/mohawk/redhead.png" data-required="sex=male">
-                                    <label for="hair-mohawk-red">Redhead</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-mohawk-white" name="hair" data-file="hair/male/mohawk/white-blonde.png" data-required="sex=male">
-                                    <label for="hair-mohawk-white">White Blonde</label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>Page <small>(Male only)</small>
-                            <ul>
-                                <li>
-                                    <input type="radio" id="hair-page-blonde" name="hair" data-file="hair/male/page/blonde.png" data-required="sex=male">
-                                    <label for="hair-page-blonde">Blonde</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-page-blue" name="hair" data-file="hair/male/page/blue.png" data-required="sex=male">
-                                    <label for="hair-page-blue">Blue</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-page-brunette" name="hair" data-file="hair/male/page/brunette.png" data-required="sex=male">
-                                    <label for="hair-page-brunette">Brunette</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-page-green" name="hair" data-file="hair/male/page/green.png" data-required="sex=male">
-                                    <label for="hair-page-green">Green</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-page-pink" name="hair" data-file="hair/male/page/pink.png" data-required="sex=male">
-                                    <label for="hair-page-pink">Pink</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-page-raven" name="hair" data-file="hair/male/page/raven.png" data-required="sex=male">
-                                    <label for="hair-page-raven">Raven</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-page-red" name="hair" data-file="hair/male/page/redhead.png" data-required="sex=male">
-                                    <label for="hair-page-red">Redhead</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-page-white" name="hair" data-file="hair/male/page/white-blonde.png" data-required="sex=male">
-                                    <label for="hair-page-white">White Blonde</label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>Parted <small>(Male only)</small>
-                            <ul>
-                                <li>
-                                    <input type="radio" id="hair-parted-blonde" name="hair" data-file="hair/male/parted/blonde.png" data-required="sex=male">
-                                    <label for="hair-parted-blonde">Blonde</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-parted-blue" name="hair" data-file="hair/male/parted/blue.png" data-required="sex=male">
-                                    <label for="hair-parted-blue">Blue</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-parted-brunette" name="hair" data-file="hair/male/parted/brunette.png" data-required="sex=male">
-                                    <label for="hair-parted-brunette">Brunette</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-parted-green" name="hair" data-file="hair/male/parted/green.png" data-required="sex=male">
-                                    <label for="hair-parted-green">Green</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-parted-pink" name="hair" data-file="hair/male/parted/pink.png" data-required="sex=male">
-                                    <label for="hair-parted-pink">Pink</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-parted-raven" name="hair" data-file="hair/male/parted/raven.png" data-required="sex=male">
-                                    <label for="hair-parted-raven">Raven</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-parted-red" name="hair" data-file="hair/male/parted/redhead.png" data-required="sex=male">
-                                    <label for="hair-parted-red">Redhead</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-parted-white" name="hair" data-file="hair/male/parted/white-blonde.png" data-required="sex=male">
-                                    <label for="hair-parted-white">White Blonde</label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>Shorthawk <small>(Male only)</small>
-                            <ul>
-                                <li>
-                                    <input type="radio" id="hair-shorthawk-blonde" name="hair" data-file="hair/male/shorthawk/blonde.png" data-required="sex=male">
-                                    <label for="hair-shorthawk-blonde">Blonde</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-shorthawk-blue" name="hair" data-file="hair/male/shorthawk/blue.png" data-required="sex=male">
-                                    <label for="hair-shorthawk-blue">Blue</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-shorthawk-brunette" name="hair" data-file="hair/male/shorthawk/brunette.png" data-required="sex=male">
-                                    <label for="hair-shorthawk-brunette">Brunette</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-shorthawk-green" name="hair" data-file="hair/male/shorthawk/green.png" data-required="sex=male">
-                                    <label for="hair-shorthawk-green">Green</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-shorthawk-pink" name="hair" data-file="hair/male/shorthawk/pink.png" data-required="sex=male">
-                                    <label for="hair-shorthawk-pink">Pink</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-shorthawk-raven" name="hair" data-file="hair/male/shorthawk/raven.png" data-required="sex=male">
-                                    <label for="hair-shorthawk-raven">Raven</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-shorthawk-red" name="hair" data-file="hair/male/shorthawk/redhead.png" data-required="sex=male">
-                                    <label for="hair-shorthawk-red">Redhead</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-shorthawk-white" name="hair" data-file="hair/male/shorthawk/white-blonde.png" data-required="sex=male">
-                                    <label for="hair-shorthawk-white">White Blonde</label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>Loose <small>(Female only)</small>
-                            <ul>
-                                <li>
-                                    <input type="radio" id="hair-loose-blonde" name="hair" data-file="hair/female/loose/blonde.png" data-required="sex=female">
-                                    <label for="hair-loose-blonde">Blonde</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-loose-blue" name="hair" data-file="hair/female/loose/blue.png" data-required="sex=female">
-                                    <label for="hair-loose-blue">Blue</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-loose-brunette" name="hair" data-file="hair/female/loose/brunette.png" data-required="sex=female">
-                                    <label for="hair-loose-brunette">Brunette</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-loose-green" name="hair" data-file="hair/female/loose/green.png" data-required="sex=female">
-                                    <label for="hair-loose-green">Green</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-loose-pink" name="hair" data-file="hair/female/loose/pink.png" data-required="sex=female">
-                                    <label for="hair-loose-pink">Pink</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-loose-raven" name="hair" data-file="hair/female/loose/raven.png" data-required="sex=female">
-                                    <label for="hair-loose-raven">Raven</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-loose-red" name="hair" data-file="hair/female/loose/redhead.png" data-required="sex=female">
-                                    <label for="hair-loose-red">Redhead</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-loose-white" name="hair" data-file="hair/female/loose/white-blonde.png" data-required="sex=female">
-                                    <label for="hair-loose-white">White Blonde</label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>Pixie <small>(Female only)</small>
-                            <ul>
-                                <li>
-                                    <input type="radio" id="hair-pixie-blonde" name="hair" data-file="hair/female/pixie/blonde.png" data-required="sex=female">
-                                    <label for="hair-pixie-blonde">Blonde</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-pixie-blue" name="hair" data-file="hair/female/pixie/blue.png" data-required="sex=female">
-                                    <label for="hair-pixie-blue">Blue</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-pixie-brunette" name="hair" data-file="hair/female/pixie/brunette.png" data-required="sex=female">
-                                    <label for="hair-pixie-brunette">Brunette</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-pixie-green" name="hair" data-file="hair/female/pixie/green.png" data-required="sex=female">
-                                    <label for="hair-pixie-green">Green</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-pixie-pink" name="hair" data-file="hair/female/pixie/pink.png" data-required="sex=female">
-                                    <label for="hair-pixie-pink">Pink</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-pixie-raven" name="hair" data-file="hair/female/pixie/raven.png" data-required="sex=female">
-                                    <label for="hair-pixie-raven">Raven</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-pixie-red" name="hair" data-file="hair/female/pixie/redhead.png" data-required="sex=female">
-                                    <label for="hair-pixie-red">Redhead</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-pixie-white" name="hair" data-file="hair/female/pixie/white-blonde.png" data-required="sex=female">
-                                    <label for="hair-pixie-white">White Blonde</label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>Short Bangs <small>(Female only)</small>
-                            <ul>
-                                <li>
-                                    <input type="radio" id="hair-bangsshort-blonde" name="hair" data-file="hair/female/bangsshort/blonde.png" data-required="sex=female">
-                                    <label for="hair-bangsshort-blonde">Blonde</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-bangsshort-blue" name="hair" data-file="hair/female/bangsshort/blue.png" data-required="sex=female">
-                                    <label for="hair-bangsshort-blue">Blue</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-bangsshort-brunette" name="hair" data-file="hair/female/bangsshort/brunette.png" data-required="sex=female">
-                                    <label for="hair-bangsshort-brunette">Brunette</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-bangsshort-green" name="hair" data-file="hair/female/bangsshort/green.png" data-required="sex=female">
-                                    <label for="hair-bangsshort-green">Green</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-bangsshort-pink" name="hair" data-file="hair/female/bangsshort/pink.png" data-required="sex=female">
-                                    <label for="hair-bangsshort-pink">Pink</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-bangsshort-raven" name="hair" data-file="hair/female/bangsshort/raven.png" data-required="sex=female">
-                                    <label for="hair-bangsshort-raven">Raven</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-bangsshort-red" name="hair" data-file="hair/female/bangsshort/redhead.png" data-required="sex=female">
-                                    <label for="hair-bangsshort-red">Redhead</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-bangsshort-white" name="hair" data-file="hair/female/bangsshort/white-blonde.png" data-required="sex=female">
-                                    <label for="hair-bangsshort-white">White Blonde</label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>Long Bangs <small>(Female only)</small>
-                            <ul>
-                                <li>
-                                    <input type="radio" id="hair-bangslong-blonde" name="hair" data-file="hair/female/bangslong/blonde.png" data-required="sex=female">
-                                    <label for="hair-bangslong-blonde">Blonde</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-bangslong-blue" name="hair" data-file="hair/female/bangslong/blue.png" data-required="sex=female">
-                                    <label for="hair-bangslong-blue">Blue</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-bangslong-brunette" name="hair" data-file="hair/female/bangslong/brunette.png" data-required="sex=female">
-                                    <label for="hair-bangslong-brunette">Brunette</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-bangslong-green" name="hair" data-file="hair/female/bangslong/green.png" data-required="sex=female">
-                                    <label for="hair-bangslong-green">Green</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-bangslong-pink" name="hair" data-file="hair/female/bangslong/pink.png" data-required="sex=female">
-                                    <label for="hair-bangslong-pink">Pink</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-bangslong-raven" name="hair" data-file="hair/female/bangslong/raven.png" data-required="sex=female">
-                                    <label for="hair-bangslong-raven">Raven</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-bangslong-red" name="hair" data-file="hair/female/bangslong/redhead.png" data-required="sex=female">
-                                    <label for="hair-bangslong-red">Redhead</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-bangslong-white" name="hair" data-file="hair/female/bangslong/white-blonde.png" data-required="sex=female">
-                                    <label for="hair-bangslong-white">White Blonde</label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>Ponytail <small>(Female only)</small>
-                            <ul>
-                                <li>
-                                    <input type="radio" id="hair-ponytail-blonde" name="hair" data-file="hair/female/ponytail/blonde.png" data-required="sex=female">
-                                    <label for="hair-ponytail-blonde">Blonde</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-ponytail-blue" name="hair" data-file="hair/female/ponytail/blue.png" data-required="sex=female">
-                                    <label for="hair-ponytail-blue">Blue</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-ponytail-brunette" name="hair" data-file="hair/female/ponytail/brunette.png" data-required="sex=female">
-                                    <label for="hair-ponytail-brunette">Brunette</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-ponytail-green" name="hair" data-file="hair/female/ponytail/green.png" data-required="sex=female">
-                                    <label for="hair-ponytail-green">Green</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-ponytail-pink" name="hair" data-file="hair/female/ponytail/pink.png" data-required="sex=female">
-                                    <label for="hair-ponytail-pink">Pink</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-ponytail-raven" name="hair" data-file="hair/female/ponytail/raven.png" data-required="sex=female">
-                                    <label for="hair-ponytail-raven">Raven</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-ponytail-red" name="hair" data-file="hair/female/ponytail/redhead.png" data-required="sex=female">
-                                    <label for="hair-ponytail-red">Redhead</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-ponytail-white" name="hair" data-file="hair/female/ponytail/white-blonde.png" data-required="sex=female">
-                                    <label for="hair-ponytail-white">White Blonde</label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>Ponytail 2 <small>(Female only)</small>
-                            <ul>
-                                <li>
-                                    <input type="radio" id="hair-ponytail2-blonde" name="hair" data-file="hair/female/ponytail2/blonde.png" data-required="sex=female">
-                                    <label for="hair-ponytail2-blonde">Blonde</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-ponytail2-blue" name="hair" data-file="hair/female/ponytail2/blue.png" data-required="sex=female">
-                                    <label for="hair-ponytail2-blue">Blue</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-ponytail2-brunette" name="hair" data-file="hair/female/ponytail2/brunette.png" data-required="sex=female">
-                                    <label for="hair-ponytail2-brunette">Brunette</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-ponytail2-green" name="hair" data-file="hair/female/ponytail2/green.png" data-required="sex=female">
-                                    <label for="hair-ponytail2-green">Green</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-ponytail2-pink" name="hair" data-file="hair/female/ponytail2/pink.png" data-required="sex=female">
-                                    <label for="hair-ponytail2-pink">Pink</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-ponytail2-raven" name="hair" data-file="hair/female/ponytail2/raven.png" data-required="sex=female">
-                                    <label for="hair-ponytail2-raven">Raven</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-ponytail2-red" name="hair" data-file="hair/female/ponytail2/redhead.png" data-required="sex=female">
-                                    <label for="hair-ponytail2-red">Redhead</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-ponytail2-white" name="hair" data-file="hair/female/ponytail2/white-blonde.png" data-required="sex=female">
-                                    <label for="hair-ponytail2-white">White Blonde</label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>Princess <small>(Female only)</small>
-                            <ul>
-                                <li>
-                                    <input type="radio" id="hair-princess-blonde" name="hair" data-file="hair/female/princess/blonde.png" data-required="sex=female">
-                                    <label for="hair-princess-blonde">Blonde</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-princess-blue" name="hair" data-file="hair/female/princess/blue.png" data-required="sex=female">
-                                    <label for="hair-princess-blue">Blue</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-princess-brunette" name="hair" data-file="hair/female/princess/brunette.png" data-required="sex=female">
-                                    <label for="hair-princess-brunette">Brunette</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-princess-green" name="hair" data-file="hair/female/princess/green.png" data-required="sex=female">
-                                    <label for="hair-princess-green">Green</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-princess-pink" name="hair" data-file="hair/female/princess/pink.png" data-required="sex=female">
-                                    <label for="hair-princess-pink">Pink</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-princess-raven" name="hair" data-file="hair/female/princess/raven.png" data-required="sex=female">
-                                    <label for="hair-princess-raven">Raven</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-princess-red" name="hair" data-file="hair/female/princess/redhead.png" data-required="sex=female">
-                                    <label for="hair-princess-red">Redhead</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-princess-white" name="hair" data-file="hair/female/princess/white-blonde.png" data-required="sex=female">
-                                    <label for="hair-princess-white">White Blonde</label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>Swoop <small>(Female only)</small>
-                            <ul>
-                                <li>
-                                    <input type="radio" id="hair-swoop-blonde" name="hair" data-file="hair/female/swoop/blonde.png" data-required="sex=female">
-                                    <label for="hair-swoop-blonde">Blonde</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-swoop-blue" name="hair" data-file="hair/female/swoop/blue.png" data-required="sex=female">
-                                    <label for="hair-swoop-blue">Blue</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-swoop-brunette" name="hair" data-file="hair/female/swoop/brunette.png" data-required="sex=female">
-                                    <label for="hair-swoop-brunette">Brunette</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-swoop-green" name="hair" data-file="hair/female/swoop/green.png" data-required="sex=female">
-                                    <label for="hair-swoop-green">Green</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-swoop-pink" name="hair" data-file="hair/female/swoop/pink.png" data-required="sex=female">
-                                    <label for="hair-swoop-pink">Pink</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-swoop-raven" name="hair" data-file="hair/female/swoop/raven.png" data-required="sex=female">
-                                    <label for="hair-swoop-raven">Raven</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-swoop-red" name="hair" data-file="hair/female/swoop/redhead.png" data-required="sex=female">
-                                    <label for="hair-swoop-red">Redhead</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-swoop-white" name="hair" data-file="hair/female/swoop/white-blonde.png" data-required="sex=female">
-                                    <label for="hair-swoop-white">White Blonde</label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>Unkempt <small>(Female only)</small>
-                            <ul>
-                                <li>
-                                    <input type="radio" id="hair-unkempt-blonde" name="hair" data-file="hair/female/unkempt/blonde.png" data-required="sex=female">
-                                    <label for="hair-unkempt-blonde">Blonde</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-unkempt-blue" name="hair" data-file="hair/female/unkempt/blue.png" data-required="sex=female">
-                                    <label for="hair-unkempt-blue">Blue</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-unkempt-brunette" name="hair" data-file="hair/female/unkempt/brunette.png" data-required="sex=female">
-                                    <label for="hair-unkempt-brunette">Brunette</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-unkempt-green" name="hair" data-file="hair/female/unkempt/green.png" data-required="sex=female">
-                                    <label for="hair-unkempt-green">Green</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-unkempt-pink" name="hair" data-file="hair/female/unkempt/pink.png" data-required="sex=female">
-                                    <label for="hair-unkempt-pink">Pink</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-unkempt-raven" name="hair" data-file="hair/female/unkempt/raven.png" data-required="sex=female">
-                                    <label for="hair-unkempt-raven">Raven</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-unkempt-red" name="hair" data-file="hair/female/unkempt/redhead.png" data-required="sex=female">
-                                    <label for="hair-unkempt-red">Redhead</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="hair-unkempt-white" name="hair" data-file="hair/female/unkempt/white-blonde.png" data-required="sex=female">
-                                    <label for="hair-unkempt-white">White Blonde</label>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>Legs
-                    <ul>
-                        <li>
-                            <input type="radio" id="legs-none" name="legs" checked>
-                            <label for="legs-none">No Legs</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="legs-pants-green" name="legs" data-file_male="legs/green_pants_male.png" data-file_female="legs/green_pants_female.png">
-                            <label for="legs-pants-green">Green Pants</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="legs-pants-red" name="legs" data-required="sex=male" data-file="legs/red_pants_male.png">
-                            <label for="legs-pants-red">Red Pants <small>(Male only)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="legs-robe-skirt" name="legs" data-required="sex=male" data-file="legs/robe_skirt_male.png">
-                            <label for="legs-robe-skirt">Robe Skirt <small>(Male only)</small></label>
-                        </li>
-                    </ul>
-                </li>
-                <li>Arms
-                    <ul>
-                        <li>
-                            <input type="radio" id="arms-none" name="arms" checked>
-                            <label for="arms-none">No Torso</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="arms-gold" name="arms" data-file_male="torso/gold/arms_male.png" data-file_female="torso/gold/arms_female.png">
-                            <label for="arms-gold">Gold Arms</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="arms-plate" name="arms" data-file_male="torso/plate/arms_male.png" data-file_female="torso/plate/arms_female.png">
-                            <label for="arms-plate">Plate Arms</label>
-                        </li>
-                    </ul>
-                </li>
-                <li>Shoulders
-                    <ul>
-                        <li>
-                            <input type="radio" id="shoulders-none" name="shoulders" checked>
-                            <label for="shoulders-none">No Shoulders</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="shoulders-leather" name="shoulders" data-file_male="torso/leather/shoulders_male.png" data-file_female="torso/leather/shoulders_female.png">
-                            <label for="shoulders-leather">Leather Shoulders</label>
-                        </li>
-                    </ul>
-                </li>
-                <li>Spikes
-                    <ul>
-                        <li>
-                            <input type="radio" id="spikes-none" name="spikes" checked>
-                            <label for="spikes-none">No Spikes</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="spikes-gold" name="spikes" data-required="sex=male" data-file="torso/gold/spikes_male.png">
-                            <label for="torso-gold-spikes">Gold Spikes <small>(Male only)</small></label>
-                        </li>
-                    </ul>
-                </li>
-                <li>Bracers
-                    <ul>
-                        <li>
-                            <input type="radio" id="bracers-none" name="bracers" checked>
-                            <label for="bracers-none">No Bracers</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="bracers-leather" name="bracers" data-file_male="torso/leather/bracers_male.png" data-file_female="torso/leather/bracers_female.png">
-                            <label for="bracers-leather">Leather Bracers</label>
-                        </li>
-                    </ul>
-                </li>
-                <li>Greaves
-                    <ul>
-                        <li>
-                            <input type="radio" id="greaves-none" name="greaves" checked>
-                            <label for="greaves-none">No Greaves</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="greaves-golden" name="greaves" data-file_male="legs/golden_greaves_male.png" data-file_female="legs/golden_greaves_female.png">
-                            <label for="greaves-golden">Golden Greaves</label>
-                        </li>
-                    </ul>
-                </li>
-                <li>Gloves
-                    <ul>
-                        <li>
-                            <input type="radio" id="gloves-none" name="gloves" checked>
-                            <label for="gloves-none">No Gloves</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="gloves-metal" name="gloves" data-file_male="hands/metal_gloves_male.png" data-file_female="hands/metal_gloves_female.png">
-                            <label for="gloves-metal">Metal Gloves</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="gloves-golden" name="gloves" data-file_male="hands/golden_gloves_male.png" data-file_female="hands/golden_gloves_female.png">
-                            <label for="gloves-golden">Golden Gloves</label>
-                        </li>
-                    </ul>
-                </li>
-                <li>Hats
-                    <ul>
-                        <li>
-                            <input type="radio" id="hats-none" name="hats" checked>
-                            <label for="hats-none">No Hat</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="cap-leather" name="hats" data-file_male="head/leather_cap_male.png" data-file_female="head/leather_cap_female.png">
-                            <label for="cap-leather">Leather Cap</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="hat-chain" name="hats" data-file_male="head/chainhat_male.png" data-file_female="head/chainhat_female.png">
-                            <label for="hat-chain">Chain Hat</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="hood-cloth" name="hats" data-file_male="head/cloth_hood_male.png" data-file_female="head/cloth_hood_female.png">
-                            <label for="hood-cloth">Cloth Hood</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="hood-chain" name="hats" data-file_male="head/chain_hood_male.png" data-file_female="head/chain_hood_female.png">
-                            <label for="hood-chain">Chain Hood</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="helmet-metal" name="hats" data-file_male="head/metal_helm_male.png" data-file_female="head/metal_helm_female.png">
-                            <label for="helmet-metal">Metal Helmet</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="helmet-golden" name="hats" data-file_male="head/golden_helm_male.png" data-file_female="head/golden_helm_female.png">
-                            <label for="helmet-golden">Golden Helmet</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="tiara-bronze" name="hats" data-required="sex=female" data-file="head/tiaras_female_no_th_or_sh/bronze.png">
-                            <label for="tiara-bronze">Bronze Tiara <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="tiara-iron" name="hats" data-required="sex=female" data-file="head/tiaras_female_no_th_or_sh/iron.png">
-                            <label for="tiara-iron">Iron Tiara <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="tiara-silver" name="hats" data-required="sex=female" data-file="head/tiaras_female_no_th_or_sh/silver.png">
-                            <label for="tiara-silver">Silver Tiara <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="tiara-gold" name="hats" data-required="sex=female" data-file="head/tiaras_female_no_th_or_sh/gold.png">
-                            <label for="tiara-gold">Gold Tiara <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                    </ul>
-                </li>
-                <li>Shoes
-                    <ul>
-                        <li>
-                            <input type="radio" id="shoes-none" name="shoes" checked>
-                            <label for="shoes-none">No Shoes</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="shoes-black" name="shoes" data-file_male="feet/black_shoes_male.png" data-file_female="feet/black_shoes_female.png">
-                            <label for="shoes-black">Black Shoes</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="shoes-brown" name="shoes" data-file_male="feet/brown_shoes_male.png" data-file_female="feet/brown_shoes_female.png">
-                            <label for="shoes-brown">Brown Shoes</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="boots-metal" name="shoes" data-file_male="feet/metal_boots_male.png" data-file_female="feet/metal_boots_female.png">
-                            <label for="boots-metal">Metal Boots</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="boots-golden" name="shoes" data-file_male="feet/golden_boots_male.png" data-file_female="feet/golden_boots_female.png">
-                            <label for="boots-golden">Golden Boots</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="shoes-ghillies" name="shoes" data-required="sex=female" data-file="feet/ghillies_female_no_th-sh.png">
-                            <label for="shoes-ghillies">Ghillies <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="slippers-black" name="shoes" data-required="sex=female" data-file="feet/slippers_female/black.png">
-                            <label for="slippers-black">Black Slippers <small>(Female only)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="slippers-brown" name="shoes" data-required="sex=female" data-file="feet/slippers_female/brown.png">
-                            <label for="slippers-brown">Brown Slippers <small>(Female only)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="slippers-gray" name="shoes" data-required="sex=female" data-file="feet/slippers_female/gray.png">
-                            <label for="slippers-gray">Gray Slippers <small>(Female only)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="slippers-white" name="shoes" data-required="sex=female" data-file="feet/slippers_female/white.png">
-                            <label for="slippers-white">White Slippers <small>(Female only)</small></label>
-                        </li>
-                    </ul>
-                </li>
-                <li>Belts
-                    <ul>
-                        <li>
-                            <input type="radio" id="belts-none" name="belt" checked>
-                            <label for="belts-none">No Belts</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="belt-leather" name="belt" data-file_male="belt/leather_male.png" data-file_female="belt/leather_female.png">
-                            <label for="belt-leather">Leather Belt</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="belt-rope" name="belt" data-file_male="belt/rope_male.png" data-file_female="belt/rope_female.png">
-                            <label for="belt-rope">Rope Belt</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="belt-black" name="belt" data-required="sex=female" data-file="belt/black_female_no_th-sh.png">
-                            <label for="belt-black">Black Belt <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="belt-brown" name="belt" data-required="sex=female" data-file="belt/brown_female_no_th-sh.png">
-                            <label for="belt-brown">Brown Belt <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="belt-bronze" name="belt" data-required="sex=female" data-file="belt/bronze_female_no_th-sh.png">
-                            <label for="belt-bronze">Bronze Belt <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="belt-iron" name="belt" data-required="sex=female" data-file="belt/iron_female_no_th-sh.png">
-                            <label for="belt-iron">Iron Belt <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="belt-silver" name="belt" data-required="sex=female" data-file="belt/silver_female_no_th-sh.png">
-                            <label for="belt-silver">Silver Belt <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="belt-gold" name="belt" data-required="sex=female" data-file="belt/gold_female_no_th-sh.png">
-                            <label for="belt-gold">Gold Belt <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                    </ul>
-                </li>
-                <li>Buckles
-                    <ul>
-                        <li>
-                            <input type="radio" id="buckle-none" name="buckle" checked>
-                            <label for="buckle-none">No Buckle</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="buckle-bronze" name="buckle" data-required="sex=female" data-file="belt/buckles_female_no_th-sh/bronze.png">
-                            <label for="buckle-bronze">Bronze Buckle <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="buckle-iron" name="buckle" data-required="sex=female" data-file="belt/buckles_female_no_th-sh/iron.png">
-                            <label for="buckle-iron">Iron Buckle <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="buckle-silver" name="buckle" data-required="sex=female" data-file="belt/buckles_female_no_th-sh/silver.png">
-                            <label for="buckle-silver">Silver Buckle <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="buckle-gold" name="buckle" data-required="sex=female" data-file="belt/buckles_female_no_th-sh/gold.png">
-                            <label for="buckle-gold">Gold Buckle <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                    </ul>
-                </li>
-                <li>Necklaces
-                    <ul>
-                        <li>
-                            <input type="radio" id="necklace-none" name="necklace" checked>
-                            <label for="necklace-none">No Necklace</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="necklace-bronze" name="necklace" data-required="sex=female" data-file="accessories/necklaces_female_ no_th-sh/bronze.png">
-                            <label for="necklace-bronze">Bronze Necklace <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="necklace-iron" name="necklace" data-required="sex=female" data-file="accessories/necklaces_female_ no_th-sh/iron.png">
-                            <label for="necklace-iron">Iron Necklace <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="necklace-silver" name="necklace" data-required="sex=female" data-file="accessories/necklaces_female_ no_th-sh/silver.png">
-                            <label for="necklace-silver">Silver Necklace <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="necklace-gold" name="necklace" data-required="sex=female" data-file="accessories/necklaces_female_ no_th-sh/gold.png">
-                            <label for="necklace-gold">Gold Necklace <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
-                        </li>
-                    </ul>
-                </li>
-                <li>Bracelet
-                    <ul>
-                        <li>
-                            <input type="radio" id="bracelet-none" name="bracelet" checked>
-                            <label for="bracelet-none">No Bracelet</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="bracelet-on" name="bracelet" data-file_male="torso/leather/bracelet_male.png" data-file_female="torso/leather/bracelet_female.png">
-                            <label for="bracelet-on">Bracelet</label>
-                        </li>
-                    </ul>
-                </li>
-                <li>Weapon
-                    <ul>
-                        <li>
-                            <input type="radio" id="weapon-none" name="weapon" checked>
-                            <label for="weapon-none">No Weapon</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="weapon-bow" name="weapon" data-file="weapons/bow.png" data-prohibited="body=skeleton">
-                            <label for="weapon-bow">Bow</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="weapon-bow-skeleton" name="weapon" data-file="weapons/bow_skeleton.png" data-required="body=skeleton">
-                            <label for="weapon-bow-skeleton">Bow <small>(for Skeleton)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="weapon-dagger" name="weapon" data-file_male="weapons/dagger_male.png" data-file_female="weapons/dagger_female.png">
-                            <label for="weapon-dagger">Dagger</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="weapon-greatbow" name="weapon" data-file="weapons/greatbow.png">
-                            <label for="weapon-greatbow">Great Bow</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="weapon-recurvebow" name="weapon" data-file="weapons/recurvebow.png">
-                            <label for="weapon-recurvebow">Recurve Bow</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="weapon-spear" name="weapon" data-file="weapons/spear.png">
-                            <label for="weapon-spear">Spear</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="weapon-wand-wood" name="weapon" data-file_male="weapons/woodwand_male.png" data-file_female="weapons/woodwand_female.png">
-                            <label for="weapon-wand-wood">Wood Wand</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="weapon-wand-steel" name="weapon" data-file="weapons/steelwand_female.png" data-required="sex=female">
-                            <label for="weapon-wand-steel">Steel Wand <small>(Female Only)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="weapon-largespear" name="weapon" data-file="weapons/oversize/spear.png" data-oversize="1">
-                            <label for="weapon-largespear">Large Spear <small>(Oversize)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="weapon-dragonspear" name="weapon" data-file="weapons/oversize/dreagonspear.png" data-oversize="1">
-                            <label for="weapon-dragonspear">Dragon Spear <small>(Oversize)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="weapon-trident" name="weapon" data-file="weapons/oversize/trident.png" data-oversize="1">
-                            <label for="weapon-trident">Trident <small>(Oversize)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="weapon-longsword" name="weapon" data-file_male="weapons/oversize/longsword_male.png" data-file_female="weapons/oversize/longsword_female.png" data-oversize="2">
-                            <label for="weapon-longsword">Long Sword <small>(Oversize)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="weapon-mace" name="weapon" data-file_male="weapons/oversize/mace_male.png" data-file_female="weapons/oversize/mace_female.png" data-oversize="2">
-                            <label for="weapon-mace">Mace <small>(Oversize)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="weapon-rapier" name="weapon" data-file_male="weapons/oversize/rapier_male.png" data-file_female="weapons/oversize/rapier_female.png" data-oversize="2">
-                            <label for="weapon-rapier">Rapier <small>(Oversize)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="weapon-saber" name="weapon" data-file_male="weapons/oversize/saber_male.png" data-file_female="weapons/oversize/saber_female.png" data-oversize="2">
-                            <label for="weapon-saber">Saber <small>(Oversize)</small></label>
-                        </li>
-                    </ul>
-                </li>
-                <li>Ammo
-                    <ul>
-                        <li>
-                            <input type="radio" id="ammo-none" name="ammo" checked>
-                            <label for="ammo-none">No Ammo</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="ammo-arrow" name="ammo" data-file="weapons/arrow.png" data-prohibited="body=skeleton">
-                            <label for="ammo-arrow">Arrow</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="ammo-arrow-skeleton" name="ammo" data-file="weapons/arrow_skeleton.png" data-required="body=skeleton">
-                            <label for="ammo-arrow-skeleton">Arrow <small>(for Skeleton)</small></label>
-                        </li>
-                    </ul>
-                </li>
-                <li>Shield
-                    <ul>
-                        <li>
-                            <input type="radio" id="shield-none" name="shield" checked>
-                            <label for="shield-none">No Shield</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="shield-on" name="shield" data-file_no_hat="weapons/shield_male_cutoutforbody.png" data-file_hat="weapons/shield_male_cutoutforhat.png" data-required="sex=male">
-                            <label for="shield-on">Shield <small>(Male only)</small></label>
-                        </li>
-                    </ul>
-                </li>
-                <li>Quiver
-                    <ul>
-                        <li>
-                            <input type="radio" id="quiver-none" name="quiver" checked>
-                            <label for="quiver-none">No Quiver</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="quiver-on" name="quiver" data-file="behind_body/quiver.png" data-behind="true">
-                            <label for="quiver-on">Quiver</label>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <p><a href="#" id="collapse">Collapse All</a></p>
-        </section>
+        <form id="customizeChar">
+            <section id="chooser">
+                <ul>
+                    <li>Sex
+                        <ul>
+                            <li>
+                                <input type="radio" id="sex-male" name="sex" checked>
+                                <label for="sex-male">Male</label>
+                            </li>
+                            <li>
+                            <li>
+                                <input type="radio" id="sex-female" name="sex">
+                                <label for="sex-female">Female</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Body
+                        <ul>
+                            <li>
+                                <input type="radio" id="body-light" name="body" checked data-file_female="body/female/light.png" data-file_male="body/male/light.png" data-hs_male="hair/male/plain/shadows-lightbody.png" data-hs_female="hair/female/ponytail2/shadows-lightbody.png">
+                                <label for="body-light">Light</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="body-dark" name="body" data-file_female="body/female/dark.png" data-file_male="body/male/dark.png" data-hs_male="hair/male/plain/shadows-darkbody.png" data-hs_female="hair/female/ponytail2/shadows-darkbody.png">
+                                <label for="body-dark">Dark</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="body-tanned" name="body" data-file_female="body/female/tanned.png" data-file_male="body/male/tanned.png" data-hs_male="hair/male/plain/shadows-tannedbody.png" data-hs_female="hair/female/ponytail2/shadows-tannedbody.png">
+                                <label for="body-tanned">Tanned</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="body-tanned2" name="body" data-file_female="body/female/tanned2.png" data-file_male="body/male/tanned2.png"data-hs_male="hair/male/plain/shadows-tanned2body.png" data-hs_female="hair/female/ponytail2/shadows-tanned2body.png">
+                                <label for="body-tanned2">Tanned 2</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="body-orc" name="body" data-file_female="body/female/orc.png" data-file_male="body/male/orc.png">
+                                <label for="body-orc">Orc</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="body-skeleton" name="body" data-required="sex=male" data-file="body/male/skeleton.png">
+                                <label for="body-skeleton">Skeleton <small>(Male only)</small></label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Eyes
+                        <ul>
+                            <li>
+                                <input type="radio" id="eyes-none" name="eyes" checked>
+                                <label for="eyes-none">Default</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="eyes-blue" name="eyes" data-file_female="body/female/eyes/blue.png" data-file_male="body/male/eyes/blue.png">
+                                <label for="eyes-blue">Blue</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="eyes-brown" name="eyes" data-file_female="body/female/eyes/brown.png" data-file_male="body/male/eyes/brown.png">
+                                <label for="eyes-brown">Brown</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="eyes-green" name="eyes" data-file_female="body/female/eyes/green.png" data-file_male="body/male/eyes/green.png">
+                                <label for="eyes-green">Green</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="eyes-red" name="eyes" data-file_female="body/female/eyes/red.png" data-file_male="body/male/eyes/red.png">
+                                <label for="eyes-red">Red</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Torso
+                        <ul>
+                            <li>
+                                <input type="radio" id="torso-none" name="torso" checked>
+                                <label for="torso-none">No Torso</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="torso-chain-mail" name="torso" data-file_male="torso/chain/mail_male.png" data-file_female="torso/chain/mail_female.png">
+                                <label for="torso-chain-mail">Chain Mail</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="torso-brown-shirt" name="torso" data-required="sex=male" data-file="torso/brown_shirt_male.png">
+                                <label for="torso-brown-shirt">Brown Shirt <small>(Male only)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="torso-white-shirt" name="torso" data-required="sex=male" data-file="torso/white_shirt_male.png">
+                                <label for="torso-white-shirt">White Shirt <small>(Male only)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="torso-formal" name="torso" data-required="sex=male">
+                                <label for="torso-formal">Formal Wear <small>(Male only)</small> <small>(No Thrust/Shoot)</small></label>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="formal-shirt" name="formal-shirt" data-required="torso=formal" data-file="formal_male_no_th-sh/shirt.png">
+                                        <label for="formal-shirt">Shirt</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="formal-pants" name="formal-pants" data-required="torso=formal" data-file="formal_male_no_th-sh/pants.png">
+                                        <label for="formal-pants">Pants</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="formal-vest" name="formal-vest" data-required="torso=formal" data-file="formal_male_no_th-sh/vest.png">
+                                        <label for="formal-vest">Vest</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input type="radio" id="torso-dress-sash" name="torso" data-required="sex=female" data-file="torso/dress_w_sash_female.png">
+                                <label for="torso-dress-sash">Dress with Sash <small>(Female only)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="torso-pirate-shirt" name="torso" data-required="sex=female" data-file="torso/pirate_shirt_female.png">
+                                <label for="torso-pirate-shirt">Pirate Shirt <small>(Female only)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="torso-gown" name="torso" data-required="sex=female">
+                                <label for="torso-gown">Gown <small>(Female only)</small></label>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="gown-underdress" name="gown-underdress" data-required="torso=gown" data-file="torso/dress_female/underdress.png">
+                                        <label for="gown-underdress">Underdress</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="gown-overskirt" name="gown-overskirt" data-required="torso=gown" data-file="torso/dress_female/overskirt.png">
+                                        <label for="gown-overskirt">Overskirt</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="gown-blue-vest" name="gown-blue-vest" data-required="torso=gown" data-file="torso/dress_female/blue_vest.png">
+                                        <label for="gown-blue-vest">Blue Vest</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input type="radio" id="torso-robe-black" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/black.png">
+                                <label for="torso-robe-black">Black Robe <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="torso-robe-blue" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/blue.png">
+                                <label for="torso-robe-blue">Blue Robe <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="torso-robe-brown" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/brown.png">
+                                <label for="torso-robe-brown">Brown Robe <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="torso-robe-dark-brown" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/dark brown.png">
+                                <label for="torso-robe-dark-brown">Dark Brown Robe <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="torso-robe-dark-gray" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/dark gray.png">
+                                <label for="torso-robe-dark-gray">Dark Gray Robe <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="torso-robe-light-gray" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/light gray.png">
+                                <label for="torso-robe-light-gray">Light Gray Robe <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="torso-robe-forest-green" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/forest green.png">
+                                <label for="torso-robe-forest-green">Forest Green Robe <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="torso-robe-purple" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/purple.png">
+                                <label for="torso-robe-purple">Purple Robe <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="torso-robe-red" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/red.png">
+                                <label for="torso-robe-red">Red Robe <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="torso-robe-white" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/white.png">
+                                <label for="torso-robe-white">White Robe <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Armor
+                        <ul>
+                            <li>
+                                <input type="radio" id="armor-none" name="armor" checked>
+                                <label for="armor-none">No Armor</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="armor-tabard" name="armor" data-file_male="torso/chain/tabard/jacket_male.png" data-file_female="torso/chain/tabard/jacket_female.png">
+                                <label for="armor-tabard">Tabard</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="armor-gold-chest" name="armor" data-file_male="torso/gold/chest_male.png" data-file_female="torso/gold/chest_female.png">
+                                <label for="armor-gold-chest">Gold Chest</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="armor-leather-chest" name="armor" data-file_male="torso/leather/chest_male.png" data-file_female="torso/leather/chest_female.png">
+                                <label for="armor-leather-chest">Leather Chest</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="armor-plate-chest" name="armor" data-file_male="torso/plate/chest_male.png" data-file_female="torso/plate/chest_female.png">
+                                <label for="armor-plate-chest">Plate Chest</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Tie
+                        <ul>
+                            <li>
+                                <input type="radio" id="tie-none" name="tie" checked>
+                                <label for="tie-none">No Tie</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="tie-on" name="tie" data-required="sex=male" data-file="formal_male_no_th-sh/tie.png">
+                                <label for="tie-on">Tie <small>(Male only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="tie-bow" name="tie" data-required="sex=male" data-file="formal_male_no_th-sh/bowtie.png">
+                                <label for="tie-bow">Bow Tie <small>(Male only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                        </ul>
+                    </li>
+                    </li>
+                    <li>Hair
+                        <ul>
+                            <li>
+                                <input type="radio" id="hair-none" name="hair" checked>
+                                <label for="hair-none">No Hair</label>
+                            </li>
+                            <li>Plain <small>(Male only)</small>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="hair-plain-blonde" name="hair" data-file="hair/male/plain/blonde.png" data-required="sex=male">
+                                        <label for="hair-plain-blonde">Blonde</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-plain-blue" name="hair" data-file="hair/male/plain/blue.png" data-required="sex=male">
+                                        <label for="hair-plain-blue">Blue</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-plain-brunette" name="hair" data-file="hair/male/plain/brunette.png" data-required="sex=male">
+                                        <label for="hair-plain-brunette">Brunette</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-plain-green" name="hair" data-file="hair/male/plain/green.png" data-required="sex=male">
+                                        <label for="hair-plain-green">Green</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-plain-pink" name="hair" data-file="hair/male/plain/pink.png" data-required="sex=male">
+                                        <label for="hair-plain-pink">Pink</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-plain-raven" name="hair" data-file="hair/male/plain/raven.png" data-required="sex=male">
+                                        <label for="hair-plain-raven">Raven</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-plain-red" name="hair" data-file="hair/male/plain/redhead.png" data-required="sex=male">
+                                        <label for="hair-plain-red">Redhead</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-plain-white" name="hair" data-file="hair/male/plain/white-blonde.png" data-required="sex=male">
+                                        <label for="hair-plain-white">White Blonde</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Bedhead <small>(Male only)</small>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="hair-bedhead-blonde" name="hair" data-file="hair/male/bedhead/blonde.png" data-required="sex=male">
+                                        <label for="hair-bedhead-blonde">Blonde</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-bedhead-blue" name="hair" data-file="hair/male/bedhead/blue.png" data-required="sex=male">
+                                        <label for="hair-bedhead-blue">Blue</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-bedhead-brunette" name="hair" data-file="hair/male/bedhead/brunette.png" data-required="sex=male">
+                                        <label for="hair-bedhead-brunette">Brunette</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-bedhead-green" name="hair" data-file="hair/male/bedhead/green.png" data-required="sex=male">
+                                        <label for="hair-bedhead-green">Green</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-bedhead-pink" name="hair" data-file="hair/male/bedhead/pink.png" data-required="sex=male">
+                                        <label for="hair-bedhead-pink">Pink</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-bedhead-raven" name="hair" data-file="hair/male/bedhead/raven.png" data-required="sex=male">
+                                        <label for="hair-bedhead-raven">Raven</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-bedhead-red" name="hair" data-file="hair/male/bedhead/redhead.png" data-required="sex=male">
+                                        <label for="hair-bedhead-red">Redhead</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-bedhead-white" name="hair" data-file="hair/male/bedhead/white-blonde.png" data-required="sex=male">
+                                        <label for="hair-bedhead-white">White Blonde</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Long <small>(Male only)</small>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="hair-long-blonde" name="hair" data-file="hair/male/long/blonde.png" data-required="sex=male">
+                                        <label for="hair-long-blonde">Blonde</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-long-blue" name="hair" data-file="hair/male/long/blue.png" data-required="sex=male">
+                                        <label for="hair-long-blue">Blue</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-long-brunette" name="hair" data-file="hair/male/long/brunette.png" data-required="sex=male">
+                                        <label for="hair-long-brunette">Brunette</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-long-green" name="hair" data-file="hair/male/long/green.png" data-required="sex=male">
+                                        <label for="hair-long-green">Green</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-long-pink" name="hair" data-file="hair/male/long/pink.png" data-required="sex=male">
+                                        <label for="hair-long-pink">Pink</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-long-raven" name="hair" data-file="hair/male/long/raven.png" data-required="sex=male">
+                                        <label for="hair-long-raven">Raven</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-long-red" name="hair" data-file="hair/male/long/redhead.png" data-required="sex=male">
+                                        <label for="hair-long-red">Redhead</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-long-white" name="hair" data-file="hair/male/long/white-blonde.png" data-required="sex=male">
+                                        <label for="hair-long-white">White Blonde</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Longhawk <small>(Male only)</small>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="hair-longhawk-blonde" name="hair" data-file="hair/male/longhawk/blonde.png" data-required="sex=male">
+                                        <label for="hair-longhawk-blonde">Blonde</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-longhawk-blue" name="hair" data-file="hair/male/longhawk/blue.png" data-required="sex=male">
+                                        <label for="hair-longhawk-blue">Blue</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-longhawk-brunette" name="hair" data-file="hair/male/longhawk/brunette.png" data-required="sex=male">
+                                        <label for="hair-longhawk-brunette">Brunette</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-longhawk-green" name="hair" data-file="hair/male/longhawk/green.png" data-required="sex=male">
+                                        <label for="hair-longhawk-green">Green</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-longhawk-pink" name="hair" data-file="hair/male/longhawk/pink.png" data-required="sex=male">
+                                        <label for="hair-longhawk-pink">Pink</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-longhawk-raven" name="hair" data-file="hair/male/longhawk/raven.png" data-required="sex=male">
+                                        <label for="hair-longhawk-raven">Raven</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-longhawk-red" name="hair" data-file="hair/male/longhawk/redhead.png" data-required="sex=male">
+                                        <label for="hair-longhawk-red">Redhead</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-longhawk-white" name="hair" data-file="hair/male/longhawk/white-blonde.png" data-required="sex=male">
+                                        <label for="hair-longhawk-white">White Blonde</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Messy1 <small>(Male only)</small>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="hair-messy1-blonde" name="hair" data-file="hair/male/messy1/blonde.png" data-required="sex=male">
+                                        <label for="hair-messy1-blonde">Blonde</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-messy1-blue" name="hair" data-file="hair/male/messy1/blue.png" data-required="sex=male">
+                                        <label for="hair-messy1-blue">Blue</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-messy1-brunette" name="hair" data-file="hair/male/messy1/brunette.png" data-required="sex=male">
+                                        <label for="hair-messy1-brunette">Brunette</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-messy1-green" name="hair" data-file="hair/male/messy1/green.png" data-required="sex=male">
+                                        <label for="hair-messy1-green">Green</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-messy1-pink" name="hair" data-file="hair/male/messy1/pink.png" data-required="sex=male">
+                                        <label for="hair-messy1-pink">Pink</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-messy1-raven" name="hair" data-file="hair/male/messy1/raven.png" data-required="sex=male">
+                                        <label for="hair-messy1-raven">Raven</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-messy1-red" name="hair" data-file="hair/male/messy1/redhead.png" data-required="sex=male">
+                                        <label for="hair-messy1-red">Redhead</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-messy1-white" name="hair" data-file="hair/male/messy1/white-blonde.png" data-required="sex=male">
+                                        <label for="hair-messy1-white">White Blonde</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Messy2 <small>(Male only)</small>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="hair-messy2-blonde" name="hair" data-file="hair/male/messy2/blonde.png" data-required="sex=male">
+                                        <label for="hair-messy2-blonde">Blonde</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-messy2-blue" name="hair" data-file="hair/male/messy2/blue.png" data-required="sex=male">
+                                        <label for="hair-messy2-blue">Blue</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-messy2-brunette" name="hair" data-file="hair/male/messy2/brunette.png" data-required="sex=male">
+                                        <label for="hair-messy2-brunette">Brunette</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-messy2-green" name="hair" data-file="hair/male/messy2/green.png" data-required="sex=male">
+                                        <label for="hair-messy2-green">Green</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-messy2-pink" name="hair" data-file="hair/male/messy2/pink.png" data-required="sex=male">
+                                        <label for="hair-messy2-pink">Pink</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-messy2-raven" name="hair" data-file="hair/male/messy2/raven.png" data-required="sex=male">
+                                        <label for="hair-messy2-raven">Raven</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-messy2-red" name="hair" data-file="hair/male/messy2/redhead.png" data-required="sex=male">
+                                        <label for="hair-messy2-red">Redhead</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-messy2-white" name="hair" data-file="hair/male/messy2/white-blonde.png" data-required="sex=male">
+                                        <label for="hair-messy2-white">White Blonde</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Mohawk <small>(Male only)</small>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="hair-mohawk-blonde" name="hair" data-file="hair/male/mohawk/blonde.png" data-required="sex=male">
+                                        <label for="hair-mohawk-blonde">Blonde</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-mohawk-blue" name="hair" data-file="hair/male/mohawk/blue.png" data-required="sex=male">
+                                        <label for="hair-mohawk-blue">Blue</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-mohawk-brunette" name="hair" data-file="hair/male/mohawk/brunette.png" data-required="sex=male">
+                                        <label for="hair-mohawk-brunette">Brunette</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-mohawk-green" name="hair" data-file="hair/male/mohawk/green.png" data-required="sex=male">
+                                        <label for="hair-mohawk-green">Green</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-mohawk-pink" name="hair" data-file="hair/male/mohawk/pink.png" data-required="sex=male">
+                                        <label for="hair-mohawk-pink">Pink</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-mohawk-raven" name="hair" data-file="hair/male/mohawk/raven.png" data-required="sex=male">
+                                        <label for="hair-mohawk-raven">Raven</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-mohawk-red" name="hair" data-file="hair/male/mohawk/redhead.png" data-required="sex=male">
+                                        <label for="hair-mohawk-red">Redhead</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-mohawk-white" name="hair" data-file="hair/male/mohawk/white-blonde.png" data-required="sex=male">
+                                        <label for="hair-mohawk-white">White Blonde</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Page <small>(Male only)</small>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="hair-page-blonde" name="hair" data-file="hair/male/page/blonde.png" data-required="sex=male">
+                                        <label for="hair-page-blonde">Blonde</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-page-blue" name="hair" data-file="hair/male/page/blue.png" data-required="sex=male">
+                                        <label for="hair-page-blue">Blue</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-page-brunette" name="hair" data-file="hair/male/page/brunette.png" data-required="sex=male">
+                                        <label for="hair-page-brunette">Brunette</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-page-green" name="hair" data-file="hair/male/page/green.png" data-required="sex=male">
+                                        <label for="hair-page-green">Green</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-page-pink" name="hair" data-file="hair/male/page/pink.png" data-required="sex=male">
+                                        <label for="hair-page-pink">Pink</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-page-raven" name="hair" data-file="hair/male/page/raven.png" data-required="sex=male">
+                                        <label for="hair-page-raven">Raven</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-page-red" name="hair" data-file="hair/male/page/redhead.png" data-required="sex=male">
+                                        <label for="hair-page-red">Redhead</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-page-white" name="hair" data-file="hair/male/page/white-blonde.png" data-required="sex=male">
+                                        <label for="hair-page-white">White Blonde</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Parted <small>(Male only)</small>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="hair-parted-blonde" name="hair" data-file="hair/male/parted/blonde.png" data-required="sex=male">
+                                        <label for="hair-parted-blonde">Blonde</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-parted-blue" name="hair" data-file="hair/male/parted/blue.png" data-required="sex=male">
+                                        <label for="hair-parted-blue">Blue</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-parted-brunette" name="hair" data-file="hair/male/parted/brunette.png" data-required="sex=male">
+                                        <label for="hair-parted-brunette">Brunette</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-parted-green" name="hair" data-file="hair/male/parted/green.png" data-required="sex=male">
+                                        <label for="hair-parted-green">Green</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-parted-pink" name="hair" data-file="hair/male/parted/pink.png" data-required="sex=male">
+                                        <label for="hair-parted-pink">Pink</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-parted-raven" name="hair" data-file="hair/male/parted/raven.png" data-required="sex=male">
+                                        <label for="hair-parted-raven">Raven</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-parted-red" name="hair" data-file="hair/male/parted/redhead.png" data-required="sex=male">
+                                        <label for="hair-parted-red">Redhead</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-parted-white" name="hair" data-file="hair/male/parted/white-blonde.png" data-required="sex=male">
+                                        <label for="hair-parted-white">White Blonde</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Shorthawk <small>(Male only)</small>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="hair-shorthawk-blonde" name="hair" data-file="hair/male/shorthawk/blonde.png" data-required="sex=male">
+                                        <label for="hair-shorthawk-blonde">Blonde</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-shorthawk-blue" name="hair" data-file="hair/male/shorthawk/blue.png" data-required="sex=male">
+                                        <label for="hair-shorthawk-blue">Blue</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-shorthawk-brunette" name="hair" data-file="hair/male/shorthawk/brunette.png" data-required="sex=male">
+                                        <label for="hair-shorthawk-brunette">Brunette</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-shorthawk-green" name="hair" data-file="hair/male/shorthawk/green.png" data-required="sex=male">
+                                        <label for="hair-shorthawk-green">Green</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-shorthawk-pink" name="hair" data-file="hair/male/shorthawk/pink.png" data-required="sex=male">
+                                        <label for="hair-shorthawk-pink">Pink</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-shorthawk-raven" name="hair" data-file="hair/male/shorthawk/raven.png" data-required="sex=male">
+                                        <label for="hair-shorthawk-raven">Raven</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-shorthawk-red" name="hair" data-file="hair/male/shorthawk/redhead.png" data-required="sex=male">
+                                        <label for="hair-shorthawk-red">Redhead</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-shorthawk-white" name="hair" data-file="hair/male/shorthawk/white-blonde.png" data-required="sex=male">
+                                        <label for="hair-shorthawk-white">White Blonde</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Loose <small>(Female only)</small>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="hair-loose-blonde" name="hair" data-file="hair/female/loose/blonde.png" data-required="sex=female">
+                                        <label for="hair-loose-blonde">Blonde</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-loose-blue" name="hair" data-file="hair/female/loose/blue.png" data-required="sex=female">
+                                        <label for="hair-loose-blue">Blue</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-loose-brunette" name="hair" data-file="hair/female/loose/brunette.png" data-required="sex=female">
+                                        <label for="hair-loose-brunette">Brunette</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-loose-green" name="hair" data-file="hair/female/loose/green.png" data-required="sex=female">
+                                        <label for="hair-loose-green">Green</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-loose-pink" name="hair" data-file="hair/female/loose/pink.png" data-required="sex=female">
+                                        <label for="hair-loose-pink">Pink</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-loose-raven" name="hair" data-file="hair/female/loose/raven.png" data-required="sex=female">
+                                        <label for="hair-loose-raven">Raven</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-loose-red" name="hair" data-file="hair/female/loose/redhead.png" data-required="sex=female">
+                                        <label for="hair-loose-red">Redhead</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-loose-white" name="hair" data-file="hair/female/loose/white-blonde.png" data-required="sex=female">
+                                        <label for="hair-loose-white">White Blonde</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Pixie <small>(Female only)</small>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="hair-pixie-blonde" name="hair" data-file="hair/female/pixie/blonde.png" data-required="sex=female">
+                                        <label for="hair-pixie-blonde">Blonde</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-pixie-blue" name="hair" data-file="hair/female/pixie/blue.png" data-required="sex=female">
+                                        <label for="hair-pixie-blue">Blue</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-pixie-brunette" name="hair" data-file="hair/female/pixie/brunette.png" data-required="sex=female">
+                                        <label for="hair-pixie-brunette">Brunette</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-pixie-green" name="hair" data-file="hair/female/pixie/green.png" data-required="sex=female">
+                                        <label for="hair-pixie-green">Green</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-pixie-pink" name="hair" data-file="hair/female/pixie/pink.png" data-required="sex=female">
+                                        <label for="hair-pixie-pink">Pink</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-pixie-raven" name="hair" data-file="hair/female/pixie/raven.png" data-required="sex=female">
+                                        <label for="hair-pixie-raven">Raven</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-pixie-red" name="hair" data-file="hair/female/pixie/redhead.png" data-required="sex=female">
+                                        <label for="hair-pixie-red">Redhead</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-pixie-white" name="hair" data-file="hair/female/pixie/white-blonde.png" data-required="sex=female">
+                                        <label for="hair-pixie-white">White Blonde</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Short Bangs <small>(Female only)</small>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="hair-bangsshort-blonde" name="hair" data-file="hair/female/bangsshort/blonde.png" data-required="sex=female">
+                                        <label for="hair-bangsshort-blonde">Blonde</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-bangsshort-blue" name="hair" data-file="hair/female/bangsshort/blue.png" data-required="sex=female">
+                                        <label for="hair-bangsshort-blue">Blue</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-bangsshort-brunette" name="hair" data-file="hair/female/bangsshort/brunette.png" data-required="sex=female">
+                                        <label for="hair-bangsshort-brunette">Brunette</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-bangsshort-green" name="hair" data-file="hair/female/bangsshort/green.png" data-required="sex=female">
+                                        <label for="hair-bangsshort-green">Green</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-bangsshort-pink" name="hair" data-file="hair/female/bangsshort/pink.png" data-required="sex=female">
+                                        <label for="hair-bangsshort-pink">Pink</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-bangsshort-raven" name="hair" data-file="hair/female/bangsshort/raven.png" data-required="sex=female">
+                                        <label for="hair-bangsshort-raven">Raven</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-bangsshort-red" name="hair" data-file="hair/female/bangsshort/redhead.png" data-required="sex=female">
+                                        <label for="hair-bangsshort-red">Redhead</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-bangsshort-white" name="hair" data-file="hair/female/bangsshort/white-blonde.png" data-required="sex=female">
+                                        <label for="hair-bangsshort-white">White Blonde</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Long Bangs <small>(Female only)</small>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="hair-bangslong-blonde" name="hair" data-file="hair/female/bangslong/blonde.png" data-required="sex=female">
+                                        <label for="hair-bangslong-blonde">Blonde</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-bangslong-blue" name="hair" data-file="hair/female/bangslong/blue.png" data-required="sex=female">
+                                        <label for="hair-bangslong-blue">Blue</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-bangslong-brunette" name="hair" data-file="hair/female/bangslong/brunette.png" data-required="sex=female">
+                                        <label for="hair-bangslong-brunette">Brunette</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-bangslong-green" name="hair" data-file="hair/female/bangslong/green.png" data-required="sex=female">
+                                        <label for="hair-bangslong-green">Green</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-bangslong-pink" name="hair" data-file="hair/female/bangslong/pink.png" data-required="sex=female">
+                                        <label for="hair-bangslong-pink">Pink</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-bangslong-raven" name="hair" data-file="hair/female/bangslong/raven.png" data-required="sex=female">
+                                        <label for="hair-bangslong-raven">Raven</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-bangslong-red" name="hair" data-file="hair/female/bangslong/redhead.png" data-required="sex=female">
+                                        <label for="hair-bangslong-red">Redhead</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-bangslong-white" name="hair" data-file="hair/female/bangslong/white-blonde.png" data-required="sex=female">
+                                        <label for="hair-bangslong-white">White Blonde</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Ponytail <small>(Female only)</small>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="hair-ponytail-blonde" name="hair" data-file="hair/female/ponytail/blonde.png" data-required="sex=female">
+                                        <label for="hair-ponytail-blonde">Blonde</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-ponytail-blue" name="hair" data-file="hair/female/ponytail/blue.png" data-required="sex=female">
+                                        <label for="hair-ponytail-blue">Blue</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-ponytail-brunette" name="hair" data-file="hair/female/ponytail/brunette.png" data-required="sex=female">
+                                        <label for="hair-ponytail-brunette">Brunette</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-ponytail-green" name="hair" data-file="hair/female/ponytail/green.png" data-required="sex=female">
+                                        <label for="hair-ponytail-green">Green</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-ponytail-pink" name="hair" data-file="hair/female/ponytail/pink.png" data-required="sex=female">
+                                        <label for="hair-ponytail-pink">Pink</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-ponytail-raven" name="hair" data-file="hair/female/ponytail/raven.png" data-required="sex=female">
+                                        <label for="hair-ponytail-raven">Raven</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-ponytail-red" name="hair" data-file="hair/female/ponytail/redhead.png" data-required="sex=female">
+                                        <label for="hair-ponytail-red">Redhead</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-ponytail-white" name="hair" data-file="hair/female/ponytail/white-blonde.png" data-required="sex=female">
+                                        <label for="hair-ponytail-white">White Blonde</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Ponytail 2 <small>(Female only)</small>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="hair-ponytail2-blonde" name="hair" data-file="hair/female/ponytail2/blonde.png" data-required="sex=female">
+                                        <label for="hair-ponytail2-blonde">Blonde</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-ponytail2-blue" name="hair" data-file="hair/female/ponytail2/blue.png" data-required="sex=female">
+                                        <label for="hair-ponytail2-blue">Blue</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-ponytail2-brunette" name="hair" data-file="hair/female/ponytail2/brunette.png" data-required="sex=female">
+                                        <label for="hair-ponytail2-brunette">Brunette</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-ponytail2-green" name="hair" data-file="hair/female/ponytail2/green.png" data-required="sex=female">
+                                        <label for="hair-ponytail2-green">Green</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-ponytail2-pink" name="hair" data-file="hair/female/ponytail2/pink.png" data-required="sex=female">
+                                        <label for="hair-ponytail2-pink">Pink</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-ponytail2-raven" name="hair" data-file="hair/female/ponytail2/raven.png" data-required="sex=female">
+                                        <label for="hair-ponytail2-raven">Raven</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-ponytail2-red" name="hair" data-file="hair/female/ponytail2/redhead.png" data-required="sex=female">
+                                        <label for="hair-ponytail2-red">Redhead</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-ponytail2-white" name="hair" data-file="hair/female/ponytail2/white-blonde.png" data-required="sex=female">
+                                        <label for="hair-ponytail2-white">White Blonde</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Princess <small>(Female only)</small>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="hair-princess-blonde" name="hair" data-file="hair/female/princess/blonde.png" data-required="sex=female">
+                                        <label for="hair-princess-blonde">Blonde</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-princess-blue" name="hair" data-file="hair/female/princess/blue.png" data-required="sex=female">
+                                        <label for="hair-princess-blue">Blue</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-princess-brunette" name="hair" data-file="hair/female/princess/brunette.png" data-required="sex=female">
+                                        <label for="hair-princess-brunette">Brunette</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-princess-green" name="hair" data-file="hair/female/princess/green.png" data-required="sex=female">
+                                        <label for="hair-princess-green">Green</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-princess-pink" name="hair" data-file="hair/female/princess/pink.png" data-required="sex=female">
+                                        <label for="hair-princess-pink">Pink</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-princess-raven" name="hair" data-file="hair/female/princess/raven.png" data-required="sex=female">
+                                        <label for="hair-princess-raven">Raven</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-princess-red" name="hair" data-file="hair/female/princess/redhead.png" data-required="sex=female">
+                                        <label for="hair-princess-red">Redhead</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-princess-white" name="hair" data-file="hair/female/princess/white-blonde.png" data-required="sex=female">
+                                        <label for="hair-princess-white">White Blonde</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Swoop <small>(Female only)</small>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="hair-swoop-blonde" name="hair" data-file="hair/female/swoop/blonde.png" data-required="sex=female">
+                                        <label for="hair-swoop-blonde">Blonde</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-swoop-blue" name="hair" data-file="hair/female/swoop/blue.png" data-required="sex=female">
+                                        <label for="hair-swoop-blue">Blue</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-swoop-brunette" name="hair" data-file="hair/female/swoop/brunette.png" data-required="sex=female">
+                                        <label for="hair-swoop-brunette">Brunette</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-swoop-green" name="hair" data-file="hair/female/swoop/green.png" data-required="sex=female">
+                                        <label for="hair-swoop-green">Green</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-swoop-pink" name="hair" data-file="hair/female/swoop/pink.png" data-required="sex=female">
+                                        <label for="hair-swoop-pink">Pink</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-swoop-raven" name="hair" data-file="hair/female/swoop/raven.png" data-required="sex=female">
+                                        <label for="hair-swoop-raven">Raven</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-swoop-red" name="hair" data-file="hair/female/swoop/redhead.png" data-required="sex=female">
+                                        <label for="hair-swoop-red">Redhead</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-swoop-white" name="hair" data-file="hair/female/swoop/white-blonde.png" data-required="sex=female">
+                                        <label for="hair-swoop-white">White Blonde</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Unkempt <small>(Female only)</small>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="hair-unkempt-blonde" name="hair" data-file="hair/female/unkempt/blonde.png" data-required="sex=female">
+                                        <label for="hair-unkempt-blonde">Blonde</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-unkempt-blue" name="hair" data-file="hair/female/unkempt/blue.png" data-required="sex=female">
+                                        <label for="hair-unkempt-blue">Blue</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-unkempt-brunette" name="hair" data-file="hair/female/unkempt/brunette.png" data-required="sex=female">
+                                        <label for="hair-unkempt-brunette">Brunette</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-unkempt-green" name="hair" data-file="hair/female/unkempt/green.png" data-required="sex=female">
+                                        <label for="hair-unkempt-green">Green</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-unkempt-pink" name="hair" data-file="hair/female/unkempt/pink.png" data-required="sex=female">
+                                        <label for="hair-unkempt-pink">Pink</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-unkempt-raven" name="hair" data-file="hair/female/unkempt/raven.png" data-required="sex=female">
+                                        <label for="hair-unkempt-raven">Raven</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-unkempt-red" name="hair" data-file="hair/female/unkempt/redhead.png" data-required="sex=female">
+                                        <label for="hair-unkempt-red">Redhead</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="hair-unkempt-white" name="hair" data-file="hair/female/unkempt/white-blonde.png" data-required="sex=female">
+                                        <label for="hair-unkempt-white">White Blonde</label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Legs
+                        <ul>
+                            <li>
+                                <input type="radio" id="legs-none" name="legs" checked>
+                                <label for="legs-none">No Legs</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="legs-pants-green" name="legs" data-file_male="legs/green_pants_male.png" data-file_female="legs/green_pants_female.png">
+                                <label for="legs-pants-green">Green Pants</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="legs-pants-red" name="legs" data-required="sex=male" data-file="legs/red_pants_male.png">
+                                <label for="legs-pants-red">Red Pants <small>(Male only)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="legs-robe-skirt" name="legs" data-required="sex=male" data-file="legs/robe_skirt_male.png">
+                                <label for="legs-robe-skirt">Robe Skirt <small>(Male only)</small></label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Arms
+                        <ul>
+                            <li>
+                                <input type="radio" id="arms-none" name="arms" checked>
+                                <label for="arms-none">No Torso</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="arms-gold" name="arms" data-file_male="torso/gold/arms_male.png" data-file_female="torso/gold/arms_female.png">
+                                <label for="arms-gold">Gold Arms</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="arms-plate" name="arms" data-file_male="torso/plate/arms_male.png" data-file_female="torso/plate/arms_female.png">
+                                <label for="arms-plate">Plate Arms</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Shoulders
+                        <ul>
+                            <li>
+                                <input type="radio" id="shoulders-none" name="shoulders" checked>
+                                <label for="shoulders-none">No Shoulders</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="shoulders-leather" name="shoulders" data-file_male="torso/leather/shoulders_male.png" data-file_female="torso/leather/shoulders_female.png">
+                                <label for="shoulders-leather">Leather Shoulders</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Spikes
+                        <ul>
+                            <li>
+                                <input type="radio" id="spikes-none" name="spikes" checked>
+                                <label for="spikes-none">No Spikes</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="spikes-gold" name="spikes" data-required="sex=male" data-file="torso/gold/spikes_male.png">
+                                <label for="torso-gold-spikes">Gold Spikes <small>(Male only)</small></label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Bracers
+                        <ul>
+                            <li>
+                                <input type="radio" id="bracers-none" name="bracers" checked>
+                                <label for="bracers-none">No Bracers</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="bracers-leather" name="bracers" data-file_male="torso/leather/bracers_male.png" data-file_female="torso/leather/bracers_female.png">
+                                <label for="bracers-leather">Leather Bracers</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Greaves
+                        <ul>
+                            <li>
+                                <input type="radio" id="greaves-none" name="greaves" checked>
+                                <label for="greaves-none">No Greaves</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="greaves-golden" name="greaves" data-file_male="legs/golden_greaves_male.png" data-file_female="legs/golden_greaves_female.png">
+                                <label for="greaves-golden">Golden Greaves</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Gloves
+                        <ul>
+                            <li>
+                                <input type="radio" id="gloves-none" name="gloves" checked>
+                                <label for="gloves-none">No Gloves</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="gloves-metal" name="gloves" data-file_male="hands/metal_gloves_male.png" data-file_female="hands/metal_gloves_female.png">
+                                <label for="gloves-metal">Metal Gloves</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="gloves-golden" name="gloves" data-file_male="hands/golden_gloves_male.png" data-file_female="hands/golden_gloves_female.png">
+                                <label for="gloves-golden">Golden Gloves</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Hats
+                        <ul>
+                            <li>
+                                <input type="radio" id="hats-none" name="hats" checked>
+                                <label for="hats-none">No Hat</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="cap-leather" name="hats" data-file_male="head/leather_cap_male.png" data-file_female="head/leather_cap_female.png">
+                                <label for="cap-leather">Leather Cap</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="hat-chain" name="hats" data-file_male="head/chainhat_male.png" data-file_female="head/chainhat_female.png">
+                                <label for="hat-chain">Chain Hat</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="hood-cloth" name="hats" data-file_male="head/cloth_hood_male.png" data-file_female="head/cloth_hood_female.png">
+                                <label for="hood-cloth">Cloth Hood</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="hood-chain" name="hats" data-file_male="head/chain_hood_male.png" data-file_female="head/chain_hood_female.png">
+                                <label for="hood-chain">Chain Hood</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="helmet-metal" name="hats" data-file_male="head/metal_helm_male.png" data-file_female="head/metal_helm_female.png">
+                                <label for="helmet-metal">Metal Helmet</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="helmet-golden" name="hats" data-file_male="head/golden_helm_male.png" data-file_female="head/golden_helm_female.png">
+                                <label for="helmet-golden">Golden Helmet</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="tiara-bronze" name="hats" data-required="sex=female" data-file="head/tiaras_female_no_th_or_sh/bronze.png">
+                                <label for="tiara-bronze">Bronze Tiara <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="tiara-iron" name="hats" data-required="sex=female" data-file="head/tiaras_female_no_th_or_sh/iron.png">
+                                <label for="tiara-iron">Iron Tiara <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="tiara-silver" name="hats" data-required="sex=female" data-file="head/tiaras_female_no_th_or_sh/silver.png">
+                                <label for="tiara-silver">Silver Tiara <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="tiara-gold" name="hats" data-required="sex=female" data-file="head/tiaras_female_no_th_or_sh/gold.png">
+                                <label for="tiara-gold">Gold Tiara <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Shoes
+                        <ul>
+                            <li>
+                                <input type="radio" id="shoes-none" name="shoes" checked>
+                                <label for="shoes-none">No Shoes</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="shoes-black" name="shoes" data-file_male="feet/black_shoes_male.png" data-file_female="feet/black_shoes_female.png">
+                                <label for="shoes-black">Black Shoes</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="shoes-brown" name="shoes" data-file_male="feet/brown_shoes_male.png" data-file_female="feet/brown_shoes_female.png">
+                                <label for="shoes-brown">Brown Shoes</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="boots-metal" name="shoes" data-file_male="feet/metal_boots_male.png" data-file_female="feet/metal_boots_female.png">
+                                <label for="boots-metal">Metal Boots</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="boots-golden" name="shoes" data-file_male="feet/golden_boots_male.png" data-file_female="feet/golden_boots_female.png">
+                                <label for="boots-golden">Golden Boots</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="shoes-ghillies" name="shoes" data-required="sex=female" data-file="feet/ghillies_female_no_th-sh.png">
+                                <label for="shoes-ghillies">Ghillies <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="slippers-black" name="shoes" data-required="sex=female" data-file="feet/slippers_female/black.png">
+                                <label for="slippers-black">Black Slippers <small>(Female only)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="slippers-brown" name="shoes" data-required="sex=female" data-file="feet/slippers_female/brown.png">
+                                <label for="slippers-brown">Brown Slippers <small>(Female only)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="slippers-gray" name="shoes" data-required="sex=female" data-file="feet/slippers_female/gray.png">
+                                <label for="slippers-gray">Gray Slippers <small>(Female only)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="slippers-white" name="shoes" data-required="sex=female" data-file="feet/slippers_female/white.png">
+                                <label for="slippers-white">White Slippers <small>(Female only)</small></label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Belts
+                        <ul>
+                            <li>
+                                <input type="radio" id="belts-none" name="belt" checked>
+                                <label for="belts-none">No Belts</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="belt-leather" name="belt" data-file_male="belt/leather_male.png" data-file_female="belt/leather_female.png">
+                                <label for="belt-leather">Leather Belt</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="belt-rope" name="belt" data-file_male="belt/rope_male.png" data-file_female="belt/rope_female.png">
+                                <label for="belt-rope">Rope Belt</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="belt-black" name="belt" data-required="sex=female" data-file="belt/black_female_no_th-sh.png">
+                                <label for="belt-black">Black Belt <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="belt-brown" name="belt" data-required="sex=female" data-file="belt/brown_female_no_th-sh.png">
+                                <label for="belt-brown">Brown Belt <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="belt-bronze" name="belt" data-required="sex=female" data-file="belt/bronze_female_no_th-sh.png">
+                                <label for="belt-bronze">Bronze Belt <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="belt-iron" name="belt" data-required="sex=female" data-file="belt/iron_female_no_th-sh.png">
+                                <label for="belt-iron">Iron Belt <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="belt-silver" name="belt" data-required="sex=female" data-file="belt/silver_female_no_th-sh.png">
+                                <label for="belt-silver">Silver Belt <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="belt-gold" name="belt" data-required="sex=female" data-file="belt/gold_female_no_th-sh.png">
+                                <label for="belt-gold">Gold Belt <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Buckles
+                        <ul>
+                            <li>
+                                <input type="radio" id="buckle-none" name="buckle" checked>
+                                <label for="buckle-none">No Buckle</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="buckle-bronze" name="buckle" data-required="sex=female" data-file="belt/buckles_female_no_th-sh/bronze.png">
+                                <label for="buckle-bronze">Bronze Buckle <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="buckle-iron" name="buckle" data-required="sex=female" data-file="belt/buckles_female_no_th-sh/iron.png">
+                                <label for="buckle-iron">Iron Buckle <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="buckle-silver" name="buckle" data-required="sex=female" data-file="belt/buckles_female_no_th-sh/silver.png">
+                                <label for="buckle-silver">Silver Buckle <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="buckle-gold" name="buckle" data-required="sex=female" data-file="belt/buckles_female_no_th-sh/gold.png">
+                                <label for="buckle-gold">Gold Buckle <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Necklaces
+                        <ul>
+                            <li>
+                                <input type="radio" id="necklace-none" name="necklace" checked>
+                                <label for="necklace-none">No Necklace</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="necklace-bronze" name="necklace" data-required="sex=female" data-file="accessories/necklaces_female_ no_th-sh/bronze.png">
+                                <label for="necklace-bronze">Bronze Necklace <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="necklace-iron" name="necklace" data-required="sex=female" data-file="accessories/necklaces_female_ no_th-sh/iron.png">
+                                <label for="necklace-iron">Iron Necklace <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="necklace-silver" name="necklace" data-required="sex=female" data-file="accessories/necklaces_female_ no_th-sh/silver.png">
+                                <label for="necklace-silver">Silver Necklace <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="necklace-gold" name="necklace" data-required="sex=female" data-file="accessories/necklaces_female_ no_th-sh/gold.png">
+                                <label for="necklace-gold">Gold Necklace <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Bracelet
+                        <ul>
+                            <li>
+                                <input type="radio" id="bracelet-none" name="bracelet" checked>
+                                <label for="bracelet-none">No Bracelet</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="bracelet-on" name="bracelet" data-file_male="torso/leather/bracelet_male.png" data-file_female="torso/leather/bracelet_female.png">
+                                <label for="bracelet-on">Bracelet</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Weapon
+                        <ul>
+                            <li>
+                                <input type="radio" id="weapon-none" name="weapon" checked>
+                                <label for="weapon-none">No Weapon</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="weapon-bow" name="weapon" data-file="weapons/bow.png" data-prohibited="body=skeleton">
+                                <label for="weapon-bow">Bow</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="weapon-bow-skeleton" name="weapon" data-file="weapons/bow_skeleton.png" data-required="body=skeleton">
+                                <label for="weapon-bow-skeleton">Bow <small>(for Skeleton)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="weapon-dagger" name="weapon" data-file_male="weapons/dagger_male.png" data-file_female="weapons/dagger_female.png">
+                                <label for="weapon-dagger">Dagger</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="weapon-greatbow" name="weapon" data-file="weapons/greatbow.png">
+                                <label for="weapon-greatbow">Great Bow</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="weapon-recurvebow" name="weapon" data-file="weapons/recurvebow.png">
+                                <label for="weapon-recurvebow">Recurve Bow</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="weapon-spear" name="weapon" data-file="weapons/spear.png">
+                                <label for="weapon-spear">Spear</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="weapon-wand-wood" name="weapon" data-file_male="weapons/woodwand_male.png" data-file_female="weapons/woodwand_female.png">
+                                <label for="weapon-wand-wood">Wood Wand</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="weapon-wand-steel" name="weapon" data-file="weapons/steelwand_female.png" data-required="sex=female">
+                                <label for="weapon-wand-steel">Steel Wand <small>(Female Only)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="weapon-largespear" name="weapon" data-file="weapons/oversize/spear.png" data-oversize="1">
+                                <label for="weapon-largespear">Large Spear <small>(Oversize)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="weapon-dragonspear" name="weapon" data-file="weapons/oversize/dreagonspear.png" data-oversize="1">
+                                <label for="weapon-dragonspear">Dragon Spear <small>(Oversize)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="weapon-trident" name="weapon" data-file="weapons/oversize/trident.png" data-oversize="1">
+                                <label for="weapon-trident">Trident <small>(Oversize)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="weapon-longsword" name="weapon" data-file_male="weapons/oversize/longsword_male.png" data-file_female="weapons/oversize/longsword_female.png" data-oversize="2">
+                                <label for="weapon-longsword">Long Sword <small>(Oversize)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="weapon-mace" name="weapon" data-file_male="weapons/oversize/mace_male.png" data-file_female="weapons/oversize/mace_female.png" data-oversize="2">
+                                <label for="weapon-mace">Mace <small>(Oversize)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="weapon-rapier" name="weapon" data-file_male="weapons/oversize/rapier_male.png" data-file_female="weapons/oversize/rapier_female.png" data-oversize="2">
+                                <label for="weapon-rapier">Rapier <small>(Oversize)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="weapon-saber" name="weapon" data-file_male="weapons/oversize/saber_male.png" data-file_female="weapons/oversize/saber_female.png" data-oversize="2">
+                                <label for="weapon-saber">Saber <small>(Oversize)</small></label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Ammo
+                        <ul>
+                            <li>
+                                <input type="radio" id="ammo-none" name="ammo" checked>
+                                <label for="ammo-none">No Ammo</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="ammo-arrow" name="ammo" data-file="weapons/arrow.png" data-prohibited="body=skeleton">
+                                <label for="ammo-arrow">Arrow</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="ammo-arrow-skeleton" name="ammo" data-file="weapons/arrow_skeleton.png" data-required="body=skeleton">
+                                <label for="ammo-arrow-skeleton">Arrow <small>(for Skeleton)</small></label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Shield
+                        <ul>
+                            <li>
+                                <input type="radio" id="shield-none" name="shield" checked>
+                                <label for="shield-none">No Shield</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="shield-on" name="shield" data-file_no_hat="weapons/shield_male_cutoutforbody.png" data-file_hat="weapons/shield_male_cutoutforhat.png" data-required="sex=male">
+                                <label for="shield-on">Shield <small>(Male only)</small></label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Quiver
+                        <ul>
+                            <li>
+                                <input type="radio" id="quiver-none" name="quiver" checked>
+                                <label for="quiver-none">No Quiver</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="quiver-on" name="quiver" data-file="behind_body/quiver.png" data-behind="true">
+                                <label for="quiver-on">Quiver</label>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>
+                    <input type="button" id="collapse" value="Collapse All">
+                    <input type="reset" value="Reset">
+                </p>
+            </section>
+        </form>
         <section id="preview">
             <canvas width="832" height="1344">HTML5 Browser required.</canvas>
         </section>

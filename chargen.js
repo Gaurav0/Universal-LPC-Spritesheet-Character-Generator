@@ -52,6 +52,12 @@ $(document).ready(function() {
         $("#chooser>ul ul").hide('slow');
     });
     
+    // Redraw afer reset
+    $("input[type=reset]").click(function() {
+        // Sadly we need to use setTimeout
+        window.setTimeout(redraw, 0, false);
+    });
+    
     // Save canvas as PNG
     $("#saveAsPNG").click(function() {
         Canvas2Image.saveAsPNG(document.getElementsByTagName('canvas')[0]);
