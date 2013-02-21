@@ -89,24 +89,8 @@
                             <label for="torso-none">No Torso</label>
                         </li>
                         <li>
-                            <input type="radio" id="torso-tabard" name="torso" data-file_male="torso/chain/tabard/jacket_male.png" data-file_female="torso/chain/tabard/jacket_female.png">
-                            <label for="torso-tabard">Tabard</label>
-                        </li>
-                        <li>
                             <input type="radio" id="torso-chain-mail" name="torso" data-file_male="torso/chain/mail_male.png" data-file_female="torso/chain/mail_female.png">
                             <label for="torso-chain-mail">Chain Mail</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="torso-gold-chest" name="torso" data-file_male="torso/gold/chest_male.png" data-file_female="torso/gold/chest_female.png">
-                            <label for="torso-gold-chest">Gold Chest</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="torso-leather-chest" name="torso" data-file_male="torso/leather/chest_male.png" data-file_female="torso/leather/chest_female.png">
-                            <label for="torso-leather-chest">Leather Chest</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="torso-plate-chest" name="torso" data-file_male="torso/plate/chest_male.png" data-file_female="torso/plate/chest_female.png">
-                            <label for="torso-plate-chest">Plate Chest</label>
                         </li>
                         <li>
                             <input type="radio" id="torso-brown-shirt" name="torso" data-required="sex=male" data-file="torso/brown_shirt_male.png">
@@ -117,6 +101,24 @@
                             <label for="torso-white-shirt">White Shirt <small>(Male only)</small></label>
                         </li>
                         <li>
+                            <input type="radio" id="torso-formal" name="torso" data-required="sex=male">
+                            <label for="torso-formal">Formal Wear <small>(Male only)</small> <small>(No Thrust/Shoot)</small></label>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="formal-shirt" name="formal-shirt" data-required="torso=formal" data-file="formal_male_no_th-sh/shirt.png">
+                                    <label for="formal-shirt">Shirt</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="formal-pants" name="formal-pants" data-required="torso=formal" data-file="formal_male_no_th-sh/pants.png">
+                                    <label for="formal-pants">Pants</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="formal-vest" name="formal-vest" data-required="torso=formal" data-file="formal_male_no_th-sh/vest.png">
+                                    <label for="formal-vest">Vest</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
                             <input type="radio" id="torso-dress-sash" name="torso" data-required="sex=female" data-file="torso/dress_w_sash_female.png">
                             <label for="torso-dress-sash">Dress with Sash <small>(Female only)</small></label>
                         </li>
@@ -125,16 +127,22 @@
                             <label for="torso-pirate-shirt">Pirate Shirt <small>(Female only)</small></label>
                         </li>
                         <li>
-                            <input type="radio" id="torso-blue-vest" name="torso" data-required="sex=female" data-file="torso/dress_female/blue_vest.png">
-                            <label for="torso-blue-vest">Blue Vest <small>(Female only)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="torso-overskirt" name="torso" data-required="sex=female" data-file="torso/dress_female/overskirt.png">
-                            <label for="torso-overskirt">Overskirt <small>(Female only)</small></label>
-                        </li>
-                        <li>
-                            <input type="radio" id="torso-underdress" name="torso" data-required="sex=female" data-file="torso/dress_female/underdress.png">
-                            <label for="torso-underdress">Underdress <small>(Female only)</small></label>
+                            <input type="radio" id="torso-gown" name="torso" data-required="sex=female">
+                            <label for="torso-gown">Gown <small>(Female only)</small></label>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="gown-underdress" name="gown-underdress" data-required="torso=gown" data-file="torso/dress_female/underdress.png">
+                                    <label for="gown-underdress">Underdress</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="gown-overskirt" name="gown-overskirt" data-required="torso=gown" data-file="torso/dress_female/overskirt.png">
+                                    <label for="gown-overskirt">Overskirt</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="gown-blue-vest" name="gown-blue-vest" data-required="torso=gown" data-file="torso/dress_female/blue_vest.png">
+                                    <label for="gown-blue-vest">Blue Vest</label>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <input type="radio" id="torso-robe-black" name="torso" data-required="sex=female" data-file="torso/robes_female_no_th-sh/black.png">
@@ -177,6 +185,47 @@
                             <label for="torso-robe-white">White Robe <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
                         </li>
                     </ul>
+                </li>
+                <li>Armor
+                    <ul>
+                        <li>
+                            <input type="radio" id="armor-none" name="armor" checked>
+                            <label for="armor-none">No Armor</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="armor-tabard" name="armor" data-file_male="torso/chain/tabard/jacket_male.png" data-file_female="torso/chain/tabard/jacket_female.png">
+                            <label for="armor-tabard">Tabard</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="armor-gold-chest" name="armor" data-file_male="torso/gold/chest_male.png" data-file_female="torso/gold/chest_female.png">
+                            <label for="armor-gold-chest">Gold Chest</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="armor-leather-chest" name="armor" data-file_male="torso/leather/chest_male.png" data-file_female="torso/leather/chest_female.png">
+                            <label for="armor-leather-chest">Leather Chest</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="armor-plate-chest" name="armor" data-file_male="torso/plate/chest_male.png" data-file_female="torso/plate/chest_female.png">
+                            <label for="armor-plate-chest">Plate Chest</label>
+                        </li>
+                    </ul>
+                </li>
+                <li>Tie
+                    <ul>
+                        <li>
+                            <input type="radio" id="tie-none" name="tie" checked>
+                            <label for="tie-none">No Tie</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="tie-on" name="tie" data-required="sex=male" data-file="formal_male_no_th-sh/tie.png">
+                            <label for="tie-on">Tie <small>(Male only)</small> <small>(No Thrust/Shoot)</small></label>
+                        </li>
+                        <li>
+                            <input type="radio" id="tie-bow" name="tie" data-required="sex=male" data-file="formal_male_no_th-sh/bowtie.png">
+                            <label for="tie-bow">Bow Tie <small>(Male only)</small> <small>(No Thrust/Shoot)</small></label>
+                        </li>
+                    </ul>
+                </li>
                 </li>
                 <li>Hair
                     <ul>

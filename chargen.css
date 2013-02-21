@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -85,7 +87,12 @@ ul {
     font-size: 12pt;
     padding-left: 48px;
     text-indent: -18px;
-    
+}
+
+#chooser>ul>li>ul>li>ul>li {
+    font-size: 12pt;
+    padding-left: 64px;
+    text-indent: -18px;
 }
 
 #collapse {
