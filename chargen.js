@@ -147,19 +147,19 @@ $(document).ready(function() {
             
             // Draw shadows for plain or ponytail2 hairstyles appropriate to body color
             var id = $(this).attr("id");
-            var hsm_prefix = "hair-plain-";
-            var hsf_prefix = "hair-ponytail2-";
-            if (startsWith(id, hsm_prefix) ||
-                startsWith(id, hsf_prefix)) {
+            if (startsWith(id, "hair-")) {
+                var style = id.substring(5, id.indexOf("-", 5));
                 $("input[type=radio]:checked").filter(function() {
                     return $(this).attr("id").substr(0, 5) == "body-";
                 }).each(function() {
-                    if (isMale && $(this).data("hs_male")) {
-                        var img = getImage($(this).data("hs_male"))
+                    var hsMale = "hs_" + style + "_male";
+                    var hsFemale = "hs_" + style + "_female";
+                    if (isMale && $(this).data(hsMale)) {
+                        var img = getImage($(this).data(hsMale))
                         ctx.drawImage(img, 0, 0);
                     }
-                    if (isFemale && $(this).data("hs_female")) {
-                        var img = getImage($(this).data("hs_female"))
+                    if (isFemale && $(this).data(hsFemale)) {
+                        var img = getImage($(this).data(hsFemale))
                         ctx.drawImage(img, 0, 0);
                     }
                 });
