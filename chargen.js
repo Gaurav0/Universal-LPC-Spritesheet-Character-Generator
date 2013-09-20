@@ -1,11 +1,13 @@
-function startsWith(str, prefix) {
-    return str.indexOf(prefix) === 0;
-}
+_.mixin(_.str.exports());
 
 $(document).ready(function() {
 
-    // redraw when any radio button or checkbox is clicked on
+	// Get querystring paramters
+	var params = jHash.val();
+
+    // set params and redraw when any radio button or checkbox is clicked on
     $("input[type=radio], input[type=checkbox]").each(function() {
+		$(this).click(setParams);
         $(this).click(redraw);
     });
     
@@ -147,7 +149,7 @@ $(document).ready(function() {
             
             // Draw shadows for plain or ponytail2 hairstyles appropriate to body color
             var id = $(this).attr("id");
-            if (startsWith(id, "hair-")) {
+            if (_.startsWith(id, "hair-")) {
                 var style = id.substring(5, id.indexOf("-", 5));
                 $("input[type=radio]:checked").filter(function() {
                     return $(this).attr("id").substr(0, 5) == "body-";
@@ -228,6 +230,21 @@ $(document).ready(function() {
             }
         });
     }
+	
+	// Change checkboxes based on parameters
+	function interpretParams() {
+		$("input[type=radio], input[type=checkbox]").each(function() {
+			$(this).prop('checked', params[$(this).attr('id')] == "true");
+		});
+	}
+	
+	// Set parameters in response to click on any radio button or checkbox
+	function setParams() {
+		$("input[type=radio], input[type=checkbox]").each(function() {
+			params[$(this).attr('id')] = $(this).prop('checked');
+		});
+		jHash.val(params);
+	}
     
     // Cache images
     var images = {};
@@ -247,5 +264,6 @@ $(document).ready(function() {
     }
     
     // Draw now - on ready
+	interpretParams();
     redraw();
 });
