@@ -235,7 +235,7 @@ $(document).ready(function() {
     function interpretParams() {
         $("input[type=radio]").each(function() {
             var words = _.words($(this).attr('id'), '-');
-            var initial = _.join('-', _.initial(words));
+            var initial = _.initial(words).join('-');
             $(this).prop("checked", $(this).attr("checked") || params[initial] == _.last(words));
         });
         $("input[type=checkbox]").each(function() {
@@ -248,7 +248,7 @@ $(document).ready(function() {
         $("input[type=radio]:checked").each(function() {
             if (!$(this).attr("checked")) {
                 var words = _.words($(this).attr('id'), '-');
-                var initial = _.join('-', _.initial(words));
+                var initial = _.initial(words).join('-');
                 params[initial] = _.last(words);
             }
         });
