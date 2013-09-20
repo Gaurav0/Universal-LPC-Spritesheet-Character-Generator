@@ -236,7 +236,7 @@ $(document).ready(function() {
         $("input[type=radio]").each(function() {
             var words = _.words($(this).attr('id'), '-');
             var initial = _.join('-', _.initial(words));
-            $(this).prop("checked", params[initial] == _.last(words));
+            $(this).prop("checked", $(this).attr("checked") || params[initial] == _.last(words));
         });
         $("input[type=checkbox]").each(function() {
             $(this).prop("checked", _.toBool(params[$(this).attr('id')]));
@@ -246,12 +246,15 @@ $(document).ready(function() {
     // Set parameters in response to click on any radio button or checkbox
     function setParams() {
         $("input[type=radio]:checked").each(function() {
-            var words = _.words($(this).attr('id'), '-');
-            var initial = _.join('-', _.initial(words));
-            params[initial] = _.last(words);
+            if (!$(this).attr("checked")) {
+                var words = _.words($(this).attr('id'), '-');
+                var initial = _.join('-', _.initial(words));
+                params[initial] = _.last(words);
+            }
         });
         $("input[type=checkbox]").each(function() {
-            params[$(this).attr('id')] = $(this).prop("checked") ? 1 : 0;
+            if (_.toBool($(this).attr("checked")) != $(this).prop("checked"))
+                params[$(this).attr('id')] = $(this).prop("checked") ? 1 : 0;
         });
         jHash.val(params);
     }
