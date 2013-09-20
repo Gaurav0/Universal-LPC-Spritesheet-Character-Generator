@@ -253,14 +253,14 @@ $(document).ready(function() {
     // Set parameters in response to click on any radio button or checkbox
     function setParams() {
         $("input[type=radio]:checked").each(function() {
-            if (!$(this).attr("checked")) {
-                var words = _.words($(this).attr('id'), '-');
-                var initial = _.initial(words).join('-');
+            var words = _.words($(this).attr('id'), '-');
+            var initial = _.initial(words).join('-');
+            if (!$(this).attr("checked") || params[initial]) {
                 params[initial] = _.last(words);
             }
         });
         $("input[type=checkbox]").each(function() {
-            if (_.toBool($(this).attr("checked")) != $(this).prop("checked") || params[$(this).attr('id')] !== undefined)
+            if (_.toBool($(this).attr("checked")) != $(this).prop("checked"))
                 params[$(this).attr('id')] = $(this).prop("checked") ? 1 : 0;
         });
         jHash.val(params);
