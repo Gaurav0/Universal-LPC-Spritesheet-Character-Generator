@@ -265,5 +265,7 @@ $(document).ready(function() {
     
     // Draw now - on ready
 	interpretParams();
+	if (Object.keys(params).length == 0)
+		$("input[type=reset]").click();
     redraw();
 });
