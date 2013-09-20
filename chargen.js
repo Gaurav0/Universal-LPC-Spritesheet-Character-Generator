@@ -4,6 +4,13 @@ $(document).ready(function() {
 
     // Get querystring paramters
     var params = jHash.val();
+    
+    // on hash (url) change event, interpret and redraw
+    jHash.change(function() {
+        params = jHash.val();
+        interpretParams();
+        redraw();
+    });
 
     // set params and redraw when any radio button or checkbox is clicked on
     $("input[type=radio], input[type=checkbox]").each(function() {
