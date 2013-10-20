@@ -210,14 +210,20 @@ $(document).ready(function() {
         // Probably should try to prevent this
         $("input[type=radio], input[type=checkbox]").each(function(index) {
             if ($(this).data("required")) {
-                var requirement = $(this).data("required").replace("=", "-");
-                if ($("#" + requirement).prop("checked"))
-                    $(this).prop("disabled", false);
-                else {
-                    $(this).prop("disabled", true);
-                    if ($(this).prop("checked"))
-                        ctx.clearRect(0, 0, canvas.width, canvas.height);
-                }
+				var requirements = $(this).data("required").split(",");
+				var passed = true;
+				_.each(requirements, function(req) {
+					var requirement = req.replace("=", "-");
+					if (!$("#" + requirement).prop("checked"))
+						passed = false;
+				});
+				if (passed)
+					$(this).prop("disabled", false);
+				else {
+					$(this).prop("disabled", true);
+					if ($(this).prop("checked"))
+						ctx.clearRect(0, 0, canvas.width, canvas.height);
+				}
             }
             if ($(this).data("prohibited")) {
                 var requirement = $(this).data("prohibited").replace("=", "-");

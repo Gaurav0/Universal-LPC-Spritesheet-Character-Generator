@@ -94,6 +94,18 @@
                             </li>
                         </ul>
                     </li>
+					<li>Ears
+						<ul>
+                            <li>
+                                <input type="radio" id="ears-none" name="ears" checked>
+                                <label for="ears-none">No Ears</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="ears-elven" name="ears" data-required="sex=female,body=light" data-file="body/female/ears/elvenears_light.png">
+                                <label for="ears-elven">Elven Ears <small>(Female only) (Light Body Only)</small></label>
+                            </li>
+						</ul>
+					</li>
                     <li>Clothes
                         <ul>
                             <li>
@@ -1014,7 +1026,11 @@
                                 <label for="bracers-none">No Bracers</label>
                             </li>
                             <li>
-                                <input type="radio" id="bracers-leather" name="bracers" data-file_male="torso/leather/bracers_male.png" data-file_female="torso/leather/bracers_female.png">
+                                <input type="radio" id="bracers-leather" name="bracers" data-required="sex=female" data-file="hands/bracers/female/cloth_bracers_female.png">
+                                <label for="bracers-leather">Cloth Bracers <small>(Female only)</small></label>
+                            </li>
+                            <li>
+                                <input type="radio" id="bracers-leather" name="bracers" data-file_male="hands/bracers/male/leather_bracers_male.png" data-file_female="hands/bracers/female/leather_bracers_female.png">
                                 <label for="bracers-leather">Leather Bracers</label>
                             </li>
                         </ul>
@@ -1102,19 +1118,23 @@
                                 <label for="shoes-none">No Shoes</label>
                             </li>
                             <li>
-                                <input type="radio" id="shoes-black" name="shoes" data-file_male="feet/black_shoes_male.png" data-file_female="feet/black_shoes_female.png">
+                                <input type="radio" id="shoes-black" name="shoes" data-file_male="feet/shoes/male/black_shoes_male.png" data-file_female="feet/shoes/female/black_shoes_female.png">
                                 <label for="shoes-black">Black Shoes</label>
                             </li>
                             <li>
-                                <input type="radio" id="shoes-brown" name="shoes" data-file_male="feet/brown_shoes_male.png" data-file_female="feet/brown_shoes_female.png">
+                                <input type="radio" id="shoes-brown" name="shoes" data-file_male="feet/shoes/male/brown_shoes_male.png" data-file_female="feet/shoes/female/brown_shoes_female.png">
                                 <label for="shoes-brown">Brown Shoes</label>
                             </li>
                             <li>
-                                <input type="radio" id="boots-metal" name="shoes" data-file_male="feet/metal_boots_male.png" data-file_female="feet/metal_boots_female.png">
+                                <input type="radio" id="shoes-maroon" name="shoes" data-file_male="feet/shoes/male/maroon_shoes_male.png" data-file_female="feet/shoes/female/maroon_shoes_female.png">
+                                <label for="shoes-maroon">Maroon Shoes</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="boots-metal" name="shoes" data-file_male="feet/armor/male/metal_boots_male.png" data-file_female="feet/armor/female/metal_boots_female.png">
                                 <label for="boots-metal">Metal Boots</label>
                             </li>
                             <li>
-                                <input type="radio" id="boots-golden" name="shoes" data-file_male="feet/golden_boots_male.png" data-file_female="feet/golden_boots_female.png">
+                                <input type="radio" id="boots-golden" name="shoes" data-file_male="feet/armor/male/golden_boots_male.png" data-file_female="feet/armor/female/golden_boots_female.png">
                                 <label for="boots-golden">Golden Boots</label>
                             </li>
                             <li>
@@ -1146,35 +1166,35 @@
                                 <label for="belts-none">No Belts</label>
                             </li>
                             <li>
-                                <input type="radio" id="belt-leather" name="belt" data-file_male="belt/leather_male.png" data-file_female="belt/leather_female.png">
+                                <input type="radio" id="belt-leather" name="belt" data-file_male="belt/belt/male/leather_male.png" data-file_female="belt/belt/female/leather_female.png">
                                 <label for="belt-leather">Leather Belt</label>
                             </li>
                             <li>
-                                <input type="radio" id="belt-rope" name="belt" data-file_male="belt/rope_male.png" data-file_female="belt/rope_female.png">
-                                <label for="belt-rope">Rope Belt</label>
+                                <input type="radio" id="belt-sash-white" name="belt" data-file_male="belt/sash/male/white_sash_male.png" data-file_female="belt/sash/female/white_sash_female.png">
+                                <label for="belt-sash-white">White Sash Belt</label>
                             </li>
                             <li>
-                                <input type="radio" id="belt-black" name="belt" data-required="sex=female" data-file="belt/black_female_no_th-sh.png">
+                                <input type="radio" id="belt-black" name="belt" data-required="sex=female" data-file="belt/belt/female/black_female_no_th-sh.png">
                                 <label for="belt-black">Black Belt <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
                             </li>
                             <li>
-                                <input type="radio" id="belt-brown" name="belt" data-required="sex=female" data-file="belt/brown_female_no_th-sh.png">
+                                <input type="radio" id="belt-brown" name="belt" data-required="sex=female" data-file="belt/belt/female/brown_female_no_th-sh.png">
                                 <label for="belt-brown">Brown Belt <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
                             </li>
                             <li>
-                                <input type="radio" id="belt-bronze" name="belt" data-required="sex=female" data-file="belt/bronze_female_no_th-sh.png">
+                                <input type="radio" id="belt-bronze" name="belt" data-required="sex=female" data-file="belt/belt/female/bronze_female_no_th-sh.png">
                                 <label for="belt-bronze">Bronze Belt <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
                             </li>
                             <li>
-                                <input type="radio" id="belt-iron" name="belt" data-required="sex=female" data-file="belt/iron_female_no_th-sh.png">
+                                <input type="radio" id="belt-iron" name="belt" data-required="sex=female" data-file="belt/belt/female/iron_female_no_th-sh.png">
                                 <label for="belt-iron">Iron Belt <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
                             </li>
                             <li>
-                                <input type="radio" id="belt-silver" name="belt" data-required="sex=female" data-file="belt/silver_female_no_th-sh.png">
+                                <input type="radio" id="belt-silver" name="belt" data-required="sex=female" data-file="belt/belt/female/silver_female_no_th-sh.png">
                                 <label for="belt-silver">Silver Belt <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
                             </li>
                             <li>
-                                <input type="radio" id="belt-gold" name="belt" data-required="sex=female" data-file="belt/gold_female_no_th-sh.png">
+                                <input type="radio" id="belt-gold" name="belt" data-required="sex=female" data-file="belt/belt/female/gold_female_no_th-sh.png">
                                 <label for="belt-gold">Gold Belt <small>(Female only)</small> <small>(No Thrust/Shoot)</small></label>
                             </li>
                         </ul>
@@ -1234,7 +1254,7 @@
                                 <label for="bracelet-none">No Bracelet</label>
                             </li>
                             <li>
-                                <input type="radio" id="bracelet-on" name="bracelet" data-file_male="torso/leather/bracelet_male.png" data-file_female="torso/leather/bracelet_female.png">
+                                <input type="radio" id="bracelet-on" name="bracelet" data-file="hands/bracelets/bracelet.png">
                                 <label for="bracelet-on">Bracelet</label>
                             </li>
                         </ul>
