@@ -2,12 +2,19 @@ _.mixin(_.str.exports());
 
 $(document).ready(function() {
 
-	// Get querystring paramters
-	var params = jHash.val();
+    // Get querystring paramters
+    var params = jHash.val();
+    
+    // on hash (url) change event, interpret and redraw
+    jHash.change(function() {
+        params = jHash.val();
+        interpretParams();
+        redraw();
+    });
 
     // set params and redraw when any radio button or checkbox is clicked on
     $("input[type=radio], input[type=checkbox]").each(function() {
-		$(this).click(setParams);
+        $(this).click(setParams);
         $(this).click(redraw);
     });
     
@@ -236,21 +243,34 @@ $(document).ready(function() {
             }
         });
     }
-	
-	// Change checkboxes based on parameters
-	function interpretParams() {
-		$("input[type=radio], input[type=checkbox]").each(function() {
-			$(this).prop('checked', params[$(this).attr('id')] == "true");
-		});
-	}
-	
-	// Set parameters in response to click on any radio button or checkbox
-	function setParams() {
-		$("input[type=radio], input[type=checkbox]").each(function() {
-			params[$(this).attr('id')] = $(this).prop('checked');
-		});
-		jHash.val(params);
-	}
+    
+    // Change checkboxes based on parameters
+    function interpretParams() {
+        $("input[type=radio]").each(function() {
+            var words = _.words($(this).attr('id'), '-');
+            var initial = _.initial(words).join('-');
+            $(this).prop("checked", $(this).attr("checked") || params[initial] == _.last(words));
+        });
+        $("input[type=checkbox]").each(function() {
+            $(this).prop("checked", _.toBool(params[$(this).attr('id')]));
+        });
+    }
+    
+    // Set parameters in response to click on any radio button or checkbox
+    function setParams() {
+        $("input[type=radio]:checked").each(function() {
+            var words = _.words($(this).attr('id'), '-');
+            var initial = _.initial(words).join('-');
+            if (!$(this).attr("checked") || params[initial]) {
+                params[initial] = _.last(words);
+            }
+        });
+        $("input[type=checkbox]").each(function() {
+            if (_.toBool($(this).attr("checked")) != $(this).prop("checked"))
+                params[$(this).attr('id')] = $(this).prop("checked") ? 1 : 0;
+        });
+        jHash.val(params);
+    }
     
     // Cache images
     var images = {};
@@ -270,8 +290,10 @@ $(document).ready(function() {
     }
     
     // Draw now - on ready
-	interpretParams();
-	if (Object.keys(params).length == 0)
-		$("input[type=reset]").click();
+    interpretParams();
+    if (Object.keys(params).length == 0) {
+        $("input[type=reset]").click();
+        setParams();
+    }
     redraw();
 });
