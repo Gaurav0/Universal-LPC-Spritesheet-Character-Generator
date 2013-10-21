@@ -266,7 +266,9 @@ $(document).ready(function() {
             }
         });
         $("input[type=checkbox]").each(function() {
-            params[$(this).attr('id')] = $(this).prop("checked") ? 1 : 0;
+            if (_.toBool($(this).attr("checked")) != $(this).prop("checked") ||
+					_.toBool(params[$(this).attr('id')]) != $(this).prop("checked"))
+				params[$(this).attr('id')] = $(this).prop("checked") ? 1 : 0;
         });
         jHash.val(params);
     }
