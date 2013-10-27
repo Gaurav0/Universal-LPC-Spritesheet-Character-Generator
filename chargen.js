@@ -116,6 +116,9 @@ $(document).ready(function() {
         $("input[type=radio]:checked, input[type=checkbox]:checked").filter(function() {
             return !$(this).data("oversize");
         }).each(function(index) {
+		
+			// save this in closure
+			var $this = $(this);
         
             // Determine if male or female selected
             var isMale = $("#sex-male").prop("checked");
@@ -152,6 +155,25 @@ $(document).ready(function() {
             if (isFemale && $(this).data("file_female")) {
                 var img = getImage($(this).data("file_female"));
                 ctx.drawImage(img, 0, 0);
+            }
+            
+            // if data-file_male_light... and data-file_female_light... is specified
+			var bodytypes = ["light", "dark", "dark2", "tanned", "tanned2"];
+            if (isMale) {
+				_.each(bodytypes, function(bodytype) {
+					if ($("#body-" + bodytype).prop("checked") && $this.data("file_male_" + bodytype)) {
+						var img = getImage($this.data("file_male_" + bodytype));
+						ctx.drawImage(img, 0, 0);
+					}
+				});
+            }
+            if (isFemale) {
+				_.each(bodytypes, function(bodytype) {
+					if ($("#body-" + bodytype).prop("checked") && $this.data("file_female_" + bodytype)) {
+						var img = getImage($this.data("file_female_" + bodytype));
+						ctx.drawImage(img, 0, 0);
+					}
+				});
             }
             
             // Draw shadows for plain or ponytail2 hairstyles appropriate to body color
@@ -233,13 +255,20 @@ $(document).ready(function() {
 				}
             }
             if ($(this).data("prohibited")) {
-                var requirement = $(this).data("prohibited").replace("=", "-");
-                if ($("#" + requirement).prop("checked")) {
+				var requirements = $(this).data("prohibited").split(",");
+				var passed = true;
+				_.each(requirements, function(req) {
+					var requirement = req.replace("=", "-");
+					if ($("#" + requirement).prop("checked"))
+						passed = false;
+				});
+                if (passed)
+                    $(this).prop("disabled", false);
+                else {
                     $(this).prop("disabled", true);
                     if ($(this).prop("checked"))
                         ctx.clearRect(0, 0, canvas.width, canvas.height);
-                } else
-                    $(this).prop("disabled", false);
+				}
             }
         });
     }
