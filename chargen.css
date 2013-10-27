@@ -70,6 +70,16 @@ ul {
     font-size: 16pt;
 }
 
+#chooser>ul>li>.condensed:after, #chooser>ul>li>ul>li>.condensed:after {
+	padding-left: 10px;
+	content: url('images/arrow_right.png');
+}
+
+#chooser>ul>li>.expanded:after, #chooser>ul>li>ul>li>.expanded:after {
+	padding-left: 10px;
+	content: url('images/arrow_down.png');
+}
+
 #chooser>ul>li>ul>li>ul {
     display: none;
 }

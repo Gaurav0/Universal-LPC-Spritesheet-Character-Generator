@@ -42,6 +42,7 @@ $(document).ready(function() {
     // Again, do not multiple toggle when clicking on children
     $("#chooser>ul>li>ul>li").click(function(event) {
         if (!($(event.target).get(0).tagName == "LABEL")) {
+			$(this).children("span").toggleClass("condensed").toggleClass("expanded");
             var $ul = $(this).children("ul");
             $ul.toggle('slow');
         }
@@ -51,6 +52,7 @@ $(document).ready(function() {
     // Toggle display of a list elements children when clicked
     // Again, do not multiple toggle when clicking on children
     $("#chooser>ul>li").click(function(event) {
+		$(this).children("span").toggleClass("condensed").toggleClass("expanded");
         var $ul = $(this).children("ul");
         $ul.toggle('slow');
         event.stopPropagation();
