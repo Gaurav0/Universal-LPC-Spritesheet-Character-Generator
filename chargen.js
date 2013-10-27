@@ -136,6 +136,14 @@ $(document).ready(function() {
                 } else
                     ctx.drawImage(img, 0, 0);
             }
+			
+			// if data-file_behind specified
+			if ($(this).data("file_behind")) {
+                var img = getImage($(this).data("file_behind"));
+				ctx.globalCompositeOperation = "destination-over";
+				ctx.drawImage(img, 0, 0);
+				ctx.globalCompositeOperation = "source-over";
+			}
             
             // Deal with shield/chain hat overlap issue
             if ($(this).data("file_hat") && $("#hat_chain").prop("checked")) {
