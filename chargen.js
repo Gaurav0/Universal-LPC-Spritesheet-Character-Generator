@@ -61,12 +61,17 @@ $(document).ready(function() {
     // When clicking on collapse all link, collapse all uls in #chooser
     $("#collapse").click(function() {
         $("#chooser>ul ul").hide('slow');
+		$("#chooser span.expanded").removeClass("expanded").addClass("condensed");
     });
     
     // Redraw afer reset
     $("input[type=reset]").click(function() {
         // Sadly we need to use setTimeout
-        window.setTimeout(redraw, 0, false);
+        window.setTimeout(function() {
+			params = {};
+			jHash.val(params);
+			redraw();
+		}, 0, false);
     });
     
     // Save canvas as PNG
