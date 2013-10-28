@@ -14,21 +14,32 @@ $(document).ready(function() {
 
     // set params and redraw when any radio button or checkbox is clicked on
     $("input[type=radio], input[type=checkbox]").each(function() {
-        $(this).click(setParams);
-        $(this).click(redraw);
+        $(this).click(function() {
+			setParams();
+			redraw();
+		});
     });
     
     // When radio button is unchecked, its children should be too. 
     $("input[type=radio]").each(function() {
         $(this).change(function() {
             var name = $(this).attr("name");
-            $("input[name=" + name + "]").each(function() {
-                if (!($(this).prop("checked"))) {
-                    $(this).parent().children("ul").find("input[type=checkbox]").each(function() {
-                        $(this).prop("checked", false);
-                    });
-                }
-            });
+			// Sadly we need to use setTimeout
+			window.setTimeout(function() {
+				$("li>span>input[name=" + name + "]").each(function() {
+					if (!($(this).prop("checked"))) {
+						var $this = $(this).parent();
+						$this.removeClass("expanded").addClass("condensed");
+						$this = $this.parent();
+						var $ul = $this.children("ul");
+						$ul.hide('slow');
+						$ul.find("input[type=checkbox]").each(function() {
+							$(this).prop("checked", false);
+						});
+					}
+				});
+				redraw();
+			}, 0);
         });
     });
     
@@ -61,7 +72,7 @@ $(document).ready(function() {
     // When clicking on collapse all link, collapse all uls in #chooser
     $("#collapse").click(function() {
         $("#chooser>ul ul").hide('slow');
-		$("#chooser span.expanded").removeClass("expanded").addClass("condensed");
+		$("#chooser>ul span.expanded").removeClass("expanded").addClass("condensed");
     });
     
     // Redraw afer reset
