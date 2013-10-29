@@ -89,8 +89,8 @@
                                 <label for="eyes-green">Green</label>
                             </li>
                             <li>
-                                <input type="radio" id="eyes-purple" name="eyes" data-required="sex=female" data-file="body/female/eyes/purple.png">
-                                <label for="eyes-purple">Purple <small>(Female only)</small></label>
+                                <input type="radio" id="eyes-purple" name="eyes" data-file_female="body/female/eyes/purple.png" data-file_male="body/male/eyes/purple.png">
+                                <label for="eyes-purple">Purple</label>
                             </li>
                             <li>
                                 <input type="radio" id="eyes-red" name="eyes" data-file_female="body/female/eyes/red.png" data-file_male="body/male/eyes/red.png">
@@ -105,8 +105,8 @@
                                 <label for="ears-none">No Ears</label>
                             </li>
                             <li>
-                                <input type="radio" id="ears-elven" name="ears" data-required="sex=female" data-prohibited="body=orc,body=skeleton" data-file_female_light="body/female/ears/elvenears_light.png" data-file_female_dark="body/female/ears/elvenears_dark.png" data-file_female_dark2="body/female/ears/elvenears_dark2.png" data-file_female_tanned="body/female/ears/elvenears_tanned.png" data-file_female_tanned2="body/female/ears/elvenears_tanned2.png">
-                                <label for="ears-elven">Elven Ears <small>(Female only)</small></label>
+                                <input type="radio" id="ears-elven" name="ears" data-prohibited="body=orc,body=skeleton" data-file_male_light="body/male/ears/elvenears_light.png" data-file_female_light="body/female/ears/elvenears_light.png" data-file_male_dark="body/male/ears/elvenears_dark.png" data-file_female_dark="body/female/ears/elvenears_dark.png" data-file_male_dark2="body/male/ears/elvenears_dark2.png" data-file_female_dark2="body/female/ears/elvenears_dark2.png" data-file_male_tanned="body/male/ears/elvenears_tanned.png" data-file_female_tanned="body/female/ears/elvenears_tanned.png" data-file_male_tanned2="body/male/ears/elvenears_tanned2.png" data-file_female_tanned2="body/female/ears/elvenears_tanned2.png">
+                                <label for="ears-elven">Elven Ears</label>
                             </li>
 						</ul>
 					</li>
@@ -1526,7 +1526,7 @@
                                 <label for="weapon-recurvebow">Recurve Bow</label>
                             </li>
                             <li>
-                                <input type="radio" id="weapon-spear" name="weapon" data-file="weapons/both hand/spear.png">
+                                <input type="radio" id="weapon-spear" name="weapon" data-file_male="weapons/right hand/male/spear_male.png" data-file_female="weapons/right hand/female/spear_female.png">
                                 <label for="weapon-spear">Spear</label>
                             </li>
                             <li>
