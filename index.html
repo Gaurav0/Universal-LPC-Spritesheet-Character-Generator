@@ -8,7 +8,7 @@
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.string/2.3.3/underscore.string.min.js"></script>
-		<script type="text/javascript" src="jhash-2.1.min.js"></script>
+        <script type="text/javascript" src="jhash-2.1.min.js"></script>
         <script type="text/javascript" src="canvas2image.js"></script>
         <script type="text/javascript" src="base64.js"></script>
         <script type="text/javascript" src="chargen.js"></script>
@@ -98,8 +98,8 @@
                             </li>
                         </ul>
                     </li>
-					<li><span class="condensed">Ears</span>
-						<ul>
+                    <li><span class="condensed">Ears</span>
+                        <ul>
                             <li>
                                 <input type="radio" id="ears-none" name="ears" checked>
                                 <label for="ears-none">No Ears</label>
@@ -108,8 +108,8 @@
                                 <input type="radio" id="ears-elven" name="ears" data-prohibited="body=orc,body=red_orc,body=skeleton" data-file_male_light="body/male/ears/elvenears_light.png" data-file_female_light="body/female/ears/elvenears_light.png" data-file_male_dark="body/male/ears/elvenears_dark.png" data-file_female_dark="body/female/ears/elvenears_dark.png" data-file_male_dark2="body/male/ears/elvenears_dark2.png" data-file_female_dark2="body/female/ears/elvenears_dark2.png" data-file_male_tanned="body/male/ears/elvenears_tanned.png" data-file_female_tanned="body/female/ears/elvenears_tanned.png" data-file_male_tanned2="body/male/ears/elvenears_tanned2.png" data-file_female_tanned2="body/female/ears/elvenears_tanned2.png">
                                 <label for="ears-elven">Elven Ears</label>
                             </li>
-						</ul>
-					</li>
+                        </ul>
+                    </li>
                     <li><span class="condensed">Clothes</span>
                         <ul>
                             <li>
@@ -125,10 +125,10 @@
                                 <label for="clothes-shirt_white">White Shirt <small>(Male only)</small></label>
                             </li>
                             <li>
-								<span class="condensed">
-									<input type="radio" id="clothes-formal" name="clothes" data-required="sex=male">
-									<label for="clothes-formal">Formal Wear <small>(Male only)</small> <small>(No Thrust/Shoot)</small></label>
-								</span>
+                                <span class="condensed">
+                                    <input type="radio" id="clothes-formal" name="clothes" data-required="sex=male">
+                                    <label for="clothes-formal">Formal Wear <small>(Male only)</small> <small>(No Thrust/Shoot)</small></label>
+                                </span>
                                 <ul>
                                     <li>
                                         <input type="checkbox" id="formal-shirt" name="formal-shirt" data-required="clothes=formal" data-file="formal_male_no_th-sh/shirt.png">
@@ -177,10 +177,10 @@
                                 <label for="clothes-shirt_tunic_white">White Tunic <small>(Female only)</small></label>
                             </li>
                             <li>
-								<span class="condensed">
-									<input type="radio" id="clothes-gown" name="clothes" data-required="sex=female">
-									<label for="clothes-gown">Gown <small>(Female only)</small></label>
-								</span>
+                                <span class="condensed">
+                                    <input type="radio" id="clothes-gown" name="clothes" data-required="sex=female">
+                                    <label for="clothes-gown">Gown <small>(Female only)</small></label>
+                                </span>
                                 <ul>
                                     <li>
                                         <input type="checkbox" id="gown-underdress" name="gown-underdress" data-required="clothes=gown" data-file="torso/dress_female/underdress.png">
@@ -198,48 +198,48 @@
                             </li>
                             <li><span class="condensed">Robe <small>(Female only)</small> <small>(No Thrust/Shoot)</small></span>
                                 <ul>
-									<li>
-										<input type="radio" id="clothes-robe_black" name="clothes" data-required="sex=female" data-file="torso/robes_female_no_th-sh/black.png">
-										<label for="clothes-robe_black">Black</label>
-									</li>
-									<li>
-										<input type="radio" id="clothes-robe_blue" name="clothes" data-required="sex=female" data-file="torso/robes_female_no_th-sh/blue.png">
-										<label for="clothes-robe_blue">Blue</label>
-									</li>
-									<li>
-										<input type="radio" id="clothes-robe_brown" name="clothes" data-required="sex=female" data-file="torso/robes_female_no_th-sh/brown.png">
-										<label for="clothes-robe_brown">Brown</label>
-									</li>
-									<li>
-										<input type="radio" id="clothes-robe_dark_brown" name="clothes" data-required="sex=female" data-file="torso/robes_female_no_th-sh/dark brown.png">
-										<label for="clothes-robe_dark_brown">Dark Brown</label>
-									</li>
-									<li>
-										<input type="radio" id="clothes-robe_dark_gray" name="clothes" data-required="sex=female" data-file="torso/robes_female_no_th-sh/dark gray.png">
-										<label for="clothes-robe_dark_gray">Dark Gray</label>
-									</li>
-									<li>
-										<input type="radio" id="clothes-robe_light_gray" name="clothes" data-required="sex=female" data-file="torso/robes_female_no_th-sh/light gray.png">
-										<label for="clothes-robe_light_gray">Light Gray</label>
-									</li>
-									<li>
-										<input type="radio" id="clothes-robe_forest_green" name="clothes" data-required="sex=female" data-file="torso/robes_female_no_th-sh/forest green.png">
-										<label for="clothes-robe_forest_green">Forest Green</label>
-									</li>
-									<li>
-										<input type="radio" id="clothes-robe_purple" name="clothes" data-required="sex=female" data-file="torso/robes_female_no_th-sh/purple.png">
-										<label for="clothes-robe_purple">Purple</label>
-									</li>
-									<li>
-										<input type="radio" id="clothes-robe_red" name="clothes" data-required="sex=female" data-file="torso/robes_female_no_th-sh/red.png">
-										<label for="clothes-robe_red">Red</label>
-									</li>
-									<li>
-										<input type="radio" id="clothes-robe_white" name="clothes" data-required="sex=female" data-file="torso/robes_female_no_th-sh/white.png">
-										<label for="clothes-robe_white">White</label>
-									</li>
-								</ul>
-							</li>
+                                    <li>
+                                        <input type="radio" id="clothes-robe_black" name="clothes" data-required="sex=female" data-file="torso/robes_female_no_th-sh/black.png">
+                                        <label for="clothes-robe_black">Black</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="clothes-robe_blue" name="clothes" data-required="sex=female" data-file="torso/robes_female_no_th-sh/blue.png">
+                                        <label for="clothes-robe_blue">Blue</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="clothes-robe_brown" name="clothes" data-required="sex=female" data-file="torso/robes_female_no_th-sh/brown.png">
+                                        <label for="clothes-robe_brown">Brown</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="clothes-robe_dark_brown" name="clothes" data-required="sex=female" data-file="torso/robes_female_no_th-sh/dark brown.png">
+                                        <label for="clothes-robe_dark_brown">Dark Brown</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="clothes-robe_dark_gray" name="clothes" data-required="sex=female" data-file="torso/robes_female_no_th-sh/dark gray.png">
+                                        <label for="clothes-robe_dark_gray">Dark Gray</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="clothes-robe_light_gray" name="clothes" data-required="sex=female" data-file="torso/robes_female_no_th-sh/light gray.png">
+                                        <label for="clothes-robe_light_gray">Light Gray</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="clothes-robe_forest_green" name="clothes" data-required="sex=female" data-file="torso/robes_female_no_th-sh/forest green.png">
+                                        <label for="clothes-robe_forest_green">Forest Green</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="clothes-robe_purple" name="clothes" data-required="sex=female" data-file="torso/robes_female_no_th-sh/purple.png">
+                                        <label for="clothes-robe_purple">Purple</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="clothes-robe_red" name="clothes" data-required="sex=female" data-file="torso/robes_female_no_th-sh/red.png">
+                                        <label for="clothes-robe_red">Red</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="clothes-robe_white" name="clothes" data-required="sex=female" data-file="torso/robes_female_no_th-sh/white.png">
+                                        <label for="clothes-robe_white">White</label>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                     <li><span class="condensed">Mail</span>
@@ -2290,93 +2290,93 @@
                                 <label for="cape-none">No Cape</label>
                             </li>
                             <li><span class="condensed">Solid Cape <small>(Female only)</small></span>
-								<ul>
-									<li>
-										<input type="radio" id="cape_black" name="cape" data-required="sex=female" data-file="torso/back/cape/normal/female/cape_black.png" data-file_behind="behind_body/cape/normal/female/cape_black.png">
-										<label for="cape_black">Black</small></label>
-									</li>
-									<li>
-										<input type="radio" id="cape-blue" name="cape" data-required="sex=female" data-file="torso/back/cape/normal/female/cape_blue.png" data-file_behind="behind_body/cape/normal/female/cape_blue.png">
-										<label for="cape-blue">Blue</label>
-									</li>
-									<li>
-										<input type="radio" id="cape_brown" name="cape" data-required="sex=female" data-file="torso/back/cape/normal/female/cape_brown.png" data-file_behind="behind_body/cape/normal/female/cape_brown.png">
-										<label for="cape_brown">Brown</label>
-									</li>
-									<li>
-										<input type="radio" id="cape_gray" name="cape" data-required="sex=female" data-file="torso/back/cape/normal/female/cape_gray.png" data-file_behind="behind_body/cape/normal/female/cape_gray.png">
-										<label for="cape_gray">Gray</label>
-									</li>
-									<li>
-										<input type="radio" id="cape-green" name="cape" data-required="sex=female" data-file="torso/back/cape/normal/female/cape_green.png" data-file_behind="behind_body/cape/normal/female/cape_green.png">
-										<label for="cape-green">Green</label>
-									</li>
-									<li>
-										<input type="radio" id="cape-lavender" name="cape" data-required="sex=female" data-file="torso/back/cape/normal/female/cape_lavender.png" data-file_behind="behind_body/cape/normal/female/cape_lavender.png">
-										<label for="cape-lavender">Lavender</label>
-									</li>
-									<li>
-										<input type="radio" id="cape-maroon" name="cape" data-required="sex=female" data-file="torso/back/cape/normal/female/cape_maroon.png" data-file_behind="behind_body/cape/normal/female/cape_maroon.png">
-										<label for="cape-maroon">Maroon</label>
-									</li>
-									<li>
-										<input type="radio" id="cape-pink" name="cape" data-required="sex=female" data-file="torso/back/cape/normal/female/cape_pink.png" data-file_behind="behind_body/cape/normal/female/cape_pink.png">
-										<label for="cape-pink">Pink</label>
-									</li>
-									<li>
-										<input type="radio" id="cape-white" name="cape" data-required="sex=female" data-file="torso/back/cape/normal/female/cape_white.png" data-file_behind="behind_body/cape/normal/female/cape_white.png">
-										<label for="cape-white">White</label>
-									</li>
-									<li>
-										<input type="radio" id="cape-yellow" name="cape" data-required="sex=female" data-file="torso/back/cape/normal/female/cape_yellow.png" data-file_behind="behind_body/cape/normal/female/cape_yellow.png">
-										<label for="cape-yellow">Yellow</label>
-									</li>
-								</ul>
-							</li>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="cape_black" name="cape" data-required="sex=female" data-file="torso/back/cape/normal/female/cape_black.png" data-file_behind="behind_body/cape/normal/female/cape_black.png">
+                                        <label for="cape_black">Black</small></label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="cape-blue" name="cape" data-required="sex=female" data-file="torso/back/cape/normal/female/cape_blue.png" data-file_behind="behind_body/cape/normal/female/cape_blue.png">
+                                        <label for="cape-blue">Blue</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="cape_brown" name="cape" data-required="sex=female" data-file="torso/back/cape/normal/female/cape_brown.png" data-file_behind="behind_body/cape/normal/female/cape_brown.png">
+                                        <label for="cape_brown">Brown</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="cape_gray" name="cape" data-required="sex=female" data-file="torso/back/cape/normal/female/cape_gray.png" data-file_behind="behind_body/cape/normal/female/cape_gray.png">
+                                        <label for="cape_gray">Gray</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="cape-green" name="cape" data-required="sex=female" data-file="torso/back/cape/normal/female/cape_green.png" data-file_behind="behind_body/cape/normal/female/cape_green.png">
+                                        <label for="cape-green">Green</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="cape-lavender" name="cape" data-required="sex=female" data-file="torso/back/cape/normal/female/cape_lavender.png" data-file_behind="behind_body/cape/normal/female/cape_lavender.png">
+                                        <label for="cape-lavender">Lavender</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="cape-maroon" name="cape" data-required="sex=female" data-file="torso/back/cape/normal/female/cape_maroon.png" data-file_behind="behind_body/cape/normal/female/cape_maroon.png">
+                                        <label for="cape-maroon">Maroon</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="cape-pink" name="cape" data-required="sex=female" data-file="torso/back/cape/normal/female/cape_pink.png" data-file_behind="behind_body/cape/normal/female/cape_pink.png">
+                                        <label for="cape-pink">Pink</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="cape-white" name="cape" data-required="sex=female" data-file="torso/back/cape/normal/female/cape_white.png" data-file_behind="behind_body/cape/normal/female/cape_white.png">
+                                        <label for="cape-white">White</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="cape-yellow" name="cape" data-required="sex=female" data-file="torso/back/cape/normal/female/cape_yellow.png" data-file_behind="behind_body/cape/normal/female/cape_yellow.png">
+                                        <label for="cape-yellow">Yellow</label>
+                                    </li>
+                                </ul>
+                            </li>
                             <li>
                                 <input type="radio" id="cape-trimmed_white_blue" name="cape" data-required="sex=female" data-file="torso/back/cape/trimmed/female/trimcape_whiteblue.png" data-file_behind="behind_body/cape/normal/female/cape_white.png">
                                 <label for="cape-trimmed_white_blue">White Cape With Blue Trim <small>(Female only)</small></label>
                             </li>
                             <li><span class="condensed">Tattered Cape <small>(Female only)</small></span>
-								<ul>
-									<li>
-										<input type="radio" id="cape-tattered_black" name="cape" data-required="sex=female" data-file="torso/back/cape/tattered/female/tattercape_black.png" data-file_behind="behind_body/cape/tattered/female/tattercape_black.png">
-										<label for="cape-tattered_black">Black</label>
-											</li>
-									<li>
-										<input type="radio" id="cape-tattered_blue" name="cape" data-required="sex=female" data-file="torso/back/cape/tattered/female/tattercape_blue.png" data-file_behind="behind_body/cape/tattered/female/tattercape_blue.png">
-										<label for="cape-tattered_blue">Blue</label>
-									</li>
-									<li>
-										<input type="radio" id="cape-tattered_brown" name="cape" data-required="sex=female" data-file="torso/back/cape/tattered/female/tattercape_brown.png" data-file_behind="behind_body/cape/tattered/female/tattercape_brown.png">
-										<label for="cape-tattered_brown">Brown</label>
-									</li>
-									<li>
-										<input type="radio" id="cape-tattered_gray" name="cape" data-required="sex=female" data-file="torso/back/cape/tattered/female/tattercape_gray.png" data-file_behind="behind_body/cape/tattered/female/tattercape_gray.png">
-										<label for="cape-tattered_gray">Gray</label>
-									</li>
-									<li>
-										<input type="radio" id="cape-tattered_green" name="cape" data-required="sex=female" data-file="torso/back/cape/tattered/female/tattercape_green.png" data-file_behind="behind_body/cape/tattered/female/tattercape_green.png">
-										<label for="cape-tattered_green">Green</label>
-									</li>
-									<li>
-										<input type="radio" id="cape-tattered_maroon" name="cape" data-required="sex=female" data-file="torso/back/cape/tattered/female/tattercape_maroon.png" data-file_behind="behind_body/cape/tattered/female/tattercape_maroon.png">
-										<label for="cape-tattered_maroon">Maroon</label>
-									</li>
-									<li>
-										<input type="radio" id="cape-tattered_pink" name="cape" data-required="sex=female" data-file="torso/back/cape/tattered/female/tattercape_pink.png" data-file_behind="behind_body/cape/tattered/female/tattercape_pink.png">
-										<label for="cape-tattered_pink">Pink</label>
-									</li>
-									<li>
-										<input type="radio" id="cape-tattered_white" name="cape" data-required="sex=female" data-file="torso/back/cape/tattered/female/tattercape_white.png" data-file_behind="behind_body/cape/tattered/female/tattercape_white.png">
-										<label for="cape-tattered_white">White</label>
-									</li>
-									<li>
-										<input type="radio" id="cape-tattered_yellow" name="cape" data-required="sex=female" data-file="torso/back/cape/tattered/female/tattercape_yellow.png" data-file_behind="behind_body/cape/tattered/female/tattercape_yellow.png">
-										<label for="cape-tattered_yellow">Yellow</label>
-									</li>
-								</ul>
-							</li>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="cape-tattered_black" name="cape" data-required="sex=female" data-file="torso/back/cape/tattered/female/tattercape_black.png" data-file_behind="behind_body/cape/tattered/female/tattercape_black.png">
+                                        <label for="cape-tattered_black">Black</label>
+                                            </li>
+                                    <li>
+                                        <input type="radio" id="cape-tattered_blue" name="cape" data-required="sex=female" data-file="torso/back/cape/tattered/female/tattercape_blue.png" data-file_behind="behind_body/cape/tattered/female/tattercape_blue.png">
+                                        <label for="cape-tattered_blue">Blue</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="cape-tattered_brown" name="cape" data-required="sex=female" data-file="torso/back/cape/tattered/female/tattercape_brown.png" data-file_behind="behind_body/cape/tattered/female/tattercape_brown.png">
+                                        <label for="cape-tattered_brown">Brown</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="cape-tattered_gray" name="cape" data-required="sex=female" data-file="torso/back/cape/tattered/female/tattercape_gray.png" data-file_behind="behind_body/cape/tattered/female/tattercape_gray.png">
+                                        <label for="cape-tattered_gray">Gray</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="cape-tattered_green" name="cape" data-required="sex=female" data-file="torso/back/cape/tattered/female/tattercape_green.png" data-file_behind="behind_body/cape/tattered/female/tattercape_green.png">
+                                        <label for="cape-tattered_green">Green</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="cape-tattered_maroon" name="cape" data-required="sex=female" data-file="torso/back/cape/tattered/female/tattercape_maroon.png" data-file_behind="behind_body/cape/tattered/female/tattercape_maroon.png">
+                                        <label for="cape-tattered_maroon">Maroon</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="cape-tattered_pink" name="cape" data-required="sex=female" data-file="torso/back/cape/tattered/female/tattercape_pink.png" data-file_behind="behind_body/cape/tattered/female/tattercape_pink.png">
+                                        <label for="cape-tattered_pink">Pink</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="cape-tattered_white" name="cape" data-required="sex=female" data-file="torso/back/cape/tattered/female/tattercape_white.png" data-file_behind="behind_body/cape/tattered/female/tattercape_white.png">
+                                        <label for="cape-tattered_white">White</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="cape-tattered_yellow" name="cape" data-required="sex=female" data-file="torso/back/cape/tattered/female/tattercape_yellow.png" data-file_behind="behind_body/cape/tattered/female/tattercape_yellow.png">
+                                        <label for="cape-tattered_yellow">Yellow</label>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                     <li><span class="condensed">Cape Clip / Tie</span>
@@ -2386,95 +2386,95 @@
                                 <label for="capeacc-none">No Cape Clip / Tie</label>
                             </li>
                             <li><span class="condensed">Cape Clip <small>(Female only)</small></span>
-								<ul>
-									<li>
-										<input type="radio" id="capeacc-clip_black" name="capeacc" data-required="sex=female" data-file="accessories/neck/capeclip/female/capeclip_black.png">
-										<label for="capeacc-clip_black">Black</label>
-									</li>
-									<li>
-										<input type="radio" id="capeacc-clip_blue" name="capeacc" data-required="sex=female" data-file="accessories/neck/capeclip/female/capeclip_blue.png">
-										<label for="capeacc-clip_blue">Blue</label>
-									</li>
-									<li>
-										<input type="radio" id="capeacc-clip_brown" name="capeacc" data-required="sex=female" data-file="accessories/neck/capeclip/female/capeclip_brown.png">
-										<label for="capeacc-clip_brown">Brown</label>
-									</li>
-									<li>
-										<input type="radio" id="capeacc-clip_gray" name="capeacc" data-required="sex=female" data-file="accessories/neck/capeclip/female/capeclip_gray.png">
-										<label for="capeacc-clip_gray">Gray</label>
-									</li>
-									<li>
-										<input type="radio" id="capeacc-clip_green" name="capeacc" data-required="sex=female" data-file="accessories/neck/capeclip/female/capeclip_green.png">
-										<label for="capeacc-clip_green">Green</label>
-									</li>
-									<li>
-										<input type="radio" id="capeacc-clip_lavender" name="capeacc" data-required="sex=female" data-file="accessories/neck/capeclip/female/capeclip_lavender.png">
-										<label for="capeacc-clip_lavender">Lavender</label>
-									</li>
-									<li>
-										<input type="radio" id="capeacc-clip_maroon" name="capeacc" data-required="sex=female" data-file="accessories/neck/capeclip/female/capeclip_maroon.png">
-										<label for="capeacc-clip_maroon">Maroon</label>
-									</li>
-									<li>
-										<input type="radio" id="capeacc-clip_pink" name="capeacc" data-required="sex=female" data-file="accessories/neck/capeclip/female/capeclip_pink.png">
-										<label for="capeacc-clip_pink">Pink</label>
-									</li>
-									<li>
-										<input type="radio" id="capeacc-clip_white" name="capeacc" data-required="sex=female" data-file="accessories/neck/capeclip/female/capeclip_white.png">
-										<label for="capeacc-clip_white">White</label>
-									</li>
-									<li>
-										<input type="radio" id="capeacc-clip_yellow" name="capeacc" data-required="sex=female" data-file="accessories/neck/capeclip/female/capeclip_yellow.png">
-										<label for="capeacc-clip_yellow">Yellow</label>
-									</li>
-								</ul>
-							</li>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="capeacc-clip_black" name="capeacc" data-required="sex=female" data-file="accessories/neck/capeclip/female/capeclip_black.png">
+                                        <label for="capeacc-clip_black">Black</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="capeacc-clip_blue" name="capeacc" data-required="sex=female" data-file="accessories/neck/capeclip/female/capeclip_blue.png">
+                                        <label for="capeacc-clip_blue">Blue</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="capeacc-clip_brown" name="capeacc" data-required="sex=female" data-file="accessories/neck/capeclip/female/capeclip_brown.png">
+                                        <label for="capeacc-clip_brown">Brown</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="capeacc-clip_gray" name="capeacc" data-required="sex=female" data-file="accessories/neck/capeclip/female/capeclip_gray.png">
+                                        <label for="capeacc-clip_gray">Gray</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="capeacc-clip_green" name="capeacc" data-required="sex=female" data-file="accessories/neck/capeclip/female/capeclip_green.png">
+                                        <label for="capeacc-clip_green">Green</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="capeacc-clip_lavender" name="capeacc" data-required="sex=female" data-file="accessories/neck/capeclip/female/capeclip_lavender.png">
+                                        <label for="capeacc-clip_lavender">Lavender</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="capeacc-clip_maroon" name="capeacc" data-required="sex=female" data-file="accessories/neck/capeclip/female/capeclip_maroon.png">
+                                        <label for="capeacc-clip_maroon">Maroon</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="capeacc-clip_pink" name="capeacc" data-required="sex=female" data-file="accessories/neck/capeclip/female/capeclip_pink.png">
+                                        <label for="capeacc-clip_pink">Pink</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="capeacc-clip_white" name="capeacc" data-required="sex=female" data-file="accessories/neck/capeclip/female/capeclip_white.png">
+                                        <label for="capeacc-clip_white">White</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="capeacc-clip_yellow" name="capeacc" data-required="sex=female" data-file="accessories/neck/capeclip/female/capeclip_yellow.png">
+                                        <label for="capeacc-clip_yellow">Yellow</label>
+                                    </li>
+                                </ul>
+                            </li>
                             <li><span class="condensed">Cape Tie <small>(Female only)</small></span>
-								<ul>
-									<li>
-										<input type="radio" id="capeacc-tie_black" name="capeacc" data-required="sex=female" data-file="accessories/neck/capetie/female/capetie_black.png">
-										<label for="capeacc-tie_black">Black</label>
-									</li>
-									<li>
-										<input type="radio" id="capeacc-tie_blue" name="capeacc" data-required="sex=female" data-file="accessories/neck/capetie/female/capetie_blue.png">
-										<label for="capeacc-tie_blue">Blue</label>
-									</li>
-									<li>
-										<input type="radio" id="capeacc-tie_brown" name="capeacc" data-required="sex=female" data-file="accessories/neck/capetie/female/capetie_brown.png">
-										<label for="capeacc-tie_brown">Brown</label>
-									</li>
-									<li>
-										<input type="radio" id="capeacc-tie_gray" name="capeacc" data-required="sex=female" data-file="accessories/neck/capetie/female/capetie_gray.png">
-										<label for="capeacc-tie_gray">Gray</label>
-									</li>
-									<li>
-										<input type="radio" id="capeacc-tie_green" name="capeacc" data-required="sex=female" data-file="accessories/neck/capetie/female/capetie_green.png">
-										<label for="capeacc-tie_green">Green</label>
-									</li>
-									<li>
-										<input type="radio" id="capeacc-tie_lavender" name="capeacc" data-required="sex=female" data-file="accessories/neck/capetie/female/capetie_lavender.png">
-										<label for="capeacc-tie_lavender">Lavender</label>
-									</li>
-									<li>
-										<input type="radio" id="capeacc-tie_maroon" name="capeacc" data-required="sex=female" data-file="accessories/neck/capetie/female/capetie_maroon.png">
-										<label for="capeacc-tie_maroon">Maroon</label>
-									</li>
-									<li>
-										<input type="radio" id="capeacc-tie_pink" name="capeacc" data-required="sex=female" data-file="accessories/neck/capetie/female/capetie_pink.png">
-										<label for="capeacc-tie_pink">Pink</label>
-									</li>
-									<li>
-										<input type="radio" id="capeacc-tie_white" name="capeacc" data-required="sex=female" data-file="accessories/neck/capetie/female/capetie_white.png">
-										<label for="capeacc-tie_white">White</label>
-									</li>
-									<li>
-										<input type="radio" id="capeacc-tie_yellow" name="capeacc" data-required="sex=female" data-file="accessories/neck/capetie/female/capetie_yellow.png">
-										<label for="capeacc-tie_yellow">Yellow</label>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</li>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="capeacc-tie_black" name="capeacc" data-required="sex=female" data-file="accessories/neck/capetie/female/capetie_black.png">
+                                        <label for="capeacc-tie_black">Black</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="capeacc-tie_blue" name="capeacc" data-required="sex=female" data-file="accessories/neck/capetie/female/capetie_blue.png">
+                                        <label for="capeacc-tie_blue">Blue</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="capeacc-tie_brown" name="capeacc" data-required="sex=female" data-file="accessories/neck/capetie/female/capetie_brown.png">
+                                        <label for="capeacc-tie_brown">Brown</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="capeacc-tie_gray" name="capeacc" data-required="sex=female" data-file="accessories/neck/capetie/female/capetie_gray.png">
+                                        <label for="capeacc-tie_gray">Gray</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="capeacc-tie_green" name="capeacc" data-required="sex=female" data-file="accessories/neck/capetie/female/capetie_green.png">
+                                        <label for="capeacc-tie_green">Green</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="capeacc-tie_lavender" name="capeacc" data-required="sex=female" data-file="accessories/neck/capetie/female/capetie_lavender.png">
+                                        <label for="capeacc-tie_lavender">Lavender</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="capeacc-tie_maroon" name="capeacc" data-required="sex=female" data-file="accessories/neck/capetie/female/capetie_maroon.png">
+                                        <label for="capeacc-tie_maroon">Maroon</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="capeacc-tie_pink" name="capeacc" data-required="sex=female" data-file="accessories/neck/capetie/female/capetie_pink.png">
+                                        <label for="capeacc-tie_pink">Pink</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="capeacc-tie_white" name="capeacc" data-required="sex=female" data-file="accessories/neck/capetie/female/capetie_white.png">
+                                        <label for="capeacc-tie_white">White</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="capeacc-tie_yellow" name="capeacc" data-required="sex=female" data-file="accessories/neck/capetie/female/capetie_yellow.png">
+                                        <label for="capeacc-tie_yellow">Yellow</label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                     <li><span class="condensed">Weapon</span>
                         <ul>
                             <li>
