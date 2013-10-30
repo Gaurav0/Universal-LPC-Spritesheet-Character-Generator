@@ -61,6 +61,10 @@
                                 <label for="body-orc">Orc</label>
                             </li>
                             <li>
+                                <input type="radio" id="body-orc_red" name="body" data-file_female="body/female/red_orc.png" data-file_male="body/male/red_orc.png">
+                                <label for="body-orc_red">Red Orc</label>
+                            </li>
+                            <li>
                                 <input type="radio" id="body-skeleton" name="body" data-required="sex=male" data-file="body/male/skeleton.png">
                                 <label for="body-skeleton">Skeleton <small>(Male only)</small></label>
                             </li>
@@ -98,14 +102,38 @@
                             </li>
                         </ul>
                     </li>
+                    <li><span class="condensed">Nose</span>
+                        <ul>
+                            <li>
+                                <input type="radio" id="nose-none" name="nose" checked>
+                                <label for="nose-none">Default</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="nose-big" name="nose" data-prohibited="body=orc,body=orc_red,body=skeleton" data-file_male_light="body/male/nose/bignose_light.png" data-file_female_light="body/female/nose/bignose_light.png" data-file_male_dark="body/male/nose/bignose_dark.png" data-file_female_dark="body/female/nose/bignose_dark.png" data-file_male_dark2="body/male/nose/bignose_dark2.png" data-file_female_dark2="body/female/nose/bignose_dark2.png" data-file_male_tanned="body/male/nose/bignose_tanned.png" data-file_female_tanned="body/female/nose/bignose_tanned.png" data-file_male_tanned2="body/male/nose/bignose_tanned2.png" data-file_female_tanned2="body/female/nose/bignose_tanned2.png">
+                                <label for="nose-big">Big Nose</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="nose-button" name="nose" data-prohibited="body=orc,body=orc_red,body=skeleton" data-file_male_light="body/male/nose/buttonnose_light.png" data-file_female_light="body/female/nose/buttonnose_light.png" data-file_male_dark="body/male/nose/buttonnose_dark.png" data-file_female_dark="body/female/nose/buttonnose_dark.png" data-file_male_dark2="body/male/nose/buttonnose_dark2.png" data-file_female_dark2="body/female/nose/buttonnose_dark2.png" data-file_male_tanned="body/male/nose/buttonnose_tanned.png" data-file_female_tanned="body/female/nose/buttonnose_tanned.png" data-file_male_tanned2="body/male/nose/buttonnose_tanned2.png" data-file_female_tanned2="body/female/nose/buttonnose_tanned2.png">
+                                <label for="nose-button">Button Nose</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="nose-straight" name="nose" data-prohibited="body=orc,body=orc_red,body=skeleton" data-file_male_light="body/male/nose/straightnose_light.png" data-file_female_light="body/female/nose/straightnose_light.png" data-file_male_dark="body/male/nose/straightnose_dark.png" data-file_female_dark="body/female/nose/straightnose_dark.png" data-file_male_dark2="body/male/nose/straightnose_dark2.png" data-file_female_dark2="body/female/nose/straightnose_dark2.png" data-file_male_tanned="body/male/nose/straightnose_tanned.png" data-file_female_tanned="body/female/nose/straightnose_tanned.png" data-file_male_tanned2="body/male/nose/straightnose_tanned2.png" data-file_female_tanned2="body/female/nose/straightnose_tanned2.png">
+                                <label for="nose-straight">Straight Nose</label>
+                            </li>
+                        </ul>
+                    </li>
                     <li><span class="condensed">Ears</span>
                         <ul>
                             <li>
                                 <input type="radio" id="ears-none" name="ears" checked>
-                                <label for="ears-none">No Ears</label>
+                                <label for="ears-none">Default</label>
                             </li>
                             <li>
-                                <input type="radio" id="ears-elven" name="ears" data-prohibited="body=orc,body=red_orc,body=skeleton" data-file_male_light="body/male/ears/elvenears_light.png" data-file_female_light="body/female/ears/elvenears_light.png" data-file_male_dark="body/male/ears/elvenears_dark.png" data-file_female_dark="body/female/ears/elvenears_dark.png" data-file_male_dark2="body/male/ears/elvenears_dark2.png" data-file_female_dark2="body/female/ears/elvenears_dark2.png" data-file_male_tanned="body/male/ears/elvenears_tanned.png" data-file_female_tanned="body/female/ears/elvenears_tanned.png" data-file_male_tanned2="body/male/ears/elvenears_tanned2.png" data-file_female_tanned2="body/female/ears/elvenears_tanned2.png">
+                                <input type="radio" id="ears-big" name="ears" data-prohibited="body=orc,body=orc_red,body=skeleton" data-file_male_light="body/male/ears/bigears_light.png" data-file_female_light="body/female/ears/bigears_light.png" data-file_male_dark="body/male/ears/bigears_dark.png" data-file_female_dark="body/female/ears/bigears_dark.png" data-file_male_dark2="body/male/ears/bigears_dark2.png" data-file_female_dark2="body/female/ears/bigears_dark2.png" data-file_male_tanned="body/male/ears/bigears_tanned.png" data-file_female_tanned="body/female/ears/bigears_tanned.png" data-file_male_tanned2="body/male/ears/bigears_tanned2.png" data-file_female_tanned2="body/female/ears/bigears_tanned2.png">
+                                <label for="ears-big">Big Ears</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="ears-elven" name="ears" data-prohibited="body=orc,body=orc_red,body=skeleton" data-file_male_light="body/male/ears/elvenears_light.png" data-file_female_light="body/female/ears/elvenears_light.png" data-file_male_dark="body/male/ears/elvenears_dark.png" data-file_female_dark="body/female/ears/elvenears_dark.png" data-file_male_dark2="body/male/ears/elvenears_dark2.png" data-file_female_dark2="body/female/ears/elvenears_dark2.png" data-file_male_tanned="body/male/ears/elvenears_tanned.png" data-file_female_tanned="body/female/ears/elvenears_tanned.png" data-file_male_tanned2="body/male/ears/elvenears_tanned2.png" data-file_female_tanned2="body/female/ears/elvenears_tanned2.png">
                                 <label for="ears-elven">Elven Ears</label>
                             </li>
                         </ul>
