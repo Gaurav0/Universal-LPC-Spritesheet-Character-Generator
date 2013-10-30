@@ -15,31 +15,31 @@ $(document).ready(function() {
     // set params and redraw when any radio button or checkbox is clicked on
     $("input[type=radio], input[type=checkbox]").each(function() {
         $(this).click(function() {
-			setParams();
-			redraw();
-		});
+            setParams();
+            redraw();
+        });
     });
     
     // When radio button is unchecked, its children should be too. 
     $("input[type=radio]").each(function() {
         $(this).change(function() {
             var name = $(this).attr("name");
-			// Sadly we need to use setTimeout
-			window.setTimeout(function() {
-				$("li>span>input[name=" + name + "]").each(function() {
-					if (!($(this).prop("checked"))) {
-						var $this = $(this).parent();
-						$this.removeClass("expanded").addClass("condensed");
-						$this = $this.parent();
-						var $ul = $this.children("ul");
-						$ul.hide('slow');
-						$ul.find("input[type=checkbox]").each(function() {
-							$(this).prop("checked", false);
-						});
-					}
-				});
-				redraw();
-			}, 0);
+            // Sadly we need to use setTimeout
+            window.setTimeout(function() {
+                $("li>span>input[name=" + name + "]").each(function() {
+                    if (!($(this).prop("checked"))) {
+                        var $this = $(this).parent();
+                        $this.removeClass("expanded").addClass("condensed");
+                        $this = $this.parent();
+                        var $ul = $this.children("ul");
+                        $ul.hide('slow');
+                        $ul.find("input[type=checkbox]").each(function() {
+                            $(this).prop("checked", false);
+                        });
+                    }
+                });
+                redraw();
+            }, 0);
         });
     });
     
@@ -53,7 +53,7 @@ $(document).ready(function() {
     // Again, do not multiple toggle when clicking on children
     $("#chooser>ul>li>ul>li").click(function(event) {
         if (!($(event.target).get(0).tagName == "LABEL")) {
-			$(this).children("span").toggleClass("condensed").toggleClass("expanded");
+            $(this).children("span").toggleClass("condensed").toggleClass("expanded");
             var $ul = $(this).children("ul");
             $ul.toggle('slow');
         }
@@ -63,7 +63,7 @@ $(document).ready(function() {
     // Toggle display of a list elements children when clicked
     // Again, do not multiple toggle when clicking on children
     $("#chooser>ul>li").click(function(event) {
-		$(this).children("span").toggleClass("condensed").toggleClass("expanded");
+        $(this).children("span").toggleClass("condensed").toggleClass("expanded");
         var $ul = $(this).children("ul");
         $ul.toggle('slow');
         event.stopPropagation();
@@ -72,17 +72,17 @@ $(document).ready(function() {
     // When clicking on collapse all link, collapse all uls in #chooser
     $("#collapse").click(function() {
         $("#chooser>ul ul").hide('slow');
-		$("#chooser>ul span.expanded").removeClass("expanded").addClass("condensed");
+        $("#chooser>ul span.expanded").removeClass("expanded").addClass("condensed");
     });
     
     // Redraw afer reset
     $("input[type=reset]").click(function() {
         // Sadly we need to use setTimeout
         window.setTimeout(function() {
-			params = {};
-			jHash.val(params);
-			redraw();
-		}, 0, false);
+            params = {};
+            jHash.val(params);
+            redraw();
+        }, 0, false);
     });
     
     // Save canvas as PNG
@@ -134,9 +134,9 @@ $(document).ready(function() {
         $("input[type=radio]:checked, input[type=checkbox]:checked").filter(function() {
             return !$(this).data("oversize");
         }).each(function(index) {
-		
-			// save this in closure
-			var $this = $(this);
+        
+            // save this in closure
+            var $this = $(this);
         
             // Determine if male or female selected
             var isMale = $("#sex-male").prop("checked");
@@ -154,14 +154,14 @@ $(document).ready(function() {
                 } else
                     ctx.drawImage(img, 0, 0);
             }
-			
-			// if data-file_behind specified
-			if ($(this).data("file_behind")) {
+            
+            // if data-file_behind specified
+            if ($(this).data("file_behind")) {
                 var img = getImage($(this).data("file_behind"));
-				ctx.globalCompositeOperation = "destination-over";
-				ctx.drawImage(img, 0, 0);
-				ctx.globalCompositeOperation = "source-over";
-			}
+                ctx.globalCompositeOperation = "destination-over";
+                ctx.drawImage(img, 0, 0);
+                ctx.globalCompositeOperation = "source-over";
+            }
             
             // Deal with shield/chain hat overlap issue
             if ($(this).data("file_hat") && $("#hat_chain").prop("checked")) {
@@ -184,22 +184,22 @@ $(document).ready(function() {
             }
             
             // if data-file_male_light... and data-file_female_light... is specified
-			var bodytypes = ["light", "dark", "dark2", "tanned", "tanned2"];
+            var bodytypes = ["light", "dark", "dark2", "tanned", "tanned2"];
             if (isMale) {
-				_.each(bodytypes, function(bodytype) {
-					if ($("#body-" + bodytype).prop("checked") && $this.data("file_male_" + bodytype)) {
-						var img = getImage($this.data("file_male_" + bodytype));
-						ctx.drawImage(img, 0, 0);
-					}
-				});
+                _.each(bodytypes, function(bodytype) {
+                    if ($("#body-" + bodytype).prop("checked") && $this.data("file_male_" + bodytype)) {
+                        var img = getImage($this.data("file_male_" + bodytype));
+                        ctx.drawImage(img, 0, 0);
+                    }
+                });
             }
             if (isFemale) {
-				_.each(bodytypes, function(bodytype) {
-					if ($("#body-" + bodytype).prop("checked") && $this.data("file_female_" + bodytype)) {
-						var img = getImage($this.data("file_female_" + bodytype));
-						ctx.drawImage(img, 0, 0);
-					}
-				});
+                _.each(bodytypes, function(bodytype) {
+                    if ($("#body-" + bodytype).prop("checked") && $this.data("file_female_" + bodytype)) {
+                        var img = getImage($this.data("file_female_" + bodytype));
+                        ctx.drawImage(img, 0, 0);
+                    }
+                });
             }
             
             // Draw shadows for plain or ponytail2 hairstyles appropriate to body color
@@ -265,36 +265,36 @@ $(document).ready(function() {
         // Probably should try to prevent this
         $("input[type=radio], input[type=checkbox]").each(function(index) {
             if ($(this).data("required")) {
-				var requirements = $(this).data("required").split(",");
-				var passed = true;
-				_.each(requirements, function(req) {
-					var requirement = req.replace("=", "-");
-					if (!$("#" + requirement).prop("checked"))
-						passed = false;
-				});
-				if (passed)
-					$(this).prop("disabled", false);
-				else {
-					$(this).prop("disabled", true);
-					if ($(this).prop("checked"))
-						ctx.clearRect(0, 0, canvas.width, canvas.height);
-				}
-            }
-            if ($(this).data("prohibited")) {
-				var requirements = $(this).data("prohibited").split(",");
-				var passed = true;
-				_.each(requirements, function(req) {
-					var requirement = req.replace("=", "-");
-					if ($("#" + requirement).prop("checked"))
-						passed = false;
-				});
+                var requirements = $(this).data("required").split(",");
+                var passed = true;
+                _.each(requirements, function(req) {
+                    var requirement = req.replace("=", "-");
+                    if (!$("#" + requirement).prop("checked"))
+                        passed = false;
+                });
                 if (passed)
                     $(this).prop("disabled", false);
                 else {
                     $(this).prop("disabled", true);
                     if ($(this).prop("checked"))
                         ctx.clearRect(0, 0, canvas.width, canvas.height);
-				}
+                }
+            }
+            if ($(this).data("prohibited")) {
+                var requirements = $(this).data("prohibited").split(",");
+                var passed = true;
+                _.each(requirements, function(req) {
+                    var requirement = req.replace("=", "-");
+                    if ($("#" + requirement).prop("checked"))
+                        passed = false;
+                });
+                if (passed)
+                    $(this).prop("disabled", false);
+                else {
+                    $(this).prop("disabled", true);
+                    if ($(this).prop("checked"))
+                        ctx.clearRect(0, 0, canvas.width, canvas.height);
+                }
             }
         });
     }
@@ -322,8 +322,8 @@ $(document).ready(function() {
         });
         $("input[type=checkbox]").each(function() {
             if (_.toBool($(this).attr("checked")) != $(this).prop("checked") ||
-					_.toBool(params[$(this).attr('id')]) != $(this).prop("checked"))
-				params[$(this).attr('id')] = $(this).prop("checked") ? 1 : 0;
+                    _.toBool(params[$(this).attr('id')]) != $(this).prop("checked"))
+                params[$(this).attr('id')] = $(this).prop("checked") ? 1 : 0;
         });
         jHash.val(params);
     }
