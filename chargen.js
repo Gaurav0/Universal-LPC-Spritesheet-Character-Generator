@@ -149,38 +149,38 @@ $(document).ready(function() {
                 // if data-behind specified, draw behind existing pixels
                 if ($(this).data("behind")) {
                     ctx.globalCompositeOperation = "destination-over";
-                    ctx.drawImage(img, 0, 0);
+                    drawImage(ctx, img);
                     ctx.globalCompositeOperation = "source-over";
                 } else
-                    ctx.drawImage(img, 0, 0);
+                    drawImage(ctx, img);
             }
             
             // if data-file_behind specified
             if ($(this).data("file_behind")) {
                 var img = getImage($(this).data("file_behind"));
                 ctx.globalCompositeOperation = "destination-over";
-                ctx.drawImage(img, 0, 0);
+                drawImage(ctx, img);
                 ctx.globalCompositeOperation = "source-over";
             }
             
             // Deal with shield/chain hat overlap issue
             if ($(this).data("file_hat") && $("#hat_chain").prop("checked")) {
                 var img = getImage($(this).data("file_hat"));
-                ctx.drawImage(img, 0, 0);
+                drawImage(ctx, img);
             }
             if ($(this).data("file_no_hat") && !$("#hat_chain").prop("checked")) {
                 var img = getImage($(this).data("file_no_hat"));
-                ctx.drawImage(img, 0, 0);
+                drawImage(ctx, img);
             }
             
             // if data-file_male and data-file_female is specified
             if (isMale && $(this).data("file_male")) {
                 var img = getImage($(this).data("file_male"));
-                ctx.drawImage(img, 0, 0);
+                drawImage(ctx, img);
             }
             if (isFemale && $(this).data("file_female")) {
                 var img = getImage($(this).data("file_female"));
-                ctx.drawImage(img, 0, 0);
+                drawImage(ctx, img);
             }
             
             // if data-file_male_light... and data-file_female_light... is specified
@@ -189,7 +189,7 @@ $(document).ready(function() {
                 _.each(bodytypes, function(bodytype) {
                     if ($("#body-" + bodytype).prop("checked") && $this.data("file_male_" + bodytype)) {
                         var img = getImage($this.data("file_male_" + bodytype));
-                        ctx.drawImage(img, 0, 0);
+                        drawImage(ctx, img);
                     }
                 });
             }
@@ -197,7 +197,7 @@ $(document).ready(function() {
                 _.each(bodytypes, function(bodytype) {
                     if ($("#body-" + bodytype).prop("checked") && $this.data("file_female_" + bodytype)) {
                         var img = getImage($this.data("file_female_" + bodytype));
-                        ctx.drawImage(img, 0, 0);
+                        drawImage(ctx, img);
                     }
                 });
             }
@@ -213,11 +213,11 @@ $(document).ready(function() {
                     var hsFemale = "hs_" + style + "_female";
                     if (isMale && $(this).data(hsMale)) {
                         var img = getImage($(this).data(hsMale))
-                        ctx.drawImage(img, 0, 0);
+                        drawImage(ctx, img);
                     }
                     if (isFemale && $(this).data(hsFemale)) {
                         var img = getImage($(this).data(hsFemale))
-                        ctx.drawImage(img, 0, 0);
+                        drawImage(ctx, img);
                     }
                 });
             }
@@ -342,6 +342,15 @@ $(document).ready(function() {
             img.onload = redraw;
             images[imgRef] = img;
             return img;
+        }
+    }
+    
+    // Do not stop running all javascript if image not available
+    function drawImage(ctx, img) {
+        try {
+            ctx.drawImage(img, 0, 0);
+        } catch(err) {
+            console.error("Error: could not find " + img.src);
         }
     }
     
