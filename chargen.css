@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-    margin: 12px 0px;
+    margin: 10px 0px;
 }
 
 h2 {
@@ -27,11 +27,16 @@ p {
     margin: 10px 0px;
 }
 
+.subtitle {
+	padding-left: 50px;
+}
+
 #save {
     width: 60%;
     min-width: 832px;
     margin: 40px 0;
     float: right;
+	padding-left: 15px;
 }
 
 #source {
@@ -50,15 +55,29 @@ input[type=button], input[type=reset] {
 #chooser {
     width: 30%;
     min-width: 200px;
-    margin: 10px;
-    padding-left: 15px;
+    padding-left: 20px;
     float: left;
     font-size: 14pt;
 }
+
 #preview {
     width: 60%;
     min-width: 832px;
     float: right;
+}
+
+p.instr {
+	font-size: 12pt;
+}
+
+#chooser p.instr {
+	padding: 10px 0;
+	margin: 10px 0;
+}
+
+#preview p.instr {
+	padding: 10px;
+	margin: 12px 6px;
 }
 
 ul {
@@ -106,7 +125,7 @@ ul {
     text-indent: -18px;
 }
 
-#customizeChar p {
+#customizeChar .buttons {
     display: block;
     margin: 50px 0;
 }
