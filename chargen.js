@@ -55,7 +55,7 @@ $(document).ready(function() {
         if (!($(event.target).get(0).tagName == "LABEL")) {
             $(this).children("span").toggleClass("condensed").toggleClass("expanded");
             var $ul = $(this).children("ul");
-            $ul.toggle('slow');
+            $ul.toggle('slow').promise().done(drawPreviews);
         }
         event.stopPropagation();
     });
@@ -65,7 +65,7 @@ $(document).ready(function() {
     $("#chooser>ul>li").click(function(event) {
         $(this).children("span").toggleClass("condensed").toggleClass("expanded");
         var $ul = $(this).children("ul");
-        $ul.toggle('slow');
+        $ul.toggle('slow').promise().done(drawPreviews);
         event.stopPropagation();
     });
     
@@ -345,6 +345,21 @@ $(document).ready(function() {
         }
     }
     
+    function getImage2(imgRef, callback) {
+        if (images[imgRef]) {
+            callback(images[imgRef]);
+            return images[imgRef];
+        } else {
+        
+            // Load image if not in cache
+            var img = new Image();
+            img.src = "Universal-LPC-spritesheet/" + imgRef;
+            img.onload = function() { callback(img) };
+            images[imgRef] = img;
+            return img;
+        }
+    }
+    
     // Do not stop running all javascript if image not available
     function drawImage(ctx, img) {
         try {
@@ -360,5 +375,39 @@ $(document).ready(function() {
         $("input[type=reset]").click();
         setParams();
     }
-    redraw();
+    redraw();    
+
+    // Draw preview images
+    function drawPreviews() {
+        this.find("input[type=radio], input[type=checkbox]").filter(function() {
+            return $(this).is(":visible");
+        }).each(function() {
+            if (!$(this).parent().hasClass("hasPreview")) {
+                var prev = document.createElement("canvas");
+                prev.setAttribute("width", 64);
+                prev.setAttribute("height", 64);
+                var prevctx = prev.getContext("2d");
+                var img = null;
+                var callback = function(img) {
+                    try {
+                        prevctx.drawImage(img, 0, 640, 64, 64, 0, 0, 64, 64);
+                    } catch (err) {
+                        console.log(err);
+                    }
+                };
+                if ($(this).data("file"))
+                    img = getImage2($(this).data("file"), callback);
+                else if ($(this).data("file_male"))
+                    img = getImage2($(this).data("file_male"), callback);
+                else if ($(this).data("file_female"))
+                    img = getImage2($(this).data("file_female"), callback);
+                else if ($(this).data("file_male_light"))
+                    img = getImage2($(this).data("file_male_light"), callback);
+                if (img != null) {
+                    this.parentNode.insertBefore(prev, this);
+                    $(this).parent().addClass("hasPreview").parent().addClass("hasPreview");
+                }
+            }
+        });
+    };
 });

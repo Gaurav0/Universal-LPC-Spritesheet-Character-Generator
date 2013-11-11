@@ -9,4 +9,6 @@ Try it out at [gaurav.munjal.us] (http://gaurav.munjal.us/Universal-LPC-Spritesh
 
 Lots of new additions thanks to David Conway Jr. Thanks!
 
+New feature: I've just added previews to the left column so you can see the images before adding them.
+
 Please test and report issues. Contributions welcome!
