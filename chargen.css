@@ -84,6 +84,11 @@ ul {
     list-style-type: none;
 }
 
+#chooser>ul {
+	height: 1344px;
+	overflow-y: auto;
+}
+
 #chooser>ul>li {
     cursor: pointer;
     font-size: 16pt;
