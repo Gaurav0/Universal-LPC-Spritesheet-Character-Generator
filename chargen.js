@@ -90,7 +90,7 @@ $(document).ready(function() {
         Canvas2Image.saveAsPNG(document.getElementsByTagName('canvas')[0]);
     });        
     
-    var canvas = $("canvas").get(0);
+    var canvas = $("#spritesheet").get(0);
     var ctx = canvas.getContext("2d");
     
     // Determine if an oversize element used
@@ -106,6 +106,7 @@ $(document).ready(function() {
         canvas.width = 832;
         canvas.height = 1344;
     }
+    $("#chooser>ul").css("height", canvas.height);
 
     // called each time redrawing
     function redraw() {
@@ -123,12 +124,12 @@ $(document).ready(function() {
         if (oversize) {
             canvas.width = 1536;
             canvas.height = 1344 + 768;
-            oversize = true;
         } else {
             canvas.width = 832;
             canvas.height = 1344;
-            oversize = false;
         }
+        $("#chooser>ul").css("height", canvas.height);
+        oversize = !!oversize;
         
         // non oversize elements
         $("input[type=radio]:checked, input[type=checkbox]:checked").filter(function() {
