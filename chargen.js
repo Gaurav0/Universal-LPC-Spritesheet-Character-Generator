@@ -384,13 +384,27 @@ $(document).ready(function() {
         }).each(function() {
             if (!$(this).parent().hasClass("hasPreview")) {
                 var prev = document.createElement("canvas");
-                prev.setAttribute("width", 64);
-                prev.setAttribute("height", 64);
+                var oversize = $(this).data("oversize");
+                if (!oversize) {
+                    prev.setAttribute("width", 64);
+                    prev.setAttribute("height", 64);
+                } else {
+                    prev.setAttribute("width", 192);
+                    prev.setAttribute("height", 192);
+                }
                 var prevctx = prev.getContext("2d");
                 var img = null;
+                var previewRow = $(this).data("preview_row");
+                if (!previewRow)
+                    previewRow = 10;
+                else
+                    previewRow = parseInt(previewRow);
                 var callback = function(img) {
                     try {
-                        prevctx.drawImage(img, 0, 640, 64, 64, 0, 0, 64, 64);
+                        if (oversize)
+                            prevctx.drawImage(img, 0, 2 * 192, 192, 192, 0, 0, 192, 192);
+                        else
+                            prevctx.drawImage(img, 0, previewRow * 64, 64, 64, 0, 0, 64, 64);
                     } catch (err) {
                         console.log(err);
                     }
@@ -403,6 +417,8 @@ $(document).ready(function() {
                     img = getImage2($(this).data("file_female"), callback);
                 else if ($(this).data("file_male_light"))
                     img = getImage2($(this).data("file_male_light"), callback);
+                else if ($(this).data("file_no_hat"))
+                    img = getImage2($(this).data("file_no_hat"), callback);
                 if (img != null) {
                     this.parentNode.insertBefore(prev, this);
                     $(this).parent().addClass("hasPreview").parent().addClass("hasPreview");
