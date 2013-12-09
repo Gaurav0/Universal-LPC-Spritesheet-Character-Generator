@@ -427,4 +427,31 @@ $(document).ready(function() {
             }
         });
     };
+    
+    // Preview Animation
+    var anim = $("#previewAnimations").get(0);
+    var animCtx = anim.getContext("2d");
+    var $selectedAnim = $("#whichAnim>:selected");
+    var animRowStart = parseInt($selectedAnim.data("row"));
+    var animRowNum = parseInt($selectedAnim.data("num"));
+    var animRowFrames = parseInt($selectedAnim.data("cycle"));
+    var currentFrame = 0;
+    
+    $("#whichAnim").change(function() {
+        $selectedAnim = $("#whichAnim>:selected");
+        animRowStart = parseInt($selectedAnim.data("row"));
+        animRowNum = parseInt($selectedAnim.data("num"));
+        animRowFrames = parseInt($selectedAnim.data("cycle"));
+        currentFrame = 0;
+    });
+    
+    function nextFrame() {
+        currentFrame = (currentFrame + 1) % animRowFrames;
+        animCtx.clearRect(0, 0, anim.width, anim.height);
+        for (var i = 0; i < animRowNum; ++i) {
+            animCtx.drawImage(canvas, currentFrame * 64, (animRowStart + i) * 64, 64, 64, i * 64, 0, 64, 64);
+        }
+        setTimeout(nextFrame, 1000 / 8);
+    }
+    nextFrame();
 });

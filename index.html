@@ -15,10 +15,24 @@
     </head>
     <body>
         <div id="github"><a href="https://github.com/gaurav0/Universal-LPC-Spritesheet-Character-Generator"><img src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a></div>
-        <h1>Character Generator</h1>
-        <p class="subtitle">Create a character sprite sheet for your game using 100% open art.</p>
-        <h2>Based on <a href="https://github.com/jrconway3/Universal-LPC-spritesheet">Universal LPC Sprite Sheet</a></h2>
-        <h3>All art is dual licensed: GPL3 and CC-BY-SA3</h3>
+        <header>
+            <h1>Character Generator</h1>
+            <p class="subtitle">Create a character sprite sheet for your game using 100% open art.</p>
+            <h2>Based on <a href="https://github.com/jrconway3/Universal-LPC-spritesheet">Universal LPC Sprite Sheet</a></h2>
+            <h3>All art is dual licensed: GPL3 and CC-BY-SA3</h3>
+        </header>
+        <div id="previewAnimationsBox">
+            Preview Animation: 
+            <select id="whichAnim">
+                <option value="spellcast" data-row="0" data-num="4" data-cycle="7">Spellcast</option>
+                <option value="thrust" data-row="4" data-num="4" data-cycle="8">Thrust</option>
+                <option value="walk" selected data-row="8" data-num="4" data-cycle="9">Walk</option>
+                <option value="slash" data-row="12" data-num="4" data-cycle="6">Slash</option>
+                <option value="shoot" data-row="16" data-num="4" data-cycle="13">Shoot</option>
+                <option value="hurt" data-row="20" data-num="1" data-cycle="6">Hurt</option>
+            </select>
+            <canvas id="previewAnimations" width="256" height="192"></canvas>
+        </div>
         <form id="customizeChar">
             <section id="chooser">
                 <p class="instr">Select from the character configuration options below.</p>
@@ -2733,7 +2747,7 @@
             </section>
         </form>
         <section id="preview">
-            <p class="instr">Animations available: Spellcast, thrust, walkcycle, slash, shoot, hurt.</p>
+            <p class="instr">The complete resulting sprite sheet for your character:</p>
             <canvas id="spritesheet" width="832" height="1344">HTML5 Browser required.</canvas>
         </section>
         <p id="source"><a href="https://github.com/Gaurav0/Universal-LPC-Spritesheet-Character-Generator/commits/master">Source Code</a> &nbsp; <a href="LICENSE">LICENSE</a> &nbsp; <a href="Universal-LPC-spritesheet/AUTHORS.txt">Credits</a></p>
