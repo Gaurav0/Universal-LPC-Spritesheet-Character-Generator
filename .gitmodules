@@ -1,3 +1,4 @@
 [submodule "Universal-LPC-spritesheet"]
 	path = Universal-LPC-spritesheet
 	url = https://github.com/makrohn/Universal-LPC-spritesheet
+	ignore = dirty
