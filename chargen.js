@@ -85,13 +85,13 @@ $(document).ready(function() {
         }, 0, false);
     });
     
-    // Save canvas as PNG
-    $("#saveAsPNG").click(function() {
-        Canvas2Image.saveAsPNG(document.getElementsByTagName('canvas')[0]);
-    });        
-    
     var canvas = $("#spritesheet").get(0);
     var ctx = canvas.getContext("2d");
+    
+    // Save canvas as PNG
+    $("#saveAsPNG").click(function() {
+        Canvas2Image.saveAsPNG(canvas);
+    });
     
     // Determine if an oversize element used
     var oversize = $("input[type=radio]").filter(function() {
