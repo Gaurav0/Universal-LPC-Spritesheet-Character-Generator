@@ -185,7 +185,7 @@ $(document).ready(function() {
             }
             
             // if data-file_male_light... and data-file_female_light... is specified
-            var bodytypes = ["light", "dark", "dark2", "tanned", "tanned2"];
+            var bodytypes = ["light", "dark", "dark2", "tanned", "tanned2", "darkelf", "darkelf2"];
             if (isMale) {
                 _.each(bodytypes, function(bodytype) {
                     if ($("#body-" + bodytype).prop("checked") && $this.data("file_male_" + bodytype)) {
