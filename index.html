@@ -10,6 +10,7 @@
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.string/2.3.3/underscore.string.min.js"></script>
         <script type="text/javascript" src="jhash-2.1.min.js"></script>
         <script type="text/javascript" src="canvas2image.js"></script>
+        <script type="text/javascript" src="animations2json.js"></script>
         <script type="text/javascript" src="base64.js"></script>
         <script type="text/javascript" src="chargen.js"></script>
     </head>
@@ -2791,6 +2792,10 @@
             <canvas id="spritesheet" width="832" height="1344">HTML5 Browser required.</canvas>
         </section>
         <p id="source"><a href="https://github.com/Gaurav0/Universal-LPC-Spritesheet-Character-Generator/commits/master">Source Code</a> &nbsp; <a href="LICENSE">LICENSE</a> &nbsp; <a href="Universal-LPC-spritesheet/AUTHORS.txt">Credits</a></p>
-        <p id="save"><input type="button" id="saveAsPNG" value="Save Result As PNG"> Note: You may have to change the extension to png.</p>
+        <div id="save">
+            <div><input type="button" id="saveAsPNG" value="Save result image as PNG"></div>
+            <div><input type="button" id="saveAsJSON" value="Save result animation data as JSON"></div>
+            <div>Note: You may have to change the extension to png/json.</div>
+        </div>
     </body>
 </html>

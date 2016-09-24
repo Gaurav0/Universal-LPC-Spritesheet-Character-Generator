@@ -93,6 +93,12 @@ $(document).ready(function() {
         Canvas2Image.saveAsPNG(canvas);
     });
     
+    // Save animations as JSON
+    $("#saveAsJSON").click(function() {
+        var a2j = new Animations2JSON();
+        a2j.saveAsJSON();
+    });
+    
     // Determine if an oversize element used
     var oversize = $("input[type=radio]").filter(function() {
         return $(this).data("oversize");
