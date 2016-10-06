@@ -96,7 +96,6 @@ $(document).ready(function() {
     // Save canvas as PNG
     $("#saveAsPNG").click(function() {
         renameImageDownload(this, canvas, 'Download.png');
-        //Canvas2Image.saveAsPNG(canvas);
     });
 
     // Determine if an oversize element used
