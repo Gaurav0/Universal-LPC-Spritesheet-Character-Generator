@@ -13,8 +13,8 @@ To run this project, just clone the repo and open ``index.html`` in your browser
 
 ### Caution
 
-This is not an example of a nicely coded project, and it does have bugs.
-In my current project I am using to create a vast amount of awesome different characters, and the results are beautiful.
+This is not an example of a perfectly coded project, and it does have bugs.
+In my current project I am using the generator to create a vast amount of awesome different characters, and the results are beautiful.
 
 Still, feel free to enhance the code where you like, but for now, I focus on just adding content.
 
