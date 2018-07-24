@@ -5,6 +5,8 @@ Based on [Universal LPC Spritesheet] (https://github.com/jrconway3/Universal-LPC
 
 Try it out at [gaurav.munjal.us] (http://gaurav.munjal.us/Universal-LPC-Spritesheet-Character-Generator).
 
+The project you are looking now is an expansion on the above mentioned projects. I try to include all LPC created art up to now.
+
 ### Run
 
 To run this project, just clone the repo and open ``index.html`` in your browser of choice.
@@ -27,3 +29,6 @@ Support still working on:
 - [Universal LPC Spritesheet] (https://opengameart.org/content/lpc-skorpios-scifi-sprite-pack)
 
 ### Examples
+![alt text](https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/ex1.png)
+![alt text](https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/ex2.png)
+![alt text](https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/ex3.png)
