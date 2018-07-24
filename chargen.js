@@ -344,7 +344,7 @@ $(document).ready(function() {
 
             // Load image if not in cache
             var img = new Image();
-            img.src = "Universal-LPC-spritesheet/" + imgRef;
+            img.src = "spritesheets/" + imgRef;
             img.onload = redraw;
             images[imgRef] = img;
             return img;
@@ -359,7 +359,7 @@ $(document).ready(function() {
 
             // Load image if not in cache
             var img = new Image();
-            img.src = "Universal-LPC-spritesheet/" + imgRef;
+            img.src = "spritesheets/" + imgRef;
             img.onload = function() { callback(img) };
             images[imgRef] = img;
             return img;
