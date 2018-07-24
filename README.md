@@ -5,8 +5,22 @@ Based on [Universal LPC Spritesheet] (https://github.com/jrconway3/Universal-LPC
 
 Try it out at [gaurav.munjal.us] (http://gaurav.munjal.us/Universal-LPC-Spritesheet-Character-Generator).
 
+### Caution
+
+This is not an example of a nicely coded project, and it does have bugs.
+In my current project I am using to create a vast amount of awesome different characters, and the results are beautiful.
+
+Still, feel free to enhance the code where you like, but for now, I focus on just adding content.
+
 ### Status
 
-New feature: I've just added previews of the actual animations. Oversize animations are still being worked on.
+Support still working on:
 
-Please test and report issues. Contributions welcome!
+- [Universal LPC Spritesheet] (https://opengameart.org/content/lpc-teen-unisex-base-clothes)
+- [Universal LPC Spritesheet] (https://opengameart.org/content/lpc-pregnancy-bases-maternity-wear)
+- [Universal LPC Spritesheet] (https://opengameart.org/content/lpc-shields-pack)
+- [Universal LPC Spritesheet] (https://opengameart.org/content/lpc-major-triumph)
+- [Universal LPC Spritesheet] (https://opengameart.org/content/lpc-skorpios-scifi-sprite-pack)
+
+### Examples
+
