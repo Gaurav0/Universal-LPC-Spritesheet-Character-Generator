@@ -1,9 +1,9 @@
 Universal LPC Spritesheet Character Generator
 =============================================
 
-Based on [Universal LPC Spritesheet] (https://github.com/jrconway3/Universal-LPC-spritesheet).
+Based on [Universal LPC Spritesheet](https://github.com/jrconway3/Universal-LPC-spritesheet).
 
-Try it out at [gaurav.munjal.us] (http://gaurav.munjal.us/Universal-LPC-Spritesheet-Character-Generator).
+Try it out at [gaurav.munjal.us](http://gaurav.munjal.us/Universal-LPC-Spritesheet-Character-Generator).
 
 The project you are looking now is an expansion on the above mentioned projects. I try to include all LPC created art up to now.
 
@@ -22,11 +22,11 @@ Still, feel free to enhance the code where you like, but for now, I focus on jus
 
 Support still working on:
 
-- [Universal LPC Spritesheet] (https://opengameart.org/content/lpc-teen-unisex-base-clothes)
-- [Universal LPC Spritesheet] (https://opengameart.org/content/lpc-pregnancy-bases-maternity-wear)
-- [Universal LPC Spritesheet] (https://opengameart.org/content/lpc-shields-pack)
-- [Universal LPC Spritesheet] (https://opengameart.org/content/lpc-major-triumph)
-- [Universal LPC Spritesheet] (https://opengameart.org/content/lpc-skorpios-scifi-sprite-pack)
+- [Teens](https://opengameart.org/content/lpc-teen-unisex-base-clothes)
+- [Pregnant women](https://opengameart.org/content/lpc-pregnancy-bases-maternity-wear)
+- [Extra shields](https://opengameart.org/content/lpc-shields-pack)
+- [Triumph](https://opengameart.org/content/lpc-major-triumph)
+- [Skorpios](https://opengameart.org/content/lpc-skorpios-scifi-sprite-pack)
 
 ### Examples
 ![alt text](https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/ex1.png)
