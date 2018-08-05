@@ -245,7 +245,13 @@ $(document).ready(function() {
                             var imgData = ctx.getImageData(64 * i, 264 + 64 * j, 64, 64);
                             ctx.putImageData(imgData, 64 + 192 * i, 1416 + 192 * j);
                         }
-                    if ($(this).data("file")) {
+                    if ($("#sex-male").prop("checked") && $(this).data("file_male")) {
+                        var img = getImage($(this).data("file_male"));
+                        ctx.drawImage(img, 0, 1344);
+                    }else if ($("#sex-female").prop("checked") && $(this).data("file_female")) {
+                        var img = getImage($(this).data("file_female"));
+                        ctx.drawImage(img, 0, 1344);
+                    }else if ($(this).data("file")) {
                         var img = getImage($(this).data("file"));
                         ctx.drawImage(img, 0, 1344);
                     }
