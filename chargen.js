@@ -242,8 +242,8 @@ $(document).ready(function() {
                 if (type == 1) {
                     for (var i = 0; i < 8; ++i)
                         for (var j = 0; j < 4; ++j) {
-                            var imgData = ctx.getImageData(64 * i, 264 + 64 * j, 64, 64);
-                            ctx.putImageData(imgData, 64 + 192 * i, 1416 + 192 * j);
+                            var imgData = ctx.getImageData(64 * i, 256 + 64 * j, 64, 64);
+                            ctx.putImageData(imgData, 64 + 192 * i, 1408 + 192 * j);
                         }
                     if ($("#sex-male").prop("checked") && $(this).data("file_male")) {
                         var img = getImage($(this).data("file_male"));
@@ -258,8 +258,8 @@ $(document).ready(function() {
                 } else if (type == 2) {
                     for (var i = 0; i < 6; ++i)
                         for (var j = 0; j < 4; ++j) {
-                            var imgData = ctx.getImageData(64 * i, 776 + 64 * j, 64, 64);
-                            ctx.putImageData(imgData, 64 + 192 * i, 1416 + 192 * j);
+                            var imgData = ctx.getImageData(64 * i, 768 + 64 * j, 64, 64);
+                            ctx.putImageData(imgData, 64 + 192 * i, 1408 + 192 * j);
                         }
                     if ($("#sex-male").prop("checked") && $(this).data("file_male")) {
                         var img = getImage($(this).data("file_male"));
