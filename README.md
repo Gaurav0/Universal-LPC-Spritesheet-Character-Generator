@@ -23,7 +23,6 @@ Still, feel free to enhance the code where you like, but for now, I focus on jus
 Support still working on:
 
 - [Teens](https://opengameart.org/content/lpc-teen-unisex-base-clothes)
-- [Pregnant women](https://opengameart.org/content/lpc-pregnancy-bases-maternity-wear)
 - [Triumph](https://opengameart.org/content/lpc-major-triumph)
 - [Skorpios](https://opengameart.org/content/lpc-skorpios-scifi-sprite-pack)
 
