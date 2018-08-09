@@ -98,6 +98,30 @@ $(document).ready(function() {
         renameImageDownload(this, canvas, 'Download' + Math.floor(Math.random() * 100000) + '.png');
     });
 
+    // Get colors from canvas
+    $("#getColors").click(function() {
+      const colorsFound = [];
+      var imgData=ctx.getImageData(0,192,64,64);
+      for (var i=0;i<imgData.data.length;i+=4) {
+        let r = imgData.data[i];
+        let g = imgData.data[i+1];
+        let b = imgData.data[i+2];
+        let a = imgData.data[i+3];
+        let rgb = r + "|" + g + "|" + b;
+        if (!colorsFound.includes(rgb) && a === 255) {
+          colorsFound.push(rgb);
+        }
+
+      }
+      for (var i=0;i<colorsFound.length;i+=1) {
+        var colors = colorsFound[i].split("|");
+        ctx.beginPath();
+        ctx.rect(8 * 64 + i*20, 20, 20, 20);
+        ctx.fillStyle = "rgb("+colors[0]+", "+colors[1]+", "+ colors[2]+")";
+        ctx.fill();
+      }
+    });
+
     // Determine if an oversize element used
     var oversize = $("input[type=radio]").filter(function() {
         return $(this).data("oversize");
