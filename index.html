@@ -741,6 +741,18 @@
 									<span class="condensed">Pants</small></span>
 									<ul>
 										<li>
+											<input type="radio" id="legs-Pants_black_L" name="legs" data-file="legs/pants/Pants_black.png">
+											<label for="legs-Pants_black_L">Large Black <small>(Male)</small></label>
+										</li>
+										<li>
+											<input type="radio" id="legs-Pants_blue_L" name="legs" data-file="legs/pants/Pants_blue.png">
+											<label for="legs-Pants_blue_L">Large Blue <small>(Male)</small></label>
+										</li>
+										<li>
+											<input type="radio" id="legs-Pants_brown_L" name="legs" data-file="legs/pants/Pants_brown.png">
+											<label for="legs-Pants_brown_L">Large brown <small>(Male)</small></label>
+										</li>
+										<li>
 											<input type="radio" id="legs-pants_formal" name="legs" data-required="sex=male" data-file_male="legs/pants/male/formal_pants.png">
 											<label for="legs-pants_formal">Formal</label>
 										</li>
@@ -981,6 +993,31 @@
 										<li>
 											<input type="radio" id="clothes-formal_striped" name="clothes" data-required="sex=male" data-file="torso/shirts/formal/formal_stripes_shirt.png">
 											<label for="clothes-formal_striped">Striped</label>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<span class="condensed">Sleeveless <small>(Male)</small></span>
+									<ul>
+										<li>
+											<input type="radio" id="clothes-sleevless_black" name="clothes" data-file="torso/shirts/sleeveless_male/sleevless_black.png">
+											<label for="clothes-sleevless_black">Black</label>
+										</li>
+										<li>
+											<input type="radio" id="clothes-sleevless_blue" name="clothes" data-file="torso/shirts/sleeveless_male/sleevless_blue.png">
+											<label for="clothes-sleevless_blue">Blue</label>
+										</li>
+										<li>
+											<input type="radio" id="clothes-sleevless_brown" name="clothes" data-file="torso/shirts/sleeveless_male/sleevless_brown.png">
+											<label for="clothes-sleevless_brown">Brown</label>
+										</li>
+										<li>
+											<input type="radio" id="clothes-sleevless_red" name="clothes" data-file="torso/shirts/sleeveless_male/sleevless_red.png">
+											<label for="clothes-sleevless_red">Red</label>
+										</li>
+										<li>
+											<input type="radio" id="clothes-sleevless_white" name="clothes" data-file="torso/shirts/sleeveless_male/sleevless_white.png">
+											<label for="clothes-sleevless_white">White</label>
 										</li>
 									</ul>
 								</li>
@@ -1469,6 +1506,10 @@
 									<label for="jacket-formal_brown">Formal brown</label>
 								</li>
 								<li>
+									<input type="radio" id="jacket-formal_brownstriped" name="jacket" data-required="sex=male" data-file_male="torso/chain/tabard/formal_jacket brown stripes.png">
+									<label for="jacket-formal_brownstriped">Striped brown</label>
+								</li>
+								<li>
 									<input type="radio" id="jacket-formal_tan" name="jacket" data-required="sex=male" data-file_male="torso/chain/tabard/formal_jacket tan.png">
 									<label for="jacket-formal_tan">Formal tan</label>
 								</li>
@@ -1503,23 +1544,6 @@
 								</li>
 							</ul>
 						</li>
-						<li>
-							<span class="condensed">Tie</span>
-							<ul>
-								<li>
-									<input type="radio" id="tie-none" name="tie" checked>
-									<label for="tie-none">No Tie</label>
-								</li>
-								<li>
-									<input type="radio" id="tie-on" name="tie" data-required="sex=male" data-file="accessories/ties/formal_necktie.png">
-									<label for="tie-on">Tie <small>(Male)</small> <small>(No Thrust/Shoot)</small></label>
-								</li>
-								<li>
-									<input type="radio" id="tie-bow" name="tie" data-required="sex=male" data-file="accessories/ties/formal_bowtie.png">
-									<label for="tie-bow">Bow Tie <small>(Male)</small> <small>(No Thrust/Shoot)</small></label>
-								</li>
-							</ul>
-						</li>
 					</li>
 					<li>
 						<span class="condensed">Arms</span>
@@ -1551,15 +1575,19 @@
 							</li>
 							<li>
 								<input type="radio" id="shoulders-legion_bronze" name="shoulders" data-file_male="torso/leather/Male_legionbauldron_bronze.png" data-file_female="torso/leather/Female_legionbauldron_bronze.png">
-								<label for="legion-bronze">Legion bronze</label>
+								<label for="shoulders-legion_bronze">Legion bronze</label>
 							</li>
 							<li>
 								<input type="radio" id="shoulders-legion_gold" name="shoulders" data-file_male="torso/leather/Male_legionbauldron_gold.png" data-file_female="torso/leather/Female_legionbauldron_gold.png">
-								<label for="legion-gold">Legion gold</label>
+								<label for="shoulders-legion_gold">Legion gold</label>
 							</li>
 							<li>
 								<input type="radio" id="shoulders-legion_steel" name="shoulders" data-file_male="torso/leather/Male_legionbauldron_steel.png" data-file_female="torso/leather/Female_legionbauldron_steel.png">
-								<label for="legion-steel">Legion steel</label>
+								<label for="shoulders-legion_steel">Legion steel</label>
+							</li>
+							<li>
+								<input type="radio" id="shoulders-SingleBauldron" name="shoulders" data-file="torso/leather/SingleBauldron.png">
+								<label for="shoulders-SingleBauldron">Single Bauldron</label>
 							</li>
 						</ul>
 					</li>
@@ -1908,11 +1936,11 @@
 						</ul>
 					</li>
 					<li>
-						<span class="condensed">Cape Clip / Tie</span>
+						<span class="condensed">Neck</span>
 						<ul>
 							<li>
 								<input type="radio" id="capeacc-none" name="capeacc" checked>
-								<label for="capeacc-none">No Cape Clip / Tie</label>
+								<label for="capeacc-none">No Neck</label>
 							</li>
 
 							<li>
@@ -1923,7 +1951,35 @@
 								<input type="radio" id="capeacc-bowtie" name="capeacc" data-required="sex=male" data-file="accessories/ties/formal_bowtie.png">
 								<label for="capeacc-bowtie">Bow Tie</label>
 							</li>
-
+							<li>
+								<span class="condensed">Scarf</span>
+								<ul>
+									<li>
+										<input type="radio" id="capeacc-Scarf_black" name="capeacc" data-file="accessories/neck/scarf/Scarf_black.png">
+										<label for="capeacc-Scarf_black">Black</label>
+									</li>
+									<li>
+										<input type="radio" id="capeacc-Scarf_blue" name="capeacc" data-file="accessories/neck/scarf/Scarf_blue.png">
+										<label for="capeacc-Scarf_blue">Blue</label>
+									</li>
+									<li>
+										<input type="radio" id="capeacc-Scarf_brown" name="capeacc" data-file="accessories/neck/scarf/Scarf_brown.png">
+										<label for="capeacc-Scarf_brown">Brown</label>
+									</li>
+									<li>
+										<input type="radio" id="capeacc-Scarf_grey" name="capeacc" data-file="accessories/neck/scarf/Scarf_grey.png">
+										<label for="capeacc-Scarf_grey">Gray</label>
+									</li>
+									<li>
+										<input type="radio" id="capeacc-Scarf_red" name="capeacc" data-file="accessories/neck/scarf/Scarf_red.png">
+										<label for="capeacc-Scarf_red">Red</label>
+									</li>
+									<li>
+										<input type="radio" id="capeacc-Scarf_white" name="capeacc" data-file="accessories/neck/scarf/Scarf_white.png">
+										<label for="capeacc-Scarf_white">White</label>
+									</li>
+								</ul>
+							</li>
 							<li>
 								<span class="condensed">Cape Clip <small>(Female)</small></span>
 								<ul>
@@ -2329,6 +2385,31 @@
 								</ul>
 							</li>
 							<li>
+								<span class="condensed">Half Messy <small>(Male)</small></span>
+								<ul>
+									<li>
+										<input type="radio" id="hair-HalfMessy_black" name="hair" data-file="hair/male/halfmessy/HalfMessy_black.png" >
+										<label for="hair-HalfMessy_black">Black</label>
+									</li>
+									<li>
+										<input type="radio" id="hair-HalfMessy_brunette" name="hair" data-file="hair/male/halfmessy/HalfMessy_brunette.png" >
+										<label for="hair-HalfMessy_brunette">Brown</label>
+									</li>
+									<li>
+										<input type="radio" id="hair-HalfMessy_gold" name="hair" data-file="hair/male/halfmessy/HalfMessy_gold.png" >
+										<label for="hair-HalfMessy_gold">Gold</label>
+									</li>
+									<li>
+										<input type="radio" id="hair-HalfMessy_red" name="hair" data-file="hair/male/halfmessy/HalfMessy_red.png" >
+										<label for="hair-HalfMessy_red">Red</label>
+									</li>
+									<li>
+										<input type="radio" id="hair-HalfMessy_red0" name="hair" data-file="hair/male/halfmessy/HalfMessy_red0.png" >
+										<label for="hair-HalfMessy_red0">Dark red</label>
+									</li>
+								</ul>
+							</li>
+							<li>
 								<span class="condensed">Long <small>(Male)</small></span>
 								<ul>
 									<li>
@@ -2587,6 +2668,116 @@
 									</li>
 								</ul>
 							</li>
+
+							<li>
+								<span class="condensed">Curly <small>(Male)</small></span>
+								<ul>
+									<li><input type="radio" id="hair-Male_Hair_curly_gold" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_gold.png"><label for="hair-Male_Hair_curly_gold">gold</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_blonde" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_blonde.png"><label for="hair-Male_Hair_curly_blonde">blonde</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_darkred" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_darkred.png"><label for="hair-Male_Hair_curly_darkred">darkred</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_green2" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_green2.png"><label for="hair-Male_Hair_curly_green2">green2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_whitecyan" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_whitecyan.png"><label for="hair-Male_Hair_curly_whitecyan">whitecyan</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_brown2" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_brown2.png"><label for="hair-Male_Hair_curly_brown2">brown2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_whiteblond2" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_whiteblond2.png"><label for="hair-Male_Hair_curly_whiteblond2">whiteblond2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_blonde2" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_blonde2.png"><label for="hair-Male_Hair_curly_blonde2">blonde2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_darkgrey" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_darkgrey.png"><label for="hair-Male_Hair_curly_darkgrey">darkgrey</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_grey" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_grey.png"><label for="hair-Male_Hair_curly_grey">grey</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_default" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_default.png"><label for="hair-Male_Hair_curly_default">default</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_raven2" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_raven2.png"><label for="hair-Male_Hair_curly_raven2">raven2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_blue2" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_blue2.png"><label for="hair-Male_Hair_curly_blue2">blue2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_black" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_black.png"><label for="hair-Male_Hair_curly_black">black</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_lightblond2" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_lightblond2.png"><label for="hair-Male_Hair_curly_lightblond2">lightblond2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_whiteblond" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_whiteblond.png"><label for="hair-Male_Hair_curly_whiteblond">whiteblond</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_brunette" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_brunette.png"><label for="hair-Male_Hair_curly_brunette">brunette</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_raven" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_raven.png"><label for="hair-Male_Hair_curly_raven">raven</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_green" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_green.png"><label for="hair-Male_Hair_curly_green">green</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_lightblond" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_lightblond.png"><label for="hair-Male_Hair_curly_lightblond">lightblond</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_pink" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_pink.png"><label for="hair-Male_Hair_curly_pink">pink</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_blue" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_blue.png"><label for="hair-Male_Hair_curly_blue">blue</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_purple" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_purple.png"><label for="hair-Male_Hair_curly_purple">purple</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_red2" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_red2.png"><label for="hair-Male_Hair_curly_red2">red2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_darkblond" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_darkblond.png"><label for="hair-Male_Hair_curly_darkblond">darkblond</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_brunette2" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_brunette2.png"><label for="hair-Male_Hair_curly_brunette2">brunette2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_ruby" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_ruby.png"><label for="hair-Male_Hair_curly_ruby">ruby</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_pink2" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_pink2.png"><label for="hair-Male_Hair_curly_pink2">pink2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_brown" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_brown.png"><label for="hair-Male_Hair_curly_brown">brown</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_white" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_white.png"><label for="hair-Male_Hair_curly_white">white</label></li>
+									<li><input type="radio" id="hair-Male_Hair_curly_red" name="hair" data-file="hair/male/male_curly/Male_Hair_curly_red.png"><label for="hair-Male_Hair_curly_red">red</label></li>
+								</ul>
+							</li>
+							<li>
+								<span class="condensed">Single <small>(Male)</small></span>
+								<ul>
+									<li><input type="radio" id="hair-Male_Hair_single_red" name="hair" data-file="hair/male/male_single/Male_Hair_single_red.png"><label for="hair-Male_Hair_single_red">red</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_pink2" name="hair" data-file="hair/male/male_single/Male_Hair_single_pink2.png"><label for="hair-Male_Hair_single_pink2">pink2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_blue" name="hair" data-file="hair/male/male_single/Male_Hair_single_blue.png"><label for="hair-Male_Hair_single_blue">blue</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_pink" name="hair" data-file="hair/male/male_single/Male_Hair_single_pink.png"><label for="hair-Male_Hair_single_pink">pink</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_brown" name="hair" data-file="hair/male/male_single/Male_Hair_single_brown.png"><label for="hair-Male_Hair_single_brown">brown</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_whiteblond2" name="hair" data-file="hair/male/male_single/Male_Hair_single_whiteblond2.png"><label for="hair-Male_Hair_single_whiteblond2">whiteblond2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_default" name="hair" data-file="hair/male/male_single/Male_Hair_single_default.png"><label for="hair-Male_Hair_single_default">default</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_raven2" name="hair" data-file="hair/male/male_single/Male_Hair_single_raven2.png"><label for="hair-Male_Hair_single_raven2">raven2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_white" name="hair" data-file="hair/male/male_single/Male_Hair_single_white.png"><label for="hair-Male_Hair_single_white">white</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_lightblond2" name="hair" data-file="hair/male/male_single/Male_Hair_single_lightblond2.png"><label for="hair-Male_Hair_single_lightblond2">lightblond2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_raven" name="hair" data-file="hair/male/male_single/Male_Hair_single_raven.png"><label for="hair-Male_Hair_single_raven">raven</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_darkgray" name="hair" data-file="hair/male/male_single/Male_Hair_single_darkgray.png"><label for="hair-Male_Hair_single_darkgray">darkgray</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_green" name="hair" data-file="hair/male/male_single/Male_Hair_single_green.png"><label for="hair-Male_Hair_single_green">green</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_blond2" name="hair" data-file="hair/male/male_single/Male_Hair_single_blond2.png"><label for="hair-Male_Hair_single_blond2">blond2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_darkred" name="hair" data-file="hair/male/male_single/Male_Hair_single_darkred.png"><label for="hair-Male_Hair_single_darkred">darkred</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_green2" name="hair" data-file="hair/male/male_single/Male_Hair_single_green2.png"><label for="hair-Male_Hair_single_green2">green2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_red2" name="hair" data-file="hair/male/male_single/Male_Hair_single_red2.png"><label for="hair-Male_Hair_single_red2">red2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_whitecyan" name="hair" data-file="hair/male/male_single/Male_Hair_single_whitecyan.png"><label for="hair-Male_Hair_single_whitecyan">whitecyan</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_ruby" name="hair" data-file="hair/male/male_single/Male_Hair_single_ruby.png"><label for="hair-Male_Hair_single_ruby">ruby</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_whiteblond" name="hair" data-file="hair/male/male_single/Male_Hair_single_whiteblond.png"><label for="hair-Male_Hair_single_whiteblond">whiteblond</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_brown2" name="hair" data-file="hair/male/male_single/Male_Hair_single_brown2.png"><label for="hair-Male_Hair_single_brown2">brown2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_darkblond" name="hair" data-file="hair/male/male_single/Male_Hair_single_darkblond.png"><label for="hair-Male_Hair_single_darkblond">darkblond</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_brunette2" name="hair" data-file="hair/male/male_single/Male_Hair_single_brunette2.png"><label for="hair-Male_Hair_single_brunette2">brunette2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_blond" name="hair" data-file="hair/male/male_single/Male_Hair_single_blond.png"><label for="hair-Male_Hair_single_blond">blond</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_gold" name="hair" data-file="hair/male/male_single/Male_Hair_single_gold.png"><label for="hair-Male_Hair_single_gold">gold</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_lightblond" name="hair" data-file="hair/male/male_single/Male_Hair_single_lightblond.png"><label for="hair-Male_Hair_single_lightblond">lightblond</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_blue2" name="hair" data-file="hair/male/male_single/Male_Hair_single_blue2.png"><label for="hair-Male_Hair_single_blue2">blue2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_black" name="hair" data-file="hair/male/male_single/Male_Hair_single_black.png"><label for="hair-Male_Hair_single_black">black</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_grey" name="hair" data-file="hair/male/male_single/Male_Hair_single_grey.png"><label for="hair-Male_Hair_single_grey">grey</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_brunette" name="hair" data-file="hair/male/male_single/Male_Hair_single_brunette.png"><label for="hair-Male_Hair_single_brunette">brunette</label></li>
+									<li><input type="radio" id="hair-Male_Hair_single_purple" name="hair" data-file="hair/male/male_single/Male_Hair_single_purple.png"><label for="hair-Male_Hair_single_purple">purple</label></li>
+								</ul>
+							</li>
+							<li>
+								<span class="condensed">Braid <small>(Male)</small></span>
+								<ul>
+									<li><input type="radio" id="hair-Male_Hair_braid_Pink" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_Pink.png"><label for="hair-Male_Hair_braid_Pink">Pink</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_blue" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_blue.png"><label for="hair-Male_Hair_braid_blue">blue</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_LightBlonde2" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_LightBlonde2.png"><label for="hair-Male_Hair_braid_LightBlonde2">LightBlonde2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_WhiteBlonde" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_WhiteBlonde.png"><label for="hair-Male_Hair_braid_WhiteBlonde">WhiteBlonde</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_Purple" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_Purple.png"><label for="hair-Male_Hair_braid_Purple">Purple</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_DarkBlonde" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_DarkBlonde.png"><label for="hair-Male_Hair_braid_DarkBlonde">DarkBlonde</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_ruby" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_ruby.png"><label for="hair-Male_Hair_braid_ruby">ruby</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_blue2" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_blue2.png"><label for="hair-Male_Hair_braid_blue2">blue2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_black" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_black.png"><label for="hair-Male_Hair_braid_black">black</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_WhiteCyan" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_WhiteCyan.png"><label for="hair-Male_Hair_braid_WhiteCyan">WhiteCyan</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_Red2" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_Red2.png"><label for="hair-Male_Hair_braid_Red2">Red2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_LightBlonde" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_LightBlonde.png"><label for="hair-Male_Hair_braid_LightBlonde">LightBlonde</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_brunette2" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_brunette2.png"><label for="hair-Male_Hair_braid_brunette2">brunette2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_blonde" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_blonde.png"><label for="hair-Male_Hair_braid_blonde">blonde</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_WhiteBlonde2" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_WhiteBlonde2.png"><label for="hair-Male_Hair_braid_WhiteBlonde2">WhiteBlonde2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_DarkRed" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_DarkRed.png"><label for="hair-Male_Hair_braid_DarkRed">DarkRed</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_green" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_green.png"><label for="hair-Male_Hair_braid_green">green</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_raven" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_raven.png"><label for="hair-Male_Hair_braid_raven">raven</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_Brown2" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_Brown2.png"><label for="hair-Male_Hair_braid_Brown2">Brown2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_Gold" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_Gold.png"><label for="hair-Male_Hair_braid_Gold">Gold</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_blonde2" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_blonde2.png"><label for="hair-Male_Hair_braid_blonde2">blonde2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_green2" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_green2.png"><label for="hair-Male_Hair_braid_green2">green2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_DarkGrey" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_DarkGrey.png"><label for="hair-Male_Hair_braid_DarkGrey">DarkGrey</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_Pink2" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_Pink2.png"><label for="hair-Male_Hair_braid_Pink2">Pink2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_brown" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_brown.png"><label for="hair-Male_Hair_braid_brown">brown</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_default" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_default.png"><label for="hair-Male_Hair_braid_default">default</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_White" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_White.png"><label for="hair-Male_Hair_braid_White">White</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_red" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_red.png"><label for="hair-Male_Hair_braid_red">red</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_grey" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_grey.png"><label for="hair-Male_Hair_braid_grey">grey</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_raven2" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_raven2.png"><label for="hair-Male_Hair_braid_raven2">raven2</label></li>
+									<li><input type="radio" id="hair-Male_Hair_braid_brunette" name="hair" data-file="hair/male/male_braid/Male_Hair_braid_brunette.png"><label for="hair-Male_Hair_braid_brunette">brunette</label></li>
+								</ul>
+							</li>
+
 							<li>
 								<span class="condensed">Shorthawk <small>(Male)</small></span>
 								<ul>
@@ -2725,6 +2916,116 @@
 									</li>
 								</ul>
 							</li>
+
+							<li>
+								<span class="condensed">Braid <small>(Female)</small></span>
+								<ul>
+									<li><input type="radio" id="hair-Female_Hair_braid_green" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_green.png"><label for="hair-Female_Hair_braid_green">green</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_red2" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_red2.png"><label for="hair-Female_Hair_braid_red2">red2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_raven" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_raven.png"><label for="hair-Female_Hair_braid_raven">raven</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_ruby" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_ruby.png"><label for="hair-Female_Hair_braid_ruby">ruby</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_red" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_red.png"><label for="hair-Female_Hair_braid_red">red</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_purple" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_purple.png"><label for="hair-Female_Hair_braid_purple">purple</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_darkblond" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_darkblond.png"><label for="hair-Female_Hair_braid_darkblond">darkblond</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_brunette2" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_brunette2.png"><label for="hair-Female_Hair_braid_brunette2">brunette2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_pink2" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_pink2.png"><label for="hair-Female_Hair_braid_pink2">pink2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_darkgray" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_darkgray.png"><label for="hair-Female_Hair_braid_darkgray">darkgray</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_brown" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_brown.png"><label for="hair-Female_Hair_braid_brown">brown</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_lightblond" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_lightblond.png"><label for="hair-Female_Hair_braid_lightblond">lightblond</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_blue" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_blue.png"><label for="hair-Female_Hair_braid_blue">blue</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_pink" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_pink.png"><label for="hair-Female_Hair_braid_pink">pink</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_white" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_white.png"><label for="hair-Female_Hair_braid_white">white</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_grey" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_grey.png"><label for="hair-Female_Hair_braid_grey">grey</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_whiteblond" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_whiteblond.png"><label for="hair-Female_Hair_braid_whiteblond">whiteblond</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_blond2" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_blond2.png"><label for="hair-Female_Hair_braid_blond2">blond2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_default" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_default.png"><label for="hair-Female_Hair_braid_default">default</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_lightblond2" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_lightblond2.png"><label for="hair-Female_Hair_braid_lightblond2">lightblond2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_green2" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_green2.png"><label for="hair-Female_Hair_braid_green2">green2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_brown2" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_brown2.png"><label for="hair-Female_Hair_braid_brown2">brown2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_gold" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_gold.png"><label for="hair-Female_Hair_braid_gold">gold</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_darkred" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_darkred.png"><label for="hair-Female_Hair_braid_darkred">darkred</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_whitecyan" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_whitecyan.png"><label for="hair-Female_Hair_braid_whitecyan">whitecyan</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_blond" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_blond.png"><label for="hair-Female_Hair_braid_blond">blond</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_whiteblond2" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_whiteblond2.png"><label for="hair-Female_Hair_braid_whiteblond2">whiteblond2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_brunette" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_brunette.png"><label for="hair-Female_Hair_braid_brunette">brunette</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_raven2" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_raven2.png"><label for="hair-Female_Hair_braid_raven2">raven2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_blue2" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_blue2.png"><label for="hair-Female_Hair_braid_blue2">blue2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_braid_black" name="hair" data-file="hair/female/female_braid/Female_Hair_braid_black.png"><label for="hair-Female_Hair_braid_black">black</label></li>
+								</ul>
+							</li>
+							<li>
+								<span class="condensed">Curly <small>(Female)</small></span>
+								<ul>
+									<li><input type="radio" id="hair-Female_Hair_curly_default" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_default.png"><label for="hair-Female_Hair_curly_default">default</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_Raven" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_Raven.png"><label for="hair-Female_Hair_curly_Raven">Raven</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_Green" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_Green.png"><label for="hair-Female_Hair_curly_Green">Green</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_blonde" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_blonde.png"><label for="hair-Female_Hair_curly_blonde">blonde</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_grey" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_grey.png"><label for="hair-Female_Hair_curly_grey">grey</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_Brown2" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_Brown2.png"><label for="hair-Female_Hair_curly_Brown2">Brown2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_Green2" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_Green2.png"><label for="hair-Female_Hair_curly_Green2">Green2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_LightBlonde2" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_LightBlonde2.png"><label for="hair-Female_Hair_curly_LightBlonde2">LightBlonde2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_RubyHead" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_RubyHead.png"><label for="hair-Female_Hair_curly_RubyHead">RubyHead</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_Pink2" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_Pink2.png"><label for="hair-Female_Hair_curly_Pink2">Pink2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_brown" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_brown.png"><label for="hair-Female_Hair_curly_brown">brown</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_DarkRed" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_DarkRed.png"><label for="hair-Female_Hair_curly_DarkRed">DarkRed</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_DarkGrey" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_DarkGrey.png"><label for="hair-Female_Hair_curly_DarkGrey">DarkGrey</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_brunette" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_brunette.png"><label for="hair-Female_Hair_curly_brunette">brunette</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_Gold" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_Gold.png"><label for="hair-Female_Hair_curly_Gold">Gold</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_blonde2" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_blonde2.png"><label for="hair-Female_Hair_curly_blonde2">blonde2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_Raven2" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_Raven2.png"><label for="hair-Female_Hair_curly_Raven2">Raven2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_brunette2" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_brunette2.png"><label for="hair-Female_Hair_curly_brunette2">brunette2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_White" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_White.png"><label for="hair-Female_Hair_curly_White">White</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_WhiteCyan" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_WhiteCyan.png"><label for="hair-Female_Hair_curly_WhiteCyan">WhiteCyan</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_LightBlonde" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_LightBlonde.png"><label for="hair-Female_Hair_curly_LightBlonde">LightBlonde</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_Red3" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_Red3.png"><label for="hair-Female_Hair_curly_Red3">Red3</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_DarkBlonde" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_DarkBlonde.png"><label for="hair-Female_Hair_curly_DarkBlonde">DarkBlonde</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_WhiteBlonde2" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_WhiteBlonde2.png"><label for="hair-Female_Hair_curly_WhiteBlonde2">WhiteBlonde2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_Purple" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_Purple.png"><label for="hair-Female_Hair_curly_Purple">Purple</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_blue" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_blue.png"><label for="hair-Female_Hair_curly_blue">blue</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_Pink" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_Pink.png"><label for="hair-Female_Hair_curly_Pink">Pink</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_WhiteBlonde" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_WhiteBlonde.png"><label for="hair-Female_Hair_curly_WhiteBlonde">WhiteBlonde</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_RedHead" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_RedHead.png"><label for="hair-Female_Hair_curly_RedHead">RedHead</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_blue2" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_blue2.png"><label for="hair-Female_Hair_curly_blue2">blue2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_curly_black" name="hair" data-file="hair/female/female_curly/Female_Hair_curly_black.png"><label for="hair-Female_Hair_curly_black">black</label></li>
+								</ul>
+							</li>
+							<li>
+								<span class="condensed">Single <small>(Female)</small></span>
+								<ul>
+									<li><input type="radio" id="hair-Female_Hair_single_darkblond" name="hair" data-file="hair/female/female_single/Female_Hair_single_darkblond.png"><label for="hair-Female_Hair_single_darkblond">darkblond</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_brown" name="hair" data-file="hair/female/female_single/Female_Hair_single_brown.png"><label for="hair-Female_Hair_single_brown">brown</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_brunette2" name="hair" data-file="hair/female/female_single/Female_Hair_single_brunette2.png"><label for="hair-Female_Hair_single_brunette2">brunette2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_pink2" name="hair" data-file="hair/female/female_single/Female_Hair_single_pink2.png"><label for="hair-Female_Hair_single_pink2">pink2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_default" name="hair" data-file="hair/female/female_single/Female_Hair_single_default.png"><label for="hair-Female_Hair_single_default">default</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_blond2" name="hair" data-file="hair/female/female_single/Female_Hair_single_blond2.png"><label for="hair-Female_Hair_single_blond2">blond2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_white" name="hair" data-file="hair/female/female_single/Female_Hair_single_white.png"><label for="hair-Female_Hair_single_white">white</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_green2" name="hair" data-file="hair/female/female_single/Female_Hair_single_green2.png"><label for="hair-Female_Hair_single_green2">green2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_brown2" name="hair" data-file="hair/female/female_single/Female_Hair_single_brown2.png"><label for="hair-Female_Hair_single_brown2">brown2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_gold" name="hair" data-file="hair/female/female_single/Female_Hair_single_gold.png"><label for="hair-Female_Hair_single_gold">gold</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_lightblond2" name="hair" data-file="hair/female/female_single/Female_Hair_single_lightblond2.png"><label for="hair-Female_Hair_single_lightblond2">lightblond2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_darkred" name="hair" data-file="hair/female/female_single/Female_Hair_single_darkred.png"><label for="hair-Female_Hair_single_darkred">darkred</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_lightblond" name="hair" data-file="hair/female/female_single/Female_Hair_single_lightblond.png"><label for="hair-Female_Hair_single_lightblond">lightblond</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_green" name="hair" data-file="hair/female/female_single/Female_Hair_single_green.png"><label for="hair-Female_Hair_single_green">green</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_raven" name="hair" data-file="hair/female/female_single/Female_Hair_single_raven.png"><label for="hair-Female_Hair_single_raven">raven</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_brunette" name="hair" data-file="hair/female/female_single/Female_Hair_single_brunette.png"><label for="hair-Female_Hair_single_brunette">brunette</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_red" name="hair" data-file="hair/female/female_single/Female_Hair_single_red.png"><label for="hair-Female_Hair_single_red">red</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_raven2" name="hair" data-file="hair/female/female_single/Female_Hair_single_raven2.png"><label for="hair-Female_Hair_single_raven2">raven2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_grey" name="hair" data-file="hair/female/female_single/Female_Hair_single_grey.png"><label for="hair-Female_Hair_single_grey">grey</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_whiteblond2" name="hair" data-file="hair/female/female_single/Female_Hair_single_whiteblond2.png"><label for="hair-Female_Hair_single_whiteblond2">whiteblond2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_blond" name="hair" data-file="hair/female/female_single/Female_Hair_single_blond.png"><label for="hair-Female_Hair_single_blond">blond</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_whiteblond" name="hair" data-file="hair/female/female_single/Female_Hair_single_whiteblond.png"><label for="hair-Female_Hair_single_whiteblond">whiteblond</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_pink" name="hair" data-file="hair/female/female_single/Female_Hair_single_pink.png"><label for="hair-Female_Hair_single_pink">pink</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_blue" name="hair" data-file="hair/female/female_single/Female_Hair_single_blue.png"><label for="hair-Female_Hair_single_blue">blue</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_blue2" name="hair" data-file="hair/female/female_single/Female_Hair_single_blue2.png"><label for="hair-Female_Hair_single_blue2">blue2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_black" name="hair" data-file="hair/female/female_single/Female_Hair_single_black.png"><label for="hair-Female_Hair_single_black">black</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_purple" name="hair" data-file="hair/female/female_single/Female_Hair_single_purple.png"><label for="hair-Female_Hair_single_purple">purple</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_red2" name="hair" data-file="hair/female/female_single/Female_Hair_single_red2.png"><label for="hair-Female_Hair_single_red2">red2</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_whitecyan" name="hair" data-file="hair/female/female_single/Female_Hair_single_whitecyan.png"><label for="hair-Female_Hair_single_whitecyan">whitecyan</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_darkgray" name="hair" data-file="hair/female/female_single/Female_Hair_single_darkgray.png"><label for="hair-Female_Hair_single_darkgray">darkgray</label></li>
+									<li><input type="radio" id="hair-Female_Hair_single_ruby" name="hair" data-file="hair/female/female_single/Female_Hair_single_ruby.png"><label for="hair-Female_Hair_single_ruby">ruby</label></li>
+								</ul>
+							</li>
+
 							<li>
 								<span class="condensed">Pixie <small>(Female)</small></span>
 								<ul>
@@ -4068,12 +4369,44 @@
 								<label for="hat-bandana_red">Red Bandana</label>
 							</li>
 							<li>
-								<input type="radio" id="hat-formal" name="hat" data-file_male="head/caps/formal_hat.png" data-file_female="head/caps/formal_hat.png">
-								<label for="hat-formal">Formal Hat</label>
+								<input type="radio" id="hat-formal1" name="hat" data-file="head/caps/formal_hat.png">
+								<label for="hat-formal1">Formal 1</label>
+							</li>
+							<li>
+								<input type="radio" id="hat-formal2" name="hat" data-file="head/caps/formal_tophat_black.png">
+								<label for="hat-formal2">Formal 2</label>
+							</li>
+							<li>
+								<input type="radio" id="hat-formal3" name="hat" data-file="head/caps/formal_tophat_brown.png">
+								<label for="hat-formal3">Formal 3</label>
 							</li>
 							<li>
 								<input type="radio" id="hat-lizard_hood" name="hat" data-file_male="head/caps/lizardMale_hood.png" data-file_female="head/caps/lizardFemale_hood.png">
 								<label for="hat-lizard_hood">Lizard Hood</label>
+							</li>
+							<li>
+								<input type="radio" id="hat-lizard_fin1" name="hat" data-file_male="head/caps/lizardMale_fin_blue.png" data-file_female="head/caps/lizardFemale_fin_blue.png">
+								<label for="hat-lizard_fin1">Lizard Fin 1</label>
+							</li>
+							<li>
+								<input type="radio" id="hat-lizard_fin2" name="hat" data-file_male="head/caps/lizardMale_fin_dark.png" data-file_female="head/caps/lizardFemale_fin_dark.png">
+								<label for="hat-lizard_fin2">Lizard Fin 2</label>
+							</li>
+							<li>
+								<input type="radio" id="hat-lizard_fin3" name="hat" data-file_male="head/caps/lizardMale_fin_light.png" data-file_female="head/caps/lizardFemale_fin_light.png">
+								<label for="hat-lizard_fin3">Lizard Fin 3</label>
+							</li>
+							<li>
+								<input type="radio" id="hat-lizard_finS1" name="hat" data-file_male="head/caps/lizardMale_shortfin_blue.png" data-file_female="head/caps/lizardFemale_shortfin_blue.png">
+								<label for="hat-lizard_finS1">Lizard Fin S1</label>
+							</li>
+							<li>
+								<input type="radio" id="hat-lizard_finS2" name="hat" data-file_male="head/caps/lizardMale_shortfin_dark.png" data-file_female="head/caps/lizardFemale_shortfin_dark.png">
+								<label for="hat-lizard_finS2">Lizard Fin S2</label>
+							</li>
+							<li>
+								<input type="radio" id="hat-lizard_finS3" name="hat" data-file_male="head/caps/lizardMale_shortfin_light.png" data-file_female="head/caps/lizardFemale_shortfin_light.png">
+								<label for="hat-lizard_finS3">Lizard Fin S3</label>
 							</li>
 							<li>
 								<input type="radio" id="hat-lizard_horn1" name="hat" data-file_male="head/caps/lizardMale_horn1.png" data-file_female="head/caps/lizardFemale_horn1.png">
@@ -4082,6 +4415,10 @@
 							<li>
 								<input type="radio" id="hat-lizard_horn2" name="hat" data-file_male="head/caps/lizardMale_horn2.png" data-file_female="head/caps/lizardFemale_horn2.png">
 								<label for="hat-lizard_horn2">Lizard Horn 2</label>
+							</li>
+							<li>
+								<input type="radio" id="hat-lizard_bandage" name="hat" data-file_male="head/caps/lizardMale_banage.png" data-file_female="head/caps/lizardFemale_bandage_red.png">
+								<label for="hat-lizard_bandage">Bandage</label>
 							</li>
 							<li>
 								<input type="radio" id="hat-cap_leather" name="hat" data-file_male="head/caps/male/leather_cap_male.png" data-file_female="head/caps/female/leather_cap_female.png">
