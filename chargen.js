@@ -88,6 +88,8 @@ $(document).ready(function() {
     var canvas = $("#spritesheet").get(0);
     var ctx = canvas.getContext("2d");
 
+    const maxColors = 200;
+
     function renameImageDownload(link, canvasItem, filename) {
         link.href = canvasItem.toDataURL();
         link.download = filename;
@@ -99,20 +101,52 @@ $(document).ready(function() {
     });
 
     // Get colors from canvas
-    $("#getColors").click(function() {
+    $("#changeColors").click(function() {
       const colorsFound = [];
-      var imgData=ctx.getImageData(0,192,64,64);
+      var imgData=ctx.getImageData(0,0,canvas.width,canvas.height);
+      
+      const rChange = parseInt(document.getElementById("RGB-R").value) || 0;
+      const gChange = parseInt(document.getElementById("RGB-G").value) || 0;
+      const bChange = parseInt(document.getElementById("RGB-B").value) || 0;
+
+      if (rChange === 0 && gChange === 0 && bChange === 0) {
+        document.getElementById("colorsChanged").value = "No input for RGB change";
+        return;
+      }
+      // Get colors maxed at 200
       for (var i=0;i<imgData.data.length;i+=4) {
         let r = imgData.data[i];
         let g = imgData.data[i+1];
         let b = imgData.data[i+2];
         let a = imgData.data[i+3];
         let rgb = r + "|" + g + "|" + b;
-        if (!colorsFound.includes(rgb) && a === 255) {
+        if (a === 255 && !colorsFound.includes(rgb) && rgb !== "0|0|0") {
           colorsFound.push(rgb);
+          if (colorsFound.length > maxColors) {
+          	break;
+          }
         }
-
       }
+      document.getElementById("colorsChanged").value = "Colors detected: " + colorsFound.length;
+
+      // change colors
+      for (var i=0;i<imgData.data.length;i+=4) {
+        let r = imgData.data[i];
+        let g = imgData.data[i+1];
+        let b = imgData.data[i+2];
+        let rgb = r + "|" + g + "|" + b;
+
+        for (var j=0;j<colorsFound.length;j+=1) {
+            if (colorsFound[j] === rgb) {
+             imgData.data[i] = r+rChange;
+             imgData.data[i+1] = g+gChange;
+             imgData.data[i+2] = b+bChange;
+            }
+        }
+      }
+      ctx.putImageData(imgData,0,0);
+
+      // draw found colors
       for (var i=0;i<colorsFound.length;i+=1) {
         var colors = colorsFound[i].split("|");
         ctx.beginPath();
@@ -182,7 +216,7 @@ $(document).ready(function() {
                     drawImage(ctx, img);
                     ctx.globalCompositeOperation = "source-over";
                 } else
-                    drawImage(ctx, img);
+                drawImage(ctx, img);
             }
 
             // if data-file_behind specified
@@ -214,7 +248,7 @@ $(document).ready(function() {
             }
 
             // if data-file_male_light... and data-file_female_light... is specified
-            var bodytypes = ["light", "dark", "dark2", "tanned", "tanned2", "darkelf", "darkelf2", "reptbluewings", "reptbluenowings", "reptredwings", "reptdarkwings", "reptdarknowings", "white", "peach", "brown", "olive", "black"];
+            var bodytypes = ["none", "light", "dark", "dark2", "tanned", "tanned2", "darkelf", "darkelf2", "reptbluewings", "reptbluenowings", "reptredwings", "reptdarkwings", "reptdarknowings", "white", "peach", "brown", "olive", "black"];
             if (isMale) {
                 _.each(bodytypes, function(bodytype) {
                     if ($("#body-" + bodytype).prop("checked") && $this.data("file_male_" + bodytype)) {
@@ -269,32 +303,32 @@ $(document).ready(function() {
                             var imgData = ctx.getImageData(64 * i, 256 + 64 * j, 64, 64);
                             ctx.putImageData(imgData, 64 + 192 * i, 1408 + 192 * j);
                         }
-                    if ($("#sex-male").prop("checked") && $(this).data("file_male")) {
-                        var img = getImage($(this).data("file_male"));
-                        ctx.drawImage(img, 0, 1344);
-                    }else if ($("#sex-female").prop("checked") && $(this).data("file_female")) {
-                        var img = getImage($(this).data("file_female"));
-                        ctx.drawImage(img, 0, 1344);
-                    }else if ($(this).data("file")) {
-                        var img = getImage($(this).data("file"));
-                        ctx.drawImage(img, 0, 1344);
-                    }
-                } else if (type == 2) {
-                    for (var i = 0; i < 6; ++i)
-                        for (var j = 0; j < 4; ++j) {
-                            var imgData = ctx.getImageData(64 * i, 768 + 64 * j, 64, 64);
-                            ctx.putImageData(imgData, 64 + 192 * i, 1408 + 192 * j);
+                        if ($("#sex-male").prop("checked") && $(this).data("file_male")) {
+                            var img = getImage($(this).data("file_male"));
+                            ctx.drawImage(img, 0, 1344);
+                        }else if ($("#sex-female").prop("checked") && $(this).data("file_female")) {
+                            var img = getImage($(this).data("file_female"));
+                            ctx.drawImage(img, 0, 1344);
+                        }else if ($(this).data("file")) {
+                            var img = getImage($(this).data("file"));
+                            ctx.drawImage(img, 0, 1344);
                         }
-                    if ($("#sex-male").prop("checked") && $(this).data("file_male")) {
-                        var img = getImage($(this).data("file_male"));
-                        ctx.drawImage(img, 0, 1344);
-                    }
-                    if ($("#sex-female").prop("checked") && $(this).data("file_female")) {
-                        var img = getImage($(this).data("file_female"));
-                        ctx.drawImage(img, 0, 1344);
-                    }
-                }
-            });
+                    } else if (type == 2) {
+                        for (var i = 0; i < 6; ++i)
+                            for (var j = 0; j < 4; ++j) {
+                                var imgData = ctx.getImageData(64 * i, 768 + 64 * j, 64, 64);
+                                ctx.putImageData(imgData, 64 + 192 * i, 1408 + 192 * j);
+                            }
+                            if ($("#sex-male").prop("checked") && $(this).data("file_male")) {
+                                var img = getImage($(this).data("file_male"));
+                                ctx.drawImage(img, 0, 1344);
+                            }
+                            if ($("#sex-female").prop("checked") && $(this).data("file_female")) {
+                                var img = getImage($(this).data("file_female"));
+                                ctx.drawImage(img, 0, 1344);
+                            }
+                        }
+                    });
         }
 
         // Clear everything if illegal combination used
