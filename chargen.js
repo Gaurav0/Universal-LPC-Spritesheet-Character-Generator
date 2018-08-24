@@ -455,13 +455,8 @@ $(document).ready(function() {
             if (!$(this).parent().hasClass("hasPreview")) {
                 var prev = document.createElement("canvas");
                 var oversize = $(this).data("oversize");
-                if (!oversize) {
-                    prev.setAttribute("width", 64);
-                    prev.setAttribute("height", 64);
-                } else {
-                    prev.setAttribute("width", 192);
-                    prev.setAttribute("height", 192);
-                }
+                prev.setAttribute("width", 64);
+                prev.setAttribute("height", 64);
                 var prevctx = prev.getContext("2d");
                 var img = null;
                 var previewRow = $(this).data("preview_row");
@@ -472,7 +467,7 @@ $(document).ready(function() {
                 var callback = function(img) {
                     try {
                         if (oversize)
-                            prevctx.drawImage(img, 0, 2 * 192, 192, 192, 0, 0, 192, 192);
+                            prevctx.drawImage(img, 0, 2 * 192, 192, 192, 0, 0, 64, 64);
                         else
                             prevctx.drawImage(img, 0, previewRow * 64, 64, 64, 0, 0, 64, 64);
                     } catch (err) {
@@ -498,6 +493,7 @@ $(document).ready(function() {
     };
 
     // Preview Animation
+    var oversize = $(this).data("oversize");
     var anim = $("#previewAnimations").get(0);
     var animCtx = anim.getContext("2d");
     var $selectedAnim = $("#whichAnim>:selected");
@@ -518,7 +514,16 @@ $(document).ready(function() {
         currentFrame = (currentFrame + 1) % animRowFrames;
         animCtx.clearRect(0, 0, anim.width, anim.height);
         for (var i = 0; i < animRowNum; ++i) {
-            animCtx.drawImage(canvas, currentFrame * 64, (animRowStart + i) * 64, 64, 64, i * 64, 0, 64, 64);
+            if (oversize && animRowStart === 4) {
+                animCtx.drawImage(canvas, currentFrame * 192, (animRowStart + 5) * 192, 192, 192, i * 192, 0, 192, 192);
+                break;
+            } else if (oversize && animRowStart === 12) {
+                animCtx.drawImage(canvas, currentFrame * 192, (animRowStart - 3) * 192, 192, 192, i * 192, 0, 192, 192);
+                break;
+            } else {
+                animCtx.drawImage(canvas, currentFrame * 64, (animRowStart + i) * 64, 64, 64, i * 64, 0, 64, 64);
+            }
+            
         }
         setTimeout(nextFrame, 1000 / 8);
     }
