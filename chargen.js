@@ -90,6 +90,22 @@ $(document).ready(function() {
 
     const maxColors = 200;
 
+    $("#previewFile").change(function() {
+        previewFile();
+    });
+
+    function previewFile(){
+        var preview = document.querySelector('img'); //selects the query named img
+        var file    = document.querySelector('input[type=file]').files[0]; //sames as here
+
+        var img = new Image;
+        img.onload = function() {
+            images["uploaded"] = img;
+            redraw();
+        }
+        img.src = URL.createObjectURL(file);
+    }
+
     function renameImageDownload(link, canvasItem, filename) {
         link.href = canvasItem.toDataURL();
         link.download = filename;
@@ -98,6 +114,15 @@ $(document).ready(function() {
     // Save canvas as PNG
     $("#saveAsPNG").click(function() {
         renameImageDownload(this, canvas, 'Download' + Math.floor(Math.random() * 100000) + '.png');
+    });
+
+    $("#resetAll").click(function() {
+        document.getElementById("previewFile").value = "";
+        images["uploaded"] = null;
+        document.getElementById("RGB-R").value = 0;
+        document.getElementById("RGB-G").value = 0;
+        document.getElementById("RGB-B").value = 0;
+        redraw();
     });
 
     // Get colors from canvas
@@ -286,6 +311,10 @@ $(document).ready(function() {
                 });
             }
         });
+
+        if (images["uploaded"] != null) {
+            drawImage(ctx, images["uploaded"]);
+        }
 
         // Oversize weapons: Copy existing canvas poses to new locations
         // with 192x192 padding rather than 64x64
