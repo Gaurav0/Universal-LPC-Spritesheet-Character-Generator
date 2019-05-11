@@ -75,16 +75,6 @@ $(document).ready(function() {
         $("#chooser>ul span.expanded").removeClass("expanded").addClass("condensed");
     });
 
-    // Redraw afer reset
-    $("input[type=reset]").click(function() {
-        // Sadly we need to use setTimeout
-        window.setTimeout(function() {
-            params = {};
-            jHash.val(params);
-            redraw();
-        }, 0, false);
-    });
-
     var canvas = $("#spritesheet").get(0);
     var ctx = canvas.getContext("2d");
 
@@ -117,12 +107,16 @@ $(document).ready(function() {
     });
 
     $("#resetAll").click(function() {
-        document.getElementById("previewFile").value = "";
-        images["uploaded"] = null;
-        document.getElementById("RGB-R").value = 0;
-        document.getElementById("RGB-G").value = 0;
-        document.getElementById("RGB-B").value = 0;
-        redraw();
+        window.setTimeout(function() {
+            document.getElementById("previewFile").value = "";
+            images["uploaded"] = null;
+            document.getElementById("RGB-R").value = 0;
+            document.getElementById("RGB-G").value = 0;
+            document.getElementById("RGB-B").value = 0;
+            params = {};
+            jHash.val(params);
+            redraw();
+        }, 0, false);
     });
 
     // Get colors from canvas
