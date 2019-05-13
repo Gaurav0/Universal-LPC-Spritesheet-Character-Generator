@@ -4,6 +4,7 @@ $(document).ready(function() {
 
     // Get querystring paramters
     var params = jHash.val();
+    var zPosition = 0;
 
     // on hash (url) change event, interpret and redraw
     jHash.change(function() {
@@ -113,6 +114,7 @@ $(document).ready(function() {
             document.getElementById("RGB-R").value = 0;
             document.getElementById("RGB-G").value = 0;
             document.getElementById("RGB-B").value = 0;
+            document.getElementById("ZPOS").value = 0;
             params = {};
             jHash.val(params);
             redraw();
@@ -192,7 +194,9 @@ $(document).ready(function() {
 
     // called each time redrawing
     function redraw() {
-
+        const zposPreview = parseInt(document.getElementById("ZPOS").value) || 1;
+        let didDrawPreview = false;
+        zPosition = 0;
         // start over
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -304,10 +308,17 @@ $(document).ready(function() {
                     }
                 });
             }
+            if (zposPreview == zPosition) {
+                if (!didDrawPreview) {
+                    drawPreview();
+                    didDrawPreview = true;
+                }
+            }
         });
 
-        if (images["uploaded"] != null) {
-            drawImage(ctx, images["uploaded"]);
+        if (!didDrawPreview) { // zposition was to high or low, draw anyways over all
+            drawPreview();
+            didDrawPreview = true;
         }
 
         // Oversize weapons: Copy existing canvas poses to new locations
@@ -392,6 +403,12 @@ $(document).ready(function() {
         });
     }
 
+    function drawPreview() {
+        if (images["uploaded"] != null) {
+            drawImage(ctx, images["uploaded"]);
+        }
+    }
+
     // Change checkboxes based on parameters
     function interpretParams() {
         $("input[type=radio]").each(function() {
@@ -457,6 +474,7 @@ $(document).ready(function() {
     function drawImage(ctx, img) {
         try {
             ctx.drawImage(img, 0, 0);
+            zPosition++;
         } catch(err) {
             console.error("Error: could not find " + img.src);
         }
