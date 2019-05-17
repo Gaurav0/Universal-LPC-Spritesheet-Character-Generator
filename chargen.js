@@ -85,6 +85,10 @@ $(document).ready(function() {
         previewFile();
     });
 
+    $("#ZPOS").change(function() {
+        previewFile();
+    });
+
     function previewFile(){
         var preview = document.querySelector('img'); //selects the query named img
         var file    = document.querySelector('input[type=file]').files[0]; //sames as here
@@ -194,7 +198,7 @@ $(document).ready(function() {
 
     // called each time redrawing
     function redraw() {
-        const zposPreview = parseInt(document.getElementById("ZPOS").value) || 1;
+        const zposPreview = parseInt(document.getElementById("ZPOS").value) || 0;
         let didDrawPreview = false;
         zPosition = 0;
         // start over
@@ -221,7 +225,12 @@ $(document).ready(function() {
         $("input[type=radio]:checked, input[type=checkbox]:checked").filter(function() {
             return !$(this).data("oversize");
         }).each(function(index) {
-
+            if (zposPreview == zPosition) {
+                if (!didDrawPreview) {
+                    drawPreview();
+                    didDrawPreview = true;
+                }
+            }
             // save this in closure
             var $this = $(this);
 
@@ -307,12 +316,6 @@ $(document).ready(function() {
                         drawImage(ctx, img);
                     }
                 });
-            }
-            if (zposPreview == zPosition) {
-                if (!didDrawPreview) {
-                    drawPreview();
-                    didDrawPreview = true;
-                }
             }
         });
 
