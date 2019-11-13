@@ -333,6 +333,11 @@ $(document).ready(function() {
             $("input[type=radio]:checked").filter(function() {
                 return $(this).data("oversize");
             }).each(function(index) {
+                if (($(this).data("file")) == "weapons/oversize/right hand/flail.png") {
+                    var img = getImage("weapons/oversize/right hand/flail-sheet.png");
+                    drawImage(ctx, img);
+                }
+
                 var type = $(this).data("oversize");
                 if (type == 1) {
                     for (var i = 0; i < 8; ++i)
@@ -359,11 +364,13 @@ $(document).ready(function() {
                             if ($("#sex-male").prop("checked") && $(this).data("file_male")) {
                                 var img = getImage($(this).data("file_male"));
                                 ctx.drawImage(img, 0, 1344);
-                            }
-                            if ($("#sex-female").prop("checked") && $(this).data("file_female")) {
+                            }else if ($("#sex-female").prop("checked") && $(this).data("file_female")) {
                                 var img = getImage($(this).data("file_female"));
                                 ctx.drawImage(img, 0, 1344);
-                            }
+                            }else if ($(this).data("file")) {
+                                var img = getImage($(this).data("file"));
+                                ctx.drawImage(img, 0, 1344);
+                            }   
                         }
                     });
         }
