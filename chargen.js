@@ -333,8 +333,15 @@ $(document).ready(function() {
             $("input[type=radio]:checked").filter(function() {
                 return $(this).data("oversize");
             }).each(function(index) {
-                if (($(this).data("file")) == "weapons/oversize/right hand/flail.png") {
-                    var img = getImage("weapons/oversize/right hand/flail-sheet.png");
+                var name = "";
+                if ($("#sex-male").prop("checked") && $(this).data("file_male")) {
+                    name = $(this).data("file_male");
+                }else if ($("#sex-female").prop("checked") && $(this).data("file_female")) {
+                    name = $(this).data("file_female");
+                }
+
+                if (name.includes("flail") || name.includes("halberd") || name.includes("waraxe")) {
+                    var img = getImage(name.replace("attack", "universal"));
                     drawImage(ctx, img);
                 }
 
