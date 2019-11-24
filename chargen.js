@@ -572,12 +572,8 @@ $(document).ready(function() {
         currentFrame = (currentFrame + 1) % animRowFrames;
         animCtx.clearRect(0, 0, anim.width, anim.height);
         for (var i = 0; i < animRowNum; ++i) {
-            if (oversize && animRowStart === 4) {
-                animCtx.drawImage(canvas, currentFrame * 192, (animRowStart + 5) * 192, 192, 192, i * 192, 0, 192, 192);
-                break;
-            } else if (oversize && animRowStart === 12) {
-                animCtx.drawImage(canvas, currentFrame * 192, (animRowStart - 3) * 192, 192, 192, i * 192, 0, 192, 192);
-                break;
+            if (oversize && (animRowStart === 4 || animRowStart === 12)) {
+                animCtx.drawImage(canvas, currentFrame * 192, 1344 + (i*192), 192, 192, i * 192, 0, 192, 192);
             } else {
                 animCtx.drawImage(canvas, currentFrame * 64, (animRowStart + i) * 64, 64, 64, i * 64, 0, 64, 64);
             }
