@@ -6,6 +6,8 @@ $(document).ready(function() {
     var params = jHash.val();
     var zPosition = 0;
 
+    var drawShadow = false;
+
     // on hash (url) change event, interpret and redraw
     jHash.change(function() {
         params = jHash.val();
@@ -68,6 +70,11 @@ $(document).ready(function() {
         var $ul = $(this).children("ul");
         $ul.toggle('slow').promise().done(drawPreviews);
         event.stopPropagation();
+    });
+
+    $("#shadow").click(function() {
+        drawShadow = $("#shadow").prop('checked');
+        redraw();
     });
 
     // When clicking on collapse all link, collapse all uls in #chooser
@@ -221,6 +228,10 @@ $(document).ready(function() {
         $("#chooser>ul").css("height", canvas.height);
         oversize = !!oversize;
 
+        if (drawShadow) {
+            var img = getImage('body/lpc_shadow.png');
+            drawImage(ctx, img);
+        }
         // non oversize elements
         $("input[type=radio]:checked, input[type=checkbox]:checked").filter(function() {
             return !$(this).data("oversize");
