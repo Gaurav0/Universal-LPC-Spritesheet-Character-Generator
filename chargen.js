@@ -7,6 +7,7 @@ $(document).ready(function() {
     var zPosition = 0;
 
     var drawShadow = false;
+    var drawChildShadow = false;
 
     // on hash (url) change event, interpret and redraw
     jHash.change(function() {
@@ -74,6 +75,11 @@ $(document).ready(function() {
 
     $("#shadow").click(function() {
         drawShadow = $("#shadow").prop('checked');
+        redraw();
+    });
+
+    $("#childshadow").click(function() {
+        drawChildShadow = $("#childshadow").prop('checked');
         redraw();
     });
 
@@ -230,6 +236,10 @@ $(document).ready(function() {
 
         if (drawShadow) {
             var img = getImage('body/lpc_shadow.png');
+            drawImage(ctx, img);
+        }
+        if (drawChildShadow) {
+            var img = getImage('body/lpc_shadow_child.png');
             drawImage(ctx, img);
         }
         // non oversize elements
