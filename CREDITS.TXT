@@ -1,0 +1,3040 @@
+###############################################
+OpenGameArt.org automatically generated credits file notice:
+
+THIS FILE IS FOR INFORMATIONAL PURPOSES ONLY.  NO WARRANTY OF ANY KIND IS EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL OPENGAMEART.ORG BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE USE OF THIS FILE OR THE INFORMATION IN IT.
+
+In plain English:  This credits file is automatically generated to the best of our ability, but it remains YOUR RESPONSIBILITY as a game developer to ensure that the art you use is attributed properly.  That is, we can't be held liable even if all of the information in this file is completely wrong.   In addition, some of the art listed in this file may have SPECIAL ATTRIBUTION INSTRUCTIONS that ask that you credit the artist in a particular way, rather than a verbatim copyright notice.  In those cases, you will probably need to hand-edit this file to comply with their instructions.  In some older art, attribution instructions may be included in the art description itself.  Please check the art page to be sure.
+
+We recommend that you delete this notice when you're sure the information here is correct and the attribution instructions are properly followed.  If you aren't the game developer and you're seeing this notice here in the credits, it probably means that the developer hasn't properly verified the attribution information contained herein even though it said they were supposed to do it right on the page where they downloaded this file.  
+###############################################
+
+Title:
+    [LPC] Plant Repack
+
+Author:
+    various
+
+Collaborators:
+    pennomi, laetissima, C.Nilsson, Sharm, Johann C, Reemax
+
+URL:
+    https://opengameart.org/content/lpc-plant-repack
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Please see the credits file. If I missed someone or wrongly included someone please let me know, I&#039;ll fix it.
+
+File(s):
+    * credits.zip
+    * plant repack.png
+
+----------------------------------------
+
+Title:
+    LPC Tile Atlas2
+
+Author:
+    See Attribution.txt
+
+URL:
+    https://opengameart.org/content/lpc-tile-atlas2
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    The zip contains a nifty attribution file so you can drop it and forget.
+
+File(s):
+    * Atlas2.zip
+
+----------------------------------------
+
+Title:
+    LPC Animated Water and waterfalls
+
+Author:
+    ZaPaper
+
+URL:
+    https://opengameart.org/content/lpc-animated-water-and-waterfalls
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+Copyright/Attribution Notice:
+    Use the original LPC license and attribution.  Would be nice to also link to my RPG Game Maker.
+
+File(s):
+    * wateranimate2.png
+
+----------------------------------------
+
+Title:
+    [LPC] Imp
+
+Author:
+    William.Thompsonj
+
+Collaborators:
+    Redshrike
+
+URL:
+    https://opengameart.org/content/lpc-imp
+
+License(s):
+    * CC-BY 4.0 ( https://creativecommons.org/licenses/by/4.0/legalcode )
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+    * OGA-BY 3.0 ( http://static.opengameart.org/OGA-BY-3.0.txt )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Link my profile (if reasonable), credit Redshrike as graphic artist, and credit me as contributor (I did pay to have it made after all...)
+
+File(s):
+    * LPC imp.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Terrain Repack
+
+Author:
+    vaious
+
+URL:
+    https://opengameart.org/content/lpc-terrain-repack
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Please see the text file copied from the LPC Tile Atlas. I take no credit for any of the graphics included here, I only repacked them using Tiled.
+
+File(s):
+    * terrain.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Adobe Town Set
+
+Author:
+    bluecarrot16
+
+URL:
+    https://opengameart.org/content/lpc-adobe-town-set
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+    * OGA-BY 3.0 ( http://static.opengameart.org/OGA-BY-3.0.txt )
+
+Copyright/Attribution Notice:
+    "Adobe Town Set"
+Artist: bluecarrot16
+License: CC-BY 3.0 / GPL 3.0 / GPL 2.0 / OGA-BY 3.0
+
+Please link to page on opengameart.
+
+Based on "[LPC] Adobe Building Set" 
+Artist: Sharm (Lanea Zimmerman)
+Contributor: William.Thompsonj (William Thompson)
+License: CC-BY 3.0 / GPL 3.0 / GPL 2.0 / OGA-BY 3.0
+http://opengameart.org/content/lpc-adobe-building-set
+
+File(s):
+    * adobe-2.png
+
+----------------------------------------
+
+Title:
+    [LPC] Goblin
+
+Author:
+    William.Thompsonj
+
+Collaborators:
+    Redshrike
+
+URL:
+    https://opengameart.org/content/lpc-goblin
+
+License(s):
+    * CC-BY 4.0 ( https://creativecommons.org/licenses/by/4.0/legalcode )
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+    * OGA-BY 3.0 ( http://static.opengameart.org/OGA-BY-3.0.txt )
+
+Copyright/Attribution Notice:
+    Attribute Stephen "Redshrike" Challener as graphic artist and William.Thompsonj as contributor. If reasonable link to this page or the OGA homepage.
+
+File(s):
+    * goblin.png
+    * sword.png
+    * goblinsword.png
+    * goblin sheeting.psd
+
+----------------------------------------
+
+Title:
+    LPC Male Sheets
+
+Author:
+    makrohn
+
+URL:
+    https://opengameart.org/content/lpc-male-sheets
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Walkcycle, Hurt, Slash, and Spellcast animations by Stephen Challener (AKA Redshrike), 
+Shooting and Thrusting animations by Johannes Sjölund, 
+Male and female orc heads by MadMarcel and based on Stephen Challener&#039;s Sinbad, 
+Tanned, Tanned2, and Dark colors by MadMarcel, 
+other credit to Matthew Krohn
+
+File(s):
+    * darkmale.png
+    * tanned2male.png
+    * tannedmale.png
+    * maleorcfullsheet.png
+
+----------------------------------------
+
+Title:
+    [LPC] Thatched-roof Cottage
+
+Author:
+    bluecarrot16
+
+URL:
+    https://opengameart.org/content/lpc-thatched-roof-cottage
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+Copyright/Attribution Notice:
+    "LPC Thatched-roof Cottage" by bluecarrot16. License: CC-BY-SA 3.0 / GPL 3.0+
+
+Based on:
+"LPC Base Assets" by Lanea Zimmerman (AKA Sharm) and Daniel Armstrong (AKA HughSpectrum). 
+License: CC-BY-SA 3.0 / GPL 3.0+. 
+http://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles
+"LPC art entry" by Casper Nilsson. 
+License: CC-BY-SA 3.0 / GPL 3.0+. 
+http://opengameart.org/content/lpc-cnilsson
+
+File(s):
+    * cottage.png
+    * thatched-roof.png
+
+----------------------------------------
+
+Title:
+    [LPC] Signposts, graves, line cloths and scare crow
+
+Author:
+    Reemax
+
+Collaborators:
+    daneeklu, Nemisys
+
+URL:
+    https://opengameart.org/content/lpc-signposts-graves-line-cloths-and-scare-crow
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+Copyright/Attribution Notice:
+    Attribution to Nemisys,Daniel Eddeland (http://opengameart.org/content/lpc-farming-tilesets-magic-animations-and-ui-elements) and Tuomo Untinen
+
+File(s):
+    * signpost-outsidestuff.png
+
+----------------------------------------
+
+Title:
+    [LPC] Farming tilesets, magic animations and UI elements
+
+Author:
+    daneeklu
+
+URL:
+    https://opengameart.org/content/lpc-farming-tilesets-magic-animations-and-ui-elements
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Please attribute creator as Daniel Eddeland.
+
+Please include a link to opengameart.org as well (preferably to the submission for this art package) if you use the art.
+
+
+File(s):
+    * submission_daneeklu.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Arabic Elements
+
+Author:
+    Sharm
+
+Collaborators:
+    Sharm
+
+URL:
+    https://opengameart.org/content/lpc-arabic-elements
+
+License(s):
+    * CC-BY 4.0 ( https://creativecommons.org/licenses/by/4.0/legalcode )
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+    * OGA-BY 3.0 ( http://static.opengameart.org/OGA-BY-3.0.txt )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Please link this page (if reasonable), attribute Sharm as graphic artist, and me as contributor.
+
+File(s):
+    * arabic set.zip
+
+----------------------------------------
+
+Title:
+    LPC White Beard
+
+Author:
+    Nemisys
+
+URL:
+    https://opengameart.org/content/lpc-white-beard
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+Copyright/Attribution Notice:
+    Original Walkcycle, Hurt, Slash, and Spellcast animations by Stephen Challener (AKA Redshrike) and Shooting and Thrusting animations by Johannes Sjölund
+
+File(s):
+    * whitebeard.png
+    * character(whitebeard).png
+
+----------------------------------------
+
+Title:
+    LPC Orange Trees
+
+Author:
+    Nemisys
+
+URL:
+    https://opengameart.org/content/lpc-orange-trees
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+Copyright/Attribution Notice:
+    Original trees by C. Nilsson and recolored by William. Thompsonj while the table is based on art submitted by Daniel Eddeland.
+
+File(s):
+    * orangetrees.png
+    * oranges.png
+
+----------------------------------------
+
+Title:
+    LPC aprons
+
+Author:
+    Nila122
+
+URL:
+    https://opengameart.org/content/lpc-aprons
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+File(s):
+    * Aprons.zip
+
+----------------------------------------
+
+Title:
+    Universal LPC Sprite Male 01
+
+Author:
+    Gaurav Munjal
+
+URL:
+    https://opengameart.org/content/universal-lpc-sprite-male-01
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+Copyright/Attribution Notice:
+    Gaurav Munjal, Stephen Challener (Redshrike)
+
+File(s):
+    * universal-lpc-sprite_male_01_full.png
+    * universal-lpc-sprite_male_01_walk-3frame.png
+    * universal-lpc-sprite_male_01_walk-3frame.xcf.bz2
+
+----------------------------------------
+
+Title:
+    LPC bandages
+
+Author:
+    Nila122
+
+URL:
+    https://opengameart.org/content/lpc-bandages
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+File(s):
+    * Bandages.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Medieval fantasy character sprites
+
+Author:
+    wulax
+
+URL:
+    https://opengameart.org/content/lpc-medieval-fantasy-character-sprites
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+Copyright/Attribution Notice:
+    I waive the DRM-limitation clause in the Creative Commons license for this art collection, allowing their free use on platforms like iOS or Steam provided you give credit as specified.
+
+File(s):
+    * lpc_entry.zip
+    * expansion_pack-0.04.zip
+
+----------------------------------------
+
+Title:
+    LPC clothes and hair
+
+Author:
+    Nila122
+
+URL:
+    https://opengameart.org/content/lpc-clothes-and-hair
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+Copyright/Attribution Notice:
+    Original Walkcycle, Hurt, Slash, and Spellcast animations by Stephen Challener (AKA Redshrike) and Shooting and Thrusting animations by Johannes Sjölund
+
+File(s):
+    * Clothes00.zip
+
+----------------------------------------
+
+Title:
+    more LPC clothes and hair
+
+Author:
+    Nila122
+
+URL:
+    https://opengameart.org/content/more-lpc-clothes-and-hair
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+File(s):
+    * Clothes01.zip
+
+----------------------------------------
+
+Title:
+    Extended LPC Magic pack
+
+Author:
+    daneeklu
+
+URL:
+    https://opengameart.org/content/extended-lpc-magic-pack
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Attribute creator as Daniel Eddeland. Please include a link to opengameart.org as well (preferably to the submission for this art package) if you use the art.
+
+File(s):
+    * magic_pack.zip
+    * snake_right.png
+    * turtleshell_right.png
+    * magic_icons.png
+
+----------------------------------------
+
+Title:
+    LPC Snowy Tree
+
+Author:
+    WolfMountainGames
+
+Collaborators:
+    Sharm
+
+URL:
+    https://opengameart.org/content/lpc-snowy-tree
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+Copyright/Attribution Notice:
+    Sharm made this art for the LPC I just changed the colors to snow
+
+File(s):
+    * LPCsnowTrees.png
+
+----------------------------------------
+
+Title:
+    LPC terrain extension
+
+Author:
+    caeles
+
+URL:
+    https://opengameart.org/content/lpc-terrain-extension
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    For detailed copyright information see the file COPYRIGHT in the archive. The authors are Cem Kalyoncu, Connor Sherson, Daniel Eddeland, Johann Charlot, Jonas Klinger, Juan Rodriguez, Lanea Zimmerman, Mark Weyer, and Skyler Robert Colladay.
+
+File(s):
+    * lpc_terrain.tar
+
+----------------------------------------
+
+Title:
+    [LPC] 2 Characters
+
+Author:
+    pennomi
+
+Collaborators:
+    laetissima, makrohn
+
+URL:
+    https://opengameart.org/content/lpc-2-characters
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Attribute pennomi, laetissima and makrohn. Remember to also attribute the LPC base sprite artists, since this is a derivative work of those as well!
+
+File(s):
+    * female_spritesheet.xcf
+    * male_spritesheet.xcf
+    * irishdress.png
+
+----------------------------------------
+
+Title:
+    [LPC] Glow Sword
+
+Author:
+    tskaufma
+
+URL:
+    https://opengameart.org/content/lpc-glow-sword
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+File(s):
+    * glowsword.zip
+
+----------------------------------------
+
+Title:
+    LPC roman armor
+
+Author:
+    Nila122
+
+URL:
+    https://opengameart.org/content/lpc-roman-armor
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+Copyright/Attribution Notice:
+    Original cape by JaidynReiman, female plate chest by Matthew Krohn and male plate chest by Johannes Sjölund.
+
+File(s):
+    * Legion armor.zip
+
+----------------------------------------
+
+Title:
+    LPC Barbarian Sprite Base
+
+Author:
+    dalonedrau
+
+URL:
+    https://opengameart.org/content/lpc-barbarian-sprite-base
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    If you use this, please link back to http://opengameart.org/
+
+File(s):
+    * lpc_barbarian_walk.png
+
+----------------------------------------
+
+Title:
+    LPC Weapons: two bows, a spear and a trident
+
+Author:
+    daneeklu
+
+Collaborators:
+    wulax, gr3yh47
+
+URL:
+    https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+File(s):
+    * dragonspear.png
+    * greatbow.png
+    * trident.png
+    * mace_sheet.png
+    * sabre_sheet.png
+    * recurvebow_sheet.png
+
+----------------------------------------
+
+Title:
+    LPC modified art
+
+Author:
+    SuperMata
+
+URL:
+    https://opengameart.org/content/lpc-modified-art
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+Copyright/Attribution Notice:
+    I found these images on the LPC guide website. My understanding is that the art is under the Creative Commons License. Please check the footer on the website.
+http://lpc.opengameart.org/static/lpc-style-guide/assets.html
+
+File(s):
+    * LPC_Modifed_Art.zip
+
+----------------------------------------
+
+Title:
+    LPC Dark Elves
+
+Author:
+    Nila122
+
+URL:
+    https://opengameart.org/content/lpc-dark-elves
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Walkcycle, Hurt, Slash, and Spellcast animations by Stephen Challener (AKA Redshrike),
+
+Shooting and Thrusting animations by Johannes Sjölund, 
+
+Ears by Makrohn and David Conway Jr. (AKA Jaidyn Reiman) for cleaning up the ears
+
+File(s):
+    * LPC Dark Elves.zip
+
+----------------------------------------
+
+Title:
+    3 hairs for LPC
+
+Author:
+    Nila122
+
+URL:
+    https://opengameart.org/content/3-hairs-for-lpc
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+File(s):
+    * Hair00.zip
+
+----------------------------------------
+
+Title:
+    LPC Lizard Headgear
+
+Author:
+    Nila122
+
+URL:
+    https://opengameart.org/content/lpc-lizard-headgear
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+File(s):
+    * lizard headwear.zip
+
+----------------------------------------
+
+Title:
+    LPC Male Clothes Variety Pack
+
+Author:
+    Boom Shaka
+
+Collaborators:
+    wulax
+
+URL:
+    https://opengameart.org/content/lpc-male-clothes-variety-pack
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+Copyright/Attribution Notice:
+    Original work by Wulax, I just filled in colors
+
+File(s):
+    * lpc_male_clothes_variety.zip
+
+----------------------------------------
+
+Title:
+    Another LPC style castle
+
+Author:
+    theidiotmachine
+
+URL:
+    https://opengameart.org/content/another-lpc-style-castle
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * castle2.png
+
+----------------------------------------
+
+Title:
+    LPC compatible Ancient Greek Architecture
+
+Author:
+    TheraHedwig
+
+URL:
+    https://opengameart.org/content/lpc-compatible-ancient-greek-architecture
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+Copyright/Attribution Notice:
+    Attribute to Wolthera van Hövell tot Westerflier, 
+
+File(s):
+    * LPC_Ancient_Greece_Architecture.png
+    * LPC_compatible_Ancient_Greek_Architecture.zip
+
+----------------------------------------
+
+Title:
+    [LPC] House Insides
+
+Author:
+    Lanea Zimmerman (AKA Sharm)
+
+Collaborators:
+    Sharm, HughSpectrum
+
+URL:
+    https://opengameart.org/content/lpc-house-insides
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Sharm did everything except the castle light sources, those were done by HughSpectrum. Please see the LPC guidelines for attribution and licensing: http://lpc.opengameart.org/
+
+File(s):
+    * house_inside.png
+
+----------------------------------------
+
+Title:
+    LPC Brunet Mustache
+
+Author:
+    Nemisys
+
+URL:
+    https://opengameart.org/content/lpc-brunet-mustache
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+Copyright/Attribution Notice:
+    Original Walkcycle, Hurt, Slash, and Spellcast animations by Stephen Challener (AKA Redshrike) and Shooting and Thrusting animations by Johannes Sjölund
+
+File(s):
+    * brunettemustache.png
+    * character(brunettemustache).png
+
+----------------------------------------
+
+Title:
+    LPC long ears
+
+Author:
+    Nila122
+
+URL:
+    https://opengameart.org/content/lpc-long-ears
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+File(s):
+    * Long ears.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Short Sword
+
+Author:
+    William.Thompsonj
+
+Collaborators:
+    wulax
+
+URL:
+    https://opengameart.org/content/lpc-short-sword
+
+License(s):
+    * CC-BY 4.0 ( https://creativecommons.org/licenses/by/4.0/legalcode )
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Link this page (if reasonable), credit William.Thompsonj, and wulax.
+
+File(s):
+    * LPC Short Sword.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Misc tile atlas (interior, exterior, trees, bridges, furniture...)
+
+Author:
+    ak-blanc
+
+URL:
+    https://opengameart.org/content/lpc-misc-tile-atlas-interior-exterior-trees-bridges-furniture
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+Copyright/Attribution Notice:
+    I don&#039;t need any attribution myself, but as I said, most of it is derivative so do credit the original authors if you want to use these: Sharm, Janna, Tuomo Untinen, Casper Nilsson, Barbara Rivera and Daneeklu.
+
+File(s):
+    * ak's_assets.png
+
+----------------------------------------
+
+Title:
+    [LPC] Kite Shield
+
+Author:
+    DarkwallLKE
+
+URL:
+    https://opengameart.org/content/lpc-kite-shield
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+Copyright/Attribution Notice:
+    Based on art originally by Tuomo Untinen. Adapted by Darkwall LKE. Please link to http://darkwalllke.com/ CC-BY-SA 3.0 GPL 3.0 GPL 2.0
+
+File(s):
+    * kite_shield.png
+
+----------------------------------------
+
+Title:
+    [LPC] Pickaxe
+
+Author:
+    DarkwallLKE
+
+URL:
+    https://opengameart.org/content/lpc-pickaxe
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+Copyright/Attribution Notice:
+    Based on art originally by Tuomo Untinen. Adapted by Darkwall LKE. Please link to http://darkwalllke.com/ CC-BY-SA 3.0 GPL 3.0 GPL 2.0
+
+File(s):
+    * pickaxe.png
+
+----------------------------------------
+
+Title:
+    LPC Clothes for children
+
+Author:
+    Nila122
+
+URL:
+    https://opengameart.org/content/lpc-clothes-for-children
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+File(s):
+    * Child clothes.zip
+
+----------------------------------------
+
+Title:
+    [LPC] All Seasons Apple Tree
+
+Author:
+    ElizaWy
+
+URL:
+    https://opengameart.org/content/lpc-all-seasons-apple-tree
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+Copyright/Attribution Notice:
+    Tree trunk by Johann C.
+Shoot&#039;em up graphic kit:
+http://opengameart.org/content/lpc-a-shootem-up-complete-graphic-kit
+
+File(s):
+    * AppleTree_allSeasons.png
+
+----------------------------------------
+
+Title:
+    LPC castle
+
+Author:
+    Evert
+
+Collaborators:
+    Sharm, Xenodora
+
+URL:
+    https://opengameart.org/content/lpc-castle
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+
+Copyright/Attribution Notice:
+    Credit me and link back here.
+Credit Lanea Zimmerman (Sharm) for the use of the base LPC wood elements and Xenodora for the rounded towers.
+
+File(s):
+    * lpc_castle.png
+
+----------------------------------------
+
+Title:
+    [LPC] Axe
+
+Author:
+    DarkwallLKE
+
+URL:
+    https://opengameart.org/content/lpc-axe
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+Copyright/Attribution Notice:
+    Based on art originally by Tuomo Untinen. Adapted by Darkwall LKE. Please link to http://darkwalllke.com/ CC-BY-SA 3.0 GPL 3.0 GPL 2.0
+
+File(s):
+    * axe.png
+
+----------------------------------------
+
+Title:
+    [LPC] Warhammer
+
+Author:
+    DarkwallLKE
+
+URL:
+    https://opengameart.org/content/lpc-warhammer
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+Copyright/Attribution Notice:
+    Based on art originally by Tuomo Untinen. Adapted by Darkwall LKE. Please link to http://darkwalllke.com/ CC-BY-SA 3.0 GPL 3.0 GPL 2.0
+
+File(s):
+    * warhammer.png
+
+----------------------------------------
+
+Title:
+    [LPC] 7 Women&#039;s Shirts
+
+Author:
+    ElizaWy
+
+URL:
+    https://opengameart.org/content/lpc-7-womens-shirts
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+Copyright/Attribution Notice:
+    The Blouse and Long-Sleeve blouse were edited from &#039;Underdress&#039; by Lanea Zimmerman (AKA Sharm). The pirate shirt was edited from Marcel van de Steeg&#039;s original. The sleeveless shirt was edited from JRConway3&#039;s original. The corset is by Nila122. The long-sleeve shirt and scoop neck shirt are my own original work. Female base original is by Redshrike.
+
+File(s):
+    * LPC Women's Shirt Pack.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Castle Mega-Pack
+
+Author:
+    bluecarrot16
+
+URL:
+    https://opengameart.org/content/lpc-castle-mega-pack
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+Copyright/Attribution Notice:
+    "LPC Castle Mega-Pack" by bluecarrot16. License: CC-BY-SA 3.0. Please link back to this page on OpenGameArt: http://opengameart.org/content/lpc-castle-mega-pack 
+
+Based on: 
+"Castle Tiles for RPG&#039;s" by Hyptosis, Zabin, Daniel Cook. CC-BY 3.0. http://opengameart.org/content/castle-tiles-for-rpgs
+
+"LPC castle" by Evert, Xenodora, and Lanea Zimmerman (Sharm). CC-BY 3.0. http://opengameart.org/content/lpc-castle , 
+
+"LPC Style Well" by Xenodora, Lanea Zimmerman. CC-BY-3.0 / GPL 3.0. http://opengameart.org/content/lpc-style-well
+
+"Another LPC style castle" by theidiotmachine. CC-BY-SA 3.0. http://opengameart.org/content/another-lpc-style-castle
+
+"LPC Base Assets" (castlewalls.png, castle_outside.png) by Daniel Armstrong (HughSpectrum). http://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles
+
+File(s):
+    * castle8.png
+    * castle8dark.png
+    * castle8brn.png
+    * castle-extras.png
+
+----------------------------------------
+
+Title:
+    LPC Compatible Ancient Roman Architecture
+
+Author:
+    TheraHedwig
+
+URL:
+    https://opengameart.org/content/lpc-compatible-ancient-roman-architecture
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+Copyright/Attribution Notice:
+    These files are licensed CC-BY-SA 3.0 and GPL 3.0, credits:
+Wolthera van Hövell tot Westerflier
+and
+Lanea Zimmerman (AKA Sharm) for the original file of the brick-based walls(house.png), these can be gotten here: http://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles
+
+File(s):
+    * LPC_compatible_Ancient_Roman_Architecture.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Gentleman
+
+Author:
+    bluecarrot16
+
+URL:
+    https://opengameart.org/content/lpc-gentleman
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+Copyright/Attribution Notice:
+    "LPC Gentleman" by bluecarrot16. Please link back to this page on OpenGameArt.  License: CC-BY-SA 3.0 / GPL 3.0. Based on "[LPC] 2 Characters" by pennomi, laetissima, makrohn (CC-BY-SA 3.0 / GPL 3.0) <https://opengameart.org/content/lpc-2-characters>; "[LPC] Base Character Expressions" by pennomi (CC-BY-SA 3.0 / GPL 3.0) <https://opengameart.org/content/lpc-base-character-expressions>; and "[LPC] Base Assets" by Stephen Challener (AKA Redshrike) (CC-BY-SA 3.0 / GPL 3.0) <https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles>
+
+File(s):
+    * gentleman.zip
+
+----------------------------------------
+
+Title:
+    LPC Full Plate Golden Armor
+
+Author:
+    makrohn
+
+URL:
+    https://opengameart.org/content/lpc-full-plate-golden-armor-0
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Matthew Krohn, adapted from the work of Johannes Sjölund and Shaun Williams
+
+File(s):
+    * lpcfemalegoldenboots.png
+    * lpcfemalegoldengloves.png
+    * lpcfemalegoldengreaves.png
+    * lpcfemalegoldenhelm.png
+    * lpcfemalegoldenplate.png
+    * lpcfemalegoldenspaulders.png
+    * lpcmalegoldenboots.png
+    * lpcmalegoldengloves.png
+    * lpcmalegoldengreaves.png
+    * lpcmalegoldenhelm.png
+    * lpcmalegoldenplate.png
+    * lpcmalegoldenspaulders.png
+    * lpcgoldenarmor.tar.gz
+
+----------------------------------------
+
+Title:
+    [LPC] Muscular Hurt Animation
+
+Author:
+    ElizaWy
+
+URL:
+    https://opengameart.org/content/lpc-muscular-hurt-animation
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+Copyright/Attribution Notice:
+    Original stand / walk base by Dalonedrau.
+
+File(s):
+    * Hurt, body.png
+    * Hurt, pants.png
+    * Muscular Sheet, body.png
+    * Muscular Sheet, pants.png
+
+----------------------------------------
+
+Title:
+    [LPC] Long dagger
+
+Author:
+    elmerenges
+
+URL:
+    https://opengameart.org/content/lpc-long-dagger
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+Copyright/Attribution Notice:
+    Original dagger by wulax (Johannes Sjölund)
+
+File(s):
+    * long_knife_male.png
+    * long_knife.png
+
+----------------------------------------
+
+Title:
+    [LPC] Beach / Desert
+
+Author:
+    bluecarrot16
+
+URL:
+    https://opengameart.org/content/lpc-beach-desert
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+Copyright/Attribution Notice:
+    See CREDITS-beach-desert.txt. You MUST credit all authors with the information in this file, and you must link back to this page on OpenGameArt.
+
+File(s):
+    * lpc-beach-desert.zip
+    * lpc-beach-desert-v2.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Colonial Buildings
+
+Author:
+    bluecarrot16
+
+URL:
+    https://opengameart.org/content/lpc-colonial-buildings
+
+License(s):
+    * CC-BY-SA 4.0 (  )
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+Copyright/Attribution Notice:
+    See CREDITS-colonial.txt. You MUST include all information in this file. 
+
+File(s):
+    * lpc-colonial.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Terrains
+
+Author:
+    bluecarrot16
+
+Collaborators:
+    Zabin
+
+URL:
+    https://opengameart.org/content/lpc-terrains
+
+License(s):
+    * CC-BY-SA 4.0 (  )
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+Copyright/Attribution Notice:
+    "[LPC] Terrains" by bluecarrot16, Lanea Zimmerman (Sharm), Daniel Eddeland (Daneeklu), Richard Kettering (Jetrel), Zachariah Husiar (Zabin), Hyptosis, Casper Nilsson, Buko Studios, Nushio, ZaPaper, billknye, William Thompson, caeles, Redshrike, Bertram, and Rayane Félix (RayaneFLX). See CREDITS-terrain.txt. You MUST credit all authors with the information in this file, and you must link back to this page on OpenGameArt.
+
+File(s):
+    * lpc-terrains.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Flowers / Plants / Fungi / Wood
+
+Author:
+    bluecarrot16
+
+URL:
+    https://opengameart.org/content/lpc-flowers-plants-fungi-wood
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+Copyright/Attribution Notice:
+    See CREDITS-plants.txt. You MUST credit all contributors with the information in the credits file, and you must link back to this page on OpenGameArt. 
+
+File(s):
+    * lpc-flowers-plants-fungi-wood.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Trees
+
+Author:
+    bluecarrot16
+
+URL:
+    https://opengameart.org/content/lpc-trees
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+Copyright/Attribution Notice:
+    See CREDITS-trees.txt. You MUST credit all authors with the information in this file, and you must link back to this page on OpenGameArt.
+
+File(s):
+    * lpc-trees.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Muscular Pants
+
+Author:
+    ElizaWy
+
+URL:
+    https://opengameart.org/content/lpc-muscular-pants
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+File(s):
+    * Pants.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Jungle
+
+Author:
+    bluecarrot16
+
+URL:
+    https://opengameart.org/content/lpc-jungle
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+Copyright/Attribution Notice:
+    See CREDITS-jungle.txt. You MUST credit all authors with the information in this file, and you must link back to this page on OpenGameArt.
+
+File(s):
+    * lpc-jungle.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Conifers
+
+Author:
+    bluecarrot16
+
+URL:
+    https://opengameart.org/content/lpc-conifers
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+Copyright/Attribution Notice:
+    See CREDITS-conifers.txt. You MUST credit all authors with the information in this file, and you must link back to this page on OpenGameArt.
+
+File(s):
+    * lpc-conifers.zip
+
+----------------------------------------
+
+Title:
+    Castle Tiles for RPG&#039;s
+
+Author:
+    Hyptosis, Zabin, Daniel Cook
+
+URL:
+    https://opengameart.org/content/castle-tiles-for-rpgs
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Zabin, Hyptosis, and Danial Cook. https://opengameart.org/content/castle-tiles-for-rpgs
+
+File(s):
+    * Castle2.png
+
+----------------------------------------
+
+Title:
+    Siege weapons
+
+Author:
+    castelonia
+
+URL:
+    https://opengameart.org/content/siege-weapons
+
+License(s):
+    * CC-BY-SA 4.0 (  )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+Copyright/Attribution Notice:
+    Original Mangonel by b_o, modified by castelonia https://opengameart.org/content/siege-weapons
+
+File(s):
+    * Archief.zip
+
+----------------------------------------
+
+Title:
+    Mage City Arcanos
+
+Author:
+    Hyptosis
+
+URL:
+    https://opengameart.org/content/mage-city-arcanos
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Feel free to use it for anything, you can even make profit. If you want please give me credit for the tile though as &#039;Hyptosis&#039; or link to www.lorestrome.com if you want. But you&#039;re not obligated to. Everyone should be able to make games, I hope these help.
+
+File(s):
+    * magecity.png
+
+----------------------------------------
+
+Title:
+    Some unused themes
+
+Author:
+    Alexandr Zhelanov
+
+URL:
+    https://opengameart.org/content/some-unused-themes
+
+License(s):
+    * CC-BY 4.0 ( https://creativecommons.org/licenses/by/4.0/legalcode )
+
+Copyright/Attribution Notice:
+    Alexandr Zhelanov https://soundcloud.com/alexandr-zhelanov
+
+File(s):
+    * DEAD SOLDIERS THEME.mp3
+    * DEAD SOLDIERS THEME_1.mp3
+    * DEAD SOLDIERS THEME_2.mp3
+    * KW_MAIN.mp3
+    * Gradient.mp3
+
+----------------------------------------
+
+Title:
+    Golden UI - Bigger Than Ever edition
+
+Author:
+    Buch
+
+URL:
+    https://opengameart.org/content/golden-ui-bigger-than-ever-edition
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Credit me as Buch and link back to my OGA profile page
+
+File(s):
+    * ui_big_pieces.png
+
+----------------------------------------
+
+Title:
+    [LPC] Golem
+
+Author:
+    William.Thompsonj
+
+Collaborators:
+    Redshrike
+
+URL:
+    https://opengameart.org/content/lpc-golem
+
+License(s):
+    * CC-BY 4.0 ( https://creativecommons.org/licenses/by/4.0/legalcode )
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+    * OGA-BY 3.0 ( http://static.opengameart.org/OGA-BY-3.0.txt )
+
+Copyright/Attribution Notice:
+    Attribute Stephen "Redshrike" Challener as graphic artist and William.Thompsonj as contributor. If reasonable link to this page or the OGA homepage.
+
+File(s):
+    * golem-walk.png
+    * golem-atk.png
+    * golem-die.png
+
+----------------------------------------
+
+Title:
+    Lots of free 2d tiles and sprites by Hyptosis
+
+Author:
+    Hyptosis
+
+Collaborators:
+    Zabin
+
+URL:
+    https://opengameart.org/content/lots-of-free-2d-tiles-and-sprites-by-hyptosis
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Please credit Hyptosis and Zabin (only drew 6 frames of the bomb&#039;s wick burning) from OGA and respect to the License.
+
+File(s):
+    * hyptosis_tile-art-batch-1.png
+    * hyptosis_til-art-batch-2.png
+    * hyptosis_tile-art-batch-3.png
+    * hyptosis_tile-art-batch-4.png
+    * hyptosis_tile-art-batch-5.png
+    * hyptosis_sprites-and-tiles-for-you.png
+    * BombExploding.png
+
+----------------------------------------
+
+Title:
+    Bone Planet
+
+Author:
+    Hyptosis
+
+URL:
+    https://opengameart.org/content/bone-planet
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * BonePlanet.zip
+
+----------------------------------------
+
+Title:
+    RPG portraits
+
+Author:
+    Buch
+
+URL:
+    https://opengameart.org/content/rpg-portraits
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+Copyright/Attribution Notice:
+    NOT REQUIRED, though appreciated: credit me as Buch and link back either to my OGA profile page or to http://blog-buch.rhcloud.com
+
+File(s):
+    * rpgportraits.png
+
+----------------------------------------
+
+Title:
+    [LPC] Hanging signs
+
+Author:
+    Reemax
+
+URL:
+    https://opengameart.org/content/lpc-hanging-signs
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+Copyright/Attribution Notice:
+    Please use the LPC attribution instructions for this work
+
+
+File(s):
+    * lpc-hanging-signs.png
+
+----------------------------------------
+
+Title:
+    LPC style farm animals
+
+Author:
+    daneeklu
+
+URL:
+    https://opengameart.org/content/lpc-style-farm-animals
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Attribute to Daniel Eddeland, and link to opengameart (preferably this submission).
+
+File(s):
+    * chicken_eat.png
+    * chicken_walk.png
+    * chicken_shadow.png
+    * cow_eat.png
+    * cow_walk.png
+    * cow_shadow.png
+    * llama_eat.png
+    * llama_walk.png
+    * llama_shadow.png
+    * pig_eat.png
+    * pig_walk.png
+    * sheep_eat.png
+    * sheep_walk.png
+
+----------------------------------------
+
+Title:
+    [LPC] Items and game effects
+
+Author:
+    Reemax
+
+Collaborators:
+    Sharm, ETTiNGRiNDER, wulax, Nila122, daneeklu, JaidynReiman, pennomi, laetissima, makrohn, Jetrel
+
+URL:
+    https://opengameart.org/content/lpc-items-and-game-effects
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+Copyright/Attribution Notice:
+    See credits.txt
+
+File(s):
+    * ItemsAndEffects.zip
+
+----------------------------------------
+
+Title:
+    Ponytail and Plain hairstyles
+
+Author:
+    Joe White
+
+URL:
+    https://opengameart.org/content/ponytail-and-plain-hairstyles
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+File(s):
+    * ponytail-and-plain.zip
+
+----------------------------------------
+
+Title:
+    Four characters:  My LPC entries
+
+Author:
+    Redshrike
+
+URL:
+    https://opengameart.org/content/four-characters-my-lpc-entries
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * OGA-BY 3.0 ( http://static.opengameart.org/OGA-BY-3.0.txt )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Attribution to Stephen "Redshrike" Challener and a link to www.OpenGameArt.org
+For Sinbad, attribution to Zi Ye for the design.
+
+Copyright/Attribution Notice:
+    Stephen Challener (Redshrike) and Zi Ye, hosted by OpenGameArt.org
+
+File(s):
+    * mage fall down sheet copy.png
+    * Mage spell casting sheet copy.png
+    * mage walking poses sheet copy.png
+    * baldricfrontwalksheet copy.png
+    * baldricSlashSheet.png
+    * baldricfallsheet copy.png
+    * baldricSpellSheet copy.png
+    * unfinishedchars1.PNG
+
+----------------------------------------
+
+Title:
+    LPC masks
+
+Author:
+    Nila122
+
+URL:
+    https://opengameart.org/content/lpc-masks
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+File(s):
+    * Masks.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Adobe Building Set
+
+Author:
+    Sharm
+
+Collaborators:
+    Sharm
+
+URL:
+    https://opengameart.org/content/lpc-adobe-building-set
+
+License(s):
+    * CC-BY 4.0 ( https://creativecommons.org/licenses/by/4.0/legalcode )
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+    * OGA-BY 3.0 ( http://static.opengameart.org/OGA-BY-3.0.txt )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Please link this page (if reasonable), attribute Sharm as graphic artist, and me as contributor (since I did pay out of the goodness of my heart to have this set made after all...). File called credit.txt included for convenience.
+
+File(s):
+    * adobe building set.zip
+
+----------------------------------------
+
+Title:
+    Drakes and lizardfolk
+
+Author:
+    Nila122
+
+URL:
+    https://opengameart.org/content/drakes-and-lizardfolk
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+Copyright/Attribution Notice:
+    Original Walkcycle, Hurt, Slash, and Spellcast animations by Stephen Challener (AKA Redshrike) and Shooting and Thrusting animations by Johannes Sjölund
+
+File(s):
+    * Reptile.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Curly Hair, Elven Ears, White Cape with blue trim, and more!
+
+Author:
+    Jaidyn Reiman
+
+Collaborators:
+    makrohn, JaidynReiman
+
+URL:
+    https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    See authors here: https://github.com/jrconway3/Universal-LPC-spritesheet/blob/master/AUTHORS.txt
+
+File(s):
+    * ruby-red.png
+    * elvenears_light.png
+    * red_orc.png
+    * teal_tunic.png
+    * cape_white.png
+    * trimcape_whiteblue.png
+    * capeclip_blue.png
+    * capetie_white.png
+    * maroon_sleeveless.png
+
+----------------------------------------
+
+Title:
+    LPC ladies
+
+Author:
+    makrohn
+
+URL:
+    https://opengameart.org/content/lpc-ladies
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Walkcycle, Hurt, Slash, and Spellcast animations by Stephen Challener (AKA Redshrike), 
+Shooting and Thrusting adapted from animations by Johannes Sjölund, 
+Male and female orc heads by MadMarcel and based on Stephen Challener&#039;s Sinbad, 
+Tanned, Tanned2, and Dark colors by MadMarcel, 
+other credit to Matthew Krohn
+
+File(s):
+    * lpcfemalelight.png
+    * lpcfemaletanned.png
+    * lpcfemaletanned2.png
+    * lpcfemaledark.png
+    * lpcfemaleorc.png
+
+----------------------------------------
+
+Title:
+    [LPC] Female Orc/Ogre/Goblin/Troll (base walkcycle)
+
+Author:
+    madmarcel
+
+URL:
+    https://opengameart.org/content/lpc-female-orcogregoblintroll-base-walkcycle
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+File(s):
+    * female_orcwalkcycle.xcf
+    * orc_piratess.png
+    * BODY_FEMALE_ORC.png
+
+----------------------------------------
+
+Title:
+    LPC Wands
+
+Author:
+    makrohn
+
+URL:
+    https://opengameart.org/content/lpc-wands
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Matthew Krohn
+
+File(s):
+    * lpcfemalewandsteel.png
+    * lpcfemalewandwood.png
+    * lpcmalewandsteel.png
+    * lpcmalewandwood.png
+
+----------------------------------------
+
+Title:
+    Spear Walk
+
+Author:
+    XOR
+
+URL:
+    https://opengameart.org/content/spear-walk
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+File(s):
+    * spear_walk.xcf
+
+----------------------------------------
+
+Title:
+    [LPC] Sara
+
+Author:
+    William.Thompsonj
+
+Collaborators:
+    Redshrike, bart
+
+URL:
+    https://opengameart.org/content/lpc-sara
+
+License(s):
+    * CC-BY 4.0 ( https://creativecommons.org/licenses/by/4.0/legalcode )
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+    * OGA-BY 3.0 ( http://static.opengameart.org/OGA-BY-3.0.txt )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Attribute Stephen "Redshrike" Challener as graphic artist and William.Thompsonj as contributor. Attribute Mandi Paugh as the original artist of Sara and creator of the OGA mascot. You must include a link to the OGA homepage, per original Sara entry instructions. Please include a link to this entry also if possible.
+
+File(s):
+    * LPC_Sara.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Muscular Swing Animation
+
+Author:
+    ElizaWy
+
+URL:
+    https://opengameart.org/content/lpc-muscular-swing-animation
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+Copyright/Attribution Notice:
+    Original stand / walk base by Dalonedrau.
+
+File(s):
+    * Swing, v1.png
+    * Swing, pants.png
+
+----------------------------------------
+
+Title:
+    LPC: Modified base tiles
+
+Author:
+    Sharm
+
+URL:
+    https://opengameart.org/content/lpc-modified-base-tiles
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * OGA-BY 3.0 ( http://static.opengameart.org/OGA-BY-3.0.txt )
+
+Copyright/Attribution Notice:
+    Art or LPC or whatever you named this section of credits:
+Lanea Zimmerman
+
+Extra Contributions or special thanks:
+William Thompson
+
+File(s):
+    * LPC.zip
+
+----------------------------------------
+
+Title:
+    LPC Style Well
+
+Author:
+    Xenodora
+
+URL:
+    https://opengameart.org/content/lpc-style-well
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Credit Xenodora for the well.
+Credit Lanea Zimmerman for the buckets.
+
+
+File(s):
+    * lpc-well.png
+    * lpc-well.xcf.gz
+
+----------------------------------------
+
+Title:
+    [LPC] Water Fountain
+
+Author:
+    Sharm
+
+Collaborators:
+    William.Thompsonj, Curt
+
+URL:
+    https://opengameart.org/content/lpc-water-fountain
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Curt, Sharm, William.Thompsonj, This Webaddress
+
+File(s):
+    * WaterFountain.png
+
+----------------------------------------
+
+Title:
+    Shabby Chic Exterior Tiles
+
+Author:
+    cyanowl
+
+URL:
+    https://opengameart.org/content/shabby-chic-exterior-tiles
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * ShabbyChic_Home.png
+
+----------------------------------------
+
+Title:
+    [LPC] Cavern and ruin tiles
+
+Author:
+    Reemax
+
+Collaborators:
+    Sharm, Hyptosis, Johann C, HughSpectrum, Redshrike, William.Thompsonj, wulax
+
+URL:
+    https://opengameart.org/content/lpc-cavern-and-ruin-tiles
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+Copyright/Attribution Notice:
+    see credits.txt
+
+File(s):
+    * LPC_cavern_ruins.zip
+
+----------------------------------------
+
+Title:
+    Worldmap/Overworld tileset
+
+Author:
+    Beast
+
+URL:
+    https://opengameart.org/content/worldmapoverworld-tileset
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+
+Copyright/Attribution Notice:
+    Art by MrBeast. Commissioned by OpenGameArt.org (http://opengameart.org)
+
+File(s):
+    * tileset.png
+    * mountains.png
+    * water.png
+
+----------------------------------------
+
+Title:
+    Theme Menu
+
+Author:
+    Alexandr Zhelanov
+
+URL:
+    https://opengameart.org/content/theme-menu
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+
+Copyright/Attribution Notice:
+    Alexandr Zhelanov, https://soundcloud.com/alexandr-zhelanov
+
+File(s):
+    * Theme Menu.mp3
+    * Menu_loop.mp3
+
+----------------------------------------
+
+Title:
+    I Miss You
+
+Author:
+    Varon Kein
+
+URL:
+    https://opengameart.org/content/i-miss-you
+
+License(s):
+    * CC-BY 4.0 ( https://creativecommons.org/licenses/by/4.0/legalcode )
+
+Copyright/Attribution Notice:
+    Attribute as Patrick de Arteaga and a link to patrickdearteaga.com
+
+File(s):
+    * I Miss You.ogg
+
+----------------------------------------
+
+Title:
+    [LPC] Windows & Doors
+
+Author:
+    bluecarrot16
+
+URL:
+    https://opengameart.org/content/lpc-windows-doors
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+Copyright/Attribution Notice:
+    "LPC Windows & Doors" by bluecarrot16, Lanea Zimmerman (AKA Sharm) and Daniel Armstrong (AKA HughSpectrum), Casper Nilsson,  Anamaris and Krusmira. License: CC-BY-SA 3.0 / GPL 3.0+. Please link back to this page on OpenGameArt: https://opengameart.org/content/lpc-windows-doors   
+
+Based on:
+"LPC Base Assets" by Lanea Zimmerman (AKA Sharm) and Daniel Armstrong (AKA HughSpectrum). 
+License: CC-BY-SA 3.0 / GPL 3.0+. 
+http://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles
+"LPC art entry" by Casper Nilsson. 
+License: CC-BY-SA 3.0 / GPL 3.0+. 
+http://opengameart.org/content/lpc-cnilsson
+"Steampun-a-fy (with concept art)" by Anamaris and Krusmira
+License: CC-BY-SA 3.0 / GPL 3.0+. 
+http://opengameart.org/content/steampun-a-fy-with-concept-art
+
+File(s):
+    * windows.png
+    * doors.png
+
+----------------------------------------
+
+Title:
+    LPC Windows Rework
+
+Author:
+    AntumDeluge
+
+URL:
+    https://opengameart.org/content/lpc-windows-rework
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+Copyright/Attribution Notice:
+    Created by Lanea Zimmerman (Sharm) & bluecarrot16 (https://opengameart.org/node/41378), & Casper Nilsson (https://opengameart.org/content/lpc-cnilsson)
+
+File(s):
+    * windows_with_flowerboxes.png
+    * windows_with_flowerboxes.xcf
+
+----------------------------------------
+
+Title:
+    [LPC] Wolf Animation
+
+Author:
+    William.Thompsonj
+
+Collaborators:
+    Redshrike
+
+URL:
+    https://opengameart.org/content/lpc-wolf-animation
+
+License(s):
+    * CC-BY 4.0 ( https://creativecommons.org/licenses/by/4.0/legalcode )
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+    * OGA-BY 3.0 ( http://static.opengameart.org/OGA-BY-3.0.txt )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Attribute Stephen "Redshrike" Challener as graphic artist and William.Thompsonj as contributor. If reasonable link back to this page or the OGA homepage.
+
+File(s):
+    * howl.png
+    * wolfsheet1.png
+    * wolfsheet2.png
+    * wolfsheet3.png
+    * wolfsheet4.png
+    * wolfsheet5.png
+    * wolfsheet6.png
+    * wolfsheetsSource.psd
+
+----------------------------------------
+
+Title:
+    [LPC] Spider
+
+Author:
+    William.Thompsonj
+
+Collaborators:
+    Redshrike
+
+URL:
+    https://opengameart.org/content/lpc-spider
+
+License(s):
+    * CC-BY 4.0 ( https://creativecommons.org/licenses/by/4.0/legalcode )
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+    * OGA-BY 3.0 ( http://static.opengameart.org/OGA-BY-3.0.txt )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Attribute Stephen "Redshrike" Challener as graphic artist and William.Thompsonj as contributor. If reasonable link to this page or the OGA homepage.
+
+File(s):
+    * LPC_Spiders.zip
+
+----------------------------------------
+
+Title:
+    Free Pixel Effects Pack
+
+Author:
+    CodeManu
+
+URL:
+    https://opengameart.org/content/free-pixel-effects-pack
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * Free Pixel Effects Pack.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Shields Pack
+
+Author:
+    bigbeargames
+
+URL:
+    https://opengameart.org/content/lpc-shields-pack
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+Copyright/Attribution Notice:
+    See README.txt
+
+File(s):
+    * LPC_shield_pack.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Pregnancy Bases & Maternity Wear
+
+Author:
+    ElizaWy
+
+URL:
+    https://opengameart.org/content/lpc-pregnancy-bases-maternity-wear
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+Copyright/Attribution Notice:
+    Pants originally by Joe White, modified and recolored for the new base. Tank top originally the "pirate shirt" by Marcel van de Steeg, modified for the new base, pixel edits for consistency, and recolored. Female stand & walk cycle by Stephen Challener (AKA Redshrike). Edited to add stomach and recolored.
+
+File(s):
+    * Stand & Walk Bases.zip
+    * Maternity Pants - Stand & Walk.zip
+    * Maternity Tank Top - Stand & Walk.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Teen / Unisex Base & Clothes
+
+Author:
+    ElizaWy
+
+URL:
+    https://opengameart.org/content/lpc-teen-unisex-base-clothes
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+Copyright/Attribution Notice:
+    Pants originally by Joe White, edited to de-emphasize hips. Base modified from the Female Stand & Walk Cycle by Stephen Challener (AKA Redshrike).
+
+File(s):
+    * Androgynous Bases.zip
+    * Androgynous Pants.zip
+    * Androgynous Long-Sleeve Shirt.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Major Triumph
+
+Author:
+    Baŝto
+
+URL:
+    https://opengameart.org/content/lpc-major-triumph
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+Copyright/Attribution Notice:
+    Major Triumph&#039;s shield based on shield by Johannes Sjölund (AKA wulax)
+
+Major Triumph&#039;s belt based on leather belt by Johannes Sjölund (AKA wulax)
+
+red bracers based on bracers by Johannes Johannes Sjölund (AKA wulax) and Matthew Krohn
+
+red bracers based on bracers by Johannes Johannes Sjölund (AKA wulax) and Matthew Krohn
+
+red shoes based on brown shoes by Johannes Sjölund (AKA wulax) and Joe White
+
+Major Triumph&#039;s mask and suit are based on male body with base animations by Johannes Sjölund (AKA wulax) and Stephen Challener (AKA Redshrike)
+
+black hero pants based on white pants by Johannes Sjölund (AKA wulax)
+
+File(s):
+    * major_triumph.png
+    * major_triumph_suit.png
+    * major_triumph_suit_logo.png
+    * major_triumph_mask.png
+    * major_triumph_mask_logo.png
+    * black_heropants_male.png
+    * major_triumph_belt.png
+    * red_shoes_male.png
+    * red_bracers_male.png
+    * major_triumph_shield_cutoutforbody.png
+
+----------------------------------------
+
+Title:
+    LPC: Interior Castle Tiles
+
+Author:
+    Sharm
+
+URL:
+    https://opengameart.org/content/lpc-interior-castle-tiles
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * OGA-BY 3.0 ( http://static.opengameart.org/OGA-BY-3.0.txt )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Please credit Lanea Zimmerman
+
+File(s):
+    * castle.png
+    * stairs.png
+
+----------------------------------------
+
+Title:
+    LPC beetle
+
+Author:
+    Redshrike
+
+URL:
+    https://opengameart.org/content/lpc-beetle
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+    * OGA-BY 3.0 ( http://static.opengameart.org/OGA-BY-3.0.txt )
+
+SPECIAL ATTRIBUTION INSTRUCTIONS:
+    Stephen "Redshrike" Challener, plus a link back to opengameart.org
+
+Copyright/Attribution Notice:
+    Stephen Challener (Redshrike), hosted by OpenGameArt.org
+
+File(s):
+    * beetle5.PNG
+    * mace.PNG
+
+----------------------------------------
+
+Title:
+    [LPC] Pointed Hats
+
+Author:
+    bigbeargames
+
+URL:
+    https://opengameart.org/content/lpc-pointed-hats
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+Copyright/Attribution Notice:
+    Magic hats based on Reemax&#039;s (Tuomo Untinen) [LPC] Items and Game Effects 
+
+https://opengameart.org/content/lpc-items-and-game-effects
+
+CC-BY-SA 3.0 CC GPL3.0 CC GPL 2.0
+
+
+File(s):
+    * LPC_magic_hats.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Magic Staff
+
+Author:
+    bigbeargames
+
+URL:
+    https://opengameart.org/content/lpc-magic-staff
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+Copyright/Attribution Notice:
+    Based on one of LordNeo&#039;s staves at https://opengameart.org/content/staff-64-x64
+Public Domain CC0
+
+File(s):
+    * LPC_magicstaff.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Celestial Wizard Hats
+
+Author:
+    bigbeargames
+
+URL:
+    https://opengameart.org/content/lpc-celestial-wizard-hats
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+
+Copyright/Attribution Notice:
+    Based on Merlin&#039;s Hat (https://opengameart.org/content/merlins-hat) by Tracy under CC-BY 3.0
+
+File(s):
+    * LPC_starhat.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Weapons Mega Pack
+
+Author:
+    bigbeargames
+
+URL:
+    https://opengameart.org/content/lpc-weapons-mega-pack
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+Copyright/Attribution Notice:
+    See README.txt
+
+File(s):
+    * LPC_weapons_pack.zip
+
+----------------------------------------
+
+Title:
+    LPC Spade/Shovel Spritesheet
+
+Author:
+    Inboxninja
+
+URL:
+    https://opengameart.org/content/lpc-spadeshovel-spritesheet
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+Copyright/Attribution Notice:
+    please give credit to XOR (https://opengameart.org/users/xor), and his work on "spear walk" upon which, this spritesheet is based
+
+File(s):
+    * shovel_walk.xcf
+    * Spade.png
+
+----------------------------------------
+
+Title:
+    [LPC] Horse Riding UPDATED 0.9.1
+
+Author:
+    bigbeargames
+
+URL:
+    https://opengameart.org/content/lpc-horse-riding-updated-091
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+    * OGA-BY 3.0 ( http://static.opengameart.org/OGA-BY-3.0.txt )
+
+Copyright/Attribution Notice:
+    "[LPC] Horses" Artist: bluecarrot16 License: CC-BY 3.0 / GPL 3.0 / GPL 2.0 / OGA-BY 3.0 Please link to opengameart: http://opengameart.org/content/lpc-horses
+
+I added a missing pixel to left and right walk frames, but the only other modification I did was cutout. I don&#039;t need attribution for art, just credit bluecarrot16. I ask that you credit me if you use the algorithm but I don&#039;t know how that applies to licensing so it&#039;s not mandatory.
+
+File(s):
+    * LPC_ride_0.9.0.zip
+    * modvalues.zip
+
+----------------------------------------
+
+Title:
+    3 Heal Spells
+
+Author:
+    DoKashiteru
+
+URL:
+    https://opengameart.org/content/3-heal-spells
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+File(s):
+    * 3 heal spells.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Medieval Village Decorations
+
+Author:
+    bluecarrot16
+
+URL:
+    https://opengameart.org/content/lpc-medieval-village-decorations
+
+License(s):
+    * CC-BY-SA 4.0 (  )
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+Copyright/Attribution Notice:
+    see CREDITS-decorations-medieval.txt. All information in this file must be included.
+
+File(s):
+    * decoration_medieval.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Birds
+
+Author:
+    bluecarrot16
+
+URL:
+    https://opengameart.org/content/lpc-birds
+
+License(s):
+    * CC-BY 4.0 ( https://creativecommons.org/licenses/by/4.0/legalcode )
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * CC-BY-SA 4.0 (  )
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+    * OGA-BY 3.0 ( http://static.opengameart.org/OGA-BY-3.0.txt )
+
+Copyright/Attribution Notice:
+    "[LPC] Birds" by bluecarrot16, commissioned by castelonia. Please include a link back to this page on OpenGameArt.
+
+File(s):
+    * bird_1_bluejay.png
+    * bird_1_brown.png
+    * bird_1_red.png
+    * bird_1_white_crest.png
+    * bird_1_white.png
+    * bird_2_black.png
+    * bird_2_blue.png
+    * bird_2_brown_1.png
+    * bird_2_brown_2.png
+    * bird_2_cardinal.png
+    * bird_2_eagle.png
+    * bird_2_red.png
+    * bird_2_white.png
+    * bird_3_robin.png
+    * bird_3_sparrow.png
+
+----------------------------------------
+
+Title:
+    This World Is Sh#t
+
+Author:
+    Alexandr Zhelanov
+
+URL:
+    https://opengameart.org/content/this-world-is-sht
+
+License(s):
+    * CC-BY 4.0 ( https://creativecommons.org/licenses/by/4.0/legalcode )
+
+Copyright/Attribution Notice:
+    Alexandr Zhelanov https://soundcloud.com/alexandr-zhelanov
+
+File(s):
+    * This World is Sh#t.ogg
+
+----------------------------------------
+
+Title:
+    [LPC] Zombie
+
+Author:
+    BenCreating
+
+URL:
+    https://opengameart.org/content/lpc-zombie
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+Copyright/Attribution Notice:
+    "[LPC] Zombie" by Benjamin K. Smith, commissioned by castelonia. Based on the male LPC base by Stephen Challener (Redshrike) and the thrust and shoot animations by Johannes Sjölund (wulax).
+
+File(s):
+    * Zombie.png
+    * Bleeding Eye.png
+    * Bloody Arm.png
+    * Bloody Mouth.png
+    * Brain.png
+    * Ribs.png
+
+----------------------------------------
+
+Title:
+    Hand cursor
+
+Author:
+    andreyin
+
+URL:
+    https://opengameart.org/content/hand-cursor
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * hand_cursor0000.png
+
+----------------------------------------
+
+Title:
+    [LPC] Mountains
+
+Author:
+    bluecarrot16
+
+URL:
+    https://opengameart.org/content/lpc-mountains
+
+License(s):
+    * CC-BY-SA 4.0 (  )
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+
+Copyright/Attribution Notice:
+    See CREDITS-mountains.txt You MUST credit all authors with the information in this file, and you must link back to this page on OpenGameArt.
+
+File(s):
+    * mountains.zip
+    * tiled.zip
+
+----------------------------------------
+
+Title:
+    Blessed to kill
+
+Author:
+    Alexandr Zhelanov
+
+URL:
+    https://opengameart.org/content/blessed-to-kill
+
+License(s):
+    * CC-BY 4.0 ( https://creativecommons.org/licenses/by/4.0/legalcode )
+
+Copyright/Attribution Notice:
+    Alexandr Zhelanov https://soundcloud.com/alexandr-zhelanov
+
+File(s):
+    * Blessed to kill.ogg
+
+----------------------------------------
+
+Title:
+    [LPC] Upholstery
+
+Author:
+    bluecarrot16
+
+URL:
+    https://opengameart.org/content/lpc-upholstery
+
+License(s):
+    * CC-BY 4.0 ( https://creativecommons.org/licenses/by/4.0/legalcode )
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * CC-BY-SA 4.0 (  )
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * OGA-BY 3.0 ( http://static.opengameart.org/OGA-BY-3.0.txt )
+
+Copyright/Attribution Notice:
+    "[LPC] Upholstery" by bluecarrot16, Lanea Zimmerman (Sharm). Please link back to https://opengameart.org/content/lpc-upholstery and  https://opengameart.org/content/lpc-interior-castle-tiles . 
+
+File(s):
+    * upholstery.png
+
+----------------------------------------
+
+Title:
+    [LPC] Wooden Furniture
+
+Author:
+    bluecarrot16
+
+URL:
+    https://opengameart.org/content/lpc-wooden-furniture
+
+License(s):
+    * CC-BY-SA 4.0 (  )
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+Copyright/Attribution Notice:
+    "LPC Wooden Furniture" by bluecarrot16, Lanea Zimmerman (Sharm), William Thompson, Tuomo Untinen (Reemax), Janna/Lilius/Jannax. Please link back to https://opengameart.org/content/lpc-wooden-furniture . 
+see CREDITS-*.txt. All information in this file must be included.
+
+File(s):
+    * CREDITS-furniture.txt_.zip
+    * blonde-wood.png
+    * dark-wood.png
+
+----------------------------------------
+
+Title:
+    [LPC] Shields
+
+Author:
+    bluecarrot16
+
+URL:
+    https://opengameart.org/content/lpc-shields
+
+License(s):
+    * CC-BY 4.0 ( https://creativecommons.org/licenses/by/4.0/legalcode )
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+    * OGA-BY 3.0 ( http://static.opengameart.org/OGA-BY-3.0.txt )
+
+Copyright/Attribution Notice:
+    "[LPC] Shields" by bluecarrot16, commissioned by castelonia. Include a link back to https://opengameart.org/content/lpc-shields
+
+File(s):
+    * crusader_female.png
+    * crusader_male.png
+    * spartan_male.png
+    * spartan_female.png
+
+----------------------------------------
+
+Title:
+    Red Dragon
+
+Author:
+    ZaPaper
+
+URL:
+    https://opengameart.org/content/red-dragon
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+
+Copyright/Attribution Notice:
+    Credits to http://www.buko-studios.com/
+Commissioned by PlayCraft: www.playcraftapp.com
+
+File(s):
+    * reddragonfly.png
+    * reddragonfly2.png
+    * reddragonfly3.png
+    * reddragonfly4.png
+
+----------------------------------------
+
+Title:
+    [LPC] Goat
+
+Author:
+    bluecarrot16
+
+URL:
+    https://opengameart.org/content/lpc-goat
+
+License(s):
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+Copyright/Attribution Notice:
+    "LPC Goat" by bluecarrot16. License: CC-BY 3.0 / GPL 2.0+
+Based on "LPC Style Farm Animals" by Daniel Eddeland (daneeklu), commissioned by Thomas Bruno (tebruno99). License: CC-BY 3.0 / GPL 2+. http://opengameart.org/content/lpc-style-farm-animals
+
+File(s):
+    * goat.png
+
+----------------------------------------
+
+Title:
+    [LPC] Siege Weapons
+
+Author:
+    bluecarrot16
+
+Collaborators:
+    castelonia
+
+URL:
+    https://opengameart.org/content/lpc-siege-weapons
+
+License(s):
+    * CC-BY 4.0 ( https://creativecommons.org/licenses/by/4.0/legalcode )
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+
+Copyright/Attribution Notice:
+    "[LPC] Siege Weapons" by bluecarrot16. Please link back to this page on OpenGameArt. 
+
+File(s):
+    * ballista-arm.png
+    * ballista-bolts.png
+    * ballista-upgrade.png
+    * ballista.png
+    * catapult.png
+    * catapult-upgrade.png
+    * wheels-bg-upgrade.png
+    * wheels-bg.png
+    * wheels-fg-upgrade.png
+    * wheels-fg.png
+
+----------------------------------------
+
+Title:
+    [LPC] Helmets
+
+Author:
+    bluecarrot16
+
+URL:
+    https://opengameart.org/content/lpc-helmets
+
+License(s):
+    * CC-BY 4.0 ( https://creativecommons.org/licenses/by/4.0/legalcode )
+    * CC-BY 3.0 ( http://creativecommons.org/licenses/by/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+    * GPL 2.0 ( http://www.gnu.org/licenses/old-licenses/gpl-2.0.html )
+    * OGA-BY 3.0 ( http://static.opengameart.org/OGA-BY-3.0.txt )
+
+Copyright/Attribution Notice:
+    "[LPC] Helmets" by bluecarrot16, commissioned by castelonia. Please link back to this page on OpenGameArt: https://opengameart.org/content/lpc-helmets
+
+File(s):
+    * maximus-female.png
+    * maximus-male.png
+    * barbarian-female.png
+    * barbarian-male.png
+    * barbuta-female.png
+    * barbuta-male.png
+
+----------------------------------------
+
+Title:
+    [LPC] Overworld
+
+Author:
+    BenCreating
+
+URL:
+    https://opengameart.org/content/lpc-overworld-0
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+Copyright/Attribution Notice:
+    [LPC] Overworld by Benjamin K. Smith, commissioned by castelonia. Grass/Water based on tiles by Lanea Zimmerman (AKA Sharm). Sand/Snow based on tiles by Daniel Eddeland, William.ThompsonJ, Nushio, and Adrix89.
+
+File(s):
+    * LPC Overworld.zip
+
+----------------------------------------
+
+Title:
+    [LPC] Medieval Weapons
+
+Author:
+    BenCreating
+
+URL:
+    https://opengameart.org/content/lpc-medieval-weapons
+
+License(s):
+    * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
+    * GPL 3.0 ( http://www.gnu.org/licenses/gpl-3.0.html )
+
+Copyright/Attribution Notice:
+    [LPC] Medieval Weapons by Benjamin K. Smith, commissioned by castelonia.
+
+File(s):
+    * LPC Medieval Weapons.zip
+
+----------------------------------------
+
+Title:
+    Shadow for LPC Sprite
+
+Author:
+    drjamgo@hotmail.com
+
+URL:
+    https://opengameart.org/content/shadow-for-lpc-sprite
+
+License(s):
+    * CC0 ( http://creativecommons.org/publicdomain/zero/1.0/legalcode )
+
+File(s):
+    * lpc_shadow.png
+    * lpc_shadow_child.png
+
+----------------------------------------
+
+

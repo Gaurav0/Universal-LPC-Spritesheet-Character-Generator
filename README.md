@@ -25,6 +25,14 @@ GNU GPL 3.0:
  - http://www.gnu.org/licenses/gpl-3.0.html
  - See the file: [gpl-3.0](gpl-3_0.txt)
 
+If you want to use any of the assets produced by this generator, you need to credit all authors involved.
+The easiest way to do is by creating a collection on [Open Game Art](https://opengameart.org/content/lpc-game-assets) like this one.
+You can then generate a credits file, which you could for example bundle in your application.
+For each credit you give you should also include a link to the original post.
+An example of such a file can be found [here](CREDITS.txt), it holds among others all assets used to build up this generator.
+
+ **NOTE: Always check the content of the file for completeness.**
+
 ### Run
 
 To run this project, just clone the repo and open ``index.html`` in your browser of choice.
