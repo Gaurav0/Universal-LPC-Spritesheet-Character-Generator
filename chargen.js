@@ -396,7 +396,7 @@ $(document).ready(function() {
           name = $(this).data("file_female");
         }
 
-        if (oversizeComplete.includes(name)) {
+        if (oversizeComplete.findIndex(element => element.includes(name))) {
           var img = getImage(name.replace("attack", "universal"));
           drawImage(ctx, img);
         }
