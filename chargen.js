@@ -626,6 +626,9 @@ $(document).ready(function() {
     currentFrame = (currentFrame + 1) % animRowFrames;
     animCtx.clearRect(0, 0, anim.width, anim.height);
     for (var i = 0; i < animRowNum; ++i) {
+    	if (animRowStart >== 4 && animRowStart <== 8 && i === 0 ) {
+    		continue
+    	}
       if (oversize && (animRowStart === 4 || animRowStart === 12)) {
         animCtx.drawImage(canvas, currentFrame * 192, 1344 + (i*192), 192, 192, i * 192, 0, 192, 192);
       } else {
