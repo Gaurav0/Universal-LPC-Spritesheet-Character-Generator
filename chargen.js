@@ -9,7 +9,6 @@ $(document).ready(function() {
   var drawShadow = false;
   var drawChildShadow = false;
 
-  var oversizeComplete = ["flail", "halberd", "waraxe", "rapier", "saber", "glowsword", "scythe"];
   var credits = {};
 
   // on hash (url) change event, interpret and redraw
