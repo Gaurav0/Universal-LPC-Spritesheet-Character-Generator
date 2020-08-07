@@ -395,8 +395,8 @@ $(document).ready(function() {
         }else if ($("#sex-female").prop("checked") && $(this).data("file_female")) {
           name = $(this).data("file_female");
         }
-
-        if (oversizeComplete.findIndex(element => element.includes(name))) {
+        	"flail", "halberd", "waraxe", "rapier", "saber", "glowsword", "scythe"
+        if (name.includes("flail") || name.includes("halberd") || name.includes("waraxe") || name.includes("rapier") || name.includes("saber") || name.includes("glowsword") || name.includes("scythe")) {
           var img = getImage(name.replace("attack", "universal"));
           drawImage(ctx, img);
         }
