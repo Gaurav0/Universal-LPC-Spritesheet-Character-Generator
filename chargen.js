@@ -395,7 +395,7 @@ $(document).ready(function() {
           name = $(this).data("file_female");
         }
         	"flail", "halberd", "waraxe", "rapier", "saber", "glowsword", "scythe"
-        if (name.includes("flail") || name.includes("halberd") || name.includes("waraxe") || name.includes("rapier") || name.includes("saber") || name.includes("glowsword") || name.includes("scythe")) {
+        if (name.includes("flail") || name.includes("halberd") || name.includes("waraxe") || name.includes("rapier") || name.includes("saber") || name.includes("glowsword") || name.includes("scythe") || name.includes("mace")) {
           var img = getImage(name.replace("attack", "universal"));
           drawImage(ctx, img);
         }
