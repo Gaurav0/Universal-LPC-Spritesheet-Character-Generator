@@ -230,6 +230,7 @@ $(document).ready(function() {
     credits = {};
     const zposPreview = parseInt(document.getElementById("ZPOS").value) || 0;
     let didDrawPreview = false;
+    let wolfmanBody = "";
     zPosition = 0;
     // start over
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -316,11 +317,17 @@ $(document).ready(function() {
         var img = getImage($(this).data("file_male"));
         drawImage(ctx, img);
         fileName = $(this).data("file_male");
+        if (fileName.includes("/wolf/")) {
+          wolfmanBody = fileName.replace("body/male/wolf/", "")+"male";
+        }
       }
       if (isFemale && $(this).data("file_female")) {
         var img = getImage($(this).data("file_female"));
         drawImage(ctx, img);
         fileName = $(this).data("file_female");
+        if (fileName.includes("/wolf/")) {
+          wolfmanBody = fileName.replace("body/female/wolf/", "")+"female";
+        }
       }
 
       // if data-file_male_light... and data-file_female_light... is specified
@@ -374,6 +381,15 @@ $(document).ready(function() {
       }
     });
 
+    if (wolfmanBody !== "") {
+      if (wolfmanBody.includes("female")) {
+        var img = getImage("/body/female/wolf/head/"+wolfmanBody.replace("female", ""));
+        drawImage(ctx, img);
+      } else {
+        var img = getImage("/body/male/wolf/head/"+wolfmanBody.replace("male", ""));
+        drawImage(ctx, img);
+      }
+    }
     if (!didDrawPreview) { // zposition was to high or low, draw anyways over all
       drawPreview();
       didDrawPreview = true;
