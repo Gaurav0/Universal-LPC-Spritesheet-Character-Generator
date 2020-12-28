@@ -9,7 +9,11 @@ $(document).ready(function() {
   var drawShadow = false;
   var drawChildShadow = false;
 
-  var credits = {};
+  var sheetCredits = [];
+  const creditColumns = "filename,notes,authors,licenses,url1,url2,url3,url4,url5,status";
+  const hairMalePrefix = "hair/male/"; // used to detect a male hairstyle graphic, which are not added per color to CREDITS.csv
+  const hairFemalePrefix = "hair/female/"; // used to detect a female hairstyle graphic, which are not added per color to CREDITS.csv
+  const parsedCredits = loadFile("CREDITS.csv").split("\n");
 
   // on hash (url) change event, interpret and redraw
   jHash.change(function() {
@@ -94,8 +98,6 @@ $(document).ready(function() {
   var canvas = $("#spritesheet").get(0);
   var ctx = canvas.getContext("2d");
 
-  const maxColors = 200;
-
   $("#previewFile").change(function() {
     previewFile();
   });
@@ -140,74 +142,32 @@ $(document).ready(function() {
     }, 0, false);
   });
 
-  $("#generateCredits").click(function() {
-    let bl = new Blob([JSON.stringify(credits)], {
+  $("#generateSheetCredits").click(function() {
+    let bl = new Blob([sheetCredits.join('\n')], {
       type: "text/html"
     });
     let a = document.createElement("a");
     a.href = URL.createObjectURL(bl);
-    a.download = "credits.json";
+    a.download = "sheet-credits.csv";
     a.hidden = true;
     document.body.appendChild(a);
-    a.innerHTML = "someinnerhtml";
+    a.innerHTML = "dummyhtml";
     a.click();
     document.removeChild(a);
   });
 
-  // Get colors from canvas
-  $("#changeColors").click(function() {
-    const colorsFound = [];
-    var imgData=ctx.getImageData(0,0,canvas.width,canvas.height);
-
-    const rChange = parseInt(document.getElementById("RGB-R").value) || 0;
-    const gChange = parseInt(document.getElementById("RGB-G").value) || 0;
-    const bChange = parseInt(document.getElementById("RGB-B").value) || 0;
-
-    if (rChange === 0 && gChange === 0 && bChange === 0) {
-      document.getElementById("colorsChanged").value = "No input for RGB change";
-      return;
-    }
-    // Get colors maxed at 200
-    for (var i=0;i<imgData.data.length;i+=4) {
-      let r = imgData.data[i];
-      let g = imgData.data[i+1];
-      let b = imgData.data[i+2];
-      let a = imgData.data[i+3];
-      let rgb = r + "|" + g + "|" + b;
-      if (a === 255 && !colorsFound.includes(rgb) && rgb !== "0|0|0") {
-        colorsFound.push(rgb);
-        if (colorsFound.length > maxColors) {
-          break;
-        }
-      }
-    }
-    document.getElementById("colorsChanged").value = "Colors detected: " + colorsFound.length;
-
-    // change colors
-    for (var i=0;i<imgData.data.length;i+=4) {
-      let r = imgData.data[i];
-      let g = imgData.data[i+1];
-      let b = imgData.data[i+2];
-      let rgb = r + "|" + g + "|" + b;
-
-      for (var j=0;j<colorsFound.length;j+=1) {
-        if (colorsFound[j] === rgb) {
-          imgData.data[i] = r+rChange;
-          imgData.data[i+1] = g+gChange;
-          imgData.data[i+2] = b+bChange;
-        }
-      }
-    }
-    ctx.putImageData(imgData,0,0);
-
-    // draw found colors
-    for (var i=0;i<colorsFound.length;i+=1) {
-      var colors = colorsFound[i].split("|");
-      ctx.beginPath();
-      ctx.rect(8 * 64 + i*20, 20, 20, 20);
-      ctx.fillStyle = "rgb("+colors[0]+", "+colors[1]+", "+ colors[2]+")";
-      ctx.fill();
-    }
+  $("#generateAllCredits").click(function() {
+    let bl = new Blob([parsedCredits.join('\n')], {
+      type: "text/html"
+    });
+    let a = document.createElement("a");
+    a.href = URL.createObjectURL(bl);
+    a.download = "all-credits.csv";
+    a.hidden = true;
+    document.body.appendChild(a);
+    a.innerHTML = "dummyhtml";
+    a.click();
+    document.removeChild(a);
   });
 
   // Determine if an oversize element used
@@ -227,7 +187,7 @@ $(document).ready(function() {
 
   // called each time redrawing
   function redraw() {
-    credits = {};
+    sheetCredits = [creditColumns];
     const zposPreview = parseInt(document.getElementById("ZPOS").value) || 0;
     let didDrawPreview = false;
     let wolfmanBody = "";
@@ -372,12 +332,26 @@ $(document).ready(function() {
           }
         });
       }
-      if (fileName !== "" && !credits["spritesheets/" + fileName]) {
-        var creditsUrl = $this.data("credits_url");
-        if (!creditsUrl) {
-          creditsUrl = "Not yet indexed; Search on https://opengameart.org/"
+
+      if (fileName !== "") {
+        let fileNameParsed = fileName
+        if (fileName.startsWith(hairMalePrefix) || fileName.startsWith(hairFemalePrefix)) {
+          let parts = fileName.split("/");
+          if (parts.length == 4) {
+            fileNameParsed = parts[0] + "/" + parts[1] + "/"  + parts[2];
+          }
         }
-        credits["spritesheets/" + fileName] = creditsUrl;
+        let found = false;
+        for (let creditEntry of parsedCredits) {
+          if (creditEntry.startsWith(fileNameParsed)) {
+            sheetCredits.push(creditEntry);
+            found = true;
+            break;
+          }
+        };
+        if (!found) {
+          sheetCredits.push(fileName+",!MISSING LICENSE INFORMATION! PLEASE CORRECT MANUALY AND REPORT BACK VIA A GITHUB ISSUE,,,,,,,,NOK");
+        }
       }
     });
 
@@ -490,6 +464,14 @@ $(document).ready(function() {
       }
     });
   }
+
+  function loadFile(filePath) {
+    var result = null;
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("GET", filePath, false);
+    xmlhttp.send();
+    return xmlhttp.responseText;
+}
 
   function drawPreview() {
     if (images["uploaded"] != null) {

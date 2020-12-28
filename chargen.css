@@ -1,174 +1,175 @@
 * {
-    margin: 0;
-    padding: 0;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 10px 15px;
-	min-width: 1280px;
+  margin: 10px 15px;
+  min-width: 1280px;
 }
 
 header {
-	width: 640px;
+  width: 640px;
 }
 
 h1 {
-    margin: 10px 0px;
+  margin: 10px 0px;
 }
 
 h2 {
-    margin: 10px 0px;
+  margin: 10px 0px;
 }
 
 h3 {
-    margin: 8px 0px;
+  font-size: 12pt;
+  margin: 8px 0px;
 }
 
 p {
-    margin: 10px 0px;
+  margin: 10px 0px;
 }
 
 .subtitle {
-	padding-left: 50px;
+  padding-left: 50px;
 }
 
 #save {
-    width: 60%;
-    min-width: 832px;
-    margin: 40px 0;
-    float: right;
-	padding-left: 15px;
+  width: 60%;
+  min-width: 832px;
+  margin: 40px 0;
+  float: right;
+  padding-left: 15px;
 }
 
 #source {
-    width: 30%;
-    min-width: 200px;
-    margin: 40px 0;
-    clear: both;
-    float: left;
-    font-size: 16pt;
+  width: 30%;
+  min-width: 200px;
+  margin: 40px 0;
+  clear: both;
+  float: left;
+  font-size: 16pt;
 }
 
 input[type=button], input[type=reset] {
-    padding: 2px 1em;
+  padding: 2px 1em;
 }
 
 #previewAnimationsBox {
-	width: 256px;
-	position: absolute;
-	top: 20px;
-	left: 640px;
+  width: 256px;
+  position: absolute;
+  top: 20px;
+  left: 640px;
 }
 
 #chooser {
-    width: 30%;
-    min-width: 200px;
-    padding-left: 20px;
-    float: left;
-    font-size: 14pt;
+  width: 30%;
+  min-width: 200px;
+  padding-left: 20px;
+  float: left;
+  font-size: 14pt;
 }
 
 #preview {
-    width: 60%;
-    min-width: 832px;
-    float: right;
+  width: 60%;
+  min-width: 832px;
+  float: right;
 }
 
 p.instr {
-	font-size: 12pt;
+  font-size: 12pt;
 }
 
 #chooser p.instr {
-	padding: 10px 0;
-	margin: 10px 0;
+  padding: 10px 0;
+  margin: 10px 0;
 }
 
 #preview p.instr {
-	padding: 10px;
-	margin: 12px 6px;
+  padding: 10px;
+  margin: 12px 6px;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 #chooser>ul {
-	height: 1344px;
-	overflow-y: auto;
+  height: 1344px;
+  overflow-y: auto;
 }
 
 #chooser>ul>li {
-    cursor: pointer;
-    font-size: 16pt;
+  cursor: pointer;
+  font-size: 16pt;
 }
 
 #chooser>ul>li>.condensed:after, #chooser>ul>li>ul>li>.condensed:after {
-	padding-left: 10px;
-	content: url('images/arrow_right.png');
+  padding-left: 10px;
+  content: url('images/arrow_right.png');
 }
 
 #chooser>ul>li>.expanded:after, #chooser>ul>li>ul>li>.expanded:after {
-	padding-left: 10px;
-	content: url('images/arrow_down.png');
+  padding-left: 10px;
+  content: url('images/arrow_down.png');
 }
 
 #chooser>ul>li>ul>li>ul {
-    display: none;
+  display: none;
 }
 
 #chooser>ul>li>ul {
-    display: none;
+  display: none;
 }
 
 /*
 #chooser>ul>li:hover ul {
-    display: block !important;
+display: block !important;
 }
 */
 
 #chooser>ul>li>ul>li {
-    font-size: 12pt;
-    padding-left: 48px;
-    text-indent: -18px;
+  font-size: 12pt;
+  padding-left: 48px;
+  text-indent: -18px;
 }
 
 #chooser>ul>li>ul>li>ul>li {
-    font-size: 12pt;
-    padding-left: 64px;
-    text-indent: -18px;
+  font-size: 12pt;
+  padding-left: 64px;
+  text-indent: -18px;
 }
 
 #chooser ul.hasPreview {
-	text-indent: 0;
+  text-indent: 0;
 }
 
 #chooser li.hasPreview {
-	display: inline-block;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-left: 0;
-	margin-right: 0;
-	text-indent: 0;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  text-indent: 0;
 }
 
 li.hasPreview>canvas {
-	display: block;
+  display: block;
 }
 
 #customizeChar .buttons {
-    display: block;
-    margin: 50px 0;
+  display: block;
+  margin: 50px 0;
 }
 
 #github {
-    position: fixed;
-    top: 0;
-    right: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
 a {
-    border: 0;
+  border: 0;
 }

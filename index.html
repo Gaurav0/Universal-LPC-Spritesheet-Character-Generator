@@ -33,27 +33,21 @@
 		<a id="saveAsPNG"><input type="button" value="Save Result As PNG"></a>
 		<input type="button" id="collapse" value="Collapse All">
 		<button type="button" id="resetAll">Reset all</button>
-		<button type="button" id="generateCredits">Credits</button>
 	</p>
 	<p>
+		<button type="button" id="generateSheetCredits">Credits for this sheet</button>
+		<button type="button" id="generateAllCredits">Credits for all sprites</button>
+	</p>
+	<p>
+		<h3>Choose a local file to draw in this sheet with a custom z-position</h3>
 		<input type="file" id="previewFile"><br>
 		<input id="ZPOS" type="text" name="ZPOS">z-position<br>
 	</p>
-	<form id="RGB">
-		R:<br>
-		<input id="RGB-R" type="text" name="R"><br>
-		G:<br>
-		<input id="RGB-G" type="text" name="G"><br>
-		B:<br>
-		<input id="RGB-B" type="text" name="B"><br>
-		<a id="changeColors"><input type="button" value="Change Colors"></a>
-		<input id="colorsChanged" type="text" disabled>
-	</form>
 	<form id="customizeChar">
 		<section id="chooser">
-			<p>NOTE: Respect the licenses posed on these open source submissions.<br><br>Use the 'credits' button to generate a list of the submissions, and compose your attribution list as indicated in the individual submissions.<br><br>For missing credits links, please look them up and process them properly. All presented entries are submitted to OpenGameArt.</p>
-			<a href="https://lpc.opengameart.org">OpenGameArt</a>
-			<p class="instr">Select from the character configuration options below.</p>
+			<p>NOTE: Respect the licenses posed on these open source submissions.<br><br>Use the 'credits' buttons to generate a list of the submissions you use in this sheet, or for all the graphics in this generator. From there, follow the 'Credits instructions' as described in this project's README<br><br>For missing credits links, please look them up and process them properly. All presented entries are submitted to OpenGameArt.</p>
+			<a href="https://opengameart.org">OpenGameArt</a>
+			<a href="https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/README.mdg">Credits instructions</a>
 			<ul>
 				<li>
 					<input type="checkbox" id="shadow" name="shadow">
@@ -228,15 +222,15 @@
 								<span class="condensed">Skeleton</span>
 								<ul>
 									<li>
-										<input type="radio" id="body-skeleton" name="body" data-file="body/male/skeleton.png" data-credits_url="https://opengameart.org/content/lpc-medieval-fantasy-character-sprites">
+										<input type="radio" id="body-skeleton" name="body" data-file="body/male/skeleton.png">
 										<label for="body-skeleton">Skel</label>
 									</li>
 									<li>
-										<input type="radio" id="body-skeleton2" name="body" data-file="body/24.png" data-credits_url="https://opengameart.org/content/lpc-medieval-fantasy-character-sprites">
+										<input type="radio" id="body-skeleton2" name="body" data-file="body/24.png">
 										<label for="body-skeleton2">Skel2</label>
 									</li>
 									<li>
-										<input type="radio" id="body-skeleton3" name="body" data-file="body/25.png" data-credits_url="https://opengameart.org/content/lpc-medieval-fantasy-character-sprites">
+										<input type="radio" id="body-skeleton3" name="body" data-file="body/25.png">
 										<label for="body-skeleton3">Skel3</label>
 									</li>
 								</ul>
@@ -269,7 +263,7 @@
 										<label for="body-zombie">Zombie</label>
 									</li>
 									<li>
-										<input type="radio" id="body-barbarian_minotaur" name="body" data-required="sex=male" data-file="body/male/muscular_minotaur.png" data-credits_url="https://opengameart.org/content/lpc-faun-and-minotaur">
+										<input type="radio" id="body-barbarian_minotaur" name="body" data-required="sex=male" data-file="body/male/muscular_minotaur.png">
 										<label for="body-barbarian_minotaur">Minotaur muscular</label>
 									</li>
 								</ul>
@@ -895,7 +889,7 @@
 								<label for="shoes-slippers_white">White Slippers</label>
 							</li>
 							<li>
-								<input type="radio" id="shoes-hoofs" name="shoes" data-required="sex=male" data-file="feet/shoes/hoofs.png" data-credits_url="https://opengameart.org/content/lpc-faun-and-minotaur">
+								<input type="radio" id="shoes-hoofs" name="shoes" data-required="sex=male" data-file="feet/shoes/hoofs.png">
 								<label for="shoes-hoofs">Hoofs</label>
 							</li>
 						</ul>
@@ -952,7 +946,7 @@
 										<label for="legs-pants_formal_stripes">Formal stripes</label>
 									</li>
 									<li>
-										<input type="radio" id="legs-pants_furbrown" name="legs" data-required="sex=male" data-file_male="legs/pants/male/furbrown.png" data-credits_url="https://opengameart.org/content/lpc-faun-and-minotaur">
+										<input type="radio" id="legs-pants_furbrown" name="legs" data-required="sex=male" data-file_male="legs/pants/male/furbrown.png">
 										<label for="legs-pants_furbrown">Fur brown</label>
 									</li>
 									<li>
@@ -2465,27 +2459,27 @@
 							<label for="shield-on_spartan">Crusader<small></small></label>
 						</li>
 						<li>
-							<input type="radio" id="shield-on_brown" name="shield" data-file_no_hat="weapons/left hand/male/shield_brown.png" data-file_hat="weapons/left hand/male/shield_brown.png" data-credits_url="https://opengameart.org/content/lpc-medieval-fantasy-character-sprites">
+							<input type="radio" id="shield-on_brown" name="shield" data-file_no_hat="weapons/left hand/male/shield_brown.png" data-file_hat="weapons/left hand/male/shield_brown.png">
 							<label for="shield-on_brown">Shield brown<small></small></label>
 						</li>
 						<li>
-							<input type="radio" id="shield-on_green" name="shield" data-file_no_hat="weapons/left hand/male/shield_green.png" data-file_hat="weapons/left hand/male/shield_green.png" data-credits_url="https://opengameart.org/content/lpc-medieval-fantasy-character-sprites">
+							<input type="radio" id="shield-on_green" name="shield" data-file_no_hat="weapons/left hand/male/shield_green.png" data-file_hat="weapons/left hand/male/shield_green.png">
 							<label for="shield-on_green">Shield green<small></small></label>
 						</li>
 						<li>
-							<input type="radio" id="shield-on_yellow" name="shield" data-file_no_hat="weapons/left hand/male/shield_yellow.png" data-file_hat="weapons/left hand/male/shield_yellow.png" data-credits_url="https://opengameart.org/content/lpc-medieval-fantasy-character-sprites">
+							<input type="radio" id="shield-on_yellow" name="shield" data-file_no_hat="weapons/left hand/male/shield_yellow.png" data-file_hat="weapons/left hand/male/shield_yellow.png">
 							<label for="shield-on_yellow">Shield yellow<small></small></label>
 						</li>
 						<li>
-							<input type="radio" id="shield-on_silver" name="shield" data-file_no_hat="weapons/left hand/male/shield_silver.png" data-file_hat="weapons/left hand/male/shield_silver.png" data-credits_url="https://opengameart.org/content/lpc-medieval-fantasy-character-sprites">
+							<input type="radio" id="shield-on_silver" name="shield" data-file_no_hat="weapons/left hand/male/shield_silver.png" data-file_hat="weapons/left hand/male/shield_silver.png">
 							<label for="shield-on_silver">Shield silver<small></small></label>
 						</li>
 						<li>
-							<input type="radio" id="shield-on_black" name="shield" data-file_no_hat="weapons/left hand/male/shield_black.png" data-file_hat="weapons/left hand/male/shield_black.png" data-credits_url="https://opengameart.org/content/lpc-medieval-fantasy-character-sprites">
+							<input type="radio" id="shield-on_black" name="shield" data-file_no_hat="weapons/left hand/male/shield_black.png" data-file_hat="weapons/left hand/male/shield_black.png">
 							<label for="shield-on_gray">Shield black<small></small></label>
 						</li>
 						<li>
-							<input type="radio" id="shield-on_gold" name="shield" data-file_no_hat="weapons/left hand/male/shield_gold.png" data-file_hat="weapons/left hand/male/shield_gold.png" data-credits_url="https://opengameart.org/content/lpc-medieval-fantasy-character-sprites">
+							<input type="radio" id="shield-on_gold" name="shield" data-file_no_hat="weapons/left hand/male/shield_gold.png" data-file_hat="weapons/left hand/male/shield_gold.png">
 							<label for="shield-on_gold">Shield gold<small></small></label>
 						</li>
 						<li>
@@ -2542,7 +2536,7 @@
 							<label for="quiver-none">No Quiver</label>
 						</li>
 						<li>
-							<input type="radio" id="quiver-on" name="quiver" data-file="behind_body/equipment/quiver.png" data-behind="true" data-credits_url="https://opengameart.org/content/lpc-medieval-fantasy-character-sprites">
+							<input type="radio" id="quiver-on" name="quiver" data-file="behind_body/equipment/quiver.png" data-behind="true">
 							<label for="quiver-on">Quiver</label>
 						</li>
 					</ul>
@@ -5090,11 +5084,11 @@
 							<span class="condensed">Thrust</span>
 							<ul>
 								<li>
-									<input type="radio" id="weapon-crossbow" name="weapon" data-file_male="weapons/right hand/male/crossbow.png" data-file_female="weapons/right hand/male/crossbow.png"  data-credits_url="https://opengameart.org/content/lpc-crossbow-final">
+									<input type="radio" id="weapon-crossbow" name="weapon" data-file_male="weapons/right hand/male/crossbow.png" data-file_female="weapons/right hand/male/crossbow.png">
 									<label for="weapon-crossbow">Crossbow</label>
 								</li>
 								<li>
-									<input type="radio" id="weapon-spear" name="weapon" data-file_male="weapons/right hand/male/spear_male.png" data-file_female="weapons/right hand/female/spear_female.png"  data-credits_url="https://opengameart.org/content/lpc-medieval-fantasy-character-sprites">
+									<input type="radio" id="weapon-spear" name="weapon" data-file_male="weapons/right hand/male/spear_male.png" data-file_female="weapons/right hand/female/spear_female.png">
 									<label for="weapon-spear">Spear</label>
 								</li>
 								<li>
@@ -5262,7 +5256,7 @@
 							<span class="condensed">Slash</span>
 							<ul>
 								<li>
-									<input type="radio" id="weapon-dagger" name="weapon" data-file_male="weapons/right hand/male/dagger_male.png" data-file_female="weapons/right hand/female/dagger_female.png" data-credits_url="https://opengameart.org/content/lpc-medieval-fantasy-character-sprites" >
+									<input type="radio" id="weapon-dagger" name="weapon" data-file_male="weapons/right hand/male/dagger_male.png" data-file_female="weapons/right hand/female/dagger_female.png">
 									<label for="weapon-dagger">Dagger</label>
 								</li>
 								<li>
