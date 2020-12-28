@@ -132,9 +132,6 @@ $(document).ready(function() {
     window.setTimeout(function() {
       document.getElementById("previewFile").value = "";
       images["uploaded"] = null;
-      document.getElementById("RGB-R").value = 0;
-      document.getElementById("RGB-G").value = 0;
-      document.getElementById("RGB-B").value = 0;
       document.getElementById("ZPOS").value = 0;
       params = {};
       jHash.val(params);
