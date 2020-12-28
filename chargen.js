@@ -329,27 +329,8 @@ $(document).ready(function() {
           }
         });
       }
+      addCreditFor(fileName);
 
-      if (fileName !== "") {
-        let fileNameParsed = fileName
-        if (fileName.startsWith(hairMalePrefix) || fileName.startsWith(hairFemalePrefix)) {
-          let parts = fileName.split("/");
-          if (parts.length == 4) {
-            fileNameParsed = parts[0] + "/" + parts[1] + "/"  + parts[2];
-          }
-        }
-        let found = false;
-        for (let creditEntry of parsedCredits) {
-          if (creditEntry.startsWith(fileNameParsed)) {
-            sheetCredits.push(creditEntry);
-            found = true;
-            break;
-          }
-        };
-        if (!found) {
-          sheetCredits.push(fileName+",!MISSING LICENSE INFORMATION! PLEASE CORRECT MANUALY AND REPORT BACK VIA A GITHUB ISSUE,,,,,,,,NOK");
-        }
-      }
     });
 
     if (wolfmanBody !== "") {
@@ -381,11 +362,11 @@ $(document).ready(function() {
         }else if ($("#sex-female").prop("checked") && $(this).data("file_female")) {
           name = $(this).data("file_female");
         }
-        	"flail", "halberd", "waraxe", "rapier", "saber", "glowsword", "scythe"
         if (name.includes("flail") || name.includes("halberd") || name.includes("waraxe") || name.includes("rapier") || name.includes("saber") || name.includes("glowsword") || name.includes("scythe") || name.includes("mace") || name.includes("longsword")) {
           var img = getImage(name.replace("attack", "universal"));
           drawImage(ctx, img);
         }
+        addCreditFor(name);
 
         var type = $(this).data("oversize");
         if (type == 1) {
@@ -423,6 +404,29 @@ $(document).ready(function() {
         }
       });
     }
+
+    function addCreditFor(fileName) {
+      if (fileName !== "") {
+        let fileNameParsed = fileName
+        if (fileName.startsWith(hairMalePrefix) || fileName.startsWith(hairFemalePrefix)) {
+          let parts = fileName.split("/");
+          if (parts.length == 4) {
+            fileNameParsed = parts[0] + "/" + parts[1] + "/"  + parts[2];
+          }
+        }
+        let found = false;
+        for (let creditEntry of parsedCredits) {
+          if (creditEntry.startsWith(fileNameParsed)) {
+            sheetCredits.push(creditEntry);
+            found = true;
+            break;
+          }
+        };
+        if (!found) {
+          sheetCredits.push(fileName+",!MISSING LICENSE INFORMATION! PLEASE CORRECT MANUALY AND REPORT BACK VIA A GITHUB ISSUE,,,,,,,,NOK");
+        }
+      }
+  }
 
     // Clear everything if illegal combination used
     // Probably should try to prevent this
