@@ -8,30 +8,33 @@ Try it out [here](https://sanderfrenken.github.io/Universal-LPC-Spritesheet-Char
 The project you are looking now is an expansion on the above mentioned projects. I try to include all LPC created art up to now.
 
 The Liberated Pixel Effort is a collaborative effort from a number of different great artists who helped produce sprites for the project.
-Please read the [authors](AUTHORS.txt) file for the full list of authors who have contributed to the spritesheet.
+**If you wish to use LPC sprites in your project, you will need to credit everyone who helped contribute to the LPC sprites you are using.** See below for how to do this. 
 
-If you want to know how to include sprites from this sheet into your work, please visit the [Open Game Art LPC forums](http://opengameart.org/forums/liberated-pixel-cup).
-You will need to credit everyone who helped contribute to the LPC sprites you intend to use if you wish to use LPC sprites in your project.
+### Licensing and Attribution (Credits)
 
-### Licensing
+All art distributed with this project (all images in the `spritesheets` subdirectory) is licensed under the [GNU GPL 3.0](http://www.gnu.org/licenses/gpl-3.0.html) ([text](gpl-3_0.txt)) and/or [Creative Commons Attribution-ShareAlike 3.0](http://creativecommons.org/licenses/by-sa/3.0/) ([text](cc-by-sa-3_0.txt)) license(s). Some art may be available under other licenses too.
 
-According to the rules of the LPC all art submissions were dual licensed under both GNU GPL 3.0 and CC-BY-SA 3.0. These art submissions are considered all images present in the directory `spritesheets` and it's subdirectories. Further work produced in this repository is licensed under the same terms.
+The file `CREDITS.csv` lists the authors, license(s), and links to the original URL(s), for each image in `spritesheets`. **If you generate a sprite using this tool, you must credit all the authors**. You can do this one of two ways:
 
-CC-BY-SA 3.0:
- - http://creativecommons.org/licenses/by-sa/3.0/
- - See the file: [cc-by-sa-3.0](cc-by-sa-3_0.txt)
+- Distribute the entire `CREDITS.csv` file along with your project. 
+- Based on the layers you use, copy the appropriate rows from `CREDITS.csv` into a new file and distribute that file with your project. 
 
-GNU GPL 3.0:
- - http://www.gnu.org/licenses/gpl-3.0.html
- - See the file: [gpl-3.0](gpl-3_0.txt)
+Either way, make sure this credits file is accessible from within your game or app and can be reasonably discovered by users (for instance, show the information on the "Credits" screen directly, or provide a visible link). If you don't want to *show* the entire credits file directly, should include a statement like this on your credits screen: 
 
-If you want to use any of the assets produced by this generator, you need to credit all authors involved.
-The easiest way to do is by creating a collection on [Open Game Art](https://opengameart.org/content/lpc-game-assets) like this one.
-You can then generate a credits file, which you could for example bundle in your application.
-For each credit you give you should also include a link to the original post.
-An example of such a file can be found [here](CREDITS.txt), it holds among others all assets used to build up this generator.
+> Sprites by: David Conway Jr. (JaidynReiman), Nila122, Johannes Sjölund (wulax), Stephen Challener (Redshrike), Luke Mehl, bluecarrot16, Thane Brimhall (pennomi), laetissima, Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Rhimlock, Benjamin K. Smith (BenCreating), Sander Frenken (castelonia), kheftel, Marcel van de Steeg (MadMarcel), Mark Weyer, Lanea Zimmerman (Sharm), Manuel Riecke (MrBeast), Charles Sanchez (CharlesGabriel), Zi Ye, William.Thompsonj, drjamgo@hotmail.com, dalonedrau, ElizaWy, Evert, Daniel Eddeland (daneeklu), Carlo Enrico Victoria (Nemisys), Mandi Paugh, Joe White, Barbara Riviera, Tracy, DarkwallLKE, Stafford McIntyre, PlatForge project, Shaun Williams, Tuomo Untinen (reemax), Lori Angela Nagel (jastiv), tskaufma, gr3yh47, LordNeo, XOR, pswerlang, Inboxninja
+> Sprites contributed as part of the Liberated Pixel Cup project from OpenGameArt.org: http://opengameart.org/content/lpc-collection
+> License: Creative Commons Attribution-ShareAlike 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>
+> Detailed credits: [LINK TO CREDITS.CSV FILE]
 
- **NOTE: Always check the content of the file for completeness.**
+We are working on allowing the generator to build a customized credits file for you. 
+
+### Contributing
+
+**Important: all art submitted to this project must be available under the [Creative Commons Attribution-ShareAlike 3.0](http://creativecommons.org/licenses/by-sa/3.0/) and/or the [GNU GPL 3.0](http://www.gnu.org/licenses/gpl-3.0.html) licenses**. 
+- **By contributing original work to this project, you agree to license any orginal contributions made by you under _both_ of these licenses.**
+- If you are submitting art that was made by (or derived from work made by) someone else, please be sure that you have the rights to distribute that art under one of the two licenses. 
+
+When adding files to the project, please add a row to `CREDITS.csv` for each file you add. Note the entire list of authors for that image, a URL for each piece of art from which this image is derived, and a list of licenses under which the art is available.
 
 ### Run
 
