@@ -22,6 +22,70 @@ $(document).ready(function() {
     redraw();
   });
 
+  $("input[type=radio], input[type=checkbox]").attr('title', function() {
+    var name = "";
+    if ($(this).data("file")) {
+      name = $(this).data("file");
+    } else if ($(this).data("file_male")) {
+      name = $(this).data("file_male");
+    } else if ($(this).data("file_female")) {
+      name = $(this).data("file_female");
+    }
+    const creditEntry = getCreditFor(name);
+    if (creditEntry) {
+      let parts = splitCsv(creditEntry);
+      if (parts.length == 10) {
+        return "Created by: " + parts[2];
+      }
+    } else {
+      return "No credits found for this graphic";
+    }
+    return creditEntry;
+  });
+
+  function splitCsv(str) {
+    return str.split(',').reduce((accum,curr)=>{
+      if(accum.isConcatting) {
+        accum.soFar[accum.soFar.length-1] += ','+curr
+      } else {
+        accum.soFar.push(curr)
+      }
+      if(curr.split('"').length % 2 == 0) {
+        accum.isConcatting= !accum.isConcatting
+      }
+      return accum;
+    },{soFar:[],isConcatting:false}).soFar
+  }
+
+
+  function getCreditFor(fileName) {
+    if (fileName !== "") {
+      let fileNameParsed = fileName
+      if (fileName.startsWith(hairMalePrefix) || fileName.startsWith(hairFemalePrefix)) {
+        let parts = fileName.split("/");
+        if (parts.length == 4) {
+          fileNameParsed = parts[0] + "/" + parts[1] + "/"  + parts[2];
+        }
+      }
+      for (let creditEntry of parsedCredits) {
+        if (creditEntry.startsWith(fileNameParsed)) {
+          return creditEntry;
+        }
+      };
+    }
+  }
+
+  function addCreditFor(fileName) {
+    if (fileName !== "") {
+      let creditEntry = getCreditFor(fileName);
+      if (!creditEntry) {
+        sheetCredits.push(fileName+",!MISSING LICENSE INFORMATION! PLEASE CORRECT MANUALY AND REPORT BACK VIA A GITHUB ISSUE,,,,,,,,NOK");
+      } else {
+        sheetCredits.push(creditEntry);
+      }
+    }
+  }
+
   // set params and redraw when any radio button or checkbox is clicked on
   $("input[type=radio], input[type=checkbox]").each(function() {
     $(this).click(function() {
@@ -405,29 +469,6 @@ $(document).ready(function() {
       });
     }
 
-    function addCreditFor(fileName) {
-      if (fileName !== "") {
-        let fileNameParsed = fileName
-        if (fileName.startsWith(hairMalePrefix) || fileName.startsWith(hairFemalePrefix)) {
-          let parts = fileName.split("/");
-          if (parts.length == 4) {
-            fileNameParsed = parts[0] + "/" + parts[1] + "/"  + parts[2];
-          }
-        }
-        let found = false;
-        for (let creditEntry of parsedCredits) {
-          if (creditEntry.startsWith(fileNameParsed)) {
-            sheetCredits.push(creditEntry);
-            found = true;
-            break;
-          }
-        };
-        if (!found) {
-          sheetCredits.push(fileName+",!MISSING LICENSE INFORMATION! PLEASE CORRECT MANUALY AND REPORT BACK VIA A GITHUB ISSUE,,,,,,,,NOK");
-        }
-      }
-  }
-
     // Clear everything if illegal combination used
     // Probably should try to prevent this
     $("input[type=radio], input[type=checkbox]").each(function(index) {
@@ -472,7 +513,7 @@ $(document).ready(function() {
     xmlhttp.open("GET", filePath, false);
     xmlhttp.send();
     return xmlhttp.responseText;
-}
+  }
 
   function drawPreview() {
     if (images["uploaded"] != null) {
@@ -624,9 +665,9 @@ $(document).ready(function() {
     currentFrame = (currentFrame + 1) % animRowFrames;
     animCtx.clearRect(0, 0, anim.width, anim.height);
     for (var i = 0; i < animRowNum; ++i) {
-    	if (animRowStart >= 4 && animRowStart <= 8 && currentFrame === 0 ) {
-    		currentFrame = 1
-    	}
+      if (animRowStart >= 4 && animRowStart <= 8 && currentFrame === 0 ) {
+        currentFrame = 1
+      }
       if (oversize && (animRowStart === 4 || animRowStart === 12)) {
         animCtx.drawImage(canvas, currentFrame * 192, 1344 + (i*192), 192, 192, i * 192, 0, 192, 192);
       } else {
