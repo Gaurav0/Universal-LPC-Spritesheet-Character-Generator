@@ -6,9 +6,6 @@ $(document).ready(function() {
   var params = jHash.val();
   var zPosition = 0;
 
-  var drawShadow = false;
-  var drawChildShadow = false;
-
   var sheetCredits = [];
   const creditColumns = "filename,notes,authors,licenses,url1,url2,url3,url4,url5,status";
   const hairMalePrefix = "hair/male/"; // used to detect a male hairstyle graphic, which are not added per color to CREDITS.csv
@@ -148,16 +145,6 @@ $(document).ready(function() {
     event.stopPropagation();
   });
 
-  $("#shadow").click(function() {
-    drawShadow = $("#shadow").prop('checked');
-    redraw();
-  });
-
-  $("#childshadow").click(function() {
-    drawChildShadow = $("#childshadow").prop('checked');
-    redraw();
-  });
-
   // When clicking on collapse all link, collapse all uls in #chooser
   $("#collapse").click(function() {
     $("#chooser>ul ul").hide('slow');
@@ -278,14 +265,6 @@ $(document).ready(function() {
     $("#chooser>ul").css("height", canvas.height);
     oversize = !!oversize;
 
-    if (drawShadow) {
-      var img = getImage('body/lpc_shadow.png');
-      drawImage(ctx, img);
-    }
-    if (drawChildShadow) {
-      var img = getImage('body/lpc_shadow_child.png');
-      drawImage(ctx, img);
-    }
     // non oversize elements
     $("input[type=radio]:checked, input[type=checkbox]:checked").filter(function() {
       return !$(this).data("oversize");
