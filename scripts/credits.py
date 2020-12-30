@@ -67,6 +67,8 @@ def credits_txt_to_df(path='../CREDITS.TXT'):
 			data['authors'] = authors
 		if 'files' in data:
 			data['files'] = [f[6:].strip() for f in data['files'].split("\n") if f != '']
+		if 'instructions' in data:
+			data['instructions'] = " / ".join(data['instructions'].split("\n"))
 		if 'licenses' in data:
 			#     * CC-BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0/legalcode )
 			license = []
@@ -93,25 +95,32 @@ def populate_submissions_from_oga_credits(submissions, autocredits):
 	fill in missing information in SUBMISSIONS.CSV from the auto-generated CREDITS.TXT file downloaded from OpenGameArt.org
 	"""
 	author_index = index_authors(','.join(submissions['authors']).split(','))
+	if not ('instructions' in submissions): submissions['instructions'] = ''
+	autocredits = autocredits.fillna('')
 
 	for i, row in submissions.iterrows():
 		oga_submission = autocredits.loc[autocredits['url'] == row['url'],:].squeeze()
-		if row['authors'] == '':
+		if row['authors'].strip() == '':
 			if len(oga_submission) == 0:
 				print("for '{0}', missing 'authors' and no matching data found in CREDITS.txt".format(row['url']))
 			else:
 				authors = normalize_authors(oga_submission['authors'], author_index)
-		if row['licenses'] == '':
+				submissions.at[i,'authors'] = ', '.join(authors)
+				print("for '{0}' adding authors {1}".format(row['url'], submissions.at[i,'authors']))
+		if row['licenses'].strip() == '':
 			if len(oga_submission) == 0:
 				print("for '{0}', missing 'licenses' and no matching data found in CREDITS.txt".format(row['url']))
 			else:
-				row['licenses'] = ', '.join(oga_submission['licenses'])
-		if row['title'] == '':
+				submissions.at[i,'licenses'] = ', '.join(oga_submission['licenses'])
+				print("for '{0}' adding licenses {1}".format(row['url'], submissions.at[i,'licenses']))
+		if row['title'].strip() == '':
 			if len(oga_submission) == 0:
 				print("for '{0}', missing 'title' and no matching data found in CREDITS.txt".format(row['url']))
 			else:
-				row['title'] = oga_submission['title'].strip()
-		row['instructions'] = oga_submission['instructions']
+				submissions.at[i,'title'] = oga_submission['title'].strip()
+				print("for '{0}' adding title {1}".format(row['url'], submissions.at[i,'title']))
+		if 'instructions' in oga_submission and len(oga_submission['instructions']) > 0:
+			submissions.at[i,'instructions'] = oga_submission['instructions']
 
 	return submissions
 
@@ -173,7 +182,7 @@ def normalize_authors(authors, author_index):
 	return list(dict.fromkeys(authors))
 
 
-def populate_credits(credits, submissions, check_files_in = '../spritesheets/'):
+def populate_credits(credits, submissions, check_files_in = './spritesheets/'):
 	"""
 	using CREDITS.csv (`credits`), fill in missing information from SUBMISSIONS.csv (`submissions`). Optionally, 
 	set `check_files_in` to a folder path in order to look for PNG files in that foler and subfolders; try to look
@@ -192,12 +201,13 @@ def populate_credits(credits, submissions, check_files_in = '../spritesheets/'):
 
 	# find extra files from the directory `check_files_in` (and subdirectories)
 	if check_files_in:
+		print("checking for new files in '{0}'...".format(check_files_in))
 		root_dir = check_files_in
 		files = [''.join(f.split(root_dir, 1)) for f in glob.iglob( root_dir + '**', recursive=True) ]
 		files = [f.strip() for f in files if f.strip() != '']
 		newfiles = set(files) - set(credits['filename'])
 		if len(newfiles) > 0:
-			print('found new files:')
+			print('found new {0}/{1} files:'.format(len(newfiles), len(files)))
 			print(newfiles)
 			credits = credits.append([{'filename': f} for f in newfiles], ignore_index = True)
 	
@@ -231,7 +241,9 @@ def populate_credits(credits, submissions, check_files_in = '../spritesheets/'):
 				credits.at[i, 'authors'] = ', '.join(authors)
 				print("populating authors for {0}: {1}".format(filename, authors))
 			row = credits.loc[i,:]
-
+		else:
+			authors = ', '.join(normalize_authors(row['authors'].split(','), author_index))
+			credits.at[i,'authors'] = authors
 
 		# for images, check we eventually found an author, URL(s), and some licenses
 		if is_image:
@@ -243,13 +255,17 @@ def populate_credits(credits, submissions, check_files_in = '../spritesheets/'):
 
 			# figure out a good licensing statement
 			urls = row[['url1','url2','url3','url4','url5']] 
-			file_submissions = submissions.loc[submissions['url'].isin(urls),:]
-			licenses = find_compatible_licenses(*[lic.split(', ') for lic in file_submissions['licenses']])
-			if len(licenses) > 0:
-				credits.at[i, 'licenses'] = ', '.join(licenses)
-				credits.at[i, 'status'] = 'OK'
-			else:
-				print("error: no compatible licenses found for '{0}'".format(filename))
+			if any(urls != ''):
+				file_submissions = submissions.loc[submissions['url'].isin(urls),:]
+				licenses = find_compatible_licenses(*[lic.split(', ') for lic in file_submissions['licenses']])
+				if len(licenses) > 0:
+					credits.at[i, 'licenses'] = ', '.join(licenses)
+					credits.at[i, 'status'] = 'OK'
+				else:
+					print("error: no compatible licenses found for '{0}'".format(filename))
+					credits.at[i, 'status'] = 'BAD'
+			elif row['licenses'].strip() == '':
+				print("error: no URLs or licenses found for '{0}'".format(filename))
 				credits.at[i, 'status'] = 'BAD'
 
 	print()
