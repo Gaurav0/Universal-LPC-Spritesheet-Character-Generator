@@ -84,6 +84,11 @@ $(document).ready(function() {
         sheetCredits.push(creditEntry);
       }
     }
+    displayCredits();
+  }
+
+  function displayCredits() {
+    $("textarea#creditsText").val(sheetCredits.join('\n'));
   }
 
   // set params and redraw when any radio button or checkbox is clicked on

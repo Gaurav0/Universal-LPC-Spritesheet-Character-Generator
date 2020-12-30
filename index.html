@@ -37,6 +37,10 @@
 	<p>
 		<button type="button" id="generateSheetCredits">Credits for this sheet</button>
 		<button type="button" id="generateAllCredits">Credits for all sprites</button>
+		<p>NOTE: Respect the licenses posed on these open source submissions.<br><br>Use the 'credits' buttons to generate a list of the submissions you use in this sheet or scroll down.<br><br>Alternatively, you can also generate one attribution list for all the graphics in this generator.<br>From there, follow the 'Crediting instructions' as described in this project's README.<br><br>For missing credits links, please look them up and process them properly. All presented entries are submitted to OpenGameArt.</p>
+		<a href="https://opengameart.org">OpenGameArt</a>
+		<br>
+		<a href="https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/README.md">Crediting instructions</a>
 	</p>
 	<p>
 		<h3>Choose a local file to draw in this sheet with a custom z-position</h3>
@@ -45,10 +49,6 @@
 	</p>
 	<form id="customizeChar">
 		<section id="chooser">
-			<p>NOTE: Respect the licenses posed on these open source submissions.<br><br>Use the 'credits' buttons to generate a list of the submissions you use in this sheet, or for all the graphics in this generator. From there, follow the 'Crediting instructions' as described in this project's README.<br><br>For missing credits links, please look them up and process them properly. All presented entries are submitted to OpenGameArt.</p>
-			<a href="https://opengameart.org">OpenGameArt</a>
-			<br>
-			<a href="https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/README.md">Crediting instructions</a>
 			<ul>
 				<li>
 					<input type="checkbox" id="shadow" name="shadow">
@@ -5353,5 +5353,8 @@
 		<p class="instr">The complete resulting sprite sheet for your character:</p>
 		<canvas id="spritesheet" width="832" height="1344">HTML5 Browser required.</canvas>
 	</section>
+	<p>
+		<textarea id="creditsText" rows="20" cols="300" readonly style="font-size: 10pt">Placehholder</textarea>
+	</p>
 </body>
 </html>
