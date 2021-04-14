@@ -244,6 +244,7 @@ $(document).ready(function() {
     const zposPreview = parseInt(document.getElementById("ZPOS").value) || 0;
     let didDrawPreview = false;
     let wolfmanBody = "";
+    let isBoar = false;
     zPosition = 0;
     // start over
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -326,6 +327,9 @@ $(document).ready(function() {
           wolfmanBody = fileName.replace("body/male/wolf/", "")+"male";
         }
       }
+      if (isMale && fileName.includes("/boarman.png")) {
+        isBoar = true;
+      }
       if (isFemale && $(this).data("file_female")) {
         var img = getImage($(this).data("file_female"));
         drawImage(ctx, img);
@@ -389,6 +393,9 @@ $(document).ready(function() {
         var img = getImage("/body/male/wolf/head/"+wolfmanBody.replace("male", ""));
         drawImage(ctx, img);
       }
+    } else if (isBoar) {
+      var img = getImage("/body/boarman_head.png");
+      drawImage(ctx, img);
     }
     if (!didDrawPreview) { // zposition was to high or low, draw anyways over all
       drawPreview();
