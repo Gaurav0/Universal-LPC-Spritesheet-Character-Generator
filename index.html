@@ -26,6 +26,7 @@
 			<option value="slash" data-row="12" data-num="4" data-cycle="6">Slash</option>
 			<option value="shoot" data-row="16" data-num="4" data-cycle="13">Shoot</option>
 			<option value="hurt" data-row="20" data-num="1" data-cycle="6">Hurt</option>
+			<option value="smash" data-row="12" data-num="4" data-cycle="4">Smash</option>
 		</select>
 		<canvas id="previewAnimations" width="1024" height="192"></canvas>
 	</div>
@@ -46,6 +47,10 @@
 		<h3>Choose a local file to draw in this sheet with a custom z-position</h3>
 		<input type="file" id="previewFile"><br>
 		<input id="ZPOS" type="text" name="ZPOS">z-position<br>
+	</p>
+	<p>
+		<h3>define custom sequence of frames, 0-based. EG: '3, 5, 3, 0'. Enter and select an animation to effectuate.</h3>
+		<input id="customFrames" type="text" name="customFrames">custom frames<br>
 	</p>
 	<form id="customizeChar">
 		<section id="chooser">

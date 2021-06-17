@@ -189,6 +189,7 @@ $(document).ready(function() {
       document.getElementById("previewFile").value = "";
       images["uploaded"] = null;
       document.getElementById("ZPOS").value = 0;
+      document.getElementById("customFrames").value = undefined;
       params = {};
       jHash.val(params);
       redraw();
@@ -642,23 +643,37 @@ $(document).ready(function() {
   var animRowStart = parseInt($selectedAnim.data("row"));
   var animRowNum = parseInt($selectedAnim.data("num"));
   var animRowFrames = parseInt($selectedAnim.data("cycle"));
-  var currentFrame = 0;
+  var currentAnimationItemIndex = 0;
+  var animationItems = [1, 2, 3, 4, 5, 6, 7, 8]; // default for walk
 
   $("#whichAnim").change(function() {
+    animationItems = [];
     $selectedAnim = $("#whichAnim>:selected");
     animRowStart = parseInt($selectedAnim.data("row"));
     animRowNum = parseInt($selectedAnim.data("num"));
     animRowFrames = parseInt($selectedAnim.data("cycle"));
-    currentFrame = 0;
+    currentAnimationItemIndex = 0;
+    const customFrames = document.getElementById("customFrames").value || "";
+    if (customFrames !== "") {
+      animationItems = customFrames.split(',').map(Number);
+      if (animationItems.length > 0) {
+        return;
+      }
+    }
+    if ($selectedAnim.val() == "smash")  {
+      animationItems = [5, 4, 1, 0];
+    } else {
+      for (var i = 1; i < animRowFrames; ++i) {
+        animationItems.push(i);
+      }
+    }
   });
 
   function nextFrame() {
-    currentFrame = (currentFrame + 1) % animRowFrames;
+    currentAnimationItemIndex = (currentAnimationItemIndex + 1) % animationItems.length;
     animCtx.clearRect(0, 0, anim.width, anim.height);
+    const currentFrame = animationItems[currentAnimationItemIndex];
     for (var i = 0; i < animRowNum; ++i) {
-      if (animRowStart >= 4 && animRowStart <= 8 && currentFrame === 0 ) {
-        currentFrame = 1
-      }
       if (oversize && (animRowStart === 4 || animRowStart === 12)) {
         animCtx.drawImage(canvas, currentFrame * 192, 1344 + (i*192), 192, 192, i * 192, 0, 192, 192);
       } else {
