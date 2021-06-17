@@ -189,7 +189,7 @@ $(document).ready(function() {
       document.getElementById("previewFile").value = "";
       images["uploaded"] = null;
       document.getElementById("ZPOS").value = 0;
-      document.getElementById("customFrames").value = undefined;
+      document.getElementById("customFrames").value = "";
       params = {};
       jHash.val(params);
       redraw();
