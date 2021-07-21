@@ -1,0 +1,36 @@
+{
+  "name" : "Wolfman",
+  "type_name" : "body",
+  "items": [
+    {
+      "name" : "Black",
+      "file_male" : "body/male/wolf/black.png",
+      "file_female" : "body/female/wolf/black.png"
+    },
+    {
+      "name" : "Brown",
+      "file_male" : "body/male/wolf/brown.png",
+      "file_female" : "body/female/wolf/brown.png"
+    },
+    {
+      "name" : "Chestnut",
+      "file_male" : "body/male/wolf/chestnut.png",
+      "file_female" : "body/female/wolf/chestnut.png"
+    },
+    {
+      "name" : "Gold",
+      "file_male" : "body/male/wolf/gold.png",
+      "file_female" : "body/female/wolf/gold.png"
+    },
+    {
+      "name" : "Gray",
+      "file_male" : "body/male/wolf/gray.png",
+      "file_female" : "body/female/wolf/gray.png"
+    },
+    {
+      "name" : "White",
+      "file_male" : "body/male/wolf/white.png",
+      "file_female" : "body/female/wolf/white.png"
+    }
+  ]
+}

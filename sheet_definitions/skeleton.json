@@ -1,0 +1,21 @@
+{
+  "name" : "Skeleton",
+  "type_name" : "body",
+  "items": [
+    {
+      "name" : "1",
+      "file_male" : "body/male/skeleton.png",
+      "file_female" : "body/male/skeleton.png"
+    },
+    {
+      "name" : "2",
+      "file_male" : "body/24.png",
+      "file_female" : "body/24.png"
+    },
+    {
+      "name" : "3",
+      "file_male" : "body/25.png",
+      "file_female" : "body/25.png"
+    }
+  ]
+}

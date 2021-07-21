@@ -19,6 +19,34 @@ $(document).ready(function() {
     redraw();
   });
 
+  function createBodyHTML(json) {
+    const definition = JSON.parse(loadFile(json));
+    const items = definition.items
+    const name = definition.name
+    const typeName = definition.type_name
+
+    const startHTML = `<li><span class="condensed">${name}</span><ul>`;
+    const templateHTML = loadFile("html_templates/template-body.html");
+    const endHTML = '</ul></li>';
+
+    var idx = 0;
+    var listItemsHTML  = '';
+    for (const item in items) {
+      const itemName = items[idx].name;
+      const itemFileMale = items[idx].file_male;
+      const itemFileFemale = items[idx].file_female;
+      const itemIdFor = typeName + itemName.replace(" ", "_");
+
+      listItemsHTML += templateHTML.replace("[ID_FOR]", itemIdFor).replace("[TYPE_NAME]", typeName).replace("[MALE_FILE]", itemFileMale).replace("[FEMALE_FILE]", itemFileFemale).replace("[NAME]", itemName);
+      idx+=1;
+    }
+    return startHTML + listItemsHTML + endHTML;
+  }
+
+  $('#body-reptile').replaceWith(createBodyHTML("sheet_definitions/reptile.json"));
+  $('#body-orc').replaceWith(createBodyHTML("sheet_definitions/orc.json"));
+  $('#body-wolfman').replaceWith(createBodyHTML("sheet_definitions/wolfman.json"));
+
   $("input[type=radio], input[type=checkbox]").attr('title', function() {
     var name = "";
     if ($(this).data("file")) {
