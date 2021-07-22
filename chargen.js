@@ -21,21 +21,23 @@ $(document).ready(function() {
 
   function createBodyHTML(json) {
     const definition = JSON.parse(loadFile(json));
-    const items = definition.items
+    const variants = definition.variants
     const name = definition.name
     const typeName = definition.type_name
+    const fileMalePath = definition.file_male_path
+    const fileFemalePath = definition.file_female_path
 
     const startHTML = `<li><span class="condensed">${name}</span><ul>`;
     const templateHTML = loadFile("html_templates/template-body.html");
     const endHTML = '</ul></li>';
 
     var idx = 0;
-    var listItemsHTML  = '';
-    for (const item in items) {
-      const itemName = items[idx].name;
-      const itemFileMale = items[idx].file_male;
-      const itemFileFemale = items[idx].file_female;
-      const itemIdFor = typeName + itemName.replace(" ", "_");
+    var listItemsHTML = '';
+    for (const variant in variants) {
+      const itemName = variants[idx];
+      const itemFileMale = fileMalePath + itemName.replaceAll(" ", "_") + ".png";
+      const itemFileFemale = fileFemalePath + itemName.replaceAll(" ", "_") + ".png";
+      const itemIdFor = typeName + "-" + itemName.replaceAll(" ", "_");
 
       listItemsHTML += templateHTML.replace("[ID_FOR]", itemIdFor).replace("[TYPE_NAME]", typeName).replace("[MALE_FILE]", itemFileMale).replace("[FEMALE_FILE]", itemFileFemale).replace("[NAME]", itemName);
       idx+=1;

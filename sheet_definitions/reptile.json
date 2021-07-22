@@ -1,41 +1,15 @@
 {
   "name" : "Reptile",
   "type_name" : "body",
-  "items": [
-    {
-      "name" : "Blue winged",
-      "file_male" : "body/male/Drake_male_blue_complete.png",
-      "file_female" : "body/female/Drake_fem_blue_complete.png"
-    },
-    {
-      "name" : "Red winged",
-      "file_male" : "body/male/Drake_male_red_complete.png",
-      "file_female" : "body/female/Drake_male_red_complete.png"
-    },
-    {
-      "name" : "Lightgreen winged",
-      "file_male" : "body/male/Drake_male_complete.png",
-      "file_female" : "body/female/Drake_fem_complete.png"
-    },
-    {
-      "name" : "Green winged",
-      "file_male" : "body/male/Drake_male_dark_complete.png",
-      "file_female" : "body/female/Drake_fem_dark_complete.png"
-    },
-    {
-      "name" : "Green unwinged",
-      "file_male" : "body/male/Drake_male_dark_nw.png",
-      "file_female" : "body/female/Drake_fem_dark_complete_nw.png"
-    },
-    {
-      "name" : "Blue unwinged",
-      "file_male" : "body/male/Drake_male_blue_complete_nw.png",
-      "file_female" : "body/female/Drake_fem_blue_complete_nw.png"
-    },
-    {
-      "name" : "Light green unwinged",
-      "file_male" : "body/male/Drake_male_complete_nw.png",
-      "file_female" : "body/female/Drake_fem_complete_nw.png"
-    }
+  "file_male_path" : "body/male/reptiles/",
+  "file_female_path" : "body/female/reptiles/",
+  "variants": [
+    "red winged",
+    "blue winged",
+    "lightgreen winged",
+    "green winged",
+    "blue unwinged",
+    "lightgreen unwinged",
+    "green unwinged"
   ]
 }

@@ -1,31 +1,13 @@
 {
   "name" : "Orc",
   "type_name" : "body",
-  "items": [
-    {
-      "name" : "Orc 1",
-      "file_male" : "body/male/orcs/1.png",
-      "file_female" : "body/female/orcs/1.png"
-    },
-    {
-      "name" : "Orc 2",
-      "file_male" : "body/male/orcs/2.png",
-      "file_female" : "body/female/orcs/2.png"
-    },
-    {
-      "name" : "Orc 3",
-      "file_male" : "body/male/orcs/3.png",
-      "file_female" : "body/female/orcs/3.png"
-    },
-    {
-      "name" : "Orc 4",
-      "file_male" : "body/male/orcs/4.png",
-      "file_female" : "body/female/orcs/4.png"
-    },
-    {
-      "name" : "Orc 5",
-      "file_male" : "body/male/orcs/5.png",
-      "file_female" : "body/female/orcs/5.png"
-    }
+  "file_male_path" : "body/male/orcs/",
+  "file_female_path" : "body/female/orcs/",
+  "variants": [
+    "gray orc",
+    "green orc 1",
+    "green orc 2",
+    "green orc 3",
+    "green orc 4"
   ]
 }
