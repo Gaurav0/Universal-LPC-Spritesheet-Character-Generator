@@ -1,0 +1,21 @@
+{
+  "name" : "Humanlike",
+  "type_name" : "body",
+  "file_male_path" : "body/male/human/",
+  "file_female_path" : "body/female/human/",
+  "variants": [
+    "white",
+    "black",
+    "olive",
+    "brown",
+    "peach",
+    "light",
+    "dark",
+    "dark 2",
+    "tanned",
+    "tanned 2",
+    "darkelf",
+    "darkelf 2",
+    "zombie"
+  ]
+}

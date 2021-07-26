@@ -11,7 +11,9 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.string/2.3.3/underscore.string.min.js"></script>
 	<script type="text/javascript" src="jhash-2.1.min.js"></script>
-	<script type="text/javascript" src="chargen.js"></script>
+	<script type="text/javascript" src="sources/chargen_utils.js"></script>
+	<script type="text/javascript" src="sources/chargen_templates.js"></script>
+	<script type="text/javascript" src="sources/chargen.js"></script>
 </head>
 <body>
 	<header>
@@ -80,145 +82,13 @@
 					<li>
 						<span class="condensed">Body</span>
 						<ul>
-							<li>
-								<input type="radio" id="body-no_body" name="body" data-file_female="body/none.png" data-file_male="body/none.png">
-								<label for="body-no_body">None</label>
-							</li>
-							<li>
-								<span class="condensed">Human</span>
-								<ul>
-									<li>
-										<input type="radio" id="body-white" name="body" checked data-file_female="body/female/woman-white.png" data-file_male="body/male/man-white.png" data-hs_plain_male="hair/male/plain/shadows-lightbody.png" data-hs_ponytail2_female="hair/female/ponytail2/shadows-lightbody.png">
-										<label for="body-white">White</label>
-									</li>
-									<li>
-										<input type="radio" id="body-black" name="body" data-file_female="body/female/woman-black.png" data-file_male="body/male/man-black.png" data-hs_plain_male="hair/male/plain/shadows-lightbody.png" data-hs_ponytail2_female="hair/female/ponytail2/shadows-lightbody.png">
-										<label for="body-black">Black</label>
-									</li>
-									<li>
-										<input type="radio" id="body-olive" name="body" data-file_female="body/female/woman-olive.png" data-file_male="body/male/man-olive.png" data-hs_plain_male="hair/male/plain/shadows-lightbody.png" data-hs_ponytail2_female="hair/female/ponytail2/shadows-lightbody.png">
-										<label for="body-olive">Olive</label>
-									</li>
-									<li>
-										<input type="radio" id="body-brown" name="body" data-file_female="body/female/woman-brown.png" data-file_male="body/male/man-brown.png" data-hs_plain_male="hair/male/plain/shadows-lightbody.png" data-hs_ponytail2_female="hair/female/ponytail2/shadows-lightbody.png">
-										<label for="body-brown">Brown</label>
-									</li>
-									<li>
-										<input type="radio" id="body-peach" name="body" data-file_female="body/female/woman-peach.png" data-file_male="body/male/man-peach.png" data-hs_plain_male="hair/male/plain/shadows-lightbody.png" data-hs_ponytail2_female="hair/female/ponytail2/shadows-lightbody.png">
-										<label for="body-peach">Peach</label>
-									</li>
-									<li>
-										<input type="radio" id="body-light" name="body" data-file_female="body/female/light.png" data-file_male="body/male/light.png" data-hs_plain_male="hair/male/plain/shadows-lightbody.png" data-hs_ponytail2_female="hair/female/ponytail2/shadows-lightbody.png">
-										<label for="body-light">Light</label>
-									</li>
-									<li>
-										<input type="radio" id="body-dark" name="body" data-file_female="body/female/dark.png" data-file_male="body/male/dark.png" data-hs_plain_male="hair/male/plain/shadows-darkbody.png" data-hs_ponytail2_female="hair/female/ponytail2/shadows-darkbody.png">
-										<label for="body-dark">Dark</label>
-									</li>
-									<li>
-										<input type="radio" id="body-dark2" name="body" data-file_female="body/female/dark2.png" data-file_male="body/male/dark2.png" data-hs_ponytail2_female="hair/female/ponytail2/shadows-dark2body.png">
-										<label for="body-dark2">Dark 2</label>
-									</li>
-									<li>
-										<input type="radio" id="body-tanned" name="body" data-file_female="body/female/tanned.png" data-file_male="body/male/tanned.png" data-hs_plain_male="hair/male/plain/shadows-tannedbody.png" data-hs_ponytail2_female="hair/female/ponytail2/shadows-tannedbody.png">
-										<label for="body-tanned">Tan 1</label>
-									</li>
-									<li>
-										<input type="radio" id="body-tanned2" name="body" data-file_female="body/female/tanned2.png" data-file_male="body/male/tanned2.png" data-hs_plain_male="hair/male/plain/shadows-tanned2body.png" data-hs_ponytail2_female="hair/female/ponytail2/shadows-tanned2body.png">
-										<label for="body-tanned2">Tan 2</label>
-									</li>
-									<li>
-										<input type="radio" id="body-barbarian_white" name="body" data-required="sex=male" data-file="body/male/muscular_white.png">
-										<label for="body-barbarian_white">Barb white</label>
-									</li>
-									<li>
-										<input type="radio" id="body-barbarian_whitev2" name="body" data-required="sex=male" data-file="body/male/muscular_white_v2.png">
-										<label for="body-barbarian_whitev2">Barb white (v2)</label>
-									</li>
-									<li>
-										<input type="radio" id="body-barbarian_dark" name="body" data-required="sex=male" data-file="body/male/muscular_dark.png">
-										<label for="body-barbarian_dark">Barb black</label>
-									</li>
-								</ul>
-							</li>
+							<div id="body-human"></div>
 							<div id="body-reptile"></div>
 							<div id="body-orc"></div>
 							<div id="body-wolfman"></div>
 							<div id="body-skeleton"></div>
-							<li>
-								<span class="condensed">Special</span>
-								<ul>
-									<li>
-										<input type="radio" id="body-magician" name="body" data-file_female="body/magician.png" data-file_male="body/magician.png">
-										<label for="body-magician">Magic</label>
-									</li>
-									<li>
-										<input type="radio" id="body-zombietrue" name="body" data-file_female="body/zombie.png" data-file_male="body/zombie.png">
-										<label for="body-bauldric">Zombie hurt</label>
-									</li>
-									<li>
-										<input type="radio" id="body-boarman" name="body" data-required="sex=male" data-file="body/boarman.png">
-										<label for="body-boarman">Boar man</label>
-									</li>
-									<li>
-										<input type="radio" id="body-bauldric" name="body" data-file_female="body/bauldric.png" data-file_male="body/bauldric.png">
-										<label for="body-bauldric">Bauldric</label>
-									</li>
-									<li>
-										<input type="radio" id="body-darkelf" name="body" data-file_female="body/female/darkelf.png" data-file_male="body/male/darkelf.png" data-hs_plain_male="hair/male/plain/shadows-darkelfbody.png" data-hs_ponytail2_female="hair/female/ponytail2/shadows-darkelfbody.png">
-										<label for="body-darkelf">Elf 1</label>
-									</li>
-									<li>
-										<input type="radio" id="body-darkelf2" name="body" data-file_female="body/female/darkelf2.png" data-file_male="body/male/darkelf2.png" data-hs_plain_male="hair/male/plain/shadows-darkelf2body.png" data-hs_ponytail2_female="hair/female/ponytail2/shadows-darkelf2body.png">
-										<label for="body-darkelf2">Elf 2</label>
-									</li>
-									<li>
-										<input type="radio" id="body-zombie" name="body" data-file_female="body/female/zombie.png" data-file_male="body/male/zombie.png">
-										<label for="body-zombie">Zombie</label>
-									</li>
-									<li>
-										<input type="radio" id="body-barbarian_minotaur" name="body" data-required="sex=male" data-file="body/male/muscular_minotaur.png">
-										<label for="body-barbarian_minotaur">Minotaur muscular</label>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<span class="condensed">Pregnant</span>
-								<ul>
-									<li>
-										<input type="radio" id="body-pregnant_coffee" name="body" data-file_female="body/pregnant/body-pregnant_coffee.png" data-file_male="body/pregnant/body-pregnant_coffee.png">
-										<label for="body-pregnant_coffee">Preg 1</label>
-									</li>
-									<li>
-										<input type="radio" id="body-pregnant_comet" name="body" data-file_female="body/pregnant/body-pregnant_comet.png" data-file_male="body/pregnant/body-pregnant_comet.png">
-										<label for="body-pregnant_comet">Preg 2</label>
-									</li>
-									<li>
-										<input type="radio" id="body-pregnant_copper" name="body" data-file_female="body/pregnant/body-pregnant_copper.png" data-file_male="body/pregnant/body-pregnant_copper.png">
-										<label for="body-pregnant_copper">Preg 3</label>
-									</li>
-									<li>
-										<input type="radio" id="body-pregnant_dove" name="body" data-file_female="body/pregnant/body-pregnant_dove.png" data-file_male="body/pregnant/body-pregnant_dove.png">
-										<label for="body-pregnant_dove">Preg 4</label>
-									</li>
-									<li>
-										<input type="radio" id="body-pregnant_gold" name="body" data-file_female="body/pregnant/body-pregnant_gold.png" data-file_male="body/pregnant/body-pregnant_gold.png">
-										<label for="body-pregnant_gold">Preg 5</label>
-									</li>
-									<li>
-										<input type="radio" id="body-pregnant_gray" name="body" data-file_female="body/pregnant/body-pregnant_gray.png" data-file_male="body/pregnant/body-pregnant_gray.png">
-										<label for="body-pregnant_gray">Preg 6</label>
-									</li>
-									<li>
-										<input type="radio" id="body-pregnant_ivory" name="body" data-file_female="body/pregnant/body-pregnant_ivory.png" data-file_male="body/pregnant/body-pregnant_ivory.png">
-										<label for="body-pregnant_ivory">Preg 7</label>
-									</li>
-									<li>
-										<input type="radio" id="body-pregnant_sienna" name="body" data-file_female="body/pregnant/body-pregnant_sienna.png" data-file_male="body/pregnant/body-pregnant_sienna.png">
-										<label for="body-pregnant_sienna">Preg 8</label>
-									</li>
-								</ul>
-							</li>
+							<div id="body-pregnant"></div>
+							<div id="body-male_only"></div>
 							<li>
 								<span class="condensed">Child</span>
 								<ul>
@@ -244,23 +114,23 @@
 						</ul>
 					</li>
 					<li>
-						<input type="checkbox" id="ribs_blood" name="ribs_blood" data-file="body/ribs_blood.png">
+						<input type="checkbox" id="ribs_blood" name="ribs_blood" data-file="body/wounds/ribs_blood.png">
 						<label for="ribs_blood">Ribs wound</label>
 					</li>
 					<li>
-						<input type="checkbox" id="brain_blood" name="brain_blood" data-file="body/brain_blood.png">
+						<input type="checkbox" id="brain_blood" name="brain_blood" data-file="body/wounds/brain_blood.png">
 						<label for="brain_blood">Brain wound</label>
 					</li>
 					<li>
-						<input type="checkbox" id="arm_blood" name="arm_blood" data-file="body/arm_blood.png">
+						<input type="checkbox" id="arm_blood" name="arm_blood" data-file="body/wounds/arm_blood.png">
 						<label for="arm_blood">Arm wound</label>
 					</li>
 					<li>
-						<input type="checkbox" id="mouth_blood" name="mouth_blood" data-file="body/mouth_blood.png">
+						<input type="checkbox" id="mouth_blood" name="mouth_blood" data-file="body/wounds/mouth_blood.png">
 						<label for="mouth_blood">Mouth wound</label>
 					</li>
 					<li>
-						<input type="checkbox" id="eye_blood" name="eye_blood" data-file="body/eye_blood.png">
+						<input type="checkbox" id="eye_blood" name="eye_blood" data-file="body/wounds/eye_blood.png">
 						<label for="eye_blood">Eye wound</label>
 					</li>
 					<li>

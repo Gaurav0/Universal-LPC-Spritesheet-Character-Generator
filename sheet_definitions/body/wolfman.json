@@ -4,11 +4,11 @@
   "file_male_path" : "body/male/wolf/",
   "file_female_path" : "body/female/wolf/",
   "variants": [
-    "black wolf",
-    "brown wolf",
-    "chestnut wolf",
-    "gray wolf",
-    "white wolf",
-    "gold wolf"
+    "black",
+    "brown",
+    "chestnut",
+    "gray",
+    "white",
+    "gold"
   ]
 }

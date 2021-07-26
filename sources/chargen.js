@@ -4,8 +4,8 @@ $(document).ready(function() {
 
   // Get querystring paramters
   var params = jHash.val();
+  
   var zPosition = 0;
-
   var sheetCredits = [];
   const creditColumns = "filename,notes,authors,licenses,url1,url2,url3,url4,url5,status";
   const hairMalePrefix = "hair/male/"; // used to detect a male hairstyle graphic, which are not added per color to CREDITS.csv
@@ -19,35 +19,13 @@ $(document).ready(function() {
     redraw();
   });
 
-  function createBodyHTML(json) {
-    const definition = JSON.parse(loadFile(json));
-    const variants = definition.variants
-    const name = definition.name
-    const typeName = definition.type_name
-    const fileMalePath = definition.file_male_path
-    const fileFemalePath = definition.file_female_path
-
-    const startHTML = `<li><span class="condensed">${name}</span><ul>`;
-    const templateHTML = loadFile("html_templates/template-body.html");
-    const endHTML = '</ul></li>';
-
-    var idx = 0;
-    var listItemsHTML = '';
-    for (const variant in variants) {
-      const itemName = variants[idx];
-      const itemFileMale = fileMalePath + itemName.replaceAll(" ", "_") + ".png";
-      const itemFileFemale = fileFemalePath + itemName.replaceAll(" ", "_") + ".png";
-      const itemIdFor = typeName + "-" + itemName.replaceAll(" ", "_");
-
-      listItemsHTML += templateHTML.replace("[ID_FOR]", itemIdFor).replace("[TYPE_NAME]", typeName).replace("[MALE_FILE]", itemFileMale).replace("[FEMALE_FILE]", itemFileFemale).replace("[NAME]", itemName);
-      idx+=1;
-    }
-    return startHTML + listItemsHTML + endHTML;
-  }
-
-  $('#body-reptile').replaceWith(createBodyHTML("sheet_definitions/reptile.json"));
-  $('#body-orc').replaceWith(createBodyHTML("sheet_definitions/orc.json"));
-  $('#body-wolfman').replaceWith(createBodyHTML("sheet_definitions/wolfman.json"));
+  $('#body-human').replaceWith(createMaleAndFemaleHTML("sheet_definitions/body/human.json", true));
+  $('#body-reptile').replaceWith(createMaleAndFemaleHTML("sheet_definitions/body/reptile.json", false));
+  $('#body-orc').replaceWith(createMaleAndFemaleHTML("sheet_definitions/body/orc.json", false));
+  $('#body-wolfman').replaceWith(createMaleAndFemaleHTML("sheet_definitions/body/wolfman.json", false));
+  $('#body-skeleton').replaceWith(createMaleAndFemaleHTML("sheet_definitions/body/skeleton.json", false));
+  $('#body-male_only').replaceWith(createMaleOrFemaleHTML("sheet_definitions/body/male_only.json", "male"));
+  $('#body-pregnant').replaceWith(createMaleOrFemaleHTML("sheet_definitions/body/pregnant.json", "female"));
 
   $("input[type=radio], input[type=checkbox]").attr('title', function() {
     var name = "";
@@ -69,21 +47,6 @@ $(document).ready(function() {
     }
     return creditEntry;
   });
-
-  function splitCsv(str) {
-    return str.split(',').reduce((accum,curr)=>{
-      if(accum.isConcatting) {
-        accum.soFar[accum.soFar.length-1] += ','+curr
-      } else {
-        accum.soFar.push(curr)
-      }
-      if(curr.split('"').length % 2 == 0) {
-        accum.isConcatting= !accum.isConcatting
-      }
-      return accum;
-    },{soFar:[],isConcatting:false}).soFar
-  }
-
 
   function getCreditFor(fileName) {
     if (fileName !== "") {
@@ -425,7 +388,7 @@ $(document).ready(function() {
         drawImage(ctx, img);
       }
     } else if (isBoar) {
-      var img = getImage("/body/boarman_head.png");
+      var img = getImage("/body/male/special/boarman_head.png");
       drawImage(ctx, img);
     }
     if (!didDrawPreview) { // zposition was to high or low, draw anyways over all
@@ -500,22 +463,6 @@ $(document).ready(function() {
         _.each(requirements, function(req) {
           var requirement = req.replace("=", "-");
           if (!$("#" + requirement).prop("checked"))
-          passed = false;
-        });
-        if (passed)
-        $(this).prop("disabled", false);
-        else {
-          $(this).prop("disabled", true);
-          if ($(this).prop("checked"))
-          ctx.clearRect(0, 0, canvas.width, canvas.height);
-        }
-      }
-      if ($(this).data("prohibited")) {
-        var requirements = $(this).data("prohibited").split(",");
-        var passed = true;
-        _.each(requirements, function(req) {
-          var requirement = req.replace("=", "-");
-          if ($("#" + requirement).prop("checked"))
           passed = false;
         });
         if (passed)

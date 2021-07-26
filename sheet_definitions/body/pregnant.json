@@ -1,0 +1,15 @@
+{
+  "name" : "Male only",
+  "type_name" : "body",
+  "file_path" : "body/female/pregnant/",
+  "variants": [
+    "coffee",
+    "comet",
+    "copper",
+    "dove",
+    "gold",
+    "gray",
+    "ivory",
+    "sienna"
+  ]
+}

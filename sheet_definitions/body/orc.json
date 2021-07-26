@@ -4,10 +4,10 @@
   "file_male_path" : "body/male/orcs/",
   "file_female_path" : "body/female/orcs/",
   "variants": [
-    "gray orc",
-    "green orc 1",
-    "green orc 2",
-    "green orc 3",
-    "green orc 4"
+    "gray",
+    "green 1",
+    "green 2",
+    "green 3",
+    "green 4"
   ]
 }

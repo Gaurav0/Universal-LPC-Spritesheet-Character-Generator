@@ -1,0 +1,15 @@
+{
+  "name" : "Male only",
+  "type_name" : "body",
+  "file_path" : "body/male/special/",
+  "variants": [
+    "muscular white",
+    "muscular white v2",
+    "muscular black",
+    "boarman",
+    "minotaur",
+    "bauldric",
+    "magician",
+    "zombie"
+  ]
+}

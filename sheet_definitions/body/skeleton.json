@@ -4,8 +4,8 @@
   "file_male_path" : "body/skeleton/",
   "file_female_path" : "body/skeleton/",
   "variants": [
-    "beige skeleton",
-    "gray skeleton",
-    "green skeleton"
+    "beige",
+    "gray",
+    "green"
   ]
 }
