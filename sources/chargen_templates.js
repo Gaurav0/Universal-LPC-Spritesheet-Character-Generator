@@ -36,7 +36,7 @@ function createMaleOrFemaleHTML(json, sex) {
   const typeName = definition.type_name
   const filePath = definition.file_path
 
-  const startHTML = `<li><span class="condensed">${name}</span><ul>`;
+  const startHTML = `<li data-required="sex=[REQUIRED_SEX]"><span class="condensed">${name}</span><ul>`;
   const templateHTML = loadFile("html_templates/template-male_or_female.html");
   const endHTML = '</ul></li>';
 
@@ -48,8 +48,7 @@ function createMaleOrFemaleHTML(json, sex) {
     const itemIdFor = typeName + "-" + name.replaceAll(" ", "_") +  "_" + itemName.replaceAll(" ", "_");
 
     listItemsHTML += templateHTML.replace("[ID_FOR]", itemIdFor).replace("[TYPE_NAME]", typeName).replace("[FILE]", itemFile).replace("[NAME]", itemName);
-    listItemsHTML = listItemsHTML.replace("[REQUIRED_SEX]", sex)
     idx+=1;
   }
-  return startHTML + listItemsHTML + endHTML;
+  return startHTML.replace("[REQUIRED_SEX]", sex) + listItemsHTML + endHTML;
 }

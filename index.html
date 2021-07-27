@@ -66,19 +66,17 @@
 					<label>Draw child shadow</label>
 				</li>
 				<li>
-					<span class="condensed">Sex</span>
+					<span class="condensed">Body type</span>
 					<ul>
 						<li>
 							<input type="radio" id="sex-male" name="sex" checked>
 							<label for="sex-male">Male</label>
 						</li>
 						<li>
-							<li>
-								<input type="radio" id="sex-female" name="sex">
-								<label for="sex-female">Female</label>
-							</li>
-						</ul>
-					</li>
+							<input type="radio" id="sex-female" name="sex">
+							<label for="sex-female">Female</label>
+						</li>
+					</ul>
 					<li>
 						<span class="condensed">Body</span>
 						<ul>
@@ -88,29 +86,8 @@
 							<div id="body-wolfman"></div>
 							<div id="body-skeleton"></div>
 							<div id="body-pregnant"></div>
-							<div id="body-male_only"></div>
-							<li>
-								<span class="condensed">Child</span>
-								<ul>
-									<li><input type="radio" id="body-child_walk_darkelf2" name="body" data-file="body/child/child_walk_darkelf2.png"><label for="body-child_walk_darkelf2">child darkelf2</label></li>
-									<li><input type="radio" id="body-child_walk_peach" name="body" data-file="body/child/child_walk_peach.png"><label for="body-child_walk_peach">child peach</label></li>
-									<li><input type="radio" id="body-child_walk_lizard_blue" name="body" data-file="body/child/child_walk_lizard_blue.png"><label for="body-child_walk_lizard_blue">child lizard_blue</label></li>
-									<li><input type="radio" id="body-child_walk_dark" name="body" data-file="body/child/child_walk_dark.png"><label for="body-child_walk_dark">child dark</label></li>
-									<li><input type="radio" id="body-child_walk_orc" name="body" data-file="body/child/child_walk_orc.png"><label for="body-child_walk_orc">child orc</label></li>
-									<li><input type="radio" id="body-child_walk_tanned2" name="body" data-file="body/child/child_walk_tanned2.png"><label for="body-child_walk_tanned2">child tanned2</label></li>
-									<li><input type="radio" id="body-child_walk_lizard_dark" name="body" data-file="body/child/child_walk_lizard_dark.png"><label for="body-child_walk_lizard_dark">child lizard_dark</label></li>
-									<li><input type="radio" id="body-child_walk_black" name="body" data-file="body/child/child_walk_black.png"><label for="body-child_walk_black">child black</label></li>
-									<li><input type="radio" id="body-child_walk_olive" name="body" data-file="body/child/child_walk_olive.png"><label for="body-child_walk_olive">child olive</label></li>
-									<li><input type="radio" id="body-child_walk_tanned" name="body" data-file="body/child/child_walk_tanned.png"><label for="body-child_walk_tanned">child tanned</label></li>
-									<li><input type="radio" id="body-child_walk_light" name="body" data-file="body/child/child_walk_light.png"><label for="body-child_walk_light">child light</label></li>
-									<li><input type="radio" id="body-child_walk_lizard_light" name="body" data-file="body/child/child_walk_lizard_light.png"><label for="body-child_walk_lizard_light">child lizard_light</label></li>
-									<li><input type="radio" id="body-child_walk_brown" name="body" data-file="body/child/child_walk_brown.png"><label for="body-child_walk_brown">child brown</label></li>
-									<li><input type="radio" id="body-child_walk_darkelf" name="body" data-file="body/child/child_walk_darkelf.png"><label for="body-child_walk_darkelf">child darkelf</label></li>
-									<li><input type="radio" id="body-child_walk_redorc" name="body" data-file="body/child/child_walk_redorc.png"><label for="body-child_walk_redorc">child redorc</label></li>
-									<li><input type="radio" id="body-child_walk_dark2" name="body" data-file="body/child/child_walk_dark2.png"><label for="body-child_walk_dark2">child dark2</label></li>
-									<li><input type="radio" id="body-child_walk_white" name="body" data-file="body/child/child_walk_white.png"><label for="body-child_walk_white">child white</label></li>
-								</ul>
-							</li>
+							<div id="body-special"></div>
+							<div id="body-child"></div>
 						</ul>
 					</li>
 					<li>
@@ -133,51 +110,9 @@
 						<input type="checkbox" id="eye_blood" name="eye_blood" data-file="body/wounds/eye_blood.png">
 						<label for="eye_blood">Eye wound</label>
 					</li>
-					<li>
-						<span class="condensed">Eyes</span>
-						<ul>
-							<li>
-								<input type="radio" id="eyes-none" name="eyes" checked>
-								<label for="eyes-none">Default</label>
-							</li>
-							<li>
-								<input type="radio" id="eyes-cyclope" name="eyes" data-file="body/eye_cyclope.png">
-								<label for="eyes-cyclope">Cyclope (Orc)</label>
-							</li>
-							<li>
-								<input type="radio" id="eyes-blue" name="eyes" data-file_female="body/female/eyes/blue.png" data-file_male="body/male/eyes/blue.png">
-								<label for="eyes-blue">Blue</label>
-							</li>
-							<li>
-								<input type="radio" id="eyes_brown" name="eyes" data-file_female="body/female/eyes/brown.png" data-file_male="body/male/eyes/brown.png">
-								<label for="eyes_brown">Brown</label>
-							</li>
-							<li>
-								<input type="radio" id="eyes_gray" name="eyes" data-file_female="body/female/eyes/gray.png" data-file_male="body/male/eyes/gray.png">
-								<label for="eyes_gray">Gray</label>
-							</li>
-							<li>
-								<input type="radio" id="eyes-green" name="eyes" data-file_female="body/female/eyes/green.png" data-file_male="body/male/eyes/green.png">
-								<label for="eyes-green">Green</label>
-							</li>
-							<li>
-								<input type="radio" id="eyes-purple" name="eyes" data-file_female="body/female/eyes/purple.png" data-file_male="body/male/eyes/purple.png">
-								<label for="eyes-purple">Purple</label>
-							</li>
-							<li>
-								<input type="radio" id="eyes-red" name="eyes" data-file_female="body/female/eyes/red.png" data-file_male="body/male/eyes/red.png">
-								<label for="eyes-red">Red</label>
-							</li>
-							<li>
-								<input type="radio" id="eyes-yellow" name="eyes" data-file_female="body/female/eyes/yellow.png" data-file_male="body/male/eyes/yellow.png">
-								<label for="eyes-yellow">Yellow</label>
-							</li>
-							<li>
-								<input type="radio" id="eyes-orange" name="eyes" data-file_female="body/female/eyes/orange.png" data-file_male="body/male/eyes/orange.png">
-								<label for="eyes-orange">Orange</label>
-							</li>
-						</ul>
-					</li>
+
+					<div id="eyes"></div>
+
 					<li>
 						<span class="condensed">Facial</span>
 						<ul>
@@ -209,128 +144,7 @@
 								<input type="radio" id="facial-sunglasses" name="facial" data-file="facial/3.png">
 								<label for="facial-sunglasses">Sunglasses</label>
 							</li>
-
-							<li>
-								<span class="condensed">Bigstache <small>(Male)</small></span>
-								<ul>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/black.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/blonde.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/blonde2.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/blue.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/blue2.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/brown.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/brown2.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/brunette.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/brunette2.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/dark-blonde.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/gold.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/gray.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/gray2.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/green.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/green2.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/light-blonde.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/light-blonde2.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/pink.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/pink2.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/purple.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/raven.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/raven2.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/redhead.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/redhead2.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/ruby-red.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/white-blonde.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/white-blonde2.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/white-cyan.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-									<li>
-										<input type="radio" id="facial-bigstache" name="facial" data-file="facial/male/bigstache/white.png">
-										<label for="facial-bigstache">bigstache</label>
-									</li>
-								</ul>
-							</li>
+							<div id="facial-bigstache"></div>
 							<li>
 								<span class="condensed">Mustache <small>(Male)</small></span>
 								<ul>
@@ -572,27 +386,6 @@
 										<label for="facial-beard">Beard</label>
 									</li>
 								</ul>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<span class="condensed">Nose</span>
-						<ul>
-							<li>
-								<input type="radio" id="nose-none" name="nose" checked>
-								<label for="nose-none">Default</label>
-							</li>
-							<li>
-								<input type="radio" id="nose-big" name="nose" data-prohibited="body=orc,body=orc_red,body=skeleton" data-file_male_light="body/male/nose/bignose_light.png" data-file_female_light="body/female/nose/bignose_light.png" data-file_male_dark="body/male/nose/bignose_dark.png" data-file_female_dark="body/female/nose/bignose_dark.png" data-file_male_dark2="body/male/nose/bignose_dark2.png" data-file_female_dark2="body/female/nose/bignose_dark2.png" data-file_male_darkelf="body/male/nose/bignose_darkelf.png" data-file_female_darkelf="body/female/nose/bignose_darkelf.png" data-file_male_darkelf2="body/male/nose/bignose_darkelf2.png" data-file_female_darkelf2="body/female/nose/bignose_darkelf2.png" data-file_male_tanned="body/male/nose/bignose_tanned.png" data-file_female_tanned="body/female/nose/bignose_tanned.png" data-file_male_tanned2="body/male/nose/bignose_tanned2.png" data-file_female_tanned2="body/female/nose/bignose_tanned2.png">
-								<label for="nose-big">Big Nose</label>
-							</li>
-							<li>
-								<input type="radio" id="nose-button" name="nose" data-prohibited="body=orc,body=orc_red,body=skeleton" data-file_male_light="body/male/nose/buttonnose_light.png" data-file_female_light="body/female/nose/buttonnose_light.png" data-file_male_dark="body/male/nose/buttonnose_dark.png" data-file_female_dark="body/female/nose/buttonnose_dark.png" data-file_male_dark2="body/male/nose/buttonnose_dark2.png" data-file_female_dark2="body/female/nose/buttonnose_dark2.png" data-file_male_darkelf="body/male/nose/buttonnose_darkelf.png" data-file_female_darkelf="body/female/nose/buttonnose_darkelf.png" data-file_male_darkelf2="body/male/nose/buttonnose_darkelf2.png" data-file_female_darkelf2="body/female/nose/buttonnose_darkelf2.png" data-file_male_tanned="body/male/nose/buttonnose_tanned.png" data-file_female_tanned="body/female/nose/buttonnose_tanned.png" data-file_male_tanned2="body/male/nose/buttonnose_tanned2.png" data-file_female_tanned2="body/female/nose/buttonnose_tanned2.png">
-								<label for="nose-button">Button Nose</label>
-							</li>
-							<li>
-								<input type="radio" id="nose-straight" name="nose" data-prohibited="body=orc,body=orc_red,body=skeleton" data-file_male_light="body/male/nose/straightnose_light.png" data-file_female_light="body/female/nose/straightnose_light.png" data-file_male_dark="body/male/nose/straightnose_dark.png" data-file_female_dark="body/female/nose/straightnose_dark.png" data-file_male_dark2="body/male/nose/straightnose_dark2.png" data-file_female_dark2="body/female/nose/straightnose_dark2.png" data-file_male_darkelf="body/male/nose/straightnose_darkelf.png" data-file_female_darkelf="body/female/nose/straightnose_darkelf.png" data-file_male_darkelf2="body/male/nose/straightnose_darkelf2.png" data-file_female_darkelf2="body/female/nose/straightnose_darkelf2.png" data-file_male_tanned="body/male/nose/straightnose_tanned.png" data-file_female_tanned="body/female/nose/straightnose_tanned.png" data-file_male_tanned2="body/male/nose/straightnose_tanned2.png" data-file_female_tanned2="body/female/nose/straightnose_tanned2.png">
-								<label for="nose-straight">Straight Nose</label>
 							</li>
 						</ul>
 					</li>
@@ -2332,153 +2125,9 @@
 							<input type="radio" id="hair-none" name="hair" checked>
 							<label for="hair-none">No Hair</label>
 						</li>
-						<li>
-							<span class="condensed">Straight long</span>
-							<ul>
-								<li>
-									<input type="radio" id="hair-straight_long_white" name="hair" data-file_male="hair/male/long-straight-hair/long_straight_hair_male_white.png" data-file_female="hair/female/long-straight-hair/long_straight_hair_female_white.png">
-									<label for="hair-straight_long_white">White</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-straight_long_orange" name="hair" data-file_male="hair/male/long-straight-hair/long_straight_hair_male_orange.png" data-file_female="hair/female/long-straight-hair/long_straight_hair_female_orange.png">
-									<label for="hair-straight_long_orange">Orange</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-straight_long_red" name="hair" data-file_male="hair/male/long-straight-hair/long_straight_hair_male_red.png" data-file_female="hair/female/long-straight-hair/long_straight_hair_female_red.png">
-									<label for="hair-straight_long_red">Red</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-straight_long_blue" name="hair" data-file_male="hair/male/long-straight-hair/long_straight_hair_male_blue.png" data-file_female="hair/female/long-straight-hair/long_straight_hair_female_blue.png">
-									<label for="hair-straight_long_blue">Blue</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-straight_long_green" name="hair" data-file_male="hair/male/long-straight-hair/long_straight_hair_male_green.png" data-file_female="hair/female/long-straight-hair/long_straight_hair_female_green.png">
-									<label for="hair-straight_long_green">Green</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-straight_long_purple" name="hair" data-file_male="hair/male/long-straight-hair/long_straight_hair_male_purple.png" data-file_female="hair/female/long-straight-hair/long_straight_hair_female_purple.png">
-									<label for="hair-straight_long_purple">Purple</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-straight_long_pink" name="hair" data-file_male="hair/male/long-straight-hair/long_straight_hair_male_pink.png" data-file_female="hair/female/long-straight-hair/long_straight_hair_female_pink.png">
-									<label for="hair-straight_long_pink">Pink</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-straight_long_black" name="hair" data-file_male="hair/male/long-straight-hair/long_straight_hair_male_black.png" data-file_female="hair/female/long-straight-hair/long_straight_hair_female_black.png">
-									<label for="hair-straight_long_black">Black</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-straight_long_blonde" name="hair" data-file_male="hair/male/long-straight-hair/long_straight_hair_male_blonde.png" data-file_female="hair/female/long-straight-hair/long_straight_hair_female_blonde.png">
-									<label for="hair-straight_long_blonde">Blonde</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-straight_long_brown" name="hair" data-file_male="hair/male/long-straight-hair/long_straight_hair_male_brown.png" data-file_female="hair/female/long-straight-hair/long_straight_hair_female_brown.png">
-									<label for="hair-straight_long_brown">Brown</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-straight_long_lightblonde" name="hair" data-file_male="hair/male/long-straight-hair/long_straight_hair_male_lightblonde.png" data-file_female="hair/female/long-straight-hair/long_straight_hair_female_lightblonde.png">
-									<label for="hair-straight_long_lightblonde">Lightblonde</label>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<span class="condensed">Tied long</span>
-							<ul>
-								<li>
-									<input type="radio" id="hair-tied_long_white" name="hair" data-file_male="hair/male/long-tied-hair/longtiedhair_white_male.png" data-file_female="hair/female/long-tied-hair/longtiedhair_white_female.png">
-									<label for="hair-tied_long_white">White</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-tied_long_orange" name="hair" data-file_male="hair/male/long-tied-hair/longtiedhair_orange_male.png" data-file_female="hair/female/long-tied-hair/longtiedhair_orange_female.png">
-									<label for="hair-tied_long_orange">Orange</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-tied_long_red" name="hair" data-file_male="hair/male/long-tied-hair/longtiedhair_red_male.png" data-file_female="hair/female/long-tied-hair/longtiedhair_red_female.png">
-									<label for="hair-tied_long_red">Red</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-tied_long_blue" name="hair" data-file_male="hair/male/long-tied-hair/longtiedhair_blue_male.png" data-file_female="hair/female/long-tied-hair/longtiedhair_blue_female.png">
-									<label for="hair-tied_long_blue">Blue</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-tied_long_green" name="hair" data-file_male="hair/male/long-tied-hair/longtiedhair_green_male.png" data-file_female="hair/female/long-tied-hair/longtiedhair_green_female.png">
-									<label for="hair-tied_long_green">Green</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-tied_long_purple" name="hair" data-file_male="hair/male/long-tied-hair/longtiedhair_purple_male.png" data-file_female="hair/female/long-tied-hair/longtiedhair_purple_female.png">
-									<label for="hair-tied_long_purple">Purple</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-tied_long_pink" name="hair" data-file_male="hair/male/long-tied-hair/longtiedhair_pink_male.png" data-file_female="hair/female/long-tied-hair/longtiedhair_pink_female.png">
-									<label for="hair-tied_long_pink">Pink</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-tied_long_black" name="hair" data-file_male="hair/male/long-tied-hair/longtiedhair_black_male.png" data-file_female="hair/female/long-tied-hair/longtiedhair_black_female.png">
-									<label for="hair-tied_long_black">Black</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-tied_long_blonde" name="hair" data-file_male="hair/male/long-tied-hair/longtiedhair_blonde_male.png" data-file_female="hair/female/long-tied-hair/longtiedhair_blonde_female.png">
-									<label for="hair-tied_long_blonde">Blonde</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-tied_long_brown" name="hair" data-file_male="hair/male/long-tied-hair/longtiedhair_brown_male.png" data-file_female="hair/female/long-tied-hair/longtiedhair_brown_female.png">
-									<label for="hair-tied_long_brown">Brown</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-tied_long_lightblonde" name="hair" data-file_male="hair/male/long-tied-hair/longtiedhair_lightblonde_male.png" data-file_female="hair/female/long-tied-hair/longtiedhair_lightblonde_female.png">
-									<label for="hair-tied_long_lightblonde">Lightblonde</label>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<span class="condensed">Idol <small>(Male)</small></span>
-							<ul>
-								<li>
-									<input type="radio" id="hair-idol_black" name="hair" data-file="hair/male/idol/kidol_hairstyle_male_black.png" data-required="sex=male">
-									<label for="hair-idol_black">Black</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-idol_blonde" name="hair" data-file="hair/male/idol/kidol_hairstyle_male_blonde.png" data-required="sex=male">
-									<label for="hair-idol_blonde">Blonde</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-idol_blue" name="hair" data-file="hair/male/idol/kidol_hairstyle_male_blue.png" data-required="sex=male">
-									<label for="hair-idol_blue">Blue</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-idol_brown" name="hair" data-file="hair/male/idol/kidol_hairstyle_male_brown.png" data-required="sex=male">
-									<label for="hair-idol_brown">Brown</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-idol_green" name="hair" data-file="hair/male/idol/kidol_hairstyle_male_green.png" data-required="sex=male">
-									<label for="hair-idol_green">Green</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-idol_lightblonde" name="hair" data-file="hair/male/idol/kidol_hairstyle_male_lightblonde.png" data-required="sex=male">
-									<label for="hair-idol_lightblonde">Lightblonde</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-idol_orange" name="hair" data-file="hair/male/idol/kidol_hairstyle_male_orange.png" data-required="sex=male">
-									<label for="hair-idol_orange">Orange</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-idol_pink" name="hair" data-file="hair/male/idol/kidol_hairstyle_male_pink.png" data-required="sex=male">
-									<label for="hair-idol_pink">Pink</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-idol_purple" name="hair" data-file="hair/male/idol/kidol_hairstyle_male_purple.png" data-required="sex=male">
-									<label for="hair-idol_purple">Purple</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-idol_red" name="hair" data-file="hair/male/idol/kidol_hairstyle_male_red.png" data-required="sex=male">
-									<label for="hair-idol_red">Red</label>
-								</li>
-								<li>
-									<input type="radio" id="hair-idol_white" name="hair" data-file="hair/male/idol/kidol_hairstyle_male_white.png" data-required="sex=male">
-									<label for="hair-idol_white">White</label>
-								</li>
-							</ul>
-						</li>
+						<div id="hair-long_straight"></div>
+						<div id="hair-long_tied"></div>
+						<div id="hair-idol"></div>
 						<li>
 							<span class="condensed">Plain <small>(Male)</small></span>
 							<ul>
@@ -4614,23 +4263,6 @@
 									<label for="hair-long-black-toplayer">Top Layer</label>
 								</li>
 							</ul>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<span class="condensed">Ears</span>
-					<ul>
-						<li>
-							<input type="radio" id="ears-none" name="ears" checked>
-							<label for="ears-none">Default</label>
-						</li>
-						<li>
-							<input type="radio" id="ears-big" name="ears" data-prohibited="body=orc,body=orc_red,body=skeleton" data-file_male_light="body/male/ears/bigears_light.png" data-file_female_light="body/female/ears/bigears_light.png" data-file_male_dark="body/male/ears/bigears_dark.png" data-file_female_dark="body/female/ears/bigears_dark.png" data-file_male_dark2="body/male/ears/bigears_dark2.png" data-file_female_dark2="body/female/ears/bigears_dark2.png" data-file_male_darkelf="body/male/ears/bigears_darkelf.png" data-file_female_darkelf="body/female/ears/bigears_darkelf.png" data-file_male_darkelf2="body/male/ears/bigears_darkelf2.png" data-file_female_darkelf2="body/female/ears/bigears_darkelf2.png" data-file_male_tanned="body/male/ears/bigears_tanned.png" data-file_female_tanned="body/female/ears/bigears_tanned.png" data-file_male_tanned2="body/male/ears/bigears_tanned2.png" data-file_female_tanned2="body/female/ears/bigears_tanned2.png">
-							<label for="ears-big">Big Ears</label>
-						</li>
-						<li>
-							<input type="radio" id="ears-elven" name="ears" data-prohibited="body=orc,body=orc_red,body=skeleton" data-file_male_light="body/male/ears/elvenears_light.png" data-file_female_light="body/female/ears/elvenears_light.png" data-file_male_dark="body/male/ears/elvenears_dark.png" data-file_female_dark="body/female/ears/elvenears_dark.png" data-file_male_dark2="body/male/ears/elvenears_dark2.png" data-file_female_dark2="body/female/ears/elvenears_dark2.png" data-file_male_darkelf="body/male/ears/elvenears_darkelf.png" data-file_female_darkelf="body/female/ears/elvenears_darkelf.png" data-file_male_darkelf2="body/male/ears/elvenears_darkelf2.png" data-file_female_darkelf2="body/female/ears/elvenears_darkelf2.png" data-file_male_tanned="body/male/ears/elvenears_tanned.png" data-file_female_tanned="body/female/ears/elvenears_tanned.png" data-file_male_tanned2="body/male/ears/elvenears_tanned2.png" data-file_female_tanned2="body/female/ears/elvenears_tanned2.png">
-							<label for="ears-elven">Elven Ears</label>
 						</li>
 					</ul>
 				</li>

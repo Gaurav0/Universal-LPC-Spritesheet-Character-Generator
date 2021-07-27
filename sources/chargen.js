@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   // Get querystring paramters
   var params = jHash.val();
-  
+
   var zPosition = 0;
   var sheetCredits = [];
   const creditColumns = "filename,notes,authors,licenses,url1,url2,url3,url4,url5,status";
@@ -24,8 +24,17 @@ $(document).ready(function() {
   $('#body-orc').replaceWith(createMaleAndFemaleHTML("sheet_definitions/body/orc.json", false));
   $('#body-wolfman').replaceWith(createMaleAndFemaleHTML("sheet_definitions/body/wolfman.json", false));
   $('#body-skeleton').replaceWith(createMaleAndFemaleHTML("sheet_definitions/body/skeleton.json", false));
-  $('#body-male_only').replaceWith(createMaleOrFemaleHTML("sheet_definitions/body/male_only.json", "male"));
+  $('#body-male_only').replaceWith(createMaleOrFemaleHTML("sheet_definitions/body/special.json", "male"));
   $('#body-pregnant').replaceWith(createMaleOrFemaleHTML("sheet_definitions/body/pregnant.json", "female"));
+  $('#body-child').replaceWith(createMaleAndFemaleHTML("sheet_definitions/body/child.json", false));
+  $('#eyes').replaceWith(createMaleAndFemaleHTML("sheet_definitions/eyes.json", false));
+
+  $('#facial-bigstache').replaceWith(createMaleOrFemaleHTML("sheet_definitions/facial/bigstache.json", "male"));
+
+  $('#hair-long_straight').replaceWith(createMaleAndFemaleHTML("sheet_definitions/hair/long_straight.json", false));
+  $('#hair-long_tied').replaceWith(createMaleAndFemaleHTML("sheet_definitions/hair/long_tied.json", false));
+
+  $('#hair-idol').replaceWith(createMaleOrFemaleHTML("sheet_definitions/hair/idol.json", "male"));
 
   $("input[type=radio], input[type=checkbox]").attr('title', function() {
     var name = "";
@@ -332,51 +341,7 @@ $(document).ready(function() {
           wolfmanBody = fileName.replace("body/female/wolf/", "")+"female";
         }
       }
-
-      // if data-file_male_light... and data-file_female_light... is specified
-      var bodytypes = ["none", "light", "dark", "dark2", "tanned", "tanned2", "darkelf", "darkelf2", "reptbluewings", "reptbluenowings", "reptredwings", "reptdarkwings", "reptdarknowings", "white", "peach", "brown", "olive", "black"];
-      if (isMale) {
-        _.each(bodytypes, function(bodytype) {
-          if ($("#body-" + bodytype).prop("checked") && $this.data("file_male_" + bodytype)) {
-            var img = getImage($this.data("file_male_" + bodytype));
-            drawImage(ctx, img);
-            fileName = $this.data("file_male_" + bodytype);
-          }
-        });
-      }
-      if (isFemale) {
-        _.each(bodytypes, function(bodytype) {
-          if ($("#body-" + bodytype).prop("checked") && $this.data("file_female_" + bodytype)) {
-            var img = getImage($this.data("file_female_" + bodytype));
-            drawImage(ctx, img);
-            fileName = $this.data("file_female_" + bodytype);
-          }
-        });
-      }
-
-      // Draw shadows for plain or ponytail2 hairstyles appropriate to body color
-      var id = $(this).attr("id");
-      if (_.startsWith(id, "hair-")) {
-        var style = id.substring(5, id.indexOf("-", 5));
-        $("input[type=radio]:checked").filter(function() {
-          return $(this).attr("id").substr(0, 5) == "body-";
-        }).each(function() {
-          var hsMale = "hs_" + style + "_male";
-          var hsFemale = "hs_" + style + "_female";
-          if (isMale && $(this).data(hsMale)) {
-            var img = getImage($(this).data(hsMale))
-            drawImage(ctx, img);
-            fileName = $(this).data(hsMale);
-          }
-          if (isFemale && $(this).data(hsFemale)) {
-            var img = getImage($(this).data(hsFemale))
-            drawImage(ctx, img);
-            fileName = $(this).data(hsFemale);
-          }
-        });
-      }
       addCreditFor(fileName);
-
     });
 
     if (wolfmanBody !== "") {
@@ -471,6 +436,22 @@ $(document).ready(function() {
           $(this).prop("disabled", true);
           if ($(this).prop("checked"))
           ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+      }
+    });
+    $("li").each(function(index) {
+
+      if ($(this).data("required")) {
+        console.log("toggleVisibility");
+        var isMale = $("#sex-male").prop("checked");
+        var isFemale = $("#sex-female").prop("checked");
+        var requiredType = $(this).data("required").split(",");
+        if (isMale && !requiredType.includes('sex=male')) {
+          $(this).prop("style", "display:none");
+        } else if (isFemale && !requiredType.includes('sex=female')) {
+          $(this).prop("style", "display:none");
+        } else  {
+          $(this).prop("style", "");
         }
       }
     });

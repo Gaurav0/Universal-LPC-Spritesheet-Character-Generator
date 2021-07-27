@@ -1,0 +1,18 @@
+{
+  "name" : "Idol",
+  "type_name" : "hair",
+  "file_path" : "hair/male/idol/",
+  "variants": [
+    "black",
+    "blonde",
+    "blue",
+    "brown",
+    "green",
+    "lightblonde",
+    "orange",
+    "pink",
+    "purple",
+    "red",
+    "white"
+  ]
+}
