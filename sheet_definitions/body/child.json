@@ -1,8 +1,9 @@
 {
   "name" : "Child",
   "type_name" : "body",
-  "file_male_path" : "body/child/",
-  "file_female_path" : "body/child/",
+  "file" : {
+    "child" : "body/child/"
+  },
   "variants": [
     "peach",
     "dark",

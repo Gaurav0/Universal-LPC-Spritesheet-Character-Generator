@@ -1,0 +1,13 @@
+{
+  "name" : "Slippers",
+  "type_name" : "shoes",
+  "file" : {
+    "female" : "feet/slippers/female/"
+  },
+  "variants": [
+    "black",
+    "brown",
+    "gray",
+    "white"
+  ]
+}

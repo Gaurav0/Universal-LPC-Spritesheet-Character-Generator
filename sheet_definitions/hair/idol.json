@@ -1,7 +1,9 @@
 {
   "name" : "Idol",
   "type_name" : "hair",
-  "file_path" : "hair/male/idol/",
+  "file" : {
+    "male" : "hair/male/idol/"
+  },
   "variants": [
     "black",
     "blonde",

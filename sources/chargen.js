@@ -19,22 +19,33 @@ $(document).ready(function() {
     redraw();
   });
 
-  $('#body-human').replaceWith(createMaleAndFemaleHTML("sheet_definitions/body/human.json", true));
-  $('#body-reptile').replaceWith(createMaleAndFemaleHTML("sheet_definitions/body/reptile.json", false));
-  $('#body-orc').replaceWith(createMaleAndFemaleHTML("sheet_definitions/body/orc.json", false));
-  $('#body-wolfman').replaceWith(createMaleAndFemaleHTML("sheet_definitions/body/wolfman.json", false));
-  $('#body-skeleton').replaceWith(createMaleAndFemaleHTML("sheet_definitions/body/skeleton.json", false));
-  $('#body-male_only').replaceWith(createMaleOrFemaleHTML("sheet_definitions/body/special.json", "male"));
-  $('#body-pregnant').replaceWith(createMaleOrFemaleHTML("sheet_definitions/body/pregnant.json", "female"));
-  $('#body-child').replaceWith(createMaleAndFemaleHTML("sheet_definitions/body/child.json", false));
-  $('#eyes').replaceWith(createMaleAndFemaleHTML("sheet_definitions/eyes.json", false));
+  $('#body-human').replaceWith(createGeneralHTML("sheet_definitions/body/human.json", "male,female", true));
+  $('#body-reptile').replaceWith(createGeneralHTML("sheet_definitions/body/reptile.json", "male,female"));
+  $('#body-orc').replaceWith(createGeneralHTML("sheet_definitions/body/orc.json", "male,female"));
+  $('#body-wolfman').replaceWith(createGeneralHTML("sheet_definitions/body/wolfman.json", "male,female"));
+  $('#body-skeleton').replaceWith(createGeneralHTML("sheet_definitions/body/skeleton.json", "male,female"));
+  $('#body-special').replaceWith(createGeneralHTML("sheet_definitions/body/special.json", "male"));
+  $('#body-pregnant').replaceWith(createGeneralHTML("sheet_definitions/body/pregnant.json", "female"));
+  $('#body-child').replaceWith(createGeneralHTML("sheet_definitions/body/child.json", "child"));
 
-  $('#facial-bigstache').replaceWith(createMaleOrFemaleHTML("sheet_definitions/facial/bigstache.json", "male"));
+  $('#eyes').replaceWith(createGeneralHTML("sheet_definitions/eyes.json", "male,female"));
 
-  $('#hair-long_straight').replaceWith(createMaleAndFemaleHTML("sheet_definitions/hair/long_straight.json", false));
-  $('#hair-long_tied').replaceWith(createMaleAndFemaleHTML("sheet_definitions/hair/long_tied.json", false));
+  $('#beards-bigstache').replaceWith(createGeneralHTML("sheet_definitions/beards/bigstache.json", "male"));
+  $('#beards-mustache').replaceWith(createGeneralHTML("sheet_definitions/beards/mustache.json", "male"));
+  $('#beards-beard').replaceWith(createGeneralHTML("sheet_definitions/beards/beard.json", "male"));
 
-  $('#hair-idol').replaceWith(createMaleOrFemaleHTML("sheet_definitions/hair/idol.json", "male"));
+  $('#facial').replaceWith(createGeneralHTML("sheet_definitions/facial.json", "male,female"));
+
+  $('#shoes-armour').replaceWith(createGeneralHTML("sheet_definitions/shoes/armour.json", "male,female"));
+  $('#shoes-slippers').replaceWith(createGeneralHTML("sheet_definitions/shoes/slippers.json", "female"));
+  $('#shoes-shoes').replaceWith(createGeneralHTML("sheet_definitions/shoes/shoes.json", "male,female"));
+  $('#shoes-sara').replaceWith(createGeneralHTML("sheet_definitions/shoes/sara.json", "female"));
+  $('#shoes-hoofs').replaceWith(createGeneralHTML("sheet_definitions/shoes/hoofs.json", "male"));
+  $('#shoes-sandals').replaceWith(createGeneralHTML("sheet_definitions/shoes/sandals.json", "male,female"));
+
+  $('#hair-long_straight').replaceWith(createGeneralHTML("sheet_definitions/hair/long_straight.json", "male,female"));
+  $('#hair-long_tied').replaceWith(createGeneralHTML("sheet_definitions/hair/long_tied.json", "male,female"));
+  $('#hair-idol').replaceWith(createGeneralHTML("sheet_definitions/hair/idol.json", "male"));
 
   $("input[type=radio], input[type=checkbox]").attr('title', function() {
     var name = "";
@@ -44,6 +55,8 @@ $(document).ready(function() {
       name = $(this).data("file_male");
     } else if ($(this).data("file_female")) {
       name = $(this).data("file_female");
+    } else if ($(this).data("file_child")) {
+      name = $(this).data("file_child");
     }
     const creditEntry = getCreditFor(name);
     if (creditEntry) {
@@ -286,6 +299,7 @@ $(document).ready(function() {
       // Determine if male or female selected
       var isMale = $("#sex-male").prop("checked");
       var isFemale = $("#sex-female").prop("checked");
+      var isChild = $("#sex-child").prop("checked");
 
       // if data-file specified
       if ($(this).data("file")) {
@@ -340,6 +354,10 @@ $(document).ready(function() {
         if (fileName.includes("/wolf/")) {
           wolfmanBody = fileName.replace("body/female/wolf/", "")+"female";
         }
+      }
+      if (isChild && $(this).data("file_child")) {
+        var img = getImage($(this).data("file_child"));
+        drawImage(ctx, img);
       }
       addCreditFor(fileName);
     });
@@ -440,15 +458,17 @@ $(document).ready(function() {
       }
     });
     $("li").each(function(index) {
-
       if ($(this).data("required")) {
         console.log("toggleVisibility");
         var isMale = $("#sex-male").prop("checked");
         var isFemale = $("#sex-female").prop("checked");
+        var isChild = $("#sex-child").prop("checked");
         var requiredType = $(this).data("required").split(",");
-        if (isMale && !requiredType.includes('sex=male')) {
+        if (isMale && !requiredType.includes('male')) {
           $(this).prop("style", "display:none");
-        } else if (isFemale && !requiredType.includes('sex=female')) {
+        } else if (isFemale && !requiredType.includes('female')) {
+          $(this).prop("style", "display:none");
+        } else if (isChild && !requiredType.includes('child')) {
           $(this).prop("style", "display:none");
         } else  {
           $(this).prop("style", "");
@@ -577,12 +597,12 @@ $(document).ready(function() {
         };
         if ($(this).data("file"))
         img = getImage2($(this).data("file"), callback);
+        if ($(this).data("file_child"))
+        img = getImage2($(this).data("file_child"), callback);
         else if ($(this).data("file_male"))
         img = getImage2($(this).data("file_male"), callback);
         else if ($(this).data("file_female"))
         img = getImage2($(this).data("file_female"), callback);
-        else if ($(this).data("file_male_light"))
-        img = getImage2($(this).data("file_male_light"), callback);
         else if ($(this).data("file_no_hat"))
         img = getImage2($(this).data("file_no_hat"), callback);
         if (img != null) {

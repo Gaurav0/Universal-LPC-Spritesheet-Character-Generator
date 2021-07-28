@@ -1,8 +1,10 @@
 {
   "name" : "Long straight",
   "type_name" : "hair",
-  "file_male_path" : "hair/male/long_straight/",
-  "file_female_path" : "hair/female/long_straight/",
+  "file" : {
+    "male" : "hair/male/long_straight/",
+    "female" : "hair/female/long_straight/"
+  },
   "variants": [
     "black",
     "blonde",

@@ -1,8 +1,10 @@
 {
   "name" : "Orc",
   "type_name" : "body",
-  "file_male_path" : "body/male/orcs/",
-  "file_female_path" : "body/female/orcs/",
+  "file" : {
+    "male" : "body/male/orcs/",
+    "female" : "body/female/orcs/"
+  },
   "variants": [
     "gray",
     "green 1",

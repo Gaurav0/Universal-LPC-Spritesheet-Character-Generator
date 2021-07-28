@@ -1,8 +1,10 @@
 {
   "name" : "Long tied",
   "type_name" : "hair",
-  "file_male_path" : "hair/male/long_tied/",
-  "file_female_path" : "hair/female/long_tied/",
+  "file" : {
+    "male" : "hair/male/long_tied/",
+    "female" : "hair/female/long_tied/"
+  },
   "variants": [
     "black",
     "blonde",

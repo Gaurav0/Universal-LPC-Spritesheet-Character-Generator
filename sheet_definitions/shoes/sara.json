@@ -1,0 +1,10 @@
+{
+  "name" : "Sara",
+  "type_name" : "shoes",
+  "file" : {
+    "female" : "feet/shoes/female/"
+  },
+  "variants": [
+    "sara"
+  ]
+}

@@ -1,7 +1,9 @@
 {
   "name" : "Special",
   "type_name" : "body",
-  "file_path" : "body/male/special/",
+  "file" : {
+    "male" : "body/male/special/"
+  },
   "variants": [
     "muscular white",
     "muscular white v2",

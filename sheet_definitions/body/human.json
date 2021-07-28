@@ -1,8 +1,10 @@
 {
   "name" : "Humanlike",
   "type_name" : "body",
-  "file_male_path" : "body/male/human/",
-  "file_female_path" : "body/female/human/",
+  "file" : {
+    "male" : "body/male/human/",
+    "female" : "body/female/human/"
+  },
   "variants": [
     "white",
     "black",

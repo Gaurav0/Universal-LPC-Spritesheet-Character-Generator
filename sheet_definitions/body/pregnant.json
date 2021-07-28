@@ -1,7 +1,9 @@
 {
   "name" : "Pregnant",
   "type_name" : "body",
-  "file_path" : "body/female/pregnant/",
+  "file" : {
+    "female" : "body/female/pregnant/"
+  },
   "variants": [
     "coffee",
     "comet",

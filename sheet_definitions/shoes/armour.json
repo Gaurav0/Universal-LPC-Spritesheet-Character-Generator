@@ -1,0 +1,16 @@
+{
+  "name" : "Armour",
+  "type_name" : "shoes",
+  "file" : {
+    "male" : "feet/armor/male/",
+    "female" : "feet/armor/female/"
+  },
+  "variants": [
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+  ]
+}

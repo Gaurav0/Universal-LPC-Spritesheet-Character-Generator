@@ -1,8 +1,10 @@
 {
   "name" : "Wolfman",
   "type_name" : "body",
-  "file_male_path" : "body/male/wolf/",
-  "file_female_path" : "body/female/wolf/",
+  "file" : {
+    "male" : "body/male/wolf/",
+    "female" : "body/female/wolf/"
+  },
   "variants": [
     "black",
     "brown",

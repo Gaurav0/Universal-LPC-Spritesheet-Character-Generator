@@ -1,8 +1,10 @@
 {
   "name" : "Eyes",
   "type_name" : "eyes",
-  "file_male_path" : "eyes/male/",
-  "file_female_path" : "eyes/female/",
+  "file" : {
+    "male" : "eyes/male/",
+    "female" : "eyes/female/"
+  },
   "variants": [
     "blue",
     "brown",

@@ -1,8 +1,10 @@
 {
   "name" : "Skeleton",
   "type_name" : "body",
-  "file_male_path" : "body/skeleton/",
-  "file_female_path" : "body/skeleton/",
+  "file" : {
+    "male" : "body/skeleton/",
+    "female" : "body/skeleton/"
+  },
   "variants": [
     "beige",
     "gray",

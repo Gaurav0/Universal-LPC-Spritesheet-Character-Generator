@@ -1,0 +1,16 @@
+{
+  "name" : "Facial",
+  "type_name" : "facial",
+  "file" : {
+    "male" : "facial/",
+    "female" : "facial/"
+  },
+  "variants": [
+    "glasses",
+    "mask dark",
+    "mask white",
+    "monocle",
+    "patch",
+    "sunglasses"
+  ]
+}

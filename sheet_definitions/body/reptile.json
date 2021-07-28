@@ -1,8 +1,10 @@
 {
   "name" : "Reptile",
   "type_name" : "body",
-  "file_male_path" : "body/male/reptiles/",
-  "file_female_path" : "body/female/reptiles/",
+  "file" : {
+    "male" : "body/male/reptiles/",
+    "female" : "body/female/reptiles/"
+  },
   "variants": [
     "red winged",
     "blue winged",
