@@ -2,7 +2,8 @@
   "name" : "Sara",
   "type_name" : "shoes",
   "file" : {
-    "female" : "feet/shoes/female/"
+    "female" : "feet/shoes/female/",
+    "pregnant" : "feet/shoes/female/"
   },
   "variants": [
     "sara"

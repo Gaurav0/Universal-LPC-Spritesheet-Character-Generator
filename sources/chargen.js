@@ -25,27 +25,41 @@ $(document).ready(function() {
   $('#body-wolfman').replaceWith(createGeneralHTML("sheet_definitions/body/wolfman.json", "male,female"));
   $('#body-skeleton').replaceWith(createGeneralHTML("sheet_definitions/body/skeleton.json", "male,female"));
   $('#body-special').replaceWith(createGeneralHTML("sheet_definitions/body/special.json", "male"));
-  $('#body-pregnant').replaceWith(createGeneralHTML("sheet_definitions/body/pregnant.json", "female"));
+  $('#body-pregnant').replaceWith(createGeneralHTML("sheet_definitions/body/pregnant.json", "pregnant"));
+  $('#body-muscular').replaceWith(createGeneralHTML("sheet_definitions/body/muscular.json", "muscular"));
   $('#body-child').replaceWith(createGeneralHTML("sheet_definitions/body/child.json", "child"));
 
-  $('#eyes').replaceWith(createGeneralHTML("sheet_definitions/eyes.json", "male,female"));
+  $('#eyes').replaceWith(createGeneralHTML("sheet_definitions/eyes.json", "male,female,muscular,pregnant"));
 
-  $('#beards-bigstache').replaceWith(createGeneralHTML("sheet_definitions/beards/bigstache.json", "male"));
-  $('#beards-mustache').replaceWith(createGeneralHTML("sheet_definitions/beards/mustache.json", "male"));
-  $('#beards-beard').replaceWith(createGeneralHTML("sheet_definitions/beards/beard.json", "male"));
+  $('#beards-bigstache').replaceWith(createGeneralHTML("sheet_definitions/beards/bigstache.json", "male,muscular"));
+  $('#beards-mustache').replaceWith(createGeneralHTML("sheet_definitions/beards/mustache.json", "male,muscular"));
+  $('#beards-beard').replaceWith(createGeneralHTML("sheet_definitions/beards/beard.json", "male,muscular"));
 
-  $('#facial').replaceWith(createGeneralHTML("sheet_definitions/facial.json", "male,female"));
+  $('#facial').replaceWith(createGeneralHTML("sheet_definitions/facial.json", "male,female,muscular,pregnant"));
 
-  $('#shoes-armour').replaceWith(createGeneralHTML("sheet_definitions/shoes/armour.json", "male,female"));
-  $('#shoes-slippers').replaceWith(createGeneralHTML("sheet_definitions/shoes/slippers.json", "female"));
-  $('#shoes-shoes').replaceWith(createGeneralHTML("sheet_definitions/shoes/shoes.json", "male,female"));
-  $('#shoes-sara').replaceWith(createGeneralHTML("sheet_definitions/shoes/sara.json", "female"));
-  $('#shoes-hoofs').replaceWith(createGeneralHTML("sheet_definitions/shoes/hoofs.json", "male"));
-  $('#shoes-sandals').replaceWith(createGeneralHTML("sheet_definitions/shoes/sandals.json", "male,female"));
+  $('#shoes-armour').replaceWith(createGeneralHTML("sheet_definitions/shoes/armour.json", "male,female,muscular,pregnant"));
+  $('#shoes-slippers').replaceWith(createGeneralHTML("sheet_definitions/shoes/slippers.json", "female,pregnant"));
+  $('#shoes-shoes').replaceWith(createGeneralHTML("sheet_definitions/shoes/shoes.json", "male,female,muscular,pregnant"));
+  $('#shoes-sara').replaceWith(createGeneralHTML("sheet_definitions/shoes/sara.json", "female,pregnant"));
+  $('#shoes-hoofs').replaceWith(createGeneralHTML("sheet_definitions/shoes/hoofs.json", "male,muscular"));
+  $('#shoes-sandals').replaceWith(createGeneralHTML("sheet_definitions/shoes/sandals.json", "male,female,muscular,pregnant"));
 
-  $('#hair-long_straight').replaceWith(createGeneralHTML("sheet_definitions/hair/long_straight.json", "male,female"));
-  $('#hair-long_tied').replaceWith(createGeneralHTML("sheet_definitions/hair/long_tied.json", "male,female"));
-  $('#hair-idol').replaceWith(createGeneralHTML("sheet_definitions/hair/idol.json", "male"));
+  $('#legs-dress').replaceWith(createGeneralHTML("sheet_definitions/legs/dress.json", "female"));
+  $('#legs-widepants').replaceWith(createGeneralHTML("sheet_definitions/legs/widepants.json", "muscular"));
+  $('#legs-pantalons').replaceWith(createGeneralHTML("sheet_definitions/legs/pantalons.json", "male"));
+  $('#legs-pants').replaceWith(createGeneralHTML("sheet_definitions/legs/pants.json", "male,female"));
+  $('#legs-pregnantpants').replaceWith(createGeneralHTML("sheet_definitions/legs/pregnantpants.json", "pregnant"));
+  $('#legs-leggings').replaceWith(createGeneralHTML("sheet_definitions/legs/leggings.json", "female"));
+  $('#legs-childpants').replaceWith(createGeneralHTML("sheet_definitions/legs/childpants.json", "child"));
+  $('#legs-childskirts').replaceWith(createGeneralHTML("sheet_definitions/legs/childskirts.json", "child"));
+  $('#legs-skirts').replaceWith(createGeneralHTML("sheet_definitions/legs/skirts.json", "male,female"));
+  $('#legs-armour').replaceWith(createGeneralHTML("sheet_definitions/legs/armour.json", "male,female"));
+
+  $('#boots').replaceWith(createGeneralHTML("sheet_definitions/shoes/boots.json", "female,pregnant"));
+
+  $('#hair-long_straight').replaceWith(createGeneralHTML("sheet_definitions/hair/long_straight.json", "male,female,muscular,pregnant"));
+  $('#hair-long_tied').replaceWith(createGeneralHTML("sheet_definitions/hair/long_tied.json", "male,female,muscular,pregnant"));
+  $('#hair-idol').replaceWith(createGeneralHTML("sheet_definitions/hair/idol.json", "male,muscular"));
 
   $("input[type=radio], input[type=checkbox]").attr('title', function() {
     var name = "";
@@ -57,6 +71,10 @@ $(document).ready(function() {
       name = $(this).data("file_female");
     } else if ($(this).data("file_child")) {
       name = $(this).data("file_child");
+    } else if ($(this).data("file_muscular")) {
+      name = $(this).data("file_muscular");
+    } else if ($(this).data("file_pregnant")) {
+      name = $(this).data("file_pregnant");
     }
     const creditEntry = getCreditFor(name);
     if (creditEntry) {
@@ -300,6 +318,8 @@ $(document).ready(function() {
       var isMale = $("#sex-male").prop("checked");
       var isFemale = $("#sex-female").prop("checked");
       var isChild = $("#sex-child").prop("checked");
+      var isMuscular = $("#sex-muscular").prop("checked");
+      var isPregnant = $("#sex-pregnant").prop("checked");
 
       // if data-file specified
       if ($(this).data("file")) {
@@ -344,9 +364,7 @@ $(document).ready(function() {
           wolfmanBody = fileName.replace("body/male/wolf/", "")+"male";
         }
       }
-      if (isMale && fileName.includes("/boarman.png")) {
-        isBoar = true;
-      }
+
       if (isFemale && $(this).data("file_female")) {
         var img = getImage($(this).data("file_female"));
         drawImage(ctx, img);
@@ -359,6 +377,18 @@ $(document).ready(function() {
         var img = getImage($(this).data("file_child"));
         drawImage(ctx, img);
       }
+      if (isPregnant && $(this).data("file_pregnant")) {
+        var img = getImage($(this).data("file_pregnant"));
+        drawImage(ctx, img);
+      }
+      if (isMuscular && $(this).data("file_muscular")) {
+        var img = getImage($(this).data("file_muscular"));
+        drawImage(ctx, img);
+        if (fileName.includes("/boarman.png")) {
+          isBoar = true;
+        }
+      }
+
       addCreditFor(fileName);
     });
 
@@ -391,7 +421,11 @@ $(document).ready(function() {
         var name = "";
         if ($("#sex-male").prop("checked") && $(this).data("file_male")) {
           name = $(this).data("file_male");
-        }else if ($("#sex-female").prop("checked") && $(this).data("file_female")) {
+        } else if ($("#sex-muscular").prop("checked") && $(this).data("file_muscular")) {
+          name = $(this).data("file_muscular");
+        } else if ($("#sex-pregnant").prop("checked") && $(this).data("file_pregnant")) {
+          name = $(this).data("file_pregnant");
+        } else if ($("#sex-female").prop("checked") && $(this).data("file_female")) {
           name = $(this).data("file_female");
         }
         if (name.includes("flail") || name.includes("halberd") || name.includes("waraxe") || name.includes("rapier") || name.includes("saber") || name.includes("glowsword") || name.includes("scythe") || name.includes("mace") || name.includes("longsword")) {
@@ -410,10 +444,16 @@ $(document).ready(function() {
           if ($("#sex-male").prop("checked") && $(this).data("file_male")) {
             var img = getImage($(this).data("file_male"));
             ctx.drawImage(img, 0, 1344);
-          }else if ($("#sex-female").prop("checked") && $(this).data("file_female")) {
+          } else if ($("#sex-female").prop("checked") && $(this).data("file_female")) {
             var img = getImage($(this).data("file_female"));
             ctx.drawImage(img, 0, 1344);
-          }else if ($(this).data("file")) {
+          } else if ($("#sex-muscular").prop("checked") && $(this).data("file_muscular")) {
+            var img = getImage($(this).data("file_muscular"));
+            ctx.drawImage(img, 0, 1344);
+          } else if ($("#sex-pregnant").prop("checked") && $(this).data("file_pregnant")) {
+            var img = getImage($(this).data("file_pregnant"));
+            ctx.drawImage(img, 0, 1344);
+          } else if ($(this).data("file")) {
             var img = getImage($(this).data("file"));
             ctx.drawImage(img, 0, 1344);
           }
@@ -426,10 +466,16 @@ $(document).ready(function() {
           if ($("#sex-male").prop("checked") && $(this).data("file_male")) {
             var img = getImage($(this).data("file_male"));
             ctx.drawImage(img, 0, 1344);
-          }else if ($("#sex-female").prop("checked") && $(this).data("file_female")) {
+          } else if ($("#sex-female").prop("checked") && $(this).data("file_female")) {
             var img = getImage($(this).data("file_female"));
             ctx.drawImage(img, 0, 1344);
-          }else if ($(this).data("file")) {
+          } else if ($("#sex-muscular").prop("checked") && $(this).data("file_muscular")) {
+            var img = getImage($(this).data("file_muscular"));
+            ctx.drawImage(img, 0, 1344);
+          } else if ($("#sex-pregnant").prop("checked") && $(this).data("file_pregnant")) {
+            var img = getImage($(this).data("file_pregnant"));
+            ctx.drawImage(img, 0, 1344);
+          } else if ($(this).data("file")) {
             var img = getImage($(this).data("file"));
             ctx.drawImage(img, 0, 1344);
           }
@@ -459,16 +505,21 @@ $(document).ready(function() {
     });
     $("li").each(function(index) {
       if ($(this).data("required")) {
-        console.log("toggleVisibility");
         var isMale = $("#sex-male").prop("checked");
         var isFemale = $("#sex-female").prop("checked");
         var isChild = $("#sex-child").prop("checked");
+        var isPregnant = $("#sex-pregnant").prop("checked");
+        var isMuscular = $("#sex-muscular").prop("checked");
         var requiredType = $(this).data("required").split(",");
         if (isMale && !requiredType.includes('male')) {
           $(this).prop("style", "display:none");
         } else if (isFemale && !requiredType.includes('female')) {
           $(this).prop("style", "display:none");
         } else if (isChild && !requiredType.includes('child')) {
+          $(this).prop("style", "display:none");
+        } else if (isPregnant && !requiredType.includes('pregnant')) {
+          $(this).prop("style", "display:none");
+        } else if (isMuscular && !requiredType.includes('muscular')) {
           $(this).prop("style", "display:none");
         } else  {
           $(this).prop("style", "");
@@ -603,6 +654,10 @@ $(document).ready(function() {
         img = getImage2($(this).data("file_male"), callback);
         else if ($(this).data("file_female"))
         img = getImage2($(this).data("file_female"), callback);
+        else if ($(this).data("file_muscular"))
+        img = getImage2($(this).data("file_muscular"), callback);
+        else if ($(this).data("file_pregnant"))
+        img = getImage2($(this).data("file_pregnant"), callback);
         else if ($(this).data("file_no_hat"))
         img = getImage2($(this).data("file_no_hat"), callback);
         if (img != null) {

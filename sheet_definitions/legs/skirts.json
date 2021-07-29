@@ -1,0 +1,14 @@
+{
+  "name" : "Skirts",
+  "type_name" : "legs",
+  "file" : {
+    "male" : "legs/skirts/male/",
+    "female" : "legs/skirts/female/"
+  },
+  "variants": [
+    "legion",
+    "brown",
+    "black",
+    "white"
+  ]
+}

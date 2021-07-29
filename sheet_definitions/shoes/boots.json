@@ -1,0 +1,12 @@
+{
+  "name" : "Boots",
+  "type_name" : "shoes",
+  "file" : {
+    "female" : "feet/boots/female/",
+    "pregnant" : "feet/boots/female/"
+  },
+  "variants": [
+    "black",
+    "brown"
+  ]
+}

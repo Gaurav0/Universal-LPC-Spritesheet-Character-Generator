@@ -1,0 +1,19 @@
+{
+  "name" : "Child skirts",
+  "type_name" : "legs",
+  "file" : {
+    "child" : "legs/skirts/child/"
+  },
+  "variants": [
+    "black",
+    "blue",
+    "darkblue",
+    "green",
+    "lavender",
+    "lightblue",
+    "maroon",
+    "pink",
+    "red",
+    "white"
+  ]
+}

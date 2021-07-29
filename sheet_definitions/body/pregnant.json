@@ -2,7 +2,7 @@
   "name" : "Pregnant",
   "type_name" : "body",
   "file" : {
-    "female" : "body/female/pregnant/"
+    "pregnant" : "body/pregnant/"
   },
   "variants": [
     "coffee",

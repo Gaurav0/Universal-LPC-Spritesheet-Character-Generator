@@ -1,0 +1,13 @@
+{
+  "name" : "Dress",
+  "type_name" : "legs",
+  "file" : {
+    "female" : "legs/dress/female/"
+  },
+  "variants": [
+    "black",
+    "blue",
+    "red",
+    "white"
+  ]
+}

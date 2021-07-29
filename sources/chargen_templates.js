@@ -28,6 +28,10 @@ function createGeneralHTML(json, requiredSex, checkFirst) {
         file = definition.file.female
       } else if (requiredSexes[sexIdx] === 'child') {
         file = definition.file.child
+      } else if (requiredSexes[sexIdx] === 'muscular') {
+        file = definition.file.muscular
+      } else if (requiredSexes[sexIdx] === 'pregnant') {
+        file = definition.file.pregnant
       }
       dataFiles += "data-file_" + requiredSexes[sexIdx] + "=\"" + file + itemName.replaceAll(" ", "_") + ".png\" ";
       sexIdx += 1;

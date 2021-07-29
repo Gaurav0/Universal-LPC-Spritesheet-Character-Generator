@@ -3,7 +3,9 @@
   "type_name" : "shoes",
   "file" : {
     "female" : "feet/sandals/female/",
-    "male" : "feet/sandals/male/"
+    "pregnant" : "feet/sandals/female/",
+    "male" : "feet/sandals/male/",
+    "muscular" : "feet/sandals/male/"
   },
   "variants": [
     "brown"

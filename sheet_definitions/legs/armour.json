@@ -1,0 +1,16 @@
+{
+  "name" : "Armour",
+  "type_name" : "legs",
+  "file" : {
+    "male" : "legs/armour/male/",
+    "female" : "legs/armour/female/"
+  },
+  "variants": [
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12"
+  ]
+}

@@ -79,6 +79,14 @@
 					<label for="sex-child">Child</label>
 				</li>
 				<li>
+					<input type="radio" id="sex-pregnant" name="sex">
+					<label for="sex-pregnant">Pregnant</label>
+				</li>
+				<li>
+					<input type="radio" id="sex-muscular" name="sex">
+					<label for="sex-muscular">Muscular</label>
+				</li>
+				<li>
 					<span class="condensed">Body</span>
 					<ul>
 						<div id="body-human"></div>
@@ -87,34 +95,35 @@
 						<div id="body-wolfman"></div>
 						<div id="body-skeleton"></div>
 						<div id="body-pregnant"></div>
+						<div id="body-muscular"></div>
 						<div id="body-special"></div>
 						<div id="body-child"></div>
 					</ul>
 				</li>
-				<li>
+				<li data-required="male,female,muscular,pregnant">
 					<input type="checkbox" id="ribs_blood" name="ribs_blood" data-file="body/wounds/ribs_blood.png">
 					<label for="ribs_blood">Ribs wound</label>
 				</li>
-				<li>
+				<li data-required="male,female,muscular,pregnant">
 					<input type="checkbox" id="brain_blood" name="brain_blood" data-file="body/wounds/brain_blood.png">
 					<label for="brain_blood">Brain wound</label>
 				</li>
-				<li>
+				<li data-required="male,female,muscular,pregnant">
 					<input type="checkbox" id="arm_blood" name="arm_blood" data-file="body/wounds/arm_blood.png">
 					<label for="arm_blood">Arm wound</label>
 				</li>
-				<li>
+				<li data-required="male,female,muscular,pregnant">
 					<input type="checkbox" id="mouth_blood" name="mouth_blood" data-file="body/wounds/mouth_blood.png">
 					<label for="mouth_blood">Mouth wound</label>
 				</li>
-				<li>
+				<li data-required="male,female,muscular,pregnant">
 					<input type="checkbox" id="eye_blood" name="eye_blood" data-file="body/wounds/eye_blood.png">
 					<label for="eye_blood">Eye wound</label>
 				</li>
 
 				<div id="eyes"></div>
 
-				<li>
+				<li data-required="male,muscular">
 					<span class="condensed">Beards</span>
 					<ul>
 						<div id="beards-beard"></div>
@@ -125,7 +134,7 @@
 
 				<div id="facial"></div>
 
-				<li>
+				<li data-required="male,female,muscular,pregnant">
 					<span class="condensed">Shoes</span>
 					<ul>
 						<div id="shoes-armour"></div>
@@ -136,253 +145,25 @@
 						<div id="shoes-sara"></div>
 					</ul>
 				</li>
+
 				<li>
 					<span class="condensed">Legs</span>
 					<ul>
-						<li>
-							<span class="condensed">Tight Dress <small>(Female)</small></span>
-							<ul>
-								<li>
-									<input type="radio" id="dress-dress_black" name="legs" data-required="sex=female" data-file="torso/shirts/dress/TightDress_black.png">
-									<label for="clothes-dress_black">Black</label>
-								</li>
-								<li>
-									<input type="radio" id="dress-dress_blue" name="legs" data-required="sex=female" data-file="torso/shirts/dress/TightDress_lightblue.png">
-									<label for="clothes-dress_blue">Blue</label>
-								</li>
-								<li>
-									<input type="radio" id="dress-dress_red" name="legs" data-required="sex=female" data-file="torso/shirts/dress/TightDress_red.png">
-									<label for="clothes-dress_red">Red</label>
-								</li>
-								<li>
-									<input type="radio" id="dress-dress_white" name="legs" data-required="sex=female" data-file="torso/shirts/dress/TightDress_white.png">
-									<label for="clothes-dress_white">White</label>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<span class="condensed">Pants</small></span>
-							<ul>
-								<li>
-									<input type="radio" id="legs-Pants_black_L" name="legs" data-file="legs/pants/Pants_black.png">
-									<label for="legs-Pants_black_L">Large Black <small>(Male)</small></label>
-								</li>
-								<li>
-									<input type="radio" id="legs-Pants_blue_L" name="legs" data-file="legs/pants/Pants_blue.png">
-									<label for="legs-Pants_blue_L">Large Blue <small>(Male)</small></label>
-								</li>
-								<li>
-									<input type="radio" id="legs-Pants_brown_L" name="legs" data-file="legs/pants/Pants_brown.png">
-									<label for="legs-Pants_brown_L">Large brown <small>(Male)</small></label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_formal" name="legs" data-required="sex=male" data-file_male="legs/pants/male/formal_pants.png">
-									<label for="legs-pants_formal">Formal</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_formal_stripes" name="legs" data-required="sex=male" data-file_male="legs/pants/male/formal_pants stripes.png">
-									<label for="legs-pants_formal_stripes">Formal stripes</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_furbrown" name="legs" data-required="sex=male" data-file_male="legs/pants/male/furbrown.png">
-									<label for="legs-pants_furbrown">Fur brown</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_musc_white" name="legs" data-file_male="legs/pants/male/musc_pants_white.png">
-									<label for="legs-pants_musc_white">Muscular white</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_black" name="legs" data-file_male="legs/pants/male/male_pants_black.png">
-									<label for="legs-pants_black">Black</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_blue" name="legs" data-file_male="legs/pants/male/male_pants_blue.png">
-									<label for="legs-pants_blue">blue</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_brown" name="legs" data-file_male="legs/pants/male/male_pants_brown.png">
-									<label for="legs-pants_brown">brown</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_green" name="legs" data-file_male="legs/pants/male/male_pants_green.png">
-									<label for="legs-pants_green">green</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_purple" name="legs" data-file_male="legs/pants/male/male_pants_purple.png">
-									<label for="legs-pants_purple">purple</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_red" name="legs" data-file_male="legs/pants/male/male_pants_red.png">
-									<label for="legs-pants_red">red</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_yellow" name="legs" data-file_male="legs/pants/male/male_pants_yellow.png">
-									<label for="legs-pants_yellow">yellow</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_magenta" name="legs" data-file_male="legs/pants/male/magenta_pants_male.png" data-file_female="legs/pants/female/magenta_pants_female.png">
-									<label for="legs-pants_magenta">Magenta</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_red" name="legs" data-file_male="legs/pants/male/red_pants_male.png" data-file_female="legs/pants/female/red_pants_female.png">
-									<label for="legs-pants_red">Red</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_teal" name="legs" data-file_male="legs/pants/male/teal_pants_male.png" data-file_female="legs/pants/female/teal_pants_female.png">
-									<label for="legs-pants_teal">Teal</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_white" name="legs" data-file_male="legs/pants/male/white_pants_male.png" data-file_female="legs/pants/female/white_pants_female.png">
-									<label for="legs-pants_white">White</label>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<span class="condensed">Pregnant</small></span>
-							<ul>
-								<li>
-									<input type="radio" id="legs-pants_pregnant_black" name="legs" data-file="legs/pregnant/legs-pants_pregnant_black.png">
-									<label for="legs-pants_pregnant_black">Black</label>
-								</li>
+						<div id="legs-armour"></div>
+						<div id="legs-dress"></div>
+						<div id="legs-widepants"></div>
+						<div id="legs-pants"></div>
+						<div id="legs-pantalons"></div>
+						<div id="legs-leggings"></div>
+						<div id="legs-pregnantpants"></div>
+						<div id="legs-childpants"></div>
+						<div id="legs-childskirts"></div>
+						<div id="legs-skirts"></div>
+					</ul>
+				</li>
 
-								<li>
-									<input type="radio" id="legs-pants_pregnant_blue" name="legs" data-file="legs/pregnant/legs-pants_pregnant_blue.png">
-									<label for="legs-pants_pregnant_blue">Blue</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_pregnant_forest" name="legs" data-file="legs/pregnant/legs-pants_pregnant_forest.png">
-									<label for="legs-pants_pregnant_forest">Forest</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_pregnant_gray" name="legs" data-file="legs/pregnant/legs-pants_pregnant_gray.png">
-									<label for="legs-pants_pregnant_gray">Gray</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_pregnant_green" name="legs" data-file="legs/pregnant/legs-pants_pregnant_green.png">
-									<label for="legs-pants_pregnant_green">Green</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_pregnant_lavender" name="legs" data-file="legs/pregnant/legs-pants_pregnant_lavender.png">
-									<label for="legs-pants_pregnant_lavender">Lavender</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_pregnant_leather" name="legs" data-file="legs/pregnant/legs-pants_pregnant_leather.png">
-									<label for="legs-pants_pregnant_leather">Leather</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_pregnant_maroon" name="legs" data-file="legs/pregnant/legs-pants_pregnant_maroon.png">
-									<label for="legs-pants_pregnant_maroon">Maroon</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_pregnant_navy" name="legs" data-file="legs/pregnant/legs-pants_pregnant_navy.png">
-									<label for="legs-pants_pregnant_navy">Navy</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_pregnant_orange" name="legs" data-file="legs/pregnant/legs-pants_pregnant_orange.png">
-									<label for="legs-pants_pregnant_orange">Orange</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_pregnant_pink" name="legs" data-file="legs/pregnant/legs-pants_pregnant_pink.png">
-									<label for="legs-pants_pregnant_pink">Pink</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_pregnant_purple" name="legs" data-file="legs/pregnant/legs-pants_pregnant_purple.png">
-									<label for="legs-pants_pregnant_purple">Purple</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_pregnant_red" name="legs" data-file="legs/pregnant/legs-pants_pregnant_red.png">
-									<label for="legs-pants_pregnant_red">Red</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_pregnant_sky" name="legs" data-file="legs/pregnant/legs-pants_pregnant_sky.png">
-									<label for="legs-pants_pregnant_sky">Sky</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_pregnant_tan" name="legs" data-file="legs/pregnant/legs-pants_pregnant_tan.png">
-									<label for="legs-pants_pregnant_tan">Tan</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_pregnant_teal" name="legs" data-file="legs/pregnant/legs-pants_pregnant_teal.png">
-									<label for="legs-pants_pregnant_teal">Teal</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_pregnant_walnut" name="legs" data-file="legs/pregnant/legs-pants_pregnant_walnut.png">
-									<label for="legs-pants_pregnant_walnut">Walnut</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_pregnant_white" name="legs" data-file="legs/pregnant/legs-pants_pregnant_white.png">
-									<label for="legs-pants_pregnant_white">White</label>
-								</li>
-								<li>
-									<input type="radio" id="legs-pants_pregnant_yellow" name="legs" data-file="legs/pregnant/legs-pants_pregnant_yellow.png">
-									<label for="legs-pants_pregnant_yellow">Yellow</label>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<span class="condensed">Child pants</small></span>
-							<ul>
-								<li><input type="radio" id="legs-Child_pants_blue" name="legs" data-file="legs/pants/Child_pants_blue.png"><label for="legs-Child_pants_blue">child blue</label></li>
-								<li><input type="radio" id="legs-Child_pants_red" name="legs" data-file="legs/pants/Child_pants_red.png"><label for="legs-Child_pants_red">child red</label></li>
-								<li><input type="radio" id="legs-Child_pants_lightblue" name="legs" data-file="legs/pants/Child_pants_lightblue.png"><label for="legs-Child_pants_lightblue">child lightblue</label></li>
-								<li><input type="radio" id="legs-Child_pants_darkblue" name="legs" data-file="legs/pants/Child_pants_darkblue.png"><label for="legs-Child_pants_darkblue">child darkblue</label></li>
-								<li><input type="radio" id="legs-Child_pants_maroon" name="legs" data-file="legs/pants/Child_pants_maroon.png"><label for="legs-Child_pants_maroon">child maroon</label></li>
-								<li><input type="radio" id="legs-Child_pants_black" name="legs" data-file="legs/pants/Child_pants_black.png"><label for="legs-Child_pants_black">child black</label></li>
-								<li><input type="radio" id="legs-Child_pants_green" name="legs" data-file="legs/pants/Child_pants_green.png"><label for="legs-Child_pants_green">child green</label></li>
-								<li><input type="radio" id="legs-Child_pants_brown" name="legs" data-file="legs/pants/Child_pants_brown.png"><label for="legs-Child_pants_brown">child brown</label></li>
-								<li><input type="radio" id="legs-Child_pants_white" name="legs" data-file="legs/pants/Child_pants_white.png"><label for="legs-Child_pants_white">child white</label></li>
-							</ul>
-						</li>
-						<li>
-							<span class="condensed">Child skirt</small></span>
-							<ul>
-								<li><input type="radio" id="legs-Child_skirt_lightblue" name="legs" data-file="legs/skirt/Child_skirt_lightblue.png"><label for="legs-Child_skirt_lightblue">child lightblue</label></li>
-								<li><input type="radio" id="legs-Child_skirt_maroon" name="legs" data-file="legs/skirt/Child_skirt_maroon.png"><label for="legs-Child_skirt_maroon">child maroon</label></li>
-								<li><input type="radio" id="legs-Child_skirt_black" name="legs" data-file="legs/skirt/Child_skirt_black.png"><label for="legs-Child_skirt_black">child black</label></li>
-								<li><input type="radio" id="legs-Child_skirt_green" name="legs" data-file="legs/skirt/Child_skirt_green.png"><label for="legs-Child_skirt_green">child green</label></li>
-								<li><input type="radio" id="legs-Child_skirt_red" name="legs" data-file="legs/skirt/Child_skirt_red.png"><label for="legs-Child_skirt_red">child red</label></li>
-								<li><input type="radio" id="legs-Child_skirt_lavender" name="legs" data-file="legs/skirt/Child_skirt_lavender.png"><label for="legs-Child_skirt_lavender">child lavender</label></li>
-								<li><input type="radio" id="legs-Child_skirt_pink" name="legs" data-file="legs/skirt/Child_skirt_pink.png"><label for="legs-Child_skirt_pink">child pink</label></li>
-								<li><input type="radio" id="legs-Child_skirt_blue" name="legs" data-file="legs/skirt/Child_skirt_blue.png"><label for="legs-Child_skirt_blue">child blue</label></li>
-								<li><input type="radio" id="legs-Child_skirt_darkblue" name="legs" data-file="legs/skirt/Child_skirt_darkblue.png"><label for="legs-Child_skirt_darkblue">child darkblue</label></li>
-								<li><input type="radio" id="legs-Child_skirt_white" name="legs" data-file="legs/skirt/Child_skirt_white.png"><label for="legs-Child_skirt_white">child white</label></li>
-							</ul>
-						</li>
-						<li>
-							<input type="radio" id="legs-legionSkirt" name="legs" data-file_male="legs/skirt/Male_legionSkirt.png" data-file_female="legs/skirt/Female_legionSkirt.png">
-							<label for="legs-legionSkirt">Legion Skirt</label>
-						</li>
-						<li>
-							<input type="radio" id="legs-robeMale" name="legs" data-file_male="legs/skirt/male_robe_bottom_dark.png" data-file_female="legs/skirt/male_robe_bottom_dark.png">
-							<label for="legs-robeMale">Male robe</label>
-						</li>
-						<li>
-							<input type="radio" id="legs-robeMaleW" name="legs" data-file_male="legs/skirt/male_robe_bottom_white.png" data-file_female="legs/skirt/male_robe_bottom_white.png">
-							<label for="legs-robeMaleW">Male robe white</label>
-						</li>
-						<li>
-							<input type="radio" id="legs-robe_skirt" name="legs" data-file_male="legs/skirt/male/robe_skirt_male.png" data-file_female="legs/skirt/female/legs_skirt_female.png">
-							<label for="legs-robe_skirt">Robe Skirt</label>
-						</li>
-						<li>
-							<input type="radio" id="legs-sara" name="legs" data-required="sex=female" data-file="legs/pants/female/SaraLeggings.png">
-							<label for="legs-sara">Sara's Leggings <small>(Female)</small></label>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<span class="condensed">Boots</span>
-					<ul>
-						<li>
-							<input type="radio" id="boots-boots_brown" name="boots" data-required="sex=female" data-file_female="feet/shoes/LongBoots_brown.png">
-							<label for="boots-boots_brown">Brown Boots <small>(Female)</small></label>
-						</li>
-						<li>
-							<input type="radio" id="boots-boots_dark" name="boots" data-required="sex=female" data-file_female="feet/shoes/LongBoots_dark.png">
-							<label for="boots-boots_dark">Dark Boots <small>(Female)</small></label>
-						</li>
-					</ul>
-				</li>
+				<div id="boots"></div>
+
 				<li>
 					<span class="condensed">Clothes</span>
 					<ul>
@@ -871,6 +652,7 @@
 						</li>
 					</ul>
 				</li>
+
 				<li>
 					<span class="condensed">Mail</span>
 					<ul>
@@ -880,6 +662,7 @@
 						</li>
 					</ul>
 				</li>
+
 				<li>
 					<span class="condensed">Armor</span>
 					<ul>
@@ -952,6 +735,7 @@
 						</li>
 					</ul>
 				</li>
+
 				<li>
 					<span class="condensed">Jacket</span>
 					<ul>
@@ -1030,6 +814,7 @@
 					</ul>
 				</li>
 			</li>
+
 			<li>
 				<span class="condensed">Arms</span>
 				<ul>
@@ -1059,6 +844,7 @@
 					</li>
 				</ul>
 			</li>
+
 			<li>
 				<span class="condensed">Shoulders</span>
 				<ul>
@@ -1118,6 +904,7 @@
 					</li>
 				</ul>
 			</li>
+
 			<li>
 				<span class="condensed">Bracers</span>
 				<ul>
@@ -1155,6 +942,7 @@
 					</li>
 				</ul>
 			</li>
+
 			<li>
 				<span class="condensed">Greaves</span>
 				<ul>
@@ -1184,6 +972,7 @@
 					</li>
 				</ul>
 			</li>
+
 			<li>
 				<span class="condensed">Gloves</span>
 				<ul>
@@ -1217,6 +1006,7 @@
 					</li>
 				</ul>
 			</li>
+
 			<li>
 				<span class="condensed">Belts</span>
 				<ul>
@@ -1273,6 +1063,7 @@
 					</li>
 				</ul>
 			</li>
+
 			<li>
 				<span class="condensed">Buckles</span>
 				<ul>
@@ -1294,6 +1085,7 @@
 					</li>
 				</ul>
 			</li>
+
 			<li>
 				<span class="condensed">Necklaces</span>
 				<ul>
@@ -1315,6 +1107,7 @@
 					</li>
 				</ul>
 			</li>
+
 			<li>
 				<span class="condensed">Bracelet</span>
 				<ul>
@@ -1324,6 +1117,7 @@
 					</li>
 				</ul>
 			</li>
+
 			<li>
 				<span class="condensed">Cape</span>
 				<ul>
@@ -1376,6 +1170,7 @@
 							</li>
 						</ul>
 					</li>
+
 					<li>
 						<span class="condensed">Solid Cape <small>(Female)</small></span>
 						<ul>
@@ -1476,6 +1271,7 @@
 					</li>
 				</ul>
 			</li>
+
 			<li>
 				<span class="condensed">Neck</span>
 				<ul>
@@ -1616,6 +1412,7 @@
 					</li>
 				</ul>
 			</li>
+
 			<li>
 				<span class="condensed">Shield</span>
 				<ul>
@@ -1697,6 +1494,7 @@
 					</li>
 				</ul>
 			</li>
+
 			<li>
 				<span class="condensed">Quiver</span>
 				<ul>
@@ -1706,6 +1504,7 @@
 					</li>
 				</ul>
 			</li>
+
 			<li>
 				<span class="condensed">Hair</span>
 				<ul>

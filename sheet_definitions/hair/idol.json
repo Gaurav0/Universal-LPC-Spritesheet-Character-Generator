@@ -2,7 +2,8 @@
   "name" : "Idol",
   "type_name" : "hair",
   "file" : {
-    "male" : "hair/male/idol/"
+    "male" : "hair/male/idol/",
+    "muscular" : "hair/male/idol/"
   },
   "variants": [
     "black",

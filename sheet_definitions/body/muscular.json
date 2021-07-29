@@ -1,0 +1,14 @@
+{
+  "name" : "Muscular",
+  "type_name" : "body",
+  "file" : {
+    "muscular" : "body/muscular/"
+  },
+  "variants": [
+    "muscular white",
+    "muscular white v2",
+    "muscular black",
+    "boarman",
+    "minotaur"
+  ]
+}

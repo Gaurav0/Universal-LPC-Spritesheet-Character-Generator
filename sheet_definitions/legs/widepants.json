@@ -1,0 +1,13 @@
+{
+  "name" : "Wide pants",
+  "type_name" : "legs",
+  "file" : {
+    "muscular" : "legs/pants/muscular/"
+  },
+  "variants": [
+    "black",
+    "blue",
+    "brown",
+    "white"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name" : "Pantalons",
+  "type_name" : "legs",
+  "file" : {
+    "male" : "legs/pantalons/male/"
+  },
+  "variants": [
+    "black",
+    "blue",
+    "brown",
+    "formal",
+    "formal striped",
+    "furbrown",
+    "green",
+    "purple",
+    "red",
+    "yellow"
+  ]
+}

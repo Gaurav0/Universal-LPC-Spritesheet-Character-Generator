@@ -3,7 +3,9 @@
   "type_name" : "shoes",
   "file" : {
     "male" : "feet/armor/male/",
-    "female" : "feet/armor/female/"
+    "muscular" : "feet/armor/male/",
+    "female" : "feet/armor/female/",
+    "pregnant" : "feet/armor/female/"
   },
   "variants": [
     "4",

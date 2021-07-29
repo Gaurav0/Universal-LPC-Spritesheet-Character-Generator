@@ -3,7 +3,9 @@
   "type_name" : "hair",
   "file" : {
     "male" : "hair/male/long_straight/",
-    "female" : "hair/female/long_straight/"
+    "muscular" : "hair/male/long_straight/",
+    "female" : "hair/female/long_straight/",
+    "pregnant" : "hair/female/long_straight/"
   },
   "variants": [
     "black",

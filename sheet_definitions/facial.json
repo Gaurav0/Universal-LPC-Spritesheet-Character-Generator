@@ -3,7 +3,9 @@
   "type_name" : "facial",
   "file" : {
     "male" : "facial/",
-    "female" : "facial/"
+    "muscular" : "facial/",
+    "female" : "facial/",
+    "pregnant" : "facial/"
   },
   "variants": [
     "glasses",

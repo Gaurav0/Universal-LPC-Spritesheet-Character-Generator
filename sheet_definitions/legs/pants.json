@@ -1,0 +1,14 @@
+{
+  "name" : "Pants",
+  "type_name" : "legs",
+  "file" : {
+    "male" : "legs/pants/male/",
+    "female" : "legs/pants/female/"
+  },
+  "variants": [
+    "magenta",
+    "red",
+    "teal",
+    "white"
+  ]
+}

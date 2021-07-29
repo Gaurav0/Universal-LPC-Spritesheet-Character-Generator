@@ -2,7 +2,8 @@
   "name" : "Mustache",
   "type_name" : "beard",
   "file" : {
-    "male" : "beards/male/mustache/"
+    "male" : "beards/male/mustache/",
+    "muscular" : "beards/male/mustache/"
   },
   "variants": [
     "black",

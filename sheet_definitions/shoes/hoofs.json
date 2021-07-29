@@ -2,7 +2,8 @@
   "name" : "Hoofs",
   "type_name" : "shoes",
   "file" : {
-    "male" : "feet/hoofs/male/"
+    "male" : "feet/hoofs/male/",
+    "muscular" : "feet/hoofs/male/"
   },
   "variants": [
     "hoofs"

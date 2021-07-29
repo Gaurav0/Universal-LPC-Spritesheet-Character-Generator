@@ -2,7 +2,8 @@
   "name" : "Slippers",
   "type_name" : "shoes",
   "file" : {
-    "female" : "feet/slippers/female/"
+    "female" : "feet/slippers/female/",
+    "pregnant" : "feet/slippers/female/"
   },
   "variants": [
     "black",

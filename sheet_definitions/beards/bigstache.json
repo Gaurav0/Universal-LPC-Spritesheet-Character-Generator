@@ -2,7 +2,8 @@
   "name" : "Bigstache",
   "type_name" : "beard",
   "file" : {
-    "male" : "beards/male/bigstache/"
+    "male" : "beards/male/bigstache/",
+    "muscular" : "beards/male/bigstache/"
   },
   "variants": [
     "black",
