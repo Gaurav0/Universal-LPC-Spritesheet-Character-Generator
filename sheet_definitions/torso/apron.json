@@ -1,0 +1,12 @@
+{
+  "name" : "Apron",
+  "type_name" : "apron",
+  "file" : {
+    "male" : "torso/clothes/apron/male/",
+    "female" : "torso/clothes/apron/female/"
+  },
+  "variants": [
+    "brown",
+    "white"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name" : "Longsleeve",
+  "type_name" : "clothes",
+  "file" : {
+    "female" : "torso/clothes/longsleeve/female/"
+  },
+  "variants": [
+    "black",
+    "blue",
+    "forest",
+    "gray",
+    "green",
+    "lavender",
+    "leather",
+    "maroon",
+    "navy",
+    "orange",
+    "pink",
+    "purple",
+    "red",
+    "sky",
+    "tan",
+    "teal",
+    "walnut",
+    "white",
+    "yellow"
+  ]
+}

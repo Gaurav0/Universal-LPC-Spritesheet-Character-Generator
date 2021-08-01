@@ -1,0 +1,13 @@
+{
+  "name" : "Tunic",
+  "type_name" : "clothes",
+  "file" : {
+    "female" : "torso/clothes/tunic/female/"
+  },
+  "variants": [
+    "brown",
+    "maroon",
+    "teal",
+    "white"
+  ]
+}

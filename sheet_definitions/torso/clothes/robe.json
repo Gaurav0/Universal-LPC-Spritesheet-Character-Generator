@@ -1,0 +1,19 @@
+{
+  "name" : "Robe",
+  "type_name" : "clothes",
+  "file" : {
+    "female" : "torso/clothes/robe/female/"
+  },
+  "variants": [
+    "black",
+    "blue",
+    "brown",
+    "dark brown",
+    "dark gray",
+    "forest green",
+    "light gray",
+    "purple",
+    "red",
+    "white"
+  ]
+}

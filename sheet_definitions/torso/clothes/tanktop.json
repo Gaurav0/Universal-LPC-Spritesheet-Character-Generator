@@ -1,0 +1,28 @@
+{
+  "name" : "Tanktop",
+  "type_name" : "clothes",
+  "file" : {
+    "pregnant" : "torso/clothes/tanktop/pregnant/"
+  },
+  "variants": [
+    "black",
+    "blue",
+    "forest",
+    "gray",
+    "green",
+    "lavender",
+    "leather",
+    "maroon",
+    "navy",
+    "orange",
+    "pink",
+    "purple",
+    "red",
+    "sky",
+    "tan",
+    "teal",
+    "walnut",
+    "white",
+    "yellow"
+  ]
+}

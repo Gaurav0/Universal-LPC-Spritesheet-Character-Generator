@@ -1,0 +1,11 @@
+{
+  "name" : "Bandages",
+  "type_name" : "bandages",
+  "file" : {
+    "male" : "torso/bandage/male/",
+    "female" : "torso/bandage/female/"
+  },
+  "variants": [
+    "white"
+  ]
+}
