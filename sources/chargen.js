@@ -19,65 +19,7 @@ $(document).ready(function() {
     redraw();
   });
 
-  $('#body-human').replaceWith(createGeneralHTML("sheet_definitions/body/human.json", "male,female", true));
-  $('#body-reptile').replaceWith(createGeneralHTML("sheet_definitions/body/reptile.json", "male,female"));
-  $('#body-orc').replaceWith(createGeneralHTML("sheet_definitions/body/orc.json", "male,female"));
-  $('#body-wolfman').replaceWith(createGeneralHTML("sheet_definitions/body/wolfman.json", "male,female"));
-  $('#body-skeleton').replaceWith(createGeneralHTML("sheet_definitions/body/skeleton.json", "male,female"));
-  $('#body-special').replaceWith(createGeneralHTML("sheet_definitions/body/special.json", "male"));
-  $('#body-pregnant').replaceWith(createGeneralHTML("sheet_definitions/body/pregnant.json", "pregnant"));
-  $('#body-muscular').replaceWith(createGeneralHTML("sheet_definitions/body/muscular.json", "muscular"));
-  $('#body-child').replaceWith(createGeneralHTML("sheet_definitions/body/child.json", "child"));
-
-  $('#eyes').replaceWith(createGeneralHTML("sheet_definitions/eyes.json", "male,female,muscular,pregnant"));
-
-  $('#beards-bigstache').replaceWith(createGeneralHTML("sheet_definitions/beards/bigstache.json", "male,muscular"));
-  $('#beards-mustache').replaceWith(createGeneralHTML("sheet_definitions/beards/mustache.json", "male,muscular"));
-  $('#beards-beard').replaceWith(createGeneralHTML("sheet_definitions/beards/beard.json", "male,muscular"));
-
-  $('#facial').replaceWith(createGeneralHTML("sheet_definitions/facial.json", "male,female,muscular,pregnant"));
-
-  $('#shoes-armour').replaceWith(createGeneralHTML("sheet_definitions/shoes/armour.json", "male,female,muscular,pregnant"));
-  $('#shoes-slippers').replaceWith(createGeneralHTML("sheet_definitions/shoes/slippers.json", "female,pregnant"));
-  $('#shoes-shoes').replaceWith(createGeneralHTML("sheet_definitions/shoes/shoes.json", "male,female,muscular,pregnant"));
-  $('#shoes-sara').replaceWith(createGeneralHTML("sheet_definitions/shoes/sara.json", "female,pregnant"));
-  $('#shoes-hoofs').replaceWith(createGeneralHTML("sheet_definitions/shoes/hoofs.json", "male,muscular"));
-  $('#shoes-sandals').replaceWith(createGeneralHTML("sheet_definitions/shoes/sandals.json", "male,female,muscular,pregnant"));
-
-  $('#legs-widepants').replaceWith(createGeneralHTML("sheet_definitions/legs/widepants.json", "muscular"));
-  $('#legs-pantalons').replaceWith(createGeneralHTML("sheet_definitions/legs/pantalons.json", "male"));
-  $('#legs-pants').replaceWith(createGeneralHTML("sheet_definitions/legs/pants.json", "male,female"));
-  $('#legs-pregnantpants').replaceWith(createGeneralHTML("sheet_definitions/legs/pregnantpants.json", "pregnant"));
-  $('#legs-leggings').replaceWith(createGeneralHTML("sheet_definitions/legs/leggings.json", "female"));
-  $('#legs-childpants').replaceWith(createGeneralHTML("sheet_definitions/legs/childpants.json", "child"));
-  $('#legs-childskirts').replaceWith(createGeneralHTML("sheet_definitions/legs/childskirts.json", "child"));
-  $('#legs-skirts').replaceWith(createGeneralHTML("sheet_definitions/legs/skirts.json", "male,female"));
-  $('#legs-armour').replaceWith(createGeneralHTML("sheet_definitions/legs/armour.json", "male,female"));
-
-  $('#dress').replaceWith(createGeneralHTML("sheet_definitions/torso/dress.json", "female"));
-
-  $('#boots').replaceWith(createGeneralHTML("sheet_definitions/shoes/boots.json", "female,pregnant"));
-
-  $('#clothes-child_shirt').replaceWith(createGeneralHTML("sheet_definitions/torso/clothes/child_shirt.json", "child"));
-  $('#clothes-male_longsleeve').replaceWith(createGeneralHTML("sheet_definitions/torso/clothes/male_longsleeve.json", "male"));
-  $('#clothes-male_sleeveless').replaceWith(createGeneralHTML("sheet_definitions/torso/clothes/male_sleeveless.json", "male"));
-  $('#clothes-tanktop').replaceWith(createGeneralHTML("sheet_definitions/torso/clothes/tanktop.json", "pregnant"));
-  $('#clothes-female_sleeveless').replaceWith(createGeneralHTML("sheet_definitions/torso/clothes/female_sleeveless.json", "female"));
-  $('#clothes-corset').replaceWith(createGeneralHTML("sheet_definitions/torso/clothes/corset.json", "female"));
-  $('#clothes-blouse').replaceWith(createGeneralHTML("sheet_definitions/torso/clothes/blouse.json", "female"));
-  $('#clothes-blouse_longsleeve').replaceWith(createGeneralHTML("sheet_definitions/torso/clothes/blouse_longsleeve.json", "female"));
-  $('#clothes-pirate_shirt').replaceWith(createGeneralHTML("sheet_definitions/torso/clothes/pirate_shirt.json", "female"));
-  $('#clothes-scoop_shirt').replaceWith(createGeneralHTML("sheet_definitions/torso/clothes/scoop_shirt.json", "female"));
-  $('#clothes-female_longsleeve').replaceWith(createGeneralHTML("sheet_definitions/torso/clothes/female_longsleeve.json", "female"));
-  $('#clothes-tunic').replaceWith(createGeneralHTML("sheet_definitions/torso/clothes/tunic.json", "female"));
-  $('#clothes-robe').replaceWith(createGeneralHTML("sheet_definitions/torso/clothes/robe.json", "female"));
-
-  $('#apron').replaceWith(createGeneralHTML("sheet_definitions/torso/apron.json", "male,female"));
-  $('#bandages').replaceWith(createGeneralHTML("sheet_definitions/torso/bandages.json", "male,female"));
-
-  $('#hair-long_straight').replaceWith(createGeneralHTML("sheet_definitions/hair/long_straight.json", "male,female,muscular,pregnant"));
-  $('#hair-long_tied').replaceWith(createGeneralHTML("sheet_definitions/hair/long_tied.json", "male,female,muscular,pregnant"));
-  $('#hair-idol').replaceWith(createGeneralHTML("sheet_definitions/hair/idol.json", "male,muscular"));
+  replaceDivs();
 
   $("input[type=radio], input[type=checkbox]").attr('title', function() {
     var name = "";

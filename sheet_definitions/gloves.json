@@ -1,0 +1,19 @@
+{
+  "name" : "Gloves",
+  "type_name" : "gloves",
+  "file" : {
+    "male" : "gloves/male/",
+    "female" : "gloves/female/",
+    "pregnant" : "gloves/female/",
+    "muscular" : "gloves/male/"
+  },
+  "variants": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7"
+  ]
+}

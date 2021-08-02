@@ -1,0 +1,16 @@
+{
+  "name" : "Tabard",
+  "type_name" : "jacket",
+  "file" : {
+    "male" : "torso/clothes/jacket/tabard/male/"
+  },
+  "variants": [
+    "black",
+    "blue",
+    "green",
+    "lila",
+    "purple",
+    "red",
+    "yellow"
+  ]
+}

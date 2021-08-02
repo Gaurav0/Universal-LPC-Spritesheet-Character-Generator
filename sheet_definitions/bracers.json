@@ -1,0 +1,19 @@
+{
+  "name" : "Bracers",
+  "type_name" : "bracers",
+  "file" : {
+    "male" : "bracers/male/",
+    "female" : "bracers/female/",
+    "pregnant" : "bracers/female/",
+    "muscular" : "bracers/male/"
+  },
+  "variants": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "9"
+  ]
+}

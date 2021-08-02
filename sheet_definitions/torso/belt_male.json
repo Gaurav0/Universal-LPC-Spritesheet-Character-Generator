@@ -1,0 +1,12 @@
+{
+  "name" : "Belt",
+  "type_name" : "belt",
+  "file" : {
+    "male" : "torso/belt/male/"
+  },
+  "variants": [
+    "formal",
+    "leather",
+    "white"
+  ]
+}

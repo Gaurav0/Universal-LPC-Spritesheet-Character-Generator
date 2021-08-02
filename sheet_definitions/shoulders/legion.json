@@ -1,0 +1,13 @@
+{
+  "name" : "Legion",
+  "type_name" : "shoulders",
+  "file" : {
+    "male" : "shoulders/legion/male/",
+    "female" : "shoulders/legion/female/"
+  },
+  "variants": [
+    "bronze",
+    "steel",
+    "gold"
+  ]
+}

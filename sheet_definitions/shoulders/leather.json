@@ -1,0 +1,11 @@
+{
+  "name" : "Leather",
+  "type_name" : "shoulders",
+  "file" : {
+    "male" : "shoulders/leather/male/",
+    "female" : "shoulders/leather/female/"
+  },
+  "variants": [
+    "brown"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name" : "Plate",
+  "type_name" : "armour",
+  "file" : {
+    "male" : "torso/armour/plate/male/",
+    "female" : "torso/armour/plate/female/"
+  },
+  "variants": [
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "special"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name" : "Buckles",
+  "type_name" : "buckles",
+  "file" : {
+    "female" : "torso/buckles/female/"
+  },
+  "variants": [
+    "bronze",
+    "gold",
+    "iron",
+    "silver"
+  ]
+}

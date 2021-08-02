@@ -1,0 +1,16 @@
+{
+  "name" : "Gentleman",
+  "type_name" : "jacket",
+  "file" : {
+    "male" : "torso/clothes/jacket/gentleman/male/"
+  },
+  "variants": [
+    "black",
+    "brown striped",
+    "brown",
+    "dark gray",
+    "gray",
+    "iverness",
+    "tan"
+  ]
+}

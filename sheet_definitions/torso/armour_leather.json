@@ -1,0 +1,13 @@
+{
+  "name" : "Leather",
+  "type_name" : "armour",
+  "file" : {
+    "male" : "torso/armour/leather/male/",
+    "female" : "torso/armour/leather/female/"
+  },
+  "variants": [
+    "blue",
+    "brown",
+    "green"
+  ]
+}

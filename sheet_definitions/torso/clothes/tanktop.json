@@ -2,7 +2,8 @@
   "name" : "Tanktop",
   "type_name" : "clothes",
   "file" : {
-    "pregnant" : "torso/clothes/tanktop/pregnant/"
+    "pregnant" : "torso/clothes/tanktop/pregnant/",
+    "female" : "torso/clothes/tanktop/female/"
   },
   "variants": [
     "black",

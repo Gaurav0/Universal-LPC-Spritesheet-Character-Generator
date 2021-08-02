@@ -1,0 +1,11 @@
+{
+  "name" : "Chainmail",
+  "type_name" : "chainmail",
+  "file" : {
+    "male" : "torso/chainmail/male/",
+    "female" : "torso/chainmail/female/"
+  },
+  "variants": [
+    "gray"
+  ]
+}

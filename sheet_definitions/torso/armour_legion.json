@@ -1,0 +1,13 @@
+{
+  "name" : "Legion",
+  "type_name" : "armour",
+  "file" : {
+    "male" : "torso/armour/legion/male/",
+    "female" : "torso/armour/legion/female/"
+  },
+  "variants": [
+    "bronze",
+    "steel",
+    "gold"
+  ]
+}
