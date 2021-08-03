@@ -1,0 +1,13 @@
+{
+  "name" : "Quiver",
+  "type_name" : "quiver",
+  "file_behind" : {
+    "male" : "quiver/",
+    "muscular" : "quiver/",
+    "female" : "quiver/",
+    "pregnant" : "quiver/"
+  },
+  "variants": [
+    "quiver"
+  ]
+}

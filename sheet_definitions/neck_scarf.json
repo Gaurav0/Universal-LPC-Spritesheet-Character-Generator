@@ -1,0 +1,18 @@
+{
+  "name" : "Scarf",
+  "type_name" : "neck",
+  "file" : {
+    "male" : "neck/scarf/",
+    "female" : "neck/scarf/",
+    "pregnant" : "neck/scarf/",
+    "muscular" : "neck/scarf/"
+  },
+  "variants": [
+    "black",
+    "blue",
+    "brown",
+    "gray",
+    "red",
+    "white"
+  ]
+}

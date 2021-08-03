@@ -1,0 +1,14 @@
+{
+  "name" : "Tie",
+  "type_name" : "neck",
+  "file" : {
+    "male" : "neck/tie/",
+    "female" : "neck/tie/",
+    "muscular" : "neck/tie/",
+    "pregnant" : "neck/tie/"
+  },
+  "variants": [
+    "bow",
+    "neck"
+  ]
+}

@@ -250,7 +250,6 @@ $(document).ready(function() {
     $("#chooser>ul").css("height", canvas.height);
     oversize = !!oversize;
 
-    // non oversize elements
     $("input[type=radio]:checked, input[type=checkbox]:checked").filter(function() {
       return !$(this).data("oversize");
     }).each(function(index) {
@@ -264,20 +263,6 @@ $(document).ready(function() {
       var $this = $(this);
       var fileName = "";
 
-      // if data-file specified
-      if ($(this).data("file")) {
-        var img = getImage($(this).data("file"));
-        fileName = $(this).data("file");
-        // if data-behind specified, draw behind existing pixels
-        if ($(this).data("behind")) {
-          ctx.globalCompositeOperation = "destination-over";
-          drawImage(ctx, img);
-          ctx.globalCompositeOperation = "source-over";
-        } else
-        drawImage(ctx, img);
-      }
-
-      // if data-file_behind specified
       if ($(this).data(`file_${bodyTypeName}_behind`)) {
         var img = getImage($(this).data(`file_${bodyTypeName}_behind`));
         ctx.globalCompositeOperation = "destination-over";
@@ -286,19 +271,6 @@ $(document).ready(function() {
         ctx.globalCompositeOperation = "source-over";
       }
 
-      // Deal with shield/chain hat overlap issue
-      if ($(this).data("file_hat") && $("#hat_chain").prop("checked")) {
-        var img = getImage($(this).data("file_hat"));
-        drawImage(ctx, img);
-        fileName = $(this).data("file_hat");
-      }
-      if ($(this).data("file_no_hat") && !$("#hat_chain").prop("checked")) {
-        var img = getImage($(this).data("file_no_hat"));
-        drawImage(ctx, img);
-        fileName = $(this).data("file_no_hat");
-      }
-
-      // if data-file_male and data-file_female is specified
       if ($(this).data(`file_${bodyTypeName}`)) {
         var img = getImage($(this).data(`file_${bodyTypeName}`));
         drawImage(ctx, img);
@@ -487,10 +459,11 @@ $(document).ready(function() {
         var prevctx = prev.getContext("2d");
         var img = null;
         var previewRow = $(this).data("preview_row");
-        if (!previewRow)
-        previewRow = 10;
-        else
-        previewRow = parseInt(previewRow);
+        if (!previewRow) {
+          previewRow = 10;
+        } else {
+          previewRow = parseInt(previewRow);
+        }
         var callback = function(img) {
           try {
             if (oversize)
@@ -501,20 +474,7 @@ $(document).ready(function() {
             console.log(err);
           }
         };
-        if ($(this).data("file"))
-        img = getImage2($(this).data("file"), callback);
-        if ($(this).data("file_child"))
-        img = getImage2($(this).data("file_child"), callback);
-        else if ($(this).data("file_male"))
-        img = getImage2($(this).data("file_male"), callback);
-        else if ($(this).data("file_female"))
-        img = getImage2($(this).data("file_female"), callback);
-        else if ($(this).data("file_muscular"))
-        img = getImage2($(this).data("file_muscular"), callback);
-        else if ($(this).data("file_pregnant"))
-        img = getImage2($(this).data("file_pregnant"), callback);
-        else if ($(this).data("file_no_hat"))
-        img = getImage2($(this).data("file_no_hat"), callback);
+        img = getImage2($(this).data(`file_${getBodyTypeName()}`), callback);
         if (img != null) {
           this.parentNode.insertBefore(prev, this);
           $(this).parent().addClass("hasPreview").parent().addClass("hasPreview");

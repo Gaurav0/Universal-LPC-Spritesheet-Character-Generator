@@ -1,0 +1,21 @@
+{
+  "name" : "Sleeved",
+  "type_name" : "clothes",
+  "file" : {
+    "male" : "torso/clothes/longsleeve/male/"
+  },
+  "variants": [
+    "black",
+    "blue",
+    "brown",
+    "formal",
+    "formal striped",
+    "green",
+    "maroon",
+    "purple",
+    "red",
+    "teal",
+    "white",
+    "yellow"
+  ]
+}

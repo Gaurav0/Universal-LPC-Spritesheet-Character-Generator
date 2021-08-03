@@ -1,0 +1,21 @@
+{
+  "name" : "Capetie",
+  "type_name" : "neck",
+  "file" : {
+    "female" : "neck/capetie/female/",
+    "pregnant" : "neck/capetie/female/"
+  },
+  "variants": [
+    "black",
+    "blue",
+    "brown",
+    "gray",
+    "green",
+    "lavender",
+    "maroon",
+    "pink",
+    "red",
+    "white",
+    "yellow"
+  ]
+}

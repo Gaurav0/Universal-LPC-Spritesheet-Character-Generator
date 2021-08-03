@@ -1,0 +1,14 @@
+{
+  "name" : "No sleeves",
+  "type_name" : "clothes",
+  "file" : {
+    "male" : "torso/clothes/sleeveless/male/"
+  },
+  "variants": [
+    "black",
+    "blue",
+    "brown",
+    "red",
+    "white"
+  ]
+}

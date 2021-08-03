@@ -1,0 +1,10 @@
+{
+  "name" : "Tabard",
+  "type_name" : "jacket",
+  "file" : {
+    "female" : "torso/clothes/jacket/tabard/female/"
+  },
+  "variants": [
+    "lila"
+  ]
+}
