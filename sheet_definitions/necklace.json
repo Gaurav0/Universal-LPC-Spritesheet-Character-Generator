@@ -1,0 +1,15 @@
+{
+  "name" : "Necklace",
+  "type_name" : "necklace",
+  "file" : {
+    "female" : "necklace/female/",
+    "pregnant" : "necklace/female/"
+  },
+  "variants": [
+    "bronze",
+    "gold",
+    "iron",
+    "silver",
+    "pirate"
+  ]
+}

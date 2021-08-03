@@ -1,0 +1,15 @@
+{
+  "name" : "Trimmed",
+  "type_name" : "cape",
+  "file" : {
+    "female" : "cape/trimmed/female/",
+    "pregnant" : "cape/trimmed/female/"
+  },
+  "file_behind" : {
+    "female" : "cape/trimmed_behind/",
+    "pregnant" : "cape/trimmed_behind/"
+  },
+  "variants": [
+    "white blue"
+  ]
+}

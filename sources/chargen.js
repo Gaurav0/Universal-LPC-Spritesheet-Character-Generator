@@ -2,9 +2,7 @@ _.mixin(_.str.exports());
 
 $(document).ready(function() {
 
-  // Get querystring paramters
   var params = jHash.val();
-
   var zPosition = 0;
   var sheetCredits = [];
   const creditColumns = "filename,notes,authors,licenses,url1,url2,url3,url4,url5,status";
@@ -86,29 +84,6 @@ $(document).ready(function() {
     $(this).click(function() {
       setParams();
       redraw();
-    });
-  });
-
-  // When radio button is unchecked, its children should be too.
-  $("input[type=radio]").each(function() {
-    $(this).change(function() {
-      var name = $(this).attr("name");
-      // Sadly we need to use setTimeout
-      window.setTimeout(function() {
-        $("li>span>input[name=" + name + "]").each(function() {
-          if (!($(this).prop("checked"))) {
-            var $this = $(this).parent();
-            $this.removeClass("expanded").addClass("condensed");
-            $this = $this.parent();
-            var $ul = $this.children("ul");
-            $ul.hide('slow');
-            $ul.find("input[type=checkbox]").each(function() {
-              $(this).prop("checked", false);
-            });
-          }
-        });
-        redraw();
-      }, 0);
     });
   });
 
@@ -232,15 +207,30 @@ $(document).ready(function() {
   }
   $("#chooser>ul").css("height", canvas.height);
 
-  // called each time redrawing
+  function getBodyTypeName() {
+    if ($("#sex-male").prop("checked")) {
+      return "male";
+    } else if ($("#sex-female").prop("checked")) {
+      return "female";
+    } else if ($("#sex-child").prop("checked")) {
+      return "child";
+    } else if ($("#sex-muscular").prop("checked")) {
+      return "muscular";
+    } else if ($("#sex-pregnant").prop("checked")) {
+      return "pregnant";
+    }
+    return "ERROR";
+  }
+
   function redraw() {
-    sheetCredits = [creditColumns];
     const zposPreview = parseInt(document.getElementById("ZPOS").value) || 0;
+    const bodyTypeName = getBodyTypeName();
     let didDrawPreview = false;
     let wolfmanBody = "";
     let isBoar = false;
+
+    sheetCredits = [creditColumns];
     zPosition = 0;
-    // start over
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     // determine if an oversize element is being used
@@ -274,13 +264,6 @@ $(document).ready(function() {
       var $this = $(this);
       var fileName = "";
 
-      // Determine if male or female selected
-      var isMale = $("#sex-male").prop("checked");
-      var isFemale = $("#sex-female").prop("checked");
-      var isChild = $("#sex-child").prop("checked");
-      var isMuscular = $("#sex-muscular").prop("checked");
-      var isPregnant = $("#sex-pregnant").prop("checked");
-
       // if data-file specified
       if ($(this).data("file")) {
         var img = getImage($(this).data("file"));
@@ -295,11 +278,11 @@ $(document).ready(function() {
       }
 
       // if data-file_behind specified
-      if ($(this).data("file_behind")) {
-        var img = getImage($(this).data("file_behind"));
+      if ($(this).data(`file_${bodyTypeName}_behind`)) {
+        var img = getImage($(this).data(`file_${bodyTypeName}_behind`));
         ctx.globalCompositeOperation = "destination-over";
         drawImage(ctx, img);
-        fileName = $(this).data("file_behind");
+        fileName = $(this).data(`file_${bodyTypeName}_behind`);
         ctx.globalCompositeOperation = "source-over";
       }
 
@@ -316,35 +299,13 @@ $(document).ready(function() {
       }
 
       // if data-file_male and data-file_female is specified
-      if (isMale && $(this).data("file_male")) {
-        var img = getImage($(this).data("file_male"));
+      if ($(this).data(`file_${bodyTypeName}`)) {
+        var img = getImage($(this).data(`file_${bodyTypeName}`));
         drawImage(ctx, img);
-        fileName = $(this).data("file_male");
+        fileName = $(this).data(`file_${bodyTypeName}`);
         if (fileName.includes("/wolf/")) {
-          wolfmanBody = fileName.replace("body/male/wolf/", "")+"male";
-        }
-      }
-
-      if (isFemale && $(this).data("file_female")) {
-        var img = getImage($(this).data("file_female"));
-        drawImage(ctx, img);
-        fileName = $(this).data("file_female");
-        if (fileName.includes("/wolf/")) {
-          wolfmanBody = fileName.replace("body/female/wolf/", "")+"female";
-        }
-      }
-      if (isChild && $(this).data("file_child")) {
-        var img = getImage($(this).data("file_child"));
-        drawImage(ctx, img);
-      }
-      if (isPregnant && $(this).data("file_pregnant")) {
-        var img = getImage($(this).data("file_pregnant"));
-        drawImage(ctx, img);
-      }
-      if (isMuscular && $(this).data("file_muscular")) {
-        var img = getImage($(this).data("file_muscular"));
-        drawImage(ctx, img);
-        if (fileName.includes("/boarman.png")) {
+          wolfmanBody = fileName.replace(`body/${bodyTypeName}/wolf/`, "")+`${bodyTypeName}`;
+        } else if (fileName.includes("/boarman.png")) {
           isBoar = true;
         }
       }
@@ -353,13 +314,8 @@ $(document).ready(function() {
     });
 
     if (wolfmanBody !== "") {
-      if (wolfmanBody.includes("female")) {
-        var img = getImage("/body/female/wolf/head/"+wolfmanBody.replace("female", ""));
-        drawImage(ctx, img);
-      } else {
-        var img = getImage("/body/male/wolf/head/"+wolfmanBody.replace("male", ""));
-        drawImage(ctx, img);
-      }
+      var img = getImage(`/body/${bodyTypeName}/wolf/head/`+wolfmanBody.replace(`${bodyTypeName}`, ""));
+      drawImage(ctx, img);
     } else if (isBoar) {
       var img = getImage("/body/male/special/boarman_head.png");
       drawImage(ctx, img);
@@ -378,16 +334,7 @@ $(document).ready(function() {
       $("input[type=radio]:checked").filter(function() {
         return $(this).data("oversize");
       }).each(function(index) {
-        var name = "";
-        if ($("#sex-male").prop("checked") && $(this).data("file_male")) {
-          name = $(this).data("file_male");
-        } else if ($("#sex-muscular").prop("checked") && $(this).data("file_muscular")) {
-          name = $(this).data("file_muscular");
-        } else if ($("#sex-pregnant").prop("checked") && $(this).data("file_pregnant")) {
-          name = $(this).data("file_pregnant");
-        } else if ($("#sex-female").prop("checked") && $(this).data("file_female")) {
-          name = $(this).data("file_female");
-        }
+        const name = $(this).data(`file_${bodyTypeName}`);
         if (name.includes("flail") || name.includes("halberd") || name.includes("waraxe") || name.includes("rapier") || name.includes("saber") || name.includes("glowsword") || name.includes("scythe") || name.includes("mace") || name.includes("longsword")) {
           var img = getImage(name.replace("attack", "universal"));
           drawImage(ctx, img);
@@ -401,85 +348,33 @@ $(document).ready(function() {
             var imgData = ctx.getImageData(64 * i, 256 + 64 * j, 64, 64);
             ctx.putImageData(imgData, 64 + 192 * i, 1408 + 192 * j);
           }
-          if ($("#sex-male").prop("checked") && $(this).data("file_male")) {
-            var img = getImage($(this).data("file_male"));
-            ctx.drawImage(img, 0, 1344);
-          } else if ($("#sex-female").prop("checked") && $(this).data("file_female")) {
-            var img = getImage($(this).data("file_female"));
-            ctx.drawImage(img, 0, 1344);
-          } else if ($("#sex-muscular").prop("checked") && $(this).data("file_muscular")) {
-            var img = getImage($(this).data("file_muscular"));
-            ctx.drawImage(img, 0, 1344);
-          } else if ($("#sex-pregnant").prop("checked") && $(this).data("file_pregnant")) {
-            var img = getImage($(this).data("file_pregnant"));
-            ctx.drawImage(img, 0, 1344);
-          } else if ($(this).data("file")) {
-            var img = getImage($(this).data("file"));
-            ctx.drawImage(img, 0, 1344);
-          }
         } else if (type == 2) {
           for (var i = 0; i < 6; ++i)
           for (var j = 0; j < 4; ++j) {
             var imgData = ctx.getImageData(64 * i, 768 + 64 * j, 64, 64);
             ctx.putImageData(imgData, 64 + 192 * i, 1408 + 192 * j);
           }
-          if ($("#sex-male").prop("checked") && $(this).data("file_male")) {
-            var img = getImage($(this).data("file_male"));
-            ctx.drawImage(img, 0, 1344);
-          } else if ($("#sex-female").prop("checked") && $(this).data("file_female")) {
-            var img = getImage($(this).data("file_female"));
-            ctx.drawImage(img, 0, 1344);
-          } else if ($("#sex-muscular").prop("checked") && $(this).data("file_muscular")) {
-            var img = getImage($(this).data("file_muscular"));
-            ctx.drawImage(img, 0, 1344);
-          } else if ($("#sex-pregnant").prop("checked") && $(this).data("file_pregnant")) {
-            var img = getImage($(this).data("file_pregnant"));
-            ctx.drawImage(img, 0, 1344);
-          } else if ($(this).data("file")) {
-            var img = getImage($(this).data("file"));
-            ctx.drawImage(img, 0, 1344);
-          }
         }
+        var img = getImage($(this).data(`file_${bodyTypeName}`));
+        if ($(this).data("file")) {
+          img = getImage($(this).data("file"));
+        }
+        ctx.drawImage(img, 0, 1344);
       });
     }
 
-    // Clear everything if illegal combination used
-    // Probably should try to prevent this
-    $("input[type=radio], input[type=checkbox]").each(function(index) {
-      if ($(this).data("required")) {
-        var requirements = $(this).data("required").split(",");
-        var passed = true;
-        _.each(requirements, function(req) {
-          var requirement = req.replace("=", "-");
-          if (!$("#" + requirement).prop("checked"))
-          passed = false;
-        });
-        if (passed)
-        $(this).prop("disabled", false);
-        else {
-          $(this).prop("disabled", true);
-          if ($(this).prop("checked"))
-          ctx.clearRect(0, 0, canvas.width, canvas.height);
-        }
-      }
-    });
     $("li").each(function(index) {
       if ($(this).data("required")) {
-        var isMale = $("#sex-male").prop("checked");
-        var isFemale = $("#sex-female").prop("checked");
-        var isChild = $("#sex-child").prop("checked");
-        var isPregnant = $("#sex-pregnant").prop("checked");
-        var isMuscular = $("#sex-muscular").prop("checked");
         var requiredType = $(this).data("required").split(",");
-        if (isMale && !requiredType.includes('male')) {
+        if (getBodyTypeName() === "male" && !requiredType.includes('male')) {
           $(this).prop("style", "display:none");
-        } else if (isFemale && !requiredType.includes('female')) {
+        } else if (getBodyTypeName() === "female" && !requiredType.includes('female')) {
           $(this).prop("style", "display:none");
-        } else if (isChild && !requiredType.includes('child')) {
+        } else if (getBodyTypeName() === "child" && !requiredType.includes('child')) {
           $(this).prop("style", "display:none");
-        } else if (isPregnant && !requiredType.includes('pregnant')) {
+        } else if (getBodyTypeName() === "pregnant" && !requiredType.includes('pregnant')) {
           $(this).prop("style", "display:none");
-        } else if (isMuscular && !requiredType.includes('muscular')) {
+        } else if (getBodyTypeName() === "muscular" && !requiredType.includes('muscular')) {
           $(this).prop("style", "display:none");
         } else  {
           $(this).prop("style", "");
