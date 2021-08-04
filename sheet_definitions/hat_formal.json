@@ -1,0 +1,15 @@
+{
+  "name" : "Formal",
+  "type_name" : "hat",
+  "file" : {
+    "male" : "hat/formal/",
+    "female" : "hat/formal/",
+    "muscular" : "hat/formal/",
+    "pregnant" : "hat/formal/"
+  },
+  "variants": [
+    "round",
+    "black",
+    "brown"
+  ]
+}
