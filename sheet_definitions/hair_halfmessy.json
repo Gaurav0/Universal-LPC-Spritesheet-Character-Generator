@@ -1,0 +1,15 @@
+{
+  "name" : "Halfmessy",
+  "type_name" : "hair",
+  "file" : {
+    "male" : "hair/male/halfmessy/",
+    "muscular" : "hair/male/halfmessy/"
+  },
+  "variants": [
+    "black",
+    "brunette",
+    "gold",
+    "red",
+    "ruby"
+  ]
+}

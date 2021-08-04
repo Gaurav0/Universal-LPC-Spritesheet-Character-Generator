@@ -1,11 +1,11 @@
 {
-  "name" : "Bedhead",
+  "name" : "Messy 2",
   "type_name" : "hair",
   "file" : {
-    "male" : "hair/male/bedhead/",
-    "muscular" : "hair/male/bedhead/",
-    "female" : "hair/female/bedhead/",
-    "pregnant" : "hair/female/bedhead/"
+    "male" : "hair/male/messy2/",
+    "muscular" : "hair/male/messy2/",
+    "female" : "hair/female/messy2/",
+    "pregnant" : "hair/female/messy2/"
   },
   "variants": [
     "black",

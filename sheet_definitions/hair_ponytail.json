@@ -1,11 +1,11 @@
 {
-  "name" : "Bedhead",
+  "name" : "Ponytail",
   "type_name" : "hair",
   "file" : {
-    "male" : "hair/male/bedhead/",
-    "muscular" : "hair/male/bedhead/",
-    "female" : "hair/female/bedhead/",
-    "pregnant" : "hair/female/bedhead/"
+    "male" : "hair/male/ponytail/",
+    "muscular" : "hair/male/ponytail/",
+    "female" : "hair/female/ponytail/",
+    "pregnant" : "hair/female/ponytail/"
   },
   "variants": [
     "black",

@@ -1,11 +1,11 @@
 {
-  "name" : "Bedhead",
+  "name" : "Bunches",
   "type_name" : "hair",
   "file" : {
-    "male" : "hair/male/bedhead/",
-    "muscular" : "hair/male/bedhead/",
-    "female" : "hair/female/bedhead/",
-    "pregnant" : "hair/female/bedhead/"
+    "male" : "hair/male/bunches/",
+    "muscular" : "hair/male/bunches/",
+    "female" : "hair/female/bunches/",
+    "pregnant" : "hair/female/bunches/"
   },
   "variants": [
     "black",

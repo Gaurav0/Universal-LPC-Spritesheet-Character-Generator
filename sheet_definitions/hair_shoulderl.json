@@ -1,11 +1,11 @@
 {
-  "name" : "Bedhead",
+  "name" : "Shoulder left",
   "type_name" : "hair",
   "file" : {
-    "male" : "hair/male/bedhead/",
-    "muscular" : "hair/male/bedhead/",
-    "female" : "hair/female/bedhead/",
-    "pregnant" : "hair/female/bedhead/"
+    "male" : "hair/male/shoulderl/",
+    "muscular" : "hair/male/shoulderl/",
+    "female" : "hair/female/shoulderl/",
+    "pregnant" : "hair/female/shoulderl/"
   },
   "variants": [
     "black",

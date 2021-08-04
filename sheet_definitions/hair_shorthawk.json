@@ -1,11 +1,11 @@
 {
-  "name" : "Bedhead",
+  "name" : "Shorthawk",
   "type_name" : "hair",
   "file" : {
-    "male" : "hair/male/bedhead/",
-    "muscular" : "hair/male/bedhead/",
-    "female" : "hair/female/bedhead/",
-    "pregnant" : "hair/female/bedhead/"
+    "male" : "hair/male/shorthawk/",
+    "muscular" : "hair/male/shorthawk/",
+    "female" : "hair/female/shorthawk/",
+    "pregnant" : "hair/female/shorthawk/"
   },
   "variants": [
     "black",

@@ -1,11 +1,11 @@
 {
-  "name" : "Bedhead",
+  "name" : "Jewfro",
   "type_name" : "hair",
   "file" : {
-    "male" : "hair/male/bedhead/",
-    "muscular" : "hair/male/bedhead/",
-    "female" : "hair/female/bedhead/",
-    "pregnant" : "hair/female/bedhead/"
+    "male" : "hair/male/jewfro/",
+    "muscular" : "hair/male/jewfro/",
+    "female" : "hair/female/jewfro/",
+    "pregnant" : "hair/female/jewfro/"
   },
   "variants": [
     "black",

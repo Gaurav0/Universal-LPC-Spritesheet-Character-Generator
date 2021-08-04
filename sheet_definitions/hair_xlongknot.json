@@ -1,11 +1,11 @@
 {
-  "name" : "Bedhead",
+  "name" : "Extra longknot",
   "type_name" : "hair",
   "file" : {
-    "male" : "hair/male/bedhead/",
-    "muscular" : "hair/male/bedhead/",
-    "female" : "hair/female/bedhead/",
-    "pregnant" : "hair/female/bedhead/"
+    "male" : "hair/male/xlongknot/",
+    "muscular" : "hair/male/xlongknot/",
+    "female" : "hair/female/xlongknot/",
+    "pregnant" : "hair/female/xlongknot/"
   },
   "variants": [
     "black",

@@ -1,11 +1,11 @@
 {
-  "name" : "Bedhead",
+  "name" : "Swoop",
   "type_name" : "hair",
   "file" : {
-    "male" : "hair/male/bedhead/",
-    "muscular" : "hair/male/bedhead/",
-    "female" : "hair/female/bedhead/",
-    "pregnant" : "hair/female/bedhead/"
+    "male" : "hair/male/swoop/",
+    "muscular" : "hair/male/swoop/",
+    "female" : "hair/female/swoop/",
+    "pregnant" : "hair/female/swoop/"
   },
   "variants": [
     "black",

@@ -1,11 +1,11 @@
 {
-  "name" : "Bedhead",
+  "name" : "Shortknot",
   "type_name" : "hair",
   "file" : {
-    "male" : "hair/male/bedhead/",
-    "muscular" : "hair/male/bedhead/",
-    "female" : "hair/female/bedhead/",
-    "pregnant" : "hair/female/bedhead/"
+    "male" : "hair/male/shortknot/",
+    "muscular" : "hair/male/shortknot/",
+    "female" : "hair/female/shortknot/",
+    "pregnant" : "hair/female/shortknot/"
   },
   "variants": [
     "black",

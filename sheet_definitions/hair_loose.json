@@ -1,11 +1,11 @@
 {
-  "name" : "Bedhead",
+  "name" : "Loose",
   "type_name" : "hair",
   "file" : {
-    "male" : "hair/male/bedhead/",
-    "muscular" : "hair/male/bedhead/",
-    "female" : "hair/female/bedhead/",
-    "pregnant" : "hair/female/bedhead/"
+    "male" : "hair/male/loose/",
+    "muscular" : "hair/male/loose/",
+    "female" : "hair/female/loose/",
+    "pregnant" : "hair/female/loose/"
   },
   "variants": [
     "black",

@@ -3,7 +3,9 @@
   "type_name" : "hair",
   "file" : {
     "male" : "hair/male/longhawk/",
-    "muscular" : "hair/male/longhawk/"
+    "muscular" : "hair/male/longhawk/",
+    "female" : "hair/female/longhawk/",
+    "pregnant" : "hair/female/longhawk/"
   },
   "variants": [
     "black",

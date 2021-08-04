@@ -1,0 +1,40 @@
+{
+  "name" : "Braid",
+  "type_name" : "hair",
+  "file" : {
+    "male" : "hair/male/braid/",
+    "muscular" : "hair/male/braid/",
+    "female" : "hair/female/braid/",
+    "pregnant" : "hair/female/braid/"
+  },
+  "variants": [
+    "black",
+    "blonde",
+    "blonde 2",
+    "blue",
+    "blue 2",
+    "brown",
+    "brown 2",
+    "brunette",
+    "brunette 2",
+    "darkblonde",
+    "darkgrey",
+    "darkred",
+    "gold",
+    "grey",
+    "green",
+    "green 2",
+    "lightblonde",
+    "lightblonde 2",
+    "pink",
+    "purple",
+    "raven",
+    "raven 2",
+    "red",
+    "red 2",
+    "ruby",
+    "whiteblonde",
+    "whiteblonde 2",
+    "whitecyan"
+  ]
+}

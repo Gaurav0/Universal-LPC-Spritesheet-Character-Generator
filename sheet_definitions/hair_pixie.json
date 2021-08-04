@@ -1,11 +1,11 @@
 {
-  "name" : "Bedhead",
+  "name" : "Pixie",
   "type_name" : "hair",
   "file" : {
-    "male" : "hair/male/bedhead/",
-    "muscular" : "hair/male/bedhead/",
-    "female" : "hair/female/bedhead/",
-    "pregnant" : "hair/female/bedhead/"
+    "male" : "hair/male/pixie/",
+    "muscular" : "hair/male/pixie/",
+    "female" : "hair/female/pixie/",
+    "pregnant" : "hair/female/pixie/"
   },
   "variants": [
     "black",

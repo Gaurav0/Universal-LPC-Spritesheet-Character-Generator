@@ -1,11 +1,11 @@
 {
-  "name" : "Bedhead",
+  "name" : "Princess",
   "type_name" : "hair",
   "file" : {
-    "male" : "hair/male/bedhead/",
-    "muscular" : "hair/male/bedhead/",
-    "female" : "hair/female/bedhead/",
-    "pregnant" : "hair/female/bedhead/"
+    "male" : "hair/male/princess/",
+    "muscular" : "hair/male/princess/",
+    "female" : "hair/female/princess/",
+    "pregnant" : "hair/female/princess/"
   },
   "variants": [
     "black",

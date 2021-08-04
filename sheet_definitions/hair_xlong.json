@@ -1,11 +1,11 @@
 {
-  "name" : "Bedhead",
+  "name" : "Extra long",
   "type_name" : "hair",
   "file" : {
-    "male" : "hair/male/bedhead/",
-    "muscular" : "hair/male/bedhead/",
-    "female" : "hair/female/bedhead/",
-    "pregnant" : "hair/female/bedhead/"
+    "male" : "hair/male/xlong/",
+    "muscular" : "hair/male/xlong/",
+    "female" : "hair/female/xlong/",
+    "pregnant" : "hair/female/xlong/"
   },
   "variants": [
     "black",

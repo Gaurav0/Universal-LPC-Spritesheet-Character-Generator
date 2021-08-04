@@ -3,7 +3,9 @@
   "type_name" : "hair",
   "file" : {
     "male" : "hair/male/page/",
-    "muscular" : "hair/male/page/"
+    "muscular" : "hair/male/page/",
+    "female" : "hair/female/page/",
+    "pregnant" : "hair/female/page/"
   },
   "variants": [
     "black",
