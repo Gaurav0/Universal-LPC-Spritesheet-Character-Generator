@@ -3,7 +3,9 @@
   "type_name" : "shoulders",
   "file" : {
     "male" : "shoulders/plate/male/",
-    "female" : "shoulders/plate/female/"
+    "female" : "shoulders/plate/female/",
+    "muscular" : "shoulders/plate/male/",
+    "pregnant" : "shoulders/plate/female/"
   },
   "variants": [
     "7",

@@ -1,0 +1,19 @@
+{
+  "name" : "Longest",
+  "type_name" : "hair",
+  "file" : {
+    "female" : "hair/female/longest/",
+    "pregnant" : "hair/female/longest/"
+  },
+  "file_behind" : {
+    "female" : "hair/female/longest/behind/",
+    "pregnant" : "hair/female/longest/behind/"
+  },
+  "variants": [
+    "black",
+    "brunette",
+    "gold",
+    "purple",
+    "red"
+  ]
+}

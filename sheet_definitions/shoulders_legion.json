@@ -3,7 +3,9 @@
   "type_name" : "shoulders",
   "file" : {
     "male" : "shoulders/legion/male/",
-    "female" : "shoulders/legion/female/"
+    "female" : "shoulders/legion/female/",
+    "muscular" : "shoulders/legion/male/",
+    "pregnant" : "shoulders/legion/female/"
   },
   "variants": [
     "bronze",

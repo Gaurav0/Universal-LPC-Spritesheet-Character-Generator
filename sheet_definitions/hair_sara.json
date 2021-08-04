@@ -1,0 +1,15 @@
+{
+  "name" : "Sara",
+  "type_name" : "hair",
+  "file" : {
+    "female" : "hair/female/sara/",
+    "pregnant" : "hair/female/sara/"
+  },
+  "file_behind" : {
+    "female" : "hair/female/sara/behind/",
+    "pregnant" : "hair/female/sara/behind/"
+  },
+  "variants": [
+    "sara"
+  ]
+}

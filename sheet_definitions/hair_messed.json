@@ -1,12 +1,8 @@
 {
-  "name" : "Braid",
+  "name" : "Messed",
   "type_name" : "hair",
   "file" : {
-    "male" : "hair/male/braid/",
-    "muscular" : "hair/male/braid/",
-    "female" : "hair/female/braid/",
-    "pregnant" : "hair/female/braid/",
-    "child" : "hair/child/braid/"
+    "child" : "hair/child/messy/"
   },
   "variants": [
     "black",

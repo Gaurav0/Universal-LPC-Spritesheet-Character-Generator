@@ -1,12 +1,12 @@
 {
-  "name" : "Braid",
+  "name" : "Curly",
   "type_name" : "hair",
   "file" : {
-    "male" : "hair/male/braid/",
-    "muscular" : "hair/male/braid/",
-    "female" : "hair/female/braid/",
-    "pregnant" : "hair/female/braid/",
-    "child" : "hair/child/braid/"
+    "male" : "hair/male/curly/",
+    "muscular" : "hair/male/curly/",
+    "female" : "hair/female/curly/",
+    "pregnant" : "hair/female/curly/",
+    "child" : "hair/child/curly/"
   },
   "variants": [
     "black",

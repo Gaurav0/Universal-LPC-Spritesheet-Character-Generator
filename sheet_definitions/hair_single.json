@@ -1,12 +1,11 @@
 {
-  "name" : "Braid",
+  "name" : "Single",
   "type_name" : "hair",
   "file" : {
-    "male" : "hair/male/braid/",
-    "muscular" : "hair/male/braid/",
-    "female" : "hair/female/braid/",
-    "pregnant" : "hair/female/braid/",
-    "child" : "hair/child/braid/"
+    "male" : "hair/male/single/",
+    "muscular" : "hair/male/single/",
+    "female" : "hair/female/single/",
+    "pregnant" : "hair/female/single/"
   },
   "variants": [
     "black",

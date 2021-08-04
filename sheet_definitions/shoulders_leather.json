@@ -3,7 +3,9 @@
   "type_name" : "shoulders",
   "file" : {
     "male" : "shoulders/leather/male/",
-    "female" : "shoulders/leather/female/"
+    "female" : "shoulders/leather/female/",
+    "muscular" : "shoulders/leather/male/",
+    "pregnant" : "shoulders/leather/female/"
   },
   "variants": [
     "brown"
