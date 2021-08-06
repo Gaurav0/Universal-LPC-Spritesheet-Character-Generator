@@ -1,0 +1,22 @@
+{
+  "name" : "Legion",
+  "type_name" : "hat",
+  "layer_1" : {
+    "zPos" : 130,
+    "male" : "hat/legion/male/",
+    "female" : "hat/legion/female/",
+    "muscular" : "hat/legion/male/",
+    "pregnant" : "hat/legion/female/"
+  },
+  "variants": [
+    "bronze_1",
+    "bronze_2",
+    "bronze_3",
+    "steel_1",
+    "steel_2",
+    "steel_3",
+    "gold_1",
+    "gold_2",
+    "gold_3"
+  ]
+}

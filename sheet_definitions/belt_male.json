@@ -1,7 +1,8 @@
 {
   "name" : "Belt",
   "type_name" : "belt",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 70,
     "male" : "torso/belt/male/"
   },
   "variants": [

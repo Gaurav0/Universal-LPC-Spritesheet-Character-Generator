@@ -68,17 +68,6 @@
 					<label for="sex-muscular">Muscular</label>
 				</li>
 
-				<!-- Shadows -->
-				<span class="condensed">Shadow</span>
-				<li>
-					<input data-file="body/lpc_shadow.png" id="shadow-adult" type="checkbox">
-					<label>Normal size</label>
-				</li>
-				<li>
-					<input data-file="body/lpc_shadow_child.png" id="shadow-child" type="checkbox">
-					<label>Small size</label>
-				</li>
-
 				<!-- Bodies -->
 				<li>
 					<span class="condensed">Body</span>
@@ -86,6 +75,7 @@
 						<div id="sheet_body_human"></div>
 						<div id="sheet_body_reptile"></div>
 						<div id="sheet_body_orc"></div>
+						<div id="sheet_body_boarman"></div>
 						<div id="sheet_body_wolfman"></div>
 						<div id="sheet_body_skeleton"></div>
 						<div id="sheet_body_pregnant"></div>
@@ -97,28 +87,22 @@
 
 				<!-- Wounds -->
 				<li data-required="male,female,muscular,pregnant">
-					<input type="checkbox" id="ribs_blood" name="ribs_blood" data-file="body/wounds/ribs_blood.png">
-					<label for="ribs_blood">Ribs wound</label>
-				</li>
-				<li data-required="male,female,muscular,pregnant">
-					<input type="checkbox" id="brain_blood" name="brain_blood" data-file="body/wounds/brain_blood.png">
-					<label for="brain_blood">Brain wound</label>
-				</li>
-				<li data-required="male,female,muscular,pregnant">
-					<input type="checkbox" id="arm_blood" name="arm_blood" data-file="body/wounds/arm_blood.png">
-					<label for="arm_blood">Arm wound</label>
-				</li>
-				<li data-required="male,female,muscular,pregnant">
-					<input type="checkbox" id="mouth_blood" name="mouth_blood" data-file="body/wounds/mouth_blood.png">
-					<label for="mouth_blood">Mouth wound</label>
-				</li>
-				<li data-required="male,female,muscular,pregnant">
-					<input type="checkbox" id="eye_blood" name="eye_blood" data-file="body/wounds/eye_blood.png">
-					<label for="eye_blood">Eye wound</label>
+					<span class="condensed">Wounds</span>
+					<ul>
+						<div id="sheet_wound_arm"></div>
+						<div id="sheet_wound_brain"></div>
+						<div id="sheet_wound_ribs"></div>
+						<div id="sheet_wound_eye"></div>
+						<div id="sheet_wound_mouth"></div>
+					</ul>
 				</li>
 
+
+				<!-- Shadow -->
+				<div id="sheet_shadow"></div>
+
 				<!-- Eyes -->
-				<div id="eyes"></div>
+				<div id="sheet_eyes"></div>
 
 				<!-- Beards -->
 				<li data-required="male,muscular">
@@ -206,6 +190,9 @@
 					</ul>
 				</li>
 
+				<!-- Vest -->
+				<div id="sheet_torso_clothes_vest"></div>
+
 				<!-- Armour -->
 				<li data-required="male,female">
 					<span class="condensed">Armour</span>
@@ -228,6 +215,9 @@
 						<div id="sheet_shoulders_leather"></div>
 					</ul>
 				</li>
+
+				<!-- Bauldron -->
+				<div id="sheet_bauldron"></div>
 
 				<!-- Bracers -->
 				<div id="sheet_bracers"></div>
@@ -277,6 +267,7 @@
 				<!-- Quiver -->
 				<div id="sheet_quiver"></div>
 
+				<!-- Hair -->
 				<li>
 					<span class="condensed">Hair</span>
 					<ul>
@@ -322,6 +313,7 @@
 					</ul>
 				</li>
 
+				<!-- Hats -->
 				<li>
 					<span class="condensed">Hats</span>
 					<ul>
@@ -329,567 +321,30 @@
 						<div id="sheet_hat_horned"></div>
 						<div id="sheet_hat_formal"></div>
 						<div id="sheet_hat_reptile"></div>
-						<li>
-							<span class="condensed">Magic</span>
-							<ul>
-								<li>
-									<input type="radio" id="hat-moon" name="hat" data-file_male="head/caps/male/moon-male.png" data-file_female="head/caps/female/moon-female.png">
-									<label for="hat-moon">Wizard moon</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-nomoon" name="hat" data-file_male="head/caps/male/nomoon-male.png" data-file_female="head/caps/female/nomoon-female.png">
-									<label for="hat-nomoon">Wizard no moon</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-magicblack" name="hat" data-file_male="head/magichats/male/black.png" data-file_female="head/magichats/female/black.png">
-									<label for="hat-magicblack">Magic 1</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-magicbrown" name="hat" data-file_male="head/magichats/male/brown.png" data-file_female="head/magichats/female/brown.png">
-									<label for="hat-magicbrown">Magic 2</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-magicgray" name="hat" data-file_male="head/magichats/male/gray.png" data-file_female="head/magichats/female/gray.png">
-									<label for="hat-magicgray">Magic 3</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-magicred" name="hat" data-file_male="head/magichats/male/red.png" data-file_female="head/magichats/female/red.png">
-									<label for="hat-magicred">Magic 4</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-magicteal" name="hat" data-file_male="head/magichats/male/teal.png" data-file_female="head/magichats/female/teal.png">
-									<label for="hat-magicteal">Magic 5</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-magicyellow" name="hat" data-file_male="head/magichats/male/yellow.png" data-file_female="head/magichats/female/yellow.png">
-									<label for="hat-magicyellow">Magic 6</label>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<span class="condensed">Legion</span>
-							<ul>
-								<li>
-									<input type="radio" id="hat-Male_legion1helmet_gold" name="hat" data-file_male="head/helms/male/Male_legion1helmet_gold.png" data-file_female="head/helms/female/Female_legion1helmet_gold.png">
-									<label for="hat-Male_legion1helmet_gold">gold 1</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-Male_legion2helmet_gold" name="hat" data-file_male="head/helms/male/Male_legion2helmet_gold.png" data-file_female="head/helms/female/Female_legion2helmet_gold.png">
-									<label for="hat-Male_legion2helmet_gold">gold 2</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-Male_legion3helmet_gold" name="hat" data-file_male="head/helms/male/Male_legion3helmet_gold.png" data-file_female="head/helms/female/Female_legion3helmet_gold.png">
-									<label for="hat-Male_legion3helmet_gold">gold 3</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-Male_legion1helmet_steel" name="hat" data-file_male="head/helms/male/Male_legion1helmet_steel.png" data-file_female="head/helms/female/Female_legion1helmet_steel.png">
-									<label for="hat-Male_legion1helmet_steel">steel 1</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-Male_legion2helmet_steel" name="hat" data-file_male="head/helms/male/Male_legion2helmet_steel.png" data-file_female="head/helms/female/Female_legion2helmet_steel.png">
-									<label for="hat-Male_legion2helmet_steel">steel 2</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-Male_legion3helmet_steel" name="hat" data-file_male="head/helms/male/Male_legion3helmet_steel.png" data-file_female="head/helms/female/Female_legion3helmet_steel.png">
-									<label for="hat-Male_legion3helmet_steel">steel 3</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-Male_legion1helmet_bronze" name="hat" data-file_male="head/helms/male/Male_legion1helmet_bronze.png" data-file_female="head/helms/female/Female_legion1helmet_bronze.png">
-									<label for="hat-Male_legion1helmet_bronze">bronze 1</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-Male_legion2helmet_bronze" name="hat" data-file_male="head/helms/male/Male_legion2helmet_bronze.png" data-file_female="head/helms/female/Female_legion2helmet_bronze.png">
-									<label for="hat-Male_legion2helmet_bronze">bronze 2</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-Male_legion3helmet_bronze" name="hat" data-file_male="head/helms/male/Male_legion3helmet_bronze.png" data-file_female="head/helms/female/Female_legion3helmet_bronze.png">
-									<label for="hat-Male_legion3helmet_bronze">bronze 3</label>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<span class="condensed">Helmet</span>
-							<ul>
-								<li>
-									<input type="radio" id="hat-gladiator" name="hat" data-file_male="head/helms/male/maximus-male.png" data-file_female="head/helms/female/maximus-female.png">
-									<label for="hat-gladiator">gladiator</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-barbuta" name="hat" data-file_male="head/helms/male/barbuta-male.png" data-file_female="head/helms/female/barbuta-female.png">
-									<label for="hat-barbuta">barbuta</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-norman" name="hat" data-file_male="head/helms/male/norman.png" data-file_female="head/helms/female/norman.png">
-									<label for="hat-norman">norman</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-barbarian" name="hat" data-file_male="head/helms/male/barbarian-male.png" data-file_female="head/helms/female/barbarian-female.png">
-									<label for="hat-barbarian">barbarian</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-bascinet" name="hat" data-file_male="head/helms/male/bascinet.png" data-file_female="head/helms/female/bascinet.png">
-									<label for="hat-bascinet">bascinet</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-bascinet_raised" name="hat" data-file_male="head/helms/male/bascinet-raised.png" data-file_female="head/helms/female/bascinet-raised.png">
-									<label for="hat-bascinet_raised">bascinet raised</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-bascinet_plumage" name="hat" data-file_male="head/helms/male/bascinet-plumage.png" data-file_female="head/helms/female/bascinet-plumage.png">
-									<label for="hat-bascinet_plumage">bascinet plume</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-bascinet_raised_plumage" name="hat" data-file_male="head/helms/male/bascinet-raised-plumage.png" data-file_female="head/helms/female/bascinet-raised-plumage.png">
-									<label for="hat-bascinet_raised_plumage">bascinet plume raised</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-morion" name="hat" data-file_male="head/helms/male/morion.png" data-file_female="head/helms/female/morion.png">
-									<label for="hat-morion">morion</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-morion_plumage" name="hat" data-file_male="head/helms/male/morion-plumage.png" data-file_female="head/helms/female/morion-plumage.png">
-									<label for="hat-morion_plumage">morion plume</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-morion_faceplate" name="hat" data-file_male="head/helms/male/morion-faceplate.png" data-file_female="head/helms/female/morion-faceplate.png">
-									<label for="hat-morion_faceplate">morion faceplate</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-morion_faceplate_plumage" name="hat" data-file_male="head/helms/male/morion-faceplate-plumage.png" data-file_female="head/helms/female/morion-faceplate-plumage.png">
-									<label for="hat-morion_faceplate_plumage">morion faceplate plume</label>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<span class="condensed">Crown</span>
-							<ul>
-								<li>
-									<input type="radio" id="hat-crown1" name="hat" data-file="head/crown/25.png">
-									<label for="hat-crown1">1</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-crown2" name="hat" data-file="head/crown/26.png">
-									<label for="hat-crown2">2</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-crown3" name="hat" data-file="head/crown/27.png">
-									<label for="hat-crown3">3</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-crown4" name="hat" data-file="head/crown/28.png">
-									<label for="hat-crown4">4</label>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<span class="condensed">Cloth hood</span>
-							<ul>
-								<li>
-									<input type="radio" id="hat-hood_cloth_black" name="hat" data-file_male="head/hoods/male/male_hood_black.png" data-file_female="head/hoods/female/male_hood_black.png">
-									<label for="hat-hood_cloth_black">black</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-hood_cloth" name="hat" data-file_male="head/hoods/male/cloth_hood_male.png" data-file_female="head/hoods/female/cloth_hood_female.png">
-									<label for="hat-hood_cloth">brown</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-hood_cloth2" name="hat" data-file="head/hoods/24.png">
-									<label for="hat-hood_cloth2">white</label>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<input type="radio" id="hat-bandana_red" name="hat" data-file_male="head/bandanas/male/red.png" data-file_female="head/bandanas/female/red.png">
-							<label for="hat-bandana_red">Red Bandana</label>
-						</li>
-						<li>
-							<input type="radio" id="hat-bandana2" name="hat" data-file="head/bandanas/11.png">
-							<label for="hat-bandana2">Gray Bandana</label>
-						</li>
-						<li>
-							<input type="radio" id="hat-bandana3" name="hat" data-file="head/bandanas/39.png">
-							<label for="hat-bandana3">White Bandana</label>
-						</li>
-						<li>
-							<input type="radio" id="hat-bandana4" name="hat" data-file="head/bandanas/38.png">
-							<label for="hat-bandana4">Bandage</label>
-						</li>
-						<li>
-							<input type="radio" id="hat-hijab" name="hat" data-file="head/hijab/hijabblue_51.png">
-							<label for="hat-hijab">Hijab</label>
-						</li>
-						<li>
-							<input type="radio" id="hat-cap_leather" name="hat" data-file_male="head/caps/male/leather_cap_male.png" data-file_female="head/caps/female/leather_cap_female.png">
-							<label for="hat-cap_leather">Leather Cap</label>
-						</li>
-						<li>
-							<input type="radio" id="hat-chain" name="hat" data-file_male="head/helms/male/chainhat_male.png" data-file_female="head/helms/female/chainhat_female.png">
-							<label for="hat-chain">Chain Hat</label>
-						</li>
-						<li>
-							<input type="radio" id="hat-hood_chain" name="hat" data-file_male="head/hoods/male/chain_hood_male.png" data-file_female="head/hoods/female/chain_hood_female.png">
-							<label for="hat-hood_chain">Chain Hood</label>
-						</li>
-						<li>
-							<span class="condensed">Tiara <small>(Female)</small></span>
-							<ul>
-								<li>
-									<input type="radio" id="hat-tiara_bronze" name="hat" data-required="sex=female" data-file="head/tiaras_female/bronze.png">
-									<label for="hat-tiara_bronze">Bronze</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-tiara_iron" name="hat" data-required="sex=female" data-file="head/tiaras_female/iron.png">
-									<label for="hat-tiara_iron">Iron</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-tiara_silver" name="hat" data-required="sex=female" data-file="head/tiaras_female/silver.png">
-									<label for="hat-tiara_silver">Silver</label>
-								</li>
-								<li>
-									<input type="radio" id="hat-tiara_gold" name="hat" data-required="sex=female" data-file="head/tiaras_female/gold.png">
-									<label for="hat-tiara_gold">Gold</label>
-								</li>
-								<li>
-									<input type="radio" id="hats-tiara_purple" name="hat" data-required="sex=female" data-file="head/tiaras_female/purple.png">
-									<label for="hat-tiara_purple">Purple</label>
-								</li>
-							</ul>
-						</li>
+						<div id="sheet_hat_magic"></div>
+						<div id="sheet_hat_legion"></div>
+						<div id="sheet_hat_helmet"></div>
+						<div id="sheet_hat_crown"></div>
+						<div id="sheet_hat_cloth"></div>
+						<div id="sheet_hat_tiara"></div>
 					</ul>
 				</li>
 
+				<!-- Weapons -->
 				<li>
 					<span class="condensed">Weapon</span>
 					<ul>
-						<li>
-							<span class="condensed">Bows</span>
-							<ul>
-								<li>
-									<input type="radio" id="weapon-bow" name="weapon" data-file="weapons/right hand/either/bow.png" data-prohibited="body=skeleton" data-preview_row="17">
-									<label for="weapon-bow">Bow 1</label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-bow_skeleton" name="weapon" data-file="weapons/right hand/either/bow_skeleton.png" data-preview_row="17">
-									<label for="weapon-bow_skeleton">Bow 1<small>(for Skeleton)</small></label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-greatbow" name="weapon" data-file="weapons/right hand/either/greatbow.png" data-preview_row="17">
-									<label for="weapon-greatbow">Bow 2</label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-recurvebow" name="weapon" data-file="weapons/right hand/either/recurvebow.png" data-preview_row="17">
-									<label for="weapon-recurvebow">Bow 3</label>
-								</li>
-
-								<li>
-									<input type="radio" id="weapon-recurvebow" name="weapon" data-file="weapons/right hand/either/6.png" data-preview_row="17">
-									<label for="weapon-recurvebow">Bow 4</label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-recurvebow" name="weapon" data-file="weapons/right hand/either/7.png" data-preview_row="17">
-									<label for="weapon-recurvebow">Bow 5</label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-recurvebow" name="weapon" data-file="weapons/right hand/either/8.png" data-preview_row="17">
-									<label for="weapon-recurvebow">Bow 6</label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-recurvebow" name="weapon" data-file="weapons/right hand/either/9.png" data-preview_row="17">
-									<label for="weapon-recurvebow">Bow 7</label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-recurvebow" name="weapon" data-file="weapons/right hand/either/10.png" data-preview_row="17">
-									<label for="weapon-recurvebow">Bow 8</label>
-								</li>
-
-							</ul>
-						</li>
-						<li>
-							<span class="condensed">Thrust</span>
-							<ul>
-								<li>
-									<input type="radio" id="weapon-crossbow" name="weapon" data-file_male="weapons/right hand/male/crossbow.png" data-file_female="weapons/right hand/male/crossbow.png">
-									<label for="weapon-crossbow">Crossbow</label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-spear" name="weapon" data-file_male="weapons/right hand/male/spear_male.png" data-file_female="weapons/right hand/female/spear_female.png">
-									<label for="weapon-spear">Spear</label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-spearNew" name="weapon" data-file_male="weapons/right hand/male/right_hand_spear_male.png" data-file_female="weapons/right hand/female/right_hand_spear_female.png">
-									<label for="weapon-spearNew">Spear (v2)</label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-spearNewMetal" name="weapon" data-file="weapons/right hand/either/right_hand_spear_either_metal.png">
-									<label for="weapon-spearNewMetal">Spear (v2) metal</label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-spearNewBlack" name="weapon" data-file="weapons/right hand/either/right_hand_spear_either_black.png">
-									<label for="weapon-spearNewBlack">Spear (v2) black</label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-spearNewGreen" name="weapon" data-file="weapons/right hand/either/right_hand_spear_either_green.png">
-									<label for="weapon-spearNewGreen">Spear (v2) green</label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-spearNewPurple" name="weapon" data-file="weapons/right hand/either/right_hand_spear_either_purple.png">
-									<label for="weapon-spearNewPurple">Spear (v2) purple</label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-cane" name="weapon" data-file="weapons/right hand/formal_cane.png">
-									<label for="weapon-cane">Cane</label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-shovel" name="weapon" data-file="weapons/right hand/shovel.png">
-									<label for="weapon-shovel">Shovel</label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-shovelNew" name="weapon" data-file_male="weapons/right hand/male/right_hand_shovel_male.png" data-file_female="weapons/right hand/female/right_hand_shovel_female.png">
-									<label for="weapon-shovelNew">Shovel (v2)</label>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<span class="condensed">Thrust oversize</span>
-							<ul>
-								<li>
-									<input type="radio" id="weapon-oversizeNone" name="weapon" data-file_male="weapons/oversize/oversizeNone.png" data-file_female="weapons/oversize/oversizeNone.png" data-oversize="1">
-									<label for="weapon-oversizeNone">None (template)<small> (L)</small></label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-halberdthrust" name="weapon" data-file_male="weapons/oversize/thrust/male/halberd-attack.png" data-file_female="weapons/oversize/thrust/female/halberd-attack.png" data-oversize="1">
-									<label for="weapon-halberdthrust">Halberd<small> (L)</small></label>
-								</li>
-								<li>
-									<span class="condensed">Soldier spear</span>
-									<ul>
-										<li>
-											<input type="radio" id="weapon-thrust1" name="weapon" data-file_male="weapons/oversize/thrust/male/1.png" data-file_female="weapons/oversize/thrust/female/1.png" data-oversize="1">
-											<label for="weapon-thrust1">1</label>
-										</li>
-										<li>
-											<input type="radio" id="weapon-thrust2" name="weapon" data-file_male="weapons/oversize/thrust/male/2.png" data-file_female="weapons/oversize/thrust/female/2.png" data-oversize="1">
-											<label for="weapon-thrust2">2</label>
-										</li>
-										<li>
-											<input type="radio" id="weapon-thrust3" name="weapon" data-file_male="weapons/oversize/thrust/male/3.png" data-file_female="weapons/oversize/thrust/female/3.png" data-oversize="1">
-											<label for="weapon-thrust3">3</label>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<span class="condensed">Crystal staff</span>
-									<ul>
-										<li>
-											<input type="radio" id="weapon-thrust4" name="weapon" data-file_male="weapons/oversize/thrust/male/4.png" data-file_female="weapons/oversize/thrust/female/4.png" data-oversize="1">
-											<label for="weapon-thrust4">violet</label>
-										</li>
-										<li>
-											<input type="radio" id="weapon-thrust5" name="weapon" data-file_male="weapons/oversize/thrust/male/5.png" data-file_female="weapons/oversize/thrust/female/5.png" data-oversize="1">
-											<label for="weapon-thrust5">violet active</label>
-										</li>
-										<li>
-											<input type="radio" id="weapon-thrust6" name="weapon" data-file_male="weapons/oversize/thrust/male/6.png" data-file_female="weapons/oversize/thrust/female/6.png" data-oversize="1">
-											<label for="weapon-thrust6">red</label>
-										</li>
-										<li>
-											<input type="radio" id="weapon-thrust7" name="weapon" data-file_male="weapons/oversize/thrust/male/7.png" data-file_female="weapons/oversize/thrust/female/7.png" data-oversize="1">
-											<label for="weapon-thrust7">red active</label>
-										</li>
-										<li>
-											<input type="radio" id="weapon-thrust8" name="weapon" data-file_male="weapons/oversize/thrust/male/8.png" data-file_female="weapons/oversize/thrust/female/8.png" data-oversize="1">
-											<label for="weapon-thrust8">blue</label>
-										</li>
-										<li>
-											<input type="radio" id="weapon-thrust9" name="weapon" data-file_male="weapons/oversize/thrust/male/9.png" data-file_female="weapons/oversize/thrust/female/9.png" data-oversize="1">
-											<label for="weapon-thrust9">blue active</label>
-										</li>
-										<li>
-											<input type="radio" id="weapon-thrust10" name="weapon" data-file_male="weapons/oversize/thrust/male/10.png" data-file_female="weapons/oversize/thrust/female/10.png" data-oversize="1">
-											<label for="weapon-thrust10">yellow</label>
-										</li>
-										<li>
-											<input type="radio" id="weapon-thrust11" name="weapon" data-file_male="weapons/oversize/thrust/male/11.png" data-file_female="weapons/oversize/thrust/female/11.png" data-oversize="1">
-											<label for="weapon-thrust11">yellow active</label>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<span class="condensed">Wooden staff</span>
-									<ul>
-										<li>
-											<input type="radio" id="weapon-thrust12" name="weapon" data-file_male="weapons/oversize/thrust/male/12.png" data-file_female="weapons/oversize/thrust/female/12.png" data-oversize="1">
-											<label for="weapon-thrust12">No magic</label>
-										</li>
-										<li>
-											<input type="radio" id="weapon-thrust13" name="weapon" data-file_male="weapons/oversize/thrust/male/13.png" data-file_female="weapons/oversize/thrust/female/13.png" data-oversize="1">
-											<label for="weapon-thrust13">blue</label>
-										</li>
-										<li>
-											<input type="radio" id="weapon-thrust14" name="weapon" data-file_male="weapons/oversize/thrust/male/14.png" data-file_female="weapons/oversize/thrust/female/14.png" data-oversize="1">
-											<label for="weapon-thrust14">yellow</label>
-										</li>
-										<li>
-											<input type="radio" id="weapon-thrust15" name="weapon" data-file_male="weapons/oversize/thrust/male/15.png" data-file_female="weapons/oversize/thrust/female/15.png" data-oversize="1">
-											<label for="weapon-thrust15">violet</label>
-										</li>
-										<li>
-											<input type="radio" id="weapon-thrust16" name="weapon" data-file_male="weapons/oversize/thrust/male/16.png" data-file_female="weapons/oversize/thrust/female/16.png" data-oversize="1">
-											<label for="weapon-thrust16">orange</label>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<span class="condensed">Trident</span>
-									<ul>
-										<li>
-											<input type="radio" id="weapon-thrust17" name="weapon" data-file_male="weapons/oversize/thrust/male/17.png" data-file_female="weapons/oversize/thrust/female/17.png" data-oversize="1">
-											<label for="weapon-thrust17">1</label>
-										</li>
-										<li>
-											<input type="radio" id="weapon-thrust18" name="weapon" data-file_male="weapons/oversize/thrust/male/18.png" data-file_female="weapons/oversize/thrust/female/18.png" data-oversize="1">
-											<label for="weapon-thrust18">2</label>
-										</li>
-										<li>
-											<input type="radio" id="weapon-thrust19" name="weapon" data-file_male="weapons/oversize/thrust/male/19.png" data-file_female="weapons/oversize/thrust/female/19.png" data-oversize="1">
-											<label for="weapon-thrust19">3</label>
-										</li>
-										<li>
-											<input type="radio" id="weapon-thrust20" name="weapon" data-file_male="weapons/oversize/thrust/male/20.png" data-file_female="weapons/oversize/thrust/female/20.png" data-oversize="1">
-											<label for="weapon-thrust20">4</label>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<span class="condensed">Dragon spear</span>
-									<ul>
-										<li>
-											<input type="radio" id="weapon-thrust21" name="weapon" data-file_male="weapons/oversize/thrust/male/21.png" data-file_female="weapons/oversize/thrust/female/21.png" data-oversize="1">
-											<label for="weapon-thrust21">1</label>
-										</li>
-										<li>
-											<input type="radio" id="weapon-thrust22" name="weapon" data-file_male="weapons/oversize/thrust/male/22.png" data-file_female="weapons/oversize/thrust/female/22.png" data-oversize="1">
-											<label for="weapon-thrust22">2</label>
-										</li>
-										<li>
-											<input type="radio" id="weapon-thrust23" name="weapon" data-file_male="weapons/oversize/thrust/male/23.png" data-file_female="weapons/oversize/thrust/female/23.png" data-oversize="1">
-											<label for="weapon-thrust23">3</label>
-										</li>
-										<li>
-											<input type="radio" id="weapon-thrust24" name="weapon" data-file_male="weapons/oversize/thrust/male/24.png" data-file_female="weapons/oversize/thrust/female/24.png" data-oversize="1">
-											<label for="weapon-thrust24">4</label>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<span class="condensed">Spear</span>
-									<ul>
-										<li>
-											<input type="radio" id="weapon-thrust25" name="weapon" data-file_male="weapons/oversize/thrust/male/25.png" data-file_female="weapons/oversize/thrust/female/25.png" data-oversize="1">
-											<label for="weapon-thrust25">Spear long</label>
-										</li>
-										<li>
-											<input type="radio" id="weapon-thrust26" name="weapon" data-file_male="weapons/oversize/thrust/male/26.png" data-file_female="weapons/oversize/thrust/female/26.png" data-oversize="1">
-											<label for="weapon-thrust26">Spear medium</label>
-										</li>
-										<li>
-											<input type="radio" id="weapon-thrust27" name="weapon" data-file_male="weapons/oversize/thrust/male/27.png" data-file_female="weapons/oversize/thrust/female/27.png" data-oversize="1">
-											<label for="weapon-thrust27">Spear short</label>
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<span class="condensed">Slash</span>
-							<ul>
-								<li>
-									<input type="radio" id="weapon-dagger" name="weapon" data-file_male="weapons/right hand/male/dagger_male.png" data-file_female="weapons/right hand/female/dagger_female.png">
-									<label for="weapon-dagger">Dagger</label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-warhammer" name="weapon" data-file_male="weapons/right hand/male/warhammer.png" data-file_female="weapons/right hand/female/warhammer.png">
-									<label for="weapon-warhammer">Warhammer</label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-axe" name="weapon" data-file_male="weapons/right hand/male/axe.png" data-file_female="weapons/right hand/female/axe.png">
-									<label for="weapon-axe">Axe</label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-axe2" name="weapon" data-file_male="weapons/right hand/male/axe2.png" data-file_female="weapons/right hand/female/axe2.png">
-									<label for="weapon-axe2">Axe 2</label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-pickaxe" name="weapon" data-file_male="weapons/right hand/male/pickaxe.png" data-file_female="weapons/right hand/female/pickaxe.png">
-									<label for="weapon-pickaxe">Pickaxe</label>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<span class="condensed">Slash oversize</span>
-							<ul>
-								<li>
-									<input type="radio" id="weapon-oversizeNoneSlash" name="weapon" data-file_male="weapons/oversize/oversizeNone.png" data-file_female="weapons/oversize/oversizeNone.png" data-oversize="2">
-									<label for="weapon-oversizeNoneSlash">None (template)<small> (L)</small></label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-waraxe" name="weapon" data-file_male="weapons/oversize/right hand/male/waraxe-attack.png" data-file_female="weapons/oversize/right hand/female/waraxe-attack.png" data-oversize="2">
-									<label for="weapon-waraxe">War axe<small> (L)</small></label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-flail" name="weapon" data-file_male="weapons/oversize/right hand/male/flail-attack.png" data-file_female="weapons/oversize/right hand/female/flail-attack.png" data-oversize="2">
-									<label for="weapon-flail">Flail<small> (L)</small></label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-halberdslash" name="weapon" data-file_male="weapons/oversize/right hand/male/halberd-attack.png" data-file_female="weapons/oversize/right hand/female/halberd-attack.png" data-oversize="2">
-									<label for="weapon-halberdslash">Halberd<small> (L)</small></label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-longsword" name="weapon" data-file_male="weapons/oversize/right hand/male/longsword-attack.png" data-file_female="weapons/oversize/right hand/female/longsword-attack.png" data-oversize="2">
-									<label for="weapon-longsword">Long Sword <small> (L)</small></label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-bluesaber" name="weapon" data-file_male="weapons/oversize/right hand/male/glowsword_blue-attack.png" data-file_female="weapons/oversize/right hand/female/glowsword_blue-attack.png" data-oversize="2">
-									<label for="weapon-bluesaber">Blue saber <small> (L)</small></label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-redsaber" name="weapon" data-file_male="weapons/oversize/right hand/male/glowsword_red-attack.png" data-file_female="weapons/oversize/right hand/female/glowsword_red-attack.png" data-oversize="2">
-									<label for="weapon-redsaber">Red saber <small> (L)</small></label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-mace" name="weapon" data-file_male="weapons/oversize/right hand/male/mace-attack.png" data-file_female="weapons/oversize/right hand/female/mace-attack.png" data-oversize="2">
-									<label for="weapon-mace">Mace <small> (L)</small></label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-rapier" name="weapon" data-file_male="weapons/oversize/right hand/male/rapier-attack.png" data-file_female="weapons/oversize/right hand/female/rapier-attack.png" data-oversize="2">
-									<label for="weapon-rapier">Rapier<small> (L)</small></label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-saber" name="weapon" data-file_male="weapons/oversize/right hand/male/saber-attack.png" data-file_female="weapons/oversize/right hand/female/saber-attack.png" data-oversize="2">
-									<label for="weapon-saber">Saber<small> (L)</small></label>
-								</li>
-								<li>
-									<input type="radio" id="weapon-scythe" name="weapon" data-file_male="weapons/oversize/right hand/male/scythe-attack.png" data-file_female="weapons/oversize/right hand/female/scythe-attack.png" data-oversize="2">
-									<label for="weapon-scythe">Scythe<small> (L)</small></label>
-								</li>
-							</ul>
-						</li>
+						<div id="sheet_weapon_bow"></div>
+						<div id="sheet_weapon_thrust"></div>
+						<div id="sheet_weapon_slash"></div>
+						<div id="sheet_weapon_thrust_oversize"></div>
+						<div id="sheet_weapon_slash_oversize"></div>
+						<div id="sheet_weapon_thrust_oversize_attack_only"></div>
 					</ul>
 				</li>
 
-				<li>
-					<span class="condensed">Ammo</span>
-					<ul>
-						<li>
-							<input type="radio" id="ammo-arrow" name="ammo" data-file="weapons/left hand/either/arrow.png" data-prohibited="body=skeleton" data-preview_row="17">
-							<label for="ammo-arrow">Arrow</label>
-						</li>
-						<li>
-							<input type="radio" id="ammo-arrow_skeleton" name="ammo" data-file="weapons/left hand/either/arrow_skeleton.png" data-preview_row="17">
-							<label for="ammo-arrow_skeleton">Arrow <small>(for Skeleton)</small></label>
-						</li>
-					</ul>
-				</li>
+				<!-- Ammo -->
+				<div id="sheet_ammo"></div>
 
 			</ul>
 		</section>

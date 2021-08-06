@@ -1,7 +1,8 @@
 {
   "name" : "Sandals",
   "type_name" : "shoes",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 15,
     "female" : "feet/sandals/female/",
     "pregnant" : "feet/sandals/female/",
     "male" : "feet/sandals/male/",

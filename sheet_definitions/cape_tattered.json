@@ -1,11 +1,13 @@
 {
   "name" : "Tattered",
   "type_name" : "cape",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 85,
     "female" : "cape/tattered/female/",
     "pregnant" : "cape/tattered/female/"
   },
-  "file_behind" : {
+  "layer_2" : {
+    "zPos" : 9,
     "female" : "cape/tattered_behind/",
     "pregnant" : "cape/tattered_behind/"
   },

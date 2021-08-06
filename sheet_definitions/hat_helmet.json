@@ -1,0 +1,27 @@
+{
+  "name" : "Helmet",
+  "type_name" : "hat",
+  "layer_1" : {
+    "zPos" : 130,
+    "male" : "hat/helmet/male/",
+    "female" : "hat/helmet/female/",
+    "muscular" : "hat/helmet/male/",
+    "pregnant" : "hat/helmet/female/"
+  },
+  "variants": [
+    "barbarian",
+    "barbuta",
+    "bascinet plumage",
+    "bascinet raised plumage",
+    "bascinet raised",
+    "bascinet",
+    "chain_hat",
+    "chain",
+    "maximus",
+    "morion faceplate plumage",
+    "morion faceplate",
+    "morion plumage",
+    "morion",
+    "norman"
+  ]
+}

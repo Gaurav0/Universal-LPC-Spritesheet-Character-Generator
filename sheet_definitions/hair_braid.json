@@ -1,12 +1,13 @@
 {
   "name" : "Braid",
   "type_name" : "hair",
-  "file" : {
-    "male" : "hair/male/braid/",
-    "muscular" : "hair/male/braid/",
-    "female" : "hair/female/braid/",
-    "pregnant" : "hair/female/braid/",
-    "child" : "hair/child/braid/"
+  "layer_1" : {
+    "zPos" : 120,
+    "male" : "hair/braid/male/",
+    "muscular" : "hair/braid/male/",
+    "female" : "hair/braid/female/",
+    "pregnant" : "hair/braid/female/",
+    "child" : "hair/braid/child/"
   },
   "variants": [
     "black",

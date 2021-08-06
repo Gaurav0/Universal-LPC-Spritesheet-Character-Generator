@@ -1,7 +1,8 @@
 {
   "name" : "Scarf",
   "type_name" : "neck",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 90,
     "male" : "neck/scarf/",
     "female" : "neck/scarf/",
     "pregnant" : "neck/scarf/",

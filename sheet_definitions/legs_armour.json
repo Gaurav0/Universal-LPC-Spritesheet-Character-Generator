@@ -1,7 +1,8 @@
 {
   "name" : "Armour",
   "type_name" : "legs",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 20,
     "male" : "legs/armour/male/",
     "female" : "legs/armour/female/"
   },

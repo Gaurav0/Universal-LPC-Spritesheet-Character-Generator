@@ -1,7 +1,8 @@
 {
   "name" : "Armour",
   "type_name" : "shoes",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 15,
     "male" : "feet/armor/male/",
     "muscular" : "feet/armor/male/",
     "female" : "feet/armor/female/",

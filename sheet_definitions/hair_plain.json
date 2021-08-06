@@ -1,11 +1,12 @@
 {
   "name" : "Plain",
   "type_name" : "hair",
-  "file" : {
-    "male" : "hair/male/plain/",
-    "muscular" : "hair/male/plain/",
-    "female" : "hair/female/plain/",
-    "pregnant" : "hair/female/plain/"
+  "layer_1" : {
+    "zPos" : 120,
+    "male" : "hair/plain/male/",
+    "muscular" : "hair/plain/male/",
+    "female" : "hair/plain/female/",
+    "pregnant" : "hair/plain/female/"
   },
   "variants": [
     "black",

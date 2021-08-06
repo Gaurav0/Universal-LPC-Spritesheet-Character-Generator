@@ -1,7 +1,8 @@
 {
   "name" : "Skeleton",
   "type_name" : "body",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 10,
     "male" : "body/skeleton/",
     "female" : "body/skeleton/"
   },

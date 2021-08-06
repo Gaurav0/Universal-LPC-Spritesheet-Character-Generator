@@ -1,9 +1,10 @@
 {
   "name" : "Halfmessy",
   "type_name" : "hair",
-  "file" : {
-    "male" : "hair/male/halfmessy/",
-    "muscular" : "hair/male/halfmessy/"
+  "layer_1" : {
+    "zPos" : 120,
+    "male" : "hair/halfmessy/male/",
+    "muscular" : "hair/halfmessy/male/"
   },
   "variants": [
     "black",

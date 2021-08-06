@@ -1,7 +1,8 @@
 {
   "name" : "Plate",
   "type_name" : "armour",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 60,
     "male" : "torso/armour/plate/male/",
     "female" : "torso/armour/plate/female/"
   },

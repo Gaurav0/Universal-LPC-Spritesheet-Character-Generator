@@ -1,7 +1,8 @@
 {
   "name" : "No sleeves",
   "type_name" : "clothes",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 35,
     "male" : "torso/clothes/sleeveless/male/"
   },
   "variants": [

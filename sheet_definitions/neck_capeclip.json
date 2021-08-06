@@ -1,7 +1,8 @@
 {
   "name" : "Capeclip",
   "type_name" : "neck",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 90,
     "female" : "neck/capeclip/female/",
     "pregnant" : "neck/capeclip/female/"
   },

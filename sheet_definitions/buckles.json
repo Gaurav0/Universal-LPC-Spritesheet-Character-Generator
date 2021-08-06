@@ -1,7 +1,8 @@
 {
   "name" : "Buckles",
   "type_name" : "buckles",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 75,
     "female" : "torso/buckles/female/"
   },
   "variants": [

@@ -1,11 +1,12 @@
 {
   "name" : "Page",
   "type_name" : "hair",
-  "file" : {
-    "male" : "hair/male/page/",
-    "muscular" : "hair/male/page/",
-    "female" : "hair/female/page/",
-    "pregnant" : "hair/female/page/"
+  "layer_1" : {
+    "zPos" : 120,
+    "male" : "hair/page/male/",
+    "muscular" : "hair/page/male/",
+    "female" : "hair/page/female/",
+    "pregnant" : "hair/page/female/"
   },
   "variants": [
     "black",

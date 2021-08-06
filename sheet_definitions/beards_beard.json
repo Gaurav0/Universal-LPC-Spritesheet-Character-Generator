@@ -1,7 +1,8 @@
 {
   "name" : "Beard",
   "type_name" : "beard",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 20,
     "male" : "beards/male/beard/",
     "muscular" : "beards/male/beard/"
   },

@@ -1,11 +1,12 @@
 {
   "name" : "Shortknot",
   "type_name" : "hair",
-  "file" : {
-    "male" : "hair/male/shortknot/",
-    "muscular" : "hair/male/shortknot/",
-    "female" : "hair/female/shortknot/",
-    "pregnant" : "hair/female/shortknot/"
+  "layer_1" : {
+    "zPos" : 120,
+    "male" : "hair/shortknot/male/",
+    "muscular" : "hair/shortknot/male/",
+    "female" : "hair/shortknot/female/",
+    "pregnant" : "hair/shortknot/female/"
   },
   "variants": [
     "black",

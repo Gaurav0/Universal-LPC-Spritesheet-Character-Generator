@@ -1,11 +1,12 @@
 {
   "name" : "Swoop",
   "type_name" : "hair",
-  "file" : {
-    "male" : "hair/male/swoop/",
-    "muscular" : "hair/male/swoop/",
-    "female" : "hair/female/swoop/",
-    "pregnant" : "hair/female/swoop/"
+  "layer_1" : {
+    "zPos" : 120,
+    "male" : "hair/swoop/male/",
+    "muscular" : "hair/swoop/male/",
+    "female" : "hair/swoop/female/",
+    "pregnant" : "hair/swoop/female/"
   },
   "variants": [
     "black",

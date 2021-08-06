@@ -1,7 +1,8 @@
 {
   "name" : "Eyes",
   "type_name" : "eyes",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 20,
     "male" : "eyes/male/",
     "muscular" : "eyes/male/",
     "female" : "eyes/female/",

@@ -1,11 +1,12 @@
 {
   "name" : "Parted",
   "type_name" : "hair",
-  "file" : {
-    "male" : "hair/male/parted/",
-    "muscular" : "hair/male/parted/",
-    "female" : "hair/female/parted/",
-    "pregnant" : "hair/female/parted/"
+  "layer_1" : {
+    "zPos" : 120,
+    "male" : "hair/parted/male/",
+    "muscular" : "hair/parted/male/",
+    "female" : "hair/parted/female/",
+    "pregnant" : "hair/parted/female/"
   },
   "variants": [
     "black",

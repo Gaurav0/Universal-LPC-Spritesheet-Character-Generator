@@ -1,7 +1,8 @@
 {
   "name" : "Child skirts",
   "type_name" : "legs",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 20,
     "child" : "legs/skirts/child/"
   },
   "variants": [

@@ -1,11 +1,12 @@
 {
   "name" : "Shoulder left",
   "type_name" : "hair",
-  "file" : {
-    "male" : "hair/male/shoulderl/",
-    "muscular" : "hair/male/shoulderl/",
-    "female" : "hair/female/shoulderl/",
-    "pregnant" : "hair/female/shoulderl/"
+  "layer_1" : {
+    "zPos" : 120,
+    "male" : "hair/shoulderl/male/",
+    "muscular" : "hair/shoulderl/male/",
+    "female" : "hair/shoulderl/female/",
+    "pregnant" : "hair/shoulderl/female/"
   },
   "variants": [
     "black",

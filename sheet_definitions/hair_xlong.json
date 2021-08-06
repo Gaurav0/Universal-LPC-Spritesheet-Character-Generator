@@ -1,11 +1,12 @@
 {
   "name" : "Extra long",
   "type_name" : "hair",
-  "file" : {
-    "male" : "hair/male/xlong/",
-    "muscular" : "hair/male/xlong/",
-    "female" : "hair/female/xlong/",
-    "pregnant" : "hair/female/xlong/"
+  "layer_1" : {
+    "zPos" : 120,
+    "male" : "hair/xlong/male/",
+    "muscular" : "hair/xlong/male/",
+    "female" : "hair/xlong/female/",
+    "pregnant" : "hair/xlong/female/"
   },
   "variants": [
     "black",

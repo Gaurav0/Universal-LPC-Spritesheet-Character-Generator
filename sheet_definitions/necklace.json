@@ -1,7 +1,8 @@
 {
   "name" : "Necklace",
   "type_name" : "necklace",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 80,
     "female" : "necklace/female/",
     "pregnant" : "necklace/female/"
   },

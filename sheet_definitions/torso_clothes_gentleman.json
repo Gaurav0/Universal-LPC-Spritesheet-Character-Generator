@@ -1,7 +1,8 @@
 {
   "name" : "Gentleman",
   "type_name" : "jacket",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 55,
     "male" : "torso/clothes/jacket/gentleman/male/"
   },
   "variants": [

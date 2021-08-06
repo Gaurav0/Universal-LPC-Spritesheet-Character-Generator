@@ -1,7 +1,8 @@
 {
   "name" : "Child shirts",
   "type_name" : "clothes",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 35,
     "child" : "torso/clothes/shirt/child/"
   },
   "variants": [

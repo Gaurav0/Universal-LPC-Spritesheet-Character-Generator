@@ -1,7 +1,8 @@
 {
   "name" : "Shield",
   "type_name" : "shield",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 110,
     "male" : "shield/male/",
     "muscular" : "shield/male/",
     "female" : "shield/female/",

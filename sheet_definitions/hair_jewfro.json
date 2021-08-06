@@ -1,11 +1,12 @@
 {
   "name" : "Jewfro",
   "type_name" : "hair",
-  "file" : {
-    "male" : "hair/male/jewfro/",
-    "muscular" : "hair/male/jewfro/",
-    "female" : "hair/female/jewfro/",
-    "pregnant" : "hair/female/jewfro/"
+  "layer_1" : {
+    "zPos" : 120,
+    "male" : "hair/jewfro/male/",
+    "muscular" : "hair/jewfro/male/",
+    "female" : "hair/jewfro/female/",
+    "pregnant" : "hair/jewfro/female/"
   },
   "variants": [
     "black",

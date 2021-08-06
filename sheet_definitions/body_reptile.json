@@ -1,7 +1,8 @@
 {
   "name" : "Reptile",
   "type_name" : "body",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 10,
     "male" : "body/male/reptiles/",
     "female" : "body/female/reptiles/"
   },

@@ -5,39 +5,24 @@ function generateListHTML(json, checkFirst) {
   const typeName = definition.type_name
 
   var requiredSexes = [];
-
-  if (definition.file !== undefined) {
-    if (definition.file.male !== undefined) {
-      requiredSexes.push("male");
-    }
-    if (definition.file.female !== undefined) {
-      requiredSexes.push("female");
-    }
-    if (definition.file.child !== undefined) {
-      requiredSexes.push("child");
-    }
-    if (definition.file.muscular !== undefined) {
-      requiredSexes.push("muscular");
-    }
-    if (definition.file.pregnant !== undefined) {
-      requiredSexes.push("pregnant");
-    }
-  } else {
-    if (definition.file_behind.male !== undefined) {
-      requiredSexes.push("male");
-    }
-    if (definition.file_behind.female !== undefined) {
-      requiredSexes.push("female");
-    }
-    if (definition.file_behind.child !== undefined) {
-      requiredSexes.push("child");
-    }
-    if (definition.file_behind.muscular !== undefined) {
-      requiredSexes.push("muscular");
-    }
-    if (definition.file_behind.pregnant !== undefined) {
-      requiredSexes.push("pregnant");
-    }
+  var previewRow = 10;
+  if (definition.preview_row !== undefined) {
+    previewRow = definition.preview_row
+  }
+  if (definition.layer_1.male !== undefined) {
+    requiredSexes.push("male");
+  }
+  if (definition.layer_1.female !== undefined) {
+    requiredSexes.push("female");
+  }
+  if (definition.layer_1.child !== undefined) {
+    requiredSexes.push("child");
+  }
+  if (definition.layer_1.muscular !== undefined) {
+    requiredSexes.push("muscular");
+  }
+  if (definition.layer_1.pregnant !== undefined) {
+    requiredSexes.push("pregnant");
   }
 
   const requiredSex = requiredSexes.join(",");
@@ -54,52 +39,25 @@ function generateListHTML(json, checkFirst) {
 
     var dataFiles = "";
     var sexIdx = 0;
-    var hasBehind = definition.file_behind !== undefined;
-    var hasFile = definition.file !== undefined;
     for (sex in requiredSexes) {
-      var file = "";
-      var file_behind = "";
-      if (requiredSexes[sexIdx] === 'male') {
-        if (hasFile) {
-          file = definition.file.male;
+      for (jdx =1; jdx < 10; jdx++) {
+        const layerDefinition = definition[`layer_${jdx}`];
+        if (layerDefinition !== undefined) {
+          if (sexIdx === 0) {
+            const zPos = definition[`layer_${jdx}`].zPos;
+            dataFiles += "data-preview_row=" + previewRow + " data-layer_" + jdx + "_zpos=" + zPos + " ";
+            const oversize = layerDefinition.oversize;
+            if (oversize !== undefined) {
+              dataFiles += `data-layer_${jdx}_oversize=` + oversize + " " 
+            }
+          }
+          const file = layerDefinition[requiredSexes[sexIdx]]
+          if (file !== null && file !== "") {
+            dataFiles += "data-layer_" + jdx + "_" + requiredSexes[sexIdx] + "=\"" + file + itemName.replaceAll(" ", "_") + ".png\" ";
+          }
+        } else {
+          break;
         }
-        if (hasBehind) {
-          file_behind = definition.file_behind.male;
-        }
-      } else if (requiredSexes[sexIdx] === 'female') {
-        if (hasFile) {
-          file = definition.file.female;
-        }
-        if (hasBehind) {
-          file_behind = definition.file_behind.female;
-        }
-      } else if (requiredSexes[sexIdx] === 'child') {
-        if (hasFile) {
-          file = definition.file.child;
-        }
-        if (hasBehind) {
-          file_behind = definition.file_behind.child;
-        }
-      } else if (requiredSexes[sexIdx] === 'muscular') {
-        if (hasFile) {
-          file = definition.file.muscular;
-        }
-        if (hasBehind) {
-          file_behind = definition.file_behind.muscular;
-        }
-      } else if (requiredSexes[sexIdx] === 'pregnant') {
-        if (hasFile) {
-          file = definition.file.pregnant;
-        }
-        if (hasBehind) {
-          file_behind = definition.file_behind.pregnant;
-        }
-      }
-      if (file !== null && file !== "") {
-        dataFiles += "data-file_" + requiredSexes[sexIdx] + "=\"" + file + itemName.replaceAll(" ", "_") + ".png\" ";
-      }
-      if (file_behind !== null && file_behind !== "") {
-        dataFiles += "data-file_" + requiredSexes[sexIdx] + "_behind=\"" + file_behind + itemName.replaceAll(" ", "_") + ".png\" ";
       }
       sexIdx += 1;
     }

@@ -1,11 +1,12 @@
 {
   "name" : "Bedhead",
   "type_name" : "hair",
-  "file" : {
-    "male" : "hair/male/bedhead/",
-    "muscular" : "hair/male/bedhead/",
-    "female" : "hair/female/bedhead/",
-    "pregnant" : "hair/female/bedhead/"
+  "layer_1" : {
+    "zPos" : 120,
+    "male" : "hair/bedhead/male/",
+    "muscular" : "hair/bedhead/male/",
+    "female" : "hair/bedhead/female/",
+    "pregnant" : "hair/bedhead/female/"
   },
   "variants": [
     "black",

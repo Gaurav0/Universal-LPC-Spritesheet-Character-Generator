@@ -1,8 +1,9 @@
 {
   "name" : "Messed",
   "type_name" : "hair",
-  "file" : {
-    "child" : "hair/child/messy/"
+  "layer_1" : {
+    "zPos" : 120,
+    "child" : "hair/messy/child/"
   },
   "variants": [
     "black",

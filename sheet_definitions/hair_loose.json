@@ -1,11 +1,12 @@
 {
   "name" : "Loose",
   "type_name" : "hair",
-  "file" : {
-    "male" : "hair/male/loose/",
-    "muscular" : "hair/male/loose/",
-    "female" : "hair/female/loose/",
-    "pregnant" : "hair/female/loose/"
+  "layer_1" : {
+    "zPos" : 120,
+    "male" : "hair/loose/male/",
+    "muscular" : "hair/loose/male/",
+    "female" : "hair/loose/female/",
+    "pregnant" : "hair/loose/female/"
   },
   "variants": [
     "black",

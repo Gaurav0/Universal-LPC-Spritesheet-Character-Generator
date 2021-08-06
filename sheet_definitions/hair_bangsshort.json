@@ -1,11 +1,12 @@
 {
   "name" : "Bangs short",
   "type_name" : "hair",
-  "file" : {
-    "male" : "hair/male/bangsshort/",
-    "muscular" : "hair/male/bangsshort/",
-    "female" : "hair/female/bangsshort/",
-    "pregnant" : "hair/female/bangsshort/"
+  "layer_1" : {
+    "zPos" : 120,
+    "male" : "hair/bangsshort/male/",
+    "muscular" : "hair/bangsshort/male/",
+    "female" : "hair/bangsshort/female/",
+    "pregnant" : "hair/bangsshort/female/"
   },
   "variants": [
     "black",

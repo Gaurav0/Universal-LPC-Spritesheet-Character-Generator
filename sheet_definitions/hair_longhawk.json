@@ -1,11 +1,12 @@
 {
   "name" : "Longhawk",
   "type_name" : "hair",
-  "file" : {
-    "male" : "hair/male/longhawk/",
-    "muscular" : "hair/male/longhawk/",
-    "female" : "hair/female/longhawk/",
-    "pregnant" : "hair/female/longhawk/"
+  "layer_1" : {
+    "zPos" : 120,
+    "male" : "hair/longhawk/male/",
+    "muscular" : "hair/longhawk/male/",
+    "female" : "hair/longhawk/female/",
+    "pregnant" : "hair/longhawk/female/"
   },
   "variants": [
     "black",

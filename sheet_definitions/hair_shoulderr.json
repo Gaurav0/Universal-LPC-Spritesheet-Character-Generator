@@ -1,11 +1,12 @@
 {
   "name" : "Shoulder right",
   "type_name" : "hair",
-  "file" : {
-    "male" : "hair/male/shoulderr/",
-    "muscular" : "hair/male/shoulderr/",
-    "female" : "hair/female/shoulderr/",
-    "pregnant" : "hair/female/shoulderr/"
+  "layer_1" : {
+    "zPos" : 120,
+    "male" : "hair/shoulderr/male/",
+    "muscular" : "hair/shoulderr/male/",
+    "female" : "hair/shoulderr/female/",
+    "pregnant" : "hair/shoulderr/female/"
   },
   "variants": [
     "black",

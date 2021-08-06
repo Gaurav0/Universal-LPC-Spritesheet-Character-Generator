@@ -1,7 +1,8 @@
 {
   "name" : "Facial",
   "type_name" : "facial",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 25,
     "male" : "facial/",
     "muscular" : "facial/",
     "female" : "facial/",

@@ -1,11 +1,12 @@
 {
   "name" : "Bangs longer",
   "type_name" : "hair",
-  "file" : {
-    "male" : "hair/male/bangslong2/",
-    "muscular" : "hair/male/bangslong2/",
-    "female" : "hair/female/bangslong2/",
-    "pregnant" : "hair/female/bangslong2/"
+  "layer_1" : {
+    "zPos" : 120,
+    "male" : "hair/bangslong2/male/",
+    "muscular" : "hair/bangslong2/male/",
+    "female" : "hair/bangslong2/female/",
+    "pregnant" : "hair/bangslong2/female/"
   },
   "variants": [
     "black",

@@ -1,7 +1,8 @@
 {
   "name" : "Leather",
   "type_name" : "shoulders",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 60,
     "male" : "shoulders/leather/male/",
     "female" : "shoulders/leather/female/",
     "muscular" : "shoulders/leather/male/",

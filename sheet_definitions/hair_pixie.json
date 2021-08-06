@@ -1,11 +1,12 @@
 {
   "name" : "Pixie",
   "type_name" : "hair",
-  "file" : {
-    "male" : "hair/male/pixie/",
-    "muscular" : "hair/male/pixie/",
-    "female" : "hair/female/pixie/",
-    "pregnant" : "hair/female/pixie/"
+  "layer_1" : {
+    "zPos" : 120,
+    "male" : "hair/pixie/male/",
+    "muscular" : "hair/pixie/male/",
+    "female" : "hair/pixie/female/",
+    "pregnant" : "hair/pixie/female/"
   },
   "variants": [
     "black",

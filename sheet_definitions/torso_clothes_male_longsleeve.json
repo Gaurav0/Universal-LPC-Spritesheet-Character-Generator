@@ -1,7 +1,8 @@
 {
   "name" : "Sleeved",
   "type_name" : "clothes",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 35,
     "male" : "torso/clothes/longsleeve/male/"
   },
   "variants": [

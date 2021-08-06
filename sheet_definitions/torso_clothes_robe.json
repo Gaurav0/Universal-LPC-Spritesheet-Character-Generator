@@ -1,7 +1,8 @@
 {
   "name" : "Robe",
   "type_name" : "clothes",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 35,
     "female" : "torso/clothes/robe/female/"
   },
   "variants": [

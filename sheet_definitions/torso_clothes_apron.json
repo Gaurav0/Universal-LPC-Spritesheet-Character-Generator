@@ -1,7 +1,8 @@
 {
   "name" : "Apron",
   "type_name" : "apron",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 40,
     "male" : "torso/clothes/apron/male/",
     "female" : "torso/clothes/apron/female/"
   },

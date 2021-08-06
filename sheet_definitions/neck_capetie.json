@@ -1,7 +1,8 @@
 {
   "name" : "Capetie",
   "type_name" : "neck",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 90,
     "female" : "neck/capetie/female/",
     "pregnant" : "neck/capetie/female/"
   },

@@ -1,7 +1,8 @@
 {
   "name" : "Reptile",
   "type_name" : "hat",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 130,
     "male" : "hat/reptile/male/",
     "female" : "hat/reptile/female/",
     "muscular" : "hat/reptile/male/",

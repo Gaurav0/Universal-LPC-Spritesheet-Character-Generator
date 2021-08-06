@@ -1,7 +1,8 @@
 {
   "name" : "Bracers",
   "type_name" : "bracers",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 70,
     "male" : "bracers/male/",
     "female" : "bracers/female/",
     "pregnant" : "bracers/female/",

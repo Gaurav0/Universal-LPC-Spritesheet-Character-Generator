@@ -3,36 +3,51 @@ _.mixin(_.str.exports());
 $(document).ready(function() {
 
   var params = jHash.val();
-  var zPosition = 0;
   var sheetCredits = [];
   const creditColumns = "filename,notes,authors,licenses,url1,url2,url3,url4,url5,status";
   const hairMalePrefix = "hair/male/"; // used to detect a male hairstyle graphic, which are not added per color to CREDITS.csv
   const hairFemalePrefix = "hair/female/"; // used to detect a female hairstyle graphic, which are not added per color to CREDITS.csv
   const parsedCredits = loadFile("CREDITS.csv").split("\n");
 
+  var canvas = $("#spritesheet").get(0);
+  var ctx = canvas.getContext("2d");
+  var images = {};
+
+  // Preview Animation
+  var oversize = false;
+  var anim = $("#previewAnimations").get(0);
+  var animCtx = anim.getContext("2d");
+  var $selectedAnim = $("#whichAnim>:selected");
+  var animRowStart = parseInt($selectedAnim.data("row"));
+  var animRowNum = parseInt($selectedAnim.data("num"));
+  var animRowFrames = parseInt($selectedAnim.data("cycle"));
+  var currentAnimationItemIndex = 0;
+  var animationItems = [1, 2, 3, 4, 5, 6, 7, 8]; // default for walk
+
   // on hash (url) change event, interpret and redraw
   jHash.change(function() {
     params = jHash.val();
     interpretParams();
     redraw();
+    showOrHideElements();
   });
 
   replaceDivs();
 
+  interpretParams();
+  if (Object.keys(params).length == 0) {
+    $("input[type=reset]").click();
+    setParams();
+  }
+
+  redraw();
+  showOrHideElements();
+  nextFrame();
+
   $("input[type=radio], input[type=checkbox]").attr('title', function() {
     var name = "";
-    if ($(this).data("file")) {
-      name = $(this).data("file");
-    } else if ($(this).data("file_male")) {
-      name = $(this).data("file_male");
-    } else if ($(this).data("file_female")) {
-      name = $(this).data("file_female");
-    } else if ($(this).data("file_child")) {
-      name = $(this).data("file_child");
-    } else if ($(this).data("file_muscular")) {
-      name = $(this).data("file_muscular");
-    } else if ($(this).data("file_pregnant")) {
-      name = $(this).data("file_pregnant");
+    if ($(this).data(`layer_1_${getBodyTypeName()}`)) {
+      name = $(this).data(`layer_1_${getBodyTypeName()}`);
     }
     const creditEntry = getCreditFor(name);
     if (creditEntry) {
@@ -44,6 +59,122 @@ $(document).ready(function() {
       return "No credits found for this graphic";
     }
     return creditEntry;
+  });
+
+  // set params and redraw when any radio button or checkbox is clicked on
+  $("input[type=radio], input[type=checkbox]").each(function() {
+    $(this).click(function() {
+      setParams();
+      redraw();
+      showOrHideElements();
+    });
+  });
+
+  // Do not multiple toggle when clicking on children
+  $("#chooser>ul>li>ul>li>ul>li").click(function(event) {
+    event.stopPropagation();
+  });
+
+  // Toggle display of a list elements children when clicked
+  // Do not do so twice, once on label then on input
+  // Again, do not multiple toggle when clicking on children
+  $("#chooser>ul>li>ul>li").click(function(event) {
+    if (!($(event.target).get(0).tagName == "LABEL")) {
+      $(this).children("span").toggleClass("condensed").toggleClass("expanded");
+      var $ul = $(this).children("ul");
+      $ul.toggle('slow').promise().done(drawPreviews);
+    }
+    event.stopPropagation();
+  });
+
+  // Toggle display of a list elements children when clicked
+  // Again, do not multiple toggle when clicking on children
+  $("#chooser>ul>li").click(function(event) {
+    $(this).children("span").toggleClass("condensed").toggleClass("expanded");
+    var $ul = $(this).children("ul");
+    $ul.toggle('slow').promise().done(drawPreviews);
+    event.stopPropagation();
+  });
+
+  $("#collapse").click(function() {
+    $("#chooser>ul ul").hide('slow');
+    $("#chooser>ul span.expanded").removeClass("expanded").addClass("condensed");
+  });
+
+  $("#previewFile").change(function() {
+    previewFile();
+  });
+
+  $("#ZPOS").change(function() {
+    previewFile();
+  });
+
+  $("#saveAsPNG").click(function() {
+    renameImageDownload(this, canvas, 'Download' + Math.floor(Math.random() * 100000) + '.png');
+  });
+
+  $("#resetAll").click(function() {
+    window.setTimeout(function() {
+      document.getElementById("previewFile").value = "";
+      images["uploaded"] = null;
+      document.getElementById("ZPOS").value = 0;
+      document.getElementById("customFrames").value = "";
+      params = {};
+      jHash.val(params);
+      redraw();
+      showOrHideElements();
+    }, 0, false);
+  });
+
+  $("#generateSheetCredits").click(function() {
+    let bl = new Blob([sheetCredits.join('\n')], {
+      type: "text/html"
+    });
+    let a = document.createElement("a");
+    a.href = URL.createObjectURL(bl);
+    a.download = "sheet-credits.csv";
+    a.hidden = true;
+    document.body.appendChild(a);
+    a.innerHTML = "dummyhtml";
+    a.click();
+    document.removeChild(a);
+  });
+
+  $("#generateAllCredits").click(function() {
+    let bl = new Blob([parsedCredits.join('\n')], {
+      type: "text/html"
+    });
+    let a = document.createElement("a");
+    a.href = URL.createObjectURL(bl);
+    a.download = "all-credits.csv";
+    a.hidden = true;
+    document.body.appendChild(a);
+    a.innerHTML = "dummyhtml";
+    a.click();
+    document.removeChild(a);
+  });
+
+  $("#whichAnim").change(function() {
+    animationItems = [];
+    $selectedAnim = $("#whichAnim>:selected");
+    animRowStart = parseInt($selectedAnim.data("row"));
+    animRowNum = parseInt($selectedAnim.data("num"));
+    animRowFrames = parseInt($selectedAnim.data("cycle"));
+    currentAnimationItemIndex = 0;
+    const customFrames = document.getElementById("customFrames").value || "";
+    if (customFrames !== "") {
+      animationItems = customFrames.split(',').map(Number);
+      if (animationItems.length > 0) {
+        return;
+      }
+    }
+    if ($selectedAnim.val() == "smash")  {
+      animationItems = [5, 4, 1, 0];
+    } else {
+      for (var i = 1; i < animRowFrames; ++i) {
+        animationItems.push(i);
+      }
+    }
   });
 
   function getCreditFor(fileName) {
@@ -79,57 +210,6 @@ $(document).ready(function() {
     $("textarea#creditsText").val(sheetCredits.join('\n'));
   }
 
-  // set params and redraw when any radio button or checkbox is clicked on
-  $("input[type=radio], input[type=checkbox]").each(function() {
-    $(this).click(function() {
-      setParams();
-      redraw();
-    });
-  });
-
-  // Do not multiple toggle when clicking on children
-  $("#chooser>ul>li>ul>li>ul>li").click(function(event) {
-    event.stopPropagation();
-  });
-
-  // Toggle display of a list elements children when clicked
-  // Do not do so twice, once on label then on input
-  // Again, do not multiple toggle when clicking on children
-  $("#chooser>ul>li>ul>li").click(function(event) {
-    if (!($(event.target).get(0).tagName == "LABEL")) {
-      $(this).children("span").toggleClass("condensed").toggleClass("expanded");
-      var $ul = $(this).children("ul");
-      $ul.toggle('slow').promise().done(drawPreviews);
-    }
-    event.stopPropagation();
-  });
-
-  // Toggle display of a list elements children when clicked
-  // Again, do not multiple toggle when clicking on children
-  $("#chooser>ul>li").click(function(event) {
-    $(this).children("span").toggleClass("condensed").toggleClass("expanded");
-    var $ul = $(this).children("ul");
-    $ul.toggle('slow').promise().done(drawPreviews);
-    event.stopPropagation();
-  });
-
-  // When clicking on collapse all link, collapse all uls in #chooser
-  $("#collapse").click(function() {
-    $("#chooser>ul ul").hide('slow');
-    $("#chooser>ul span.expanded").removeClass("expanded").addClass("condensed");
-  });
-
-  var canvas = $("#spritesheet").get(0);
-  var ctx = canvas.getContext("2d");
-
-  $("#previewFile").change(function() {
-    previewFile();
-  });
-
-  $("#ZPOS").change(function() {
-    previewFile();
-  });
-
   function previewFile(){
     var preview = document.querySelector('img'); //selects the query named img
     var file    = document.querySelector('input[type=file]').files[0]; //sames as here
@@ -138,6 +218,7 @@ $(document).ready(function() {
     img.onload = function() {
       images["uploaded"] = img;
       redraw();
+      showOrHideElements();
     }
     img.src = URL.createObjectURL(file);
   }
@@ -146,66 +227,6 @@ $(document).ready(function() {
     link.href = canvasItem.toDataURL();
     link.download = filename;
   };
-
-  // Save canvas as PNG
-  $("#saveAsPNG").click(function() {
-    renameImageDownload(this, canvas, 'Download' + Math.floor(Math.random() * 100000) + '.png');
-  });
-
-  $("#resetAll").click(function() {
-    window.setTimeout(function() {
-      document.getElementById("previewFile").value = "";
-      images["uploaded"] = null;
-      document.getElementById("ZPOS").value = 0;
-      document.getElementById("customFrames").value = "";
-      params = {};
-      jHash.val(params);
-      redraw();
-    }, 0, false);
-  });
-
-  $("#generateSheetCredits").click(function() {
-    let bl = new Blob([sheetCredits.join('\n')], {
-      type: "text/html"
-    });
-    let a = document.createElement("a");
-    a.href = URL.createObjectURL(bl);
-    a.download = "sheet-credits.csv";
-    a.hidden = true;
-    document.body.appendChild(a);
-    a.innerHTML = "dummyhtml";
-    a.click();
-    document.removeChild(a);
-  });
-
-  $("#generateAllCredits").click(function() {
-    let bl = new Blob([parsedCredits.join('\n')], {
-      type: "text/html"
-    });
-    let a = document.createElement("a");
-    a.href = URL.createObjectURL(bl);
-    a.download = "all-credits.csv";
-    a.hidden = true;
-    document.body.appendChild(a);
-    a.innerHTML = "dummyhtml";
-    a.click();
-    document.removeChild(a);
-  });
-
-  // Determine if an oversize element used
-  var oversize = $("input[type=radio]").filter(function() {
-    return $(this).data("oversize");
-  }).length > 0;
-
-  // Expand canvas if oversize element used
-  if (oversize) {
-    canvas.width = 1536;
-    canvas.height = 1344 + 768;
-  } else {
-    canvas.width = 832;
-    canvas.height = 1344;
-  }
-  $("#chooser>ul").css("height", canvas.height);
 
   function getBodyTypeName() {
     if ($("#sex-male").prop("checked")) {
@@ -223,23 +244,52 @@ $(document).ready(function() {
   }
 
   function redraw() {
-    const zposPreview = parseInt(document.getElementById("ZPOS").value) || 0;
+    let itemsToDraw = [];
     const bodyTypeName = getBodyTypeName();
-    let didDrawPreview = false;
-    let wolfmanBody = "";
-    let isBoar = false;
 
     sheetCredits = [creditColumns];
     zPosition = 0;
+    $("input[type=radio]:checked, input[type=checkbox]:checked").each(function(index) {
+      for (jdx =1; jdx < 10; jdx++) {
+        if ($(this).data(`layer_${jdx}_${bodyTypeName}`)) {
+          const zPos = $(this).data(`layer_${jdx}_zpos`);
+          const oversize = $(this).data(`layer_${jdx}_oversize`);
+          const fileName = $(this).data(`layer_${jdx}_${bodyTypeName}`);
+          if (fileName !== "") {
+            const itemToDraw = {};
+            itemToDraw.fileName = fileName;
+            itemToDraw.zPos = zPos;
+            itemToDraw.oversize = oversize;
+            addCreditFor(fileName);
+            itemsToDraw.push(itemToDraw);
+          }
+        } else {
+          break;
+        }
+      }
+    });
+    if (images["uploaded"] != null) {
+      const itemToDraw = {};
+      itemToDraw.fileName = "uploaded";
+      itemToDraw.zPos = parseInt(document.getElementById("ZPOS").value) || 0;;
+      itemsToDraw.push(itemToDraw);
+    }
+    drawItems(itemsToDraw);
+  }
+
+  function drawItems(itemsToDraw) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    // determine if an oversize element is being used
-    oversize = $("input[type=radio]:checked").filter(function() {
-      return $(this).data("oversize");
-    }).length > 0;
+    oversize = false;
+    var oversizeIdx = 0;
+    for (item in itemsToDraw) {
+      if (itemsToDraw[oversizeIdx].oversize !== undefined) {
+        oversize = true;
+        break;
+      }
+      oversizeIdx+=1;
+    }
 
-    // If an oversize element is being used, expand canvas,
-    // otherwise return it to normal size
     if (oversize) {
       canvas.width = 1536;
       canvas.height = 1344 + 768;
@@ -248,107 +298,45 @@ $(document).ready(function() {
       canvas.height = 1344;
     }
     $("#chooser>ul").css("height", canvas.height);
-    oversize = !!oversize;
 
-    $("input[type=radio]:checked, input[type=checkbox]:checked").filter(function() {
-      return !$(this).data("oversize");
-    }).each(function(index) {
-      if (zposPreview == zPosition) {
-        if (!didDrawPreview) {
-          drawPreview();
-          didDrawPreview = true;
-        }
-      }
-      // save this in closure
-      var $this = $(this);
-      var fileName = "";
-
-      if ($(this).data(`file_${bodyTypeName}_behind`)) {
-        var img = getImage($(this).data(`file_${bodyTypeName}_behind`));
-        ctx.globalCompositeOperation = "destination-over";
-        drawImage(ctx, img);
-        fileName = $(this).data(`file_${bodyTypeName}_behind`);
-        ctx.globalCompositeOperation = "source-over";
-      }
-
-      if ($(this).data(`file_${bodyTypeName}`)) {
-        var img = getImage($(this).data(`file_${bodyTypeName}`));
-        drawImage(ctx, img);
-        fileName = $(this).data(`file_${bodyTypeName}`);
-        if (fileName.includes("/wolf/")) {
-          wolfmanBody = fileName.replace(`body/${bodyTypeName}/wolf/`, "")+`${bodyTypeName}`;
-        } else if (fileName.includes("/boarman.png")) {
-          isBoar = true;
-        }
-      }
-
-      addCreditFor(fileName);
+    var itemIdx = 0;
+    itemsToDraw.sort(function(lhs, rhs) {
+      return parseInt(lhs.zPos) - parseInt(rhs.zPos);
     });
 
-    if (wolfmanBody !== "") {
-      var img = getImage(`/body/${bodyTypeName}/wolf/head/`+wolfmanBody.replace(`${bodyTypeName}`, ""));
-      drawImage(ctx, img);
-    } else if (isBoar) {
-      var img = getImage("/body/male/special/boarman_head.png");
-      drawImage(ctx, img);
-    }
-    if (!didDrawPreview) { // zposition was to high or low, draw anyways over all
-      drawPreview();
-      didDrawPreview = true;
-    }
-
-    // Oversize weapons: Copy existing canvas poses to new locations
-    // with 192x192 padding rather than 64x64
-    // data-oversize="1" means thrust weapon
-    // data-oversize="2" means slash weapon
-    // use appropriate thrust or slash pose
-    if (oversize) {
-      $("input[type=radio]:checked").filter(function() {
-        return $(this).data("oversize");
-      }).each(function(index) {
-        const name = $(this).data(`file_${bodyTypeName}`);
-        if (name.includes("flail") || name.includes("halberd") || name.includes("waraxe") || name.includes("rapier") || name.includes("saber") || name.includes("glowsword") || name.includes("scythe") || name.includes("mace") || name.includes("longsword")) {
-          var img = getImage(name.replace("attack", "universal"));
-          drawImage(ctx, img);
-        }
-        addCreditFor(name);
-
-        var type = $(this).data("oversize");
-        if (type == 1) {
+    for (item in itemsToDraw) {
+      const fileName = itemsToDraw[itemIdx].fileName;
+      const img = getImage(fileName);
+      const oversize = itemsToDraw[itemIdx].oversize;
+      if (oversize !== undefined) {
+        if (oversize == "thrust") {
           for (var i = 0; i < 8; ++i)
           for (var j = 0; j < 4; ++j) {
             var imgData = ctx.getImageData(64 * i, 256 + 64 * j, 64, 64);
             ctx.putImageData(imgData, 64 + 192 * i, 1408 + 192 * j);
           }
-        } else if (type == 2) {
+        } else if (oversize == "slash") {
           for (var i = 0; i < 6; ++i)
           for (var j = 0; j < 4; ++j) {
             var imgData = ctx.getImageData(64 * i, 768 + 64 * j, 64, 64);
             ctx.putImageData(imgData, 64 + 192 * i, 1408 + 192 * j);
           }
         }
-        var img = getImage($(this).data(`file_${bodyTypeName}`));
-        if ($(this).data("file")) {
-          img = getImage($(this).data("file"));
-        }
         ctx.drawImage(img, 0, 1344);
-      });
+      } else {
+        drawImage(ctx, img);
+      }
+      itemIdx+=1;
     }
+  }
 
+  function showOrHideElements() {
     $("li").each(function(index) {
       if ($(this).data("required")) {
-        var requiredType = $(this).data("required").split(",");
-        if (getBodyTypeName() === "male" && !requiredType.includes('male')) {
+        var requiredTypes = $(this).data("required").split(",");
+        if (!requiredTypes.includes(getBodyTypeName())) {
           $(this).prop("style", "display:none");
-        } else if (getBodyTypeName() === "female" && !requiredType.includes('female')) {
-          $(this).prop("style", "display:none");
-        } else if (getBodyTypeName() === "child" && !requiredType.includes('child')) {
-          $(this).prop("style", "display:none");
-        } else if (getBodyTypeName() === "pregnant" && !requiredType.includes('pregnant')) {
-          $(this).prop("style", "display:none");
-        } else if (getBodyTypeName() === "muscular" && !requiredType.includes('muscular')) {
-          $(this).prop("style", "display:none");
-        } else  {
+        } else {
           $(this).prop("style", "");
         }
       }
@@ -363,13 +351,6 @@ $(document).ready(function() {
     return xmlhttp.responseText;
   }
 
-  function drawPreview() {
-    if (images["uploaded"] != null) {
-      drawImage(ctx, images["uploaded"]);
-    }
-  }
-
-  // Change checkboxes based on parameters
   function interpretParams() {
     $("input[type=radio]").each(function() {
       var words = _.words($(this).attr('id'), '-');
@@ -381,7 +362,6 @@ $(document).ready(function() {
     });
   }
 
-  // Set parameters in response to click on any radio button or checkbox
   function setParams() {
     $("input[type=radio]:checked").each(function() {
       var words = _.words($(this).attr('id'), '-');
@@ -397,9 +377,6 @@ $(document).ready(function() {
     });
     jHash.val(params);
   }
-
-  // Cache images
-  var images = {};
 
   function getImage(imgRef) {
     if (images[imgRef])
@@ -419,7 +396,6 @@ $(document).ready(function() {
       return images[imgRef];
     } else {
 
-      // Load image if not in cache
       var img = new Image();
       img.src = "spritesheets/" + imgRef;
       img.onload = function() { callback(img) };
@@ -428,7 +404,6 @@ $(document).ready(function() {
     }
   }
 
-  // Do not stop running all javascript if image not available
   function drawImage(ctx, img) {
     try {
       ctx.drawImage(img, 0, 0);
@@ -438,32 +413,18 @@ $(document).ready(function() {
     }
   }
 
-  // Draw now - on ready
-  interpretParams();
-  if (Object.keys(params).length == 0) {
-    $("input[type=reset]").click();
-    setParams();
-  }
-  redraw();
-
-  // Draw preview images
   function drawPreviews() {
     this.find("input[type=radio], input[type=checkbox]").filter(function() {
       return $(this).is(":visible");
     }).each(function() {
       if (!$(this).parent().hasClass("hasPreview")) {
         var prev = document.createElement("canvas");
-        var oversize = $(this).data("oversize");
+        var oversize = $(this).data("layer_1_oversize");
         prev.setAttribute("width", 64);
         prev.setAttribute("height", 64);
         var prevctx = prev.getContext("2d");
         var img = null;
-        var previewRow = $(this).data("preview_row");
-        if (!previewRow) {
-          previewRow = 10;
-        } else {
-          previewRow = parseInt(previewRow);
-        }
+        const previewRow = parseInt($(this).data("preview_row"));
         var callback = function(img) {
           try {
             if (oversize)
@@ -474,7 +435,7 @@ $(document).ready(function() {
             console.log(err);
           }
         };
-        img = getImage2($(this).data(`file_${getBodyTypeName()}`), callback);
+        img = getImage2($(this).data(`layer_1_${getBodyTypeName()}`), callback);
         if (img != null) {
           this.parentNode.insertBefore(prev, this);
           $(this).parent().addClass("hasPreview").parent().addClass("hasPreview");
@@ -482,40 +443,6 @@ $(document).ready(function() {
       }
     });
   };
-
-  // Preview Animation
-  var oversize = $(this).data("oversize");
-  var anim = $("#previewAnimations").get(0);
-  var animCtx = anim.getContext("2d");
-  var $selectedAnim = $("#whichAnim>:selected");
-  var animRowStart = parseInt($selectedAnim.data("row"));
-  var animRowNum = parseInt($selectedAnim.data("num"));
-  var animRowFrames = parseInt($selectedAnim.data("cycle"));
-  var currentAnimationItemIndex = 0;
-  var animationItems = [1, 2, 3, 4, 5, 6, 7, 8]; // default for walk
-
-  $("#whichAnim").change(function() {
-    animationItems = [];
-    $selectedAnim = $("#whichAnim>:selected");
-    animRowStart = parseInt($selectedAnim.data("row"));
-    animRowNum = parseInt($selectedAnim.data("num"));
-    animRowFrames = parseInt($selectedAnim.data("cycle"));
-    currentAnimationItemIndex = 0;
-    const customFrames = document.getElementById("customFrames").value || "";
-    if (customFrames !== "") {
-      animationItems = customFrames.split(',').map(Number);
-      if (animationItems.length > 0) {
-        return;
-      }
-    }
-    if ($selectedAnim.val() == "smash")  {
-      animationItems = [5, 4, 1, 0];
-    } else {
-      for (var i = 1; i < animRowFrames; ++i) {
-        animationItems.push(i);
-      }
-    }
-  });
 
   function nextFrame() {
     currentAnimationItemIndex = (currentAnimationItemIndex + 1) % animationItems.length;
@@ -531,5 +458,4 @@ $(document).ready(function() {
     }
     setTimeout(nextFrame, 1000 / 8);
   }
-  nextFrame();
 });

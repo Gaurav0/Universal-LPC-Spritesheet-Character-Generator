@@ -1,11 +1,12 @@
 {
   "name" : "Bunches",
   "type_name" : "hair",
-  "file" : {
-    "male" : "hair/male/bunches/",
-    "muscular" : "hair/male/bunches/",
-    "female" : "hair/female/bunches/",
-    "pregnant" : "hair/female/bunches/"
+  "layer_1" : {
+    "zPos" : 120,
+    "male" : "hair/bunches/male/",
+    "muscular" : "hair/bunches/male/",
+    "female" : "hair/bunches/female/",
+    "pregnant" : "hair/bunches/females/"
   },
   "variants": [
     "black",

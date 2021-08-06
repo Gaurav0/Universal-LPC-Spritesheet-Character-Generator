@@ -1,13 +1,15 @@
 {
   "name" : "Longest",
   "type_name" : "hair",
-  "file" : {
-    "female" : "hair/female/longest/",
-    "pregnant" : "hair/female/longest/"
+  "layer_1" : {
+    "zPos" : 120,
+    "female" : "hair/longest/female/",
+    "pregnant" : "hair/longest/female/"
   },
-  "file_behind" : {
-    "female" : "hair/female/longest/behind/",
-    "pregnant" : "hair/female/longest/behind/"
+  "layer_2" : {
+    "zPos" : 8,
+    "female" : "hair/longest/female/behind/",
+    "pregnant" : "hair/longest/female/behind/"
   },
   "variants": [
     "black",

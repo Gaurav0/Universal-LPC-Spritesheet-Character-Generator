@@ -1,11 +1,12 @@
 {
   "name" : "Unkempt",
   "type_name" : "hair",
-  "file" : {
-    "male" : "hair/male/unkempt/",
-    "muscular" : "hair/male/unkempt/",
-    "female" : "hair/female/unkempt/",
-    "pregnant" : "hair/female/unkempt/"
+  "layer_1" : {
+    "zPos" : 120,
+    "male" : "hair/unkempt/male/",
+    "muscular" : "hair/unkempt/male/",
+    "female" : "hair/unkempt/female/",
+    "pregnant" : "hair/unkempt/female/"
   },
   "variants": [
     "black",

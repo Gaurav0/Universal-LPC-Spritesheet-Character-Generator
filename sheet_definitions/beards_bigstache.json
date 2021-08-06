@@ -1,7 +1,8 @@
 {
   "name" : "Bigstache",
   "type_name" : "beard",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 20,
     "male" : "beards/male/bigstache/",
     "muscular" : "beards/male/bigstache/"
   },

@@ -1,11 +1,12 @@
 {
   "name" : "Messy 2",
   "type_name" : "hair",
-  "file" : {
-    "male" : "hair/male/messy2/",
-    "muscular" : "hair/male/messy2/",
-    "female" : "hair/female/messy2/",
-    "pregnant" : "hair/female/messy2/"
+  "layer_1" : {
+    "zPos" : 120,
+    "male" : "hair/messy2/male/",
+    "muscular" : "hair/messy2/male/",
+    "female" : "hair/messy2/female/",
+    "pregnant" : "hair/messy2/female/"
   },
   "variants": [
     "black",

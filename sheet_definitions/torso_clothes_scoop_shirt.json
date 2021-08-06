@@ -1,7 +1,8 @@
 {
   "name" : "Scoop",
   "type_name" : "clothes",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 35,
     "female" : "torso/clothes/scoop_shirt/female/"
   },
   "variants": [

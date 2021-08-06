@@ -1,7 +1,8 @@
 {
   "name" : "Tabard",
   "type_name" : "jacket",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 55,
     "female" : "torso/clothes/jacket/tabard/female/"
   },
   "variants": [

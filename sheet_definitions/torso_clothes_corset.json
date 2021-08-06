@@ -1,7 +1,8 @@
 {
   "name" : "Corset",
   "type_name" : "clothes",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 35,
     "female" : "torso/clothes/corset/female/"
   },
   "variants": [

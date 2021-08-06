@@ -1,7 +1,8 @@
 {
   "name" : "Dress",
   "type_name" : "dress",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 30,
     "female" : "dress/female/"
   },
   "variants": [

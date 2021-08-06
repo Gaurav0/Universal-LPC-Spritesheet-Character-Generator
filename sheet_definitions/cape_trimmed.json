@@ -1,11 +1,13 @@
 {
   "name" : "Trimmed",
   "type_name" : "cape",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 85,
     "female" : "cape/trimmed/female/",
     "pregnant" : "cape/trimmed/female/"
   },
-  "file_behind" : {
+  "layer_2" : {
+    "zPos" : 5,
     "female" : "cape/trimmed_behind/",
     "pregnant" : "cape/trimmed_behind/"
   },

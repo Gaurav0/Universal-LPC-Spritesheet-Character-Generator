@@ -1,11 +1,12 @@
 {
   "name" : "Long tied",
   "type_name" : "hair",
-  "file" : {
-    "male" : "hair/male/long_tied/",
-    "muscular" : "hair/male/long_tied/",
-    "female" : "hair/female/long_tied/",
-    "pregnant" : "hair/female/long_tied/"
+  "layer_1" : {
+    "zPos" : 120,
+    "male" : "hair/long_tied/male/",
+    "muscular" : "hair/long_tied/male/",
+    "female" : "hair/long_tied/female/",
+    "pregnant" : "hair/long_tied/female/"
   },
   "variants": [
     "black",

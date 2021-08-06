@@ -1,7 +1,8 @@
 {
   "name" : "Pregnant",
   "type_name" : "body",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 10,
     "pregnant" : "body/pregnant/"
   },
   "variants": [

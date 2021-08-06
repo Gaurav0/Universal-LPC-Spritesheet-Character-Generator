@@ -1,11 +1,12 @@
 {
   "name" : "Ponytail 2",
   "type_name" : "hair",
-  "file" : {
-    "male" : "hair/male/ponytail2/",
-    "muscular" : "hair/male/ponytail2/",
-    "female" : "hair/female/ponytail2/",
-    "pregnant" : "hair/female/ponytail2/"
+  "layer_1" : {
+    "zPos" : 120,
+    "male" : "hair/ponytail2/male/",
+    "muscular" : "hair/ponytail2/male/",
+    "female" : "hair/ponytail2/female/",
+    "pregnant" : "hair/ponytail2/female/"
   },
   "variants": [
     "black",

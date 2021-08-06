@@ -1,7 +1,8 @@
 {
   "name" : "Muscular",
   "type_name" : "body",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 10,
     "muscular" : "body/muscular/"
   },
   "variants": [

@@ -1,7 +1,8 @@
 {
   "name" : "Wide pants",
   "type_name" : "legs",
-  "file" : {
+  "layer_1" : {
+    "zPos" : 20,
     "muscular" : "legs/pants/muscular/"
   },
   "variants": [
