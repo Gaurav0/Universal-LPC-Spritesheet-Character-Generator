@@ -5,8 +5,6 @@ $(document).ready(function() {
   var params = jHash.val();
   var sheetCredits = [];
   const creditColumns = "filename,notes,authors,licenses,url1,url2,url3,url4,url5,status";
-  const hairMalePrefix = "hair/male/"; // used to detect a male hairstyle graphic, which are not added per color to CREDITS.csv
-  const hairFemalePrefix = "hair/female/"; // used to detect a female hairstyle graphic, which are not added per color to CREDITS.csv
   const parsedCredits = loadFile("CREDITS.csv").split("\n");
 
   var canvas = $("#spritesheet").get(0);
@@ -179,15 +177,8 @@ $(document).ready(function() {
 
   function getCreditFor(fileName) {
     if (fileName !== "") {
-      let fileNameParsed = fileName
-      if (fileName.startsWith(hairMalePrefix) || fileName.startsWith(hairFemalePrefix)) {
-        let parts = fileName.split("/");
-        if (parts.length == 4) {
-          fileNameParsed = parts[0] + "/" + parts[1] + "/"  + parts[2];
-        }
-      }
       for (let creditEntry of parsedCredits) {
-        if (creditEntry.startsWith(fileNameParsed)) {
+        if (creditEntry.startsWith(fileName)) {
           return creditEntry;
         }
       };
