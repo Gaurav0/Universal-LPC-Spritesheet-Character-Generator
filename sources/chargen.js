@@ -37,12 +37,12 @@ $(document).ready(function() {
     $("input[type=reset]").click();
     setParams();
   }
-
+  selectPossibleBodyType();
   redraw();
   showOrHideElements();
   nextFrame();
 
-  $("input[type=radio], input[type=checkbox]").attr('title', function() {
+  $("input[type=radio]").attr('title', function() {
     var name = "";
     if ($(this).data(`layer_1_${getBodyTypeName()}`)) {
       name = $(this).data(`layer_1_${getBodyTypeName()}`);
@@ -59,9 +59,13 @@ $(document).ready(function() {
     return creditEntry;
   });
 
-  // set params and redraw when any radio button or checkbox is clicked on
-  $("input[type=radio], input[type=checkbox]").each(function() {
+  // set params and redraw when any radio button is clicked on
+  $("input[type=radio]").each(function() {
     $(this).click(function() {
+      const id = $(this).attr('id');
+      if (id.startsWith("sex-")) {
+        selectPossibleBodyType();
+      }
       setParams();
       redraw();
       showOrHideElements();
@@ -119,6 +123,7 @@ $(document).ready(function() {
       document.getElementById("customFrames").value = "";
       params = {};
       jHash.val(params);
+      selectPossibleBodyType();
       redraw();
       showOrHideElements();
     }, 0, false);
@@ -174,6 +179,26 @@ $(document).ready(function() {
       }
     }
   });
+
+  function selectPossibleBodyType() {
+    $("input[id^=body-]:checked").each(function() {
+      const id = $(this).attr('id');
+      $(this).prop("checked", false);
+    });
+    let idToSelect = "";
+    if (getBodyTypeName() == "male") {
+      idToSelect = "body-Humanlike_white";
+    } else if (getBodyTypeName() == "female") {
+      idToSelect = "body-Humanlike_white";
+    } else if (getBodyTypeName() == "child") {
+      idToSelect = "body-Child_peach";
+    } else if (getBodyTypeName() == "pregnant") {
+      idToSelect = "body-Pregnant_coffee";
+    } else if (getBodyTypeName() == "muscular") {
+      idToSelect = "body-Muscular_muscular_white_v2";
+    }
+    $(`#${idToSelect}`).prop("checked", true);
+  }
 
   function getCreditFor(fileName) {
     if (fileName !== "") {
@@ -240,7 +265,7 @@ $(document).ready(function() {
 
     sheetCredits = [creditColumns];
     zPosition = 0;
-    $("input[type=radio]:checked, input[type=checkbox]:checked").each(function(index) {
+    $("input[type=radio]:checked").each(function(index) {
       for (jdx =1; jdx < 10; jdx++) {
         if ($(this).data(`layer_${jdx}_${bodyTypeName}`)) {
           const zPos = $(this).data(`layer_${jdx}_zpos`);
@@ -348,9 +373,6 @@ $(document).ready(function() {
       var initial = _.initial(words).join('-');
       $(this).prop("checked", $(this).attr("checked") || params[initial] == _.last(words));
     });
-    $("input[type=checkbox]").each(function() {
-      $(this).prop("checked", _.toBool(params[$(this).attr('id')]));
-    });
   }
 
   function setParams() {
@@ -360,11 +382,6 @@ $(document).ready(function() {
       if (!$(this).attr("checked") || params[initial]) {
         params[initial] = _.last(words);
       }
-    });
-    $("input[type=checkbox]").each(function() {
-      if (_.toBool($(this).attr("checked")) != $(this).prop("checked") ||
-      _.toBool(params[$(this).attr('id')]) != $(this).prop("checked"))
-      params[$(this).attr('id')] = $(this).prop("checked") ? 1 : 0;
     });
     jHash.val(params);
   }
@@ -405,7 +422,7 @@ $(document).ready(function() {
   }
 
   function drawPreviews() {
-    this.find("input[type=radio], input[type=checkbox]").filter(function() {
+    this.find("input[type=radio]").filter(function() {
       return $(this).is(":visible");
     }).each(function() {
       if (!$(this).parent().hasClass("hasPreview")) {

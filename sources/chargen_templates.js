@@ -1,4 +1,4 @@
-function generateListHTML(json, checkFirst) {
+function generateListHTML(json) {
   const definition = JSON.parse(loadFile(json));
   const variants = definition.variants
   const name = definition.name
@@ -48,7 +48,7 @@ function generateListHTML(json, checkFirst) {
             dataFiles += "data-preview_row=" + previewRow + " data-layer_" + jdx + "_zpos=" + zPos + " ";
             const oversize = layerDefinition.oversize;
             if (oversize !== undefined) {
-              dataFiles += `data-layer_${jdx}_oversize=` + oversize + " " 
+              dataFiles += `data-layer_${jdx}_oversize=` + oversize + " "
             }
           }
           const file = layerDefinition[requiredSexes[sexIdx]]
@@ -66,13 +66,7 @@ function generateListHTML(json, checkFirst) {
       .replace("[TYPE_NAME]", typeName)
       .replace("[NAME]", itemName)
       .replace("[DATA_FILE]", dataFiles);
-    if (checkFirst && idx == 0) {
-      listItemsHTML = listItemsHTML.replace("[CHECKED]", "checked");
-    } else {
-      listItemsHTML = listItemsHTML.replace("[CHECKED]", "");
-    }
     idx += 1;
-
   }
   return startHTML + listItemsHTML + endHTML;
 }
@@ -82,11 +76,7 @@ function replaceDivs() {
   $("div").each(function() {
     var id = $(this).attr('id');
     if (id.includes(matcher)) {
-      var checkFirst = false;
-      if (id === "sheet_body_human") {
-        checkFirst = true;
-      }
-      $(`#${id}`).replaceWith(generateListHTML(`sheet_definitions/${id.replace(matcher,"")}.json`, checkFirst));
+      $(`#${id}`).replaceWith(generateListHTML(`sheet_definitions/${id.replace(matcher,"")}.json`));
     }
   });
 }
