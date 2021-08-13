@@ -47,6 +47,9 @@ $(document).ready(function() {
     if ($(this).data(`layer_1_${getBodyTypeName()}`)) {
       name = $(this).data(`layer_1_${getBodyTypeName()}`);
     }
+    if (name === "") {
+      return "";
+    }
     const creditEntry = getCreditFor(name);
     if (creditEntry) {
       let parts = splitCsv(creditEntry);
@@ -54,6 +57,7 @@ $(document).ready(function() {
         return "Created by: " + parts[2];
       }
     } else {
+      console.warn("name missing: ", name);
       return "No credits found for this graphic";
     }
     return creditEntry;
