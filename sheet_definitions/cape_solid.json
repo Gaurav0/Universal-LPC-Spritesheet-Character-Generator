@@ -9,7 +9,7 @@
     "pregnant" : "cape/solid/female/"
   },
   "layer_2" : {
-    "zPos" : 9,
+    "zPos" : 5,
     "male" : "cape/solid_behind/",
     "muscular" : "cape/solid_behind/",
     "female" : "cape/solid_behind/",

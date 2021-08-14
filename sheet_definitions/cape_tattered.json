@@ -7,7 +7,7 @@
     "pregnant" : "cape/tattered/female/"
   },
   "layer_2" : {
-    "zPos" : 9,
+    "zPos" : 5,
     "female" : "cape/tattered_behind/",
     "pregnant" : "cape/tattered_behind/"
   },

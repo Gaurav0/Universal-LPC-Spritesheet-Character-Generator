@@ -18,13 +18,7 @@
   },
   "variants": [
     "flail",
-    "glowsword blue",
-    "glowsword red",
     "halberd",
-    "longsword",
-    "mace",
-    "rapier",
-    "saber",
-    "scythe"
+    "waraxe"
   ]
 }
