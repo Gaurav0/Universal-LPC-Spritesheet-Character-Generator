@@ -1,5 +1,5 @@
 {
-  "name" : "No sleeves",
+  "name" : "Sleeveless",
   "type_name" : "clothes",
   "layer_1" : {
     "zPos" : 35,
@@ -8,8 +8,27 @@
   "variants": [
     "black",
     "blue",
+    "bluegray",
     "brown",
+    "charcoal",
+    "forest",
+    "gray",
+    "green",
+    "lavender",
+    "leather",
+    "maroon",
+    "navy",
+    "orange",
+    "pink",
+    "purple",
     "red",
-    "white"
+    "rose",
+    "sky",
+    "slate",
+    "tan",
+    "teal",
+    "walnut",
+    "white",
+    "yellow"
   ]
 }
