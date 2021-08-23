@@ -1,17 +1,14 @@
 {
-  "name" : "Gentleman",
+  "name" : "Collared coat",
   "type_name" : "jacket",
   "layer_1" : {
     "zPos" : 55,
-    "male" : "torso/clothes/jacket/gentleman/male/"
+    "male" : "torso/jacket/collared/male/"
   },
   "variants": [
     "black",
     "brown striped",
     "brown",
-    "dark gray",
-    "gray",
-    "iverness",
     "tan"
   ]
 }
