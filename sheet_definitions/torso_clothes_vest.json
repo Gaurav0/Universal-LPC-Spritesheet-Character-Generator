@@ -6,9 +6,31 @@
     "male" : "torso/clothes/vest/male/"
   },
   "variants": [
-    "gray",
     "gray striped",
+    "green striped",
+    "black",
+    "blue",
+    "bluegray",
+    "brown",
+    "charcoal",
+    "forest",
+    "gray",
     "green",
-    "green striped"
+    "lavender",
+    "leather",
+    "maroon",
+    "navy",
+    "orange",
+    "pink",
+    "purple",
+    "red",
+    "rose",
+    "sky",
+    "slate",
+    "tan",
+    "teal",
+    "walnut",
+    "white",
+    "yellow"
   ]
 }
