@@ -415,6 +415,10 @@ $(document).ready(function() {
   }
 
   function parseCSV(str) {
+      // https://stackoverflow.com/a/14991797/4091874
+      // Author: Trevor Dixon https://stackoverflow.com/users/711902/trevor-dixon
+      // CC-BY-SA 4.0 -> sublicensable to GPL v3
+
       var arr = [];
       var quote = false;  // 'true' means we're inside a quoted field
 
