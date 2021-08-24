@@ -27,12 +27,12 @@ function generateListHTML(json) {
 
   const requiredSex = requiredSexes.join(",");
 
-  const startHTML = `<li data-required="[REQUIRED_SEX]"><span class="condensed"">${name}</span><ul>`.replace("[REQUIRED_SEX]", requiredSex);
+  const startHTML = `<li data-required="[REQUIRED_SEX]"><span class="condensed">${name}</span><ul>`.replace("[REQUIRED_SEX]", requiredSex);
   const templateHTML = loadFile("html_templates/template-general.html");
   const endHTML = '</ul></li>';
 
   var idx = 0;
-  var listItemsHTML = `<li><input type="radio" id="${typeName}-none" name="${typeName}"><label for="${typeName}-none">No ${typeName}</label></li>`;
+  var listItemsHTML = `<li><input type="radio" id="${typeName}-none" name="${typeName}"> <label for="${typeName}-none">No ${typeName}</label></li>`;
   for (variant in variants) {
     const itemName = variants[idx];
     const itemIdFor = typeName + "-" + name.replaceAll(" ", "_") +  "_" + itemName.replaceAll(" ", "_");
@@ -62,10 +62,10 @@ function generateListHTML(json) {
       sexIdx += 1;
     }
     listItemsHTML += templateHTML
-      .replace("[ID_FOR]", itemIdFor)
-      .replace("[TYPE_NAME]", typeName)
-      .replace("[NAME]", itemName)
-      .replace("[DATA_FILE]", dataFiles);
+      .replaceAll("[ID_FOR]", itemIdFor)
+      .replaceAll("[TYPE_NAME]", typeName)
+      .replaceAll("[NAME]", itemName)
+      .replaceAll("[DATA_FILE]", dataFiles);
     idx += 1;
   }
   return startHTML + listItemsHTML + endHTML;
