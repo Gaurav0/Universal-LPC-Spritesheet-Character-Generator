@@ -213,6 +213,7 @@ def populate_credits(credits, submissions, check_files_in = './spritesheets/'):
 	
 	credits = credits.fillna('')
 	credits = credits.sort_values(by=['filename'])
+	credits = credits.drop_duplicates()
 
 	# build list of files that lack some necessary attribution
 	unattributed = []
@@ -223,13 +224,32 @@ def populate_credits(credits, submissions, check_files_in = './spritesheets/'):
 		filename = row['filename']
 		is_image = filename.strip().endswith('.png')
 
+		# if filename=='hat/pirate/bandana-skull/female/black.png':
+		# 	import pdb; pdb.set_trace()
+
 		# copy missing data from that for parent directory
-		if row['url1'] == '^' or (row['url1'] == '' and is_image):
+		if row['url1'] == '^' or (is_image and any(row[['authors','licenses','url1']] == '')):
+			print("searching for data for {0} from parent directories...".format(filename))
 			parent_filename = Path(filename).parent
-			print("populating data for {0} from parent directory {1}".format(filename, parent_filename))
-			parent_row = credits.loc[credits['filename'] == str(parent_filename),:]
-			credits.loc[i,['authors'] + url_columns] = parent_row[['authors'] + url_columns].squeeze()
-			row = credits.loc[i,:]
+			while parent_filename != Path('.'):
+				print(f"- {parent_filename}")
+				parent_row = credits.loc[credits['filename'] == str(parent_filename),:]
+				if len(parent_row.index) > 1:
+					print(f"  - warning: multiple entries found for {filename}: \n {parent_row}")
+					parent_row = parent_row.iloc[0,:]
+				if len(parent_row) != 0:
+					parent_row = parent_row.squeeze()
+					cols = ['authors','licenses'] + url_columns
+					for col in cols:
+						if (credits.loc[i, col] == '') or (credits.loc[i, col] == '^'):
+							credits.loc[i,col] = parent_row[col]
+					# credits.loc[i,['authors','licenses'] + url_columns] = parent_row[['authors','licenses'] + url_columns].squeeze()
+					row = credits.loc[i,:]
+
+					# if not (row['url1'] == '^' or (row['url1'] == '' and is_image)):
+					if not any(row[['authors','licenses','url1']] == ''):
+						break
+				parent_filename = Path(parent_filename).parent
 
 		# copy authors from submissions
 		if row['authors'].strip() == '':

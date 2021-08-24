@@ -6,9 +6,23 @@
   box-sizing: border-box;
 }
 
+button {
+  padding: revert;
+}
+
+canvas {
+  image-rendering: pixelated;
+}
+
+.zoomed {
+  zoom: 2;
+}
+
 body {
   margin: 10px 15px;
   min-width: 1280px;
+  font-size: 10pt;
+  font-family: monospace;
 }
 
 header {
@@ -24,7 +38,7 @@ h2 {
 }
 
 h3 {
-  font-size: 12pt;
+  font-size: larger;
   margin: 8px 0px;
 }
 
@@ -50,7 +64,16 @@ p {
   margin: 40px 0;
   clear: both;
   float: left;
-  font-size: 16pt;
+  font-size: larger;
+}
+
+#credits {
+  width: 100%;
+  clear: both;
+}
+
+#advanced {
+  float: left;
 }
 
 input[type=button], input[type=reset] {
@@ -58,18 +81,20 @@ input[type=button], input[type=reset] {
 }
 
 #previewAnimationsBox {
-  width: 256px;
-  position: absolute;
-  top: 20px;
-  left: 640px;
+  margin-bottom: -64px;
+}
+
+#customizeChar {
+  width: 30%;
+  clear: none;
+  float: left;
 }
 
 #chooser {
-  width: 30%;
+  /*width: 30%;*/
   min-width: 200px;
   padding-left: 20px;
   float: left;
-  font-size: 14pt;
 }
 
 #preview {
@@ -78,8 +103,8 @@ input[type=button], input[type=reset] {
   float: right;
 }
 
-p.instr {
-  font-size: 12pt;
+.instr {
+
 }
 
 #chooser p.instr {
@@ -103,17 +128,25 @@ ul {
 
 #chooser>ul>li {
   cursor: pointer;
-  font-size: 16pt;
 }
 
 #chooser>ul>li>.condensed:after, #chooser>ul>li>ul>li>.condensed:after {
   padding-left: 10px;
-  content: url('images/arrow_right.png');
+  content: '\25B6';
 }
 
-#chooser>ul>li>.expanded:after, #chooser>ul>li>ul>li>.expanded:after {
+#chooser>ul>li>.expanded:after, #chooser>ul>li>ul>li>.expanded:after, .condensed:hover:after {
   padding-left: 10px;
-  content: url('images/arrow_down.png');
+  content:  '\25BC';
+}
+
+.condensed:hover, .expanded:hover {
+  text-decoration: underline;
+}
+
+
+.search-result {
+  background-color: yellow;
 }
 
 #chooser>ul>li>ul>li>ul {
@@ -124,20 +157,14 @@ ul {
   display: none;
 }
 
-/*
-#chooser>ul>li:hover ul {
-display: block !important;
-}
-*/
+
 
 #chooser>ul>li>ul>li {
-  font-size: 12pt;
   padding-left: 48px;
   text-indent: -18px;
 }
 
 #chooser>ul>li>ul>li>ul>li {
-  font-size: 12pt;
   padding-left: 64px;
   text-indent: -18px;
 }
@@ -148,14 +175,21 @@ display: block !important;
 
 #chooser li.hasPreview {
   display: inline-block;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 3px;
   margin-left: 0;
   margin-right: 0;
   text-indent: 0;
+  border: solid 1px transparent;
+  border-radius: 3px;
 }
 
-li.hasPreview>canvas {
+#chooser li.hasPreview:hover {
+  border-color: silver;
+}
+
+li.hasPreview canvas {
   display: block;
 }
 
