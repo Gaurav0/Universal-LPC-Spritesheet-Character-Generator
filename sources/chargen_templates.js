@@ -75,7 +75,7 @@ function replaceDivs() {
   const matcher = "sheet_";
   $("div").each(function() {
     var id = $(this).attr('id');
-    if (id.includes(matcher)) {
+    if (!!id && id.includes(matcher)) {
       $(`#${id}`).replaceWith(generateListHTML(`sheet_definitions/${id.replace(matcher,"")}.json`));
     }
   });
