@@ -1,5 +1,10 @@
 _.mixin(_.str.exports());
 
+$.expr[':'].icontains = function(a, i, m) {
+  return jQuery(a).text().toUpperCase()
+      .indexOf(m[3].toUpperCase()) >= 0;
+};
+
 $(document).ready(function() {
 
   var params = jHash.val();
@@ -106,6 +111,29 @@ $(document).ready(function() {
     $("#chooser>ul ul").hide('slow');
     $("#chooser>ul span.expanded").removeClass("expanded").addClass("condensed");
   });
+  $("#expand").click(function() {
+    let parents = $('input[type="radio"]:checked').parents("ul")
+    parents.prev('span').addClass("expanded")
+    parents.show().promise().done(drawPreviews)
+  })
+  
+  function search(e) {
+    $('.search-result').removeClass('search-result')
+    let query = $('#searchbox').val()
+    if (query != '' && query.length > 1) {
+      let results = $('#chooser span:icontains('+query+')').addClass("search-result")
+      let parents = results.parents("ul")
+      parents.prev('span').addClass("expanded").removeClass('condensed')
+      parents.show().promise().done(drawPreviews)
+    }
+  }
+  $("#searchbox").on('search',search)
+  $("#search").click(search)
+
+  $('#scroll-to-credits').click(function(e) {
+    $('#credits')[0].scrollIntoView()
+    e.preventDefault();
+  })
 
   $("#previewFile").change(function() {
     previewFile();
@@ -133,7 +161,7 @@ $(document).ready(function() {
     }, 0, false);
   });
 
-  $("#generateSheetCredits").click(function() {
+  $(".generateSheetCredits").click(function() {
     let bl = new Blob([sheetCredits.join('\n')], {
       type: "text/html"
     });
@@ -147,7 +175,7 @@ $(document).ready(function() {
     document.removeChild(a);
   });
 
-  $("#generateAllCredits").click(function() {
+  $(".generateAllCredits").click(function() {
     let bl = new Blob([parsedCredits.join('\n')], {
       type: "text/html"
     });
@@ -184,6 +212,10 @@ $(document).ready(function() {
     }
   });
 
+  $("#spritesheet,#previewAnimations").on('click',function(e) {
+    $(this).toggleClass('zoomed')
+  })
+
   function selectPossibleBodyType() {
     $("input[id^=body-]:checked").each(function() {
       const id = $(this).attr('id');
@@ -218,7 +250,7 @@ $(document).ready(function() {
     if (fileName !== "") {
       let creditEntry = getCreditFor(fileName);
       if (!creditEntry) {
-        sheetCredits.push(fileName+",!MISSING LICENSE INFORMATION! PLEASE CORRECT MANUALY AND REPORT BACK VIA A GITHUB ISSUE,,,,,,,,NOK");
+        sheetCredits.push(fileName+",!MISSING LICENSE INFORMATION! PLEASE CORRECT MANUALY AND REPORT BACK VIA A GITHUB ISSUE,,,,,,,,BAD");
       } else {
         sheetCredits.push(creditEntry);
       }
@@ -227,7 +259,16 @@ $(document).ready(function() {
   }
 
   function displayCredits() {
-    $("textarea#creditsText").val(sheetCredits.join('\n'));
+    let csv = parseCSV(sheetCredits.join('\n'))
+    let out = csv.slice(1).map(function(row) {
+      let urls = row.slice(4,9)
+        .filter(function (x) { return !!x })
+        .map(function (x) { return "    - " + x})
+      // return ("- " + row[0] + " by " + row[2] + ". License(s): " + row[3] + ". \n    + " + 
+      //   urls.join("\n    + ")+"\n")
+      return [`- ${row[0]}: by ${row[2]}. License(s): ${row[3]}. ${row[1]}`].concat(urls).join("\n")
+    })
+    $("textarea#creditsText").val(out.join("\n\n"));
   }
 
   function previewFile(){
@@ -313,9 +354,11 @@ $(document).ready(function() {
     if (oversize) {
       canvas.width = 1536;
       canvas.height = 1344 + 768;
+      $(anim).addClass('oversize')
     } else {
       canvas.width = 832;
       canvas.height = 1344;
+      $(anim).removeClass('oversize')
     }
     $("#chooser>ul").css("height", canvas.height);
 
@@ -369,6 +412,46 @@ $(document).ready(function() {
     xmlhttp.open("GET", filePath, false);
     xmlhttp.send();
     return xmlhttp.responseText;
+  }
+
+  function parseCSV(str) {
+      // https://stackoverflow.com/a/14991797/4091874
+      // Author: Trevor Dixon https://stackoverflow.com/users/711902/trevor-dixon
+      // CC-BY-SA 4.0 -> sublicensable to GPL v3
+
+      var arr = [];
+      var quote = false;  // 'true' means we're inside a quoted field
+
+      // Iterate over each character, keep track of current row and column (of the returned array)
+      for (var row = 0, col = 0, c = 0; c < str.length; c++) {
+          var cc = str[c], nc = str[c+1];        // Current character, next character
+          arr[row] = arr[row] || [];             // Create a new row if necessary
+          arr[row][col] = arr[row][col] || '';   // Create a new column (start with empty string) if necessary
+
+          // If the current character is a quotation mark, and we're inside a
+          // quoted field, and the next character is also a quotation mark,
+          // add a quotation mark to the current column and skip the next character
+          if (cc == '"' && quote && nc == '"') { arr[row][col] += cc; ++c; continue; }
+
+          // If it's just one quotation mark, begin/end quoted field
+          if (cc == '"') { quote = !quote; continue; }
+
+          // If it's a comma and we're not in a quoted field, move on to the next column
+          if (cc == ',' && !quote) { ++col; continue; }
+
+          // If it's a newline (CRLF) and we're not in a quoted field, skip the next character
+          // and move on to the next row and move to column 0 of that new row
+          if (cc == '\r' && nc == '\n' && !quote) { ++row; col = 0; ++c; continue; }
+
+          // If it's a newline (LF or CR) and we're not in a quoted field,
+          // move on to the next row and move to column 0 of that new row
+          if (cc == '\n' && !quote) { ++row; col = 0; continue; }
+          if (cc == '\r' && !quote) { ++row; col = 0; continue; }
+
+          // Otherwise, append the current character to the current column
+          arr[row][col] += cc;
+      }
+      return arr;
   }
 
   function interpretParams() {
@@ -429,7 +512,8 @@ $(document).ready(function() {
     this.find("input[type=radio]").filter(function() {
       return $(this).is(":visible");
     }).each(function() {
-      if (!$(this).parent().hasClass("hasPreview")) {
+      $this = $(this)
+      if (!$this.parent().hasClass("hasPreview") && !$this.parent().hasClass("noPreview")) {
         var prev = document.createElement("canvas");
         var oversize = $(this).data("layer_1_oversize");
         prev.setAttribute("width", 64);

@@ -14,58 +14,50 @@
 	<script type="text/javascript" src="sources/chargen.js"></script>
 </head>
 <body>
-	<br>
-	<div id="previewAnimationsBox">
-		Preview
-		<select id="whichAnim">
-			<option value="spellcast" data-row="0" data-num="4" data-cycle="7">Spellcast</option>
-			<option value="thrust" data-row="4" data-num="4" data-cycle="8">Thrust</option>
-			<option value="walk" selected data-row="8" data-num="4" data-cycle="9">Walk</option>
-			<option value="slash" data-row="12" data-num="4" data-cycle="6">Slash</option>
-			<option value="shoot" data-row="16" data-num="4" data-cycle="13">Shoot</option>
-			<option value="hurt" data-row="20" data-num="1" data-cycle="6">Hurt</option>
-			<option value="smash" data-row="12" data-num="4" data-cycle="4">Smash</option>
-		</select>
-		<canvas id="previewAnimations" width="1024" height="192"></canvas>
-	</div>
-	<p>
-		<a id="saveAsPNG"><input type="button" value="Save Result As PNG"></a>
-		<input type="button" id="collapse" value="Collapse All">
-		<button type="button" id="resetAll">Reset all</button>
-	</p>
-	<p>
-		<p>Choose a local file to draw in this sheet with a custom z-position</p>
-		<input type="file" id="previewFile"><br>
-		<input id="ZPOS" type="text" name="ZPOS">z-position<br>
-	</p>
-	<p>
-		<p>Define custom sequence of frames, 0-based. EG: '3, 5, 3, 0'. Select a preview to effectuate.</p>
-		<input id="customFrames" type="text" name="customFrames">custom frames<br>
-	</p>
 	<form id="customizeChar">
+		<div id="controls">
+			<h1>Universal LPC Spritesheet Generator</h1>
+			<p>Free/Libre pixel art sprites from the <a href="lpc.opengameart.org">Liberated Pixel Cup</a> and <a href="https://opengameart.org/content/lpc-collection">OpenGameArt.org</a>. License: <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA 3.0</a>. You must <a id="scroll-to-credits" href="#">credit the authors of this artwork.</a></p>
+			<div>
+				<button id="saveAsPNG">Download As PNG</button>
+				<button type="button" class="generateSheetCredits">Download credits</button>
+			</div>
+			<div>
+				<button type="button" id="collapse">Collapse All</button>
+				<button type="button" id="expand">Expand Selected</button>
+				<button type="button" id="resetAll">Reset all</button>
+			</div>
+			<div>
+				<input type="search" id="searchbox" name="" placeholder="Search" />
+			</div>
+		</div>
 		<section id="chooser">
 			<ul>
-				<!-- Body types -->
-				<span class="condensed">Body type</span>
 				<li>
-					<input type="radio" id="sex-male" name="sex" checked>
-					<label for="sex-male">Male</label>
-				</li>
-				<li>
-					<input type="radio" id="sex-female" name="sex">
-					<label for="sex-female">Female</label>
-				</li>
-				<li>
-					<input type="radio" id="sex-child" name="sex">
-					<label for="sex-child">Child</label>
-				</li>
-				<li>
-					<input type="radio" id="sex-pregnant" name="sex">
-					<label for="sex-pregnant">Pregnant</label>
-				</li>
-				<li>
-					<input type="radio" id="sex-muscular" name="sex">
-					<label for="sex-muscular">Muscular</label>
+					<!-- Body types -->
+					<span class="expanded">Body type</span>
+					<ul style="display:block;">
+						<li class="noPreview">
+							<input type="radio" id="sex-male" name="sex" checked>
+							<label for="sex-male">Male</label>
+						</li>
+						<li class="noPreview">
+							<input type="radio" id="sex-female" name="sex">
+							<label for="sex-female">Female</label>
+						</li>
+						<li class="noPreview">
+							<input type="radio" id="sex-child" name="sex">
+							<label for="sex-child">Child</label>
+						</li>
+						<li class="noPreview">
+							<input type="radio" id="sex-pregnant" name="sex">
+							<label for="sex-pregnant">Pregnant</label>
+						</li>
+						<li class="noPreview">
+							<input type="radio" id="sex-muscular" name="sex">
+							<label for="sex-muscular">Muscular</label>
+						</li>
+					</ul>
 				</li>
 
 				<!-- Bodies -->
@@ -421,19 +413,44 @@
 		</section>
 	</form>
 	<section id="preview">
-		<p class="instr">The complete resulting sprite sheet for your character:</p>
+		<div id="previewAnimationsBox">
+			Preview
+			<select id="whichAnim">
+				<option value="spellcast" data-row="0" data-num="4" data-cycle="7">Spellcast</option>
+				<option value="thrust" data-row="4" data-num="4" data-cycle="8">Thrust</option>
+				<option value="walk" selected data-row="8" data-num="4" data-cycle="9">Walk</option>
+				<option value="slash" data-row="12" data-num="4" data-cycle="6">Slash</option>
+				<option value="shoot" data-row="16" data-num="4" data-cycle="13">Shoot</option>
+				<option value="hurt" data-row="20" data-num="1" data-cycle="6">Hurt</option>
+				<option value="smash" data-row="12" data-num="4" data-cycle="4">Smash</option>
+			</select>
+			<canvas id="previewAnimations" width="1024" height="192"></canvas>
+		</div>
+
+		<div class="instr">Complete sprite sheet (click to zoom): </div>
 		<canvas id="spritesheet" width="832" height="1344">HTML5 Browser required.</canvas>
 	</section>
-	<p>
-		<textarea id="creditsText" rows="20" cols="300" readonly style="font-size: 10pt">Placehholder</textarea>
-	</p>
-	<p>
-		<button type="button" id="generateSheetCredits">Credits for this sheet</button>
-		<button type="button" id="generateAllCredits">Credits for all sprites</button>
-		<p>Please respect the licenses.<br>For missing credits links, please look them up and process them properly. All spritesheets are submitted to:</p>
-		<a href="https://opengameart.org">OpenGameArt</a>
-		<br>
-		<a href="https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/README.md">Crediting instructions</a>
-	</p>
+	<div id="credits">
+		<h2>Credits</h2>
+		<p>This art is available under the <a href="http://www.gnu.org/licenses/gpl-3.0.html">GNU GPL 3.0</a> and/or <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA 3.0</a> licenses. You must credit the authors. <a href="https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/README.md">Detailed attribution instructions</a>. </p>
+		<p><strong>Download: </strong>
+			<button type="button" class="generateSheetCredits">Credits for this sheet</button>
+			<button type="button" class="generateAllCredits">Credits for all sprites</button>
+		</p>
+		<p>Authors of this spritesheet:</p>
+		<textarea id="creditsText" rows="20" cols="300" readonly>Credits</textarea>
+	</div>
+	<div id="advanced">
+		<h2>Advanced Tools</h2>
+		<p>
+			<strong>Custom file: </strong><span>Draw local file with custom z-position:</span>
+			<input type="file" id="previewFile">
+			<label for="ZPOS">Z-position:</label><input id="ZPOS" type="text" name="ZPOS">
+		</p>
+		<p>
+			<strong>Custom animation: </strong><span>Define custom sequence of frames for the selected animation. First frame is 0, e.g.: '3, 5, 3, 0'.</span>
+			<input id="customFrames" type="text" name="customFrames">custom frames<br>
+		</p>
+	</div>
 </body>
 </html>
