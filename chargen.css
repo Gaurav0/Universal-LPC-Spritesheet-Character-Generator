@@ -21,6 +21,8 @@ canvas {
 body {
   margin: 10px 15px;
   min-width: 1280px;
+  font-size: 10pt;
+  font-family: monospace;
 }
 
 header {
@@ -36,7 +38,7 @@ h2 {
 }
 
 h3 {
-  font-size: 12pt;
+  font-size: larger;
   margin: 8px 0px;
 }
 
@@ -79,10 +81,6 @@ input[type=button], input[type=reset] {
 }
 
 #previewAnimationsBox {
-/*  width: 256px;
-  position: absolute;
-  top: 20px;
-  left: 640px;*/
   margin-bottom: -64px;
 }
 
@@ -105,7 +103,7 @@ input[type=button], input[type=reset] {
   float: right;
 }
 
-p.instr {
+.instr {
 
 }
 
@@ -130,18 +128,22 @@ ul {
 
 #chooser>ul>li {
   cursor: pointer;
-  font-size: 16pt;
 }
 
 #chooser>ul>li>.condensed:after, #chooser>ul>li>ul>li>.condensed:after {
   padding-left: 10px;
-  content: url('images/arrow_right.png');
+  content: '\25B6';
 }
 
-#chooser>ul>li>.expanded:after, #chooser>ul>li>ul>li>.expanded:after {
+#chooser>ul>li>.expanded:after, #chooser>ul>li>ul>li>.expanded:after, .condensed:hover:after {
   padding-left: 10px;
-  content: url('images/arrow_down.png');
- }
+  content:  '\25BC';
+}
+
+.condensed:hover, .expanded:hover {
+  text-decoration: underline;
+}
+
 
 .search-result {
   background-color: yellow;
@@ -155,20 +157,14 @@ ul {
   display: none;
 }
 
-/*
-#chooser>ul>li:hover ul {
-display: block !important;
-}
-*/
+
 
 #chooser>ul>li>ul>li {
-  font-size: 12pt;
   padding-left: 48px;
   text-indent: -18px;
 }
 
 #chooser>ul>li>ul>li>ul>li {
-  font-size: 12pt;
   padding-left: 64px;
   text-indent: -18px;
 }
