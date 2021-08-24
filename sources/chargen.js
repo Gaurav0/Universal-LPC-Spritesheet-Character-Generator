@@ -112,14 +112,19 @@ $(document).ready(function() {
     $("#chooser>ul span.expanded").removeClass("expanded").addClass("condensed");
   });
   $("#expand").click(function() {
-    $('input[type="radio"]:checked').parents("ul").show().prev('span').addClass("expanded")
+    let parents = $('input[type="radio"]:checked').parents("ul")
+    parents.prev('span').addClass("expanded")
+    parents.show().promise().done(drawPreviews)
   })
   
   function search(e) {
     $('.search-result').removeClass('search-result')
     let query = $('#searchbox').val()
-    if (query != '') {
-      $('#chooser span:icontains('+query+')').addClass("search-result").parents("ul").show().prev('span').addClass("expanded")
+    if (query != '' && query.length > 1) {
+      let results = $('#chooser span:icontains('+query+')').addClass("search-result")
+      let parents = results.parents("ul")
+      parents.prev('span').addClass("expanded").removeClass('condensed')
+      parents.show().promise().done(drawPreviews)
     }
   }
   $("#searchbox").on('search',search)
@@ -458,7 +463,8 @@ $(document).ready(function() {
     this.find("input[type=radio]").filter(function() {
       return $(this).is(":visible");
     }).each(function() {
-      if (!$(this).parent().hasClass("hasPreview")) {
+      $this = $(this)
+      if (!$this.parent().hasClass("hasPreview") && !$this.parent().hasClass("noPreview")) {
         var prev = document.createElement("canvas");
         var oversize = $(this).data("layer_1_oversize");
         prev.setAttribute("width", 64);
