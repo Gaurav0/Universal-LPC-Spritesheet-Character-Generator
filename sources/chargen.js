@@ -184,6 +184,10 @@ $(document).ready(function() {
     }
   });
 
+  $("#spritesheet,#previewAnimations").on('click',function(e) {
+    $(this).toggleClass('zoomed')
+  })
+
   function selectPossibleBodyType() {
     $("input[id^=body-]:checked").each(function() {
       const id = $(this).attr('id');
