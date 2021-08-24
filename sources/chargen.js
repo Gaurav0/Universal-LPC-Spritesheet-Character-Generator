@@ -125,6 +125,10 @@ $(document).ready(function() {
   $("#searchbox").on('search',search)
   $("#search").click(search)
 
+  $('#scroll-to-credits').click(function(e) {
+    $('#credits')[0].scrollIntoView()
+    e.preventDefault();
+  })
 
   $("#previewFile").change(function() {
     previewFile();
@@ -336,9 +340,11 @@ $(document).ready(function() {
     if (oversize) {
       canvas.width = 1536;
       canvas.height = 1344 + 768;
+      $(anim).addClass('oversize')
     } else {
       canvas.width = 832;
       canvas.height = 1344;
+      $(anim).removeClass('oversize')
     }
     $("#chooser>ul").css("height", canvas.height);
 
