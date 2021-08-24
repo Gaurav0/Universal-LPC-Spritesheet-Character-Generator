@@ -106,6 +106,9 @@ $(document).ready(function() {
     $("#chooser>ul ul").hide('slow');
     $("#chooser>ul span.expanded").removeClass("expanded").addClass("condensed");
   });
+  $("#expand").click(function() {
+    $('input[type="radio"]:checked').parents("ul").show().prev('span').addClass("expanded")
+  })
 
   $("#previewFile").change(function() {
     previewFile();
