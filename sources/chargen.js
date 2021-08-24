@@ -133,7 +133,7 @@ $(document).ready(function() {
     }, 0, false);
   });
 
-  $("#generateSheetCredits").click(function() {
+  $(".generateSheetCredits").click(function() {
     let bl = new Blob([sheetCredits.join('\n')], {
       type: "text/html"
     });
@@ -147,7 +147,7 @@ $(document).ready(function() {
     document.removeChild(a);
   });
 
-  $("#generateAllCredits").click(function() {
+  $(".generateAllCredits").click(function() {
     let bl = new Blob([parsedCredits.join('\n')], {
       type: "text/html"
     });

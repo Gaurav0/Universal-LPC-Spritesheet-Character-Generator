@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+button {
+  padding: revert;
+}
+
 canvas {
   image-rendering: pixelated;
 }
@@ -58,7 +62,16 @@ p {
   margin: 40px 0;
   clear: both;
   float: left;
-  font-size: 16pt;
+  font-size: larger;
+}
+
+#credits {
+  width: 100%;
+  clear: both;
+}
+
+#advanced {
+  float: left;
 }
 
 input[type=button], input[type=reset] {
@@ -66,18 +79,24 @@ input[type=button], input[type=reset] {
 }
 
 #previewAnimationsBox {
-  width: 256px;
+/*  width: 256px;
   position: absolute;
   top: 20px;
-  left: 640px;
+  left: 640px;*/
+  margin-bottom: -64px;
+}
+
+#customizeChar {
+  width: 30%;
+  clear: none;
+  float: left;
 }
 
 #chooser {
-  width: 30%;
+  /*width: 30%;*/
   min-width: 200px;
   padding-left: 20px;
   float: left;
-  font-size: 14pt;
 }
 
 #preview {
@@ -87,7 +106,7 @@ input[type=button], input[type=reset] {
 }
 
 p.instr {
-  font-size: 12pt;
+
 }
 
 #chooser p.instr {
