@@ -141,6 +141,10 @@ ul {
 #chooser>ul>li>.expanded:after, #chooser>ul>li>ul>li>.expanded:after {
   padding-left: 10px;
   content: url('images/arrow_down.png');
+ }
+
+.search-result {
+  background-color: yellow;
 }
 
 #chooser>ul>li>ul>li>ul {

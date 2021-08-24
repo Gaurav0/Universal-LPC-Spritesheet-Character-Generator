@@ -1,5 +1,10 @@
 _.mixin(_.str.exports());
 
+$.expr[':'].icontains = function(a, i, m) {
+  return jQuery(a).text().toUpperCase()
+      .indexOf(m[3].toUpperCase()) >= 0;
+};
+
 $(document).ready(function() {
 
   var params = jHash.val();
@@ -109,6 +114,17 @@ $(document).ready(function() {
   $("#expand").click(function() {
     $('input[type="radio"]:checked').parents("ul").show().prev('span').addClass("expanded")
   })
+  
+  function search(e) {
+    $('.search-result').removeClass('search-result')
+    let query = $('#searchbox').val()
+    if (query != '') {
+      $('#chooser span:icontains('+query+')').addClass("search-result").parents("ul").show().prev('span').addClass("expanded")
+    }
+  }
+  $("#searchbox").on('search',search)
+  $("#search").click(search)
+
 
   $("#previewFile").change(function() {
     previewFile();
