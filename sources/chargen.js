@@ -129,6 +129,10 @@ $(document).ready(function() {
   }
   $("#searchbox").on('search',search)
   $("#search").click(search)
+  $("#customizeChar").on('submit',function(e) {
+    search()
+    e.preventDefault()
+  })
 
   $('#scroll-to-credits').click(function(e) {
     $('#credits')[0].scrollIntoView()

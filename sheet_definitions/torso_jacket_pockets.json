@@ -3,7 +3,7 @@
   "type_name" : "jacket_pockets",
   "layer_1" : {
     "zPos" : 59,
-    "male" : "torso/jacket/trim/jacket-pockets/"
+    "male" : "torso/jacket/trim/jacket_pockets/"
   },
   "variants": [
     "black",

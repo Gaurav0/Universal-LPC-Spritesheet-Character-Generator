@@ -3,7 +3,7 @@
   "type_name" : "clothes",
   "layer_1" : {
     "zPos" : 35,
-    "male" : "torso/clothes/longsleeve-laced/male/"
+    "male" : "torso/clothes/longsleeve_laced/male/"
   },
   "variants": [
     "black",

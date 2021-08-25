@@ -3,8 +3,8 @@
   "type_name" : "hat",
   "layer_1" : {
     "zPos" : 130,
-    "female" : "hat/pirate/cavalier-feather/female/",
-    "male" :   "hat/pirate/cavalier-feather/male/"
+    "female" : "hat/pirate/cavalier_feather/female/",
+    "male" :   "hat/pirate/cavalier_feather/male/"
   },
   "variants": [
     "black",

@@ -3,7 +3,7 @@
   "type_name" : "jacket_trim",
   "layer_1" : {
     "zPos" : 58,
-    "male" : "torso/jacket/trim/frock-buttons/"
+    "male" : "torso/jacket/trim/frock_buttons/"
   },
   "variants": [
     "bronze",
