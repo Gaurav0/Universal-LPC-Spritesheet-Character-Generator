@@ -116,7 +116,7 @@ $(document).ready(function() {
     parents.prev('span').addClass("expanded")
     parents.show().promise().done(drawPreviews)
   })
-  
+
   function search(e) {
     $('.search-result').removeClass('search-result')
     let query = $('#searchbox').val()
@@ -163,6 +163,24 @@ $(document).ready(function() {
       redraw();
       showOrHideElements();
     }, 0, false);
+  });
+
+  $(".replacePinkMask").click(function() {
+    var imgData = ctx.getImageData(0, 0, canvas.width, canvas.height),
+    pix = imgData.data;
+
+    for (var i = 0, n = pix.length; i <n; i += 4) {
+      const a = pix[i+3];
+      if (a > 0) {
+        const r = pix[i];
+        const g = pix[i+1];
+        const b = pix[i+2];
+        if (r === 255 && g === 44 && b === 230) {
+          pix[i + 3] = 0;
+        }
+      }
+    }
+    ctx.putImageData(imgData, 0, 0);
   });
 
   $(".generateSheetCredits").click(function() {
@@ -268,8 +286,6 @@ $(document).ready(function() {
       let urls = row.slice(4,9)
         .filter(function (x) { return !!x })
         .map(function (x) { return "    - " + x})
-      // return ("- " + row[0] + " by " + row[2] + ". License(s): " + row[3] + ". \n    + " + 
-      //   urls.join("\n    + ")+"\n")
       return [`- ${row[0]}: by ${row[2]}. License(s): ${row[3]}. ${row[1]}`].concat(urls).join("\n")
     })
     $("textarea#creditsText").val(out.join("\n\n"));
