@@ -3,8 +3,8 @@
   "type_name" : "headcover",
   "layer_1" : {
     "zPos" : 125,
-    "female" : "hat/pirate/bandana-skull/female/",
-    "male" :   "hat/pirate/bandana-skull/male/"
+    "female" : "hat/pirate/bandana_skull/female/",
+    "male" :   "hat/pirate/bandana_skull/male/"
   },
   "variants": [
     "black",

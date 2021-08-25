@@ -3,8 +3,8 @@
   "type_name" : "hat",
   "layer_1" : {
     "zPos" : 130,
-    "female" : "hat/pirate/tricorne-thatch/female/",
-    "male" :   "hat/pirate/tricorne-thatch/male/"
+    "female" : "hat/pirate/tricorne_thatch/female/",
+    "male" :   "hat/pirate/tricorne_thatch/male/"
   },
   "variants": [
     "black",

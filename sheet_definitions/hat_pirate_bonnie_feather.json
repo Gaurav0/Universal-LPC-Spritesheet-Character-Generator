@@ -3,8 +3,8 @@
   "type_name" : "hat",
   "layer_1" : {
     "zPos" : 130,
-    "female" : "hat/pirate/bonnie-feather/female/",
-    "male" :   "hat/pirate/bonnie-feather/male/"
+    "female" : "hat/pirate/bonnie_feather/female/",
+    "male" :   "hat/pirate/bonnie_feather/male/"
   },
   "variants": [
     "black",

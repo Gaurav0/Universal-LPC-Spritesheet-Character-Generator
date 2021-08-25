@@ -3,7 +3,7 @@
   "type_name" : "clothes",
   "layer_1" : {
     "zPos" : 35,
-    "male" : "torso/clothes/sleeveless-laced/male/"
+    "male" : "torso/clothes/sleeveless_laced/male/"
   },
   "variants": [
     "black",
