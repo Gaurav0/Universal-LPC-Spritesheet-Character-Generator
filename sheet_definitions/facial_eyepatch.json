@@ -1,6 +1,6 @@
 {
   "name" : "Eyepatch",
-  "type_name" : "facial",
+  "type_name" : "eyepatch",
   "layer_1" : {
     "zPos" : 25,
     "male" :     "facial/eyepatch/male/",
