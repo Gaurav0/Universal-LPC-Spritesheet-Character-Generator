@@ -1,8 +1,8 @@
 {
   "name" : "Skull Bandana",
-  "type_name" : "headcover",
+  "type_name" : "bandana",
   "layer_1" : {
-    "zPos" : 125,
+    "zPos" : 120,
     "female" : "hat/pirate/bandana_skull/female/",
     "male" :   "hat/pirate/bandana_skull/male/"
   },
