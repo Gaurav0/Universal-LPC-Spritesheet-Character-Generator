@@ -275,7 +275,7 @@ def populate_credits(credits, submissions, check_files_in = './spritesheets/'):
 
 			# figure out a good licensing statement
 			urls = row[['url1','url2','url3','url4','url5']] 
-			if any(urls != ''):
+			if any(urls != '') and row['licenses'].strip() == '':
 				file_submissions = submissions.loc[submissions['url'].isin(urls),:]
 				licenses = find_compatible_licenses(*[lic.split(', ') for lic in file_submissions['licenses']])
 				if len(licenses) > 0:
@@ -287,6 +287,8 @@ def populate_credits(credits, submissions, check_files_in = './spritesheets/'):
 			elif row['licenses'].strip() == '':
 				print("error: no URLs or licenses found for '{0}'".format(filename))
 				credits.at[i, 'status'] = 'BAD'
+			else:
+				credits.at[i, 'status'] = 'OK'
 
 	print()
 	print("{0} unattributed assets:".format(len(unattributed)))
