@@ -5414,28 +5414,7 @@ torso/bandage,,,,,,,,,
 torso/bandage/female,,,,,,,,,
 torso/bandage/female/white.png,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-bandages,,,,,OK
 torso/bandage/male,,,,,,,,,
-torso/bandage/male/white.png,,Nila122,"GPL 2.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-bandages,,,,,OK
-torso/waist/belt_other,,,,,,,,,
-torso/waist/belt_other/female,,,,,,,,,
-torso/waist/belt_other/female/black.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
-torso/waist/belt_other/female/bronze.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
-torso/waist/belt_other/female/brown.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
-torso/waist/belt_other/female/gold.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
-torso/waist/belt_other/female/iron.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
-torso/waist/belt_other/female/leather.png,,"Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,,,,,OK
-torso/waist/belt_other/female/silver.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
-torso/waist/belt_other/female/teal.png,?,Johannes Sjölund (wulax),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,OK
-torso/waist/belt_other/female/white.png,,"Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,OK
-torso/waist/belt_other/male,,,,,,,,,
-torso/waist/belt_other/male/formal.png,,"Thane Brimhall (pennomi), laetissima, bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-2-characters,https://opengameart.org/content/lpc-gentleman,,,,OK
-torso/waist/belt_other/male/leather.png,,Johannes Sjölund (wulax),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,OK
-torso/waist/belt_other/male/white.png,originally BELT_rope.png,Johannes Sjölund (wulax),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,OK
-torso/waist/buckles,,,,,,,,,
-torso/waist/buckles/female,,,,,,,,,
-torso/waist/buckles/female/bronze.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
-torso/waist/buckles/female/gold.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
-torso/waist/buckles/female/iron.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
-torso/waist/buckles/female/silver.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
+torso/bandage/male/white.png,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-bandages,,,,,OK
 torso/chain,,,,,,,,,
 torso/chain/formal,,,,,,,,,
 torso/chain/tabard,,,,,,,,,
@@ -6018,6 +5997,191 @@ torso/shirts/sleeveless/sleeveless_blue gray.png,,"ElizaWy, David Conway Jr. (Ja
 torso/shirts/sleeveless_male,,"Matthew Krohn (makrohn), David Conway Jr. (JaidynReiman), Marcel van de Steeg (MadMarcel), Nila122, Johannes Sjölund (wulax), Stephen Challener (Redshrike)",,https://opengameart.org/content/lpc-female-orcogregoblintroll-base-walkcycle,https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,https://opengameart.org/content/more-lpc-clothes-and-hair,,,
 torso/tunics,,,,,,,,,
 torso/tunics/female,,David Conway Jr. (JaidynReiman),,https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,
+torso/waist,,,,,,,,,
+torso/waist/belt_double,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_double/female,,,,,,,,,
+torso/waist/belt_double/female.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_double/female/brown.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_double/female/charcoal.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_double/female/leather.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_double/female/slate.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_double/female/tan.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_double/female/walnut.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_double/female/white.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_double/male,,,,,,,,,
+torso/waist/belt_double/male.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_double/male/brown.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_double/male/charcoal.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_double/male/leather.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_double/male/slate.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_double/male/tan.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_double/male/walnut.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_double/male/white.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_leather,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_leather/female,,,,,,,,,
+torso/waist/belt_leather/female.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_leather/female/brown.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_leather/female/charcoal.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_leather/female/leather.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_leather/female/slate.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_leather/female/tan.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_leather/female/walnut.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_leather/female/white.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_leather/male,,,,,,,,,
+torso/waist/belt_leather/male.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_leather/male/brown.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_leather/male/charcoal.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_leather/male/leather.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_leather/male/slate.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_leather/male/tan.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_leather/male/walnut.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_leather/male/white.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_loose,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_loose/female,,,,,,,,,
+torso/waist/belt_loose/female.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_loose/female/brown.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_loose/female/charcoal.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_loose/female/leather.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_loose/female/slate.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_loose/female/tan.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_loose/female/walnut.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_loose/female/white.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_loose/male,,,,,,,,,
+torso/waist/belt_loose/male.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_loose/male/brown.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_loose/male/charcoal.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_loose/male/leather.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_loose/male/slate.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_loose/male/tan.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_loose/male/walnut.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_loose/male/white.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/belt_other,,,,,,,,,
+torso/waist/belt_other/female,,,,,,,,,
+torso/waist/belt_other/female/black.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
+torso/waist/belt_other/female/bronze.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
+torso/waist/belt_other/female/brown.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
+torso/waist/belt_other/female/gold.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
+torso/waist/belt_other/female/iron.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
+torso/waist/belt_other/female/leather.png,,"Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,,,,,OK
+torso/waist/belt_other/female/silver.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
+torso/waist/belt_other/female/teal.png,?,Johannes Sjölund (wulax),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,OK
+torso/waist/belt_other/female/white.png,,"Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,OK
+torso/waist/belt_other/male,,,,,,,,,
+torso/waist/belt_other/male/formal.png,,"Thane Brimhall (pennomi), laetissima, bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-2-characters,https://opengameart.org/content/lpc-gentleman,,,,OK
+torso/waist/belt_other/male/leather.png,,Johannes Sjölund (wulax),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,OK
+torso/waist/belt_other/male/white.png,originally BELT_rope.png,Johannes Sjölund (wulax),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,OK
+torso/waist/buckles,,,,,,,,,
+torso/waist/buckles/female,,,,,,,,,
+torso/waist/buckles/female/bronze.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
+torso/waist/buckles/female/gold.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
+torso/waist/buckles/female/iron.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
+torso/waist/buckles/female/silver.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
+torso/waist/sash,,"bluecarrot16, Nila122","GPL 2.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,
+torso/waist/sash/female,,,,,,,,,
+torso/waist/sash/female.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/female/black.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/female/blue.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/female/bluegray.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/female/brown.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/female/charcoal.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/female/forest.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/female/gray.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/female/green.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/female/lavender.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/female/leather.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/female/maroon.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/female/navy.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/female/orange.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/female/pink.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/female/purple.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/female/red.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/female/rose.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/female/sky.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/female/slate.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/female/tan.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/female/teal.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/female/walnut.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/female/white.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/female/yellow.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/male,,,,,,,,,
+torso/waist/sash/male.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/male/black.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/male/blue.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/male/bluegray.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/male/brown.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/male/charcoal.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/male/forest.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/male/gray.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/male/green.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/male/lavender.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/male/leather.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/male/maroon.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/male/navy.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/male/orange.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/male/pink.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/male/purple.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/male/red.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/male/rose.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/male/sky.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/male/slate.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/male/tan.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/male/teal.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/male/walnut.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/male/white.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash/male/yellow.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,OK
+torso/waist/sash_narrow,,"bluecarrot16, Nila122","GPL 2.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,
+torso/waist/sash_narrow/female,,,,,,,,,
+torso/waist/sash_narrow/female.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/female/black.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/female/blue.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/female/bluegray.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/female/brown.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/female/charcoal.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/female/forest.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/female/gray.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/female/green.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/female/lavender.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/female/leather.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/female/maroon.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/female/navy.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/female/orange.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/female/pink.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/female/purple.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/female/red.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/female/rose.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/female/sky.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/female/slate.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/female/tan.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/female/teal.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/female/walnut.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/female/white.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/female/yellow.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/male,,,,,,,,,
+torso/waist/sash_narrow/male.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/male/black.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/male/blue.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/male/bluegray.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/male/brown.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/male/charcoal.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/male/forest.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/male/gray.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/male/green.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/male/lavender.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/male/leather.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/male/maroon.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/male/navy.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/male/orange.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/male/pink.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/male/purple.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/male/red.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/male/rose.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/male/sky.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/male/slate.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/male/tan.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/male/teal.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/male/walnut.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/male/white.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
+torso/waist/sash_narrow/male/yellow.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
 weapon,,,,,,,,,
 weapon/bow,,,,,,,,,
 weapon/bow/10.png,bow black,Johannes Sjölund (wulax),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,OK
