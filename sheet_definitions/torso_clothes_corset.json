@@ -1,8 +1,8 @@
 {
   "name" : "Corset",
-  "type_name" : "clothes",
+  "type_name" : "vest",
   "layer_1" : {
-    "zPos" : 35,
+    "zPos" : 45,
     "female" : "torso/clothes/corset/female/"
   },
   "variants": [
