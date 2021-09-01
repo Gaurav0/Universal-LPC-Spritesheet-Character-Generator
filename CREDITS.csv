@@ -5414,28 +5414,28 @@ torso/bandage,,,,,,,,,
 torso/bandage/female,,,,,,,,,
 torso/bandage/female/white.png,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-bandages,,,,,OK
 torso/bandage/male,,,,,,,,,
-torso/bandage/male/white.png,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-bandages,,,,,OK
-torso/belt,,,,,,,,,
-torso/belt/female,,,,,,,,,
-torso/belt/female/black.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
-torso/belt/female/bronze.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
-torso/belt/female/brown.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
-torso/belt/female/gold.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
-torso/belt/female/iron.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
-torso/belt/female/leather.png,,"Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,,,,,OK
-torso/belt/female/silver.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
-torso/belt/female/teal.png,?,Johannes Sjölund (wulax),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,OK
-torso/belt/female/white.png,,"Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,OK
-torso/belt/male,,,,,,,,,
-torso/belt/male/formal.png,,"Thane Brimhall (pennomi), laetissima, bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-2-characters,https://opengameart.org/content/lpc-gentleman,,,,OK
-torso/belt/male/leather.png,,Johannes Sjölund (wulax),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,OK
-torso/belt/male/white.png,originally BELT_rope.png,Johannes Sjölund (wulax),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,OK
-torso/buckles,,,,,,,,,
-torso/buckles/female,,,,,,,,,
-torso/buckles/female/bronze.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
-torso/buckles/female/gold.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
-torso/buckles/female/iron.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
-torso/buckles/female/silver.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
+torso/bandage/male/white.png,,Nila122,"GPL 2.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-bandages,,,,,OK
+torso/waist/belt_other,,,,,,,,,
+torso/waist/belt_other/female,,,,,,,,,
+torso/waist/belt_other/female/black.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
+torso/waist/belt_other/female/bronze.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
+torso/waist/belt_other/female/brown.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
+torso/waist/belt_other/female/gold.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
+torso/waist/belt_other/female/iron.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
+torso/waist/belt_other/female/leather.png,,"Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-combat-armor-for-women,,,,,OK
+torso/waist/belt_other/female/silver.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
+torso/waist/belt_other/female/teal.png,?,Johannes Sjölund (wulax),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,OK
+torso/waist/belt_other/female/white.png,,"Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,OK
+torso/waist/belt_other/male,,,,,,,,,
+torso/waist/belt_other/male/formal.png,,"Thane Brimhall (pennomi), laetissima, bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-2-characters,https://opengameart.org/content/lpc-gentleman,,,,OK
+torso/waist/belt_other/male/leather.png,,Johannes Sjölund (wulax),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,OK
+torso/waist/belt_other/male/white.png,originally BELT_rope.png,Johannes Sjölund (wulax),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,OK
+torso/waist/buckles,,,,,,,,,
+torso/waist/buckles/female,,,,,,,,,
+torso/waist/buckles/female/bronze.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
+torso/waist/buckles/female/gold.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
+torso/waist/buckles/female/iron.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
+torso/waist/buckles/female/silver.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,OK
 torso/chain,,,,,,,,,
 torso/chain/formal,,,,,,,,,
 torso/chain/tabard,,,,,,,,,
