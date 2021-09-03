@@ -81,26 +81,26 @@ $(document).ready(function() {
     });
   });
 
-  // Do not multiple toggle when clicking on children
-  $("#chooser>ul>li>ul>li>ul>li").click(function(event) {
-    event.stopPropagation();
-  });
+  // // Do not multiple toggle when clicking on children
+  // $("#chooser>ul>li>ul>li>ul>li").click(function(event) {
+  //   event.stopPropagation();
+  // });
+
+  // // Toggle display of a list elements children when clicked
+  // // Do not do so twice, once on label then on input
+  // // Again, do not multiple toggle when clicking on children
+  // $("#chooser>ul>li>ul>li").click(function(event) {
+  //   if (!($(event.target).get(0).tagName == "LABEL")) {
+  //     $(this).children("span").toggleClass("condensed").toggleClass("expanded");
+  //     var $ul = $(this).children("ul");
+  //     $ul.toggle('slow').promise().done(drawPreviews);
+  //   }
+  //   event.stopPropagation();
+  // });
 
   // Toggle display of a list elements children when clicked
-  // Do not do so twice, once on label then on input
   // Again, do not multiple toggle when clicking on children
-  $("#chooser>ul>li>ul>li").click(function(event) {
-    if (!($(event.target).get(0).tagName == "LABEL")) {
-      $(this).children("span").toggleClass("condensed").toggleClass("expanded");
-      var $ul = $(this).children("ul");
-      $ul.toggle('slow').promise().done(drawPreviews);
-    }
-    event.stopPropagation();
-  });
-
-  // Toggle display of a list elements children when clicked
-  // Again, do not multiple toggle when clicking on children
-  $("#chooser>ul>li").click(function(event) {
+  $("#chooser ul>li").click(function(event) {
     $(this).children("span").toggleClass("condensed").toggleClass("expanded");
     var $ul = $(this).children("ul");
     $ul.toggle('slow').promise().done(drawPreviews);
@@ -134,6 +134,10 @@ $(document).ready(function() {
     e.preventDefault()
   })
 
+  $('#displayMode-compact').click(function() {
+    $('#chooser').toggleClass('compact')
+  })
+
   $('#scroll-to-credits').click(function(e) {
     $('#credits')[0].scrollIntoView()
     e.preventDefault();
@@ -149,6 +153,7 @@ $(document).ready(function() {
 
   $("#saveAsPNG").click(function() {
     renameImageDownload(this, canvas, 'Download' + Math.floor(Math.random() * 100000) + '.png');
+    return true
   });
 
   $("#resetAll").click(function() {
@@ -239,23 +244,38 @@ $(document).ready(function() {
   })
 
   function selectPossibleBodyType() {
+    // if a body variant is selected which does not exist for the currently-selected 
+    // getBodyTypeName, choose a default body variant for that bodyTypeName
+
+    var bodyTypeName = getBodyTypeName();
+    var bodyVariantNeedsReset = false;
+
     $("input[id^=body-]:checked").each(function() {
-      const id = $(this).attr('id');
-      $(this).prop("checked", false);
-    });
-    let idToSelect = "";
-    if (getBodyTypeName() == "male") {
-      idToSelect = "body-Humanlike_white";
-    } else if (getBodyTypeName() == "female") {
-      idToSelect = "body-Humanlike_white";
-    } else if (getBodyTypeName() == "child") {
-      idToSelect = "body-Child_peach";
-    } else if (getBodyTypeName() == "pregnant") {
-      idToSelect = "body-Pregnant_coffee";
-    } else if (getBodyTypeName() == "muscular") {
-      idToSelect = "body-Muscular_muscular_white_v2";
+      var parent = $(this).closest("li[data-required]");
+      if (parent.data("required")) {
+        var requiredTypes = parent.data("required").split(",");
+        if (!requiredTypes.includes(bodyTypeName)) {
+          $(this).prop("checked", false);  
+          bodyVariantNeedsReset = true;
+        }
+      }
+    })
+
+    if(bodyVariantNeedsReset) {
+      let idToSelect = "";
+      if (bodyTypeName == "male") {
+        idToSelect = "body-Humanlike_white";
+      } else if (bodyTypeName == "female") {
+        idToSelect = "body-Humanlike_white";
+      } else if (bodyTypeName == "child") {
+        idToSelect = "body-Child_peach";
+      } else if (bodyTypeName == "pregnant") {
+        idToSelect = "body-Pregnant_coffee";
+      } else if (bodyTypeName == "muscular") {
+        idToSelect = "body-Muscular_muscular_white_v2";
+      }
+      $(`#${idToSelect}`).prop("checked", true);
     }
-    $(`#${idToSelect}`).prop("checked", true);
   }
 
   function getCreditFor(fileName) {

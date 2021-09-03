@@ -19,7 +19,7 @@
 			<h1>Universal LPC Spritesheet Generator</h1>
 			<p>Free/Libre pixel art sprites from the <a href="lpc.opengameart.org">Liberated Pixel Cup</a> and <a href="https://opengameart.org/content/lpc-collection">OpenGameArt.org</a>. License: <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA 3.0</a>. You must <a id="scroll-to-credits" href="#">credit the authors of this artwork.</a></p>
 			<div>
-				<button id="saveAsPNG">Download As PNG</button>
+				<a id="saveAsPNG"><input type="button" value="Download As PNG"></a>
 				<button type="button" class="generateSheetCredits">Download credits</button>
 			</div>
 			<div>
@@ -27,6 +27,7 @@
 				<button type="button" id="expand">Expand Selected</button>
 				<button type="button" id="resetAll">Reset all</button>
 				<button type="button" class="replacePinkMask">Replace Mask (pink)</button>
+				<label for="displayMode-compact"><input type="checkbox" name="displayMode" value="compact" id="displayMode-compact"> Compact Display</label>
 			</div>
 			<div>
 				<input type="search" id="searchbox" name="" placeholder="Search" />
@@ -139,7 +140,7 @@
 						<div id="sheet_legs_armour"></div>
 						<div id="sheet_legs_widepants"></div>
 						<div id="sheet_legs_pants"></div>
-						<div id="sheet_legs_pantalons"></div>
+						<div id="sheet_legs_pantaloons"></div>
 						<div id="sheet_legs_leggings"></div>
 						<div id="sheet_legs_pregnantpants"></div>
 						<div id="sheet_legs_childpants"></div>
@@ -260,10 +261,15 @@
 
 				<!-- Belt -->
 				<li data-required="male,female">
-					<span class="condensed">Belt</span>
+					<span class="condensed">Waist</span>
 					<ul>
-						<div id="sheet_belt_female"></div>
-						<div id="sheet_belt_male"></div>
+						<div id="sheet_belt_leather"></div>
+						<div id="sheet_belt_double"></div>
+						<div id="sheet_belt_loose"></div>
+						<div id="sheet_belt_other_female"></div>
+						<div id="sheet_belt_other_male"></div>
+						<div id="sheet_belt_sash"></div>
+						<div id="sheet_belt_sash_narrow"></div>
 					</ul>
 				</li>
 
@@ -354,6 +360,8 @@
 					<ul>
 						<div id="sheet_head_bandana"></div>
 						<div id="sheet_head_bandana_skull"></div>
+						<div id="sheet_head_kerchief"></div>
+						<div id="sheet_head_band_tied"></div>
 					</ul>
 				</li>
 
