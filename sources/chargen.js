@@ -81,23 +81,6 @@ $(document).ready(function() {
     });
   });
 
-  // // Do not multiple toggle when clicking on children
-  // $("#chooser>ul>li>ul>li>ul>li").click(function(event) {
-  //   event.stopPropagation();
-  // });
-
-  // // Toggle display of a list elements children when clicked
-  // // Do not do so twice, once on label then on input
-  // // Again, do not multiple toggle when clicking on children
-  // $("#chooser>ul>li>ul>li").click(function(event) {
-  //   if (!($(event.target).get(0).tagName == "LABEL")) {
-  //     $(this).children("span").toggleClass("condensed").toggleClass("expanded");
-  //     var $ul = $(this).children("ul");
-  //     $ul.toggle('slow').promise().done(drawPreviews);
-  //   }
-  //   event.stopPropagation();
-  // });
-
   // Toggle display of a list elements children when clicked
   // Again, do not multiple toggle when clicking on children
   $("#chooser ul>li").click(function(event) {
@@ -244,24 +227,27 @@ $(document).ready(function() {
   })
 
   function selectPossibleBodyType() {
-    // if a body variant is selected which does not exist for the currently-selected 
+    // if a body variant is selected which does not exist for the currently-selected
     // getBodyTypeName, choose a default body variant for that bodyTypeName
 
     var bodyTypeName = getBodyTypeName();
     var bodyVariantNeedsReset = false;
+    var bodyVariantIsSelected = false;
 
     $("input[id^=body-]:checked").each(function() {
       var parent = $(this).closest("li[data-required]");
       if (parent.data("required")) {
         var requiredTypes = parent.data("required").split(",");
         if (!requiredTypes.includes(bodyTypeName)) {
-          $(this).prop("checked", false);  
+          $(this).prop("checked", false);
           bodyVariantNeedsReset = true;
+        } else {
+          bodyVariantIsSelected = true;
         }
       }
     })
 
-    if(bodyVariantNeedsReset) {
+    if(bodyVariantNeedsReset || !bodyVariantIsSelected) {
       let idToSelect = "";
       if (bodyTypeName == "male") {
         idToSelect = "body-Humanlike_white";
