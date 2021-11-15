@@ -147,6 +147,7 @@ $(document).ready(function() {
       document.getElementById("customFrames").value = "";
       params = {};
       jHash.val(params);
+      interpretParams();
       selectPossibleBodyType();
       redraw();
       showOrHideElements();
@@ -262,6 +263,7 @@ $(document).ready(function() {
       }
       $(`#${idToSelect}`).prop("checked", true);
     }
+    setParams();
   }
 
   function getCreditFor(fileName) {
