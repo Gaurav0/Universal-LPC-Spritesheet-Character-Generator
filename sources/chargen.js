@@ -58,11 +58,15 @@ $(document).ready(function() {
     const creditEntry = getCreditFor(name);
     if (creditEntry) {
       let parts = splitCsv(creditEntry);
+      if (creditEntry.includes("BAD")) {
+        console.warn("bad credit for : ", creditEntry);
+        return creditEntry;
+      }
       if (parts.length == 10) {
         return "Created by: " + parts[2];
       }
     } else {
-      console.warn("name missing: ", name);
+      console.warn("No credit entry for: ", name);
       return "No credits found for this graphic";
     }
     return creditEntry;

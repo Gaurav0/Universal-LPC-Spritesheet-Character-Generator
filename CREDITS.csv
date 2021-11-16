@@ -1,12 +1,4 @@
 filename,notes,authors,licenses,url1,url2,url3,url4,url5,status
-GIMP/GIMP/oversize_xcf/slash_swords.xcf,,,,,,,,,
-GIMP/GIMP/oversize_xcf/thrust_spears.xcf,,,,,,,,,
-GIMP/GIMP/palettes/hair.xcf,,,,,,,,,
-GIMP/GIMP/palettes/skin.xcf,,,,,,,,,
-GIMP/oversize_xcf/slash_swords.xcf,,,,,,,,,
-GIMP/oversize_xcf/thrust_spears.xcf,,,,,,,,,
-GIMP/palettes/hair.xcf,,,,,,,,,
-GIMP/palettes/skin.xcf,,,,,,,,,
 accessories,,,,,,,,,
 accessories/neck,,,,,,,,,
 accessories/neck/capeclip,,,,,,,,,
@@ -130,46 +122,6 @@ beards/male/mustache/white.png,,"David Conway Jr. (JaidynReiman), Carlo Enrico V
 beards/male/mustache/whiteblonde.png,,"David Conway Jr. (JaidynReiman), Carlo Enrico Victoria (Nemisys)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-brunet-mustache,,,,,OK
 beards/male/mustache/whiteblonde_2.png,,"David Conway Jr. (JaidynReiman), Carlo Enrico Victoria (Nemisys)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-brunet-mustache,,,,,OK
 beards/male/mustache/whitecyan.png,,"David Conway Jr. (JaidynReiman), Carlo Enrico Victoria (Nemisys)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-brunet-mustache,,,,,OK
-behind_body,,,,,,,,,
-behind_body/cape,,,,,,,,,
-behind_body/cape/normal,,,,,,,,,
-behind_body/cape/normal/Male_cape_black(JaidynReiman).png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/normal/Male_cape_blue(JaidynReiman).png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/normal/Male_cape_brown(JaidynReiman).png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/normal/Male_cape_gray(JaidynReiman).png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/normal/Male_cape_green(JaidynReiman).png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/normal/Male_cape_lavender(JaidynReiman).png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/normal/Male_cape_maroon(JaidynReiman).png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/normal/Male_cape_pink(JaidynReiman).png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/normal/Male_cape_red(JaidynReiman).png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/normal/Male_cape_white(JaidynReiman).png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/normal/Male_cape_yellow(JaidynReiman).png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/normal/female,,David Conway Jr. (JaidynReiman),,https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,
-behind_body/cape/normal/female/cape_black.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/normal/female/cape_blue.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/normal/female/cape_brown.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/normal/female/cape_gray.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/normal/female/cape_green.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/normal/female/cape_lavender.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/normal/female/cape_maroon.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/normal/female/cape_pink.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/normal/female/cape_red.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/normal/female/cape_white.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/normal/female/cape_yellow.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/tattered,,David Conway Jr. (JaidynReiman),,,,,,,
-behind_body/cape/tattered/female,,David Conway Jr. (JaidynReiman),,https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,
-behind_body/cape/tattered/female/tattercape_black.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/tattered/female/tattercape_blue.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/tattered/female/tattercape_brown.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/tattered/female/tattercape_gray.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/tattered/female/tattercape_green.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/tattered/female/tattercape_lavender.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/tattered/female/tattercape_maroon.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/tattered/female/tattercape_pink.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/tattered/female/tattercape_red.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/tattered/female/tattercape_white.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/cape/tattered/female/tattercape_yellow.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
-behind_body/equipment,,,,,,,,,
 belt,,,,,,,,,
 belt/buckles_female_no_th_sh,,Luke Mehl,,https://opengameart.org/content/female-mage-clothing-set,,,,,
 belt/cloth,,,,,,,,,
@@ -461,29 +413,29 @@ cape/solid/female/red.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.
 cape/solid/female/white.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
 cape/solid/female/yellow.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
 cape/solid/male,,,,,,,,,
-cape/solid/male/black.png,,,,,,,,,BAD
-cape/solid/male/blue.png,,,,,,,,,BAD
-cape/solid/male/brown.png,,,,,,,,,BAD
-cape/solid/male/gray.png,,,,,,,,,BAD
-cape/solid/male/green.png,,,,,,,,,BAD
-cape/solid/male/lavender.png,,,,,,,,,BAD
-cape/solid/male/maroon.png,,,,,,,,,BAD
-cape/solid/male/pink.png,,,,,,,,,BAD
-cape/solid/male/red.png,,,,,,,,,BAD
-cape/solid/male/white.png,,,,,,,,,BAD
-cape/solid/male/yellow.png,,,,,,,,,BAD
+cape/solid/male/black.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/solid/male/blue.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/solid/male/brown.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/solid/male/gray.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/solid/male/green.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/solid/male/lavender.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/solid/male/maroon.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/solid/male/pink.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/solid/male/red.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/solid/male/white.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/solid/male/yellow.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
 cape/solid_behind,,,,,,,,,
-cape/solid_behind/black.png,,,,,,,,,BAD
-cape/solid_behind/blue.png,,,,,,,,,BAD
-cape/solid_behind/brown.png,,,,,,,,,BAD
-cape/solid_behind/gray.png,,,,,,,,,BAD
-cape/solid_behind/green.png,,,,,,,,,BAD
-cape/solid_behind/lavender.png,,,,,,,,,BAD
-cape/solid_behind/maroon.png,,,,,,,,,BAD
-cape/solid_behind/pink.png,,,,,,,,,BAD
-cape/solid_behind/red.png,,,,,,,,,BAD
-cape/solid_behind/white.png,,,,,,,,,BAD
-cape/solid_behind/yellow.png,,,,,,,,,BAD
+cape/solid_behind/black.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/solid_behind/blue.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/solid_behind/brown.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/solid_behind/gray.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/solid_behind/green.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/solid_behind/lavender.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/solid_behind/maroon.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/solid_behind/pink.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/solid_behind/red.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/solid_behind/white.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/solid_behind/yellow.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
 cape/tattered,,,,,,,,,
 cape/tattered/female,,,,,,,,,
 cape/tattered/female/black.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
@@ -497,21 +449,21 @@ cape/tattered/female/red.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL
 cape/tattered/female/white.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
 cape/tattered/female/yellow.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
 cape/tattered_behind,,,,,,,,,
-cape/tattered_behind/black.png,,,,,,,,,BAD
-cape/tattered_behind/blue.png,,,,,,,,,BAD
-cape/tattered_behind/brown.png,,,,,,,,,BAD
-cape/tattered_behind/gray.png,,,,,,,,,BAD
-cape/tattered_behind/green.png,,,,,,,,,BAD
-cape/tattered_behind/maroon.png,,,,,,,,,BAD
-cape/tattered_behind/pink.png,,,,,,,,,BAD
-cape/tattered_behind/red.png,,,,,,,,,BAD
-cape/tattered_behind/white.png,,,,,,,,,BAD
-cape/tattered_behind/yellow.png,,,,,,,,,BAD
+cape/tattered_behind/black.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/tattered_behind/blue.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/tattered_behind/brown.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/tattered_behind/gray.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/tattered_behind/green.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/tattered_behind/maroon.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/tattered_behind/pink.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/tattered_behind/red.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/tattered_behind/white.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
+cape/tattered_behind/yellow.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
 cape/trimmed,,,,,,,,,
 cape/trimmed/female,,,,,,,,,
 cape/trimmed/female/white_blue.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
 cape/trimmed_behind,,,,,,,,,
-cape/trimmed_behind/white_blue.png,,,,,,,,,BAD
+cape/trimmed_behind/white_blue.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,,,,,OK
 dress,,,,,,,,,
 dress/female,,,,,,,,,
 dress/female/black.png,,"Nila122, Johannes Sjölund (wulax), Stephen Challener (Redshrike)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-and-hair,,,,,OK
@@ -539,7 +491,7 @@ eyes/female/yellow.png,,"David Conway Jr. (JaidynReiman), Matthew Krohn (makrohn
 eyes/male,,,,,,,,,
 eyes/male/blue.png,,"Matthew Krohn (makrohn), Stephen Challener (Redshrike)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,,,,,OK
 eyes/male/brown.png,,"Matthew Krohn (makrohn), Stephen Challener (Redshrike)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,,,,,OK
-eyes/male/cyclope.png,,,,,,,,,BAD
+eyes/male/cyclope.png,,kirts,CC0,https://opengameart.org/content/cyclops-and-his-eye,,,,,OK
 eyes/male/gray.png,,"Mark Weyer, Johannes Sjölund (wulax), Matthew Krohn (makrohn), Stephen Challener (Redshrike)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,OK
 eyes/male/green.png,,"Matthew Krohn (makrohn), Stephen Challener (Redshrike)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,,,,,OK
 eyes/male/orange.png,,"David Conway Jr. (JaidynReiman), Matthew Krohn (makrohn), Stephen Challener (Redshrike)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,,,,,OK
@@ -5409,22 +5361,22 @@ shield/female/round_yellow.png,?,"Johannes Sjölund (wulax), Michael Whitlock (b
 shield/female/spartan.png,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,OK
 shield/male,,,,,,,,,
 shield/male/crusader.png,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,OK
-shield/male/kite_blue_blue.png,,,,,,,,,BAD
-shield/male/kite_blue_gray.png,,,,,,,,,BAD
-shield/male/kite_gray.png,,,,,,,,,BAD
-shield/male/kite_gray_blue.png,,,,,,,,,BAD
-shield/male/kite_gray_gray.png,,,,,,,,,BAD
-shield/male/kite_gray_green.png,,,,,,,,,BAD
-shield/male/kite_gray_orange.png,,,,,,,,,BAD
-shield/male/kite_green_gray.png,,,,,,,,,BAD
-shield/male/kite_orange.png,,,,,,,,,BAD
-shield/male/kite_red_gray.png,,,,,,,,,BAD
-shield/male/round_black.png,,,,,,,,,BAD
-shield/male/round_brown.png,,,,,,,,,BAD
-shield/male/round_gold.png,,,,,,,,,BAD
-shield/male/round_green.png,,,,,,,,,BAD
-shield/male/round_silver.png,,,,,,,,,BAD
-shield/male/round_yellow.png,,,,,,,,,BAD
+shield/male/kite_blue_blue.png,,"DarkwallLKE, Tuomo Untinen (reemax), Michael Whitlock (bigbeargames)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-kite-shield,https://opengameart.org/content/lpc-shields-pack,,,,OK
+shield/male/kite_blue_gray.png,,"DarkwallLKE, Tuomo Untinen (reemax), Michael Whitlock (bigbeargames)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-kite-shield,https://opengameart.org/content/lpc-shields-pack,,,,OK
+shield/male/kite_gray.png,,"DarkwallLKE, Tuomo Untinen (reemax), Michael Whitlock (bigbeargames)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-kite-shield,https://opengameart.org/content/lpc-shields-pack,,,,OK
+shield/male/kite_gray_blue.png,,"DarkwallLKE, Tuomo Untinen (reemax), Michael Whitlock (bigbeargames)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-kite-shield,https://opengameart.org/content/lpc-shields-pack,,,,OK
+shield/male/kite_gray_gray.png,,"DarkwallLKE, Tuomo Untinen (reemax), Michael Whitlock (bigbeargames)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-kite-shield,https://opengameart.org/content/lpc-shields-pack,,,,OK
+shield/male/kite_gray_green.png,,"DarkwallLKE, Tuomo Untinen (reemax), Michael Whitlock (bigbeargames)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-kite-shield,https://opengameart.org/content/lpc-shields-pack,,,,OK
+shield/male/kite_gray_orange.png,,"DarkwallLKE, Tuomo Untinen (reemax), Michael Whitlock (bigbeargames)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-kite-shield,https://opengameart.org/content/lpc-shields-pack,,,,OK
+shield/male/kite_green_gray.png,,"DarkwallLKE, Tuomo Untinen (reemax), Michael Whitlock (bigbeargames)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-kite-shield,https://opengameart.org/content/lpc-shields-pack,,,,OK
+shield/male/kite_orange.png,,"DarkwallLKE, Tuomo Untinen (reemax), Michael Whitlock (bigbeargames)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-kite-shield,https://opengameart.org/content/lpc-shields-pack,,,,OK
+shield/male/kite_red_gray.png,,"DarkwallLKE, Tuomo Untinen (reemax), Michael Whitlock (bigbeargames)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-kite-shield,https://opengameart.org/content/lpc-shields-pack,,,,OK
+shield/male/round_black.png,?,"Johannes Sjölund (wulax), Michael Whitlock (bigbeargames), DarkwallLKE, Tuomo Untinen (reemax)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-shields-pack,,,,OK
+shield/male/round_brown.png,,Johannes Sjölund (wulax),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,OK
+shield/male/round_gold.png,?,"Johannes Sjölund (wulax), Michael Whitlock (bigbeargames), DarkwallLKE, Tuomo Untinen (reemax)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-shields-pack,,,,OK
+shield/male/round_green.png,?,"Johannes Sjölund (wulax), Michael Whitlock (bigbeargames), DarkwallLKE, Tuomo Untinen (reemax)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-shields-pack,,,,OK
+shield/male/round_silver.png,?,"Johannes Sjölund (wulax), Michael Whitlock (bigbeargames), DarkwallLKE, Tuomo Untinen (reemax)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-shields-pack,,,,OK
+shield/male/round_yellow.png,?,"Johannes Sjölund (wulax), Michael Whitlock (bigbeargames), DarkwallLKE, Tuomo Untinen (reemax)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-shields-pack,,,,OK
 shield/male/spartan.png,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,OK
 shoulders,,,,,,,,,
 shoulders/epaulets,,bluecarrot16,"OGA-BY 3.0, GPL 3.0",https://opengameart.org/content/lpc-pirates,,,,,
