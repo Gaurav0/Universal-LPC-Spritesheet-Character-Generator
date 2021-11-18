@@ -6,7 +6,7 @@
     "male" : "hair/bunches/male/",
     "muscular" : "hair/bunches/male/",
     "female" : "hair/bunches/female/",
-    "pregnant" : "hair/bunches/females/"
+    "pregnant" : "hair/bunches/female/"
   },
   "variants": [
     "black",

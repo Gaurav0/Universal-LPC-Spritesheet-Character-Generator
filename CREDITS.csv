@@ -1199,8 +1199,6 @@ hair/female/jewfro,,David Conway Jr. (JaidynReiman),,https://opengameart.org/con
 hair/female/jewfro.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,OK
 hair/female/long,,Manuel Riecke (MrBeast),,https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,,,,,
 hair/female/long.png,,Manuel Riecke (MrBeast),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,,,,,OK
-hair/female/long_straight_hair,,cilekli,,https://opengameart.org/content/lpc-long-straight-hair-with-12-colors,,,,,OK
-hair/female/long_tied_hair,,cilekli,,https://opengameart.org/content/lpc-long-tied-hair-with-12-colors,,,,,OK
 hair/female/longest/behind/black.png,duplicate of hair/female/xlong/*,"Nila122, Johannes Sjölund (wulax), Stephen Challener (Redshrike)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-and-hair,,,,,OK
 hair/female/longest/behind/brunette.png,duplicate of hair/female/xlong/*,"Nila122, Johannes Sjölund (wulax), Stephen Challener (Redshrike)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-and-hair,,,,,OK
 hair/female/longest/behind/gold.png,duplicate of hair/female/xlong/*,"Nila122, Johannes Sjölund (wulax), Stephen Challener (Redshrike)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-and-hair,,,,,OK
@@ -1330,17 +1328,17 @@ hair/halfmessy/male/red.png,,"Nila122, Johannes Sjölund (wulax), Stephen Challe
 hair/halfmessy/male/ruby.png,,"Nila122, Johannes Sjölund (wulax), Stephen Challener (Redshrike)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
 hair/idol,,,,,,,,,
 hair/idol/male,,,,,,,,,
-hair/idol/male/black.png,,,,,,,,,BAD
-hair/idol/male/blonde.png,,,,,,,,,BAD
-hair/idol/male/blue.png,,,,,,,,,BAD
-hair/idol/male/brown.png,,,,,,,,,BAD
-hair/idol/male/green.png,,,,,,,,,BAD
-hair/idol/male/lightblonde.png,,,,,,,,,BAD
-hair/idol/male/orange.png,,,,,,,,,BAD
-hair/idol/male/pink.png,,,,,,,,,BAD
-hair/idol/male/purple.png,,,,,,,,,BAD
-hair/idol/male/red.png,,,,,,,,,BAD
-hair/idol/male/white.png,,,,,,,,,BAD
+hair/idol/male/black.png,,cilekli,,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,,,,,OK
+hair/idol/male/blonde.png,,cilekli,,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,,,,,OK
+hair/idol/male/blue.png,,cilekli,,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,,,,,OK
+hair/idol/male/brown.png,,cilekli,,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,,,,,OK
+hair/idol/male/green.png,,cilekli,,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,,,,,OK
+hair/idol/male/lightblonde.png,,cilekli,,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,,,,,OK
+hair/idol/male/orange.png,,cilekli,,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,,,,,OK
+hair/idol/male/pink.png,,cilekli,,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,,,,,OK
+hair/idol/male/purple.png,,cilekli,,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,,,,,OK
+hair/idol/male/red.png,,cilekli,,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,,,,,OK
+hair/idol/male/white.png,,cilekli,,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,,,,,OK
 hair/jewfro,,,,,,,,,
 hair/jewfro/female,,,,,,,,,
 hair/jewfro/female/black.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,OK
@@ -1465,54 +1463,54 @@ hair/long/male/white_blonde_2.png,,Manuel Riecke (MrBeast),"CC-BY-SA 3.0, GPL 3.
 hair/long/male/white_cyan.png,,Manuel Riecke (MrBeast),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,,,,,OK
 hair/long_straight,,,,,,,,,
 hair/long_straight/female,,,,,,,,,
-hair/long_straight/female/black.png,,,,,,,,,BAD
-hair/long_straight/female/blonde.png,,,,,,,,,BAD
-hair/long_straight/female/blue.png,,,,,,,,,BAD
-hair/long_straight/female/brown.png,,,,,,,,,BAD
-hair/long_straight/female/green.png,,,,,,,,,BAD
-hair/long_straight/female/lightblonde.png,,,,,,,,,BAD
-hair/long_straight/female/orange.png,,,,,,,,,BAD
-hair/long_straight/female/pink.png,,,,,,,,,BAD
-hair/long_straight/female/purple.png,,,,,,,,,BAD
-hair/long_straight/female/red.png,,,,,,,,,BAD
-hair/long_straight/female/white.png,,,,,,,,,BAD
+hair/long_straight/female/black.png,,cilekli,,https://opengameart.org/content/lpc-long-straight-hair-with-12-colors,,,,,OK
+hair/long_straight/female/blonde.png,,cilekli,,https://opengameart.org/content/lpc-long-straight-hair-with-12-colors,,,,,OK
+hair/long_straight/female/blue.png,,cilekli,,https://opengameart.org/content/lpc-long-straight-hair-with-12-colors,,,,,OK
+hair/long_straight/female/brown.png,,cilekli,,https://opengameart.org/content/lpc-long-straight-hair-with-12-colors,,,,,OK
+hair/long_straight/female/green.png,,cilekli,,https://opengameart.org/content/lpc-long-straight-hair-with-12-colors,,,,,OK
+hair/long_straight/female/lightblonde.png,,cilekli,,https://opengameart.org/content/lpc-long-straight-hair-with-12-colors,,,,,OK
+hair/long_straight/female/orange.png,,cilekli,,https://opengameart.org/content/lpc-long-straight-hair-with-12-colors,,,,,OK
+hair/long_straight/female/pink.png,,cilekli,,https://opengameart.org/content/lpc-long-straight-hair-with-12-colors,,,,,OK
+hair/long_straight/female/purple.png,,cilekli,,https://opengameart.org/content/lpc-long-straight-hair-with-12-colors,,,,,OK
+hair/long_straight/female/red.png,,cilekli,,https://opengameart.org/content/lpc-long-straight-hair-with-12-colors,,,,,OK
+hair/long_straight/female/white.png,,cilekli,,https://opengameart.org/content/lpc-long-straight-hair-with-12-colors,,,,,OK
 hair/long_straight/male,,,,,,,,,
-hair/long_straight/male/black.png,,,,,,,,,BAD
-hair/long_straight/male/blonde.png,,,,,,,,,BAD
-hair/long_straight/male/blue.png,,,,,,,,,BAD
-hair/long_straight/male/brown.png,,,,,,,,,BAD
-hair/long_straight/male/green.png,,,,,,,,,BAD
-hair/long_straight/male/lightblonde.png,,,,,,,,,BAD
-hair/long_straight/male/orange.png,,,,,,,,,BAD
-hair/long_straight/male/pink.png,,,,,,,,,BAD
-hair/long_straight/male/purple.png,,,,,,,,,BAD
-hair/long_straight/male/red.png,,,,,,,,,BAD
-hair/long_straight/male/white.png,,,,,,,,,BAD
+hair/long_straight/male/black.png,,cilekli,,https://opengameart.org/content/lpc-long-straight-hair-with-12-colors,,,,,OK
+hair/long_straight/male/blonde.png,,cilekli,,https://opengameart.org/content/lpc-long-straight-hair-with-12-colors,,,,,OK
+hair/long_straight/male/blue.png,,cilekli,,https://opengameart.org/content/lpc-long-straight-hair-with-12-colors,,,,,OK
+hair/long_straight/male/brown.png,,cilekli,,https://opengameart.org/content/lpc-long-straight-hair-with-12-colors,,,,,OK
+hair/long_straight/male/green.png,,cilekli,,https://opengameart.org/content/lpc-long-straight-hair-with-12-colors,,,,,OK
+hair/long_straight/male/lightblonde.png,,cilekli,,https://opengameart.org/content/lpc-long-straight-hair-with-12-colors,,,,,OK
+hair/long_straight/male/orange.png,,cilekli,,https://opengameart.org/content/lpc-long-straight-hair-with-12-colors,,,,,OK
+hair/long_straight/male/pink.png,,cilekli,,https://opengameart.org/content/lpc-long-straight-hair-with-12-colors,,,,,OK
+hair/long_straight/male/purple.png,,cilekli,,https://opengameart.org/content/lpc-long-straight-hair-with-12-colors,,,,,OK
+hair/long_straight/male/red.png,,cilekli,,https://opengameart.org/content/lpc-long-straight-hair-with-12-colors,,,,,OK
+hair/long_straight/male/white.png,,cilekli,,https://opengameart.org/content/lpc-long-straight-hair-with-12-colors,,,,,OK
 hair/long_tied,,,,,,,,,
 hair/long_tied/female,,,,,,,,,
-hair/long_tied/female/black.png,,,,,,,,,BAD
-hair/long_tied/female/blonde.png,,,,,,,,,BAD
-hair/long_tied/female/blue.png,,,,,,,,,BAD
-hair/long_tied/female/brown.png,,,,,,,,,BAD
-hair/long_tied/female/green.png,,,,,,,,,BAD
-hair/long_tied/female/lightblonde.png,,,,,,,,,BAD
-hair/long_tied/female/orange.png,,,,,,,,,BAD
-hair/long_tied/female/pink.png,,,,,,,,,BAD
-hair/long_tied/female/purple.png,,,,,,,,,BAD
-hair/long_tied/female/red.png,,,,,,,,,BAD
-hair/long_tied/female/white.png,,,,,,,,,BAD
+hair/long_tied/female/black.png,,cilekli,,https://opengameart.org/content/lpc-long-tied-hair-with-12-colors,,,,,OK
+hair/long_tied/female/blonde.png,,cilekli,,https://opengameart.org/content/lpc-long-tied-hair-with-12-colors,,,,,OK
+hair/long_tied/female/blue.png,,cilekli,,https://opengameart.org/content/lpc-long-tied-hair-with-12-colors,,,,,OK
+hair/long_tied/female/brown.png,,cilekli,,https://opengameart.org/content/lpc-long-tied-hair-with-12-colors,,,,,OK
+hair/long_tied/female/green.png,,cilekli,,https://opengameart.org/content/lpc-long-tied-hair-with-12-colors,,,,,OK
+hair/long_tied/female/lightblonde.png,,cilekli,,https://opengameart.org/content/lpc-long-tied-hair-with-12-colors,,,,,OK
+hair/long_tied/female/orange.png,,cilekli,,https://opengameart.org/content/lpc-long-tied-hair-with-12-colors,,,,,OK
+hair/long_tied/female/pink.png,,cilekli,,https://opengameart.org/content/lpc-long-tied-hair-with-12-colors,,,,,OK
+hair/long_tied/female/purple.png,,cilekli,,https://opengameart.org/content/lpc-long-tied-hair-with-12-colors,,,,,OK
+hair/long_tied/female/red.png,,cilekli,,https://opengameart.org/content/lpc-long-tied-hair-with-12-colors,,,,,OK
+hair/long_tied/female/white.png,,cilekli,,https://opengameart.org/content/lpc-long-tied-hair-with-12-colors,,,,,OK
 hair/long_tied/male,,,,,,,,,
-hair/long_tied/male/black.png,,,,,,,,,BAD
-hair/long_tied/male/blonde.png,,,,,,,,,BAD
-hair/long_tied/male/blue.png,,,,,,,,,BAD
-hair/long_tied/male/brown.png,,,,,,,,,BAD
-hair/long_tied/male/green.png,,,,,,,,,BAD
-hair/long_tied/male/lightblonde.png,,,,,,,,,BAD
-hair/long_tied/male/orange.png,,,,,,,,,BAD
-hair/long_tied/male/pink.png,,,,,,,,,BAD
-hair/long_tied/male/purple.png,,,,,,,,,BAD
-hair/long_tied/male/red.png,,,,,,,,,BAD
-hair/long_tied/male/white.png,,,,,,,,,BAD
+hair/long_tied/male/black.png,,cilekli,,https://opengameart.org/content/lpc-long-tied-hair-with-12-colors,,,,,OK
+hair/long_tied/male/blonde.png,,cilekli,,https://opengameart.org/content/lpc-long-tied-hair-with-12-colors,,,,,OK
+hair/long_tied/male/blue.png,,cilekli,,https://opengameart.org/content/lpc-long-tied-hair-with-12-colors,,,,,OK
+hair/long_tied/male/brown.png,,cilekli,,https://opengameart.org/content/lpc-long-tied-hair-with-12-colors,,,,,OK
+hair/long_tied/male/green.png,,cilekli,,https://opengameart.org/content/lpc-long-tied-hair-with-12-colors,,,,,OK
+hair/long_tied/male/lightblonde.png,,cilekli,,https://opengameart.org/content/lpc-long-tied-hair-with-12-colors,,,,,OK
+hair/long_tied/male/orange.png,,cilekli,,https://opengameart.org/content/lpc-long-tied-hair-with-12-colors,,,,,OK
+hair/long_tied/male/pink.png,,cilekli,,https://opengameart.org/content/lpc-long-tied-hair-with-12-colors,,,,,OK
+hair/long_tied/male/purple.png,,cilekli,,https://opengameart.org/content/lpc-long-tied-hair-with-12-colors,,,,,OK
+hair/long_tied/male/red.png,,cilekli,,https://opengameart.org/content/lpc-long-tied-hair-with-12-colors,,,,,OK
+hair/long_tied/male/white.png,,cilekli,,https://opengameart.org/content/lpc-long-tied-hair-with-12-colors,,,,,OK
 hair/longest,,,,,,,,,
 hair/longest/female,,,,,,,,,
 hair/longest/female/behind,,,,,,,,,
@@ -1754,13 +1752,11 @@ hair/male/curly/whiteblonde_2.png,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",http
 hair/male/curly/whitecyan.png,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/3-hairs-for-lpc,,,,,OK
 hair/male/halfmessy,,"Nila122, Johannes Sjölund (wulax), Stephen Challener (Redshrike)",,https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,
 hair/male/halfmessy.png,,"Nila122, Johannes Sjölund (wulax), Stephen Challener (Redshrike)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,OK
-hair/male/idol,,cilekli,,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,,,,,OK
 hair/male/jewfro,,David Conway Jr. (JaidynReiman),,https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,
 hair/male/jewfro.png,,David Conway Jr. (JaidynReiman),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,OK
 hair/male/long,,Manuel Riecke (MrBeast),,https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,,,,,
 hair/male/long.png,,Manuel Riecke (MrBeast),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,,,,,OK
 hair/male/long_straight_hair,,cilekli,,https://opengameart.org/content/lpc-long-straight-hair-with-12-colors,,,,,OK
-hair/male/long_tied_hair,,cilekli,,https://opengameart.org/content/lpc-long-tied-hair-with-12-colors,,,,,OK
 hair/male/longhawk,,Manuel Riecke (MrBeast),,https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,,,,,
 hair/male/longhawk.png,,Manuel Riecke (MrBeast),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,,,,,OK
 hair/male/longknot,,David Conway Jr. (JaidynReiman),,https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,
@@ -3202,7 +3198,6 @@ hat/helmet/male/morion_faceplate.png,,ElizaWy,"CC-BY-SA 3.0, CC-BY-SA 4.0",https
 hat/helmet/male/morion_faceplate_plumage.png,,ElizaWy,"CC-BY-SA 3.0, CC-BY-SA 4.0",https://opengameart.org/content/lpc-realistic-helmet-pack,,,,,OK
 hat/helmet/male/morion_plumage.png,,ElizaWy,"CC-BY-SA 3.0, CC-BY-SA 4.0",https://opengameart.org/content/lpc-realistic-helmet-pack,,,,,OK
 hat/helmet/male/norman.png,,ElizaWy,"CC-BY-SA 3.0, CC-BY-SA 4.0",https://opengameart.org/content/lpc-realistic-helmet-pack,,,,,OK
-hat/hoods/male/lulhat_0.png,,,,,,,,,BAD
 hat/horned,,,,,,,,,
 hat/horned/2.png,,"Shaun Williams, Matthew Krohn (makrohn), Johannes Sjölund (wulax), Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-full-plate-golden-armor,https://opengameart.org/content/lpc-full-plate-golden-armor-0,,,OK
 hat/horned/3.png,,"Shaun Williams, Matthew Krohn (makrohn), Johannes Sjölund (wulax), Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-full-plate-golden-armor,https://opengameart.org/content/lpc-full-plate-golden-armor-0,,,OK
