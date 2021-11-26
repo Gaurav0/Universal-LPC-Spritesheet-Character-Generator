@@ -217,7 +217,7 @@ body/female/reptiles/green_unwinged.png,,"Nila122, Stephen Challener (Redshrike)
 body/female/reptiles/green_winged.png,,"Nila122, Stephen Challener (Redshrike), Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-ladies,https://opengameart.org/content/drakes-and-lizardfolk,,OK
 body/female/reptiles/lightgreen_unwinged.png,,"Nila122, Stephen Challener (Redshrike), Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-ladies,https://opengameart.org/content/drakes-and-lizardfolk,,OK
 body/female/reptiles/lightgreen_winged.png,,"Nila122, Stephen Challener (Redshrike), Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-ladies,https://opengameart.org/content/drakes-and-lizardfolk,,OK
-body/female/reptiles/red_winged.png,,,,,,,,,BAD
+body/female/reptiles/red_winged.png,,"Nila122, Johannes Sjölund (wulax), Stephen Challener (Redshrike)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/drakes-and-lizardfolk,,,OK
 body/female/wolf,,"Benjamin K. Smith (BenCreating), Johannes Sjölund (wulax), Matthew Krohn (makrohn), Stephen Challener (Redshrike), William.Thompsonj, Sander Frenken (castelonia)",,https://opengameart.org/content/lpc-wolfman,,,,,
 body/female/wolf/black.png,,"Benjamin K. Smith (BenCreating), Johannes Sjölund (wulax), Matthew Krohn (makrohn), Stephen Challener (Redshrike), William.Thompsonj, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-wolfman,,,,,OK
 body/female/wolf/black_wolf.png,,"Benjamin K. Smith (BenCreating), Johannes Sjölund (wulax), Matthew Krohn (makrohn), Stephen Challener (Redshrike), William.Thompsonj, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-wolfman,,,,,OK
@@ -343,9 +343,9 @@ body/male/wolf/head/white_wolf.png,,"Benjamin K. Smith (BenCreating), Johannes S
 body/male/wolf/white.png,,"Benjamin K. Smith (BenCreating), Johannes Sjölund (wulax), Matthew Krohn (makrohn), Stephen Challener (Redshrike), William.Thompsonj, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-wolfman,,,,,OK
 body/male/wolf/white_wolf.png,,"Benjamin K. Smith (BenCreating), Johannes Sjölund (wulax), Matthew Krohn (makrohn), Stephen Challener (Redshrike), William.Thompsonj, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-wolfman,,,,,OK
 body/muscular,,,,,,,,,
-body/muscular/boarman.png,,,,,,,,,BAD
+body/muscular/boarman.png,,"Benjamin K. Smith (BenCreating), dalonedrau, Daniel Eddeland (daneeklu), ElizaWy, Johannes Sjölund (wulax), Stephen Challener (Redshrike), and William.Thompsonj. Commissioned by castelonia.","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-boarman,,,,,OK
 body/muscular/head,,,,,,,,,
-body/muscular/head/boarman.png,,,,,,,,,BAD
+body/muscular/head/boarman.png,,"Benjamin K. Smith (BenCreating), dalonedrau, Daniel Eddeland (daneeklu), ElizaWy, Johannes Sjölund (wulax), Stephen Challener (Redshrike), and William.Thompsonj. Commissioned by castelonia.","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-boarman,,,,,OK
 body/muscular/minotaur.png,,"dalonedrau, Stephen Challener (Redshrike), ElizaWy, Evert, Daniel Eddeland (daneeklu), Nila122",CC-BY-SA 3.0,https://opengameart.org/content/lpc-barbarian-sprite-base,https://opengameart.org/content/lpc-muscular-swing-animation,https://opengameart.org/content/lpc-muscular-hurt-animation,https://opengameart.org/content/lpc-style-farm-animals,https://opengameart.org/content/lpc-faun-and-minotaur,OK
 body/muscular/muscular_black.png,,"dalonedrau, Stephen Challener (Redshrike), ElizaWy",CC-BY-SA 3.0,https://opengameart.org/content/lpc-barbarian-sprite-base,https://opengameart.org/content/lpc-muscular-swing-animation,https://opengameart.org/content/lpc-muscular-hurt-animation,,,OK
 body/muscular/muscular_white.png,,"dalonedrau, Stephen Challener (Redshrike), ElizaWy",CC-BY-SA 3.0,https://opengameart.org/content/lpc-barbarian-sprite-base,https://opengameart.org/content/lpc-muscular-swing-animation,https://opengameart.org/content/lpc-muscular-hurt-animation,,,OK
@@ -468,12 +468,12 @@ dress,,,,,,,,,
 dress/female,,,,,,,,,
 dress/female/black.png,,"Nila122, Johannes Sjölund (wulax), Stephen Challener (Redshrike)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-and-hair,,,,,OK
 dress/female/blue.png,,"Nila122, Johannes Sjölund (wulax), Stephen Challener (Redshrike)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-and-hair,,,,,OK
-dress/female/fancy_1.png,,,,,,,,,BAD
+dress/female/fancy_1.png,,"Matthew Krohn (makrohn), Lanea Zimmerman (Sharm)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,https://opengameart.org/content/lpc-dress-in-combat-poses,,,,OK
 dress/female/fancy_2.png,,"Matthew Krohn (makrohn), Lanea Zimmerman (Sharm)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,https://opengameart.org/content/lpc-dress-in-combat-poses,,,,OK
-dress/female/fancy_3.png,,,,,,,,,BAD
-dress/female/fancy_4.png,,,,,,,,,BAD
-dress/female/fancy_5.png,,,,,,,,,BAD
-dress/female/fancy_6.png,,,,,,,,,BAD
+dress/female/fancy_3.png,,"Matthew Krohn (makrohn), Lanea Zimmerman (Sharm)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,https://opengameart.org/content/lpc-dress-in-combat-poses,,,,OK
+dress/female/fancy_4.png,,"Matthew Krohn (makrohn), Lanea Zimmerman (Sharm)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,https://opengameart.org/content/lpc-dress-in-combat-poses,,,,OK
+dress/female/fancy_5.png,,"Matthew Krohn (makrohn), Lanea Zimmerman (Sharm)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,https://opengameart.org/content/lpc-dress-in-combat-poses,,,,OK
+dress/female/fancy_6.png,,"Matthew Krohn (makrohn), Lanea Zimmerman (Sharm)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,https://opengameart.org/content/lpc-dress-in-combat-poses,,,,OK
 dress/female/red.png,,"Nila122, Johannes Sjölund (wulax), Stephen Challener (Redshrike)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-and-hair,,,,,OK
 dress/female/sash_green.png,,"Thane Brimhall (pennomi), laetissima, Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-2-characters,,,,,OK
 dress/female/white.png,,"Nila122, Johannes Sjölund (wulax), Stephen Challener (Redshrike)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-and-hair,,,,,OK
@@ -931,7 +931,7 @@ hair/braid/female/brown_2.png,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://
 hair/braid/female/brunette.png,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/3-hairs-for-lpc,,,,,OK
 hair/braid/female/brunette_2.png,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/3-hairs-for-lpc,,,,,OK
 hair/braid/female/darkblonde.png,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/3-hairs-for-lpc,,,,,OK
-hair/braid/female/darkgray.png,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/3-hairs-for-lpc,,,,,OK
+hair/braid/female/darkgrey.png,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/3-hairs-for-lpc,,,,,OK
 hair/braid/female/darkred.png,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/3-hairs-for-lpc,,,,,OK
 hair/braid/female/gold.png,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/3-hairs-for-lpc,,,,,OK
 hair/braid/female/green.png,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/3-hairs-for-lpc,,,,,OK
@@ -1107,9 +1107,9 @@ hair/curly/female/pink_2.png,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://o
 hair/curly/female/purple.png,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/3-hairs-for-lpc,,,,,OK
 hair/curly/female/raven.png,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/3-hairs-for-lpc,,,,,OK
 hair/curly/female/raven_2.png,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/3-hairs-for-lpc,,,,,OK
-hair/curly/female/red3.png,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/3-hairs-for-lpc,,,,,OK
-hair/curly/female/redhead.png,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/3-hairs-for-lpc,,,,,OK
-hair/curly/female/rubyhead.png,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/3-hairs-for-lpc,,,,,OK
+hair/curly/female/red.png,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/3-hairs-for-lpc,,,,,OK
+hair/curly/female/red_2.png,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/3-hairs-for-lpc,,,,,OK
+hair/curly/female/ruby.png,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/3-hairs-for-lpc,,,,,OK
 hair/curly/female/white.png,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/3-hairs-for-lpc,,,,,OK
 hair/curly/female/whiteblonde.png,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/3-hairs-for-lpc,,,,,OK
 hair/curly/female/whiteblonde_2.png,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/3-hairs-for-lpc,,,,,OK
@@ -5167,9 +5167,9 @@ legs/skirts/child/red.png,,Nila122,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.o
 legs/skirts/child/white.png,,Nila122,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,OK
 legs/skirts/female,,,,,,,,,
 legs/skirts/female/black.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-skirt-for-women,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,OK
-legs/skirts/female/brown.png,,,,,,,,,BAD
+legs/skirts/female/brown.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-skirt-for-women,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,OK
 legs/skirts/female/legion.png,,"Nila122, David Conway Jr. (JaidynReiman), Matthew Krohn (makrohn), Johannes Sjölund (wulax)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,,,,,OK
-legs/skirts/female/white.png,,,,,,,,,BAD
+legs/skirts/female/white.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-skirt-for-women,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,OK
 legs/skirts/male,,,,,,,,,
 legs/skirts/male/black.png,,Johannes Sjölund (wulax),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,OK
 legs/skirts/male/brown.png,,Johannes Sjölund (wulax),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,OK

@@ -58,10 +58,6 @@ $(document).ready(function() {
     const creditEntry = getCreditFor(name);
     if (creditEntry) {
       let parts = splitCsv(creditEntry);
-      if (creditEntry.includes("BAD")) {
-        console.warn("bad credit for : ", creditEntry);
-        return creditEntry;
-      }
       if (parts.length == 10) {
         return "Created by: " + parts[2];
       }

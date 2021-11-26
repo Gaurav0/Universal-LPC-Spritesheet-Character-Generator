@@ -3,7 +3,7 @@
   "type_name" : "belt",
   "layer_1" : {
     "zPos" : 70,
-    "female" : "torso/waist/belt_other/female"
+    "female" : "torso/waist/belt_other/female/"
   },
   "variants": [
     "black",
