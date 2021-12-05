@@ -126,16 +126,16 @@ ul {
   overflow-y: auto;
 }
 
-#chooser>ul>li {
+#chooser ul>li>span {
   cursor: pointer;
 }
 
-#chooser>ul>li>.condensed:after, #chooser>ul>li>ul>li>.condensed:after {
+#chooser ul>li>.condensed:after {
   padding-left: 10px;
   content: '\25B6';
 }
 
-#chooser>ul>li>.expanded:after, #chooser>ul>li>ul>li>.expanded:after, .condensed:hover:after {
+#chooser ul>li>.expanded:after, #chooser .condensed:hover:after {
   padding-left: 10px;
   content:  '\25BC';
 }
@@ -149,24 +149,11 @@ ul {
   background-color: yellow;
 }
 
-#chooser>ul>li>ul>li>ul {
+#chooser>ul ul {
   display: none;
-}
-
-#chooser>ul>li>ul {
-  display: none;
-}
-
-
-
-#chooser>ul>li>ul>li {
-  padding-left: 48px;
-  text-indent: -18px;
-}
-
-#chooser>ul>li>ul>li>ul>li {
-  padding-left: 64px;
-  text-indent: -18px;
+  margin-left: 12px;
+  border-left:  solid 1px silver;
+  padding-left: 20px;
 }
 
 #chooser ul.hasPreview {
