@@ -130,12 +130,12 @@ ul {
   cursor: pointer;
 }
 
-#chooser>ul>li>.condensed:after, #chooser>ul>li>ul>li>.condensed:after {
+#chooser ul>li>.condensed:after {
   padding-left: 10px;
   content: '\25B6';
 }
 
-#chooser>ul>li>.expanded:after, #chooser>ul>li>ul>li>.expanded:after, .condensed:hover:after {
+#chooser ul>li>.expanded:after, #chooser .condensed:hover:after {
   padding-left: 10px;
   content:  '\25BC';
 }
@@ -149,13 +149,17 @@ ul {
   background-color: yellow;
 }
 
-#chooser>ul>li>ul>li>ul {
+#chooser>ul ul {
+  display: none;
+}
+
+/*#chooser>ul>li>ul>li>ul {
   display: none;
 }
 
 #chooser>ul>li>ul {
   display: none;
-}
+}*/
 
 
 
@@ -165,7 +169,7 @@ ul {
 }
 
 #chooser>ul>li>ul>li>ul>li {
-  padding-left: 64px;
+  padding-left: 32px;
   text-indent: -18px;
 }
 
