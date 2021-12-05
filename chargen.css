@@ -126,7 +126,7 @@ ul {
   overflow-y: auto;
 }
 
-#chooser>ul>li {
+#chooser ul>li>span {
   cursor: pointer;
 }
 
@@ -151,26 +151,9 @@ ul {
 
 #chooser>ul ul {
   display: none;
-}
-
-/*#chooser>ul>li>ul>li>ul {
-  display: none;
-}
-
-#chooser>ul>li>ul {
-  display: none;
-}*/
-
-
-
-#chooser>ul>li>ul>li {
-  padding-left: 48px;
-  text-indent: -18px;
-}
-
-#chooser>ul>li>ul>li>ul>li {
-  padding-left: 32px;
-  text-indent: -18px;
+  margin-left: 12px;
+  border-left:  solid 1px silver;
+  padding-left: 20px;
 }
 
 #chooser ul.hasPreview {
