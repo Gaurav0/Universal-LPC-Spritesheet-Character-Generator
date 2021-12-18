@@ -172,13 +172,27 @@ $(document).ready(function() {
     ctx.putImageData(imgData, 0, 0);
   });
 
-  $(".generateSheetCredits").click(function() {
+  $(".generateSheetCreditsCsv").click(function() {
     let bl = new Blob([sheetCredits.join('\n')], {
       type: "text/html"
     });
     let a = document.createElement("a");
     a.href = URL.createObjectURL(bl);
     a.download = "sheet-credits.csv";
+    a.hidden = true;
+    document.body.appendChild(a);
+    a.innerHTML = "dummyhtml";
+    a.click();
+    document.removeChild(a);
+  });
+
+  $(".generateSheetCreditsTxt").click(function() {
+    let bl = new Blob([sheetCreditsToTxt()], {
+      type: "text/html"
+    });
+    let a = document.createElement("a");
+    a.href = URL.createObjectURL(bl);
+    a.download = "sheet-credits.txt";
     a.hidden = true;
     document.body.appendChild(a);
     a.innerHTML = "dummyhtml";
@@ -288,15 +302,22 @@ $(document).ready(function() {
     displayCredits();
   }
 
-  function displayCredits() {
+  function sheetCreditsToTxt() {
     let csv = parseCSV(sheetCredits.join('\n'))
+    let authors = csv.slice(1).map((row) => row[2].split(",").map((au) => au.trim())).flat()
+    authors = [...new Set(authors)]
+
     let out = csv.slice(1).map(function(row) {
       let urls = row.slice(4,9)
         .filter(function (x) { return !!x })
         .map(function (x) { return "    - " + x})
       return [`- ${row[0]}: by ${row[2]}. License(s): ${row[3]}. ${row[1]}`].concat(urls).join("\n")
     })
-    $("textarea#creditsText").val(out.join("\n\n"));
+    return "Authors: " + authors.join(", ")+"\n\n"+out.join("\n\n")
+  }
+
+  function displayCredits() {
+    $("textarea#creditsText").val(sheetCreditsToTxt());
   }
 
   function previewFile(){
@@ -388,7 +409,7 @@ $(document).ready(function() {
       canvas.height = 1344;
       $(anim).removeClass('oversize')
     }
-    $("#chooser>ul").css("height", canvas.height);
+    $("#chooser").css("height", canvas.height);
 
     var itemIdx = 0;
     itemsToDraw.sort(function(lhs, rhs) {

@@ -19,21 +19,28 @@
 			<h1>Universal LPC Spritesheet Generator</h1>
 			<p>Free/Libre pixel art sprites from the <a href="lpc.opengameart.org">Liberated Pixel Cup</a> and <a href="https://opengameart.org/content/lpc-collection">OpenGameArt.org</a>. License: <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA 3.0</a>. You must <a id="scroll-to-credits" href="#">credit the authors of this artwork.</a></p>
 			<div>
-				<a id="saveAsPNG"><input type="button" value="Download As PNG"></a>
-				<button type="button" class="generateSheetCredits">Download credits</button>
+				<label class="control-label">Download:</label>
+				<a id="saveAsPNG"><input type="button" value="Image (PNG)"></a>
+				<button type="button" class="generateSheetCreditsTxt">Credits (text)</button>
+				<button type="button" class="generateSheetCreditsCsv">Credits (CSV)</button>
 			</div>
 			<div>
-				<button type="button" id="collapse">Collapse All</button>
-				<button type="button" id="expand">Expand Selected</button>
+				<label class="control-label">Edit:</label>
 				<button type="button" id="resetAll">Reset all</button>
 				<button type="button" class="replacePinkMask">Replace Mask (pink)</button>
+			</div>
+			<div>
+				<label class="control-label">View:</label>
+				<button type="button" id="collapse">Collapse All</button>
+				<button type="button" id="expand">Expand Selected</button>
 				<label for="displayMode-compact"><input type="checkbox" name="displayMode" value="compact" id="displayMode-compact"> Compact Display</label>
 			</div>
 			<div>
-				<input type="search" id="searchbox" name="" placeholder="Search" />
+				<label class="control-label" for="searchbox">Search: </label><input type="search" id="searchbox" name="" placeholder="Search" />
 			</div>
 		</div>
 		<section id="chooser">
+			<h3>Body</h3>
 			<ul>
 				<li>
 					<!-- Body types -->
@@ -62,6 +69,9 @@
 					</ul>
 				</li>
 
+				<!-- Shadow -->
+				<div id="sheet_shadow"></div>
+
 				<!-- Bodies -->
 				<li>
 					<span class="condensed">Body</span>
@@ -76,25 +86,6 @@
 						<div id="sheet_body_muscular"></div>
 						<div id="sheet_body_special"></div>
 						<div id="sheet_body_child"></div>
-					</ul>
-				</li>
-
-				<!-- Ears -->
-				<li>
-					<span class="condensed">Ears</span>
-					<ul>
-						<div id="sheet_head_ears_big"></div>
-						<div id="sheet_head_ears_elven"></div>
-					</ul>
-				</li>
-
-				<!-- Nose -->
-				<li>
-					<span class="condensed">Nose</span>
-					<ul>
-						<div id="sheet_head_nose_big"></div>
-						<div id="sheet_head_nose_button"></div>
-						<div id="sheet_head_nose_straight"></div>
 					</ul>
 				</li>
 
@@ -118,8 +109,29 @@
 					</ul>
 				</li>
 
-				<!-- Shadow -->
-				<div id="sheet_shadow"></div>
+			</ul>
+			<h3>Head</h3>
+			<ul>
+
+				<!-- Ears -->
+				<li>
+					<span class="condensed">Ears</span>
+					<ul>
+						<div id="sheet_head_ears_big"></div>
+						<div id="sheet_head_ears_elven"></div>
+					</ul>
+				</li>
+
+				<!-- Nose -->
+				<li>
+					<span class="condensed">Nose</span>
+					<ul>
+						<div id="sheet_head_nose_big"></div>
+						<div id="sheet_head_nose_button"></div>
+						<div id="sheet_head_nose_straight"></div>
+					</ul>
+				</li>
+
 
 				<!-- Eyes -->
 				<div id="sheet_eyes"></div>
@@ -134,201 +146,6 @@
 						<div id="sheet_beards_winter"></div>
 					</ul>
 				</li>
-
-				<!-- Facial accessories -->
-				<div id="sheet_facial"></div>
-				<div id="sheet_facial_eyepatch"></div>
-				<div id="sheet_facial_earring"></div>
-
-				<!-- Shoes -->
-				<li data-required="male,female,muscular,pregnant">
-					<span class="condensed">Shoes</span>
-					<ul>
-						<div id="sheet_feet_armour"></div>
-						<div id="sheet_feet_slippers"></div>
-						<div id="sheet_feet_shoes"></div>
-						<div id="sheet_feet_hoofs"></div>
-						<div id="sheet_feet_sandals"></div>
-						<div id="sheet_feet_sara"></div>
-					</ul>
-				</li>
-
-				<!-- Legs -->
-				<li>
-					<span class="condensed">Legs</span>
-					<ul>
-						<div id="sheet_legs_armour"></div>
-						<div id="sheet_legs_widepants"></div>
-						<div id="sheet_legs_pants"></div>
-						<div id="sheet_legs_pantaloons"></div>
-						<div id="sheet_legs_leggings"></div>
-						<div id="sheet_legs_pregnantpants"></div>
-						<div id="sheet_legs_childpants"></div>
-						<div id="sheet_legs_childskirts"></div>
-						<div id="sheet_legs_skirts"></div>
-					</ul>
-				</li>
-
-				<!-- Dress -->
-				<div id="sheet_dress"></div>
-
-				<!-- Boots -->
-				<div id="sheet_feet_boots"></div>
-
-				<!-- Torso clothes -->
-				<li data-required="male,female,pregnant,child">
-					<span class="condensed">Shirts</span>
-					<ul>
-						<div id="sheet_torso_clothes_child_shirt"></div>
-						<div id="sheet_torso_clothes_male_longsleeve"></div>
-						<div id="sheet_torso_clothes_male_longsleeve_laced"></div>
-						<div id="sheet_torso_clothes_male_sleeveless"></div>
-						<div id="sheet_torso_clothes_male_sleeveless_laced"></div>
-						<div id="sheet_torso_clothes_male_sleeveless_striped"></div>
-						<div id="sheet_torso_clothes_tanktop"></div>
-						<div id="sheet_torso_clothes_female_sleeveless"></div>
-						<div id="sheet_torso_clothes_corset"></div>
-						<div id="sheet_torso_clothes_blouse"></div>
-						<div id="sheet_torso_clothes_blouse_longsleeve"></div>
-						<div id="sheet_torso_clothes_scoop_shirt"></div>
-						<div id="sheet_torso_clothes_female_longsleeve"></div>
-						<div id="sheet_torso_clothes_tunic"></div>
-						<div id="sheet_torso_clothes_robe"></div>
-					</ul>
-				</li>
-
-				<!-- Apron -->
-				<div id="sheet_torso_clothes_apron"></div>
-
-				<!-- Bandages -->
-				<div id="sheet_torso_bandages"></div>
-
-				<!-- Chainmail -->
-				<div id="sheet_torso_chainmail"></div>
-
-				<!-- Jackets -->
-				<li data-required="male,female">
-					<span class="condensed">Jacket</span>
-					<ul>
-						<div id="sheet_torso_jacket_collared"></div>
-						<div id="sheet_torso_jacket_iverness"></div>
-						<div id="sheet_torso_jacket_trench"></div>
-						<div id="sheet_torso_jacket_male_tabard"></div>
-						<div id="sheet_torso_jacket_female_tabard"></div>
-						<div id="sheet_torso_jacket_frock"></div>
-						<div id="sheet_torso_jacket_santa"></div>
-						<li>
-							<span class="condensed">Jacket trim</span>
-							<ul>
-								<div id="sheet_torso_jacket_frock_collar"></div>
-								<div id="sheet_torso_jacket_frock_lace"></div>
-								<div id="sheet_torso_jacket_frock_lapel"></div>
-								<div id="sheet_torso_jacket_frock_buttons"></div>
-								<div id="sheet_torso_jacket_pockets"></div>
-							</ul>
-						</li>
-					</ul>
-				</li>
-
-				<!-- Vest -->
-				<li data-required="male,female">
-					<span class="condensed">Vest</span>
-					<ul>
-						<div id="sheet_torso_clothes_vest"></div>
-						<div id="sheet_torso_clothes_vest_open"></div>
-					</ul>
-				</li>
-
-				<!-- Armour -->
-				<li data-required="male,female">
-					<span class="condensed">Armour</span>
-					<ul>
-						<div id="sheet_torso_armour_plate"></div>
-						<div id="sheet_torso_armour_leather"></div>
-						<div id="sheet_torso_armour_legion"></div>
-					</ul>
-				</li>
-
-				<!-- Arms -->
-				<div id="sheet_arms"></div>
-
-				<!-- Shoulders -->
-				<li data-required="male,female,pregnant,muscular">
-					<span class="condensed">Shoulders</span>
-					<ul>
-						<div id="sheet_shoulders_legion"></div>
-						<div id="sheet_shoulders_plate"></div>
-						<div id="sheet_shoulders_leather"></div>
-						<div id="sheet_shoulders_epaulets"></div>
-						<div id="sheet_shoulders_mantal"></div>
-					</ul>
-				</li>
-
-				<!-- Bauldron -->
-				<div id="sheet_bauldron"></div>
-
-				<!-- Bracers -->
-				<li data-required="male,female,pregnant,muscular">
-					<span class="condensed">Wrists</span>
-					<ul>
-						<div id="sheet_bracers"></div>
-						<div id="sheet_wrists_cuffs"></div>
-						<div id="sheet_wrists_cuffs_lace"></div>
-					</ul>
-				</li>
-
-				<!-- Greaves -->
-				<div id="sheet_gloves"></div>
-
-				<!-- Belt -->
-				<li data-required="male,female">
-					<span class="condensed">Waist</span>
-					<ul>
-						<div id="sheet_belt_leather"></div>
-						<div id="sheet_belt_double"></div>
-						<div id="sheet_belt_loose"></div>
-						<div id="sheet_belt_belly"></div>
-						<div id="sheet_belt_other_female"></div>
-						<div id="sheet_belt_other_male"></div>
-						<div id="sheet_belt_sash"></div>
-						<div id="sheet_belt_sash_narrow"></div>
-					</ul>
-				</li>
-
-				<!-- Buckles -->
-				<div id="sheet_buckles"></div>
-
-				<!-- Necklace -->
-				<div id="sheet_necklace"></div>
-
-				<!-- Cape -->
-				<li data-required="male,female,pregnant,muscular">
-					<span class="condensed">Cape</span>
-					<ul>
-						<div id="sheet_cape_solid"></div>
-						<div id="sheet_cape_trimmed"></div>
-						<div id="sheet_cape_tattered"></div>
-					</ul>
-				</li>
-
-				<!-- Neck -->
-				<li data-required="male,female,pregnant,muscular">
-					<span class="condensed">Neck</span>
-					<ul>
-						<div id="sheet_neck_tie"></div>
-						<div id="sheet_neck_scarf"></div>
-						<div id="sheet_neck_capeclip"></div>
-						<div id="sheet_neck_capetie"></div>
-						<div id="sheet_neck_jabot"></div>
-						<div id="sheet_neck_cravat"></div>
-					</ul>
-				</li>
-
-				<!-- Shield -->
-				<div id="sheet_shield"></div>
-
-				<!-- Quiver -->
-				<div id="sheet_quiver"></div>
 
 				<!-- Hair -->
 				<li>
@@ -481,6 +298,227 @@
 					</ul>
 				</li>
 
+
+				<!-- Facial accessories -->
+				<li data-required="male,female,pregnant,muscular">
+					<span class="condensed">Accessories</span>
+					<ul>
+						<div id="sheet_facial"></div>
+						<div id="sheet_facial_eyepatch"></div>
+						<div id="sheet_facial_earring"></div>
+					</ul>
+				</li>
+
+				<!-- Neck -->
+				<li data-required="male,female,pregnant,muscular">
+					<span class="condensed">Neck</span>
+					<ul>
+						<div id="sheet_neck_tie"></div>
+						<div id="sheet_neck_scarf"></div>
+						<div id="sheet_neck_capeclip"></div>
+						<div id="sheet_neck_capetie"></div>
+						<div id="sheet_neck_jabot"></div>
+						<div id="sheet_neck_cravat"></div>
+						<div id="sheet_necklace"></div>
+					</ul>
+				</li>
+			</ul>
+			<h3>Arms</h3>
+			<ul>
+				<!-- ARMS -->
+
+				<!-- Shoulders -->
+				<li data-required="male,female,pregnant,muscular">
+					<span class="condensed">Shoulders</span>
+					<ul>
+						<div id="sheet_shoulders_legion"></div>
+						<div id="sheet_shoulders_plate"></div>
+						<div id="sheet_shoulders_leather"></div>
+						<div id="sheet_shoulders_epaulets"></div>
+						<div id="sheet_shoulders_mantal"></div>
+					</ul>
+				</li>
+
+				<!-- Arms -->
+				<div id="sheet_arms"></div>
+
+				<!-- Bauldron -->
+				<div id="sheet_bauldron"></div>
+
+				<!-- Bracers -->
+				<li data-required="male,female,pregnant,muscular">
+					<span class="condensed">Wrists</span>
+					<ul>
+						<div id="sheet_bracers"></div>
+						<div id="sheet_wrists_cuffs"></div>
+						<div id="sheet_wrists_cuffs_lace"></div>
+					</ul>
+				</li>
+
+				<!-- Greaves -->
+				<div id="sheet_gloves"></div>
+
+			</ul>
+			<!-- TORSO -->
+			<h3>Torso</h3>
+			<ul>
+
+				<!-- Dress -->
+				<div id="sheet_dress"></div>
+
+				<!-- Torso clothes -->
+				<li data-required="male,female,pregnant,child">
+					<span class="condensed">Shirts</span>
+					<ul>
+						<div id="sheet_torso_clothes_child_shirt"></div>
+						<div id="sheet_torso_clothes_male_longsleeve"></div>
+						<div id="sheet_torso_clothes_male_longsleeve_laced"></div>
+						<div id="sheet_torso_clothes_male_sleeveless"></div>
+						<div id="sheet_torso_clothes_male_sleeveless_laced"></div>
+						<div id="sheet_torso_clothes_male_sleeveless_striped"></div>
+						<div id="sheet_torso_clothes_tanktop"></div>
+						<div id="sheet_torso_clothes_female_sleeveless"></div>
+						<div id="sheet_torso_clothes_corset"></div>
+						<div id="sheet_torso_clothes_blouse"></div>
+						<div id="sheet_torso_clothes_blouse_longsleeve"></div>
+						<div id="sheet_torso_clothes_scoop_shirt"></div>
+						<div id="sheet_torso_clothes_female_longsleeve"></div>
+						<div id="sheet_torso_clothes_tunic"></div>
+						<div id="sheet_torso_clothes_robe"></div>
+					</ul>
+				</li>
+
+				<!-- Apron -->
+				<div id="sheet_torso_clothes_apron"></div>
+
+				<!-- Bandages -->
+				<div id="sheet_torso_bandages"></div>
+
+				<!-- Chainmail -->
+				<div id="sheet_torso_chainmail"></div>
+
+				<!-- Jackets -->
+				<li data-required="male,female">
+					<span class="condensed">Jacket</span>
+					<ul>
+						<div id="sheet_torso_jacket_collared"></div>
+						<div id="sheet_torso_jacket_iverness"></div>
+						<div id="sheet_torso_jacket_trench"></div>
+						<div id="sheet_torso_jacket_male_tabard"></div>
+						<div id="sheet_torso_jacket_female_tabard"></div>
+						<div id="sheet_torso_jacket_frock"></div>
+						<div id="sheet_torso_jacket_santa"></div>
+						<li>
+							<span class="condensed">Jacket trim</span>
+							<ul>
+								<div id="sheet_torso_jacket_frock_collar"></div>
+								<div id="sheet_torso_jacket_frock_lace"></div>
+								<div id="sheet_torso_jacket_frock_lapel"></div>
+								<div id="sheet_torso_jacket_frock_buttons"></div>
+								<div id="sheet_torso_jacket_pockets"></div>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				<!-- Vest -->
+				<li data-required="male,female">
+					<span class="condensed">Vest</span>
+					<ul>
+						<div id="sheet_torso_clothes_vest"></div>
+						<div id="sheet_torso_clothes_vest_open"></div>
+					</ul>
+				</li>
+
+				<!-- Armour -->
+				<li data-required="male,female">
+					<span class="condensed">Armour</span>
+					<ul>
+						<div id="sheet_torso_armour_plate"></div>
+						<div id="sheet_torso_armour_leather"></div>
+						<div id="sheet_torso_armour_legion"></div>
+					</ul>
+				</li>
+
+				<!-- Cape -->
+				<li data-required="male,female,pregnant,muscular">
+					<span class="condensed">Cape</span>
+					<ul>
+						<div id="sheet_cape_solid"></div>
+						<div id="sheet_cape_trimmed"></div>
+						<div id="sheet_cape_tattered"></div>
+					</ul>
+				</li>
+
+				<!-- Belt -->
+				<li data-required="male,female">
+					<span class="condensed">Waist</span>
+					<ul>
+						<div id="sheet_belt_leather"></div>
+						<div id="sheet_belt_double"></div>
+						<div id="sheet_belt_loose"></div>
+						<div id="sheet_belt_belly"></div>
+						<div id="sheet_belt_other_female"></div>
+						<div id="sheet_belt_other_male"></div>
+						<div id="sheet_belt_sash"></div>
+						<div id="sheet_belt_sash_narrow"></div>
+					</ul>
+				</li>
+
+				<!-- Buckles -->
+				<div id="sheet_buckles"></div>
+
+
+			</ul>
+			<h3>Legs</h3>
+			<ul>
+				<!-- LEGS -->
+
+				<!-- Legs -->
+				<li>
+					<span class="condensed">Legs</span>
+					<ul>
+						<div id="sheet_legs_armour"></div>
+						<div id="sheet_legs_widepants"></div>
+						<div id="sheet_legs_pants"></div>
+						<div id="sheet_legs_pantaloons"></div>
+						<div id="sheet_legs_leggings"></div>
+						<div id="sheet_legs_pregnantpants"></div>
+						<div id="sheet_legs_childpants"></div>
+						<div id="sheet_legs_childskirts"></div>
+						<div id="sheet_legs_skirts"></div>
+					</ul>
+				</li>
+
+				<!-- FEET -->
+
+				<!-- Boots -->
+				<div id="sheet_feet_boots"></div>
+
+				<!-- Shoes -->
+				<li data-required="male,female,muscular,pregnant">
+					<span class="condensed">Shoes</span>
+					<ul>
+						<div id="sheet_feet_armour"></div>
+						<div id="sheet_feet_slippers"></div>
+						<div id="sheet_feet_shoes"></div>
+						<div id="sheet_feet_hoofs"></div>
+						<div id="sheet_feet_sandals"></div>
+						<div id="sheet_feet_sara"></div>
+					</ul>
+				</li>
+
+			</ul>
+			<h3>Weapons</h3>
+			<ul>
+				<!-- WEAPONS -->
+
+				<!-- Shield -->
+				<div id="sheet_shield"></div>
+
+				<!-- Quiver -->
+				<div id="sheet_quiver"></div>
+
 				<!-- Weapons -->
 				<li>
 					<span class="condensed">Weapon</span>
@@ -523,8 +561,9 @@
 		<h2>Credits</h2>
 		<p>This art is available under the <a href="http://www.gnu.org/licenses/gpl-3.0.html">GNU GPL 3.0</a> and/or <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA 3.0</a> licenses. You must credit the authors. <a href="https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/README.md">Detailed attribution instructions</a>. </p>
 		<p><strong>Download: </strong>
-			<button type="button" class="generateSheetCredits">Credits for this sheet</button>
-			<button type="button" class="generateAllCredits">Credits for all sprites</button>
+			<button type="button" class="generateSheetCreditsTxt">Credits for this sheet</button>
+			<button type="button" class="generateSheetCreditsCsv">Credits for this sheet (CSV)</button>
+			<button type="button" class="generateAllCredits">Credits for all sprites (CSV)</button>
 		</p>
 		<p>Authors of this spritesheet:</p>
 		<textarea id="creditsText" rows="20" cols="300" readonly>Credits</textarea>
