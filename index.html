@@ -19,18 +19,24 @@
 			<h1>Universal LPC Spritesheet Generator</h1>
 			<p>Free/Libre pixel art sprites from the <a href="lpc.opengameart.org">Liberated Pixel Cup</a> and <a href="https://opengameart.org/content/lpc-collection">OpenGameArt.org</a>. License: <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA 3.0</a>. You must <a id="scroll-to-credits" href="#">credit the authors of this artwork.</a></p>
 			<div>
-				<a id="saveAsPNG"><input type="button" value="Download As PNG"></a>
-				<button type="button" class="generateSheetCredits">Download credits</button>
+				<label class="control-label">Download:</label>
+				<a id="saveAsPNG"><input type="button" value="Image (PNG)"></a>
+				<button type="button" class="generateSheetCreditsTxt">Credits (text)</button>
+				<button type="button" class="generateSheetCreditsCsv">Credits (CSV)</button>
 			</div>
 			<div>
-				<button type="button" id="collapse">Collapse All</button>
-				<button type="button" id="expand">Expand Selected</button>
+				<label class="control-label">Edit:</label>
 				<button type="button" id="resetAll">Reset all</button>
 				<button type="button" class="replacePinkMask">Replace Mask (pink)</button>
+			</div>
+			<div>
+				<label class="control-label">View:</label>
+				<button type="button" id="collapse">Collapse All</button>
+				<button type="button" id="expand">Expand Selected</button>
 				<label for="displayMode-compact"><input type="checkbox" name="displayMode" value="compact" id="displayMode-compact"> Compact Display</label>
 			</div>
 			<div>
-				<input type="search" id="searchbox" name="" placeholder="Search" />
+				<label class="control-label" for="searchbox">Search: </label><input type="search" id="searchbox" name="" placeholder="Search" />
 			</div>
 		</div>
 		<section id="chooser">
@@ -555,8 +561,9 @@
 		<h2>Credits</h2>
 		<p>This art is available under the <a href="http://www.gnu.org/licenses/gpl-3.0.html">GNU GPL 3.0</a> and/or <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA 3.0</a> licenses. You must credit the authors. <a href="https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/README.md">Detailed attribution instructions</a>. </p>
 		<p><strong>Download: </strong>
-			<button type="button" class="generateSheetCredits">Credits for this sheet</button>
-			<button type="button" class="generateAllCredits">Credits for all sprites</button>
+			<button type="button" class="generateSheetCreditsTxt">Credits for this sheet</button>
+			<button type="button" class="generateSheetCreditsCsv">Credits for this sheet (CSV)</button>
+			<button type="button" class="generateAllCredits">Credits for all sprites (CSV)</button>
 		</p>
 		<p>Authors of this spritesheet:</p>
 		<textarea id="creditsText" rows="20" cols="300" readonly>Credits</textarea>

@@ -194,6 +194,18 @@ li.hasPreview canvas {
   margin: 50px 0;
 }
 
+.control-label {
+  font-weight: bold;
+}
+
+label[for="displayMode-compact"] {
+  display: inline-block;
+}
+
+#creditsText {
+  width: 100%;
+}
+
 #github {
   position: fixed;
   top: 0;
