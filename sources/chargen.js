@@ -304,13 +304,16 @@ $(document).ready(function() {
 
   function sheetCreditsToTxt() {
     let csv = parseCSV(sheetCredits.join('\n'))
+    let authors = csv.slice(1).map((row) => row[2].split(",").map((au) => au.trim())).flat()
+    authors = [...new Set(authors)]
+
     let out = csv.slice(1).map(function(row) {
       let urls = row.slice(4,9)
         .filter(function (x) { return !!x })
         .map(function (x) { return "    - " + x})
       return [`- ${row[0]}: by ${row[2]}. License(s): ${row[3]}. ${row[1]}`].concat(urls).join("\n")
     })
-    return out.join("\n\n")
+    return "Authors: " + authors.join(", ")+"\n\n"+out.join("\n\n")
   }
 
   function displayCredits() {
