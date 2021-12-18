@@ -35,11 +35,12 @@ h1 {
 
 h2 {
   margin: 10px 0px;
+
 }
 
 h3 {
-  font-size: larger;
-  margin: 8px 0px;
+  font-size: 1em;
+  margin: 4px 0px 0px 0px;
 }
 
 p {
@@ -85,15 +86,15 @@ input[type=button], input[type=reset] {
 }
 
 #customizeChar {
-  width: 30%;
+  width: 35%;
   clear: none;
   float: left;
 }
 
 #chooser {
-  /*width: 30%;*/
+  width: 100%;
+  overflow-y: auto;
   min-width: 200px;
-  padding-left: 20px;
   float: left;
 }
 
@@ -121,9 +122,11 @@ ul {
   list-style-type: none;
 }
 
+
 #chooser>ul {
-  height: 1344px;
-  overflow-y: auto;
+  border-left: solid 1px silver;
+  padding-left: 0.5em;
+  margin-left: 0.5em;
 }
 
 #chooser ul>li>span {
@@ -151,9 +154,9 @@ ul {
 
 #chooser>ul ul {
   display: none;
-  margin-left: 12px;
+  margin-left: 0.5em;
   border-left:  solid 1px silver;
-  padding-left: 20px;
+  padding-left: 0.5em;
 }
 
 #chooser ul.hasPreview {

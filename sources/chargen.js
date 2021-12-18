@@ -388,7 +388,7 @@ $(document).ready(function() {
       canvas.height = 1344;
       $(anim).removeClass('oversize')
     }
-    $("#chooser>ul").css("height", canvas.height);
+    $("#chooser").css("height", canvas.height);
 
     var itemIdx = 0;
     itemsToDraw.sort(function(lhs, rhs) {
