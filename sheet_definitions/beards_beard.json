@@ -3,8 +3,8 @@
   "type_name" : "beard",
   "layer_1" : {
     "zPos" : 20,
-    "male" : "beards/male/beard/",
-    "muscular" : "beards/male/beard/"
+    "male" : "beards/beard/male/",
+    "muscular" : "beards/beard/male/"
   },
   "variants": [
     "black",
