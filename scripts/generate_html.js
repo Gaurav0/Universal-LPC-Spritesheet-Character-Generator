@@ -1,5 +1,8 @@
+const fs = require('fs');
+const readline = require('readline');
+
 function generateListHTML(json) {
-  const definition = JSON.parse(loadFile(json));
+  const definition = JSON.parse(fs.readFileSync(`../sheet_definitions/${json}`));
   const variants = definition.variants
   const name = definition.name
   const typeName = definition.type_name
@@ -28,7 +31,7 @@ function generateListHTML(json) {
   const requiredSex = requiredSexes.join(",");
 
   const startHTML = `<li data-required="[REQUIRED_SEX]"><span class="condensed">${name}</span><ul>`.replace("[REQUIRED_SEX]", requiredSex);
-  const templateHTML = loadFile("html_templates/template-general.html");
+  const templateHTML = fs.readFileSync("../html_templates/template-general.html", 'utf8');
   const endHTML = '</ul></li>';
 
   var idx = 0;
@@ -71,12 +74,27 @@ function generateListHTML(json) {
   return startHTML + listItemsHTML + endHTML;
 }
 
-function replaceDivs() {
-  const matcher = "sheet_";
-  $("div").each(function() {
-    var id = $(this).attr('id');
-    if (!!id && id.includes(matcher)) {
-      $(`#${id}`).replaceWith(generateListHTML(`sheet_definitions/${id.replace(matcher,"")}.json`));
-    }
-  });
-}
+var lineReader = require('readline').createInterface({
+  input: fs.createReadStream('../source_index.html')
+});
+var htmlGenerated = '';
+
+lineReader.on('line', function (line) {
+  if (line.includes('div_sheet_')) {
+    const definition = line.replace("div_sheet_","");
+    const newLine = generateListHTML(`${definition}.json`.replaceAll("\t", ""))
+    htmlGenerated+=newLine+"\n";
+  } else {
+    htmlGenerated+=line+"\n";
+  }
+});
+
+lineReader.on('close', function (line) {
+  fs.writeFile('../index.html', htmlGenerated, function(err) {
+            if (err) {
+                return console.log(err);
+            } else {
+                console.log('Updated!');
+            }
+    });
+});

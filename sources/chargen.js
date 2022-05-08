@@ -35,8 +35,6 @@ $(document).ready(function() {
     showOrHideElements();
   });
 
-  replaceDivs();
-
   interpretParams();
   if (Object.keys(params).length == 0) {
     $("input[type=reset]").click();
