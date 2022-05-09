@@ -20,4 +20,4 @@ jobs:
 
       - name: Validate HTML generation
         run: |
-          node version
+          node scripts/generate_html.js
