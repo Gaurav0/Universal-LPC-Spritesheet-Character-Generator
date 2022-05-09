@@ -23,7 +23,7 @@ jobs:
       - name: Assert git diff
         run: |
           if [[ `git status --porcelain` ]]; then
-            echo "Differences found after generation of the index html."
-            echo "Hint to readme here."
+            echo "Differences found after (re)generation of the index.html"
+            echo "Please refer to the README in order to learn how to generate the index.html properly."
             exit -1
           fi
