@@ -77,7 +77,7 @@ function generateListHTML(json) {
 var lineReader = require('readline').createInterface({
   input: fs.createReadStream('source_index.html')
 });
-var htmlGenerated = '';
+var htmlGenerated = '<!-- THIS FILE IS AUTO-GENERATED. PLEASE DONT ALTER IT MANUALLY -->\n';
 
 lineReader.on('line', function (line) {
   if (line.includes('div_sheet_')) {
