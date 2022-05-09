@@ -2,7 +2,7 @@ const fs = require('fs');
 const readline = require('readline');
 
 function generateListHTML(json) {
-  const definition = JSON.parse(fs.readFileSync(`../../sheet_definitions/${json}`));
+  const definition = JSON.parse(fs.readFileSync(`../sheet_definitions/${json}`));
   const variants = definition.variants
   const name = definition.name
   const typeName = definition.type_name
@@ -31,7 +31,7 @@ function generateListHTML(json) {
   const requiredSex = requiredSexes.join(",");
 
   const startHTML = `<li data-required="[REQUIRED_SEX]"><span class="condensed">${name}</span><ul>`.replace("[REQUIRED_SEX]", requiredSex);
-  const templateHTML = fs.readFileSync("../../html_templates/template-general.html", 'utf8');
+  const templateHTML = fs.readFileSync("../html_templates/template-general.html", 'utf8');
   const endHTML = '</ul></li>';
 
   var idx = 0;
@@ -75,7 +75,7 @@ function generateListHTML(json) {
 }
 
 var lineReader = require('readline').createInterface({
-  input: fs.createReadStream('../../source_index.html')
+  input: fs.createReadStream('source_index.html')
 });
 var htmlGenerated = '';
 
@@ -90,7 +90,7 @@ lineReader.on('line', function (line) {
 });
 
 lineReader.on('close', function (line) {
-  fs.writeFile('../../index.html', htmlGenerated, function(err) {
+  fs.writeFile('../index.html', htmlGenerated, function(err) {
             if (err) {
                 return console.log(err);
             } else {
