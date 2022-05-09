@@ -31,7 +31,7 @@ function generateListHTML(json) {
   const requiredSex = requiredSexes.join(",");
 
   const startHTML = `<li data-required="[REQUIRED_SEX]"><span class="condensed">${name}</span><ul>`.replace("[REQUIRED_SEX]", requiredSex);
-  const templateHTML = fs.readFileSync("html_templates/template-general.html", 'utf8');
+  const templateHTML = fs.readFileSync("scripts/template-general.html", 'utf8');
   const endHTML = '</ul></li>';
 
   var idx = 0;

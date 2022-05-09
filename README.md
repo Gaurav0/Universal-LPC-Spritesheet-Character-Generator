@@ -1,11 +1,10 @@
-Universal LPC Spritesheet Character Generator
-=============================================
+ LPC Spritesheet Character Generator
+ =============================================
 
-Based on [Universal LPC Spritesheet](https://github.com/jrconway3/Universal-LPC-spritesheet).
+Originally based on [LPC Character generator](https://github.com/Gaurav0/Universal-LPC-Spritesheet-Character-Generator).
+This generator attempts to include all [LPC](https://lpc.opengameart.org) created art up to now.
 
 Try it [here](https://sanderfrenken.github.io/Universal-LPC-Spritesheet-Character-Generator/).
-
-The project you are looking now is an expansion on the above mentioned projects. I try to include all LPC created art up to now.
 
 The Liberated Pixel Effort is a collaborative effort from a number of different great artists who helped produce sprites for the project.
 **If you wish to use LPC sprites in your project, you will need to credit everyone who helped contribute to the LPC sprites you are using.** See below for how to do this.
@@ -17,7 +16,7 @@ All art distributed with this project (all images in the `spritesheets` subdirec
 The file `CREDITS.csv` lists the authors, license(s), and links to the original URL(s), for each image in `spritesheets`. **If you generate a sprite using this tool, you must credit all the authors**. You can do this one of two ways:
 
 - Distribute the entire `CREDITS.csv` file along with your project.
-- Based on the layers you use, copy the appropriate rows from `CREDITS.csv` into a new file and distribute that file with your project.
+- Based on the layers you use the generator outputs the used spritesheets and their credits to a textfield. You are also enabled here to download this text as csv or txt straight to your machiness.
 
 Either way, make sure this credits file is accessible from within your game or app and can be reasonably discovered by users (for instance, show the information on the "Credits" screen directly, or provide a visible link). If you don't want to *show* the entire credits file directly, should include a statement like this on your credits screen:
 
@@ -25,8 +24,6 @@ Either way, make sure this credits file is accessible from within your game or a
 > Sprites contributed as part of the Liberated Pixel Cup project from OpenGameArt.org: http://opengameart.org/content/lpc-collection
 > License: Creative Commons Attribution-ShareAlike 3.0 (CC-BY-SA 3.0) <http://creativecommons.org/licenses/by-sa/3.0/>
 > Detailed credits: [LINK TO CREDITS.CSV FILE]
-
-We are working on allowing the generator to build a customized credits file for you.
 
 ### Contributing
 
@@ -48,15 +45,22 @@ For example, you have created at this point:
 A category can exist of n-layers. For each layer, define the z-position the sheet needs to be drawn at.
 For an example of a multi-layered definition, refer here [here](https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/sheet_definitions/body_wolfman.json).
 
-Finally, in `index.html`, add your new category at the desired position by adding a `div` like this:
+Finally, in `source_index.html`, add your new category at the desired position by adding a `div_sheet_` like this:
 
-`<div id="sheet_body_robot"></div>`
+`div_sheet_body_robot`
 
-Make sure the `id` starts with `sheet_`, and match the postfix with the name of your json, in this case `body_robot`.
+Make sure the name starts with `div_sheet_`, and match the postfix with the name of your json, in this case `body_robot`.
+
+At this point, you will need to run a script that will generate the final `index.html`.
+In order to do that, run `node scripts/generate_html.js` from the root folder.
+This will generate the `index.html` from the `source_index.html`.
+
+In case you want to push your changes, be sure to run this script and never change the `index.html` manually.
+The CI will reject any PR's that contain manual changes made on the `index.html`.
 
 ### Run
 
-To run this project, just clone the repo and open ``index.html`` in your browser of choice.
+To run this project, just clone the repo and open `index.html` in your browser of choice.
 
 ### Examples
 ![alt text](https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/ex1.png)
