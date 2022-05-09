@@ -8,8 +8,8 @@ on:
     branches: [ master ]
 
 jobs:
-  eslint:
-    name: Run eslint scanning
+  validate_index_html:
+    name: Validate index html
     runs-on: ubuntu-latest
     permissions:
       contents: read
