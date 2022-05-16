@@ -62,6 +62,10 @@ The CI will reject any PR's that contain manual changes made on the `index.html`
 
 To run this project, just clone the repo and open `index.html` in your browser of choice.
 
+### z-positions
+
+TBD
+
 ### Examples
 ![alt text](https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/ex1.png)
 ![alt text](https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/ex2.png)
