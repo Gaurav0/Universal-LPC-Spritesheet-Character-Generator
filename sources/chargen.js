@@ -268,6 +268,8 @@ $(document).ready(function() {
         idToSelect = "body-Humanlike_white";
       } else if (bodyTypeName == "female") {
         idToSelect = "body-Humanlike_white";
+      } else if (bodyTypeName == "teen") {
+        idToSelect = "body-Humanlike_white";
       } else if (bodyTypeName == "child") {
         idToSelect = "body-Child_peach";
       } else if (bodyTypeName == "pregnant") {
@@ -343,6 +345,8 @@ $(document).ready(function() {
       return "male";
     } else if ($("#sex-female").prop("checked")) {
       return "female";
+    } else if ($("#sex-teen").prop("checked")) {
+      return "teen";
     } else if ($("#sex-child").prop("checked")) {
       return "child";
     } else if ($("#sex-muscular").prop("checked")) {

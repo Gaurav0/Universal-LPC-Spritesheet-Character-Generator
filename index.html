@@ -55,6 +55,10 @@
 							<label for="sex-female">Female</label>
 						</li>
 						<li class="noPreview">
+							<input type="radio" id="sex-teen" name="sex">
+							<label for="sex-teen">Teen</label>
+						</li>
+						<li class="noPreview">
 							<input type="radio" id="sex-child" name="sex">
 							<label for="sex-child">Child</label>
 						</li>
@@ -73,21 +77,7 @@
 				<div id="sheet_shadow"></div>
 
 				<!-- Bodies -->
-				<li>
-					<span class="condensed">Body</span>
-					<ul>
-						<div id="sheet_body_human"></div>
-						<div id="sheet_body_reptile"></div>
-						<div id="sheet_body_orc"></div>
-						<div id="sheet_body_boarman"></div>
-						<div id="sheet_body_wolfman"></div>
-						<div id="sheet_body_skeleton"></div>
-						<div id="sheet_body_pregnant"></div>
-						<div id="sheet_body_muscular"></div>
-						<div id="sheet_body_special"></div>
-						<div id="sheet_body_child"></div>
-					</ul>
-				</li>
+				<div id="sheet_body"></div>
 
 				<!-- Wounds -->
 				<li data-required="male,female,muscular,pregnant">
@@ -112,6 +102,28 @@
 			</ul>
 			<h3>Head</h3>
 			<ul>
+				<li>
+					<span class="condensed">Heads</span>
+					<ul>
+						<div id="sheet_heads_boarman"></div>
+						<div id="sheet_heads_boarman_child"></div>
+						<div id="sheet_heads_human_child"></div>
+						<div id="sheet_heads_human_female"></div>
+						<div id="sheet_heads_human_male"></div>
+						<div id="sheet_heads_lizard_child"></div>
+						<div id="sheet_heads_lizard_female"></div>
+						<div id="sheet_heads_lizard_male"></div>
+						<div id="sheet_heads_minotaur"></div>
+						<div id="sheet_heads_minotaur_child"></div>
+						<div id="sheet_heads_orc_child"></div>
+						<div id="sheet_heads_orc_female"></div>
+						<div id="sheet_heads_orc_male"></div>
+						<div id="sheet_heads_skeleton"></div>
+						<div id="sheet_heads_wolf_child"></div>
+						<div id="sheet_heads_wolf_female"></div>
+						<div id="sheet_heads_wolf_male"></div>
+					</ul>
+				</li>
 
 				<!-- Ears -->
 				<li>
@@ -433,13 +445,15 @@
 
 				<!-- Dress -->
 				<div id="sheet_dress"></div>
+				<div id="sheet_dress_bodice"></div>
 
 				<!-- Torso clothes -->
 				<li data-required="male,female,pregnant,child">
 					<span class="condensed">Shirts</span>
 					<ul>
 						<div id="sheet_torso_clothes_child_shirt"></div>
-						<div id="sheet_torso_clothes_male_longsleeve"></div>
+						<div id="sheet_torso_clothes_longsleeve"></div>
+						<div id="sheet_torso_clothes_longsleeve_collared"></div>
 						<div id="sheet_torso_clothes_male_longsleeve_laced"></div>
 						<div id="sheet_torso_clothes_male_sleeveless"></div>
 						<div id="sheet_torso_clothes_male_sleeveless_laced"></div>
@@ -450,7 +464,6 @@
 						<div id="sheet_torso_clothes_blouse"></div>
 						<div id="sheet_torso_clothes_blouse_longsleeve"></div>
 						<div id="sheet_torso_clothes_scoop_shirt"></div>
-						<div id="sheet_torso_clothes_female_longsleeve"></div>
 						<div id="sheet_torso_clothes_tunic"></div>
 						<div id="sheet_torso_clothes_robe"></div>
 					</ul>
@@ -458,6 +471,8 @@
 
 				<!-- Apron -->
 				<div id="sheet_torso_clothes_apron"></div>
+				<div id="sheet_torso_clothes_apron_half"></div>
+				<div id="sheet_torso_clothes_apron_full"></div>
 
 				<!-- Bandages -->
 				<div id="sheet_torso_bandages"></div>
@@ -555,6 +570,9 @@
 						<div id="sheet_legs_childpants"></div>
 						<div id="sheet_legs_childskirts"></div>
 						<div id="sheet_legs_skirts"></div>
+						<div id="sheet_legs_skirt_straight"></div>
+						<div id="sheet_legs_skirt_belle"></div>
+						<div id="sheet_legs_skirt_overskirt"></div>
 					</ul>
 				</li>
 

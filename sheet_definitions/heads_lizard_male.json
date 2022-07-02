@@ -1,0 +1,29 @@
+{
+  "name": "Lizard male",
+  "type_name": "head",
+  "match_variant_to_body": true,
+  "layer_1": {
+    "zPos": 100,
+    "male": "head/heads/lizard_male/universal/",
+    "muscular": "head/heads/lizard_male/universal/",
+    "female": "head/heads/lizard_male/universal/",
+    "pregnant": "head/heads/lizard_male/universal/",
+    "teen": "head/heads/lizard_male/universal/"
+  },
+  "variants": [
+    "light",
+    "amber",
+    "olive",
+    "taupe",
+    "bronze",
+    "brown",
+    "black",
+    "lavender",
+    "blue",
+    "zombie_green",
+    "green",
+    "pale_green",
+    "bright_green",
+    "dark_green"
+  ]
+}
