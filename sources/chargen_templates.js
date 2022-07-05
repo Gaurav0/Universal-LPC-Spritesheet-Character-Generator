@@ -15,6 +15,9 @@ function generateListHTML(json) {
   if (definition.layer_1.female !== undefined) {
     requiredSexes.push("female");
   }
+  if (definition.layer_1.teen !== undefined) {
+    requiredSexes.push("teen");
+  }
   if (definition.layer_1.child !== undefined) {
     requiredSexes.push("child");
   }
@@ -27,7 +30,7 @@ function generateListHTML(json) {
 
   const requiredSex = requiredSexes.join(",");
 
-  const startHTML = `<li data-required="[REQUIRED_SEX]"><span class="condensed">${name}</span><ul>`.replace("[REQUIRED_SEX]", requiredSex);
+  const startHTML = `<li data-required="${requiredSex}"><span class="condensed">${name}</span><ul>` //.replace("[REQUIRED_SEX]", requiredSex);
   const templateHTML = loadFile("html_templates/template-general.html");
   const endHTML = '</ul></li>';
 
