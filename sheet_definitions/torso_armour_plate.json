@@ -7,12 +7,13 @@
     "female" : "torso/armour/plate/female/"
   },
   "variants": [
-    "11",
-    "12",
-    "13",
-    "14",
-    "15",
-    "16",
-    "special"
+    "steel",
+    "iron",
+    "ceramic",
+    "brass",
+    "copper",
+    "bronze",
+    "silver",
+    "gold"
   ]
 }
