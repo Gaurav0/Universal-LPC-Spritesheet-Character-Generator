@@ -4,11 +4,7 @@
   "match_variant_to_body": true,
   "layer_1": {
     "zPos": 100,
-    "male": "head/heads/lizard_child/universal/",
-    "muscular": "head/heads/lizard_child/universal/",
-    "female": "head/heads/lizard_child/universal/",
-    "pregnant": "head/heads/lizard_child/universal/",
-    "teen": "head/heads/lizard_child/universal/"
+    "child": "head/heads/lizard_child/universal/"
   },
   "variants": [
     "light",

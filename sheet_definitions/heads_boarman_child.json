@@ -4,11 +4,7 @@
   "match_variant_to_body": true,
   "layer_1": {
     "zPos": 100,
-    "male": "head/heads/boarman_child/universal/",
-    "muscular": "head/heads/boarman_child/universal/",
-    "female": "head/heads/boarman_child/universal/",
-    "pregnant": "head/heads/boarman_child/universal/",
-    "teen": "head/heads/boarman_child/universal/"
+    "child": "head/heads/boarman_child/universal/"
   },
   "variants": [
     "fur_black",

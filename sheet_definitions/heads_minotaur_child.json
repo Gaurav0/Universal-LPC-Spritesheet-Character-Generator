@@ -4,11 +4,7 @@
   "match_variant_to_body": true,
   "layer_1": {
     "zPos": 100,
-    "male": "head/heads/minotaur_child/universal/",
-    "muscular": "head/heads/minotaur_child/universal/",
-    "female": "head/heads/minotaur_child/universal/",
-    "pregnant": "head/heads/minotaur_child/universal/",
-    "teen": "head/heads/minotaur_child/universal/"
+    "child": "head/heads/minotaur_child/universal/"
   },
   "variants": [
     "fur_black",
