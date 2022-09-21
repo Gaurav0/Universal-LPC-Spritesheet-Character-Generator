@@ -1,0 +1,35 @@
+{
+  "name" : "Overalls",
+  "type_name" : "overalls",
+  "layer_1" : {
+    "zPos" : 38,
+    "male" : "torso/aprons/overalls/male/",
+    "female" : "torso/aprons/overalls/female/"
+  },
+  "variants": [
+    "leather",
+    "black",
+    "blue",
+    "bluegray",
+    "brown",
+    "charcoal",
+    "forest",
+    "gray",
+    "green",
+    "lavender",
+    "maroon",
+    "navy",
+    "orange",
+    "pink",
+    "purple",
+    "red",
+    "rose",
+    "sky",
+    "slate",
+    "tan",
+    "teal",
+    "walnut",
+    "white",
+    "yellow"
+  ]
+}
