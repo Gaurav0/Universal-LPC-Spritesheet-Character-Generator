@@ -4,13 +4,18 @@
   "layer_1" : {
     "zPos" : 80,
     "female" : "necklace/female/",
+    "teen" : "necklace/teen/",
     "pregnant" : "necklace/female/"
   },
   "variants": [
-    "bronze",
-    "gold",
+    "steel",
     "iron",
+    "ceramic",
+    "brass",
+    "copper",
+    "bronze",
     "silver",
+    "gold",
     "pirate"
   ]
 }

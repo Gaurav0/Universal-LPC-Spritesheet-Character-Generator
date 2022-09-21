@@ -4,7 +4,7 @@
   "layer_1" : {
     "zPos" : 90,
     "male" :   "neck/cravat/male/",
-    "female" : "neck/cravat/female/"
+    "female" : "neck/cravat/male/"
   },
   "variants": [
     "black",

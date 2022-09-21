@@ -4,7 +4,10 @@
   "layer_1" : {
     "zPos" : 20,
     "male" : "legs/skirts/legion/male/",
-    "female" : "legs/skirts/legion/female/"
+    "muscular" : "legs/skirts/legion/male/",
+    "female" : "legs/skirts/legion/female/",
+    "pregnant" : "legs/skirts/legion/female/",
+    "teen" : "legs/skirts/legion/female/"
   },
   "variants": [
     "black",

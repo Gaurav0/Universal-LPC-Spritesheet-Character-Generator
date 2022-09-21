@@ -6,6 +6,7 @@
     "male" : "feet/boots/male/",
     "muscular" : "feet/boots/male/",
     "female" : "feet/boots/female/",
+    "teen" : "feet/boots/female/",
     "pregnant" : "feet/boots/female/"
   },
   "variants": [

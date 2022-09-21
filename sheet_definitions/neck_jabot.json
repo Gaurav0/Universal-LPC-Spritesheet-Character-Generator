@@ -4,7 +4,7 @@
   "layer_1" : {
     "zPos" : 90,
     "male" :   "neck/jabot/male/",
-    "female" : "neck/jabot/female/"
+    "female" : "neck/jabot/male/"
   },
   "variants": [
     "black",
