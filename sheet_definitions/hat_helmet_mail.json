@@ -3,8 +3,8 @@
   "type_name" : "bandana",
   "layer_1" : {
     "zPos" : 125,
-    "female"   : "hat/helmet/mail/female/",
-    "pregnant" : "hat/helmet/mail/female/",
+    "female"   : "hat/helmet/mail/male/",
+    "pregnant" : "hat/helmet/mail/male/",
     "male"     : "hat/helmet/mail/male/",
     "muscular" : "hat/helmet/mail/male/"
   },

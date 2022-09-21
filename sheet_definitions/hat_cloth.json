@@ -4,9 +4,9 @@
   "layer_1" : {
     "zPos" : 130,
     "male" : "hat/cloth/male/",
-    "female" : "hat/cloth/female/",
+    "female" : "hat/cloth/male/",
     "muscular" : "hat/cloth/male/",
-    "pregnant" : "hat/cloth/female/"
+    "pregnant" : "hat/cloth/male/"
   },
   "variants": [
     "bandana gray",

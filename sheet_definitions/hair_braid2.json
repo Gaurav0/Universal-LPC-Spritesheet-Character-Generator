@@ -5,8 +5,8 @@
 		"zPos" : 120,
 		"male" : "hair/braid2/male/",
 		"muscular" : "hair/braid2/male/",
-		"female" : "hair/braid2/female/",
-		"pregnant" : "hair/braid2/female/"
+		"female" : "hair/braid2/male/",
+		"pregnant" : "hair/braid2/male/"
 	},
 	"variants": [
 		"blonde",

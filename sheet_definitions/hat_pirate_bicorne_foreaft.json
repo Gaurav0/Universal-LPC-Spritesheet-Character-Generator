@@ -3,7 +3,7 @@
   "type_name" : "hat",
   "layer_1" : {
     "zPos" : 130,
-    "female" : "hat/pirate/bicorne_foreaft/female/",
+    "female" : "hat/pirate/bicorne_foreaft/male/",
     "male" :   "hat/pirate/bicorne_foreaft/male/"
   },
   "variants": [

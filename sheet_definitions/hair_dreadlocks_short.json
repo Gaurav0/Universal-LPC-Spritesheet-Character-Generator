@@ -5,8 +5,8 @@
 		"zPos" : 120,
 		"male" : "hair/dreadlocks_short/male/",
 		"muscular" : "hair/dreadlocks_short/male/",
-		"female" : "hair/dreadlocks_short/female/",
-		"pregnant" : "hair/dreadlocks_short/female/"
+		"female" : "hair/dreadlocks_short/male/",
+		"pregnant" : "hair/dreadlocks_short/male/"
 	},
 	"variants": [
 		"blonde",

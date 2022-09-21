@@ -3,7 +3,7 @@
   "type_name" : "hat",
   "layer_1" : {
     "zPos" : 130,
-    "female" : "hat/elf/female/",
+    "female" : "hat/elf/male/",
     "male" :   "hat/elf/male/"
   },
   "variants": [

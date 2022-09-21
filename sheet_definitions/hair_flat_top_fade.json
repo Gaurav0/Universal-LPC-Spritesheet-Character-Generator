@@ -5,8 +5,8 @@
 		"zPos" : 120,
 		"male" : "hair/flat_top_fade/male/",
 		"muscular" : "hair/flat_top_fade/male/",
-		"female" : "hair/flat_top_fade/female/",
-		"pregnant" : "hair/flat_top_fade/female/"
+		"female" : "hair/flat_top_fade/male/",
+		"pregnant" : "hair/flat_top_fade/male/"
 	},
 	"variants": [
 		"blonde",

@@ -3,13 +3,13 @@
   "type_name" : "hair",
   "layer_1" : {
     "zPos" : 120,
-    "female" : "hair/longest/female/",
-    "pregnant" : "hair/longest/female/"
+    "female" : "hair/longest/male/",
+    "pregnant" : "hair/longest/male/"
   },
   "layer_2" : {
     "zPos" : 8,
-    "female" : "hair/longest/female/behind/",
-    "pregnant" : "hair/longest/female/behind/"
+    "female" : "hair/longest/male/behind/",
+    "pregnant" : "hair/longest/male/behind/"
   },
   "variants": [
     "black",

@@ -3,8 +3,8 @@
   "type_name" : "accessory",
   "layer_1" : {
     "zPos" : 139,
-    "female"   : "hat/accessory/plumage_centurion/female/",
-    "pregnant" : "hat/accessory/plumage_centurion/female/",
+    "female"   : "hat/accessory/plumage_centurion/male/",
+    "pregnant" : "hat/accessory/plumage_centurion/male/",
     "male"     : "hat/accessory/plumage_centurion/male/",
     "muscular" : "hat/accessory/plumage_centurion/male/"
   },

@@ -3,8 +3,8 @@
   "type_name" : "visor",
   "layer_1" : {
     "zPos" : 132,
-    "female"   : "hat/visor/slit/female/",
-    "pregnant" : "hat/visor/slit/female/",
+    "female"   : "hat/visor/slit/male/",
+    "pregnant" : "hat/visor/slit/male/",
     "male"     : "hat/visor/slit/male/",
     "muscular" : "hat/visor/slit/male/"
   },

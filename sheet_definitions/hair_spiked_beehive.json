@@ -5,8 +5,8 @@
 		"zPos" : 120,
 		"male" : "hair/spiked_beehive/male/",
 		"muscular" : "hair/spiked_beehive/male/",
-		"female" : "hair/spiked_beehive/female/",
-		"pregnant" : "hair/spiked_beehive/female/"
+		"female" : "hair/spiked_beehive/male/",
+		"pregnant" : "hair/spiked_beehive/male/"
 	},
 	"variants": [
 		"blonde",

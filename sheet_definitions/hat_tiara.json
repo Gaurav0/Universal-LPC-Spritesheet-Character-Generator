@@ -3,8 +3,8 @@
   "type_name" : "hat",
   "layer_1" : {
     "zPos" : 130,
-    "female" : "hat/tiara/female/",
-    "pregnant" : "hat/tiara/female/"
+    "female" : "hat/tiara/male/",
+    "pregnant" : "hat/tiara/male/"
   },
   "variants": [
     "bronze",

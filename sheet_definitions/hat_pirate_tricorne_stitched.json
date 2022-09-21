@@ -3,7 +3,7 @@
   "type_name" : "hat",
   "layer_1" : {
     "zPos" : 130,
-    "female" : "hat/pirate/tricorne_stitched/female/",
+    "female" : "hat/pirate/tricorne_stitched/male/",
     "male" :   "hat/pirate/tricorne_stitched/male/"
   },
   "variants": [

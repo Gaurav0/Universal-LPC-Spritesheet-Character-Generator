@@ -5,8 +5,8 @@
 		"zPos" : 120,
 		"male" : "hair/spiked2/male/",
 		"muscular" : "hair/spiked2/male/",
-		"female" : "hair/spiked2/female/",
-		"pregnant" : "hair/spiked2/female/"
+		"female" : "hair/spiked2/male/",
+		"pregnant" : "hair/spiked2/male/"
 	},
 	"variants": [
 		"blonde",

@@ -5,8 +5,8 @@
 		"zPos" : 120,
 		"male" : "hair/pigtails/male/",
 		"muscular" : "hair/pigtails/male/",
-		"female" : "hair/pigtails/female/",
-		"pregnant" : "hair/pigtails/female/"
+		"female" : "hair/pigtails/male/",
+		"pregnant" : "hair/pigtails/male/"
 	},
 	"variants": [
 		"blonde",

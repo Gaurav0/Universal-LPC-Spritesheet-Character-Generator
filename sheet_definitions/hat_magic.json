@@ -4,9 +4,9 @@
   "layer_1" : {
     "zPos" : 130,
     "male" : "hat/magic/male/",
-    "female" : "hat/magic/female/",
+    "female" : "hat/magic/male/",
     "muscular" : "hat/magic/male/",
-    "pregnant" : "hat/magic/female/"
+    "pregnant" : "hat/magic/male/"
   },
   "variants": [
     "black",

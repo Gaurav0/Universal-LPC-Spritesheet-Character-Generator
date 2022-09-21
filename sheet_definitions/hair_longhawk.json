@@ -5,8 +5,8 @@
 		"zPos" : 120,
 		"male" : "hair/longhawk/male/",
 		"muscular" : "hair/longhawk/male/",
-		"female" : "hair/longhawk/female/",
-		"pregnant" : "hair/longhawk/female/"
+		"female" : "hair/longhawk/male/",
+		"pregnant" : "hair/longhawk/male/"
 	},
 	"variants": [
 		"blonde",

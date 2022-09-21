@@ -5,8 +5,8 @@
 		"zPos" : 120,
 		"male" : "hair/spiked_porcupine/male/",
 		"muscular" : "hair/spiked_porcupine/male/",
-		"female" : "hair/spiked_porcupine/female/",
-		"pregnant" : "hair/spiked_porcupine/female/"
+		"female" : "hair/spiked_porcupine/male/",
+		"pregnant" : "hair/spiked_porcupine/male/"
 	},
 	"variants": [
 		"blonde",

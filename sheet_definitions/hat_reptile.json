@@ -4,9 +4,9 @@
   "layer_1" : {
     "zPos" : 130,
     "male" : "hat/reptile/male/",
-    "female" : "hat/reptile/female/",
+    "female" : "hat/reptile/male/",
     "muscular" : "hat/reptile/male/",
-    "pregnant" : "hat/reptile/female/"
+    "pregnant" : "hat/reptile/male/"
   },
   "variants": [
     "bandana red",

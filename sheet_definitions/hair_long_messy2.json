@@ -5,8 +5,8 @@
 		"zPos" : 120,
 		"male" : "hair/long_messy2/male/",
 		"muscular" : "hair/long_messy2/male/",
-		"female" : "hair/long_messy2/female/",
-		"pregnant" : "hair/long_messy2/female/"
+		"female" : "hair/long_messy2/male/",
+		"pregnant" : "hair/long_messy2/male/"
 	},
 	"variants": [
 		"blonde",

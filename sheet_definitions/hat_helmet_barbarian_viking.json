@@ -3,8 +3,8 @@
   "type_name" : "hat",
   "layer_1" : {
     "zPos" : 130,
-    "female"   : "hat/helmet/barbarian_viking/female/",
-    "pregnant" : "hat/helmet/barbarian_viking/female/",
+    "female"   : "hat/helmet/barbarian_viking/male/",
+    "pregnant" : "hat/helmet/barbarian_viking/male/",
     "male"     : "hat/helmet/barbarian_viking/male/",
     "muscular" : "hat/helmet/barbarian_viking/male/"
   },

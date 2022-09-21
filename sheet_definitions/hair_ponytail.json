@@ -5,8 +5,8 @@
 		"zPos" : 120,
 		"male" : "hair/ponytail/male/",
 		"muscular" : "hair/ponytail/male/",
-		"female" : "hair/ponytail/female/",
-		"pregnant" : "hair/ponytail/female/"
+		"female" : "hair/ponytail/male/",
+		"pregnant" : "hair/ponytail/male/"
 	},
 	"variants": [
 		"blonde",

@@ -3,8 +3,8 @@
   "type_name" : "hat",
   "layer_1" : {
     "zPos" : 135,
-    "female"   : "hat/helmet/norman/female/",
-    "pregnant" : "hat/helmet/norman/female/",
+    "female"   : "hat/helmet/norman/male/",
+    "pregnant" : "hat/helmet/norman/male/",
     "male"     : "hat/helmet/norman/male/",
     "muscular" : "hat/helmet/norman/male/"
   },

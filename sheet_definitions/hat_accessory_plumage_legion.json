@@ -3,8 +3,8 @@
   "type_name" : "accessory",
   "layer_1" : {
     "zPos" : 139,
-    "female"   : "hat/accessory/plumage_legion/female/",
-    "pregnant" : "hat/accessory/plumage_legion/female/",
+    "female"   : "hat/accessory/plumage_legion/male/",
+    "pregnant" : "hat/accessory/plumage_legion/male/",
     "male"     : "hat/accessory/plumage_legion/male/",
     "muscular" : "hat/accessory/plumage_legion/male/"
   },

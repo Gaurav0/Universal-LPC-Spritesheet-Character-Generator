@@ -5,8 +5,8 @@
 		"zPos" : 120,
 		"male" : "hair/pigtails_bangs/male/",
 		"muscular" : "hair/pigtails_bangs/male/",
-		"female" : "hair/pigtails_bangs/female/",
-		"pregnant" : "hair/pigtails_bangs/female/"
+		"female" : "hair/pigtails_bangs/male/",
+		"pregnant" : "hair/pigtails_bangs/male/"
 	},
 	"variants": [
 		"blonde",

@@ -5,8 +5,8 @@
 		"zPos" : 120,
 		"male" : "hair/cornrows/male/",
 		"muscular" : "hair/cornrows/male/",
-		"female" : "hair/cornrows/female/",
-		"pregnant" : "hair/cornrows/female/"
+		"female" : "hair/cornrows/male/",
+		"pregnant" : "hair/cornrows/male/"
 	},
 	"variants": [
 		"blonde",
