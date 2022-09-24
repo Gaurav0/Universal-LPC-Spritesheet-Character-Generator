@@ -4,7 +4,9 @@
   "layer_1" : {
     "zPos" : 35,
     "female" : "torso/clothes/longsleeve/female/",
-    "male" : "torso/clothes/longsleeve/male/"
+    "male" : "torso/clothes/longsleeve/male/",
+    "teen" : "torso/clothes/longsleeve/teen/",
+    "pregnant" : "torso/clothes/longsleeve/pregnant/"
   },
   "variants": [
     "black",

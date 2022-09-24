@@ -4,8 +4,8 @@
   "layer_1" : {
     "zPos" : 20,
     "female" : "legs/skirts/straight/female/",
-    "pregnant" : "legs/skirts/straight/pregnant/",
-    "teen" : "legs/skirts/straight/teen/"
+    "pregnant" : "legs/skirts/straight/female/",
+    "teen" : "legs/skirts/straight/female/"
   },
   "variants": [
     "black",

@@ -3,7 +3,8 @@
   "type_name" : "clothes",
   "layer_1" : {
     "zPos" : 35,
-    "female" : "torso/clothes/scoop_shirt/female/"
+    "female" : "torso/clothes/scoop_shirt/female/",
+    "pregnant" : "torso/clothes/scoop_shirt/pregnant/"
   },
   "variants": [
     "black",
