@@ -4,11 +4,7 @@
   "match_variant_to_body": true,
   "layer_1": {
     "zPos": 100,
-    "male": "head/heads/wolf_child/universal/",
-    "muscular": "head/heads/wolf_child/universal/",
-    "female": "head/heads/wolf_child/universal/",
-    "pregnant": "head/heads/wolf_child/universal/",
-    "teen": "head/heads/wolf_child/universal/"
+    "child": "head/heads/wolf_child/universal/"
   },
   "variants": [
     "fur_black",

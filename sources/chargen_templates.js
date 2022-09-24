@@ -68,6 +68,7 @@ function generateListHTML(json) {
       .replaceAll("[ID_FOR]", itemIdFor)
       .replaceAll("[TYPE_NAME]", typeName)
       .replaceAll("[NAME]", itemName)
+      .replaceAll("[PARENT_NAME]", name)
       .replaceAll("[DATA_FILE]", dataFiles);
     idx += 1;
   }
