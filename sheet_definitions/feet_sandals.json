@@ -4,7 +4,7 @@
   "layer_1" : {
     "zPos" : 15,
     "female" : "feet/sandals/female/",
-    "teen" : "feet/sandals/teen/",
+    "teen" : "feet/sandals/female/",
     "pregnant" : "feet/sandals/female/",
     "male" : "feet/sandals/male/",
     "muscular" : "feet/sandals/male/"
