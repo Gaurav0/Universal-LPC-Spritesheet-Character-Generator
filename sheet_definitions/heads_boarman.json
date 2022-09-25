@@ -1,7 +1,6 @@
 {
   "name": "Boarman",
   "type_name": "head",
-  "match_variant_to_body": true,
   "layer_1": {
     "zPos": 100,
     "male": "head/heads/boarman/universal/",
@@ -18,5 +17,6 @@
     "fur_gold",
     "fur_grey",
     "fur_white"
-  ]
+  ],
+  "match_body_color": true
 }
