@@ -11,19 +11,6 @@
     "teen": "head/heads/skeleton/universal/"
   },
   "variants": [
-    "light",
-    "amber",
-    "olive",
-    "taupe",
-    "bronze",
-    "brown",
-    "black",
-    "lavender",
-    "blue",
-    "zombie_green",
-    "green",
-    "pale_green",
-    "bright_green",
-    "dark_green"
+    "skeleton"
   ]
 }
