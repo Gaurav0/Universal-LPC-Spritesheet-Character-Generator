@@ -1,0 +1,12 @@
+{
+  "name" : "Zombie",
+  "type_name" : "body",
+  "layer_1" : {
+    "zPos" : 10,
+    "male" : "body/bodies/zombie/universal/",
+    "female" : "body/bodies/zombie/universal/"
+  },
+  "variants": [
+    "zombie"
+  ]
+}
