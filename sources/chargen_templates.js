@@ -39,7 +39,10 @@ function generateListHTML(json) {
   for (variant in variants) {
     const itemName = variants[idx];
     const itemIdFor = typeName + "-" + name.replaceAll(" ", "_") +  "_" + itemName.replaceAll(" ", "_");
-
+    var matchBodyColor = false;
+    if (definition[`match_body_color`] !== undefined) {
+      matchBodyColor = true;
+    }
     var dataFiles = "";
     var sexIdx = 0;
     for (sex in requiredSexes) {
@@ -69,6 +72,8 @@ function generateListHTML(json) {
       .replaceAll("[TYPE_NAME]", typeName)
       .replaceAll("[NAME]", itemName)
       .replaceAll("[PARENT_NAME]", name)
+      .replaceAll("[MATCH_BODY_COLOR]", matchBodyColor)
+      .replaceAll("[VARIANT]", itemName)
       .replaceAll("[DATA_FILE]", dataFiles);
     idx += 1;
   }

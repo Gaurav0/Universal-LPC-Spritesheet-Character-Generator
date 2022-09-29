@@ -43,8 +43,8 @@ $(document).ready(function() {
   if (Object.keys(params).length == 0) {
     $("input[type=reset]").click();
     setParams();
+    selectDefaults();
   }
-  selectDefaults();
   redraw();
   showOrHideElements();
   nextFrame();
@@ -73,11 +73,8 @@ $(document).ready(function() {
   // set params and redraw when any radio button is clicked on
   $("input[type=radio]").each(function() {
     $(this).click(function() {
-      const id = $(this).attr('id');
       if (matchBodyColor) {
-        if (id.startsWith("body-") || id.startsWith("head-")) {
-          selectColorsToMatchBody();
-        }
+        selectColorsToMatch($(this).attr('variant'));
       }
       setParams();
       redraw();
@@ -255,26 +252,15 @@ $(document).ready(function() {
     setParams();
   }
 
-  function selectColorsToMatchBody() {
-    let bodyTypeName = getBodyTypeName();
-    let bodyColor = "";
-    let headType = "";
-
-    $("input[id^=body-]:checked").each(function() {
-      // 1. Determine the selected bodyColor (eg light)
-      bodyColor = $(this).attr('id').split("_color_")[1];
+  function selectColorsToMatch(variant) {
+    const colorToMatch = variant;
+    $("input[matchBodyColor^=true]:checked").each(function() {
+      // 1. Determine the type of asset that is selected (eg. human male)
+      const assetType = $(this).attr('parentName').replaceAll(" ", "_");
+      // 2. Determine the color of asset that needs to selected (eg. head-human_male_light)
+      const assetToSelect =  $(this).attr('name') + "-" + assetType + "_" + colorToMatch;
+      $(`#${assetToSelect}`).prop("checked", true);
     })
-
-    $("input[id^=head-]:checked").each(function() {
-      // 2. Determine the type of head that is selected (eg. human male)
-      headType = $(this).attr('parentName').replaceAll(" ", "_");
-    })
-    // 3. Determine the item that should be selected (eg. head-human_male_light)
-    const headToSelect = "head-" + headType + "_" + bodyColor;
-    // 4. Select it
-    $(`#${headToSelect}`).prop("checked", true);
-
-    // 5. Support for ears and noses as well?
     setParams();
   }
 
