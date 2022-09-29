@@ -217,7 +217,8 @@ def populate_credits(credits, submissions, check_files_in = './spritesheets/'):
 
 	# build list of files that lack some necessary attribution
 	unattributed = []
-	url_columns = ['url1','url2','url3','url4','url5']
+	url_columns = [col for col in credits.columns if 'url' in col] 
+	#[f'url{n}' for n in range(1, 21)] #['url1','url2','url3','url4','url5', 'url6', 'url7', 'url8', 'url9', 'url10', 'url11', '']
 	if 'licenses' not in credits: credits['licenses'] = ''
 
 	for i, row in credits.iterrows():

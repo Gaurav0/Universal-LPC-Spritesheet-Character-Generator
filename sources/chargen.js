@@ -10,8 +10,9 @@ $(document).ready(function() {
   var matchBodyColor = true;
   var params = jHash.val();
   var sheetCredits = [];
-  const creditColumns = "filename,notes,authors,licenses,url1,url2,url3,url4,url5,status";
+  // const creditColumns = "filename,notes,authors,licenses,url1,url2,url3,url4,url5,status";
   const parsedCredits = loadFile("CREDITS.csv").split("\n");
+  var creditColumns = parsedCredits[0];
 
   var canvas = $("#spritesheet").get(0);
   var ctx = canvas.getContext("2d");
