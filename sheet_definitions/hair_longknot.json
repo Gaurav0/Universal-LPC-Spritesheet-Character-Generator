@@ -5,8 +5,8 @@
 		"zPos" : 120,
 		"male" : "hair/longknot/male/",
 		"muscular" : "hair/longknot/male/",
-		"female" : "hair/longknot/male/",
-		"pregnant" : "hair/longknot/male/"
+		"female" : "hair/longknot/female/",
+		"pregnant" : "hair/longknot/female/"
 	},
 	"variants": [
 		"blonde",

@@ -5,8 +5,8 @@
 		"zPos" : 120,
 		"male" : "hair/twists_fade/male/",
 		"muscular" : "hair/twists_fade/male/",
-		"female" : "hair/twists_fade/male/",
-		"pregnant" : "hair/twists_fade/male/"
+		"female" : "hair/twists_fade/female/",
+		"pregnant" : "hair/twists_fade/female/"
 	},
 	"variants": [
 		"blonde",

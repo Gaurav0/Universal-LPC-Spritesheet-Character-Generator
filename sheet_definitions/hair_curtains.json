@@ -5,8 +5,8 @@
 		"zPos" : 120,
 		"male" : "hair/curtains/male/",
 		"muscular" : "hair/curtains/male/",
-		"female" : "hair/curtains/male/",
-		"pregnant" : "hair/curtains/male/"
+		"female" : "hair/curtains/female/",
+		"pregnant" : "hair/curtains/female/"
 	},
 	"variants": [
 		"blonde",

@@ -5,8 +5,8 @@
     "zPos" : 120,
     "male" : "hair/mohawk/male/",
     "muscular" : "hair/mohawk/male/",
-    "female" : "hair/mohawk/male/",
-    "pregnant" : "hair/mohawk/male/"
+    "female" : "hair/mohawk/female/",
+    "pregnant" : "hair/mohawk/female/"
   },
   "variants": [
     "black",

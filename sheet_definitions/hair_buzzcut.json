@@ -5,8 +5,8 @@
 		"zPos" : 120,
 		"male" : "hair/buzzcut/male/",
 		"muscular" : "hair/buzzcut/male/",
-		"female" : "hair/buzzcut/male/",
-		"pregnant" : "hair/buzzcut/male/"
+		"female" : "hair/buzzcut/female/",
+		"pregnant" : "hair/buzzcut/female/"
 	},
 	"variants": [
 		"blonde",

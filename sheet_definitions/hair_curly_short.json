@@ -5,8 +5,8 @@
 		"zPos" : 120,
 		"male" : "hair/curly_short/male/",
 		"muscular" : "hair/curly_short/male/",
-		"female" : "hair/curly_short/male/",
-		"pregnant" : "hair/curly_short/male/"
+		"female" : "hair/curly_short/female/",
+		"pregnant" : "hair/curly_short/female/"
 	},
 	"variants": [
 		"blonde",

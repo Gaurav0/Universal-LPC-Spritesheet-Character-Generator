@@ -5,8 +5,8 @@
 		"zPos" : 120,
 		"male" : "hair/shoulderl/male/",
 		"muscular" : "hair/shoulderl/male/",
-		"female" : "hair/shoulderl/male/",
-		"pregnant" : "hair/shoulderl/male/"
+		"female" : "hair/shoulderl/female/",
+		"pregnant" : "hair/shoulderl/female/"
 	},
 	"variants": [
 		"blonde",

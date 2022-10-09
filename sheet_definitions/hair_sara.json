@@ -5,8 +5,8 @@
 		"zPos" : 120,
 		"male" : "hair/sara/male/",
 		"muscular" : "hair/sara/male/",
-		"female" : "hair/sara/male/",
-		"pregnant" : "hair/sara/male/"
+		"female" : "hair/sara/female/",
+		"pregnant" : "hair/sara/female/"
 	},
 	"variants": [
 		"blonde",

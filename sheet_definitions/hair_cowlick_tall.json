@@ -5,8 +5,8 @@
 		"zPos" : 120,
 		"male" : "hair/cowlick_tall/male/",
 		"muscular" : "hair/cowlick_tall/male/",
-		"female" : "hair/cowlick_tall/male/",
-		"pregnant" : "hair/cowlick_tall/male/"
+		"female" : "hair/cowlick_tall/female/",
+		"pregnant" : "hair/cowlick_tall/female/"
 	},
 	"variants": [
 		"blonde",

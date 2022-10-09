@@ -5,8 +5,8 @@
     "zPos" : 120,
     "male" : "hair/xlongknot/male/",
     "muscular" : "hair/xlongknot/male/",
-    "female" : "hair/xlongknot/male/",
-    "pregnant" : "hair/xlongknot/male/"
+    "female" : "hair/xlongknot/female/",
+    "pregnant" : "hair/xlongknot/female/"
   },
   "variants": [
     "black",

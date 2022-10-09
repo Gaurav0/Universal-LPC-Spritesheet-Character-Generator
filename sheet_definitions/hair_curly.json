@@ -5,8 +5,8 @@
     "zPos" : 120,
     "male" : "hair/curly/male/",
     "muscular" : "hair/curly/male/",
-    "female" : "hair/curly/male/",
-    "pregnant" : "hair/curly/male/",
+    "female" : "hair/curly/female/",
+    "pregnant" : "hair/curly/female/",
     "child" : "hair/curly/child/"
   },
   "variants": [
