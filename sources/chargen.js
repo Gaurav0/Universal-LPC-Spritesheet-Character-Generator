@@ -72,7 +72,10 @@ $(document).ready(function() {
   $("input[type=radio]").each(function() {
     $(this).click(function() {
       if (matchBodyColor) {
-        selectColorsToMatch($(this).attr('variant'));
+        matchBodyColorForThisAsset = $(this).attr('matchBodyColor')
+        if ( matchBodyColorForThisAsset && (matchBodyColorForThisAsset != 'false') ) {
+          selectColorsToMatch($(this).attr('variant'));
+        }
       }
       setParams();
       redraw();
