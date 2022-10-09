@@ -3,7 +3,7 @@
   "type_name" : "apron",
   "layer_1" : {
     "zPos" : 40,
-    "female" : "torso/apron/apron_half/female/"
+    "female" : "torso/aprons/apron_half/female/"
   },
   "variants": [
     "black",
