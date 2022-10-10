@@ -18,6 +18,9 @@ function generateListHTML(json) {
   if (definition.layer_1.female !== undefined) {
     requiredSexes.push("female");
   }
+  if (definition.layer_1.teen !== undefined) {
+    requiredSexes.push("teen");
+  }
   if (definition.layer_1.child !== undefined) {
     requiredSexes.push("child");
   }
@@ -32,6 +35,7 @@ function generateListHTML(json) {
 
   const startHTML = `<li data-required="[REQUIRED_SEX]"><span class="condensed">${name}</span><ul>`.replace("[REQUIRED_SEX]", requiredSex);
   const templateHTML = fs.readFileSync("scripts/template-general.html", 'utf8');
+
   const endHTML = '</ul></li>';
 
   var idx = 0;
@@ -39,7 +43,10 @@ function generateListHTML(json) {
   for (variant in variants) {
     const itemName = variants[idx];
     const itemIdFor = typeName + "-" + name.replaceAll(" ", "_") +  "_" + itemName.replaceAll(" ", "_");
-
+    var matchBodyColor = false;
+    if (definition[`match_body_color`] !== undefined) {
+      matchBodyColor = true;
+    }
     var dataFiles = "";
     var sexIdx = 0;
     for (sex in requiredSexes) {
@@ -68,6 +75,9 @@ function generateListHTML(json) {
       .replaceAll("[ID_FOR]", itemIdFor)
       .replaceAll("[TYPE_NAME]", typeName)
       .replaceAll("[NAME]", itemName)
+      .replaceAll("[PARENT_NAME]", name)
+      .replaceAll("[MATCH_BODY_COLOR]", matchBodyColor)
+      .replaceAll("[VARIANT]", itemName)
       .replaceAll("[DATA_FILE]", dataFiles);
     idx += 1;
   }

@@ -1,17 +1,20 @@
 {
-  "name": "Armour",
-  "type_name": "legs",
-  "layer_1": {
-    "zPos": 20,
-    "male": "legs/armour/male/",
-    "female": "legs/armour/female/"
+  "name" : "Armour",
+  "type_name" : "legs",
+  "layer_1" : {
+    "zPos" : 20,
+    "male" : "legs/armour/plate/male/",
+    "female" : "legs/armour/plate/female/",
+    "teen" : "legs/armour/plate/teen/"
   },
   "variants": [
-    "7",
-    "8",
-    "9",
-    "10",
-    "11",
-    "12"
+    "steel",
+    "iron",
+    "ceramic",
+    "brass",
+    "copper",
+    "bronze",
+    "silver",
+    "gold"
   ]
 }

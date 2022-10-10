@@ -7,10 +7,12 @@ $.expr[':'].icontains = function(a, i, m) {
 
 $(document).ready(function() {
 
+  var matchBodyColor = true;
   var params = jHash.val();
   var sheetCredits = [];
-  const creditColumns = "filename,notes,authors,licenses,url1,url2,url3,url4,url5,status";
+  // const creditColumns = "filename,notes,authors,licenses,url1,url2,url3,url4,url5,status";
   const parsedCredits = loadFile("CREDITS.csv").split("\n");
+  var creditColumns = parsedCredits[0];
 
   var canvas = $("#spritesheet").get(0);
   var ctx = canvas.getContext("2d");
@@ -39,8 +41,8 @@ $(document).ready(function() {
   if (Object.keys(params).length == 0) {
     $("input[type=reset]").click();
     setParams();
+    selectDefaults();
   }
-  selectPossibleBodyType();
   redraw();
   showOrHideElements();
   nextFrame();
@@ -69,9 +71,11 @@ $(document).ready(function() {
   // set params and redraw when any radio button is clicked on
   $("input[type=radio]").each(function() {
     $(this).click(function() {
-      const id = $(this).attr('id');
-      if (id.startsWith("sex-")) {
-        selectPossibleBodyType();
+      if (matchBodyColor) {
+        matchBodyColorForThisAsset = $(this).attr('matchBodyColor')
+        if ( matchBodyColorForThisAsset && (matchBodyColorForThisAsset != 'false') ) {
+          selectColorsToMatch($(this).attr('variant'));
+        }
       }
       setParams();
       redraw();
@@ -119,6 +123,10 @@ $(document).ready(function() {
     $('#chooser').toggleClass('compact')
   })
 
+  $('#match_body-color').click(function() {
+    matchBodyColor = $(this).is(":checked");
+  })
+
   $('#scroll-to-credits').click(function(e) {
     $('#credits')[0].scrollIntoView()
     e.preventDefault();
@@ -146,7 +154,7 @@ $(document).ready(function() {
       params = {};
       jHash.val(params);
       interpretParams();
-      selectPossibleBodyType();
+      selectDefaults();
       redraw();
       showOrHideElements();
     }, 0, false);
@@ -239,42 +247,21 @@ $(document).ready(function() {
     $(this).toggleClass('zoomed')
   })
 
-  function selectPossibleBodyType() {
-    // if a body variant is selected which does not exist for the currently-selected
-    // getBodyTypeName, choose a default body variant for that bodyTypeName
+  function selectDefaults() {
+    $(`#${"body-Body_color_light"}`).prop("checked", true);
+    $(`#${"head-Human_male_light"}`).prop("checked", true);
+    setParams();
+  }
 
-    var bodyTypeName = getBodyTypeName();
-    var bodyVariantNeedsReset = false;
-    var bodyVariantIsSelected = false;
-
-    $("input[id^=body-]:checked").each(function() {
-      var parent = $(this).closest("li[data-required]");
-      if (parent.data("required")) {
-        var requiredTypes = parent.data("required").split(",");
-        if (!requiredTypes.includes(bodyTypeName)) {
-          $(this).prop("checked", false);
-          bodyVariantNeedsReset = true;
-        } else {
-          bodyVariantIsSelected = true;
-        }
-      }
+  function selectColorsToMatch(variant) {
+    const colorToMatch = variant;
+    $("input[matchBodyColor^=true]:checked").each(function() {
+      // 1. Determine the type of asset that is selected (eg. human male)
+      const assetType = $(this).attr('parentName').replaceAll(" ", "_");
+      // 2. Determine the color of asset that needs to selected (eg. head-human_male_light)
+      const assetToSelect =  $(this).attr('name') + "-" + assetType + "_" + colorToMatch;
+      $(`#${assetToSelect}`).prop("checked", true);
     })
-
-    if(bodyVariantNeedsReset || !bodyVariantIsSelected) {
-      let idToSelect = "";
-      if (bodyTypeName == "male") {
-        idToSelect = "body-Humanlike_white";
-      } else if (bodyTypeName == "female") {
-        idToSelect = "body-Humanlike_white";
-      } else if (bodyTypeName == "child") {
-        idToSelect = "body-Child_peach";
-      } else if (bodyTypeName == "pregnant") {
-        idToSelect = "body-Pregnant_coffee";
-      } else if (bodyTypeName == "muscular") {
-        idToSelect = "body-Muscular_muscular_white_v2";
-      }
-      $(`#${idToSelect}`).prop("checked", true);
-    }
     setParams();
   }
 
@@ -341,6 +328,8 @@ $(document).ready(function() {
       return "male";
     } else if ($("#sex-female").prop("checked")) {
       return "female";
+    } else if ($("#sex-teen").prop("checked")) {
+      return "teen";
     } else if ($("#sex-child").prop("checked")) {
       return "child";
     } else if ($("#sex-muscular").prop("checked")) {

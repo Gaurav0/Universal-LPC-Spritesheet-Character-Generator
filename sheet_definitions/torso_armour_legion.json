@@ -7,8 +7,13 @@
     "female": "torso/armour/legion/female/"
   },
   "variants": [
-    "bronze",
     "steel",
+    "iron",
+    "ceramic",
+    "brass",
+    "copper",
+    "bronze",
+    "silver",
     "gold"
   ]
 }

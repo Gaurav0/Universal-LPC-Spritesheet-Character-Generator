@@ -53,6 +53,10 @@
 							<label for="sex-female">Female</label>
 						</li>
 						<li class="noPreview">
+							<input type="radio" id="sex-teen" name="sex">
+							<label for="sex-teen">Teen</label>
+						</li>
+						<li class="noPreview">
 							<input type="radio" id="sex-child" name="sex">
 							<label for="sex-child">Child</label>
 						</li>
@@ -71,24 +75,17 @@
 				div_sheet_shadow
 
 				<!-- Bodies -->
+				div_sheet_body
 				<li>
-					<span class="condensed">Body</span>
+					<span class="condensed">Special</span>
 					<ul>
-						div_sheet_body_human
-						div_sheet_body_reptile
-						div_sheet_body_orc
-						div_sheet_body_boarman
-						div_sheet_body_wolfman
+						div_sheet_body_zombie
 						div_sheet_body_skeleton
-						div_sheet_body_pregnant
-						div_sheet_body_muscular
-						div_sheet_body_special
-						div_sheet_body_child
 					</ul>
 				</li>
 
 				<!-- Wounds -->
-				<li data-required="male,female,muscular,pregnant">
+				<li data-required="">
 					<span class="condensed">Wounds</span>
 					<ul>
 						div_sheet_wound_arm
@@ -107,9 +104,43 @@
 					</ul>
 				</li>
 
+				<li>
+					<span class="condensed">Lizard</span>
+					<ul>
+						div_sheet_wings_lizard
+						div_sheet_tail_lizard
+					</ul>
+				</li>
+
 			</ul>
 			<h3>Head</h3>
 			<ul>
+				<!-- Heads -->
+				<li>
+					<span class="condensed">Heads</span>
+					<ul>
+						div_sheet_heads_human_child
+						div_sheet_heads_human_female
+						div_sheet_heads_human_male
+						div_sheet_heads_human_female_elderly
+						div_sheet_heads_human_male_elderly
+						div_sheet_heads_boarman
+						div_sheet_heads_boarman_child
+						div_sheet_heads_lizard_child
+						div_sheet_heads_lizard_female
+						div_sheet_heads_lizard_male
+						div_sheet_heads_minotaur
+						div_sheet_heads_minotaur_child
+						div_sheet_heads_orc_child
+						div_sheet_heads_orc_female
+						div_sheet_heads_orc_male
+						div_sheet_heads_wolf_child
+						div_sheet_heads_wolf_female
+						div_sheet_heads_wolf_male
+						div_sheet_heads_skeleton
+						div_sheet_heads_zombie
+					</ul>
+				</li>
 
 				<!-- Ears -->
 				<li>
@@ -117,6 +148,7 @@
 					<ul>
 						div_sheet_head_ears_big
 						div_sheet_head_ears_elven
+						div_sheet_head_ears_long
 					</ul>
 				</li>
 
@@ -127,6 +159,7 @@
 						div_sheet_head_nose_big
 						div_sheet_head_nose_button
 						div_sheet_head_nose_straight
+						div_sheet_head_nose_elderly
 					</ul>
 				</li>
 
@@ -244,6 +277,16 @@
 							div_sheet_hair_long_band
 							div_sheet_hair_xlong
 						</ul></li>
+					</ul>
+				</li>
+
+				<li>
+					<span class="condensed">Appendages</span>
+					<ul>
+						div_sheet_head_horns_backwards
+						div_sheet_head_horns_curled
+						div_sheet_head_fins_fin
+						div_sheet_head_fins_fin_short
 					</ul>
 				</li>
 
@@ -405,7 +448,7 @@
 				</li>
 
 				<!-- Arms -->
-				div_sheet_arms
+				div_sheet_arms_armour
 
 				<!-- Bauldron -->
 				div_sheet_bauldron
@@ -414,7 +457,7 @@
 				<li data-required="male,female,pregnant,muscular">
 					<span class="condensed">Wrists</span>
 					<ul>
-						div_sheet_bracers
+						div_sheet_arms_bracers
 						div_sheet_wrists_cuffs
 						div_sheet_wrists_cuffs_lace
 					</ul>
@@ -429,15 +472,25 @@
 			<ul>
 
 				<!-- Dress -->
-				div_sheet_dress
+				<li data-required="female,pregnant">
+					<span class="condensed">Dresses</span>
+					<ul>
+						div_sheet_dress
+						div_sheet_dress_sash
+						div_sheet_dress_slit
+						div_sheet_dress_bodice
+					</ul>
+				</li>
 
 				<!-- Torso clothes -->
 				<li data-required="male,female,pregnant,child">
 					<span class="condensed">Shirts</span>
 					<ul>
 						div_sheet_torso_clothes_child_shirt
-						div_sheet_torso_clothes_male_longsleeve
+						div_sheet_torso_clothes_longsleeve
+						div_sheet_torso_clothes_longsleeve_collared
 						div_sheet_torso_clothes_male_longsleeve_laced
+						div_sheet_torso_clothes_shortsleeve
 						div_sheet_torso_clothes_male_sleeveless
 						div_sheet_torso_clothes_male_sleeveless_laced
 						div_sheet_torso_clothes_male_sleeveless_striped
@@ -447,14 +500,21 @@
 						div_sheet_torso_clothes_blouse
 						div_sheet_torso_clothes_blouse_longsleeve
 						div_sheet_torso_clothes_scoop_shirt
-						div_sheet_torso_clothes_female_longsleeve
 						div_sheet_torso_clothes_tunic
 						div_sheet_torso_clothes_robe
 					</ul>
 				</li>
 
 				<!-- Apron -->
-				div_sheet_torso_clothes_apron
+				<li>
+					<span class="condensed">Aprons</span>
+					<ul>
+						div_sheet_torso_aprons_overalls
+						div_sheet_torso_aprons_apron
+						div_sheet_torso_aprons_apron_half
+						div_sheet_torso_aprons_apron_full
+					</ul>
+				</li>
 
 				<!-- Bandages -->
 				div_sheet_torso_bandages
@@ -469,8 +529,7 @@
 						div_sheet_torso_jacket_collared
 						div_sheet_torso_jacket_iverness
 						div_sheet_torso_jacket_trench
-						div_sheet_torso_jacket_male_tabard
-						div_sheet_torso_jacket_female_tabard
+						div_sheet_torso_jacket_tabard
 						div_sheet_torso_jacket_frock
 						div_sheet_torso_jacket_santa
 						<li>
@@ -510,8 +569,8 @@
 					<span class="condensed">Cape</span>
 					<ul>
 						div_sheet_cape_solid
-						div_sheet_cape_trimmed
 						div_sheet_cape_tattered
+						div_sheet_cape_trim
 					</ul>
 				</li>
 
@@ -551,7 +610,12 @@
 						div_sheet_legs_pregnantpants
 						div_sheet_legs_childpants
 						div_sheet_legs_childskirts
-						div_sheet_legs_skirts
+						div_sheet_legs_skirts_plain
+						div_sheet_legs_skirts_slit
+						div_sheet_legs_skirts_legion
+						div_sheet_legs_skirt_straight
+						div_sheet_legs_skirt_belle
+						div_sheet_legs_skirt_overskirt
 					</ul>
 				</li>
 
@@ -569,6 +633,7 @@
 						div_sheet_feet_shoes
 						div_sheet_feet_hoofs
 						div_sheet_feet_sandals
+						div_sheet_feet_ghillies
 						div_sheet_feet_sara
 					</ul>
 				</li>
