@@ -73,7 +73,7 @@ $(document).ready(function() {
     $(this).click(function() {
       if (matchBodyColor) {
         matchBodyColorForThisAsset = $(this).attr('matchBodyColor')
-        if ( matchBodyColorForThisAsset && (matchBodyColorForThisAsset != 'false') ) {
+        if (matchBodyColorForThisAsset && matchBodyColorForThisAsset != 'false') {
           selectColorsToMatch($(this).attr('variant'));
         }
       }
