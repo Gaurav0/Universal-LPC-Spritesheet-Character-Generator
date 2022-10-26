@@ -30,7 +30,8 @@
     "fur_copper",
     "fur_gold",
     "fur_grey",
-    "fur_white"
+    "fur_white",
+    "zombie"
   ],
   "match_body_color": true
 }

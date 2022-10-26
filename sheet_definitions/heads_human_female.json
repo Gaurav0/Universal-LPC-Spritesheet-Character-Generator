@@ -23,7 +23,8 @@
     "green",
     "pale_green",
     "bright_green",
-    "dark_green"
+    "dark_green",
+    "zombie"
   ],
   "match_body_color": true
 }
