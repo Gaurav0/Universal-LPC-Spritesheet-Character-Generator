@@ -3,8 +3,8 @@
   "type_name": "cape",
   "layer_1": {
     "zPos": 85,
-    "male": "cape/solid/male/",
-    "muscular": "cape/solid/male/",
+    "male": "cape/solid/female/",
+    "muscular": "cape/solid/female/",
     "female": "cape/solid/female/",
     "pregnant": "cape/solid/female/"
   },
