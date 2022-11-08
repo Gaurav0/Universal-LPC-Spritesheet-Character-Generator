@@ -2,7 +2,7 @@
   "name": "Winter",
   "type_name": "beard",
   "layer_1": {
-    "zPos": 60,
+    "zPos": 110,
     "male": "beards/winter/male/",
     "muscular": "beards/winter/male/"
   },

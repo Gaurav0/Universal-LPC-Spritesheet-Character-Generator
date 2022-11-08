@@ -2,7 +2,7 @@
   "name": "Bandages",
   "type_name": "bandages",
   "layer_1": {
-    "zPos": 45,
+    "zPos": 110,
     "male": "torso/bandage/male/",
     "female": "torso/bandage/female/"
   },
