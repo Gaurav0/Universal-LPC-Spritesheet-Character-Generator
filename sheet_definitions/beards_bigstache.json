@@ -2,7 +2,7 @@
   "name": "Bigstache",
   "type_name": "beard",
   "layer_1": {
-    "zPos": 20,
+    "zPos": 110,
     "male": "beards/bigstache/male/",
     "muscular": "beards/bigstache/male/"
   },

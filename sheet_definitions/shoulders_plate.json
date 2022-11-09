@@ -2,7 +2,7 @@
   "name": "Plate",
   "type_name": "shoulders",
   "layer_1": {
-    "zPos": 60,
+    "zPos": 65,
     "male": "shoulders/plate/male/",
     "female": "shoulders/plate/female/",
     "muscular": "shoulders/plate/male/",

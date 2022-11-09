@@ -2,7 +2,7 @@
   "name": "Mustache",
   "type_name": "beard",
   "layer_1": {
-    "zPos": 20,
+    "zPos": 110,
     "male": "beards/mustache/male/",
     "muscular": "beards/mustache/male/"
   },
