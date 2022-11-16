@@ -234,12 +234,15 @@ $(document).ready(function() {
         return;
       }
     }
-    if ($selectedAnim.val() == "smash")  {
-      animationItems = [5, 4, 1, 0];
-    } else {
-      for (var i = 1; i < animRowFrames; ++i) {
-        animationItems.push(i);
+    const animRowFramesCustom = $selectedAnim.data("cycle-custom");
+    if (animRowFramesCustom !== undefined) {
+      animationItems = animRowFramesCustom.split('-').map(Number);
+      if (animationItems.length > 0) {
+        return;
       }
+    }
+    for (var i = 1; i < animRowFrames; ++i) {
+      animationItems.push(i);
     }
   });
 
@@ -407,18 +410,31 @@ $(document).ready(function() {
       const fileName = itemsToDraw[itemIdx].fileName;
       const img = getImage(fileName);
       const oversize = itemsToDraw[itemIdx].oversize;
+      var singleFrameCanvas=document.createElement("canvas");
+      singleFrameCanvas.width=64;
+      singleFrameCanvas.height=64;
+      var singleFrameContext=singleFrameCanvas.getContext("2d");
       if (oversize !== undefined) {
         if (oversize == "thrust") {
           for (var i = 0; i < 8; ++i)
           for (var j = 0; j < 4; ++j) {
-            var imgData = ctx.getImageData(64 * i, 256 + 64 * j, 64, 64);
-            ctx.putImageData(imgData, 64 + 192 * i, 1408 + 192 * j);
+            var imgDataSingleFrame = ctx.getImageData(64 * i, 256 + 64 * j, 64, 64);
+            singleFrameContext.putImageData(imgDataSingleFrame, 0, 0);
+            ctx.drawImage(singleFrameCanvas, 64 + 192 * i, 1408 + 192 * j);
           }
         } else if (oversize == "slash") {
           for (var i = 0; i < 6; ++i)
           for (var j = 0; j < 4; ++j) {
-            var imgData = ctx.getImageData(64 * i, 768 + 64 * j, 64, 64);
-            ctx.putImageData(imgData, 64 + 192 * i, 1408 + 192 * j);
+            var imgDataSingleFrame = ctx.getImageData(64 * i, 768 + 64 * j, 64, 64);
+            singleFrameContext.putImageData(imgDataSingleFrame, 0, 0);
+            ctx.drawImage(singleFrameCanvas, 64 + 192 * i, 1408 + 192 * j);
+          }
+        } else if (oversize == "tools_smash") {
+          for (var i = 0; i < 6; ++i)
+          for (var j = 0; j < 4; ++j) {
+            var imgDataSingleFrame = ctx.getImageData(64 * i, 768 + 64 * j, 64, 64);
+            singleFrameContext.putImageData(imgDataSingleFrame, 0, 0);
+            ctx.drawImage(singleFrameCanvas, 32 + 128 * i, 1408 + 128 * j-32)
           }
         }
         ctx.drawImage(img, 0, 1344);
@@ -577,12 +593,15 @@ $(document).ready(function() {
   };
 
   function nextFrame() {
+    const animationType = $("#whichAnim>:selected").text();
     currentAnimationItemIndex = (currentAnimationItemIndex + 1) % animationItems.length;
     animCtx.clearRect(0, 0, anim.width, anim.height);
     const currentFrame = animationItems[currentAnimationItemIndex];
     for (var i = 0; i < animRowNum; ++i) {
-      if (oversize && (animRowStart === 4 || animRowStart === 12)) {
+      if (oversize && (animationType === "Slash" || animationType === "Thrust")) {
         animCtx.drawImage(canvas, currentFrame * 192, 1344 + (i*192), 192, 192, i * 192, 0, 192, 192);
+      } else if (animationType.startsWith("Tool")) {
+        animCtx.drawImage(canvas, currentFrame * 128, 1344 + (i*128), 128, 128, i * 128, 0, 128, 128);
       } else {
         animCtx.drawImage(canvas, currentFrame * 64, (animRowStart + i) * 64, 64, 64, i * 64, 0, 64, 64);
       }
