@@ -660,6 +660,14 @@
 				</li>
 
 			</ul>
+
+			<!-- TOOLS -->
+			<h3>Tools</h3>
+			<ul>
+				div_sheet_tool_smash
+				div_sheet_tool_thrust
+			</ul>
+
 			<h3>Weapons</h3>
 			<ul>
 				<!-- WEAPONS -->
@@ -700,7 +708,8 @@
 				<option value="slash" data-row="12" data-num="4" data-cycle="6">Slash</option>
 				<option value="shoot" data-row="16" data-num="4" data-cycle="13">Shoot</option>
 				<option value="hurt" data-row="20" data-num="1" data-cycle="6">Hurt</option>
-				<option value="smash" data-row="12" data-num="4" data-cycle="4">Smash</option>
+				<option value="smash" data-row="12" data-num="4" data-cycle="4" data-cycle-custom="5-4-3-1-0">Tool</option>
+				<option value="smash-hammer" data-row="12" data-num="4" data-cycle="4" data-cycle-custom="5-4-1-0">Tool (Hammer)</option>
 			</select>
 			<canvas id="previewAnimations" width="1024" height="192"></canvas>
 		</div>
@@ -731,5 +740,6 @@
 			<input id="customFrames" type="text" name="customFrames">custom frames<br>
 		</p>
 	</div>
+	<imgPrev></imgPrev>
 </body>
 </html>
