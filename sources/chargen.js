@@ -229,7 +229,7 @@ $(document).ready(function() {
 
     currentAnimationItemIndex = 0;
     if (activeCustomAnimation !== undefined && animationType === 'Other') {
-      for (var i = 0; i < activeCustomAnimation.frames[0].length; ++i) {
+      for (var i = 0; i < activeCustomAnimation.frames[0].length-1; ++i) {
         animationItems.push(i);
       }
       return
@@ -407,6 +407,8 @@ $(document).ready(function() {
           customAnimationDefinition = overSizeThrust;
         } else if (custom_animation == "tool_smash") {
           customAnimationDefinition = toolsSmash;
+        } else if (custom_animation == "tool_rod") {
+          customAnimationDefinition = toolRod;
         }
         activeCustomAnimation = customAnimationDefinition;
         const frameSize = customAnimationDefinition.frameSize;
