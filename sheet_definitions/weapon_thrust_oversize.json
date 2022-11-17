@@ -9,7 +9,7 @@
     "pregnant": "weapon/thrust_oversize/female/universal/"
   },
   "layer_2": {
-    "oversize": "thrust",
+    "custom_animation": "thrust_oversize",
     "zPos": 150,
     "male": "weapon/thrust_oversize/male/",
     "muscular": "weapon/thrust_oversize/male/",

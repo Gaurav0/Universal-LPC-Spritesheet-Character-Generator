@@ -9,7 +9,7 @@
     "pregnant": "weapon/slash_oversize/female/universal/"
   },
   "layer_2": {
-    "oversize": "slash",
+    "custom_animation": "slash_oversize",
     "zPos": 150,
     "male": "weapon/slash_oversize/male/",
     "muscular": "weapon/slash_oversize/male/",

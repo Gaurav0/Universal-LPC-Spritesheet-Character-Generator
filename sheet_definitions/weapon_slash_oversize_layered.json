@@ -17,7 +17,7 @@
   },
   "layer_3": {
     "zPos": 150,
-    "oversize": "slash",
+    "custom_animation": "slash_oversize",
     "male": "weapon/slash_oversize_layered/all/",
     "muscular": "weapon/slash_oversize_layered/all/",
     "female": "weapon/slash_oversize_layered/all/",

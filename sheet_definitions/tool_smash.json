@@ -3,7 +3,7 @@
   "type_name" : "weapon",
   "layer_1": {
     "zPos": 9,
-    "oversize": "tools_smash",
+    "custom_animation": "tool_smash",
     "male": "tools/smash/background/",
     "muscular": "tools/smash/background/",
     "female": "tools/smash/background/",
@@ -11,7 +11,7 @@
   },
   "layer_2": {
     "zPos": 150,
-    "oversize": "tools_smash",
+    "custom_animation": "tool_smash",
     "male": "tools/smash/foreground/",
     "muscular": "tools/smash/foreground/",
     "female": "tools/smash/foreground/",

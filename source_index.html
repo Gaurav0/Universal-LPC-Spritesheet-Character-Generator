@@ -9,6 +9,7 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.string/2.3.3/underscore.string.min.js"></script>
 	<script type="text/javascript" src="jhash-2.1.min.js"></script>
+	<script type="text/javascript" src="sources/custom-animations.js"></script>
 	<script type="text/javascript" src="sources/chargen.js"></script>
 </head>
 <body>
@@ -708,8 +709,7 @@
 				<option value="slash" data-row="12" data-num="4" data-cycle="6">Slash</option>
 				<option value="shoot" data-row="16" data-num="4" data-cycle="13">Shoot</option>
 				<option value="hurt" data-row="20" data-num="1" data-cycle="6">Hurt</option>
-				<option value="smash" data-row="12" data-num="4" data-cycle="4" data-cycle-custom="5-4-3-1-0">Tool</option>
-				<option value="smash-hammer" data-row="12" data-num="4" data-cycle="4" data-cycle-custom="5-4-1-0">Tool (Hammer)</option>
+				<option value="other" data-row="0" data-num="4" data-cycle="4">Other</option>
 			</select>
 			<canvas id="previewAnimations" width="1024" height="192"></canvas>
 		</div>
@@ -734,10 +734,6 @@
 			<strong>Custom file: </strong><span>Draw local file with custom z-position:</span>
 			<input type="file" id="previewFile">
 			<label for="ZPOS">Z-position:</label><input id="ZPOS" type="text" name="ZPOS">
-		</p>
-		<p>
-			<strong>Custom animation: </strong><span>Define custom sequence of frames for the selected animation. First frame is 0, e.g.: '3, 5, 3, 0'.</span>
-			<input id="customFrames" type="text" name="customFrames">custom frames<br>
 		</p>
 	</div>
 	<imgPrev></imgPrev>
