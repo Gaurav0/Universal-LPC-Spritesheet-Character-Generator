@@ -10,24 +10,23 @@ $(document).ready(function() {
   var matchBodyColor = true;
   var params = jHash.val();
   var sheetCredits = [];
-  // const creditColumns = "filename,notes,authors,licenses,url1,url2,url3,url4,url5,status";
   const parsedCredits = loadFile("CREDITS.csv").split("\n");
   var creditColumns = parsedCredits[0];
 
   var canvas = $("#spritesheet").get(0);
   var ctx = canvas.getContext("2d");
   var images = {};
+  const universalFrameSize = 64;
+  const universalSheetHeight = 1344;
 
   // Preview Animation
-  var oversize = false;
   var anim = $("#previewAnimations").get(0);
   var animCtx = anim.getContext("2d");
-  var $selectedAnim = $("#whichAnim>:selected");
-  var animRowStart = parseInt($selectedAnim.data("row"));
-  var animRowNum = parseInt($selectedAnim.data("num"));
-  var animRowFrames = parseInt($selectedAnim.data("cycle"));
-  var currentAnimationItemIndex = 0;
   var animationItems = [1, 2, 3, 4, 5, 6, 7, 8]; // default for walk
+  var animRowStart = 8; // default for walk
+  var animRowNum = 4; // default for walk
+  var currentAnimationItemIndex = 0;
+  var activeCustomAnimation = undefined;
 
   // on hash (url) change event, interpret and redraw
   jHash.change(function() {
@@ -222,24 +221,18 @@ $(document).ready(function() {
 
   $("#whichAnim").change(function() {
     animationItems = [];
-    $selectedAnim = $("#whichAnim>:selected");
-    animRowStart = parseInt($selectedAnim.data("row"));
-    animRowNum = parseInt($selectedAnim.data("num"));
-    animRowFrames = parseInt($selectedAnim.data("cycle"));
+    const selectedAnim = $("#whichAnim>:selected");
+    const animationType = $("#whichAnim>:selected").text()
+    const animRowFrames = parseInt(selectedAnim.data("cycle"));
+    animRowStart = parseInt(selectedAnim.data("row"));
+    animRowNum = parseInt(selectedAnim.data("num"));
+
     currentAnimationItemIndex = 0;
-    const customFrames = document.getElementById("customFrames").value || "";
-    if (customFrames !== "") {
-      animationItems = customFrames.split(',').map(Number);
-      if (animationItems.length > 0) {
-        return;
+    if (activeCustomAnimation !== undefined && animationType === 'Other') {
+      for (var i = 0; i < activeCustomAnimation.frames[0].length; ++i) {
+        animationItems.push(i);
       }
-    }
-    const animRowFramesCustom = $selectedAnim.data("cycle-custom");
-    if (animRowFramesCustom !== undefined) {
-      animationItems = animRowFramesCustom.split('-').map(Number);
-      if (animationItems.length > 0) {
-        return;
-      }
+      return
     }
     for (var i = 1; i < animRowFrames; ++i) {
       animationItems.push(i);
@@ -353,13 +346,13 @@ $(document).ready(function() {
       for (jdx =1; jdx < 10; jdx++) {
         if ($(this).data(`layer_${jdx}_${bodyTypeName}`)) {
           const zPos = $(this).data(`layer_${jdx}_zpos`);
-          const oversize = $(this).data(`layer_${jdx}_oversize`);
+          const custom_animation = $(this).data(`layer_${jdx}_custom_animation`);
           const fileName = $(this).data(`layer_${jdx}_${bodyTypeName}`);
           if (fileName !== "") {
             const itemToDraw = {};
             itemToDraw.fileName = fileName;
             itemToDraw.zPos = zPos;
-            itemToDraw.oversize = oversize;
+            itemToDraw.custom_animation = custom_animation;
             addCreditFor(fileName);
             itemsToDraw.push(itemToDraw);
           }
@@ -378,27 +371,20 @@ $(document).ready(function() {
   }
 
   function drawItems(itemsToDraw) {
+    activeCustomAnimation = undefined;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    oversize = false;
-    var oversizeIdx = 0;
-    for (item in itemsToDraw) {
-      if (itemsToDraw[oversizeIdx].oversize !== undefined) {
-        oversize = true;
+    canvas.width = 832;
+    canvas.height = universalSheetHeight;
+    $(anim).removeClass('oversize')
+    for (var i = 0; i < itemsToDraw.length; ++i) {
+      if (itemsToDraw[i].custom_animation !== undefined) {
+        canvas.width = 1536;
+        canvas.height = universalSheetHeight + 768;
+        $(anim).addClass('oversize')
         break;
       }
-      oversizeIdx+=1;
     }
 
-    if (oversize) {
-      canvas.width = 1536;
-      canvas.height = 1344 + 768;
-      $(anim).addClass('oversize')
-    } else {
-      canvas.width = 832;
-      canvas.height = 1344;
-      $(anim).removeClass('oversize')
-    }
     $("#chooser").css("height", canvas.height);
 
     var itemIdx = 0;
@@ -409,35 +395,34 @@ $(document).ready(function() {
     for (item in itemsToDraw) {
       const fileName = itemsToDraw[itemIdx].fileName;
       const img = getImage(fileName);
-      const oversize = itemsToDraw[itemIdx].oversize;
-      var singleFrameCanvas=document.createElement("canvas");
-      singleFrameCanvas.width=64;
-      singleFrameCanvas.height=64;
-      var singleFrameContext=singleFrameCanvas.getContext("2d");
-      if (oversize !== undefined) {
-        if (oversize == "thrust") {
-          for (var i = 0; i < 8; ++i)
-          for (var j = 0; j < 4; ++j) {
-            var imgDataSingleFrame = ctx.getImageData(64 * i, 256 + 64 * j, 64, 64);
+      const custom_animation = itemsToDraw[itemIdx].custom_animation;
+
+      if (custom_animation !== undefined) {
+        var singleFrameCanvas=document.createElement("canvas");
+        singleFrameCanvas.width=universalFrameSize;
+        singleFrameCanvas.height=universalFrameSize;
+        var singleFrameContext=singleFrameCanvas.getContext("2d");
+        var customAnimationDefinition = overSizeSlash;
+        if (custom_animation == "thrust_oversize") {
+          customAnimationDefinition = overSizeThrust;
+        } else if (custom_animation == "tool_smash") {
+          customAnimationDefinition = toolsSmash;
+        }
+        activeCustomAnimation = customAnimationDefinition;
+        const frameSize = customAnimationDefinition.frameSize;
+        for (var i = 0; i < customAnimationDefinition.frames.length; ++i) {
+          const frames = customAnimationDefinition.frames[i];
+          for (var j = 0; j < frames.length; ++j) {
+            const frameCoordinateX = parseInt(frames[j].split(",")[1]);
+            const frameCoordinateY = parseInt(frames[j].split(",")[0]) + 1;
+            const offSet = (frameSize-universalFrameSize)/2;
+
+            var imgDataSingleFrame = ctx.getImageData(universalFrameSize * frameCoordinateX, universalFrameSize * frameCoordinateY, universalFrameSize, universalFrameSize);
             singleFrameContext.putImageData(imgDataSingleFrame, 0, 0);
-            ctx.drawImage(singleFrameCanvas, 64 + 192 * i, 1408 + 192 * j);
-          }
-        } else if (oversize == "slash") {
-          for (var i = 0; i < 6; ++i)
-          for (var j = 0; j < 4; ++j) {
-            var imgDataSingleFrame = ctx.getImageData(64 * i, 768 + 64 * j, 64, 64);
-            singleFrameContext.putImageData(imgDataSingleFrame, 0, 0);
-            ctx.drawImage(singleFrameCanvas, 64 + 192 * i, 1408 + 192 * j);
-          }
-        } else if (oversize == "tools_smash") {
-          for (var i = 0; i < 6; ++i)
-          for (var j = 0; j < 4; ++j) {
-            var imgDataSingleFrame = ctx.getImageData(64 * i, 768 + 64 * j, 64, 64);
-            singleFrameContext.putImageData(imgDataSingleFrame, 0, 0);
-            ctx.drawImage(singleFrameCanvas, 32 + 128 * i, 1408 + 128 * j-32)
+            ctx.drawImage(singleFrameCanvas, offSet + frameSize * j, universalSheetHeight + offSet + frameSize * i);
           }
         }
-        ctx.drawImage(img, 0, 1344);
+        ctx.drawImage(img, 0, universalSheetHeight);
       } else {
         drawImage(ctx, img);
       }
@@ -459,7 +444,6 @@ $(document).ready(function() {
   }
 
   function loadFile(filePath) {
-    var result = null;
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET", filePath, false);
     xmlhttp.send();
@@ -567,7 +551,6 @@ $(document).ready(function() {
       $this = $(this)
       if (!$this.parent().hasClass("hasPreview") && !$this.parent().hasClass("noPreview")) {
         var prev = document.createElement("canvas");
-        var oversize = $(this).data("layer_1_oversize");
         prev.setAttribute("width", 64);
         prev.setAttribute("height", 64);
         var prevctx = prev.getContext("2d");
@@ -575,9 +558,6 @@ $(document).ready(function() {
         const previewRow = parseInt($(this).data("preview_row"));
         var callback = function(img) {
           try {
-            if (oversize)
-            prevctx.drawImage(img, 0, 2 * 192, 192, 192, 0, 0, 64, 64);
-            else
             prevctx.drawImage(img, 0, previewRow * 64, 64, 64, 0, 0, 64, 64);
           } catch (err) {
             console.log(err);
@@ -594,25 +574,23 @@ $(document).ready(function() {
 
   function nextFrame() {
     const animationType = $("#whichAnim>:selected").text();
-    currentAnimationItemIndex = (currentAnimationItemIndex + 1) % animationItems.length;
     animCtx.clearRect(0, 0, anim.width, anim.height);
+    currentAnimationItemIndex = (currentAnimationItemIndex + 1) % animationItems.length;
     const currentFrame = animationItems[currentAnimationItemIndex];
+    var frameSize = universalFrameSize;
+    var offSet = 0;
+    if (activeCustomAnimation !== undefined && animationType === 'Other') {
+      frameSize = activeCustomAnimation.frameSize;
+      offSet = universalSheetHeight;
+    }
     for (var i = 0; i < animRowNum; ++i) {
-      if (oversize && (animationType === "Slash" || animationType === "Thrust")) {
-        animCtx.drawImage(canvas, currentFrame * 192, 1344 + (i*192), 192, 192, i * 192, 0, 192, 192);
-      } else if (animationType.startsWith("Tool")) {
-        animCtx.drawImage(canvas, currentFrame * 128, 1344 + (i*128), 128, 128, i * 128, 0, 128, 128);
-      } else {
-        animCtx.drawImage(canvas, currentFrame * 64, (animRowStart + i) * 64, 64, 64, i * 64, 0, 64, 64);
-      }
-
+      animCtx.drawImage(canvas, currentFrame * frameSize, offSet + ((animRowStart + i) * frameSize), frameSize, frameSize, i * frameSize, 0, frameSize, frameSize);
     }
     setTimeout(nextFrame, 1000 / 8);
   }
 });
 
 function loadFile(filePath) {
-  var result = null;
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.open("GET", filePath, false);
   xmlhttp.send();

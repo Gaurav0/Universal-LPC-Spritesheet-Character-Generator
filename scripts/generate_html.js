@@ -56,9 +56,9 @@ function generateListHTML(json) {
           if (sexIdx === 0) {
             const zPos = definition[`layer_${jdx}`].zPos;
             dataFiles += "data-preview_row=" + previewRow + " data-layer_" + jdx + "_zpos=" + zPos + " ";
-            const oversize = layerDefinition.oversize;
-            if (oversize !== undefined) {
-              dataFiles += `data-layer_${jdx}_oversize=` + oversize + " "
+            const custom_animation = layerDefinition.custom_animation;
+            if (custom_animation !== undefined) {
+              dataFiles += `data-layer_${jdx}_custom_animation=` + custom_animation + " "
             }
           }
           const file = layerDefinition[requiredSexes[sexIdx]]
