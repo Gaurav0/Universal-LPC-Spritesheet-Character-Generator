@@ -406,7 +406,7 @@ $(document).ready(function() {
         if (custom_animation == "thrust_oversize") {
           customAnimationDefinition = overSizeThrust;
         } else if (custom_animation == "tool_smash") {
-          customAnimationDefinition = toolsSmash;
+          customAnimationDefinition = toolSmash;
         } else if (custom_animation == "tool_rod") {
           customAnimationDefinition = toolRod;
         }
