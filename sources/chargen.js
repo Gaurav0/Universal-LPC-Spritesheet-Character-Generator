@@ -18,10 +18,6 @@ $(document).ready(function() {
   var images = {};
   const universalFrameSize = 64;
   const universalSheetHeight = 1344;
-  const singleFrameCanvas=document.createElement("canvas");
-  singleFrameCanvas.width=universalFrameSize;
-  singleFrameCanvas.height=universalFrameSize;
-  const singleFrameContext=singleFrameCanvas.getContext("2d");
 
   // Preview Animation
   var anim = $("#previewAnimations").get(0);
@@ -381,7 +377,7 @@ $(document).ready(function() {
     $(anim).removeClass('oversize')
     for (var i = 0; i < itemsToDraw.length; ++i) {
       if (itemsToDraw[i].custom_animation !== undefined) {
-        canvas.width = 1536;
+        canvas.width = 1792;
         canvas.height = universalSheetHeight + 768;
         $(anim).addClass('oversize')
         break;
@@ -401,7 +397,6 @@ $(document).ready(function() {
       const custom_animation = itemsToDraw[itemIdx].custom_animation;
 
       if (custom_animation !== undefined) {
-
         var customAnimationDefinition = overSizeSlash;
         if (custom_animation == "thrust_oversize") {
           customAnimationDefinition = overSizeThrust;
@@ -412,6 +407,12 @@ $(document).ready(function() {
         }
         activeCustomAnimation = customAnimationDefinition;
         const frameSize = customAnimationDefinition.frameSize;
+
+        const customAnimationCanvas=document.createElement("canvas");
+        customAnimationCanvas.width=frameSize*customAnimationDefinition.frames[0].length;
+        customAnimationCanvas.height=frameSize*4;
+        const customAnimationContext=customAnimationCanvas.getContext("2d");
+
         for (var i = 0; i < customAnimationDefinition.frames.length; ++i) {
           const frames = customAnimationDefinition.frames[i];
           for (var j = 0; j < frames.length; ++j) {
@@ -420,10 +421,10 @@ $(document).ready(function() {
             const offSet = (frameSize-universalFrameSize)/2;
 
             var imgDataSingleFrame = ctx.getImageData(universalFrameSize * frameCoordinateX, universalFrameSize * frameCoordinateY, universalFrameSize, universalFrameSize);
-            singleFrameContext.putImageData(imgDataSingleFrame, 0, 0);
-            ctx.drawImage(singleFrameCanvas, offSet + frameSize * j, universalSheetHeight + offSet + frameSize * i);
+            customAnimationContext.putImageData(imgDataSingleFrame,  frameSize * j+offSet, frameSize * i+offSet);
           }
         }
+        ctx.drawImage(customAnimationCanvas, 0, universalSheetHeight);
         ctx.drawImage(img, 0, universalSheetHeight);
       } else {
         drawImage(ctx, img);
