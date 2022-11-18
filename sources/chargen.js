@@ -14,10 +14,14 @@ $(document).ready(function() {
   var creditColumns = parsedCredits[0];
 
   var canvas = $("#spritesheet").get(0);
-  var ctx = canvas.getContext("2d");
+  var ctx = canvas.getContext("2d", { willReadFrequently: true });
   var images = {};
   const universalFrameSize = 64;
   const universalSheetHeight = 1344;
+  const singleFrameCanvas=document.createElement("canvas");
+  singleFrameCanvas.width=universalFrameSize;
+  singleFrameCanvas.height=universalFrameSize;
+  const singleFrameContext=singleFrameCanvas.getContext("2d");
 
   // Preview Animation
   var anim = $("#previewAnimations").get(0);
@@ -149,7 +153,6 @@ $(document).ready(function() {
       document.getElementById("previewFile").value = "";
       images["uploaded"] = null;
       document.getElementById("ZPOS").value = 0;
-      document.getElementById("customFrames").value = "";
       params = {};
       jHash.val(params);
       interpretParams();
@@ -229,7 +232,7 @@ $(document).ready(function() {
 
     currentAnimationItemIndex = 0;
     if (activeCustomAnimation !== undefined && animationType === 'Other') {
-      for (var i = 0; i < activeCustomAnimation.frames[0].length-1; ++i) {
+      for (var i = 0; i < activeCustomAnimation.frames[0].length; ++i) {
         animationItems.push(i);
       }
       return
@@ -398,10 +401,7 @@ $(document).ready(function() {
       const custom_animation = itemsToDraw[itemIdx].custom_animation;
 
       if (custom_animation !== undefined) {
-        var singleFrameCanvas=document.createElement("canvas");
-        singleFrameCanvas.width=universalFrameSize;
-        singleFrameCanvas.height=universalFrameSize;
-        var singleFrameContext=singleFrameCanvas.getContext("2d");
+
         var customAnimationDefinition = overSizeSlash;
         if (custom_animation == "thrust_oversize") {
           customAnimationDefinition = overSizeThrust;
