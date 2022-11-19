@@ -1,6 +1,7 @@
 {
-  "name": "Thrust oversize",
+  "name": "Spear",
   "type_name": "weapon",
+  "preview_row": 17,
   "layer_1": {
     "zPos": 140,
     "male": "weapon/thrust_oversize/male/universal/",
@@ -15,6 +16,14 @@
     "muscular": "weapon/thrust_oversize/male/",
     "female": "weapon/thrust_oversize/female/",
     "pregnant": "weapon/thrust_oversize/female/"
+  },
+  "layer_3": {
+    "custom_animation": "slash_oversize",
+    "zPos": 150,
+    "male": "weapon/slash_oversize/male/",
+    "muscular": "weapon/slash_oversize/male/",
+    "female": "weapon/slash_oversize/female/",
+    "pregnant": "weapon/slash_oversize/female/"
   },
   "variants": [
     "halberd"

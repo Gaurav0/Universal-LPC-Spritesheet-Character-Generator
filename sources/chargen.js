@@ -17,6 +17,7 @@ $(document).ready(function() {
   var ctx = canvas.getContext("2d", { willReadFrequently: true });
   var images = {};
   const universalFrameSize = 64;
+  const universalSheetWidth = 832;
   const universalSheetHeight = 1344;
 
   // Preview Animation
@@ -26,7 +27,8 @@ $(document).ready(function() {
   var animRowStart = 8; // default for walk
   var animRowNum = 4; // default for walk
   var currentAnimationItemIndex = 0;
-  var activeCustomAnimation = undefined;
+  var activeCustomAnimation = "";
+  var addedCustomAnimations = [];
 
   // on hash (url) change event, interpret and redraw
   jHash.change(function() {
@@ -221,14 +223,20 @@ $(document).ready(function() {
   $("#whichAnim").change(function() {
     animationItems = [];
     const selectedAnim = $("#whichAnim>:selected");
-    const animationType = $("#whichAnim>:selected").text()
+    const selectedAnimationValue = $("#whichAnim>:selected").text()
     const animRowFrames = parseInt(selectedAnim.data("cycle"));
     animRowStart = parseInt(selectedAnim.data("row"));
     animRowNum = parseInt(selectedAnim.data("num"));
 
     currentAnimationItemIndex = 0;
-    if (activeCustomAnimation !== undefined && animationType === 'Other') {
-      for (var i = 0; i < activeCustomAnimation.frames[0].length; ++i) {
+    if (addedCustomAnimations.includes(selectedAnimationValue)) {
+      activeCustomAnimation = selectedAnimationValue;
+    }
+    if (activeCustomAnimation !== "") {
+      const selectedCustomAnimation = customAnimationFromString(activeCustomAnimation);
+      animRowNum = selectedCustomAnimation.frames.length;
+      animRowStart = 0;
+      for (var i = 0; i < selectedCustomAnimation.frames[0].length; ++i) {
         animationItems.push(i);
       }
       return
@@ -237,6 +245,19 @@ $(document).ready(function() {
       animationItems.push(i);
     }
   });
+
+  function clearCustomAnimationPreviews() {
+    for (var i = 0; i < addedCustomAnimations.length; ++i) {
+      $('#whichAnim').children(`option[value=${addedCustomAnimations[i]}]`).remove();
+    }
+  }
+
+  function addCustomAnimationPreviews() {
+    clearCustomAnimationPreviews();
+    for (var i = 0; i < addedCustomAnimations.length; ++i) {
+      $('#whichAnim').append(new Option(`${addedCustomAnimations[i]}`, `${addedCustomAnimations[i]}`))
+    }
+  }
 
   $("#spritesheet,#previewAnimations").on('click',function(e) {
     $(this).toggleClass('zoomed')
@@ -369,20 +390,41 @@ $(document).ready(function() {
     drawItems(itemsToDraw);
   }
 
+  function customAnimationFromString(customAnimationString) {
+    var customAnimation = overSizeSlash;
+    if (customAnimationString == "thrust_oversize") {
+      customAnimation = overSizeThrust;
+    } else if (customAnimationString == "tool_smash") {
+      customAnimation = toolSmash;
+    } else if (customAnimationString == "tool_rod") {
+      customAnimation = toolRod;
+    }
+    return customAnimation
+  }
+
   function drawItems(itemsToDraw) {
-    activeCustomAnimation = undefined;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    canvas.width = 832;
-    canvas.height = universalSheetHeight;
-    $(anim).removeClass('oversize')
+
+    var requiredCanvasHeight = universalSheetHeight;
+    var requiredCanvasWidth = universalSheetWidth;
+    clearCustomAnimationPreviews();
+    addedCustomAnimations = [];
     for (var i = 0; i < itemsToDraw.length; ++i) {
-      if (itemsToDraw[i].custom_animation !== undefined) {
-        canvas.width = 1792;
-        canvas.height = universalSheetHeight + 768;
-        $(anim).addClass('oversize')
-        break;
+      const customAnimationString = itemsToDraw[i].custom_animation;
+      if (customAnimationString !== undefined) {
+        if (addedCustomAnimations.includes(customAnimationString)) {
+          continue;
+        }
+        addedCustomAnimations.push(customAnimationString);
+        const customAnimation = customAnimationFromString(customAnimationString);
+        const customAnimationWidth = customAnimation.frameSize * customAnimation.frames[0].length;
+        const customAnimationHeight = customAnimation.frameSize * customAnimation.frames.length;
+        requiredCanvasWidth = Math.max(requiredCanvasWidth, customAnimationWidth);
+        requiredCanvasHeight = requiredCanvasHeight + customAnimationHeight;
       }
     }
+    canvas.width = requiredCanvasWidth;
+    canvas.height = requiredCanvasHeight;
 
     $("#chooser").css("height", canvas.height);
 
@@ -397,21 +439,20 @@ $(document).ready(function() {
       const custom_animation = itemsToDraw[itemIdx].custom_animation;
 
       if (custom_animation !== undefined) {
-        var customAnimationDefinition = overSizeSlash;
-        if (custom_animation == "thrust_oversize") {
-          customAnimationDefinition = overSizeThrust;
-        } else if (custom_animation == "tool_smash") {
-          customAnimationDefinition = toolSmash;
-        } else if (custom_animation == "tool_rod") {
-          customAnimationDefinition = toolRod;
-        }
-        activeCustomAnimation = customAnimationDefinition;
+        const customAnimationDefinition = customAnimationFromString(custom_animation);
         const frameSize = customAnimationDefinition.frameSize;
 
         const customAnimationCanvas=document.createElement("canvas");
-        customAnimationCanvas.width=frameSize*customAnimationDefinition.frames[0].length;
-        customAnimationCanvas.height=frameSize*4;
+        customAnimationCanvas.width=requiredCanvasWidth;
+        customAnimationCanvas.height=requiredCanvasHeight-universalSheetHeight;
         const customAnimationContext=customAnimationCanvas.getContext("2d");
+
+        const indexInArray = addedCustomAnimations.indexOf(custom_animation);
+        var offSetInAdditionToOtherCustomActions = 0;
+        for (var i = 0; i <indexInArray; ++i) {
+          const otherCustomAction = customAnimationFromString(addedCustomAnimations[i]);
+          offSetInAdditionToOtherCustomActions+=otherCustomAction.frameSize * otherCustomAction.frames.length
+        }
 
         for (var i = 0; i < customAnimationDefinition.frames.length; ++i) {
           const frames = customAnimationDefinition.frames[i];
@@ -421,16 +462,17 @@ $(document).ready(function() {
             const offSet = (frameSize-universalFrameSize)/2;
 
             var imgDataSingleFrame = ctx.getImageData(universalFrameSize * frameCoordinateX, universalFrameSize * frameCoordinateY, universalFrameSize, universalFrameSize);
-            customAnimationContext.putImageData(imgDataSingleFrame,  frameSize * j+offSet, frameSize * i+offSet);
+            customAnimationContext.putImageData(imgDataSingleFrame, frameSize * j + offSet, frameSize * i + offSet + offSetInAdditionToOtherCustomActions);
           }
         }
         ctx.drawImage(customAnimationCanvas, 0, universalSheetHeight);
-        ctx.drawImage(img, 0, universalSheetHeight);
+        ctx.drawImage(img, 0, universalSheetHeight+offSetInAdditionToOtherCustomActions);
       } else {
         drawImage(ctx, img);
       }
       itemIdx+=1;
     }
+    addCustomAnimationPreviews();
   }
 
   function showOrHideElements() {
@@ -554,14 +596,14 @@ $(document).ready(function() {
       $this = $(this)
       if (!$this.parent().hasClass("hasPreview") && !$this.parent().hasClass("noPreview")) {
         var prev = document.createElement("canvas");
-        prev.setAttribute("width", 64);
-        prev.setAttribute("height", 64);
+        prev.setAttribute("width", universalFrameSize);
+        prev.setAttribute("height", universalFrameSize);
         var prevctx = prev.getContext("2d");
         var img = null;
         const previewRow = parseInt($(this).data("preview_row"));
         var callback = function(img) {
           try {
-            prevctx.drawImage(img, 0, previewRow * 64, 64, 64, 0, 0, 64, 64);
+            prevctx.drawImage(img, 0, previewRow * universalFrameSize, universalFrameSize, universalFrameSize, 0, 0, universalFrameSize, universalFrameSize);
           } catch (err) {
             console.log(err);
           }
@@ -582,9 +624,15 @@ $(document).ready(function() {
     const currentFrame = animationItems[currentAnimationItemIndex];
     var frameSize = universalFrameSize;
     var offSet = 0;
-    if (activeCustomAnimation !== undefined && animationType === 'Other') {
-      frameSize = activeCustomAnimation.frameSize;
+    if (activeCustomAnimation !== "") {
+      const customAnimation = customAnimationFromString(activeCustomAnimation);
+      frameSize = customAnimation.frameSize;
+      const indexInArray = addedCustomAnimations.indexOf(activeCustomAnimation);
       offSet = universalSheetHeight;
+      for (var i = 0; i <indexInArray; ++i) {
+        const otherCustomAction = customAnimationFromString(addedCustomAnimations[i]);
+        offSet+=otherCustomAction.frameSize * otherCustomAction.frames.length
+      }
     }
     for (var i = 0; i < animRowNum; ++i) {
       animCtx.drawImage(canvas, currentFrame * frameSize, offSet + ((animRowStart + i) * frameSize), frameSize, frameSize, i * frameSize, 0, frameSize, frameSize);
