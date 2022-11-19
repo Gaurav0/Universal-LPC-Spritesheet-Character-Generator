@@ -233,7 +233,7 @@ $(document).ready(function() {
       activeCustomAnimation = selectedAnimationValue;
     }
     if (activeCustomAnimation !== "") {
-      const selectedCustomAnimation = customAnimationFromString(activeCustomAnimation);
+      const selectedCustomAnimation = customAnimations[activeCustomAnimation];
       animRowNum = selectedCustomAnimation.frames.length;
       animRowStart = 0;
       for (var i = 0; i < selectedCustomAnimation.frames[0].length; ++i) {
@@ -390,18 +390,6 @@ $(document).ready(function() {
     drawItems(itemsToDraw);
   }
 
-  function customAnimationFromString(customAnimationString) {
-    var customAnimation = overSizeSlash;
-    if (customAnimationString == "thrust_oversize") {
-      customAnimation = overSizeThrust;
-    } else if (customAnimationString == "tool_smash") {
-      customAnimation = toolSmash;
-    } else if (customAnimationString == "tool_rod") {
-      customAnimation = toolRod;
-    }
-    return customAnimation
-  }
-
   function drawItems(itemsToDraw) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -416,7 +404,7 @@ $(document).ready(function() {
           continue;
         }
         addedCustomAnimations.push(customAnimationString);
-        const customAnimation = customAnimationFromString(customAnimationString);
+        const customAnimation = customAnimations[customAnimationString];
         const customAnimationWidth = customAnimation.frameSize * customAnimation.frames[0].length;
         const customAnimationHeight = customAnimation.frameSize * customAnimation.frames.length;
         requiredCanvasWidth = Math.max(requiredCanvasWidth, customAnimationWidth);
@@ -439,7 +427,7 @@ $(document).ready(function() {
       const custom_animation = itemsToDraw[itemIdx].custom_animation;
 
       if (custom_animation !== undefined) {
-        const customAnimationDefinition = customAnimationFromString(custom_animation);
+        const customAnimationDefinition = customAnimations[custom_animation];
         const frameSize = customAnimationDefinition.frameSize;
 
         const customAnimationCanvas=document.createElement("canvas");
@@ -450,7 +438,7 @@ $(document).ready(function() {
         const indexInArray = addedCustomAnimations.indexOf(custom_animation);
         var offSetInAdditionToOtherCustomActions = 0;
         for (var i = 0; i <indexInArray; ++i) {
-          const otherCustomAction = customAnimationFromString(addedCustomAnimations[i]);
+          const otherCustomAction = customAnimations[addedCustomAnimations[i]];
           offSetInAdditionToOtherCustomActions+=otherCustomAction.frameSize * otherCustomAction.frames.length
         }
 
@@ -458,7 +446,8 @@ $(document).ready(function() {
           const frames = customAnimationDefinition.frames[i];
           for (var j = 0; j < frames.length; ++j) {
             const frameCoordinateX = parseInt(frames[j].split(",")[1]);
-            const frameCoordinateY = parseInt(frames[j].split(",")[0]) + 1;
+            const frameCoordinateRowName = frames[j].split(",")[0];
+            const frameCoordinateY = animationRowsLayout[frameCoordinateRowName]+1;
             const offSet = (frameSize-universalFrameSize)/2;
 
             var imgDataSingleFrame = ctx.getImageData(universalFrameSize * frameCoordinateX, universalFrameSize * frameCoordinateY, universalFrameSize, universalFrameSize);
@@ -625,12 +614,12 @@ $(document).ready(function() {
     var frameSize = universalFrameSize;
     var offSet = 0;
     if (activeCustomAnimation !== "") {
-      const customAnimation = customAnimationFromString(activeCustomAnimation);
+      const customAnimation = customAnimations[activeCustomAnimation];
       frameSize = customAnimation.frameSize;
       const indexInArray = addedCustomAnimations.indexOf(activeCustomAnimation);
       offSet = universalSheetHeight;
       for (var i = 0; i <indexInArray; ++i) {
-        const otherCustomAction = customAnimationFromString(addedCustomAnimations[i]);
+        const otherCustomAction = customAnimations[addedCustomAnimations[i]];
         offSet+=otherCustomAction.frameSize * otherCustomAction.frames.length
       }
     }
