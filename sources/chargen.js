@@ -241,6 +241,13 @@ $(document).ready(function() {
       }
       return
     }
+    const animRowFramesCustom = selectedAnim.data("cycle-custom");
+    if (animRowFramesCustom !== undefined) {
+      animationItems = animRowFramesCustom.split('-').map(Number);
+      if (animationItems.length > 0) {
+        return;
+      }
+    }
     for (var i = 1; i < animRowFrames; ++i) {
       animationItems.push(i);
     }
