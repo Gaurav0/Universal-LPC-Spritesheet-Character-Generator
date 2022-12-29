@@ -4,7 +4,8 @@
   "layer_1": {
     "zPos": 70,
     "male": "torso/waist/belt_double/male/",
-    "female": "torso/waist/belt_double/female/"
+    "female": "torso/waist/belt_double/female/",
+    "teen": "torso/waist/belt_double/male/"
   },
   "variants": [
     "brown",

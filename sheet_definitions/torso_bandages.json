@@ -4,7 +4,8 @@
   "layer_1": {
     "zPos": 110,
     "male": "torso/bandage/male/",
-    "female": "torso/bandage/female/"
+    "female": "torso/bandage/female/",
+    "teen": "torso/bandage/male/"
   },
   "variants": [
     "white"

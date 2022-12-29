@@ -1,10 +1,11 @@
 {
-  "name" : "Overalls",
-  "type_name" : "overalls",
-  "layer_1" : {
-    "zPos" : 38,
-    "male" : "torso/aprons/overalls/male/",
-    "female" : "torso/aprons/overalls/female/"
+  "name": "Overalls",
+  "type_name": "overalls",
+  "layer_1": {
+    "zPos": 38,
+    "male": "torso/aprons/overalls/male/",
+    "female": "torso/aprons/overalls/female/",
+    "teen": "torso/aprons/overalls/male/"
   },
   "variants": [
     "leather",

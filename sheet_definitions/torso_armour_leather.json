@@ -4,7 +4,8 @@
   "layer_1": {
     "zPos": 60,
     "male": "torso/armour/leather/male/",
-    "female": "torso/armour/leather/female/"
+    "female": "torso/armour/leather/female/",
+    "teen": "torso/armour/leather/male/"
   },
   "variants": [
     "leather",
