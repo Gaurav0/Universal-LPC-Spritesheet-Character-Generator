@@ -7,7 +7,8 @@
     "muscular": "shadow/adult/",
     "female": "shadow/adult/",
     "pregnant": "shadow/adult/",
-    "child": "shadow/child/"
+    "child": "shadow/child/",
+    "teen": "shadow/adult/"
   },
   "variants": [
     "shadow"

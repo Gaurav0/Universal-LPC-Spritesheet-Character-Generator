@@ -6,7 +6,8 @@
     "male": "hat/crown/",
     "female": "hat/crown/",
     "muscular": "hat/crown/",
-    "pregnant": "hat/crown/"
+    "pregnant": "hat/crown/",
+    "teen": "hat/crown/"
   },
   "variants": [
     "1",

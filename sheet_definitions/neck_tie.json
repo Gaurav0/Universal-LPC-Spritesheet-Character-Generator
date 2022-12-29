@@ -6,7 +6,8 @@
     "male": "neck/tie/",
     "female": "neck/tie/",
     "muscular": "neck/tie/",
-    "pregnant": "neck/tie/"
+    "pregnant": "neck/tie/",
+    "teen": "neck/tie/"
   },
   "variants": [
     "bow",

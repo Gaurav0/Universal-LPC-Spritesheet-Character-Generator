@@ -6,7 +6,8 @@
     "male": "hat/formal/",
     "female": "hat/formal/",
     "muscular": "hat/formal/",
-    "pregnant": "hat/formal/"
+    "pregnant": "hat/formal/",
+    "teen": "hat/formal/"
   },
   "variants": [
     "round",

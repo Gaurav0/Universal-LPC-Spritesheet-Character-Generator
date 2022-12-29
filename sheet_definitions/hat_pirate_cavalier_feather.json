@@ -1,10 +1,11 @@
 {
-  "name" : "Cavalier feather",
-  "type_name" : "hat",
-  "layer_1" : {
-    "zPos" : 130,
-    "female" : "hat/pirate/cavalier_feather/male/",
-    "male" :   "hat/pirate/cavalier_feather/male/"
+  "name": "Cavalier feather",
+  "type_name": "hat",
+  "layer_1": {
+    "zPos": 130,
+    "female": "hat/pirate/cavalier_feather/male/",
+    "male": "hat/pirate/cavalier_feather/male/",
+    "teen": "hat/pirate/cavalier_feather/male/"
   },
   "variants": [
     "black",

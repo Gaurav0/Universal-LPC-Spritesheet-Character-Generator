@@ -1,10 +1,11 @@
 {
-  "name" : "Cravat",
-  "type_name" : "neck",
-  "layer_1" : {
-    "zPos" : 90,
-    "male" :   "neck/cravat/male/",
-    "female" : "neck/cravat/male/"
+  "name": "Cravat",
+  "type_name": "neck",
+  "layer_1": {
+    "zPos": 90,
+    "male": "neck/cravat/male/",
+    "female": "neck/cravat/male/",
+    "teen": "neck/cravat/male/"
   },
   "variants": [
     "black",

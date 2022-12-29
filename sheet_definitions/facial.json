@@ -6,7 +6,8 @@
     "male": "facial/",
     "muscular": "facial/",
     "female": "facial/",
-    "pregnant": "facial/"
+    "pregnant": "facial/",
+    "teen": "facial/"
   },
   "variants": [
     "glasses",
