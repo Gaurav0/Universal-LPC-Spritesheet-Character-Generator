@@ -1,10 +1,11 @@
 {
-  "name" : "Apron",
-  "type_name" : "apron",
-  "layer_1" : {
-    "zPos" : 40,
-    "male" : "torso/aprons/apron/male/",
-    "female" : "torso/aprons/apron/female/"
+  "name": "Apron",
+  "type_name": "apron",
+  "layer_1": {
+    "zPos": 40,
+    "male": "torso/aprons/apron/male/",
+    "female": "torso/aprons/apron/female/",
+    "teen": "torso/aprons/apron/male/"
   },
   "variants": [
     "leather",

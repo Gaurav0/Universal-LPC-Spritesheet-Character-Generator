@@ -7,7 +7,8 @@
     "male": "weapon/bow/",
     "muscular": "weapon/bow/",
     "female": "weapon/bow/",
-    "pregnant": "weapon/bow/"
+    "pregnant": "weapon/bow/",
+    "teen": "weapon/bow/"
   },
   "variants": [
     "great",

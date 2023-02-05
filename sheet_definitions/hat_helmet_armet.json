@@ -1,12 +1,13 @@
 {
-  "name" : "Armet",
-  "type_name" : "hat",
-  "layer_1" : {
-    "zPos" : 130,
-    "female"   : "hat/helmet/armet/male/",
-    "pregnant" : "hat/helmet/armet/male/",
-    "male"     : "hat/helmet/armet/male/",
-    "muscular" : "hat/helmet/armet/male/"
+  "name": "Armet",
+  "type_name": "hat",
+  "layer_1": {
+    "zPos": 130,
+    "female": "hat/helmet/armet/male/",
+    "pregnant": "hat/helmet/armet/male/",
+    "male": "hat/helmet/armet/male/",
+    "muscular": "hat/helmet/armet/male/",
+    "teen": "hat/helmet/armet/male/"
   },
   "variants": [
     "steel",

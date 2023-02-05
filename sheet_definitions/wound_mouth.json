@@ -6,7 +6,8 @@
     "male": "body/wound/",
     "muscular": "body/wound/",
     "female": "body/wound/",
-    "pregnant": "body/wound/"
+    "pregnant": "body/wound/",
+    "teen": "body/wound/"
   },
   "variants": [
     "mouth"

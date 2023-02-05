@@ -1,12 +1,13 @@
 {
-  "name" : "Barbarian",
-  "type_name" : "hat",
-  "layer_1" : {
-    "zPos" : 130,
-    "female"   : "hat/helmet/barbarian/male/",
-    "pregnant" : "hat/helmet/barbarian/male/",
-    "male"     : "hat/helmet/barbarian/male/",
-    "muscular" : "hat/helmet/barbarian/male/"
+  "name": "Barbarian",
+  "type_name": "hat",
+  "layer_1": {
+    "zPos": 130,
+    "female": "hat/helmet/barbarian/male/",
+    "pregnant": "hat/helmet/barbarian/male/",
+    "male": "hat/helmet/barbarian/male/",
+    "muscular": "hat/helmet/barbarian/male/",
+    "teen": "hat/helmet/barbarian/male/"
   },
   "variants": [
     "steel",

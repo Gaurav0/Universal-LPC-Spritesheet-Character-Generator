@@ -1,10 +1,11 @@
 {
-  "name" : "Tricorne stitched",
-  "type_name" : "hat",
-  "layer_1" : {
-    "zPos" : 130,
-    "female" : "hat/pirate/tricorne_stitched/male/",
-    "male" :   "hat/pirate/tricorne_stitched/male/"
+  "name": "Tricorne stitched",
+  "type_name": "hat",
+  "layer_1": {
+    "zPos": 130,
+    "female": "hat/pirate/tricorne_stitched/male/",
+    "male": "hat/pirate/tricorne_stitched/male/",
+    "teen": "hat/pirate/tricorne_stitched/male/"
   },
   "variants": [
     "black",

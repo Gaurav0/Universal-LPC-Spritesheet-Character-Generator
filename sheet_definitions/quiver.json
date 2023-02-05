@@ -6,7 +6,8 @@
     "male": "quiver/",
     "muscular": "quiver/",
     "female": "quiver/",
-    "pregnant": "quiver/"
+    "pregnant": "quiver/",
+    "teen": "quiver/"
   },
   "variants": [
     "quiver"
