@@ -8,6 +8,8 @@ $.expr[':'].icontains = function(a, i, m) {
 $(document).ready(function() {
 
   var matchBodyColor = true;
+  var itemsToDraw = [];
+  var itemsMeta = {};
   var params = jHash.val();
   var sheetCredits = [];
   const parsedCredits = loadFile("CREDITS.csv").split("\n");
@@ -192,6 +194,13 @@ $(document).ready(function() {
     document.removeChild(a);
   });
 
+  $(".exportToClipboard").click(function() {
+    var spritesheet = {};
+    Object.assign(spritesheet, itemsMeta);
+    spritesheet["layers"] = itemsToDraw;
+    navigator.clipboard.writeText(JSON.stringify(spritesheet, null, "  "));
+  });
+
   $(".generateSheetCreditsTxt").click(function() {
     let bl = new Blob([sheetCreditsToTxt()], {
       type: "text/html"
@@ -364,10 +373,15 @@ $(document).ready(function() {
   }
 
   function redraw() {
-    let itemsToDraw = [];
+    itemsToDraw = [];
     const bodyTypeName = getBodyTypeName();
 
     sheetCredits = [creditColumns];
+    itemsMeta = {"bodyTypeName":bodyTypeName,
+                 "url":window.location.href,
+                 "datetime": (new Date().toLocaleString()),
+                 "credits":[]}
+
     zPosition = 0;
     $("input[type=radio]:checked").each(function(index) {
       for (jdx =1; jdx < 10; jdx++) {
@@ -382,6 +396,7 @@ $(document).ready(function() {
             itemToDraw.custom_animation = custom_animation;
             addCreditFor(fileName);
             itemsToDraw.push(itemToDraw);
+            itemsMeta["credits"].push(getCreditFor(fileName))
           }
         } else {
           break;
