@@ -379,6 +379,8 @@ $(document).ready(function() {
     sheetCredits = [creditColumns];
     itemsMeta = {"bodyTypeName":bodyTypeName,
                  "url":window.location.href,
+                 "spritesheets":window.location.origin+"/spritesheets/",
+                 "version":1,
                  "datetime": (new Date().toLocaleString()),
                  "credits":[]}
 
@@ -389,11 +391,18 @@ $(document).ready(function() {
           const zPos = $(this).data(`layer_${jdx}_zpos`);
           const custom_animation = $(this).data(`layer_${jdx}_custom_animation`);
           const fileName = $(this).data(`layer_${jdx}_${bodyTypeName}`);
+          const parentName = $(this).attr(`name`);
+          const name = $(this).attr(`parentName`);
+          const variant = $(this).attr(`variant`);
+
           if (fileName !== "") {
             const itemToDraw = {};
             itemToDraw.fileName = fileName;
             itemToDraw.zPos = zPos;
             itemToDraw.custom_animation = custom_animation;
+            itemToDraw.parentName = parentName
+            itemToDraw.name = name
+            itemToDraw.variant = variant
             addCreditFor(fileName);
             itemsToDraw.push(itemToDraw);
             itemsMeta["credits"].push(getCreditFor(fileName))
