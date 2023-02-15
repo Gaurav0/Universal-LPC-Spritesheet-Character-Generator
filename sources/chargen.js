@@ -377,10 +377,12 @@ $(document).ready(function() {
     const bodyTypeName = getBodyTypeName();
 
     sheetCredits = [creditColumns];
+    var baseUrl = window.location.href.split("/").slice(0, -1).join("/"); // get url until last '/'
+
     itemsMeta = {"bodyTypeName":bodyTypeName,
                  "url":window.location.href,
-                 "spritesheets":window.location.origin+"/spritesheets/",
-                 "version":1,
+                 "spritesheets":baseUrl+"/spritesheets/",   // <- holds base URL to spritesheets (used to download them)
+                 "version":1,                               // <- to track future compatibilty breaking changes
                  "datetime": (new Date().toLocaleString()),
                  "credits":[]}
 
