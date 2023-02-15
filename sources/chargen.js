@@ -384,7 +384,7 @@ $(document).ready(function() {
                  "spritesheets":baseUrl+"/spritesheets/",   // <- holds base URL to spritesheets (used to download them)
                  "version":1,                               // <- to track future compatibilty breaking changes
                  "datetime": (new Date().toLocaleString()),
-                 "credits":[]}
+                 "credits":""}
 
     zPosition = 0;
     $("input[type=radio]:checked").each(function(index) {
@@ -407,13 +407,14 @@ $(document).ready(function() {
             itemToDraw.variant = variant
             addCreditFor(fileName);
             itemsToDraw.push(itemToDraw);
-            itemsMeta["credits"].push(getCreditFor(fileName))
           }
         } else {
           break;
         }
       }
     });
+    itemsMeta["credits"] = sheetCreditsToTxt();
+
     if (images["uploaded"] != null) {
       const itemToDraw = {};
       itemToDraw.fileName = "uploaded";
