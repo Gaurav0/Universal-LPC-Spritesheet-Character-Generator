@@ -1,5 +1,5 @@
 {
-  "name": "Thrust",
+  "name": "Staff",
   "type_name": "weapon",
   "layer_1": {
     "zPos": 140,
@@ -9,16 +9,6 @@
     "pregnant": "weapon/thrust/female/"
   },
   "variants": [
-    "cane",
-    "crossbow",
-    "spade",
-    "shovel 2",
-    "simple staff",
-    "spear",
-    "spear 2",
-    "spear black",
-    "spear green",
-    "spear metal",
-    "spear purple"
+    "simple staff"
   ]
 }

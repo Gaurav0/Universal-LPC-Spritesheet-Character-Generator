@@ -1,5 +1,5 @@
 {
-  "name": "Slash",
+  "name": "Warhammer",
   "type_name": "weapon",
   "layer_1": {
     "zPos": 140,
@@ -9,10 +9,6 @@
     "pregnant": "weapon/slash/female/"
   },
   "variants": [
-    "axe",
-    "axe 2",
-    "dagger",
-    "pickaxe",
     "warhammer"
   ]
 }

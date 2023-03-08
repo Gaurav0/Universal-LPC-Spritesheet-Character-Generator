@@ -1,0 +1,17 @@
+{
+  "name": "Great",
+  "type_name": "weapon",
+  "preview_row": 17,
+  "layer_1": {
+    "zPos": 140,
+    "male": "weapon/bow/",
+    "muscular": "weapon/bow/",
+    "female": "weapon/bow/",
+    "pregnant": "weapon/bow/",
+    "teen": "weapon/bow/"
+  },
+  "variants": [
+    "great",
+    "9"
+  ]
+}
