@@ -1,5 +1,5 @@
 {
-  "name": "Slash oversize",
+  "name": "Waraxe",
   "type_name": "weapon",
   "layer_1": {
     "zPos": 140,
@@ -17,7 +17,6 @@
     "pregnant": "weapon/slash_oversize/female/"
   },
   "variants": [
-    "flail",
     "waraxe"
   ]
 }

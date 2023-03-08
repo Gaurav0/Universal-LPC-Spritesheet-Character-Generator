@@ -1,5 +1,5 @@
 {
-  "name": "Bow",
+  "name": "Recurve",
   "type_name": "weapon",
   "preview_row": 17,
   "layer_1": {
@@ -11,13 +11,9 @@
     "teen": "weapon/bow/"
   },
   "variants": [
-    "great",
-    "normal",
     "recurve",
     "6",
     "7",
-    "8",
-    "9",
-    "10"
+    "8"
   ]
 }

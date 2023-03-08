@@ -1,0 +1,14 @@
+{
+  "name": "Dagger",
+  "type_name": "weapon",
+  "layer_1": {
+    "zPos": 140,
+    "male": "weapon/slash/male/",
+    "muscular": "weapon/slash/male/",
+    "female": "weapon/slash/female/",
+    "pregnant": "weapon/slash/female/"
+  },
+  "variants": [
+    "dagger"
+  ]
+}
