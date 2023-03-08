@@ -10,6 +10,24 @@
     "pregnant": "weapon/bow/",
     "teen": "weapon/bow/"
   },
+  "layer_2": {
+    "custom_animation": "walk_bows",
+    "zPos": -1,
+    "male": "weapon/bow/walk/background/",
+    "muscular": "weapon/bow/walk/background/",
+    "female": "weapon/bow/walk/background/",
+    "pregnant": "weapon/bow/walk/background/",
+    "teen": "weapon/bow/walk/background/"
+  },
+  "layer_3": {
+    "custom_animation": "walk_bows",
+    "zPos": 141,
+    "male": "weapon/bow/walk/foreground/",
+    "muscular": "weapon/bow/walk/foreground/",
+    "female": "weapon/bow/walk/foreground/",
+    "pregnant": "weapon/bow/walk/foreground/",
+    "teen": "weapon/bow/walk/foreground/"
+  },
   "variants": [
     "recurve",
     "6",
