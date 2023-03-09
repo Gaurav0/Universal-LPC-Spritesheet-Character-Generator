@@ -3,10 +3,10 @@
   "type_name": "weapon",
   "layer_1": {
     "zPos": 140,
-    "male": "weapon/thrust/male/",
-    "muscular": "weapon/thrust/male/",
-    "female": "weapon/thrust/female/",
-    "pregnant": "weapon/thrust/female/"
+    "male": "weapon/polearm/simple_staff/male/",
+    "muscular": "weapon/polearm/simple_staff/male/",
+    "female": "weapon/polearm/simple_staff/female/",
+    "pregnant": "weapon/polearm/simple_staff/female/"
   },
   "variants": [
     "simple staff"

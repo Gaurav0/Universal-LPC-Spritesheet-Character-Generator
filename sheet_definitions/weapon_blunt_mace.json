@@ -3,25 +3,25 @@
   "type_name": "weapon",
   "layer_1": {
     "zPos": 140,
-    "male": "weapon/slash_oversize_layered/all/universal/",
-    "muscular": "weapon/slash_oversize_layered/all/universal/",
-    "female": "weapon/slash_oversize_layered/all/universal/",
-    "pregnant": "weapon/slash_oversize_layered/all/universal/"
+    "male": "weapon/blunt/mace/",
+    "muscular": "weapon/blunt/mace/",
+    "female": "weapon/blunt/mace/",
+    "pregnant": "weapon/blunt/mace/"
   },
   "layer_2": {
     "zPos": 9,
-    "male": "weapon/slash_oversize_layered/all/universal/behind/",
-    "muscular": "weapon/slash_oversize_layered/all/universal/behind/",
-    "female": "weapon/slash_oversize_layered/all/universal/behind/",
-    "pregnant": "weapon/slash_oversize_layered/all/universal/behind/"
+    "male": "weapon/blunt/mace/universal_behind/",
+    "muscular": "weapon/blunt/mace/universal_behind/",
+    "female": "weapon/blunt/mace/universal_behind/",
+    "pregnant": "weapon/blunt/mace/universal_behind/"
   },
   "layer_3": {
     "zPos": 150,
     "custom_animation": "slash_oversize",
-    "male": "weapon/slash_oversize_layered/all/",
-    "muscular": "weapon/slash_oversize_layered/all/",
-    "female": "weapon/slash_oversize_layered/all/",
-    "pregnant": "weapon/slash_oversize_layered/all/"
+    "male": "weapon/blunt/mace/attack_slash/",
+    "muscular": "weapon/blunt/mace/attack_slash/",
+    "female": "weapon/blunt/mace/attack_slash/",
+    "pregnant": "weapon/blunt/mace/attack_slash/"
   },
   "variants": [
     "mace"

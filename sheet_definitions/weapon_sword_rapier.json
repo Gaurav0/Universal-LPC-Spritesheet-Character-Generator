@@ -3,25 +3,25 @@
   "type_name": "weapon",
   "layer_1": {
     "zPos": 140,
-    "male": "weapon/slash_oversize_layered/all/universal/",
-    "muscular": "weapon/slash_oversize_layered/all/universal/",
-    "female": "weapon/slash_oversize_layered/all/universal/",
-    "pregnant": "weapon/slash_oversize_layered/all/universal/"
+    "male": "weapon/sword/rapier/",
+    "muscular": "weapon/sword/rapier/",
+    "female": "weapon/sword/rapier/",
+    "pregnant": "weapon/sword/rapier/"
   },
   "layer_2": {
     "zPos": 9,
-    "male": "weapon/slash_oversize_layered/all/universal/behind/",
-    "muscular": "weapon/slash_oversize_layered/all/universal/behind/",
-    "female": "weapon/slash_oversize_layered/all/universal/behind/",
-    "pregnant": "weapon/slash_oversize_layered/all/universal/behind/"
+    "male": "weapon/sword/rapier/universal_behind/",
+    "muscular": "weapon/sword/rapier/universal_behind/",
+    "female": "weapon/sword/rapier/universal_behind/",
+    "pregnant": "weapon/sword/rapier/universal_behind/"
   },
   "layer_3": {
     "zPos": 150,
     "custom_animation": "slash_oversize",
-    "male": "weapon/slash_oversize_layered/all/",
-    "muscular": "weapon/slash_oversize_layered/all/",
-    "female": "weapon/slash_oversize_layered/all/",
-    "pregnant": "weapon/slash_oversize_layered/all/"
+    "male": "weapon/sword/rapier/attack_slash/",
+    "muscular": "weapon/sword/rapier/attack_slash/",
+    "female": "weapon/sword/rapier/attack_slash/",
+    "pregnant": "weapon/sword/rapier/attack_slash/"
   },
   "variants": [
     "rapier"

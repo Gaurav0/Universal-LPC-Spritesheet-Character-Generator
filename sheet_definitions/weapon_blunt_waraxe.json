@@ -3,18 +3,18 @@
   "type_name": "weapon",
   "layer_1": {
     "zPos": 140,
-    "male": "weapon/slash_oversize/male/universal/",
-    "muscular": "weapon/slash_oversize/male/universal/",
-    "female": "weapon/slash_oversize/female/universal/",
-    "pregnant": "weapon/slash_oversize/female/universal/"
+    "male": "weapon/blunt/waraxe/male/",
+    "muscular": "weapon/blunt/waraxe/male/",
+    "female": "weapon/blunt/waraxe/female/",
+    "pregnant": "weapon/blunt/waraxe/female/"
   },
   "layer_2": {
     "custom_animation": "slash_oversize",
     "zPos": 150,
-    "male": "weapon/slash_oversize/male/",
-    "muscular": "weapon/slash_oversize/male/",
-    "female": "weapon/slash_oversize/female/",
-    "pregnant": "weapon/slash_oversize/female/"
+    "male": "weapon/blunt/waraxe/male/attack/",
+    "muscular": "weapon/blunt/waraxe/male/attack/",
+    "female": "weapon/blunt/waraxe/female/attack/",
+    "pregnant": "weapon/blunt/waraxe/female/attack/"
   },
   "variants": [
     "waraxe"
