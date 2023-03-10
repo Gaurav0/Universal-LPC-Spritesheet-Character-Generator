@@ -3,28 +3,28 @@
   "type_name": "weapon",
   "layer_1": {
     "zPos": 140,
-    "male": "weapon/slash_oversize_layered/all/universal/",
-    "muscular": "weapon/slash_oversize_layered/all/universal/",
-    "female": "weapon/slash_oversize_layered/all/universal/",
-    "pregnant": "weapon/slash_oversize_layered/all/universal/"
+    "male": "weapon/sword/glowsword/",
+    "muscular": "weapon/sword/glowsword/",
+    "female": "weapon/sword/glowsword/",
+    "pregnant": "weapon/sword/glowsword/"
   },
   "layer_2": {
     "zPos": 9,
-    "male": "weapon/slash_oversize_layered/all/universal/behind/",
-    "muscular": "weapon/slash_oversize_layered/all/universal/behind/",
-    "female": "weapon/slash_oversize_layered/all/universal/behind/",
-    "pregnant": "weapon/slash_oversize_layered/all/universal/behind/"
+    "male": "weapon/sword/glowsword/universal_behind/",
+    "muscular": "weapon/sword/glowsword/universal_behind/",
+    "female": "weapon/sword/glowsword/universal_behind/",
+    "pregnant": "weapon/sword/glowsword/universal_behind/"
   },
   "layer_3": {
     "zPos": 150,
     "custom_animation": "slash_oversize",
-    "male": "weapon/slash_oversize_layered/all/",
-    "muscular": "weapon/slash_oversize_layered/all/",
-    "female": "weapon/slash_oversize_layered/all/",
-    "pregnant": "weapon/slash_oversize_layered/all/"
+    "male": "weapon/sword/glowsword/attack_slash/",
+    "muscular": "weapon/sword/glowsword/attack_slash/",
+    "female": "weapon/sword/glowsword/attack_slash/",
+    "pregnant": "weapon/sword/glowsword/attack_slash/"
   },
   "variants": [
-    "glowsword blue",
-    "glowsword red"
+    "blue",
+    "red"
   ]
 }

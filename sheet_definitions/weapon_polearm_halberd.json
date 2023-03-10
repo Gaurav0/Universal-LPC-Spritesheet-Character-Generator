@@ -4,26 +4,26 @@
   "preview_row": 17,
   "layer_1": {
     "zPos": 140,
-    "male": "weapon/thrust_oversize/male/universal/",
-    "muscular": "weapon/thrust_oversize/male/universal/",
-    "female": "weapon/thrust_oversize/female/universal/",
-    "pregnant": "weapon/thrust_oversize/female/universal/"
+    "male": "weapon/polearm/halberd/male/",
+    "muscular": "weapon/polearm/halberd/male/",
+    "female": "weapon/polearm/halberd/female/",
+    "pregnant": "weapon/polearm/halberd/female/"
   },
   "layer_2": {
     "custom_animation": "thrust_oversize",
     "zPos": 150,
-    "male": "weapon/thrust_oversize/male/",
-    "muscular": "weapon/thrust_oversize/male/",
-    "female": "weapon/thrust_oversize/female/",
-    "pregnant": "weapon/thrust_oversize/female/"
+    "male": "weapon/polearm/halberd/male/attack_thrust/",
+    "muscular": "weapon/polearm/halberd/male/attack_thrust/",
+    "female": "weapon/polearm/halberd/female/attack_thrust/",
+    "pregnant": "weapon/polearm/halberd/female/attack_thrust/"
   },
   "layer_3": {
     "custom_animation": "slash_oversize",
     "zPos": 150,
-    "male": "weapon/slash_oversize/male/",
-    "muscular": "weapon/slash_oversize/male/",
-    "female": "weapon/slash_oversize/female/",
-    "pregnant": "weapon/slash_oversize/female/"
+    "male": "weapon/polearm/halberd/male/attack_slash/",
+    "muscular": "weapon/polearm/halberd/male/attack_slash/",
+    "female": "weapon/polearm/halberd/female/attack_slash/",
+    "pregnant": "weapon/polearm/halberd/female/attack_slash/"
   },
   "variants": [
     "halberd"

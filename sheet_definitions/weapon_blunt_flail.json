@@ -3,18 +3,18 @@
   "type_name": "weapon",
   "layer_1": {
     "zPos": 140,
-    "male": "weapon/slash_oversize/male/universal/",
-    "muscular": "weapon/slash_oversize/male/universal/",
-    "female": "weapon/slash_oversize/female/universal/",
-    "pregnant": "weapon/slash_oversize/female/universal/"
+    "male": "weapon/blunt/flail/male/",
+    "muscular": "weapon/blunt/flail/male/",
+    "female": "weapon/blunt/flail/female/",
+    "pregnant": "weapon/blunt/flail/female/"
   },
   "layer_2": {
     "custom_animation": "slash_oversize",
     "zPos": 150,
-    "male": "weapon/slash_oversize/male/",
-    "muscular": "weapon/slash_oversize/male/",
-    "female": "weapon/slash_oversize/female/",
-    "pregnant": "weapon/slash_oversize/female/"
+    "male": "weapon/blunt/flail/male/attack/",
+    "muscular": "weapon/blunt/flail/male/attack/",
+    "female": "weapon/blunt/flail/female/attack/",
+    "pregnant": "weapon/blunt/flail/female/attack/"
   },
   "variants": [
     "flail"

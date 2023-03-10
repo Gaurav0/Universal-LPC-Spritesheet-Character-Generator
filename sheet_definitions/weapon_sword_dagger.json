@@ -3,10 +3,10 @@
   "type_name": "weapon",
   "layer_1": {
     "zPos": 140,
-    "male": "weapon/slash/male/",
-    "muscular": "weapon/slash/male/",
-    "female": "weapon/slash/female/",
-    "pregnant": "weapon/slash/female/"
+    "male": "weapon/sword/dagger/male/",
+    "muscular": "weapon/sword/dagger/male/",
+    "female": "weapon/sword/dagger/female/",
+    "pregnant": "weapon/sword/dagger/female/"
   },
   "variants": [
     "dagger"
