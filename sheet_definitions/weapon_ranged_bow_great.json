@@ -11,7 +11,7 @@
     "teen": "weapon/ranged/bow/great/"
   },
   "layer_2": {
-    "custom_animation": "walk_bows",
+    "custom_animation": "walk_128",
     "zPos": -1,
     "male": "weapon/ranged/bow/great/walk/background/",
     "muscular": "weapon/ranged/bow/great/walk/background/",
@@ -20,7 +20,7 @@
     "teen": "weapon/ranged/bow/great/walk/background/"
   },
   "layer_3": {
-    "custom_animation": "walk_bows",
+    "custom_animation": "walk_128",
     "zPos": 141,
     "male": "weapon/ranged/bow/great/walk/foreground/",
     "muscular": "weapon/ranged/bow/great/walk/foreground/",
