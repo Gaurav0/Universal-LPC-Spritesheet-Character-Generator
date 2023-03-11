@@ -23,6 +23,38 @@
     "female": "weapon/sword/longsword/attack_slash/",
     "pregnant": "weapon/sword/longsword/attack_slash/"
   },
+  "layer_4": {
+    "zPos": -1,
+    "custom_animation": "slash_reverse_oversize",
+    "male": "weapon/sword/longsword/attack_slash_reverse/behind/",
+    "muscular": "weapon/sword/longsword/attack_slash_reverse/behind/",
+    "female": "weapon/sword/longsword/attack_slash_reverse/behind/",
+    "pregnant": "weapon/sword/longsword/attack_slash_reverse/behind/"
+  },
+  "layer_5": {
+    "zPos": 150,
+    "custom_animation": "slash_reverse_oversize",
+    "male": "weapon/sword/longsword/attack_slash_reverse/",
+    "muscular": "weapon/sword/longsword/attack_slash_reverse/",
+    "female": "weapon/sword/longsword/attack_slash_reverse/",
+    "pregnant": "weapon/sword/longsword/attack_slash_reverse/"
+  },
+  "layer_6": {
+    "zPos": -1,
+    "custom_animation": "thrust_oversize",
+    "male": "weapon/sword/longsword/attack_thrust/behind/",
+    "muscular": "weapon/sword/longsword/attack_thrust/behind/",
+    "female": "weapon/sword/longsword/attack_thrust/behind/",
+    "pregnant": "weapon/sword/longsword/attack_thrust/behind/"
+  },
+  "layer_7": {
+    "zPos": 150,
+    "custom_animation": "thrust_oversize",
+    "male": "weapon/sword/longsword/attack_thrust/",
+    "muscular": "weapon/sword/longsword/attack_thrust/",
+    "female": "weapon/sword/longsword/attack_thrust/",
+    "pregnant": "weapon/sword/longsword/attack_thrust/"
+  },
   "variants": [
     "longsword"
   ]
