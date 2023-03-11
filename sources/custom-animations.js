@@ -23,7 +23,7 @@ const customAnimations = {
       ["thrust-e,0", "thrust-e,1", "thrust-e,2", "thrust-e,3", "thrust-e,4", "thrust-e,5", "thrust-e,4", "thrust-e,4", "thrust-e,4", "thrust-e,5", "thrust-e,4", "thrust-e,2", "thrust-e,3"],
     ]
   },
-  tool_smash: {
+  slash_128: {
     frameSize: 128,
     frames: [
       ["slash-n,0", "slash-n,1", "slash-n,2", "slash-n,3", "slash-n,4", "slash-n,5"],
@@ -50,7 +50,7 @@ const customAnimations = {
       ["slash-e,0", "slash-e,1", "slash-e,2", "slash-e,3", "slash-e,4", "slash-e,5"]
     ]
   },
-  walk_bows: {
+  walk_128: {
     frameSize: 128,
     frames: [
       ["walk-n,0", "walk-n,1", "walk-n,2", "walk-n,3", "walk-n,4", "walk-n,5", "walk-n,6", "walk-n,7", "walk-n,8"],

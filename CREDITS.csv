@@ -16136,6 +16136,18 @@ torso/waist/sash_narrow/male/walnut.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, 
 torso/waist/sash_narrow/male/white.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,,,,,,,,,,,OK
 torso/waist/sash_narrow/male/yellow.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,,,,,,,,,,,OK
 weapon,,,,,,,,,,,,,,,,,,,
+weapon/sword/longsword_alt/walk/longsword_alt.png,,"Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md)","OGA-BY 3.0",https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
+weapon/sword/longsword_alt/walk/behind/longsword_alt.png,,"Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md)","OGA-BY 3.0",https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
+weapon/sword/longsword_alt/slash/longsword_alt.png,,"Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md)","OGA-BY 3.0",https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
+weapon/sword/longsword_alt/slash/behind/longsword_alt.png,,"Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md)","OGA-BY 3.0",https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
+weapon/sword/scimitar/walk/scimitar.png,,"Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md)","OGA-BY 3.0",https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
+weapon/sword/scimitar/walk/behind/scimitar.png,,"Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md)","OGA-BY 3.0",https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
+weapon/sword/scimitar/slash/scimitar.png,,"Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md)","OGA-BY 3.0",https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
+weapon/sword/scimitar/slash/behind/scimitar.png,,"Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md)","OGA-BY 3.0",https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,overskirt
+weapon/sword/katana/walk/katana.png,,"Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md)","OGA-BY 3.0",https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
+weapon/sword/katana/walk/behind/katana.png,,"Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md)","OGA-BY 3.0",https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
+weapon/sword/katana/slash/katana.png,,"Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md)","OGA-BY 3.0",https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
+weapon/sword/katana/slash/behind/katana.png,,"Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md)","OGA-BY 3.0",https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
 weapon/blunt/club/club.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
 weapon/blunt/club/background/club.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
 tools/whip/whip.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
