@@ -16,7 +16,7 @@
     "pregnant": "weapon/magic/diamond/universal_behind/"
   },
   "layer_3": {
-    "custom_animation": "thrust_128",
+    "custom_animation": "thrust_oversize",
     "zPos": 150,
     "male": "weapon/magic/diamond/attack_thrust/",
     "muscular": "weapon/magic/diamond/attack_thrust/",
@@ -24,7 +24,7 @@
     "pregnant": "weapon/magic/diamond/attack_thrust/"
   },
   "layer_4": {
-    "custom_animation": "thrust_128",
+    "custom_animation": "thrust_oversize",
     "zPos": -1,
     "male": "weapon/magic/diamond/attack_thrust/background/",
     "muscular": "weapon/magic/diamond/attack_thrust/background/",

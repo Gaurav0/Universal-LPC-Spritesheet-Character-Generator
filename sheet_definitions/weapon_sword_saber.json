@@ -16,6 +16,14 @@
     "pregnant": "weapon/sword/saber/universal_behind/"
   },
   "layer_3": {
+    "zPos": 8,
+    "custom_animation": "slash_oversize",
+    "male": "weapon/sword/saber/attack_slash/behind/",
+    "muscular": "weapon/sword/saber/attack_slash/behind/",
+    "female": "weapon/sword/saber/attack_slash/behind/",
+    "pregnant": "weapon/sword/saber/attack_slash/behind/"
+  },
+  "layer_4": {
     "zPos": 150,
     "custom_animation": "slash_oversize",
     "male": "weapon/sword/saber/attack_slash/",

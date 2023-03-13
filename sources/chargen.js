@@ -451,10 +451,10 @@ $(document).ready(function() {
     $("#chooser").css("height", canvas.height);
 
     var itemIdx = 0;
+    var didPutUniversalForCustomAnimation = "";
     itemsToDraw.sort(function(lhs, rhs) {
       return parseInt(lhs.zPos) - parseInt(rhs.zPos);
     });
-
     for (item in itemsToDraw) {
       const fileName = itemsToDraw[itemIdx].fileName;
       const img = getImage(fileName);
@@ -476,19 +476,24 @@ $(document).ready(function() {
           offSetInAdditionToOtherCustomActions+=otherCustomAction.frameSize * otherCustomAction.frames.length
         }
 
-        for (var i = 0; i < customAnimationDefinition.frames.length; ++i) {
-          const frames = customAnimationDefinition.frames[i];
-          for (var j = 0; j < frames.length; ++j) {
-            const frameCoordinateX = parseInt(frames[j].split(",")[1]);
-            const frameCoordinateRowName = frames[j].split(",")[0];
-            const frameCoordinateY = animationRowsLayout[frameCoordinateRowName]+1;
-            const offSet = (frameSize-universalFrameSize)/2;
+        if (didPutUniversalForCustomAnimation !== custom_animation) {
+          for (var i = 0; i < customAnimationDefinition.frames.length; ++i) {
+            const frames = customAnimationDefinition.frames[i];
+            for (var j = 0; j < frames.length; ++j) {
+              const frameCoordinateX = parseInt(frames[j].split(",")[1]);
+              const frameCoordinateRowName = frames[j].split(",")[0];
+              const frameCoordinateY = animationRowsLayout[frameCoordinateRowName]+1;
+              const offSet = (frameSize-universalFrameSize)/2;
 
-            var imgDataSingleFrame = ctx.getImageData(universalFrameSize * frameCoordinateX, universalFrameSize * frameCoordinateY, universalFrameSize, universalFrameSize);
-            customAnimationContext.putImageData(imgDataSingleFrame, frameSize * j + offSet, frameSize * i + offSet + offSetInAdditionToOtherCustomActions);
+              var imgDataSingleFrame = ctx.getImageData(universalFrameSize * frameCoordinateX, universalFrameSize * frameCoordinateY, universalFrameSize, universalFrameSize);
+              customAnimationContext.putImageData(imgDataSingleFrame, frameSize * j + offSet, frameSize * i + offSet + offSetInAdditionToOtherCustomActions);
+            }
+          }
+          ctx.drawImage(customAnimationCanvas, 0, universalSheetHeight);
+          if (itemsToDraw[itemIdx].zPos >= 140) {
+            didPutUniversalForCustomAnimation = custom_animation;
           }
         }
-        ctx.drawImage(customAnimationCanvas, 0, universalSheetHeight);
         ctx.drawImage(img, 0, universalSheetHeight+offSetInAdditionToOtherCustomActions);
       } else {
         drawImage(ctx, img);

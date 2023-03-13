@@ -16,15 +16,15 @@
     "pregnant": "weapon/magic/crystal/universal_behind/"
   },
   "layer_3": {
-    "custom_animation": "thrust_128",
-    "zPos": 150,
+    "custom_animation": "thrust_oversize",
+    "zPos": 151,
     "male": "weapon/magic/crystal/attack_thrust/",
     "muscular": "weapon/magic/crystal/attack_thrust/",
     "female": "weapon/magic/crystal/attack_thrust/",
     "pregnant": "weapon/magic/crystal/attack_thrust/"
   },
   "layer_4": {
-    "custom_animation": "thrust_128",
+    "custom_animation": "thrust_oversize",
     "zPos": -1,
     "male": "weapon/magic/crystal/attack_thrust/background/",
     "muscular": "weapon/magic/crystal/attack_thrust/background/",
