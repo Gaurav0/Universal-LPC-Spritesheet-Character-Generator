@@ -16,20 +16,20 @@
     "pregnant": "weapon/magic/gnarled/universal_behind/"
   },
   "layer_3": {
-    "custom_animation": "thrust_128",
-    "zPos": 150,
-    "male": "weapon/magic/gnarled/attack_thrust/",
-    "muscular": "weapon/magic/gnarled/attack_thrust/",
-    "female": "weapon/magic/gnarled/attack_thrust/",
-    "pregnant": "weapon/magic/gnarled/attack_thrust/"
-  },
-  "layer_4": {
-    "custom_animation": "thrust_128",
+    "custom_animation": "thrust_oversize",
     "zPos": -1,
     "male": "weapon/magic/gnarled/attack_thrust/background/",
     "muscular": "weapon/magic/gnarled/attack_thrust/background/",
     "female": "weapon/magic/gnarled/attack_thrust/background/",
     "pregnant": "weapon/magic/gnarled/attack_thrust/background/"
+  },
+  "layer_4": {
+    "custom_animation": "thrust_oversize",
+    "zPos": 150,
+    "male": "weapon/magic/gnarled/attack_thrust/",
+    "muscular": "weapon/magic/gnarled/attack_thrust/",
+    "female": "weapon/magic/gnarled/attack_thrust/",
+    "pregnant": "weapon/magic/gnarled/attack_thrust/"
   },
   "variants": [
     "gnarled"
