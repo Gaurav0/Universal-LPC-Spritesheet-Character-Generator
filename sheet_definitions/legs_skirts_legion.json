@@ -3,8 +3,8 @@
   "type_name" : "legs",
   "layer_1" : {
     "zPos" : 20,
-    "male" : "legs/skirts/legion/male/",
-    "muscular" : "legs/skirts/legion/male/",
+    "male" : "legs/skirts/legion/female/",
+    "muscular" : "legs/skirts/legion/female/",
     "female" : "legs/skirts/legion/female/",
     "pregnant" : "legs/skirts/legion/female/",
     "teen" : "legs/skirts/legion/female/"
