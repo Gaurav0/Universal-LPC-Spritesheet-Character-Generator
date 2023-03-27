@@ -2,7 +2,7 @@
   "name": "Facial",
   "type_name": "facial",
   "layer_1": {
-    "zPos": 25,
+    "zPos": 115,
     "male": "facial/",
     "muscular": "facial/",
     "female": "facial/",

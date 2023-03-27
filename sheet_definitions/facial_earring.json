@@ -2,7 +2,7 @@
   "name": "Earring",
   "type_name": "earring",
   "layer_1": {
-    "zPos": 25,
+    "zPos": 115,
     "male": "facial/earring/male/",
     "muscular": "facial/earring/male/",
     "female": "facial/earring/female/",
