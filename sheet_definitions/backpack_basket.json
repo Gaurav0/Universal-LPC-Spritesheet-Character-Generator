@@ -1,0 +1,22 @@
+{
+  "name": "Basket",
+  "type_name": "backpack",
+  "layer_1": {
+    "zPos": 110,
+    "male":     "backpack/basket/fg/",
+    "muscular": "backpack/basket/fg/",
+    "female":   "backpack/basket/fg/",
+    "pregnant": "backpack/basket/fg/"
+  },
+  "layer_2": {
+    "zPos": 5,
+    "male":     "backpack/basket/bg/",
+    "muscular": "backpack/basket/bg/",
+    "female":   "backpack/basket/bg/",
+    "pregnant": "backpack/basket/bg/"
+  },
+  "variants": [
+    "round",
+    "square"
+  ]
+}
