@@ -1,0 +1,33 @@
+{
+  "name": "Square pack",
+  "type_name": "backpack",
+  "layer_1": {
+    "zPos": 110,
+    "male":     "backpack/squarepack/male/",
+    "muscular": "backpack/squarepack/male/",
+    "female":   "backpack/squarepack/female/",
+    "pregnant": "backpack/squarepack/female/"
+  },
+  "variants": [
+    "black",
+    "blue",
+    "bluegray",
+    "forest",
+    "gray",
+    "green",
+    "lavender",
+    "leather",
+    "maroon",
+    "navy",
+    "orange",
+    "pink",
+    "purple",
+    "red",
+    "sky",
+    "tan",
+    "teal",
+    "walnut",
+    "white",
+    "yellow"
+  ]
+}
