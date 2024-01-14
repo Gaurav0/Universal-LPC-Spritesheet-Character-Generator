@@ -41,6 +41,16 @@ arms/bracers/male/gold.png,,"Matthew Krohn (makrohn), Johannes Sjölund (wulax)"
 arms/bracers/male/iron.png,,"Matthew Krohn (makrohn), Johannes Sjölund (wulax)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
 arms/bracers/male/silver.png,,"Matthew Krohn (makrohn), Johannes Sjölund (wulax)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
 arms/bracers/male/steel.png,,"Matthew Krohn (makrohn), Johannes Sjölund (wulax)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
+backpack,,,,,,,,,,,,,,,,,,,
+backpack/backpack,,,,,,,,,,,,,,,,,,,
+backpack/basket,,,,,,,,,,,,,,,,,,,
+backpack/basket_contents,,,,,,,,,,,,,,,,,,,
+backpack/basket_contents/ore,,,,,,,,,,,,,,,,,,,
+backpack/basket_contents/wood,,,,,,,,,,,,,,,,,,,
+backpack/jetpack,,,,,,,,,,,,,,,,,,,
+backpack/jetpack_fins,,,,,,,,,,,,,,,,,,,
+backpack/squarepack,,,,,,,,,,,,,,,,,,,
+backpack/straps,,,,,,,,,,,,,,,,,,,
 bauldron,,Nila122,"GPL 2.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,,,,,,,,,,,
 bauldron/female,,,,,,,,,,,,,,,,,,,
 bauldron/female/_brown.png,,Nila122,"GPL 2.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,,,,,,,,,,,OK
@@ -1728,11 +1738,17 @@ gloves/female,"metal gloves by wulax, extended to female base by makrohn, recolo
 gloves/female/black.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/female/blue.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/female/bluegray.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+gloves/female/brass.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+gloves/female/bronze.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/female/brown.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+gloves/female/ceramic.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/female/charcoal.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+gloves/female/copper.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/female/forest.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+gloves/female/gold.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/female/gray.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/female/green.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+gloves/female/iron.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/female/lavender.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/female/leather.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/female/maroon.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
@@ -1742,8 +1758,10 @@ gloves/female/pink.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn
 gloves/female/purple.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/female/red.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/female/rose.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+gloves/female/silver.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/female/sky.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/female/slate.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+gloves/female/steel.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/female/tan.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/female/teal.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/female/walnut.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
@@ -1753,11 +1771,17 @@ gloves/male,"metal gloves by wulax, recolors by bigbeargames, adapted to v3 base
 gloves/male/black.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/male/blue.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/male/bluegray.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+gloves/male/brass.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+gloves/male/bronze.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/male/brown.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+gloves/male/ceramic.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/male/charcoal.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+gloves/male/copper.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/male/forest.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+gloves/male/gold.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/male/gray.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/male/green.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+gloves/male/iron.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/male/lavender.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/male/leather.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/male/maroon.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
@@ -1767,8 +1791,10 @@ gloves/male/pink.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn),
 gloves/male/purple.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/male/red.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/male/rose.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+gloves/male/silver.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/male/sky.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/male/slate.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+gloves/male/steel.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/male/tan.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/male/teal.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 gloves/male/walnut.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Johannes Sjölund (wulax), bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
@@ -2345,8 +2371,8 @@ hair/bob_side_part/male/sandy.png,,"thecilekli, bluecarrot16",CC0,https://openga
 hair/bob_side_part/male/strawberry.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
 hair/bob_side_part/male/violet.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
 hair/bob_side_part/male/white.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/braid,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/3-hairs-for-lpc,,,,,,,,,,,,,,,OK
 hair/braid,,"Nila122, ElizaWy","CC-BY-SA 3.0, GPL 3.0, GPL 2.0",https://opengameart.org/content/3-hairs-for-lpc,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,
+hair/braid,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/3-hairs-for-lpc,,,,,,,,,,,,,,,OK
 hair/braid/child,,,,,,,,,,,,,,,,,,,
 hair/braid/child/black.png,,Nila122,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
 hair/braid/child/blonde.png,,Nila122,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
@@ -13969,6 +13995,8 @@ head/nose/straight/taupe.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)
 head/nose/straight/zombie.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
 head/nose/straight/zombie_green.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
 head/tiaras_female,,Luke Mehl,,https://opengameart.org/content/female-mage-clothing-set,,,,,,,,,,,,,,,
+head/whiskers,,,,,,,,,,,,,,,,,,,
+head/whiskers/whiskers.png,,,,,,,,,,,,,,,,,,,BAD
 head/wrinkles,,bluecarrot16,CC0,,,,,,,,,,,,,,,,
 head/wrinkles/amber.png,,bluecarrot16,CC0,,,,,,,,,,,,,,,,OK
 head/wrinkles/black.png,,bluecarrot16,CC0,,,,,,,,,,,,,,,,OK
@@ -14266,6 +14294,31 @@ legs/skirts/legion/female/teal.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2
 legs/skirts/legion/female/walnut.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 legs/skirts/legion/female/white.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 legs/skirts/legion/female/yellow.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+legs/skirts/legion/male,,,,,,,,,,,,,,,,,,,
+legs/skirts/legion/male/black.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+legs/skirts/legion/male/blue.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+legs/skirts/legion/male/bluegray.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+legs/skirts/legion/male/brown.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+legs/skirts/legion/male/charcoal.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+legs/skirts/legion/male/forest.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+legs/skirts/legion/male/gray.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+legs/skirts/legion/male/green.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+legs/skirts/legion/male/lavender.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+legs/skirts/legion/male/leather.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+legs/skirts/legion/male/maroon.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+legs/skirts/legion/male/navy.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+legs/skirts/legion/male/orange.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+legs/skirts/legion/male/pink.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+legs/skirts/legion/male/purple.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+legs/skirts/legion/male/red.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+legs/skirts/legion/male/rose.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+legs/skirts/legion/male/sky.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+legs/skirts/legion/male/slate.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+legs/skirts/legion/male/tan.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+legs/skirts/legion/male/teal.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+legs/skirts/legion/male/walnut.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+legs/skirts/legion/male/white.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+legs/skirts/legion/male/yellow.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 legs/skirts/overskirt,original princess.xcf by Sharm; extended to all poses by makrohn; edited to v3 bases and animation cleanup by bluecarrot16,"bluecarrot16, Matthew Krohn (makrohn), Lanea Zimmerman (Sharm)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,https://opengameart.org/content/lpc-dress-in-combat-poses,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,
 legs/skirts/overskirt/female,,,,,,,,,,,,,,,,,,,
 legs/skirts/overskirt/female/black.png,,"bluecarrot16, Matthew Krohn (makrohn), Lanea Zimmerman (Sharm)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,https://opengameart.org/content/lpc-dress-in-combat-poses,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,OK
@@ -14813,20 +14866,35 @@ shoulders/plate/male/iron.png,,"bluecarrot16, Johannes Sjölund (wulax)","CC-BY-
 shoulders/plate/male/silver.png,,"bluecarrot16, Johannes Sjölund (wulax)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 shoulders/plate/male/steel.png,,"bluecarrot16, Johannes Sjölund (wulax)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 todo/formal_vest stripes.png,,"bluecarrot16, Thane Brimhall (pennomi), laetissima","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-2-characters,https://opengameart.org/content/lpc-gentleman,,,,,,,,,,,,,,OK
-tools/rod/background/rod.png,,"bluecarrot16, Pierre Vigier, Tuomo Untinen, Johannes Sjölund (wulax), and Inboxninja","CC-BY-SA 3.0",https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
-tools/rod/foreground/rod.png,,"bluecarrot16, Pierre Vigier, Tuomo Untinen, Johannes Sjölund (wulax), and Inboxninja","CC-BY-SA 3.0",https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
-tools/smash/background/axe.png,,"bluecarrot16, Pierre Vigier, Tuomo Untinen, Johannes Sjölund (wulax), and Inboxninja","CC-BY-SA 3.0",https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
-tools/smash/foreground/axe.png,,"bluecarrot16, Pierre Vigier, Tuomo Untinen, Johannes Sjölund (wulax), and Inboxninja","CC-BY-SA 3.0",https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
-tools/smash/background/hammer.png,,"bluecarrot16, Pierre Vigier, Tuomo Untinen, Johannes Sjölund (wulax), and Inboxninja","CC-BY-SA 3.0",https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
-tools/smash/foreground/hammer.png,,"bluecarrot16, Pierre Vigier, Tuomo Untinen, Johannes Sjölund (wulax), and Inboxninja","CC-BY-SA 3.0",https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
-tools/smash/background/pickaxe.png,,"bluecarrot16, Pierre Vigier, Tuomo Untinen, Johannes Sjölund (wulax), and Inboxninja","CC-BY-SA 3.0",https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
-tools/smash/foreground/pickaxe.png,,"bluecarrot16, Pierre Vigier, Tuomo Untinen, Johannes Sjölund (wulax), and Inboxninja","CC-BY-SA 3.0",https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
-tools/thrust/background/hoe.png,,"bluecarrot16, Pierre Vigier, Tuomo Untinen, Johannes Sjölund (wulax), and Inboxninja","CC-BY-SA 3.0",https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
-tools/thrust/foreground/hoe.png,,"bluecarrot16, Pierre Vigier, Tuomo Untinen, Johannes Sjölund (wulax), and Inboxninja","CC-BY-SA 3.0",https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
-tools/thrust/background/shovel.png,,"bluecarrot16, Pierre Vigier, Tuomo Untinen, Johannes Sjölund (wulax), and Inboxninja","CC-BY-SA 3.0",https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
-tools/thrust/foreground/shovel.png,,"bluecarrot16, Pierre Vigier, Tuomo Untinen, Johannes Sjölund (wulax), and Inboxninja","CC-BY-SA 3.0",https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
-tools/thrust/background/watering.png,,"bluecarrot16, Pierre Vigier, Tuomo Untinen, Johannes Sjölund (wulax), and Inboxninja","CC-BY-SA 3.0",https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
-tools/thrust/foreground/watering.png,,"bluecarrot16, Pierre Vigier, Tuomo Untinen, Johannes Sjölund (wulax), and Inboxninja","CC-BY-SA 3.0",https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
+tools,,,,,,,,,,,,,,,,,,,
+tools/rod,,,,,,,,,,,,,,,,,,,
+tools/rod/background,,,,,,,,,,,,,,,,,,,
+tools/rod/background/rod.png,,"bluecarrot16, Pierre Vigier (pvigier), Tuomo Untinen (reemax), Johannes Sjölund (wulax), and Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
+tools/rod/foreground,,,,,,,,,,,,,,,,,,,
+tools/rod/foreground/rod.png,,"bluecarrot16, Pierre Vigier (pvigier), Tuomo Untinen (reemax), Johannes Sjölund (wulax), and Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
+tools/slash,,,,,,,,,,,,,,,,,,,
+tools/smash,,,,,,,,,,,,,,,,,,,
+tools/smash/background,,,,,,,,,,,,,,,,,,,
+tools/smash/background/axe.png,,"bluecarrot16, Pierre Vigier (pvigier), Tuomo Untinen (reemax), Johannes Sjölund (wulax), and Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
+tools/smash/background/hammer.png,,"bluecarrot16, Pierre Vigier (pvigier), Tuomo Untinen (reemax), Johannes Sjölund (wulax), and Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
+tools/smash/background/pickaxe.png,,"bluecarrot16, Pierre Vigier (pvigier), Tuomo Untinen (reemax), Johannes Sjölund (wulax), and Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
+tools/smash/foreground,,,,,,,,,,,,,,,,,,,
+tools/smash/foreground/axe.png,,"bluecarrot16, Pierre Vigier (pvigier), Tuomo Untinen (reemax), Johannes Sjölund (wulax), and Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
+tools/smash/foreground/hammer.png,,"bluecarrot16, Pierre Vigier (pvigier), Tuomo Untinen (reemax), Johannes Sjölund (wulax), and Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
+tools/smash/foreground/pickaxe.png,,"bluecarrot16, Pierre Vigier (pvigier), Tuomo Untinen (reemax), Johannes Sjölund (wulax), and Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
+tools/thrust,,,,,,,,,,,,,,,,,,,
+tools/thrust/background,,,,,,,,,,,,,,,,,,,
+tools/thrust/background/hoe.png,,"bluecarrot16, Pierre Vigier (pvigier), Tuomo Untinen (reemax), Johannes Sjölund (wulax), and Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
+tools/thrust/background/shovel.png,,"bluecarrot16, Pierre Vigier (pvigier), Tuomo Untinen (reemax), Johannes Sjölund (wulax), and Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
+tools/thrust/background/watering.png,,"bluecarrot16, Pierre Vigier (pvigier), Tuomo Untinen (reemax), Johannes Sjölund (wulax), and Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
+tools/thrust/foreground,,,,,,,,,,,,,,,,,,,
+tools/thrust/foreground/hoe.png,,"bluecarrot16, Pierre Vigier (pvigier), Tuomo Untinen (reemax), Johannes Sjölund (wulax), and Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
+tools/thrust/foreground/shovel.png,,"bluecarrot16, Pierre Vigier (pvigier), Tuomo Untinen (reemax), Johannes Sjölund (wulax), and Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
+tools/thrust/foreground/watering.png,,"bluecarrot16, Pierre Vigier (pvigier), Tuomo Untinen (reemax), Johannes Sjölund (wulax), and Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
+tools/whip,,,,,,,,,,,,,,,,,,,
+tools/whip/background,,,,,,,,,,,,,,,,,,,
+tools/whip/background/whip.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+tools/whip/whip.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
 torso,,,,,,,,,,,,,,,,,,,
 torso/aprons,,,,,,,,,,,,,,,,,,,
 torso/aprons/apron,,Nila122,"CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-aprons,,,,,,,,,,,,,,,
@@ -15671,6 +15739,32 @@ torso/clothes/tunic/female/teal.png,,"bluecarrot16, David Conway Jr. (JaidynReim
 torso/clothes/tunic/female/walnut.png,,"bluecarrot16, David Conway Jr. (JaidynReiman), Matthew Krohn (makrohn), Marcel van de Steeg (MadMarcel)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-female-orcogregoblintroll-base-walkcycle,https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,OK
 torso/clothes/tunic/female/white.png,,"bluecarrot16, David Conway Jr. (JaidynReiman), Matthew Krohn (makrohn), Marcel van de Steeg (MadMarcel)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-female-orcogregoblintroll-base-walkcycle,https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,OK
 torso/clothes/tunic/female/yellow.png,,"bluecarrot16, David Conway Jr. (JaidynReiman), Matthew Krohn (makrohn), Marcel van de Steeg (MadMarcel)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-female-orcogregoblintroll-base-walkcycle,https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,OK
+torso/clothes/tunic_sara,,,,,,,,,,,,,,,,,,,
+torso/clothes/tunic_sara/female,,,,,,,,,,,,,,,,,,,
+torso/clothes/tunic_sara/female/black.png,,,,,,,,,,,,,,,,,,,BAD
+torso/clothes/tunic_sara/female/blue.png,,,,,,,,,,,,,,,,,,,BAD
+torso/clothes/tunic_sara/female/bluegray.png,,,,,,,,,,,,,,,,,,,BAD
+torso/clothes/tunic_sara/female/brown.png,,,,,,,,,,,,,,,,,,,BAD
+torso/clothes/tunic_sara/female/charcoal.png,,,,,,,,,,,,,,,,,,,BAD
+torso/clothes/tunic_sara/female/forest.png,,,,,,,,,,,,,,,,,,,BAD
+torso/clothes/tunic_sara/female/gray.png,,,,,,,,,,,,,,,,,,,BAD
+torso/clothes/tunic_sara/female/green.png,,,,,,,,,,,,,,,,,,,BAD
+torso/clothes/tunic_sara/female/lavender.png,,,,,,,,,,,,,,,,,,,BAD
+torso/clothes/tunic_sara/female/leather.png,,,,,,,,,,,,,,,,,,,BAD
+torso/clothes/tunic_sara/female/maroon.png,,,,,,,,,,,,,,,,,,,BAD
+torso/clothes/tunic_sara/female/navy.png,,,,,,,,,,,,,,,,,,,BAD
+torso/clothes/tunic_sara/female/orange.png,,,,,,,,,,,,,,,,,,,BAD
+torso/clothes/tunic_sara/female/pink.png,,,,,,,,,,,,,,,,,,,BAD
+torso/clothes/tunic_sara/female/purple.png,,,,,,,,,,,,,,,,,,,BAD
+torso/clothes/tunic_sara/female/red.png,,,,,,,,,,,,,,,,,,,BAD
+torso/clothes/tunic_sara/female/rose.png,,,,,,,,,,,,,,,,,,,BAD
+torso/clothes/tunic_sara/female/sky.png,,,,,,,,,,,,,,,,,,,BAD
+torso/clothes/tunic_sara/female/slate.png,,,,,,,,,,,,,,,,,,,BAD
+torso/clothes/tunic_sara/female/tan.png,,,,,,,,,,,,,,,,,,,BAD
+torso/clothes/tunic_sara/female/teal.png,,,,,,,,,,,,,,,,,,,BAD
+torso/clothes/tunic_sara/female/walnut.png,,,,,,,,,,,,,,,,,,,BAD
+torso/clothes/tunic_sara/female/white.png,,,,,,,,,,,,,,,,,,,BAD
+torso/clothes/tunic_sara/female/yellow.png,,,,,,,,,,,,,,,,,,,BAD
 torso/clothes/vest,,"bluecarrot16, Thane Brimhall (pennomi), laetissima","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-2-characters,https://opengameart.org/content/lpc-gentleman,https://opengameart.org/content/lpc-pirates,,,,,,,,,,,,,
 torso/clothes/vest/male,,,,,,,,,,,,,,,,,,,
 torso/clothes/vest/male/black.png,,"bluecarrot16, Thane Brimhall (pennomi), laetissima","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-2-characters,https://opengameart.org/content/lpc-gentleman,https://opengameart.org/content/lpc-pirates,,,,,,,,,,,,,OK
@@ -16135,136 +16229,277 @@ torso/waist/sash_narrow/male/teal.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GP
 torso/waist/sash_narrow/male/walnut.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,,,,,,,,,,,OK
 torso/waist/sash_narrow/male/white.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,,,,,,,,,,,OK
 torso/waist/sash_narrow/male/yellow.png,,"bluecarrot16, Nila122","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,https://opengameart.org/content/lpc-pirates,,,,,,,,,,,,,,OK
+torso/waist/waistband,,,,,,,,,,,,,,,,,,,
+torso/waist/waistband/female,,,,,,,,,,,,,,,,,,,
+torso/waist/waistband/female/black.png,,,,,,,,,,,,,,,,,,,BAD
+torso/waist/waistband/female/blue.png,,,,,,,,,,,,,,,,,,,BAD
+torso/waist/waistband/female/bluegray.png,,,,,,,,,,,,,,,,,,,BAD
+torso/waist/waistband/female/brown.png,,,,,,,,,,,,,,,,,,,BAD
+torso/waist/waistband/female/charcoal.png,,,,,,,,,,,,,,,,,,,BAD
+torso/waist/waistband/female/forest.png,,,,,,,,,,,,,,,,,,,BAD
+torso/waist/waistband/female/gray.png,,,,,,,,,,,,,,,,,,,BAD
+torso/waist/waistband/female/green.png,,,,,,,,,,,,,,,,,,,BAD
+torso/waist/waistband/female/lavender.png,,,,,,,,,,,,,,,,,,,BAD
+torso/waist/waistband/female/leather.png,,,,,,,,,,,,,,,,,,,BAD
+torso/waist/waistband/female/maroon.png,,,,,,,,,,,,,,,,,,,BAD
+torso/waist/waistband/female/navy.png,,,,,,,,,,,,,,,,,,,BAD
+torso/waist/waistband/female/orange.png,,,,,,,,,,,,,,,,,,,BAD
+torso/waist/waistband/female/pink.png,,,,,,,,,,,,,,,,,,,BAD
+torso/waist/waistband/female/purple.png,,,,,,,,,,,,,,,,,,,BAD
+torso/waist/waistband/female/red.png,,,,,,,,,,,,,,,,,,,BAD
+torso/waist/waistband/female/rose.png,,,,,,,,,,,,,,,,,,,BAD
+torso/waist/waistband/female/sky.png,,,,,,,,,,,,,,,,,,,BAD
+torso/waist/waistband/female/slate.png,,,,,,,,,,,,,,,,,,,BAD
+torso/waist/waistband/female/tan.png,,,,,,,,,,,,,,,,,,,BAD
+torso/waist/waistband/female/teal.png,,,,,,,,,,,,,,,,,,,BAD
+torso/waist/waistband/female/walnut.png,,,,,,,,,,,,,,,,,,,BAD
+torso/waist/waistband/female/white.png,,,,,,,,,,,,,,,,,,,BAD
+torso/waist/waistband/female/yellow.png,,,,,,,,,,,,,,,,,,,BAD
 weapon,,,,,,,,,,,,,,,,,,,
-weapon/sword/longsword_alt/walk/longsword_alt.png,,"Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md)","OGA-BY 3.0",https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
-weapon/sword/longsword_alt/walk/behind/longsword_alt.png,,"Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md)","OGA-BY 3.0",https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
-weapon/sword/longsword_alt/slash/longsword_alt.png,,"Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md)","OGA-BY 3.0",https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
-weapon/sword/longsword_alt/slash/behind/longsword_alt.png,,"Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md)","OGA-BY 3.0",https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
-weapon/sword/scimitar/walk/scimitar.png,,"Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md)","OGA-BY 3.0",https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
-weapon/sword/scimitar/walk/behind/scimitar.png,,"Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md)","OGA-BY 3.0",https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
-weapon/sword/scimitar/slash/scimitar.png,,"Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md)","OGA-BY 3.0",https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
-weapon/sword/scimitar/slash/behind/scimitar.png,,"Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md)","OGA-BY 3.0",https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,overskirt
-weapon/sword/katana/walk/katana.png,,"Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md)","OGA-BY 3.0",https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
-weapon/sword/katana/walk/behind/katana.png,,"Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md)","OGA-BY 3.0",https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
-weapon/sword/katana/slash/katana.png,,"Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md)","OGA-BY 3.0",https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
-weapon/sword/katana/slash/behind/katana.png,,"Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md)","OGA-BY 3.0",https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
-weapon/blunt/club/club.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/blunt,,,,,,,,,,,,,,,,,,,
+weapon/blunt/club,,,,,,,,,,,,,,,,,,,
+weapon/blunt/club/background,,,,,,,,,,,,,,,,,,,
 weapon/blunt/club/background/club.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-tools/whip/whip.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-tools/whip/background/whip.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/ranged/slingshot/slingshot.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/ranged/slingshot/behind/slingshot.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/ranged/boomerang/boomerang.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/magic/loop/loop.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/magic/loop/universal_behind/loop.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/magic/loop/attack_thrust/loop.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/magic/loop/attack_thrust/background/loop.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/magic/diamond/diamond.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/magic/diamond/universal_behind/diamond.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/magic/diamond/attack_thrust/diamond.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/magic/diamond/attack_thrust/background/diamond.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/magic/gnarled/gnarled.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/magic/gnarled/universal_behind/gnarled.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/magic/gnarled/attack_thrust/gnarled.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/magic/gnarled/attack_thrust/background/gnarled.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/magic/crystal/blue.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/magic/crystal/universal_behind/blue.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/magic/crystal/attack_thrust/blue.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/magic/crystal/attack_thrust/background/blue.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/magic/crystal/red.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/magic/crystal/universal_behind/red.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/magic/crystal/attack_thrust/red.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/magic/crystal/attack_thrust/background/red.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/magic/crystal/green.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/magic/crystal/universal_behind/green.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/magic/crystal/attack_thrust/green.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/magic/crystal/attack_thrust/background/green.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/ranged/crossbow/crossbow.png,,drjamgo@hotmail.com,CC0,https://opengameart.org/content/lpc-crossbow-final,,,,,,,,,,,,,,,OK
-weapon/ranged/bow/arrow/arrow.png,,Johannes Sjölund (wulax),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-weapon/ranged/bow/great/great.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax), pvigier",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
-weapon/ranged/bow/great/walk/background/great.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax), pvigier",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
-weapon/ranged/bow/great/walk/foreground/great.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax), pvigier",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
-weapon/ranged/bow/recurve/recurve.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax), pvigier",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
-weapon/ranged/bow/recurve/walk/background/recurve.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax), pvigier",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
-weapon/ranged/bow/recurve/walk/foreground/recurve.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax), pvigier",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
-weapon/ranged/bow/normal/walk/background/normal.png,,"Johannes Sjölund (wulax), pvigier","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
-weapon/ranged/bow/normal/walk/background/normal.png,,"Johannes Sjölund (wulax), pvigier","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
-weapon/ranged/bow/normal/walk/background/normal.png,,"Johannes Sjölund (wulax), pvigier","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
-weapon/sword/dagger/dagger.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
-weapon/sword/dagger/behind/dagger.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
-weapon/sword/glowsword/attack_slash/blue.png,,"bluecarrot16, tskaufma, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-glow-sword,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,OK
-weapon/sword/glowsword/attack_slash/red.png,,"bluecarrot16, tskaufma, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-glow-sword,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,OK
-weapon/sword/glowsword/attack_slash/behind/blue.png,,"bluecarrot16, tskaufma, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-glow-sword,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,OK
-weapon/sword/glowsword/attack_slash/behind/red.png,,"bluecarrot16, tskaufma, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-glow-sword,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,OK
-weapon/sword/glowsword/universal_behind/blue.png,,"bluecarrot16, tskaufma, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-glow-sword,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,OK
-weapon/sword/glowsword/universal_behind/red.png,,"bluecarrot16, tskaufma, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-glow-sword,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,OK
-weapon/sword/glowsword/blue.png,,"bluecarrot16, tskaufma, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-glow-sword,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,OK
-weapon/sword/glowsword/red.png,,"bluecarrot16, tskaufma, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-glow-sword,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,OK
-weapon/sword/longsword/attack_slash/longsword.png,,"Johannes Sjölund (wulax), bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
-weapon/sword/longsword/attack_slash/behind/longsword.png,,"Johannes Sjölund (wulax), bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
-weapon/sword/longsword/universal_behind/longsword.png,,"Johannes Sjölund (wulax), bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
-weapon/sword/longsword/longsword.png,,"Johannes Sjölund (wulax), bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
-weapon/sword/longsword/attack_slash_reverse/behind/longsword.png,,"Johannes Sjölund (wulax), bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
-weapon/sword/longsword/attack_slash_reverse/longsword.png,,"Johannes Sjölund (wulax), bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
-weapon/sword/longsword/attack_thrust/behind/longsword.png,,"Johannes Sjölund (wulax), bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
-weapon/sword/longsword/attack_thrust/longsword.png,,"Johannes Sjölund (wulax), bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
-weapon/sword/rapier/attack_slash/rapier.png,,"Johannes Sjölund (wulax), bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
-weapon/sword/rapier/attack_slash/behind/rapier.png,,"Johannes Sjölund (wulax), bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
-weapon/sword/rapier/rapier.png,,"Johannes Sjölund (wulax), bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
-weapon/sword/rapier/universal_behind/rapier.png,,"Johannes Sjölund (wulax), bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
-weapon/sword/saber/attack_slash/saber.png,,"Daniel Eddeland (daneeklu), Johannes Sjölund (wulax), gr3yh47, bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
-weapon/sword/saber/attack_slash/behind/saber.png,,"Daniel Eddeland (daneeklu), Johannes Sjölund (wulax), gr3yh47, bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
-weapon/sword/saber/universal_behind/saber.png,,"Daniel Eddeland (daneeklu), Johannes Sjölund (wulax), gr3yh47, bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
-weapon/sword/saber/saber.png,,"Daniel Eddeland (daneeklu), Johannes Sjölund (wulax), gr3yh47, bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
-weapon/blunt/flail/behind/flail.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
-weapon/blunt/flail/flail.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
+weapon/blunt/club/club.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/blunt/flail,,,,,,,,,,,,,,,,,,,
+weapon/blunt/flail/attack_slash,,,,,,,,,,,,,,,,,,,
+weapon/blunt/flail/attack_slash/behind,,,,,,,,,,,,,,,,,,,
 weapon/blunt/flail/attack_slash/behind/flail.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
 weapon/blunt/flail/attack_slash/flail.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
-weapon/blunt/waraxe/behind/waraxe.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
-weapon/blunt/waraxe/waraxe.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
-weapon/blunt/waraxe/attack_slash/behind/waraxe.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
-weapon/blunt/waraxe/attack_slash/waraxe.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
+weapon/blunt/flail/behind,,,,,,,,,,,,,,,,,,,
+weapon/blunt/flail/behind/flail.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
+weapon/blunt/flail/flail.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
+weapon/blunt/mace,,,,,,,,,,,,,,,,,,,
+weapon/blunt/mace/attack_slash,,,,,,,,,,,,,,,,,,,
+weapon/blunt/mace/attack_slash/behind,,,,,,,,,,,,,,,,,,,
 weapon/blunt/mace/attack_slash/behind/mace.png,,"Johannes Sjölund (wulax), bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
 weapon/blunt/mace/attack_slash/mace.png,,"Johannes Sjölund (wulax), bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
 weapon/blunt/mace/mace.png,,"Johannes Sjölund (wulax), bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
+weapon/blunt/mace/universal_behind,,,,,,,,,,,,,,,,,,,
 weapon/blunt/mace/universal_behind/mace.png,,"Johannes Sjölund (wulax), bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
-weapon/polearm/cane/female/cane.png,,bluecarrot16,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-gentleman,,,,,,,,,,,,,,,OK
-weapon/polearm/cane/male/cane.png,,bluecarrot16,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-gentleman,,,,,,,,,,,,,,,OK
+weapon/blunt/waraxe,,,,,,,,,,,,,,,,,,,
+weapon/blunt/waraxe/attack_slash,,,,,,,,,,,,,,,,,,,
+weapon/blunt/waraxe/attack_slash/behind,,,,,,,,,,,,,,,,,,,
+weapon/blunt/waraxe/attack_slash/behind/waraxe.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
+weapon/blunt/waraxe/attack_slash/waraxe.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
+weapon/blunt/waraxe/behind,,,,,,,,,,,,,,,,,,,
+weapon/blunt/waraxe/behind/waraxe.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
+weapon/blunt/waraxe/waraxe.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
+weapon/magic,,,,,,,,,,,,,,,,,,,
+weapon/magic/crystal,,,,,,,,,,,,,,,,,,,
+weapon/magic/crystal/attack_thrust,,,,,,,,,,,,,,,,,,,
+weapon/magic/crystal/attack_thrust/background,,,,,,,,,,,,,,,,,,,
+weapon/magic/crystal/attack_thrust/background/blue.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/crystal/attack_thrust/background/green.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/crystal/attack_thrust/background/red.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/crystal/attack_thrust/blue.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/crystal/attack_thrust/green.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/crystal/attack_thrust/red.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/crystal/blue.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/crystal/green.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/crystal/red.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/crystal/universal_behind,,,,,,,,,,,,,,,,,,,
+weapon/magic/crystal/universal_behind/blue.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/crystal/universal_behind/green.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/crystal/universal_behind/red.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/diamond,,,,,,,,,,,,,,,,,,,
+weapon/magic/diamond/attack_thrust,,,,,,,,,,,,,,,,,,,
+weapon/magic/diamond/attack_thrust/background,,,,,,,,,,,,,,,,,,,
+weapon/magic/diamond/attack_thrust/background/diamond.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/diamond/attack_thrust/diamond.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/diamond/diamond.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/diamond/universal_behind,,,,,,,,,,,,,,,,,,,
+weapon/magic/diamond/universal_behind/diamond.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/gnarled,,,,,,,,,,,,,,,,,,,
+weapon/magic/gnarled/attack_thrust,,,,,,,,,,,,,,,,,,,
+weapon/magic/gnarled/attack_thrust/background,,,,,,,,,,,,,,,,,,,
+weapon/magic/gnarled/attack_thrust/background/gnarled.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/gnarled/attack_thrust/gnarled.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/gnarled/gnarled.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/gnarled/universal_behind,,,,,,,,,,,,,,,,,,,
+weapon/magic/gnarled/universal_behind/gnarled.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/loop,,,,,,,,,,,,,,,,,,,
+weapon/magic/loop/attack_thrust,,,,,,,,,,,,,,,,,,,
+weapon/magic/loop/attack_thrust/background,,,,,,,,,,,,,,,,,,,
+weapon/magic/loop/attack_thrust/background/loop.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/loop/attack_thrust/loop.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/loop/loop.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/loop/universal_behind,,,,,,,,,,,,,,,,,,,
+weapon/magic/loop/universal_behind/loop.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/simple_staff,,,,,,,,,,,,,,,,,,,
+weapon/magic/simple_staff/female,,,,,,,,,,,,,,,,,,,
 weapon/magic/simple_staff/female/simple_staff.png,,Dr. Jamgo,CC0,https://opengameart.org/content/lpc-simple-staff,,,,,,,,,,,,,,,OK
+weapon/magic/simple_staff/male,,,,,,,,,,,,,,,,,,,
 weapon/magic/simple_staff/male/simple_staff.png,,Dr. Jamgo,CC0,https://opengameart.org/content/lpc-simple-staff,,,,,,,,,,,,,,,OK
-weapon/polearm/spear/male/spear.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
-weapon/polearm/spear/female/spear.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
-weapon/polearm/spear/male/spear_black.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
-weapon/polearm/spear/female/spear_black.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
-weapon/polearm/spear/male/spear_green.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
-weapon/polearm/spear/female/spear_green.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
-weapon/polearm/spear/male/spear_metal.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
-weapon/polearm/spear/female/spear_metal.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
-weapon/polearm/spear/male/spear_purple.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
-weapon/polearm/spear/female/spear_purple.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
-weapon/polearm/halberd/halberd.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
-weapon/polearm/halberd/attack_thrust/behind/halberd.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
-weapon/polearm/halberd/attack_thrust/halberd.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
-weapon/polearm/halberd/attack_slash/behind/halberd.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
-weapon/polearm/halberd/attack_slash/halberd.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
-weapon/polearm/scythe/attack_slash/scythe.png,,bluecarrot16,CC-BY-SA 3.0,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,,OK
-weapon/polearm/scythe/attack_slash/behind/scythe.png,,bluecarrot16,CC-BY-SA 3.0,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,,OK
-weapon/polearm/scythe/universal_behind/scythe.png,,bluecarrot16,CC-BY-SA 3.0,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,,OK
-weapon/polearm/scythe/scythe.png,,bluecarrot16,CC-BY-SA 3.0,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,,OK
+weapon/misc,,,,,,,,,,,,,,,,,,,
+weapon/misc/female,,,,,,,,,,,,,,,,,,,
 weapon/misc/female/longspear.png,long spear from expansion_pack-0.04; slightly different from spear (25.png),Johannes Sjölund (wulax),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-weapon/misc/male/longspear.png,long spear from expansion_pack-0.04; slightly different from spear (25.png),Johannes Sjölund (wulax),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
 weapon/misc/female/longspear_alt.png,dragon spear,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,,,,,,,,,,,,,,,OK
-weapon/misc/male/longspear_alt.png,dragon spear,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,,,,,,,,,,,,,,,OK
 weapon/misc/female/magic.png,Crystal staff,"LordNeo, Michael Whitlock (bigbeargames)",CC0,https://opengameart.org/content/staff-64-x64,https://opengameart.org/content/lpc-magic-staff,,,,,,,,,,,,,,OK
-weapon/misc/female/magic_on.png,Crystal staff,"LordNeo, Michael Whitlock (bigbeargames)",CC0,https://opengameart.org/content/staff-64-x64,https://opengameart.org/content/lpc-magic-staff,,,,,,,,,,,,,,OK
-weapon/misc/male/magic.png,Crystal staff,"LordNeo, Michael Whitlock (bigbeargames)",CC0,https://opengameart.org/content/staff-64-x64,https://opengameart.org/content/lpc-magic-staff,,,,,,,,,,,,,,OK
-weapon/misc/male/magic_on.png,Crystal staff,"LordNeo, Michael Whitlock (bigbeargames)",CC0,https://opengameart.org/content/staff-64-x64,https://opengameart.org/content/lpc-magic-staff,,,,,,,,,,,,,,OK
-weapon/misc/male/trident.png,trident,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,,,,,,,,,,,,,,,OK
-weapon/misc/female/trident.png,trident,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,,,,,,,,,,,,,,,OK
 weapon/misc/female/magic_alt.png,Wooden staff,"LordNeo, Michael Whitlock (bigbeargames)",CC0,https://opengameart.org/content/staff-64-x64,https://opengameart.org/content/lpc-magic-staff,,,,,,,,,,,,,,OK
 weapon/misc/female/magic_alt_on.png,Wooden staff,"LordNeo, Michael Whitlock (bigbeargames)",CC0,https://opengameart.org/content/staff-64-x64,https://opengameart.org/content/lpc-magic-staff,,,,,,,,,,,,,,OK
+weapon/misc/female/magic_on.png,Crystal staff,"LordNeo, Michael Whitlock (bigbeargames)",CC0,https://opengameart.org/content/staff-64-x64,https://opengameart.org/content/lpc-magic-staff,,,,,,,,,,,,,,OK
+weapon/misc/female/trident.png,trident,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,,,,,,,,,,,,,,,OK
+weapon/misc/male,,,,,,,,,,,,,,,,,,,
+weapon/misc/male/longspear.png,long spear from expansion_pack-0.04; slightly different from spear (25.png),Johannes Sjölund (wulax),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
+weapon/misc/male/longspear_alt.png,dragon spear,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,,,,,,,,,,,,,,,OK
+weapon/misc/male/magic.png,Crystal staff,"LordNeo, Michael Whitlock (bigbeargames)",CC0,https://opengameart.org/content/staff-64-x64,https://opengameart.org/content/lpc-magic-staff,,,,,,,,,,,,,,OK
 weapon/misc/male/magic_alt.png,Wooden staff,"LordNeo, Michael Whitlock (bigbeargames)",CC0,https://opengameart.org/content/staff-64-x64,https://opengameart.org/content/lpc-magic-staff,,,,,,,,,,,,,,OK
 weapon/misc/male/magic_alt_on.png,Wooden staff,"LordNeo, Michael Whitlock (bigbeargames)",CC0,https://opengameart.org/content/staff-64-x64,https://opengameart.org/content/lpc-magic-staff,,,,,,,,,,,,,,OK
+weapon/misc/male/magic_on.png,Crystal staff,"LordNeo, Michael Whitlock (bigbeargames)",CC0,https://opengameart.org/content/staff-64-x64,https://opengameart.org/content/lpc-magic-staff,,,,,,,,,,,,,,OK
+weapon/misc/male/trident.png,trident,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,,,,,,,,,,,,,,,OK
+weapon/polearm,,,,,,,,,,,,,,,,,,,
+weapon/polearm/cane,,,,,,,,,,,,,,,,,,,
+weapon/polearm/cane/female,,,,,,,,,,,,,,,,,,,
+weapon/polearm/cane/female/cane.png,,bluecarrot16,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-gentleman,,,,,,,,,,,,,,,OK
+weapon/polearm/cane/male,,,,,,,,,,,,,,,,,,,
+weapon/polearm/cane/male/cane.png,,bluecarrot16,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-gentleman,,,,,,,,,,,,,,,OK
+weapon/polearm/halberd,,,,,,,,,,,,,,,,,,,
+weapon/polearm/halberd/attack_slash,,,,,,,,,,,,,,,,,,,
+weapon/polearm/halberd/attack_slash/behind,,,,,,,,,,,,,,,,,,,
+weapon/polearm/halberd/attack_slash/behind/halberd.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
+weapon/polearm/halberd/attack_slash/halberd.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
+weapon/polearm/halberd/attack_thrust,,,,,,,,,,,,,,,,,,,
+weapon/polearm/halberd/attack_thrust/behind,,,,,,,,,,,,,,,,,,,
+weapon/polearm/halberd/attack_thrust/behind/halberd.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
+weapon/polearm/halberd/attack_thrust/halberd.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
+weapon/polearm/halberd/behind,,,,,,,,,,,,,,,,,,,
+weapon/polearm/halberd/behind/halberd.png,,,,,,,,,,,,,,,,,,,BAD
+weapon/polearm/halberd/halberd.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
+weapon/polearm/scythe,,,,,,,,,,,,,,,,,,,
+weapon/polearm/scythe/attack_slash,,,,,,,,,,,,,,,,,,,
+weapon/polearm/scythe/attack_slash/behind,,,,,,,,,,,,,,,,,,,
+weapon/polearm/scythe/attack_slash/behind/scythe.png,,bluecarrot16,CC-BY-SA 3.0,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,,OK
+weapon/polearm/scythe/attack_slash/scythe.png,,bluecarrot16,CC-BY-SA 3.0,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,,OK
+weapon/polearm/scythe/scythe.png,,bluecarrot16,CC-BY-SA 3.0,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,,OK
+weapon/polearm/scythe/universal_behind,,,,,,,,,,,,,,,,,,,
+weapon/polearm/scythe/universal_behind/scythe.png,,bluecarrot16,CC-BY-SA 3.0,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,,OK
+weapon/polearm/spear,,,,,,,,,,,,,,,,,,,
+weapon/polearm/spear/female,,,,,,,,,,,,,,,,,,,
+weapon/polearm/spear/female/spear.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
+weapon/polearm/spear/female/spear_black.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
+weapon/polearm/spear/female/spear_green.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
+weapon/polearm/spear/female/spear_metal.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
+weapon/polearm/spear/female/spear_purple.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
+weapon/polearm/spear/male,,,,,,,,,,,,,,,,,,,
+weapon/polearm/spear/male/spear.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
+weapon/polearm/spear/male/spear_black.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
+weapon/polearm/spear/male/spear_green.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
+weapon/polearm/spear/male/spear_metal.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
+weapon/polearm/spear/male/spear_purple.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
+weapon/ranged,,,,,,,,,,,,,,,,,,,
+weapon/ranged/boomerang,,,,,,,,,,,,,,,,,,,
+weapon/ranged/boomerang/boomerang.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/ranged/bow,,,,,,,,,,,,,,,,,,,
+weapon/ranged/bow/arrow,,,,,,,,,,,,,,,,,,,
+weapon/ranged/bow/arrow/arrow.png,,Johannes Sjölund (wulax),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
+weapon/ranged/bow/great,,,,,,,,,,,,,,,,,,,
+weapon/ranged/bow/great/great.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax), Pierre Vigier (pvigier)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
+weapon/ranged/bow/great/walk,,,,,,,,,,,,,,,,,,,
+weapon/ranged/bow/great/walk/background,,,,,,,,,,,,,,,,,,,
+weapon/ranged/bow/great/walk/background/great.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax), Pierre Vigier (pvigier)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
+weapon/ranged/bow/great/walk/foreground,,,,,,,,,,,,,,,,,,,
+weapon/ranged/bow/great/walk/foreground/great.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax), Pierre Vigier (pvigier)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
+weapon/ranged/bow/normal,,,,,,,,,,,,,,,,,,,
+weapon/ranged/bow/normal/normal.png,,,,,,,,,,,,,,,,,,,BAD
+weapon/ranged/bow/normal/walk,,,,,,,,,,,,,,,,,,,
+weapon/ranged/bow/normal/walk/background,,,,,,,,,,,,,,,,,,,
+weapon/ranged/bow/normal/walk/background/normal.png,,"Johannes Sjölund (wulax), Pierre Vigier (pvigier)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
+weapon/ranged/bow/normal/walk/foreground,,,,,,,,,,,,,,,,,,,
+weapon/ranged/bow/normal/walk/foreground/normal.png,,,,,,,,,,,,,,,,,,,BAD
+weapon/ranged/bow/recurve,,,,,,,,,,,,,,,,,,,
+weapon/ranged/bow/recurve/recurve.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax), Pierre Vigier (pvigier)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
+weapon/ranged/bow/recurve/walk,,,,,,,,,,,,,,,,,,,
+weapon/ranged/bow/recurve/walk/background,,,,,,,,,,,,,,,,,,,
+weapon/ranged/bow/recurve/walk/background/recurve.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax), Pierre Vigier (pvigier)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
+weapon/ranged/bow/recurve/walk/foreground,,,,,,,,,,,,,,,,,,,
+weapon/ranged/bow/recurve/walk/foreground/recurve.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax), Pierre Vigier (pvigier)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
+weapon/ranged/crossbow,,,,,,,,,,,,,,,,,,,
+weapon/ranged/crossbow/crossbow.png,,drjamgo@hotmail.com,CC0,https://opengameart.org/content/lpc-crossbow-final,,,,,,,,,,,,,,,OK
+weapon/ranged/slingshot,,,,,,,,,,,,,,,,,,,
+weapon/ranged/slingshot/behind,,,,,,,,,,,,,,,,,,,
+weapon/ranged/slingshot/behind/slingshot.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/ranged/slingshot/slingshot.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/sword,,,,,,,,,,,,,,,,,,,
+weapon/sword/dagger,,,,,,,,,,,,,,,,,,,
+weapon/sword/dagger/behind,,,,,,,,,,,,,,,,,,,
+weapon/sword/dagger/behind/dagger.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
+weapon/sword/dagger/dagger.png,,"bluecarrot16, Johannes Sjölund (wulax), Matthew Krohn (makrohn)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
+weapon/sword/glowsword,,,,,,,,,,,,,,,,,,,
+weapon/sword/glowsword/attack_slash,,,,,,,,,,,,,,,,,,,
+weapon/sword/glowsword/attack_slash/behind,,,,,,,,,,,,,,,,,,,
+weapon/sword/glowsword/attack_slash/behind/blue.png,,"bluecarrot16, tskaufma, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-glow-sword,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,OK
+weapon/sword/glowsword/attack_slash/behind/red.png,,"bluecarrot16, tskaufma, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-glow-sword,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,OK
+weapon/sword/glowsword/attack_slash/blue.png,,"bluecarrot16, tskaufma, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-glow-sword,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,OK
+weapon/sword/glowsword/attack_slash/red.png,,"bluecarrot16, tskaufma, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-glow-sword,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,OK
+weapon/sword/glowsword/blue.png,,"bluecarrot16, tskaufma, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-glow-sword,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,OK
+weapon/sword/glowsword/red.png,,"bluecarrot16, tskaufma, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-glow-sword,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,OK
+weapon/sword/glowsword/universal_behind,,,,,,,,,,,,,,,,,,,
+weapon/sword/glowsword/universal_behind/blue.png,,"bluecarrot16, tskaufma, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-glow-sword,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,OK
+weapon/sword/glowsword/universal_behind/red.png,,"bluecarrot16, tskaufma, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-glow-sword,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,OK
+weapon/sword/katana,,,,,,,,,,,,,,,,,,,
+weapon/sword/katana/slash,,,,,,,,,,,,,,,,,,,
+weapon/sword/katana/slash/behind,,,,,,,,,,,,,,,,,,,
+weapon/sword/katana/slash/behind/katana.png,,Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md),OGA-BY 3.0,https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
+weapon/sword/katana/slash/katana.png,,Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md),OGA-BY 3.0,https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
+weapon/sword/katana/walk,,,,,,,,,,,,,,,,,,,
+weapon/sword/katana/walk/behind,,,,,,,,,,,,,,,,,,,
+weapon/sword/katana/walk/behind/katana.png,,Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md),OGA-BY 3.0,https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
+weapon/sword/katana/walk/katana.png,,Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md),OGA-BY 3.0,https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
+weapon/sword/longsword,,,,,,,,,,,,,,,,,,,
+weapon/sword/longsword/attack_slash,,,,,,,,,,,,,,,,,,,
+weapon/sword/longsword/attack_slash/behind,,,,,,,,,,,,,,,,,,,
+weapon/sword/longsword/attack_slash/behind/longsword.png,,"Johannes Sjölund (wulax), bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
+weapon/sword/longsword/attack_slash/longsword.png,,"Johannes Sjölund (wulax), bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
+weapon/sword/longsword/attack_slash_reverse,,,,,,,,,,,,,,,,,,,
+weapon/sword/longsword/attack_slash_reverse/behind,,,,,,,,,,,,,,,,,,,
+weapon/sword/longsword/attack_slash_reverse/behind/longsword.png,,"Johannes Sjölund (wulax), bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
+weapon/sword/longsword/attack_slash_reverse/longsword.png,,"Johannes Sjölund (wulax), bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
+weapon/sword/longsword/attack_thrust,,,,,,,,,,,,,,,,,,,
+weapon/sword/longsword/attack_thrust/behind,,,,,,,,,,,,,,,,,,,
+weapon/sword/longsword/attack_thrust/behind/longsword.png,,"Johannes Sjölund (wulax), bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
+weapon/sword/longsword/attack_thrust/longsword.png,,"Johannes Sjölund (wulax), bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
+weapon/sword/longsword/longsword.png,,"Johannes Sjölund (wulax), bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
+weapon/sword/longsword/universal_behind,,,,,,,,,,,,,,,,,,,
+weapon/sword/longsword/universal_behind/longsword.png,,"Johannes Sjölund (wulax), bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
+weapon/sword/longsword_alt,,,,,,,,,,,,,,,,,,,
+weapon/sword/longsword_alt/slash,,,,,,,,,,,,,,,,,,,
+weapon/sword/longsword_alt/slash/behind,,,,,,,,,,,,,,,,,,,
+weapon/sword/longsword_alt/slash/behind/longsword_alt.png,,Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md),OGA-BY 3.0,https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
+weapon/sword/longsword_alt/slash/longsword_alt.png,,Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md),OGA-BY 3.0,https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
+weapon/sword/longsword_alt/walk,,,,,,,,,,,,,,,,,,,
+weapon/sword/longsword_alt/walk/behind,,,,,,,,,,,,,,,,,,,
+weapon/sword/longsword_alt/walk/behind/longsword_alt.png,,Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md),OGA-BY 3.0,https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
+weapon/sword/longsword_alt/walk/longsword_alt.png,,Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md),OGA-BY 3.0,https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
+weapon/sword/rapier,,,,,,,,,,,,,,,,,,,
+weapon/sword/rapier/attack_slash,,,,,,,,,,,,,,,,,,,
+weapon/sword/rapier/attack_slash/behind,,,,,,,,,,,,,,,,,,,
+weapon/sword/rapier/attack_slash/behind/rapier.png,,"Johannes Sjölund (wulax), bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
+weapon/sword/rapier/attack_slash/rapier.png,,"Johannes Sjölund (wulax), bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
+weapon/sword/rapier/rapier.png,,"Johannes Sjölund (wulax), bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
+weapon/sword/rapier/universal_behind,,,,,,,,,,,,,,,,,,,
+weapon/sword/rapier/universal_behind/rapier.png,,"Johannes Sjölund (wulax), bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
+weapon/sword/saber,,,,,,,,,,,,,,,,,,,
+weapon/sword/saber/attack_slash,,,,,,,,,,,,,,,,,,,
+weapon/sword/saber/attack_slash/behind,,,,,,,,,,,,,,,,,,,
+weapon/sword/saber/attack_slash/behind/saber.png,,"Daniel Eddeland (daneeklu), Johannes Sjölund (wulax), gr3yh47, bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
+weapon/sword/saber/attack_slash/saber.png,,"Daniel Eddeland (daneeklu), Johannes Sjölund (wulax), gr3yh47, bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
+weapon/sword/saber/saber.png,,"Daniel Eddeland (daneeklu), Johannes Sjölund (wulax), gr3yh47, bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
+weapon/sword/saber/universal_behind,,,,,,,,,,,,,,,,,,,
+weapon/sword/saber/universal_behind/saber.png,,"Daniel Eddeland (daneeklu), Johannes Sjölund (wulax), gr3yh47, bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
+weapon/sword/scimitar,,,,,,,,,,,,,,,,,,,
+weapon/sword/scimitar/slash,,,,,,,,,,,,,,,,,,,
+weapon/sword/scimitar/slash/behind,,,,,,,,,,,,,,,,,,,
+weapon/sword/scimitar/slash/behind/scimitar.png,,Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md),OGA-BY 3.0,https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
+weapon/sword/scimitar/slash/scimitar.png,,Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md),OGA-BY 3.0,https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
+weapon/sword/scimitar/walk,,,,,,,,,,,,,,,,,,,
+weapon/sword/scimitar/walk/behind,,,,,,,,,,,,,,,,,,,
+weapon/sword/scimitar/walk/behind/scimitar.png,,Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md),OGA-BY 3.0,https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
+weapon/sword/scimitar/walk/scimitar.png,,Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md),OGA-BY 3.0,https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
+weapons,,,,,,,,,,,,,,,,,,,
+weapons/oversize,,,,,,,,,,,,,,,,,,,
+weapons/oversize/right hand,,,,,,,,,,,,,,,,,,,
+weapons/right hand,,,,,,,,,,,,,,,,,,,
 wrists,,,,,,,,,,,,,,,,,,,
 wrists/cuffs,,bluecarrot16,OGA-BY 3.0,https://opengameart.org/content/lpc-pirates,,,,,,,,,,,,,,,
 wrists/cuffs/male,,,,,,,,,,,,,,,,,,,
