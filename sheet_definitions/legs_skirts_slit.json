@@ -3,7 +3,7 @@
   "type_name" : "legs",
   "layer_1" : {
     "zPos" : 20,
-    "male" : "legs/skirts/slit/male/",
+    "male" : "legs/skirts/slit/female/",
     "female" : "legs/skirts/slit/female/"
   },
   "variants": [

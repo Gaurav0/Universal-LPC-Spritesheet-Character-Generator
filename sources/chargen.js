@@ -669,13 +669,6 @@ $(document).ready(function() {
   }
 });
 
-function loadFile(filePath) {
-  var xmlhttp = new XMLHttpRequest();
-  xmlhttp.open("GET", filePath, false);
-  xmlhttp.send();
-  return xmlhttp.responseText;
-}
-
 function splitCsv(str) {
   return str.split(',').reduce((accum,curr)=>{
     if(accum.isConcatting) {
