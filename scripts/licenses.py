@@ -60,7 +60,15 @@ def find_sublicenses(licenses):
 	"""
 	sublicenses = []
 	for lic in licenses:
-		sublicenses += compatible_sublicenses[lic.strip()]
+		lic = lic.strip()
+		if lic in compatible_sublicenses:
+			sublicenses += compatible_sublicenses[lic.strip()]
+		else:
+			if lic[-1] == '+' and lic[:-1] in compatible_sublicenses:
+				sublicenses += compatible_sublicenses[lic[:-1]]
+			else:
+				print(f"Warning: unrecognized license '{lic}'")
+		
 	return set(sublicenses)
 
 def find_compatible_licenses(*license_lists, parsimonious = True):
