@@ -16429,11 +16429,19 @@ weapon/ranged/bow/recurve/walk/background,,,,,,,,,,,,,,,,,,,
 weapon/ranged/bow/recurve/walk/background/recurve.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax), Pierre Vigier (pvigier)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
 weapon/ranged/bow/recurve/walk/foreground,,,,,,,,,,,,,,,,,,,
 weapon/ranged/bow/recurve/walk/foreground/recurve.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax), Pierre Vigier (pvigier)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
-weapon/ranged/crossbow,,,,,,,,,,,,,,,,,,,
-weapon/ranged/crossbow/crossbow.png,,drjamgo@hotmail.com,CC0,https://opengameart.org/content/lpc-crossbow-final,,,,,,,,,,,,,,,OK
-weapon/ranged/slingshot,,,,,,,,,,,,,,,,,,,
+weapon/ranged/crossbow,"original by drjamgo, modified for v3 character bases and split into layers by bluecarrot16","bluecarrot16, drjamgo@hotmail.com",CC0,https://opengameart.org/content/lpc-crossbow-final,,,,,,,,,,,,,,,
+weapon/ranged/crossbow/background,,,,,,,,,,,,,,,,,,,
+weapon/ranged/crossbow/background/crossbow.png,,"bluecarrot16, drjamgo@hotmail.com",CC0,https://opengameart.org/content/lpc-crossbow-final,,,,,,,,,,,,,,,OK
+weapon/ranged/crossbow/crossbow.png,,"bluecarrot16, drjamgo@hotmail.com",CC0,https://opengameart.org/content/lpc-crossbow-final,,,,,,,,,,,,,,,OK
+weapon/ranged/crossbow/foreground,,,,,,,,,,,,,,,,,,,
+weapon/ranged/crossbow/foreground/crossbow.png,,"bluecarrot16, drjamgo@hotmail.com",CC0,https://opengameart.org/content/lpc-crossbow-final,,,,,,,,,,,,,,,OK
+weapon/ranged/slingshot,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,
+weapon/ranged/slingshot/background,,,,,,,,,,,,,,,,,,,
+weapon/ranged/slingshot/background/slingshot.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
 weapon/ranged/slingshot/behind,,,,,,,,,,,,,,,,,,,
 weapon/ranged/slingshot/behind/slingshot.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/ranged/slingshot/foreground,,,,,,,,,,,,,,,,,,,
+weapon/ranged/slingshot/foreground/slingshot.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
 weapon/ranged/slingshot/slingshot.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
 weapon/sword,,,,,,,,,,,,,,,,,,,
 weapon/sword/dagger,,,,,,,,,,,,,,,,,,,
