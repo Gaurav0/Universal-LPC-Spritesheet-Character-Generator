@@ -16393,22 +16393,37 @@ weapon/ranged/boomerang/boomerang.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY
 weapon/ranged/bow,,,,,,,,,,,,,,,,,,,
 weapon/ranged/bow/arrow,,,,,,,,,,,,,,,,,,,
 weapon/ranged/bow/arrow/arrow.png,,Johannes Sjölund (wulax),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-weapon/ranged/bow/great,,,,,,,,,,,,,,,,,,,
+weapon/ranged/bow/great,"modified by daneeklu, from ""normal"" bow by wulax; walk animations by pvigier; split into layers and tweaked for v3 character bases by bluecarrot16","Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax), Pierre Vigier (pvigier)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,
 weapon/ranged/bow/great/great.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax), Pierre Vigier (pvigier)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
+weapon/ranged/bow/great/universal,,,,,,,,,,,,,,,,,,,
+weapon/ranged/bow/great/universal/background,,,,,,,,,,,,,,,,,,,
+weapon/ranged/bow/great/universal/background/great.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax), Pierre Vigier (pvigier)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
+weapon/ranged/bow/great/universal/foreground,,,,,,,,,,,,,,,,,,,
+weapon/ranged/bow/great/universal/foreground/great.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax), Pierre Vigier (pvigier)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
 weapon/ranged/bow/great/walk,,,,,,,,,,,,,,,,,,,
 weapon/ranged/bow/great/walk/background,,,,,,,,,,,,,,,,,,,
 weapon/ranged/bow/great/walk/background/great.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax), Pierre Vigier (pvigier)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
 weapon/ranged/bow/great/walk/foreground,,,,,,,,,,,,,,,,,,,
 weapon/ranged/bow/great/walk/foreground/great.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax), Pierre Vigier (pvigier)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
-weapon/ranged/bow/normal,,,,,,,,,,,,,,,,,,,
-weapon/ranged/bow/normal/normal.png,,,,,,,,,,,,,,,,,,,BAD
+weapon/ranged/bow/normal,original by wulax; walk animations by pvigier; split into layers and tweaked for v3 character bases by bluecarrot16. pvigier has agreed to license this sheet as OGA-BY 3.0+.,"Johannes Sjölund (wulax), Pierre Vigier (pvigier)","OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,
+weapon/ranged/bow/normal/normal.png,,"Johannes Sjölund (wulax), Pierre Vigier (pvigier)","OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
+weapon/ranged/bow/normal/universal,,,,,,,,,,,,,,,,,,,
+weapon/ranged/bow/normal/universal/background,,,,,,,,,,,,,,,,,,,
+weapon/ranged/bow/normal/universal/background/normal.png,,"Johannes Sjölund (wulax), Pierre Vigier (pvigier)","OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
+weapon/ranged/bow/normal/universal/foreground,,,,,,,,,,,,,,,,,,,
+weapon/ranged/bow/normal/universal/foreground/normal.png,,"Johannes Sjölund (wulax), Pierre Vigier (pvigier)","OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
 weapon/ranged/bow/normal/walk,,,,,,,,,,,,,,,,,,,
 weapon/ranged/bow/normal/walk/background,,,,,,,,,,,,,,,,,,,
-weapon/ranged/bow/normal/walk/background/normal.png,,"Johannes Sjölund (wulax), Pierre Vigier (pvigier)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
+weapon/ranged/bow/normal/walk/background/normal.png,,"Johannes Sjölund (wulax), Pierre Vigier (pvigier)","OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
 weapon/ranged/bow/normal/walk/foreground,,,,,,,,,,,,,,,,,,,
-weapon/ranged/bow/normal/walk/foreground/normal.png,,,,,,,,,,,,,,,,,,,BAD
-weapon/ranged/bow/recurve,,,,,,,,,,,,,,,,,,,
+weapon/ranged/bow/normal/walk/foreground/normal.png,,"Johannes Sjölund (wulax), Pierre Vigier (pvigier)","OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
+weapon/ranged/bow/recurve,"modified by daneeklu, from ""normal"" bow by wulax; walk animations by pvigier; split into layers and tweaked for v3 character bases by bluecarrot16","Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax), Pierre Vigier (pvigier)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,
 weapon/ranged/bow/recurve/recurve.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax), Pierre Vigier (pvigier)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
+weapon/ranged/bow/recurve/universal,,,,,,,,,,,,,,,,,,,
+weapon/ranged/bow/recurve/universal/background,,,,,,,,,,,,,,,,,,,
+weapon/ranged/bow/recurve/universal/background/recurve.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax), Pierre Vigier (pvigier)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
+weapon/ranged/bow/recurve/universal/foreground,,,,,,,,,,,,,,,,,,,
+weapon/ranged/bow/recurve/universal/foreground/recurve.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax), Pierre Vigier (pvigier)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
 weapon/ranged/bow/recurve/walk,,,,,,,,,,,,,,,,,,,
 weapon/ranged/bow/recurve/walk/background,,,,,,,,,,,,,,,,,,,
 weapon/ranged/bow/recurve/walk/background/recurve.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax), Pierre Vigier (pvigier)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-walk-animations-for-bows,,,,,,,,,,,,,,OK
