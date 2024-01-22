@@ -38,6 +38,17 @@
     "pregnant": "weapon/polearm/longspear/thrust/background/"
   },
   "variants": [
-    "longspear"
+    "medium",
+    "light",
+    "red",
+    "dark",
+    "brass",
+    "bronze",
+    "ceramic",
+    "copper",
+    "gold",
+    "iron",
+    "silver",
+    "steel"
   ]
 }

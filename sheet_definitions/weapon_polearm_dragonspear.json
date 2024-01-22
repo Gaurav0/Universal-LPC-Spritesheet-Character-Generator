@@ -38,6 +38,17 @@
     "pregnant": "weapon/polearm/dragonspear/thrust/background/"
   },
   "variants": [
-    "dragonspear"
+    "medium",
+    "light",
+    "red",
+    "dark",
+    "brass",
+    "bronze",
+    "ceramic",
+    "copper",
+    "gold",
+    "iron",
+    "silver",
+    "steel"
   ]
 }

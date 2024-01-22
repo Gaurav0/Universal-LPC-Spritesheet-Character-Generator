@@ -36,6 +36,17 @@
     "pregnant": "weapon/magic/loop/thrust/background/"
   },
   "variants": [
-    "loop"
+    "medium",
+    "light",
+    "red",
+    "dark",
+    "brass",
+    "bronze",
+    "ceramic",
+    "copper",
+    "gold",
+    "iron",
+    "silver",
+    "steel"
   ]
 }

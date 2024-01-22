@@ -37,6 +37,17 @@
     "teen": "weapon/ranged/bow/normal/walk/foreground/"
   },
   "variants": [
-    "normal"
+    "light",
+    "medium",
+    "red",
+    "dark",
+    "brass",
+    "bronze",
+    "ceramic",
+    "copper",
+    "gold",
+    "iron",
+    "silver",
+    "steel"
   ]
 }
