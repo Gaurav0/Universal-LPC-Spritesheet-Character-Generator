@@ -16443,6 +16443,17 @@ weapon/polearm/cane/female,,,,,,,,,,,,,,,,,,,
 weapon/polearm/cane/female/cane.png,,bluecarrot16,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-gentleman,,,,,,,,,,,,,,,OK
 weapon/polearm/cane/male,,,,,,,,,,,,,,,,,,,
 weapon/polearm/cane/male/cane.png,,bluecarrot16,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-gentleman,,,,,,,,,,,,,,,OK
+weapon/polearm/dragonspear,"original ""dragon spear"" by daneeklu and gr3yh47; adapted to opposite hand and split into layers by bluecarrot16","Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,
+weapon/polearm/dragonspear/thrust,,,,,,,,,,,,,,,,,,,
+weapon/polearm/dragonspear/thrust/background,,,,,,,,,,,,,,,,,,,
+weapon/polearm/dragonspear/thrust/background/dragonspear.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
+weapon/polearm/dragonspear/thrust/foreground,,,,,,,,,,,,,,,,,,,
+weapon/polearm/dragonspear/thrust/foreground/dragonspear.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
+weapon/polearm/dragonspear/walk,,,,,,,,,,,,,,,,,,,
+weapon/polearm/dragonspear/walk/background,,,,,,,,,,,,,,,,,,,
+weapon/polearm/dragonspear/walk/background/dragonspear.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
+weapon/polearm/dragonspear/walk/foreground,,,,,,,,,,,,,,,,,,,
+weapon/polearm/dragonspear/walk/foreground/dragonspear.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
 weapon/polearm/halberd,,,,,,,,,,,,,,,,,,,
 weapon/polearm/halberd/attack_slash,,,,,,,,,,,,,,,,,,,
 weapon/polearm/halberd/attack_slash/behind,,,,,,,,,,,,,,,,,,,
@@ -16453,8 +16464,19 @@ weapon/polearm/halberd/attack_thrust/behind,,,,,,,,,,,,,,,,,,,
 weapon/polearm/halberd/attack_thrust/behind/halberd.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
 weapon/polearm/halberd/attack_thrust/halberd.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
 weapon/polearm/halberd/behind,,,,,,,,,,,,,,,,,,,
-weapon/polearm/halberd/behind/halberd.png,,,,,,,,,,,,,,,,,,,BAD
+weapon/polearm/halberd/behind/halberd.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
 weapon/polearm/halberd/halberd.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
+weapon/polearm/longspear,original by wulax from expansion_pack-0.04 walk animations adapted from those by pvigier; split into layers and tweaked for v3 character bases by bluecarrot16,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,
+weapon/polearm/longspear/thrust,,,,,,,,,,,,,,,,,,,
+weapon/polearm/longspear/thrust/background,,,,,,,,,,,,,,,,,,,
+weapon/polearm/longspear/thrust/background/longspear.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
+weapon/polearm/longspear/thrust/foreground,,,,,,,,,,,,,,,,,,,
+weapon/polearm/longspear/thrust/foreground/longspear.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
+weapon/polearm/longspear/walk,,,,,,,,,,,,,,,,,,,
+weapon/polearm/longspear/walk/background,,,,,,,,,,,,,,,,,,,
+weapon/polearm/longspear/walk/background/longspear.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
+weapon/polearm/longspear/walk/foreground,,,,,,,,,,,,,,,,,,,
+weapon/polearm/longspear/walk/foreground/longspear.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
 weapon/polearm/scythe,,,,,,,,,,,,,,,,,,,
 weapon/polearm/scythe/attack_slash,,,,,,,,,,,,,,,,,,,
 weapon/polearm/scythe/attack_slash/behind,,,,,,,,,,,,,,,,,,,
@@ -16463,19 +16485,27 @@ weapon/polearm/scythe/attack_slash/scythe.png,,bluecarrot16,CC-BY-SA 3.0,https:/
 weapon/polearm/scythe/scythe.png,,bluecarrot16,CC-BY-SA 3.0,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,,OK
 weapon/polearm/scythe/universal_behind,,,,,,,,,,,,,,,,,,,
 weapon/polearm/scythe/universal_behind/scythe.png,,bluecarrot16,CC-BY-SA 3.0,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,,OK
-weapon/polearm/spear,,,,,,,,,,,,,,,,,,,
-weapon/polearm/spear/female,,,,,,,,,,,,,,,,,,,
-weapon/polearm/spear/female/spear.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
-weapon/polearm/spear/female/spear_black.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
-weapon/polearm/spear/female/spear_green.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
-weapon/polearm/spear/female/spear_metal.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
-weapon/polearm/spear/female/spear_purple.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
-weapon/polearm/spear/male,,,,,,,,,,,,,,,,,,,
-weapon/polearm/spear/male/spear.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
-weapon/polearm/spear/male/spear_black.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
-weapon/polearm/spear/male/spear_green.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
-weapon/polearm/spear/male/spear_metal.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
-weapon/polearm/spear/male/spear_purple.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,,OK
+weapon/polearm/spear,original by wulax; walk animations redone by pvigier; split into layers and tweaked for v3 character bases by bluecarrot16,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,
+weapon/polearm/spear/background,,,,,,,,,,,,,,,,,,,
+weapon/polearm/spear/background/spear.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,OK
+weapon/polearm/spear/foreground,,,,,,,,,,,,,,,,,,,
+weapon/polearm/spear/foreground/spear.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-spear-and-shovel-reworked,,,,,,,,,,,,,,OK
+weapon/polearm/spear_off,original by wulax; walk animations redone by pvigier; split into layers and tweaked for v3 character bases by bluecarrot16,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,
+weapon/polearm/spear_off/background,,,,,,,,,,,,,,,,,,,
+weapon/polearm/spear_off/background/spear_off.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
+weapon/polearm/spear_off/foreground,,,,,,,,,,,,,,,,,,,
+weapon/polearm/spear_off/foreground/spear_off.png,,"Pierre Vigier (pvigier), Johannes Sjölund (wulax), Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
+weapon/polearm/trident,"original ""trident"" by daneeklu and gr3yh47; adapted to opposite hand and split into layers by bluecarrot16","Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,
+weapon/polearm/trident/thrust,,,,,,,,,,,,,,,,,,,
+weapon/polearm/trident/thrust/background,,,,,,,,,,,,,,,,,,,
+weapon/polearm/trident/thrust/background/trident.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
+weapon/polearm/trident/thrust/foreground,,,,,,,,,,,,,,,,,,,
+weapon/polearm/trident/thrust/foreground/trident.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
+weapon/polearm/trident/walk,,,,,,,,,,,,,,,,,,,
+weapon/polearm/trident/walk/background,,,,,,,,,,,,,,,,,,,
+weapon/polearm/trident/walk/background/trident.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
+weapon/polearm/trident/walk/foreground,,,,,,,,,,,,,,,,,,,
+weapon/polearm/trident/walk/foreground/trident.png,,"Daniel Eddeland (daneeklu), gr3yh47, Johannes Sjölund (wulax)",CC-BY-SA 3.0,https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident,https://opengameart.org/content/lpc-extended-weapon-animations,,,,,,,,,,,,,,OK
 weapon/ranged,,,,,,,,,,,,,,,,,,,
 weapon/ranged/boomerang,,,,,,,,,,,,,,,,,,,
 weapon/ranged/boomerang/boomerang.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
