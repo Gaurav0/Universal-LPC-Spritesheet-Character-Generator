@@ -53,10 +53,10 @@ const customAnimations = {
   walk_128: {
     frameSize: 128,
     frames: [
-      ["walk-n,0", "walk-n,1", "walk-n,2", "walk-n,3", "walk-n,4", "walk-n,5", "walk-n,6", "walk-n,7", "walk-n,8"],
-      ["walk-w,0", "walk-w,1", "walk-w,2", "walk-w,3", "walk-w,4", "walk-w,5", "walk-w,6", "walk-w,7", "walk-w,8"],
-      ["walk-s,0", "walk-s,1", "walk-s,2", "walk-s,3", "walk-s,4", "walk-s,5", "walk-s,6", "walk-s,7", "walk-s,8"],
-      ["walk-e,0", "walk-e,1", "walk-e,2", "walk-e,3", "walk-e,4", "walk-e,5", "walk-e,6", "walk-e,7", "walk-e,8"]
+      ["walk-n,1", "walk-n,2", "walk-n,3", "walk-n,4", "walk-n,5", "walk-n,6", "walk-n,7", "walk-n,8"],
+      ["walk-w,1", "walk-w,2", "walk-w,3", "walk-w,4", "walk-w,5", "walk-w,6", "walk-w,7", "walk-w,8"],
+      ["walk-s,1", "walk-s,2", "walk-s,3", "walk-s,4", "walk-s,5", "walk-s,6", "walk-s,7", "walk-s,8"],
+      ["walk-e,1", "walk-e,2", "walk-e,3", "walk-e,4", "walk-e,5", "walk-e,6", "walk-e,7", "walk-e,8"]
     ]
   },
   thrust_128: {

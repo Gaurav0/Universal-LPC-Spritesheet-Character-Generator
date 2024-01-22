@@ -3,14 +3,22 @@
   "type_name": "weapon",
   "preview_row": 17,
   "layer_1": {
-    "zPos": 140,
-    "male": "weapon/ranged/bow/normal/",
-    "muscular": "weapon/ranged/bow/normal/",
-    "female": "weapon/ranged/bow/normal/",
-    "pregnant": "weapon/ranged/bow/normal/",
-    "teen": "weapon/ranged/bow/normal/"
+    "zPos": -1,
+    "male": "weapon/ranged/bow/normal/universal/background/",
+    "muscular": "weapon/ranged/bow/normal/universal/background/",
+    "female": "weapon/ranged/bow/normal/universal/background/",
+    "pregnant": "weapon/ranged/bow/normal/universal/background/",
+    "teen": "weapon/ranged/bow/normal/universal/background/"
   },
   "layer_2": {
+    "zPos": 140,
+    "male": "weapon/ranged/bow/normal/universal/foreground/",
+    "muscular": "weapon/ranged/bow/normal/universal/foreground/",
+    "female": "weapon/ranged/bow/normal/universal/foreground/",
+    "pregnant": "weapon/ranged/bow/normal/universal/foreground/",
+    "teen": "weapon/ranged/bow/normal/universal/foreground/"
+  },
+  "layer_3": {
     "custom_animation": "walk_128",
     "zPos": -1,
     "male": "weapon/ranged/bow/normal/walk/background/",
@@ -19,7 +27,7 @@
     "pregnant": "weapon/ranged/bow/normal/walk/background/",
     "teen": "weapon/ranged/bow/normal/walk/background/"
   },
-  "layer_3": {
+  "layer_4": {
     "custom_animation": "walk_128",
     "zPos": 141,
     "male": "weapon/ranged/bow/normal/walk/foreground/",

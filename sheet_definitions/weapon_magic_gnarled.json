@@ -3,33 +3,37 @@
   "type_name": "weapon",
   "layer_1": {
     "zPos": 140,
-    "male": "weapon/magic/gnarled/",
-    "muscular": "weapon/magic/gnarled/",
-    "female": "weapon/magic/gnarled/",
-    "pregnant": "weapon/magic/gnarled/"
+    "male": "weapon/magic/gnarled/universal/foreground/",
+    "muscular": "weapon/magic/gnarled/universal/foreground/",
+    "female": "weapon/magic/gnarled/universal/foreground/",
+    "teen": "weapon/magic/gnarled/universal/foreground/",
+    "pregnant": "weapon/magic/gnarled/universal/foreground/"
   },
   "layer_2": {
     "zPos": 9,
-    "male": "weapon/magic/gnarled/universal_behind/",
-    "muscular": "weapon/magic/gnarled/universal_behind/",
-    "female": "weapon/magic/gnarled/universal_behind/",
-    "pregnant": "weapon/magic/gnarled/universal_behind/"
+    "male": "weapon/magic/gnarled/universal/background/",
+    "muscular": "weapon/magic/gnarled/universal/background/",
+    "female": "weapon/magic/gnarled/universal/background/",
+    "teen": "weapon/magic/gnarled/universal/background/",
+    "pregnant": "weapon/magic/gnarled/universal/background/"
   },
   "layer_3": {
     "custom_animation": "thrust_oversize",
-    "zPos": -1,
-    "male": "weapon/magic/gnarled/attack_thrust/background/",
-    "muscular": "weapon/magic/gnarled/attack_thrust/background/",
-    "female": "weapon/magic/gnarled/attack_thrust/background/",
-    "pregnant": "weapon/magic/gnarled/attack_thrust/background/"
+    "zPos": 150,
+    "male": "weapon/magic/gnarled/thrust/foreground/",
+    "muscular": "weapon/magic/gnarled/thrust/foreground/",
+    "female": "weapon/magic/gnarled/thrust/foreground/",
+    "teen": "weapon/magic/gnarled/thrust/foreground/",
+    "pregnant": "weapon/magic/gnarled/thrust/foreground/"
   },
   "layer_4": {
     "custom_animation": "thrust_oversize",
-    "zPos": 150,
-    "male": "weapon/magic/gnarled/attack_thrust/",
-    "muscular": "weapon/magic/gnarled/attack_thrust/",
-    "female": "weapon/magic/gnarled/attack_thrust/",
-    "pregnant": "weapon/magic/gnarled/attack_thrust/"
+    "zPos": -1,
+    "male": "weapon/magic/gnarled/thrust/background/",
+    "muscular": "weapon/magic/gnarled/thrust/background/",
+    "female": "weapon/magic/gnarled/thrust/background/",
+    "teen": "weapon/magic/gnarled/thrust/background/",
+    "pregnant": "weapon/magic/gnarled/thrust/background/"
   },
   "variants": [
     "gnarled"
