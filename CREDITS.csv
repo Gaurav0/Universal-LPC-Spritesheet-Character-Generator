@@ -16286,7 +16286,7 @@ weapon/blunt/waraxe/behind,,,,,,,,,,,,,,,,,,,
 weapon/blunt/waraxe/behind/waraxe.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
 weapon/blunt/waraxe/waraxe.png,,"Benjamin K. Smith (BenCreating), bluecarrot16, Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-weapons,,,,,,,,,,,,,,,OK
 weapon/magic,,,,,,,,,,,,,,,,,,,
-weapon/magic/crystal,,,,,,,,,,,,,,,,,,,
+weapon/magic/crystal,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,
 weapon/magic/crystal/attack_thrust,,,,,,,,,,,,,,,,,,,
 weapon/magic/crystal/attack_thrust/background,,,,,,,,,,,,,,,,,,,
 weapon/magic/crystal/attack_thrust/background/blue.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
@@ -16298,39 +16298,128 @@ weapon/magic/crystal/attack_thrust/red.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, 
 weapon/magic/crystal/blue.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
 weapon/magic/crystal/green.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
 weapon/magic/crystal/red.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/crystal/thrust,,,,,,,,,,,,,,,,,,,
+weapon/magic/crystal/thrust/background,,,,,,,,,,,,,,,,,,,
+weapon/magic/crystal/thrust/background/blue.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/crystal/thrust/foreground,,,,,,,,,,,,,,,,,,,
+weapon/magic/crystal/thrust/foreground/blue.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/crystal/universal,,,,,,,,,,,,,,,,,,,
+weapon/magic/crystal/universal/background,,,,,,,,,,,,,,,,,,,
+weapon/magic/crystal/universal/background/blue.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/crystal/universal/foreground,,,,,,,,,,,,,,,,,,,
+weapon/magic/crystal/universal/foreground/blue.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
 weapon/magic/crystal/universal_behind,,,,,,,,,,,,,,,,,,,
 weapon/magic/crystal/universal_behind/blue.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
 weapon/magic/crystal/universal_behind/green.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
 weapon/magic/crystal/universal_behind/red.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/magic/diamond,,,,,,,,,,,,,,,,,,,
+weapon/magic/diamond,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,
 weapon/magic/diamond/attack_thrust,,,,,,,,,,,,,,,,,,,
 weapon/magic/diamond/attack_thrust/background,,,,,,,,,,,,,,,,,,,
 weapon/magic/diamond/attack_thrust/background/diamond.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
 weapon/magic/diamond/attack_thrust/diamond.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
 weapon/magic/diamond/diamond.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/diamond/thrust,,,,,,,,,,,,,,,,,,,
+weapon/magic/diamond/thrust/background,,,,,,,,,,,,,,,,,,,
+weapon/magic/diamond/thrust/background/diamond.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/diamond/thrust/foreground,,,,,,,,,,,,,,,,,,,
+weapon/magic/diamond/thrust/foreground/diamond.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/diamond/universal,,,,,,,,,,,,,,,,,,,
+weapon/magic/diamond/universal/background,,,,,,,,,,,,,,,,,,,
+weapon/magic/diamond/universal/background/diamond.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/diamond/universal/foreground,,,,,,,,,,,,,,,,,,,
+weapon/magic/diamond/universal/foreground/diamond.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
 weapon/magic/diamond/universal_behind,,,,,,,,,,,,,,,,,,,
 weapon/magic/diamond/universal_behind/diamond.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/magic/gnarled,,,,,,,,,,,,,,,,,,,
+weapon/magic/diamond_off,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,
+weapon/magic/diamond_off/thrust,,,,,,,,,,,,,,,,,,,
+weapon/magic/diamond_off/thrust/background,,,,,,,,,,,,,,,,,,,
+weapon/magic/diamond_off/thrust/background/diamond_off.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/diamond_off/thrust/foreground,,,,,,,,,,,,,,,,,,,
+weapon/magic/diamond_off/thrust/foreground/diamond_off.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/diamond_off/universal,,,,,,,,,,,,,,,,,,,
+weapon/magic/diamond_off/universal/background,,,,,,,,,,,,,,,,,,,
+weapon/magic/diamond_off/universal/background/diamond_off.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/diamond_off/universal/foreground,,,,,,,,,,,,,,,,,,,
+weapon/magic/diamond_off/universal/foreground/diamond_off.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/gnarled,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,
 weapon/magic/gnarled/attack_thrust,,,,,,,,,,,,,,,,,,,
 weapon/magic/gnarled/attack_thrust/background,,,,,,,,,,,,,,,,,,,
 weapon/magic/gnarled/attack_thrust/background/gnarled.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
 weapon/magic/gnarled/attack_thrust/gnarled.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
 weapon/magic/gnarled/gnarled.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/gnarled/thrust,,,,,,,,,,,,,,,,,,,
+weapon/magic/gnarled/thrust/background,,,,,,,,,,,,,,,,,,,
+weapon/magic/gnarled/thrust/background/gnarled.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/gnarled/thrust/foreground,,,,,,,,,,,,,,,,,,,
+weapon/magic/gnarled/thrust/foreground/gnarled.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/gnarled/universal,,,,,,,,,,,,,,,,,,,
+weapon/magic/gnarled/universal/background,,,,,,,,,,,,,,,,,,,
+weapon/magic/gnarled/universal/background/gnarled.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/gnarled/universal/foreground,,,,,,,,,,,,,,,,,,,
+weapon/magic/gnarled/universal/foreground/gnarled.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
 weapon/magic/gnarled/universal_behind,,,,,,,,,,,,,,,,,,,
 weapon/magic/gnarled/universal_behind/gnarled.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
-weapon/magic/loop,,,,,,,,,,,,,,,,,,,
+weapon/magic/gnarled_off,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,
+weapon/magic/gnarled_off/thrust,,,,,,,,,,,,,,,,,,,
+weapon/magic/gnarled_off/thrust/background,,,,,,,,,,,,,,,,,,,
+weapon/magic/gnarled_off/thrust/background/gnarled_off.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/gnarled_off/thrust/foreground,,,,,,,,,,,,,,,,,,,
+weapon/magic/gnarled_off/thrust/foreground/gnarled_off.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/gnarled_off/universal,,,,,,,,,,,,,,,,,,,
+weapon/magic/gnarled_off/universal/background,,,,,,,,,,,,,,,,,,,
+weapon/magic/gnarled_off/universal/background/gnarled_off.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/gnarled_off/universal/foreground,,,,,,,,,,,,,,,,,,,
+weapon/magic/gnarled_off/universal/foreground/gnarled_off.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/loop,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,
 weapon/magic/loop/attack_thrust,,,,,,,,,,,,,,,,,,,
 weapon/magic/loop/attack_thrust/background,,,,,,,,,,,,,,,,,,,
 weapon/magic/loop/attack_thrust/background/loop.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
 weapon/magic/loop/attack_thrust/loop.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
 weapon/magic/loop/loop.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/loop/thrust,,,,,,,,,,,,,,,,,,,
+weapon/magic/loop/thrust/background,,,,,,,,,,,,,,,,,,,
+weapon/magic/loop/thrust/background/loop.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/loop/thrust/foreground,,,,,,,,,,,,,,,,,,,
+weapon/magic/loop/thrust/foreground/loop.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/loop/universal,,,,,,,,,,,,,,,,,,,
+weapon/magic/loop/universal/background,,,,,,,,,,,,,,,,,,,
+weapon/magic/loop/universal/background/loop.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/loop/universal/foreground,,,,,,,,,,,,,,,,,,,
+weapon/magic/loop/universal/foreground/loop.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
 weapon/magic/loop/universal_behind,,,,,,,,,,,,,,,,,,,
 weapon/magic/loop/universal_behind/loop.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/loop_off,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,
+weapon/magic/loop_off/thrust,,,,,,,,,,,,,,,,,,,
+weapon/magic/loop_off/thrust/background,,,,,,,,,,,,,,,,,,,
+weapon/magic/loop_off/thrust/background/loop_off.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/loop_off/thrust/foreground,,,,,,,,,,,,,,,,,,,
+weapon/magic/loop_off/thrust/foreground/loop_off.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/loop_off/universal,,,,,,,,,,,,,,,,,,,
+weapon/magic/loop_off/universal/background,,,,,,,,,,,,,,,,,,,
+weapon/magic/loop_off/universal/background/loop_off.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/loop_off/universal/foreground,,,,,,,,,,,,,,,,,,,
+weapon/magic/loop_off/universal/foreground/loop_off.png,,bluecarrot16,"OGA-BY 3.0+, GPL 3.0, CC-BY 4.0",https://opengameart.org/content/lpc-more-weapons,,,,,,,,,,,,,,,OK
+weapon/magic/s,"Wooden staff by LordNeo, first adapted to LPC by bigbeargames; re-drawn and walk animations added by bluecarrot16","LordNeo, Michael Whitlock (bigbeargames), bluecarrot16",CC0,https://opengameart.org/content/staff-64-x64,https://opengameart.org/content/lpc-magic-staff,,,,,,,,,,,,,,
+weapon/magic/s/thrust,,,,,,,,,,,,,,,,,,,
+weapon/magic/s/thrust/background,,,,,,,,,,,,,,,,,,,
+weapon/magic/s/thrust/background/s.png,,"LordNeo, Michael Whitlock (bigbeargames), bluecarrot16",CC0,https://opengameart.org/content/staff-64-x64,https://opengameart.org/content/lpc-magic-staff,,,,,,,,,,,,,,OK
+weapon/magic/s/thrust/foreground,,,,,,,,,,,,,,,,,,,
+weapon/magic/s/thrust/foreground/s.png,,"LordNeo, Michael Whitlock (bigbeargames), bluecarrot16",CC0,https://opengameart.org/content/staff-64-x64,https://opengameart.org/content/lpc-magic-staff,,,,,,,,,,,,,,OK
+weapon/magic/s/universal,,,,,,,,,,,,,,,,,,,
+weapon/magic/s/universal/background,,,,,,,,,,,,,,,,,,,
+weapon/magic/s/universal/background/s.png,,"LordNeo, Michael Whitlock (bigbeargames), bluecarrot16",CC0,https://opengameart.org/content/staff-64-x64,https://opengameart.org/content/lpc-magic-staff,,,,,,,,,,,,,,OK
+weapon/magic/s/universal/foreground,,,,,,,,,,,,,,,,,,,
+weapon/magic/s/universal/foreground/s.png,,"LordNeo, Michael Whitlock (bigbeargames), bluecarrot16",CC0,https://opengameart.org/content/staff-64-x64,https://opengameart.org/content/lpc-magic-staff,,,,,,,,,,,,,,OK
+weapon/magic/simple,"original by DrJamgo, hands switched and split into to layers by bluecarrot16","bluecarrot16, Dr. Jamgo",CC0,https://opengameart.org/content/lpc-simple-staff,,,,,,,,,,,,,,,
+weapon/magic/simple/background,,,,,,,,,,,,,,,,,,,
+weapon/magic/simple/background/simple.png,,"bluecarrot16, Dr. Jamgo",CC0,https://opengameart.org/content/lpc-simple-staff,,,,,,,,,,,,,,,OK
+weapon/magic/simple/foreground,,,,,,,,,,,,,,,,,,,
+weapon/magic/simple/foreground/simple.png,,"bluecarrot16, Dr. Jamgo",CC0,https://opengameart.org/content/lpc-simple-staff,,,,,,,,,,,,,,,OK
 weapon/magic/simple_staff,,,,,,,,,,,,,,,,,,,
 weapon/magic/simple_staff/female,,,,,,,,,,,,,,,,,,,
-weapon/magic/simple_staff/female/simple_staff.png,,Dr. Jamgo,CC0,https://opengameart.org/content/lpc-simple-staff,,,,,,,,,,,,,,,OK
+weapon/magic/simple_staff/female/simple_staff.png,"original by DrJamgo, hands switched and split into to layers by bluecarrot16","bluecarrot16, Dr. Jamgo",CC0,https://opengameart.org/content/lpc-simple-staff,,,,,,,,,,,,,,,OK
 weapon/magic/simple_staff/male,,,,,,,,,,,,,,,,,,,
-weapon/magic/simple_staff/male/simple_staff.png,,Dr. Jamgo,CC0,https://opengameart.org/content/lpc-simple-staff,,,,,,,,,,,,,,,OK
+weapon/magic/simple_staff/male/simple_staff.png,"original by DrJamgo, hands switched and split into to layers by bluecarrot16","bluecarrot16, Dr. Jamgo",CC0,https://opengameart.org/content/lpc-simple-staff,,,,,,,,,,,,,,,OK
 weapon/misc,,,,,,,,,,,,,,,,,,,
 weapon/misc/female,,,,,,,,,,,,,,,,,,,
 weapon/misc/female/longspear.png,long spear from expansion_pack-0.04; slightly different from spear (25.png),Johannes Sjölund (wulax),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK

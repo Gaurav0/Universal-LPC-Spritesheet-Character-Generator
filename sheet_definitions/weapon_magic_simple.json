@@ -1,0 +1,23 @@
+{
+  "name": "Simple staff",
+  "type_name": "weapon",
+  "layer_1": {
+    "zPos": 140,
+    "male": "weapon/magic/simple/foreground/",
+    "muscular": "weapon/magic/simple/foreground/",
+    "female": "weapon/magic/simple/foreground/",
+    "teen": "weapon/magic/simple/foreground/",
+    "pregnant": "weapon/magic/simple/foreground/"
+  },
+  "layer_2": {
+    "zPos": 9,
+    "male": "weapon/magic/simple/background/",
+    "muscular": "weapon/magic/simple/background/",
+    "female": "weapon/magic/simple/background/",
+    "teen": "weapon/magic/simple/background/",
+    "pregnant": "weapon/magic/simple/background/"
+  },
+  "variants": [
+    "simple"
+  ]
+}
