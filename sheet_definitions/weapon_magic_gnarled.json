@@ -36,6 +36,17 @@
     "pregnant": "weapon/magic/gnarled/thrust/background/"
   },
   "variants": [
-    "gnarled"
+    "medium",
+    "light",
+    "red",
+    "dark",
+    "brass",
+    "bronze",
+    "ceramic",
+    "copper",
+    "gold",
+    "iron",
+    "silver",
+    "steel"
   ]
 }

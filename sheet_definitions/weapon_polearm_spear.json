@@ -18,6 +18,17 @@
     "pregnant": "weapon/polearm/spear/background/"
   },
   "variants": [
-    "spear"
+    "medium",
+    "light",
+    "red",
+    "dark",
+    "brass",
+    "bronze",
+    "ceramic",
+    "copper",
+    "gold",
+    "iron",
+    "silver",
+    "steel"
   ]
 }

@@ -36,6 +36,17 @@
     "pregnant": "weapon/magic/diamond/thrust/background/"
   },
   "variants": [
-    "diamond"
+    "medium",
+    "light",
+    "red",
+    "dark",
+    "brass",
+    "bronze",
+    "ceramic",
+    "copper",
+    "gold",
+    "iron",
+    "silver",
+    "steel"
   ]
 }

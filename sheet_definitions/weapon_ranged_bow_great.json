@@ -37,6 +37,17 @@
     "teen": "weapon/ranged/bow/great/walk/foreground/"
   },
   "variants": [
-    "great"
+    "light",
+    "medium",
+    "red",
+    "dark",
+    "brass",
+    "bronze",
+    "ceramic",
+    "copper",
+    "gold",
+    "iron",
+    "silver",
+    "steel"
   ]
 }

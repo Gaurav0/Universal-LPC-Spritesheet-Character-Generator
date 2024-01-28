@@ -37,6 +37,17 @@
     "teen": "weapon/ranged/bow/recurve/walk/foreground/"
   },
   "variants": [
-    "recurve"
+    "light",
+    "medium",
+    "red",
+    "dark",
+    "brass",
+    "bronze",
+    "ceramic",
+    "copper",
+    "gold",
+    "iron",
+    "silver",
+    "steel"
   ]
 }
