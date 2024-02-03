@@ -5,7 +5,7 @@
     "zPos" : 20,
     "male" : "legs/armour/plate/male/",
     "female" : "legs/armour/plate/female/",
-    "teen" : "legs/armour/plate/teen/"
+    "teen" : "legs/armour/plate/female/"
   },
   "variants": [
     "steel",

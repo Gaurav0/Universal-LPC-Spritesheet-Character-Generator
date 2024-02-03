@@ -7,7 +7,7 @@
     "muscular" : "feet/armour/plate/male/",
     "female" : "feet/armour/plate/female/",
     "pregnant" : "feet/armour/plate/female/",
-    "teen" : "feet/armour/plate/teen/"
+    "teen" : "feet/armour/plate/female/"
   },
   "variants": [
     "steel",
