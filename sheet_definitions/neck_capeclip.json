@@ -6,7 +6,7 @@
     "male" : "neck/capeclip/male/",
     "muscular" : "neck/capeclip/male/",    
     "female" : "neck/capeclip/female/",
-    "teen" : "neck/capeclip/teen/",
+    "teen" : "neck/capeclip/female/",
     "pregnant" : "neck/capeclip/female/"
   },
   "variants": [

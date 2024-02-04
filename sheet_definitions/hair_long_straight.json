@@ -10,16 +10,17 @@
     "teen": "hair/long_straight/male/"
   },
   "variants": [
+    "ashblonde",
+    "ashplatinum",
     "black",
     "blonde",
     "blue",
     "brown",
+    "brown2",
     "green",
-    "lightblonde",
     "orange",
     "pink",
     "purple",
-    "red",
-    "white"
+    "red"
   ]
 }

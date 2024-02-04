@@ -251,7 +251,7 @@ neck_cravat.json,layer_1,90,neck/cravat/male/ neck/cravat/male/
 neck_jabot.json,layer_1,90,neck/jabot/male/ neck/jabot/male/
 neck_scarf.json,layer_1,90,neck/scarf/ neck/scarf/ neck/scarf/ neck/scarf/
 neck_tie.json,layer_1,90,neck/tie/ neck/tie/ neck/tie/ neck/tie/
-necklace.json,layer_1,80,necklace/female/ necklace/female/
+neck_necklace.json,layer_1,80,neck/necklace/female/ neck/necklace/female/ neck/necklace/female/ neck/necklace/female/
 prosthesis_hook.json,layer_1,100,body/prosthesis/hook/male/mask/
 prosthesis_hook.json,layer_2,100,body/prosthesis/hook/male/
 prosthesis_peg_leg.json,layer_1,100,body/prosthesis/peg_leg/male/mask/
