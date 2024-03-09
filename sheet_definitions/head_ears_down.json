@@ -1,0 +1,37 @@
+{
+  "name" : "Downward Elven Ears",
+  "type_name" : "ears",
+  "layer_1" : {
+    "zPos" : 130,
+    "male" : "head/ears/down/",
+    "muscular" : "head/ears/down/",
+    "female" : "head/ears/down/",
+    "teen" : "head/ears/down/",
+    "pregnant" : "head/ears/down/"
+  },
+  "variants": [
+    "light",
+    "amber",
+    "olive",
+    "taupe",
+    "bronze",
+    "brown",
+    "black",
+    "lavender",
+    "blue",
+    "zombie_green",
+    "green",
+    "pale_green",
+    "bright_green",
+    "dark_green",
+    "fur_black",
+    "fur_brown",
+    "fur_tan",
+    "fur_copper",
+    "fur_gold",
+    "fur_grey",
+    "fur_white",
+    "zombie"
+  ],
+  "match_body_color": true
+}
