@@ -246,6 +246,9 @@ $(document).ready(function() {
       animRowNum = selectedCustomAnimation.frames.length;
       animRowStart = 0;
       for (var i = 0; i < selectedCustomAnimation.frames[0].length; ++i) {
+        if (selectedCustomAnimation.skipFirstFrameInPreview && i === 0  ) {
+          continue;
+        }
         animationItems.push(i);
       }
       return
