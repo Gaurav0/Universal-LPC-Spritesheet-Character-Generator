@@ -1,0 +1,41 @@
+{
+  "name": "Left Braid",
+  "type_name": "hairext",
+  "layer_1": {
+    "zPos": 121,
+    "male": "hair/_extensions/braidl/adult/",
+    "muscular": "hair/_extensions/braidl/adult/",
+    "female": "hair/_extensions/braidl/adult/",
+    "pregnant": "hair/_extensions/braidl/adult/",
+    "teen": "hair/_extensions/braidl/adult/",
+    "child": "hair/_extensions/braidl/child/"
+  },
+  "variants": [
+    "blonde",
+    "ash",
+    "sandy",
+    "platinum",
+    "strawberry",
+    "redhead",
+    "ginger",
+    "carrot",
+    "chestnut",
+    "light brown",
+    "dark brown",
+    "black",
+    "raven",
+    "dark gray",
+    "gray",
+    "white",
+    "red",
+    "orange",
+    "gold",
+    "green",
+    "blue",
+    "navy",
+    "violet",
+    "purple",
+    "pink",
+    "rose"
+  ]
+}
