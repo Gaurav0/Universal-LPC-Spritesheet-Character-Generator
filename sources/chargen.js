@@ -302,8 +302,9 @@ $(document).ready(function() {
 
   function getCreditFor(fileName) {
     if (fileName !== "") {
-      var prospect = '';
-      var prospectName = '';
+      let prospect = '';
+      let prospectPath = '';
+      let prospectFile = '';
       for (let creditEntry of parsedCredits) {
         var creditPath = creditEntry.substring(0, creditEntry.indexOf(','));
         if (fileName.startsWith(creditPath) && (creditPath.length > prospectName.length)) {
