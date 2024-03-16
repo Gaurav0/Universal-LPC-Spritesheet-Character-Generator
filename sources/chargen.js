@@ -302,12 +302,14 @@ $(document).ready(function() {
 
   function getCreditFor(fileName) {
     if (fileName !== "") {
-      let prospect = '';
+      var prospect = '';
+      var prospectName = '';
       for (let creditEntry of parsedCredits) {
         var creditPath = creditEntry.substring(0, creditEntry.indexOf(','));
-        if (fileName.startsWith(creditPath) && fileName.length > prospect.length) {
+        if (fileName.startsWith(creditPath) && (creditPath.length > prospectName.length)) {
           prospect = creditEntry;
-          console.log(creditEntry.replace(creditPath + ',', fileName + ','));
+          prospectPath = creditPath;
+          prospectFile = fileName;
         }
         if (creditEntry.startsWith(fileName)) {
           return creditEntry;
@@ -316,7 +318,7 @@ $(document).ready(function() {
 
       // Found closest match!
       if (prospect !== '') {
-        return prospect;
+        return prospect.replace(prospectPath, prospectFile);
       }
     }
   }
