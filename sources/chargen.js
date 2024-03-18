@@ -302,11 +302,25 @@ $(document).ready(function() {
 
   function getCreditFor(fileName) {
     if (fileName !== "") {
+      let prospect = '';
+      let prospectPath = '';
+      let prospectFile = '';
       for (let creditEntry of parsedCredits) {
+        var creditPath = creditEntry.substring(0, creditEntry.indexOf(','));
+        if (fileName.startsWith(creditPath) && (creditPath.length > prospectPath.length)) {
+          prospect = creditEntry;
+          prospectPath = creditPath;
+          prospectFile = fileName;
+        }
         if (creditEntry.startsWith(fileName)) {
           return creditEntry;
         }
       };
+
+      // Found closest match!
+      if (prospect !== '') {
+        return prospect.replace(prospectPath, prospectFile);
+      }
     }
   }
 
