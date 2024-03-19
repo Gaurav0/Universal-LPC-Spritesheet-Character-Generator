@@ -1,0 +1,41 @@
+{
+  "name": "Right XLong Bang",
+  "type_name": "hairextr",
+  "layer_1": {
+    "zPos": 128,
+    "male": "hair/extensions/xlong_bangr/universal/adult/",
+    "muscular": "hair/extensions/xlong_bangr/universal/adult/",
+    "female": "hair/extensions/xlong_bangr/universal/adult/",
+    "pregnant": "hair/extensions/xlong_bangr/universal/adult/",
+    "teen": "hair/extensions/xlong_bangr/universal/adult/",
+    "child": "hair/extensions/xlong_bangr/universal/child/"
+  },
+  "variants": [
+    "blonde",
+    "ash",
+    "sandy",
+    "platinum",
+    "strawberry",
+    "redhead",
+    "ginger",
+    "carrot",
+    "chestnut",
+    "light brown",
+    "dark brown",
+    "black",
+    "raven",
+    "dark gray",
+    "gray",
+    "white",
+    "red",
+    "orange",
+    "gold",
+    "green",
+    "blue",
+    "navy",
+    "violet",
+    "purple",
+    "pink",
+    "rose"
+  ]
+}

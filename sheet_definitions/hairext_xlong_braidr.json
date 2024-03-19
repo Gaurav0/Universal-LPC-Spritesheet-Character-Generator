@@ -1,0 +1,50 @@
+{
+  "name": "Right XLong Braid",
+  "type_name": "hairextr",
+  "layer_1": {
+    "zPos": 128,
+    "male": "hair/extensions/xlong_braidr/universal/adult_front/",
+    "muscular": "hair/extensions/xlong_braidr/universal/adult_front/",
+    "female": "hair/extensions/xlong_braidr/universal/adult_front/",
+    "pregnant": "hair/extensions/xlong_braidr/universal/adult_front/",
+    "teen": "hair/extensions/xlong_braidr/universal/adult_front/",
+    "child": "hair/extensions/xlong_braidr/universal/child_front/"
+  },
+  "layer_2": {
+    "zPos": 8.8,
+    "male": "hair/extensions/xlong_braidr/universal/adult_back/",
+    "muscular": "hair/extensions/xlong_braidr/universal/adult_back/",
+    "female": "hair/extensions/xlong_braidr/universal/adult_back/",
+    "pregnant": "hair/extensions/xlong_braidr/universal/adult_back/",
+    "teen": "hair/extensions/xlong_braidr/universal/adult_back/",
+    "child": "hair/extensions/xlong_braidr/universal/child_back/"
+  },
+  "variants": [
+    "blonde",
+    "ash",
+    "sandy",
+    "platinum",
+    "strawberry",
+    "redhead",
+    "ginger",
+    "carrot",
+    "chestnut",
+    "light brown",
+    "dark brown",
+    "black",
+    "raven",
+    "dark gray",
+    "gray",
+    "white",
+    "red",
+    "orange",
+    "gold",
+    "green",
+    "blue",
+    "navy",
+    "violet",
+    "purple",
+    "pink",
+    "rose"
+  ]
+}
