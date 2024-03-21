@@ -1,0 +1,47 @@
+{
+  "name" : "Cat Ears Skintone",
+  "type_name" : "beastly_ears_skin",
+  "layer_1" : {
+    "zPos" : 130.1,
+    "male" : "head/ears/beastly/skin/cat/universal/adult_front/",
+    "muscular" : "head/ears/beastly/skin/cat/universal/adult_front/",
+    "female" : "head/ears/beastly/skin/cat/universal/adult_front/",
+    "teen" : "head/ears/beastly/skin/cat/universal/adult_front/",
+    "pregnant" : "head/ears/beastly/skin/cat/universal/adult_front/",
+    "child" : "head/ears/beastly/skin/cat/universal/child_front/"
+  },
+  "layer_2": {
+    "zPos": 8.9,
+    "male": "head/ears/beastly/skin/cat/universal/adult_back/",
+    "muscular": "head/ears/beastly/skin/cat/universal/adult_back/",
+    "female": "head/ears/beastly/skin/cat/universal/adult_back/",
+    "pregnant": "head/ears/beastly/skin/cat/universal/adult_back/",
+    "teen": "head/ears/beastly/skin/cat/universal/adult_back/",
+    "child": "head/ears/beastly/skin/cat/universal/child_back/"
+  },
+  "variants": [
+    "light",
+    "amber",
+    "olive",
+    "taupe",
+    "bronze",
+    "brown",
+    "black",
+    "lavender",
+    "blue",
+    "zombie_green",
+    "green",
+    "pale_green",
+    "bright_green",
+    "dark_green",
+    "fur_black",
+    "fur_brown",
+    "fur_tan",
+    "fur_copper",
+    "fur_gold",
+    "fur_grey",
+    "fur_white",
+    "zombie"
+  ],
+  "match_body_color": true
+}

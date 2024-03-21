@@ -1,0 +1,50 @@
+{
+  "name" : "Tail Feathers",
+  "type_name" : "tail",
+  "layer_1" : {
+    "zPos" : 85,
+    "male" : "body/tail/feather/adult_front/",
+    "muscular" : "body/tail/feather/adult_front/",
+    "female" : "body/tail/feather/adult_front/",
+    "pregnant" : "body/tail/feather/adult_front/",
+    "teen" : "body/tail/feather/adult_front/",
+    "child" : "body/tail/feather/child_front/"
+  },
+  "layer_2" : {
+    "zPos" : 5,
+    "male" : "body/tail/feather/adult_back/",
+    "muscular" : "body/tail/feather/adult_back/",
+    "female" : "body/tail/feather/adult_back/",
+    "pregnant" : "body/tail/feather/adult_back/",
+    "teen" : "body/tail/feather/adult_back/",
+    "child" : "body/tail/feather/child_back/"
+  },
+  "variants": [
+    "blonde",
+    "ash",
+    "sandy",
+    "platinum",
+    "strawberry",
+    "redhead",
+    "ginger",
+    "carrot",
+    "chestnut",
+    "light brown",
+    "dark brown",
+    "black",
+    "raven",
+    "dark gray",
+    "gray",
+    "white",
+    "red",
+    "orange",
+    "gold",
+    "green",
+    "blue",
+    "navy",
+    "violet",
+    "purple",
+    "pink",
+    "rose"
+  ]
+}
