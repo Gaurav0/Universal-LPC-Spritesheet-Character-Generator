@@ -1,0 +1,38 @@
+{
+  "name" : "Lace Boots Trim",
+  "type_name" : "shoes_trim",
+  "layer_1" : {
+    "zPos" : 16,
+    "male" : "feet/lace_boots_trim/universal/male/",
+    "muscular" : "feet/lace_boots_trim/universal/male/",
+    "female" : "feet/lace_boots_trim/universal/female/",
+    "teen" : "feet/lace_boots_trim/universal/female/",
+    "pregnant" : "feet/lace_boots_trim/universal/female/"
+  },
+  "variants": [
+    "black",
+    "blue",
+    "bluegray",
+    "brown",
+    "charcoal",
+    "forest",
+    "gray",
+    "green",
+    "lavender",
+    "leather",
+    "maroon",
+    "navy",
+    "orange",
+    "pink",
+    "purple",
+    "red",
+    "rose",
+    "sky",
+    "slate",
+    "tan",
+    "teal",
+    "walnut",
+    "white",
+    "yellow"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name" : "Tabi Socks",
+  "type_name" : "socks",
+  "layer_1" : {
+    "zPos" : 14,
+    "male" : "feet/socks/tabi/male/",
+    "muscular" : "feet/socks/tabi/male/",
+    "female" : "feet/socks/tabi/female/",
+    "teen" : "feet/socks/tabi/female/",
+    "pregnant" : "feet/socks/tabi/female/"
+  },
+  "variants": [
+    "black",
+    "blue",
+    "bluegray",
+    "brown",
+    "charcoal",
+    "forest",
+    "gray",
+    "green",
+    "lavender",
+    "leather",
+    "maroon",
+    "navy",
+    "orange",
+    "pink",
+    "purple",
+    "red",
+    "rose",
+    "sky",
+    "slate",
+    "tan",
+    "teal",
+    "walnut",
+    "white",
+    "yellow"
+  ]
+}
