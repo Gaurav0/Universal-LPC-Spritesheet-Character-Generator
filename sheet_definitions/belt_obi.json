@@ -1,9 +1,11 @@
 {
-  "name": "Kimono Oversized Sleeves Trim",
-  "type_name": "kimono_sleeves_trim",
+  "name": "Obi",
+  "type_name": "sash",
   "layer_1": {
-    "zPos": 31,
-    "female": "kimono/oversize/trim/universal/female/"
+    "zPos": 65,
+    "male": "torso/waist/obi/male/",
+    "female": "torso/waist/obi/female/",
+    "teen": "torso/waist/obi/male/"
   },
   "variants": [
     "black",
