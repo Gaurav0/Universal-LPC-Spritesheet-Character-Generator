@@ -307,7 +307,8 @@ $(document).ready(function() {
       let prospectFile = '';
       for (let creditEntry of parsedCredits) {
         var creditPath = creditEntry.substring(0, creditEntry.indexOf(','));
-        if (fileName.startsWith(creditPath) && (creditPath.length > prospectPath.length)) {
+        if (fileName.startsWith(creditPath) && (creditPath.length > prospectPath.length)
+            && !creditEntry.startsWith(creditPath + ',,,,')) {
           prospect = creditEntry;
           prospectPath = creditPath;
           prospectFile = fileName;
