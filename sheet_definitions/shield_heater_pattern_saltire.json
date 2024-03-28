@@ -1,0 +1,38 @@
+
+{
+  "name": "saltire",
+  "type_name": "shield_pattern",
+  "layer_1": {
+    "zPos": 112,
+    "male": "shield/heater/pattern/universal/saltire/",
+    "muscular": "shield/heater/pattern/universal/saltire/",
+    "female": "shield/heater/pattern/universal/saltire/",
+    "pregnant": "shield/heater/pattern/universal/saltire/"
+  },
+  "variants": [
+	"black" ,
+	"blue" ,
+	"bluegray" ,
+	"brown" ,
+	"charcoal" ,
+	"forest" ,
+	"gray" ,
+	"green" ,
+	"lavender" ,
+	"leather" ,
+	"maroon" ,
+	"navy" ,
+	"orange" ,
+	"pink" ,
+	"purple" ,
+	"red" ,
+	"rose" ,
+	"sky" ,
+	"slate" ,
+	"tan" ,
+	"teal" ,
+	"walnut" ,
+	"white" ,
+	"yellow"
+  ]
+}

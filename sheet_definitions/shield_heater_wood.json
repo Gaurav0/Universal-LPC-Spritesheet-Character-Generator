@@ -1,0 +1,18 @@
+{
+  "name": "Heater shield wood",
+  "type_name": "shield",
+  "layer_1": {
+    "zPos": 110,
+    "male": "shield/heater/wood/universal/",
+    "muscular": "shield/heater/wood/universal/",
+    "female": "shield/heater/wood/universal/",
+    "pregnant": "shield/heater/wood/universal/"
+  },
+  "variants": [
+    "brown",
+    "coffee",
+    "oak",
+    "tan",
+    "umber"
+  ]
+}

@@ -1,0 +1,38 @@
+
+{
+  "name": "per_chevron",
+  "type_name": "shield_pattern",
+  "layer_1": {
+    "zPos": 112,
+    "male": "shield/heater/pattern/universal/per_chevron/",
+    "muscular": "shield/heater/pattern/universal/per_chevron/",
+    "female": "shield/heater/pattern/universal/per_chevron/",
+    "pregnant": "shield/heater/pattern/universal/per_chevron/"
+  },
+  "variants": [
+	"black" ,
+	"blue" ,
+	"bluegray" ,
+	"brown" ,
+	"charcoal" ,
+	"forest" ,
+	"gray" ,
+	"green" ,
+	"lavender" ,
+	"leather" ,
+	"maroon" ,
+	"navy" ,
+	"orange" ,
+	"pink" ,
+	"purple" ,
+	"red" ,
+	"rose" ,
+	"sky" ,
+	"slate" ,
+	"tan" ,
+	"teal" ,
+	"walnut" ,
+	"white" ,
+	"yellow"
+  ]
+}

@@ -1,0 +1,38 @@
+
+{
+  "name": "pale",
+  "type_name": "shield_pattern",
+  "layer_1": {
+    "zPos": 112,
+    "male": "shield/heater/pattern/universal/pale/",
+    "muscular": "shield/heater/pattern/universal/pale/",
+    "female": "shield/heater/pattern/universal/pale/",
+    "pregnant": "shield/heater/pattern/universal/pale/"
+  },
+  "variants": [
+	"black" ,
+	"blue" ,
+	"bluegray" ,
+	"brown" ,
+	"charcoal" ,
+	"forest" ,
+	"gray" ,
+	"green" ,
+	"lavender" ,
+	"leather" ,
+	"maroon" ,
+	"navy" ,
+	"orange" ,
+	"pink" ,
+	"purple" ,
+	"red" ,
+	"rose" ,
+	"sky" ,
+	"slate" ,
+	"tan" ,
+	"teal" ,
+	"walnut" ,
+	"white" ,
+	"yellow"
+  ]
+}
