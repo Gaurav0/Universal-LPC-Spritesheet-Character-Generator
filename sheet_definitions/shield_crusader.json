@@ -1,0 +1,21 @@
+{
+  "name": "Crusader shield",
+  "type_name": "shield",
+  "layer_1": {
+    "zPos": 2,
+    "male": "shield/crusader/bg/",
+    "muscular": "shield/crusader/bg/",
+    "female": "shield/crusader/bg/",
+    "pregnant": "shield/crusader/bg/"
+  },
+  "layer_2": {
+    "zPos": 110,
+    "male": "shield/crusader/fg/male/",
+    "muscular": "shield/crusader/fg/male/",
+    "female": "shield/crusader/fg/female/",
+    "pregnant": "shield/crusader/fg/female/"
+  },
+  "variants": [
+    "crusader"
+  ]
+}
