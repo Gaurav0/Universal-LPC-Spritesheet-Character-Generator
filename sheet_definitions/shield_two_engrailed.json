@@ -1,0 +1,21 @@
+{
+  "name": "Two engrailed shield",
+  "type_name": "shield",
+  "layer_1": {
+    "zPos": 2,
+    "male": "shield/two_engrailed/paint/bg/",
+    "muscular": "shield/two_engrailed/paint/bg/",
+    "female": "shield/two_engrailed/paint/bg/",
+    "pregnant": "shield/two_engrailed/paint/bg/"
+  },
+  "layer_2": {
+    "zPos": 110,
+    "male": "shield/two_engrailed/paint/fg/male/",
+    "muscular": "shield/two_engrailed/paint/fg/male/",
+    "female": "shield/two_engrailed/paint/fg/female/",
+    "pregnant": "shield/two_engrailed/paint/fg/female/"
+  },
+  "variants": [
+    "two_engrailed"
+  ]
+}

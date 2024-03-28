@@ -1,0 +1,21 @@
+{
+  "name": "Scutum shield trim",
+  "type_name": "shield_trim",
+  "layer_1": {
+    "zPos": 3,
+    "male": "shield/scutum_trim/bg/",
+    "muscular": "shield/scutum_trim/bg/",
+    "female": "shield/scutum_trim/bg/",
+    "pregnant": "shield/scutum_trim/bg/"
+  },
+  "layer_2": {
+    "zPos": 115,
+    "male": "shield/scutum_trim/fg/male/",
+    "muscular": "shield/scutum_trim/fg/male/",
+    "female": "shield/scutum_trim/fg/female/",
+    "pregnant": "shield/scutum_trim/fg/female/"
+  },
+  "variants": [
+    "scutum_trim"
+  ]
+}

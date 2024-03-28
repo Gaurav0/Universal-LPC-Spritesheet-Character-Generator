@@ -1,0 +1,20 @@
+{
+  "name": "Heater shield trim",
+  "type_name": "shield_trim",
+  "layer_1": {
+    "zPos": 115,
+    "male": "shield/heater/trim/universal/",
+    "muscular": "shield/heater/trim/universal/",
+    "female": "shield/heater/trim/universal/",
+    "pregnant": "shield/heater/trim/universal/"
+  },
+  "variants": [
+    "brass",
+    "bronze",
+    "copper",
+    "gold",
+    "iron",
+    "silver",
+    "steel"
+  ]
+}
