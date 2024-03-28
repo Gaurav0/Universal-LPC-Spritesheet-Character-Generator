@@ -4,7 +4,8 @@
   "layer_1": {
     "zPos": 15,
     "female": "feet/shoes/female/",
-    "pregnant": "feet/shoes/female/"
+    "pregnant": "feet/shoes/female/",
+    "teen": "feet/shoes/female/"
   },
   "variants": [
     "sara"

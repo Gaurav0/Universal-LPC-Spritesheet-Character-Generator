@@ -3,16 +3,32 @@
   "type_name": "weapon",
   "layer_1": {
     "zPos": 140,
-    "male": "weapon/polearm/spear/male/",
-    "muscular": "weapon/polearm/spear/male/",
-    "female": "weapon/polearm/spear/female/",
-    "pregnant": "weapon/polearm/spear/female/"
+    "male": "weapon/polearm/spear/foreground/",
+    "muscular": "weapon/polearm/spear/foreground/",
+    "female": "weapon/polearm/spear/foreground/",
+    "teen": "weapon/polearm/spear/foreground/",
+    "pregnant": "weapon/polearm/spear/foreground/"
+  },
+  "layer_2": {
+    "zPos": 9,
+    "male": "weapon/polearm/spear/background/",
+    "muscular": "weapon/polearm/spear/background/",
+    "female": "weapon/polearm/spear/background/",
+    "teen": "weapon/polearm/spear/background/",
+    "pregnant": "weapon/polearm/spear/background/"
   },
   "variants": [
-    "spear",
-    "spear black",
-    "spear green",
-    "spear metal",
-    "spear purple"
+    "medium",
+    "light",
+    "red",
+    "dark",
+    "brass",
+    "bronze",
+    "ceramic",
+    "copper",
+    "gold",
+    "iron",
+    "silver",
+    "steel"
   ]
 }

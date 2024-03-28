@@ -3,14 +3,22 @@
   "type_name": "weapon",
   "preview_row": 17,
   "layer_1": {
-    "zPos": 140,
-    "male": "weapon/ranged/bow/great/",
-    "muscular": "weapon/ranged/bow/great/",
-    "female": "weapon/ranged/bow/great/",
-    "pregnant": "weapon/ranged/bow/great/",
-    "teen": "weapon/ranged/bow/great/"
+    "zPos": -1,
+    "male": "weapon/ranged/bow/great/universal/background/",
+    "muscular": "weapon/ranged/bow/great/universal/background/",
+    "female": "weapon/ranged/bow/great/universal/background/",
+    "pregnant": "weapon/ranged/bow/great/universal/background/",
+    "teen": "weapon/ranged/bow/great/universal/background/"
   },
   "layer_2": {
+    "zPos": 140,
+    "male": "weapon/ranged/bow/great/universal/foreground/",
+    "muscular": "weapon/ranged/bow/great/universal/foreground/",
+    "female": "weapon/ranged/bow/great/universal/foreground/",
+    "pregnant": "weapon/ranged/bow/great/universal/foreground/",
+    "teen": "weapon/ranged/bow/great/universal/foreground/"
+  },
+  "layer_3": {
     "custom_animation": "walk_128",
     "zPos": -1,
     "male": "weapon/ranged/bow/great/walk/background/",
@@ -19,7 +27,7 @@
     "pregnant": "weapon/ranged/bow/great/walk/background/",
     "teen": "weapon/ranged/bow/great/walk/background/"
   },
-  "layer_3": {
+  "layer_4": {
     "custom_animation": "walk_128",
     "zPos": 141,
     "male": "weapon/ranged/bow/great/walk/foreground/",
@@ -29,6 +37,17 @@
     "teen": "weapon/ranged/bow/great/walk/foreground/"
   },
   "variants": [
-    "great"
+    "light",
+    "medium",
+    "red",
+    "dark",
+    "brass",
+    "bronze",
+    "ceramic",
+    "copper",
+    "gold",
+    "iron",
+    "silver",
+    "steel"
   ]
 }

@@ -1,0 +1,54 @@
+{
+  "name": "Trident",
+  "type_name": "weapon",
+  "layer_1": {
+    "zPos": 140,
+    "custom_animation": "walk_128",
+    "male": "weapon/polearm/trident/walk/foreground/",
+    "muscular": "weapon/polearm/trident/walk/foreground/",
+    "female": "weapon/polearm/trident/walk/foreground/",
+    "teen": "weapon/polearm/trident/walk/foreground/",
+    "pregnant": "weapon/polearm/trident/walk/foreground/"
+  },
+  "layer_2": {
+    "zPos": 9,
+    "custom_animation": "walk_128",
+    "male": "weapon/polearm/trident/walk/background/",
+    "muscular": "weapon/polearm/trident/walk/background/",
+    "female": "weapon/polearm/trident/walk/background/",
+    "teen": "weapon/polearm/trident/walk/background/",
+    "pregnant": "weapon/polearm/trident/walk/background/"
+  },
+  "layer_3": {
+    "custom_animation": "thrust_oversize",
+    "zPos": 150,
+    "male": "weapon/polearm/trident/thrust/foreground/",
+    "muscular": "weapon/polearm/trident/thrust/foreground/",
+    "female": "weapon/polearm/trident/thrust/foreground/",
+    "teen": "weapon/polearm/trident/thrust/foreground/",
+    "pregnant": "weapon/polearm/trident/thrust/foreground/"
+  },
+  "layer_4": {
+    "custom_animation": "thrust_oversize",
+    "zPos": -1,
+    "male": "weapon/polearm/trident/thrust/background/",
+    "muscular": "weapon/polearm/trident/thrust/background/",
+    "female": "weapon/polearm/trident/thrust/background/",
+    "teen": "weapon/polearm/trident/thrust/background/",
+    "pregnant": "weapon/polearm/trident/thrust/background/"
+  },
+  "variants": [
+    "medium",
+    "light",
+    "red",
+    "dark",
+    "brass",
+    "bronze",
+    "ceramic",
+    "copper",
+    "gold",
+    "iron",
+    "silver",
+    "steel"
+  ]
+}

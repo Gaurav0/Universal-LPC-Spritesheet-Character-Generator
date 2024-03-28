@@ -4,11 +4,21 @@
   "layer_1" : {
     "zPos" : 70,
     "male" : "gloves/male/",
-    "pregnant" : "gloves/female/",
+    "muscular" : "gloves/male/",
     "female" : "gloves/female/",
+    "teen" : "gloves/female/",
     "pregnant" : "gloves/female/"
   },
   "variants": [
+    "brass",
+    "bronze",
+    "ceramic",
+    "copper",
+    "gold",
+    "iron",
+    "silver",
+    "steel",
+
     "black",
     "blue",
     "bluegray",

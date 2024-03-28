@@ -1,0 +1,54 @@
+{
+  "name": "Long spear",
+  "type_name": "weapon",
+  "layer_1": {
+    "zPos": 140,
+    "custom_animation": "walk_128",
+    "male": "weapon/polearm/longspear/walk/foreground/",
+    "muscular": "weapon/polearm/longspear/walk/foreground/",
+    "female": "weapon/polearm/longspear/walk/foreground/",
+    "teen": "weapon/polearm/longspear/walk/foreground/",
+    "pregnant": "weapon/polearm/longspear/walk/foreground/"
+  },
+  "layer_2": {
+    "zPos": 9,
+    "custom_animation": "walk_128",
+    "male": "weapon/polearm/longspear/walk/background/",
+    "muscular": "weapon/polearm/longspear/walk/background/",
+    "female": "weapon/polearm/longspear/walk/background/",
+    "teen": "weapon/polearm/longspear/walk/background/",
+    "pregnant": "weapon/polearm/longspear/walk/background/"
+  },
+  "layer_3": {
+    "custom_animation": "thrust_oversize",
+    "zPos": 150,
+    "male": "weapon/polearm/longspear/thrust/foreground/",
+    "muscular": "weapon/polearm/longspear/thrust/foreground/",
+    "female": "weapon/polearm/longspear/thrust/foreground/",
+    "teen": "weapon/polearm/longspear/thrust/foreground/",
+    "pregnant": "weapon/polearm/longspear/thrust/foreground/"
+  },
+  "layer_4": {
+    "custom_animation": "thrust_oversize",
+    "zPos": -1,
+    "male": "weapon/polearm/longspear/thrust/background/",
+    "muscular": "weapon/polearm/longspear/thrust/background/",
+    "female": "weapon/polearm/longspear/thrust/background/",
+    "teen": "weapon/polearm/longspear/thrust/background/",
+    "pregnant": "weapon/polearm/longspear/thrust/background/"
+  },
+  "variants": [
+    "medium",
+    "light",
+    "red",
+    "dark",
+    "brass",
+    "bronze",
+    "ceramic",
+    "copper",
+    "gold",
+    "iron",
+    "silver",
+    "steel"
+  ]
+}

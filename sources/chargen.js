@@ -246,6 +246,9 @@ $(document).ready(function() {
       animRowNum = selectedCustomAnimation.frames.length;
       animRowStart = 0;
       for (var i = 0; i < selectedCustomAnimation.frames[0].length; ++i) {
+        if (selectedCustomAnimation.skipFirstFrameInPreview && i === 0  ) {
+          continue;
+        }
         animationItems.push(i);
       }
       return
@@ -299,11 +302,26 @@ $(document).ready(function() {
 
   function getCreditFor(fileName) {
     if (fileName !== "") {
+      let prospect = '';
+      let prospectPath = '';
+      let prospectFile = '';
       for (let creditEntry of parsedCredits) {
+        var creditPath = creditEntry.substring(0, creditEntry.indexOf(','));
+        if (fileName.startsWith(creditPath) && (creditPath.length > prospectPath.length)
+            && !creditEntry.startsWith(creditPath + ',,,,')) {
+          prospect = creditEntry;
+          prospectPath = creditPath;
+          prospectFile = fileName;
+        }
         if (creditEntry.startsWith(fileName)) {
           return creditEntry;
         }
       };
+
+      // Found closest match!
+      if (prospect !== '') {
+        return prospect.replace(prospectPath, prospectFile);
+      }
     }
   }
 
@@ -668,13 +686,6 @@ $(document).ready(function() {
     setTimeout(nextFrame, 1000 / 8);
   }
 });
-
-function loadFile(filePath) {
-  var xmlhttp = new XMLHttpRequest();
-  xmlhttp.open("GET", filePath, false);
-  xmlhttp.send();
-  return xmlhttp.responseText;
-}
 
 function splitCsv(str) {
   return str.split(',').reduce((accum,curr)=>{

@@ -3,35 +3,50 @@
   "type_name": "weapon",
   "layer_1": {
     "zPos": 140,
-    "male": "weapon/magic/diamond/",
-    "muscular": "weapon/magic/diamond/",
-    "female": "weapon/magic/diamond/",
-    "pregnant": "weapon/magic/diamond/"
+    "male": "weapon/magic/diamond/universal/foreground/",
+    "muscular": "weapon/magic/diamond/universal/foreground/",
+    "female": "weapon/magic/diamond/universal/foreground/",
+    "teen": "weapon/magic/diamond/universal/foreground/",
+    "pregnant": "weapon/magic/diamond/universal/foreground/"
   },
   "layer_2": {
     "zPos": 9,
-    "male": "weapon/magic/diamond/universal_behind/",
-    "muscular": "weapon/magic/diamond/universal_behind/",
-    "female": "weapon/magic/diamond/universal_behind/",
-    "pregnant": "weapon/magic/diamond/universal_behind/"
+    "male": "weapon/magic/diamond/universal/background/",
+    "muscular": "weapon/magic/diamond/universal/background/",
+    "female": "weapon/magic/diamond/universal/background/",
+    "teen": "weapon/magic/diamond/universal/background/",
+    "pregnant": "weapon/magic/diamond/universal/background/"
   },
   "layer_3": {
     "custom_animation": "thrust_oversize",
     "zPos": 150,
-    "male": "weapon/magic/diamond/attack_thrust/",
-    "muscular": "weapon/magic/diamond/attack_thrust/",
-    "female": "weapon/magic/diamond/attack_thrust/",
-    "pregnant": "weapon/magic/diamond/attack_thrust/"
+    "male": "weapon/magic/diamond/thrust/foreground/",
+    "muscular": "weapon/magic/diamond/thrust/foreground/",
+    "female": "weapon/magic/diamond/thrust/foreground/",
+    "teen": "weapon/magic/diamond/thrust/foreground/",
+    "pregnant": "weapon/magic/diamond/thrust/foreground/"
   },
   "layer_4": {
     "custom_animation": "thrust_oversize",
     "zPos": -1,
-    "male": "weapon/magic/diamond/attack_thrust/background/",
-    "muscular": "weapon/magic/diamond/attack_thrust/background/",
-    "female": "weapon/magic/diamond/attack_thrust/background/",
-    "pregnant": "weapon/magic/diamond/attack_thrust/background/"
+    "male": "weapon/magic/diamond/thrust/background/",
+    "muscular": "weapon/magic/diamond/thrust/background/",
+    "female": "weapon/magic/diamond/thrust/background/",
+    "teen": "weapon/magic/diamond/thrust/background/",
+    "pregnant": "weapon/magic/diamond/thrust/background/"
   },
   "variants": [
-    "diamond"
+    "medium",
+    "light",
+    "red",
+    "dark",
+    "brass",
+    "bronze",
+    "ceramic",
+    "copper",
+    "gold",
+    "iron",
+    "silver",
+    "steel"
   ]
 }

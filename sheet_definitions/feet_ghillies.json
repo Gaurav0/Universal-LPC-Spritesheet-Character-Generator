@@ -4,6 +4,7 @@
   "layer_1" : {
     "zPos" : 15,
     "female" : "feet/ghillies/female/",
+    "teen" : "feet/ghillies/female/",
     "pregnant" : "feet/ghillies/female/",
     "male" : "feet/ghillies/male/",
     "muscular" : "feet/ghillies/male/"

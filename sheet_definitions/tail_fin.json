@@ -1,0 +1,50 @@
+{
+  "name" : "Tail Fin",
+  "type_name" : "tail",
+  "layer_1" : {
+    "zPos" : 85,
+    "male" : "body/tail/fin/adult_front/",
+    "muscular" : "body/tail/fin/adult_front/",
+    "female" : "body/tail/fin/adult_front/",
+    "pregnant" : "body/tail/fin/adult_front/",
+    "teen" : "body/tail/fin/adult_front/",
+    "child" : "body/tail/fin/child_front/"
+  },
+  "layer_2" : {
+    "zPos" : 5,
+    "male" : "body/tail/fin/adult_back/",
+    "muscular" : "body/tail/fin/adult_back/",
+    "female" : "body/tail/fin/adult_back/",
+    "pregnant" : "body/tail/fin/adult_back/",
+    "teen" : "body/tail/fin/adult_back/",
+    "child" : "body/tail/fin/child_back/"
+  },
+  "variants": [
+    "blonde",
+    "ash",
+    "sandy",
+    "platinum",
+    "strawberry",
+    "redhead",
+    "ginger",
+    "carrot",
+    "chestnut",
+    "light brown",
+    "dark brown",
+    "black",
+    "raven",
+    "dark gray",
+    "gray",
+    "white",
+    "red",
+    "orange",
+    "gold",
+    "green",
+    "blue",
+    "navy",
+    "violet",
+    "purple",
+    "pink",
+    "rose"
+  ]
+}

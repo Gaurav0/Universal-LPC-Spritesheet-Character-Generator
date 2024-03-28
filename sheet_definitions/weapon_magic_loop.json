@@ -3,35 +3,50 @@
   "type_name": "weapon",
   "layer_1": {
     "zPos": 140,
-    "male": "weapon/magic/loop/",
-    "muscular": "weapon/magic/loop/",
-    "female": "weapon/magic/loop/",
-    "pregnant": "weapon/magic/loop/"
+    "male": "weapon/magic/loop/universal/foreground/",
+    "muscular": "weapon/magic/loop/universal/foreground/",
+    "female": "weapon/magic/loop/universal/foreground/",
+    "teen": "weapon/magic/loop/universal/foreground/",
+    "pregnant": "weapon/magic/loop/universal/foreground/"
   },
   "layer_2": {
     "zPos": 9,
-    "male": "weapon/magic/loop/universal_behind/",
-    "muscular": "weapon/magic/loop/universal_behind/",
-    "female": "weapon/magic/loop/universal_behind/",
-    "pregnant": "weapon/magic/loop/universal_behind/"
+    "male": "weapon/magic/loop/universal/background/",
+    "muscular": "weapon/magic/loop/universal/background/",
+    "female": "weapon/magic/loop/universal/background/",
+    "teen": "weapon/magic/loop/universal/background/",
+    "pregnant": "weapon/magic/loop/universal/background/"
   },
   "layer_3": {
     "custom_animation": "thrust_oversize",
-    "zPos": -2,
-    "male": "weapon/magic/loop/attack_thrust/background/",
-    "muscular": "weapon/magic/loop/attack_thrust/background/",
-    "female": "weapon/magic/loop/attack_thrust/background/",
-    "pregnant": "weapon/magic/loop/attack_thrust/background/"
+    "zPos": 150,
+    "male": "weapon/magic/loop/thrust/foreground/",
+    "muscular": "weapon/magic/loop/thrust/foreground/",
+    "female": "weapon/magic/loop/thrust/foreground/",
+    "teen": "weapon/magic/loop/thrust/foreground/",
+    "pregnant": "weapon/magic/loop/thrust/foreground/"
   },
   "layer_4": {
     "custom_animation": "thrust_oversize",
-    "zPos": 150,
-    "male": "weapon/magic/loop/attack_thrust/",
-    "muscular": "weapon/magic/loop/attack_thrust/",
-    "female": "weapon/magic/loop/attack_thrust/",
-    "pregnant": "weapon/magic/loop/attack_thrust/"
+    "zPos": -1,
+    "male": "weapon/magic/loop/thrust/background/",
+    "muscular": "weapon/magic/loop/thrust/background/",
+    "female": "weapon/magic/loop/thrust/background/",
+    "teen": "weapon/magic/loop/thrust/background/",
+    "pregnant": "weapon/magic/loop/thrust/background/"
   },
   "variants": [
-    "loop"
+    "medium",
+    "light",
+    "red",
+    "dark",
+    "brass",
+    "bronze",
+    "ceramic",
+    "copper",
+    "gold",
+    "iron",
+    "silver",
+    "steel"
   ]
 }
