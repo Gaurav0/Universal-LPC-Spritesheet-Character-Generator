@@ -1,0 +1,16 @@
+{
+  "name": "Jetpack fins",
+  "type_name": "cargo",
+  "layer_1": {
+    "zPos": 112,
+    "male":     "backpack/jetpack_fins/male/",
+    "muscular": "backpack/jetpack_fins/male/",
+    "female":   "backpack/jetpack_fins/female/",
+    "pregnant": "backpack/jetpack_fins/female/"
+  },
+  "variants": [
+    "bronze",
+    "gold",
+    "steel"
+  ]
+}

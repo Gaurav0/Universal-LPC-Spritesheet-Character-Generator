@@ -2,6 +2,13 @@
   "name" : "Smash",
   "type_name" : "weapon",
   "layer_1": {
+    "zPos": 140,
+    "male": "tools/smash/universal/male/",
+    "muscular": "tools/smash/universal/male/",
+    "female": "tools/smash/universal/female/",
+    "pregnant": "tools/smash/universal/female/"
+  },
+  "layer_2": {
     "zPos": 9,
     "custom_animation": "slash_128",
     "male": "tools/smash/background/",
@@ -9,7 +16,7 @@
     "female": "tools/smash/background/",
     "pregnant": "tools/smash/background/"
   },
-  "layer_2": {
+  "layer_3": {
     "zPos": 150,
     "custom_animation": "slash_128",
     "male": "tools/smash/foreground/",

@@ -1,0 +1,38 @@
+
+{
+  "name": "per_bend",
+  "type_name": "shield_pattern",
+  "layer_1": {
+    "zPos": 112,
+    "male": "shield/heater/pattern/universal/per_bend/",
+    "muscular": "shield/heater/pattern/universal/per_bend/",
+    "female": "shield/heater/pattern/universal/per_bend/",
+    "pregnant": "shield/heater/pattern/universal/per_bend/"
+  },
+  "variants": [
+	"black" ,
+	"blue" ,
+	"bluegray" ,
+	"brown" ,
+	"charcoal" ,
+	"forest" ,
+	"gray" ,
+	"green" ,
+	"lavender" ,
+	"leather" ,
+	"maroon" ,
+	"navy" ,
+	"orange" ,
+	"pink" ,
+	"purple" ,
+	"red" ,
+	"rose" ,
+	"sky" ,
+	"slate" ,
+	"tan" ,
+	"teal" ,
+	"walnut" ,
+	"white" ,
+	"yellow"
+  ]
+}

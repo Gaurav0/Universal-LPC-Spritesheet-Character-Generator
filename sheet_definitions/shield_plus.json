@@ -1,0 +1,21 @@
+{
+  "name": "Plus shield",
+  "type_name": "shield",
+  "layer_1": {
+    "zPos": 2,
+    "male": "shield/plus/bg/",
+    "muscular": "shield/plus/bg/",
+    "female": "shield/plus/bg/",
+    "pregnant": "shield/plus/bg/"
+  },
+  "layer_2": {
+    "zPos": 110,
+    "male": "shield/plus/fg/male/",
+    "muscular": "shield/plus/fg/male/",
+    "female": "shield/plus/fg/female/",
+    "pregnant": "shield/plus/fg/female/"
+  },
+  "variants": [
+    "plus"
+  ]
+}

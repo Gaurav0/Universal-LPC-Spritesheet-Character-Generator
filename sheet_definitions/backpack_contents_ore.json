@@ -1,0 +1,28 @@
+{
+  "name": "Ore",
+  "type_name": "cargo",
+  "layer_1": {
+    "zPos": 112,
+    "male":     "backpack/basket_contents/ore/fg/",
+    "muscular": "backpack/basket_contents/ore/fg/",
+    "female":   "backpack/basket_contents/ore/fg/",
+    "pregnant": "backpack/basket_contents/ore/fg/"
+  },
+  "layer_2": {
+    "zPos": 5,
+    "male":     "backpack/basket_contents/ore/bg/",
+    "muscular": "backpack/basket_contents/ore/bg/",
+    "female":   "backpack/basket_contents/ore/bg/",
+    "pregnant": "backpack/basket_contents/ore/bg/"
+  },
+  "variants": [
+    "coal",
+    "iron",
+    "steel",
+    "tin",
+    "copper",
+    "bronze",
+    "silver",
+    "gold"
+  ]
+}

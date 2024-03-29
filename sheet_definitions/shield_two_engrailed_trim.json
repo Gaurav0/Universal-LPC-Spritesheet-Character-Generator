@@ -1,0 +1,21 @@
+{
+  "name": "Two engrailed shield trim",
+  "type_name": "shield_trim",
+  "layer_1": {
+    "zPos": 3,
+    "male": "shield/two_engrailed/trim/bg/",
+    "muscular": "shield/two_engrailed/trim/bg/",
+    "female": "shield/two_engrailed/trim/bg/",
+    "pregnant": "shield/two_engrailed/trim/bg/"
+  },
+  "layer_2": {
+    "zPos": 115,
+    "male": "shield/two_engrailed/trim/fg/male/",
+    "muscular": "shield/two_engrailed/trim/fg/male/",
+    "female": "shield/two_engrailed/trim/fg/female/",
+    "pregnant": "shield/two_engrailed/trim/fg/female/"
+  },
+  "variants": [
+    "two_engrailed_trim"
+  ]
+}

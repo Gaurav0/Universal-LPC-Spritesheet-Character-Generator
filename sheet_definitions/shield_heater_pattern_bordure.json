@@ -1,0 +1,38 @@
+
+{
+  "name": "bordure",
+  "type_name": "shield_pattern",
+  "layer_1": {
+    "zPos": 112,
+    "male": "shield/heater/pattern/universal/bordure/",
+    "muscular": "shield/heater/pattern/universal/bordure/",
+    "female": "shield/heater/pattern/universal/bordure/",
+    "pregnant": "shield/heater/pattern/universal/bordure/"
+  },
+  "variants": [
+	"black" ,
+	"blue" ,
+	"bluegray" ,
+	"brown" ,
+	"charcoal" ,
+	"forest" ,
+	"gray" ,
+	"green" ,
+	"lavender" ,
+	"leather" ,
+	"maroon" ,
+	"navy" ,
+	"orange" ,
+	"pink" ,
+	"purple" ,
+	"red" ,
+	"rose" ,
+	"sky" ,
+	"slate" ,
+	"tan" ,
+	"teal" ,
+	"walnut" ,
+	"white" ,
+	"yellow"
+  ]
+}
