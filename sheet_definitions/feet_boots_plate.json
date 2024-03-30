@@ -1,0 +1,38 @@
+{
+  "name" : "Boots Metal Plating",
+  "type_name" : "shoes_plate",
+  "layer_1" : {
+    "zPos" : 16,
+    "male" : "feet/boots_plating/universal/male/",
+    "muscular" : "feet/boots_plating/universal/male/",
+    "female" : "feet/boots_plating/universal/female/",
+    "teen" : "feet/boots_plating/universal/female/",
+    "pregnant" : "feet/boots_plating/universal/female/"
+  },
+  "variants": [
+    "black",
+    "blue",
+    "bluegray",
+    "brown",
+    "charcoal",
+    "forest",
+    "gray",
+    "green",
+    "lavender",
+    "leather",
+    "maroon",
+    "navy",
+    "orange",
+    "pink",
+    "purple",
+    "red",
+    "rose",
+    "sky",
+    "slate",
+    "tan",
+    "teal",
+    "walnut",
+    "white",
+    "yellow"
+  ]
+}

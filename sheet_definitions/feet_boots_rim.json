@@ -1,0 +1,38 @@
+{
+  "name" : "Rim Boots",
+  "type_name" : "shoes",
+  "layer_1" : {
+    "zPos" : 15,
+    "male" : "feet/rim_boots/universal/male/",
+    "muscular" : "feet/rim_boots/universal/male/",
+    "female" : "feet/rim_boots/universal/female/",
+    "teen" : "feet/rim_boots/universal/female/",
+    "pregnant" : "feet/rim_boots/universal/female/"
+  },
+  "variants": [
+    "black",
+    "blue",
+    "bluegray",
+    "brown",
+    "charcoal",
+    "forest",
+    "gray",
+    "green",
+    "lavender",
+    "leather",
+    "maroon",
+    "navy",
+    "orange",
+    "pink",
+    "purple",
+    "red",
+    "rose",
+    "sky",
+    "slate",
+    "tan",
+    "teal",
+    "walnut",
+    "white",
+    "yellow"
+  ]
+}
