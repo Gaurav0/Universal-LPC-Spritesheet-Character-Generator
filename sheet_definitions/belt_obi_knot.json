@@ -3,9 +3,11 @@
   "type_name": "sash_tie",
   "layer_1": {
     "zPos": 66,
-    "male": "torso/waist/obi_knot/male/",
-    "female": "torso/waist/obi_knot/female/",
-    "teen": "torso/waist/obi_knot/male/"
+    "male": "torso/waist/obi_knot/universal/male/",
+    "muscular": "torso/waist/obi_knot/universal/male/",
+    "female": "torso/waist/obi_knot/universal/female/",
+    "pregnant": "torso/waist/obi_knot/universal/female/",
+    "teen": "torso/waist/obi_knot/universal/male/"
   },
   "variants": [
     "black",

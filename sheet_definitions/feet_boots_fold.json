@@ -33,6 +33,14 @@
     "teal",
     "walnut",
     "white",
-    "yellow"
+    "yellow",
+    "steel",
+    "iron",
+    "ceramic",
+    "brass",
+    "copper",
+    "bronze",
+    "silver",
+    "gold"
   ]
 }

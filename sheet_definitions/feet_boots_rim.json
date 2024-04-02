@@ -3,11 +3,11 @@
   "type_name" : "shoes",
   "layer_1" : {
     "zPos" : 15,
-    "male" : "feet/rim_boots/universal/male/",
-    "muscular" : "feet/rim_boots/universal/male/",
-    "female" : "feet/rim_boots/universal/female/",
-    "teen" : "feet/rim_boots/universal/female/",
-    "pregnant" : "feet/rim_boots/universal/female/"
+    "male" : "feet/boots_rim/universal/male/",
+    "muscular" : "feet/boots_rim/universal/male/",
+    "female" : "feet/boots_rim/universal/female/",
+    "teen" : "feet/boots_rim/universal/female/",
+    "pregnant" : "feet/boots_rim/universal/female/"
   },
   "variants": [
     "black",
@@ -33,6 +33,14 @@
     "teal",
     "walnut",
     "white",
-    "yellow"
+    "yellow",
+    "steel",
+    "iron",
+    "ceramic",
+    "brass",
+    "copper",
+    "bronze",
+    "silver",
+    "gold"
   ]
 }
