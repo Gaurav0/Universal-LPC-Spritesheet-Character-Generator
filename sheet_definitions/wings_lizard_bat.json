@@ -1,0 +1,42 @@
+{
+  "name" : "Batlike Lizard Wings",
+  "type_name" : "wings",
+  "layer_1" : {
+    "zPos" : 85,
+    "male" : "body/wings/bat/lizard/universal/adult_front/",
+    "muscular" : "body/wings/bat/lizard/universal/adult_front/",
+    "female" : "body/wings/bat/lizard/universal/adult_front/",
+    "pregnant" : "body/wings/bat/lizard/universal/adult_front/"
+  },
+  "layer_2" : {
+    "zPos" : 5,
+    "male" : "body/wings/bat/lizard/universal/adult_back/",
+    "muscular" : "body/wings/bat/lizard/universal/adult_back/",
+    "female" : "body/wings/bat/lizard/universal/adult_back/",
+    "pregnant" : "body/wings/bat/lizard/universal/adult_back/"
+  },
+  "variants": [
+    "light",
+    "amber",
+    "olive",
+    "taupe",
+    "bronze",
+    "brown",
+    "black",
+    "lavender",
+    "blue",
+    "zombie_green",
+    "green",
+    "pale_green",
+    "bright_green",
+    "dark_green",
+    "fur_black",
+    "fur_brown",
+    "fur_tan",
+    "fur_copper",
+    "fur_gold",
+    "fur_grey",
+    "fur_white"
+  ],
+  "match_body_color": true
+}
