@@ -4,8 +4,7 @@
   "layer_1" : {
     "zPos" : 35,
     "pregnant" : "torso/clothes/tanktop/pregnant/",
-    "female" : "torso/clothes/tanktop/female/",
-    "pregnant" : "torso/clothes/tanktop/pregnant/"
+    "female" : "torso/clothes/tanktop/female/"
   },
   "variants": [
     "black",
