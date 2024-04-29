@@ -1,0 +1,51 @@
+{
+  "name" : "Pixie Wings",
+  "type_name" : "wings",
+  "layer_1" : {
+    "zPos" : 85,
+    "male" : "body/wings/pixie/front/",
+    "muscular" : "body/wings/pixie/front/",
+    "female" : "body/wings/pixie/front/",
+    "pregnant" : "body/wings/pixie/front/",
+    "teen" : "body/wings/pixie/front/",
+    "child" : "body/wings/pixie/front/"
+  },
+  "layer_2" : {
+    "zPos" : 5,
+    "male" : "body/wings/pixie/back/",
+    "muscular" : "body/wings/pixie/back/",
+    "female" : "body/wings/pixie/back/",
+    "pregnant" : "body/wings/pixie/back/",
+    "teen" : "body/wings/pixie/back/",
+    "child" : "body/wings/pixie/back/"
+  },
+  "variants": [
+    "pixie",
+    "blonde",
+    "ash",
+    "sandy",
+    "platinum",
+    "strawberry",
+    "redhead",
+    "ginger",
+    "carrot",
+    "chestnut",
+    "light brown",
+    "dark brown",
+    "black",
+    "raven",
+    "dark gray",
+    "gray",
+    "white",
+    "red",
+    "orange",
+    "gold",
+    "green",
+    "blue",
+    "navy",
+    "violet",
+    "purple",
+    "pink",
+    "rose"
+  ]
+}

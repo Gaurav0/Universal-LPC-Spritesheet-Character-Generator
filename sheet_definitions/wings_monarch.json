@@ -1,0 +1,51 @@
+{
+  "name" : "Monarch Wings",
+  "type_name" : "wings",
+  "layer_1" : {
+    "zPos" : 85,
+    "male" : "body/wings/monarch/front/",
+    "muscular" : "body/wings/monarch/front/",
+    "female" : "body/wings/monarch/front/",
+    "pregnant" : "body/wings/monarch/front/",
+    "teen" : "body/wings/monarch/front/",
+    "child" : "body/wings/monarch/front/"
+  },
+  "layer_2" : {
+    "zPos" : 5,
+    "male" : "body/wings/monarch/back/",
+    "muscular" : "body/wings/monarch/back/",
+    "female" : "body/wings/monarch/back/",
+    "pregnant" : "body/wings/monarch/back/",
+    "teen" : "body/wings/monarch/back/",
+    "child" : "body/wings/monarch/back/"
+  },
+  "variants": [
+    "monarch",
+    "blonde",
+    "ash",
+    "sandy",
+    "platinum",
+    "strawberry",
+    "redhead",
+    "ginger",
+    "carrot",
+    "chestnut",
+    "light brown",
+    "dark brown",
+    "black",
+    "raven",
+    "dark gray",
+    "gray",
+    "white",
+    "red",
+    "orange",
+    "gold",
+    "green",
+    "blue",
+    "navy",
+    "violet",
+    "purple",
+    "pink",
+    "rose"
+  ]
+}
