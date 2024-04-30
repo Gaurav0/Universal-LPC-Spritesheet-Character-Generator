@@ -5,7 +5,8 @@
     "zPos": 35,
     "female": "torso/clothes/shortsleeve/female/",
     "male": "torso/clothes/shortsleeve/male/",
-    "pregnant": "torso/clothes/longsleeve/pregnant/"
+    "pregnant": "torso/clothes/shortsleeve/pregnant/",
+    "teen": "torso/clothes/shortsleeve/teen/"
   },
   "variants": [
     "black",
