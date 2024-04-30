@@ -3,12 +3,12 @@
   "type_name" : "body",
   "layer_1" : {
     "zPos" : 10,
-    "male" : "body/bodies/male/universal/",
-    "muscular" : "body/bodies/muscular/universal/",
-    "female" : "body/bodies/female/universal/",
-    "pregnant" : "body/bodies/pregnant/universal/",
-    "teen" : "body/bodies/teen/universal/",
-    "child" : "body/bodies/child/universal/"
+    "male" : "body/bodies/male/",
+    "muscular" : "body/bodies/muscular/",
+    "female" : "body/bodies/female/",
+    "pregnant" : "body/bodies/pregnant/",
+    "teen" : "body/bodies/teen/",
+    "child" : "body/bodies/child/"
   },
   "variants": [
     "light",
