@@ -20,14 +20,13 @@
     "child" : "body/wings/monarch/base/bg/"
   },
   "variants": [
-    "base",
+    "monarch",
     "amber",
     "blue",
     "bluegray",
     "bright_green",
     "bronze",
     "charcoal",
-    "chestnut",
     "dark_green",
     "ginger",
     "lavender",
