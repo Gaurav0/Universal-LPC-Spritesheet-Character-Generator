@@ -20,7 +20,6 @@ $(document).ready(function() {
   var images = {};
   const universalFrameSize = 64;
   const universalSheetWidth = 832;
-  //const universalSheetHeight = 1344;
   const universalSheetHeight = 2432;
 
   // Preview Animation
