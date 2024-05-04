@@ -5,9 +5,9 @@
     "zPos" : 10,
     "male" : "body/bodies/male/",
     "muscular" : "body/bodies/muscular/",
-    "female" : "body/bodies/female/",
-    "pregnant" : "body/bodies/pregnant/",
-    "teen" : "body/bodies/teen/",
+    "female" : "body/bodies/female_revised/",
+    "pregnant" : "body/bodies/pregnant_revised/",
+    "teen" : "body/bodies/teen_revised/",
     "child" : "body/bodies/child/"
   },
   "variants": [
