@@ -3,7 +3,7 @@
   "type_name" : "body",
   "layer_1" : {
     "zPos" : 10,
-    "male" : "body/bodies/male/",
+    "male" : "body/bodies/male_revised/",
     "muscular" : "body/bodies/muscular/",
     "female" : "body/bodies/female_revised/",
     "pregnant" : "body/bodies/pregnant_revised/",
