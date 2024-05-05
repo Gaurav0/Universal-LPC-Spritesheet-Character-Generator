@@ -655,6 +655,14 @@ $(document).ready(function() {
           }
         };
         img = getImage2($(this).data(`layer_1_${getBodyTypeName()}`), callback);
+        for(jdx =2; jdx < 10; jdx++){
+          if($(this).data(`layer_${jdx}_${getBodyTypeName()}`)){
+            img = getImage2($(this).data(`layer_${jdx}_${getBodyTypeName()}`), callback);
+          } else {
+            break;
+          }
+        }
+
         if (img != null) {
           this.parentNode.insertBefore(prev, this);
           $(this).parent().addClass("hasPreview").parent().addClass("hasPreview");
