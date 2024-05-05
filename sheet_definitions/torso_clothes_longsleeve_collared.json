@@ -1,12 +1,34 @@
 {
-  "name" : "Collared longsleeve",
+  "name" : "Collared/Formal Longsleeve",
   "type_name" : "clothes",
   "layer_1" : {
     "zPos" : 35,
-    "male" : "torso/clothes/longsleeve/male/"
+    "male" : "torso/clothes/longsleeve/formal/male/"
   },
   "variants": [
-    "formal",
-    "formal striped"
+    "black",
+    "blue",
+    "bluegray",
+    "brown",
+    "charcoal",
+    "forest",
+    "gray",
+    "green",
+    "lavender",
+    "leather",
+    "maroon",
+    "navy",
+    "orange",
+    "pink",
+    "purple",
+    "red",
+    "rose",
+    "sky",
+    "slate",
+    "tan",
+    "teal",
+    "walnut",
+    "white",
+    "yellow"
   ]
 }

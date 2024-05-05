@@ -1,12 +1,9 @@
 {
-  "name" : "Longsleeve",
+  "name" : "Striped Collared/Formal Longsleeve",
   "type_name" : "clothes",
   "layer_1" : {
     "zPos" : 35,
-    "female" : "torso/clothes/longsleeve/longsleeve/female/",
-    "male" : "torso/clothes/longsleeve/longsleeve/male/",
-    "teen" : "torso/clothes/longsleeve/longsleeve/teen/",
-    "pregnant" : "torso/clothes/longsleeve/longsleeve/pregnant/"
+    "male" : "torso/clothes/longsleeve/formal_striped/male/"
   },
   "variants": [
     "black",
