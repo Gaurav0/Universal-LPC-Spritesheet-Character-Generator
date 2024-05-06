@@ -1,0 +1,23 @@
+{
+  "name" : "Cyclops Eyes",
+  "type_name" : "eyes",
+  "layer_1" : {
+    "zPos" : 105,
+    "male" : "eyes/cyclops/adult/",
+    "muscular" : "eyes/cyclops/adult/",
+    "female" : "eyes/cyclops/adult/",
+    "teen" : "eyes/cyclops/adult/",
+    "pregnant" : "eyes/cyclops/adult/"
+  },
+  "variants": [
+    "cyclops",
+    "blue",
+    "brown",
+    "gray",
+    "green",
+    "orange",
+    "purple",
+    "red",
+    "yellow"
+  ]
+}
