@@ -654,14 +654,34 @@ $(document).ready(function() {
             console.log(err);
           }
         };
-        img = getImage2($(this).data(`layer_1_${getBodyTypeName()}`), callback);
+        //TODO: makes images show in order of z-index
+        //const zPos = $(this).data(`layer_${jdx}_zpos`);
+        layers = []
+        const previewToDraw = {};
+        previewToDraw.link = $(this).data(`layer_1_${getBodyTypeName()}`);
+        previewToDraw.zPos = $(this).data(`layer_1_${getBodyTypeName()}`);
+
+        layers.push(previewToDraw);
+        
         for(jdx =2; jdx < 10; jdx++){
           if($(this).data(`layer_${jdx}_${getBodyTypeName()}`)){
-            img = getImage2($(this).data(`layer_${jdx}_${getBodyTypeName()}`), callback);
+            const previewToDraw = {};
+            previewToDraw.link = $(this).data(`layer_${jdx}_${getBodyTypeName()}`);
+            previewToDraw.zPos = $(this).data(`layer_${jdx}_${getBodyTypeName()}`);
+
+            layers.push(previewToDraw);
           } else {
             break;
           }
-        }
+        }    
+        
+        layers.sort(function(lhs, rhs) {
+          return parseInt(lhs.zPos) - parseInt(rhs.zPos);
+        });
+
+        layers.forEach((layer) =>{
+          img = getImage2(layer.link, callback);
+        });
 
         if (img != null) {
           this.parentNode.insertBefore(prev, this);
