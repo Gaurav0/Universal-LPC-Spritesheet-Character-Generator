@@ -654,8 +654,7 @@ $(document).ready(function() {
             console.log(err);
           }
         };
-        //TODO: makes images show in order of z-index
-        //const zPos = $(this).data(`layer_${jdx}_zpos`);
+
         layers = []
         const previewToDraw = {};
         previewToDraw.link = $(this).data(`layer_1_${getBodyTypeName()}`);
