@@ -3,30 +3,30 @@
   "type_name": "hair",
   "layer_1": {
     "zPos": 120,
-    "male": "hair/xlong_ponytail/universal/adult_front/",
-    "muscular": "hair/xlong_ponytail/universal/adult_front/",
-    "female": "hair/xlong_ponytail/universal/adult_front/",
-    "pregnant": "hair/xlong_ponytail/universal/adult_front/",
-    "teen": "hair/xlong_ponytail/universal/adult_front/",
-    "child": "hair/xlong_ponytail/universal/child_front/"
+    "male": "hair/xlong_ponytail/adult_front/",
+    "muscular": "hair/xlong_ponytail/adult_front/",
+    "female": "hair/xlong_ponytail/adult_front/",
+    "pregnant": "hair/xlong_ponytail/adult_front/",
+    "teen": "hair/xlong_ponytail/adult_front/",
+    "child": "hair/xlong_ponytail/child_front/"
   },
   "layer_2": {
     "zPos": 9,
-    "male": "hair/xlong_ponytail/universal/adult_back/",
-    "muscular": "hair/xlong_ponytail/universal/adult_back/",
-    "female": "hair/xlong_ponytail/universal/adult_back/",
-    "pregnant": "hair/xlong_ponytail/universal/adult_back/",
-    "teen": "hair/xlong_ponytail/universal/adult_back/",
-    "child": "hair/xlong_ponytail/universal/child_back/"
+    "male": "hair/xlong_ponytail/adult_back/",
+    "muscular": "hair/xlong_ponytail/adult_back/",
+    "female": "hair/xlong_ponytail/adult_back/",
+    "pregnant": "hair/xlong_ponytail/adult_back/",
+    "teen": "hair/xlong_ponytail/adult_back/",
+    "child": "hair/xlong_ponytail/child_back/"
   },
   "layer_3": {
     "zPos": 145,
-    "male": "hair/xlong_ponytail/universal/adult_front_ponytail/",
-    "muscular": "hair/xlong_ponytail/universal/adult_front_ponytail/",
-    "female": "hair/xlong_ponytail/universal/adult_front_ponytail/",
-    "pregnant": "hair/xlong_ponytail/universal/adult_front_ponytail/",
-    "teen": "hair/xlong_ponytail/universal/adult_front_ponytail/",
-    "child": "hair/xlong_ponytail/universal/child_front_ponytail/"
+    "male": "hair/xlong_ponytail/adult_top/",
+    "muscular": "hair/xlong_ponytail/adult_top/",
+    "female": "hair/xlong_ponytail/adult_top/",
+    "pregnant": "hair/xlong_ponytail/adult_top/",
+    "teen": "hair/xlong_ponytail/adult_top/",
+    "child": "hair/xlong_ponytail/child_top/"
   },
   "variants": [
     "blonde",

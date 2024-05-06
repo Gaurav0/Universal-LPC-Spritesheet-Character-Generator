@@ -3,11 +3,11 @@
   "type_name": "hair",
   "layer_1": {
     "zPos": 120,
-    "male": "hair/twists_fade/male/",
-    "muscular": "hair/twists_fade/male/",
-    "female": "hair/twists_fade/female/",
-    "pregnant": "hair/twists_fade/female/",
-    "teen": "hair/twists_fade/male/"
+    "male": "hair/twists_fade/adult/",
+    "muscular": "hair/twists_fade/adult/",
+    "female": "hair/twists_fade/adult/",
+    "pregnant": "hair/twists_fade/adult/",
+    "teen": "hair/twists_fade/adult/"
   },
   "variants": [
     "blonde",

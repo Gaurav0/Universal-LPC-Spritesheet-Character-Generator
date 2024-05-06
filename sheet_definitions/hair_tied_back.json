@@ -3,12 +3,12 @@
   "type_name": "hair",
   "layer_1": {
     "zPos": 120,
-    "male": "hair/tied_back/universal/adult/",
-    "muscular": "hair/tied_back/universal/adult/",
-    "female": "hair/tied_back/universal/adult/",
-    "pregnant": "hair/tied_back/universal/adult/",
-    "teen": "hair/tied_back/universal/adult/",
-    "child": "hair/tied_back/universal/child/"
+    "male": "hair/tied_back/adult/",
+    "muscular": "hair/tied_back/adult/",
+    "female": "hair/tied_back/adult/",
+    "pregnant": "hair/tied_back/adult/",
+    "teen": "hair/tied_back/adult/",
+    "child": "hair/tied_back/child/"
   },
   "variants": [
     "blonde",
