@@ -654,7 +654,34 @@ $(document).ready(function() {
             console.log(err);
           }
         };
-        img = getImage2($(this).data(`layer_1_${getBodyTypeName()}`), callback);
+
+        layers = []
+        const previewToDraw = {};
+        previewToDraw.link = $(this).data(`layer_1_${getBodyTypeName()}`);
+        previewToDraw.zPos = $(this).data(`layer_1_${getBodyTypeName()}`);
+
+        layers.push(previewToDraw);
+        
+        for(jdx =2; jdx < 10; jdx++){
+          if($(this).data(`layer_${jdx}_${getBodyTypeName()}`)){
+            const previewToDraw = {};
+            previewToDraw.link = $(this).data(`layer_${jdx}_${getBodyTypeName()}`);
+            previewToDraw.zPos = $(this).data(`layer_${jdx}_${getBodyTypeName()}`);
+
+            layers.push(previewToDraw);
+          } else {
+            break;
+          }
+        }    
+        
+        layers.sort(function(lhs, rhs) {
+          return parseInt(lhs.zPos) - parseInt(rhs.zPos);
+        });
+
+        layers.forEach((layer) =>{
+          img = getImage2(layer.link, callback);
+        });
+
         if (img != null) {
           this.parentNode.insertBefore(prev, this);
           $(this).parent().addClass("hasPreview").parent().addClass("hasPreview");
