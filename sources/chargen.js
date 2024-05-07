@@ -649,13 +649,7 @@ $(document).ready(function() {
         const previewRow = parseInt($(this).data("preview_row"));
         var callback = function(img) {
           try {
-            console.log(img.height);
-            console.log(universalFrameSize * 10);
-            if(img.height <= universalFrameSize * previewRow){
-              prevctx.drawImage(img, 0, 0 , universalFrameSize, universalFrameSize, 0, 0, universalFrameSize, universalFrameSize);
-            }else{
               prevctx.drawImage(img, 0, previewRow * universalFrameSize, universalFrameSize, universalFrameSize, 0, 0, universalFrameSize, universalFrameSize);
-            }
           } catch (err) {
             console.log(err);
           }
