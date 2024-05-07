@@ -659,7 +659,6 @@ $(document).ready(function() {
         const previewToDraw = {};
         previewToDraw.link = $(this).data(`layer_1_${getBodyTypeName()}`);
         previewToDraw.zPos = $(this).data(`layer_1_zpos`);
-        console.log("1. " + $(this).data(`layer_1_zpos`));
         layers.push(previewToDraw);
         
         for(jdx =2; jdx < 10; jdx++){
@@ -667,7 +666,6 @@ $(document).ready(function() {
             const previewToDraw = {};
             previewToDraw.link = $(this).data(`layer_${jdx}_${getBodyTypeName()}`);
             previewToDraw.zPos = $(this).data(`layer_${jdx}_zpos`);
-            console.log( jdx + ". " + $(this).data(`layer_${jdx}_zpos`));
 
             layers.push(previewToDraw);
           } else {
