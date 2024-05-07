@@ -649,7 +649,7 @@ $(document).ready(function() {
         const previewRow = parseInt($(this).data("preview_row"));
         var callback = function(img) {
           try {
-              prevctx.drawImage(img, 0, previewRow * universalFrameSize, universalFrameSize, universalFrameSize, 0, 0, universalFrameSize, universalFrameSize);
+            prevctx.drawImage(img, 0, previewRow * universalFrameSize, universalFrameSize, universalFrameSize, 0, 0, universalFrameSize, universalFrameSize);
           } catch (err) {
             console.log(err);
           }
