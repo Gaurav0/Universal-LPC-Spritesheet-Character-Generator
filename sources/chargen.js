@@ -649,7 +649,13 @@ $(document).ready(function() {
         const previewRow = parseInt($(this).data("preview_row"));
         var callback = function(img) {
           try {
-            prevctx.drawImage(img, 0, previewRow * universalFrameSize, universalFrameSize, universalFrameSize, 0, 0, universalFrameSize, universalFrameSize);
+            console.log(img.height);
+            console.log(universalFrameSize * 10);
+            if(img.height <= universalFrameSize * previewRow){
+              prevctx.drawImage(img, 0, 0 , universalFrameSize, universalFrameSize, 0, 0, universalFrameSize, universalFrameSize);
+            }else{
+              prevctx.drawImage(img, 0, previewRow * universalFrameSize, universalFrameSize, universalFrameSize, 0, 0, universalFrameSize, universalFrameSize);
+            }
           } catch (err) {
             console.log(err);
           }
@@ -658,7 +664,7 @@ $(document).ready(function() {
         layers = []
         const previewToDraw = {};
         previewToDraw.link = $(this).data(`layer_1_${getBodyTypeName()}`);
-        previewToDraw.zPos = $(this).data(`layer_1_${getBodyTypeName()}`);
+        previewToDraw.zPos = $(this).data(`layer_${jdx}_zpos`);
 
         layers.push(previewToDraw);
         
@@ -666,7 +672,7 @@ $(document).ready(function() {
           if($(this).data(`layer_${jdx}_${getBodyTypeName()}`)){
             const previewToDraw = {};
             previewToDraw.link = $(this).data(`layer_${jdx}_${getBodyTypeName()}`);
-            previewToDraw.zPos = $(this).data(`layer_${jdx}_${getBodyTypeName()}`);
+            previewToDraw.zPos = $(this).data(`layer_${jdx}_zpos`);
 
             layers.push(previewToDraw);
           } else {
