@@ -3,10 +3,10 @@
   "type_name": "clothes",
   "layer_1": {
     "zPos": 35,
-    "female": "torso/clothes/shortsleeve/female/",
-    "male": "torso/clothes/shortsleeve/male/",
-    "pregnant": "torso/clothes/shortsleeve/pregnant/",
-    "teen": "torso/clothes/shortsleeve/teen/"
+    "female": "torso/clothes/shortsleeve/shortsleeve/female/",
+    "male": "torso/clothes/shortsleeve/shortsleeve/male/",
+    "pregnant": "torso/clothes/shortsleeve/shortsleeve/pregnant/",
+    "teen": "torso/clothes/shortsleeve/shortsleeve/teen/"
   },
   "variants": [
     "black",

@@ -3,8 +3,8 @@
   "type_name" : "clothes",
   "layer_1" : {
     "zPos" : 35,
-    "pregnant" : "torso/clothes/tanktop/pregnant/",
-    "female" : "torso/clothes/tanktop/female/"
+    "pregnant" : "torso/clothes/sleeveless/tanktop/pregnant/",
+    "female" : "torso/clothes/sleeveless/tanktop/female/"
   },
   "variants": [
     "black",
