@@ -11,7 +11,7 @@
     "child" : "head/ears/beastly/wolf/universal/child_front/"
   },
   "layer_2": {
-    "zPos": 8.8,
+    "zPos": 9,
     "male": "head/ears/beastly/wolf/universal/adult_back/",
     "muscular": "head/ears/beastly/wolf/universal/adult_back/",
     "female": "head/ears/beastly/wolf/universal/adult_back/",
