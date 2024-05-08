@@ -602,7 +602,7 @@ $(document).ready(function() {
 
   function getImage(imgRef) {
     if (images[imgRef])
-    return images[imgRef];
+      return images[imgRef];
     else {
       var img = new Image();
       img.src = "spritesheets/" + imgRef;
@@ -612,15 +612,15 @@ $(document).ready(function() {
     }
   }
 
-  function getImage2(imgRef, callback) {
+  function getImage2(imgRef, callback, layers, prevctx) {
     if (images[imgRef]) {
-      callback(images[imgRef]);
+      callback(layers, prevctx);
       return images[imgRef];
     } else {
 
       var img = new Image();
       img.src = "spritesheets/" + imgRef;
-      img.onload = function() { callback(img) };
+      img.onload = function() { callback(layers, prevctx) };
       images[imgRef] = img;
       return img;
     }
@@ -647,14 +647,49 @@ $(document).ready(function() {
         var prevctx = prev.getContext("2d");
         var img = null;
         const previewRow = parseInt($(this).data("preview_row"));
-        var callback = function(img) {
+        var callback = function(layers,prevctx) {
+          for(index = 0; index < layers.length; index++){
+            if(!images[layers[index].link]){
+              return;
+            }
+          }
+
           try {
-            prevctx.drawImage(img, 0, previewRow * universalFrameSize, universalFrameSize, universalFrameSize, 0, 0, universalFrameSize, universalFrameSize);
+            layers.forEach((layer) =>{
+              prevctx.drawImage(images[layer.link], 0, previewRow * universalFrameSize, universalFrameSize, universalFrameSize, 0, 0, universalFrameSize, universalFrameSize);
+            });
           } catch (err) {
             console.log(err);
           }
         };
-        img = getImage2($(this).data(`layer_1_${getBodyTypeName()}`), callback);
+
+        layers = []
+        const previewToDraw = {};
+        previewToDraw.link = $(this).data(`layer_1_${getBodyTypeName()}`);
+        previewToDraw.zPos = $(this).data(`layer_1_zpos`);
+        layers.push(previewToDraw);
+        
+        for(jdx =2; jdx < 10; jdx++){
+          if($(this).data(`layer_${jdx}_${getBodyTypeName()}`)){
+            const previewToDraw = {};
+            previewToDraw.link = $(this).data(`layer_${jdx}_${getBodyTypeName()}`);
+            previewToDraw.zPos = $(this).data(`layer_${jdx}_zpos`);
+
+            layers.push(previewToDraw);
+          } else {
+            break;
+          }
+        }    
+        
+        layers.sort(function(lhs, rhs) {
+          return parseInt(lhs.zPos) - parseInt(rhs.zPos);
+        });
+        
+
+        layers.forEach((layer) =>{
+          img = getImage2(layer.link, callback, layers, prevctx);
+        });
+
         if (img != null) {
           this.parentNode.insertBefore(prev, this);
           $(this).parent().addClass("hasPreview").parent().addClass("hasPreview");
