@@ -622,19 +622,37 @@
 					<span class="condensed">Shirts</span>
 					<ul>
 						div_sheet_torso_clothes_child_shirt
-						div_sheet_torso_clothes_longsleeve
-						div_sheet_torso_clothes_longsleeve_collared
-						div_sheet_torso_clothes_male_longsleeve_laced
-						div_sheet_torso_clothes_shortsleeve
-						div_sheet_torso_clothes_male_sleeveless
-						div_sheet_torso_clothes_male_sleeveless_laced
-						div_sheet_torso_clothes_male_sleeveless_striped
-						div_sheet_torso_clothes_tanktop
-						div_sheet_torso_clothes_female_sleeveless
+						<!-- Longsleeve Shirts -->
+						<li data-required="male,female,pregnant,teen">
+							<span class="condensed">Longsleeve</span>
+							<ul>
+								div_sheet_torso_clothes_longsleeve
+								div_sheet_torso_clothes_longsleeve_scoop
+								div_sheet_torso_clothes_longsleeve_formal
+								div_sheet_torso_clothes_longsleeve_formal_striped
+								div_sheet_torso_clothes_longsleeve_laced
+							</ul>
+						</li>
+						<!-- Shortsleeve Shirts -->
+						<li data-required="male,female,pregnant,teen">
+							<span class="condensed">Shortsleeve</span>
+							<ul>
+								div_sheet_torso_clothes_shortsleeve
+							</ul>
+						</li>
+						<!-- Sleeveless Shirts -->
+						<li data-required="male,female,pregnant,teen">
+							<span class="condensed">Sleeveless</span>
+							<ul>
+								div_sheet_torso_clothes_sleeveless
+								div_sheet_torso_clothes_sleeveless_laced
+								div_sheet_torso_clothes_sleeveless_striped
+								div_sheet_torso_clothes_sleeveless_tanktop
+							</ul>
+						</li>
 						div_sheet_torso_clothes_corset
 						div_sheet_torso_clothes_blouse
 						div_sheet_torso_clothes_blouse_longsleeve
-						div_sheet_torso_clothes_scoop_shirt
 						div_sheet_torso_clothes_tunic
 						div_sheet_torso_clothes_tunic_sara
 						div_sheet_torso_clothes_robe
@@ -977,7 +995,7 @@
 				<option value="climb" data-row="21" data-num="1" data-cycle="6">Climb</option>
 				<option value="watering" data-row="4" data-num="4" data-cycle="4" data-cycle-custom="0-1-4-4-4-4-5">Watering</option>
 				<option value="combat" data-row="22" data-num="4" data-cycle-custom="2-2-3">Combat Idle</option>
-				<option value="1h_slash" data-row="38" data-num="4" data-cycle="7">1-Handed Slash</option>
+				<option value="1h_slash" data-row="38" data-num="4" data-cycle-custom="0-1-2-3-4-5-6">1-Handed Slash</option>
 				<option value="1h_backslash" data-row="38" data-num="4" data-cycle-custom="0-1-2-3-4-5-7-8-9-10-11-12">1-Handed Backslash</option>
 				<option value="1h_halfslash" data-row="42" data-num="4" data-cycle="6">1-Handed Halfslash</option>
 			</select>

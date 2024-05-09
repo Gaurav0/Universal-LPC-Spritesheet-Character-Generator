@@ -3,11 +3,11 @@
   "type_name": "hair",
   "layer_1": {
     "zPos": 120,
-    "male": "hair/jewfro/male/",
-    "muscular": "hair/jewfro/male/",
-    "female": "hair/jewfro/female/",
-    "pregnant": "hair/jewfro/female/",
-    "teen": "hair/jewfro/male/"
+    "male": "hair/jewfro/adult/",
+    "muscular": "hair/jewfro/adult/",
+    "female": "hair/jewfro/adult/",
+    "pregnant": "hair/jewfro/adult/",
+    "teen": "hair/jewfro/adult/"
   },
   "variants": [
     "blonde",

@@ -3,11 +3,11 @@
   "type_name": "hair",
   "layer_1": {
     "zPos": 120,
-    "male": "hair/cornrows/male/",
-    "muscular": "hair/cornrows/male/",
-    "female": "hair/cornrows/female/",
-    "pregnant": "hair/cornrows/female/",
-    "teen": "hair/cornrows/male/"
+    "male": "hair/cornrows/adult/",
+    "muscular": "hair/cornrows/adult/",
+    "female": "hair/cornrows/adult/",
+    "pregnant": "hair/cornrows/adult/",
+    "teen": "hair/cornrows/adult/"
   },
   "variants": [
     "blonde",
