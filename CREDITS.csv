@@ -611,6 +611,9 @@ body/wings/bat,,"ElizaWy, JaidynReiman","OGA-BY 3.0",https://opengameart.org/con
 body/wings/monarch,"In dedication to my grandmother, Sharon Rowe","The Foreman","OGA-BY 4.0, CC-BY-SA 4.0",https://opengameart.org/content/lpc-fairy-wings,,,,,,,,,,,,,,,
 body/wings/pixie,"In dedication to my grandmother, Sharon Rowe","The Foreman","OGA-BY 4.0, CC-BY-SA 4.0",https://opengameart.org/content/lpc-fairy-wings,,,,,,,,,,,,,,,
 body/wings/pixie_transparent,"In dedication to my grandmother, Sharon Rowe","The Foreman","OGA-BY 4.0, CC-BY-SA 4.0",https://opengameart.org/content/lpc-fairy-wings,,,,,,,,,,,,,,,
+body/wings/lunar,"In dedication to my grandmother, Sharon Rowe","The Foreman","OGA-BY 4.0, CC-BY-SA 4.0",https://opengameart.org/content/lpc-fairy-wings-pack-2,,,,,,,,,,,,,,,
+body/wings/dragonfly,"In dedication to my grandmother, Sharon Rowe","The Foreman","OGA-BY 4.0, CC-BY-SA 4.0",https://opengameart.org/content/lpc-fairy-wings-pack-2,,,,,,,,,,,,,,,
+body/wings/dragonfly_transparent,"In dedication to my grandmother, Sharon Rowe","The Foreman","OGA-BY 4.0, CC-BY-SA 4.0",https://opengameart.org/content/lpc-fairy-wings-pack-2,,,,,,,,,,,,,,,
 body/wound,,,,,,,,,,,,,,,,,,,
 body/wound/arm.png,,"Benjamin K. Smith (BenCreating), Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-zombie,,,,,,,,,,,,,,,OK
 body/wound/brain.png,,"Benjamin K. Smith (BenCreating), Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-zombie,,,,,,,,,,,,,,,OK
@@ -1316,63 +1319,7 @@ hair/bangs/male/sandy.png,,Manuel Riecke (MrBeast),"CC-BY-SA 3.0, GPL 3.0",https
 hair/bangs/male/strawberry.png,,Manuel Riecke (MrBeast),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,,,,,,,,,,,,,,,OK
 hair/bangs/male/violet.png,,Manuel Riecke (MrBeast),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,,,,,,,,,,,,,,,OK
 hair/bangs/male/white.png,,Manuel Riecke (MrBeast),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,,,,,,,,,,,,,,,OK
-hair/bangs_bun,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,
-hair/bangs_bun/female,,,,,,,,,,,,,,,,,,,
-hair/bangs_bun/female.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/female/ash.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/female/black.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/female/blonde.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/female/blue.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/female/carrot.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/female/chestnut.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/female/dark_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/female/dark_gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/female/ginger.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/female/gold.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/female/gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/female/green.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/female/light_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/female/navy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/female/orange.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/female/pink.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/female/platinum.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/female/purple.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/female/raven.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/female/red.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/female/redhead.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/female/rose.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/female/sandy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/female/strawberry.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/female/violet.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/female/white.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/male,,,,,,,,,,,,,,,,,,,
-hair/bangs_bun/male.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/male/ash.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/male/black.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/male/blonde.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/male/blue.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/male/carrot.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/male/chestnut.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/male/dark_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/male/dark_gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/male/ginger.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/male/gold.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/male/gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/male/green.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/male/light_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/male/navy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/male/orange.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/male/pink.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/male/platinum.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/male/purple.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/male/raven.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/male/red.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/male/redhead.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/male/rose.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/male/sandy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/male/strawberry.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/male/violet.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bangs_bun/male/white.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
+hair/bangs_bun,"Original by bluecarrot16, animated by ElizaWy.","ElizaWy, bluecarrot16",CC0,https://opengameart.org/content/lpc-hair,https://github.com/ElizaWy/LPC/blob/main/Characters/Hair,,,,,,,,,,,,,,
 hair/bangslong,,Manuel Riecke (MrBeast),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
 hair/bangslong/female,,,,,,,,,,,,,,,,,,,
 hair/bangslong/female.png,,Manuel Riecke (MrBeast),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
@@ -1601,120 +1548,8 @@ hair/bedhead/male/sandy.png,,Manuel Riecke (MrBeast),"CC-BY-SA 3.0, GPL 3.0",htt
 hair/bedhead/male/strawberry.png,,Manuel Riecke (MrBeast),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,,,,,,,,,,,,,,,OK
 hair/bedhead/male/violet.png,,Manuel Riecke (MrBeast),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,,,,,,,,,,,,,,,OK
 hair/bedhead/male/white.png,,Manuel Riecke (MrBeast),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,,,,,,,,,,,,,,,OK
-hair/bob,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,
-hair/bob/female,,,,,,,,,,,,,,,,,,,
-hair/bob/female.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/female/ash.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/female/black.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/female/blonde.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/female/blue.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/female/carrot.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/female/chestnut.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/female/dark_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/female/dark_gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/female/ginger.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/female/gold.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/female/gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/female/green.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/female/light_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/female/navy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/female/orange.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/female/pink.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/female/platinum.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/female/purple.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/female/raven.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/female/red.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/female/redhead.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/female/rose.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/female/sandy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/female/strawberry.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/female/violet.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/female/white.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/male,,,,,,,,,,,,,,,,,,,
-hair/bob/male.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/male/ash.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/male/black.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/male/blonde.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/male/blue.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/male/carrot.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/male/chestnut.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/male/dark_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/male/dark_gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/male/ginger.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/male/gold.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/male/gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/male/green.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/male/light_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/male/navy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/male/orange.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/male/pink.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/male/platinum.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/male/purple.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/male/raven.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/male/red.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/male/redhead.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/male/rose.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/male/sandy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/male/strawberry.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/male/violet.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob/male/white.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/bob_side_part,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,
-hair/bob_side_part/female,,,,,,,,,,,,,,,,,,,
-hair/bob_side_part/female.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/female/ash.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/female/black.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/female/blonde.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/female/blue.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/female/carrot.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/female/chestnut.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/female/dark_brown.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/female/dark_gray.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/female/ginger.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/female/gold.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/female/gray.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/female/green.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/female/light_brown.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/female/navy.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/female/orange.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/female/pink.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/female/platinum.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/female/purple.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/female/raven.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/female/red.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/female/redhead.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/female/rose.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/female/sandy.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/female/strawberry.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/female/violet.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/female/white.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/male,,,,,,,,,,,,,,,,,,,
-hair/bob_side_part/male.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/male/ash.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/male/black.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/male/blonde.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/male/blue.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/male/carrot.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/male/chestnut.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/male/dark_brown.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/male/dark_gray.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/male/ginger.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/male/gold.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/male/gray.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/male/green.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/male/light_brown.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/male/navy.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/male/orange.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/male/pink.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/male/platinum.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/male/purple.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/male/raven.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/male/red.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/male/redhead.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/male/rose.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/male/sandy.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/male/strawberry.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/male/violet.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/bob_side_part/male/white.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
+hair/bob,"Original by bluecarrot16. Edited and animated by ElizaWy.","ElizaWy, bluecarrot16",CC0,https://opengameart.org/content/lpc-hair,https://github.com/ElizaWy/LPC/blob/main/Characters/Hair,,,,,,,,,,,,,,
+hair/bob_side_part,"Original by Thecilekli. Touchups by BlueCarrot16. Edited and animated by ElizaWy.","thecilekli, bluecarrot16, ElizaWy",CC0,https://opengameart.org/content/lpc-pink-short-hair,https://opengameart.org/content/lpc-hair,https://github.com/ElizaWy/LPC/blob/main/Characters/Hair,,,,,,,,,,,,,
 hair/braid,,"Nila122, ElizaWy","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0, GPL 2.0",https://opengameart.org/content/3-hairs-for-lpc,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,
 hair/braid,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/3-hairs-for-lpc,,,,,,,,,,,,,,,OK
 hair/braid/child,,,,,,,,,,,,,,,,,,,
@@ -1983,120 +1818,8 @@ hair/child/Child_hair_curly_pink2.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.
 hair/child/Child_hair_halfmessy_cyan.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
 hair/child/Child_hair_halfmessy_default.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
 hair/child/Child_hair_halfmessy_pink2.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
-hair/cornrows,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,
-hair/cornrows/female,,,,,,,,,,,,,,,,,,,
-hair/cornrows/female.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/female/ash.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/female/black.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/female/blonde.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/female/blue.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/female/carrot.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/female/chestnut.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/female/dark_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/female/dark_gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/female/ginger.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/female/gold.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/female/gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/female/green.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/female/light_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/female/navy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/female/orange.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/female/pink.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/female/platinum.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/female/purple.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/female/raven.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/female/red.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/female/redhead.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/female/rose.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/female/sandy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/female/strawberry.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/female/violet.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/female/white.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/male,,,,,,,,,,,,,,,,,,,
-hair/cornrows/male.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/male/ash.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/male/black.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/male/blonde.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/male/blue.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/male/carrot.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/male/chestnut.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/male/dark_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/male/dark_gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/male/ginger.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/male/gold.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/male/gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/male/green.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/male/light_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/male/navy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/male/orange.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/male/pink.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/male/platinum.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/male/purple.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/male/raven.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/male/red.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/male/redhead.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/male/rose.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/male/sandy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/male/strawberry.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/male/violet.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cornrows/male/white.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,
-hair/cowlick/female,,,,,,,,,,,,,,,,,,,
-hair/cowlick/female.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/female/ash.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/female/black.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/female/blonde.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/female/blue.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/female/carrot.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/female/chestnut.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/female/dark_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/female/dark_gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/female/ginger.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/female/gold.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/female/gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/female/green.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/female/light_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/female/navy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/female/orange.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/female/pink.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/female/platinum.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/female/purple.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/female/raven.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/female/red.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/female/redhead.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/female/rose.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/female/sandy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/female/strawberry.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/female/violet.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/female/white.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/male,,,,,,,,,,,,,,,,,,,
-hair/cowlick/male.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/male/ash.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/male/black.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/male/blonde.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/male/blue.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/male/carrot.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/male/chestnut.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/male/dark_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/male/dark_gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/male/ginger.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/male/gold.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/male/gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/male/green.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/male/light_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/male/navy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/male/orange.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/male/pink.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/male/platinum.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/male/purple.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/male/raven.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/male/red.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/male/redhead.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/male/rose.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/male/sandy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/male/strawberry.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/male/violet.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/cowlick/male/white.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
+hair/cornrows,"Original by bluecarrot16, animated by ElizaWy.","ElizaWy, bluecarrot16",CC0,https://opengameart.org/content/lpc-hair,https://github.com/ElizaWy/LPC/blob/main/Characters/Hair,,,,,,,,,,,,,,
+hair/cowlick,"Original by bluecarrot16, animated by ElizaWy.","ElizaWy, bluecarrot16",CC0,https://opengameart.org/content/lpc-hair,https://github.com/ElizaWy/LPC/blob/main/Characters/Hair,,,,,,,,,,,,,,
 hair/cowlick_tall,,"Fabzy, bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/the-revolution-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,
 hair/cowlick_tall/female,,,,,,,,,,,,,,,,,,,
 hair/cowlick_tall/female.png,,"Fabzy, bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/the-revolution-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
@@ -2154,36 +1877,6 @@ hair/cowlick_tall/male/sandy.png,,"Fabzy, bluecarrot16",CC-BY-SA 3.0,https://ope
 hair/cowlick_tall/male/strawberry.png,,"Fabzy, bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/the-revolution-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
 hair/cowlick_tall/male/violet.png,,"Fabzy, bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/the-revolution-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
 hair/cowlick_tall/male/white.png,,"Fabzy, bluecarrot16",CC-BY-SA 3.0,https://opengameart.org/content/the-revolution-hair,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/curly,,,,,,,,,,,,,,,,,,,
-hair/curly/child,,Nila122,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,
-hair/curly/child/black.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
-hair/curly/child/blonde.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
-hair/curly/child/blonde_2.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
-hair/curly/child/blue.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
-hair/curly/child/blue_2.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
-hair/curly/child/brown.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
-hair/curly/child/brown_2.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
-hair/curly/child/brunette.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
-hair/curly/child/brunette_2.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
-hair/curly/child/darkblonde.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
-hair/curly/child/darkgrey.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
-hair/curly/child/darkred.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
-hair/curly/child/gold.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
-hair/curly/child/green.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
-hair/curly/child/green_2.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
-hair/curly/child/grey.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
-hair/curly/child/lightblonde.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
-hair/curly/child/lightblonde_2.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
-hair/curly/child/pink.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
-hair/curly/child/purple.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
-hair/curly/child/raven.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
-hair/curly/child/raven_2.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
-hair/curly/child/red.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
-hair/curly/child/red_2.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
-hair/curly/child/ruby.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
-hair/curly/child/whiteblonde.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
-hair/curly/child/whiteblonde_2.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
-hair/curly/child/whitecyan.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
 hair/curly_long,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,
 hair/curly_long/female,,,,,,,,,,,,,,,,,,,
 hair/curly_long/female.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
@@ -2242,62 +1935,7 @@ hair/curly_long/male/strawberry.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/
 hair/curly_long/male/violet.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
 hair/curly_long/male/white.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
 hair/curly_short,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,
-hair/curly_short/female,,,,,,,,,,,,,,,,,,,
-hair/curly_short/female.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/female/ash.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/female/black.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/female/blonde.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/female/blue.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/female/carrot.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/female/chestnut.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/female/dark_brown.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/female/dark_gray.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/female/ginger.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/female/gold.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/female/gray.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/female/green.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/female/light_brown.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/female/navy.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/female/orange.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/female/pink.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/female/platinum.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/female/purple.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/female/raven.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/female/red.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/female/redhead.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/female/rose.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/female/sandy.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/female/strawberry.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/female/violet.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/female/white.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/male,,,,,,,,,,,,,,,,,,,
-hair/curly_short/male.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/male/ash.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/male/black.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/male/blonde.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/male/blue.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/male/carrot.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/male/chestnut.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/male/dark_brown.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/male/dark_gray.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/male/ginger.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/male/gold.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/male/gray.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/male/green.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/male/light_brown.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/male/navy.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/male/orange.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/male/pink.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/male/platinum.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/male/purple.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/male/raven.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/male/red.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/male/redhead.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/male/rose.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/male/sandy.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/male/strawberry.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/male/violet.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/curly_short/male/white.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
+hair/curly_short2,,ElizaWy,OGA-BY 3.0,https://github.com/ElizaWy/LPC/tree/main/Characters/Hair,,,,,,,,,,,,,,,OK
 hair/curtains,(star),"Mandi Paugh, bluecarrot16","GPL 2.0, GPL 3.0, CC-BY 3.0",https://opengameart.org/content/star-overland,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,
 hair/curtains/female,,,,,,,,,,,,,,,,,,,
 hair/curtains/female.png,,"Mandi Paugh, bluecarrot16","GPL 2.0, GPL 3.0, CC-BY 3.0",https://opengameart.org/content/star-overland,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
@@ -2469,177 +2107,9 @@ hair/dreadlocks_long/male/sandy.png,,bluecarrot16,CC0,https://opengameart.org/co
 hair/dreadlocks_long/male/strawberry.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
 hair/dreadlocks_long/male/violet.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
 hair/dreadlocks_long/male/white.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,
-hair/dreadlocks_short/female,,,,,,,,,,,,,,,,,,,
-hair/dreadlocks_short/female.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/female/ash.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/female/black.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/female/blonde.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/female/blue.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/female/carrot.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/female/chestnut.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/female/dark_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/female/dark_gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/female/ginger.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/female/gold.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/female/gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/female/green.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/female/light_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/female/navy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/female/orange.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/female/pink.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/female/platinum.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/female/purple.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/female/raven.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/female/red.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/female/redhead.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/female/rose.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/female/sandy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/female/strawberry.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/female/violet.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/female/white.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/male,,,,,,,,,,,,,,,,,,,
-hair/dreadlocks_short/male.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/male/ash.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/male/black.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/male/blonde.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/male/blue.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/male/carrot.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/male/chestnut.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/male/dark_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/male/dark_gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/male/ginger.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/male/gold.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/male/gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/male/green.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/male/light_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/male/navy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/male/orange.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/male/pink.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/male/platinum.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/male/purple.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/male/raven.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/male/red.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/male/redhead.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/male/rose.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/male/sandy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/male/strawberry.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/male/violet.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/dreadlocks_short/male/white.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,
-hair/flat_top_fade/female,,,,,,,,,,,,,,,,,,,
-hair/flat_top_fade/female.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/female/ash.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/female/black.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/female/blonde.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/female/blue.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/female/carrot.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/female/chestnut.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/female/dark_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/female/dark_gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/female/ginger.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/female/gold.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/female/gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/female/green.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/female/light_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/female/navy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/female/orange.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/female/pink.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/female/platinum.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/female/purple.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/female/raven.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/female/red.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/female/redhead.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/female/rose.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/female/sandy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/female/strawberry.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/female/violet.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/female/white.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/male,,,,,,,,,,,,,,,,,,,
-hair/flat_top_fade/male.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/male/ash.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/male/black.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/male/blonde.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/male/blue.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/male/carrot.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/male/chestnut.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/male/dark_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/male/dark_gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/male/ginger.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/male/gold.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/male/gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/male/green.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/male/light_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/male/navy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/male/orange.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/male/pink.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/male/platinum.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/male/purple.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/male/raven.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/male/red.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/male/redhead.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/male/rose.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/male/sandy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/male/strawberry.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/male/violet.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_fade/male/white.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,
-hair/flat_top_straight/female,,,,,,,,,,,,,,,,,,,
-hair/flat_top_straight/female.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/female/ash.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/female/black.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/female/blonde.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/female/blue.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/female/carrot.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/female/chestnut.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/female/dark_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/female/dark_gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/female/ginger.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/female/gold.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/female/gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/female/green.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/female/light_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/female/navy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/female/orange.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/female/pink.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/female/platinum.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/female/purple.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/female/raven.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/female/red.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/female/redhead.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/female/rose.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/female/sandy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/female/strawberry.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/female/violet.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/female/white.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/male,,,,,,,,,,,,,,,,,,,
-hair/flat_top_straight/male.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/male/ash.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/male/black.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/male/blonde.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/male/blue.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/male/carrot.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/male/chestnut.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/male/dark_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/male/dark_gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/male/ginger.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/male/gold.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/male/gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/male/green.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/male/light_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/male/navy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/male/orange.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/male/pink.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/male/platinum.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/male/purple.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/male/raven.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/male/red.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/male/redhead.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/male/rose.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/male/sandy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/male/strawberry.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/male/violet.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/flat_top_straight/male/white.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
+hair/dreadlocks_short,"Original by bluecarrot16. Animated by ElizaWy.","ElizaWy, bluecarrot16",CC0,https://opengameart.org/content/lpc-hair,https://github.com/ElizaWy/LPC/blob/main/Characters/Hair,,,,,,,,,,,,,,
+hair/flat_top_fade,"Original by bluecarrot16, animated by ElizaWy.","ElizaWy, bluecarrot16",CC0,https://opengameart.org/content/lpc-hair,https://github.com/ElizaWy/LPC/blob/main/Characters/Hair,,,,,,,,,,,,,,
+hair/flat_top_straight,"Original by bluecarrot16, animated by ElizaWy.","ElizaWy, bluecarrot16",bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,https://github.com/ElizaWy/LPC/blob/main/Characters/Hair,,,,,,,,,,,,,,
 hair/half_up,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,
 hair/half_up/female,,,,,,,,,,,,,,,,,,,
 hair/half_up/female.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
@@ -2869,120 +2339,8 @@ hair/high_ponytail/male/sandy.png,,"ElizaWy, bluecarrot16",OGA-BY 3.0,https://op
 hair/high_ponytail/male/strawberry.png,,"ElizaWy, bluecarrot16",OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
 hair/high_ponytail/male/violet.png,,"ElizaWy, bluecarrot16",OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
 hair/high_ponytail/male/white.png,,"ElizaWy, bluecarrot16",OGA-BY 3.0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/idol,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,
-hair/idol/female,,,,,,,,,,,,,,,,,,,
-hair/idol/female.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/female/ash.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/female/black.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/female/blonde.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/female/blue.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/female/carrot.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/female/chestnut.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/female/dark_brown.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/female/dark_gray.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/female/ginger.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/female/gold.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/female/gray.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/female/green.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/female/light_brown.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/female/navy.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/female/orange.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/female/pink.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/female/platinum.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/female/purple.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/female/raven.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/female/red.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/female/redhead.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/female/rose.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/female/sandy.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/female/strawberry.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/female/violet.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/female/white.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/male,,,,,,,,,,,,,,,,,,,
-hair/idol/male.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/male/ash.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/male/black.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/male/blonde.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/male/blue.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/male/carrot.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/male/chestnut.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/male/dark_brown.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/male/dark_gray.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/male/ginger.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/male/gold.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/male/gray.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/male/green.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/male/light_brown.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/male/navy.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/male/orange.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/male/pink.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/male/platinum.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/male/purple.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/male/raven.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/male/red.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/male/redhead.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/male/rose.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/male/sandy.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/male/strawberry.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/male/violet.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/idol/male/white.png,,"thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
+hair/idol,"Original CC0 by Thecilekli. Edited by bluecarrot16 and ElizaWy. Animated by ElizaWy.","thecilekli, bluecarrot16",CC0,https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors,https://opengameart.org/content/lpc-hair,https://github.com/ElizaWy/LPC/tree/main/Characters/Hair,,,,,,,,,,,,,
 hair/jewfro,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/female,,,,,,,,,,,,,,,,,,,
-hair/jewfro/female.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/female/ash.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/female/black.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/female/blonde.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/female/blue.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/female/carrot.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/female/chestnut.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/female/dark_brown.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/female/dark_gray.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/female/ginger.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/female/gold.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/female/gray.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/female/green.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/female/light_brown.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/female/navy.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/female/orange.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/female/pink.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/female/platinum.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/female/purple.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/female/raven.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/female/red.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/female/redhead.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/female/rose.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/female/sandy.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/female/strawberry.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/female/violet.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/female/white.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/male,,,,,,,,,,,,,,,,,,,
-hair/jewfro/male.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/male/ash.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/male/black.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/male/blonde.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/male/blue.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/male/carrot.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/male/chestnut.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/male/dark_brown.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/male/dark_gray.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/male/ginger.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/male/gold.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/male/gray.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/male/green.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/male/light_brown.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/male/navy.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/male/orange.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/male/pink.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/male/platinum.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/male/purple.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/male/raven.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/male/red.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/male/redhead.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/male/rose.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/male/sandy.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/male/strawberry.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/male/violet.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/jewfro/male/white.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
 hair/lob,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,
 hair/lob/female,,,,,,,,,,,,,,,,,,,
 hair/lob/female.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
@@ -3464,62 +2822,6 @@ hair/longhawk/male/strawberry.png,,Manuel Riecke (MrBeast),"CC-BY-SA 3.0, GPL 3.
 hair/longhawk/male/violet.png,,Manuel Riecke (MrBeast),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,,,,,,,,,,,,,,,OK
 hair/longhawk/male/white.png,,Manuel Riecke (MrBeast),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,,,,,,,,,,,,,,,OK
 hair/longknot,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/female,,,,,,,,,,,,,,,,,,,
-hair/longknot/female.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/female/ash.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/female/black.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/female/blonde.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/female/blue.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/female/carrot.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/female/chestnut.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/female/dark_brown.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/female/dark_gray.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/female/ginger.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/female/gold.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/female/gray.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/female/green.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/female/light_brown.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/female/navy.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/female/orange.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/female/pink.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/female/platinum.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/female/purple.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/female/raven.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/female/red.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/female/redhead.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/female/rose.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/female/sandy.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/female/strawberry.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/female/violet.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/female/white.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/male,,,,,,,,,,,,,,,,,,,
-hair/longknot/male.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/male/ash.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/male/black.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/male/blonde.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/male/blue.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/male/carrot.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/male/chestnut.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/male/dark_brown.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/male/dark_gray.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/male/ginger.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/male/gold.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/male/gray.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/male/green.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/male/light_brown.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/male/navy.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/male/orange.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/male/pink.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/male/platinum.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/male/purple.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/male/raven.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/male/red.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/male/redhead.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/male/rose.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/male/sandy.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/male/strawberry.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/male/violet.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
-hair/longknot/male/white.png,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
 hair/loose,,Manuel Riecke (MrBeast),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,,,,,,,,,,,,,,,OK
 hair/loose/female,,,,,,,,,,,,,,,,,,,
 hair/loose/female.png,,Manuel Riecke (MrBeast),"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,,,,,,,,,,,,,,,OK
@@ -3836,63 +3138,7 @@ hair/mop/male/sandy.png,,"Radomir Dopieralski, bluecarrot16","CC-BY-SA 3.0, GPL 
 hair/mop/male/strawberry.png,,"Radomir Dopieralski, bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/alternate-lpc-character-sprites-george,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
 hair/mop/male/violet.png,,"Radomir Dopieralski, bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/alternate-lpc-character-sprites-george,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
 hair/mop/male/white.png,,"Radomir Dopieralski, bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/alternate-lpc-character-sprites-george,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
-hair/natural,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,
-hair/natural/female,,,,,,,,,,,,,,,,,,,
-hair/natural/female.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/female/ash.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/female/black.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/female/blonde.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/female/blue.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/female/carrot.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/female/chestnut.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/female/dark_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/female/dark_gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/female/ginger.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/female/gold.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/female/gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/female/green.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/female/light_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/female/navy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/female/orange.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/female/pink.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/female/platinum.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/female/purple.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/female/raven.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/female/red.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/female/redhead.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/female/rose.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/female/sandy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/female/strawberry.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/female/violet.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/female/white.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/male,,,,,,,,,,,,,,,,,,,
-hair/natural/male.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/male/ash.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/male/black.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/male/blonde.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/male/blue.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/male/carrot.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/male/chestnut.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/male/dark_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/male/dark_gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/male/ginger.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/male/gold.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/male/gray.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/male/green.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/male/light_brown.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/male/navy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/male/orange.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/male/pink.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/male/platinum.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/male/purple.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/male/raven.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/male/red.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/male/redhead.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/male/rose.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/male/sandy.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/male/strawberry.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/male/violet.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
-hair/natural/male/white.png,,bluecarrot16,CC0,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,,OK
+hair/natural,"Original by bluecarrot16, animations by ElizaWy.","ElizaWy, bluecarrot16",CC0,https://opengameart.org/content/lpc-hair,https://github.com/ElizaWy/LPC/blob/main/Characters/Hair,,,,,,,,,,,,,,
 hair/page,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
 hair/page/female,,,,,,,,,,,,,,,,,,,
 hair/page/female.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
@@ -3950,63 +3196,7 @@ hair/page/male/sandy.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, G
 hair/page/male/strawberry.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
 hair/page/male/violet.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
 hair/page/male/white.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/female,,,,,,,,,,,,,,,,,,,
-hair/page2/female.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/female/ash.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/female/black.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/female/blonde.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/female/blue.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/female/carrot.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/female/chestnut.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/female/dark_brown.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/female/dark_gray.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/female/ginger.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/female/gold.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/female/gray.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/female/green.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/female/light_brown.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/female/navy.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/female/orange.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/female/pink.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/female/platinum.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/female/purple.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/female/raven.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/female/red.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/female/redhead.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/female/rose.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/female/sandy.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/female/strawberry.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/female/violet.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/female/white.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/male,,,,,,,,,,,,,,,,,,,
-hair/page2/male.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/male/ash.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/male/black.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/male/blonde.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/male/blue.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/male/carrot.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/male/chestnut.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/male/dark_brown.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/male/dark_gray.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/male/ginger.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/male/gold.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/male/gray.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/male/green.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/male/light_brown.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/male/navy.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/male/orange.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/male/pink.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/male/platinum.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/male/purple.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/male/raven.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/male/red.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/male/redhead.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/male/rose.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/male/sandy.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/male/strawberry.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/male/violet.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hair/page2/male/white.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
+hair/page2,"Original by Johannes Sjölund (wulax). Edited, animated, and recolored by ElizaWy.","ElizaWy, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://github.com/ElizaWy/LPC/tree/main/Characters/Hair,,,,,,,,,,,,,,OK
 hair/part2,,"Skorpio, bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-skorpios-scifi-sprite-pack,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,
 hair/part2/female,,,,,,,,,,,,,,,,,,,
 hair/part2/female.png,,"Skorpio, bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-skorpios-scifi-sprite-pack,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
@@ -4065,6 +3255,7 @@ hair/part2/male/strawberry.png,,"Skorpio, bluecarrot16","CC-BY-SA 3.0, GPL 3.0",
 hair/part2/male/violet.png,,"Skorpio, bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-skorpios-scifi-sprite-pack,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
 hair/part2/male/white.png,,"Skorpio, bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-skorpios-scifi-sprite-pack,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
 hair/parted,"down 4 and 5 added by JaidynReiman; recolors by Joe White; original by Manuel Riecke (MrBeast)","JaidynReiman, Joe White, Manuel Riecke (MrBeast)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24,,,,,,,,,,,,,,OK
+hair/parted2,,"ElizaWy,"OGA-BY 3.0",https://github.com/ElizaWy/LPC/tree/main/Characters/Hair,,,,,,,,,,,,,,,OK
 hair/pigtails,(betty),"Radomir Dopieralski, bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/one-more-lpc-alternate-character,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,
 hair/pigtails/female,,,,,,,,,,,,,,,,,,,
 hair/pigtails/female.png,,"Radomir Dopieralski, bluecarrot16","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/one-more-lpc-alternate-character,https://opengameart.org/content/lpc-hair,,,,,,,,,,,,,,OK
@@ -5490,6 +4681,35 @@ hair/wavy/male/sandy.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 2.0, GPL 3.0",h
 hair/wavy/male/strawberry.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/3-hairs-for-lpc,,,,,,,,,,,,,,,OK
 hair/wavy/male/violet.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/3-hairs-for-lpc,,,,,,,,,,,,,,,OK
 hair/wavy/male/white.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/3-hairs-for-lpc,,,,,,,,,,,,,,,OK
+hair/wavy/child,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,
+hair/wavy/child/black.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
+hair/wavy/child/blonde.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
+hair/wavy/child/blonde_2.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
+hair/wavy/child/blue.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
+hair/wavy/child/blue_2.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
+hair/wavy/child/brown.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
+hair/wavy/child/brown_2.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
+hair/wavy/child/brunette.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
+hair/wavy/child/brunette_2.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
+hair/wavy/child/darkblonde.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
+hair/wavy/child/darkgrey.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
+hair/wavy/child/darkred.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
+hair/wavy/child/gold.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
+hair/wavy/child/green.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
+hair/wavy/child/green_2.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
+hair/wavy/child/grey.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
+hair/wavy/child/lightblonde.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
+hair/wavy/child/lightblonde_2.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
+hair/wavy/child/pink.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
+hair/wavy/child/purple.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
+hair/wavy/child/raven.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
+hair/wavy/child/raven_2.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
+hair/wavy/child/red.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
+hair/wavy/child/red_2.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
+hair/wavy/child/ruby.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
+hair/wavy/child/whiteblonde.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
+hair/wavy/child/whiteblonde_2.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
+hair/wavy/child/whitecyan.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-for-children,,,,,,,,,,,,,,,OK
 hair/xlong,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-and-hair,,,,,,,,,,,,,,,OK
 hair/xlong/female,,,,,,,,,,,,,,,,,,,
 hair/xlong/female.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-clothes-and-hair,,,,,,,,,,,,,,,OK
@@ -8614,89 +7834,18 @@ hat/visor/slit_narrow/male/silver.png,,"bluecarrot16, Johannes Sjölund (wulax)"
 hat/visor/slit_narrow/male/steel.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
 head,,,,,,,,,,,,,,,,,,,
 head/ears,,,,,,,,,,,,,,,,,,,
-head/ears/big,adapted to v3 base by bluecarrot16,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/big/amber.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/big/black.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/big/blue.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/big/bright_green.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/big/bronze.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/big/brown.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/big/dark_green.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/big/fur_black.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/big/fur_brown.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/big/fur_copper.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/big/fur_gold.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/big/fur_grey.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/big/fur_tan.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/big/fur_white.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/big/green.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/big/lavender.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/big/light.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/big/olive.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/big/pale_green.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/big/taupe.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/big/zombie.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/big/zombie_green.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/elven,adapted to v3 base by bluecarrot16,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn), JaidynReiman","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/elven/amber.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn), JaidynReiman","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/elven/black.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn), JaidynReiman","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/elven/blue.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn), JaidynReiman","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/elven/bright_green.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn), JaidynReiman","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/elven/bronze.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn), JaidynReiman","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/elven/brown.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn), JaidynReiman","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/elven/dark_green.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn), JaidynReiman","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/elven/fur_black.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn), JaidynReiman","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/elven/fur_brown.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn), JaidynReiman","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/elven/fur_copper.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn), JaidynReiman","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/elven/fur_gold.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn), JaidynReiman","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/elven/fur_grey.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn), JaidynReiman","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/elven/fur_tan.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn), JaidynReiman","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/elven/fur_white.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn), JaidynReiman","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/elven/green.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn), JaidynReiman","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/elven/lavender.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn), JaidynReiman","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/elven/light.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn), JaidynReiman","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/elven/olive.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn), JaidynReiman","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/elven/pale_green.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn), JaidynReiman","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/elven/taupe.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn), JaidynReiman","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/elven/zombie.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn), JaidynReiman","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/elven/zombie_green.png,,"bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn), JaidynReiman","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/long,adapted to v3 base by bluecarrot16,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-long-ears,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,
-head/ears/long/amber.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-long-ears,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/long/black.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-long-ears,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/long/blue.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-long-ears,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/long/bright_green.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-long-ears,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/long/bronze.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-long-ears,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/long/brown.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-long-ears,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/long/dark_green.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-long-ears,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/long/fur_black.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-long-ears,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/long/fur_brown.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-long-ears,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/long/fur_copper.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-long-ears,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/long/fur_gold.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-long-ears,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/long/fur_grey.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-long-ears,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/long/fur_tan.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-long-ears,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/long/fur_white.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-long-ears,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/long/green.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-long-ears,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/long/lavender.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-long-ears,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/long/light.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-long-ears,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/long/olive.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-long-ears,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/long/pale_green.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-long-ears,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/long/taupe.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-long-ears,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/long/zombie.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-long-ears,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/ears/long/zombie_green.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-long-ears,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+head/ears/big,"adapted to v3 base by bluecarrot16; expanded to other animations and child by JaidynReiman","JaidynReiman, bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+head/ears/elven,"adapted to v3 base by bluecarrot16; expanded to other animations and child by JaidynReiman","JaidynReiman, bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn), JaidynReiman","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
+head/ears/long,"adapted to v3 base by bluecarrot16; expanded to other animations and child by JaidynReiman","JaidynReiman, bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-long-ears,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,
 head/ears/medium,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0",https://opengameart.org/content/lpc-new-elven-ear-variants,,,,,,,,,,,,,,,OK
 head/ears/hang,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0",https://opengameart.org/content/lpc-new-elven-ear-variants,,,,,,,,,,,,,,,OK
 head/ears/down,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0",https://opengameart.org/content/lpc-new-elven-ear-variants,,,,,,,,,,,,,,,OK
 head/ears/dragon,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0",https://opengameart.org/content/lpc-new-elven-ear-variants,,,,,,,,,,,,,,,OK
-head/ears/beastly/cat,,"JaidynReiman","OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0",https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites,,,,,,,,,,,,,,,
-head/ears/beastly/wolf,,"JaidynReiman","OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0",https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites,,,,,,,,,,,,,,,
-head/ears/beastly/zabos,,"JaidynReiman","OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0",https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites,,,,,,,,,,,,,,,
-head/ears/beastly/lykon,,"JaidynReiman","OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0",https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites,,,,,,,,,,,,,,,
-head/ears/beastly/avyon,,"JaidynReiman","OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0",https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites,,,,,,,,,,,,,,,
-head/ears/beastly/skin/cat,,"JaidynReiman","OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0",https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites,,,,,,,,,,,,,,,
-head/ears/beastly/skin/wolf,,"JaidynReiman","OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0",https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites,,,,,,,,,,,,,,,
-head/ears/beastly/skin/zabos,,"JaidynReiman","OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0",https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites,,,,,,,,,,,,,,,
-head/ears/beastly/skin/lykon,,"JaidynReiman","OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0",https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites,,,,,,,,,,,,,,,
-head/ears/beastly/skin/avyon,,"JaidynReiman","OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0",https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites,,,,,,,,,,,,,,,
+head/ears/cat,,"JaidynReiman","OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0",https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites,,,,,,,,,,,,,,,
+head/ears/wolf,,"JaidynReiman","OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0",https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites,,,,,,,,,,,,,,,
+head/ears/zabos,,"JaidynReiman","OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0",https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites,,,,,,,,,,,,,,,
+head/ears/lykon,,"JaidynReiman","OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0",https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites,,,,,,,,,,,,,,,
+head/ears/avyon,,"JaidynReiman","OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0",https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites,,,,,,,,,,,,,,,
 head/fins,adapted to v3 base by bluecarrot16,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,
 head/fins/fin,,,,,,,,,,,,,,,,,,,
 head/fins/fin/amber.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
