@@ -1,0 +1,39 @@
+{
+  "name": "Bowtie",
+  "type_name": "neck",
+  "layer_1": {
+    "zPos": 90,
+    "male": "neck/tie/bowtie/adult/",
+    "female": "neck/tie/bowtie/adult/",
+    "muscular": "neck/tie/bowtie/adult/",
+    "pregnant": "neck/tie/bowtie/adult/",
+    "teen": "neck/tie/bowtie/adult/"
+  },
+  "variants": [
+    "base",
+    "black",
+    "blue",
+    "bluegray",
+    "brown",
+    "charcoal",
+    "forest",
+    "gray",
+    "green",
+    "lavender",
+    "leather",
+    "maroon",
+    "navy",
+    "orange",
+    "pink",
+    "purple",
+    "red",
+    "rose",
+    "sky",
+    "slate",
+    "tan",
+    "teal",
+    "walnut",
+    "white",
+    "yellow"
+  ]
+}
