@@ -3,11 +3,11 @@
   "type_name": "neck",
   "layer_1": {
     "zPos": 90,
-    "male": "neck/neck/tie/necktie/male",
-    "female": "neck/neck/tie/necktie/female",
-    "muscular": "neck/neck/tie/necktie/male",
-    "pregnant": "neck/neck/tie/necktie/female",
-    "teen": "neck/neck/tie/necktie/female"
+    "male": "neck/tie/necktie/male/",
+    "female": "neck/tie/necktie/female/",
+    "muscular": "neck/tie/necktie/male/",
+    "pregnant": "neck/tie/necktie/female/",
+    "teen": "neck/tie/necktie/female/"
   },
   "variants": [
     "base",
