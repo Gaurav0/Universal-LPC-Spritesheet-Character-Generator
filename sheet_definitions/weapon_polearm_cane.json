@@ -1,6 +1,8 @@
 {
   "name": "Cane",
   "type_name": "weapon",
+  "preview_row": 9,
+  "preview_column": 0,
   "layer_1": {
     "zPos": 140,
     "male": "weapon/polearm/cane/male/",

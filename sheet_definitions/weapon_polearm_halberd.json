@@ -1,7 +1,8 @@
 {
   "name": "Halberd",
   "type_name": "weapon",
-  "preview_row": 17,
+  "preview_row": 8,
+  "preview_column": 0,
   "layer_1": {
     "zPos": 8,
     "male": "weapon/polearm/halberd/behind/",
