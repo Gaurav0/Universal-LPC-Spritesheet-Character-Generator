@@ -9,9 +9,22 @@ function generateListHTML(json) {
 
   var requiredSexes = [];
   var previewRow = 10;
+  var previewColumn = 0;
+  var previewXOffset = 0;
+  var previewYOffset = 0;
   if (definition.preview_row !== undefined) {
     previewRow = definition.preview_row
   }
+  if (definition.preview_column !== undefined){
+    previewColumn = definition.preview_column;
+  }
+  if (definition.preview_x_offset !== undefined){
+    previewXOffset = definition.preview_x_offset;
+  }
+  if (definition.preview_y_offset !== undefined){
+    previewYOffset = definition.preview_y_offset;
+  }
+
   if (definition.layer_1.male !== undefined) {
     requiredSexes.push("male");
   }
@@ -55,7 +68,7 @@ function generateListHTML(json) {
         if (layerDefinition !== undefined) {
           if (sexIdx === 0) {
             const zPos = definition[`layer_${jdx}`].zPos;
-            dataFiles += "data-preview_row=" + previewRow + " data-layer_" + jdx + "_zpos=" + zPos + " ";
+            dataFiles += "data-preview_row=" + previewRow + " data-preview_column=" + previewColumn + " data-preview_x_offset=" + previewXOffset + " data-preview_y_offset=" + previewYOffset +  " data-layer_" + jdx + "_zpos=" + zPos + " ";
             const custom_animation = layerDefinition.custom_animation;
             if (custom_animation !== undefined) {
               dataFiles += `data-layer_${jdx}_custom_animation=` + custom_animation + " "
