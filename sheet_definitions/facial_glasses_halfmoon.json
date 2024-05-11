@@ -3,11 +3,11 @@
   "type_name": "facial_eyes",
   "layer_1": {
     "zPos": 115,
-    "male": "facial/glasses/halfmoon/adult",
-    "muscular": "facial/glasses/halfmoon/adult",
-    "female": "facial/glasses/halfmoon/adult",
-    "pregnant": "facial/glasses/halfmoon/adult",
-    "teen": "facial/glasses/halfmoon/adult"
+    "male": "facial/glasses/halfmoon/adult/",
+    "muscular": "facial/glasses/halfmoon/adult/",
+    "female": "facial/glasses/halfmoon/adult/",
+    "pregnant": "facial/glasses/halfmoon/adult/",
+    "teen": "facial/glasses/halfmoon/adult/"
   },
   "variants": [
     "black",

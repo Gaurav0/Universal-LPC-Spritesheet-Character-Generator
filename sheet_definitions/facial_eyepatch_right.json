@@ -1,13 +1,13 @@
 {
-  "name": "Small Eyepatch Right",
+  "name": "Eyepatch Right",
   "type_name": "facial_eyes",
   "layer_1": {
     "zPos": 115,
-    "male": "facial/patches/small/right/adult/",
-    "muscular": "facial/patches/small/right/adult/",
-    "female": "facial/patches/small/right/adult/",
-    "pregnant": "facial/patches/small/right/adult/",
-    "teen": "facial/patches/small/right/adult/"
+    "male": "facial/patches/eyepatch/right/adult/",
+    "muscular": "facial/patches/eyepatch/right/adult/",
+    "female": "facial/patches/eyepatch/right/adult/",
+    "pregnant": "facial/patches/eyepatch/right/adult/",
+    "teen": "facial/patches/eyepatch/right/adult/"
   },
   "variants": [
     "base",

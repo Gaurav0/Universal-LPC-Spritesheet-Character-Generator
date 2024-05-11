@@ -3,11 +3,11 @@
   "type_name" : "eyes",
   "layer_1" : {
     "zPos" : 105,
-    "male" : "eyes/adult/",
-    "muscular" : "eyes/adult/",
-    "female" : "eyes/adult/",
-    "teen" : "eyes/adult/",
-    "pregnant" : "eyes/adult/"
+    "male" : "eyes/human/adult/",
+    "muscular" : "eyes/human/adult/",
+    "female" : "eyes/human/adult/",
+    "teen" : "eyes/human/adult/",
+    "pregnant" : "eyes/human/adult/"
   },
   "variants": [
     "blue",

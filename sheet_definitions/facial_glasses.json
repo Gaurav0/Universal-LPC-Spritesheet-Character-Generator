@@ -3,14 +3,13 @@
   "type_name": "facial_eyes",
   "layer_1": {
     "zPos": 115,
-    "male": "facial/glasses/glasses/adult",
-    "muscular": "facial/glasses/glasses/adult",
-    "female": "facial/glasses/glasses/adult",
-    "pregnant": "facial/glasses/glasses/adult",
-    "teen": "facial/glasses/glasses/adult"
+    "male": "facial/glasses/glasses/adult/",
+    "muscular": "facial/glasses/glasses/adult/",
+    "female": "facial/glasses/glasses/adult/",
+    "pregnant": "facial/glasses/glasses/adult/",
+    "teen": "facial/glasses/glasses/adult/"
   },
   "variants": [
-    "base",
     "black",
     "blue",
     "bluegray",

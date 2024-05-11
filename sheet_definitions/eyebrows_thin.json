@@ -1,0 +1,40 @@
+{
+  "name" : "Thin Eyebrows",
+  "type_name" : "eyebrows",
+  "layer_1" : {
+    "zPos" : 106,
+    "male" : "eyes/eyebrows/thin/adult/",
+    "muscular" : "eyes/eyebrows/thin/adult/",
+    "female" : "eyes/eyebrows/thin/adult/",
+    "teen" : "eyes/eyebrows/thin/adult/",
+    "pregnant" : "eyes/eyebrows/thin/adult/"
+  },
+  "variants": [
+    "blonde",
+    "ash",
+    "sandy",
+    "platinum",
+    "strawberry",
+    "redhead",
+    "ginger",
+    "carrot",
+    "chestnut",
+    "light brown",
+    "dark brown",
+    "black",
+    "raven",
+    "dark gray",
+    "gray",
+    "white",
+    "red",
+    "orange",
+    "gold",
+    "green",
+    "blue",
+    "navy",
+    "violet",
+    "purple",
+    "pink",
+    "rose"
+  ]
+}

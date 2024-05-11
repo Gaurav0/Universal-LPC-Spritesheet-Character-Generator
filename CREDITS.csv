@@ -715,9 +715,11 @@ dress/kimono/split,,"JaidynReiman","OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0","https://o
 dress/kimono/sleeves,,"JaidynReiman","OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0","https://opengameart.org/content/lpc-relm-outfit-pieces-2-kimonos-2-sleeves-2-boots-tabi-socks",,,,,,,,,,,,,,,OK
 dress/kimono/sleeves_oversize,,"JaidynReiman","OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0","https://opengameart.org/content/lpc-relm-outfit-pieces-2-kimonos-2-sleeves-2-boots-tabi-socks",,,,,,,,,,,,,,,OK
 eyes,,,,,,,,,,,,,,,,,,,
-eyes/adult,"original by Redshrike, mapped to all frames by Matthew Krohn & JaidynReiman","JaidynReiman, Matthew Krohn (makrohn), Stephen Challener (Redshrike)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,,,,,,,,,,,,,,,OK
-eyes/adult/gray.png,"original by Redshrike, color by Mark Weyer & Wulax, mapped to all frames by Matthew Krohn & JaidynReiman","Mark Weyer, Johannes Sjölund (wulax), Matthew Krohn (makrohn), Stephen Challener (Redshrike)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,OK
+eyes/human,"original by Redshrike, mapped to all frames by Matthew Krohn & JaidynReiman","JaidynReiman, Matthew Krohn (makrohn), Stephen Challener (Redshrike)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,,,,,,,,,,,,,,,OK
+eyes/human/adult/gray.png,"original by Redshrike, color by Mark Weyer & Wulax, mapped to all frames by Matthew Krohn & JaidynReiman","Mark Weyer, Johannes Sjölund (wulax), Matthew Krohn (makrohn), Stephen Challener (Redshrike)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,OK
 eyes/cyclops,"original by kirts, repositioned by JaidynReiman along with shading and recolors","kirts, JaidynReiman",CC0,https://opengameart.org/content/cyclops-and-his-eye,,,,,,,,,,,,,,,OK
+eyes/eyebrows/thick,,"ElizaWy","OGA-BY 3.0",https://github.com/ElizaWy/LPC/tree/main/Characters/Hair,,,,,,,,,,,,,,,OK
+eyes/eyebrows/thin,,"ElizaWy","OGA-BY 3.0",https://github.com/ElizaWy/LPC/tree/main/Characters/Hair,,,,,,,,,,,,,,,OK
 facial,,,,,,,,,,,,,,,,,,,
 facial/Male_mask.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-masks,,,,,,,,,,,,,,,OK
 facial/earring,,bluecarrot16,CC0,https://opengameart.org/content/lpc-pirates,,,,,,,,,,,,,,,
@@ -725,21 +727,15 @@ facial/earring/female,,,,,,,,,,,,,,,,,,,
 facial/earring/female/gold.png,,bluecarrot16,CC-BY-SA 3.0,https://opengameart.org/content/lpc-pirates,,,,,,,,,,,,,,,OK
 facial/earring/male,,,,,,,,,,,,,,,,,,,
 facial/earring/male/gold.png,,bluecarrot16,CC-BY-SA 3.0,https://opengameart.org/content/lpc-pirates,,,,,,,,,,,,,,,OK
-facial/eyepatch,,bluecarrot16,"OGA-BY 3.0, GPL 3.0",https://opengameart.org/content/lpc-pirates,,,,,,,,,,,,,,,
-facial/eyepatch/female,,,,,,,,,,,,,,,,,,,
-facial/eyepatch/female/eyepatch.png,,bluecarrot16,CC-BY-SA 3.0,https://opengameart.org/content/lpc-pirates,,,,,,,,,,,,,,,OK
-facial/eyepatch/male,,,,,,,,,,,,,,,,,,,
-facial/eyepatch/male/eyepatch.png,,bluecarrot16,CC-BY-SA 3.0,https://opengameart.org/content/lpc-pirates,,,,,,,,,,,,,,,OK
-facial/glasses.png,,"bluecarrot16, Thane Brimhall (pennomi), laetissima","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/clothing-facial-features-and-ui-elements,https://opengameart.org/content/lpc-gentleman,,,,,,,,,,,,,,OK
-facial/male,,,,,,,,,,,,,,,,,,,
-facial/male/beard,,"JaidynReiman, Carlo Enrico Victoria (Nemisys)",,https://opengameart.org/content/lpc-brunet-mustache,,,,,,,,,,,,,,,
-facial/male/bigstache,,"JaidynReiman, Thane Brimhall (pennomi)",,https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,
-facial/male/mustache,,"JaidynReiman, Carlo Enrico Victoria (Nemisys)",,https://opengameart.org/content/lpc-brunet-mustache,,,,,,,,,,,,,,,
-facial/mask_dark.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-masks,,,,,,,,,,,,,,,OK
-facial/mask_white.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-masks,,,,,,,,,,,,,,,OK
-facial/monocle.png,,"bluecarrot16, Thane Brimhall (pennomi), laetissima","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/clothing-facial-features-and-ui-elements,https://opengameart.org/content/lpc-gentleman,,,,,,,,,,,,,,OK
-facial/patch.png,duplicate of beards/male/mustache/white.png,"Michael Whitlock (bigbeargames), Thane Brimhall (pennomi)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-facial/sunglasses.png,,"Michael Whitlock (bigbeargames), Thane Brimhall (pennomi)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
+facial/glasses/round,,"bluecarrot16, Thane Brimhall (pennomi), laetissima","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/clothing-facial-features-and-ui-elements,https://opengameart.org/content/lpc-gentleman,,,,,,,,,,,,,,OK
+facial/glasses/glasses,,"ElizaWy","OGA-BY 3.0",https://github.com/ElizaWy/LPC/tree/main/Characters/Head%20Accessories,,,,,,,,,,,,,,,OK
+facial/glasses/halfmoon,,"ElizaWy","OGA-BY 3.0",https://github.com/ElizaWy/LPC/tree/main/Characters/Head%20Accessories,,,,,,,,,,,,,,,OK
+facial/glasses/sunglasses,,"Michael Whitlock (bigbeargames), Thane Brimhall (pennomi)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
+facial/masks/mask,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-masks,,,,,,,,,,,,,,,OK
+facial/monocle,,"bluecarrot16, Thane Brimhall (pennomi), laetissima","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/clothing-facial-features-and-ui-elements,https://opengameart.org/content/lpc-gentleman,,,,,,,,,,,,,,OK
+facial/patches/eyepatch,,bluecarrot16,"OGA-BY 3.0, GPL 3.0",https://opengameart.org/content/lpc-pirates,,,,,,,,,,,,,,,
+facial/patches/eyepatch2,,"ElizaWy","OGA-BY 3.0",https://github.com/ElizaWy/LPC/tree/main/Characters/Head%20Accessories,,,,,,,,,,,,,,,OK
+facial/patches/small,duplicate of beards/male/mustache/white.png,"Michael Whitlock (bigbeargames), Thane Brimhall (pennomi)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
 feet,,,,,,,,,,,,,,,,,,,
 feet/armor,,,,,,,,,,,,,,,,,,,
 feet/armour,,,,,,,,,,,,,,,,,,,
