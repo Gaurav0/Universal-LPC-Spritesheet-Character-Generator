@@ -656,20 +656,20 @@ $(document).ready(function() {
               return;
             }
           }
+          
+          if(layers[0].loaded == true){
+            return;
+          }
 
           try {
-            console.log("attempt");
             layers.forEach((layer) =>{
               prevctx.drawImage(images[layer.link], previewColumn * universalFrameSize + previewXOffset, previewRow * universalFrameSize + previewYOffset, universalFrameSize, universalFrameSize, 0, 0, universalFrameSize, universalFrameSize);
-              console.log(previewXOffset);
-              console.log(previewColumn * universalFrameSize + previewYOffset)
-              console.log(images[layer.link].width);
             });
+            layers[0].loaded = true;
           } catch (err) {
             console.log(err);
           }
         };
-        console.log(this);
 
         layers = []
         const previewToDraw = {};
@@ -680,7 +680,6 @@ $(document).ready(function() {
         else{
           animation =  $(this).data(`layer_1_custom_animation`);
         }
-        console.log(animation);
 
         if($(this).data(`layer_1_${getBodyTypeName()}`) === undefined){
           previewToDraw.link = $(this).data(`layer_1_${getBodyTypeName()}`);
@@ -706,8 +705,8 @@ $(document).ready(function() {
         layers.sort(function(lhs, rhs) {
           return parseInt(lhs.zPos) - parseInt(rhs.zPos);
         });
-        
-        console.log(layers.length);
+       
+        layers[0].loaded = false;
         layers.forEach((layer) =>{
           img = getImage2(layer.link, callback, layers, prevctx);
         });
