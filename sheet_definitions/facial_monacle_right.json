@@ -1,0 +1,22 @@
+{
+  "name": "Right Monacle",
+  "type_name": "facial_right",
+  "layer_1": {
+    "zPos": 115,
+    "male": "facial/glasses/monacle/right/adult",
+    "muscular": "facial/glasses/monacle/right/adult",
+    "female": "facial/glasses/monacle/right/adult",
+    "pregnant": "facial/glasses/monacle/right/adult",
+    "teen": "facial/glasses/monacle/right/adult"
+  },
+  "variants": [
+    "steel",
+    "iron",
+    "ceramic",
+    "brass",
+    "copper",
+    "bronze",
+    "silver",
+    "gold"
+  ]
+}

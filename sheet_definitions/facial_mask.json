@@ -1,0 +1,16 @@
+{
+  "name": "Mask",
+  "type_name": "facial_mask",
+  "layer_1": {
+    "zPos": 114,
+    "male": "facial/masks/mask/adult",
+    "muscular": "facial/masks/mask/adult",
+    "female": "facial/masks/mask/adult",
+    "pregnant": "facial/masks/mask/adult",
+    "teen": "facial/masks/mask/adult"
+  },
+  "variants": [
+    "dark",
+    "white"
+  ]
+}

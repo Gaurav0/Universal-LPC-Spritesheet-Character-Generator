@@ -1,16 +1,15 @@
 {
-  "name": "Glasses",
-  "type_name": "facial_eyes",
+  "name": "Left Monacle",
+  "type_name": "facial_left",
   "layer_1": {
     "zPos": 115,
-    "male": "facial/glasses/glasses/adult",
-    "muscular": "facial/glasses/glasses/adult",
-    "female": "facial/glasses/glasses/adult",
-    "pregnant": "facial/glasses/glasses/adult",
-    "teen": "facial/glasses/glasses/adult"
+    "male": "facial/glasses/monacle/right/adult",
+    "muscular": "facial/glasses/monacle/right/adult",
+    "female": "facial/glasses/monacle/right/adult",
+    "pregnant": "facial/glasses/monacle/right/adult",
+    "teen": "facial/glasses/monacle/right/adult"
   },
   "variants": [
-    "base",
     "black",
     "blue",
     "bluegray",

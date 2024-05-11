@@ -1,16 +1,15 @@
 {
-  "name": "Glasses",
+  "name": "Eyepatch 2 Right",
   "type_name": "facial_eyes",
   "layer_1": {
     "zPos": 115,
-    "male": "facial/glasses/glasses/adult",
-    "muscular": "facial/glasses/glasses/adult",
-    "female": "facial/glasses/glasses/adult",
-    "pregnant": "facial/glasses/glasses/adult",
-    "teen": "facial/glasses/glasses/adult"
+    "male": "facial/patches/eyepatch2/right/adult/",
+    "muscular": "facial/patches/eyepatch2/right/adult/",
+    "female": "facial/patches/eyepatch2/right/adult/",
+    "pregnant": "facial/patches/eyepatch2/right/adult/",
+    "teen": "facial/patches/eyepatch2/right/adult/"
   },
   "variants": [
-    "base",
     "black",
     "blue",
     "bluegray",
@@ -34,14 +33,6 @@
     "teal",
     "walnut",
     "white",
-    "yellow",
-    "steel",
-    "iron",
-    "ceramic",
-    "brass",
-    "copper",
-    "bronze",
-    "silver",
-    "gold"
+    "yellow"
   ]
 }
