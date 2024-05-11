@@ -3,11 +3,11 @@
   "type_name": "facial_left",
   "layer_1": {
     "zPos": 115,
-    "male": "facial/monocle/right/adult/",
-    "muscular": "facial/monocle/right/adult/",
-    "female": "facial/monocle/right/adult/",
-    "pregnant": "facial/monocle/right/adult/",
-    "teen": "facial/monocle/right/adult/"
+    "male": "facial/monocle/left/adult/",
+    "muscular": "facial/monocle/left/adult/",
+    "female": "facial/monocle/left/adult/",
+    "pregnant": "facial/monocle/left/adult/",
+    "teen": "facial/monocle/left/adult/"
   },
   "variants": [
     "steel",

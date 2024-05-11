@@ -3,11 +3,11 @@
   "type_name": "facial_left_trim",
   "layer_1": {
     "zPos": 115,
-    "male": "facial/monocle/right/frame/adult/",
-    "muscular": "facial/monocle/right/frame/adult/",
-    "female": "facial/monocle/right/frame/adult/",
-    "pregnant": "facial/monocle/right/frame/adult/",
-    "teen": "facial/monocle/right/frame/adult/"
+    "male": "facial/monocle/left/frame/adult/",
+    "muscular": "facial/monocle/left/frame/adult/",
+    "female": "facial/monocle/left/frame/adult/",
+    "pregnant": "facial/monocle/left/frame/adult/",
+    "teen": "facial/monocle/left/frame/adult/"
   },
   "variants": [
     "black",
