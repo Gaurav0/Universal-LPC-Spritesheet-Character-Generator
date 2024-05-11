@@ -656,16 +656,10 @@ $(document).ready(function() {
               return;
             }
           }
-          
-          if(layers[0].loaded == true){
-            return;
-          }
-
           try {
             layers.forEach((layer) =>{
               prevctx.drawImage(images[layer.link], previewColumn * universalFrameSize + previewXOffset, previewRow * universalFrameSize + previewYOffset, universalFrameSize, universalFrameSize, 0, 0, universalFrameSize, universalFrameSize);
             });
-            layers[0].loaded = true;
           } catch (err) {
             console.log(err);
           }
@@ -706,7 +700,6 @@ $(document).ready(function() {
           return parseInt(lhs.zPos) - parseInt(rhs.zPos);
         });
        
-        layers[0].loaded = false;
         layers.forEach((layer) =>{
           img = getImage2(layer.link, callback, layers, prevctx);
         });
