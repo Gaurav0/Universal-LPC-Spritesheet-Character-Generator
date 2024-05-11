@@ -647,6 +647,9 @@ $(document).ready(function() {
         var prevctx = prev.getContext("2d");
         var img = null;
         const previewRow = parseInt($(this).data("preview_row"));
+        const previewColumn = parseInt($(this).data("preview_column"));
+        const previewXOffset = parseInt($(this).data("preview_x_offset"));
+        const previewYOffset = parseInt($(this).data("preview_y_offset"));
         var callback = function(layers,prevctx) {
           for(index = 0; index < layers.length; index++){
             if(!images[layers[index].link]){
@@ -655,24 +658,30 @@ $(document).ready(function() {
           }
 
           try {
+            console.log("attempt");
             layers.forEach((layer) =>{
-              prevctx.drawImage(images[layer.link], 0, previewRow * universalFrameSize, universalFrameSize, universalFrameSize, 0, 0, universalFrameSize, universalFrameSize);
+              prevctx.drawImage(images[layer.link], previewColumn * universalFrameSize + previewXOffset, previewRow * universalFrameSize + previewYOffset, universalFrameSize, universalFrameSize, 0, 0, universalFrameSize, universalFrameSize);
+              console.log(previewXOffset);
+              console.log(previewColumn * universalFrameSize + previewYOffset)
+              console.log(images[layer.link].width);
             });
           } catch (err) {
             console.log(err);
           }
         };
+        console.log(this);
 
         layers = []
         const previewToDraw = {};
         const animation =  $(this).data(`layer_1_custom_animation`);
         previewToDraw.link = $(this).data(`layer_1_${getBodyTypeName()}`);
         previewToDraw.zPos = $(this).data(`layer_1_zpos`);
+        console.log(animation);
         layers.push(previewToDraw);
         
         for(jdx =2; jdx < 10; jdx++){
           if($(this).data(`layer_${jdx}_${getBodyTypeName()}`)){
-            if(animation == $(this).data(`layer_${jdx}_custom_animation`)){
+            if(animation === $(this).data(`layer_${jdx}_custom_animation`)){
               const previewToDraw = {};
               previewToDraw.link = $(this).data(`layer_${jdx}_${getBodyTypeName()}`);
               previewToDraw.zPos = $(this).data(`layer_${jdx}_zpos`);
@@ -688,7 +697,7 @@ $(document).ready(function() {
           return parseInt(lhs.zPos) - parseInt(rhs.zPos);
         });
         
-
+        console.log(layers.length);
         layers.forEach((layer) =>{
           img = getImage2(layer.link, callback, layers, prevctx);
         });
