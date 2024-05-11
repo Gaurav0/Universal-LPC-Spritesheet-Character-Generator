@@ -665,17 +665,20 @@ $(document).ready(function() {
 
         layers = []
         const previewToDraw = {};
+        const animation =  $(this).data(`layer_1_custom_animation`);
         previewToDraw.link = $(this).data(`layer_1_${getBodyTypeName()}`);
         previewToDraw.zPos = $(this).data(`layer_1_zpos`);
         layers.push(previewToDraw);
         
         for(jdx =2; jdx < 10; jdx++){
           if($(this).data(`layer_${jdx}_${getBodyTypeName()}`)){
-            const previewToDraw = {};
-            previewToDraw.link = $(this).data(`layer_${jdx}_${getBodyTypeName()}`);
-            previewToDraw.zPos = $(this).data(`layer_${jdx}_zpos`);
+            if(animation == $(this).data(`layer_${jdx}_custom_animation`)){
+              const previewToDraw = {};
+              previewToDraw.link = $(this).data(`layer_${jdx}_${getBodyTypeName()}`);
+              previewToDraw.zPos = $(this).data(`layer_${jdx}_zpos`);
+              layers.push(previewToDraw);
+            }
 
-            layers.push(previewToDraw);
           } else {
             break;
           }
