@@ -1,0 +1,39 @@
+{
+  "name": "Eyepatch Left",
+  "type_name": "facial_eyes",
+  "layer_1": {
+    "zPos": 115,
+    "male": "facial/patches/eyepatch/left/adult/",
+    "muscular": "facial/patches/eyepatch/left/adult/",
+    "female": "facial/patches/eyepatch/left/adult/",
+    "pregnant": "facial/patches/eyepatch/left/adult/",
+    "teen": "facial/patches/eyepatch/left/adult/"
+  },
+  "variants": [
+    "base",
+    "black",
+    "blue",
+    "bluegray",
+    "brown",
+    "charcoal",
+    "forest",
+    "gray",
+    "green",
+    "lavender",
+    "leather",
+    "maroon",
+    "navy",
+    "orange",
+    "pink",
+    "purple",
+    "red",
+    "rose",
+    "sky",
+    "slate",
+    "tan",
+    "teal",
+    "walnut",
+    "white",
+    "yellow"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Left Monocle",
+  "type_name": "facial_left",
+  "layer_1": {
+    "zPos": 115,
+    "male": "facial/monocle/left/adult/",
+    "muscular": "facial/monocle/left/adult/",
+    "female": "facial/monocle/left/adult/",
+    "pregnant": "facial/monocle/left/adult/",
+    "teen": "facial/monocle/left/adult/"
+  },
+  "variants": [
+    "steel",
+    "iron",
+    "ceramic",
+    "brass",
+    "copper",
+    "bronze",
+    "silver",
+    "gold"
+  ]
+}

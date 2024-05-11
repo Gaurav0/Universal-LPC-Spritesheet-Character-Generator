@@ -715,31 +715,26 @@ dress/kimono/split,,"JaidynReiman","OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0","https://o
 dress/kimono/sleeves,,"JaidynReiman","OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0","https://opengameart.org/content/lpc-relm-outfit-pieces-2-kimonos-2-sleeves-2-boots-tabi-socks",,,,,,,,,,,,,,,OK
 dress/kimono/sleeves_oversize,,"JaidynReiman","OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0","https://opengameart.org/content/lpc-relm-outfit-pieces-2-kimonos-2-sleeves-2-boots-tabi-socks",,,,,,,,,,,,,,,OK
 eyes,,,,,,,,,,,,,,,,,,,
-eyes/adult,"original by Redshrike, mapped to all frames by Matthew Krohn & JaidynReiman","JaidynReiman, Matthew Krohn (makrohn), Stephen Challener (Redshrike)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,,,,,,,,,,,,,,,OK
-eyes/adult/gray.png,"original by Redshrike, color by Mark Weyer & Wulax, mapped to all frames by Matthew Krohn & JaidynReiman","Mark Weyer, Johannes Sjölund (wulax), Matthew Krohn (makrohn), Stephen Challener (Redshrike)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,OK
+eyes/human,"original by Redshrike, mapped to all frames by Matthew Krohn & JaidynReiman","JaidynReiman, Matthew Krohn (makrohn), Stephen Challener (Redshrike)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,,,,,,,,,,,,,,,OK
+eyes/human/adult/gray.png,"original by Redshrike, color by Mark Weyer & Wulax, mapped to all frames by Matthew Krohn & JaidynReiman","Mark Weyer, Johannes Sjölund (wulax), Matthew Krohn (makrohn), Stephen Challener (Redshrike)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,OK
 eyes/cyclops,"original by kirts, repositioned by JaidynReiman along with shading and recolors","kirts, JaidynReiman",CC0,https://opengameart.org/content/cyclops-and-his-eye,,,,,,,,,,,,,,,OK
+eyes/eyebrows/thick,,"ElizaWy","OGA-BY 3.0",https://github.com/ElizaWy/LPC/tree/main/Characters/Hair,,,,,,,,,,,,,,,OK
+eyes/eyebrows/thin,,"ElizaWy","OGA-BY 3.0",https://github.com/ElizaWy/LPC/tree/main/Characters/Hair,,,,,,,,,,,,,,,OK
 facial,,,,,,,,,,,,,,,,,,,
-facial/Male_mask.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-masks,,,,,,,,,,,,,,,OK
 facial/earring,,bluecarrot16,CC0,https://opengameart.org/content/lpc-pirates,,,,,,,,,,,,,,,
 facial/earring/female,,,,,,,,,,,,,,,,,,,
 facial/earring/female/gold.png,,bluecarrot16,CC-BY-SA 3.0,https://opengameart.org/content/lpc-pirates,,,,,,,,,,,,,,,OK
 facial/earring/male,,,,,,,,,,,,,,,,,,,
 facial/earring/male/gold.png,,bluecarrot16,CC-BY-SA 3.0,https://opengameart.org/content/lpc-pirates,,,,,,,,,,,,,,,OK
-facial/eyepatch,,bluecarrot16,"OGA-BY 3.0, GPL 3.0",https://opengameart.org/content/lpc-pirates,,,,,,,,,,,,,,,
-facial/eyepatch/female,,,,,,,,,,,,,,,,,,,
-facial/eyepatch/female/eyepatch.png,,bluecarrot16,CC-BY-SA 3.0,https://opengameart.org/content/lpc-pirates,,,,,,,,,,,,,,,OK
-facial/eyepatch/male,,,,,,,,,,,,,,,,,,,
-facial/eyepatch/male/eyepatch.png,,bluecarrot16,CC-BY-SA 3.0,https://opengameart.org/content/lpc-pirates,,,,,,,,,,,,,,,OK
-facial/glasses.png,,"bluecarrot16, Thane Brimhall (pennomi), laetissima","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/clothing-facial-features-and-ui-elements,https://opengameart.org/content/lpc-gentleman,,,,,,,,,,,,,,OK
-facial/male,,,,,,,,,,,,,,,,,,,
-facial/male/beard,,"JaidynReiman, Carlo Enrico Victoria (Nemisys)",,https://opengameart.org/content/lpc-brunet-mustache,,,,,,,,,,,,,,,
-facial/male/bigstache,,"JaidynReiman, Thane Brimhall (pennomi)",,https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,
-facial/male/mustache,,"JaidynReiman, Carlo Enrico Victoria (Nemisys)",,https://opengameart.org/content/lpc-brunet-mustache,,,,,,,,,,,,,,,
-facial/mask_dark.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-masks,,,,,,,,,,,,,,,OK
-facial/mask_white.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-masks,,,,,,,,,,,,,,,OK
-facial/monocle.png,,"bluecarrot16, Thane Brimhall (pennomi), laetissima","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/clothing-facial-features-and-ui-elements,https://opengameart.org/content/lpc-gentleman,,,,,,,,,,,,,,OK
-facial/patch.png,duplicate of beards/male/mustache/white.png,"Michael Whitlock (bigbeargames), Thane Brimhall (pennomi)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-facial/sunglasses.png,,"Michael Whitlock (bigbeargames), Thane Brimhall (pennomi)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
+facial/glasses/round,,"bluecarrot16, Thane Brimhall (pennomi), laetissima","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/clothing-facial-features-and-ui-elements,https://opengameart.org/content/lpc-gentleman,,,,,,,,,,,,,,OK
+facial/glasses/glasses,,"ElizaWy","OGA-BY 3.0",https://github.com/ElizaWy/LPC/tree/main/Characters/Head%20Accessories,,,,,,,,,,,,,,,OK
+facial/glasses/halfmoon,,"ElizaWy","OGA-BY 3.0",https://github.com/ElizaWy/LPC/tree/main/Characters/Head%20Accessories,,,,,,,,,,,,,,,OK
+facial/glasses/sunglasses,,"Michael Whitlock (bigbeargames), Thane Brimhall (pennomi)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
+facial/masks/mask,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-masks,,,,,,,,,,,,,,,OK
+facial/monocle,,"bluecarrot16, Thane Brimhall (pennomi), laetissima","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/clothing-facial-features-and-ui-elements,https://opengameart.org/content/lpc-gentleman,,,,,,,,,,,,,,OK
+facial/patches/eyepatch,,bluecarrot16,"OGA-BY 3.0, GPL 3.0",https://opengameart.org/content/lpc-pirates,,,,,,,,,,,,,,,
+facial/patches/eyepatch2,,"ElizaWy","OGA-BY 3.0",https://github.com/ElizaWy/LPC/tree/main/Characters/Head%20Accessories,,,,,,,,,,,,,,,OK
+facial/patches/small,duplicate of beards/male/mustache/white.png,"Michael Whitlock (bigbeargames), Thane Brimhall (pennomi)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
 feet,,,,,,,,,,,,,,,,,,,
 feet/armor,,,,,,,,,,,,,,,,,,,
 feet/armour,,,,,,,,,,,,,,,,,,,
@@ -7847,52 +7842,6 @@ head/ears/zabos,,"JaidynReiman","OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0",https://openg
 head/ears/lykon,,"JaidynReiman","OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0",https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites,,,,,,,,,,,,,,,
 head/ears/avyon,,"JaidynReiman","OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0",https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites,,,,,,,,,,,,,,,
 head/fins,adapted to v3 base by bluecarrot16,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,
-head/fins/fin,,,,,,,,,,,,,,,,,,,
-head/fins/fin/amber.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin/black.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin/blue.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin/bright_green.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin/bronze.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin/brown.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin/dark_green.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin/fur_black.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin/fur_brown.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin/fur_copper.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin/fur_gold.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin/fur_grey.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin/fur_tan.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin/fur_white.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin/green.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin/lavender.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin/light.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin/olive.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin/pale_green.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin/taupe.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin/zombie.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin/zombie_green.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin_short,,,,,,,,,,,,,,,,,,,
-head/fins/fin_short/amber.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin_short/black.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin_short/blue.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin_short/bright_green.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin_short/bronze.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin_short/brown.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin_short/dark_green.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin_short/fur_black.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin_short/fur_brown.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin_short/fur_copper.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin_short/fur_gold.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin_short/fur_grey.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin_short/fur_tan.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin_short/fur_white.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin_short/green.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin_short/lavender.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin_short/light.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin_short/olive.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin_short/pale_green.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin_short/taupe.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin_short/zombie.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
-head/fins/fin_short/zombie_green.png,,"bluecarrot16, Nila122","OGA-BY 3.0, GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-lizard-headgear,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
 head/heads,,,,,,,,,,,,,,,,,,,
 head/heads/alien,"based on lizard originally by Nila122, modified by BenCreating, further edited by bluecarrot16. Nila122 gave blanket permission to MedicineStorm to use Nila122's LPC assets under OGA-BY 3.0 (where original or derived only from other works under OGA-BY).","bluecarrot16, Benjamin K. Smith (BenCreating), Nila122","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/drakes-and-lizardfolk,https://opengameart.org/content/lpc-character-bases,,,,,,,,,,,,,,
 head/heads/alien/idle,,,,,,,,,,,,,,,,,,,
@@ -12390,145 +12339,10 @@ head/horns/horns_curled,,Nila122,"OGA-BY 3.0, GPL 3.0",https://opengameart.org/c
 head/horns/horns_curled/horns.png,,Nila122,"OGA-BY 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
 head/nose,,,,,,,,,,,,,,,,,,,
 head/nose/big,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/amber.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/black.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/blue.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/bright_green.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/bronze.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/brown.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/dark_green.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/female,,,,,,,,,,,,,,,,,,,
-head/nose/big/female/dark.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/female/dark2.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/female/darkelf.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/female/darkelf2.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/female/light.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/female/tanned.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/female/tanned2.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/fur_black.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/fur_brown.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/fur_copper.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/fur_gold.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/fur_grey.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/fur_tan.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/fur_white.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/green.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/lavender.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/light.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/male,,,,,,,,,,,,,,,,,,,
-head/nose/big/male/dark.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/male/dark2.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/male/darkelf.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/male/darkelf2.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/male/light.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/male/tanned.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/male/tanned2.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/olive.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/pale_green.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/taupe.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/zombie.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/big/zombie_green.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
 head/nose/button,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/amber.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/black.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/blue.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/bright_green.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/bronze.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/brown.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/dark_green.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/female,,,,,,,,,,,,,,,,,,,
-head/nose/button/female/dark.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/female/dark2.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/female/darkelf.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/female/darkelf2.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/female/light.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/female/tanned.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/female/tanned2.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/fur_black.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/fur_brown.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/fur_copper.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/fur_gold.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/fur_grey.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/fur_tan.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/fur_white.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/green.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/lavender.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/light.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/male,,,,,,,,,,,,,,,,,,,
-head/nose/button/male/dark.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/male/dark2.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/male/darkelf.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/male/darkelf2.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/male/light.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/male/tanned.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/male/tanned2.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/olive.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/pale_green.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/taupe.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/zombie.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/button/zombie_green.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
 head/nose/elderly,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-revised-elders,,,,,,,,,,,,,,,
-head/nose/elderly/amber.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-revised-elders,,,,,,,,,,,,,,,OK
-head/nose/elderly/black.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-revised-elders,,,,,,,,,,,,,,,OK
-head/nose/elderly/blue.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-revised-elders,,,,,,,,,,,,,,,OK
-head/nose/elderly/bright_green.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-revised-elders,,,,,,,,,,,,,,,OK
-head/nose/elderly/bronze.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-revised-elders,,,,,,,,,,,,,,,OK
-head/nose/elderly/brown.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-revised-elders,,,,,,,,,,,,,,,OK
-head/nose/elderly/dark_green.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-revised-elders,,,,,,,,,,,,,,,OK
-head/nose/elderly/fur_black.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-revised-elders,,,,,,,,,,,,,,,OK
-head/nose/elderly/fur_brown.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-revised-elders,,,,,,,,,,,,,,,OK
-head/nose/elderly/fur_copper.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-revised-elders,,,,,,,,,,,,,,,OK
-head/nose/elderly/fur_gold.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-revised-elders,,,,,,,,,,,,,,,OK
-head/nose/elderly/fur_grey.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-revised-elders,,,,,,,,,,,,,,,OK
-head/nose/elderly/fur_tan.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-revised-elders,,,,,,,,,,,,,,,OK
-head/nose/elderly/fur_white.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-revised-elders,,,,,,,,,,,,,,,OK
-head/nose/elderly/green.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-revised-elders,,,,,,,,,,,,,,,OK
-head/nose/elderly/lavender.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-revised-elders,,,,,,,,,,,,,,,OK
-head/nose/elderly/light.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-revised-elders,,,,,,,,,,,,,,,OK
-head/nose/elderly/olive.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-revised-elders,,,,,,,,,,,,,,,OK
-head/nose/elderly/pale_green.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-revised-elders,,,,,,,,,,,,,,,OK
-head/nose/elderly/taupe.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-revised-elders,,,,,,,,,,,,,,,OK
-head/nose/elderly/zombie.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-revised-elders,,,,,,,,,,,,,,,OK
-head/nose/elderly/zombie_green.png,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-revised-elders,,,,,,,,,,,,,,,OK
 head/nose/straight,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/amber.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/black.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/blue.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/bright_green.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/bronze.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/brown.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/dark_green.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/female,,,,,,,,,,,,,,,,,,,
-head/nose/straight/female/dark.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/female/dark2.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/female/darkelf.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/female/darkelf2.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/female/light.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/female/tanned.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/female/tanned2.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/fur_black.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/fur_brown.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/fur_copper.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/fur_gold.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/fur_grey.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/fur_tan.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/fur_white.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/green.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/lavender.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/light.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/male,,,,,,,,,,,,,,,,,,,
-head/nose/straight/male/dark.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/male/dark2.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/male/darkelf.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/male/darkelf2.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/male/light.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/male/tanned.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/male/tanned2.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/olive.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/pale_green.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/taupe.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/zombie.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
-head/nose/straight/zombie_green.png,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
+head/nose/large,,ElizaWy,OGA-BY 3.0,https://github.com/ElizaWy/LPC/tree/main/Characters/Head/Head%20Overlay%2001%20-%20Large%20Nose,,,,,,,,,,,,,,,
 head/tiaras_female,,Luke Mehl,,https://opengameart.org/content/female-mage-clothing-set,,,,,,,,,,,,,,,
 head/whiskers,,,,,,,,,,,,,,,,,,,
 head/whiskers/whiskers.png,,,,,,,,,,,,,,,,,,,BAD
@@ -13215,8 +13029,9 @@ neck/scarf/gray.png,,"Nila122, Johannes Sjölund (wulax), Stephen Challener (Red
 neck/scarf/red.png,,"Nila122, Johannes Sjölund (wulax), Stephen Challener (Redshrike)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,,,,,,,,,,,OK
 neck/scarf/white.png,,"Nila122, Johannes Sjölund (wulax), Stephen Challener (Redshrike)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/more-lpc-clothes-and-hair,,,,,,,,,,,,,,,OK
 neck/tie,,,,,,,,,,,,,,,,,,,
-neck/tie/bow.png,,"bluecarrot16, Thane Brimhall (pennomi), laetissima","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-2-characters,https://opengameart.org/content/lpc-gentleman,,,,,,,,,,,,,,OK
-neck/tie/neck.png,,"bluecarrot16, Thane Brimhall (pennomi), laetissima","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-2-characters,https://opengameart.org/content/lpc-gentleman,,,,,,,,,,,,,,OK
+neck/tie/bowtie,"Originally by pennomi/laetissima/Makrohn, edited by bluecarrot16, recolors by JaidynReiman","JaidynReiman, bluecarrot16, Thane Brimhall (pennomi), laetissima, Makrohn","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-2-characters,https://opengameart.org/content/lpc-gentleman,,,,,,,,,,,,,,OK
+neck/tie/necktie,"Originally by pennomi/laetissima/Makrohn, edited by bluecarrot16, animations and recolors by JaidynReiman","JaidynReiman, bluecarrot16, Thane Brimhall (pennomi), laetissima, Makrohn","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-2-characters,https://opengameart.org/content/lpc-gentleman,,,,,,,,,,,,,,OK
+neck/tie/bowtie2,,"ElizaWy","OGA-BY 3.0",https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing/Feminine%2C%20Thin/Accessories,https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing/Masculine%2C%20Thin/Accessories/Neckwear%2001%20-%20Bowtie,,,,,,,,,,,,,,OK
 necklace,,,,,,,,,,,,,,,,,,,
 necklace/female,,,,,,,,,,,,,,,,,,,
 necklace/female/bronze.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,,,,,,,,,,,OK
