@@ -667,13 +667,7 @@ $(document).ready(function() {
 
         layers = []
         const previewToDraw = {};
-        var animation = undefined;
-        if($(this).data(`preview_animation`) !== undefined){
-          animation = $(this).data(`preview_animation`);
-        }
-        else{
-          animation =  $(this).data(`layer_1_custom_animation`);
-        }
+        const animation =  $(this).data(`layer_1_custom_animation`);
 
         if($(this).data(`layer_1_${getBodyTypeName()}`) === undefined){
           previewToDraw.link = $(this).data(`layer_1_${getBodyTypeName()}`);
