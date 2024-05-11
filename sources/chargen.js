@@ -673,25 +673,35 @@ $(document).ready(function() {
 
         layers = []
         const previewToDraw = {};
-        const animation =  $(this).data(`layer_1_custom_animation`);
-        previewToDraw.link = $(this).data(`layer_1_${getBodyTypeName()}`);
-        previewToDraw.zPos = $(this).data(`layer_1_zpos`);
+        var animation = undefined;
+        if($(this).data(`preview_animation`) !== undefined){
+          animation = $(this).data(`preview_animation`);
+        }
+        else{
+          animation =  $(this).data(`layer_1_custom_animation`);
+        }
         console.log(animation);
-        layers.push(previewToDraw);
-        
-        for(jdx =2; jdx < 10; jdx++){
-          if($(this).data(`layer_${jdx}_${getBodyTypeName()}`)){
-            if(animation === $(this).data(`layer_${jdx}_custom_animation`)){
-              const previewToDraw = {};
-              previewToDraw.link = $(this).data(`layer_${jdx}_${getBodyTypeName()}`);
-              previewToDraw.zPos = $(this).data(`layer_${jdx}_zpos`);
-              layers.push(previewToDraw);
-            }
 
-          } else {
-            break;
-          }
-        }    
+        if($(this).data(`layer_1_${getBodyTypeName()}`) === undefined){
+          previewToDraw.link = $(this).data(`layer_1_${getBodyTypeName()}`);
+          previewToDraw.zPos = $(this).data(`layer_1_zpos`);
+          layers.push(previewToDraw);
+        }
+        else{
+          for(jdx = 1; jdx < 10; jdx++){
+            if($(this).data(`layer_${jdx}_${getBodyTypeName()}`)){
+              if(animation === $(this).data(`layer_${jdx}_custom_animation`)){
+                const previewToDraw = {};
+                previewToDraw.link = $(this).data(`layer_${jdx}_${getBodyTypeName()}`);
+                previewToDraw.zPos = $(this).data(`layer_${jdx}_zpos`);
+                layers.push(previewToDraw);
+              }
+
+            } else {
+              break;
+            }
+          }    
+        }
         
         layers.sort(function(lhs, rhs) {
           return parseInt(lhs.zPos) - parseInt(rhs.zPos);

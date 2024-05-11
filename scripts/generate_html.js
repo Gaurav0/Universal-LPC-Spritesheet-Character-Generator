@@ -10,8 +10,10 @@ function generateListHTML(json) {
   var requiredSexes = [];
   var previewRow = 10;
   var previewColumn = 0;
+  var previewAnimation = definition.preview_animation;
   var previewXOffset = 0;
   var previewYOffset = 0;
+
   if (definition.preview_row !== undefined) {
     previewRow = definition.preview_row
   }
@@ -70,6 +72,9 @@ function generateListHTML(json) {
             const zPos = definition[`layer_${jdx}`].zPos;
             dataFiles += "data-preview_row=" + previewRow + " data-preview_column=" + previewColumn + " data-preview_x_offset=" + previewXOffset + " data-preview_y_offset=" + previewYOffset +  " data-layer_" + jdx + "_zpos=" + zPos + " ";
             const custom_animation = layerDefinition.custom_animation;
+            if(previewAnimation !== undefined){
+              dataFiles += `data-preview_animation=` + previewAnimation + " "; 
+            }
             if (custom_animation !== undefined) {
               dataFiles += `data-layer_${jdx}_custom_animation=` + custom_animation + " "
             }
