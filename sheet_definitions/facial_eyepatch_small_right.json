@@ -1,0 +1,38 @@
+{
+  "name": "Small Eyepatch Right",
+  "type_name": "facial_eyes",
+  "layer_1": {
+    "zPos": 115,
+    "male": "facial/patches/small/right/adult/",
+    "muscular": "facial/patches/small/right/adult/",
+    "female": "facial/patches/small/right/adult/",
+    "pregnant": "facial/patches/small/right/adult/",
+    "teen": "facial/patches/small/right/adult/"
+  },
+  "variants": [
+    "black",
+    "blue",
+    "bluegray",
+    "brown",
+    "charcoal",
+    "forest",
+    "gray",
+    "green",
+    "lavender",
+    "leather",
+    "maroon",
+    "navy",
+    "orange",
+    "pink",
+    "purple",
+    "red",
+    "rose",
+    "sky",
+    "slate",
+    "tan",
+    "teal",
+    "walnut",
+    "white",
+    "yellow"
+  ]
+}
