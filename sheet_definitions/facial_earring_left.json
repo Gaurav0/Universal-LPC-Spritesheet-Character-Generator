@@ -1,13 +1,13 @@
 {
-  "name": "Left Earring",
+  "name": "Simple Earring Left",
   "type_name": "earring_left",
   "layer_1": {
     "zPos": 115,
-    "male": "facial/earring/left/adult/",
-    "muscular": "facial/earring/left/adult/",
-    "female": "facial/earring/left/adult/",
-    "pregnant": "facial/earring/left/adult/",
-    "teen": "facial/earring/left/adult/"
+    "male": "facial/earrings/simple/left/adult/",
+    "muscular": "facial/earrings/simple/left/adult/",
+    "female": "facial/earrings/simple/left/adult/",
+    "pregnant": "facial/earrings/simple/left/adult/",
+    "teen": "facial/earrings/simple/left/adult/"
   },
   "variants": [
     "base",
