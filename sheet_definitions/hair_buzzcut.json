@@ -3,11 +3,11 @@
   "type_name": "hair",
   "layer_1": {
     "zPos": 120,
-    "male": "hair/buzzcut/male/",
-    "muscular": "hair/buzzcut/male/",
-    "female": "hair/buzzcut/female/",
-    "pregnant": "hair/buzzcut/female/",
-    "teen": "hair/buzzcut/male/"
+    "male": "hair/buzzcut/adult/",
+    "muscular": "hair/buzzcut/adult/",
+    "female": "hair/buzzcut/adult/",
+    "pregnant": "hair/buzzcut/adult/",
+    "teen": "hair/buzzcut/adult/"
   },
   "variants": [
     "blonde",

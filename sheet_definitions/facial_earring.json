@@ -1,12 +1,13 @@
 {
   "name": "Earring",
-  "type_name": "earring",
+  "type_name": "earring_left",
   "layer_1": {
     "zPos": 115,
-    "male": "facial/earring/male/",
-    "muscular": "facial/earring/male/",
-    "female": "facial/earring/female/",
-    "pregnant": "facial/earring/female/"
+    "male": "facial/earring/left/male/",
+    "muscular": "facial/earring/left/male/",
+    "female": "facial/earring/left/female/",
+    "pregnant": "facial/earring/left/female/",
+    "teen": "facial/earring/left/female/"
   },
   "variants": [
     "gold"

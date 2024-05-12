@@ -1,0 +1,38 @@
+{
+  "name": "Eyepatch 2 Right",
+  "type_name": "facial_eyes",
+  "layer_1": {
+    "zPos": 115,
+    "male": "facial/patches/eyepatch2/right/adult/",
+    "muscular": "facial/patches/eyepatch2/right/adult/",
+    "female": "facial/patches/eyepatch2/right/adult/",
+    "pregnant": "facial/patches/eyepatch2/right/adult/",
+    "teen": "facial/patches/eyepatch2/right/adult/"
+  },
+  "variants": [
+    "black",
+    "blue",
+    "bluegray",
+    "brown",
+    "charcoal",
+    "forest",
+    "gray",
+    "green",
+    "lavender",
+    "leather",
+    "maroon",
+    "navy",
+    "orange",
+    "pink",
+    "purple",
+    "red",
+    "rose",
+    "sky",
+    "slate",
+    "tan",
+    "teal",
+    "walnut",
+    "white",
+    "yellow"
+  ]
+}

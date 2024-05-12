@@ -3,11 +3,11 @@
   "type_name": "hair",
   "layer_1": {
     "zPos": 120,
-    "male": "hair/flat_top_fade/male/",
-    "muscular": "hair/flat_top_fade/male/",
-    "female": "hair/flat_top_fade/female/",
-    "pregnant": "hair/flat_top_fade/female/",
-    "teen": "hair/flat_top_fade/male/"
+    "male": "hair/flat_top_fade/adult/",
+    "muscular": "hair/flat_top_fade/adult/",
+    "female": "hair/flat_top_fade/adult/",
+    "pregnant": "hair/flat_top_fade/adult/",
+    "teen": "hair/flat_top_fade/adult/"
   },
   "variants": [
     "blonde",

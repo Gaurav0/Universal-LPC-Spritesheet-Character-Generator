@@ -3,11 +3,11 @@
   "type_name": "hair",
   "layer_1": {
     "zPos": 120,
-    "male": "hair/longknot/male/",
-    "muscular": "hair/longknot/male/",
-    "female": "hair/longknot/female/",
-    "pregnant": "hair/longknot/female/",
-    "teen": "hair/longknot/male/"
+    "male": "hair/longknot/adult/",
+    "muscular": "hair/longknot/adult/",
+    "female": "hair/longknot/adult/",
+    "pregnant": "hair/longknot/adult/",
+    "teen": "hair/longknot/adult/"
   },
   "variants": [
     "blonde",

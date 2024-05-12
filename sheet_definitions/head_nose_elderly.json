@@ -3,11 +3,11 @@
   "type_name" : "nose",
   "layer_1" : {
     "zPos" : 105,
-    "male" : "head/nose/elderly/",
-    "muscular" : "head/nose/elderly/",
-    "female" : "head/nose/elderly/",
-    "teen" : "head/nose/elderly/",
-    "pregnant" : "head/nose/elderly/"
+    "male" : "head/nose/elderly/adult/",
+    "muscular" : "head/nose/elderly/adult/",
+    "female" : "head/nose/elderly/adult/",
+    "teen" : "head/nose/elderly/adult/",
+    "pregnant" : "head/nose/elderly/adult/"
   },
   "variants": [
     "light",

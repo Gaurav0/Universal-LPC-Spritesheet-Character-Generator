@@ -3,11 +3,11 @@
   "type_name": "hair",
   "layer_1": {
     "zPos": 120,
-    "male": "hair/cowlick/male/",
-    "muscular": "hair/cowlick/male/",
-    "female": "hair/cowlick/female/",
-    "pregnant": "hair/cowlick/female/",
-    "teen": "hair/cowlick/male/"
+    "male": "hair/cowlick/adult/",
+    "muscular": "hair/cowlick/adult/",
+    "female": "hair/cowlick/adult/",
+    "pregnant": "hair/cowlick/adult/",
+    "teen": "hair/cowlick/adult/"
   },
   "variants": [
     "blonde",

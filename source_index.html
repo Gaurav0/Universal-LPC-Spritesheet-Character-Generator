@@ -224,28 +224,28 @@
 					</ul>
 				</li>
 
-				<!-- Beastly Ears -->
+				<!-- Furry Ears -->
 				<li>
-					<span class="condensed">Beastly Ears</span>
+					<span class="condensed">Furry Ears</span>
 					<ul>
 						<li>
 							<span class="condensed">Top Ears</span>
 							<ul>
-								div_sheet_head_beastly_ears_cat
-								div_sheet_head_beastly_ears_skin_cat
-								div_sheet_head_beastly_ears_wolf
-								div_sheet_head_beastly_ears_skin_wolf
+								div_sheet_head_ears_cat
+								div_sheet_head_ears_cat_skin
+								div_sheet_head_ears_wolf
+								div_sheet_head_ears_wolf_skin
 							</ul>
 						</li>
 						<li>
 							<span class="condensed">Side Ears</span>
 							<ul>
-								div_sheet_head_beastly_ears_lykon
-								div_sheet_head_beastly_ears_skin_lykon
-								div_sheet_head_beastly_ears_zabos
-								div_sheet_head_beastly_ears_skin_zabos
-								div_sheet_head_beastly_ears_zabos
-								div_sheet_head_beastly_ears_skin_avyon
+								div_sheet_head_ears_lykon
+								div_sheet_head_ears_lykon_skin
+								div_sheet_head_ears_zabos
+								div_sheet_head_ears_zabos_skin
+								div_sheet_head_ears_zabos
+								div_sheet_head_ears_avyon_skin
 							</ul>
 						</li>
 					</ul>
@@ -259,6 +259,7 @@
 						div_sheet_head_nose_button
 						div_sheet_head_nose_straight
 						div_sheet_head_nose_elderly
+						div_sheet_head_nose_large
 					</ul>
 				</li>
 
@@ -268,6 +269,15 @@
 					<ul>
 						div_sheet_eyes
 						div_sheet_eyes_cyclops
+					</ul>
+				</li>
+
+				<!-- Eyebrows -->
+				<li>
+					<span class="condensed">Eyebrows</span>
+					<ul>
+						div_sheet_eyebrows_thick
+						div_sheet_eyebrows_thin
 					</ul>
 				</li>
 
@@ -529,11 +539,44 @@
 
 
 				<!-- Facial accessories -->
-				<li data-required="male,female,pregnant,muscular">
+				<li data-required="male,female,pregnant,muscular,teen">
 					<span class="condensed">Accessories</span>
 					<ul>
-						div_sheet_facial
-						div_sheet_facial_eyepatch
+						<!-- Glasses -->
+						<li data-required="male,female,pregnant,muscular,teen">
+							<span class="condensed">Glasses</span>
+							<ul>
+								div_sheet_facial_glasses
+								div_sheet_facial_glasses_round
+								div_sheet_facial_glasses_halfmoon
+								div_sheet_facial_glasses_sunglasses
+							</ul>
+						</li>
+
+						<!-- Monocle -->
+						<li data-required="male,female,pregnant,muscular,teen">
+							<span class="condensed">Monocle</span>
+							<ul>
+								div_sheet_facial_monocle_left
+								div_sheet_facial_monocle_left_frame
+								div_sheet_facial_monocle_right
+								div_sheet_facial_monocle_right_frame
+							</ul>
+						</li>
+
+						<!-- Eyepatches -->
+						<li data-required="male,female,pregnant,muscular,teen">
+							<span class="condensed">Eyepatches</span>
+							<ul>
+								div_sheet_facial_eyepatch_left
+								div_sheet_facial_eyepatch_right
+								div_sheet_facial_eyepatch2_left
+								div_sheet_facial_eyepatch2_right
+								div_sheet_facial_eyepatch_small_left
+								div_sheet_facial_eyepatch_small_right
+							</ul>
+						</li>
+						div_sheet_facial_mask
 						div_sheet_facial_earring
 					</ul>
 				</li>
@@ -542,7 +585,9 @@
 				<li data-required="male,female,pregnant,muscular,teen">
 					<span class="condensed">Neck</span>
 					<ul>
-						div_sheet_neck_tie
+						div_sheet_neck_bowtie
+						div_sheet_neck_bowtie2
+						div_sheet_neck_necktie
 						div_sheet_neck_scarf
 						div_sheet_neck_capeclip
 						div_sheet_neck_capetie
@@ -622,19 +667,37 @@
 					<span class="condensed">Shirts</span>
 					<ul>
 						div_sheet_torso_clothes_child_shirt
-						div_sheet_torso_clothes_longsleeve
-						div_sheet_torso_clothes_longsleeve_collared
-						div_sheet_torso_clothes_male_longsleeve_laced
-						div_sheet_torso_clothes_shortsleeve
-						div_sheet_torso_clothes_male_sleeveless
-						div_sheet_torso_clothes_male_sleeveless_laced
-						div_sheet_torso_clothes_male_sleeveless_striped
-						div_sheet_torso_clothes_tanktop
-						div_sheet_torso_clothes_female_sleeveless
+						<!-- Longsleeve Shirts -->
+						<li data-required="male,female,pregnant,teen">
+							<span class="condensed">Longsleeve</span>
+							<ul>
+								div_sheet_torso_clothes_longsleeve
+								div_sheet_torso_clothes_longsleeve_scoop
+								div_sheet_torso_clothes_longsleeve_formal
+								div_sheet_torso_clothes_longsleeve_formal_striped
+								div_sheet_torso_clothes_longsleeve_laced
+							</ul>
+						</li>
+						<!-- Shortsleeve Shirts -->
+						<li data-required="male,female,pregnant,teen">
+							<span class="condensed">Shortsleeve</span>
+							<ul>
+								div_sheet_torso_clothes_shortsleeve
+							</ul>
+						</li>
+						<!-- Sleeveless Shirts -->
+						<li data-required="male,female,pregnant,teen">
+							<span class="condensed">Sleeveless</span>
+							<ul>
+								div_sheet_torso_clothes_sleeveless
+								div_sheet_torso_clothes_sleeveless_laced
+								div_sheet_torso_clothes_sleeveless_striped
+								div_sheet_torso_clothes_sleeveless_tanktop
+							</ul>
+						</li>
 						div_sheet_torso_clothes_corset
 						div_sheet_torso_clothes_blouse
 						div_sheet_torso_clothes_blouse_longsleeve
-						div_sheet_torso_clothes_scoop_shirt
 						div_sheet_torso_clothes_tunic
 						div_sheet_torso_clothes_tunic_sara
 						div_sheet_torso_clothes_robe
@@ -977,7 +1040,7 @@
 				<option value="climb" data-row="21" data-num="1" data-cycle="6">Climb</option>
 				<option value="watering" data-row="4" data-num="4" data-cycle="4" data-cycle-custom="0-1-4-4-4-4-5">Watering</option>
 				<option value="combat" data-row="22" data-num="4" data-cycle-custom="2-2-3">Combat Idle</option>
-				<option value="1h_slash" data-row="38" data-num="4" data-cycle="7">1-Handed Slash</option>
+				<option value="1h_slash" data-row="38" data-num="4" data-cycle-custom="0-1-2-3-4-5-6">1-Handed Slash</option>
 				<option value="1h_backslash" data-row="38" data-num="4" data-cycle-custom="0-1-2-3-4-5-7-8-9-10-11-12">1-Handed Backslash</option>
 				<option value="1h_halfslash" data-row="42" data-num="4" data-cycle="6">1-Handed Halfslash</option>
 			</select>

@@ -3,11 +3,11 @@
   "type_name": "hair",
   "layer_1": {
     "zPos": 120,
-    "male": "hair/balding/male/",
-    "muscular": "hair/balding/male/",
-    "female": "hair/balding/female/",
-    "pregnant": "hair/balding/female/",
-    "teen": "hair/balding/male/"
+    "male": "hair/balding/adult/",
+    "muscular": "hair/balding/adult/",
+    "female": "hair/balding/adult/",
+    "pregnant": "hair/balding/adult/",
+    "teen": "hair/balding/adult/"
   },
   "variants": [
     "blonde",
