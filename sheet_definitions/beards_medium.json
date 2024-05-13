@@ -1,13 +1,13 @@
 {
-  "name": "Winter Beard",
+  "name": "Medium Beard",
   "type_name": "beard",
   "layer_1": {
     "zPos": 110,
-    "male": "beards/winter/adult/",
-    "female": "beards/winter/adult/",
-    "muscular": "beards/winter/adult/",
-    "teen": "beards/winter/adult/",
-    "pregnant": "beards/winter/adult/"
+    "male": "beards/medium/adult/",
+    "female": "beards/medium/adult/",
+    "muscular": "beards/medium/adult/",
+    "teen": "beards/medium/adult/",
+    "pregnant": "beards/medium/adult/"
   },
   "variants": [
     "blonde",

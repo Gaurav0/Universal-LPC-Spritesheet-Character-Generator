@@ -1,13 +1,13 @@
 {
-  "name": "Winter Beard",
+  "name": "Trimmed Beard",
   "type_name": "beard",
   "layer_1": {
     "zPos": 110,
-    "male": "beards/winter/adult/",
-    "female": "beards/winter/adult/",
-    "muscular": "beards/winter/adult/",
-    "teen": "beards/winter/adult/",
-    "pregnant": "beards/winter/adult/"
+    "male": "beards/trimmed/adult/",
+    "female": "beards/trimmed/adult/",
+    "muscular": "beards/trimmed/adult/",
+    "teen": "beards/trimmed/adult/",
+    "pregnant": "beards/trimmed/adult/"
   },
   "variants": [
     "blonde",
