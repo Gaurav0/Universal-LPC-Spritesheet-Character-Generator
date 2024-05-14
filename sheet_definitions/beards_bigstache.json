@@ -3,11 +3,11 @@
   "type_name": "mustache",
   "layer_1": {
     "zPos": 111,
-    "male": "beards/bigstache/adult/",
-    "female": "beards/bigstache/adult/",
-    "muscular": "beards/bigstache/adult/",
-    "teen": "beards/bigstache/adult/",
-    "pregnant": "beards/bigstache/adult/"
+    "male": "beards/mustache/bigstache/",
+    "female": "beards/mustache/bigstache/",
+    "muscular": "beards/mustache/bigstache/",
+    "teen": "beards/mustache/bigstache/",
+    "pregnant": "beards/mustache/bigstache/"
   },
   "variants": [
     "blonde",

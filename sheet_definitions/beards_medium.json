@@ -3,11 +3,11 @@
   "type_name": "beard",
   "layer_1": {
     "zPos": 110,
-    "male": "beards/medium/adult/",
-    "female": "beards/medium/adult/",
-    "muscular": "beards/medium/adult/",
-    "teen": "beards/medium/adult/",
-    "pregnant": "beards/medium/adult/"
+    "male": "beards/beard/medium/",
+    "female": "beards/beard/medium/",
+    "muscular": "beards/beard/medium/",
+    "teen": "beards/beard/medium/",
+    "pregnant": "beards/beard/medium/"
   },
   "variants": [
     "blonde",
