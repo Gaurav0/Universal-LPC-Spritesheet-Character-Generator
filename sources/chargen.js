@@ -672,8 +672,7 @@ $(document).ready(function() {
         if($(this).data(`layer_1_${getBodyTypeName()}`) === undefined){
           previewToDraw.link = $(this).data(`layer_1_${getBodyTypeName()}`);
           previewToDraw.zPos = $(this).data(`layer_1_zpos`);
-          layers.push(previewToDraw);
-        }
+          layers.push(previewToDraw); }
         else{
           for(jdx = 1; jdx < 10; jdx++){
             if($(this).data(`layer_${jdx}_${getBodyTypeName()}`)){
