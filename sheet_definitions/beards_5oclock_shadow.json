@@ -1,0 +1,40 @@
+{
+  "name": "5 O'clock Shadow",
+  "type_name": "beard",
+  "layer_1": {
+    "zPos": 111,
+    "male": "beards/beard/5oclock_shadow/",
+    "female": "beards/beard/5oclock_shadow/",
+    "muscular": "beards/beard/5oclock_shadow/",
+    "teen": "beards/beard/5oclock_shadow/",
+    "pregnant": "beards/beard/5oclock_shadow/"
+  },
+  "variants": [
+    "blonde",
+    "ash",
+    "sandy",
+    "platinum",
+    "strawberry",
+    "redhead",
+    "ginger",
+    "carrot",
+    "chestnut",
+    "light brown",
+    "dark brown",
+    "black",
+    "raven",
+    "dark gray",
+    "gray",
+    "white",
+    "red",
+    "orange",
+    "gold",
+    "green",
+    "blue",
+    "navy",
+    "violet",
+    "purple",
+    "pink",
+    "rose"
+  ]
+}
