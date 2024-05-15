@@ -1,0 +1,40 @@
+{
+  "name": "Chevron Mustache",
+  "type_name": "mustache",
+  "layer_1": {
+    "zPos": 111,
+    "male": "beards/mustache/chevron/",
+    "female": "beards/mustache/chevron/",
+    "muscular": "beards/mustache/chevron/",
+    "teen": "beards/mustache/chevron/",
+    "pregnant": "beards/mustache/chevron/"
+  },
+  "variants": [
+    "blonde",
+    "ash",
+    "sandy",
+    "platinum",
+    "strawberry",
+    "redhead",
+    "ginger",
+    "carrot",
+    "chestnut",
+    "light brown",
+    "dark brown",
+    "black",
+    "raven",
+    "dark gray",
+    "gray",
+    "white",
+    "red",
+    "orange",
+    "gold",
+    "green",
+    "blue",
+    "navy",
+    "violet",
+    "purple",
+    "pink",
+    "rose"
+  ]
+}
