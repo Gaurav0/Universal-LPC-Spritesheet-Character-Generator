@@ -1,6 +1,10 @@
 {
   "name" : "Rod",
   "type_name" : "weapon",
+  "preview_row" : 0,
+  "preview_column" : 0,
+  "preview_x_offset" : 304,
+  "preview_y_offset" : 24,
   "layer_1": {
     "zPos": 9,
     "custom_animation": "tool_rod",

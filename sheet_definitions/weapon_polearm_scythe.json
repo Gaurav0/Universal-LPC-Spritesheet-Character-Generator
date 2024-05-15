@@ -1,6 +1,10 @@
 {
   "name": "Scythe",
   "type_name": "weapon",
+  "preview_row": 0,
+  "preview_column": 0,
+  "preview_x_offset": 11,
+  "preview_y_offset": 716,
   "layer_1": {
     "zPos": 140,
     "male": "weapon/polearm/scythe/",

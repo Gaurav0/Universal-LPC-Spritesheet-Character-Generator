@@ -1,6 +1,10 @@
 {
   "name": "Long spear",
   "type_name": "weapon",
+  "preview_row": 0,
+  "preview_column": 0,
+  "preview_x_offset": 13,
+  "preview_y_offset": 170,
   "layer_1": {
     "zPos": 140,
     "custom_animation": "walk_128",
