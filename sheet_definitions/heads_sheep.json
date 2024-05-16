@@ -3,11 +3,11 @@
   "type_name": "head",
   "layer_1": {
     "zPos": 100,
-    "male": "head/heads/sheep/universal/",
-    "muscular": "head/heads/sheep/universal/",
-    "female": "head/heads/sheep/universal/",
-    "pregnant": "head/heads/sheep/universal/",
-    "teen": "head/heads/sheep/universal/"
+    "male": "head/heads/sheep/adult/",
+    "muscular": "head/heads/sheep/adult/",
+    "female": "head/heads/sheep/adult/",
+    "pregnant": "head/heads/sheep/adult/",
+    "teen": "head/heads/sheep/adult/"
   },
   "variants": [
     "fur_black",

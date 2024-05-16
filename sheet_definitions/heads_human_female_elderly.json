@@ -3,11 +3,11 @@
   "type_name": "head",
   "layer_1": {
     "zPos": 100,
-    "male": "head/heads/human_female_elderly/",
-    "muscular": "head/heads/human_female_elderly/",
-    "female": "head/heads/human_female_elderly/",
-    "pregnant": "head/heads/human_female_elderly/",
-    "teen": "head/heads/human_female_elderly/"
+    "male": "head/heads/human/female_elderly/",
+    "muscular": "head/heads/human/female_elderly/",
+    "female": "head/heads/human/female_elderly/",
+    "pregnant": "head/heads/human/female_elderly/",
+    "teen": "head/heads/human/female_elderly/"
   },
   "variants": [
     "light",

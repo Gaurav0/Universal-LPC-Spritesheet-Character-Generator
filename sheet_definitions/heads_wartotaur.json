@@ -3,11 +3,11 @@
   "type_name": "head",
   "layer_1": {
     "zPos": 100,
-    "male": "head/heads/wartotaur/universal/",
-    "muscular": "head/heads/wartotaur/universal/",
-    "female": "head/heads/wartotaur/universal/",
-    "pregnant": "head/heads/wartotaur/universal/",
-    "teen": "head/heads/wartotaur/universal/"
+    "male": "head/heads/wartotaur/adult/",
+    "muscular": "head/heads/wartotaur/adult/",
+    "female": "head/heads/wartotaur/adult/",
+    "pregnant": "head/heads/wartotaur/adult/",
+    "teen": "head/heads/wartotaur/adult/"
   },
   "variants": [
     "fur_black",

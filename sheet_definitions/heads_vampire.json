@@ -3,11 +3,11 @@
   "type_name": "head",
   "layer_1": {
     "zPos": 100,
-    "male": "head/heads/vampire/universal/",
-    "muscular": "head/heads/vampire/universal/",
-    "female": "head/heads/vampire/universal/",
-    "pregnant": "head/heads/vampire/universal/",
-    "teen": "head/heads/vampire/universal/"
+    "male": "head/heads/vampire/adult/",
+    "muscular": "head/heads/vampire/adult/",
+    "female": "head/heads/vampire/adult/",
+    "pregnant": "head/heads/vampire/adult/",
+    "teen": "head/heads/vampire/adult/"
   },
   "variants": [
     "light",
