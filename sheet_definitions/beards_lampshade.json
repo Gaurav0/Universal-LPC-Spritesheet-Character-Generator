@@ -1,0 +1,40 @@
+{
+  "name": "Lampshade Mustache",
+  "type_name": "mustache",
+  "layer_1": {
+    "zPos": 111,
+    "male": "beards/mustache/lampshade/",
+    "female": "beards/mustache/lampshade/",
+    "muscular": "beards/mustache/lampshade/",
+    "teen": "beards/mustache/lampshade/",
+    "pregnant": "beards/mustache/lampshade/"
+  },
+  "variants": [
+    "blonde",
+    "ash",
+    "sandy",
+    "platinum",
+    "strawberry",
+    "redhead",
+    "ginger",
+    "carrot",
+    "chestnut",
+    "light brown",
+    "dark brown",
+    "black",
+    "raven",
+    "dark gray",
+    "gray",
+    "white",
+    "red",
+    "orange",
+    "gold",
+    "green",
+    "blue",
+    "navy",
+    "violet",
+    "purple",
+    "pink",
+    "rose"
+  ]
+}

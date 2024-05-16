@@ -1,0 +1,40 @@
+{
+  "name": "Horseshoe Mustache",
+  "type_name": "mustache",
+  "layer_1": {
+    "zPos": 111,
+    "male": "beards/mustache/horseshoe/",
+    "female": "beards/mustache/horseshoe/",
+    "muscular": "beards/mustache/horseshoe/",
+    "teen": "beards/mustache/horseshoe/",
+    "pregnant": "beards/mustache/horseshoe/"
+  },
+  "variants": [
+    "blonde",
+    "ash",
+    "sandy",
+    "platinum",
+    "strawberry",
+    "redhead",
+    "ginger",
+    "carrot",
+    "chestnut",
+    "light brown",
+    "dark brown",
+    "black",
+    "raven",
+    "dark gray",
+    "gray",
+    "white",
+    "red",
+    "orange",
+    "gold",
+    "green",
+    "blue",
+    "navy",
+    "violet",
+    "purple",
+    "pink",
+    "rose"
+  ]
+}
