@@ -11,13 +11,7 @@
   },
   "variants": [
     "zombie",
-    "fur_black",
-    "fur_brown",
-    "fur_tan",
-    "fur_copper",
-    "fur_gold",
-    "fur_grey",
-    "fur_white",
+    "zombie_green",
     "light",
     "amber",
     "olive",
@@ -27,10 +21,16 @@
     "black",
     "lavender",
     "blue",
-    "zombie_green",
     "green",
     "pale_green",
     "bright_green",
-    "dark_green"
+    "dark_green",
+    "fur_black",
+    "fur_brown",
+    "fur_tan",
+    "fur_copper",
+    "fur_gold",
+    "fur_grey",
+    "fur_white"
   ]
 }
