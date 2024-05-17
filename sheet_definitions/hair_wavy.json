@@ -7,7 +7,8 @@
     "muscular": "hair/wavy/male/",
     "female": "hair/wavy/female/",
     "pregnant": "hair/wavy/female/",
-    "teen": "hair/wavy/male/"
+    "teen": "hair/wavy/male/",
+    "child": "hair/wavy/child/"
   },
   "variants": [
     "blonde",
