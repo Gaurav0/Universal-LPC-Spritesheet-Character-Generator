@@ -3,11 +3,11 @@
   "type_name": "head",
   "layer_1": {
     "zPos": 100,
-    "male": "head/heads/wolf_female/universal/",
-    "muscular": "head/heads/wolf_female/universal/",
-    "female": "head/heads/wolf_female/universal/",
-    "pregnant": "head/heads/wolf_female/universal/",
-    "teen": "head/heads/wolf_female/universal/"
+    "male": "head/heads/wolf/female/",
+    "muscular": "head/heads/wolf/female/",
+    "female": "head/heads/wolf/female/",
+    "pregnant": "head/heads/wolf/female/",
+    "teen": "head/heads/wolf/female/"
   },
   "variants": [
     "fur_black",
@@ -16,7 +16,22 @@
     "fur_copper",
     "fur_gold",
     "fur_grey",
-    "fur_white"
+    "fur_white",
+    "light",
+    "amber",
+    "olive",
+    "taupe",
+    "bronze",
+    "brown",
+    "black",
+    "lavender",
+    "blue",
+    "zombie_green",
+    "green",
+    "pale_green",
+    "bright_green",
+    "dark_green",
+    "zombie"
   ],
   "match_body_color": true
 }
