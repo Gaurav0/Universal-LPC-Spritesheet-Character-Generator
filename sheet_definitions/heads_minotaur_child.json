@@ -3,7 +3,7 @@
   "type_name": "head",
   "layer_1": {
     "zPos": 100,
-    "child": "head/heads/minotaur_child/universal/"
+    "child": "head/heads/minotaur/child/"
   },
   "variants": [
     "fur_black",
