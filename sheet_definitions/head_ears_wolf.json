@@ -53,5 +53,6 @@
     "fur_gold",
     "fur_grey",
     "fur_white"
-  ]
+  ],
+  "expanded_animations": true
 }

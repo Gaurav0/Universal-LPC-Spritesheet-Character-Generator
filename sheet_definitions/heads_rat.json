@@ -33,5 +33,6 @@
     "dark_green",
     "zombie"
   ],
-  "match_body_color": true
+  "match_body_color": true,
+  "expanded_animations": true
 }

@@ -29,5 +29,6 @@
     "fur_grey",
     "fur_white"
   ],
-  "match_body_color": true
+  "match_body_color": true,
+  "expanded_animations": true
 }

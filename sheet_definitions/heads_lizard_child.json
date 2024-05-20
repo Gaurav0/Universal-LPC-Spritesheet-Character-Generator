@@ -21,5 +21,6 @@
     "bright_green",
     "dark_green"
   ],
-  "match_body_color": true
+  "match_body_color": true,
+  "expanded_animations": true
 }

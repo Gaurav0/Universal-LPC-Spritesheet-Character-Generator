@@ -18,5 +18,6 @@
     "bronze",
     "silver",
     "gold"
-  ]
+  ],
+  "expanded_animations": true
 }
