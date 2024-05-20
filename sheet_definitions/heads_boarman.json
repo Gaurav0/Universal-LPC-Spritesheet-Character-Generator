@@ -3,11 +3,11 @@
   "type_name": "head",
   "layer_1": {
     "zPos": 100,
-    "male": "head/heads/boarman/universal/",
-    "muscular": "head/heads/boarman/universal/",
-    "female": "head/heads/boarman/universal/",
-    "pregnant": "head/heads/boarman/universal/",
-    "teen": "head/heads/boarman/universal/"
+    "male": "head/heads/boarman/adult/",
+    "muscular": "head/heads/boarman/adult/",
+    "female": "head/heads/boarman/adult/",
+    "pregnant": "head/heads/boarman/adult/",
+    "teen": "head/heads/boarman/adult/"
   },
   "variants": [
     "fur_black",
@@ -16,7 +16,22 @@
     "fur_copper",
     "fur_gold",
     "fur_grey",
-    "fur_white"
+    "fur_white",
+    "light",
+    "amber",
+    "olive",
+    "taupe",
+    "bronze",
+    "brown",
+    "black",
+    "lavender",
+    "blue",
+    "zombie_green",
+    "green",
+    "pale_green",
+    "bright_green",
+    "dark_green",
+    "zombie"
   ],
   "match_body_color": true
 }

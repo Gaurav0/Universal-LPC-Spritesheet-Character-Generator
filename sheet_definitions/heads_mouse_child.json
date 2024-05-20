@@ -3,7 +3,7 @@
   "type_name": "head",
   "layer_1": {
     "zPos": 100,
-    "child": "head/heads/mouse_child/universal/"
+    "child": "head/heads/mouse/child/"
   },
   "variants": [
     "fur_black",

@@ -3,11 +3,11 @@
   "type_name": "head",
   "layer_1": {
     "zPos": 100,
-    "male": "head/heads/orc_male/universal/",
-    "muscular": "head/heads/orc_male/universal/",
-    "female": "head/heads/orc_male/universal/",
-    "pregnant": "head/heads/orc_male/universal/",
-    "teen": "head/heads/orc_male/universal/"
+    "male": "head/heads/orc/male/",
+    "muscular": "head/heads/orc/male/",
+    "female": "head/heads/orc/male/",
+    "pregnant": "head/heads/orc/male/",
+    "teen": "head/heads/orc/male/"
   },
   "variants": [
     "light",

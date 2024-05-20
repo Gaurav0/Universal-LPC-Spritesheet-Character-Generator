@@ -212,24 +212,24 @@ head_nose_button.json,layer_1,105,head/nose/button/ head/nose/button/ head/nose/
 head_nose_elderly.json,layer_1,105,head/nose/elderly/ head/nose/elderly/ head/nose/elderly/ head/nose/elderly/
 head_nose_straight.json,layer_1,105,head/nose/straight/ head/nose/straight/ head/nose/straight/ head/nose/straight/
 heads_boarman.json,layer_1,100,head/heads/boarman/universal/ head/heads/boarman/universal/ head/heads/boarman/universal/ head/heads/boarman/universal/
-heads_boarman_child.json,layer_1,100,head/heads/boarman_child/universal/
+heads_boarman_child.json,layer_1,100,head/heads/boarman/child/
 heads_human_child.json,layer_1,100,head/heads/human_child/
 heads_human_female.json,layer_1,100,head/heads/human_female/ head/heads/human_female/ head/heads/human_female/ head/heads/human_female/
 heads_human_female_elderly.json,layer_1,100,head/heads/human_female_elderly/ head/heads/human_female_elderly/ head/heads/human_female_elderly/ head/heads/human_female_elderly/
 heads_human_male.json,layer_1,100,head/heads/human_male/ head/heads/human_male/ head/heads/human_male/ head/heads/human_male/
 heads_human_male_elderly.json,layer_1,100,head/heads/human_male_elderly/ head/heads/human_male_elderly/ head/heads/human_male_elderly/ head/heads/human_male_elderly/
-heads_lizard_child.json,layer_1,100,head/heads/lizard_child/universal/
-heads_lizard_female.json,layer_1,100,head/heads/lizard_female/universal/ head/heads/lizard_female/universal/ head/heads/lizard_female/universal/ head/heads/lizard_female/universal/
-heads_lizard_male.json,layer_1,100,head/heads/lizard_male/universal/ head/heads/lizard_male/universal/ head/heads/lizard_male/universal/ head/heads/lizard_male/universal/
+heads_lizard_child.json,layer_1,100,head/heads/lizard/child/
+heads_lizard_female.json,layer_1,100,head/heads/lizard/female/ head/heads/lizard/female/ head/heads/lizard/female/ head/heads/lizard/female/
+heads_lizard_male.json,layer_1,100,head/heads/lizard/male/ head/heads/lizard/male/ head/heads/lizard/male/ head/heads/lizard/male/
 heads_minotaur.json,layer_1,100,head/heads/minotaur/universal/ head/heads/minotaur/universal/ head/heads/minotaur/universal/ head/heads/minotaur/universal/
-heads_minotaur_child.json,layer_1,100,head/heads/minotaur_child/universal/
-heads_orc_child.json,layer_1,100,head/heads/orc_child/universal/
-heads_orc_female.json,layer_1,100,head/heads/orc_female/universal/ head/heads/orc_female/universal/ head/heads/orc_female/universal/ head/heads/orc_female/universal/
-heads_orc_male.json,layer_1,100,head/heads/orc_male/universal/ head/heads/orc_male/universal/ head/heads/orc_male/universal/ head/heads/orc_male/universal/
+heads_minotaur_child.json,layer_1,100,head/heads/minotaur/child/
+heads_orc_child.json,layer_1,100,head/heads/orc/child/
+heads_orc_female.json,layer_1,100,head/heads/orc/female/ head/heads/orc/female/ head/heads/orc/female/ head/heads/orc/female/
+heads_orc_male.json,layer_1,100,head/heads/orc/male/ head/heads/orc/male/ head/heads/orc/male/ head/heads/orc/male/
 heads_skeleton.json,layer_1,100,head/heads/skeleton/universal/ head/heads/skeleton/universal/ head/heads/skeleton/universal/ head/heads/skeleton/universal/
-heads_wolf_child.json,layer_1,100,head/heads/wolf_child/universal/
-heads_wolf_female.json,layer_1,100,head/heads/wolf_female/universal/ head/heads/wolf_female/universal/ head/heads/wolf_female/universal/ head/heads/wolf_female/universal/
-heads_wolf_male.json,layer_1,100,head/heads/wolf_male/universal/ head/heads/wolf_male/universal/ head/heads/wolf_male/universal/ head/heads/wolf_male/universal/
+heads_wolf_child.json,layer_1,100,head/heads/wolf/child/
+heads_wolf_female.json,layer_1,100,head/heads/wolf/female/ head/heads/wolf/female/ head/heads/wolf/female/ head/heads/wolf/female/
+heads_wolf_male.json,layer_1,100,head/heads/wolf/male/ head/heads/wolf/male/ head/heads/wolf/male/ head/heads/wolf/male/
 heads_zombie.json,layer_1,100,head/heads/zombie/universal/ head/heads/zombie/universal/ head/heads/zombie/universal/ head/heads/zombie/universal/
 legs_armour.json,layer_1,20,legs/armour/plate/male/ legs/armour/plate/female/
 legs_childpants.json,layer_1,20,legs/pants/child/
