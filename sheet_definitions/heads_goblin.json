@@ -3,11 +3,11 @@
   "type_name": "head",
   "layer_1": {
     "zPos": 100,
-    "male": "head/heads/goblin/universal/",
-    "muscular": "head/heads/goblin/universal/",
-    "female": "head/heads/goblin/universal/",
-    "pregnant": "head/heads/goblin/universal/",
-    "teen": "head/heads/goblin/universal/"
+    "male": "head/heads/goblin/adult/",
+    "muscular": "head/heads/goblin/adult/",
+    "female": "head/heads/goblin/adult/",
+    "pregnant": "head/heads/goblin/adult/",
+    "teen": "head/heads/goblin/adult/"
   },
   "variants": [
     "light",

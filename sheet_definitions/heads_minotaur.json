@@ -3,11 +3,11 @@
   "type_name": "head",
   "layer_1": {
     "zPos": 100,
-    "male": "head/heads/minotaur/universal/",
-    "muscular": "head/heads/minotaur/universal/",
-    "female": "head/heads/minotaur/universal/",
-    "pregnant": "head/heads/minotaur/universal/",
-    "teen": "head/heads/minotaur/universal/"
+    "male": "head/heads/minotaur/male/",
+    "muscular": "head/heads/minotaur/male/",
+    "female": "head/heads/minotaur/male/",
+    "pregnant": "head/heads/minotaur/male/",
+    "teen": "head/heads/minotaur/male/"
   },
   "variants": [
     "fur_black",

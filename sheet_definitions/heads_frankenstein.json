@@ -3,11 +3,11 @@
   "type_name": "head",
   "layer_1": {
     "zPos": 100,
-    "male": "head/heads/frankenstein/universal/",
-    "muscular": "head/heads/frankenstein/universal/",
-    "female": "head/heads/frankenstein/universal/",
-    "pregnant": "head/heads/frankenstein/universal/",
-    "teen": "head/heads/frankenstein/universal/"
+    "male": "head/heads/frankenstein/adult/",
+    "muscular": "head/heads/frankenstein/adult/",
+    "female": "head/heads/frankenstein/adult/",
+    "pregnant": "head/heads/frankenstein/adult/",
+    "teen": "head/heads/frankenstein/adult/"
   },
   "variants": [
     "light",
