@@ -2,7 +2,7 @@
   "name": "Curled Horns",
   "type_name": "horns",
   "layer_1": {
-    "zPos": 125,
+    "zPos": 126,
     "male": "head/horns/curled/adult/",
     "muscular": "head/horns/curled/adult/",
     "female": "head/horns/curled/adult/",

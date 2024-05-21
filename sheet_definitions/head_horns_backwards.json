@@ -2,7 +2,7 @@
   "name": "Backwards Horns",
   "type_name": "horns",
   "layer_1": {
-    "zPos": 125,
+    "zPos": 126,
     "male": "head/horns/backwards/adult/fg/",
     "muscular": "head/horns/backwards/adult/fg/",
     "female": "head/horns/backwards/adult/fg/",
