@@ -3,11 +3,11 @@
   "type_name": "fins",
   "layer_1": {
     "zPos": 125,
-    "male": "head/fins/fin_short/",
-    "muscular": "head/fins/fin_short/",
-    "female": "head/fins/fin_short/",
-    "pregnant": "head/fins/fin_short/",
-    "teen": "head/fins/fin_short/"
+    "male": "head/fins/fin_short/adult/",
+    "muscular": "head/fins/fin_short/adult/",
+    "female": "head/fins/fin_short/adult/",
+    "pregnant": "head/fins/fin_short/adult/",
+    "teen": "head/fins/fin_short/adult/"
   },
   "variants": [
     "light",
