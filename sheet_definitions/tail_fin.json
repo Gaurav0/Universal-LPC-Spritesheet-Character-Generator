@@ -3,21 +3,21 @@
   "type_name" : "tail",
   "layer_1" : {
     "zPos" : 85,
-    "male" : "body/tail/fin/adult_front/",
-    "muscular" : "body/tail/fin/adult_front/",
-    "female" : "body/tail/fin/adult_front/",
-    "pregnant" : "body/tail/fin/adult_front/",
-    "teen" : "body/tail/fin/adult_front/",
-    "child" : "body/tail/fin/child_front/"
+    "male" : "body/tail/fin/adult/fg/",
+    "muscular" : "body/tail/fin/adult/fg/",
+    "female" : "body/tail/fin/adult/fg/",
+    "pregnant" : "body/tail/fin/adult/fg/",
+    "teen" : "body/tail/fin/adult/fg/",
+    "child" : "body/tail/fin/child/fg/"
   },
   "layer_2" : {
     "zPos" : 5,
-    "male" : "body/tail/fin/adult_back/",
-    "muscular" : "body/tail/fin/adult_back/",
-    "female" : "body/tail/fin/adult_back/",
-    "pregnant" : "body/tail/fin/adult_back/",
-    "teen" : "body/tail/fin/adult_back/",
-    "child" : "body/tail/fin/child_back/"
+    "male" : "body/tail/fin/adult/bg/",
+    "muscular" : "body/tail/fin/adult/bg/",
+    "female" : "body/tail/fin/adult/bg/",
+    "pregnant" : "body/tail/fin/adult/bg/",
+    "teen" : "body/tail/fin/adult/bg/",
+    "child" : "body/tail/fin/child/bg/"
   },
   "variants": [
     "blonde",
@@ -46,5 +46,24 @@
     "purple",
     "pink",
     "rose"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
   ]
 }
