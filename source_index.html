@@ -10,7 +10,7 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.string/2.3.3/underscore.string.min.js"></script>
 	<script type="text/javascript" src="jhash-2.1.min.js"></script>
 	<script type="text/javascript" src="sources/custom-animations.js"></script>
-	<script type="text/javascript" src="sources/chargen.js"></script>
+	<script type="text/javascript" src="sources/chargen.js?"></script>
 </head>
 <body>
 	<form id="customizeChar">
@@ -46,10 +46,88 @@
 			<h3>Body</h3>
 			<ul>
 				<li>
+					<!-- Supported Animation -->
+					<span class="condensed" title="Only include assets that support the selected animation">Supported Animation</span>
+					<ul>
+						<li class="noPreview">
+							<input type="radio" id="animation-any" name="animation" checked>
+							<label for="animation-any">Any</label>
+						</li>
+						<li class="noPreview">
+							<input type="radio" id="animation-spellcast" name="animation">
+							<label for="animation-spellcast">Spellcast</label>
+						</li>
+						<li class="noPreview">
+							<input type="radio" id="animation-thrust" name="animation">
+							<label for="animation-thrust">Thrust</label>
+						</li>
+						<li class="noPreview">
+							<input type="radio" id="animation-walk" name="animation">
+							<label for="animation-walk">Walk</label>
+						</li>
+						<li class="noPreview">
+							<input type="radio" id="animation-slash" name="animation">
+							<label for="animation-slash">Slash</label>
+						</li>
+						<li class="noPreview">
+							<input type="radio" id="animation-shoot" name="animation">
+							<label for="animation-shoot">Shoot</label>
+						</li>
+						<li class="noPreview">
+							<input type="radio" id="animation-hurt" name="animation">
+							<label for="animation-hurt">Hurt</label>
+						</li>
+						<li class="noPreview">
+							<input type="radio" id="animation-watering" name="animation">
+							<label for="animation-watering">Watering</label>
+						</li>
+						<li class="noPreview">
+							<input type="radio" id="animation-idle" name="animation">
+							<label for="animation-idle">Idle</label>
+						</li>
+						<li class="noPreview">
+							<input type="radio" id="animation-jump" name="animation">
+							<label for="animation-jump">Jump</label>
+						</li>
+						<li class="noPreview">
+							<input type="radio" id="animation-run" name="animation">
+							<label for="animation-run">Run</label>
+						</li>
+						<li class="noPreview">
+							<input type="radio" id="animation-sit" name="animation">
+							<label for="animation-sit">Sit</label>
+						</li>
+						<li class="noPreview">
+							<input type="radio" id="animation-emote" name="animation">
+							<label for="animation-emote">Emote</label>
+						</li>
+						<li class="noPreview">
+							<input type="radio" id="animation-climb" name="animation">
+							<label for="animation-climb">Climb</label>
+						</li>
+						<li class="noPreview">
+							<input type="radio" id="animation-combat" name="animation">
+							<label for="animation-combat">Combat</label>
+						</li>
+						<li class="noPreview">
+							<input type="radio" id="animation-1h_slash" name="animation">
+							<label for="animation-1h_slash">1-Handed Slash</label>
+						</li>
+						<li class="noPreview">
+							<input type="radio" id="animation-1h_backslash" name="animation">
+							<label for="animation-1h_backslash">1-Handed Backslash</label>
+						</li>
+						<li class="noPreview">
+							<input type="radio" id="animation-1h_halfslash" name="animation">
+							<label for="animation-1h_halfslash">1-Handed HalfSlash</label>
+						</li>
+					</ul>
+				</li>
+				<li>
 					<!-- Body types -->
 					<span class="expanded">Body type</span>
 					<ul style="display:block;">
-						<li class="noPreview">
+						<li class="noPreview" data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering,idle,jump,run,sit,climb,combat,1h_slash,1h_backslash,1h_halfslash">
 							<input type="radio" id="sex-male" name="sex" checked>
 							<label for="sex-male">Male</label>
 						</li>
@@ -61,15 +139,15 @@
 							<input type="radio" id="sex-teen" name="sex">
 							<label for="sex-teen">Teen</label>
 						</li>
-						<li class="noPreview">
+						<li class="noPreview" data-animations="walk,slash,hurt,idle,jump,sit">
 							<input type="radio" id="sex-child" name="sex">
 							<label for="sex-child">Child</label>
 						</li>
-						<li class="noPreview">
+						<li class="noPreview" data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 							<input type="radio" id="sex-pregnant" name="sex">
 							<label for="sex-pregnant">Pregnant</label>
 						</li>
-						<li class="noPreview">
+						<li class="noPreview" data-animations="spellcast,thrust,walk,slash,hurt,watering,climb,idle,combat,jump,">
 							<input type="radio" id="sex-muscular" name="sex">
 							<label for="sex-muscular">Muscular</label>
 						</li>
@@ -81,7 +159,7 @@
 
 				<!-- Bodies -->
 				div_sheet_body
-				<li>
+				<li data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Special</span>
 					<ul>
 						div_sheet_body_zombie
@@ -90,7 +168,7 @@
 				</li>
 
 				<!-- Wounds -->
-				<li data-required="">
+				<li data-required="" data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Wounds</span>
 					<ul>
 						div_sheet_wound_arm
@@ -101,7 +179,7 @@
 					</ul>
 				</li>
 
-				<li data-required="male,female,muscular,pregnant">
+				<li data-required="male,female,muscular,pregnant" data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Prostheses</span>
 					<ul>
 						div_sheet_prosthesis_hook
@@ -109,7 +187,7 @@
 					</ul>
 				</li>
 
-				<li>
+				<li data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Tails</span>
 					<ul>
 						div_sheet_tail_wolf
@@ -118,7 +196,7 @@
 					</ul>
 				</li>
 
-				<li>
+				<li data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Wings</span>
 					<ul>
 						div_sheet_wings_feathered
@@ -149,7 +227,7 @@
 					</ul>
 				</li>
 
-				<li>
+				<li data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Lizard</span>
 					<ul>
 						div_sheet_wings_lizard
@@ -314,7 +392,7 @@
 				<li>
 					<span class="condensed">Hair</span>
 					<ul>
-						<li><span class="condensed">Extensions</span><ul>
+						<li data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering"><span class="condensed">Extensions</span><ul>
 							div_sheet_hairext_braidl
 							div_sheet_hairext_braidr
 							div_sheet_hairext_xlong_bangl
@@ -436,7 +514,7 @@
 				</li>
 
 				<!-- Head coverings (under hat) -->
-				<li>
+				<li data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Head coverings</span>
 					<ul>
 						div_sheet_head_bandana
@@ -450,7 +528,7 @@
 				</li>
 
 				<!-- Hats -->
-				<li>
+				<li data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Hats and Helmets</span>
 					<ul>
 
@@ -629,7 +707,7 @@
 				<!-- ARMS -->
 
 				<!-- Shoulders -->
-				<li data-required="male,female,pregnant,muscular">
+				<li data-required="male,female,pregnant,muscular" data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Shoulders</span>
 					<ul>
 						div_sheet_shoulders_legion
@@ -647,7 +725,7 @@
 				div_sheet_bauldron
 
 				<!-- Bracers -->
-				<li data-required="male,female,pregnant,muscular">
+				<li data-required="male,female,pregnant,muscular" data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Wrists</span>
 					<ul>
 						div_sheet_arms_bracers
@@ -665,7 +743,7 @@
 			<ul>
 
 				<!-- Dress -->
-				<li data-required="female,teen">
+				<li data-required="female,teen" data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Dresses</span>
 					<ul>
 						div_sheet_dress_sash
@@ -690,7 +768,7 @@
 				</li>
 
 				<!-- Torso clothes -->
-				<li data-required="male,female,pregnant,child,teen">
+				<li data-required="male,female,pregnant,child,teen" data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Shirts</span>
 					<ul>
 						div_sheet_torso_clothes_child_shirt
@@ -732,7 +810,7 @@
 				</li>
 
 				<!-- Apron -->
-				<li>
+				<li data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Aprons</span>
 					<ul>
 						div_sheet_torso_aprons_overalls
@@ -749,7 +827,7 @@
 				div_sheet_torso_chainmail
 
 				<!-- Jackets -->
-				<li data-required="male,female">
+				<li data-required="male,female" data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Jacket</span>
 					<ul>
 						div_sheet_torso_jacket_collared
@@ -772,7 +850,7 @@
 				</li>
 
 				<!-- Vest -->
-				<li data-required="male,female">
+				<li data-required="male,female" data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Vest</span>
 					<ul>
 						div_sheet_torso_clothes_vest
@@ -781,7 +859,7 @@
 				</li>
 
 				<!-- Armour -->
-				<li data-required="male,female,teen">
+				<li data-required="male,female,teen" data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Armour</span>
 					<ul>
 						div_sheet_torso_armour_plate
@@ -791,7 +869,7 @@
 				</li>
 
 				<!-- Cape -->
-				<li data-required="male,female,pregnant,muscular">
+				<li data-required="male,female,pregnant,muscular" data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Cape</span>
 					<ul>
 						div_sheet_cape_solid
@@ -801,7 +879,7 @@
 				</li>
 
 				<!-- Backpack -->
-				<li data-required="male,female,pregnant,muscular">
+				<li data-required="male,female,pregnant,muscular" data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Backpack</span>
 					<ul>
 						div_sheet_backpack_straps
@@ -822,7 +900,7 @@
 				</li>
 
 				<!-- Belt -->
-				<li data-required="male,muscular,female,teen">
+				<li data-required="male,muscular,female,teen" data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Waist</span>
 					<ul>
 						div_sheet_belt_leather
@@ -849,7 +927,7 @@
 				<!-- LEGS -->
 
 				<!-- Legs -->
-				<li>
+				<li data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Legs</span>
 					<ul>
 						div_sheet_legs_armour
@@ -872,7 +950,7 @@
 				<!-- FEET -->
 
 				<!-- Boots -->
-				<li data-required="male,female,muscular,pregnant,teen">
+				<li data-required="male,female,muscular,pregnant,teen" data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Boots</span>
 					<ul>
 						div_sheet_feet_boots
@@ -883,7 +961,7 @@
 				</li>
 
 				<!-- Socks -->
-				<li data-required="male,female,muscular,pregnant,teen">
+				<li data-required="male,female,muscular,pregnant,teen" data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Socks</span>
 					<ul>
 						div_sheet_feet_tabi
@@ -891,7 +969,7 @@
 				</li>
 
 				<!-- Shoes -->
-				<li data-required="male,female,muscular,pregnant,teen">
+				<li data-required="male,female,muscular,pregnant,teen" data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Shoes</span>
 					<ul>
 						div_sheet_feet_armour
@@ -920,7 +998,7 @@
 				<!-- WEAPONS -->
 
 				<!-- Shield -->
-				<li>
+				<li data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Shield</span>
 					<ul>
 						div_sheet_shield
@@ -984,7 +1062,7 @@
 
 				<!-- Weapons -->
 
-				<li>
+				<li data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Ranged</span>
 					<ul>
 						div_sheet_weapon_ranged_crossbow
@@ -1001,7 +1079,7 @@
 					</li>
 					</ul>
 				</li>
-				<li>
+				<li data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Sword</span>
 					<ul>
 						div_sheet_weapon_sword_dagger
@@ -1014,7 +1092,7 @@
 						div_sheet_weapon_sword_longsword_alt
 					</ul>
 				</li>
-				<li>
+				<li data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Blunt</span>
 					<ul>
 						div_sheet_weapon_blunt_flail
@@ -1023,7 +1101,7 @@
 						div_sheet_weapon_blunt_club
 					</ul>
 				</li>
-				<li>
+				<li data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Polearm</span>
 					<ul>
 						div_sheet_weapon_polearm_cane
@@ -1035,7 +1113,7 @@
 						div_sheet_weapon_polearm_trident
 					</ul>
 				</li>
-				<li>
+				<li data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Magic</span>
 					<ul>
 						div_sheet_weapon_magic_simple
@@ -1059,13 +1137,13 @@
 				<option value="slash" data-row="12" data-num="4" data-cycle="6">Slash</option>
 				<option value="shoot" data-row="16" data-num="4" data-cycle="13">Shoot</option>
 				<option value="hurt" data-row="20" data-num="1" data-cycle="6">Hurt</option>
+				<option value="watering" data-row="4" data-num="4" data-cycle="4" data-cycle-custom="0-1-4-4-4-4-5">Watering</option>
 				<option value="idle" data-row="22" data-num="4" data-cycle-custom="0-0-1">Idle</option>
 				<option value="jump" data-row="26" data-num="4" data-cycle-custom="0-1-2-3-4-1">Jump</option>
 				<option value="run" data-row="34" data-num="4" data-cycle="8">Run</option>
 				<option value="sit" data-row="30" data-num="4" data-cycle-custom="0-0-0-0-0-1-1-1-1-1-2-2-2-2-2">Sit</option>
 				<option value="emote" data-row="30" data-num="4" data-cycle-custom="3-3-3-3-3-4-4-4-4-4-5-5-5-5-5">Emote</option>
 				<option value="climb" data-row="21" data-num="1" data-cycle="6">Climb</option>
-				<option value="watering" data-row="4" data-num="4" data-cycle="4" data-cycle-custom="0-1-4-4-4-4-5">Watering</option>
 				<option value="combat" data-row="22" data-num="4" data-cycle-custom="2-2-3">Combat Idle</option>
 				<option value="1h_slash" data-row="38" data-num="4" data-cycle-custom="0-1-2-3-4-5-6">1-Handed Slash</option>
 				<option value="1h_backslash" data-row="38" data-num="4" data-cycle-custom="0-1-2-3-4-5-7-8-9-10-11-12">1-Handed Backslash</option>
