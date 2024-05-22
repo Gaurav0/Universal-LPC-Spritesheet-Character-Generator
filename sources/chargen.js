@@ -390,6 +390,13 @@ $(document).ready(function() {
     return "ERROR";
   }
 
+  function getSelectedAnimation() {
+    if ($("[name=animation]:checked").length > 0) {
+      return $("[name=animation]:checked").prop("id").replace("animation-", "");
+    }
+    return "any";
+  }
+
   function redraw() {
     itemsToDraw = [];
     const bodyTypeName = getBodyTypeName();
@@ -522,14 +529,31 @@ $(document).ready(function() {
   }
 
   function showOrHideElements() {
+    const bodyType = getBodyTypeName();
+    const selectedAnim = getSelectedAnimation();
     $("li").each(function(index) {
+      // Toggle Required Body Type
+      var display = true;
       if ($(this).data("required")) {
         var requiredTypes = $(this).data("required").split(",");
-        if (!requiredTypes.includes(getBodyTypeName())) {
-          $(this).prop("style", "display:none");
-        } else {
-          $(this).prop("style", "");
+        if (!requiredTypes.includes(bodyType)) {
+          display = false;
         }
+      }
+
+      // Toggle Required Animations
+      if ($(this).data("animations") && selectedAnim !== 'any') {
+        var requiredAnimations = $(this).data("animations").split(",");
+        if (!requiredAnimations.includes(selectedAnim)) {
+          display = false;
+        }
+      }
+
+      // Display Result
+      if(display) {
+        $(this).prop("style", "");
+      } else {
+        $(this).prop("style", "display:none");
       }
     });
   }

@@ -6,8 +6,10 @@ function generateListHTML(json) {
   const variants = definition.variants
   const name = definition.name
   const typeName = definition.type_name
+  const defaultAnimations = ['spellcast', 'thrust', 'walk', 'slash', 'shoot', 'hurt', 'watering'];
 
   var requiredSexes = [];
+  var animations = [];
   var previewRow = 10;
   var previewColumn = 0;
   var previewXOffset = 0;
@@ -24,6 +26,12 @@ function generateListHTML(json) {
   }
   if (definition.preview_y_offset !== undefined){
     previewYOffset = definition.preview_y_offset;
+  }
+
+  if (definition.animations !== undefined) {
+    animations = definition.animations
+  } else {
+    animations = defaultAnimations
   }
 
   if (definition.layer_1.male !== undefined) {
@@ -46,8 +54,9 @@ function generateListHTML(json) {
   }
 
   const requiredSex = requiredSexes.join(",");
+  const supportedAnimations = animations.join(",");
 
-  const startHTML = `<li data-required="[REQUIRED_SEX]"><span class="condensed">${name}</span><ul>`.replace("[REQUIRED_SEX]", requiredSex);
+  const startHTML = `<li data-required="[REQUIRED_SEX]" data-animations="[SUPPORTED_ANIMATIONS]"><span class="condensed">${name}</span><ul>`.replace("[REQUIRED_SEX]", requiredSex).replace("[SUPPORTED_ANIMATIONS]", supportedAnimations);
   const templateHTML = fs.readFileSync("scripts/template-general.html", 'utf8');
 
   const endHTML = '</ul></li>';
