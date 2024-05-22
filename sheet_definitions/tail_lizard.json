@@ -3,17 +3,21 @@
   "type_name" : "tail",
   "layer_1" : {
     "zPos" : 85,
-    "male" : "body/tail/lizard/fg/",
-    "muscular" : "body/tail/lizard/fg/",
-    "female" : "body/tail/lizard/fg/",
-    "pregnant" : "body/tail/lizard/fg/"
+    "male" : "body/tail/lizard/adult/fg/",
+    "muscular" : "body/tail/lizard/adult/fg/",
+    "female" : "body/tail/lizard/adult/fg/",
+    "pregnant" : "body/tail/lizard/adult/fg/",
+    "teen" : "body/tail/lizard/adult/fg/",
+    "child" : "body/tail/lizard/child/fg/"
   },
   "layer_2" : {
     "zPos" : 5,
-    "male" : "body/tail/lizard/bg/",
-    "muscular" : "body/tail/lizard/bg/",
-    "female" : "body/tail/lizard/bg/",
-    "pregnant" : "body/tail/lizard/bg/"
+    "male" : "body/tail/lizard/adult/bg/",
+    "muscular" : "body/tail/lizard/adult/bg/",
+    "female" : "body/tail/lizard/adult/bg/",
+    "pregnant" : "body/tail/lizard/adult/bg/",
+    "teen" : "body/tail/lizard/adult/bg/",
+    "child" : "body/tail/lizard/child/bg/"
   },
   "variants": [
     "light",
@@ -37,6 +41,25 @@
     "fur_gold",
     "fur_grey",
     "fur_white"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
   ],
   "match_body_color": true
 }

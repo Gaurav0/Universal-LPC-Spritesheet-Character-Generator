@@ -3,21 +3,21 @@
   "type_name" : "tail",
   "layer_1" : {
     "zPos" : 125,
-    "male" : "body/tail/fluffy/universal/adult_front/",
-    "muscular" : "body/tail/fluffy/universal/adult_front/",
-    "female" : "body/tail/fluffy/universal/adult_front/",
-    "pregnant" : "body/tail/fluffy/universal/adult_front/",
-    "teen" : "body/tail/fluffy/universal/adult_front/",
-    "child" : "body/tail/fluffy/universal/child_front/"
+    "male" : "body/tail/fluffy/adult/fg/",
+    "muscular" : "body/tail/fluffy/adult/fg/",
+    "female" : "body/tail/fluffy/adult/fg/",
+    "pregnant" : "body/tail/fluffy/adult/fg/",
+    "teen" : "body/tail/fluffy/adult/fg/",
+    "child" : "body/tail/fluffy/child/fg/"
   },
   "layer_2" : {
     "zPos" : 5,
-    "male" : "body/tail/fluffy/universal/adult_back/",
-    "muscular" : "body/tail/fluffy/universal/adult_back/",
-    "female" : "body/tail/fluffy/universal/adult_back/",
-    "pregnant" : "body/tail/fluffy/universal/adult_back/",
-    "teen" : "body/tail/fluffy/universal/adult_back/",
-    "child" : "body/tail/fluffy/universal/child_back/"
+    "male" : "body/tail/fluffy/adult/bg/",
+    "muscular" : "body/tail/fluffy/adult/bg/",
+    "female" : "body/tail/fluffy/adult/bg/",
+    "pregnant" : "body/tail/fluffy/adult/bg/",
+    "teen" : "body/tail/fluffy/adult/bg/",
+    "child" : "body/tail/fluffy/child/bg/"
   },
   "variants": [
     "blonde",
@@ -53,5 +53,24 @@
     "fur_gold",
     "fur_grey",
     "fur_white"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
   ]
 }
