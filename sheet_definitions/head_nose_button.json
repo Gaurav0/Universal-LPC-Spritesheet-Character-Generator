@@ -7,7 +7,8 @@
     "muscular" : "head/nose/button/adult/",
     "female" : "head/nose/button/adult/",
     "teen" : "head/nose/button/adult/",
-    "pregnant" : "head/nose/button/adult/"
+    "pregnant" : "head/nose/button/adult/",
+    "child" : "head/nose/button/child/"
   },
   "variants": [
     "light",

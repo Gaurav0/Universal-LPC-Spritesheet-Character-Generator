@@ -3,21 +3,21 @@
   "type_name" : "tail",
   "layer_1" : {
     "zPos" : 125,
-    "male" : "body/tail/cat/adult/fg",
-    "muscular" : "body/tail/cat/adult/fg",
-    "female" : "body/tail/cat/adult/fg",
-    "pregnant" : "body/tail/cat/adult/fg",
-    "teen" : "body/tail/cat/adult/fg",
-    "child" : "body/tail/cat/child/fg"
+    "male" : "body/tail/cat/adult/fg/",
+    "muscular" : "body/tail/cat/adult/fg/",
+    "female" : "body/tail/cat/adult/fg/",
+    "pregnant" : "body/tail/cat/adult/fg/",
+    "teen" : "body/tail/cat/adult/fg/",
+    "child" : "body/tail/cat/child/fg/"
   },
   "layer_2" : {
     "zPos" : 5,
-    "male" : "body/tail/cat/adult/bg",
-    "muscular" : "body/tail/cat/adult/bg",
-    "female" : "body/tail/cat/adult/bg",
-    "pregnant" : "body/tail/cat/adult/bg",
-    "teen" : "body/tail/cat/adult/bg",
-    "child" : "body/tail/cat/child/bg"
+    "male" : "body/tail/cat/adult/bg/",
+    "muscular" : "body/tail/cat/adult/bg/",
+    "female" : "body/tail/cat/adult/bg/",
+    "pregnant" : "body/tail/cat/adult/bg/",
+    "teen" : "body/tail/cat/adult/bg/",
+    "child" : "body/tail/cat/child/bg/"
   },
   "variants": [
     "blonde",

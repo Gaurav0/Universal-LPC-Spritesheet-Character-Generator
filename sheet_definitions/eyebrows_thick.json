@@ -7,7 +7,8 @@
     "muscular" : "eyes/eyebrows/thick/adult/",
     "female" : "eyes/eyebrows/thick/adult/",
     "teen" : "eyes/eyebrows/thick/adult/",
-    "pregnant" : "eyes/eyebrows/thick/adult/"
+    "pregnant" : "eyes/eyebrows/thick/adult/",
+    "child" : "eyes/eyebrows/thick/child/"
   },
   "variants": [
     "blonde",

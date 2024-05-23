@@ -7,7 +7,8 @@
     "muscular" : "eyes/cyclops/adult/",
     "female" : "eyes/cyclops/adult/",
     "teen" : "eyes/cyclops/adult/",
-    "pregnant" : "eyes/cyclops/adult/"
+    "pregnant" : "eyes/cyclops/adult/",
+    "child" : "eyes/cyclops/child/"
   },
   "variants": [
     "cyclops",
