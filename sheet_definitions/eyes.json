@@ -7,7 +7,8 @@
     "muscular" : "eyes/human/adult/",
     "female" : "eyes/human/adult/",
     "teen" : "eyes/human/adult/",
-    "pregnant" : "eyes/human/adult/"
+    "pregnant" : "eyes/human/adult/",
+    "child" : "eyes/human/child/"
   },
   "variants": [
     "blue",

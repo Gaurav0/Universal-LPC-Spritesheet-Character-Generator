@@ -7,7 +7,8 @@
     "muscular": "head/horns/backwards/adult/fg/",
     "female": "head/horns/backwards/adult/fg/",
     "pregnant": "head/horns/backwards/adult/fg/",
-    "teen": "head/horns/backwards/adult/fg/"
+    "teen": "head/horns/backwards/adult/fg/",
+    "child": "head/horns/backwards/child/fg/"
   },
   "layer_2": {
     "zPos": 7,
@@ -15,7 +16,8 @@
     "muscular": "head/horns/backwards/adult/bg/",
     "female": "head/horns/backwards/adult/bg/",
     "pregnant": "head/horns/backwards/adult/bg/",
-    "teen": "head/horns/backwards/adult/bg/"
+    "teen": "head/horns/backwards/adult/bg/",
+    "child": "head/horns/backwards/child/bg/"
   },
   "variants": [
     "horns",

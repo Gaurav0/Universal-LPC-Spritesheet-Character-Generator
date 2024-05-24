@@ -7,7 +7,8 @@
     "muscular": "facial/masks/plain/adult/",
     "female": "facial/masks/plain/adult/",
     "pregnant": "facial/masks/plain/adult/",
-    "teen": "facial/masks/plain/adult/"
+    "teen": "facial/masks/plain/adult/",
+    "child": "facial/masks/plain/child/"
   },
   "variants": [
     "dark",

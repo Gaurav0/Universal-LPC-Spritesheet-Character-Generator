@@ -7,7 +7,8 @@
     "muscular": "head/fins/fin/adult/",
     "female": "head/fins/fin/adult/",
     "pregnant": "head/fins/fin/adult/",
-    "teen": "head/fins/fin/adult/"
+    "teen": "head/fins/fin/adult/",
+    "child": "head/fins/fin/child/"
   },
   "variants": [
     "light",
