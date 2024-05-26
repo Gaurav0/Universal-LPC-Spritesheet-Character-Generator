@@ -13,3 +13,6 @@ Custom Palettes are for specific assets that may have one or more unique colors.
 - Path: spritesheets/facial/masks/plain
 - Combines cloth and metal palettes, along with custom "dark" and "light" palettes (possibly we could just stick with black/white from the cloth palettes but I wanted to keep the originals for legacy purposes)
 - Possibility: I considered adding a "wood" palette from one of the bows. I opted against this for now but I think it'd be a cool idea.
+
+#### 3. lpc-revised-to-ulpc-cloth-palettes.json
+- Converts the default white color from LPC Revised to ULPC cloth palettes.
