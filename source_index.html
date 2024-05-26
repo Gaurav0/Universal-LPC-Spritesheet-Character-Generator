@@ -127,7 +127,7 @@
 					<!-- Body types -->
 					<span class="expanded">Body type</span>
 					<ul style="display:block;">
-						<li class="noPreview" data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering,idle,jump,run,sit,climb,combat,1h_slash,1h_backslash,1h_halfslash">
+						<li class="noPreview">
 							<input type="radio" id="sex-male" name="sex" checked>
 							<label for="sex-male">Male</label>
 						</li>
@@ -143,11 +143,11 @@
 							<input type="radio" id="sex-child" name="sex">
 							<label for="sex-child">Child</label>
 						</li>
-						<li class="noPreview" data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
+						<li class="noPreview" data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering,climb,idle,combat,jump,run">
 							<input type="radio" id="sex-pregnant" name="sex">
 							<label for="sex-pregnant">Pregnant</label>
 						</li>
-						<li class="noPreview" data-animations="spellcast,thrust,walk,slash,hurt,watering,climb,idle,combat,jump,">
+						<li class="noPreview" data-animations="spellcast,thrust,walk,slash,hurt,watering,climb,idle,combat,jump">
 							<input type="radio" id="sex-muscular" name="sex">
 							<label for="sex-muscular">Muscular</label>
 						</li>
@@ -768,12 +768,12 @@
 				</li>
 
 				<!-- Torso clothes -->
-				<li data-required="male,female,pregnant,child,teen" data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
+				<li data-required="male,female,pregnant,child,teen">
 					<span class="condensed">Shirts</span>
 					<ul>
 						div_sheet_torso_clothes_child_shirt
 						<!-- Longsleeve Shirts -->
-						<li data-required="male,female,pregnant,teen">
+						<li data-required="male,female,pregnant,teen" data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 							<span class="condensed">Longsleeve</span>
 							<ul>
 								div_sheet_torso_clothes_longsleeve
@@ -788,6 +788,10 @@
 							<span class="condensed">Shortsleeve</span>
 							<ul>
 								div_sheet_torso_clothes_shortsleeve
+								div_sheet_torso_clothes_tshirt
+								div_sheet_torso_clothes_tshirt_vneck
+								div_sheet_torso_clothes_tshirt_scoop
+								div_sheet_torso_clothes_tshirt_buttoned
 							</ul>
 						</li>
 						<!-- Sleeveless Shirts -->
@@ -798,6 +802,10 @@
 								div_sheet_torso_clothes_sleeveless_laced
 								div_sheet_torso_clothes_sleeveless_striped
 								div_sheet_torso_clothes_sleeveless_tanktop
+								div_sheet_torso_clothes_sleeveless2
+								div_sheet_torso_clothes_sleeveless2_vneck
+								div_sheet_torso_clothes_sleeveless2_scoop
+								div_sheet_torso_clothes_sleeveless2_buttoned
 							</ul>
 						</li>
 						div_sheet_torso_clothes_corset
