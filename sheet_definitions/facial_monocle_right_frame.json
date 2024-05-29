@@ -7,7 +7,8 @@
     "muscular": "facial/monocle/right/frame/adult/",
     "female": "facial/monocle/right/frame/adult/",
     "pregnant": "facial/monocle/right/frame/adult/",
-    "teen": "facial/monocle/right/frame/adult/"
+    "teen": "facial/monocle/right/frame/adult/",
+    "child": "facial/monocle/right/frame/child/"
   },
   "variants": [
     "black",
