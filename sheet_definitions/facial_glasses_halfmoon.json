@@ -7,7 +7,8 @@
     "muscular": "facial/glasses/halfmoon/adult/",
     "female": "facial/glasses/halfmoon/adult/",
     "pregnant": "facial/glasses/halfmoon/adult/",
-    "teen": "facial/glasses/halfmoon/adult/"
+    "teen": "facial/glasses/halfmoon/adult/",
+    "child": "facial/glasses/halfmoon/child/"
   },
   "variants": [
     "black",

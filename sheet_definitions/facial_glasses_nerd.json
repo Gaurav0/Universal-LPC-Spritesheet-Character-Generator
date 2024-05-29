@@ -7,10 +7,10 @@
     "muscular": "facial/glasses/nerd/adult/",
     "female": "facial/glasses/nerd/adult/",
     "pregnant": "facial/glasses/nerd/adult/",
-    "teen": "facial/glasses/nerd/adult/"
+    "teen": "facial/glasses/nerd/adult/",
+    "child": "facial/glasses/nerd/child/"
   },
   "variants": [
-    "base",
     "black",
     "blue",
     "bluegray",
