@@ -7,7 +7,8 @@
     "muscular": "facial/patches/small/left/adult/",
     "female": "facial/patches/small/left/adult/",
     "pregnant": "facial/patches/small/left/adult/",
-    "teen": "facial/patches/small/left/adult/"
+    "teen": "facial/patches/small/left/adult/",
+    "child": "facial/patches/small/left/child/"
   },
   "variants": [
     "black",
