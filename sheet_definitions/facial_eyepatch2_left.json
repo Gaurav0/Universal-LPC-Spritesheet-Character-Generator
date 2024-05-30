@@ -7,7 +7,8 @@
     "muscular": "facial/patches/eyepatch2/left/adult/",
     "female": "facial/patches/eyepatch2/left/adult/",
     "pregnant": "facial/patches/eyepatch2/left/adult/",
-    "teen": "facial/patches/eyepatch2/left/adult/"
+    "teen": "facial/patches/eyepatch2/left/adult/",
+    "child": "facial/patches/eyepatch2/left/child/"
   },
   "variants": [
     "black",

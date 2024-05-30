@@ -7,7 +7,8 @@
     "muscular": "facial/earrings/simple/left/adult/",
     "female": "facial/earrings/simple/left/adult/",
     "pregnant": "facial/earrings/simple/left/adult/",
-    "teen": "facial/earrings/simple/left/adult/"
+    "teen": "facial/earrings/simple/left/adult/",
+    "child": "facial/earrings/simple/left/child/"
   },
   "variants": [
     "base",

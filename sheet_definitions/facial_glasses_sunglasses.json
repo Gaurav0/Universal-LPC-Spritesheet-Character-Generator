@@ -7,10 +7,12 @@
     "muscular": "facial/glasses/sunglasses/adult/",
     "female": "facial/glasses/sunglasses/adult/",
     "pregnant": "facial/glasses/sunglasses/adult/",
-    "teen": "facial/glasses/sunglasses/adult/"
+    "teen": "facial/glasses/sunglasses/adult/",
+    "child": "facial/glasses/sunglasses/child/"
   },
   "variants": [
     "base",
+    "sunglasses",
     "black",
     "blue",
     "bluegray",
