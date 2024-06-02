@@ -3,12 +3,12 @@
   "type_name": "hairtie",
   "layer_1": {
     "zPos": 125,
-    "female": "hat/hair_tie/universal/adult/",
-    "male": "hat/hair_tie/universal/adult/",
-    "muscular": "hat/hair_tie/universal/adult/",
-    "pregnant": "hat/hair_tie/universal/adult/",
-    "teen": "hat/hair_tie/universal/adult/",
-    "child": "hat/hair_tie/universal/child/"
+    "female": "hat/hair_tie/adult/",
+    "male": "hat/hair_tie/adult/",
+    "muscular": "hat/hair_tie/adult/",
+    "pregnant": "hat/hair_tie/adult/",
+    "teen": "hat/hair_tie/adult/",
+    "child": "hat/hair_tie/child/"
   },
   "variants": [
     "black",
