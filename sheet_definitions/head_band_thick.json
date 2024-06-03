@@ -1,14 +1,14 @@
 {
-  "name": "Thick headband",
+  "name": "Thick Headband",
   "type_name": "headcover",
   "layer_1": {
     "zPos": 125,
-    "female": "hat/head_band_thick/universal/adult/",
-    "male": "hat/head_band_thick/universal/adult/",
-    "muscular": "hat/head_band_thick/universal/adult/",
-    "pregnant": "hat/head_band_thick/universal/adult/",
-    "teen": "hat/head_band_thick/universal/adult/",
-    "child": "hat/head_band_thick/universal/child/"
+    "female": "hat/head_band_thick/adult/",
+    "male": "hat/head_band_thick/adult/",
+    "muscular": "hat/head_band_thick/adult/",
+    "pregnant": "hat/head_band_thick/adult/",
+    "teen": "hat/head_band_thick/adult/",
+    "child": "hat/head_band_thick/child/"
   },
   "variants": [
     "black",

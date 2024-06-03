@@ -1,0 +1,39 @@
+{
+  "name": "Thick Headband Rune",
+  "type_name": "headcover_rune",
+  "layer_1": {
+    "zPos": 126,
+    "female": "hat/head_band_thick/rune/adult/",
+    "male": "hat/head_band_thick/rune/adult/",
+    "muscular": "hat/head_band_thick/rune/adult/",
+    "pregnant": "hat/head_band_thick/rune/adult/",
+    "teen": "hat/head_band_thick/rune/adult/",
+    "child": "hat/head_band_thick/rune/child/"
+  },
+  "variants": [
+    "black",
+    "blue",
+    "bluegray",
+    "brown",
+    "charcoal",
+    "forest",
+    "gray",
+    "green",
+    "lavender",
+    "leather",
+    "maroon",
+    "navy",
+    "orange",
+    "pink",
+    "purple",
+    "red",
+    "rose",
+    "sky",
+    "slate",
+    "tan",
+    "teal",
+    "walnut",
+    "white",
+    "yellow"
+  ]
+}
