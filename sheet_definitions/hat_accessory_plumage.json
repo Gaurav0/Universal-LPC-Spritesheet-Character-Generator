@@ -3,11 +3,11 @@
   "type_name": "accessory",
   "layer_1": {
     "zPos": 139,
-    "female": "hat/accessory/plumage/male/",
-    "pregnant": "hat/accessory/plumage/male/",
-    "male": "hat/accessory/plumage/male/",
-    "muscular": "hat/accessory/plumage/male/",
-    "teen": "hat/accessory/plumage/male/"
+    "female": "hat/accessory/plumage/adult/",
+    "pregnant": "hat/accessory/plumage/adult/",
+    "male": "hat/accessory/plumage/adult/",
+    "muscular": "hat/accessory/plumage/adult/",
+    "teen": "hat/accessory/plumage/adult/"
   },
   "variants": [
     "black",
