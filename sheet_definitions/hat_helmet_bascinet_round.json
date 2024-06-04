@@ -3,11 +3,11 @@
   "type_name": "hat",
   "layer_1": {
     "zPos": 130,
-    "female": "hat/helmet/bascinet_round/male/",
-    "pregnant": "hat/helmet/bascinet_round/male/",
-    "male": "hat/helmet/bascinet_round/male/",
-    "muscular": "hat/helmet/bascinet_round/male/",
-    "teen": "hat/helmet/bascinet_round/male/"
+    "female": "hat/helmet/bascinet_round/adult/",
+    "pregnant": "hat/helmet/bascinet_round/adult/",
+    "male": "hat/helmet/bascinet_round/adult/",
+    "muscular": "hat/helmet/bascinet_round/adult/",
+    "teen": "hat/helmet/bascinet_round/adult/"
   },
   "variants": [
     "steel",

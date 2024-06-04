@@ -3,11 +3,11 @@
   "type_name": "hat",
   "layer_1": {
     "zPos": 135,
-    "female": "hat/helmet/morion/male/",
-    "pregnant": "hat/helmet/morion/male/",
-    "male": "hat/helmet/morion/male/",
-    "muscular": "hat/helmet/morion/male/",
-    "teen": "hat/helmet/morion/male/"
+    "female": "hat/helmet/morion/adult/",
+    "pregnant": "hat/helmet/morion/adult/",
+    "male": "hat/helmet/morion/adult/",
+    "muscular": "hat/helmet/morion/adult/",
+    "teen": "hat/helmet/morion/adult/"
   },
   "variants": [
     "steel",

@@ -3,11 +3,11 @@
   "type_name": "hat",
   "layer_1": {
     "zPos": 135,
-    "female": "hat/helmet/kettle/male/",
-    "pregnant": "hat/helmet/kettle/male/",
-    "male": "hat/helmet/kettle/male/",
-    "muscular": "hat/helmet/kettle/male/",
-    "teen": "hat/helmet/kettle/male/"
+    "female": "hat/helmet/kettle/adult/",
+    "pregnant": "hat/helmet/kettle/adult/",
+    "male": "hat/helmet/kettle/adult/",
+    "muscular": "hat/helmet/kettle/adult/",
+    "teen": "hat/helmet/kettle/adult/"
   },
   "variants": [
     "steel"
