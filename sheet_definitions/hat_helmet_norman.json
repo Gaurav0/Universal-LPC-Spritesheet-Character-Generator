@@ -3,11 +3,11 @@
   "type_name": "hat",
   "layer_1": {
     "zPos": 135,
-    "female": "hat/helmet/norman/male/",
-    "pregnant": "hat/helmet/norman/male/",
-    "male": "hat/helmet/norman/male/",
-    "muscular": "hat/helmet/norman/male/",
-    "teen": "hat/helmet/norman/male/"
+    "female": "hat/helmet/norman/adult/",
+    "pregnant": "hat/helmet/norman/adult/",
+    "male": "hat/helmet/norman/adult/",
+    "muscular": "hat/helmet/norman/adult/",
+    "teen": "hat/helmet/norman/adult/"
   },
   "variants": [
     "steel",
@@ -18,5 +18,24 @@
     "bronze",
     "silver",
     "gold"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h/bgslash",
+    "1h_halfslash"
   ]
 }

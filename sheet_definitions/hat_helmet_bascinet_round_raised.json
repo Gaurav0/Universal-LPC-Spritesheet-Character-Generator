@@ -3,10 +3,11 @@
   "type_name": "hat",
   "layer_1": {
     "zPos": 130,
-    "female": "hat/helmet/bascinet_round_raised/female/",
-    "pregnant": "hat/helmet/bascinet_round_raised/female/",
-    "male": "hat/helmet/bascinet_round_raised/male/",
-    "muscular": "hat/helmet/bascinet_round_raised/male/"
+    "female": "hat/helmet/bascinet_round_raised/adult/",
+    "pregnant": "hat/helmet/bascinet_round_raised/adult/",
+    "male": "hat/helmet/bascinet_round_raised/adult/",
+    "muscular": "hat/helmet/bascinet_round_raised/adult/",
+    "teen": "hat/helmet/bascinet_round_raised/adult/"
   },
   "variants": [
     "steel",
@@ -17,5 +18,24 @@
     "bronze",
     "silver",
     "gold"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h/bgslash",
+    "1h_halfslash"
   ]
 }
