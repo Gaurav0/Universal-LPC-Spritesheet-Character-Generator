@@ -3,11 +3,11 @@
   "type_name": "hat",
   "layer_1": {
     "zPos": 130,
-    "female": "hat/helmet/barbuta_simple/male/",
-    "pregnant": "hat/helmet/barbuta_simple/male/",
-    "male": "hat/helmet/barbuta_simple/male/",
-    "muscular": "hat/helmet/barbuta_simple/male/",
-    "teen": "hat/helmet/barbuta_simple/male/"
+    "female": "hat/helmet/barbuta_simple/adult/",
+    "pregnant": "hat/helmet/barbuta_simple/adult/",
+    "male": "hat/helmet/barbuta_simple/adult/",
+    "muscular": "hat/helmet/barbuta_simple/adult/",
+    "teen": "hat/helmet/barbuta_simple/adult/"
   },
   "variants": [
     "steel",
@@ -18,5 +18,24 @@
     "bronze",
     "silver",
     "gold"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h/bgslash",
+    "1h_halfslash"
   ]
 }

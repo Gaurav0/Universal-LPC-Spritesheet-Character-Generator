@@ -3,11 +3,11 @@
   "type_name": "hat",
   "layer_1": {
     "zPos": 130,
-    "female": "hat/helmet/barbarian/male/",
-    "pregnant": "hat/helmet/barbarian/male/",
-    "male": "hat/helmet/barbarian/male/",
-    "muscular": "hat/helmet/barbarian/male/",
-    "teen": "hat/helmet/barbarian/male/"
+    "female": "hat/helmet/barbarian/adult/",
+    "pregnant": "hat/helmet/barbarian/adult/",
+    "male": "hat/helmet/barbarian/adult/",
+    "muscular": "hat/helmet/barbarian/adult/",
+    "teen": "hat/helmet/barbarian/adult/"
   },
   "variants": [
     "steel",
@@ -18,5 +18,24 @@
     "bronze",
     "silver",
     "gold"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h/bgslash",
+    "1h_halfslash"
   ]
 }

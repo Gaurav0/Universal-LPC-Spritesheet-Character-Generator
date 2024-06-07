@@ -3,11 +3,11 @@
   "type_name": "hat",
   "layer_1": {
     "zPos": 130,
-    "female": "hat/helmet/nasal/male/",
-    "pregnant": "hat/helmet/nasal/male/",
-    "male": "hat/helmet/nasal/male/",
-    "muscular": "hat/helmet/nasal/male/",
-    "teen": "hat/helmet/nasal/male/"
+    "female": "hat/helmet/nasal/adult/",
+    "pregnant": "hat/helmet/nasal/adult/",
+    "male": "hat/helmet/nasal/adult/",
+    "muscular": "hat/helmet/nasal/adult/",
+    "teen": "hat/helmet/nasal/adult/"
   },
   "variants": [
     "steel",
@@ -18,5 +18,24 @@
     "bronze",
     "silver",
     "gold"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h/bgslash",
+    "1h_halfslash"
   ]
 }
