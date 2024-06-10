@@ -3,11 +3,11 @@
   "type_name": "hat",
   "layer_1": {
     "zPos": 130,
-    "female": "hat/helmet/armet_simple/male/",
-    "pregnant": "hat/helmet/armet_simple/male/",
-    "male": "hat/helmet/armet_simple/male/",
-    "muscular": "hat/helmet/armet_simple/male/",
-    "teen": "hat/helmet/armet_simple/male/"
+    "female": "hat/helmet/armet_simple/adult/",
+    "pregnant": "hat/helmet/armet_simple/adult/",
+    "male": "hat/helmet/armet_simple/adult/",
+    "muscular": "hat/helmet/armet_simple/adult/",
+    "teen": "hat/helmet/armet_simple/adult/"
   },
   "variants": [
     "steel",
@@ -18,5 +18,24 @@
     "bronze",
     "silver",
     "gold"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
   ]
 }

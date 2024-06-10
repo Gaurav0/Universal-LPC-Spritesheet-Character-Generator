@@ -3,11 +3,11 @@
   "type_name": "hat",
   "layer_1": {
     "zPos": 130,
-    "female": "hat/helmet/xeon/male/",
-    "pregnant": "hat/helmet/xeon/male/",
-    "male": "hat/helmet/xeon/male/",
-    "muscular": "hat/helmet/xeon/male/",
-    "teen": "hat/helmet/xeon/male/"
+    "female": "hat/helmet/xeon/adult/",
+    "pregnant": "hat/helmet/xeon/adult/",
+    "male": "hat/helmet/xeon/adult/",
+    "muscular": "hat/helmet/xeon/adult/",
+    "teen": "hat/helmet/xeon/adult/"
   },
   "variants": [
     "steel",
@@ -18,5 +18,24 @@
     "bronze",
     "silver",
     "gold"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
   ]
 }

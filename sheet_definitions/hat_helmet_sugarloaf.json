@@ -3,11 +3,11 @@
   "type_name": "hat",
   "layer_1": {
     "zPos": 130,
-    "female": "hat/helmet/sugarloaf/male/",
-    "pregnant": "hat/helmet/sugarloaf/male/",
+    "female": "hat/helmet/sugarloaf/female/",
+    "pregnant": "hat/helmet/sugarloaf/female/",
     "male": "hat/helmet/sugarloaf/male/",
     "muscular": "hat/helmet/sugarloaf/male/",
-    "teen": "hat/helmet/sugarloaf/male/"
+    "teen": "hat/helmet/sugarloaf/female/"
   },
   "variants": [
     "steel",
@@ -18,5 +18,24 @@
     "bronze",
     "silver",
     "gold"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
   ]
 }
