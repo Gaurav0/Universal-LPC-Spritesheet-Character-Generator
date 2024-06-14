@@ -3,17 +3,17 @@
   "type_name" : "accessory",
   "layer_1" : {
     "zPos" : 139,
-    "female"   : "hat/accessory/wings/fg/male/",
-    "pregnant" : "hat/accessory/wings/fg/male/",
-    "male"     : "hat/accessory/wings/fg/male/",
-    "muscular" : "hat/accessory/wings/fg/male/"
+    "female"   : "hat/accessory/wings/fg/adult/",
+    "pregnant" : "hat/accessory/wings/fg/adult/",
+    "male"     : "hat/accessory/wings/fg/adult/",
+    "muscular" : "hat/accessory/wings/fg/adult/"
   },
   "layer_2" : {
     "zPos" : 125,
-    "female"   : "hat/accessory/wings/bg/male/",
-    "pregnant" : "hat/accessory/wings/bg/male/",
-    "male"     : "hat/accessory/wings/bg/male/",
-    "muscular" : "hat/accessory/wings/bg/male/"
+    "female"   : "hat/accessory/wings/bg/adult/",
+    "pregnant" : "hat/accessory/wings/bg/adult/",
+    "male"     : "hat/accessory/wings/bg/adult/",
+    "muscular" : "hat/accessory/wings/bg/adult/"
   },
   "variants": [
     "steel",
@@ -23,6 +23,49 @@
     "copper",
     "bronze",
     "silver",
-    "gold"
+    "gold",
+    "black",
+    "blue",
+    "bluegray",
+    "brown",
+    "charcoal",
+    "forest",
+    "gray",
+    "green",
+    "lavender",
+    "leather",
+    "maroon",
+    "navy",
+    "orange",
+    "pink",
+    "purple",
+    "red",
+    "rose",
+    "sky",
+    "slate",
+    "tan",
+    "teal",
+    "walnut",
+    "white",
+    "yellow"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
   ]
 }

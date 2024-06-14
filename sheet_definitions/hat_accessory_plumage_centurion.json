@@ -3,11 +3,11 @@
   "type_name": "accessory",
   "layer_1": {
     "zPos": 139,
-    "female": "hat/accessory/plumage_centurion/male/",
-    "pregnant": "hat/accessory/plumage_centurion/male/",
-    "male": "hat/accessory/plumage_centurion/male/",
-    "muscular": "hat/accessory/plumage_centurion/male/",
-    "teen": "hat/accessory/plumage_centurion/male/"
+    "female": "hat/accessory/plumage_centurion/adult/",
+    "pregnant": "hat/accessory/plumage_centurion/adult/",
+    "male": "hat/accessory/plumage_centurion/adult/",
+    "muscular": "hat/accessory/plumage_centurion/adult/",
+    "teen": "hat/accessory/plumage_centurion/adult/"
   },
   "variants": [
     "black",
@@ -34,5 +34,24 @@
     "walnut",
     "white",
     "yellow"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
   ]
 }

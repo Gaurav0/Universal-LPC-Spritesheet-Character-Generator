@@ -3,11 +3,11 @@
   "type_name": "accessory",
   "layer_1": {
     "zPos": 139,
-    "female": "hat/accessory/crest_centurion/male/",
-    "pregnant": "hat/accessory/crest_centurion/male/",
-    "male": "hat/accessory/crest_centurion/male/",
-    "muscular": "hat/accessory/crest_centurion/male/",
-    "teen": "hat/accessory/crest_centurion/male/"
+    "female": "hat/accessory/crest_centurion/adult/",
+    "pregnant": "hat/accessory/crest_centurion/adult/",
+    "male": "hat/accessory/crest_centurion/adult/",
+    "muscular": "hat/accessory/crest_centurion/adult/",
+    "teen": "hat/accessory/crest_centurion/adult/"
   },
   "variants": [
     "steel",
@@ -18,5 +18,24 @@
     "bronze",
     "silver",
     "gold"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
   ]
 }
