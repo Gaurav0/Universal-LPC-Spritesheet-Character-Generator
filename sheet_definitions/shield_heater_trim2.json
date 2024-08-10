@@ -1,5 +1,5 @@
 {
-  "name": "Heater Shield (Legacy Format) Trim",
+  "name": "Heater Shield (Adjusted / Expanded) Trim",
   "type_name": "shield_trim",
   "layer_1": {
     "zPos": 115,
@@ -17,5 +17,24 @@
     "iron",
     "silver",
     "steel"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
   ]
 }

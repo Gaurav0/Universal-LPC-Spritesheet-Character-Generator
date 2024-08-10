@@ -43,9 +43,31 @@ For example, you have created at this point:
 `body_robot.json`
 
 A category can exist of n-layers. For each layer, define the z-position the sheet needs to be drawn at.
-For an example of a multi-layered definition, refer here [here](https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/sheet_definitions/body_wolfman.json).
+For an example of a multi-layered definition, refer here [here](https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/sheet_definitions/tail_lizard.json).
 
-Finally, in `source_index.html`, add your new category at the desired position by adding a `div_sheet_` like this:
+You can optionally also specify the available animations the asset supports. You do not have to feel obligated to fill out all animations, and some assets may not work well on all animations anyway. In the sheet definition, you can add the "animations" array below "variants". Again, refer here [here](https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/sheet_definitions/tail_lizard.json):
+```
+  "animations": [
+    "spellcast",
+    "thrust",
+    ...etc
+  ]
+```
+
+If you add this animations list, users can filter the results based on the animations supported. If this list is not included in your sheet definition, then it is assumed the default list of animations are all supported:
+```
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+```
+
+As such, if you wish to include less than this list, such as only walk and slash, you should still include the animations definition to restrict it to just those assets. Users will still be able to access your asset, but it won't appear if the animations filter is used and you did not include that animation in your sheet definition.
+
+Finally, to get your sheet to appear, in `source_index.html`, add your new category at the desired position by adding a `div_sheet_` like this:
 
 `div_sheet_body_robot`
 

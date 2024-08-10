@@ -1,12 +1,13 @@
 {
-  "name": "Heater shield wood",
+  "name": "Heater Shield (Legacy Format) Base",
   "type_name": "shield",
   "layer_1": {
     "zPos": 110,
     "male": "shield/heater/wood/universal/",
     "muscular": "shield/heater/wood/universal/",
     "female": "shield/heater/wood/universal/",
-    "pregnant": "shield/heater/wood/universal/"
+    "pregnant": "shield/heater/wood/universal/",
+    "teen": "shield/heater/wood/universal/"
   },
   "variants": [
     "brown",

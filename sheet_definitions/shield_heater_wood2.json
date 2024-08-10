@@ -1,0 +1,38 @@
+{
+  "name": "Heater Shield (Adjusted / Expanded) Base",
+  "type_name": "shield",
+  "layer_1": {
+    "zPos": 110,
+    "male": "shield/heater/wood2/universal/",
+    "muscular": "shield/heater/wood2/universal/",
+    "female": "shield/heater/wood2/universal/",
+    "pregnant": "shield/heater/wood2/universal/",
+    "teen": "shield/heater/wood2/universal/"
+  },
+  "variants": [
+    "brown",
+    "coffee",
+    "oak",
+    "tan",
+    "umber"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
+  ]
+}
