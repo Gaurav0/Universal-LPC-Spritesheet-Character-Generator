@@ -2,12 +2,20 @@
   "name": "Heater Shield (Adjusted / Expanded) Paint",
   "type_name": "shield_paint",
   "layer_1": {
+    "zPos": 3,
+    "male": "shield/heater/paint/bg/",
+    "muscular": "shield/heater/paint/bg/",
+    "female": "shield/heater/paint/bg/",
+    "pregnant": "shield/heater/paint/bg/",
+    "teen": "shield/heater/paint/bg/"
+  },
+  "layer_2": {
     "zPos": 111,
-    "male": "shield/heater/paint2/universal/",
-    "muscular": "shield/heater/paint2/universal/",
-    "female": "shield/heater/paint2/universal/",
-    "pregnant": "shield/heater/paint2/universal/",
-    "teen": "shield/heater/paint2/universal/"
+    "male": "shield/heater/paint/fg/",
+    "muscular": "shield/heater/paint/fg/",
+    "female": "shield/heater/paint/fg/",
+    "pregnant": "shield/heater/paint/fg/",
+    "teen": "shield/heater/paint/fg/"
   },
   "variants": [
     "aegean",

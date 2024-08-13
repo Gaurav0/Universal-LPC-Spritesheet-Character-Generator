@@ -2,12 +2,20 @@
   "name": "Heater Shield (Adjusted / Expanded) Base",
   "type_name": "shield",
   "layer_1": {
+    "zPos": 2,
+    "male": "shield/heater/wood/bg/",
+    "muscular": "shield/heater/wood/bg/",
+    "female": "shield/heater/wood/bg/",
+    "pregnant": "shield/heater/wood/bg/",
+    "teen": "shield/heater/wood/bg/"
+  },
+  "layer_2": {
     "zPos": 110,
-    "male": "shield/heater/wood2/universal/",
-    "muscular": "shield/heater/wood2/universal/",
-    "female": "shield/heater/wood2/universal/",
-    "pregnant": "shield/heater/wood2/universal/",
-    "teen": "shield/heater/wood2/universal/"
+    "male": "shield/heater/wood/fg/",
+    "muscular": "shield/heater/wood/fg/",
+    "female": "shield/heater/wood/fg/",
+    "pregnant": "shield/heater/wood/fg/",
+    "teen": "shield/heater/wood/fg/"
   },
   "variants": [
     "brown",
