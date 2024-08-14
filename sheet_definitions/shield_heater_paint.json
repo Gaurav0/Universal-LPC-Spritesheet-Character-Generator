@@ -1,12 +1,13 @@
 {
-  "name": "Heater shield paint",
+  "name": "Heater Shield (Legacy Format) Paint",
   "type_name": "shield_paint",
   "layer_1": {
     "zPos": 111,
     "male": "shield/heater/paint/universal/",
     "muscular": "shield/heater/paint/universal/",
     "female": "shield/heater/paint/universal/",
-    "pregnant": "shield/heater/paint/universal/"
+    "pregnant": "shield/heater/paint/universal/",
+    "teen": "shield/heater/paint/universal/"
   },
   "variants": [
     "aegean",
