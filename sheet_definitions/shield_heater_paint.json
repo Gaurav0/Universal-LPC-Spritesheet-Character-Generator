@@ -1,13 +1,21 @@
 {
-  "name": "Heater Shield (Legacy Format) Paint",
+  "name": "Heater Shield Paint",
   "type_name": "shield_paint",
   "layer_1": {
+    "zPos": 3,
+    "male": "shield/heater/original/paint/bg/",
+    "muscular": "shield/heater/original/paint/bg/",
+    "female": "shield/heater/original/paint/bg/",
+    "pregnant": "shield/heater/original/paint/bg/",
+    "teen": "shield/heater/original/paint/bg/"
+  },
+  "layer_2": {
     "zPos": 111,
-    "male": "shield/heater/paint/universal/",
-    "muscular": "shield/heater/paint/universal/",
-    "female": "shield/heater/paint/universal/",
-    "pregnant": "shield/heater/paint/universal/",
-    "teen": "shield/heater/paint/universal/"
+    "male": "shield/heater/original/paint/fg/",
+    "muscular": "shield/heater/original/paint/fg/",
+    "female": "shield/heater/original/paint/fg/",
+    "pregnant": "shield/heater/original/paint/fg/",
+    "teen": "shield/heater/original/paint/fg/"
   },
   "variants": [
     "aegean",
@@ -85,5 +93,24 @@
     "white",
     "wine",
     "yellow"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
   ]
 }

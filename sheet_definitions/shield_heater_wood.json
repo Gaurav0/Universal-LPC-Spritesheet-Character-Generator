@@ -1,13 +1,21 @@
 {
-  "name": "Heater Shield (Legacy Format) Base",
+  "name": "Heater Shield Base",
   "type_name": "shield",
   "layer_1": {
+    "zPos": 2,
+    "male": "shield/heater/original/wood/bg/",
+    "muscular": "shield/heater/original/wood/bg/",
+    "female": "shield/heater/original/wood/bg/",
+    "pregnant": "shield/heater/original/wood/bg/",
+    "teen": "shield/heater/original/wood/bg/"
+  },
+  "layer_2": {
     "zPos": 110,
-    "male": "shield/heater/wood/universal/",
-    "muscular": "shield/heater/wood/universal/",
-    "female": "shield/heater/wood/universal/",
-    "pregnant": "shield/heater/wood/universal/",
-    "teen": "shield/heater/wood/universal/"
+    "male": "shield/heater/original/wood/fg/",
+    "muscular": "shield/heater/original/wood/fg/",
+    "female": "shield/heater/original/wood/fg/",
+    "pregnant": "shield/heater/original/wood/fg/",
+    "teen": "shield/heater/original/wood/fg/"
   },
   "variants": [
     "brown",
@@ -15,5 +23,24 @@
     "oak",
     "tan",
     "umber"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
   ]
 }

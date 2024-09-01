@@ -1,0 +1,48 @@
+{
+  "name": "Revised Heater Shield Trim",
+  "type_name": "shield_trim",
+  "layer_1": {
+    "zPos": 6,
+    "male": "shield/heater/revised/trim/bg/",
+    "muscular": "shield/heater/revised/trim/bg/",
+    "female": "shield/heater/revised/trim/bg/",
+    "pregnant": "shield/heater/revised/trim/bg/",
+    "teen": "shield/heater/revised/trim/bg/"
+  },
+  "layer_2": {
+    "zPos": 115,
+    "male": "shield/heater/revised/trim/fg/",
+    "muscular": "shield/heater/revised/trim/fg/",
+    "female": "shield/heater/revised/trim/fg/",
+    "pregnant": "shield/heater/revised/trim/fg/",
+    "teen": "shield/heater/revised/trim/fg/"
+  },
+  "variants": [
+    "brass",
+    "bronze",
+    "copper",
+    "gold",
+    "iron",
+    "silver",
+    "steel"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
+  ]
+}
