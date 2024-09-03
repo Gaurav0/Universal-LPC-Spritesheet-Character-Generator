@@ -1,0 +1,65 @@
+
+{
+  "name": "revised_chevron_inverted",
+  "type_name": "shield_pattern",
+  "layer_1": {
+    "zPos": 4,
+    "male": "shield/heater/revised/pattern/chevron_inverted/bg/",
+    "muscular": "shield/heater/revised/pattern/chevron_inverted/bg/",
+    "female": "shield/heater/revised/pattern/chevron_inverted/bg/",
+    "pregnant": "shield/heater/revised/pattern/chevron_inverted/bg/"
+  },
+  "layer_2": {
+    "zPos": 112,
+    "male": "shield/heater/revised/pattern/chevron_inverted/fg/",
+    "muscular": "shield/heater/revised/pattern/chevron_inverted/fg/",
+    "female": "shield/heater/revised/pattern/chevron_inverted/fg/",
+    "pregnant": "shield/heater/revised/pattern/chevron_inverted/fg/",
+    "teen": "shield/heater/revised/pattern/chevron_inverted/fg/"
+  },
+  "variants": [
+    "black" ,
+    "blue" ,
+    "bluegray" ,
+    "brown" ,
+    "charcoal" ,
+    "forest" ,
+    "gray" ,
+    "green" ,
+    "lavender" ,
+    "leather" ,
+    "maroon" ,
+    "navy" ,
+    "orange" ,
+    "pink" ,
+    "purple" ,
+    "red" ,
+    "rose" ,
+    "sky" ,
+    "slate" ,
+    "tan" ,
+    "teal" ,
+    "walnut" ,
+    "white" ,
+    "yellow"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
+  ]
+}

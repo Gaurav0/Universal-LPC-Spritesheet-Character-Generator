@@ -1,13 +1,21 @@
 {
-  "name": "Heater Shield (Legacy Format) Trim",
+  "name": "Heater Shield Trim",
   "type_name": "shield_trim",
+  "layer_2": {
+    "zPos": 6,
+    "male": "shield/heater/original/trim/bg/",
+    "muscular": "shield/heater/original/trim/bg/",
+    "female": "shield/heater/original/trim/bg/",
+    "pregnant": "shield/heater/original/trim/bg/",
+    "teen": "shield/heater/original/trim/bg/"
+  },
   "layer_1": {
     "zPos": 115,
-    "male": "shield/heater/trim/universal/",
-    "muscular": "shield/heater/trim/universal/",
-    "female": "shield/heater/trim/universal/",
-    "pregnant": "shield/heater/trim/universal/",
-    "teen": "shield/heater/trim/universal/"
+    "male": "shield/heater/original/trim/fg/",
+    "muscular": "shield/heater/original/trim/fg/",
+    "female": "shield/heater/original/trim/fg/",
+    "pregnant": "shield/heater/original/trim/fg/",
+    "teen": "shield/heater/original/trim/fg/"
   },
   "variants": [
     "brass",
@@ -17,5 +25,24 @@
     "iron",
     "silver",
     "steel"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
   ]
 }

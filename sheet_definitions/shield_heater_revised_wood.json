@@ -1,0 +1,46 @@
+{
+  "name": "Revised Heater Shield Base",
+  "type_name": "shield",
+  "layer_1": {
+    "zPos": 2,
+    "male": "shield/heater/revised/wood/bg/",
+    "muscular": "shield/heater/revised/wood/bg/",
+    "female": "shield/heater/revised/wood/bg/",
+    "pregnant": "shield/heater/revised/wood/bg/",
+    "teen": "shield/heater/revised/wood/bg/"
+  },
+  "layer_2": {
+    "zPos": 110,
+    "male": "shield/heater/revised/wood/fg/",
+    "muscular": "shield/heater/revised/wood/fg/",
+    "female": "shield/heater/revised/wood/fg/",
+    "pregnant": "shield/heater/revised/wood/fg/",
+    "teen": "shield/heater/revised/wood/fg/"
+  },
+  "variants": [
+    "brown",
+    "coffee",
+    "oak",
+    "tan",
+    "umber"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
+  ]
+}
