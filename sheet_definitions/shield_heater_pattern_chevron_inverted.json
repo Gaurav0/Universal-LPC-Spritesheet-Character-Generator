@@ -7,7 +7,8 @@
     "male": "shield/heater/original/pattern/chevron_inverted/bg/",
     "muscular": "shield/heater/original/pattern/chevron_inverted/bg/",
     "female": "shield/heater/original/pattern/chevron_inverted/bg/",
-    "pregnant": "shield/heater/original/pattern/chevron_inverted/bg/"
+    "pregnant": "shield/heater/original/pattern/chevron_inverted/bg/",
+    "teen": "shield/heater/original/pattern/chevron_inverted/bg/"
   },
   "layer_2": {
     "zPos": 112,
