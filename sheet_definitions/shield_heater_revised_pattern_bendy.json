@@ -1,0 +1,66 @@
+
+{
+  "name": "revised_bendy",
+  "type_name": "shield_pattern",
+  "layer_1": {
+    "zPos": 4,
+    "male": "shield/heater/revised/pattern/bendy/bg/",
+    "muscular": "shield/heater/revised/pattern/bendy/bg/",
+    "female": "shield/heater/revised/pattern/bendy/bg/",
+    "pregnant": "shield/heater/revised/pattern/bendy/bg/",
+    "teen": "shield/heater/revised/pattern/bendy/bg/"
+  },
+  "layer_2": {
+    "zPos": 112,
+    "male": "shield/heater/revised/pattern/bendy/fg/",
+    "muscular": "shield/heater/revised/pattern/bendy/fg/",
+    "female": "shield/heater/revised/pattern/bendy/fg/",
+    "pregnant": "shield/heater/revised/pattern/bendy/fg/",
+    "teen": "shield/heater/revised/pattern/bendy/fg/"
+  },
+  "variants": [
+    "black",
+    "blue",
+    "bluegray",
+    "brown",
+    "charcoal",
+    "forest",
+    "gray",
+    "green",
+    "lavender",
+    "leather",
+    "maroon",
+    "navy",
+    "orange",
+    "pink",
+    "purple",
+    "red",
+    "rose",
+    "sky",
+    "slate",
+    "tan",
+    "teal",
+    "walnut",
+    "white",
+    "yellow"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
+  ]
+}
