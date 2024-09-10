@@ -8028,40 +8028,25 @@ shield/female/round_silver.png,?,"Johannes Sjölund (wulax), Michael Whitlock (b
 shield/female/round_yellow.png,?,"Johannes Sjölund (wulax), Michael Whitlock (bigbeargames), DarkwallLKE, Tuomo Untinen (reemax)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-shields-pack,,,,,,,,,,,,,,OK
 shield/female/spartan.png,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
 shield/heater,,,,,,,,,,,,,,,,,,,
-shield/heater/paint,original by ElizaWy; extended to all animation frames and v3 character base by bluecarrot16,"bluecarrot16, ElizaWy",OGA-BY 3.0,https://github.com/ElizaWy/LPC/tree/main/Characters/Props/Shield%2001%20-%20Heater%20Shield,,,,,,,,,,,,,,,
-shield/heater/paint2,original by ElizaWy; extended to all animation frames and v3 character base by bluecarrot16; further adjustments by JaidynReiman,"bluecarrot16, ElizaWy",OGA-BY 3.0,https://github.com/ElizaWy/LPC/tree/main/Characters/Props/Shield%2001%20-%20Heater%20Shield,,,,,,,,,,,,,,,
+shield/heater/original/paint,original by ElizaWy; extended to all animation frames and v3 character base by bluecarrot16; expanded by JaidynReiman,"bluecarrot16, ElizaWy, JaidynReiman",OGA-BY 3.0,https://github.com/ElizaWy/LPC/tree/main/Characters/Props/Shield%2001%20-%20Heater%20Shield,,,,,,,,,,,,,,,
+shield/heater/revised/paint,original by ElizaWy; extended to all animation frames and v3 character base by bluecarrot16; adjusted postioning by JaidynReiman,"bluecarrot16, ElizaWy, JaidynReiman",OGA-BY 3.0,https://github.com/ElizaWy/LPC/tree/main/Characters/Props/Shield%2001%20-%20Heater%20Shield,,,,,,,,,,,,,,,
 shield/heater/pattern,,,,,,,,,,,,,,,,,,,
-shield/heater/pattern/universal,,,,,,,,,,,,,,,,,,,
-shield/heater/pattern/universal/barry,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/pattern/universal/bend,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/pattern/universal/bend_sinister,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/pattern/universal/bendy,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/pattern/universal/bendy_sinister,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/pattern/universal/bordure,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/pattern/universal/chevron,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/pattern/universal/chevron_inverted,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/pattern/universal/chief,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/pattern/universal/cross,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/pattern/universal/fess,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/pattern/universal/lozengy,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/pattern/universal/paint,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/pattern/universal/pale,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/pattern/universal/pall,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/pattern/universal/paly,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/pattern/universal/per_bend,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/pattern/universal/per_bend_sinister,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/pattern/universal/per_chevron,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/pattern/universal/per_chevron_inverted,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/pattern/universal/per_fess,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/pattern/universal/per_pale,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/pattern/universal/per_saltire,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/pattern/universal/quarterly,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/pattern/universal/saltire,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/pattern/universal/sword_01_-_arming_sword.png,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/trim,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/trim2,,"bluecarrot16, Sander Frenken (castelonia), JaidynReiman",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/wood,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
-shield/heater/wood2,,"bluecarrot16, Sander Frenken (castelonia), JaidynReiman",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
+shield/heater/pattern/universal,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
+shield/heater/pattern/universal/sword_01_-_arming_sword.png,,"bluecarrot16, Sander Frenken (castelonia), ElizaWy",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
+shield/heater/original/pattern,,"bluecarrot16, Sander Frenken (castelonia), ElizaWy",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
+shield/heater/original/pattern/bendy,"pattern by ElizaWy, mapped by bluecarrot / Sander Franken, remaining angles finished by JaidynReiman","bluecarrot16, Sander Frenken (castelonia), ElizaWy, JaidynReiman",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
+shield/heater/original/pattern/bendy_sinister,"pattern by ElizaWy, mapped by bluecarrot / Sander Franken, remaining angles finished by JaidynReiman","bluecarrot16, Sander Frenken (castelonia), ElizaWy, JaidynReiman",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
+shield/heater/original/pattern/lozengy,"pattern by ElizaWy, mapped by bluecarrot / Sander Franken, remaining angles finished by JaidynReiman","bluecarrot16, Sander Frenken (castelonia), ElizaWy, JaidynReiman",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
+shield/heater/original/pattern/paly,"pattern by ElizaWy, mapped by bluecarrot / Sander Franken, remaining angles finished by JaidynReiman","bluecarrot16, Sander Frenken (castelonia), ElizaWy, JaidynReiman",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
+shield/heater/revised/pattern,,"bluecarrot16, Sander Frenken (castelonia), ElizaWy, JaidynReiman",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
+shield/heater/revised/pattern/bendy,"pattern by ElizaWy, mapped by bluecarrot / Sander Franken, remaining angles finished by JaidynReiman","bluecarrot16, Sander Frenken (castelonia), ElizaWy, JaidynReiman",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
+shield/heater/revised/pattern/bendy_sinister,"pattern by ElizaWy, mapped by bluecarrot / Sander Franken, remaining angles finished by JaidynReiman","bluecarrot16, Sander Frenken (castelonia), ElizaWy, JaidynReiman",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
+shield/heater/revised/pattern/lozengy,"pattern by ElizaWy, mapped by bluecarrot / Sander Franken, remaining angles finished by JaidynReiman","bluecarrot16, Sander Frenken (castelonia), ElizaWy, JaidynReiman",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
+shield/heater/revised/pattern/paly,"pattern by ElizaWy, mapped by bluecarrot / Sander Franken, remaining angles finished by JaidynReiman","bluecarrot16, Sander Frenken (castelonia), ElizaWy, JaidynReiman",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
+shield/heater/original/trim,,"bluecarrot16, Sander Frenken (castelonia), ElizaWy",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
+shield/heater/revised/trim,,"bluecarrot16, Sander Frenken (castelonia), ElizaWy, JaidynReiman",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
+shield/heater/original/wood,,"bluecarrot16, Sander Frenken (castelonia), ElizaWy",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
+shield/heater/revised/wood2,,"bluecarrot16, Sander Frenken (castelonia), ElizaWy, JaidynReiman",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
 shield/male,,,,,,,,,,,,,,,,,,,
 shield/male/crusader.png,,"bluecarrot16, Sander Frenken (castelonia)",OGA-BY 3.0,https://opengameart.org/content/lpc-shields,,,,,,,,,,,,,,,OK
 shield/male/kite_blue_blue.png,,"DarkwallLKE, Tuomo Untinen (reemax), Michael Whitlock (bigbeargames)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-kite-shield,https://opengameart.org/content/lpc-shields-pack,,,,,,,,,,,,,,OK
