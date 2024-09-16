@@ -1,19 +1,21 @@
 {
-  "name" : "Feathered Wings",
-  "type_name" : "wings",
-  "layer_1" : {
-    "zPos" : 85,
-    "male" : "body/wings/feathered/universal/adult_front/",
-    "muscular" : "body/wings/feathered/universal/adult_front/",
-    "female" : "body/wings/feathered/universal/adult_front/",
-    "pregnant" : "body/wings/feathered/universal/adult_front/"
+  "name": "Feathered Wings",
+  "type_name": "wings",
+  "layer_1": {
+    "zPos": 105,
+    "male": "body/wings/feathered/adult/fg/",
+    "muscular": "body/wings/feathered/adult/fg/",
+    "female": "body/wings/feathered/adult/fg/",
+    "pregnant": "body/wings/feathered/adult/fg/",
+    "teen": "body/wings/feathered/adult/fg/"
   },
-  "layer_2" : {
-    "zPos" : 5,
-    "male" : "body/wings/feathered/universal/adult_back/",
-    "muscular" : "body/wings/feathered/universal/adult_back/",
-    "female" : "body/wings/feathered/universal/adult_back/",
-    "pregnant" : "body/wings/feathered/universal/adult_back/"
+  "layer_2": {
+    "zPos": 5,
+    "male": "body/wings/feathered/adult/bg/",
+    "muscular": "body/wings/feathered/adult/bg/",
+    "female": "body/wings/feathered/adult/bg/",
+    "pregnant": "body/wings/feathered/adult/bg/",
+    "teen": "body/wings/feathered/adult/bg/"
   },
   "variants": [
     "blonde",
@@ -49,5 +51,24 @@
     "fur_gold",
     "fur_grey",
     "fur_white"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_bgslash",
+    "1h_halfslash"
   ]
 }
