@@ -194,6 +194,17 @@ $(document).ready(function() {
     document.removeChild(a);
   });
 
+  $(".importFromClipboard").click(async function() {
+    var clipboardText = await navigator.clipboard.readText();
+    var spritesheet = JSON.parse(clipboardText)["layers"];
+    window.setTimeout(function() {
+      $("#resetAll").click(); //Reset first so defaults are set properly
+    },1,false);
+    window.setTimeout(function() {
+      setParamsFromImport(spritesheet); //wait for reset function(s) to complete then apply spritesheet
+    },2,false);
+  });
+
   $(".exportToClipboard").click(function() {
     var spritesheet = {};
     Object.assign(spritesheet, itemsMeta);
@@ -622,6 +633,23 @@ $(document).ready(function() {
       }
     });
     jHash.val(params);
+  }
+
+  function setParamsFromImport(spritesheet){
+    spritesheet.forEach((sprite)=>{
+      var custom_animation = sprite.custom_animation;
+      var fileName = sprite.fileName;
+      var name = sprite.name;
+      var parentName = sprite.parentName;
+      var variant = sprite.variant;
+      var zPos = sprite.zPos;
+      const assetType = name.replaceAll(" ", "_");
+      const assetVariant = variant.replaceAll(" ", "_")
+      const assetToSelect = parentName + "-" + assetType + "_" + assetVariant;
+      $(`#${assetToSelect}`).prop("checked", true);
+
+    });
+    setParams();
   }
 
   function getImage(imgRef) {
