@@ -1,19 +1,21 @@
 {
-  "name" : "Lizard wings",
-  "type_name" : "wings",
-  "layer_1" : {
-    "zPos" : 85,
-    "male" : "body/wings/lizard/fg/",
-    "muscular" : "body/wings/lizard/fg/",
-    "female" : "body/wings/lizard/fg/",
-    "pregnant" : "body/wings/lizard/fg/"
+  "name": "Lizard Wings",
+  "type_name": "wings",
+  "layer_1": {
+    "zPos": 105,
+    "male": "body/wings/lizard/adult/fg/",
+    "muscular": "body/wings/lizard/adult/fg/",
+    "female": "body/wings/lizard/adult/fg/",
+    "pregnant": "body/wings/lizard/adult/fg/",
+    "teen": "body/wings/lizard/adult/fg/"
   },
-  "layer_2" : {
-    "zPos" : 5,
-    "male" : "body/wings/lizard/bg/",
-    "muscular" : "body/wings/lizard/bg/",
-    "female" : "body/wings/lizard/bg/",
-    "pregnant" : "body/wings/lizard/bg/"
+  "layer_2": {
+    "zPos": 5,
+    "male": "body/wings/lizard/adult/bg/",
+    "muscular": "body/wings/lizard/adult/bg/",
+    "female": "body/wings/lizard/adult/bg/",
+    "pregnant": "body/wings/lizard/adult/bg/",
+    "teen": "body/wings/lizard/adult/bg/"
   },
   "variants": [
     "light",
@@ -37,6 +39,25 @@
     "fur_gold",
     "fur_grey",
     "fur_white"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
   ],
   "match_body_color": true
 }

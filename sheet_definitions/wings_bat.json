@@ -1,19 +1,21 @@
 {
-  "name" : "Bat Wings",
-  "type_name" : "wings",
-  "layer_1" : {
-    "zPos" : 85,
-    "male" : "body/wings/bat/universal/adult_front/",
-    "muscular" : "body/wings/bat/universal/adult_front/",
-    "female" : "body/wings/bat/universal/adult_front/",
-    "pregnant" : "body/wings/bat/universal/adult_front/"
+  "name": "Bat Wings",
+  "type_name": "wings",
+  "layer_1": {
+    "zPos": 105,
+    "male": "body/wings/bat/adult/fg/",
+    "muscular": "body/wings/bat/adult/fg/",
+    "female": "body/wings/bat/adult/fg/",
+    "pregnant": "body/wings/bat/adult/fg/",
+    "teen": "body/wings/bat/adult/fg/"
   },
-  "layer_2" : {
-    "zPos" : 5,
-    "male" : "body/wings/bat/universal/adult_back/",
-    "muscular" : "body/wings/bat/universal/adult_back/",
-    "female" : "body/wings/bat/universal/adult_back/",
-    "pregnant" : "body/wings/bat/universal/adult_back/"
+  "layer_2": {
+    "zPos": 5,
+    "male": "body/wings/bat/adult/bg/",
+    "muscular": "body/wings/bat/adult/bg/",
+    "female": "body/wings/bat/adult/bg/",
+    "pregnant": "body/wings/bat/adult/bg/",
+    "teen": "body/wings/bat/adult/bg/"
   },
   "variants": [
     "blonde",
@@ -42,6 +44,17 @@
     "purple",
     "pink",
     "rose",
+    "light",
+    "amber",
+    "olive",
+    "taupe",
+    "bronze",
+    "brown",
+    "lavender",
+    "zombie_green",
+    "pale_green",
+    "bright_green",
+    "dark_green",
     "fur_black",
     "fur_brown",
     "fur_tan",
@@ -49,5 +62,24 @@
     "fur_gold",
     "fur_grey",
     "fur_white"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
   ]
 }
