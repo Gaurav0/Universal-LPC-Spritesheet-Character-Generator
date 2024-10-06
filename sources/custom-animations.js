@@ -10,7 +10,15 @@ const animationRowsLayout = {
   "slash-n": 11,
   "slash-w": 12,
   "slash-s": 13,
-  "slash-e": 14
+  "slash-e": 14,
+  "backslash-n": 37,
+  "backslash-w": 38,
+  "backslash-s": 39,
+  "backslash-e": 40,
+  "halfslash-n": 41,
+  "halfslash-w": 42,
+  "halfslash-s": 43,
+  "halfslash-e": 44
 }
 
 const customAnimations = {
@@ -30,6 +38,24 @@ const customAnimations = {
       ["slash-w,0", "slash-w,1", "slash-w,2", "slash-w,3", "slash-w,4", "slash-w,5"],
       ["slash-s,0", "slash-s,1", "slash-s,2", "slash-s,3", "slash-s,4", "slash-s,5"],
       ["slash-e,0", "slash-e,1", "slash-e,2", "slash-e,3", "slash-e,4", "slash-e,5"]
+    ]
+  },
+  backslash_128: {
+    frameSize: 128,
+    frames: [
+      ["backslash-n,0", "backslash-n,1", "backslash-n,2", "backslash-n,3", "backslash-n,4", "backslash-n,5", "backslash-n,6", "backslash-n,7", "backslash-n,8", "backslash-n,9", "backslash-n,10", "backslash-n,11", "backslash-n,12"],
+      ["backslash-w,0", "backslash-w,1", "backslash-w,2", "backslash-w,3", "backslash-w,4", "backslash-w,5", "backslash-w,6", "backslash-w,7", "backslash-w,8", "backslash-w,9", "backslash-w,10", "backslash-w,11", "backslash-w,12"],
+      ["backslash-s,0", "backslash-s,1", "backslash-s,2", "backslash-s,3", "backslash-s,4", "backslash-s,5", "backslash-s,6", "backslash-s,7", "backslash-s,8", "backslash-s,9", "backslash-s,10", "backslash-s,11", "backslash-s,12"],
+      ["backslash-e,0", "backslash-e,1", "backslash-e,2", "backslash-e,3", "backslash-e,4", "backslash-e,5", "backslash-e,6", "backslash-e,7", "backslash-e,8", "backslash-e,9", "backslash-e,10", "backslash-e,11", "backslash-e,12"]
+    ]
+  },
+  halfslash_128: {
+    frameSize: 128,
+    frames: [
+      ["halfslash-n,0", "halfslash-n,1", "halfslash-n,2", "halfslash-n,3", "halfslash-n,4", "halfslash-n,5"],
+      ["halfslash-w,0", "halfslash-w,1", "halfslash-w,2", "halfslash-w,3", "halfslash-w,4", "halfslash-w,5"],
+      ["halfslash-s,0", "halfslash-s,1", "halfslash-s,2", "halfslash-s,3", "halfslash-s,4", "halfslash-s,5"],
+      ["halfslash-e,0", "halfslash-e,1", "halfslash-e,2", "halfslash-e,3", "halfslash-e,4", "halfslash-e,5"]
     ]
   },
   thrust_oversize: {
