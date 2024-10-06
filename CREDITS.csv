@@ -8670,6 +8670,7 @@ torso/clothes/longsleeve/longsleeve2_vneck,"original by ElizaWy; spellcast/thrus
 torso/clothes/longsleeve/longsleeve2_scoop,"original by ElizaWy; spellcast/thrust/shoot/hurt adapted from original by JaidynReiman","ElizaWy, JaidynReiman","OGA-BY 3.0",http://opengameart.org/content/lpc-revised-character-basics,https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing,,,,,,,,,,,,,,
 torso/clothes/longsleeve/longsleeve2_buttoned,"original by ElizaWy; spellcast/thrust/shoot/hurt adapted from original by JaidynReiman","ElizaWy, JaidynReiman","OGA-BY 3.0",http://opengameart.org/content/lpc-revised-character-basics,https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing,,,,,,,,,,,,,,
 torso/clothes/longsleeve/longsleeve2_polo,"original by ElizaWy; spellcast/thrust/shoot/hurt adapted from original by JaidynReiman","ElizaWy, JaidynReiman","OGA-BY 3.0",http://opengameart.org/content/lpc-revised-character-basics,https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing,,,,,,,,,,,,,,
+torso/clothes/longsleeve/longsleeve2_cardigan,"original by ElizaWy; spellcast/thrust/shoot/hurt adapted from original by JaidynReiman","ElizaWy, JaidynReiman","OGA-BY 3.0",http://opengameart.org/content/lpc-revised-character-basics,https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing,,,,,,,,,,,,,,
 torso/clothes/robe,,,,,,,,,,,,,,,,,,,
 torso/clothes/robe/female,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,,,,,,,,,,,
 torso/clothes/robe/female/_brown.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,,,,,,,,,,,OK
@@ -10404,6 +10405,7 @@ weapon/sword/scimitar/walk,,,,,,,,,,,,,,,,,,,
 weapon/sword/scimitar/walk/behind,,,,,,,,,,,,,,,,,,,
 weapon/sword/scimitar/walk/behind/scimitar.png,,Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md),OGA-BY 3.0,https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
 weapon/sword/scimitar/walk/scimitar.png,,Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md),OGA-BY 3.0,https://opengameart.org/content/lpc-dcss-swords,,,,,,,,,,,,,,,OK
+weapon/sword/arming,,"ElizaWy; walk and down by JaidynReiman",OGA-BY 3.0,https://github.com/ElizaWy/LPC/tree/main/Characters/Props/Sword%2001%20-%20Arming%20Sword,,,,,,,,,,,,,,,OK
 weapons,,,,,,,,,,,,,,,,,,,
 weapons/oversize,,,,,,,,,,,,,,,,,,,
 weapons/oversize/right hand,,,,,,,,,,,,,,,,,,,
