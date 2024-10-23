@@ -11,7 +11,7 @@
     "child": "hair/extensions/xlong_braidl/child_front/"
   },
   "layer_2": {
-    "zPos": 8.9,
+    "zPos": 9,
     "male": "hair/extensions/xlong_braidl/adult_back/",
     "muscular": "hair/extensions/xlong_braidl/adult_back/",
     "female": "hair/extensions/xlong_braidl/adult_back/",
@@ -46,5 +46,24 @@
     "purple",
     "pink",
     "rose"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
   ]
 }
