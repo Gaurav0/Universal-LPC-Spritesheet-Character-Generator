@@ -3,21 +3,21 @@
   "type_name": "hairextl",
   "layer_1": {
     "zPos": 128,
-    "male": "hair/extensions/xlong_braidl/adult_front/",
-    "muscular": "hair/extensions/xlong_braidl/adult_front/",
-    "female": "hair/extensions/xlong_braidl/adult_front/",
-    "pregnant": "hair/extensions/xlong_braidl/adult_front/",
-    "teen": "hair/extensions/xlong_braidl/adult_front/",
-    "child": "hair/extensions/xlong_braidl/child_front/"
+    "male": "hair/extensions/xlong_braidl/adult/fg/",
+    "muscular": "hair/extensions/xlong_braidl/adult/fg/",
+    "female": "hair/extensions/xlong_braidl/adult/fg/",
+    "pregnant": "hair/extensions/xlong_braidl/adult/fg/",
+    "teen": "hair/extensions/xlong_braidl/adult/fg/",
+    "child": "hair/extensions/xlong_braidl/child/fg/"
   },
   "layer_2": {
     "zPos": 9,
-    "male": "hair/extensions/xlong_braidl/adult_back/",
-    "muscular": "hair/extensions/xlong_braidl/adult_back/",
-    "female": "hair/extensions/xlong_braidl/adult_back/",
-    "pregnant": "hair/extensions/xlong_braidl/adult_back/",
-    "teen": "hair/extensions/xlong_braidl/adult_back/",
-    "child": "hair/extensions/xlong_braidl/child_back/"
+    "male": "hair/extensions/xlong_braidl/adult/bg/",
+    "muscular": "hair/extensions/xlong_braidl/adult/bg/",
+    "female": "hair/extensions/xlong_braidl/adult/bg/",
+    "pregnant": "hair/extensions/xlong_braidl/adult/bg/",
+    "teen": "hair/extensions/xlong_braidl/adult/bg/",
+    "child": "hair/extensions/xlong_braidl/child/bg/"
   },
   "variants": [
     "blonde",
@@ -63,7 +63,7 @@
     "climb",
     "combat",
     "1h_slash",
-    "1h_backslash",
+    "1h/bgslash",
     "1h_halfslash"
   ]
 }
