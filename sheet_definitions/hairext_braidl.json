@@ -2,7 +2,7 @@
   "name": "Left Braid",
   "type_name": "hairextl",
   "layer_1": {
-    "zPos": 121,
+    "zPos": 128,
     "male": "hair/extensions/braidl/adult/",
     "muscular": "hair/extensions/braidl/adult/",
     "female": "hair/extensions/braidl/adult/",
@@ -37,5 +37,24 @@
     "purple",
     "pink",
     "rose"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
   ]
 }
