@@ -1,11 +1,13 @@
 {
-  "name": "Elf",
+  "name": "Christmas Elf",
   "type_name": "hat",
   "layer_1": {
     "zPos": 130,
     "female": "hat/elf/male/",
     "male": "hat/elf/male/",
-    "teen": "hat/elf/male/"
+    "teen": "hat/elf/male/",
+    "muscular": "hat/elf/male/",
+    "pregnant": "hat/elf/male/"
   },
   "variants": [
     "forest_maroon",

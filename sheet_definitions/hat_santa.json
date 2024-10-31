@@ -5,7 +5,9 @@
     "zPos": 130,
     "female": "hat/santa/male/",
     "male": "hat/santa/male/",
-    "teen": "hat/santa/male/"
+    "teen": "hat/santa/male/",
+    "pregnant": "hat/santa/male/",
+    "muscular": "hat/santa/male/"
   },
   "variants": [
     "black",
