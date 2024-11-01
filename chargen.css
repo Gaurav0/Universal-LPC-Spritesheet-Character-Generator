@@ -84,6 +84,9 @@ input[type=button], input[type=reset] {
 #previewAnimationsBox {
   margin-bottom: -64px;
 }
+#previewAnimationsBox > * {
+  vertical-align: top;
+}
 
 #customizeChar {
   width: 35%;
