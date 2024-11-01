@@ -25,13 +25,23 @@ Custom Palettes are for specific assets that may have one or more unique colors.
 - Path: spritesheets/facial/patches/eyepath
 - Just a variation of the "cloth" palettes but including the original base palette from the original eyepatch sprites.
 
-#### 5. ulpc-eyepatch-small-palettes.json
+#### 5. ulpc-bandana-palettes.json
+- Path: spritesheets/hat/bandana
+- Path: spritesheets/hat/bandana2
+- Just a variation of the "cloth" palettes but including the original base bandana sprite palette (red, grey, white).
+
+#### 6. ulpc-crown-palettes.json
+- Path: spritesheets/hat/crown
+- Just a variation of the "cloth" palettes but including the original base crown sprite palettes ().
+
+#### 7. ulpc-hood-palettes.json
+- Path: spritesheets/hat/hood
+- Converts one of the hood palettes to each other between all 13 core colors, not including the partial translucent colors.
+
+#### 8. ulpc-hijab-palettes.json
+- Path: spritesheets/hat/cloth/hijab
+- Just a variation of the "cloth" palettes but including the original base palette from hijab.
+
+#### 9. ulpc-eyepatch-small-palettes.json
 - Path: spritesheets/facial/patches/small
 - Just a variation of the "cloth" palettes but including the original base palette from the original "patch" sprite, which I renamed into "small eyepatch".
-
-#### 7. lpc-revised-to-ulpc-cloth-palettes.json
-- Path: spritesheets/facial/earrings
-- Combines cloth and metal palettes while also keeping the original gold-ish color palette from the original earring sprites.
-
-#### 8. lpc-revised-to-ulpc-cloth-palettes.json
-- Converts the default white color from LPC Revised to ULPC cloth palettes.
