@@ -3,11 +3,11 @@
   "type_name": "hat",
   "layer_1": {
     "zPos": 130,
-    "male": "hat/crown/adult/",
-    "female": "hat/crown/adult/",
-    "muscular": "hat/crown/adult/",
-    "pregnant": "hat/crown/adult/",
-    "teen": "hat/crown/adult/"
+    "male": "hat/crown/crown/adult/",
+    "female": "hat/crown/crown/adult/",
+    "muscular": "hat/crown/crown/adult/",
+    "pregnant": "hat/crown/crown/adult/",
+    "teen": "hat/crown/crown/adult/"
   },
   "variants": [
     "crown_gold",

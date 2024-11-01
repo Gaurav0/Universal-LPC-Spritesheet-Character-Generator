@@ -4536,29 +4536,14 @@ hat/accessory/plumage_centurion,,"bluecarrot16, DCSS authors",CC0,http://opengam
 hat/accessory/plumage_legion,,"bluecarrot16, Nila122, JaidynReiman, Matthew Krohn (makrohn), Johannes Sjölund (wulax)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-roman-armor,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,
 hat/accessory/wings,,"bluecarrot16, DCSS authors",CC0,http://opengameart.org/content/dungeon-crawl-32x32-tiles,https://opengameart.org/content/cc0-headgear-icons,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,
 hat/cloth,,,,,,,,,,,,,,,,,,,
-hat/cloth/female,,,,,,,,,,,,,,,,,,,
-hat/cloth/female/bandana_gray.png,"bigbeargames, but is original?","Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Marcel van de Steeg (MadMarcel)","OGA-BY 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-female-orcogregoblintroll-base-walkcycle,https://github.com/makrohn/Universal-LPC-spritesheet/commit/f50007cb47c235d8896cafae7a613f0b6a9a09a8?short_path=02b86d4#diff-02b86d45789a3e3e8e79519c7d17d15c9e6ecc9b4ddecb1bcd8dfbbaef430b75,,,,,,,,,,,,,,OK
-hat/cloth/female/bandana_red.png,,"Matthew Krohn (makrohn), JaidynReiman, Marcel van de Steeg (MadMarcel)","OGA-BY 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-female-orcogregoblintroll-base-walkcycle,https://github.com/makrohn/Universal-LPC-spritesheet/commit/f50007cb47c235d8896cafae7a613f0b6a9a09a8?short_path=02b86d4#diff-02b86d45789a3e3e8e79519c7d17d15c9e6ecc9b4ddecb1bcd8dfbbaef430b75,,,,,,,,,,,,,,OK
-hat/cloth/female/bandana_white.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Marcel van de Steeg (MadMarcel)","OGA-BY 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-female-orcogregoblintroll-base-walkcycle,https://github.com/makrohn/Universal-LPC-spritesheet/commit/f50007cb47c235d8896cafae7a613f0b6a9a09a8?short_path=02b86d4#diff-02b86d45789a3e3e8e79519c7d17d15c9e6ecc9b4ddecb1bcd8dfbbaef430b75,,,,,,,,,,,,,,OK
-hat/cloth/female/hijab.png,,thecilekli,CC0,https://opengameart.org/content/lpc-hijab,,,,,,,,,,,,,,,OK
-hat/cloth/female/hood_black.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/cloth/female/hood_brown.png,,"Matthew Krohn (makrohn), Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/cloth/female/hood_white.png,,"Michael Whitlock (bigbeargames), Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/cloth/female/leather.png,,"Johannes Sjölund (wulax), Matthew Krohn (makrohn)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/cloth/male,,,,,,,,,,,,,,,,,,,
-hat/cloth/male/bandana_gray.png,"bigbeargames, but is original?","Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Marcel van de Steeg (MadMarcel)","OGA-BY 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-female-orcogregoblintroll-base-walkcycle,https://github.com/makrohn/Universal-LPC-spritesheet/commit/f50007cb47c235d8896cafae7a613f0b6a9a09a8?short_path=02b86d4#diff-02b86d45789a3e3e8e79519c7d17d15c9e6ecc9b4ddecb1bcd8dfbbaef430b75,,,,,,,,,,,,,,OK
-hat/cloth/male/bandana_red.png,,"Matthew Krohn (makrohn), JaidynReiman, Marcel van de Steeg (MadMarcel)","OGA-BY 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-female-orcogregoblintroll-base-walkcycle,https://github.com/makrohn/Universal-LPC-spritesheet/commit/f50007cb47c235d8896cafae7a613f0b6a9a09a8?short_path=02b86d4#diff-02b86d45789a3e3e8e79519c7d17d15c9e6ecc9b4ddecb1bcd8dfbbaef430b75,,,,,,,,,,,,,,OK
-hat/cloth/male/bandana_white.png,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Marcel van de Steeg (MadMarcel)","OGA-BY 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-female-orcogregoblintroll-base-walkcycle,https://github.com/makrohn/Universal-LPC-spritesheet/commit/f50007cb47c235d8896cafae7a613f0b6a9a09a8?short_path=02b86d4#diff-02b86d45789a3e3e8e79519c7d17d15c9e6ecc9b4ddecb1bcd8dfbbaef430b75,,,,,,,,,,,,,,OK
-hat/cloth/male/hijab.png,,thecilekli,CC0,https://opengameart.org/content/lpc-hijab,,,,,,,,,,,,,,,OK
-hat/cloth/male/hood_black.png,? Recolor,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/cloth/male/hood_brown.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/cloth/male/hood_white.png,? Recolor,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/cloth/male/leather.png,,Johannes Sjölund (wulax),"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/crown,,,,,,,,,,,,,,,,,,,
-hat/crown/1.png,,"DarkwallLKE, Charles Sanchez (CharlesGabriel)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,https://opengameart.org/content/lpc-crown,,,,,,,,,,,,,,OK
-hat/crown/2.png,,"DarkwallLKE, Charles Sanchez (CharlesGabriel)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,https://opengameart.org/content/lpc-crown,,,,,,,,,,,,,,OK
-hat/crown/3.png,,"DarkwallLKE, Charles Sanchez (CharlesGabriel)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,https://opengameart.org/content/lpc-crown,,,,,,,,,,,,,,OK
-hat/crown/4.png,,"DarkwallLKE, Charles Sanchez (CharlesGabriel)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,https://opengameart.org/content/lpc-crown,,,,,,,,,,,,,,OK
+hat/cloth/bandana,,"Matthew Krohn (makrohn), JaidynReiman, Marcel van de Steeg (MadMarcel), JaidynReiman","OGA-BY 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-female-orcogregoblintroll-base-walkcycle,https://github.com/makrohn/Universal-LPC-spritesheet/commit/f50007cb47c235d8896cafae7a613f0b6a9a09a8?short_path=02b86d4#diff-02b86d45789a3e3e8e79519c7d17d15c9e6ecc9b4ddecb1bcd8dfbbaef430b75,,,,,,,,,,,,,,OK
+hat/cloth/bandana2,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Marcel van de Steeg (MadMarcel), JaidynReiman","OGA-BY 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-female-orcogregoblintroll-base-walkcycle,https://github.com/makrohn/Universal-LPC-spritesheet/commit/f50007cb47c235d8896cafae7a613f0b6a9a09a8?short_path=02b86d4#diff-02b86d45789a3e3e8e79519c7d17d15c9e6ecc9b4ddecb1bcd8dfbbaef430b75,,,,,,,,,,,,,,OK
+hat/cloth/bandana2/adult/bandana_gray.png,"bigbeargames, but is original?; mapped to all frames by JaidynReiman","Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Marcel van de Steeg (MadMarcel), JaidynReiman","OGA-BY 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-female-orcogregoblintroll-base-walkcycle,https://github.com/makrohn/Universal-LPC-spritesheet/commit/f50007cb47c235d8896cafae7a613f0b6a9a09a8?short_path=02b86d4#diff-02b86d45789a3e3e8e79519c7d17d15c9e6ecc9b4ddecb1bcd8dfbbaef430b75,,,,,,,,,,,,,,OK
+hat/cloth/hijab,,thecilekli,CC0,https://opengameart.org/content/lpc-hijab,,,,,,,,,,,,,,,OK
+hat/cloth/hood,"Brown hood by Wulax, original black/white recolors by ??, mapped to idle/run/jump/revised combat by JaidynReiman, along with additional recolors.","Johannes Sjölund (wulax),JaidynReiman","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
+hat/cloth/feather_cap,"original by Johannes Sjölund (wulax), female by Matthew Krohn, mapped to all frames w/recolors by JaidynReiman","Johannes Sjölund (wulax), Matthew Krohn (Makrohn), JaidynReiman","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
+hat/crown/crown,,"DarkwallLKE, Charles Sanchez (CharlesGabriel)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,https://opengameart.org/content/lpc-crown,,,,,,,,,,,,,,OK
+hat/crown/tiara,,"Luke Mehl","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,,,,,,,,,,,OK
 hat/elf,,bluecarrot16,"OGA-BY 3.0, GPL 3.0",https://opengameart.org/content/lpc-santa,,,,,,,,,,,,,,,
 hat/elf/female,,,,,,,,,,,,,,,,,,,
 hat/elf/female.png,,bluecarrot16,"OGA-BY 3.0, GPL 3.0",https://opengameart.org/content/lpc-santa,,,,,,,,,,,,,,,OK
@@ -4716,61 +4701,9 @@ hat/formal,,,,,,,,,,,,,,,,,,,
 hat/formal/black.png,,bluecarrot16,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-gentleman,,,,,,,,,,,,,,,OK
 hat/formal/brown.png,,bluecarrot16,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-gentleman,,,,,,,,,,,,,,,OK
 hat/formal/round.png,bowler hat,bluecarrot16,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-gentleman,,,,,,,,,,,,,,,OK
-hat/hair_tie,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0",https://opengameart.org/content/lpc-relm-hairstyle-pieces-xlong-ponytail-bangs-and-braids-headband,,,,,,,,,,,,,,,OK
-hat/head_band_tied,,Nila122,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,
-hat/head_band_tied/female,,,,,,,,,,,,,,,,,,,
-hat/head_band_tied/female.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/female/black.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/female/blue.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/female/bluegray.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/female/brown.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/female/charcoal.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/female/forest.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/female/gray.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/female/green.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/female/lavender.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/female/leather.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/female/maroon.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/female/navy.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/female/orange.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/female/pink.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/female/purple.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/female/red.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/female/rose.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/female/sky.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/female/slate.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/female/tan.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/female/teal.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/female/walnut.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/female/white.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/female/yellow.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/male,,,,,,,,,,,,,,,,,,,
-hat/head_band_tied/male.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/male/black.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/male/blue.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/male/bluegray.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/male/brown.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/male/charcoal.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/male/forest.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/male/gray.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/male/green.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/male/lavender.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/male/leather.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/male/maroon.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/male/navy.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/male/orange.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/male/pink.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/male/purple.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/male/red.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/male/rose.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/male/sky.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/male/slate.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/male/tan.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/male/teal.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/male/walnut.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/male/white.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_tied/male/yellow.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/head_band_thick,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0",https://opengameart.org/content/lpc-relm-hairstyle-pieces-xlong-ponytail-bangs-and-braids-headband,,,,,,,,,,,,,,,OK
+hat/headband/hairtie,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0",https://opengameart.org/content/lpc-relm-hairstyle-pieces-xlong-ponytail-bangs-and-braids-headband,,,,,,,,,,,,,,,OK
+hat/headband/tied,,Nila122,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,
+hat/headband/thick,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0",https://opengameart.org/content/lpc-relm-hairstyle-pieces-xlong-ponytail-bangs-and-braids-headband,,,,,,,,,,,,,,,OK
 hat/helmet,,,,,,,,,,,,,,,,,,,
 hat/helmet/armet,previously called helmet/armor,"bluecarrot16, Johannes Sjölund (wulax)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,
 hat/helmet/armet/female,,,,,,,,,,,,,,,,,,,
@@ -6968,13 +6901,6 @@ hat/santa/male/teal.png,,bluecarrot16,"OGA-BY 3.0, GPL 3.0",https://opengameart.
 hat/santa/male/walnut.png,,bluecarrot16,"OGA-BY 3.0, GPL 3.0",https://opengameart.org/content/lpc-santa,,,,,,,,,,,,,,,OK
 hat/santa/male/white.png,,bluecarrot16,"OGA-BY 3.0, GPL 3.0",https://opengameart.org/content/lpc-santa,,,,,,,,,,,,,,,OK
 hat/santa/male/yellow.png,,bluecarrot16,"OGA-BY 3.0, GPL 3.0",https://opengameart.org/content/lpc-santa,,,,,,,,,,,,,,,OK
-hat/tiara,,,,,,,,,,,,,,,,,,,
-hat/tiara/female,,,,,,,,,,,,,,,,,,,
-hat/tiara/female/bronze.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,,,,,,,,,,,OK
-hat/tiara/female/gold.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,,,,,,,,,,,OK
-hat/tiara/female/iron.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,,,,,,,,,,,OK
-hat/tiara/female/purple.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,,,,,,,,,,,OK
-hat/tiara/female/silver.png,,Luke Mehl,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,,,,,,,,,,,OK
 hat/visor,,,,,,,,,,,,,,,,,,,
 hat/visor/grated,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,
 hat/visor/grated/female,,,,,,,,,,,,,,,,,,,

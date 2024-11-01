@@ -3,11 +3,11 @@
   "type_name": "hat",
   "layer_1": {
     "zPos": 130,
-    "male": "hat/cloth/bandana/male/",
-    "female": "hat/cloth/bandana/thin/",
-    "muscular": "hat/cloth/bandana/male/",
-    "pregnant": "hat/cloth/bandana/thin/",
-    "teen": "hat/cloth/bandana/thin/"
+    "male": "hat/cloth/hijab/male/",
+    "female": "hat/cloth/hijab/thin/",
+    "muscular": "hat/cloth/hijab/male/",
+    "pregnant": "hat/cloth/hijab/thin/",
+    "teen": "hat/cloth/hijab/thin/"
   },
   "variants": [
     "base",
