@@ -3,11 +3,11 @@
   "type_name": "visor",
   "layer_1": {
     "zPos": 132,
-    "female": "hat/visor/slit/male/",
-    "pregnant": "hat/visor/slit/male/",
-    "male": "hat/visor/slit/male/",
-    "muscular": "hat/visor/slit/male/",
-    "teen": "hat/visor/slit/male/"
+    "female": "hat/visor/slit/adult/",
+    "pregnant": "hat/visor/slit/adult/",
+    "male": "hat/visor/slit/adult/",
+    "muscular": "hat/visor/slit/adult/",
+    "teen": "hat/visor/slit/adult/"
   },
   "variants": [
     "steel",
@@ -18,5 +18,24 @@
     "bronze",
     "silver",
     "gold"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
   ]
 }

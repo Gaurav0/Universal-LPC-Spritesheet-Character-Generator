@@ -3,11 +3,11 @@
   "type_name": "visor",
   "layer_1": {
     "zPos": 132,
-    "female": "hat/visor/grated_narrow/male/",
-    "pregnant": "hat/visor/grated_narrow/male/",
-    "male": "hat/visor/grated_narrow/male/",
-    "muscular": "hat/visor/grated_narrow/male/",
-    "teen": "hat/visor/grated_narrow/male/"
+    "female": "hat/visor/grated_narrow/adult/",
+    "pregnant": "hat/visor/grated_narrow/adult/",
+    "male": "hat/visor/grated_narrow/adult/",
+    "muscular": "hat/visor/grated_narrow/adult/",
+    "teen": "hat/visor/grated_narrow/adult/"
   },
   "variants": [
     "steel",
@@ -18,5 +18,24 @@
     "bronze",
     "silver",
     "gold"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
   ]
 }
