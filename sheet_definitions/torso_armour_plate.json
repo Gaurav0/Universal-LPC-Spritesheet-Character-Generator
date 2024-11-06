@@ -5,7 +5,7 @@
     "zPos": 60,
     "male": "torso/armour/plate/male/",
     "female": "torso/armour/plate/female/",
-    "teen": "torso/armour/plate/male/"
+    "teen": "torso/armour/plate/teen/"
   },
   "variants": [
     "steel",
@@ -16,5 +16,24 @@
     "bronze",
     "silver",
     "gold"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
   ]
 }
