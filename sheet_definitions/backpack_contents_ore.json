@@ -2,7 +2,7 @@
   "name": "Ore",
   "type_name": "cargo",
   "layer_1": {
-    "zPos": 112,
+    "zPos": 140,
     "male":     "backpack/basket_contents/ore/fg/",
     "muscular": "backpack/basket_contents/ore/fg/",
     "female":   "backpack/basket_contents/ore/fg/",
