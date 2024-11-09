@@ -1,13 +1,13 @@
 {
-  "name": "Parted2",
+  "name": "Parted 2",
   "type_name": "hair",
   "layer_1": {
     "zPos": 120,
-    "male": "hair/parted2/adult/",
-    "muscular": "hair/parted2/adult/",
-    "female": "hair/parted2/adult/",
-    "pregnant": "hair/parted2/adult/",
-    "teen": "hair/parted2/adult/"
+    "male": "hair/parted2/male/",
+    "muscular": "hair/parted2/male/",
+    "female": "hair/parted2/female/",
+    "pregnant": "hair/parted2/female/",
+    "teen": "hair/parted2/male/"
   },
   "variants": [
     "blonde",
@@ -36,24 +36,5 @@
     "purple",
     "pink",
     "rose"
-  ],
-  "animations": [
-    "spellcast",
-    "thrust",
-    "walk",
-    "slash",
-    "shoot",
-    "hurt",
-    "watering",
-    "idle",
-    "jump",
-    "run",
-    "sit",
-    "emote",
-    "climb",
-    "combat",
-    "1h_slash",
-    "1h_backslash",
-    "1h_halfslash"
   ]
 }
