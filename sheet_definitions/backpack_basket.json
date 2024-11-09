@@ -2,7 +2,7 @@
   "name": "Basket",
   "type_name": "backpack",
   "layer_1": {
-    "zPos": 110,
+    "zPos": 130,
     "male":     "backpack/basket/fg/",
     "muscular": "backpack/basket/fg/",
     "female":   "backpack/basket/fg/",
