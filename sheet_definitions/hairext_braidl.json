@@ -3,12 +3,12 @@
   "type_name": "hairextl",
   "layer_1": {
     "zPos": 128,
-    "male": "hair/extensions/braidl/adult/",
-    "muscular": "hair/extensions/braidl/adult/",
-    "female": "hair/extensions/braidl/adult/",
-    "pregnant": "hair/extensions/braidl/adult/",
-    "teen": "hair/extensions/braidl/adult/",
-    "child": "hair/extensions/braidl/child/"
+    "male": "hair/extensions/bangs/braidl/adult/",
+    "muscular": "hair/extensions/bangs/braidl/adult/",
+    "female": "hair/extensions/bangs/braidl/adult/",
+    "pregnant": "hair/extensions/bangs/braidl/adult/",
+    "teen": "hair/extensions/bangs/braidl/adult/",
+    "child": "hair/extensions/bangs/braidl/child/"
   },
   "variants": [
     "blonde",
