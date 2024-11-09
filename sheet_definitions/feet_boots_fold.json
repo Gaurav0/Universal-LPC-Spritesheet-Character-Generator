@@ -2,7 +2,7 @@
   "name" : "Fold Boots",
   "type_name" : "shoes",
   "layer_1" : {
-    "zPos" : 15,
+    "zPos" : 25,
     "male" : "feet/boots_fold/universal/male/",
     "muscular" : "feet/boots_fold/universal/male/",
     "female" : "feet/boots_fold/universal/female/",

@@ -2,7 +2,7 @@
   "name" : "Boots Metal Plating",
   "type_name" : "shoes_plate",
   "layer_1" : {
-    "zPos" : 16,
+    "zPos" : 26,
     "male" : "feet/boots_plating/universal/male/",
     "muscular" : "feet/boots_plating/universal/male/",
     "female" : "feet/boots_plating/universal/female/",
