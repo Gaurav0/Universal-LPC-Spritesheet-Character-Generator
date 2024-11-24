@@ -3,11 +3,11 @@
   "type_name" : "socks",
   "layer_1" : {
     "zPos" : 14,
-    "male" : "feet/socks/tabi/universal/male/",
-    "muscular" : "feet/socks/tabi/universal/male/",
-    "female" : "feet/socks/tabi/universal/female/",
-    "teen" : "feet/socks/tabi/universal/female/",
-    "pregnant" : "feet/socks/tabi/universal/female/"
+    "male" : "feet/socks/tabi/male/",
+    "muscular" : "feet/socks/tabi/male/",
+    "female" : "feet/socks/tabi/thin/",
+    "teen" : "feet/socks/tabi/thin/",
+    "pregnant" : "feet/socks/tabi/thin/"
   },
   "variants": [
     "black",
@@ -34,5 +34,24 @@
     "walnut",
     "white",
     "yellow"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
   ]
 }
