@@ -3,11 +3,11 @@
   "type_name": "hat",
   "layer_1": {
     "zPos": 130,
-    "male": "hat/formal/bowler/adult",
-    "female": "hat/formal/bowler/adult",
-    "muscular": "hat/formal/bowler/adult",
-    "pregnant": "hat/formal/bowler/adult",
-    "teen": "hat/formal/bowler/adult"
+    "male": "hat/formal/bowler/adult/",
+    "female": "hat/formal/bowler/adult/",
+    "muscular": "hat/formal/bowler/adult/",
+    "pregnant": "hat/formal/bowler/adult/",
+    "teen": "hat/formal/bowler/adult/"
   },
   "variants": [
     "base",

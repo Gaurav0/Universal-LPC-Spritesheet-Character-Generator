@@ -1,6 +1,6 @@
 {
-  "name": "Christmas Hat - Elf Trim",
-  "type_name": "hat",
+  "name": "Elf Trim",
+  "type_name": "hat_trim",
   "layer_1": {
     "zPos": 130,
     "female": "hat/holiday/elf/adult/",

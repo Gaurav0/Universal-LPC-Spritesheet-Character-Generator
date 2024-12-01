@@ -3,11 +3,11 @@
   "type_name": "hat",
   "layer_1": {
     "zPos": 130,
-    "female": "hat/holiday/base/adult/",
-    "male": "hat/holiday/base/adult/",
-    "teen": "hat/holiday/base/adult/",
-    "muscular": "hat/holiday/base/adult/",
-    "pregnant": "hat/holiday/base/adult/"
+    "female": "hat/holiday/christmas/adult/",
+    "male": "hat/holiday/christmas/adult/",
+    "teen": "hat/holiday/christmas/adult/",
+    "muscular": "hat/holiday/christmas/adult/",
+    "pregnant": "hat/holiday/christmas/adult/"
   },
   "variants": [
     "red",
