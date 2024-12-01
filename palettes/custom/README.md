@@ -42,6 +42,10 @@ Custom Palettes are for specific assets that may have one or more unique colors.
 - Path: spritesheets/hat/cloth/hijab
 - Just a variation of the "cloth" palettes but including the original base palette from hijab.
 
-#### 9. ulpc-eyepatch-small-palettes.json
+#### 9. ulpc-formal-hat-palettes.json
+- Path: spritesheets/hat/formal
+- Just a variation of the "cloth" palettes but including the original base palettes from formal hats.
+
+#### 10. ulpc-eyepatch-small-palettes.json
 - Path: spritesheets/facial/patches/small
 - Just a variation of the "cloth" palettes but including the original base palette from the original "patch" sprite, which I renamed into "small eyepatch".
