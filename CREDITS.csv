@@ -4415,26 +4415,10 @@ hat/holiday/christmas,"Santa/Elf Hat by bluecarrot16, untrimmed Santa Hat by Jai
 hat/holiday/elf,"Christmas Elf by bluecarrot16, split into layers by JaidynReiman","bluecarrot16, JaidynReiman","OGA-BY 3.0, GPL 3.0",https://opengameart.org/content/lpc-santa,,,,,,,,,,,,,,,
 hat/holiday/santa,"Santa Hat by bluecarrot16, split into layers by JaidynReiman","bluecarrot16, JaidynReiman","OGA-BY 3.0, GPL 3.0",https://opengameart.org/content/lpc-santa,,,,,,,,,,,,,,,
 hat/magic,,,,,,,,,,,,,,,,,,,
-hat/magic/female,,,,,,,,,,,,,,,,,,,
-hat/magic/female/black.png,,"Michael Whitlock (bigbeargames), Tuomo Untinen (reemax)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-items-and-game-effects,https://opengameart.org/content/lpc-pointed-hats,,,,,,,,,,,,,,OK
-hat/magic/female/brown.png,,"Michael Whitlock (bigbeargames), Tuomo Untinen (reemax)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-items-and-game-effects,https://opengameart.org/content/lpc-pointed-hats,,,,,,,,,,,,,,OK
-hat/magic/female/brown_2.png,,"Stafford McIntyre, PlatForge project, Evert",CC-BY-SA 3.0,https://opengameart.org/content/wizard-2,https://opengameart.org/content/wizard-hat,,,,,,,,,,,,,,OK
-hat/magic/female/gray.png,,"Michael Whitlock (bigbeargames), Tuomo Untinen (reemax)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-items-and-game-effects,https://opengameart.org/content/lpc-pointed-hats,,,,,,,,,,,,,,OK
-hat/magic/female/moon.png,,"Michael Whitlock (bigbeargames), Tracy",OGA-BY 3.0,https://opengameart.org/content/lpc-celestial-wizard-hats,,,,,,,,,,,,,,,OK
-hat/magic/female/no_moon.png,,"Michael Whitlock (bigbeargames), Tracy",OGA-BY 3.0,https://opengameart.org/content/lpc-celestial-wizard-hats,,,,,,,,,,,,,,,OK
-hat/magic/female/red.png,,"Michael Whitlock (bigbeargames), Tuomo Untinen (reemax)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-items-and-game-effects,https://opengameart.org/content/lpc-pointed-hats,,,,,,,,,,,,,,OK
-hat/magic/female/teal.png,,"Michael Whitlock (bigbeargames), Tuomo Untinen (reemax)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-items-and-game-effects,https://opengameart.org/content/lpc-pointed-hats,,,,,,,,,,,,,,OK
-hat/magic/female/yellow.png,,"Michael Whitlock (bigbeargames), Tuomo Untinen (reemax)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-items-and-game-effects,https://opengameart.org/content/lpc-pointed-hats,,,,,,,,,,,,,,OK
-hat/magic/male,,,,,,,,,,,,,,,,,,,
-hat/magic/male/black.png,,"Michael Whitlock (bigbeargames), Tuomo Untinen (reemax)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-items-and-game-effects,https://opengameart.org/content/lpc-pointed-hats,,,,,,,,,,,,,,OK
-hat/magic/male/brown.png,,"Michael Whitlock (bigbeargames), Tuomo Untinen (reemax)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-items-and-game-effects,https://opengameart.org/content/lpc-pointed-hats,,,,,,,,,,,,,,OK
-hat/magic/male/brown_2.png,,"Stafford McIntyre, PlatForge project, Evert",CC-BY-SA 3.0,https://opengameart.org/content/wizard-2,https://opengameart.org/content/wizard-hat,,,,,,,,,,,,,,OK
-hat/magic/male/gray.png,,"Michael Whitlock (bigbeargames), Tuomo Untinen (reemax)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-items-and-game-effects,https://opengameart.org/content/lpc-pointed-hats,,,,,,,,,,,,,,OK
-hat/magic/male/moon.png,,"Michael Whitlock (bigbeargames), Tracy",OGA-BY 3.0,https://opengameart.org/content/lpc-celestial-wizard-hats,https://opengameart.org/content/merlins-hat,,,,,,,,,,,,,,OK
-hat/magic/male/no_moon.png,,"Michael Whitlock (bigbeargames), Tracy",OGA-BY 3.0,https://opengameart.org/content/lpc-celestial-wizard-hats,https://opengameart.org/content/merlins-hat,,,,,,,,,,,,,,OK
-hat/magic/male/red.png,,"Michael Whitlock (bigbeargames), Tuomo Untinen (reemax)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-items-and-game-effects,https://opengameart.org/content/lpc-pointed-hats,,,,,,,,,,,,,,OK
-hat/magic/male/teal.png,,"Michael Whitlock (bigbeargames), Tuomo Untinen (reemax)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-items-and-game-effects,https://opengameart.org/content/lpc-pointed-hats,,,,,,,,,,,,,,OK
-hat/magic/male/yellow.png,,"Michael Whitlock (bigbeargames), Tuomo Untinen (reemax)","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-items-and-game-effects,https://opengameart.org/content/lpc-pointed-hats,,,,,,,,,,,,,,OK
+hat/magic/misc/adult/starry.png,,"Michael Whitlock (bigbeargames), Tracy",OGA-BY 3.0,https://opengameart.org/content/lpc-celestial-wizard-hats,,,,,,,,,,,,,,,OK
+hat/magic/misc/adult/starry_moon.png,,"Michael Whitlock (bigbeargames), Tracy",OGA-BY 3.0,https://opengameart.org/content/lpc-celestial-wizard-hats,,,,,,,,,,,,,,,OK
+hat/magic/misc/adult/large.png,,"Stafford McIntyre, PlatForge project, Evert",CC-BY-SA 3.0,https://opengameart.org/content/wizard-2,https://opengameart.org/content/wizard-hat,,,,,,,,,,,,,,OK
+hat/magic/wizard,"Original Wizard Hat and Recolors by bigbeargames and reemax; split into separate layers with new recolors by JaidynReiman","Michael Whitlock (bigbeargames), Tuomo Untinen (reemax), JaidynReiman","CC-BY-SA 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-items-and-game-effects,https://opengameart.org/content/lpc-pointed-hats,,,,,,,,,,,,,,OK
 hat/pirate,,bluecarrot16,OGA-BY 3.0,https://opengameart.org/content/lpc-pirates,,,,,,,,,,,,,,,
 hat/pirate/bandana,,"bluecarrot16, Fabzy",CC-BY-SA 3.0,https://opengameart.org/content/the-revolution-hair,https://opengameart.org/content/lpc-pirates,,,,,,,,,,,,,,
 hat/pirate/bandana/female,,,,,,,,,,,,,,,,,,,

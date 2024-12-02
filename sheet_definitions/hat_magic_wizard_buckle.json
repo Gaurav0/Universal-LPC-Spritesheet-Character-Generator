@@ -1,0 +1,41 @@
+{
+  "name": "Wizard Hat Buckle",
+  "type_name": "hat_buckle",
+  "layer_1": {
+    "zPos": 132,
+    "male": "hat/magic/wizard/buckle/adult/",
+    "female": "hat/magic/wizard/buckle/adult/",
+    "muscular": "hat/magic/wizard/buckle/adult/",
+    "pregnant": "hat/magic/wizard/buckle/adult/",
+    "teen": "hat/magic/wizard/buckle/adult/"
+  },
+  "variants": [
+    "steel",
+    "iron",
+    "ceramic",
+    "brass",
+    "copper",
+    "bronze",
+    "silver",
+    "gold"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
+  ]
+}
