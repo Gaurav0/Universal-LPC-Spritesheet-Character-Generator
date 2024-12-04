@@ -1,13 +1,13 @@
 {
-  "name": "Sackcloth or Reptile Hood",
+  "name": "Sack Cloth Hood",
   "type_name": "hat",
   "layer_1": {
     "zPos": 130,
-    "male": "hat/cloth/sackloth/adult/",
-    "female": "hat/cloth/sackloth/adult",
-    "muscular": "hat/cloth/sackloth/adult",
-    "pregnant": "hat/cloth/sackloth/adult",
-    "teen": "hat/cloth/sackloth/adult"
+    "male": "hat/cloth/hood_sack/adult/",
+    "female": "hat/cloth/hood_sack/adult",
+    "muscular": "hat/cloth/hood_sack/adult",
+    "pregnant": "hat/cloth/hood_sack/adult",
+    "teen": "hat/cloth/hood_sack/adult"
   },
   "variants": [
     "base",
