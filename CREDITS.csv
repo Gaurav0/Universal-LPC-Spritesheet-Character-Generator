@@ -4374,10 +4374,12 @@ hat/cloth/bandana2,,"Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), M
 hat/cloth/bandana2/adult/bandana_gray.png,"bigbeargames, but is original?; mapped to all frames by JaidynReiman","Michael Whitlock (bigbeargames), Matthew Krohn (makrohn), Marcel van de Steeg (MadMarcel), JaidynReiman","OGA-BY 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-female-orcogregoblintroll-base-walkcycle,https://github.com/makrohn/Universal-LPC-spritesheet/commit/f50007cb47c235d8896cafae7a613f0b6a9a09a8?short_path=02b86d4#diff-02b86d45789a3e3e8e79519c7d17d15c9e6ecc9b4ddecb1bcd8dfbbaef430b75,,,,,,,,,,,,,,OK
 hat/cloth/hijab,,thecilekli,CC0,https://opengameart.org/content/lpc-hijab,,,,,,,,,,,,,,,OK
 hat/cloth/hood,"Brown hood by Wulax, original black/white recolors by ??, mapped to idle/run/jump/revised combat by JaidynReiman, along with additional recolors.","Johannes Sjölund (wulax),JaidynReiman","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
+hat/cloth/hood_sackcloth,"original by Nilla122, adapted to human heads by JaidynReiman","Nila122, JaidynReiman","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
 hat/cloth/feather_cap,"original by Johannes Sjölund (wulax), female by Matthew Krohn, mapped to all frames w/recolors by JaidynReiman","Johannes Sjölund (wulax), Matthew Krohn (Makrohn), JaidynReiman","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/crown/crown,,"DarkwallLKE, Charles Sanchez (CharlesGabriel)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,https://opengameart.org/content/lpc-crown,,,,,,,,,,,,,,OK
-hat/crown/tiara,,"Luke Mehl","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,,,,,,,,,,,OK
-hat/formal,,bluecarrot16,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-gentleman,,,,,,,,,,,,,,,OK
+hat/formal/crown,,"DarkwallLKE, Charles Sanchez (CharlesGabriel)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,https://opengameart.org/content/lpc-crown,,,,,,,,,,,,,,OK
+hat/formal/tiara,,"Luke Mehl","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/female-mage-clothing-set,,,,,,,,,,,,,,,OK
+hat/formal/bowler,,bluecarrot16,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-gentleman,,,,,,,,,,,,,,,OK
+hat/formal/tophat,,bluecarrot16,"CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-gentleman,,,,,,,,,,,,,,,OK
 hat/headband/hairtie,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0",https://opengameart.org/content/lpc-relm-hairstyle-pieces-xlong-ponytail-bangs-and-braids-headband,,,,,,,,,,,,,,,OK
 hat/headband/tied,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,
 hat/headband/thick,,JaidynReiman,"OGA-BY 3.0+, CC-BY 3.0+, GPL 3.0",https://opengameart.org/content/lpc-relm-hairstyle-pieces-xlong-ponytail-bangs-and-braids-headband,,,,,,,,,,,,,,,OK
@@ -6109,219 +6111,15 @@ hat/pirate/tricorne_thatch/male/teal.png,,bluecarrot16,OGA-BY 3.0,https://openga
 hat/pirate/tricorne_thatch/male/walnut.png,,bluecarrot16,OGA-BY 3.0,https://opengameart.org/content/lpc-pirates,,,,,,,,,,,,,,,OK
 hat/pirate/tricorne_thatch/male/white.png,,bluecarrot16,OGA-BY 3.0,https://opengameart.org/content/lpc-pirates,,,,,,,,,,,,,,,OK
 hat/pirate/tricorne_thatch/male/yellow.png,,bluecarrot16,OGA-BY 3.0,https://opengameart.org/content/lpc-pirates,,,,,,,,,,,,,,,OK
-hat/reptile,,,,,,,,,,,,,,,,,,,
-hat/reptile/female,,,,,,,,,,,,,,,,,,,
-hat/reptile/female/bandana_red.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/reptile/female/fin_blue.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/reptile/female/fin_dark.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/reptile/female/fin_light.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/reptile/female/hood.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/reptile/female/horn_1.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/reptile/female/horn_2.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/reptile/female/shortfin_blue.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/reptile/female/shortfin_dark.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/reptile/female/shortfin_light.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/reptile/male,,,,,,,,,,,,,,,,,,,
-hat/reptile/male/bandana_red.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/reptile/male/fin_blue.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/reptile/male/fin_dark.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/reptile/male/fin_light.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/reptile/male/hood.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/reptile/male/horn_1.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/reptile/male/horn_2.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/reptile/male/shortfin_blue.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/reptile/male/shortfin_dark.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
-hat/reptile/male/shortfin_light.png,,Nila122,"OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,OK
 hat/visor,,,,,,,,,,,,,,,,,,,
 hat/visor/grated,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,
-hat/visor/grated/female,,,,,,,,,,,,,,,,,,,
-hat/visor/grated/female.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated/female/brass.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated/female/bronze.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated/female/ceramic.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated/female/copper.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated/female/gold.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated/female/iron.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated/female/silver.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated/female/steel.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated/male,,,,,,,,,,,,,,,,,,,
-hat/visor/grated/male.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated/male/brass.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated/male/bronze.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated/male/ceramic.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated/male/copper.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated/male/gold.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated/male/iron.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated/male/silver.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated/male/steel.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated_narrow,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,
-hat/visor/grated_narrow/female,,,,,,,,,,,,,,,,,,,
-hat/visor/grated_narrow/female.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated_narrow/female/brass.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated_narrow/female/bronze.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated_narrow/female/ceramic.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated_narrow/female/copper.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated_narrow/female/gold.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated_narrow/female/iron.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated_narrow/female/silver.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated_narrow/female/steel.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated_narrow/male,,,,,,,,,,,,,,,,,,,
-hat/visor/grated_narrow/male.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated_narrow/male/brass.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated_narrow/male/bronze.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated_narrow/male/ceramic.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated_narrow/male/copper.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated_narrow/male/gold.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated_narrow/male/iron.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated_narrow/male/silver.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
-hat/visor/grated_narrow/male/steel.png,,bluecarrot16,"CC-BY 3.0, CC-BY 4.0, OGA-BY 3.0, GPL 2.0, GPL 3.0",https://opengameart.org/content/lpc-helmets,,,,,,,,,,,,,,,OK
 hat/visor/horned,,"bluecarrot16, Shaun Williams, Matthew Krohn (makrohn), Johannes Sjölund (wulax), Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-full-plate-golden-armor,https://opengameart.org/content/lpc-full-plate-golden-armor-0,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,
-hat/visor/horned/female,,,,,,,,,,,,,,,,,,,
-hat/visor/horned/female.png,,"bluecarrot16, Shaun Williams, Matthew Krohn (makrohn), Johannes Sjölund (wulax), Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-full-plate-golden-armor,https://opengameart.org/content/lpc-full-plate-golden-armor-0,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,OK
-hat/visor/horned/female/brass.png,,"bluecarrot16, Shaun Williams, Matthew Krohn (makrohn), Johannes Sjölund (wulax), Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-full-plate-golden-armor,https://opengameart.org/content/lpc-full-plate-golden-armor-0,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,OK
-hat/visor/horned/female/bronze.png,,"bluecarrot16, Shaun Williams, Matthew Krohn (makrohn), Johannes Sjölund (wulax), Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-full-plate-golden-armor,https://opengameart.org/content/lpc-full-plate-golden-armor-0,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,OK
-hat/visor/horned/female/ceramic.png,,"bluecarrot16, Shaun Williams, Matthew Krohn (makrohn), Johannes Sjölund (wulax), Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-full-plate-golden-armor,https://opengameart.org/content/lpc-full-plate-golden-armor-0,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,OK
-hat/visor/horned/female/copper.png,,"bluecarrot16, Shaun Williams, Matthew Krohn (makrohn), Johannes Sjölund (wulax), Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-full-plate-golden-armor,https://opengameart.org/content/lpc-full-plate-golden-armor-0,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,OK
-hat/visor/horned/female/gold.png,,"bluecarrot16, Shaun Williams, Matthew Krohn (makrohn), Johannes Sjölund (wulax), Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-full-plate-golden-armor,https://opengameart.org/content/lpc-full-plate-golden-armor-0,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,OK
-hat/visor/horned/female/iron.png,,"bluecarrot16, Shaun Williams, Matthew Krohn (makrohn), Johannes Sjölund (wulax), Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-full-plate-golden-armor,https://opengameart.org/content/lpc-full-plate-golden-armor-0,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,OK
-hat/visor/horned/female/silver.png,,"bluecarrot16, Shaun Williams, Matthew Krohn (makrohn), Johannes Sjölund (wulax), Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-full-plate-golden-armor,https://opengameart.org/content/lpc-full-plate-golden-armor-0,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,OK
-hat/visor/horned/female/steel.png,,"bluecarrot16, Shaun Williams, Matthew Krohn (makrohn), Johannes Sjölund (wulax), Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-full-plate-golden-armor,https://opengameart.org/content/lpc-full-plate-golden-armor-0,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,OK
-hat/visor/horned/male,,,,,,,,,,,,,,,,,,,
-hat/visor/horned/male.png,,"bluecarrot16, Shaun Williams, Matthew Krohn (makrohn), Johannes Sjölund (wulax), Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-full-plate-golden-armor,https://opengameart.org/content/lpc-full-plate-golden-armor-0,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,OK
-hat/visor/horned/male/brass.png,,"bluecarrot16, Shaun Williams, Matthew Krohn (makrohn), Johannes Sjölund (wulax), Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-full-plate-golden-armor,https://opengameart.org/content/lpc-full-plate-golden-armor-0,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,OK
-hat/visor/horned/male/bronze.png,,"bluecarrot16, Shaun Williams, Matthew Krohn (makrohn), Johannes Sjölund (wulax), Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-full-plate-golden-armor,https://opengameart.org/content/lpc-full-plate-golden-armor-0,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,OK
-hat/visor/horned/male/ceramic.png,,"bluecarrot16, Shaun Williams, Matthew Krohn (makrohn), Johannes Sjölund (wulax), Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-full-plate-golden-armor,https://opengameart.org/content/lpc-full-plate-golden-armor-0,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,OK
-hat/visor/horned/male/copper.png,,"bluecarrot16, Shaun Williams, Matthew Krohn (makrohn), Johannes Sjölund (wulax), Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-full-plate-golden-armor,https://opengameart.org/content/lpc-full-plate-golden-armor-0,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,OK
-hat/visor/horned/male/gold.png,,"bluecarrot16, Shaun Williams, Matthew Krohn (makrohn), Johannes Sjölund (wulax), Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-full-plate-golden-armor,https://opengameart.org/content/lpc-full-plate-golden-armor-0,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,OK
-hat/visor/horned/male/iron.png,,"bluecarrot16, Shaun Williams, Matthew Krohn (makrohn), Johannes Sjölund (wulax), Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-full-plate-golden-armor,https://opengameart.org/content/lpc-full-plate-golden-armor-0,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,OK
-hat/visor/horned/male/silver.png,,"bluecarrot16, Shaun Williams, Matthew Krohn (makrohn), Johannes Sjölund (wulax), Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-full-plate-golden-armor,https://opengameart.org/content/lpc-full-plate-golden-armor-0,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,OK
-hat/visor/horned/male/steel.png,,"bluecarrot16, Shaun Williams, Matthew Krohn (makrohn), Johannes Sjölund (wulax), Sander Frenken (castelonia)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,https://opengameart.org/content/lpc-full-plate-golden-armor,https://opengameart.org/content/lpc-full-plate-golden-armor-0,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,OK
 hat/visor/pigface,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,
-hat/visor/pigface/female,,,,,,,,,,,,,,,,,,,
-hat/visor/pigface/female.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface/female/brass.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface/female/bronze.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface/female/ceramic.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface/female/copper.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface/female/gold.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface/female/iron.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface/female/silver.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface/female/steel.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface/male,,,,,,,,,,,,,,,,,,,
-hat/visor/pigface/male.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface/male/brass.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface/male/bronze.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface/male/ceramic.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface/male/copper.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface/male/gold.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface/male/iron.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface/male/silver.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface/male/steel.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
 hat/visor/pigface_raised,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,
-hat/visor/pigface_raised/female,,,,,,,,,,,,,,,,,,,
-hat/visor/pigface_raised/female.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface_raised/female/brass.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface_raised/female/bronze.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface_raised/female/ceramic.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface_raised/female/copper.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface_raised/female/gold.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface_raised/female/iron.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface_raised/female/silver.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface_raised/female/steel.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface_raised/male,,,,,,,,,,,,,,,,,,,
-hat/visor/pigface_raised/male.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface_raised/male/brass.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface_raised/male/bronze.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface_raised/male/ceramic.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface_raised/male/copper.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface_raised/male/gold.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface_raised/male/iron.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface_raised/male/silver.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/pigface_raised/male/steel.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
 hat/visor/round,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,
-hat/visor/round/female,,,,,,,,,,,,,,,,,,,
-hat/visor/round/female.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round/female/brass.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round/female/bronze.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round/female/ceramic.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round/female/copper.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round/female/gold.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round/female/iron.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round/female/silver.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round/female/steel.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round/male,,,,,,,,,,,,,,,,,,,
-hat/visor/round/male.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round/male/brass.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round/male/bronze.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round/male/ceramic.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round/male/copper.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round/male/gold.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round/male/iron.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round/male/silver.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round/male/steel.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
 hat/visor/round_raised,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,
-hat/visor/round_raised/female,,,,,,,,,,,,,,,,,,,
-hat/visor/round_raised/female.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round_raised/female/brass.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round_raised/female/bronze.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round_raised/female/ceramic.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round_raised/female/copper.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round_raised/female/gold.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round_raised/female/iron.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round_raised/female/silver.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round_raised/female/steel.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round_raised/male,,,,,,,,,,,,,,,,,,,
-hat/visor/round_raised/male.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round_raised/male/brass.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round_raised/male/bronze.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round_raised/male/ceramic.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round_raised/male/copper.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round_raised/male/gold.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round_raised/male/iron.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round_raised/male/silver.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
-hat/visor/round_raised/male/steel.png,,"bluecarrot16, ElizaWy, Sander Frenken (castelonia)","OGA-BY 3.0, CC-BY-SA 4.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-realistic-helmet-pack,https://opengameart.org/content/lpc-helmets-mega-pack,,,,,,,,,,,,,,OK
 hat/visor/slit,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,
-hat/visor/slit/female,,,,,,,,,,,,,,,,,,,
-hat/visor/slit/female.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit/female/brass.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit/female/bronze.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit/female/ceramic.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit/female/copper.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit/female/gold.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit/female/iron.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit/female/silver.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit/female/steel.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit/male,,,,,,,,,,,,,,,,,,,
-hat/visor/slit/male.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit/male/brass.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit/male/bronze.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit/male/ceramic.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit/male/copper.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit/male/gold.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit/male/iron.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit/male/silver.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit/male/steel.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
 hat/visor/slit_narrow,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,
-hat/visor/slit_narrow/female,,,,,,,,,,,,,,,,,,,
-hat/visor/slit_narrow/female.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit_narrow/female/brass.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit_narrow/female/bronze.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit_narrow/female/ceramic.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit_narrow/female/copper.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit_narrow/female/gold.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit_narrow/female/iron.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit_narrow/female/silver.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit_narrow/female/steel.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit_narrow/male,,,,,,,,,,,,,,,,,,,
-hat/visor/slit_narrow/male.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit_narrow/male/brass.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit_narrow/male/bronze.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit_narrow/male/ceramic.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit_narrow/male/copper.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit_narrow/male/gold.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit_narrow/male/iron.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit_narrow/male/silver.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
-hat/visor/slit_narrow/male/steel.png,,"bluecarrot16, Johannes Sjölund (wulax)","OGA-BY 3.0, CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/lpc-medieval-fantasy-character-sprites,,,,,,,,,,,,,,,OK
 head,,,,,,,,,,,,,,,,,,,
 head/ears,,,,,,,,,,,,,,,,,,,
 head/ears/big,"adapted to v3 base by bluecarrot16; expanded to other animations and child by JaidynReiman","JaidynReiman, bluecarrot16, Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,http://opengameart.org/content/lpc-clothing-updates,,,,,,,,,,,,,,OK
@@ -6383,7 +6181,6 @@ head/heads/wolf/child,"original wolf animation by Redshrike, commissioned by Wil
 head/heads/wolf/female,"original wolf animation by Redshrike, commissioned by William.Thompsonj; wolfman sprite by BenCreating, commissioned by castelonia; tweaks and headless version by bluecarrot16","bluecarrot16, Sander Frenken (castelonia), Benjamin K. Smith (BenCreating), William.Thompsonj, Stephen Challener (Redshrike)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,https://opengameart.org/content/lpc-wolf-animation,https://opengameart.org/content/lpc-wolfman,https://opengameart.org/content/lpc-character-bases,,,,,,,,,,,,
 head/heads/wolf/male,"original wolf animation by Redshrike, commissioned by William.Thompsonj; wolfman sprite by BenCreating, commissioned by castelonia; tweaks and headless version by bluecarrot16","bluecarrot16, Sander Frenken (castelonia), Benjamin K. Smith (BenCreating), William.Thompsonj, Stephen Challener (Redshrike)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,https://opengameart.org/content/lpc-wolf-animation,https://opengameart.org/content/lpc-wolfman,https://opengameart.org/content/lpc-character-bases,,,,,,,,,,,,
 head/heads/zombie,,"bluecarrot16, Benjamin K. Smith (BenCreating), Sander Frenken (castelonia), Stephen Challener (Redshrike)","CC-BY-SA 3.0, GPL 3.0",https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles,https://opengameart.org/content/lpc-zombie,https://opengameart.org/content/lpc-character-bases,,,,,,,,,,,,,
-head/hijab,,thecilekli,,https://opengameart.org/content/lpc-hijab,,,,,,,,,,,,,,,
 head/horns,,,,,,,,,,,,,,,,,,,
 head/horns/backwards,,Nila122,"OGA-BY 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,
 head/horns/curled,,Nila122,"OGA-BY 3.0, GPL 3.0",https://opengameart.org/content/lpc-lizard-headgear,,,,,,,,,,,,,,,
@@ -6393,32 +6190,9 @@ head/nose/button,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, 
 head/nose/elderly,,ElizaWy,OGA-BY 3.0,https://opengameart.org/content/lpc-revised-elders,,,,,,,,,,,,,,,
 head/nose/straight,,"Thane Brimhall (pennomi), Matthew Krohn (makrohn)","GPL 3.0, CC-BY-SA 3.0",https://opengameart.org/content/lpc-base-character-expressions,,,,,,,,,,,,,,,OK
 head/nose/large,,ElizaWy,OGA-BY 3.0,https://github.com/ElizaWy/LPC/tree/main/Characters/Head/Head%20Overlay%2001%20-%20Large%20Nose,https://opengameart.org/content/expanded-universal-lpc-spritesheet-idle-run-jump-lpc-revised-combat-and-assets,,,,,,,,,,,,,,
-head/tiaras_female,,Luke Mehl,,https://opengameart.org/content/female-mage-clothing-set,,,,,,,,,,,,,,,
-head/whiskers,,,,,,,,,,,,,,,,,,,
+head/whiskers,"doesn't seem to exist?!",,,,,,,,,,,,,,,,,,
 head/whiskers/whiskers.png,,,,,,,,,,,,,,,,,,,BAD
 head/wrinkles,,bluecarrot16,CC0,,,,,,,,,,,,,,,,
-head/wrinkles/amber.png,,bluecarrot16,CC0,,,,,,,,,,,,,,,,OK
-head/wrinkles/black.png,,bluecarrot16,CC0,,,,,,,,,,,,,,,,OK
-head/wrinkles/blue.png,,bluecarrot16,CC0,,,,,,,,,,,,,,,,OK
-head/wrinkles/bright_green.png,,bluecarrot16,CC0,,,,,,,,,,,,,,,,OK
-head/wrinkles/bronze.png,,bluecarrot16,CC0,,,,,,,,,,,,,,,,OK
-head/wrinkles/brown.png,,bluecarrot16,CC0,,,,,,,,,,,,,,,,OK
-head/wrinkles/dark_green.png,,bluecarrot16,CC0,,,,,,,,,,,,,,,,OK
-head/wrinkles/fur_black.png,,bluecarrot16,CC0,,,,,,,,,,,,,,,,OK
-head/wrinkles/fur_brown.png,,bluecarrot16,CC0,,,,,,,,,,,,,,,,OK
-head/wrinkles/fur_copper.png,,bluecarrot16,CC0,,,,,,,,,,,,,,,,OK
-head/wrinkles/fur_gold.png,,bluecarrot16,CC0,,,,,,,,,,,,,,,,OK
-head/wrinkles/fur_grey.png,,bluecarrot16,CC0,,,,,,,,,,,,,,,,OK
-head/wrinkles/fur_tan.png,,bluecarrot16,CC0,,,,,,,,,,,,,,,,OK
-head/wrinkles/fur_white.png,,bluecarrot16,CC0,,,,,,,,,,,,,,,,OK
-head/wrinkles/green.png,,bluecarrot16,CC0,,,,,,,,,,,,,,,,OK
-head/wrinkles/lavender.png,,bluecarrot16,CC0,,,,,,,,,,,,,,,,OK
-head/wrinkles/light.png,,bluecarrot16,CC0,,,,,,,,,,,,,,,,OK
-head/wrinkles/olive.png,,bluecarrot16,CC0,,,,,,,,,,,,,,,,OK
-head/wrinkles/pale_green.png,,bluecarrot16,CC0,,,,,,,,,,,,,,,,OK
-head/wrinkles/taupe.png,,bluecarrot16,CC0,,,,,,,,,,,,,,,,OK
-head/wrinkles/zombie.png,,bluecarrot16,CC0,,,,,,,,,,,,,,,,OK
-head/wrinkles/zombie_green.png,,bluecarrot16,CC0,,,,,,,,,,,,,,,,OK
 legs,,,,,,,,,,,,,,,,,,,
 legs/armour,,,,,,,,,,,,,,,,,,,
 legs/armour/plate,greaves,,,,,,,,,,,,,,,,,,

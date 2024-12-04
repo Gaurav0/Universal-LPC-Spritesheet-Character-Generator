@@ -1,19 +1,16 @@
 {
-  "name": "Crown",
+  "name": "Sackcloth or Reptile Hood",
   "type_name": "hat",
   "layer_1": {
     "zPos": 130,
-    "male": "hat/crown/crown/adult/",
-    "female": "hat/crown/crown/adult/",
-    "muscular": "hat/crown/crown/adult/",
-    "pregnant": "hat/crown/crown/adult/",
-    "teen": "hat/crown/crown/adult/"
+    "male": "hat/cloth/sackloth/adult/",
+    "female": "hat/cloth/sackloth/adult",
+    "muscular": "hat/cloth/sackloth/adult",
+    "pregnant": "hat/cloth/sackloth/adult",
+    "teen": "hat/cloth/sackloth/adult"
   },
   "variants": [
-    "crown_gold",
-    "crown_red",
-    "crown_blue",
-    "crown_gray",
+    "base",
     "black",
     "blue",
     "bluegray",
@@ -37,15 +34,7 @@
     "teal",
     "walnut",
     "white",
-    "yellow",
-    "steel",
-    "iron",
-    "ceramic",
-    "brass",
-    "copper",
-    "bronze",
-    "silver",
-    "gold"
+    "yellow"
   ],
   "animations": [
     "spellcast",

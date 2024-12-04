@@ -3,11 +3,11 @@
   "type_name" : "hat",
   "layer_1" : {
     "zPos" : 130,
-    "female" : "hat/crown/tiara/adult/",
-    "pregnant" : "hat/crown/tiara/adult/",
-    "male": "hat/crown/tiara/adult/",
-    "teen": "hat/crown/tiara/adult/",
-    "muscular": "hat/crown/tiara/adult/"
+    "female" : "hat/formal/tiara/adult/",
+    "pregnant" : "hat/formal/tiara/adult/",
+    "male": "hat/formal/tiara/adult/",
+    "teen": "hat/formal/tiara/adult/",
+    "muscular": "hat/formal/tiara/adult/"
   },
   "variants": [
     "tiara_bronze",
