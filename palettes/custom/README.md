@@ -65,3 +65,9 @@ Custom Palettes are for specific assets that may have one or more unique colors.
 #### 14. ulpc-pirate-trim-palettes.json
 - Path: spritesheets/hat/pirate
 - Just a variation of the "cloth and metal" palettes including the original base color of the captain hat trim in the pirate hats.
+- NOTE: The original "silver" and "bronze" trim variations are still present--they're just "steel" and "copper" instead of silver and bronze. The "gold" variant is technically just using bronze as well, but darker shades of bronze.
+- The "base" color present I thoutght was the "gold" repalette, but it appears to actually be different. It doesn't match any existing palette, which is why I kept this as a separate color.
+
+#### 15. ulpc-pirate-cockade-palettes.json
+- Path: spritesheets/hat/pirate/bicorne/admiral/cockade
+- Just a variation of the "cloth" palettes including the original base color of the admiral hat's "cockade".

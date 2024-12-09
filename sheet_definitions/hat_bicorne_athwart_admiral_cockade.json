@@ -1,13 +1,13 @@
 {
   "name": "Bicorne Athwart Admiral Cockade",
-  "type_name": "hat_overlay",
+  "type_name": "hat_accessory",
   "layer_1": {
-    "zPos": 131,
-    "male": "hat/pirate/bicorne/athwart/admiral/cockade/adult",
-    "muscular": "hat/pirate/bicorne/athwart/admiral/cockade/adult",
-    "female": "hat/pirate/bicorne/athwart/admiral/cockade/adult",
-    "teen": "hat/pirate/bicorne/athwart/admiral/cockade/adult",
-    "pregnant": "hat/pirate/bicorne/athwart/admiral/cockade/adult"
+    "zPos": 132,
+    "male": "hat/pirate/bicorne/athwart/admiral/cockade/adult/",
+    "muscular": "hat/pirate/bicorne/athwart/admiral/cockade/adult/",
+    "female": "hat/pirate/bicorne/athwart/admiral/cockade/adult/",
+    "teen": "hat/pirate/bicorne/athwart/admiral/cockade/adult/",
+    "pregnant": "hat/pirate/bicorne/athwart/admiral/cockade/adult/"
   },
   "variants": [
     "black",

@@ -3,11 +3,11 @@
   "type_name": "hat_trim",
   "layer_1": {
     "zPos": 131,
-    "male": "hat/pirate/tricorne/captain/trim/adult",
-    "muscular": "hat/pirate/tricorne/captain/trim/adult",
-    "female": "hat/pirate/tricorne/captain/trim/adult",
-    "teen": "hat/pirate/tricorne/captain/trim/adult",
-    "pregnant": "hat/pirate/tricorne/captain/trim/adult"
+    "male": "hat/pirate/tricorne/captain/trim/adult/",
+    "muscular": "hat/pirate/tricorne/captain/trim/adult/",
+    "female": "hat/pirate/tricorne/captain/trim/adult/",
+    "teen": "hat/pirate/tricorne/captain/trim/adult/",
+    "pregnant": "hat/pirate/tricorne/captain/trim/adult/"
   },
   "variants": [
     "base",

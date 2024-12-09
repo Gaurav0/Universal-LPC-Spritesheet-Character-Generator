@@ -3,11 +3,11 @@
   "type_name": "hat_trim",
   "layer_1": {
     "zPos": 131,
-    "male": "hat/pirate/bicorne/athwart/admiral/trim/adult",
-    "muscular": "hat/pirate/bicorne/athwart/admiral/trim/adult",
-    "female": "hat/pirate/bicorne/athwart/admiral/trim/adult",
-    "teen": "hat/pirate/bicorne/athwart/admiral/trim/adult",
-    "pregnant": "hat/pirate/bicorne/athwart/admiral/trim/adult"
+    "male": "hat/pirate/bicorne/athwart/admiral/trim/adult/",
+    "muscular": "hat/pirate/bicorne/athwart/admiral/trim/adult/",
+    "female": "hat/pirate/bicorne/athwart/admiral/trim/adult/",
+    "teen": "hat/pirate/bicorne/athwart/admiral/trim/adult/",
+    "pregnant": "hat/pirate/bicorne/athwart/admiral/trim/adult/"
   },
   "variants": [
     "base",

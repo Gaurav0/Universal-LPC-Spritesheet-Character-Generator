@@ -3,11 +3,11 @@
   "type_name": "hat",
   "layer_1": {
     "zPos": 130,
-    "male": "hat/pirate/bicorne/athwart/commodore/adult",
-    "muscular": "hat/pirate/bicorne/athwart/commodore/adult",
-    "female": "hat/pirate/bicorne/athwart/commodore/adult",
-    "teen": "hat/pirate/bicorne/athwart/commodore/adult",
-    "pregnant": "hat/pirate/bicorne/athwart/commodore/adult"
+    "male": "hat/pirate/bicorne/athwart/commodore/adult/",
+    "muscular": "hat/pirate/bicorne/athwart/commodore/adult/",
+    "female": "hat/pirate/bicorne/athwart/commodore/adult/",
+    "teen": "hat/pirate/bicorne/athwart/commodore/adult/",
+    "pregnant": "hat/pirate/bicorne/athwart/commodore/adult/"
   },
   "variants": [
     "black",

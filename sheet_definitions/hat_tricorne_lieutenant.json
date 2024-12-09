@@ -3,11 +3,11 @@
   "type_name": "hat",
   "layer_1": {
     "zPos": 130,
-    "male": "hat/pirate/tricorne/lieutenant/adult",
-    "muscular": "hat/pirate/tricorne/lieutenant/adult",
-    "female": "hat/pirate/tricorne/lieutenant/adult",
-    "teen": "hat/pirate/tricorne/lieutenant/adult",
-    "pregnant": "hat/pirate/tricorne/lieutenant/adult"
+    "male": "hat/pirate/tricorne/lieutenant/adult/",
+    "muscular": "hat/pirate/tricorne/lieutenant/adult/",
+    "female": "hat/pirate/tricorne/lieutenant/adult/",
+    "teen": "hat/pirate/tricorne/lieutenant/adult/",
+    "pregnant": "hat/pirate/tricorne/lieutenant/adult/"
   },
   "variants": [
     "black",
