@@ -25,26 +25,26 @@ Custom Palettes are for specific assets that may have one or more unique colors.
 - Path: spritesheets/facial/patches/eyepath
 - Just a variation of the "cloth" palettes but including the original base palette from the original eyepatch sprites.
 
-#### 5. ulpc-bandana-palettes.json
+#### 5. ulpc-eyepatch-small-palettes.json
+- Path: spritesheets/facial/patches/small
+- Just a variation of the "cloth" palettes but including the original base palette from the original "patch" sprite, which I renamed into "small eyepatch".
+
+#### 6. ulpc-bandana-palettes.json
 - Path: spritesheets/hat/bandana
 - Path: spritesheets/hat/bandana2
 - Just a variation of the "cloth" palettes but including the original base bandana sprite palette (red, grey, white).
 
-#### 6. ulpc-crown-palettes.json
+#### 7. ulpc-crown-palettes.json
 - Path: spritesheets/hat/crown
 - Just a variation of the "cloth" palettes but including the original base crown sprite palettes ().
 
-#### 7. ulpc-hood-palettes.json
+#### 8. ulpc-hood-palettes.json
 - Path: spritesheets/hat/hood
 - Converts one of the hood palettes to each other between all 13 core colors, not including the partial translucent colors.
 
-#### 8. ulpc-hijab-palettes.json
+#### 9. ulpc-hijab-palettes.json
 - Path: spritesheets/hat/cloth/hijab
 - Just a variation of the "cloth" palettes but including the original base palette from hijab.
-
-#### 9. ulpc-sackcloth-palettes.json
-- Path: spritesheets/hat/cloth/hood_sackcloth
-- Just a variation of the "cloth" palettes but including the original base palette from Nilla122's Reptile hood.
 
 #### 10. ulpc-formal-hat-palettes.json
 - Path: spritesheets/hat/formal
@@ -60,8 +60,14 @@ Custom Palettes are for specific assets that may have one or more unique colors.
 
 #### 13. ulpc-formal-hat-buckle-palettes.json
 - Path: spritesheets/hat/formal
-- Just a variation of the "belt" palettes with the override color from the magic hat buckle as the base color.
+- Just a variation of the "metal" palettes with the override color from the magic hat buckle as the base color.
 
-#### 14. ulpc-eyepatch-small-palettes.json
-- Path: spritesheets/facial/patches/small
-- Just a variation of the "cloth" palettes but including the original base palette from the original "patch" sprite, which I renamed into "small eyepatch".
+#### 14. ulpc-pirate-trim-palettes.json
+- Path: spritesheets/hat/pirate
+- Just a variation of the "cloth and metal" palettes including the original base color of the captain hat trim in the pirate hats.
+- NOTE: The original "silver" and "bronze" trim variations are still present--they're just "steel" and "copper" instead of silver and bronze. The "gold" variant is technically just using bronze as well, but darker shades of bronze.
+- The "base" color present I thoutght was the "gold" repalette, but it appears to actually be different. It doesn't match any existing palette, which is why I kept this as a separate color.
+
+#### 15. ulpc-pirate-cockade-palettes.json
+- Path: spritesheets/hat/pirate/bicorne/admiral/cockade
+- Just a variation of the "cloth" palettes including the original base color of the admiral hat's "cockade".
