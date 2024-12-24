@@ -5508,13 +5508,13 @@ tools/rod/foreground/rod.png,,"bluecarrot16, Pierre Vigier (pvigier), Tuomo Unti
 tools/slash,,,,,,,,,,,,,,,,,,,
 tools/smash,,,,,,,,,,,,,,,,,,,
 tools/smash/background,,,,,,,,,,,,,,,,,,,
-tools/smash/background/axe.png,,"bluecarrot16, Pierre Vigier (pvigier), Tuomo Untinen (reemax), Johannes Sjölund (wulax), and Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
-tools/smash/background/hammer.png,,"bluecarrot16, Pierre Vigier (pvigier), Tuomo Untinen (reemax), Johannes Sjölund (wulax), and Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
-tools/smash/background/pickaxe.png,,"bluecarrot16, Pierre Vigier (pvigier), Tuomo Untinen (reemax), Johannes Sjölund (wulax), and Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
+tools/smash/background/axe.png,,"bluecarrot16, Pierre Vigier (pvigier), Tuomo Untinen (reemax), Johannes Sjölund (wulax), and Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-hand-tools,https://opengameart.org/content/lpc-smash-weapons,,,,,,,,,,,,,,OK
+tools/smash/background/hammer.png,,"bluecarrot16, Pierre Vigier (pvigier), Tuomo Untinen (reemax), Johannes Sjölund (wulax), and Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-hand-tools,https://opengameart.org/content/lpc-smash-weapons,,,,,,,,,,,,,,OK
+tools/smash/background/pickaxe.png,,"bluecarrot16, Pierre Vigier (pvigier), Tuomo Untinen (reemax), Johannes Sjölund (wulax), and Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-hand-tools,https://opengameart.org/content/lpc-smash-weapons,,,,,,,,,,,,,,OK
 tools/smash/foreground,,,,,,,,,,,,,,,,,,,
-tools/smash/foreground/axe.png,,"bluecarrot16, Pierre Vigier (pvigier), Tuomo Untinen (reemax), Johannes Sjölund (wulax), and Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
-tools/smash/foreground/hammer.png,,"bluecarrot16, Pierre Vigier (pvigier), Tuomo Untinen (reemax), Johannes Sjölund (wulax), and Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
-tools/smash/foreground/pickaxe.png,,"bluecarrot16, Pierre Vigier (pvigier), Tuomo Untinen (reemax), Johannes Sjölund (wulax), and Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
+tools/smash/foreground/axe.png,,"bluecarrot16, Pierre Vigier (pvigier), Tuomo Untinen (reemax), Johannes Sjölund (wulax), and Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-hand-tools,https://opengameart.org/content/lpc-smash-weapons,,,,,,,,,,,,,,OK
+tools/smash/foreground/hammer.png,,"bluecarrot16, Pierre Vigier (pvigier), Tuomo Untinen (reemax), Johannes Sjölund (wulax), and Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-hand-tools,https://opengameart.org/content/lpc-smash-weapons,,,,,,,,,,,,,,OK
+tools/smash/foreground/pickaxe.png,,"bluecarrot16, Pierre Vigier (pvigier), Tuomo Untinen (reemax), Johannes Sjölund (wulax), and Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-hand-tools,https://opengameart.org/content/lpc-smash-weapons,,,,,,,,,,,,,,OK
 tools/thrust,,,,,,,,,,,,,,,,,,,
 tools/thrust/background,,,,,,,,,,,,,,,,,,,
 tools/thrust/background/hoe.png,,"bluecarrot16, Pierre Vigier (pvigier), Tuomo Untinen (reemax), Johannes Sjölund (wulax), and Inboxninja",CC-BY-SA 3.0,https://opengameart.org/content/lpc-hand-tools,,,,,,,,,,,,,,,OK
