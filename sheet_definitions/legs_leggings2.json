@@ -3,6 +3,7 @@
   "type_name": "legs",
   "layer_1": {
     "zPos": 20,
+    "male" : "legs/leggings2/male/",
     "female": "legs/leggings2/thin/",
     "teen": "legs/leggings2/thin/",
     "pregnant": "legs/leggings2/thin/"

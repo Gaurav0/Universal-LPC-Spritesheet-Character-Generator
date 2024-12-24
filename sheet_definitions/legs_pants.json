@@ -5,8 +5,9 @@
     "zPos" : 20,
     "male" : "legs/pants/male/",
     "muscular" : "legs/pants/male/",
-    "female" : "legs/pants/female/",
-    "teen" : "legs/pants/teen/"
+    "female" : "legs/pants/thin/",
+    "pregnant" : "legs/pants/thin/",
+    "teen" : "legs/pants/thin/"
   },
   "variants": [
     "black",
@@ -33,5 +34,24 @@
     "walnut",
     "white",
     "yellow"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_bgslash",
+    "1h_halfslash"
   ]
 }
