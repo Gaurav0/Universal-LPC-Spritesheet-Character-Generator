@@ -3,6 +3,7 @@
   "type_name" : "socks",
   "layer_1" : {
     "zPos" : 14,
+    "male" : "feet/socks/high/male/",
     "female" : "feet/socks/high/thin/",
     "teen" : "feet/socks/high/thin/",
     "pregnant" : "feet/socks/high/thin/"

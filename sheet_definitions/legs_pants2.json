@@ -1,11 +1,11 @@
 {
-  "name": "Pants 2",
+  "name": "Long Pants",
   "type_name": "legs",
   "layer_1": {
     "zPos": 20,
+    "male": "legs/pants2/male/",
     "female": "legs/pants2/thin/",
-    "teen": "legs/pants2/thin/",
-    "pregnant": "legs/pants2/thin/"
+    "teen": "legs/pants2/thin/"
   },
   "variants": [
     "leather",

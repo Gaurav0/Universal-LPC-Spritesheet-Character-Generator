@@ -3,9 +3,9 @@
   "type_name": "legs",
   "layer_1": {
     "zPos": 20,
+    "male": "legs/cuffed/male/",
     "female": "legs/cuffed/thin/",
-    "teen": "legs/cuffed/thin/",
-    "pregnant": "legs/cuffed/thin/"
+    "teen": "legs/cuffed/thin/"
   },
   "variants": [
     "leather",

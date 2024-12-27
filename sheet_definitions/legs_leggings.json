@@ -3,9 +3,9 @@
   "type_name" : "legs",
   "layer_1" : {
     "zPos" : 20,
-    "female" : "legs/leggings/female/",
-    "pregnant" : "legs/leggings/female/",
-    "teen" : "legs/leggings/female/"
+    "male" : "legs/leggings/male/",
+    "female" : "legs/leggings/thin/",
+    "teen" : "legs/leggings/thin/"
   },
   "variants": [
     "black",
@@ -32,5 +32,24 @@
     "walnut",
     "white",
     "yellow"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_bgslash",
+    "1h_halfslash"
   ]
 }
