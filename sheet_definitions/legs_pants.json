@@ -5,8 +5,8 @@
     "zPos" : 20,
     "male" : "legs/pants/male/",
     "muscular" : "legs/pants/male/",
-    "female" : "legs/pants/thin/",
-    "teen" : "legs/pants/thin/"
+    "female" : "legs/pants/female/",
+    "teen" : "legs/pants/female/"
   },
   "variants": [
     "black",
