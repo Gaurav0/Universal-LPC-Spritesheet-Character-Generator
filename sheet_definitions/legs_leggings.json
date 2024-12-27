@@ -5,8 +5,7 @@
     "zPos" : 20,
     "male" : "legs/leggings/male/",
     "female" : "legs/leggings/thin/",
-    "teen" : "legs/leggings/thin/",
-    "pregnant" : "legs/leggings/thin/"
+    "teen" : "legs/leggings/thin/"
   },
   "variants": [
     "black",

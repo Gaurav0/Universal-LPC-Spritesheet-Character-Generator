@@ -6,7 +6,6 @@
     "male" : "legs/pants/male/",
     "muscular" : "legs/pants/male/",
     "female" : "legs/pants/thin/",
-    "pregnant" : "legs/pants/thin/",
     "teen" : "legs/pants/thin/"
   },
   "variants": [
