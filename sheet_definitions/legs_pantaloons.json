@@ -3,7 +3,8 @@
   "type_name": "legs",
   "layer_1": {
     "zPos": 20,
-    "male": "legs/pantaloons/male/"
+    "male": "legs/pantaloons/male/",
+    "muscular": "legs/pantaloons/muscular/"
   },
   "variants": [
     "black",
@@ -12,8 +13,6 @@
     "brown",
     "charcoal",
     "forest",
-    "formal",
-    "formal_striped",
     "furbrown",
     "gray",
     "green",
