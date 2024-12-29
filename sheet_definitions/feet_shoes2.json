@@ -3,6 +3,7 @@
   "type_name" : "shoes",
   "layer_1" : {
     "zPos" : 15,
+    "male" : "feet/shoes2/male/",
     "female" : "feet/shoes2/thin/",
     "teen" : "feet/shoes2/thin/",
     "pregnant" : "feet/shoes2/thin/"
