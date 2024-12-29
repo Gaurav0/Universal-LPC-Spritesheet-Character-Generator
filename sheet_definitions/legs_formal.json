@@ -1,0 +1,14 @@
+{
+  "name": "Formal Pants",
+  "type_name": "legs",
+  "layer_1": {
+    "zPos": 20,
+    "male": "legs/formal/male/",
+    "muscular": "legs/formal/male/"
+  },
+  "variants": [
+    "formal",
+    "formal_striped",
+    "furbrown"
+  ]
+}
