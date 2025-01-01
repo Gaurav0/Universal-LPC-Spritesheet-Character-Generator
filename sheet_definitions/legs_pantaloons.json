@@ -4,7 +4,10 @@
   "layer_1": {
     "zPos": 20,
     "male": "legs/pantaloons/male/",
-    "muscular": "legs/pantaloons/muscular/"
+    "muscular": "legs/pantaloons/muscular/",
+    "female": "legs/pantaloons/thin/",
+    "pregnant": "legs/pantaloons/thin/",
+    "teen": "legs/pantaloons/thin/"
   },
   "variants": [
     "black",
@@ -31,5 +34,24 @@
     "walnut",
     "white",
     "yellow"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_bgslash",
+    "1h_halfslash"
   ]
 }
