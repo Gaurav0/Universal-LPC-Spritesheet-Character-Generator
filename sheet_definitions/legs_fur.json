@@ -61,5 +61,55 @@
     "1h_slash",
     "1h_bgslash",
     "1h_halfslash"
+  ],
+  "credits": [
+    {
+      "file": "legs/fur",
+      "notes": "Original pants by Stephen Challener (Redshrike), Fur Pants Color by Evert, Edited to V3 Bases by Bluecarrot16, climb/jump/run/sit/emotes/revised combat by JaidynReiman",
+      "authors": [
+        "Lanea Zimmerman (Sharm)",
+        "Stephen Challener (Redshrike)",
+        "Manuel Riecke (MrBeast)",
+        "Charles Sanchez (CharlesGabriel)",
+        "Evert",
+        "ElizaWy",
+        "Daniel Eddeland (daneeklu)",
+        "Nila122",
+        "Stephen Challener (Redshrike)"
+      ],
+      "licenses": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+        "https://opengameart.org/content/lpc-faun-and-minotaur",
+        "https://opengameart.org/content/lpc-expanded-pants"
+      ]
+    },
+    {
+      "file": "legs/fur/thin",
+      "notes": "Original pants by Stephen Challener (Redshrike), Fur Pants Color by Evert, Edited to V3 Bases by Bluecarrot16, Female/Thin version by JaidynReiman",
+      "authors": [
+        "Lanea Zimmerman (Sharm)",
+        "Stephen Challener (Redshrike)",
+        "Manuel Riecke (MrBeast)",
+        "Charles Sanchez (CharlesGabriel)",
+        "Evert",
+        "ElizaWy",
+        "Daniel Eddeland (daneeklu)",
+        "Nila122",
+        "Stephen Challener (Redshrike)"
+      ],
+      "licenses": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+        "https://opengameart.org/content/lpc-faun-and-minotaur",
+        "https://opengameart.org/content/lpc-expanded-pants"
+      ]
+    }
   ]
 }
