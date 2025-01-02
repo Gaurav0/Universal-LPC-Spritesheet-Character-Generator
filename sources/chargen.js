@@ -288,7 +288,15 @@ $(document).ready(function() {
   }
 
   function sheetCreditsToCSV() {
-    // TODO
+    const header = "filename,notes,authors,licenses,urls";
+    var csvBody = header + "\n";
+    sheetCredits.map(function(credit) {
+      if (credit.licenses !== undefined) {
+        csvBody+=`${credit.fileName},\"${credit.notes}\",\"${credit.authors}\",\"${credit.licenses}\",\"${credit.urls}\"`;
+        csvBody+="\n";
+      }
+    })
+    return csvBody;
   }
 
   function sheetCreditsToTxt() {
