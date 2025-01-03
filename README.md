@@ -1,10 +1,10 @@
  LPC Spritesheet Character Generator
  =============================================
 
-Originally based on [LPC Character generator](https://github.com/Gaurav0/Universal-LPC-Spritesheet-Character-Generator).
 This generator attempts to include all [LPC](https://lpc.opengameart.org) created art up to now.
 
-Try it [here](https://sanderfrenken.github.io/Universal-LPC-Spritesheet-Character-Generator/).
+Try it [here](https://liberatedpixelcup.github.io/Universal-LPC-Spritesheet-Character-Generator/).
+
 
 The Liberated Pixel Effort is a collaborative effort from a number of different great artists who helped produce sprites for the project.
 **If you wish to use LPC sprites in your project, you will need to credit everyone who helped contribute to the LPC sprites you are using.** See below for how to do this.
@@ -43,9 +43,9 @@ For example, you have created at this point:
 `body_robot.json`
 
 A category can exist of n-layers. For each layer, define the z-position the sheet needs to be drawn at.
-For an example of a multi-layered definition, refer here [here](https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/sheet_definitions/tail_lizard.json).
+For an example of a multi-layered definition, refer here [here](https://github.com/liberatedpixelcup/Universal-LPC-Spritesheet-Character-Generator/blob/master/sheet_definitions/tail_lizard.json).
 
-You can optionally also specify the available animations the asset supports. You do not have to feel obligated to fill out all animations, and some assets may not work well on all animations anyway. In the sheet definition, you can add the "animations" array below "variants". Again, refer here [here](https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/sheet_definitions/tail_lizard.json):
+You can optionally also specify the available animations the asset supports. You do not have to feel obligated to fill out all animations, and some assets may not work well on all animations anyway. In the sheet definition, you can add the "animations" array below "variants". Again, refer here [here](https://github.com/liberatedpixelcup/Universal-LPC-Spritesheet-Character-Generator/blob/master/sheet_definitions/tail_lizard.json):
 ```
   "animations": [
     "spellcast",
@@ -89,4 +89,4 @@ To run this project, just clone the repo and open `index.html` in your browser o
 TBD
 
 ### Examples
-![example](https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/example.png)
+![example](https://github.com/liberatedpixelcup/Universal-LPC-Spritesheet-Character-Generator/blob/master/example.png)
