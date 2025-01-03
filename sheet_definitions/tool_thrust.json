@@ -1,6 +1,6 @@
 {
-  "name" : "Thrust",
-  "type_name" : "weapon",
+  "name": "Thrust",
+  "type_name": "weapon",
   "layer_1": {
     "zPos": 9,
     "male": "tools/thrust/background/",
@@ -21,5 +21,24 @@
     "hoe",
     "shovel",
     "watering"
+  ],
+  "credits": [
+    {
+      "file": "tools/thrust",
+      "notes": "",
+      "authors": [
+        "bluecarrot16",
+        "Pierre Vigier (pvigier)",
+        "Tuomo Untinen (reemax)",
+        "Johannes Sjölund (wulax)",
+        "and Inboxninja"
+      ],
+      "licenses": [
+        "CC-BY-SA 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/lpc-hand-tools"
+      ]
+    }
   ]
 }

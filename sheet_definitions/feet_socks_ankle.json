@@ -1,12 +1,12 @@
 {
-  "name" : "Ankle Socks",
-  "type_name" : "socks",
-  "layer_1" : {
-    "zPos" : 14,
-    "male" : "feet/socks/ankle/male/",
-    "female" : "feet/socks/ankle/thin/",
-    "teen" : "feet/socks/ankle/thin/",
-    "pregnant" : "feet/socks/ankle/thin/"
+  "name": "Ankle Socks",
+  "type_name": "socks",
+  "layer_1": {
+    "zPos": 14,
+    "male": "feet/socks/ankle/male/",
+    "female": "feet/socks/ankle/thin/",
+    "teen": "feet/socks/ankle/thin/",
+    "pregnant": "feet/socks/ankle/thin/"
   },
   "variants": [
     "leather",
@@ -52,5 +52,40 @@
     "1h_slash",
     "1h_bgslash",
     "1h_halfslash"
+  ],
+  "credits": [
+    {
+      "file": "feet/socks/ankle/male",
+      "notes": "original overalls and thin socks by ElizaWy, base animations adapted from v3 overalls by bluecarrot16, socks by JaidynReiman",
+      "authors": [
+        "JaidynReiman",
+        "ElizaWy",
+        "Bluecarrot16"
+      ],
+      "licenses": [
+        "OGA-BY 3.0",
+        "GPL 3.0"
+      ],
+      "urls": [
+        "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+        "https://opengameart.org/content/lpc-expanded-socks-shoes"
+      ]
+    },
+    {
+      "file": "feet/socks/ankle",
+      "notes": "original by ElizaWy, remaining frames by JaidynReiman",
+      "authors": [
+        "ElizaWy",
+        "JaidynReiman"
+      ],
+      "licenses": [
+        "OGA-BY 3.0"
+      ],
+      "urls": [
+        "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+        "https://opengameart.org/content/expanded-universal-lpc-spritesheet-idle-run-jump-lpc-revised-combat-and-assets",
+        "https://opengameart.org/content/lpc-expanded-socks-shoes"
+      ]
+    }
   ]
 }
