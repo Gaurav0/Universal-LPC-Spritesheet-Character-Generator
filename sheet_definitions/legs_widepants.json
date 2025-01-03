@@ -30,5 +30,26 @@
     "walnut",
     "white",
     "yellow"
+  ],
+  "credits": [
+    {
+      "file": "legs/pants/muscular",
+      "notes": "original muscular pants by ElizaWy, muscular by dalonedrau, cast and thrust frames by JaidynReiman",
+      "authors": [
+        "ElizaWy",
+        "JaidynReiman",
+        "dalonedrau",
+        "Stephen Challener (Redshrike)"
+      ],
+      "licenses": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/lpc-muscular-pants",
+        "https://opengameart.org/content/lpc-muscular-swing-animation",
+        "https://opengameart.org/content/lpc-muscular-hurt-animation"
+      ]
+    }
   ]
 }
