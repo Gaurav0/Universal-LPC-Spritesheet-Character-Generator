@@ -89,6 +89,4 @@ To run this project, just clone the repo and open `index.html` in your browser o
 TBD
 
 ### Examples
-![alt text](https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/ex1.png)
-![alt text](https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/ex2.png)
-![alt text](https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/ex3.png)
+![example](https://github.com/sanderfrenken/Universal-LPC-Spritesheet-Character-Generator/blob/master/example.png)

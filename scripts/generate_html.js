@@ -152,7 +152,7 @@ function generateListHTML(json) {
 }
 
 var lineReader = require('readline').createInterface({
-  input: fs.createReadStream('source_index.html')
+  input: fs.createReadStream('sources/source_index.html')
 });
 var htmlGenerated = '<!-- THIS FILE IS AUTO-GENERATED. PLEASE DONT ALTER IT MANUALLY -->\n';
 
