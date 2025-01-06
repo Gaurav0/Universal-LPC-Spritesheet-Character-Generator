@@ -29,7 +29,7 @@ function searchCredit(fileName, credits, origFileName) {
   }
 }
 
-function generateListHTML(json) {
+function parseJson(json) {
   const definition = JSON.parse(fs.readFileSync(`sheet_definitions/${json}`));
   const variants = definition.variants
   const name = definition.name
@@ -92,6 +92,8 @@ function generateListHTML(json) {
 
   var idx = 0;
   var listItemsHTML = `<li><input type="radio" id="${typeName}-none" name="${typeName}"> <label for="${typeName}-none">No ${typeName}</label></li>`;
+  var listItemsCSV = "";
+  var addedCreditsFor = [];
   for (variant in variants) {
     const itemName = variants[idx];
     const itemIdFor = typeName + "-" + name.replaceAll(" ", "_") +  "_" + itemName.replaceAll(" ", "_");
@@ -126,10 +128,14 @@ function generateListHTML(json) {
               dataFiles += "data-layer_" + jdx + "_" + requiredSexes[sexIdx] + "_authors=" + authors;
               const urls = "\"" + creditToUse.urls.join(',') + "\"";
               dataFiles += "data-layer_" + jdx + "_" + requiredSexes[sexIdx] + "_urls=" + urls;
-              const notes = "\"" + creditToUse.notes + "\"";
+              const notes = "\"" + creditToUse.notes.replaceAll("\"", "**") + "\"";
               dataFiles += "data-layer_" + jdx + "_" + requiredSexes[sexIdx] + "_notes=" + notes;
+              if (!addedCreditsFor.includes(imageFileName)) {
+                listItemsCSV += `${"\"" + file + itemName + ".png\""},${notes},${authors},${licenses},${urls}\n`;
+                addedCreditsFor.push(imageFileName);
+              }
             } else {
-              console.warn("missing credit inside", json);
+              throw Error(`missing credit inside ${json}`);
             }
           }
         } else {
@@ -148,19 +154,26 @@ function generateListHTML(json) {
       .replaceAll("[DATA_FILE]", dataFiles);
     idx += 1;
   }
-  return startHTML + listItemsHTML + endHTML;
+  const html = startHTML + listItemsHTML + endHTML;
+  let parsed = {};
+  parsed.html = html;
+  parsed.csv = listItemsCSV;
+  return parsed;
 }
 
-var lineReader = require('readline').createInterface({
+var lineReader = readline.createInterface({
   input: fs.createReadStream('sources/source_index.html')
 });
 var htmlGenerated = '<!-- THIS FILE IS AUTO-GENERATED. PLEASE DONT ALTER IT MANUALLY -->\n';
+var csvGenerated = "filename,notes,authors,licenses,urls\n"
 
 lineReader.on('line', function (line) {
   if (line.includes('div_sheet_')) {
     const definition = line.replace("div_sheet_","");
-    const newLine = generateListHTML(`${definition}.json`.replaceAll("\t", ""))
-    htmlGenerated+=newLine+"\n";
+    const parsedResult = parseJson(`${definition}.json`.replaceAll("\t", ""));
+    const newLineHTML = parsedResult.html;
+    htmlGenerated+=newLineHTML+"\n";
+    csvGenerated+=parsedResult.csv;
   } else {
     htmlGenerated+=line+"\n";
   }
@@ -168,10 +181,17 @@ lineReader.on('line', function (line) {
 
 lineReader.on('close', function (line) {
   fs.writeFile('index.html', htmlGenerated, function(err) {
-            if (err) {
-                return console.log(err);
-            } else {
-                console.log('Updated!');
-            }
-    });
+    if (err) {
+        return console.log(err);
+    } else {
+        console.log('HTML Updated!');
+    }
+  });
+  fs.writeFile('CREDITS.csv', csvGenerated, function(err) {
+    if (err) {
+        return console.log(err);
+    } else {
+        console.log('CSV Updated!');
+    }
+  });
 });
