@@ -1,6 +1,7 @@
 const fs = require('fs');
 const readline = require('readline');
 
+var licensesFound = [];
 function searchCredit(fileName, credits, origFileName) {
   if (credits.count <= 0) {
     console.error("no credits for filename:", fileName);
@@ -122,6 +123,14 @@ function parseJson(json) {
             dataFiles += "data-layer_" + jdx + "_" + requiredSexes[sexIdx] + "=" + imageFileName;
             const creditToUse = searchCredit(fileNameForCreditSearch, credits, fileNameForCreditSearch);
             if (creditToUse !== undefined) {
+              var licenseIdx = 0;
+              for (license in creditToUse.licenses) {
+                var licenseName = creditToUse.licenses[licenseIdx];
+                if (!licensesFound.includes(licenseName)) {
+                  licensesFound.push(licenseName);
+                }
+                licenseIdx+=1
+              }
               const licenses = "\"" + creditToUse.licenses.join(',') + "\"";
               dataFiles += "data-layer_" + jdx + "_" + requiredSexes[sexIdx] + "_licenses=" + licenses;
               const authors = "\"" + creditToUse.authors.join(',') + "\"";
@@ -192,6 +201,7 @@ lineReader.on('close', function (line) {
         return console.log(err);
     } else {
         console.log('CSV Updated!');
+        console.log('Found licenses:', licensesFound)
     }
   });
 });
