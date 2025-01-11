@@ -118,11 +118,38 @@ Finally, to get your sheet to appear, in `source_index.html`, add your new categ
 Make sure the name starts with `div_sheet_`, and match the postfix with the name of your json, in this case `body_robot`.
 
 At this point, you will need to run a script that will generate the final `index.html`.
-In order to do that, run `node scripts/generate_sources.js` from the root folder.
+In order to do that, run:
+
+`node scripts/generate_sources.js` 
+
 This will generate the `index.html` from the `source_index.html`.
 
 In case you want to push your changes, be sure to run this script and never change the `index.html` manually.
 The CI will reject any PR's that contain manual changes made on the `index.html`.
+
+#### z-positions
+
+In order to facilitate easier management of the z-positions of the assets in this repo, there is a [script](/scripts/zPositioning/parse_zpos.js) that traverses all JSON files and write's the layer's z-position to a CSV.
+
+To run this script, use:
+
+`node scripts/zPositioning/parse_zpos.js`
+
+This [CSV file](/scripts/zPositioning/z_positions.csv) will be regenerated each time one invokes:
+
+`node scripts/generate_sources.js`
+
+Therefore, before creating a PR, make sure you have committed the CSV to the repo as well.
+
+Using this CSV, one can more clearly see the overview of all the z-position used per asset's layer.
+
+Moreover, one can adjust the z-position from within the CSV, and then run:
+
+`node scripts/zPositioning/update_zpos.js`
+
+In order to reflect the changes made back into the JSON files.
+
+**Concluding, please remember that the JSON files will always contain the source of truth with regard to the z-position an asset will be rendered at. The CSV is there to give an overview of the z-positions in use, and provides a mean to easily alter them from a single file.**
 
 ### Run
 
