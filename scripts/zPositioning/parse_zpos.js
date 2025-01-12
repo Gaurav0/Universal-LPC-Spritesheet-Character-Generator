@@ -1,7 +1,7 @@
 const testFolder = 'sheet_definitions';
 const fs = require('fs');
 
-var toWrite = "json,layer,zPos,images\n";
+var csvEntries = [];
 const possibleBodies = ["male", "female", "muscular", "pregnant","child"];
 
 fs.readdirSync(testFolder).forEach(file => {
@@ -30,13 +30,16 @@ fs.readdirSync(testFolder).forEach(file => {
         }
         bodyIndex+=1;
       }
-      toWrite+= `${json},${layer},${zPos},${images}\n`
+      csvEntries.push(`${json},${layer},${zPos},${images}`)
     } else {
       return
     }
   }
 });
-fs.writeFile('scripts/zPositioning/z_positions.csv', toWrite, function(err) {
+
+const csvToWrite = "json,layer,zPos,images\n" + csvEntries.sort().join("\n");
+
+fs.writeFile('scripts/zPositioning/z_positions.csv', csvToWrite, function(err) {
   if (err) {
       return console.log(err);
   } else {
