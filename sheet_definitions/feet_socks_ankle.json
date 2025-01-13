@@ -50,7 +50,7 @@
     "climb",
     "combat",
     "1h_slash",
-    "1h_bgslash",
+    "1h_backslash",
     "1h_halfslash"
   ],
   "credits": [
@@ -60,7 +60,9 @@
       "authors": [
         "JaidynReiman",
         "ElizaWy",
-        "Bluecarrot16"
+        "Bluecarrot16",
+        "Stephen Challener (Redshrike)",
+        "Johannes Sjölund (wulax)"
       ],
       "licenses": [
         "OGA-BY 3.0",
