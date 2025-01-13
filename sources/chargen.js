@@ -5,8 +5,6 @@ $.expr[':'].icontains = function(a, i, m) {
       .indexOf(m[3].toUpperCase()) >= 0;
 };
 
-$.fn.reverse = [].reverse;
-
 $(document).ready(function() {
 
   var matchBodyColor = true;
@@ -584,7 +582,7 @@ $(document).ready(function() {
   }
 
   function interpretParams() {
-    $("input[type=radio]").reverse().each(function() {
+    $("input[type=radio]").each(function() {
       var words = _.words($(this).attr('id'), '-');
       var initial = _.initial(words).join('-');
       $(this).prop("checked", $(this).attr("checked") || params[initial] == _.last(words));
