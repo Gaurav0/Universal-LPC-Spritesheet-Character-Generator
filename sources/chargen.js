@@ -582,10 +582,15 @@ $(document).ready(function() {
   }
 
   function interpretParams() {
+    const ids = new Set();
     $("input[type=radio]").each(function() {
-      var words = _.words($(this).attr('id'), '-');
-      var initial = _.initial(words).join('-');
-      $(this).prop("checked", $(this).attr("checked") || params[initial] == _.last(words));
+      const id = $(this).attr('id');
+      if (!ids.has(id)) {
+        ids.add(id);
+        const words = _.words($(this).attr('id'), '-');
+        const initial = _.initial(words).join('-');
+        $(this).prop("checked", $(this).attr("checked") || params[initial] === _.last(words));
+      }
     });
   }
 
