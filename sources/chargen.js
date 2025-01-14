@@ -170,7 +170,7 @@ $(document).ready(function() {
         if (!allowedLicenses.some(allowedLicense => licensesForAsset.includes(allowedLicense))) {
           if ($(this).prop("checked")) {
             $(this).attr("checked", false).prop("checked", false);
-            $(this).closest('ul').find("input[type=radio][id$=none]").click();
+            $(this).closest('ul').find("input[type=radio][id*=none]").click();
           }
         }
       }
@@ -178,6 +178,28 @@ $(document).ready(function() {
     setParams();
     redraw();
     showOrHideElements();
+  });
+
+  $(".removeUnsupported").click(function() {
+    const selectedAnims = getSelectedAnimations();
+    $("input[type=radio]").each(function() {
+      const $li = $(this).closest("li[data-animations]");
+      if ($li.data("animations") && selectedAnims.length > 0) {
+        const requiredAnimations = $li.data("animations").split(",");
+        for (const selectedAnim of selectedAnims) {
+          if (!requiredAnimations.includes(selectedAnim)) {
+            if ($(this).prop("checked")) {
+              $(this).attr("checked", false).prop("checked", false);
+              $(this).closest('ul').find("input[type=radio][id*=none]:not(:checked)").click();
+            }
+          }
+        }
+      }
+    });
+    setParams();
+    redraw();
+    showOrHideElements();
+    return false;
   });
 
   $(".replacePinkMask").click(function() {
@@ -387,11 +409,18 @@ $(document).ready(function() {
     return "ERROR";
   }
 
-  function getSelectedAnimation() {
-    if ($("[name=animation]:checked").length > 0) {
-      return $("[name=animation]:checked").prop("id").replace("animation-", "");
+  $('[name=animation]').click(function() {
+    showOrHideElements();
+  })
+
+  function getSelectedAnimations() {
+    const $anims = $("[name=animation]:checked");
+    if ($anims.length > 0) {
+      return $anims.map(function() {
+        return this.id.replace("animation-", "");
+      });
     }
-    return "any";
+    return [];
   }
 
   $('.licenseCheckBox').click(function() {
@@ -622,8 +651,11 @@ $(document).ready(function() {
 
   function showOrHideElements() {
     const bodyType = getBodyTypeName();
-    const selectedAnim = getSelectedAnimation();
+    const selectedAnims = getSelectedAnimations();
     const allowedLicenses = getAllowedLicenses();
+    let hasUnsupported = false;
+    let hasProhibited = false;
+
     $("li").each(function(index) {
       // Toggle Required Body Type
       var display = true;
@@ -634,23 +666,29 @@ $(document).ready(function() {
         }
       }
 
-      // Toggle Required Animations
-      if ($(this).data("animations") && selectedAnim !== 'any') {
-        var requiredAnimations = $(this).data("animations").split(",");
-        if (!requiredAnimations.includes(selectedAnim)) {
-          display = false;
+      if (display) {
+        // Toggle Required Animations
+        if ($(this).data("animations") && selectedAnims.length > 0) {
+          const requiredAnimations = $(this).data("animations").split(",");
+          for (const selectedAnim of selectedAnims) {
+            if (!requiredAnimations.includes(selectedAnim)) {
+              display = false;
+              if ($(this).find("input[type=radio]:checked:not([id*=none])").length > 0) {
+                hasUnsupported = true;
+              }
+              break;
+            }
+          }
         }
       }
 
       // Display Result
-      if(display) {
-        $(this).prop("style", "");
+      if (display) {
+        $(this).show();
       } else {
-        $(this).prop("style", "display:none");
+        $(this).hide();
       }
     });
-
-    let hasProhibited = false;
 
     $("input[type=radio]").each(function() {
       var display = true;
@@ -669,11 +707,17 @@ $(document).ready(function() {
 
       // Display Result
       if(display) {
-        $(this).parent().prop("style", "");
+        $(this).parent().show();
       } else {
-        $(this).parent().prop("style", "display:none");
+        $(this).parent().hide();
       }
     });
+
+    if (hasUnsupported) {
+      $(".removeUnsupported").show();
+    } else {
+      $(".removeUnsupported").hide();
+    }
 
     if (hasProhibited) {
       $(".removeIncompatibleWithLicenses").show();
