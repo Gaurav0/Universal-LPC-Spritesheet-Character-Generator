@@ -98,7 +98,7 @@ const walk = function(dir) {
     });
     return results;
 }
-const sheetsFolder = 'spritesheets/weapon';
+const sheetsFolder = 'spritesheets';
 const files = walk(sheetsFolder);
 
 const masterSheetNames = [
