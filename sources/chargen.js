@@ -13,13 +13,13 @@ $(document).ready(function() {
   var params = jHash.val();
   var sheetCredits = [];
 
-  var imagesToLoad = 0;
-  var imagesLoaded = 0;
-  var didStartRenderAfterLoad = false;
+  let imagesToLoad = 0;
+  let imagesLoaded = 0;
+  let didStartRenderAfterLoad = false;
 
-  var canvas = $("#spritesheet").get(0);
-  var ctx = canvas.getContext("2d", { willReadFrequently: true });
-  var images = {};
+  const canvas = $("#spritesheet").get(0);
+  const ctx = canvas.getContext("2d", { willReadFrequently: true });
+  const images = {};
   const universalFrameSize = 64;
   const universalSheetWidth = 832;
   const universalSheetHeight = 3456;
@@ -471,7 +471,11 @@ $(document).ready(function() {
   }
 
   function loadItemsToDraw() {
-    resetLoading();
+    if (canRender()) {
+      resetLoading();
+    } else {
+      return setTimeout(loadItemsToDraw, 250);
+    }
     var itemIdx = 0;
     for (item in itemsToDraw) {
       const supportedAnimations = itemsToDraw[itemIdx].supportedAnimations;
@@ -480,7 +484,7 @@ $(document).ready(function() {
       if (custom_animation !== undefined) {
         loadImage(filePath, true);
       } else {
-        const splitPath = splitFilePath(filePath);
+        const { directory, file } = splitFilePath(filePath);
 
         for (const [key, value] of Object.entries(base_animations)) {
           var animationToCheck = key;
@@ -492,7 +496,7 @@ $(document).ready(function() {
             animationToCheck = "1h_halfslash";
           }
           if (supportedAnimations.includes(animationToCheck)) {
-            const newFile = `${splitPath.directory}/${key}/${splitPath.file}`;
+            const newFile = `${directory}/${key}/${file}`;
             loadImage(newFile, true);
           } else {
             // Enable this to see missing animations in the console
@@ -506,9 +510,9 @@ $(document).ready(function() {
 
   function drawItemsToDraw() {
     if (!canRender()) {
-      return
+      return;
     }
-    console.log(`Start drawItemsToDraw`)
+    console.log(`Start drawItemsToDraw`);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     var requiredCanvasHeight = universalSheetHeight;
@@ -724,7 +728,7 @@ $(document).ready(function() {
       var img = new Image();
       img.src = "spritesheets/" + imgRef;
       img.onload = imageLoadDone;
-      img.onerror = imageLoadDone;
+      img.onerror = imageLoadError;
       images[imgRef] = img;
       return img;
     }
@@ -736,6 +740,11 @@ $(document).ready(function() {
       didStartRenderAfterLoad = true;
       drawItemsToDraw();
     }
+  }
+
+  function imageLoadError(event) {
+    console.error('There was an error loading image:', event.target.src);
+    imageLoadDone();
   }
 
   function getImage2(imgRef, callback, layers, prevctx) {
@@ -860,21 +869,20 @@ $(document).ready(function() {
   }
 
   function updatePreviewLink(imageLink) {
-    const splitPath = splitFilePath(imageLink);
-    imageLink = `${splitPath.directory}/walk/${splitPath.file}`
-    return imageLink
+    const { directory, file } = splitFilePath(imageLink);
+    imageLink = `${directory}/walk/${file}`;
+    return imageLink;
   }
 
   function splitFilePath(filePath) {
-    const index = filePath.lastIndexOf("\/");
+    const index = filePath.lastIndexOf('/');
     if (index > -1) {
         return {
           directory: filePath.substring(0, index),
           file: filePath.substring(index+1)
         }
     } else {
-      console.error(`Could not split to directory and file using path ${filePath}`);
-      return undefined;
+      throw new Error(`Could not split to directory and file using path ${filePath}`);
     }
   }
 });
