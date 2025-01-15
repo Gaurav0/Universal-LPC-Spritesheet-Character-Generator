@@ -716,10 +716,11 @@ $(document).ready(function() {
     if (!allowLoading) {
       return images[imgRef];
     }
+    imagesToLoad += 1;
     if (images[imgRef]) {
+      setTimeout(function() { imageLoadDone(); }, 10);
       return images[imgRef];
     } else {
-      imagesToLoad += 1;
       console.log(`loading new image ${imgRef}`)
       var img = new Image();
       img.src = "spritesheets/" + imgRef;
