@@ -450,8 +450,8 @@ $(document).ready(function() {
           break;
         }
       }
-      loadItemsToDraw();
     });
+    loadItemsToDraw();
     const creditsTxt = sheetCreditsToTxt()
     $("textarea#creditsText").val(creditsTxt);
     itemsMeta["credits"] = creditsTxt;
@@ -471,11 +471,10 @@ $(document).ready(function() {
   }
 
   function loadItemsToDraw() {
-    if (canRender()) {
-      resetLoading();
-    } else {
-      return setTimeout(loadItemsToDraw, 250);
+    if (!canRender()) {
+      return setTimeout(loadItemsToDraw, 100);
     }
+    resetLoading();
     var itemIdx = 0;
     for (item in itemsToDraw) {
       const supportedAnimations = itemsToDraw[itemIdx].supportedAnimations;
