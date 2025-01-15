@@ -533,8 +533,7 @@ $(document).ready(function() {
         }
         ctx.drawImage(img, 0, universalSheetHeight+offSetInAdditionToOtherCustomActions);
       } else {
-        const assetDirectory = getDirectoryForAsset(filePath);
-        const assetName = getFileNameForAssetPath(filePath);
+        const splitPath = splitFilePath(filePath);
 
         for (const [key, value] of Object.entries(base_animations)) {
           var animationToCheck = key;
@@ -546,7 +545,7 @@ $(document).ready(function() {
             animationToCheck = "1h_halfslash";
           }
           if (supportedAnimations.includes(animationToCheck)) {
-            const newFile = `${assetDirectory}/${key}/${assetName}`;
+            const newFile = `${splitPath.directory}/${key}/${splitPath.file}`;
             const img = getImage(newFile);
             drawImage(ctx, img, value);
           } else {
@@ -726,10 +725,8 @@ $(document).ready(function() {
         const animation =  $(this).data(`layer_1_custom_animation`);
 
         if($(this).data(`layer_1_${getBodyTypeName()}`) === undefined) {
-          var imageLink = $(this).data(`layer_1_${getBodyTypeName()}`);
-          if (imageLink !== undefined) {
-            imageLink = updatePreviewLink(imageLink);
-          }
+          let imageLink = $(this).data(`layer_1_${getBodyTypeName()}`);
+          imageLink = imageLink && updatePreviewLink(imageLink)
           previewToDraw.link = imageLink;
           previewToDraw.zPos = $(this).data(`layer_1_zpos`);
           layers.push(previewToDraw);
@@ -738,7 +735,7 @@ $(document).ready(function() {
             if($(this).data(`layer_${jdx}_${getBodyTypeName()}`)){
               if(animation === $(this).data(`layer_${jdx}_custom_animation`)) {
                 const previewToDraw = {};
-                var imageLink = $(this).data(`layer_${jdx}_${getBodyTypeName()}`);
+                let imageLink = $(this).data(`layer_${jdx}_${getBodyTypeName()}`);
                 if (imageLink !== undefined) {
                   imageLink = updatePreviewLink(imageLink);
                 }
@@ -791,28 +788,20 @@ $(document).ready(function() {
   }
 
   function updatePreviewLink(imageLink) {
-    const assetDirectory = getDirectoryForAsset(imageLink);
-    const assetName = getFileNameForAssetPath(imageLink);
-    imageLink = `${assetDirectory}/walk/${assetName}`
+    const splitPath = splitFilePath(imageLink);
+    imageLink = `${splitPath.directory}/walk/${splitPath.file}`
     return imageLink
   }
 
-  function getDirectoryForAsset(filePath) {
+  function splitFilePath(filePath) {
     const index = filePath.lastIndexOf("\/");
     if (index > -1) {
-        return filePath.substring(0, index);
+        return {
+          directory: filePath.substring(0, index),
+          file: filePath.substring(index+1)
+        }
     } else {
-      console.error(`Could not determine directory from path ${filePath}`);
-      return undefined;
-    }
-  }
-
-  function getFileNameForAssetPath(filePath) {
-    const index = filePath.lastIndexOf('/');
-    if (index > -1) {
-        return filePath.substring(index+1); // +1 to remove starting slash
-    } else {
-      console.error(`Could not determine filename from path ${filePath}`);
+      console.error(`Could not split to directory and file using path ${filePath}`);
       return undefined;
     }
   }
