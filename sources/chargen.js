@@ -13,6 +13,10 @@ $(document).ready(function() {
   var params = jHash.val();
   var sheetCredits = [];
 
+  var imagesToLoad = 0;
+  var imagesLoaded = 0;
+  var didStartRenderAfterLoad = false;
+
   var canvas = $("#spritesheet").get(0);
   var ctx = canvas.getContext("2d", { willReadFrequently: true });
   var images = {};
@@ -446,6 +450,7 @@ $(document).ready(function() {
           break;
         }
       }
+      loadItemsToDraw();
     });
     const creditsTxt = sheetCreditsToTxt()
     $("textarea#creditsText").val(creditsTxt);
@@ -457,10 +462,53 @@ $(document).ready(function() {
       itemToDraw.zPos = parseInt(document.getElementById("ZPOS").value) || 0;
       itemsToDraw.push(itemToDraw);
     }
-    drawItems(itemsToDraw);
   }
 
-  function drawItems(itemsToDraw) {
+  function resetLoading() {
+    imagesLoaded = 0;
+    imagesToLoad = 0;
+    didStartRenderAfterLoad = false;
+  }
+
+  function loadItemsToDraw() {
+    resetLoading();
+    var itemIdx = 0;
+    for (item in itemsToDraw) {
+      const supportedAnimations = itemsToDraw[itemIdx].supportedAnimations;
+      const filePath = itemsToDraw[itemIdx].fileName;
+      const custom_animation = itemsToDraw[itemIdx].custom_animation;
+      if (custom_animation !== undefined) {
+        loadImage(filePath, true);
+      } else {
+        const splitPath = splitFilePath(filePath);
+
+        for (const [key, value] of Object.entries(base_animations)) {
+          var animationToCheck = key;
+          if (key === "combat_idle") {
+            animationToCheck = "combat";
+          } else if (key === "backslash") {
+            animationToCheck = "1h_slash";
+          } else if (key === "halfslash") {
+            animationToCheck = "1h_halfslash";
+          }
+          if (supportedAnimations.includes(animationToCheck)) {
+            const newFile = `${splitPath.directory}/${key}/${splitPath.file}`;
+            loadImage(newFile, true);
+          } else {
+            // Enable this to see missing animations in the console
+            // console.warn(`supportedAnimations does not contain ${key} for asset ${assetName}. skipping render`)
+          }
+        }
+      }
+      itemIdx+=1;
+    }
+  }
+
+  function drawItemsToDraw() {
+    if (!canRender()) {
+      return
+    }
+    console.log(`Start drawItemsToDraw`)
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     var requiredCanvasHeight = universalSheetHeight;
@@ -497,7 +545,7 @@ $(document).ready(function() {
       const custom_animation = itemsToDraw[itemIdx].custom_animation;
 
       if (custom_animation !== undefined) {
-        const img = getImage(filePath);
+        const img = loadImage(filePath, false);
         const customAnimationDefinition = customAnimations[custom_animation];
         const frameSize = customAnimationDefinition.frameSize;
 
@@ -546,7 +594,7 @@ $(document).ready(function() {
           }
           if (supportedAnimations.includes(animationToCheck)) {
             const newFile = `${splitPath.directory}/${key}/${splitPath.file}`;
-            const img = getImage(newFile);
+            const img = loadImage(newFile, false);
             drawImage(ctx, img, value);
           } else {
             // Enable this to see missing animations in the console
@@ -557,6 +605,16 @@ $(document).ready(function() {
       itemIdx+=1;
     }
     addCustomAnimationPreviews();
+  }
+
+  function canRender() {
+    if (imagesLoaded >= imagesToLoad) {
+      console.log(`Loaded all ${imagesToLoad} of ${imagesToLoad} assets`)
+      return true;
+    } else {
+      console.log(`Loading... Loaded ${imagesLoaded} of ${imagesToLoad} assets`)
+      return false;
+    }
   }
 
   function showOrHideElements() {
@@ -653,16 +711,30 @@ $(document).ready(function() {
     });
     setParams();
   }
-
-  function getImage(imgRef) {
-    if (images[imgRef])
+  
+  function loadImage(imgRef, allowLoading) {
+    if (!allowLoading) {
       return images[imgRef];
-    else {
+    }
+    if (images[imgRef]) {
+      return images[imgRef];
+    } else {
+      imagesToLoad += 1;
+      console.log(`loading new image ${imgRef}`)
       var img = new Image();
       img.src = "spritesheets/" + imgRef;
-      img.onload = redraw;
+      img.onload = imageLoadDone;
+      img.onerror = imageLoadDone;
       images[imgRef] = img;
       return img;
+    }
+  }
+
+  function imageLoadDone() {
+    imagesLoaded += 1;
+    if (!didStartRenderAfterLoad && canRender()) {
+      didStartRenderAfterLoad = true;
+      drawItemsToDraw();
     }
   }
 
