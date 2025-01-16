@@ -48,8 +48,8 @@ $(document).ready(function() {
   var animationItems = [1, 2, 3, 4, 5, 6, 7, 8]; // default for walk
   var animRowStart = 8; // default for walk
   var animRowNum = 4; // default for walk
-  var currentAnimationItemIndex = 0;
-  var activeCustomAnimation = "";
+  let currentAnimationItemIndex = 0;
+  let activeCustomAnimation = "";
   var addedCustomAnimations = [];
 
   // on hash (url) change event, interpret and redraw
@@ -253,6 +253,7 @@ $(document).ready(function() {
     animRowNum = parseInt(selectedAnim.data("num"));
 
     currentAnimationItemIndex = 0;
+    activeCustomAnimation = "";
     if (addedCustomAnimations.includes(selectedAnimationValue)) {
       activeCustomAnimation = selectedAnimationValue;
     }
