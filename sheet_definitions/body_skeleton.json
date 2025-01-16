@@ -3,9 +3,9 @@
   "type_name": "body",
   "layer_1": {
     "zPos": 10,
-    "male": "body/bodies/skeleton/universal/",
-    "female": "body/bodies/skeleton/universal/",
-    "teen": "body/bodies/skeleton/universal/"
+    "male": "body/bodies/skeleton/",
+    "female": "body/bodies/skeleton/",
+    "teen": "body/bodies/skeleton/"
   },
   "variants": [
     "skeleton"
