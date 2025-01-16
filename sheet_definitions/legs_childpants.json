@@ -16,6 +16,9 @@
     "red",
     "white"
   ],
+  "animations": [
+    "walk"
+  ],
   "credits": [
     {
       "file": "legs/pants/child",
