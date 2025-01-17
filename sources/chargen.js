@@ -484,7 +484,7 @@ $(document).ready(function() {
     loadItemsToDraw();
     const creditsTxt = sheetCreditsToTxt()
     $("textarea#creditsText").val(creditsTxt);
-    itemsMeta["credits"] = creditsTxt;
+    itemsMeta["credits"] = sheetCredits;
 
     if (images["uploaded"] != null) {
       const itemToDraw = {};
