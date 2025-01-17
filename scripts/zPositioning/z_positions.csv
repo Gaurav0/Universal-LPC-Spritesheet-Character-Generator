@@ -42,8 +42,8 @@ belt_sash_narrow.json,layer_1,65,torso/waist/sash_narrow/male/ torso/waist/sash_
 belt_sash_obi.json,layer_1,65,torso/waist/sash/male/ torso/waist/sash/female/
 belt_waistband.json,layer_1,65,torso/waist/waistband/female/
 body.json,layer_1,10,body/bodies/male/ body/bodies/female/ body/bodies/muscular/ body/bodies/pregnant/ body/bodies/child/
-body_skeleton.json,layer_1,10,body/bodies/skeleton/universal/ body/bodies/skeleton/universal/
-body_zombie.json,layer_1,10,body/bodies/zombie/universal/ body/bodies/zombie/universal/
+body_skeleton.json,layer_1,10,body/bodies/skeleton/ body/bodies/skeleton/
+body_zombie.json,layer_1,10,body/bodies/zombie/ body/bodies/zombie/
 buckles.json,layer_1,75,torso/waist/buckles/female/
 cape_solid.json,layer_1,85,cape/solid/female/ cape/solid/female/ cape/solid/female/ cape/solid/female/
 cape_solid.json,layer_2,5,cape/solid_behind/ cape/solid_behind/ cape/solid_behind/ cape/solid_behind/
