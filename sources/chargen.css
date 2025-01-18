@@ -117,12 +117,12 @@ input[type=button], input[type=reset] {
   overflow-y: auto;
   min-width: 200px;
   float: left;
-  width: calc(40% - 20px);
+  width: calc(40% - 80px);
   max-height: calc(100vh - 380px);
 }
 
 #preview {
-  width: calc(60% - 15px);
+  width: calc(60% - 80px);
   min-width: 832px;
   float: right;
   max-height: calc(100vh - 380px);
