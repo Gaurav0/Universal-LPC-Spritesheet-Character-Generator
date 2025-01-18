@@ -3,11 +3,11 @@
   "type_name": "hat_trim",
   "layer_1": {
     "zPos": 131,
-    "male": "hat/pirate/bicorne/foreaft/commodore/adult/",
-    "muscular": "hat/pirate/bicorne/foreaft/commodore/adult/",
-    "female": "hat/pirate/bicorne/foreaft/commodore/adult/",
-    "teen": "hat/pirate/bicorne/foreaft/commodore/adult/",
-    "pregnant": "hat/pirate/bicorne/foreaft/commodore/adult/"
+    "male": "hat/pirate/bicorne/foreaft/commodore/trim/adult/",
+    "muscular": "hat/pirate/bicorne/foreaft/commodore/trim/adult/",
+    "female": "hat/pirate/bicorne/foreaft/commodore/trim/adult/",
+    "teen": "hat/pirate/bicorne/foreaft/commodore/trim/adult/",
+    "pregnant": "hat/pirate/bicorne/foreaft/commodore/trim/adult/"
   },
   "variants": [
     "base",
