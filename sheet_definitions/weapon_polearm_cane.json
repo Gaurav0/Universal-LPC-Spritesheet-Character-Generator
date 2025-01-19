@@ -1,8 +1,8 @@
 {
   "name": "Cane",
   "type_name": "weapon",
-  "preview_row": 9,
-  "preview_column": 0,
+  "preview_row": 1,
+  "preview_column": 8,
   "layer_1": {
     "zPos": 140,
     "male": "weapon/polearm/cane/male/",
@@ -12,6 +12,10 @@
   },
   "variants": [
     "cane"
+  ],
+  "animations": [
+    "walk",
+    "thrust"
   ],
   "credits": [
     {
