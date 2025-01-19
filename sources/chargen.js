@@ -13,12 +13,34 @@ $(document).ready(function() {
   var params = jHash.val();
   var sheetCredits = [];
 
-  var canvas = $("#spritesheet").get(0);
-  var ctx = canvas.getContext("2d", { willReadFrequently: true });
-  var images = {};
+  let imagesToLoad = 0;
+  let imagesLoaded = 0;
+  let didStartRenderAfterLoad = false;
+
+  const canvas = $("#spritesheet").get(0);
+  const ctx = canvas.getContext("2d", { willReadFrequently: true });
+  const images = {};
   const universalFrameSize = 64;
   const universalSheetWidth = 832;
-  const universalSheetHeight = 2944;
+  const universalSheetHeight = 3456;
+
+  const base_animations = {
+    "spellcast" : 0, 
+    "thrust" : 4*universalFrameSize, 
+    "walk" : 8*universalFrameSize, 
+    "slash" : 12*universalFrameSize, 
+    "shoot" : 16*universalFrameSize, 
+    "hurt" : 20*universalFrameSize, 
+    "climb" : 21*universalFrameSize, 
+    "idle" : 22*universalFrameSize,
+    "jump" : 26*universalFrameSize, 
+    "sit" : 30*universalFrameSize, 
+    "emote" : 34*universalFrameSize, 
+    "run" : 38*universalFrameSize,
+    "combat_idle" : 42*universalFrameSize,
+    "backslash" : 46*universalFrameSize,
+    "halfslash" : 50*universalFrameSize
+  }
 
   // Preview Animation
   var anim = $("#previewAnimations").get(0);
@@ -26,8 +48,8 @@ $(document).ready(function() {
   var animationItems = [1, 2, 3, 4, 5, 6, 7, 8]; // default for walk
   var animRowStart = 8; // default for walk
   var animRowNum = 4; // default for walk
-  var currentAnimationItemIndex = 0;
-  var activeCustomAnimation = "";
+  let currentAnimationItemIndex = 0;
+  let activeCustomAnimation = "";
   var addedCustomAnimations = [];
 
   // on hash (url) change event, interpret and redraw
@@ -148,7 +170,7 @@ $(document).ready(function() {
         if (!allowedLicenses.some(allowedLicense => licensesForAsset.includes(allowedLicense))) {
           if ($(this).prop("checked")) {
             $(this).attr("checked", false).prop("checked", false);
-            $(this).closest('ul').find("input[type=radio][id$=none]").click();
+            $(this).closest('ul').find("input[type=radio][id*=none]").click();
           }
         }
       }
@@ -156,6 +178,28 @@ $(document).ready(function() {
     setParams();
     redraw();
     showOrHideElements();
+  });
+
+  $(".removeUnsupported").click(function() {
+    const selectedAnims = getSelectedAnimations();
+    $("input[type=radio]").each(function() {
+      const $li = $(this).closest("li[data-animations]");
+      if ($li.data("animations") && selectedAnims.length > 0) {
+        const requiredAnimations = $li.data("animations").split(",");
+        for (const selectedAnim of selectedAnims) {
+          if (!requiredAnimations.includes(selectedAnim)) {
+            if ($(this).prop("checked")) {
+              $(this).attr("checked", false).prop("checked", false);
+              $(this).closest('ul').find("input[type=radio][id*=none]:not(:checked)").click();
+            }
+          }
+        }
+      }
+    });
+    setParams();
+    redraw();
+    showOrHideElements();
+    return false;
   });
 
   $(".replacePinkMask").click(function() {
@@ -231,6 +275,7 @@ $(document).ready(function() {
     animRowNum = parseInt(selectedAnim.data("num"));
 
     currentAnimationItemIndex = 0;
+    activeCustomAnimation = "";
     if (addedCustomAnimations.includes(selectedAnimationValue)) {
       activeCustomAnimation = selectedAnimationValue;
     }
@@ -365,11 +410,18 @@ $(document).ready(function() {
     return "ERROR";
   }
 
-  function getSelectedAnimation() {
-    if ($("[name=animation]:checked").length > 0) {
-      return $("[name=animation]:checked").prop("id").replace("animation-", "");
+  $('[name=animation]').click(function() {
+    showOrHideElements();
+  })
+
+  function getSelectedAnimations() {
+    const $anims = $("[name=animation]:checked");
+    if ($anims.length > 0) {
+      return $anims.map(function() {
+        return this.id.replace("animation-", "");
+      });
     }
-    return "any";
+    return [];
   }
 
   $('.licenseCheckBox').click(function() {
@@ -412,6 +464,7 @@ $(document).ready(function() {
           const notes = $(this).data(`layer_${jdx}_${bodyTypeName}_notes`);
 
           if (fileName !== "") {
+            const supportedAnimations = $(this).closest('[data-animations]').data("animations");
             const itemToDraw = {};
             itemToDraw.fileName = fileName;
             itemToDraw.zPos = zPos;
@@ -419,6 +472,7 @@ $(document).ready(function() {
             itemToDraw.parentName = parentName
             itemToDraw.name = name
             itemToDraw.variant = variant
+            itemToDraw.supportedAnimations = supportedAnimations
             addCreditFor(fileName, licenses, authors, urls, notes);
             itemsToDraw.push(itemToDraw);
           }
@@ -427,9 +481,10 @@ $(document).ready(function() {
         }
       }
     });
+    loadItemsToDraw();
     const creditsTxt = sheetCreditsToTxt()
     $("textarea#creditsText").val(creditsTxt);
-    itemsMeta["credits"] = creditsTxt;
+    itemsMeta["credits"] = sheetCredits;
 
     if (images["uploaded"] != null) {
       const itemToDraw = {};
@@ -437,10 +492,56 @@ $(document).ready(function() {
       itemToDraw.zPos = parseInt(document.getElementById("ZPOS").value) || 0;
       itemsToDraw.push(itemToDraw);
     }
-    drawItems(itemsToDraw);
   }
 
-  function drawItems(itemsToDraw) {
+  function resetLoading() {
+    imagesLoaded = 0;
+    imagesToLoad = 0;
+    didStartRenderAfterLoad = false;
+  }
+
+  function loadItemsToDraw() {
+    if (!canRender()) {
+      return setTimeout(loadItemsToDraw, 100);
+    }
+    resetLoading();
+    var itemIdx = 0;
+    for (item in itemsToDraw) {
+      const supportedAnimations = itemsToDraw[itemIdx].supportedAnimations;
+      const filePath = itemsToDraw[itemIdx].fileName;
+      const custom_animation = itemsToDraw[itemIdx].custom_animation;
+      if (custom_animation !== undefined) {
+        loadImage(filePath, true);
+      } else {
+        const { directory, file } = splitFilePath(filePath);
+
+        for (const [key, value] of Object.entries(base_animations)) {
+          var animationToCheck = key;
+          if (key === "combat_idle") {
+            animationToCheck = "combat";
+          } else if (key === "backslash") {
+            animationToCheck = "1h_slash";
+          } else if (key === "halfslash") {
+            animationToCheck = "1h_halfslash";
+          }
+          if (supportedAnimations.includes(animationToCheck)) {
+            const newFile = `${directory}/${key}/${file}`;
+            loadImage(newFile, true);
+          } else {
+            // Enable this to see missing animations in the console
+            // console.warn(`supportedAnimations does not contain ${key} for asset ${assetName}. skipping render`)
+          }
+        }
+      }
+      itemIdx+=1;
+    }
+  }
+
+  function drawItemsToDraw() {
+    if (!canRender()) {
+      return;
+    }
+    console.log(`Start drawItemsToDraw`);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     var requiredCanvasHeight = universalSheetHeight;
@@ -472,11 +573,12 @@ $(document).ready(function() {
       return parseInt(lhs.zPos) - parseInt(rhs.zPos);
     });
     for (item in itemsToDraw) {
-      const fileName = itemsToDraw[itemIdx].fileName;
-      const img = getImage(fileName);
+      const supportedAnimations = itemsToDraw[itemIdx].supportedAnimations;
+      const filePath = itemsToDraw[itemIdx].fileName;
       const custom_animation = itemsToDraw[itemIdx].custom_animation;
 
       if (custom_animation !== undefined) {
+        const img = loadImage(filePath, false);
         const customAnimationDefinition = customAnimations[custom_animation];
         const frameSize = customAnimationDefinition.frameSize;
 
@@ -512,17 +614,49 @@ $(document).ready(function() {
         }
         ctx.drawImage(img, 0, universalSheetHeight+offSetInAdditionToOtherCustomActions);
       } else {
-        drawImage(ctx, img);
+        const splitPath = splitFilePath(filePath);
+
+        for (const [key, value] of Object.entries(base_animations)) {
+          var animationToCheck = key;
+          if (key === "combat_idle") {
+            animationToCheck = "combat";
+          } else if (key === "backslash") {
+            animationToCheck = "1h_slash";
+          } else if (key === "halfslash") {
+            animationToCheck = "1h_halfslash";
+          }
+          if (supportedAnimations.includes(animationToCheck)) {
+            const newFile = `${splitPath.directory}/${key}/${splitPath.file}`;
+            const img = loadImage(newFile, false);
+            drawImage(ctx, img, value);
+          } else {
+            // Enable this to see missing animations in the console
+            // console.warn(`supportedAnimations does not contain ${key} for asset ${assetName}. skipping render`)
+          }
+        }
       }
       itemIdx+=1;
     }
     addCustomAnimationPreviews();
   }
 
+  function canRender() {
+    if (imagesLoaded >= imagesToLoad) {
+      console.log(`Loaded all ${imagesToLoad} of ${imagesToLoad} assets`)
+      return true;
+    } else {
+      console.log(`Loading... Loaded ${imagesLoaded} of ${imagesToLoad} assets`)
+      return false;
+    }
+  }
+
   function showOrHideElements() {
     const bodyType = getBodyTypeName();
-    const selectedAnim = getSelectedAnimation();
+    const selectedAnims = getSelectedAnimations();
     const allowedLicenses = getAllowedLicenses();
+    let hasUnsupported = false;
+    let hasProhibited = false;
+
     $("li").each(function(index) {
       // Toggle Required Body Type
       var display = true;
@@ -533,23 +667,29 @@ $(document).ready(function() {
         }
       }
 
-      // Toggle Required Animations
-      if ($(this).data("animations") && selectedAnim !== 'any') {
-        var requiredAnimations = $(this).data("animations").split(",");
-        if (!requiredAnimations.includes(selectedAnim)) {
-          display = false;
+      if (display) {
+        // Toggle Required Animations
+        if ($(this).data("animations") && selectedAnims.length > 0) {
+          const requiredAnimations = $(this).data("animations").split(",");
+          for (const selectedAnim of selectedAnims) {
+            if (!requiredAnimations.includes(selectedAnim)) {
+              display = false;
+              if ($(this).find("input[type=radio]:checked:not([id*=none])").length > 0) {
+                hasUnsupported = true;
+              }
+              break;
+            }
+          }
         }
       }
 
       // Display Result
-      if(display) {
-        $(this).prop("style", "");
+      if (display) {
+        $(this).show();
       } else {
-        $(this).prop("style", "display:none");
+        $(this).hide();
       }
     });
-
-    let hasProhibited = false;
 
     $("input[type=radio]").each(function() {
       var display = true;
@@ -568,11 +708,17 @@ $(document).ready(function() {
 
       // Display Result
       if(display) {
-        $(this).parent().prop("style", "");
+        $(this).parent().show();
       } else {
-        $(this).parent().prop("style", "display:none");
+        $(this).parent().hide();
       }
     });
+
+    if (hasUnsupported) {
+      $(".removeUnsupported").show();
+    } else {
+      $(".removeUnsupported").hide();
+    }
 
     if (hasProhibited) {
       $(".removeIncompatibleWithLicenses").show();
@@ -613,17 +759,37 @@ $(document).ready(function() {
     });
     setParams();
   }
-
-  function getImage(imgRef) {
-    if (images[imgRef])
+  
+  function loadImage(imgRef, allowLoading) {
+    if (!allowLoading) {
       return images[imgRef];
-    else {
+    }
+    imagesToLoad += 1;
+    if (images[imgRef]) {
+      setTimeout(function() { imageLoadDone(); }, 10);
+      return images[imgRef];
+    } else {
+      console.log(`loading new image ${imgRef}`)
       var img = new Image();
       img.src = "spritesheets/" + imgRef;
-      img.onload = redraw;
+      img.onload = imageLoadDone;
+      img.onerror = imageLoadError;
       images[imgRef] = img;
       return img;
     }
+  }
+
+  function imageLoadDone() {
+    imagesLoaded += 1;
+    if (!didStartRenderAfterLoad && canRender()) {
+      didStartRenderAfterLoad = true;
+      drawItemsToDraw();
+    }
+  }
+
+  function imageLoadError(event) {
+    console.error('There was an error loading image:', event.target.src);
+    imageLoadDone();
   }
 
   function getImage2(imgRef, callback, layers, prevctx) {
@@ -639,9 +805,9 @@ $(document).ready(function() {
     }
   }
 
-  function drawImage(ctx, img) {
+  function drawImage(ctx, img, dy) {
     try {
-      ctx.drawImage(img, 0, 0);
+      ctx.drawImage(img, 0, dy);
       zPosition++;
     } catch(err) {
       console.error("Error: could not find " + img.src);
@@ -684,20 +850,25 @@ $(document).ready(function() {
         const previewToDraw = {};
         const animation =  $(this).data(`layer_1_custom_animation`);
 
-        if($(this).data(`layer_1_${getBodyTypeName()}`) === undefined){
-          previewToDraw.link = $(this).data(`layer_1_${getBodyTypeName()}`);
+        if($(this).data(`layer_1_${getBodyTypeName()}`) === undefined) {
+          let imageLink = $(this).data(`layer_1_${getBodyTypeName()}`);
+          imageLink = imageLink && updatePreviewLink(imageLink)
+          previewToDraw.link = imageLink;
           previewToDraw.zPos = $(this).data(`layer_1_zpos`);
           layers.push(previewToDraw);
-        } else{
-          for(jdx = 1; jdx < 10; jdx++){
+        } else {
+          for (jdx = 1; jdx < 10; jdx++){
             if($(this).data(`layer_${jdx}_${getBodyTypeName()}`)){
-              if(animation === $(this).data(`layer_${jdx}_custom_animation`)){
+              if(animation === $(this).data(`layer_${jdx}_custom_animation`)) {
                 const previewToDraw = {};
-                previewToDraw.link = $(this).data(`layer_${jdx}_${getBodyTypeName()}`);
+                let imageLink = $(this).data(`layer_${jdx}_${getBodyTypeName()}`);
+                if (imageLink !== undefined) {
+                  imageLink = updatePreviewLink(imageLink);
+                }
+                previewToDraw.link = imageLink;
                 previewToDraw.zPos = $(this).data(`layer_${jdx}_zpos`);
                 layers.push(previewToDraw);
               }
-
             } else {
               break;
             }
@@ -740,5 +911,23 @@ $(document).ready(function() {
       animCtx.drawImage(canvas, currentFrame * frameSize, offSet + ((animRowStart + i) * frameSize), frameSize, frameSize, i * frameSize, 0, frameSize, frameSize);
     }
     setTimeout(nextFrame, 1000 / 8);
+  }
+
+  function updatePreviewLink(imageLink) {
+    const { directory, file } = splitFilePath(imageLink);
+    imageLink = `${directory}/walk/${file}`;
+    return imageLink;
+  }
+
+  function splitFilePath(filePath) {
+    const index = filePath.lastIndexOf('/');
+    if (index > -1) {
+        return {
+          directory: filePath.substring(0, index),
+          file: filePath.substring(index+1)
+        }
+    } else {
+      throw new Error(`Could not split to directory and file using path ${filePath}`);
+    }
   }
 });

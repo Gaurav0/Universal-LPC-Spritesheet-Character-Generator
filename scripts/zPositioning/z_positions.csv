@@ -42,8 +42,8 @@ belt_sash_narrow.json,layer_1,65,torso/waist/sash_narrow/male/ torso/waist/sash_
 belt_sash_obi.json,layer_1,65,torso/waist/sash/male/ torso/waist/sash/female/
 belt_waistband.json,layer_1,65,torso/waist/waistband/female/
 body.json,layer_1,10,body/bodies/male/ body/bodies/female/ body/bodies/muscular/ body/bodies/pregnant/ body/bodies/child/
-body_skeleton.json,layer_1,10,body/bodies/skeleton/universal/ body/bodies/skeleton/universal/
-body_zombie.json,layer_1,10,body/bodies/zombie/universal/ body/bodies/zombie/universal/
+body_skeleton.json,layer_1,10,body/bodies/skeleton/ body/bodies/skeleton/
+body_zombie.json,layer_1,10,body/bodies/zombie/ body/bodies/zombie/
 buckles.json,layer_1,75,torso/waist/buckles/female/
 cape_solid.json,layer_1,85,cape/solid/female/ cape/solid/female/ cape/solid/female/ cape/solid/female/
 cape_solid.json,layer_2,5,cape/solid_behind/ cape/solid_behind/ cape/solid_behind/ cape/solid_behind/
@@ -244,7 +244,7 @@ hat_bicorne_athwart_commodore.json,layer_1,130,hat/pirate/bicorne/athwart/commod
 hat_bicorne_athwart_commodore_trim.json,layer_1,131,hat/pirate/bicorne/athwart/commodore/trim/adult/ hat/pirate/bicorne/athwart/commodore/trim/adult/ hat/pirate/bicorne/athwart/commodore/trim/adult/ hat/pirate/bicorne/athwart/commodore/trim/adult/
 hat_bicorne_foreaft.json,layer_1,130,hat/pirate/bicorne/foreaft/adult/ hat/pirate/bicorne/foreaft/adult/ hat/pirate/bicorne/foreaft/adult/ hat/pirate/bicorne/foreaft/adult/
 hat_bicorne_foreaft_commodore.json,layer_1,130,hat/pirate/bicorne/foreaft/commodore/adult/ hat/pirate/bicorne/foreaft/commodore/adult/ hat/pirate/bicorne/foreaft/commodore/adult/ hat/pirate/bicorne/foreaft/commodore/adult/
-hat_bicorne_foreaft_commodore_trim.json,layer_1,131,hat/pirate/bicorne/foreaft/commodore/adult/ hat/pirate/bicorne/foreaft/commodore/adult/ hat/pirate/bicorne/foreaft/commodore/adult/ hat/pirate/bicorne/foreaft/commodore/adult/
+hat_bicorne_foreaft_commodore_trim.json,layer_1,131,hat/pirate/bicorne/foreaft/commodore/trim/adult/ hat/pirate/bicorne/foreaft/commodore/trim/adult/ hat/pirate/bicorne/foreaft/commodore/trim/adult/ hat/pirate/bicorne/foreaft/commodore/trim/adult/
 hat_cap_bonnie.json,layer_1,130,hat/pirate/bonnie/adult/ hat/pirate/bonnie/adult/ hat/pirate/bonnie/adult/ hat/pirate/bonnie/adult/
 hat_cap_bonnie_feather.json,layer_1,131,hat/pirate/bonnie/feather/adult/ hat/pirate/bonnie/feather/adult/ hat/pirate/bonnie/feather/adult/ hat/pirate/bonnie/feather/adult/
 hat_cap_bonnie_tilt.json,layer_1,130,hat/pirate/bonnie/tilt/adult/ hat/pirate/bonnie/tilt/adult/ hat/pirate/bonnie/tilt/adult/ hat/pirate/bonnie/tilt/adult/
