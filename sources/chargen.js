@@ -5,6 +5,26 @@ $.expr[':'].icontains = function(a, i, m) {
       .indexOf(m[3].toUpperCase()) >= 0;
 };
 
+// DEBUG mode will be turned on if on localhost and off in production
+// but this can be overridden by adding debug=(true|false) to the querystring.
+/*
+debug isLocalhost result
+true  true        true
+true  false       true
+false true        false
+false false       false
+unset true        true
+unset false       false
+*/
+const boolMap = {
+  'true': true,
+  'false': false,
+};
+const bool = (s) => boolMap[s] ?? null;
+const isLocalhost = window.location.hostname === 'localhost';
+const debugQueryString = () => bool(jHash.val('debug'));
+const DEBUG = debugQueryString() ?? isLocalhost;
+
 $(document).ready(function() {
 
   var matchBodyColor = true;
@@ -116,7 +136,7 @@ $(document).ready(function() {
   $("#searchbox").on('search',search)
   $("#search").click(search)
   $("#customizeChar").on('submit',function(e) {
-    search()
+    search();
     e.preventDefault()
   })
 
@@ -529,7 +549,7 @@ $(document).ready(function() {
             loadImage(newFile, true);
           } else {
             // Enable this to see missing animations in the console
-            // console.warn(`supportedAnimations does not contain ${key} for asset ${assetName}. skipping render`)
+            if (DEBUG) console.warn(`supportedAnimations does not contain ${key} for asset ${file}. skipping render`);
           }
         }
       }
@@ -541,7 +561,7 @@ $(document).ready(function() {
     if (!canRender()) {
       return;
     }
-    console.log(`Start drawItemsToDraw`);
+    if (DEBUG) console.log(`Start drawItemsToDraw`);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     var requiredCanvasHeight = universalSheetHeight;
@@ -631,7 +651,7 @@ $(document).ready(function() {
             drawImage(ctx, img, value);
           } else {
             // Enable this to see missing animations in the console
-            // console.warn(`supportedAnimations does not contain ${key} for asset ${assetName}. skipping render`)
+            // console.warn(`supportedAnimations does not contain ${key} for asset ${file}. skipping render`)
           }
         }
       }
@@ -642,10 +662,10 @@ $(document).ready(function() {
 
   function canRender() {
     if (imagesLoaded >= imagesToLoad) {
-      console.log(`Loaded all ${imagesToLoad} of ${imagesToLoad} assets`)
+      if (DEBUG) console.log(`Loaded all ${imagesToLoad} of ${imagesToLoad} assets`)
       return true;
     } else {
-      console.log(`Loading... Loaded ${imagesLoaded} of ${imagesToLoad} assets`)
+      if (DEBUG) console.log(`Loading... Loaded ${imagesLoaded} of ${imagesToLoad} assets`)
       return false;
     }
   }
@@ -769,7 +789,7 @@ $(document).ready(function() {
       setTimeout(function() { imageLoadDone(); }, 10);
       return images[imgRef];
     } else {
-      console.log(`loading new image ${imgRef}`)
+      if (DEBUG) console.log(`loading new image ${imgRef}`)
       var img = new Image();
       img.src = "spritesheets/" + imgRef;
       img.onload = imageLoadDone;
@@ -788,7 +808,7 @@ $(document).ready(function() {
   }
 
   function imageLoadError(event) {
-    console.error('There was an error loading image:', event.target.src);
+    if (DEBUG) console.error('There was an error loading image:', event.target.src);
     imageLoadDone();
   }
 
@@ -810,7 +830,7 @@ $(document).ready(function() {
       ctx.drawImage(img, 0, dy);
       zPosition++;
     } catch(err) {
-      console.error("Error: could not find " + img.src);
+      if (DEBUG) console.error("Error: could not find " + img.src);
     }
   }
 
@@ -839,10 +859,12 @@ $(document).ready(function() {
             layers.forEach((layer) => {
               if (layer && layer.link) {
                 prevctx.drawImage(images[layer.link], previewColumn * universalFrameSize + previewXOffset, previewRow * universalFrameSize + previewYOffset, universalFrameSize, universalFrameSize, 0, 0, universalFrameSize, universalFrameSize);
+              } else {
+                if (DEBUG) console.error(`Preview link missing for ${$this.id}`);
               }
             });
           } catch (err) {
-            console.error(err);
+            if (DEBUG) console.error(err);
           }
         };
 
@@ -852,7 +874,7 @@ $(document).ready(function() {
 
         if($(this).data(`layer_1_${getBodyTypeName()}`) === undefined) {
           let imageLink = $(this).data(`layer_1_${getBodyTypeName()}`);
-          imageLink = imageLink && updatePreviewLink(imageLink)
+          imageLink = imageLink && updatePreviewLink(imageLink);
           previewToDraw.link = imageLink;
           previewToDraw.zPos = $(this).data(`layer_1_zpos`);
           layers.push(previewToDraw);
