@@ -396,7 +396,7 @@ heads_wolf_child.json,layer_1,100,head/heads/wolf/child/
 heads_wolf_female.json,layer_1,100,head/heads/wolf/female/ head/heads/wolf/female/ head/heads/wolf/female/ head/heads/wolf/female/
 heads_wolf_male.json,layer_1,100,head/heads/wolf/male/ head/heads/wolf/male/ head/heads/wolf/male/ head/heads/wolf/male/
 heads_zombie.json,layer_1,100,head/heads/zombie/adult/ head/heads/zombie/adult/ head/heads/zombie/adult/ head/heads/zombie/adult/
-legs_armour.json,layer_1,20,legs/armour/plate/male/ legs/armour/plate/female/
+legs_armour.json,layer_1,20,legs/armour/plate/male/ legs/armour/plate/thin/
 legs_childpants.json,layer_1,20,legs/pants/child/
 legs_childskirts.json,layer_1,20,legs/skirts/child/
 legs_cuffed.json,layer_1,20,legs/cuffed/male/ legs/cuffed/thin/
