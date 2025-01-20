@@ -1,7 +1,7 @@
 {
   "name": "Spear",
   "type_name": "weapon",
-  "preview_row": 11,
+  "preview_row": 3,
   "preview_column": 0,
   "layer_1": {
     "zPos": 140,
@@ -19,6 +19,11 @@
     "teen": "weapon/polearm/spear/background/",
     "pregnant": "weapon/polearm/spear/background/"
   },
+  "animations": [
+    "walk",
+    "thrust",
+    "hurt"
+  ],
   "variants": [
     "medium",
     "light",
