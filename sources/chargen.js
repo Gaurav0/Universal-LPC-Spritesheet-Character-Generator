@@ -871,31 +871,21 @@ $(document).ready(function() {
         layers = []
         const previewToDraw = {};
         const animation =  $(this).data(`layer_1_custom_animation`);
-
         const bodyTypeName = getBodyTypeName();
-        if ($(this).data(`layer_1_${bodyTypeName}`) === undefined) {
-          let imageLink = $(this).data(`layer_1_${bodyTypeName}`);
-          imageLink = imageLink && updatePreviewLink(imageLink);
-          previewToDraw.link = imageLink;
-          previewToDraw.zPos = $(this).data(`layer_1_zpos`);
-          layers.push(previewToDraw);
-        } else {
-          for (jdx = 1; jdx < 10; jdx++){
-            if ($(this).data(`layer_${jdx}_${bodyTypeName}`)){
-              if (animation === $(this).data(`layer_${jdx}_custom_animation`)) {
-                const previewToDraw = {};
-                let imageLink = $(this).data(`layer_${jdx}_${bodyTypeName}`);
-                if (imageLink !== undefined) {
-                  imageLink = updatePreviewLink(imageLink, animation);
-                }
-                previewToDraw.link = imageLink;
-                previewToDraw.zPos = $(this).data(`layer_${jdx}_zpos`);
-                layers.push(previewToDraw);
-              }
-            } else {
-              break;
+        let imageLink = $(this).data(`layer_1_${bodyTypeName}`);
+
+        for (jdx = 1; jdx < 10; jdx++) {
+          imageLink = $(this).data(`layer_${jdx}_${bodyTypeName}`);
+          if (imageLink) {
+            if (animation === $(this).data(`layer_${jdx}_custom_animation`)) {
+              const previewToDraw = {};
+              previewToDraw.link = updatePreviewLink(imageLink, animation);
+              previewToDraw.zPos = $(this).data(`layer_${jdx}_zpos`);
+              layers.push(previewToDraw);
             }
-          }    
+          } else {
+            break;
+          }
         }
         
         layers.sort(function(lhs, rhs) {
