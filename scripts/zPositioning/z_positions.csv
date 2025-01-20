@@ -722,10 +722,10 @@ weapon_polearm_scythe.json,layer_3,8,weapon/polearm/scythe/attack_slash/behind/ 
 weapon_polearm_scythe.json,layer_4,150,weapon/polearm/scythe/attack_slash/ weapon/polearm/scythe/attack_slash/ weapon/polearm/scythe/attack_slash/ weapon/polearm/scythe/attack_slash/
 weapon_polearm_spear.json,layer_1,140,weapon/polearm/spear/foreground/ weapon/polearm/spear/foreground/ weapon/polearm/spear/foreground/ weapon/polearm/spear/foreground/
 weapon_polearm_spear.json,layer_2,9,weapon/polearm/spear/background/ weapon/polearm/spear/background/ weapon/polearm/spear/background/ weapon/polearm/spear/background/
-weapon_polearm_trident.json,layer_1,140,weapon/polearm/trident/walk/foreground/ weapon/polearm/trident/walk/foreground/ weapon/polearm/trident/walk/foreground/ weapon/polearm/trident/walk/foreground/
-weapon_polearm_trident.json,layer_2,9,weapon/polearm/trident/walk/background/ weapon/polearm/trident/walk/background/ weapon/polearm/trident/walk/background/ weapon/polearm/trident/walk/background/
-weapon_polearm_trident.json,layer_3,150,weapon/polearm/trident/thrust/foreground/ weapon/polearm/trident/thrust/foreground/ weapon/polearm/trident/thrust/foreground/ weapon/polearm/trident/thrust/foreground/
-weapon_polearm_trident.json,layer_4,-1,weapon/polearm/trident/thrust/background/ weapon/polearm/trident/thrust/background/ weapon/polearm/trident/thrust/background/ weapon/polearm/trident/thrust/background/
+weapon_polearm_trident.json,layer_1,140,weapon/polearm/trident/foreground/walk/ weapon/polearm/trident/foreground/walk/ weapon/polearm/trident/foreground/walk/ weapon/polearm/trident/foreground/walk/
+weapon_polearm_trident.json,layer_2,9,weapon/polearm/trident/background/walk/ weapon/polearm/trident/background/walk/ weapon/polearm/trident/background/walk/ weapon/polearm/trident/background/walk/
+weapon_polearm_trident.json,layer_3,150,weapon/polearm/trident/foreground/thrust/ weapon/polearm/trident/foreground/thrust/ weapon/polearm/trident/foreground/thrust/ weapon/polearm/trident/foreground/thrust/
+weapon_polearm_trident.json,layer_4,-1,weapon/polearm/trident/background/thrust/ weapon/polearm/trident/background/thrust/ weapon/polearm/trident/background/thrust/ weapon/polearm/trident/background/thrust/
 weapon_ranged_boomerang.json,layer_1,140,weapon/ranged/boomerang/ weapon/ranged/boomerang/ weapon/ranged/boomerang/ weapon/ranged/boomerang/
 weapon_ranged_bow_arrow.json,layer_1,150,weapon/ranged/bow/arrow/ weapon/ranged/bow/arrow/ weapon/ranged/bow/arrow/ weapon/ranged/bow/arrow/
 weapon_ranged_bow_great.json,layer_1,-1,weapon/ranged/bow/great/universal/background/ weapon/ranged/bow/great/universal/background/ weapon/ranged/bow/great/universal/background/ weapon/ranged/bow/great/universal/background/
