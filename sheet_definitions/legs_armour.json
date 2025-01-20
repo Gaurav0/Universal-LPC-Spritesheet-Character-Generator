@@ -4,8 +4,8 @@
   "layer_1": {
     "zPos": 20,
     "male": "legs/armour/plate/male/",
-    "female": "legs/armour/plate/female/",
-    "teen": "legs/armour/plate/female/"
+    "female": "legs/armour/plate/thin/",
+    "teen": "legs/armour/plate/thin/"
   },
   "variants": [
     "steel",
@@ -17,12 +17,26 @@
     "silver",
     "gold"
   ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "climb",
+    "idle",
+    "jump",
+    "sit",
+    "emotes"
+  ],
   "credits": [
     {
       "file": "legs/armour/plate",
-      "notes": "reduced to 7 colors an adapted to v3 bases by bluecarrot16",
+      "notes": "reduced to 7 colors an adapted to v3 bases by bluecarrot16, climb/jump/sit/emotes by JaidynReiman",
       "authors": [
         "bluecarrot16",
+        "JaidynReiman",
         "Michael Whitlock (bigbeargames)",
         "Matthew Krohn (makrohn)",
         "Johannes Sjölund (wulax)"
