@@ -712,10 +712,10 @@ weapon_polearm_halberd.json,layer_3,9,weapon/polearm/halberd/attack_thrust/behin
 weapon_polearm_halberd.json,layer_4,150,weapon/polearm/halberd/attack_thrust/ weapon/polearm/halberd/attack_thrust/ weapon/polearm/halberd/attack_thrust/ weapon/polearm/halberd/attack_thrust/
 weapon_polearm_halberd.json,layer_5,8,weapon/polearm/halberd/attack_slash/behind/ weapon/polearm/halberd/attack_slash/behind/ weapon/polearm/halberd/attack_slash/behind/ weapon/polearm/halberd/attack_slash/behind/
 weapon_polearm_halberd.json,layer_6,150,weapon/polearm/halberd/attack_slash/ weapon/polearm/halberd/attack_slash/ weapon/polearm/halberd/attack_slash/ weapon/polearm/halberd/attack_slash/
-weapon_polearm_longspear.json,layer_1,140,weapon/polearm/longspear/walk/foreground/ weapon/polearm/longspear/walk/foreground/ weapon/polearm/longspear/walk/foreground/ weapon/polearm/longspear/walk/foreground/
-weapon_polearm_longspear.json,layer_2,9,weapon/polearm/longspear/walk/background/ weapon/polearm/longspear/walk/background/ weapon/polearm/longspear/walk/background/ weapon/polearm/longspear/walk/background/
-weapon_polearm_longspear.json,layer_3,150,weapon/polearm/longspear/thrust/foreground/ weapon/polearm/longspear/thrust/foreground/ weapon/polearm/longspear/thrust/foreground/ weapon/polearm/longspear/thrust/foreground/
-weapon_polearm_longspear.json,layer_4,-1,weapon/polearm/longspear/thrust/background/ weapon/polearm/longspear/thrust/background/ weapon/polearm/longspear/thrust/background/ weapon/polearm/longspear/thrust/background/
+weapon_polearm_longspear.json,layer_1,140,weapon/polearm/longspear/foreground/walk/ weapon/polearm/longspear/foreground/walk/ weapon/polearm/longspear/foreground/walk/ weapon/polearm/longspear/foreground/walk/
+weapon_polearm_longspear.json,layer_2,9,weapon/polearm/longspear/background/walk/ weapon/polearm/longspear/background/walk/ weapon/polearm/longspear/background/walk/ weapon/polearm/longspear/background/walk/
+weapon_polearm_longspear.json,layer_3,150,weapon/polearm/longspear/foreground/thrust/ weapon/polearm/longspear/foreground/thrust/ weapon/polearm/longspear/foreground/thrust/ weapon/polearm/longspear/foreground/thrust/
+weapon_polearm_longspear.json,layer_4,-1,weapon/polearm/longspear/background/thrust/ weapon/polearm/longspear/background/thrust/ weapon/polearm/longspear/background/thrust/ weapon/polearm/longspear/background/thrust/
 weapon_polearm_scythe.json,layer_1,140,weapon/polearm/scythe/ weapon/polearm/scythe/ weapon/polearm/scythe/ weapon/polearm/scythe/
 weapon_polearm_scythe.json,layer_2,9,weapon/polearm/scythe/universal_behind/ weapon/polearm/scythe/universal_behind/ weapon/polearm/scythe/universal_behind/ weapon/polearm/scythe/universal_behind/
 weapon_polearm_scythe.json,layer_3,8,weapon/polearm/scythe/attack_slash/behind/ weapon/polearm/scythe/attack_slash/behind/ weapon/polearm/scythe/attack_slash/behind/ weapon/polearm/scythe/attack_slash/behind/

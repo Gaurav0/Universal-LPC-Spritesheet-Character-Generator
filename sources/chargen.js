@@ -872,20 +872,21 @@ $(document).ready(function() {
         const previewToDraw = {};
         const animation =  $(this).data(`layer_1_custom_animation`);
 
-        if($(this).data(`layer_1_${getBodyTypeName()}`) === undefined) {
-          let imageLink = $(this).data(`layer_1_${getBodyTypeName()}`);
+        const bodyTypeName = getBodyTypeName();
+        if ($(this).data(`layer_1_${bodyTypeName}`) === undefined) {
+          let imageLink = $(this).data(`layer_1_${bodyTypeName}`);
           imageLink = imageLink && updatePreviewLink(imageLink);
           previewToDraw.link = imageLink;
           previewToDraw.zPos = $(this).data(`layer_1_zpos`);
           layers.push(previewToDraw);
         } else {
           for (jdx = 1; jdx < 10; jdx++){
-            if($(this).data(`layer_${jdx}_${getBodyTypeName()}`)){
-              if(animation === $(this).data(`layer_${jdx}_custom_animation`)) {
+            if ($(this).data(`layer_${jdx}_${bodyTypeName}`)){
+              if (animation === $(this).data(`layer_${jdx}_custom_animation`)) {
                 const previewToDraw = {};
-                let imageLink = $(this).data(`layer_${jdx}_${getBodyTypeName()}`);
+                let imageLink = $(this).data(`layer_${jdx}_${bodyTypeName}`);
                 if (imageLink !== undefined) {
-                  imageLink = updatePreviewLink(imageLink);
+                  imageLink = updatePreviewLink(imageLink, animation);
                 }
                 previewToDraw.link = imageLink;
                 previewToDraw.zPos = $(this).data(`layer_${jdx}_zpos`);
@@ -935,9 +936,13 @@ $(document).ready(function() {
     setTimeout(nextFrame, 1000 / 8);
   }
 
-  function updatePreviewLink(imageLink) {
+  function updatePreviewLink(imageLink, customWalkAnimation) {
     const { directory, file } = splitFilePath(imageLink);
-    imageLink = `${directory}/walk/${file}`;
+    if (customWalkAnimation) {
+      imageLink = `${directory}/${file}`
+    } else {
+      imageLink = `${directory}/walk/${file}`;
+    }
     return imageLink;
   }
 
