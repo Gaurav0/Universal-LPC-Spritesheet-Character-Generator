@@ -1,7 +1,7 @@
  LPC Spritesheet Character Generator
  =============================================
 
-This generator attempts to include all [LPC](https://lpc.opengameart.org) created art up to now.
+This generator attempts to include all [LPC](https://lpc.opengameart.org) created character art up to now.
 
 Try it [here](https://liberatedpixelcup.github.io/Universal-LPC-Spritesheet-Character-Generator/).
 
@@ -151,9 +151,22 @@ In order to reflect the changes made back into the JSON files.
 
 **Concluding, please remember that the JSON files will always contain the source of truth with regard to the z-position an asset will be rendered at. The CSV is there to give an overview of the z-positions in use, and provides a mean to easily alter them from a single file.**
 
+### Animation Frame Guide
+
+You can look at [the Animation Guide in Eliza's repository](https://github.com/ElizaWy/LPC/blob/f07f7f5892e67c932c68f70bb04472f2c64e46bc/Characters/_%20Guides%20%26%20Palettes/Animation%20Guides) for a detailed suggested guide to how she recommends you display your animations.
+
+Also, each animation has a frame cycle documented which you can see next to the animation preview.
+
 ### Run
 
-To run this project, just clone the repo and open `index.html` in your browser of choice.
+Traditionally, you could run this project, by opening `index.html` in your browser of choice.
+However, today's browsers have some security restrictions that do make this somewhat impractical.
+You will likely have to change your browser's settings to enable it to open a file url this way.
+You may instead wish to use a web server locally for development. Some recommendations:
+- IIS (Windows only)
+- Python (py -m http.server <port>)
+- nginx
+- npx serve
 
 ### Examples
 ![example](/readme-images/example.png)
