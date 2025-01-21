@@ -374,8 +374,35 @@ $(document).ready(function () {
   }
 
   $("#spritesheet,#previewAnimations").on("click", function (e) {
-    $(this).toggleClass("zoomed");
+    $(this).toggleClass("zoomed-in");
   });
+  $("#spritesheet,#previewAnimations").on("dblclick", function (e) {
+    $(this).toggleClass("zoomed-out");
+  });
+
+  const spritesheetGesture = new TinyGesture(document.getElementById('spritesheet'), { mouseSupport: false });
+  const previewAnimationsGesture = new TinyGesture(document.getElementById('previewAnimations'), { mouseSupport: false });
+
+  spritesheetGesture.on('pinch', pinch.bind(spritesheetGesture));
+  previewAnimationsGesture.on('pinch', pinch.bind(previewAnimationsGesture));
+  spritesheetGesture.on('pinchend', pinchEnd);
+  previewAnimationsGesture.on('pinchend', pinchEnd);
+
+  let initialZoom = null;
+  function pinch(event) {
+    const scale = this.scale;
+    const $target = $(event.target);
+    if (initialZoom === null) {
+      initialZoom = $target.css('zoom') ?? 1;
+    }
+    $target.css('zoom', initialZoom * scale);
+    event.preventDefault();
+    event.stopImmediatePropagation();
+  }
+
+  function pinchEnd() {
+    initialZoom = null;
+  }
 
   function selectDefaults() {
     $(`#${"body-Body_color_light"}`).prop("checked", true);

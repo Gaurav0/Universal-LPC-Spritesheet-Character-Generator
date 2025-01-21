@@ -10,7 +10,14 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.string/2.4.0/underscore.string.min.js" integrity="sha512-EtNEjJOVcNyZFlf+g4ZhbYhyqBNBybgfUquvo5+gGSTTZBmm0+yJQXozIz/8qbzcdu0bWwdYQLBb5ROJqVB+Tw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script type="text/javascript" src="sources/jhash-2.2.min.js"></script>
 	<script type="text/javascript" src="sources/custom-animations.js"></script>
-	<script type="text/javascript" src="sources/chargen.js?"></script>
+	<script type="module">
+		// make sure modern ESM library TinyGesture is loaded before chargen.js
+		import TinyGesture from 'https://cdn.jsdelivr.net/npm/tinygesture@3.0.0/+esm';
+		window.TinyGesture = TinyGesture;
+		const script = document.createElement('script');
+		script.src = 'sources/chargen.js';
+		document.body.appendChild(script);
+	</script>
 </head>
 <body>
 	<header>
@@ -48,7 +55,7 @@
 		</section>
 	</header>
 	<section id="preview">
-		<div class="instr">Complete sprite sheet (click to zoom): </div>
+		<div class="instr">Complete sprite sheet (click to zoom in, double click to zoom out): </div>
 		<canvas id="spritesheet" width="832" height="1344">HTML5 Browser required.</canvas>
 	</section>
 	<form id="customizeChar">
