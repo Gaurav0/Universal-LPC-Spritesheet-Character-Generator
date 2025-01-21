@@ -1,7 +1,7 @@
  LPC Spritesheet Character Generator
  =============================================
 
-This generator attempts to include all [LPC](https://lpc.opengameart.org) created art up to now.
+This generator attempts to include all [LPC](https://lpc.opengameart.org) created character art up to now.
 
 Try it [here](https://liberatedpixelcup.github.io/Universal-LPC-Spritesheet-Character-Generator/).
 
@@ -153,7 +153,14 @@ In order to reflect the changes made back into the JSON files.
 
 ### Run
 
-To run this project, just clone the repo and open `index.html` in your browser of choice.
+Traditionally, you could run this project, by opening `index.html` in your browser of choice.
+However, today's browsers have some security restrictions that do make this somewhat impractical.
+You will likely have to change your browser's settings to enable it to open a file url this way.
+You may instead wish to use a web server locally for development. Some recommendations:
+- IIS (Windows only)
+- Python (py -m http.server <port>)
+- nginx
+- npx serve
 
 ### Examples
 ![example](/readme-images/example.png)
