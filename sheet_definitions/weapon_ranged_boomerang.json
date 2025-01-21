@@ -1,6 +1,10 @@
 {
   "name": "Boomerang",
   "type_name": "weapon",
+  "preview_row": 1,
+  "preview_column": 4,
+  "preview_x_offset": 16,
+  "preview_y_offset": -12,
   "layer_1": {
     "custom_animation": "slash_reverse_oversize",
     "zPos": 140,
