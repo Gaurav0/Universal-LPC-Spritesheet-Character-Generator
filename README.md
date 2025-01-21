@@ -151,6 +151,12 @@ In order to reflect the changes made back into the JSON files.
 
 **Concluding, please remember that the JSON files will always contain the source of truth with regard to the z-position an asset will be rendered at. The CSV is there to give an overview of the z-positions in use, and provides a mean to easily alter them from a single file.**
 
+### Animation Frame Guide
+
+You can look at [the Animation Guide in Eliza's repository](https://github.com/ElizaWy/LPC/blob/f07f7f5892e67c932c68f70bb04472f2c64e46bc/Characters/_%20Guides%20%26%20Palettes/Animation%20Guides) for a detailed suggested guide to how she recommends you display your animations.
+
+Also, each animation has a frame cycle documented which you can see next to the animation preview.
+
 ### Run
 
 Traditionally, you could run this project, by opening `index.html` in your browser of choice.
