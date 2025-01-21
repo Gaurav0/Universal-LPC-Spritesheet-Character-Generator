@@ -1,8 +1,7 @@
 _.mixin(_.str.exports());
 
-$.expr[':'].icontains = function(a, i, m) {
-  return jQuery(a).text().toUpperCase()
-      .indexOf(m[3].toUpperCase()) >= 0;
+$.expr[":"].icontains = function (a, i, m) {
+  return jQuery(a).text().toUpperCase().indexOf(m[3].toUpperCase()) >= 0;
 };
 
 // DEBUG mode will be turned on if on localhost and off in production
@@ -17,16 +16,15 @@ unset true        true
 unset false       false
 */
 const boolMap = {
-  'true': true,
-  'false': false,
+  true: true,
+  false: false,
 };
 const bool = (s) => boolMap[s] ?? null;
-const isLocalhost = window.location.hostname === 'localhost';
-const debugQueryString = () => bool(jHash.val('debug'));
+const isLocalhost = window.location.hostname === "localhost";
+const debugQueryString = () => bool(jHash.val("debug"));
 const DEBUG = debugQueryString() ?? isLocalhost;
 
-$(document).ready(function() {
-
+$(document).ready(function () {
   var matchBodyColor = true;
   var itemsToDraw = [];
   var itemsMeta = {};
@@ -45,22 +43,22 @@ $(document).ready(function() {
   const universalSheetHeight = 3456;
 
   const base_animations = {
-    "spellcast" : 0, 
-    "thrust" : 4*universalFrameSize, 
-    "walk" : 8*universalFrameSize, 
-    "slash" : 12*universalFrameSize, 
-    "shoot" : 16*universalFrameSize, 
-    "hurt" : 20*universalFrameSize, 
-    "climb" : 21*universalFrameSize, 
-    "idle" : 22*universalFrameSize,
-    "jump" : 26*universalFrameSize, 
-    "sit" : 30*universalFrameSize, 
-    "emote" : 34*universalFrameSize, 
-    "run" : 38*universalFrameSize,
-    "combat_idle" : 42*universalFrameSize,
-    "backslash" : 46*universalFrameSize,
-    "halfslash" : 50*universalFrameSize
-  }
+    spellcast: 0,
+    thrust: 4 * universalFrameSize,
+    walk: 8 * universalFrameSize,
+    slash: 12 * universalFrameSize,
+    shoot: 16 * universalFrameSize,
+    hurt: 20 * universalFrameSize,
+    climb: 21 * universalFrameSize,
+    idle: 22 * universalFrameSize,
+    jump: 26 * universalFrameSize,
+    sit: 30 * universalFrameSize,
+    emote: 34 * universalFrameSize,
+    run: 38 * universalFrameSize,
+    combat_idle: 42 * universalFrameSize,
+    backslash: 46 * universalFrameSize,
+    halfslash: 50 * universalFrameSize,
+  };
 
   // Preview Animation
   var anim = $("#previewAnimations").get(0);
@@ -73,7 +71,7 @@ $(document).ready(function() {
   var addedCustomAnimations = [];
 
   // on hash (url) change event, interpret and redraw
-  jHash.change(function() {
+  jHash.change(function () {
     params = jHash.val();
     interpretParams();
     redraw();
@@ -90,12 +88,15 @@ $(document).ready(function() {
   nextFrame();
 
   // set params and redraw when any radio button is clicked on
-  $("input[type=radio]").each(function() {
-    $(this).click(function() {
+  $("input[type=radio]").each(function () {
+    $(this).click(function () {
       if (matchBodyColor) {
-        matchBodyColorForThisAsset = $(this).attr('matchBodyColor')
-        if (matchBodyColorForThisAsset && matchBodyColorForThisAsset != 'false') {
-          selectColorsToMatch($(this).attr('variant'));
+        matchBodyColorForThisAsset = $(this).attr("matchBodyColor");
+        if (
+          matchBodyColorForThisAsset &&
+          matchBodyColorForThisAsset != "false"
+        ) {
+          selectColorsToMatch($(this).attr("variant"));
         }
       }
       setParams();
@@ -106,91 +107,107 @@ $(document).ready(function() {
 
   // Toggle display of a list elements children when clicked
   // Again, do not multiple toggle when clicking on children
-  $("#chooser ul>li").click(function(event) {
+  $("#chooser ul>li").click(function (event) {
     $(this).children("span").toggleClass("condensed").toggleClass("expanded");
     var $ul = $(this).children("ul");
-    $ul.toggle('slow').promise().done(drawPreviews);
+    $ul.toggle("slow").promise().done(drawPreviews);
     event.stopPropagation();
   });
 
-  $("#collapse").click(function() {
-    $("#chooser>ul ul").hide('slow');
-    $("#chooser>ul span.expanded").removeClass("expanded").addClass("condensed");
+  $("#collapse").click(function () {
+    $("#chooser>ul ul").hide("slow");
+    $("#chooser>ul span.expanded")
+      .removeClass("expanded")
+      .addClass("condensed");
   });
-  $("#expand").click(function() {
-    let parents = $('input[type="radio"]:checked').parents("ul")
-    parents.prev('span').addClass("expanded")
-    parents.show().promise().done(drawPreviews)
-  })
+  $("#expand").click(function () {
+    let parents = $('input[type="radio"]:checked').parents("ul");
+    parents.prev("span").addClass("expanded");
+    parents.show().promise().done(drawPreviews);
+  });
 
   function search(e) {
-    $('.search-result').removeClass('search-result')
-    let query = $('#searchbox').val()
-    if (query != '' && query.length > 1) {
-      let results = $('#chooser span:icontains('+query+')').addClass("search-result")
-      let parents = results.parents("ul")
-      parents.prev('span').addClass("expanded").removeClass('condensed')
-      parents.show().promise().done(drawPreviews)
+    $(".search-result").removeClass("search-result");
+    let query = $("#searchbox").val();
+    if (query != "" && query.length > 1) {
+      let results = $("#chooser span:icontains(" + query + ")").addClass(
+        "search-result"
+      );
+      let parents = results.parents("ul");
+      parents.prev("span").addClass("expanded").removeClass("condensed");
+      parents.show().promise().done(drawPreviews);
     }
   }
-  $("#searchbox").on('search',search)
-  $("#search").click(search)
-  $("#customizeChar").on('submit',function(e) {
+  $("#searchbox").on("search", search);
+  $("#search").click(search);
+  $("#customizeChar").on("submit", function (e) {
     search();
-    e.preventDefault()
-  })
-
-  $('#displayMode-compact').click(function() {
-    $('#chooser').toggleClass('compact')
-  })
-
-  $('#match_body-color').click(function() {
-    matchBodyColor = $(this).is(":checked");
-  })
-
-  $('#scroll-to-credits').click(function(e) {
-    $('#credits')[0].scrollIntoView()
     e.preventDefault();
-  })
+  });
 
-  $("#previewFile").change(function() {
+  $("#displayMode-compact").click(function () {
+    $("#chooser").toggleClass("compact");
+  });
+
+  $("#match_body-color").click(function () {
+    matchBodyColor = $(this).is(":checked");
+  });
+
+  $("#scroll-to-credits").click(function (e) {
+    $("#credits")[0].scrollIntoView();
+    e.preventDefault();
+  });
+
+  $("#previewFile").change(function () {
     previewFile();
   });
 
-  $("#ZPOS").change(function() {
+  $("#ZPOS").change(function () {
     previewFile();
   });
 
-  $("#saveAsPNG").click(function() {
-    renameImageDownload(this, canvas, 'Download' + Math.floor(Math.random() * 100000) + '.png');
-    return true
+  $("#saveAsPNG").click(function () {
+    renameImageDownload(
+      this,
+      canvas,
+      "Download" + Math.floor(Math.random() * 100000) + ".png"
+    );
+    return true;
   });
 
-  $("#resetAll").click(function() {
-    window.setTimeout(function() {
-      document.getElementById("previewFile").value = "";
-      images["uploaded"] = null;
-      document.getElementById("ZPOS").value = 0;
-      params = {};
-      jHash.val(params);
-      interpretParams();
-      selectDefaults();
-      redraw();
-      showOrHideElements();
-    }, 0, false);
+  $("#resetAll").click(function () {
+    window.setTimeout(
+      function () {
+        document.getElementById("previewFile").value = "";
+        images["uploaded"] = null;
+        document.getElementById("ZPOS").value = 0;
+        params = {};
+        jHash.val(params);
+        interpretParams();
+        selectDefaults();
+        redraw();
+        showOrHideElements();
+      },
+      0,
+      false
+    );
   });
 
-  $(".removeIncompatibleWithLicenses").click(function() {
+  $(".removeIncompatibleWithLicenses").click(function () {
     const allowedLicenses = getAllowedLicenses();
-    $("input[type=radio]").each(function() {      
+    $("input[type=radio]").each(function () {
       // Toggle allowed licenses
-      const licenses = $(this).data(`layer_1_${getBodyTypeName()}_licenses`)
+      const licenses = $(this).data(`layer_1_${getBodyTypeName()}_licenses`);
       if (licenses !== undefined) {
         const licensesForAsset = licenses.split(",");
-        if (!allowedLicenses.some(allowedLicense => licensesForAsset.includes(allowedLicense))) {
+        if (
+          !allowedLicenses.some((allowedLicense) =>
+            licensesForAsset.includes(allowedLicense)
+          )
+        ) {
           if ($(this).prop("checked")) {
             $(this).attr("checked", false).prop("checked", false);
-            $(this).closest('ul').find("input[type=radio][id*=none]").click();
+            $(this).closest("ul").find("input[type=radio][id*=none]").click();
           }
         }
       }
@@ -200,9 +217,9 @@ $(document).ready(function() {
     showOrHideElements();
   });
 
-  $(".removeUnsupported").click(function() {
+  $(".removeUnsupported").click(function () {
     const selectedAnims = getSelectedAnimations();
-    $("input[type=radio]").each(function() {
+    $("input[type=radio]").each(function () {
       const $li = $(this).closest("li[data-animations]");
       if ($li.data("animations") && selectedAnims.length > 0) {
         const requiredAnimations = $li.data("animations").split(",");
@@ -210,7 +227,10 @@ $(document).ready(function() {
           if (!requiredAnimations.includes(selectedAnim)) {
             if ($(this).prop("checked")) {
               $(this).attr("checked", false).prop("checked", false);
-              $(this).closest('ul').find("input[type=radio][id*=none]:not(:checked)").click();
+              $(this)
+                .closest("ul")
+                .find("input[type=radio][id*=none]:not(:checked)")
+                .click();
             }
           }
         }
@@ -222,16 +242,16 @@ $(document).ready(function() {
     return false;
   });
 
-  $(".replacePinkMask").click(function() {
+  $(".replacePinkMask").click(function () {
     var imgData = ctx.getImageData(0, 0, canvas.width, canvas.height),
-    pix = imgData.data;
+      pix = imgData.data;
 
-    for (var i = 0, n = pix.length; i <n; i += 4) {
-      const a = pix[i+3];
+    for (var i = 0, n = pix.length; i < n; i += 4) {
+      const a = pix[i + 3];
       if (a > 0) {
         const r = pix[i];
-        const g = pix[i+1];
-        const b = pix[i+2];
+        const g = pix[i + 1];
+        const b = pix[i + 2];
         if (r === 255 && g === 44 && b === 230) {
           pix[i + 3] = 0;
         }
@@ -240,9 +260,9 @@ $(document).ready(function() {
     ctx.putImageData(imgData, 0, 0);
   });
 
-  $(".generateSheetCreditsCsv").click(function() {
+  $(".generateSheetCreditsCsv").click(function () {
     let bl = new Blob([sheetCreditsToCSV()], {
-      type: "text/html"
+      type: "text/html",
     });
     let a = document.createElement("a");
     a.href = URL.createObjectURL(bl);
@@ -254,27 +274,35 @@ $(document).ready(function() {
     document.removeChild(a);
   });
 
-  $(".importFromClipboard").click(async function() {
+  $(".importFromClipboard").click(async function () {
     var clipboardText = await navigator.clipboard.readText();
     var spritesheet = JSON.parse(clipboardText)["layers"];
-    window.setTimeout(function() {
-      $("#resetAll").click(); //Reset first so defaults are set properly
-    },1,false);
-    window.setTimeout(function() {
-      setParamsFromImport(spritesheet); //wait for reset function(s) to complete then apply spritesheet
-    },2,false);
+    window.setTimeout(
+      function () {
+        $("#resetAll").click(); //Reset first so defaults are set properly
+      },
+      1,
+      false
+    );
+    window.setTimeout(
+      function () {
+        setParamsFromImport(spritesheet); //wait for reset function(s) to complete then apply spritesheet
+      },
+      2,
+      false
+    );
   });
 
-  $(".exportToClipboard").click(function() {
+  $(".exportToClipboard").click(function () {
     var spritesheet = {};
     Object.assign(spritesheet, itemsMeta);
     spritesheet["layers"] = itemsToDraw;
     navigator.clipboard.writeText(JSON.stringify(spritesheet, null, "  "));
   });
 
-  $(".generateSheetCreditsTxt").click(function() {
+  $(".generateSheetCreditsTxt").click(function () {
     let bl = new Blob([sheetCreditsToTxt()], {
-      type: "text/html"
+      type: "text/html",
     });
     let a = document.createElement("a");
     a.href = URL.createObjectURL(bl);
@@ -286,10 +314,10 @@ $(document).ready(function() {
     document.removeChild(a);
   });
 
-  $("#whichAnim").change(function() {
+  $("#whichAnim").change(function () {
     animationItems = [];
     const selectedAnim = $("#whichAnim>:selected");
-    const selectedAnimationValue = $("#whichAnim>:selected").text()
+    const selectedAnimationValue = $("#whichAnim>:selected").text();
     const animRowFrames = parseInt(selectedAnim.data("cycle"));
     animRowStart = parseInt(selectedAnim.data("row"));
     animRowNum = parseInt(selectedAnim.data("num"));
@@ -304,16 +332,16 @@ $(document).ready(function() {
       animRowNum = selectedCustomAnimation.frames.length;
       animRowStart = 0;
       for (var i = 0; i < selectedCustomAnimation.frames[0].length; ++i) {
-        if (selectedCustomAnimation.skipFirstFrameInPreview && i === 0  ) {
+        if (selectedCustomAnimation.skipFirstFrameInPreview && i === 0) {
           continue;
         }
         animationItems.push(i);
       }
-      return
+      return;
     }
     const animRowFramesCustom = selectedAnim.data("cycle-custom");
     if (animRowFramesCustom !== undefined) {
-      animationItems = animRowFramesCustom.split('-').map(Number);
+      animationItems = animRowFramesCustom.split("-").map(Number);
       if (animationItems.length > 0) {
         return;
       }
@@ -325,20 +353,24 @@ $(document).ready(function() {
 
   function clearCustomAnimationPreviews() {
     for (var i = 0; i < addedCustomAnimations.length; ++i) {
-      $('#whichAnim').children(`option[value=${addedCustomAnimations[i]}]`).remove();
+      $("#whichAnim")
+        .children(`option[value=${addedCustomAnimations[i]}]`)
+        .remove();
     }
   }
 
   function addCustomAnimationPreviews() {
     clearCustomAnimationPreviews();
     for (var i = 0; i < addedCustomAnimations.length; ++i) {
-      $('#whichAnim').append(new Option(`${addedCustomAnimations[i]}`, `${addedCustomAnimations[i]}`))
+      $("#whichAnim").append(
+        new Option(`${addedCustomAnimations[i]}`, `${addedCustomAnimations[i]}`)
+      );
     }
   }
 
-  $("#spritesheet,#previewAnimations").on('click',function(e) {
-    $(this).toggleClass('zoomed')
-  })
+  $("#spritesheet,#previewAnimations").on("click", function (e) {
+    $(this).toggleClass("zoomed");
+  });
 
   function selectDefaults() {
     $(`#${"body-Body_color_light"}`).prop("checked", true);
@@ -348,13 +380,14 @@ $(document).ready(function() {
 
   function selectColorsToMatch(variant) {
     const colorToMatch = variant;
-    $("input[matchBodyColor^=true]:checked").each(function() {
+    $("input[matchBodyColor^=true]:checked").each(function () {
       // 1. Determine the type of asset that is selected (eg. human male)
-      const assetType = $(this).attr('parentName').replaceAll(" ", "_");
+      const assetType = $(this).attr("parentName").replaceAll(" ", "_");
       // 2. Determine the color of asset that needs to selected (eg. head-human_male_light)
-      const assetToSelect =  $(this).attr('name') + "-" + assetType + "_" + colorToMatch;
+      const assetToSelect =
+        $(this).attr("name") + "-" + assetType + "_" + colorToMatch;
       $(`#${assetToSelect}`).prop("checked", true);
-    })
+    });
     setParams();
   }
 
@@ -373,45 +406,54 @@ $(document).ready(function() {
   function sheetCreditsToCSV() {
     const header = "filename,notes,authors,licenses,urls";
     var csvBody = header + "\n";
-    sheetCredits.map(function(credit) {
+    sheetCredits.map(function (credit) {
       if (credit.licenses !== undefined) {
-        csvBody+=`${credit.fileName},\"${credit.notes}\",\"${credit.authors}\",\"${credit.licenses}\",\"${credit.urls}\"`;
-        csvBody+="\n";
+        csvBody += `${credit.fileName},\"${credit.notes}\",\"${credit.authors}\",\"${credit.licenses}\",\"${credit.urls}\"`;
+        csvBody += "\n";
       }
-    })
+    });
     return csvBody;
   }
 
   function sheetCreditsToTxt() {
     var creditString = "";
-    sheetCredits.map(function(credit) {
+    sheetCredits.map(function (credit) {
       if (credit.licenses !== undefined) {
-        const licensesForDisplay = `- Licenses:\n\t\t- ${credit.licenses.replaceAll(",", "\n\t\t- ")}`;
-        const authorsForDisplay = `- Authors:\n\t\t- ${credit.authors.replaceAll(",", "\n\t\t- ")}`;
-        const linksForDisplay = `- Links:\n\t\t- ${credit.urls.replaceAll(",", "\n\t\t- ")}`;
+        const licensesForDisplay = `- Licenses:\n\t\t- ${credit.licenses.replaceAll(
+          ",",
+          "\n\t\t- "
+        )}`;
+        const authorsForDisplay = `- Authors:\n\t\t- ${credit.authors.replaceAll(
+          ",",
+          "\n\t\t- "
+        )}`;
+        const linksForDisplay = `- Links:\n\t\t- ${credit.urls.replaceAll(
+          ",",
+          "\n\t\t- "
+        )}`;
         const notesForDisplay = `- Note: ${credit.notes}`;
         let creditEntry = `${credit.fileName}\n\t${notesForDisplay}\n\t${licensesForDisplay}\n\t${authorsForDisplay}\n\t${linksForDisplay}\n\n`;
-        creditString+=creditEntry;
+        creditString += creditEntry;
       }
-    })
+    });
     return creditString;
   }
 
-  function previewFile(){
-    var file = document.querySelector('input[type=file]').files[0];
-    var img = new Image;
-    img.onload = function() {
+  function previewFile() {
+    var file = document.querySelector("input[type=file]").files[0];
+    var img = new Image();
+    img.onload = function () {
       images["uploaded"] = img;
       redraw();
       showOrHideElements();
-    }
+    };
     img.src = URL.createObjectURL(file);
   }
 
   function renameImageDownload(link, canvasItem, filename) {
     link.href = canvasItem.toDataURL();
     link.download = filename;
-  };
+  }
 
   function getBodyTypeName() {
     if ($("#sex-male").prop("checked")) {
@@ -430,28 +472,31 @@ $(document).ready(function() {
     return "ERROR";
   }
 
-  $('[name=animation]').click(function() {
+  $("[name=animation]").click(function () {
     showOrHideElements();
-  })
+  });
 
   function getSelectedAnimations() {
     const $anims = $("[name=animation]:checked");
     if ($anims.length > 0) {
-      return $anims.map(function() {
+      return $anims.map(function () {
         return this.id.replace("animation-", "");
       });
     }
     return [];
   }
 
-  $('.licenseCheckBox').click(function() {
+  $(".licenseCheckBox").click(function () {
     showOrHideElements();
-  })
+  });
 
   function getAllowedLicenses() {
-    return  $('.licenseCheckBox:checkbox:checked').map(function() {
-      return $(this).val().split(",");
-    }).get().map(license => license.trim());
+    return $(".licenseCheckBox:checkbox:checked")
+      .map(function () {
+        return $(this).val().split(",");
+      })
+      .get()
+      .map((license) => license.trim());
   }
 
   function redraw() {
@@ -461,38 +506,46 @@ $(document).ready(function() {
     sheetCredits = [];
     var baseUrl = window.location.href.split("/").slice(0, -1).join("/"); // get url until last '/'
 
-    itemsMeta = {"bodyTypeName":bodyTypeName,
-                 "url":window.location.href,
-                 "spritesheets":baseUrl+"/spritesheets/",   // <- holds base URL to spritesheets (used to download them)
-                 "version":1,                               // <- to track future compatibilty breaking changes
-                 "datetime": (new Date().toLocaleString()),
-                 "credits":""}
+    itemsMeta = {
+      bodyTypeName: bodyTypeName,
+      url: window.location.href,
+      spritesheets: baseUrl + "/spritesheets/", // <- holds base URL to spritesheets (used to download them)
+      version: 1, // <- to track future compatibilty breaking changes
+      datetime: new Date().toLocaleString(),
+      credits: "",
+    };
 
     zPosition = 0;
-    $("input[type=radio]:checked").each(function(index) {
-      for (jdx =1; jdx < 10; jdx++) {
+    $("input[type=radio]:checked").each(function (index) {
+      for (jdx = 1; jdx < 10; jdx++) {
         if ($(this).data(`layer_${jdx}_${bodyTypeName}`)) {
           const zPos = $(this).data(`layer_${jdx}_zpos`);
-          const custom_animation = $(this).data(`layer_${jdx}_custom_animation`);
+          const custom_animation = $(this).data(
+            `layer_${jdx}_custom_animation`
+          );
           const fileName = $(this).data(`layer_${jdx}_${bodyTypeName}`);
           const parentName = $(this).attr(`name`);
           const name = $(this).attr(`parentName`);
           const variant = $(this).attr(`variant`);
-          const licenses = $(this).data(`layer_${jdx}_${bodyTypeName}_licenses`);
+          const licenses = $(this).data(
+            `layer_${jdx}_${bodyTypeName}_licenses`
+          );
           const authors = $(this).data(`layer_${jdx}_${bodyTypeName}_authors`);
           const urls = $(this).data(`layer_${jdx}_${bodyTypeName}_urls`);
           const notes = $(this).data(`layer_${jdx}_${bodyTypeName}_notes`);
 
           if (fileName !== "") {
-            const supportedAnimations = $(this).closest('[data-animations]').data("animations");
+            const supportedAnimations = $(this)
+              .closest("[data-animations]")
+              .data("animations");
             const itemToDraw = {};
             itemToDraw.fileName = fileName;
             itemToDraw.zPos = zPos;
             itemToDraw.custom_animation = custom_animation;
-            itemToDraw.parentName = parentName
-            itemToDraw.name = name
-            itemToDraw.variant = variant
-            itemToDraw.supportedAnimations = supportedAnimations
+            itemToDraw.parentName = parentName;
+            itemToDraw.name = name;
+            itemToDraw.variant = variant;
+            itemToDraw.supportedAnimations = supportedAnimations;
             addCreditFor(fileName, licenses, authors, urls, notes);
             itemsToDraw.push(itemToDraw);
           }
@@ -502,7 +555,7 @@ $(document).ready(function() {
       }
     });
     loadItemsToDraw();
-    const creditsTxt = sheetCreditsToTxt()
+    const creditsTxt = sheetCreditsToTxt();
     $("textarea#creditsText").val(creditsTxt);
     itemsMeta["credits"] = sheetCredits;
 
@@ -549,11 +602,14 @@ $(document).ready(function() {
             loadImage(newFile, true);
           } else {
             // Enable this to see missing animations in the console
-            if (DEBUG) console.warn(`supportedAnimations does not contain ${key} for asset ${file}. skipping render`);
+            if (DEBUG)
+              console.warn(
+                `supportedAnimations does not contain ${key} for asset ${file}. skipping render`
+              );
           }
         }
       }
-      itemIdx+=1;
+      itemIdx += 1;
     }
   }
 
@@ -576,9 +632,14 @@ $(document).ready(function() {
         }
         addedCustomAnimations.push(customAnimationString);
         const customAnimation = customAnimations[customAnimationString];
-        const customAnimationWidth = customAnimation.frameSize * customAnimation.frames[0].length;
-        const customAnimationHeight = customAnimation.frameSize * customAnimation.frames.length;
-        requiredCanvasWidth = Math.max(requiredCanvasWidth, customAnimationWidth);
+        const customAnimationWidth =
+          customAnimation.frameSize * customAnimation.frames[0].length;
+        const customAnimationHeight =
+          customAnimation.frameSize * customAnimation.frames.length;
+        requiredCanvasWidth = Math.max(
+          requiredCanvasWidth,
+          customAnimationWidth
+        );
         requiredCanvasHeight = requiredCanvasHeight + customAnimationHeight;
       }
     }
@@ -589,7 +650,7 @@ $(document).ready(function() {
 
     var itemIdx = 0;
     var didPutUniversalForCustomAnimation = "";
-    itemsToDraw.sort(function(lhs, rhs) {
+    itemsToDraw.sort(function (lhs, rhs) {
       return parseInt(lhs.zPos) - parseInt(rhs.zPos);
     });
     for (item in itemsToDraw) {
@@ -602,16 +663,18 @@ $(document).ready(function() {
         const customAnimationDefinition = customAnimations[custom_animation];
         const frameSize = customAnimationDefinition.frameSize;
 
-        const customAnimationCanvas=document.createElement("canvas");
-        customAnimationCanvas.width=requiredCanvasWidth;
-        customAnimationCanvas.height=requiredCanvasHeight-universalSheetHeight;
-        const customAnimationContext=customAnimationCanvas.getContext("2d");
+        const customAnimationCanvas = document.createElement("canvas");
+        customAnimationCanvas.width = requiredCanvasWidth;
+        customAnimationCanvas.height =
+          requiredCanvasHeight - universalSheetHeight;
+        const customAnimationContext = customAnimationCanvas.getContext("2d");
 
         const indexInArray = addedCustomAnimations.indexOf(custom_animation);
         var offSetInAdditionToOtherCustomActions = 0;
-        for (var i = 0; i <indexInArray; ++i) {
+        for (var i = 0; i < indexInArray; ++i) {
           const otherCustomAction = customAnimations[addedCustomAnimations[i]];
-          offSetInAdditionToOtherCustomActions+=otherCustomAction.frameSize * otherCustomAction.frames.length
+          offSetInAdditionToOtherCustomActions +=
+            otherCustomAction.frameSize * otherCustomAction.frames.length;
         }
 
         if (didPutUniversalForCustomAnimation !== custom_animation) {
@@ -620,11 +683,21 @@ $(document).ready(function() {
             for (var j = 0; j < frames.length; ++j) {
               const frameCoordinateX = parseInt(frames[j].split(",")[1]);
               const frameCoordinateRowName = frames[j].split(",")[0];
-              const frameCoordinateY = animationRowsLayout[frameCoordinateRowName]+1;
-              const offSet = (frameSize-universalFrameSize)/2;
+              const frameCoordinateY =
+                animationRowsLayout[frameCoordinateRowName] + 1;
+              const offSet = (frameSize - universalFrameSize) / 2;
 
-              var imgDataSingleFrame = ctx.getImageData(universalFrameSize * frameCoordinateX, universalFrameSize * frameCoordinateY, universalFrameSize, universalFrameSize);
-              customAnimationContext.putImageData(imgDataSingleFrame, frameSize * j + offSet, frameSize * i + offSet + offSetInAdditionToOtherCustomActions);
+              var imgDataSingleFrame = ctx.getImageData(
+                universalFrameSize * frameCoordinateX,
+                universalFrameSize * frameCoordinateY,
+                universalFrameSize,
+                universalFrameSize
+              );
+              customAnimationContext.putImageData(
+                imgDataSingleFrame,
+                frameSize * j + offSet,
+                frameSize * i + offSet + offSetInAdditionToOtherCustomActions
+              );
             }
           }
           ctx.drawImage(customAnimationCanvas, 0, universalSheetHeight);
@@ -632,7 +705,11 @@ $(document).ready(function() {
             didPutUniversalForCustomAnimation = custom_animation;
           }
         }
-        ctx.drawImage(img, 0, universalSheetHeight+offSetInAdditionToOtherCustomActions);
+        ctx.drawImage(
+          img,
+          0,
+          universalSheetHeight + offSetInAdditionToOtherCustomActions
+        );
       } else {
         const splitPath = splitFilePath(filePath);
 
@@ -655,17 +732,21 @@ $(document).ready(function() {
           }
         }
       }
-      itemIdx+=1;
+      itemIdx += 1;
     }
     addCustomAnimationPreviews();
   }
 
   function canRender() {
     if (imagesLoaded >= imagesToLoad) {
-      if (DEBUG) console.log(`Loaded all ${imagesToLoad} of ${imagesToLoad} assets`)
+      if (DEBUG)
+        console.log(`Loaded all ${imagesToLoad} of ${imagesToLoad} assets`);
       return true;
     } else {
-      if (DEBUG) console.log(`Loading... Loaded ${imagesLoaded} of ${imagesToLoad} assets`)
+      if (DEBUG)
+        console.log(
+          `Loading... Loaded ${imagesLoaded} of ${imagesToLoad} assets`
+        );
       return false;
     }
   }
@@ -677,7 +758,7 @@ $(document).ready(function() {
     let hasUnsupported = false;
     let hasProhibited = false;
 
-    $("li").each(function(index) {
+    $("li").each(function (index) {
       // Toggle Required Body Type
       var display = true;
       if ($(this).data("required")) {
@@ -694,7 +775,10 @@ $(document).ready(function() {
           for (const selectedAnim of selectedAnims) {
             if (!requiredAnimations.includes(selectedAnim)) {
               display = false;
-              if ($(this).find("input[type=radio]:checked:not([id*=none])").length > 0) {
+              if (
+                $(this).find("input[type=radio]:checked:not([id*=none])")
+                  .length > 0
+              ) {
                 hasUnsupported = true;
               }
               break;
@@ -711,14 +795,18 @@ $(document).ready(function() {
       }
     });
 
-    $("input[type=radio]").each(function() {
+    $("input[type=radio]").each(function () {
       var display = true;
-      
+
       // Toggle allowed licenses
-      const licenses = $(this).data(`layer_1_${getBodyTypeName()}_licenses`)
+      const licenses = $(this).data(`layer_1_${getBodyTypeName()}_licenses`);
       if (licenses !== undefined) {
         const licensesForAsset = licenses.split(",");
-        if (!allowedLicenses.some(allowedLicense => licensesForAsset.includes(allowedLicense))) {
+        if (
+          !allowedLicenses.some((allowedLicense) =>
+            licensesForAsset.includes(allowedLicense)
+          )
+        ) {
           display = false;
           if ($(this).prop("checked")) {
             hasProhibited = true;
@@ -727,7 +815,7 @@ $(document).ready(function() {
       }
 
       // Display Result
-      if(display) {
+      if (display) {
         $(this).parent().show();
       } else {
         $(this).parent().hide();
@@ -748,17 +836,20 @@ $(document).ready(function() {
   }
 
   function interpretParams() {
-    $("input[type=radio]").each(function() {
-      var words = _.words($(this).attr('id'), '-');
-      var initial = _.initial(words).join('-');
-      $(this).prop("checked", $(this).attr("checked") || params[initial] == _.last(words));
+    $("input[type=radio]").each(function () {
+      var words = _.words($(this).attr("id"), "-");
+      var initial = _.initial(words).join("-");
+      $(this).prop(
+        "checked",
+        $(this).attr("checked") || params[initial] == _.last(words)
+      );
     });
   }
 
   function setParams() {
-    $("input[type=radio]:checked").each(function() {
-      var words = _.words($(this).attr('id'), '-');
-      var initial = _.initial(words).join('-');
+    $("input[type=radio]:checked").each(function () {
+      var words = _.words($(this).attr("id"), "-");
+      var initial = _.initial(words).join("-");
       if (!$(this).attr("checked") || params[initial]) {
         params[initial] = _.last(words);
       }
@@ -766,30 +857,31 @@ $(document).ready(function() {
     jHash.val(params);
   }
 
-  function setParamsFromImport(spritesheet){
-    spritesheet.forEach((sprite)=>{
+  function setParamsFromImport(spritesheet) {
+    spritesheet.forEach((sprite) => {
       var name = sprite.name;
       var parentName = sprite.parentName;
       var variant = sprite.variant;
       const assetType = name.replaceAll(" ", "_");
-      const assetVariant = variant.replaceAll(" ", "_")
+      const assetVariant = variant.replaceAll(" ", "_");
       const assetToSelect = parentName + "-" + assetType + "_" + assetVariant;
       $(`#${assetToSelect}`).prop("checked", true);
-
     });
     setParams();
   }
-  
+
   function loadImage(imgRef, allowLoading) {
     if (!allowLoading) {
       return images[imgRef];
     }
     imagesToLoad += 1;
     if (images[imgRef]) {
-      setTimeout(function() { imageLoadDone(); }, 10);
+      setTimeout(function () {
+        imageLoadDone();
+      }, 10);
       return images[imgRef];
     } else {
-      if (DEBUG) console.log(`loading new image ${imgRef}`)
+      if (DEBUG) console.log(`loading new image ${imgRef}`);
       var img = new Image();
       img.src = "spritesheets/" + imgRef;
       img.onload = imageLoadDone;
@@ -808,7 +900,8 @@ $(document).ready(function() {
   }
 
   function imageLoadError(event) {
-    if (DEBUG) console.error('There was an error loading image:', event.target.src);
+    if (DEBUG)
+      console.error("There was an error loading image:", event.target.src);
     imageLoadDone();
   }
 
@@ -819,7 +912,9 @@ $(document).ready(function() {
     } else if (imgRef) {
       var img = new Image();
       img.src = "spritesheets/" + imgRef;
-      img.onload = function() { callback(layers, prevctx) };
+      img.onload = function () {
+        callback(layers, prevctx);
+      };
       images[imgRef] = img;
       return img;
     }
@@ -829,94 +924,105 @@ $(document).ready(function() {
     try {
       ctx.drawImage(img, 0, dy);
       zPosition++;
-    } catch(err) {
+    } catch (err) {
       if (DEBUG) console.error("Error: could not find " + img.src);
     }
   }
 
   function drawPreviews() {
-    this.find("input[type=radio]").filter(function() {
-      return $(this).is(":visible");
-    }).each(function() {
-      $this = $(this)
-      if (!$this.parent().hasClass("hasPreview") && !$this.parent().hasClass("noPreview")) {
-        var prev = document.createElement("canvas");
-        prev.setAttribute("width", universalFrameSize);
-        prev.setAttribute("height", universalFrameSize);
-        var prevctx = prev.getContext("2d");
-        var img = null;
-        const previewRow = parseInt($(this).data("preview_row"));
-        const previewColumn = parseInt($(this).data("preview_column"));
-        const previewXOffset = parseInt($(this).data("preview_x_offset"));
-        const previewYOffset = parseInt($(this).data("preview_y_offset"));
-        var callback = function(layers,prevctx) {
-          for(index = 0; index < layers.length; index++){
-            if(!images[layers[index].link]){
-              return;
-            }
-          }
-          try {
-            layers.forEach((layer) => {
-              if (layer && layer.link) {
-                prevctx.drawImage(images[layer.link], previewColumn * universalFrameSize + previewXOffset, previewRow * universalFrameSize + previewYOffset, universalFrameSize, universalFrameSize, 0, 0, universalFrameSize, universalFrameSize);
-              } else {
-                if (DEBUG) console.error(`Preview link missing for ${$this.id}`);
+    this.find("input[type=radio]")
+      .filter(function () {
+        return $(this).is(":visible");
+      })
+      .each(function () {
+        $this = $(this);
+        if (
+          !$this.parent().hasClass("hasPreview") &&
+          !$this.parent().hasClass("noPreview")
+        ) {
+          var prev = document.createElement("canvas");
+          prev.setAttribute("width", universalFrameSize);
+          prev.setAttribute("height", universalFrameSize);
+          var prevctx = prev.getContext("2d");
+          var img = null;
+          const previewRow = parseInt($(this).data("preview_row"));
+          const previewColumn = parseInt($(this).data("preview_column"));
+          const previewXOffset = parseInt($(this).data("preview_x_offset"));
+          const previewYOffset = parseInt($(this).data("preview_y_offset"));
+          var callback = function (layers, prevctx) {
+            for (index = 0; index < layers.length; index++) {
+              if (!images[layers[index].link]) {
+                return;
               }
-            });
-          } catch (err) {
-            if (DEBUG) console.error(err);
-          }
-        };
+            }
+            try {
+              layers.forEach((layer) => {
+                if (layer && layer.link) {
+                  prevctx.drawImage(
+                    images[layer.link],
+                    previewColumn * universalFrameSize + previewXOffset,
+                    previewRow * universalFrameSize + previewYOffset,
+                    universalFrameSize,
+                    universalFrameSize,
+                    0,
+                    0,
+                    universalFrameSize,
+                    universalFrameSize
+                  );
+                } else {
+                  if (DEBUG)
+                    console.error(`Preview link missing for ${$this.id}`);
+                }
+              });
+            } catch (err) {
+              if (DEBUG) console.error(err);
+            }
+          };
 
-        layers = []
-        const previewToDraw = {};
-        const animation =  $(this).data(`layer_1_custom_animation`);
-
-        const bodyTypeName = getBodyTypeName();
-        if ($(this).data(`layer_1_${bodyTypeName}`) === undefined) {
+          layers = [];
+          const previewToDraw = {};
+          const animation = $(this).data(`layer_1_custom_animation`);
+          const bodyTypeName = getBodyTypeName();
           let imageLink = $(this).data(`layer_1_${bodyTypeName}`);
-          imageLink = imageLink && updatePreviewLink(imageLink);
-          previewToDraw.link = imageLink;
-          previewToDraw.zPos = $(this).data(`layer_1_zpos`);
-          layers.push(previewToDraw);
-        } else {
-          for (jdx = 1; jdx < 10; jdx++){
-            if ($(this).data(`layer_${jdx}_${bodyTypeName}`)){
+
+          for (jdx = 1; jdx < 10; jdx++) {
+            imageLink = $(this).data(`layer_${jdx}_${bodyTypeName}`);
+            if (imageLink) {
               if (animation === $(this).data(`layer_${jdx}_custom_animation`)) {
                 const previewToDraw = {};
-                let imageLink = $(this).data(`layer_${jdx}_${bodyTypeName}`);
-                if (imageLink !== undefined) {
-                  imageLink = updatePreviewLink(imageLink, animation);
-                }
-                previewToDraw.link = imageLink;
+                previewToDraw.link = updatePreviewLink(imageLink, animation);
                 previewToDraw.zPos = $(this).data(`layer_${jdx}_zpos`);
                 layers.push(previewToDraw);
               }
             } else {
               break;
             }
-          }    
-        }
-        
-        layers.sort(function(lhs, rhs) {
-          return parseInt(lhs.zPos) - parseInt(rhs.zPos);
-        });
-       
-        layers.forEach((layer) =>{
-          img = getImage2(layer.link, callback, layers, prevctx);
-        });
+          }
 
-        if (img != null) {
-          this.parentNode.insertBefore(prev, this);
-          $(this).parent().addClass("hasPreview").parent().addClass("hasPreview");
+          layers.sort(function (lhs, rhs) {
+            return parseInt(lhs.zPos) - parseInt(rhs.zPos);
+          });
+
+          layers.forEach((layer) => {
+            img = getImage2(layer.link, callback, layers, prevctx);
+          });
+
+          if (img != null) {
+            this.parentNode.insertBefore(prev, this);
+            $(this)
+              .parent()
+              .addClass("hasPreview")
+              .parent()
+              .addClass("hasPreview");
+          }
         }
-      }
-    });
-  };
+      });
+  }
 
   function nextFrame() {
     animCtx.clearRect(0, 0, anim.width, anim.height);
-    currentAnimationItemIndex = (currentAnimationItemIndex + 1) % animationItems.length;
+    currentAnimationItemIndex =
+      (currentAnimationItemIndex + 1) % animationItems.length;
     const currentFrame = animationItems[currentAnimationItemIndex];
     var frameSize = universalFrameSize;
     var offSet = 0;
@@ -925,13 +1031,23 @@ $(document).ready(function() {
       frameSize = customAnimation.frameSize;
       const indexInArray = addedCustomAnimations.indexOf(activeCustomAnimation);
       offSet = universalSheetHeight;
-      for (var i = 0; i <indexInArray; ++i) {
+      for (var i = 0; i < indexInArray; ++i) {
         const otherCustomAction = customAnimations[addedCustomAnimations[i]];
-        offSet+=otherCustomAction.frameSize * otherCustomAction.frames.length
+        offSet += otherCustomAction.frameSize * otherCustomAction.frames.length;
       }
     }
     for (var i = 0; i < animRowNum; ++i) {
-      animCtx.drawImage(canvas, currentFrame * frameSize, offSet + ((animRowStart + i) * frameSize), frameSize, frameSize, i * frameSize, 0, frameSize, frameSize);
+      animCtx.drawImage(
+        canvas,
+        currentFrame * frameSize,
+        offSet + (animRowStart + i) * frameSize,
+        frameSize,
+        frameSize,
+        i * frameSize,
+        0,
+        frameSize,
+        frameSize
+      );
     }
     setTimeout(nextFrame, 1000 / 8);
   }
@@ -939,7 +1055,7 @@ $(document).ready(function() {
   function updatePreviewLink(imageLink, customWalkAnimation) {
     const { directory, file } = splitFilePath(imageLink);
     if (customWalkAnimation) {
-      imageLink = `${directory}/${file}`
+      imageLink = `${directory}/${file}`;
     } else {
       imageLink = `${directory}/walk/${file}`;
     }
@@ -947,14 +1063,16 @@ $(document).ready(function() {
   }
 
   function splitFilePath(filePath) {
-    const index = filePath.lastIndexOf('/');
+    const index = filePath.lastIndexOf("/");
     if (index > -1) {
-        return {
-          directory: filePath.substring(0, index),
-          file: filePath.substring(index+1)
-        }
+      return {
+        directory: filePath.substring(0, index),
+        file: filePath.substring(index + 1),
+      };
     } else {
-      throw new Error(`Could not split to directory and file using path ${filePath}`);
+      throw new Error(
+        `Could not split to directory and file using path ${filePath}`
+      );
     }
   }
 });
