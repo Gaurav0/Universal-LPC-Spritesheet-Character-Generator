@@ -1,6 +1,10 @@
 {
   "name": "Whip",
   "type_name": "weapon",
+  "preview_row": 3,
+  "preview_column": 12,
+  "preview_x_offset": 24,
+  "preview_y_offset": 48,
   "layer_1": {
     "zPos": 9,
     "custom_animation": "tool_whip",
