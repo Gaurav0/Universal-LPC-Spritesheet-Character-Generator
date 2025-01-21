@@ -314,6 +314,8 @@ $(document).ready(function () {
     document.removeChild(a);
   });
 
+  $('#frame-cycle').text(animationItems.join('-')); // for default animation, walk
+
   $("#whichAnim").change(function () {
     animationItems = [];
     const selectedAnim = $("#whichAnim>:selected");
@@ -337,18 +339,21 @@ $(document).ready(function () {
         }
         animationItems.push(i);
       }
+      $('#frame-cycle').text(animationItems.join('-'));
       return;
     }
     const animRowFramesCustom = selectedAnim.data("cycle-custom");
     if (animRowFramesCustom !== undefined) {
       animationItems = animRowFramesCustom.split("-").map(Number);
       if (animationItems.length > 0) {
+        $('#frame-cycle').text(animRowFramesCustom);
         return;
       }
     }
     for (var i = 1; i < animRowFrames; ++i) {
       animationItems.push(i);
     }
+    $('#frame-cycle').text(animationItems.join('-'));
   });
 
   function clearCustomAnimationPreviews() {
