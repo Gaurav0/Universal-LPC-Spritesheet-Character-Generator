@@ -1,6 +1,7 @@
 {
   "name": "Jetpack",
   "type_name": "backpack",
+  "preview_row": 0,
   "layer_1": {
     "zPos": 110,
     "male": "backpack/jetpack/male/",

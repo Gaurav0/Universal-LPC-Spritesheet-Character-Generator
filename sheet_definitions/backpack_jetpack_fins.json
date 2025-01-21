@@ -1,6 +1,7 @@
 {
   "name": "Jetpack fins",
   "type_name": "cargo",
+  "preview_row": 0,
   "layer_1": {
     "zPos": 112,
     "male": "backpack/jetpack_fins/male/",
