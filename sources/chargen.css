@@ -14,8 +14,16 @@ canvas {
   image-rendering: pixelated;
 }
 
-.zoomed {
+.zoomed-in {
   zoom: 2;
+}
+
+.zoomed-out {
+  zoom: 0.5;
+}
+
+.zoomed-in.zoomed-out {
+  zoom: 1;
 }
 
 body {
