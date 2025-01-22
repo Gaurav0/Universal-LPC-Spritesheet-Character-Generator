@@ -1096,37 +1096,45 @@ $(document).ready(function () {
     }
   }
 
+  var past = Date.now();
   function nextFrame() {
-    animCtx.clearRect(0, 0, anim.width, anim.height);
-    currentAnimationItemIndex =
-      (currentAnimationItemIndex + 1) % animationItems.length;
-    const currentFrame = animationItems[currentAnimationItemIndex];
-    var frameSize = universalFrameSize;
-    var offSet = 0;
-    if (activeCustomAnimation !== "") {
-      const customAnimation = customAnimations[activeCustomAnimation];
-      frameSize = customAnimation.frameSize;
-      const indexInArray = addedCustomAnimations.indexOf(activeCustomAnimation);
-      offSet = universalSheetHeight;
-      for (var i = 0; i < indexInArray; ++i) {
-        const otherCustomAction = customAnimations[addedCustomAnimations[i]];
-        offSet += otherCustomAction.frameSize * otherCustomAction.frames.length;
+    const fpsInterval = 1000 / 8;
+    const now = Date.now();
+    const elapsed = now - past;
+    if (elapsed > fpsInterval) {
+      past = now - (elapsed % fpsInterval);
+
+      animCtx.clearRect(0, 0, anim.width, anim.height);
+      currentAnimationItemIndex =
+        (currentAnimationItemIndex + 1) % animationItems.length;
+      const currentFrame = animationItems[currentAnimationItemIndex];
+      let frameSize = universalFrameSize;
+      let offSet = 0;
+      if (activeCustomAnimation !== "") {
+        const customAnimation = customAnimations[activeCustomAnimation];
+        frameSize = customAnimation.frameSize;
+        const indexInArray = addedCustomAnimations.indexOf(activeCustomAnimation);
+        offSet = universalSheetHeight;
+        for (var i = 0; i < indexInArray; ++i) {
+          const otherCustomAction = customAnimations[addedCustomAnimations[i]];
+          offSet += otherCustomAction.frameSize * otherCustomAction.frames.length;
+        }
+      }
+      for (let i = 0; i < animRowNum; ++i) {
+        animCtx.drawImage(
+          canvas,
+          currentFrame * frameSize,
+          offSet + (animRowStart + i) * frameSize,
+          frameSize,
+          frameSize,
+          i * frameSize,
+          0,
+          frameSize,
+          frameSize
+        );
       }
     }
-    for (var i = 0; i < animRowNum; ++i) {
-      animCtx.drawImage(
-        canvas,
-        currentFrame * frameSize,
-        offSet + (animRowStart + i) * frameSize,
-        frameSize,
-        frameSize,
-        i * frameSize,
-        0,
-        frameSize,
-        frameSize
-      );
-    }
-    setTimeout(nextFrame, 1000 / 8);
+    requestAnimationFrame(nextFrame);
   }
 
   function updatePreviewLink(imageLink, customWalkAnimation, defaultAnimation) {
