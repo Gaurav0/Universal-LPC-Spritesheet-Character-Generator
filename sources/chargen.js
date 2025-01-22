@@ -1000,23 +1000,29 @@ $(document).ready(function () {
               layers.forEach((layer) => {
                 if (layer && layer.link) {
                   try {
-                    prevctx.drawImage(
-                      images[layer.link],
-                      previewColumn * universalFrameSize + previewXOffset,
-                      previewRow * universalFrameSize + previewYOffset,
-                      universalFrameSize,
-                      universalFrameSize,
-                      0,
-                      0,
-                      universalFrameSize,
-                      universalFrameSize
-                    );
+                    const drawThisPreview = () => {
+                      prevctx.drawImage(
+                        images[layer.link],
+                        previewColumn * universalFrameSize + previewXOffset,
+                        previewRow * universalFrameSize + previewYOffset,
+                        universalFrameSize,
+                        universalFrameSize,
+                        0,
+                        0,
+                        universalFrameSize,
+                        universalFrameSize
+                      );
+                      if (images[layer.link].complete) {
+                        drawThisPreview();
+                      } else {
+                        images[layer.link].onload = drawThisPreview;
+                      }
+                    };
                   } catch {
                     // continue processing
                   }
-                } else {
-                  if (DEBUG)
-                    console.error(`Preview link missing for ${$this.id}`);
+                } else if (DEBUG) {
+                  console.error(`Preview link missing for ${$this.id}`);
                 }
               });
             } catch (err) {
