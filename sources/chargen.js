@@ -126,13 +126,15 @@ $(document).ready(function () {
     parents.show().promise().done(drawPreviews);
   });
 
-  function search(e) {
+  function search() {
     $(".search-result").removeClass("search-result");
     let query = $("#searchbox").val();
     if (query != "" && query.length > 1) {
       let results = $("#chooser span:icontains(" + query + ")").addClass(
         "search-result"
       );
+      const matches = results.length;
+      $('#matches').text(`${matches} matches.`);
       let parents = results.parents("ul");
       parents.prev("span").addClass("expanded").removeClass("condensed");
       parents.show().promise().done(drawPreviews);
@@ -140,6 +142,13 @@ $(document).ready(function () {
   }
   $("#searchbox").on("search", search);
   $("#search").click(search);
+  $("#searchbox").on("input", function() {
+    if ($("#searchbox").val().length >= 3) {
+      (_.debounce(search, 500, false))();
+    } else {
+      $("#matches").val("");
+    }
+  });
   $("#customizeChar").on("submit", function (e) {
     search();
     e.preventDefault();
