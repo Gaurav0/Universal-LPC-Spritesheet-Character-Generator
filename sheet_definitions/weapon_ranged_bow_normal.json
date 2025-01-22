@@ -1,7 +1,8 @@
 {
   "name": "Normal",
   "type_name": "weapon",
-  "preview_row": 17,
+  "preview_row": 1,
+  "preview_column": 5,
   "layer_1": {
     "zPos": -1,
     "male": "weapon/ranged/bow/normal/universal/background/",
@@ -49,6 +50,10 @@
     "iron",
     "silver",
     "steel"
+  ],
+  "animations": [
+    "shoot",
+    "hurt"
   ],
   "credits": [
     {

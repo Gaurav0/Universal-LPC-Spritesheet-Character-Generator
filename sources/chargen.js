@@ -990,17 +990,21 @@ $(document).ready(function () {
             try {
               layers.forEach((layer) => {
                 if (layer && layer.link) {
-                  prevctx.drawImage(
-                    images[layer.link],
-                    previewColumn * universalFrameSize + previewXOffset,
-                    previewRow * universalFrameSize + previewYOffset,
-                    universalFrameSize,
-                    universalFrameSize,
-                    0,
-                    0,
-                    universalFrameSize,
-                    universalFrameSize
-                  );
+                  try {
+                    prevctx.drawImage(
+                      images[layer.link],
+                      previewColumn * universalFrameSize + previewXOffset,
+                      previewRow * universalFrameSize + previewYOffset,
+                      universalFrameSize,
+                      universalFrameSize,
+                      0,
+                      0,
+                      universalFrameSize,
+                      universalFrameSize
+                    );
+                  } catch {
+                    // continue processing
+                  }
                 } else {
                   if (DEBUG)
                     console.error(`Preview link missing for ${$this.id}`);
@@ -1100,6 +1104,7 @@ $(document).ready(function () {
     } else {
       imageLink = `${directory}/walk/${file}`;
     }
+    if (DEBUG) console.log('preview image:', imageLink);
     return imageLink;
   }
 
