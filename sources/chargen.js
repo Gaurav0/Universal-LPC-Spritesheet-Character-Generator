@@ -314,7 +314,7 @@ $(document).ready(function () {
     document.removeChild(a);
   });
 
-  $('#frame-cycle').text(animationItems.join('-')); // for default animation, walk
+  $("#frame-cycle").text(animationItems.join("-")); // for default animation, walk
 
   $("#whichAnim").change(function () {
     animationItems = [];
@@ -339,21 +339,21 @@ $(document).ready(function () {
         }
         animationItems.push(i);
       }
-      $('#frame-cycle').text(animationItems.join('-'));
+      $("#frame-cycle").text(animationItems.join("-"));
       return;
     }
     const animRowFramesCustom = selectedAnim.data("cycle-custom");
     if (animRowFramesCustom !== undefined) {
       animationItems = animRowFramesCustom.split("-").map(Number);
       if (animationItems.length > 0) {
-        $('#frame-cycle').text(animRowFramesCustom);
+        $("#frame-cycle").text(animRowFramesCustom);
         return;
       }
     }
     for (var i = 1; i < animRowFrames; ++i) {
       animationItems.push(i);
     }
-    $('#frame-cycle').text(animationItems.join('-'));
+    $("#frame-cycle").text(animationItems.join("-"));
   });
 
   function clearCustomAnimationPreviews() {
@@ -1012,8 +1012,15 @@ $(document).ready(function () {
           };
 
           layers = [];
-          const previewToDraw = {};
           const animation = $(this).data(`layer_1_custom_animation`);
+          const supportedAnimations = $(this)
+            .closest("[data-animations]")
+            .data("animations")
+            .split(',');
+          let defaultAnimation = 'walk';
+          if (supportedAnimations && supportedAnimations.length && !supportedAnimations.includes('walk')) {
+            defaultAnimation = supportedAnimations[0];
+          }
           const bodyTypeName = getBodyTypeName();
           let imageLink = $(this).data(`layer_1_${bodyTypeName}`);
 
@@ -1022,7 +1029,7 @@ $(document).ready(function () {
             if (imageLink) {
               if (animation === $(this).data(`layer_${jdx}_custom_animation`)) {
                 const previewToDraw = {};
-                previewToDraw.link = updatePreviewLink(imageLink, animation);
+                previewToDraw.link = updatePreviewLink(imageLink, animation, defaultAnimation);
                 previewToDraw.zPos = $(this).data(`layer_${jdx}_zpos`);
                 layers.push(previewToDraw);
               }
@@ -1084,10 +1091,12 @@ $(document).ready(function () {
     setTimeout(nextFrame, 1000 / 8);
   }
 
-  function updatePreviewLink(imageLink, customWalkAnimation) {
+  function updatePreviewLink(imageLink, customWalkAnimation, defaultAnimation) {
     const { directory, file } = splitFilePath(imageLink);
     if (customWalkAnimation) {
       imageLink = `${directory}/${file}`;
+    } else if (defaultAnimation) {
+      imageLink = `${directory}/${defaultAnimation}/${file}`;
     } else {
       imageLink = `${directory}/walk/${file}`;
     }
