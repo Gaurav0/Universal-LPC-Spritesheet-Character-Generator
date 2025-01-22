@@ -701,6 +701,7 @@ weapon_magic_s.json,layer_3,150,weapon/magic/s/thrust/foreground/ weapon/magic/s
 weapon_magic_s.json,layer_4,-1,weapon/magic/s/thrust/background/ weapon/magic/s/thrust/background/ weapon/magic/s/thrust/background/ weapon/magic/s/thrust/background/
 weapon_magic_simple.json,layer_1,140,weapon/magic/simple/foreground/ weapon/magic/simple/foreground/ weapon/magic/simple/foreground/ weapon/magic/simple/foreground/
 weapon_magic_simple.json,layer_2,9,weapon/magic/simple/background/ weapon/magic/simple/background/ weapon/magic/simple/background/ weapon/magic/simple/background/
+weapon_magic_wand.json,layer_1,140,weapon/magic/wand/male/ weapon/magic/wand/female/ weapon/magic/wand/male/ weapon/magic/wand//female/
 weapon_polearm_cane.json,layer_1,140,weapon/polearm/cane/male/ weapon/polearm/cane/female/ weapon/polearm/cane/male/ weapon/polearm/cane/female/
 weapon_polearm_dragonspear.json,layer_1,140,weapon/polearm/dragonspear/foreground/walk/ weapon/polearm/dragonspear/foreground/walk/ weapon/polearm/dragonspear/foreground/walk/ weapon/polearm/dragonspear/foreground/walk/
 weapon_polearm_dragonspear.json,layer_2,9,weapon/polearm/dragonspear/background/walk/ weapon/polearm/dragonspear/background/walk/ weapon/polearm/dragonspear/background/walk/ weapon/polearm/dragonspear/background/walk/
