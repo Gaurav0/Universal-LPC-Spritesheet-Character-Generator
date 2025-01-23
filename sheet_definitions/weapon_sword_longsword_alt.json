@@ -1,6 +1,10 @@
 {
   "name": "Longsword alt",
   "type_name": "weapon",
+  "preview_row": 5,
+  "preview_column": 0,
+  "preview_x_offset": 28,
+  "preview_y_offset": -16,
   "layer_1": {
     "custom_animation": "walk_128",
     "zPos": 140,
