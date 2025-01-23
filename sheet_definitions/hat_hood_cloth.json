@@ -4,10 +4,10 @@
   "layer_1": {
     "zPos": 130,
     "male": "hat/cloth/hood/adult/",
-    "female": "hat/cloth/hood/adult",
-    "muscular": "hat/cloth/hood/adult",
-    "pregnant": "hat/cloth/hood/adult",
-    "teen": "hat/cloth/hood/adult"
+    "female": "hat/cloth/hood/adult/",
+    "muscular": "hat/cloth/hood/adult/",
+    "pregnant": "hat/cloth/hood/adult/",
+    "teen": "hat/cloth/hood/adult/"
   },
   "variants": [
     "hood_black",
