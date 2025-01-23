@@ -61,6 +61,7 @@ $(document).ready(function () {
   };
 
   // Preview Animation
+  let past = Date.now();
   var anim = $("#previewAnimations").get(0);
   var animCtx = anim.getContext("2d");
   var animationItems = [1, 2, 3, 4, 5, 6, 7, 8]; // default for walk
@@ -122,24 +123,37 @@ $(document).ready(function () {
   });
   $("#expand").click(function () {
     let parents = $('input[type="radio"]:checked').parents("ul");
-    parents.prev("span").addClass("expanded");
+    parents.prev("span").addClass("expanded").removeClass("condensed");
     parents.show().promise().done(drawPreviews);
   });
 
-  function search(e) {
+  function search() {
     $(".search-result").removeClass("search-result");
     let query = $("#searchbox").val();
     if (query != "" && query.length > 1) {
       let results = $("#chooser span:icontains(" + query + ")").addClass(
         "search-result"
       );
+      const matches = results.length;
+      $('#matches').text(`${matches} matches.`);
       let parents = results.parents("ul");
       parents.prev("span").addClass("expanded").removeClass("condensed");
-      parents.show().promise().done(drawPreviews);
+      for (const parent of parents.toArray().reverse()) {
+        $(parent).delay(50).show().map((i, el) => {
+          setTimeout(() => drawPreviews.call(el), 50 * i);
+        });
+      }
     }
   }
   $("#searchbox").on("search", search);
   $("#search").click(search);
+  $("#searchbox").on("input", function() {
+    if ($("#searchbox").val().length >= 3) {
+      (_.debounce(search, 500, false))();
+    } else {
+      $("#matches").val("");
+    }
+  });
   $("#customizeChar").on("submit", function (e) {
     search();
     e.preventDefault();
@@ -937,17 +951,26 @@ $(document).ready(function () {
     imageLoadDone();
   }
 
-  function getImage2(imgRef, callback, layers, prevctx) {
-    if (imgRef && images[imgRef]) {
+  async function getImage2(imgRef, callback, layers, prevctx) {
+    if (imgRef && images[imgRef] && images[imgRef].complete) {
       callback(layers, prevctx);
       return images[imgRef];
-    } else if (imgRef) {
-      var img = new Image();
-      img.src = "spritesheets/" + imgRef;
-      img.onload = function () {
+    } else if (imgRef && images[imgRef]) {
+      images[imgRef].addEventListener('load', function () {
         callback(layers, prevctx);
-      };
+      });
+      return images[imgRef];
+    } else {
+      let img = new Image();
+      img.src = "spritesheets/" + imgRef;
       images[imgRef] = img;
+      await new Promise((resolve) => {
+        img.addEventListener('load', function () {
+          callback(layers, prevctx);
+          resolve();
+        });
+        img.addEventListener('error', resolve);
+      });
       return img;
     }
   }
@@ -961,36 +984,38 @@ $(document).ready(function () {
     }
   }
 
-  function drawPreviews() {
-    this.find("input[type=radio]")
+  async function drawPreviews() {
+    const buttons = $(this).find("input[type=radio]")
       .filter(function () {
         return $(this).is(":visible");
       })
-      .each(function () {
-        $this = $(this);
-        if (
-          !$this.parent().hasClass("hasPreview") &&
-          !$this.parent().hasClass("noPreview")
-        ) {
-          var prev = document.createElement("canvas");
-          prev.setAttribute("width", universalFrameSize);
-          prev.setAttribute("height", universalFrameSize);
-          var prevctx = prev.getContext("2d");
-          var img = null;
-          const previewRow = parseInt($(this).data("preview_row"));
-          const previewColumn = parseInt($(this).data("preview_column"));
-          const previewXOffset = parseInt($(this).data("preview_x_offset"));
-          const previewYOffset = parseInt($(this).data("preview_y_offset"));
-          var callback = function (layers, prevctx) {
-            for (index = 0; index < layers.length; index++) {
-              if (!images[layers[index].link]) {
-                return;
-              }
+      .toArray();
+    for (const button of buttons) {
+      const $this = $(button);
+      if (
+        !$this.parent().hasClass("hasPreview") &&
+        !$this.parent().hasClass("noPreview")
+      ) {
+        const prev = document.createElement("canvas");
+        prev.setAttribute("width", universalFrameSize);
+        prev.setAttribute("height", universalFrameSize);
+        const prevctx = prev.getContext("2d");
+        let img = null;
+        const previewRow = parseInt($this.data("preview_row"));
+        const previewColumn = parseInt($this.data("preview_column"));
+        const previewXOffset = parseInt($this.data("preview_x_offset"));
+        const previewYOffset = parseInt($this.data("preview_y_offset"));
+        const callback = async function (layers, prevctx) {
+          for (index = 0; index < layers.length; index++) {
+            if (!images[layers[index].link]) {
+              return;
             }
-            try {
-              layers.forEach((layer) => {
-                if (layer && layer.link) {
-                  try {
+          }
+          try {
+            const drawLayer = async (layer) => {
+              if (layer && layer.link) {
+                try {
+                  const drawThisPreview = () => {
                     prevctx.drawImage(
                       images[layer.link],
                       previewColumn * universalFrameSize + previewXOffset,
@@ -1002,97 +1027,115 @@ $(document).ready(function () {
                       universalFrameSize,
                       universalFrameSize
                     );
-                  } catch {
-                    // continue processing
+                  };
+                  if (images[layer.link].complete) {
+                    drawThisPreview();
+                  } else {
+                    images[layer.link].addEventListener('load', drawThisPreview);
                   }
-                } else {
+                } catch(e) {
                   if (DEBUG)
-                    console.error(`Preview link missing for ${$this.id}`);
+                    console.error(e);
                 }
-              });
-            } catch (err) {
-              if (DEBUG) console.error(err);
-            }
-          };
-
-          layers = [];
-          const animation = $(this).data(`layer_1_custom_animation`);
-          const supportedAnimations = $(this)
-            .closest("[data-animations]")
-            .data("animations")
-            .split(',');
-          let defaultAnimation = 'walk';
-          if (supportedAnimations && supportedAnimations.length && !supportedAnimations.includes('walk')) {
-            defaultAnimation = supportedAnimations[0];
-          }
-          const bodyTypeName = getBodyTypeName();
-          let imageLink = $(this).data(`layer_1_${bodyTypeName}`);
-
-          for (jdx = 1; jdx < 10; jdx++) {
-            imageLink = $(this).data(`layer_${jdx}_${bodyTypeName}`);
-            if (imageLink) {
-              if (animation === $(this).data(`layer_${jdx}_custom_animation`)) {
-                const previewToDraw = {};
-                previewToDraw.link = updatePreviewLink(imageLink, animation, defaultAnimation);
-                previewToDraw.zPos = $(this).data(`layer_${jdx}_zpos`);
-                layers.push(previewToDraw);
+              } else if (DEBUG) {
+                console.error(`Preview link missing for ${$this.id}`);
               }
-            } else {
-              break;
+            };
+            for (const layer of layers) {
+              await drawLayer(layer);
             }
+          } catch (err) {
+            if (DEBUG) console.error(err);
           }
+        };
 
-          layers.sort(function (lhs, rhs) {
-            return parseInt(lhs.zPos) - parseInt(rhs.zPos);
-          });
+        const layers = [];
+        const animation = $this.data(`layer_1_custom_animation`);
+        const supportedAnimations = $this
+          .closest("[data-animations]")
+          .data("animations")
+          .split(',');
+        let defaultAnimation = 'walk';
+        if (supportedAnimations && supportedAnimations.length && !supportedAnimations.includes('walk')) {
+          defaultAnimation = supportedAnimations[0];
+        }
+        const bodyTypeName = getBodyTypeName();
+        let imageLink = $this.data(`layer_1_${bodyTypeName}`);
 
-          layers.forEach((layer) => {
-            img = getImage2(layer.link, callback, layers, prevctx);
-          });
-
-          if (img != null) {
-            this.parentNode.insertBefore(prev, this);
-            $(this)
-              .parent()
-              .addClass("hasPreview")
-              .parent()
-              .addClass("hasPreview");
+        for (jdx = 1; jdx < 10; jdx++) {
+          imageLink = $this.data(`layer_${jdx}_${bodyTypeName}`);
+          if (imageLink) {
+            if (animation === $this.data(`layer_${jdx}_custom_animation`)) {
+              const previewToDraw = {};
+              previewToDraw.link = updatePreviewLink(imageLink, animation, defaultAnimation);
+              previewToDraw.zPos = $this.data(`layer_${jdx}_zpos`);
+              layers.push(previewToDraw);
+            }
+          } else {
+            break;
           }
         }
-      });
+
+        layers.sort(function (lhs, rhs) {
+          return parseInt(lhs.zPos) - parseInt(rhs.zPos);
+        });
+
+        for (const layer of layers) {
+          img = await getImage2(layer.link, callback, layers, prevctx);
+        }
+
+        if (img && !$(button).parent().hasClass("hasPreview")) {
+          button.parentNode.insertBefore(prev, button);
+          $(button)
+            .parent()
+            .addClass("hasPreview")
+            .parent()
+            .addClass("hasPreview");
+        }
+
+        await setTimeout(() => Promise.resolve(), 4);
+      }
+    }
   }
 
   function nextFrame() {
-    animCtx.clearRect(0, 0, anim.width, anim.height);
-    currentAnimationItemIndex =
-      (currentAnimationItemIndex + 1) % animationItems.length;
-    const currentFrame = animationItems[currentAnimationItemIndex];
-    var frameSize = universalFrameSize;
-    var offSet = 0;
-    if (activeCustomAnimation !== "") {
-      const customAnimation = customAnimations[activeCustomAnimation];
-      frameSize = customAnimation.frameSize;
-      const indexInArray = addedCustomAnimations.indexOf(activeCustomAnimation);
-      offSet = universalSheetHeight;
-      for (var i = 0; i < indexInArray; ++i) {
-        const otherCustomAction = customAnimations[addedCustomAnimations[i]];
-        offSet += otherCustomAction.frameSize * otherCustomAction.frames.length;
+    const fpsInterval = 1000 / 8;
+    let now = Date.now();
+    let elapsed = now - past;
+    if (elapsed > fpsInterval) {
+      past = now - (elapsed % fpsInterval);
+
+      animCtx.clearRect(0, 0, anim.width, anim.height);
+      currentAnimationItemIndex =
+        (currentAnimationItemIndex + 1) % animationItems.length;
+      const currentFrame = animationItems[currentAnimationItemIndex];
+      let frameSize = universalFrameSize;
+      let offSet = 0;
+      if (activeCustomAnimation !== "") {
+        const customAnimation = customAnimations[activeCustomAnimation];
+        frameSize = customAnimation.frameSize;
+        const indexInArray = addedCustomAnimations.indexOf(activeCustomAnimation);
+        offSet = universalSheetHeight;
+        for (let i = 0; i < indexInArray; ++i) {
+          const otherCustomAction = customAnimations[addedCustomAnimations[i]];
+          offSet += otherCustomAction.frameSize * otherCustomAction.frames.length;
+        }
+      }
+      for (let i = 0; i < animRowNum; ++i) {
+        animCtx.drawImage(
+          canvas,
+          currentFrame * frameSize,
+          offSet + (animRowStart + i) * frameSize,
+          frameSize,
+          frameSize,
+          i * frameSize,
+          0,
+          frameSize,
+          frameSize
+        );
       }
     }
-    for (var i = 0; i < animRowNum; ++i) {
-      animCtx.drawImage(
-        canvas,
-        currentFrame * frameSize,
-        offSet + (animRowStart + i) * frameSize,
-        frameSize,
-        frameSize,
-        i * frameSize,
-        0,
-        frameSize,
-        frameSize
-      );
-    }
-    setTimeout(nextFrame, 1000 / 8);
+    requestAnimationFrame(nextFrame);
   }
 
   function updatePreviewLink(imageLink, customWalkAnimation, defaultAnimation) {
