@@ -131,7 +131,7 @@ $(document).ready(function () {
     $(".search-result").removeClass("search-result");
     let query = $("#searchbox").val();
     if (query != "" && query.length > 1) {
-      let results = $("#chooser span:icontains(" + query + ")").addClass(
+      let results = $("#chooser li>span:icontains(" + query + ")").addClass(
         "search-result"
       );
       const matches = results.length;
@@ -967,9 +967,9 @@ $(document).ready(function () {
       await new Promise((resolve) => {
         img.addEventListener('load', function () {
           callback(layers, prevctx);
-          resolve();
+          setTimeout(resolve, 4);
         });
-        img.addEventListener('error', resolve);
+        img.addEventListener('error', () => setTimeout(resolve, 50));
       });
       return img;
     }
