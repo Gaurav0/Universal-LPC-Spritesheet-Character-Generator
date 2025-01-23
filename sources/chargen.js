@@ -1147,7 +1147,9 @@ $(document).ready(function () {
     } else {
       imageLink = `${directory}/walk/${file}`;
     }
-    if (DEBUG) console.log('preview image:', imageLink);
+    if (DEBUG)
+      console.log('preview image:',
+        `${window.location.protocol}//${window.location.host}/spritesheets/${imageLink}`);
     return imageLink;
   }
 
