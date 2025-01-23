@@ -52,6 +52,11 @@ header > section {
   width: 50vw;
 }
 
+#header-left {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
 h1 {
   margin: 10px 0px;
 }
@@ -115,26 +120,52 @@ input[type=button], input[type=reset] {
   position: sticky;
   top: 140px;
   left: 0;
-  width: calc(40% - 80px);
   padding-top: 10px;
   background-color: white;
   opacity: 1;
   z-index: 2;
+  margin-left: 15px;
+  order: -1;
 }
 
 #chooser {
   overflow-y: auto;
   min-width: 200px;
-  width: calc(40% - 80px);
   max-height: calc(100vh - 380px);
+  margin-left: 15px;
+  order: 2;
 }
 
 #preview {
-  width: calc(60% - 80px);
   min-width: 832px;
-  float: right;
   max-height: calc(100vh - 160px);
   overflow-y: auto;
+  margin-top: 0;
+  position: relative;
+  order: 1;
+  left: 15px;
+  grid-row: span 2;
+}
+
+#customizeChar {
+  display: grid;
+  grid-template-columns: 40% auto;
+}
+
+/* tablet view 800 - 1280 px */
+@media screen and (max-width: 1280px) {
+  #customizeChar {
+    display: flex;
+    flex-direction: column;  
+  }
+
+  #preview {
+    margin-top: 20px;
+  }
+
+  #customizeChar > section {
+    width: calc(100% - 80px);
+  }
 }
 
 #chooser p.instr {
