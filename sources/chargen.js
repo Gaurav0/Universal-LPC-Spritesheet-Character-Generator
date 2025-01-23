@@ -61,6 +61,7 @@ $(document).ready(function () {
   };
 
   // Preview Animation
+  let past = Date.now();
   var anim = $("#previewAnimations").get(0);
   var animCtx = anim.getContext("2d");
   var animationItems = [1, 2, 3, 4, 5, 6, 7, 8]; // default for walk
@@ -968,6 +969,7 @@ $(document).ready(function () {
           callback(layers, prevctx);
           resolve();
         });
+        img.addEventListener('error', resolve);
       });
       return img;
     }
@@ -1096,11 +1098,10 @@ $(document).ready(function () {
     }
   }
 
-  var past = Date.now();
   function nextFrame() {
     const fpsInterval = 1000 / 8;
-    const now = Date.now();
-    const elapsed = now - past;
+    let now = Date.now();
+    let elapsed = now - past;
     if (elapsed > fpsInterval) {
       past = now - (elapsed % fpsInterval);
 
@@ -1115,7 +1116,7 @@ $(document).ready(function () {
         frameSize = customAnimation.frameSize;
         const indexInArray = addedCustomAnimations.indexOf(activeCustomAnimation);
         offSet = universalSheetHeight;
-        for (var i = 0; i < indexInArray; ++i) {
+        for (let i = 0; i < indexInArray; ++i) {
           const otherCustomAction = customAnimations[addedCustomAnimations[i]];
           offSet += otherCustomAction.frameSize * otherCustomAction.frames.length;
         }
