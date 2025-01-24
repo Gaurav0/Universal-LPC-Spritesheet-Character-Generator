@@ -951,7 +951,7 @@ $(document).ready(function () {
     imageLoadDone();
   }
 
-  async function getImage2(imgRef, callback, layers, prevctx) {
+  function getImage2(imgRef, callback, layers, prevctx) {
     if (imgRef && images[imgRef] && images[imgRef].complete) {
       callback(layers, prevctx);
       return images[imgRef];
@@ -964,12 +964,8 @@ $(document).ready(function () {
       let img = new Image();
       img.src = "spritesheets/" + imgRef;
       images[imgRef] = img;
-      await new Promise((resolve) => {
-        img.addEventListener('load', function () {
-          callback(layers, prevctx);
-          setTimeout(resolve, 4);
-        });
-        img.addEventListener('error', () => setTimeout(resolve, 50));
+      img.addEventListener('load', function () {
+        callback(layers, prevctx);
       });
       return img;
     }
@@ -984,7 +980,7 @@ $(document).ready(function () {
     }
   }
 
-  async function drawPreviews() {
+  function drawPreviews() {
     const buttons = $(this).find("input[type=radio]")
       .filter(function () {
         return $(this).is(":visible");
@@ -1005,14 +1001,14 @@ $(document).ready(function () {
         const previewColumn = parseInt($this.data("preview_column"));
         const previewXOffset = parseInt($this.data("preview_x_offset"));
         const previewYOffset = parseInt($this.data("preview_y_offset"));
-        const callback = async function (layers, prevctx) {
+        const callback = function (layers, prevctx) {
           for (index = 0; index < layers.length; index++) {
             if (!images[layers[index].link]) {
               return;
             }
           }
           try {
-            const drawLayer = async (layer) => {
+            const drawLayer = (layer) => {
               if (layer && layer.link) {
                 try {
                   const drawThisPreview = () => {
@@ -1042,7 +1038,7 @@ $(document).ready(function () {
               }
             };
             for (const layer of layers) {
-              await drawLayer(layer);
+              drawLayer(layer);
             }
           } catch (err) {
             if (DEBUG) console.error(err);
@@ -1081,7 +1077,7 @@ $(document).ready(function () {
         });
 
         for (const layer of layers) {
-          img = await getImage2(layer.link, callback, layers, prevctx);
+          img = getImage2(layer.link, callback, layers, prevctx);
         }
 
         if (img && !$(button).parent().hasClass("hasPreview")) {
@@ -1092,8 +1088,6 @@ $(document).ready(function () {
             .parent()
             .addClass("hasPreview");
         }
-
-        await setTimeout(() => Promise.resolve(), 4);
       }
     }
   }
