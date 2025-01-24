@@ -41,9 +41,10 @@
   "credits": [
     {
       "file": "hat/helmet/bascinet_round",
-      "notes": "",
+      "notes": "Original Bascinet Round by ElizaWy/Bluecarrot16, split from visor and base Bascinet by JaidynReiman",
       "authors": [
         "bluecarrot16",
+        "JaidynReiman",
         "ElizaWy",
         "Sander Frenken (castelonia)"
       ],
