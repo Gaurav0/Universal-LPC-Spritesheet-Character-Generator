@@ -37,6 +37,8 @@ header {
   position: sticky;
   top: 0;
   left: 0;
+  margin-top: -10px;
+  padding-top: 10px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -152,6 +154,10 @@ input[type=button], input[type=reset] {
   grid-template-columns: 40% auto;
 }
 
+#credits, #advanced {
+  margin-left: 15px;
+}
+
 /* tablet view 800 - 1280 px */
 @media screen and (max-width: 1280px) {
   header {
@@ -160,11 +166,11 @@ input[type=button], input[type=reset] {
 
   #customizeChar {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column; 
   }
 
   #preview {
-    margin-top: 20px;
+    margin-top: 20%;
     max-height: none;
   }
 
@@ -177,11 +183,28 @@ input[type=button], input[type=reset] {
   }
 
   #controls {
-    top: 300px;
+    position: fixed;
+    z-index: 4;
+    margin-top: -10px;
+    padding-top: 30px;
+    padding-left: 20px;
+  }
+
+  /* override #customizeChar > section */
+  #customizeChar > #controls {
+    width: 100%;
   }
 
   #preview-animations {
     margin-left: 15px;
+    position: relative;
+    top: 240px;
+    z-index: 2;
+    opacity: 1;
+    background-color: white;
+    margin-top: -50px;
+    padding-top: 40px;
+    width: 100%;
   }
 }
 
@@ -198,7 +221,6 @@ input[type=button], input[type=reset] {
 ul {
   list-style-type: none;
 }
-
 
 #chooser>ul {
   border-left: solid 1px silver;
@@ -223,7 +245,6 @@ ul {
 .condensed:hover, .expanded:hover {
   text-decoration: underline;
 }
-
 
 .search-result {
   background-color: yellow;
