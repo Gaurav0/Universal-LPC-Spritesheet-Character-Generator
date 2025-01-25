@@ -154,6 +154,10 @@ input[type=button], input[type=reset] {
 
 /* tablet view 800 - 1280 px */
 @media screen and (max-width: 1280px) {
+  header {
+    flex-direction: column;
+  }
+
   #customizeChar {
     display: flex;
     flex-direction: column;  
@@ -161,10 +165,23 @@ input[type=button], input[type=reset] {
 
   #preview {
     margin-top: 20px;
+    max-height: none;
   }
 
   #customizeChar > section {
     width: calc(100% - 80px);
+  }
+
+  #chooser {
+    max-height: none;
+  }
+
+  #controls {
+    top: 300px;
+  }
+
+  #preview-animations {
+    margin-left: 15px;
   }
 }
 
