@@ -692,8 +692,6 @@ $(document).ready(function () {
     canvas.width = requiredCanvasWidth;
     canvas.height = requiredCanvasHeight;
 
-    $("#chooser").css("height", canvas.height);
-
     var itemIdx = 0;
     var didPutUniversalForCustomAnimation = "";
     itemsToDraw.sort(function (lhs, rhs) {
