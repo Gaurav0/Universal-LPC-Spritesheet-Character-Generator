@@ -131,6 +131,7 @@ input[type=button], input[type=reset] {
   z-index: 2;
   margin-left: 15px;
   order: -1;
+  height: 60px;
 }
 
 #chooser {
@@ -173,7 +174,7 @@ input[type=button], input[type=reset] {
   }
 
   #preview {
-    margin-top: 20%;
+    margin-top: 180px;
     max-height: none;
   }
 
@@ -203,7 +204,7 @@ input[type=button], input[type=reset] {
   #preview-animations {
     margin-left: 15px;
     position: relative;
-    top: 240px;
+    top: 150px;
     z-index: 2;
     opacity: 1;
     background-color: white;
@@ -230,7 +231,11 @@ input[type=button], input[type=reset] {
   #preview-animations {
     position: absolute;
     z-index: 0;
-    top: 450px;
+    top: 350px;
+  }
+
+  #preview {
+    margin-top: 260px;
   }
 }
 

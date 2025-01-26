@@ -87,40 +87,42 @@
 				<input type="search" id="searchbox" name="" placeholder="Search" />
 				<output id="matches"></output>
 			</div>
-			<div>
-				<label class="control-label">Licenses:</label>
-				<ul>
-					<li>
-						<input class="licenseCheckBox" type="checkbox" value="CC0" checked>
-						<label>CC0</label>
-						<a href="https://creativecommons.org/public-domain/cc0/">Show license</a>
-					</li>
-					<li>
-						<input class="licenseCheckBox" type="checkbox" value="CC-BY-SA 3.0, CC-BY-SA 4.0" checked>
-						<label>CC-BY-SA</label>
-						<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Show license (4.0)</a>
-					</li>
-					<li>
-						<input class="licenseCheckBox" type="checkbox" value="CC-BY 3.0+, CC-BY 3.0, CC-BY 4.0, CC-BY" checked>
-						<label>CC-BY</label>
-						<a href="https://creativecommons.org/licenses/by/4.0/">Show license (4.0)</a>
-					</li>
-					<li>
-						<input class="licenseCheckBox" type="checkbox" value="OGA-BY 3.0, OGA-BY 3.0+, OGA-BY 4.0" checked>
-						<label">OGA-BY</label>
-						<a href="https://static.opengameart.org/OGA-BY-3.0.txt">Show license (3.0)</a>
-					</li>
-					<li>
-						<input class="licenseCheckBox" type="checkbox" value="GPL 2.0, GPL 3.0" checked>
-						<label>GPL</label>
-						<a href="https://www.gnu.org/licenses/gpl-3.0.en.html#license-text">Show license (3.0)</a>
-					</li>
-				</ul>
-				<button type="button" class="removeIncompatibleWithLicenses">Remove Assets Incompatible With Selected Licenses</button>
-			</div>
 		</section>
 		<section id="chooser">
-			<h3>Body</h3>
+			<h3>Filters</h3>
+			<ul>
+				<li>
+					<span class="condensed">Licenses:</span>
+					<ul>
+						<li>
+							<input class="licenseCheckBox" type="checkbox" value="CC0" checked>
+							<label>CC0</label>
+							<a href="https://creativecommons.org/public-domain/cc0/">Show license</a>
+						</li>
+						<li>
+							<input class="licenseCheckBox" type="checkbox" value="CC-BY-SA 3.0, CC-BY-SA 4.0" checked>
+							<label>CC-BY-SA</label>
+							<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Show license (4.0)</a>
+						</li>
+						<li>
+							<input class="licenseCheckBox" type="checkbox" value="CC-BY 3.0+, CC-BY 3.0, CC-BY 4.0, CC-BY" checked>
+							<label>CC-BY</label>
+							<a href="https://creativecommons.org/licenses/by/4.0/">Show license (4.0)</a>
+						</li>
+						<li>
+							<input class="licenseCheckBox" type="checkbox" value="OGA-BY 3.0, OGA-BY 3.0+, OGA-BY 4.0" checked>
+							<label">OGA-BY</label>
+							<a href="https://static.opengameart.org/OGA-BY-3.0.txt">Show license (3.0)</a>
+						</li>
+						<li>
+							<input class="licenseCheckBox" type="checkbox" value="GPL 2.0, GPL 3.0" checked>
+							<label>GPL</label>
+							<a href="https://www.gnu.org/licenses/gpl-3.0.en.html#license-text">Show license (3.0)</a>
+						</li>
+					</ul>
+					<button type="button" class="removeIncompatibleWithLicenses">Remove Assets Incompatible With Selected Licenses</button>
+				</li>
+			</ul>
 			<ul>
 				<li>
 					<!-- Supported Animation -->
@@ -197,6 +199,9 @@
 					</ul>
 					<button type="button" class="removeUnsupported">Remove Assets Not Supported By Selected Animations</button>
 				</li>
+			</ul>
+			<h3>Body</h3>
+			<ul>
 				<li>
 					<!-- Body types -->
 					<span class="expanded">Body type</span>
