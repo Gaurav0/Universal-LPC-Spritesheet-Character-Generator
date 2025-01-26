@@ -179,7 +179,7 @@ input[type=button], input[type=reset] {
   }
 
   #customizeChar > section {
-    width: calc(100% - 80px);
+    width: calc(100vw - 80px);
   }
 
   #chooser {
