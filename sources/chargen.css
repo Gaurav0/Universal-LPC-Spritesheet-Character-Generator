@@ -37,6 +37,8 @@ header {
   position: sticky;
   top: 0;
   left: 0;
+  margin-top: -10px;
+  padding-top: 10px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -50,6 +52,12 @@ header > section {
   flex-direction: column;
   flex-grow: 1;
   width: 50vw;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+#preview-animations {
+  padding-top: 15px;
 }
 
 h1 {
@@ -94,6 +102,7 @@ p {
 #credits {
   width: 100%;
   clear: both;
+  max-width: calc(100vw - 80px);
 }
 
 #advanced {
@@ -107,6 +116,7 @@ input[type=button], input[type=reset] {
 #previewAnimationsBox {
   margin-bottom: -64px;
 }
+
 #previewAnimationsBox > * {
   vertical-align: top;
 }
@@ -115,26 +125,113 @@ input[type=button], input[type=reset] {
   position: sticky;
   top: 140px;
   left: 0;
-  width: calc(40% - 80px);
   padding-top: 10px;
   background-color: white;
   opacity: 1;
   z-index: 2;
+  margin-left: 15px;
+  order: -1;
 }
 
 #chooser {
   overflow-y: auto;
   min-width: 200px;
-  width: calc(40% - 80px);
   max-height: calc(100vh - 380px);
+  margin-left: 15px;
+  order: 2;
 }
 
 #preview {
-  width: calc(60% - 80px);
   min-width: 832px;
-  float: right;
   max-height: calc(100vh - 160px);
   overflow-y: auto;
+  margin-top: 0;
+  position: relative;
+  order: 1;
+  left: 15px;
+  grid-row: span 2;
+}
+
+#customizeChar {
+  display: grid;
+  grid-template-columns: 40% auto;
+}
+
+#credits, #advanced {
+  margin-left: 15px;
+}
+
+/* tablet view 800 - 1280 px */
+@media screen and (max-width: 1280px) {
+  header {
+    flex-direction: column;
+  }
+
+  #customizeChar {
+    display: flex;
+    flex-direction: column; 
+  }
+
+  #preview {
+    margin-top: 20%;
+    max-height: none;
+  }
+
+  #customizeChar > section {
+    width: calc(100% - 80px);
+  }
+
+  #chooser {
+    height: auto;
+    max-height: none;
+  }
+
+  #controls {
+    position: fixed;
+    z-index: 4;
+    margin-top: -10px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* override #customizeChar > section */
+  #customizeChar > #controls {
+    width: 100%;
+  }
+
+  #preview-animations {
+    margin-left: 15px;
+    position: relative;
+    top: 240px;
+    z-index: 2;
+    opacity: 1;
+    background-color: white;
+    margin-top: -60px;
+    padding-top: 40px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1280px) and (max-height: 1200px) {
+  header {
+    position: static;
+    height: 140px;
+  }
+
+  #controls {
+    position: relative;
+    z-index: 2;
+    top: 40px;
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  #preview-animations {
+    position: absolute;
+    z-index: 0;
+    top: 450px;
+  }
 }
 
 #chooser p.instr {
@@ -150,7 +247,6 @@ input[type=button], input[type=reset] {
 ul {
   list-style-type: none;
 }
-
 
 #chooser>ul {
   border-left: solid 1px silver;
@@ -175,7 +271,6 @@ ul {
 .condensed:hover, .expanded:hover {
   text-decoration: underline;
 }
-
 
 .search-result {
   background-color: yellow;
