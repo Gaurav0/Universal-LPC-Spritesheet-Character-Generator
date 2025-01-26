@@ -131,8 +131,8 @@ $(document).ready(function () {
   });
 
   $("#collapse").click(function () {
-    $("#chooser>ul ul").hide("slow");
-    $("#chooser>ul span.expanded")
+    $("#chooser>details>ul ul").hide("slow");
+    $("#chooser>details>ul span.expanded")
       .removeClass("expanded")
       .addClass("condensed");
   });
@@ -817,7 +817,7 @@ $(document).ready(function () {
     let hasUnsupported = false;
     let hasProhibited = false;
 
-    $("li").each(function (index) {
+    $("#chooser li").each(function (index) {
       // Toggle Required Body Type
       var display = true;
       if ($(this).data("required")) {

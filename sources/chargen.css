@@ -276,6 +276,10 @@ summary {
   #preview:has(+#controls>details:not([open])) {
     margin-top: 170px;
   }
+
+  #chooser {
+    padding-top: 60px;
+  }
 }
 
 #chooser p.instr {
@@ -292,7 +296,7 @@ ul {
   list-style-type: none;
 }
 
-#chooser>ul {
+#chooser>details>ul {
   border-left: solid 1px silver;
   padding-left: 0.5em;
   margin-left: 0.5em;
@@ -320,7 +324,7 @@ ul {
   background-color: yellow;
 }
 
-#chooser>ul ul {
+#chooser>details>ul ul {
   display: none;
   margin-left: 0.5em;
   border-left:  solid 1px silver;
