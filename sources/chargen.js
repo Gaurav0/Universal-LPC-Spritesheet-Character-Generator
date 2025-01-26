@@ -117,6 +117,10 @@ $(document).ready(function () {
     });
   });
 
+  $("#controls>details").on('toggle', function(event) {
+    $("#preview-animations").toggleClass("controls-open", $(event.target).attr("open"));
+  });
+
   // Toggle display of a list elements children when clicked
   // Again, do not multiple toggle when clicking on children
   $("#chooser ul>li").click(function (event) {

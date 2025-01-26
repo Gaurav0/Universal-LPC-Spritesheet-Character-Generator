@@ -58,33 +58,36 @@
 			<canvas id="spritesheet" width="832" height="1344">HTML5 Browser required.</canvas>
 		</section>
 		<section id="controls">
-			<div>
-				<label class="control-label">Download:</label>
-				<a id="saveAsPNG"><input type="button" value="Image (PNG)"></a>
-				<button type="button" class="generateSheetCreditsTxt">Credits (text)</button>
-				<button type="button" class="generateSheetCreditsCsv">Credits (CSV)</button>
-			</div>
-			<div>
-				<label class="control-label">Import/Export:</label>
-				<button type="button" class="exportToClipboard">Export to Clipboard (JSON)</button>
-				<button type="button" class="importFromClipboard">Import from Clipboard (JSON)</button>
-			</div>
-			<div>
-				<label class="control-label">Edit:</label>
-				<button type="button" id="resetAll">Reset all</button>
-				<button type="button" class="replacePinkMask">Replace Mask (pink)</button>
-			</div>
-			<div>
-				<label class="control-label">View:</label>
-				<button type="button" id="collapse">Collapse All</button>
-				<button type="button" id="expand">Expand Selected</button>
-				<label for="displayMode-compact"><input type="checkbox" name="displayMode" value="compact" id="displayMode-compact"> Compact Display</label>
-			</div>
-			<div>
-				<label class="control-label" for="searchbox">Search: </label>
-				<input type="search" id="searchbox" name="" placeholder="Search" />
-				<output id="matches"></output>
-			</div>
+			<details open>
+				<summary>Controls</summary>
+				<div>
+					<label class="control-label">Download:</label>
+					<a id="saveAsPNG"><input type="button" value="Image (PNG)"></a>
+					<button type="button" class="generateSheetCreditsTxt">Credits (text)</button>
+					<button type="button" class="generateSheetCreditsCsv">Credits (CSV)</button>
+				</div>
+				<div>
+					<label class="control-label">Import/Export:</label>
+					<button type="button" class="exportToClipboard">Export to Clipboard (JSON)</button>
+					<button type="button" class="importFromClipboard">Import from Clipboard (JSON)</button>
+				</div>
+				<div>
+					<label class="control-label">Edit:</label>
+					<button type="button" id="resetAll">Reset all</button>
+					<button type="button" class="replacePinkMask">Replace Mask (pink)</button>
+				</div>
+				<div>
+					<label class="control-label">View:</label>
+					<button type="button" id="collapse">Collapse All</button>
+					<button type="button" id="expand">Expand Selected</button>
+					<label for="displayMode-compact"><input type="checkbox" name="displayMode" value="compact" id="displayMode-compact"> Compact Display</label>
+				</div>
+				<div>
+					<label class="control-label" for="searchbox">Search: </label>
+					<input type="search" id="searchbox" name="" placeholder="Search" />
+					<output id="matches"></output>
+				</div>
+			</details>
 		</section>
 		<section id="chooser">
 			<h3>Filters</h3>

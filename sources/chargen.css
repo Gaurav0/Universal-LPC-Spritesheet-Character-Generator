@@ -168,10 +168,20 @@ input[type=button], input[type=reset] {
   margin-left: 15px;
 }
 
+summary {
+  display: none;
+}
+
 /* tablet view 800 - 1280 px */
 @media screen and (max-width: 1280px) {
   header {
     flex-direction: column;
+  }
+
+  #header-left {
+    width: calc(100% - 140px);
+    min-height: 180px;
+    overflow-y: auto;
   }
 
   #customizeChar {
@@ -240,8 +250,30 @@ input[type=button], input[type=reset] {
     top: 350px;
   }
 
+  #preview-animations.controls-open {
+    top: 260px;
+  }
+
   #preview {
     margin-top: 260px;
+  }
+
+  summary {
+    display: list-item;
+  }
+
+  details {
+    position: relative;
+    top: -4rex;
+  }
+
+  #controls:has(>details:not([open])) {
+    position: relative;
+    top: 40px;
+  }
+
+  #preview:has(+#controls>details:not([open])) {
+    margin-top: 170px;
   }
 }
 
