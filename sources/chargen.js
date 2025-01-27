@@ -1,8 +1,19 @@
-_.mixin(_.str.exports());
-
 $.expr[":"].icontains = function (a, i, m) {
   return jQuery(a).text().toUpperCase().indexOf(m[3].toUpperCase()) >= 0;
 };
+
+// adapted from tiny-debounce
+// https://github.com/vuejs-tips/tiny-debounce/blob/ac7eb88715b9fb81124d4d5fa714abde0853dce9/index.js
+function debounce (fn, delay) {
+  let timeoutID = null;
+  return function () {
+    clearTimeout(timeoutID);
+    const args = arguments;
+    timeoutID = setTimeout(() => {
+      fn.apply(this, args);
+    }, delay);
+  };
+}
 
 // DEBUG mode will be turned on if on localhost and off in production
 // but this can be overridden by adding debug=(true|false) to the querystring.
@@ -149,7 +160,7 @@ $(document).ready(function () {
   $("#search").click(search);
   $("#searchbox").on("input", function() {
     if ($("#searchbox").val().length >= 3) {
-      (_.debounce(search, 500, false))();
+      (debounce(search, 500))();
     } else {
       $("#matches").val("");
     }
@@ -881,21 +892,21 @@ $(document).ready(function () {
 
   function interpretParams() {
     $("input[type=radio]").each(function () {
-      var words = _.words($(this).attr("id"), "-");
-      var initial = _.initial(words).join("-");
+      const words = $(this).attr("id").split('-');
+      const initial = words[0];
       $(this).prop(
         "checked",
-        $(this).attr("checked") || params[initial] == _.last(words)
+        $(this).attr("checked") || params[initial] == words[1]
       );
     });
   }
 
   function setParams() {
     $("input[type=radio]:checked").each(function () {
-      var words = _.words($(this).attr("id"), "-");
-      var initial = _.initial(words).join("-");
+      const words = $(this).attr("id").split('-');
+      const initial = words[0];
       if (!$(this).attr("checked") || params[initial]) {
-        params[initial] = _.last(words);
+        params[initial] = words[1];
       }
     });
     jHash.val(params);
