@@ -2,7 +2,7 @@
   "name": "Mouth",
   "type_name": "wound_mouth",
   "layer_1": {
-    "zPos": 15,
+    "zPos": 115,
     "male": "body/wound/",
     "muscular": "body/wound/",
     "female": "body/wound/",
@@ -11,6 +11,25 @@
   },
   "variants": [
     "mouth"
+  ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
   ],
   "credits": [
     {

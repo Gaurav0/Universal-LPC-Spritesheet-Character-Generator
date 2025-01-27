@@ -251,8 +251,8 @@ hat_cap_bonnie_tilt.json,layer_1,130,hat/pirate/bonnie/tilt/adult/ hat/pirate/bo
 hat_cap_bonnie_trim.json,layer_1,131,hat/pirate/bonnie/trim/adult/ hat/pirate/bonnie/trim/adult/ hat/pirate/bonnie/trim/adult/ hat/pirate/bonnie/trim/adult/
 hat_cap_cavalier.json,layer_1,130,hat/pirate/cavalier/adult/ hat/pirate/cavalier/adult/ hat/pirate/cavalier/adult/ hat/pirate/cavalier/adult/
 hat_cap_cavalier_feather.json,layer_1,131,hat/pirate/cavalier/feather/adult/ hat/pirate/cavalier/feather/adult/ hat/pirate/cavalier/feather/adult/ hat/pirate/cavalier/feather/adult/
-hat_cap_feather.json,layer_1,130,hat/cloth/feather_cap/adult/ hat/cloth/feather_cap/adult/ hat/cloth/feather_cap/adult/ hat/cloth/feather_cap/adult/
-hat_cap_feather_alt.json,layer_1,131,hat/cloth/feather_cap/alt/adult/ hat/cloth/feather_cap/alt/adult/ hat/cloth/feather_cap/alt/adult/ hat/cloth/feather_cap/alt/adult/
+hat_cap_leather.json,layer_1,130,hat/cloth/leather_cap/adult/ hat/cloth/leather_cap/adult/ hat/cloth/leather_cap/adult/ hat/cloth/leather_cap/adult/
+hat_cap_leather_feather.json,layer_1,131,hat/cloth/leather_cap/feather/adult/ hat/cloth/leather_cap/feather/adult/ hat/cloth/leather_cap/feather/adult/ hat/cloth/leather_cap/feather/adult/
 hat_formal_bowler.json,layer_1,130,hat/formal/bowler/adult/ hat/formal/bowler/adult/ hat/formal/bowler/adult/ hat/formal/bowler/adult/
 hat_formal_crown.json,layer_1,130,hat/formal/crown/adult/ hat/formal/crown/adult/ hat/formal/crown/adult/ hat/formal/crown/adult/
 hat_formal_tiara.json,layer_1,130,hat/formal/tiara/adult/ hat/formal/tiara/adult/ hat/formal/tiara/adult/ hat/formal/tiara/adult/
@@ -297,7 +297,11 @@ hat_holiday_santa.json,layer_1,131,hat/holiday/santa/adult/ hat/holiday/santa/ad
 hat_hood_cloth.json,layer_1,130,hat/cloth/hood/adult/ hat/cloth/hood/adult/ hat/cloth/hood/adult/ hat/cloth/hood/adult/
 hat_hood_hijab.json,layer_1,130,hat/cloth/hijab/male/ hat/cloth/hijab/thin/ hat/cloth/hijab/male/ hat/cloth/hijab/thin/
 hat_hood_sack_cloth.json,layer_1,130,hat/cloth/hood_sack/adult/ hat/cloth/hood_sack/adult/ hat/cloth/hood_sack/adult/ hat/cloth/hood_sack/adult/
-hat_magic_misc.json,layer_1,130,hat/magic/misc/adult/ hat/magic/misc/adult/ hat/magic/misc/adult/ hat/magic/misc/adult/
+hat_magic_celestial.json,layer_1,130,hat/magic/celestial/adult/ hat/magic/celestial/adult/ hat/magic/celestial/adult/ hat/magic/celestial/adult/
+hat_magic_celestial_moon.json,layer_1,130,hat/magic/celestial_moon/adult/ hat/magic/celestial_moon/adult/ hat/magic/celestial_moon/adult/ hat/magic/celestial_moon/adult/
+hat_magic_celestial_moon_trim.json,layer_1,131,hat/magic/celestial_moon/trim/adult/ hat/magic/celestial_moon/trim/adult/ hat/magic/celestial_moon/trim/adult/ hat/magic/celestial_moon/trim/adult/
+hat_magic_celestial_trim.json,layer_1,131,hat/magic/celestial/trim/adult/ hat/magic/celestial/trim/adult/ hat/magic/celestial/trim/adult/ hat/magic/celestial/trim/adult/
+hat_magic_large.json,layer_1,130,hat/magic/large/adult/ hat/magic/large/adult/ hat/magic/large/adult/ hat/magic/large/adult/
 hat_magic_wizard.json,layer_1,130,hat/magic/wizard/base/adult/ hat/magic/wizard/base/adult/ hat/magic/wizard/base/adult/ hat/magic/wizard/base/adult/
 hat_magic_wizard_belt.json,layer_1,131,hat/magic/wizard/belt/adult/ hat/magic/wizard/belt/adult/ hat/magic/wizard/belt/adult/ hat/magic/wizard/belt/adult/
 hat_magic_wizard_buckle.json,layer_1,132,hat/magic/wizard/buckle/adult/ hat/magic/wizard/buckle/adult/ hat/magic/wizard/buckle/adult/ hat/magic/wizard/buckle/adult/
@@ -814,8 +818,9 @@ wings_pixie_transparent.json,layer_1,140,body/wings/pixie/transparent/fg/ body/w
 wings_pixie_transparent.json,layer_2,5,body/wings/pixie/transparent/bg/ body/wings/pixie/transparent/bg/ body/wings/pixie/transparent/bg/ body/wings/pixie/transparent/bg/ body/wings/pixie/transparent/bg/
 wound_arm.json,layer_1,15,body/wound/ body/wound/ body/wound/ body/wound/
 wound_brain.json,layer_1,115,body/wound/ body/wound/ body/wound/ body/wound/
-wound_eye.json,layer_1,115,body/wound/ body/wound/ body/wound/ body/wound/
-wound_mouth.json,layer_1,15,body/wound/ body/wound/ body/wound/ body/wound/
+wound_eye_left.json,layer_1,115,body/wound/ body/wound/ body/wound/ body/wound/
+wound_eye_right.json,layer_1,115,body/wound/ body/wound/ body/wound/ body/wound/
+wound_mouth.json,layer_1,115,body/wound/ body/wound/ body/wound/ body/wound/
 wound_ribs.json,layer_1,15,body/wound/ body/wound/ body/wound/ body/wound/
 wrists_cuffs.json,layer_1,70,wrists/cuffs/male/
 wrists_cuffs_lace.json,layer_1,70,wrists/lace/male/

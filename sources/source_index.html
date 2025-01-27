@@ -247,18 +247,19 @@
 				</li>
 
 				<!-- Wounds -->
-				<li data-required="" data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
+				<li data-required="male,female,muscular,pregnant,teen">
 					<span class="condensed">Wounds</span>
 					<ul>
 						div_sheet_wound_arm
 						div_sheet_wound_brain
 						div_sheet_wound_ribs
-						div_sheet_wound_eye
+						div_sheet_wound_eye_left
+						div_sheet_wound_eye_right
 						div_sheet_wound_mouth
 					</ul>
 				</li>
 
-				<li data-required="male,female,muscular,pregnant" data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
+				<li data-required="male,female,muscular,pregnant,teen" data-animations="spellcast,thrust,walk,slash,shoot,hurt,watering">
 					<span class="condensed">Prostheses</span>
 					<ul>
 						div_sheet_prosthesis_hook
@@ -659,8 +660,8 @@
 						<li>
 							<span class="condensed">Caps</span>
 							<ul>
-								div_sheet_hat_cap_feather
-								div_sheet_hat_cap_feather_alt
+								div_sheet_hat_cap_leather
+								div_sheet_hat_cap_leather_feather
 								div_sheet_hat_cap_bonnie
 								div_sheet_hat_cap_bonnie_tilt
 								div_sheet_hat_cap_bonnie_feather
@@ -745,13 +746,22 @@
 						<li>
 							<span class="condensed">Magic</span>
 							<ul>
-								div_sheet_hat_magic_misc
+								div_sheet_hat_magic_large
 								<li>
 									<span class="condensed">Wizard</span>
 									<ul>
 										div_sheet_hat_magic_wizard
 										div_sheet_hat_magic_wizard_belt
 										div_sheet_hat_magic_wizard_buckle
+									</ul>
+								</li>
+								<li>
+									<span class="condensed">Celestial</span>
+									<ul>
+										div_sheet_hat_magic_celestial
+										div_sheet_hat_magic_celestial_trim
+										div_sheet_hat_magic_celestial_moon
+										div_sheet_hat_magic_celestial_moon_trim
 									</ul>
 								</li>
 							</ul>
