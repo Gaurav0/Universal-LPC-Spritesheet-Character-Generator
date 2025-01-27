@@ -113,10 +113,6 @@ input[type=button], input[type=reset] {
   padding: 2px 1em;
 }
 
-#previewAnimationsBox {
-  margin-bottom: -64px;
-}
-
 #previewAnimationsBox > * {
   vertical-align: top;
 }
@@ -192,6 +188,18 @@ summary {
   #preview {
     margin-top: 180px;
     max-height: none;
+  }
+
+  #preview.anim-canvas-64 {
+    margin-top: 244px;
+  }
+
+  #preview.anim-canvas-128 {
+    margin-top: 308px;
+  }
+
+  #preview.anim-canvas-192 {
+    margin-top: 372px;
   }
 
   #customizeChar > section {
@@ -278,7 +286,11 @@ summary {
   }
 
   #chooser {
-    padding-top: 60px;
+    padding-top: 30px;
+  }
+
+  #preview:has(>details[open]) {
+    padding-bottom: 30px;
   }
 }
 

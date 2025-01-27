@@ -353,6 +353,14 @@ $(document).ready(function () {
     animRowStart = parseInt(selectedAnim.data("row"));
     animRowNum = parseInt(selectedAnim.data("num"));
 
+    function clearClasses() {
+      let classes = document.getElementById('preview').classList.values();
+      classes = classes.filter(className => className.startsWith('anim-canvas-'));
+      for (const className of classes) {
+        $('#preview').removeClass(className);
+      }
+    }
+
     currentAnimationItemIndex = 0;
     activeCustomAnimation = "";
     if (addedCustomAnimations.includes(selectedAnimationValue)) {
@@ -360,6 +368,8 @@ $(document).ready(function () {
     }
     if (activeCustomAnimation !== "") {
       const selectedCustomAnimation = customAnimations[activeCustomAnimation];
+      const frameSize = selectedCustomAnimation.frameSize;
+      anim.setAttribute('height', frameSize);
       animRowNum = selectedCustomAnimation.frames.length;
       animRowStart = 0;
       for (var i = 0; i < selectedCustomAnimation.frames[0].length; ++i) {
@@ -369,7 +379,13 @@ $(document).ready(function () {
         animationItems.push(i);
       }
       $("#frame-cycle").text(animationItems.join("-"));
+      clearClasses();
+      $("#preview").addClass(`anim-canvas-${frameSize}`);
       return;
+    } else {
+      anim.setAttribute('height', universalFrameSize);
+      clearClasses();
+      $("#preview").addClass(`anim-canvas-${universalFrameSize}`);
     }
     const animRowFramesCustom = selectedAnim.data("cycle-custom");
     if (animRowFramesCustom !== undefined) {
