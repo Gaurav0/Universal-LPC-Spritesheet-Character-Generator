@@ -134,6 +134,12 @@ input[type=button], input[type=reset] {
   height: 60px;
 }
 
+#controls > * {
+  background-color: white;
+  opacity: 1;
+  z-index: 2;
+}
+
 #chooser {
   overflow-y: auto;
   min-width: 200px;
