@@ -1,13 +1,13 @@
 {
-  "name": "Feather Alt Colors",
+  "name": "Leather Feather Colors",
   "type_name": "hat_accessory",
   "layer_1": {
     "zPos": 131,
-    "male": "hat/cloth/feather_cap/alt/adult/",
-    "female": "hat/cloth/feather_cap/alt/adult/",
-    "muscular": "hat/cloth/feather_cap/alt/adult/",
-    "pregnant": "hat/cloth/feather_cap/alt/adult/",
-    "teen": "hat/cloth/feather_cap/alt/adult/"
+    "male": "hat/cloth/leather_cap/leather/adult/",
+    "female": "hat/cloth/leather_cap/leather/adult/",
+    "muscular": "hat/cloth/leather_cap/leather/adult/",
+    "pregnant": "hat/cloth/leather_cap/leather/adult/",
+    "teen": "hat/cloth/leather_cap/leather/adult/"
   },
   "variants": [
     "black",
@@ -56,7 +56,7 @@
   ],
   "credits": [
     {
-      "file": "hat/cloth/feather_cap",
+      "file": "hat/cloth/leather_cap",
       "notes": "original by Johannes Sjölund (wulax), female by Matthew Krohn, mapped to all frames w/recolors by JaidynReiman",
       "authors": [
         "Johannes Sjölund (wulax)",
