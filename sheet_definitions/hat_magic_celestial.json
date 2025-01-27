@@ -1,5 +1,5 @@
 {
-  "name": "Celestial Wizard",
+  "name": "Celestial Wizard Hat",
   "type_name": "hat",
   "layer_1": {
     "zPos": 130,
@@ -57,13 +57,14 @@
   "credits": [
     {
       "file": "hat/magic/celestial",
-      "notes": "",
+      "notes": "Original by Tracy, Adapted to ULPC by Big Bear Games, reduced colors by Napsio",
       "authors": [
+        "Napsio",
         "Michael Whitlock (bigbeargames)",
         "Tracy"
       ],
       "licenses": [
-        "OGA-BY 3.0"
+        "CC-BY 3.0"
       ],
       "urls": [
         "https://opengameart.org/content/lpc-celestial-wizard-hats",

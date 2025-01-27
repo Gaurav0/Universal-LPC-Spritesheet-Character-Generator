@@ -10,7 +10,6 @@
     "teen": "hat/helmet/mail/adult/"
   },
   "variants": [
-    "detailed",
     "steel",
     "iron",
     "ceramic",
@@ -42,8 +41,9 @@
   "credits": [
     {
       "file": "hat/helmet/mail",
-      "notes": "mapped to all frames and reduced palette version by JaidynReiman",
+      "notes": "reduced palette version by Napsio",
       "authors": [
+        "Napsio",
         "Johannes Sjölund (wulax)",
         "JaidynReiman"
       ],

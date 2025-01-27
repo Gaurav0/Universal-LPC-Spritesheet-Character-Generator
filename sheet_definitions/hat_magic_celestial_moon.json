@@ -1,13 +1,13 @@
 {
-  "name": "Celestial Wizard w/Moon",
+  "name": "Celestial Wizard Moon Hat",
   "type_name": "hat",
   "layer_1": {
-    "zPos": 131,
-    "male": "hat/magic/celestial_moon/adult",
-    "female": "hat/magic/celestial_moon/adult",
-    "muscular": "hat/magic/celestial_moon/adult",
-    "pregnant": "hat/magic/celestial_moon/adult",
-    "teen": "hat/magic/celestial_moon/adult"
+    "zPos": 130,
+    "male": "hat/magic/celestial_moon/adult/",
+    "female": "hat/magic/celestial_moon/adult/",
+    "muscular": "hat/magic/celestial_moon/adult/",
+    "pregnant": "hat/magic/celestial_moon/adult/",
+    "teen": "hat/magic/celestial_moon/adult/"
   },
   "variants": [
     "white",
@@ -57,7 +57,7 @@
   "credits": [
     {
       "file": "hat/magic/celestial_moon",
-      "notes": "",
+      "notes": "sheet_definitions/hat_magic_celestial.json",
       "authors": [
         "Napsio",
         "Michael Whitlock (bigbeargames)",

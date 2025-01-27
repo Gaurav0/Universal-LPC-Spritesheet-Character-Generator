@@ -1,16 +1,16 @@
 {
-  "name": "Misc Magic Hats",
+  "name": "Large Hat",
   "type_name": "hat",
   "layer_1": {
     "zPos": 130,
-    "male": "hat/magic/misc/adult/",
-    "female": "hat/magic/misc/adult/",
-    "muscular": "hat/magic/misc/adult/",
-    "pregnant": "hat/magic/misc/adult/",
-    "teen": "hat/magic/misc/adult/"
+    "male": "hat/magic/large/adult/",
+    "female": "hat/magic/large/adult/",
+    "muscular": "hat/magic/large/adult/",
+    "pregnant": "hat/magic/large/adult/",
+    "teen": "hat/magic/large/adult/"
   },
   "variants": [
-    "large"
+    "brown"
   ],
   "animations": [
     "spellcast",
@@ -33,7 +33,7 @@
   ],
   "credits": [
     {
-      "file": "hat/magic/misc/adult/large.png",
+      "file": "hat/magic/large",
       "notes": "",
       "authors": [
         "Stafford McIntyre",

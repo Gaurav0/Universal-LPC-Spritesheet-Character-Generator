@@ -1,13 +1,13 @@
 {
-  "name": "Leather Feather Colors",
+  "name": "Leather Cap Feather",
   "type_name": "hat_accessory",
   "layer_1": {
     "zPos": 131,
-    "male": "hat/cloth/leather_cap/leather/adult/",
-    "female": "hat/cloth/leather_cap/leather/adult/",
-    "muscular": "hat/cloth/leather_cap/leather/adult/",
-    "pregnant": "hat/cloth/leather_cap/leather/adult/",
-    "teen": "hat/cloth/leather_cap/leather/adult/"
+    "male": "hat/cloth/leather_cap/feather/adult/",
+    "female": "hat/cloth/leather_cap/feather/adult/",
+    "muscular": "hat/cloth/leather_cap/feather/adult/",
+    "pregnant": "hat/cloth/leather_cap/feather/adult/",
+    "teen": "hat/cloth/leather_cap/feather/adult/"
   },
   "variants": [
     "black",
