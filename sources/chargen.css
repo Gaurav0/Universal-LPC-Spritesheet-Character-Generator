@@ -28,7 +28,7 @@ canvas {
 
 body {
   margin: 10px 15px;
-  font-size: 10pt;
+  font-size: 16px;
   font-family: monospace;
 }
 
@@ -258,6 +258,28 @@ summary {
     margin-top: 0;
     padding-top: 0;
   }
+
+  #preview summary, #chooser summary {
+    display: list-item;
+  }
+
+  #preview details #chooser details {
+    position: relative;
+    top: -4rex;
+  }
+
+  #preview details[open], #chooser details[open] {
+    margin-top: 12rex;
+  }
+
+  #preview:has(+#controls>details:not([open])) {
+    margin-top: calc(170px + 12rex);
+  }
+
+  #preview:has(>details[open]) {
+    margin-top: calc(60px + 12rex);
+    margin-bottom: 60px;
+  }
 }
 
 /* tablet view 800 - 1280 px, <= 1200 px height */
@@ -292,15 +314,6 @@ summary {
     min-width: unset;
   }
 
-  summary {
-    display: list-item;
-  }
-
-  details {
-    position: relative;
-    top: -4rex;
-  }
-
   #controls:has(>details:not([open])) {
     position: relative;
     top: 40px;
@@ -311,6 +324,7 @@ summary {
   }
 
   #preview:has(>details[open]) {
+    margin-top: calc(60px + 12rex);
     margin-bottom: 60px;
   }
 }
