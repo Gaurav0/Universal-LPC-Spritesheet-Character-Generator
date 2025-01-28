@@ -57,6 +57,9 @@ header > section {
 
 #preview-animations {
   padding-top: 15px;
+  z-index: 2;
+  opacity: 1;
+  background-color: white;
 }
 
 h1 {
@@ -102,10 +105,6 @@ p {
   width: 100%;
   clear: both;
   max-width: calc(100vw - 80px);
-}
-
-#advanced {
-  float: left;
 }
 
 input[type=button], input[type=reset] {
@@ -170,8 +169,16 @@ summary {
   display: none;
 }
 
+.ZPOS {
+  white-space: nowrap;
+}
+
 /* portrait mode 800 - 1280 px width, > 1200 px height */
 @media screen and (max-width: 1280px) {
+  body, header {
+    max-width: calc(100vw - 30px);
+  }
+
   header {
     flex-direction: column;
   }
@@ -184,12 +191,14 @@ summary {
 
   #customizeChar {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    max-width: calc(100vw - 30px);
   }
 
   #preview {
     margin-top: 180px;
     max-height: none;
+    min-width: unset;
   }
 
   #preview.anim-canvas-64 {
@@ -240,9 +249,6 @@ summary {
     margin-left: 15px;
     position: relative;
     top: 130px;
-    z-index: 2;
-    opacity: 1;
-    background-color: white;
     margin-top: -60px;
     padding-top: 40px;
     width: calc(100vw - 80px);
@@ -271,7 +277,6 @@ summary {
 
   #preview-animations {
     position: absolute;
-    z-index: 0;
     top: 340px;
     margin-top: -40px;
     padding-top: 40px;
@@ -284,6 +289,7 @@ summary {
   #preview {
     margin-top: 260px;
     padding-top: 30px;
+    min-width: unset;
   }
 
   summary {
@@ -305,7 +311,7 @@ summary {
   }
 
   #preview:has(>details[open]) {
-    padding-bottom: 30px;
+    margin-bottom: 60px;
   }
 }
 

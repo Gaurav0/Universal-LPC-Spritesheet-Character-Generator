@@ -369,6 +369,7 @@ $(document).ready(function () {
     if (activeCustomAnimation !== "") {
       const selectedCustomAnimation = customAnimations[activeCustomAnimation];
       const frameSize = selectedCustomAnimation.frameSize;
+      anim.setAttribute('width', 4 * frameSize);
       anim.setAttribute('height', frameSize);
       animRowNum = selectedCustomAnimation.frames.length;
       animRowStart = 0;
@@ -383,6 +384,7 @@ $(document).ready(function () {
       $("#preview").addClass(`anim-canvas-${frameSize}`);
       return;
     } else {
+      anim.setAttribute('width', 4 * universalFrameSize);
       anim.setAttribute('height', universalFrameSize);
       clearClasses();
       $("#preview").addClass(`anim-canvas-${universalFrameSize}`);
