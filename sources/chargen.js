@@ -36,11 +36,11 @@ const debugQueryString = () => bool(jHash.val("debug"));
 const DEBUG = debugQueryString() ?? isLocalhost;
 
 $(document).ready(function () {
-  var matchBodyColor = true;
-  var itemsToDraw = [];
-  var itemsMeta = {};
-  var params = jHash.val();
-  var sheetCredits = [];
+  let matchBodyColor = true;
+  let itemsToDraw = [];
+  let itemsMeta = {};
+  let params = jHash.val();
+  let sheetCredits = [];
 
   let imagesToLoad = 0;
   let imagesLoaded = 0;
@@ -73,14 +73,14 @@ $(document).ready(function () {
 
   // Preview Animation
   let past = Date.now();
-  var anim = $("#previewAnimations").get(0);
-  var animCtx = anim.getContext("2d");
-  var animationItems = [1, 2, 3, 4, 5, 6, 7, 8]; // default for walk
-  var animRowStart = 8; // default for walk
-  var animRowNum = 4; // default for walk
+  const anim = $("#previewAnimations").get(0);
+  const animCtx = anim.getContext("2d");
+  let animationItems = [1, 2, 3, 4, 5, 6, 7, 8]; // default for walk
+  let animRowStart = 8; // default for walk
+  let animRowNum = 4; // default for walk
   let currentAnimationItemIndex = 0;
   let activeCustomAnimation = "";
-  var addedCustomAnimations = [];
+  let addedCustomAnimations = [];
 
   // on hash (url) change event, interpret and redraw
   jHash.change(function () {
@@ -128,7 +128,7 @@ $(document).ready(function () {
   // Again, do not multiple toggle when clicking on children
   $("#chooser ul>li").click(function (event) {
     $(this).children("span").toggleClass("condensed").toggleClass("expanded");
-    var $ul = $(this).children("ul");
+    const $ul = $(this).children("ul");
     $ul.toggle("slow").promise().done(drawPreviews);
     event.stopPropagation();
   });
@@ -278,10 +278,11 @@ $(document).ready(function () {
   });
 
   $(".replacePinkMask").click(function () {
-    var imgData = ctx.getImageData(0, 0, canvas.width, canvas.height),
-      pix = imgData.data;
+    const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height),
+      pix = imgData.data,
+      n = pix.length;
 
-    for (var i = 0, n = pix.length; i < n; i += 4) {
+    for (let i = 0; i < n; i += 4) {
       const a = pix[i + 3];
       if (a > 0) {
         const r = pix[i];
@@ -310,8 +311,8 @@ $(document).ready(function () {
   });
 
   $(".importFromClipboard").click(async function () {
-    var clipboardText = await navigator.clipboard.readText();
-    var spritesheet = JSON.parse(clipboardText)["layers"];
+    const clipboardText = await navigator.clipboard.readText();
+    const spritesheet = JSON.parse(clipboardText)["layers"];
     window.setTimeout(
       function () {
         $("#resetAll").click(); //Reset first so defaults are set properly
@@ -329,8 +330,7 @@ $(document).ready(function () {
   });
 
   $(".exportToClipboard").click(function () {
-    var spritesheet = {};
-    Object.assign(spritesheet, itemsMeta);
+    const spritesheet = Object.assign({}, itemsMeta);
     spritesheet["layers"] = itemsToDraw;
     navigator.clipboard.writeText(JSON.stringify(spritesheet, null, "  "));
   });
@@ -381,7 +381,7 @@ $(document).ready(function () {
       anim.setAttribute("height", frameSize);
       animRowNum = selectedCustomAnimation.frames.length;
       animRowStart = 0;
-      for (var i = 0; i < selectedCustomAnimation.frames[0].length; ++i) {
+      for (let i = 0; i < selectedCustomAnimation.frames[0].length; ++i) {
         if (selectedCustomAnimation.skipFirstFrameInPreview && i === 0) {
           continue;
         }
@@ -405,14 +405,14 @@ $(document).ready(function () {
         return;
       }
     }
-    for (var i = 1; i < animRowFrames; ++i) {
+    for (let i = 1; i < animRowFrames; ++i) {
       animationItems.push(i);
     }
     $("#frame-cycle").text(animationItems.join("-"));
   });
 
   function clearCustomAnimationPreviews() {
-    for (var i = 0; i < addedCustomAnimations.length; ++i) {
+    for (let i = 0; i < addedCustomAnimations.length; ++i) {
       $("#whichAnim")
         .children(`option[value=${addedCustomAnimations[i]}]`)
         .remove();
@@ -421,7 +421,7 @@ $(document).ready(function () {
 
   function addCustomAnimationPreviews() {
     clearCustomAnimationPreviews();
-    for (var i = 0; i < addedCustomAnimations.length; ++i) {
+    for (let i = 0; i < addedCustomAnimations.length; ++i) {
       $("#whichAnim").append(
         new Option(`${addedCustomAnimations[i]}`, `${addedCustomAnimations[i]}`)
       );
@@ -498,7 +498,7 @@ $(document).ready(function () {
 
   function sheetCreditsToCSV() {
     const header = "filename,notes,authors,licenses,urls";
-    var csvBody = header + "\n";
+    let csvBody = header + "\n";
     sheetCredits.map(function (credit) {
       if (credit.licenses !== undefined) {
         csvBody += `${credit.fileName},\"${credit.notes}\",\"${credit.authors}\",\"${credit.licenses}\",\"${credit.urls}\"`;
@@ -509,7 +509,7 @@ $(document).ready(function () {
   }
 
   function sheetCreditsToTxt() {
-    var creditString = "";
+    let creditString = "";
     sheetCredits.map(function (credit) {
       if (credit.licenses !== undefined) {
         const licensesForDisplay = `- Licenses:\n\t\t- ${credit.licenses.replaceAll(
@@ -533,8 +533,8 @@ $(document).ready(function () {
   }
 
   function previewFile() {
-    var file = document.querySelector("input[type=file]").files[0];
-    var img = new Image();
+    const file = document.querySelector("input[type=file]").files[0];
+    const img = new Image();
     img.onload = function () {
       images["uploaded"] = img;
       redraw();
@@ -597,7 +597,7 @@ $(document).ready(function () {
     const bodyTypeName = getBodyTypeName();
 
     sheetCredits = [];
-    var baseUrl = window.location.href.split("/").slice(0, -1).join("/"); // get url until last '/'
+    const baseUrl = window.location.href.split("/").slice(0, -1).join("/"); // get url until last '/'
 
     itemsMeta = {
       bodyTypeName: bodyTypeName,
@@ -610,35 +610,38 @@ $(document).ready(function () {
 
     zPosition = 0;
     $("input[type=radio]:checked").each(function (index) {
+      const $this = $(this);
       for (jdx = 1; jdx < 10; jdx++) {
-        if ($(this).data(`layer_${jdx}_${bodyTypeName}`)) {
-          const zPos = $(this).data(`layer_${jdx}_zpos`);
-          const custom_animation = $(this).data(
+        const bodyTypeKey = `layer_${jdx}_${bodyTypeName}`;
+        if ($this.data(bodyTypeKey)) {
+          const zPos = $this.data(`layer_${jdx}_zpos`);
+          const custom_animation = $this.data(
             `layer_${jdx}_custom_animation`
           );
-          const fileName = $(this).data(`layer_${jdx}_${bodyTypeName}`);
-          const parentName = $(this).attr(`name`);
-          const name = $(this).attr(`parentName`);
-          const variant = $(this).attr(`variant`);
-          const licenses = $(this).data(
-            `layer_${jdx}_${bodyTypeName}_licenses`
+          const fileName = $this.data(bodyTypeKey);
+          const parentName = $this.attr(`name`);
+          const name = $this.attr(`parentName`);
+          const variant = $this.attr(`variant`);
+          const licenses = $this.data(
+            `${bodyTypeKey}_licenses`
           );
-          const authors = $(this).data(`layer_${jdx}_${bodyTypeName}_authors`);
-          const urls = $(this).data(`layer_${jdx}_${bodyTypeName}_urls`);
-          const notes = $(this).data(`layer_${jdx}_${bodyTypeName}_notes`);
+          const authors = $this.data(`${bodyTypeKey}_authors`);
+          const urls = $this.data(`${bodyTypeKey}_urls`);
+          const notes = $this.data(`${bodyTypeKey}_notes`);
 
           if (fileName !== "") {
-            const supportedAnimations = $(this)
+            const supportedAnimations = $this
               .closest("[data-animations]")
               .data("animations");
-            const itemToDraw = {};
-            itemToDraw.fileName = fileName;
-            itemToDraw.zPos = zPos;
-            itemToDraw.custom_animation = custom_animation;
-            itemToDraw.parentName = parentName;
-            itemToDraw.name = name;
-            itemToDraw.variant = variant;
-            itemToDraw.supportedAnimations = supportedAnimations;
+            const itemToDraw = {
+              fileName,
+              zPos,
+              custom_animation,
+              parentName,
+              name,
+              variant,
+              supportedAnimations
+            };
             addCreditFor(fileName, licenses, authors, urls, notes);
             itemsToDraw.push(itemToDraw);
           }
@@ -671,18 +674,18 @@ $(document).ready(function () {
       return setTimeout(loadItemsToDraw, 100);
     }
     resetLoading();
-    var itemIdx = 0;
-    for (item in itemsToDraw) {
-      const supportedAnimations = itemsToDraw[itemIdx].supportedAnimations;
-      const filePath = itemsToDraw[itemIdx].fileName;
-      const custom_animation = itemsToDraw[itemIdx].custom_animation;
+    let itemIdx = 0;
+    for (const item of itemsToDraw) {
+      const supportedAnimations = item.supportedAnimations;
+      const filePath = item.fileName;
+      const custom_animation = item.custom_animation;
       if (custom_animation !== undefined) {
         loadImage(filePath, true);
       } else {
         const { directory, file } = splitFilePath(filePath);
 
         for (const [key, value] of Object.entries(base_animations)) {
-          var animationToCheck = key;
+          let animationToCheck = key;
           if (key === "combat_idle") {
             animationToCheck = "combat";
           } else if (key === "backslash") {
@@ -713,11 +716,11 @@ $(document).ready(function () {
     if (DEBUG) console.log(`Start drawItemsToDraw`);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    var requiredCanvasHeight = universalSheetHeight;
-    var requiredCanvasWidth = universalSheetWidth;
+    let requiredCanvasHeight = universalSheetHeight;
+    let requiredCanvasWidth = universalSheetWidth;
     clearCustomAnimationPreviews();
     addedCustomAnimations = [];
-    for (var i = 0; i < itemsToDraw.length; ++i) {
+    for (let i = 0; i < itemsToDraw.length; ++i) {
       const customAnimationString = itemsToDraw[i].custom_animation;
       if (customAnimationString !== undefined) {
         if (addedCustomAnimations.includes(customAnimationString)) {
@@ -739,8 +742,8 @@ $(document).ready(function () {
     canvas.width = requiredCanvasWidth;
     canvas.height = requiredCanvasHeight;
 
-    var itemIdx = 0;
-    var didPutUniversalForCustomAnimation = "";
+    let itemIdx = 0;
+    let didPutUniversalForCustomAnimation = "";
     itemsToDraw.sort(function (lhs, rhs) {
       return parseInt(lhs.zPos) - parseInt(rhs.zPos);
     });
@@ -761,24 +764,24 @@ $(document).ready(function () {
         const customAnimationContext = customAnimationCanvas.getContext("2d");
 
         const indexInArray = addedCustomAnimations.indexOf(custom_animation);
-        var offSetInAdditionToOtherCustomActions = 0;
-        for (var i = 0; i < indexInArray; ++i) {
+        let offSetInAdditionToOtherCustomActions = 0;
+        for (let i = 0; i < indexInArray; ++i) {
           const otherCustomAction = customAnimations[addedCustomAnimations[i]];
           offSetInAdditionToOtherCustomActions +=
             otherCustomAction.frameSize * otherCustomAction.frames.length;
         }
 
         if (didPutUniversalForCustomAnimation !== custom_animation) {
-          for (var i = 0; i < customAnimationDefinition.frames.length; ++i) {
+          for (let i = 0; i < customAnimationDefinition.frames.length; ++i) {
             const frames = customAnimationDefinition.frames[i];
-            for (var j = 0; j < frames.length; ++j) {
+            for (let j = 0; j < frames.length; ++j) {
               const frameCoordinateX = parseInt(frames[j].split(",")[1]);
               const frameCoordinateRowName = frames[j].split(",")[0];
               const frameCoordinateY =
                 animationRowsLayout[frameCoordinateRowName] + 1;
               const offSet = (frameSize - universalFrameSize) / 2;
 
-              var imgDataSingleFrame = ctx.getImageData(
+              const imgDataSingleFrame = ctx.getImageData(
                 universalFrameSize * frameCoordinateX,
                 universalFrameSize * frameCoordinateY,
                 universalFrameSize,
@@ -805,7 +808,7 @@ $(document).ready(function () {
         const splitPath = splitFilePath(filePath);
 
         for (const [key, value] of Object.entries(base_animations)) {
-          var animationToCheck = key;
+          let animationToCheck = key;
           if (key === "combat_idle") {
             animationToCheck = "combat";
           } else if (key === "backslash") {
@@ -851,9 +854,9 @@ $(document).ready(function () {
 
     $("#chooser li").each(function (index) {
       // Toggle Required Body Type
-      var display = true;
+      let display = true;
       if ($(this).data("required")) {
-        var requiredTypes = $(this).data("required").split(",");
+        const requiredTypes = $(this).data("required").split(",");
         if (!requiredTypes.includes(bodyType)) {
           display = false;
         }
@@ -887,7 +890,7 @@ $(document).ready(function () {
     });
 
     $("input[type=radio]").each(function () {
-      var display = true;
+      let display = true;
 
       // Toggle allowed licenses
       const licenses = $(this).data(`layer_1_${getBodyTypeName()}_licenses`);
@@ -950,9 +953,7 @@ $(document).ready(function () {
 
   function setParamsFromImport(spritesheet) {
     spritesheet.forEach((sprite) => {
-      var name = sprite.name;
-      var parentName = sprite.parentName;
-      var variant = sprite.variant;
+      const { name, parentName, variant } = sprite;
       const assetType = name.replaceAll(" ", "_");
       const assetVariant = variant.replaceAll(" ", "_");
       const assetToSelect = parentName + "-" + assetType + "_" + assetVariant;
@@ -973,7 +974,7 @@ $(document).ready(function () {
       return images[imgRef];
     } else {
       if (DEBUG) console.log(`loading new image ${imgRef}`);
-      var img = new Image();
+      const img = new Image();
       img.src = "spritesheets/" + imgRef;
       img.onload = imageLoadDone;
       img.onerror = imageLoadError;
