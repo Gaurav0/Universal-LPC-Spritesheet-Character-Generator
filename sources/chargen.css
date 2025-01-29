@@ -125,7 +125,7 @@ input[type=button], input[type=reset] {
   z-index: 2;
   margin-left: 15px;
   order: -1;
-  height: 60px;
+  height: 10px;
 }
 
 #controls > * {
