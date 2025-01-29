@@ -156,9 +156,9 @@ function parseJson(json) {
               );
             dataFiles += `data-layer_${jdx}_${requiredSexes[sexIdx]}=${imageFileName} `;
             if (template) {
-              dataFiles += `data-layer_${jdx}_template=${JSON.stringify(
-                definition.template
-              )} `;
+              const mungedTemplate = JSON.stringify(template)
+                .replace(/"/g, "'");
+              dataFiles += `data-layer_${jdx}_template="${mungedTemplate}" `;
             }
             if (creditToUse !== undefined) {
               var licenseIdx = 0;
