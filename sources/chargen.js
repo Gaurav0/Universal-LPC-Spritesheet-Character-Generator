@@ -15,6 +15,22 @@ function debounce(fn, delay) {
   };
 }
 
+function pushOntoArray(obj, key, value) {
+  if (obj[key]) {
+    obj[key].push(value);
+  } else {
+    obj[key] = [value];
+  }
+}
+
+function invertKeyValue(obj) {
+  const inverted = {};
+  Object.entries(obj).forEach(([key, val]) => {
+    pushOntoArray(inverted, val, key);
+  });
+  return inverted;
+}
+
 // DEBUG mode will be turned on if on localhost and off in production
 // but this can be overridden by adding debug=(true|false) to the querystring.
 /*
@@ -69,6 +85,22 @@ $(document).ready(function () {
     combat_idle: 42 * universalFrameSize,
     backslash: 46 * universalFrameSize,
     halfslash: 50 * universalFrameSize,
+  };
+
+  const sexes = [
+    'male',
+    'female',
+    'teen',
+    'child',
+    'muscular',
+    'pregnant'
+  ];
+
+  const allElements = document.querySelectorAll('*[id]');
+  const ids = Array.prototype.map.call(allElements, el => el.id);
+
+  const getBodyTypeName = () => {
+    return whichPropChecked(ids, 'sex', sexes);
   };
 
   // Preview Animation
@@ -548,19 +580,21 @@ $(document).ready(function () {
     link.download = filename;
   }
 
-  function getBodyTypeName() {
-    if ($("#sex-male").prop("checked")) {
-      return "male";
-    } else if ($("#sex-female").prop("checked")) {
-      return "female";
-    } else if ($("#sex-teen").prop("checked")) {
-      return "teen";
-    } else if ($("#sex-child").prop("checked")) {
-      return "child";
-    } else if ($("#sex-muscular").prop("checked")) {
-      return "muscular";
-    } else if ($("#sex-pregnant").prop("checked")) {
-      return "pregnant";
+  function getElementsByIdStart(ids, idPrefix) {
+    const filteredIds = ids.filter(id =>
+      id.toLowerCase().startsWith(idPrefix)
+    );
+    return filteredIds.map(id => document.getElementById(id));
+  }
+
+  function whichPropChecked(ids, key, vals) {
+    for (const val of vals) {
+      const elements = getElementsByIdStart(ids, `${key}-${val}`);
+      for (const el of elements) {
+        if ($(el).prop("checked")) {
+          return val;
+        }
+      }
     }
     return "ERROR";
   }
@@ -859,6 +893,34 @@ $(document).ready(function () {
         const requiredTypes = $(this).data("required").split(",");
         if (!requiredTypes.includes(bodyType)) {
           display = false;
+        }
+      }
+
+      if (display) {
+        // Filter by template
+        const mungedTemplate = $(this)
+          .find("input[type=radio]")
+          .data('layer_1_template');
+        if (mungedTemplate) {
+          const template = mungedTemplate.replace(/'/g, '"');
+          let parsedTemplate = null;
+          try {
+            parsedTemplate = JSON.parse(template);
+          } catch {
+            console.error('Error parsing template', template);
+          }
+          if (parsedTemplate) {
+            const keys = Object.keys(parsedTemplate);
+            for (const key of keys) {
+              const requiredVals = Object.keys(parsedTemplate[key]);
+              // const reversedTemplate = invertKeyValue(parsedTemplate[key]);
+              // console.log('reversedTemplate', reversedTemplate);
+              const prop = whichPropChecked(ids, key, requiredVals);
+              if (prop === 'ERROR') {
+                display = false;
+              }
+            }
+          }
         }
       }
 
