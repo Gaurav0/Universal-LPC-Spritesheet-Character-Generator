@@ -790,6 +790,8 @@ weapon_sword_scimitar.json,layer_1,140,weapon/sword/scimitar/walk/ weapon/sword/
 weapon_sword_scimitar.json,layer_2,9,weapon/sword/scimitar/walk/behind/ weapon/sword/scimitar/walk/behind/ weapon/sword/scimitar/walk/behind/ weapon/sword/scimitar/walk/behind/
 weapon_sword_scimitar.json,layer_3,140,weapon/sword/scimitar/slash/ weapon/sword/scimitar/slash/ weapon/sword/scimitar/slash/ weapon/sword/scimitar/slash/
 weapon_sword_scimitar.json,layer_4,9,weapon/sword/scimitar/slash/behind/ weapon/sword/scimitar/slash/behind/ weapon/sword/scimitar/slash/behind/ weapon/sword/scimitar/slash/behind/
+wheelchair.json,layer_1,-2,body/wheelchair/adult/background/ body/wheelchair/adult/background/ body/wheelchair/adult/background/ body/wheelchair/adult/background/
+wheelchair.json,layer_2,140,body/wheelchair/adult/foreground/ body/wheelchair/adult/foreground/ body/wheelchair/adult/foreground/ body/wheelchair/adult/foreground/
 wings_bat.json,layer_1,105,body/wings/bat/adult/fg/ body/wings/bat/adult/fg/ body/wings/bat/adult/fg/ body/wings/bat/adult/fg/
 wings_bat.json,layer_2,5,body/wings/bat/adult/bg/ body/wings/bat/adult/bg/ body/wings/bat/adult/bg/ body/wings/bat/adult/bg/
 wings_dragonfly.json,layer_1,85,body/wings/dragonfly/solid/fg/ body/wings/dragonfly/solid/fg/ body/wings/dragonfly/solid/fg/ body/wings/dragonfly/solid/fg/ body/wings/dragonfly/solid/fg/
