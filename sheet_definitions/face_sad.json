@@ -1,13 +1,21 @@
 {
-  "name": "Male Sad",
+  "name": "Sad",
   "type_name": "expression",
+  "template": {
+    "head": {
+      "human_male": "adult",
+      "human_female": "adult",
+      "human_male_elderly": "elderly",
+      "human_female_elderly": "elderly"
+    }
+  },
   "layer_1": {
     "zPos": 101,
-    "male": "head/faces/sad/",
-    "muscular": "head/faces/sad/",
-    "female": "head/faces/sad/",
-    "teen": "head/faces/sad/",
-    "pregnant": "head/faces/sad/"
+    "male": "head/faces/sad/${head}/",
+    "muscular": "head/faces/sad/${head}/",
+    "female": "head/faces/sad/${head}/",
+    "teen": "head/faces/sad/${head}/",
+    "pregnant": "head/faces/sad/${head}/"
   },
   "variants": [
     "light",

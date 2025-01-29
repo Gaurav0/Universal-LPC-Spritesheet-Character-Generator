@@ -1,13 +1,21 @@
 {
   "name": "Closed Eyes",
   "type_name": "expression",
+  "template": {
+    "head": {
+      "human_male": "adult",
+      "human_female": "adult",
+      "human_male_elderly": "elderly",
+      "human_female_elderly": "elderly"
+    }
+  },
   "layer_1": {
     "zPos": 101,
-    "male": "head/faces/closed/adult/",
-    "muscular": "head/faces/closed/adult/",
-    "female": "head/faces/closed/adult/",
-    "teen": "head/faces/closed/adult/",
-    "pregnant": "head/faces/closed/adult/"
+    "male": "head/faces/closed/${head}/",
+    "muscular": "head/faces/closed/${head}/",
+    "female": "head/faces/closed/${head}/",
+    "teen": "head/faces/closed/${head}/",
+    "pregnant": "head/faces/closed/${head}/"
   },
   "variants": [
     "light",

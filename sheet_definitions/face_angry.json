@@ -1,13 +1,21 @@
 {
   "name": "Angry",
   "type_name": "expression",
+  "template": {
+    "head": {
+      "human_male": "adult",
+      "human_female": "adult",
+      "human_male_elderly": "elderly",
+      "human_female_elderly": "elderly"
+    }
+  },
   "layer_1": {
     "zPos": 106,
-    "male": "head/faces/angry/adult/",
-    "muscular": "head/faces/angry/adult/",
-    "female": "head/faces/angry/adult/",
-    "teen": "head/faces/angry/adult/",
-    "pregnant": "head/faces/angry/adult/"
+    "male": "head/faces/angry/${head}/",
+    "muscular": "head/faces/angry/${head}/",
+    "female": "head/faces/angry/${head}/",
+    "teen": "head/faces/angry/${head}/",
+    "pregnant": "head/faces/angry/${head}/"
   },
   "variants": [
     "light",

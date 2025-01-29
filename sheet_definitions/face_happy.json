@@ -1,13 +1,21 @@
 {
   "name": "Happy",
   "type_name": "expression",
+  "template": {
+    "head": {
+      "human_male": "adult",
+      "human_female": "adult",
+      "human_male_elderly": "elderly",
+      "human_female_elderly": "elderly"
+    }
+  },
   "layer_1": {
     "zPos": 106,
-    "male": "head/faces/happy/",
-    "muscular": "head/faces/happy/",
-    "female": "head/faces/happy/",
-    "teen": "head/faces/happy/",
-    "pregnant": "head/faces/happy/"
+    "male": "head/faces/happy/${head}/",
+    "muscular": "head/faces/happy/${head}/",
+    "female": "head/faces/happy/${head}/",
+    "teen": "head/faces/happy/${head}/",
+    "pregnant": "head/faces/happy/${head}/"
   },
   "variants": [
     "light",

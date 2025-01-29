@@ -1,13 +1,21 @@
 {
-  "name": "Male Shock",
+  "name": "Shock",
   "type_name": "expression",
+  "template": {
+    "head": {
+      "human_male": "adult",
+      "human_female": "adult",
+      "human_male_elderly": "elderly",
+      "human_female_elderly": "elderly"
+    }
+  },
   "layer_1": {
     "zPos": 101,
-    "male": "head/faces/shock/",
-    "muscular": "head/faces/shock/",
-    "female": "head/faces/shock/",
-    "teen": "head/faces/shock/",
-    "pregnant": "head/faces/shock/"
+    "male": "head/faces/shock/${head}/",
+    "muscular": "head/faces/shock/${head}/",
+    "female": "head/faces/shock/${head}/",
+    "teen": "head/faces/shock/${head}/",
+    "pregnant": "head/faces/shock/${head}/"
   },
   "variants": [
     "light",

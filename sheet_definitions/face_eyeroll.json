@@ -1,13 +1,21 @@
 {
   "name": "Rolling Eyes",
   "type_name": "expression",
+  "template": {
+    "head": {
+      "human_male": "adult",
+      "human_female": "adult",
+      "human_male_elderly": "elderly",
+      "human_female_elderly": "elderly"
+    }
+  },
   "layer_1": {
     "zPos": 106,
-    "male": "head/faces/eyeroll/adult/",
-    "muscular": "head/faces/eyeroll/adult/",
-    "female": "head/faces/eyeroll/adult/",
-    "teen": "head/faces/eyeroll/adult/",
-    "pregnant": "head/faces/eyeroll/adult/"
+    "male": "head/faces/eyeroll/${head}/",
+    "muscular": "head/faces/eyeroll/${head}/",
+    "female": "head/faces/eyeroll/${head}/",
+    "teen": "head/faces/eyeroll/${head}/",
+    "pregnant": "head/faces/eyeroll/${head}/"
   },
   "variants": [
     "light",

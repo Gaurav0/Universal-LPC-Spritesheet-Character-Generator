@@ -1,13 +1,21 @@
 {
-  "name": "Male Looking Right",
+  "name": "Looking Right",
   "type_name": "expression",
+  "template": {
+    "head": {
+      "human_male": "adult",
+      "human_female": "adult",
+      "human_male_elderly": "elderly",
+      "human_female_elderly": "elderly"
+    }
+  },
   "layer_1": {
     "zPos": 101,
-    "male": "head/faces/look_r/",
-    "muscular": "head/faces/look_r/",
-    "female": "head/faces/look_r/",
-    "teen": "head/faces/look_r/",
-    "pregnant": "head/faces/look_r/"
+    "male": "head/faces/look_r/${head}/",
+    "muscular": "head/faces/look_r/${head}/",
+    "female": "head/faces/look_r/${head}/",
+    "teen": "head/faces/look_r/${head}/",
+    "pregnant": "head/faces/look_r/${head}/"
   },
   "variants": [
     "light",
@@ -56,7 +64,7 @@
   "credits": [
     {
       "file": "head/faces/look_r",
-      "notes": "Original Bases by Redshrike, Looking Right Expression by ElizaWy, mapped to all frames by JaidynReiman",
+      "notes": "Original by Redshrike, Looking Right Expression by ElizaWy, mapped to all frames by JaidynReiman",
       "authors": [
         "JaidynReiman",
         "ElizaWy",

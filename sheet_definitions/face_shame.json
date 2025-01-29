@@ -1,13 +1,21 @@
 {
-  "name": "Male Shame",
+  "name": "Shame",
   "type_name": "expression",
+  "template": {
+    "head": {
+      "human_male": "adult",
+      "human_female": "adult",
+      "human_male_elderly": "elderly",
+      "human_female_elderly": "elderly"
+    }
+  },
   "layer_1": {
     "zPos": 101,
-    "male": "head/faces/shame/",
-    "muscular": "head/faces/shame/",
-    "female": "head/faces/shame/",
-    "teen": "head/faces/shame/",
-    "pregnant": "head/faces/shame/"
+    "male": "head/faces/shame/${head}/",
+    "muscular": "head/faces/shame/${head}/",
+    "female": "head/faces/shame/${head}/",
+    "teen": "head/faces/shame/${head}/",
+    "pregnant": "head/faces/shame/${head}/"
   },
   "variants": [
     "light",

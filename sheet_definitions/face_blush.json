@@ -1,13 +1,21 @@
 {
   "name": "Blush",
   "type_name": "expression",
+  "template": {
+    "head": {
+      "human_male": "adult",
+      "human_female": "adult",
+      "human_male_elderly": "elderly",
+      "human_female_elderly": "elderly"
+    }
+  },
   "layer_1": {
     "zPos": 101,
-    "male": "head/faces/blush/adult/",
-    "muscular": "head/faces/blush/adult/",
-    "female": "head/faces/blush/adult/",
-    "teen": "head/faces/blush/adult/",
-    "pregnant": "head/faces/blush/adult/"
+    "male": "head/faces/blush/${head}/",
+    "muscular": "head/faces/blush/${head}/",
+    "female": "head/faces/blush/${head}/",
+    "teen": "head/faces/blush/${head}/",
+    "pregnant": "head/faces/blush/${head}/"
   },
   "variants": [
     "light",

@@ -1,13 +1,21 @@
 {
   "name": "Closing Eyes",
   "type_name": "expression",
+  "template": {
+    "head": {
+      "human_male": "adult",
+      "human_female": "adult",
+      "human_male_elderly": "elderly",
+      "human_female_elderly": "elderly"
+    }
+  },
   "layer_1": {
     "zPos": 101,
-    "male": "head/faces/closing/adult/",
-    "muscular": "head/faces/closing/adult/",
-    "female": "head/faces/closing/adult/",
-    "teen": "head/faces/closing/adult/",
-    "pregnant": "head/faces/closing/adult/"
+    "male": "head/faces/closing/${head}/",
+    "muscular": "head/faces/closing/${head}/",
+    "female": "head/faces/closing/${head}/",
+    "teen": "head/faces/closing/${head}/",
+    "pregnant": "head/faces/closing/${head}/"
   },
   "variants": [
     "light",
