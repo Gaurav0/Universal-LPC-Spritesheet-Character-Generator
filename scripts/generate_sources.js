@@ -1,10 +1,10 @@
-const fs = require('fs');
-const readline = require('readline');
+const fs = require("fs");
+const readline = require("readline");
 
 const DEBUG = false; // change this to print debug log
 const onlyIfTemplate = true; // print debugging log only if there is a template
 
-require('child_process').fork('scripts/zPositioning/parse_zpos.js');
+require("child_process").fork("scripts/zPositioning/parse_zpos.js");
 
 // copied from https://github.com/mikemaccana/dynamic-template/blob/046fee36aecc1f48cf3dc454d9d36bb0e96e0784/index.js
 const es6DynamicTemplate = (templateString, templateVariables) =>
@@ -25,37 +25,56 @@ function searchCredit(fileName, credits, origFileName) {
 
   for (var creditsIndex = 0; creditsIndex < credits.length; creditsIndex++) {
     const credit = credits[creditsIndex];
-    if (credit.file === fileName || credit.file === fileName + ".png" || credit.file + "/" === fileName) {
+    if (
+      credit.file === fileName ||
+      credit.file === fileName + ".png" ||
+      credit.file + "/" === fileName
+    ) {
       return credit;
     }
   }
-  
-  const index = fileName.lastIndexOf("\/");
+
+  const index = fileName.lastIndexOf("/");
   if (index > -1) {
     return searchCredit(fileName.substring(0, index), credits, origFileName);
   } else {
-    console.error("missing credit after searching recursively filename:", origFileName);
+    console.error(
+      "missing credit after searching recursively filename:",
+      origFileName
+    );
     return undefined;
   }
 }
 
 function parseJson(json) {
-  const templateIndex = json.lastIndexOf('%');
+  const templateIndex = json.lastIndexOf("%");
   let searchFileName = json;
   let queryObj = null;
   if (templateIndex > -1) {
     searchFileName = searchFileName.substring(0, templateIndex);
     const query = json.substring(templateIndex + 1);
     queryObj = Object.fromEntries(new URLSearchParams(query));
-    const replObj = Object.fromEntries(Object.keys(queryObj).map(key => [ key, '' ]));
-    searchFileName = es6DynamicTemplate(searchFileName, replObj).replace(/_+/, '_');
+    const replObj = Object.fromEntries(
+      Object.keys(queryObj).map((key) => [key, ""])
+    );
+    searchFileName = es6DynamicTemplate(searchFileName, replObj)
+      .replace(/_+/, "_");
   }
   const filePath = `sheet_definitions/${searchFileName}.json`;
-  if (DEBUG && (!onlyIfTemplate || queryObj)) console.log(`Parsing ${filePath}`);
+  if (DEBUG && (!onlyIfTemplate || queryObj))
+    console.log(`Parsing ${filePath}`);
   const definition = JSON.parse(fs.readFileSync(filePath));
   const { variants, name, credits, template } = definition;
   const typeName = definition.type_name;
-  const defaultAnimations = ['spellcast', 'thrust', 'walk', 'slash', 'shoot', 'hurt', 'watering'];
+  const defaultAnimations = [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+  ];
 
   const requiredSexes = [];
   const animations = definition.animations ?? defaultAnimations;
@@ -65,14 +84,7 @@ function parseJson(json) {
   const previewXOffset = definition.preview_x_offset ?? 0;
   const previewYOffset = definition.preview_y_offset ?? 0;
 
-  const sexes = [
-    "male",
-    "female",
-    "teen",
-    "child",
-    "muscular",
-    "pregnant"
-  ];
+  const sexes = ["male", "female", "teen", "child", "muscular", "pregnant"];
   for (const sex of sexes) {
     if (definition.layer_1[sex]) {
       requiredSexes.push(sex);
@@ -82,10 +94,13 @@ function parseJson(json) {
   const requiredSex = requiredSexes.join(",");
   const supportedAnimations = animations.join(",");
 
-  const startHTML = `<li data-required="[REQUIRED_SEX]" data-animations="[SUPPORTED_ANIMATIONS]"><span class="condensed">${name}</span><ul>`.replace("[REQUIRED_SEX]", requiredSex).replace("[SUPPORTED_ANIMATIONS]", supportedAnimations);
-  const templateHTML = fs.readFileSync("scripts/template-general.html", 'utf8');
+  const startHTML =
+    `<li data-required="[REQUIRED_SEX]" data-animations="[SUPPORTED_ANIMATIONS]"><span class="condensed">${name}</span><ul>`
+      .replace("[REQUIRED_SEX]", requiredSex)
+      .replace("[SUPPORTED_ANIMATIONS]", supportedAnimations);
+  const templateHTML = fs.readFileSync("scripts/template-general.html", "utf8");
 
-  const endHTML = '</ul></li>';
+  const endHTML = "</ul></li>";
 
   var idx = 0;
   var listItemsHTML = `<li><input type="radio" id="${typeName}-none_${name}" name="${typeName}"> <label for="${typeName}-none">No ${typeName}</label></li>`;
@@ -93,7 +108,9 @@ function parseJson(json) {
   var addedCreditsFor = [];
   for (const variant of variants) {
     const itemName = variants[idx];
-    const itemIdFor = `${typeName}-${name.replaceAll(" ", "_")}_${itemName.replaceAll(" ", "_")}`;
+    const snakeName = name.replaceAll(" ", "_");
+    const snakeItemName = itemName.replaceAll(" ", "_")
+    const itemIdFor = `${typeName}-${snakeName}_${snakeItemName}`;
     var matchBodyColor = false;
     if (definition[`match_body_color`] !== undefined) {
       matchBodyColor = true;
@@ -101,7 +118,7 @@ function parseJson(json) {
     var dataFiles = "";
     var sexIdx = 0;
     for (const sex of requiredSexes) {
-      for (jdx =1; jdx < 10; jdx++) {
+      for (jdx = 1; jdx < 10; jdx++) {
         const layerDefinition = definition[`layer_${jdx}`];
         if (layerDefinition !== undefined) {
           if (sexIdx === 0) {
@@ -114,20 +131,34 @@ function parseJson(json) {
           }
           const file = layerDefinition[requiredSexes[sexIdx]];
           if (file !== null && file !== "") {
-            let imageFileName = "\"" + file + itemName.replaceAll(" ", "_") + ".png\" ";
+            let imageFileName =
+              '"' + file + itemName.replaceAll(" ", "_") + '.png" ';
             let fileNameForCreditSearch = file + itemName.replaceAll(" ", "_");
             if (queryObj) {
-              fileNameForCreditSearch = es6DynamicTemplate(fileNameForCreditSearch, queryObj);
+              fileNameForCreditSearch = es6DynamicTemplate(
+                fileNameForCreditSearch,
+                queryObj
+              );
               imageFileName = es6DynamicTemplate(imageFileName, queryObj);
             }
             if (DEBUG && (!onlyIfTemplate || queryObj))
-              console.log(`Searching for credits to use for ${imageFileName} in ${fileNameForCreditSearch} for layer ${jdx}`);
-            const creditToUse = searchCredit(fileNameForCreditSearch, credits, fileNameForCreditSearch);
+              console.log(
+                `Searching for credits to use for ${imageFileName} in ${fileNameForCreditSearch} for layer ${jdx}`
+              );
+            const creditToUse = searchCredit(
+              fileNameForCreditSearch,
+              credits,
+              fileNameForCreditSearch
+            );
             if (DEBUG && (!onlyIfTemplate || queryObj))
-              console.log(`file name set for ${sex} is ${imageFileName} for layer ${jdx}`);
+              console.log(
+                `file name set for ${sex} is ${imageFileName} for layer ${jdx}`
+              );
             dataFiles += `data-layer_${jdx}_${requiredSexes[sexIdx]}=${imageFileName} `;
             if (template) {
-              dataFiles += `data-layer_${jdx}_template=${JSON.stringify(definition.template)} `;
+              dataFiles += `data-layer_${jdx}_template=${JSON.stringify(
+                definition.template
+              )} `;
             }
             if (creditToUse !== undefined) {
               var licenseIdx = 0;
@@ -136,18 +167,20 @@ function parseJson(json) {
                 if (!licensesFound.includes(licenseName)) {
                   licensesFound.push(licenseName);
                 }
-                licenseIdx+=1
+                licenseIdx += 1;
               }
-              const licenses = "\"" + creditToUse.licenses.join(',') + "\" ";
-              dataFiles += "data-layer_" + jdx + "_" + requiredSexes[sexIdx] + "_licenses=" + licenses;
-              const authors = "\"" + creditToUse.authors.join(',') + "\" ";
-              dataFiles += "data-layer_" + jdx + "_" + requiredSexes[sexIdx] + "_authors=" + authors;
-              const urls = "\"" + creditToUse.urls.join(',') + "\" ";
-              dataFiles += "data-layer_" + jdx + "_" + requiredSexes[sexIdx] + "_urls=" + urls;
-              const notes = "\"" + creditToUse.notes.replaceAll("\"", "**") + "\" ";
-              dataFiles += "data-layer_" + jdx + "_" + requiredSexes[sexIdx] + "_notes=" + notes;
+              const licenses = '"' + creditToUse.licenses.join(",") + '" ';
+              dataFiles += `data-layer_${jdx}_${requiredSexes[sexIdx]}_licenses=${licenses} `;
+              const authors = '"' + creditToUse.authors.join(",") + '" ';
+              dataFiles += `data-layer_${jdx}_${requiredSexes[sexIdx]}_authors=${authors} `;
+              const urls = '"' + creditToUse.urls.join(",") + '" ';
+              dataFiles += `data-layer_${jdx}_${requiredSexes[sexIdx]}_urls=${urls} `;
+              const notes =
+                '"' + creditToUse.notes.replaceAll('"', "**") + '" ';
+              dataFiles += `data-layer_${jdx}_${requiredSexes[sexIdx]}_notes=${notes} `;
               if (!addedCreditsFor.includes(imageFileName)) {
-                listItemsCSV += `${"\"" + file + itemName + ".png\""},${notes},${authors},${licenses},${urls}\n`;
+                const quotedShortName = '"' + file + itemName + '.png"';
+                listItemsCSV += `${quotedShortName},${notes},${authors},${licenses},${urls}\n`;
                 addedCreditsFor.push(imageFileName);
               }
             } else {
@@ -178,37 +211,38 @@ function parseJson(json) {
 }
 
 var lineReader = readline.createInterface({
-  input: fs.createReadStream('sources/source_index.html')
+  input: fs.createReadStream("sources/source_index.html"),
 });
-var htmlGenerated = '<!-- THIS FILE IS AUTO-GENERATED. PLEASE DONT ALTER IT MANUALLY -->\n';
-var csvGenerated = "filename,notes,authors,licenses,urls\n"
+var htmlGenerated =
+  "<!-- THIS FILE IS AUTO-GENERATED. PLEASE DONT ALTER IT MANUALLY -->\n";
+var csvGenerated = "filename,notes,authors,licenses,urls\n";
 
-lineReader.on('line', function (line) {
-  if (line.includes('div_sheet_')) {
+lineReader.on("line", function (line) {
+  if (line.includes("div_sheet_")) {
     const definition = line.replace("div_sheet_", "");
     const parsedResult = parseJson(definition.replaceAll("\t", ""));
     const newLineHTML = parsedResult.html;
-    htmlGenerated+=newLineHTML+"\n";
-    csvGenerated+=parsedResult.csv;
+    htmlGenerated += newLineHTML + "\n";
+    csvGenerated += parsedResult.csv;
   } else {
-    htmlGenerated+=line+"\n";
+    htmlGenerated += line + "\n";
   }
 });
 
-lineReader.on('close', function (line) {
-  fs.writeFile('index.html', htmlGenerated, function(err) {
+lineReader.on("close", function (line) {
+  fs.writeFile("index.html", htmlGenerated, function (err) {
     if (err) {
-        return console.error(err);
+      return console.error(err);
     } else {
-        console.log('HTML Updated!');
+      console.log("HTML Updated!");
     }
   });
-  fs.writeFile('CREDITS.csv', csvGenerated, function(err) {
+  fs.writeFile("CREDITS.csv", csvGenerated, function (err) {
     if (err) {
-        return console.error(err);
+      return console.error(err);
     } else {
-        console.log('CSV Updated!');
-        console.log('Found licenses:', licensesFound)
+      console.log("CSV Updated!");
+      console.log("Found licenses:", licensesFound);
     }
   });
 });

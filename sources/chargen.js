@@ -4,7 +4,7 @@ $.expr[":"].icontains = function (a, i, m) {
 
 // adapted from tiny-debounce
 // https://github.com/vuejs-tips/tiny-debounce/blob/ac7eb88715b9fb81124d4d5fa714abde0853dce9/index.js
-function debounce (fn, delay) {
+function debounce(fn, delay) {
   let timeoutID = null;
   return function () {
     clearTimeout(timeoutID);
@@ -117,8 +117,11 @@ $(document).ready(function () {
     });
   });
 
-  $("#controls>details").on('toggle', function(event) {
-    $("#preview-animations").toggleClass("controls-open", $(event.target).attr("open"));
+  $("#controls>details").on("toggle", function (event) {
+    $("#preview-animations").toggleClass(
+      "controls-open",
+      $(event.target).attr("open")
+    );
   });
 
   // Toggle display of a list elements children when clicked
@@ -150,21 +153,24 @@ $(document).ready(function () {
         "search-result"
       );
       const matches = results.length;
-      $('#matches').text(`${matches} matches.`);
+      $("#matches").text(`${matches} matches.`);
       let parents = results.parents("ul");
       parents.prev("span").addClass("expanded").removeClass("condensed");
       for (const parent of parents.toArray().reverse()) {
-        $(parent).delay(50).show().map((i, el) => {
-          setTimeout(() => drawPreviews.call(el), 50 * i);
-        });
+        $(parent)
+          .delay(50)
+          .show()
+          .map((i, el) => {
+            setTimeout(() => drawPreviews.call(el), 50 * i);
+          });
       }
     }
   }
   $("#searchbox").on("search", search);
   $("#search").click(search);
-  $("#searchbox").on("input", function() {
+  $("#searchbox").on("input", function () {
     if ($("#searchbox").val().length >= 3) {
-      (debounce(search, 500))();
+      debounce(search, 500)();
     } else {
       $("#matches").val("");
     }
@@ -354,10 +360,12 @@ $(document).ready(function () {
     animRowNum = parseInt(selectedAnim.data("num"));
 
     function clearClasses() {
-      let classes = document.getElementById('preview').classList.values();
-      classes = classes.filter(className => className.startsWith('anim-canvas-'));
+      let classes = document.getElementById("preview").classList.values();
+      classes = classes.filter((className) =>
+        className.startsWith("anim-canvas-")
+      );
       for (const className of classes) {
-        $('#preview').removeClass(className);
+        $("#preview").removeClass(className);
       }
     }
 
@@ -369,8 +377,8 @@ $(document).ready(function () {
     if (activeCustomAnimation !== "") {
       const selectedCustomAnimation = customAnimations[activeCustomAnimation];
       const frameSize = selectedCustomAnimation.frameSize;
-      anim.setAttribute('width', 4 * frameSize);
-      anim.setAttribute('height', frameSize);
+      anim.setAttribute("width", 4 * frameSize);
+      anim.setAttribute("height", frameSize);
       animRowNum = selectedCustomAnimation.frames.length;
       animRowStart = 0;
       for (var i = 0; i < selectedCustomAnimation.frames[0].length; ++i) {
@@ -384,8 +392,8 @@ $(document).ready(function () {
       $("#preview").addClass(`anim-canvas-${frameSize}`);
       return;
     } else {
-      anim.setAttribute('width', 4 * universalFrameSize);
-      anim.setAttribute('height', universalFrameSize);
+      anim.setAttribute("width", 4 * universalFrameSize);
+      anim.setAttribute("height", universalFrameSize);
       clearClasses();
       $("#preview").addClass(`anim-canvas-${universalFrameSize}`);
     }
@@ -427,22 +435,28 @@ $(document).ready(function () {
     $(this).toggleClass("zoomed-out");
   });
 
-  const spritesheetGesture = new TinyGesture(document.getElementById('spritesheet'), { mouseSupport: false });
-  const previewAnimationsGesture = new TinyGesture(document.getElementById('previewAnimations'), { mouseSupport: false });
+  const spritesheetGesture = new TinyGesture(
+    document.getElementById("spritesheet"),
+    { mouseSupport: false }
+  );
+  const previewAnimationsGesture = new TinyGesture(
+    document.getElementById("previewAnimations"),
+    { mouseSupport: false }
+  );
 
-  spritesheetGesture.on('pinch', pinch.bind(spritesheetGesture));
-  previewAnimationsGesture.on('pinch', pinch.bind(previewAnimationsGesture));
-  spritesheetGesture.on('pinchend', pinchEnd);
-  previewAnimationsGesture.on('pinchend', pinchEnd);
+  spritesheetGesture.on("pinch", pinch.bind(spritesheetGesture));
+  previewAnimationsGesture.on("pinch", pinch.bind(previewAnimationsGesture));
+  spritesheetGesture.on("pinchend", pinchEnd);
+  previewAnimationsGesture.on("pinchend", pinchEnd);
 
   let initialZoom = null;
   function pinch(event) {
     const scale = this.scale;
     const $target = $(event.target);
     if (initialZoom === null) {
-      initialZoom = $target.css('zoom') ?? 1;
+      initialZoom = $target.css("zoom") ?? 1;
     }
-    $target.css('zoom', initialZoom * scale);
+    $target.css("zoom", initialZoom * scale);
     event.preventDefault();
     event.stopImmediatePropagation();
   }
@@ -914,7 +928,7 @@ $(document).ready(function () {
 
   function interpretParams() {
     $("input[type=radio]").each(function () {
-      const words = $(this).attr("id").split('-');
+      const words = $(this).attr("id").split("-");
       const initial = words[0];
       $(this).prop(
         "checked",
@@ -925,7 +939,7 @@ $(document).ready(function () {
 
   function setParams() {
     $("input[type=radio]:checked").each(function () {
-      const words = $(this).attr("id").split('-');
+      const words = $(this).attr("id").split("-");
       const initial = words[0];
       if (!$(this).attr("checked") || params[initial]) {
         params[initial] = words[1];
@@ -987,7 +1001,7 @@ $(document).ready(function () {
       callback(layers, prevctx);
       return images[imgRef];
     } else if (imgRef && images[imgRef]) {
-      images[imgRef].addEventListener('load', function () {
+      images[imgRef].addEventListener("load", function () {
         callback(layers, prevctx);
       });
       return images[imgRef];
@@ -995,7 +1009,7 @@ $(document).ready(function () {
       let img = new Image();
       img.src = "spritesheets/" + imgRef;
       images[imgRef] = img;
-      img.addEventListener('load', function () {
+      img.addEventListener("load", function () {
         callback(layers, prevctx);
       });
       return img;
@@ -1012,7 +1026,8 @@ $(document).ready(function () {
   }
 
   function drawPreviews() {
-    const buttons = $(this).find("input[type=radio]")
+    const buttons = $(this)
+      .find("input[type=radio]")
       .filter(function () {
         return $(this).is(":visible");
       })
@@ -1058,11 +1073,13 @@ $(document).ready(function () {
                   if (images[layer.link].complete) {
                     drawThisPreview();
                   } else {
-                    images[layer.link].addEventListener('load', drawThisPreview);
+                    images[layer.link].addEventListener(
+                      "load",
+                      drawThisPreview
+                    );
                   }
-                } catch(e) {
-                  if (DEBUG)
-                    console.error(e);
+                } catch (e) {
+                  if (DEBUG) console.error(e);
                 }
               } else if (DEBUG) {
                 console.error(`Preview link missing for ${$this.id}`);
@@ -1081,9 +1098,13 @@ $(document).ready(function () {
         const supportedAnimations = $this
           .closest("[data-animations]")
           .data("animations")
-          .split(',');
-        let defaultAnimation = 'walk';
-        if (supportedAnimations && supportedAnimations.length && !supportedAnimations.includes('walk')) {
+          .split(",");
+        let defaultAnimation = "walk";
+        if (
+          supportedAnimations &&
+          supportedAnimations.length &&
+          !supportedAnimations.includes("walk")
+        ) {
           defaultAnimation = supportedAnimations[0];
         }
         const bodyTypeName = getBodyTypeName();
@@ -1094,7 +1115,11 @@ $(document).ready(function () {
           if (imageLink) {
             if (animation === $this.data(`layer_${jdx}_custom_animation`)) {
               const previewToDraw = {};
-              previewToDraw.link = updatePreviewLink(imageLink, animation, defaultAnimation);
+              previewToDraw.link = updatePreviewLink(
+                imageLink,
+                animation,
+                defaultAnimation
+              );
               previewToDraw.zPos = $this.data(`layer_${jdx}_zpos`);
               layers.push(previewToDraw);
             }
@@ -1139,11 +1164,14 @@ $(document).ready(function () {
       if (activeCustomAnimation !== "") {
         const customAnimation = customAnimations[activeCustomAnimation];
         frameSize = customAnimation.frameSize;
-        const indexInArray = addedCustomAnimations.indexOf(activeCustomAnimation);
+        const indexInArray = addedCustomAnimations.indexOf(
+          activeCustomAnimation
+        );
         offSet = universalSheetHeight;
         for (let i = 0; i < indexInArray; ++i) {
           const otherCustomAction = customAnimations[addedCustomAnimations[i]];
-          offSet += otherCustomAction.frameSize * otherCustomAction.frames.length;
+          offSet +=
+            otherCustomAction.frameSize * otherCustomAction.frames.length;
         }
       }
       for (let i = 0; i < animRowNum; ++i) {
@@ -1173,8 +1201,10 @@ $(document).ready(function () {
       imageLink = `${directory}/walk/${file}`;
     }
     if (DEBUG)
-      console.log('preview image:',
-        `${window.location.protocol}//${window.location.host}/spritesheets/${imageLink}`);
+      console.log(
+        "preview image:",
+        `${window.location.protocol}//${window.location.host}/spritesheets/${imageLink}`
+      );
     return imageLink;
   }
 
