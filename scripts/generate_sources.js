@@ -34,55 +34,33 @@ function searchCredit(fileName, credits, origFileName) {
 
 function parseJson(json) {
   const definition = JSON.parse(fs.readFileSync(`sheet_definitions/${json}`));
-  const variants = definition.variants
-  const name = definition.name
-  const typeName = definition.type_name
-  const credits = definition.credits
+  const variants = definition.variants;
+  const name = definition.name;
+  const typeName = definition.type_name;
+  const credits = definition.credits;
+  const template = definition.template;
   const defaultAnimations = ['spellcast', 'thrust', 'walk', 'slash', 'shoot', 'hurt', 'watering'];
 
-  var requiredSexes = [];
-  var animations = [];
-  var previewRow = 2;
-  var previewColumn = 0;
-  var previewXOffset = 0;
-  var previewYOffset = 0;
+  const requiredSexes = [];
+  const animations = definition.animations ?? defaultAnimations;
 
-  if (definition.preview_row !== undefined) {
-    previewRow = definition.preview_row
-  }
-  if (definition.preview_column !== undefined){
-    previewColumn = definition.preview_column;
-  }
-  if (definition.preview_x_offset !== undefined){
-    previewXOffset = definition.preview_x_offset;
-  }
-  if (definition.preview_y_offset !== undefined){
-    previewYOffset = definition.preview_y_offset;
-  }
+  const previewRow = definition.preview_row ?? 2;
+  const previewColumn = definition.preview_column ?? 0;
+  const previewXOffset = definition.preview_x_offset ?? 0;
+  const previewYOffset = definition.preview_y_offset ?? 0;
 
-  if (definition.animations !== undefined) {
-    animations = definition.animations
-  } else {
-    animations = defaultAnimations
-  }
-
-  if (definition.layer_1.male !== undefined) {
-    requiredSexes.push("male");
-  }
-  if (definition.layer_1.female !== undefined) {
-    requiredSexes.push("female");
-  }
-  if (definition.layer_1.teen !== undefined) {
-    requiredSexes.push("teen");
-  }
-  if (definition.layer_1.child !== undefined) {
-    requiredSexes.push("child");
-  }
-  if (definition.layer_1.muscular !== undefined) {
-    requiredSexes.push("muscular");
-  }
-  if (definition.layer_1.pregnant !== undefined) {
-    requiredSexes.push("pregnant");
+  const sexes = [
+    "male",
+    "female",
+    "teen",
+    "child",
+    "muscular",
+    "pregnant"
+  ];
+  for (const sex of sexes) {
+    if (definition.layer_1[sex]) {
+      requiredSexes.push(sex);
+    }
   }
 
   const requiredSex = requiredSexes.join(",");
@@ -97,7 +75,7 @@ function parseJson(json) {
   var listItemsHTML = `<li><input type="radio" id="${typeName}-none_${name}" name="${typeName}"> <label for="${typeName}-none">No ${typeName}</label></li>`;
   var listItemsCSV = "";
   var addedCreditsFor = [];
-  for (variant in variants) {
+  for (const variant of variants) {
     const itemName = variants[idx];
     const itemIdFor = typeName + "-" + name.replaceAll(" ", "_") +  "_" + itemName.replaceAll(" ", "_");
     var matchBodyColor = false;
@@ -106,7 +84,7 @@ function parseJson(json) {
     }
     var dataFiles = "";
     var sexIdx = 0;
-    for (sex in requiredSexes) {
+    for (const sex of requiredSexes) {
       for (jdx =1; jdx < 10; jdx++) {
         const layerDefinition = definition[`layer_${jdx}`];
         if (layerDefinition !== undefined) {
