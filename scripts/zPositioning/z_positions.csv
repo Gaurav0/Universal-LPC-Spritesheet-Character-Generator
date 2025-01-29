@@ -71,20 +71,20 @@ eyes.json,layer_1,105,eyes/human/adult/ eyes/human/adult/ eyes/human/adult/ eyes
 eyes_adult.json,layer_1,105,eyes/human/adult/default/ eyes/human/adult/default/ eyes/human/adult/default/ eyes/human/adult/default/
 eyes_child.json,layer_1,105,eyes/human/child/
 eyes_cyclops.json,layer_1,105,eyes/cyclops/adult/ eyes/cyclops/adult/ eyes/cyclops/adult/ eyes/cyclops/adult/ eyes/cyclops/child/
-face_angry.json,layer_1,106,head/faces/angry/adult/ head/faces/angry/adult/ head/faces/angry/adult/ head/faces/angry/adult/
+face_angry.json,layer_1,106,head/faces/angry/${head}/ head/faces/angry/${head}/ head/faces/angry/${head}/ head/faces/angry/${head}/
 face_angry2.json,layer_1,106,head/faces/angry2/adult/ head/faces/angry2/adult/ head/faces/angry2/adult/ head/faces/angry2/adult/
-face_blush.json,layer_1,101,head/faces/blush/adult/ head/faces/blush/adult/ head/faces/blush/adult/ head/faces/blush/adult/
-face_closed.json,layer_1,101,head/faces/closed/adult/ head/faces/closed/adult/ head/faces/closed/adult/ head/faces/closed/adult/
-face_closing.json,layer_1,101,head/faces/closing/adult/ head/faces/closing/adult/ head/faces/closing/adult/ head/faces/closing/adult/
-face_eyeroll.json,layer_1,106,head/faces/eyeroll/adult/ head/faces/eyeroll/adult/ head/faces/eyeroll/adult/ head/faces/eyeroll/adult/
-face_happy.json,layer_1,106,head/faces/happy/ head/faces/happy/ head/faces/happy/ head/faces/happy/
+face_blush.json,layer_1,101,head/faces/blush/${head}/ head/faces/blush/${head}/ head/faces/blush/${head}/ head/faces/blush/${head}/
+face_closed.json,layer_1,101,head/faces/closed/${head}/ head/faces/closed/${head}/ head/faces/closed/${head}/ head/faces/closed/${head}/
+face_closing.json,layer_1,101,head/faces/closing/${head}/ head/faces/closing/${head}/ head/faces/closing/${head}/ head/faces/closing/${head}/
+face_eyeroll.json,layer_1,106,head/faces/eyeroll/${head}/ head/faces/eyeroll/${head}/ head/faces/eyeroll/${head}/ head/faces/eyeroll/${head}/
+face_happy.json,layer_1,106,head/faces/happy/${head}/ head/faces/happy/${head}/ head/faces/happy/${head}/ head/faces/happy/${head}/
 face_happy2.json,layer_1,106,head/faces/happy2/adult/ head/faces/happy2/adult/ head/faces/happy2/adult/ head/faces/happy2/adult/
-face_look_l.json,layer_1,101,head/faces/look_l/ head/faces/look_l/ head/faces/look_l/ head/faces/look_l/
-face_look_r.json,layer_1,101,head/faces/look_r/ head/faces/look_r/ head/faces/look_r/ head/faces/look_r/
-face_sad.json,layer_1,101,head/faces/sad/ head/faces/sad/ head/faces/sad/ head/faces/sad/
+face_look_l.json,layer_1,101,head/faces/look_l/${head}/ head/faces/look_l/${head}/ head/faces/look_l/${head}/ head/faces/look_l/${head}/
+face_look_r.json,layer_1,101,head/faces/look_r/${head}/ head/faces/look_r/${head}/ head/faces/look_r/${head}/ head/faces/look_r/${head}/
+face_sad.json,layer_1,101,head/faces/sad/${head}/ head/faces/sad/${head}/ head/faces/sad/${head}/ head/faces/sad/${head}/
 face_sad2.json,layer_1,101,head/faces/sad2/adult/ head/faces/sad2/adult/ head/faces/sad2/adult/ head/faces/sad2/adult/
-face_shame.json,layer_1,101,head/faces/shame/ head/faces/shame/ head/faces/shame/ head/faces/shame/
-face_shock.json,layer_1,101,head/faces/shock/ head/faces/shock/ head/faces/shock/ head/faces/shock/
+face_shame.json,layer_1,101,head/faces/shame/${head}/ head/faces/shame/${head}/ head/faces/shame/${head}/ head/faces/shame/${head}/
+face_shock.json,layer_1,101,head/faces/shock/${head}/ head/faces/shock/${head}/ head/faces/shock/${head}/ head/faces/shock/${head}/
 face_tears.json,layer_1,107,head/faces/tears/adult/ head/faces/tears/adult/ head/faces/tears/adult/ head/faces/tears/adult/
 facial_earring_left.json,layer_1,115,facial/earrings/simple/left/adult/ facial/earrings/simple/left/adult/ facial/earrings/simple/left/adult/ facial/earrings/simple/left/adult/ facial/earrings/simple/left/child/
 facial_earring_right.json,layer_1,115,facial/earrings/simple/right/adult/ facial/earrings/simple/right/adult/ facial/earrings/simple/right/adult/ facial/earrings/simple/right/adult/ facial/earrings/simple/right/child/
