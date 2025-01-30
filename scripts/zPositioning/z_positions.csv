@@ -68,7 +68,7 @@ dress_slit.json,layer_1,30,dress/slit/female/
 eyebrows_thick.json,layer_1,106,eyes/eyebrows/thick/adult/ eyes/eyebrows/thick/adult/ eyes/eyebrows/thick/adult/ eyes/eyebrows/thick/adult/ eyes/eyebrows/thick/child/
 eyebrows_thin.json,layer_1,106,eyes/eyebrows/thin/adult/ eyes/eyebrows/thin/adult/ eyes/eyebrows/thin/adult/ eyes/eyebrows/thin/adult/ eyes/eyebrows/thin/child/
 eyes.json,layer_1,105,eyes/human/adult/ eyes/human/adult/ eyes/human/adult/ eyes/human/adult/ eyes/human/child/
-eyes_adult.json,layer_1,105,eyes/human/adult/default/ eyes/human/adult/default/ eyes/human/adult/default/ eyes/human/adult/default/
+eyes_adult.json,layer_1,105,eyes/human/adult/${face}/ eyes/human/adult/${face}/ eyes/human/adult/${face}/ eyes/human/adult/${face}/
 eyes_child.json,layer_1,105,eyes/human/child/
 eyes_cyclops.json,layer_1,105,eyes/cyclops/adult/ eyes/cyclops/adult/ eyes/cyclops/adult/ eyes/cyclops/adult/ eyes/cyclops/child/
 face_angry.json,layer_1,106,head/faces/angry/${head}/ head/faces/angry/${head}/ head/faces/angry/${head}/ head/faces/angry/${head}/
