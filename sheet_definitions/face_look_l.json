@@ -3,11 +3,11 @@
   "type_name": "expression",
   "layer_1": {
     "zPos": 101,
-    "male": "head/faces/male/look_l/",
-    "muscular": "head/faces/male/look_l/",
-    "female": "head/faces/male/look_l/",
-    "teen": "head/faces/male/look_l/",
-    "pregnant": "head/faces/male/look_l/"
+    "male": "head/faces/look_l/",
+    "muscular": "head/faces/look_l/",
+    "female": "head/faces/look_l/",
+    "teen": "head/faces/look_l/",
+    "pregnant": "head/faces/look_l/"
   },
   "variants": [
     "light",
@@ -55,8 +55,8 @@
   ],
   "credits": [
     {
-      "file": "head/faces/male/look_l",
-      "notes": "Original by Redshrike, Looking Left Expression by ElizaWy, mapped to all frames by JaidynReiman",
+      "file": "head/faces/look_l",
+      "notes": "Original Bases by Redshrike, Looking Left Expression by ElizaWy, mapped to all frames by JaidynReiman",
       "authors": [
         "JaidynReiman",
         "ElizaWy",

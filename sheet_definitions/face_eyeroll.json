@@ -1,13 +1,13 @@
 {
-  "name": "Male Rolling Eyes",
+  "name": "Rolling Eyes",
   "type_name": "expression",
   "layer_1": {
-    "zPos": 101,
-    "male": "head/faces/male/eyeroll/",
-    "muscular": "head/faces/male/eyeroll/",
-    "female": "head/faces/male/eyeroll/",
-    "teen": "head/faces/male/eyeroll/",
-    "pregnant": "head/faces/male/eyeroll/"
+    "zPos": 106,
+    "male": "head/faces/eyeroll/adult/",
+    "muscular": "head/faces/eyeroll/adult/",
+    "female": "head/faces/eyeroll/adult/",
+    "teen": "head/faces/eyeroll/adult/",
+    "pregnant": "head/faces/eyeroll/adult/"
   },
   "variants": [
     "light",
@@ -55,8 +55,8 @@
   ],
   "credits": [
     {
-      "file": "head/faces/male/eyeroll",
-      "notes": "Original by Redshrike, Eyeroll Expression by ElizaWy, mapped to all frames by JaidynReiman",
+      "file": "head/faces/eyeroll",
+      "notes": "Original Bases by Redshrike, Eyeroll Expression by ElizaWy, mapped to all frames by JaidynReiman",
       "authors": [
         "JaidynReiman",
         "ElizaWy",

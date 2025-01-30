@@ -3,11 +3,11 @@
   "type_name": "expression",
   "layer_1": {
     "zPos": 101,
-    "male": "head/faces/male/shame/",
-    "muscular": "head/faces/male/shame/",
-    "female": "head/faces/male/shame/",
-    "teen": "head/faces/male/shame/",
-    "pregnant": "head/faces/male/shame/"
+    "male": "head/faces/shame/",
+    "muscular": "head/faces/shame/",
+    "female": "head/faces/shame/",
+    "teen": "head/faces/shame/",
+    "pregnant": "head/faces/shame/"
   },
   "variants": [
     "light",
@@ -55,8 +55,8 @@
   ],
   "credits": [
     {
-      "file": "head/faces/male/shame",
-      "notes": "Original by Redshrike, Shame Expression by ElizaWy, mapped to all frames by JaidynReiman",
+      "file": "head/faces/shame",
+      "notes": "Original Bases by Redshrike, Shame Expression by ElizaWy, mapped to all frames by JaidynReiman",
       "authors": [
         "JaidynReiman",
         "ElizaWy",
