@@ -395,21 +395,59 @@
 				<li data-required="male,female,muscular,pregnant,teen">
 					<span class="condensed">Face</span>
 					<ul>
-						div_sheet_face_closing
-						div_sheet_face_closed
-						div_sheet_face_look_r
-						div_sheet_face_look_l
-						div_sheet_face_eyeroll
-						div_sheet_face_shock
-						div_sheet_face_angry
-						div_sheet_face_angry2
-						div_sheet_face_sad
-						div_sheet_face_sad2
-						div_sheet_face_happy
-						div_sheet_face_happy2
-						div_sheet_face_blush
-						div_sheet_face_shame
-						div_sheet_face_tears
+						<!-- Male -->
+						<li>
+							<span class="condensed">Male Expressions</span>
+							<ul>
+								div_sheet_face_closing%head=adult
+								div_sheet_face_closed%head=adult
+								div_sheet_face_look_r%head=adult
+								div_sheet_face_look_l%head=adult
+								div_sheet_face_eyeroll%head=adult
+								div_sheet_face_shock%head=adult
+								div_sheet_face_angry%head=adult
+								div_sheet_face_sad%head=adult
+								div_sheet_face_happy%head=adult
+								div_sheet_face_blush%head=adult
+								div_sheet_face_shame%head=adult
+							</ul>
+						</li>
+
+						<!-- Female -->
+						<li>
+							<span class="condensed">Female Expressions</span>
+							<ul>
+								div_sheet_face_closing%head=adult
+								div_sheet_face_closed%head=adult
+								div_sheet_face_look_r%head=adult
+								div_sheet_face_look_l%head=adult
+								div_sheet_face_eyeroll%head=adult
+								div_sheet_face_shock%head=adult
+								div_sheet_face_angry%head=adult
+								div_sheet_face_sad%head=adult
+								div_sheet_face_happy%head=adult
+								div_sheet_face_blush%head=adult
+								div_sheet_face_shame%head=adult
+							</ul>
+						</li>
+
+						<!-- Elderly -->
+						<li>
+							<span class="condensed">Elderly Expressions</span>
+							<ul>
+								div_sheet_face_closing%head=elderly
+								div_sheet_face_closed%head=elderly
+								div_sheet_face_look_r%head=elderly
+								div_sheet_face_look_l%head=elderly
+								div_sheet_face_eyeroll%head=elderly
+								div_sheet_face_shock%head=elderly
+								div_sheet_face_angry%head=elderly
+								div_sheet_face_sad%head=elderly
+								div_sheet_face_happy%head=elderly
+								div_sheet_face_blush%head=elderly
+								div_sheet_face_shame%head=elderly
+							</ul>
+						</li>
 					</ul>
 				</li>
 
@@ -417,18 +455,40 @@
 				<li>
 					<span class="condensed">Eyes</span>
 					<ul>
-						div_sheet_eyes_adult
 						div_sheet_eyes_child
 						div_sheet_eyes_cyclops
-					</ul>
-				</li>
 
-				<!-- Eyebrows -->
-				<li>
-					<span class="condensed">Eyebrows</span>
-					<ul>
-						div_sheet_eyebrows_thick
-						div_sheet_eyebrows_thin
+						<!-- Adult -->
+						<li data-required="male,female,muscular,pregnant,teen">
+							<span class="condensed">Adult Human Eyes</span>
+							<ul>
+								div_sheet_eyes_adult%face=default
+								div_sheet_eyes_adult%face=closing
+								div_sheet_eyes_adult%face=look_r
+								div_sheet_eyes_adult%face=look_l
+								div_sheet_eyes_adult%face=eyeroll
+								div_sheet_eyes_adult%face=shock
+								div_sheet_eyes_adult%face=anger
+								div_sheet_eyes_adult%face=sad
+								div_sheet_eyes_adult%face=shame
+							</ul>
+						</li>
+
+						<!-- Child -->
+						<li data-required="male,female,muscular,pregnant,teen">
+							<span class="condensed">Child Human Eyes</span>
+							<ul>
+								div_sheet_eyes_child%face=default
+								div_sheet_eyes_child%face=closing
+								div_sheet_eyes_child%face=look_r
+								div_sheet_eyes_child%face=look_l
+								div_sheet_eyes_child%face=eyeroll
+								div_sheet_eyes_child%face=shock
+								div_sheet_eyes_child%face=anger
+								div_sheet_eyes_child%face=sad
+								div_sheet_eyes_child%face=shame
+							</ul>
+						</li>
 					</ul>
 				</li>
 
@@ -482,6 +542,15 @@
 						div_sheet_head_nose_straight
 						div_sheet_head_nose_elderly
 						div_sheet_head_nose_large
+					</ul>
+				</li>
+
+				<!-- Eyebrows -->
+				<li>
+					<span class="condensed">Eyebrows</span>
+					<ul>
+						div_sheet_eyebrows_thick
+						div_sheet_eyebrows_thin
 					</ul>
 				</li>
 

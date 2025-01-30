@@ -579,7 +579,7 @@ $(document).ready(function () {
   function whichPropChecked(ids, key, vals) {
     const regExps = vals.map(val => new RegExp(String.raw`^${key}-${val}`, "i"));
     const els = findIdsByRegExp(ids, regExps);
-    for (const i = 0; i < vals.length; ++i) {
+    for (let i = 0; i < vals.length; ++i) {
       if (els[i] === true) {
         return vals[i];
       }

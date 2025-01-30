@@ -54,11 +54,6 @@ function parseJson(json) {
     searchFileName = searchFileName.substring(0, templateIndex);
     const query = json.substring(templateIndex + 1);
     queryObj = Object.fromEntries(new URLSearchParams(query));
-    const replObj = Object.fromEntries(
-      Object.keys(queryObj).map((key) => [key, ""])
-    );
-    searchFileName = es6DynamicTemplate(searchFileName, replObj)
-      .replace(/_+/, "_");
   }
   const filePath = `sheet_definitions/${searchFileName}.json`;
   if (DEBUG && (!onlyIfTemplate || queryObj))
