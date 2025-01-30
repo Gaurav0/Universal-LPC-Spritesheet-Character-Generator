@@ -20,10 +20,9 @@
 <body>
 	<header>
 		<section id="header-left">
-			<h1>Universal LPC Spritesheet Generator</h1>
+			<h1>Universal LPC Spritesheet Generator <a href="https://github.com/liberatedpixelcup/Universal-LPC-Spritesheet-Character-Generator"><img src="sources/github-mark.png" alt="View on GitHub" style="width:24px;height:24px;"></a> </h1>
 			<p>Free/Libre pixel art from the <a href="https://lpc.opengameart.org">Liberated Pixel Cup</a></p>
 			<p>You must <a id="scroll-to-credits" href="#">credit the authors of this artwork.</a></p>
-			<p>Sourcecode available on <a href="https://github.com/liberatedpixelcup/Universal-LPC-Spritesheet-Character-Generator">GitHub</a></p>
 		</section>
 		<section id="preview-animations">
 			<div id="previewAnimationsBox">
@@ -80,6 +79,10 @@
 					<label class="control-label">Edit:</label>
 					<button type="button" id="resetAll">Reset all</button>
 					<button type="button" class="replacePinkMask">Replace Mask (pink)</button>
+					<label for="match_body-color">
+						<input type="checkbox" name="match_body-color" value="compact" id="match_body-color" checked>
+						Match body color
+					</label>
 				</div>
 				<div>
 					<label class="control-label">View:</label>
@@ -272,6 +275,13 @@
 					<ul>
 						div_sheet_prosthesis_hook
 						div_sheet_prosthesis_peg_leg
+					</ul>
+				</li>
+
+				<li data-required="male,female,muscular,pregnant,teen">
+					<span class="condensed">Wheelchair</span>
+					<ul>
+						div_sheet_wheelchair
 					</ul>
 				</li>
 

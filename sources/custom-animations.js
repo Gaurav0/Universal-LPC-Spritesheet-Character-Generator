@@ -18,10 +18,23 @@ const animationRowsLayout = {
   "halfslash-n": 49,
   "halfslash-w": 50,
   "halfslash-s": 51,
-  "halfslash-e": 52
+  "halfslash-e": 52,
+  "sit-n": 29,
+  "sit-w": 30,
+  "sit-s": 31,
+  "sit-e": 32,
 }
 
 const customAnimations = {
+  wheelchair: {
+    frameSize: 64,
+    frames: [
+      ["sit-n,2", "sit-n,2"],
+      ["sit-w,2", "sit-w,2"],      
+      ["sit-s,2", "sit-s,2"],
+      ["sit-e,2", "sit-e,2"]
+    ]
+  },
   tool_rod: {
     frameSize: 128,
     frames: [
