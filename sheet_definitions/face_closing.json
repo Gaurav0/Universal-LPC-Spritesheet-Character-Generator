@@ -3,12 +3,12 @@
   "type_name": "expression",
   "template": {
     "head": {
-      "human_male": "adult",
-      "human_male_small": "adult",
-      "human_male_plump": "adult",
-      "human_male_gaunt": "adult",
-      "human_female": "adult",
-      "human_female_small": "adult",
+      "human_male": "male",
+      "human_male_small": "male",
+      "human_male_plump": "male",
+      "human_male_gaunt": "male",
+      "human_female": "female",
+      "human_female_small": "female",
       "human_male_elderly": "elderly",
       "human_female_elderly": "elderly",
       "human_elderly_small": "elderly"
