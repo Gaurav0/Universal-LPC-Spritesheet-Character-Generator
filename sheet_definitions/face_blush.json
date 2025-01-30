@@ -4,9 +4,14 @@
   "template": {
     "head": {
       "human_male": "adult",
+      "human_male_small": "adult",
+      "human_male_plump": "adult",
+      "human_male_gaunt": "adult",
       "human_female": "adult",
+      "human_female_small": "adult",
       "human_male_elderly": "elderly",
-      "human_female_elderly": "elderly"
+      "human_female_elderly": "elderly",
+      "human_elderly_small": "elderly"
     }
   },
   "layer_1": {

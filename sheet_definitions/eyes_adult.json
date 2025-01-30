@@ -1,13 +1,24 @@
 {
-  "name": "Default Eyes",
+  "name": "Eyes",
   "type_name": "eyes",
+  "template": {
+    "face": {
+      "default": "default",
+      "face_closing": "closing",
+      "face_look_l": "look_l",
+      "face_look_r": "look_r",
+      "face_sad2": "sad2",
+      "face_shame": "shame",
+      "face_shock": "shock"
+    }
+  },
   "layer_1": {
     "zPos": 105,
-    "male": "eyes/human/adult/default/",
-    "muscular": "eyes/human/adult/default/",
-    "female": "eyes/human/adult/default/",
-    "teen": "eyes/human/adult/default/",
-    "pregnant": "eyes/human/adult/default/"
+    "male": "eyes/human/adult/${face}/",
+    "muscular": "eyes/human/adult/${face}/",
+    "female": "eyes/human/adult/${face}/",
+    "teen": "eyes/human/adult/${face}/",
+    "pregnant": "eyes/human/adult/${face}/"
   },
   "variants": [
     "blue",
