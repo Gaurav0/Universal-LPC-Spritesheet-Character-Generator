@@ -87,20 +87,13 @@ $(document).ready(function () {
     halfslash: 50 * universalFrameSize,
   };
 
-  const sexes = [
-    'male',
-    'female',
-    'teen',
-    'child',
-    'muscular',
-    'pregnant'
-  ];
+  const sexes = ["male", "female", "teen", "child", "muscular", "pregnant"];
 
-  const allElements = document.querySelectorAll('*[id]');
-  const ids = Array.prototype.map.call(allElements, el => el.id);
+  const allElements = document.querySelectorAll("*[id]");
+  const ids = Array.prototype.map.call(allElements, (el) => el.id);
 
   const getBodyTypeName = () => {
-    return whichPropChecked(ids, 'sex', sexes);
+    return whichPropCheckedExact("sex", sexes);
   };
 
   // Preview Animation
@@ -580,18 +573,32 @@ $(document).ready(function () {
     link.download = filename;
   }
 
-  function getElementsByIdStart(ids, idPrefix) {
-    const filteredIds = ids.filter(id =>
-      id.toLowerCase().startsWith(idPrefix)
-    );
-    return filteredIds.map(id => document.getElementById(id));
+  function getElementByIdStart(ids, idPrefix) {
+    const re = new RegExp(String.raw`^${idPrefix}`, "i");
+    const els = [];
+    for (const id of ids) {
+      if (re.test(id)) {
+        els.push(document.getElementById(id));
+      }
+    }
+    return els;
+  }
+
+  function whichPropCheckedExact(key, vals) {
+    for (const val of vals) {
+      const el = document.getElementById(`${key}-${val}`);
+      if (el.checked) {
+        return val;
+      }
+    }
+    return "ERROR";
   }
 
   function whichPropChecked(ids, key, vals) {
     for (const val of vals) {
-      const elements = getElementsByIdStart(ids, `${key}-${val}`);
-      for (const el of elements) {
-        if ($(el).prop("checked")) {
+      const els = getElementByIdStart(ids, `${key}-${val}`);
+      for (const el of els) {
+        if (el.checked) {
           return val;
         }
       }
@@ -649,16 +656,12 @@ $(document).ready(function () {
         const bodyTypeKey = `layer_${jdx}_${bodyTypeName}`;
         if ($this.data(bodyTypeKey)) {
           const zPos = $this.data(`layer_${jdx}_zpos`);
-          const custom_animation = $this.data(
-            `layer_${jdx}_custom_animation`
-          );
+          const custom_animation = $this.data(`layer_${jdx}_custom_animation`);
           const fileName = $this.data(bodyTypeKey);
           const parentName = $this.attr(`name`);
           const name = $this.attr(`parentName`);
           const variant = $this.attr(`variant`);
-          const licenses = $this.data(
-            `${bodyTypeKey}_licenses`
-          );
+          const licenses = $this.data(`${bodyTypeKey}_licenses`);
           const authors = $this.data(`${bodyTypeKey}_authors`);
           const urls = $this.data(`${bodyTypeKey}_urls`);
           const notes = $this.data(`${bodyTypeKey}_notes`);
@@ -674,7 +677,7 @@ $(document).ready(function () {
               parentName,
               name,
               variant,
-              supportedAnimations
+              supportedAnimations,
             };
             addCreditFor(fileName, licenses, authors, urls, notes);
             itemsToDraw.push(itemToDraw);
@@ -900,14 +903,14 @@ $(document).ready(function () {
         // Filter by template
         const mungedTemplate = $(this)
           .find("input[type=radio]")
-          .data('layer_1_template');
+          .data("layer_1_template");
         if (mungedTemplate) {
           const template = mungedTemplate.replace(/'/g, '"');
           let parsedTemplate = null;
           try {
             parsedTemplate = JSON.parse(template);
           } catch {
-            console.error('Error parsing template', template);
+            console.error("Error parsing template", template);
           }
           if (parsedTemplate) {
             const keys = Object.keys(parsedTemplate);
@@ -916,8 +919,9 @@ $(document).ready(function () {
               // const reversedTemplate = invertKeyValue(parsedTemplate[key]);
               // console.log('reversedTemplate', reversedTemplate);
               const prop = whichPropChecked(ids, key, requiredVals);
-              if (prop === 'ERROR') {
+              if (prop === "ERROR") {
                 display = false;
+                break;
               }
             }
           }
