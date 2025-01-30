@@ -1,13 +1,13 @@
 {
-  "name": "Male Blush",
+  "name": "Blush",
   "type_name": "expression",
   "layer_1": {
     "zPos": 101,
-    "male": "head/faces/male/blush/",
-    "muscular": "head/faces/male/blush/",
-    "female": "head/faces/male/blush/",
-    "teen": "head/faces/male/blush/",
-    "pregnant": "head/faces/male/blush/"
+    "male": "head/faces/blush/adult/",
+    "muscular": "head/faces/blush/adult/",
+    "female": "head/faces/blush/adult/",
+    "teen": "head/faces/blush/adult/",
+    "pregnant": "head/faces/blush/adult/"
   },
   "variants": [
     "light",
@@ -55,8 +55,8 @@
   ],
   "credits": [
     {
-      "file": "head/faces/male/blush",
-      "notes": "Original by Redshrike, Blush Expression by ElizaWy, mapped to all frames by JaidynReiman",
+      "file": "head/faces/blush",
+      "notes": "Original Bases by Redshrike, Blush Expression by ElizaWy, mapped to all frames by JaidynReiman",
       "authors": [
         "JaidynReiman",
         "ElizaWy",

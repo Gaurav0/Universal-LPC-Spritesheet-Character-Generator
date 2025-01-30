@@ -1,13 +1,13 @@
 {
-  "name": "Male Angry",
+  "name": "Angry Alt",
   "type_name": "expression",
   "layer_1": {
-    "zPos": 101,
-    "male": "head/faces/male/anger/",
-    "muscular": "head/faces/male/anger/",
-    "female": "head/faces/male/anger/",
-    "teen": "head/faces/male/anger/",
-    "pregnant": "head/faces/male/anger/"
+    "zPos": 106,
+    "male": "head/faces/angry2/adult/",
+    "muscular": "head/faces/angry2/adult/",
+    "female": "head/faces/angry2/adult/",
+    "teen": "head/faces/angry2/adult/",
+    "pregnant": "head/faces/angry2/adult/"
   },
   "variants": [
     "light",
@@ -55,18 +55,20 @@
   ],
   "credits": [
     {
-      "file": "head/faces/male/anger",
-      "notes": "Original by Redshrike, Anger Expression by ElizaWy, mapped to all frames by JaidynReiman",
+      "file": "head/faces/angry2",
+      "notes": "Original Bases by Redshrike, Alt Angry Expression by Laetissima and Pennomi, mapped to all frames by JaidynReiman",
       "authors": [
         "JaidynReiman",
-        "ElizaWy",
+        "Thane Brimhall (pennomi)",
+        "laetissima",
         "Stephen Challener (Redshrike)"
       ],
       "licenses": [
-        "OGA-BY 3.0"
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
       ],
       "urls": [
-        "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+        "https://opengameart.org/content/lpc-base-character-expressions",
         "https://opengameart.org/content/ulpc-expanded-expressions"
       ]
     }

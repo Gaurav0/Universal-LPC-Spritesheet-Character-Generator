@@ -3,11 +3,11 @@
   "type_name": "expression",
   "layer_1": {
     "zPos": 101,
-    "male": "head/faces/male/shock/",
-    "muscular": "head/faces/male/shock/",
-    "female": "head/faces/male/shock/",
-    "teen": "head/faces/male/shock/",
-    "pregnant": "head/faces/male/shock/"
+    "male": "head/faces/shock/",
+    "muscular": "head/faces/shock/",
+    "female": "head/faces/shock/",
+    "teen": "head/faces/shock/",
+    "pregnant": "head/faces/shock/"
   },
   "variants": [
     "light",
@@ -55,8 +55,8 @@
   ],
   "credits": [
     {
-      "file": "head/faces/male/shock",
-      "notes": "Original by Redshrike, Shock Expression by ElizaWy, mapped to all frames by JaidynReiman",
+      "file": "head/faces/shock",
+      "notes": "Original Bases by Redshrike, Shock Expression by ElizaWy, mapped to all frames by JaidynReiman",
       "authors": [
         "JaidynReiman",
         "ElizaWy",

@@ -1,13 +1,13 @@
 {
-  "name": "Male Closed Eyes",
+  "name": "Closed Eyes",
   "type_name": "expression",
   "layer_1": {
     "zPos": 101,
-    "male": "head/faces/male/closed/",
-    "muscular": "head/faces/male/closed/",
-    "female": "head/faces/male/closed/",
-    "teen": "head/faces/male/closed/",
-    "pregnant": "head/faces/male/closed/"
+    "male": "head/faces/closed/adult/",
+    "muscular": "head/faces/closed/adult/",
+    "female": "head/faces/closed/adult/",
+    "teen": "head/faces/closed/adult/",
+    "pregnant": "head/faces/closed/adult/"
   },
   "variants": [
     "light",
@@ -55,8 +55,8 @@
   ],
   "credits": [
     {
-      "file": "head/faces/male/closed",
-      "notes": "Original by Redshrike, Closed Eye Expression by ElizaWy, mapped to all frames by JaidynReiman",
+      "file": "head/faces/closed",
+      "notes": "Original Bases by Redshrike, Closed Eye Expression by ElizaWy, mapped to all frames by JaidynReiman",
       "authors": [
         "JaidynReiman",
         "ElizaWy",

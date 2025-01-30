@@ -1,13 +1,13 @@
 {
-  "name": "Male Closing Eyes",
+  "name": "Closing Eyes",
   "type_name": "expression",
   "layer_1": {
     "zPos": 101,
-    "male": "head/faces/male/closing/",
-    "muscular": "head/faces/male/closing/",
-    "female": "head/faces/male/closing/",
-    "teen": "head/faces/male/closing/",
-    "pregnant": "head/faces/male/closing/"
+    "male": "head/faces/closing/adult/",
+    "muscular": "head/faces/closing/adult/",
+    "female": "head/faces/closing/adult/",
+    "teen": "head/faces/closing/adult/",
+    "pregnant": "head/faces/closing/adult/"
   },
   "variants": [
     "light",
@@ -55,8 +55,8 @@
   ],
   "credits": [
     {
-      "file": "head/faces/male/closing",
-      "notes": "Original by Redshrike, closing Expression by ElizaWy, mapped to all frames by JaidynReiman",
+      "file": "head/faces/closing",
+      "notes": "Original Bases by Redshrike, closing Expression by ElizaWy, mapped to all frames by JaidynReiman",
       "authors": [
         "JaidynReiman",
         "ElizaWy",

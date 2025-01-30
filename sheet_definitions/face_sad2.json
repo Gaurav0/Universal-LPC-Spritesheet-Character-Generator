@@ -1,13 +1,13 @@
 {
-  "name": "Male Sad",
+  "name": "Sad Alt",
   "type_name": "expression",
   "layer_1": {
     "zPos": 101,
-    "male": "head/faces/male/sad/",
-    "muscular": "head/faces/male/sad/",
-    "female": "head/faces/male/sad/",
-    "teen": "head/faces/male/sad/",
-    "pregnant": "head/faces/male/sad/"
+    "male": "head/faces/sad2/adult/",
+    "muscular": "head/faces/sad2/adult/",
+    "female": "head/faces/sad2/adult/",
+    "teen": "head/faces/sad2/adult/",
+    "pregnant": "head/faces/sad2/adult/"
   },
   "variants": [
     "light",
@@ -55,18 +55,20 @@
   ],
   "credits": [
     {
-      "file": "head/faces/male/sad",
-      "notes": "Original by Redshrike, Sad Expression by ElizaWy, mapped to all frames by JaidynReiman",
+      "file": "head/faces/sad2",
+      "notes": "Original Bases by Redshrike, Alt Sad Expression by Laetissima and Pennomi, mapped to all frames by JaidynReiman",
       "authors": [
         "JaidynReiman",
-        "ElizaWy",
+        "Thane Brimhall (pennomi)",
+        "laetissima",
         "Stephen Challener (Redshrike)"
       ],
       "licenses": [
-        "OGA-BY 3.0"
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
       ],
       "urls": [
-        "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+        "https://opengameart.org/content/lpc-base-character-expressions",
         "https://opengameart.org/content/ulpc-expanded-expressions"
       ]
     }

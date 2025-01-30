@@ -41,7 +41,7 @@
   "credits": [
     {
       "file": "eyes/human/adult/default",
-      "notes": "original by Redshrike, mapped to all frames by Matthew Krohn & JaidynReiman",
+      "notes": "Original Bases by Redshrike, mapped to all frames by Matthew Krohn & JaidynReiman",
       "authors": [
         "JaidynReiman",
         "Matthew Krohn (makrohn)",
@@ -54,6 +54,104 @@
       ],
       "urls": [
         "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles"
+      ]
+    },
+    {
+      "file": "eyes/human/adult/closing",
+      "notes": "Original Bases by Redshrike, Closing Eyes Expression by ElizaWy, mapped to all frames by JaidynReiman",
+      "authors": [
+        "JaidynReiman",
+        "ElizaWy",
+        "Stephen Challener (Redshrike)"
+      ],
+      "licenses": [
+        "OGA-BY 3.0"
+      ],
+      "urls": [
+        "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+        "https://opengameart.org/content/ulpc-expanded-expressions"
+      ]
+    },
+    {
+      "file": "eyes/human/adult/look_r",
+      "notes": "Original Bases by Redshrike, Looking Right Expression by ElizaWy, mapped to all frames by JaidynReiman",
+      "authors": [
+        "JaidynReiman",
+        "ElizaWy",
+        "Stephen Challener (Redshrike)"
+      ],
+      "licenses": [
+        "OGA-BY 3.0"
+      ],
+      "urls": [
+        "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+        "https://opengameart.org/content/ulpc-expanded-expressions"
+      ]
+    },
+    {
+      "file": "eyes/human/adult/look_l",
+      "notes": "Original Bases by Redshrike, Looking Left Expression by ElizaWy, mapped to all frames by JaidynReiman",
+      "authors": [
+        "JaidynReiman",
+        "ElizaWy",
+        "Stephen Challener (Redshrike)"
+      ],
+      "licenses": [
+        "OGA-BY 3.0"
+      ],
+      "urls": [
+        "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+        "https://opengameart.org/content/ulpc-expanded-expressions"
+      ]
+    },
+    {
+      "file": "eyes/human/adult/shame",
+      "notes": "Original Bases by Redshrike, Shame Expression by ElizaWy, mapped to all frames by JaidynReiman",
+      "authors": [
+        "JaidynReiman",
+        "ElizaWy",
+        "Stephen Challener (Redshrike)"
+      ],
+      "licenses": [
+        "OGA-BY 3.0"
+      ],
+      "urls": [
+        "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+        "https://opengameart.org/content/ulpc-expanded-expressions"
+      ]
+    },
+    {
+      "file": "eyes/human/adult/shock",
+      "notes": "Original Bases by Redshrike, Shock Expression by ElizaWy, mapped to all frames by JaidynReiman",
+      "authors": [
+        "JaidynReiman",
+        "ElizaWy",
+        "Stephen Challener (Redshrike)"
+      ],
+      "licenses": [
+        "OGA-BY 3.0"
+      ],
+      "urls": [
+        "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+        "https://opengameart.org/content/ulpc-expanded-expressions"
+      ]
+    },
+    {
+      "file": "eyes/human/adult/sad2",
+      "notes": "Original Bases by Redshrike, Alt Sad Expression by Laetissima and Pennomi, mapped to all frames by JaidynReiman",
+      "authors": [
+        "JaidynReiman",
+        "Thane Brimhall (pennomi)",
+        "laetissima",
+        "Stephen Challener (Redshrike)"
+      ],
+      "licenses": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/lpc-base-character-expressions",
+        "https://opengameart.org/content/ulpc-expanded-expressions"
       ]
     }
   ]

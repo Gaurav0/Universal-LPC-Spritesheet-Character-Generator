@@ -1,13 +1,13 @@
 {
-  "name": "Male Happy",
+  "name": "Happy",
   "type_name": "expression",
   "layer_1": {
-    "zPos": 101,
-    "male": "head/faces/male/happy/",
-    "muscular": "head/faces/male/happy/",
-    "female": "head/faces/male/happy/",
-    "teen": "head/faces/male/happy/",
-    "pregnant": "head/faces/male/happy/"
+    "zPos": 106,
+    "male": "head/faces/happy/",
+    "muscular": "head/faces/happy/",
+    "female": "head/faces/happy/",
+    "teen": "head/faces/happy/",
+    "pregnant": "head/faces/happy/"
   },
   "variants": [
     "light",
@@ -55,8 +55,8 @@
   ],
   "credits": [
     {
-      "file": "head/faces/male/happy",
-      "notes": "Original by Redshrike, Happy Expression by ElizaWy, mapped to all frames by JaidynReiman",
+      "file": "head/faces/happy",
+      "notes": "Original Bases by Redshrike, Happy Expression by ElizaWy, mapped to all frames by JaidynReiman",
       "authors": [
         "JaidynReiman",
         "ElizaWy",

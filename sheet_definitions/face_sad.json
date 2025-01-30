@@ -3,11 +3,11 @@
   "type_name": "expression",
   "layer_1": {
     "zPos": 101,
-    "male": "head/faces/male/sad/",
-    "muscular": "head/faces/male/sad/",
-    "female": "head/faces/male/sad/",
-    "teen": "head/faces/male/sad/",
-    "pregnant": "head/faces/male/sad/"
+    "male": "head/faces/sad/",
+    "muscular": "head/faces/sad/",
+    "female": "head/faces/sad/",
+    "teen": "head/faces/sad/",
+    "pregnant": "head/faces/sad/"
   },
   "variants": [
     "light",
@@ -55,8 +55,8 @@
   ],
   "credits": [
     {
-      "file": "head/faces/male/sad",
-      "notes": "Original by Redshrike, Sad Expression by ElizaWy, mapped to all frames by JaidynReiman",
+      "file": "head/faces/sad",
+      "notes": "Original Bases by Redshrike, Sad Expression by ElizaWy, mapped to all frames by JaidynReiman",
       "authors": [
         "JaidynReiman",
         "ElizaWy",

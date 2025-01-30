@@ -1,13 +1,13 @@
 {
-  "name": "Male Angry",
+  "name": "Angry",
   "type_name": "expression",
   "layer_1": {
-    "zPos": 101,
-    "male": "head/faces/male/anger/",
-    "muscular": "head/faces/male/anger/",
-    "female": "head/faces/male/anger/",
-    "teen": "head/faces/male/anger/",
-    "pregnant": "head/faces/male/anger/"
+    "zPos": 106,
+    "male": "head/faces/angry/adult/",
+    "muscular": "head/faces/angry/adult/",
+    "female": "head/faces/angry/adult/",
+    "teen": "head/faces/angry/adult/",
+    "pregnant": "head/faces/angry/adult/"
   },
   "variants": [
     "light",
@@ -55,8 +55,8 @@
   ],
   "credits": [
     {
-      "file": "head/faces/male/anger",
-      "notes": "Original by Redshrike, Anger Expression by ElizaWy, mapped to all frames by JaidynReiman",
+      "file": "head/faces/anger",
+      "notes": "Original Bases by Redshrike, Anger Expression by ElizaWy, mapped to all frames by JaidynReiman",
       "authors": [
         "JaidynReiman",
         "ElizaWy",
