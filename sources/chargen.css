@@ -28,7 +28,7 @@ canvas {
 
 body {
   margin: 10px 15px;
-  font-size: 16px;
+  font-size: 10pt;
   font-family: monospace;
 }
 
@@ -72,7 +72,6 @@ h2 {
 }
 
 h3 {
-  font-size: 1em;
   margin: 4px 0px 0px 0px;
 }
 
@@ -90,15 +89,6 @@ p {
   margin: 40px 0;
   float: right;
   padding-left: 15px;
-}
-
-#source {
-  width: 30%;
-  min-width: 200px;
-  margin: 40px 0;
-  clear: both;
-  float: left;
-  font-size: larger;
 }
 
 #credits {
@@ -138,7 +128,7 @@ input[type=button], input[type=reset] {
   overflow-y: auto;
   min-width: 200px;
   max-height: calc(100vh - 320px);
-  margin-top: 80px;
+  margin-top: 120px;
   margin-left: 15px;
   order: 2;
 }
@@ -254,11 +244,6 @@ summary {
     width: calc(100vw - 80px);
   }
 
-  #credits {
-    margin-top: 0;
-    padding-top: 0;
-  }
-
   #preview summary, #chooser summary {
     display: list-item;
   }
@@ -280,6 +265,23 @@ summary {
     margin-top: calc(60px + 12rex);
     margin-bottom: 60px;
   }
+
+  @media screen and (min-resolution:1.5x) { 
+    #preview,
+    #credits, 
+    #advanced,
+    #chooser
+    {
+      font-size: min(10pt, 12px, 0.75rem);
+    }
+
+    #creditsText,
+    #chooser h3,
+    #chooser span,
+    #chooser label {
+      font-size: min(10pt, 12px, 0.5rem);
+    }
+  }
 }
 
 /* tablet view 800 - 1280 px, <= 1200 px height */
@@ -299,18 +301,18 @@ summary {
 
   #preview-animations {
     position: absolute;
-    top: 340px;
+    top: calc(300px + 8rex);
     margin-top: -40px;
     padding-top: 40px;
   }
 
   #preview-animations.controls-open {
-    top: 260px;
+    top: calc(220px + 8rex);
   }
 
   #preview {
-    margin-top: 260px;
-    padding-top: 30px;
+    margin-top: calc(220px + 8rex);
+    padding-top: calc(30px + 8rex);
     min-width: unset;
   }
 
