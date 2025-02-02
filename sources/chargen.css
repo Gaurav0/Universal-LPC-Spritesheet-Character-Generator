@@ -4,6 +4,8 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 button {
@@ -169,7 +171,7 @@ summary {
 
   #preview {
     order: 0;
-    padding-top: calc(30px + 2rex);
+    padding-top: 50px;
     margin-bottom: -60px;
     max-height: none;
     min-width: unset;
@@ -198,7 +200,7 @@ summary {
     margin-left: -10px;
     margin-bottom: -40px;
     padding-left: 10px;
-    padding-bottom: calc(40px + 2rex);
+    padding-bottom: 60px;
   }
 
   /* override #customizeChar > section */
@@ -221,32 +223,33 @@ summary {
 
   details {
     position: relative;
-    top: -4rex;
+    top: -32px;
   }
 
   #preview:has(>details:not(open)) {
-    padding-bottom: calc(100px + 2rex);
+    padding-bottom: 120px;
   }
   
   #preview:has(>details:not(open))+#chooser {
-    padding-top: 5rex;
+    padding-top: 50px;
+  }
+}
+
+/* high dpi (retina) screens */
+@media screen and (max-width: 1280px) and (min-resolution:1.5x) {
+  #preview,
+  #credits, 
+  #advanced,
+  #chooser
+  {
+    font-size: 1.25rem;
   }
 
-  @media screen and (min-resolution:1.5x) { 
-    #preview,
-    #credits, 
-    #advanced,
-    #chooser
-    {
-      font-size: min(10pt, 12px, 0.75rem);
-    }
-
-    #creditsText,
-    #chooser h3,
-    #chooser span,
-    #chooser label {
-      font-size: min(10pt, 12px, 0.5rem);
-    }
+  #creditsText,
+  #chooser h3,
+  #chooser span,
+  #chooser label {
+    font-size: 1.5rem;
   }
 }
 
@@ -258,17 +261,19 @@ summary {
   }
 
   #controls {
-    top: calc(80px + 6rex);
+    top: 170px;
     padding-left: 0;
+    margin-top: -50px;
+    padding-top: 50px;
   }
 
   #preview-animations {
-    top: calc(160px + 12rex);
+    top: 300px;
     padding-left: 0;
   }
 
   #preview {
-    margin-top: calc(250px + 22rex);
+    margin-top: 470px;
   }
 }
 
@@ -285,7 +290,7 @@ summary {
   }
 
   #preview-animations.controls-open {
-    top: calc(220px + 8rex);
+    top: 300px;
   }
 
   #preview {
