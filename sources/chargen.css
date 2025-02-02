@@ -32,7 +32,7 @@ body {
   font-family: monospace;
 }
 
-header {
+.sticky {
   position: sticky;
   top: 0;
   left: 0;
@@ -40,26 +40,20 @@ header {
   padding-top: 10px;
   width: 100%;
   display: flex;
-  flex-direction: row;
   background-color: white;
   opacity: 1;
   z-index: 4;
 }
 
-header > section {
-  display: flex;
+#header-left {
   flex-direction: column;
-  flex-grow: 1;
-  width: 50vw;
-  margin-top: 10px;
-  margin-left: 15px;
+  order: 0;
 }
 
 #preview-animations {
   padding-top: 15px;
-  z-index: 2;
-  opacity: 1;
-  background-color: white;
+  padding-left: 30px;
+  order: 1;
 }
 
 h1 {
@@ -106,16 +100,9 @@ input[type=button], input[type=reset] {
 }
 
 #controls {
-  position: sticky;
-  top: 140px;
-  left: 0;
+  margin-top: 10px;
   padding-top: 10px;
-  background-color: white;
-  opacity: 1;
-  z-index: 2;
-  margin-left: 15px;
-  order: -1;
-  height: 10px;
+  order: 2;
 }
 
 #controls > * {
@@ -128,9 +115,8 @@ input[type=button], input[type=reset] {
   overflow-y: auto;
   min-width: 200px;
   max-height: calc(100vh - 320px);
-  margin-top: 120px;
   margin-left: 15px;
-  order: 2;
+  order: 4;
 }
 
 #preview {
@@ -139,7 +125,7 @@ input[type=button], input[type=reset] {
   overflow-y: auto;
   margin-top: 0;
   position: relative;
-  order: 1;
+  order: 3;
   left: 15px;
   grid-row: span 2;
 }
@@ -163,20 +149,16 @@ summary {
   white-space: nowrap;
 }
 
-/* portrait mode 800 - 1280 px width, > 1200 px height */
+/* smaller screens width < 1280 px */
 @media screen and (max-width: 1280px) {
-  body, header {
+  body {
     max-width: calc(100vw - 30px);
-  }
-
-  header {
-    flex-direction: column;
   }
 
   #header-left {
     width: calc(100vw - 140px);
-    min-height: 180px;
     overflow-y: auto;
+    order: 0;
   }
 
   #customizeChar {
@@ -186,21 +168,11 @@ summary {
   }
 
   #preview {
-    margin-top: 180px;
+    order: 0;
+    padding-top: calc(30px + 2rex);
+    margin-bottom: -60px;
     max-height: none;
     min-width: unset;
-  }
-
-  #preview.anim-canvas-64 {
-    margin-top: 244px;
-  }
-
-  #preview.anim-canvas-128 {
-    margin-top: 308px;
-  }
-
-  #preview.anim-canvas-192 {
-    margin-top: 372px;
   }
 
   #customizeChar > section {
@@ -208,26 +180,25 @@ summary {
   }
 
   #chooser {
+    order: 0;
     height: auto;
     max-height: none;
-    margin-top: -30px;
-    padding-top: 30px;
+    margin-top: -70px;
   }
 
   #controls {
-    position: fixed;
-    z-index: 4;
+    z-index: 3;
+    order: 0;
     margin-top: -10px;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-left: 20px;
-    padding-bottom: 20px;
   }
 
   #controls>details[open] {
     margin-left: -10px;
     margin-bottom: -40px;
     padding-left: 10px;
-    padding-bottom: 40px;
+    padding-bottom: calc(40px + 2rex);
   }
 
   /* override #customizeChar > section */
@@ -236,34 +207,29 @@ summary {
   }
 
   #preview-animations {
+    order: 0;
     margin-left: 15px;
-    position: relative;
-    top: 130px;
-    margin-top: -60px;
+    padding-left: 0;
     padding-top: 40px;
+    padding-bottom: 40px;
     width: calc(100vw - 80px);
   }
 
-  #preview summary, #chooser summary {
+  summary {
     display: list-item;
   }
 
-  #preview details #chooser details {
+  details {
     position: relative;
     top: -4rex;
   }
 
-  #preview details[open], #chooser details[open] {
-    margin-top: 12rex;
+  #preview:has(>details:not(open)) {
+    padding-bottom: calc(100px + 2rex);
   }
-
-  #preview:has(+#controls>details:not([open])) {
-    margin-top: calc(170px + 12rex);
-  }
-
-  #preview:has(>details[open]) {
-    margin-top: calc(60px + 12rex);
-    margin-bottom: 60px;
+  
+  #preview:has(>details:not(open))+#chooser {
+    padding-top: 5rex;
   }
 
   @media screen and (min-resolution:1.5x) { 
@@ -284,26 +250,38 @@ summary {
   }
 }
 
-/* tablet view 800 - 1280 px, <= 1200 px height */
-@media screen and (max-width: 1280px) and (max-height: 1200px) {
-  header {
-    position: static;
-    height: 140px;
+/* portrait mode 800 - 1280 px width, > 1200 px height */
+@media screen and (max-width: 1280px) and (min-height: 1200px) {
+  .sticky {
+    position: fixed;
+    left: 15px;
   }
 
   #controls {
-    position: relative;
-    z-index: 2;
-    top: 40px;
+    top: calc(80px + 6rex);
     padding-left: 0;
-    margin-top: 0;
   }
 
   #preview-animations {
-    position: absolute;
-    top: calc(300px + 8rex);
-    margin-top: -40px;
-    padding-top: 40px;
+    top: calc(160px + 12rex);
+    padding-left: 0;
+  }
+
+  #preview {
+    margin-top: calc(250px + 22rex);
+  }
+}
+
+/* tablet view 800 - 1280 px, <= 1200 px height */
+@media screen and (max-width: 1280px) and (max-height: 1200px) {
+  .sticky {
+    position: static;
+  }
+
+  #controls {
+    z-index: 2;
+    padding-left: 0;
+    margin-top: 20px;
   }
 
   #preview-animations.controls-open {
@@ -311,23 +289,7 @@ summary {
   }
 
   #preview {
-    margin-top: calc(220px + 8rex);
-    padding-top: calc(30px + 8rex);
     min-width: unset;
-  }
-
-  #controls:has(>details:not([open])) {
-    position: relative;
-    top: 40px;
-  }
-
-  #preview:has(+#controls>details:not([open])) {
-    margin-top: 170px;
-  }
-
-  #preview:has(>details[open]) {
-    margin-top: calc(60px + 12rex);
-    margin-bottom: 60px;
   }
 }
 
