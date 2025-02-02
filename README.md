@@ -5,19 +5,42 @@ This generator attempts to include all [LPC](https://lpc.opengameart.org) create
 
 Try it [here](https://liberatedpixelcup.github.io/Universal-LPC-Spritesheet-Character-Generator/).
 
-
 The Liberated Pixel Effort is a collaborative effort from a number of different great artists who helped produce sprites for the project.
-**If you wish to use LPC sprites in your project, you will need to credit everyone who helped contribute to the LPC sprites you are using.** See below for how to do this.
+**If you wish to use LPC sprites in your project, you will need to credit everyone who helped contribute to the LPC sprites you are using.** See [below](#licensing-and-attribution-credits) for how to do this.
+
+Although this particular repository focuses on character sprites, LPC includes many tilesets and some other artwork as well. Tileset collections can be found on [OpenGameArt.org](https://opengameart.org)
+
+### History
+
+The concept of the Liberated Pixel Cup was introduced by Bart Kelsey and Chris Webber. It was originally a competition on [OpenGameArt.org](https://opengameart.org) sponsored by Creative Commons, Mozilla, and the Free Software Foundation. (Note: These organizations do not sponsor and are not involved with this generator.) The idea was to create a body of artwork with a common [style](https://lpc.opengameart.org/static/LPC-Style-Guide/build/index.html).
+
+This was originally based on https://github.com/makrohn/Universal-LPC-spritesheet, which contained an xcf file combining all the assets from pngs. That repository was originally included in this repository as a submodule, and probably represented the first (albeit offline) LPC Spritesheet Generator. Thanks to @makrohn for creating it.
+
+@Gaurav0 was the original author of this repository. However, life came in the way and he did not keep up with maintaining it. Thanks to @sanderfrenken for maintaining the primary fork of the repository for many years.
+
+@jrconway3 and @bluecarrot16 have been the key art focused maintainers of the repository.
+
+@ElizaWy has revised and expanded the LPC paradigm. See https://github.com/ElizaWy/LPC
 
 ### Licensing and Attribution (Credits)
 
 Each piece of artwork distributed from this project (all images in the `spritesheets` subdirectory) is licensed under one or more of the following supported open license(s):
 
 - [CC0](https://creativecommons.org/public-domain/cc0/)
-- [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en)
+  - Allowed to be used under any circumstances, attribution not required
+- [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.en)[^2]
+  - Must credit the authors, may not encrypt or protect[^1] AND
+  - Must distribute any derivative artwork or modifications under CC-BY-SA 4.0 or later
 - [CC-BY](https://creativecommons.org/licenses/by/4.0/)
+  - Must credit the authors, may not encrypt or protect[^1]
 - [OGA-BY](https://static.opengameart.org/OGA-BY-3.0.txt)
+  - Must credit the authors, may encrypt in DRM protected games
 - [GPL](https://www.gnu.org/licenses/gpl-3.0.en.html#license-text)
+  - Must distribute any derivative artwork or modifications under GPL 3.0 or later
+
+[^1]: It is unclear whether this means you cannot release your game on platforms like Steam and the App Store on iOS which use encryption to DRM protect your game. It could be enough to make the assets easily available separately for download, but the DRM clause does not clearly state this. It could be enough to make a DRM free version available to those who purchase the game on these platforms, but again, the DRM clause does not clearly state this. To be safe from any potential legal issues, I would recommend you use CC0 and/or OGA-BY assets only if you intend to publish on such platforms. The OGA-BY license removes the DRM clause for precisely this reason.
+
+[^2]: This is the most restrictive license for any art supplied by this generator. You may use all the art in this repository if you follow all the terms of this license. Yes, this license allows you to use the art in this generator in commercial games.
 
 **If you generate a sprite using this tool, or use individual images taken directly from the `spritesheets` subdirectory from this repo, you must at least credit all the authors (except for CC0 licensed artwork).**
 
@@ -53,7 +76,9 @@ If you don't want to *show* the entire credits file directly, should include a s
 
 - If you are submitting art that was made by (or derived from work made by) someone else, please be sure that you have the rights to distribute that art under the licenses you choose.
 
-- When adding new artwork to this project, please add valid licensing information inside the json files as well (part of the *credits* object). Note the entire list of authors for that image, a URL for each piece of art from which this image is derived, and a list of licenses under which the art is available. 
+- When adding new artwork to this project, please add valid licensing information inside the json files as well (part of the *credits* object). Note the entire list of authors for that image, a URL for each piece of art from which this image is derived, and a list of licenses under which the art is available.
+
+- While it is recommended that all new artwork follows either the refined [style guide](https://bztsrc.gitlab.io/lpc-refined/), or the [revised guide](https://github.com/ElizaWy/LPC/wiki/Style-Guide), it is not required.
 
 This information must be part of the JSON definition for the assets, for instance:
 
@@ -162,11 +187,39 @@ Also, each animation has a frame cycle documented which you can see next to the 
 Traditionally, you could run this project, by opening `index.html` in your browser of choice.
 However, today's browsers have some security restrictions that do make this somewhat impractical.
 You will likely have to change your browser's settings to enable it to open a file url this way.
-You may instead wish to use a web server locally for development. Some recommendations:
-- IIS (Windows only)
+You may instead wish to use a web server locally for development. Some free recommendations:
+- IIS (Windows only) (NOT open source)
 - Python (py -m http.server <port>)
+- Rust (Simple Http Server)
+- Node.js (require('http'))
 - nginx
 - npx serve
+- brew serve (Mac only)
+- Lighttpd
+
+### FAQ
+
+<dl>
+  <dt>May I use this art in my commercial game?</dt>
+  <dd>Yes, however you must follow all the terms of the license(s) for the art you are using. See [Licensing and Attribution (Credits)](#licensing-and-attribution-credits)</dd>
+  <dt>How do I use the output of this generator in &lt;insert game engine&gt;?</dt>
+  <dd>There may be resources available to do this already. We are working on providing a list in the future for a few common game engines. For now, try Google. In most cases, however, you will likely have to write some code.</dd>
+  <dt>I downloaded the image, but I forgot to get the &lt;url, credits, etc.&gt; How do I get back to where I was?</dt>
+  <dd>It is recommended that you "export to JSON" to avoid this problem in the future and save the json file with the png image file. See [issue #143](https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator/issues/143)</dd>
+</dl>
+
+### Terms
+
+<dl>
+  <dt>Liberated Pixel Cup (LPC)</dt>
+  <dd>Originally a competition designed to create a large body of compatible art assets. Now also refers to that body of work and the style art marked as LPC attempts to follow.</dd>
+  <dt>Universal LPC (ULPC)</dt>
+  <dd>LPC originally expanded to add some new animation sizes and bases. This generator helped ensure that many assets covered all those bases and animations. LPC originally included only spellcast, slash, thrust, walk, shoot, and hurt animations for male and female adult bases. It also stuck to a standard 64x64 format. The most notable change in ULPC was to add weapons with oversize animation frames.</dd>
+  <dt>LPC Revised (LPCR)</dt>
+  <dd>LPC changes proposed by @ElizaWy that in some cases changed the number and order of animation frames, a new color palette, and the smaller heads.</dd>
+  <dt>LPC Expanded (LPCE)</dt>
+  <dd>Additional expansion of animations and bases proposed by @ElizaWy and others. New animations included bow, climb, run, and jump. New bases included child and elderly. Many of the assets in this repository are not yet drawn for these new animations and bases. Help wanted.</dd>
+</dl>
 
 ### Examples
 ![example](/readme-images/example.png)
