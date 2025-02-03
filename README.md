@@ -14,13 +14,13 @@ Although this particular repository focuses on character sprites, LPC includes m
 
 The concept of the Liberated Pixel Cup was introduced by Bart Kelsey and Chris Webber. It was originally a competition on [OpenGameArt.org](https://opengameart.org) sponsored by Creative Commons, Mozilla, and the Free Software Foundation. (Note: These organizations do not sponsor and are not involved with this generator.) The idea was to create a body of artwork with a common [style](https://lpc.opengameart.org/static/LPC-Style-Guide/build/index.html).
 
-This was originally based on https://github.com/makrohn/Universal-LPC-spritesheet, which contained an xcf file combining all the assets from pngs. That repository was originally included in this repository as a submodule, and probably represented the first (albeit offline) LPC Spritesheet Generator. Thanks to @makrohn for creating it.
+This was originally based on https://github.com/makrohn/Universal-LPC-spritesheet, which contained an xcf file combining all the assets from pngs. That repository was originally included in this repository as a submodule, and probably represented the first (albeit offline) LPC Spritesheet Generator. Thanks to [@makrohn](https://github.com/makrohn) for creating it.
 
-@Gaurav0 was the original author of this repository. However, life came in the way and he did not keep up with maintaining it. Thanks to @sanderfrenken for maintaining the primary fork of the repository for many years.
+[@Gaurav0](https://github.com/Gaurav0) was the original author of this repository. However, life came in the way and he did not keep up with maintaining it. Thanks to [@sanderfrenken](https://github.com/sanderfrenken) for maintaining the primary fork of the repository for many years.
 
-@jrconway3 and @bluecarrot16 have been the key art focused maintainers of the repository.
+[@jrconway3](https://github.com/jrconway3) and [@bluecarrot16](https://github.com/bluecarrot16) have been the key art focused maintainers of the repository.
 
-@ElizaWy has revised and expanded the LPC paradigm. See https://github.com/ElizaWy/LPC
+[@ElizaWy](https://github.com/ElizaWy) has revised and expanded the LPC paradigm. See https://github.com/ElizaWy/LPC
 
 ### Licensing and Attribution (Credits)
 
@@ -216,9 +216,9 @@ You may instead wish to use a web server locally for development. Some free reco
   <dt>Universal LPC (ULPC)</dt>
   <dd>LPC originally expanded to add some new animation sizes and bases. This generator helped ensure that many assets covered all those bases and animations. LPC originally included only spellcast, slash, thrust, walk, shoot, and hurt animations for male and female adult bases. It also stuck to a standard 64x64 format. The most notable change in ULPC was to add weapons with oversize animation frames.</dd>
   <dt>LPC Revised (LPCR)</dt>
-  <dd>LPC changes proposed by @ElizaWy that in some cases changed the number and order of animation frames, a new color palette, and the smaller heads.</dd>
+  <dd>LPC changes proposed by [@ElizaWy](https://github.com/ElizaWy) that in some cases changed the number and order of animation frames, a new color palette, and the smaller heads.</dd>
   <dt>LPC Expanded (LPCE)</dt>
-  <dd>Additional expansion of animations and bases proposed by @ElizaWy and others. New animations included bow, climb, run, and jump. New bases included child and elderly. Many of the assets in this repository are not yet drawn for these new animations and bases. Help wanted.</dd>
+  <dd>Additional expansion of animations and bases proposed by [@ElizaWy](https://github.com/ElizaWy) and others. New animations included bow, climb, run, and jump. New bases included child and elderly. Many of the assets in this repository are not yet drawn for these new animations and bases. Help wanted.</dd>
 </dl>
 
 ### Examples
