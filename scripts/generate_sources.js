@@ -70,7 +70,8 @@ function parseJson(json) {
     console.error("error in", filePath);
     throw e;
   }
-  const { variants, name, credits, template, tags = [], excluded = [] } = definition;
+  const { variants, name, credits, template, } = definition;
+  const { tags = [], required_tags = [], excluded_tags = [] } = definition;
   const typeName = definition.type_name;
   const defaultAnimations = [
     "spellcast",
@@ -133,7 +134,7 @@ function parseJson(json) {
           if (sex === requiredSexes[0]) {
             const zPos = definition[`layer_${jdx}`].zPos;
             dataFiles += `data-preview_row=${previewRow} data-preview_column=${previewColumn} data-preview_x_offset=${previewXOffset} data-preview_y_offset=${previewYOffset} data-layer_${jdx}_zpos=${zPos} `;
-            dataFiles += `data-tags="${tags.join(',')}" data-excluded="${excluded.join(',')}" `;
+            dataFiles += `data-tags="${tags.join(',')}" data-required_tags="${required_tags.join(',')}" data-excluded_tags="${excluded_tags.join(',')}" `;
             const custom_animation = layerDefinition.custom_animation;
             if (custom_animation !== undefined) {
               dataFiles += `data-layer_${jdx}_custom_animation=${custom_animation} `;

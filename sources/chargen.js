@@ -886,6 +886,7 @@ $(document).ready(function () {
         selectedTags.add(tag)
       );
     });
+    console.log('selectedTags', selectedTags);
 
     let hasUnsupported = false;
     let hasProhibited = false;
@@ -977,10 +978,18 @@ $(document).ready(function () {
         }
       }
 
-      // Toggle based on tags/excluded
-      const excluded = $this.data("excluded");
-      excluded?.split(",")?.forEach(tag => {
-        if (selectedTags.has(tag)) {
+      // Toggle based on tags/required_tags
+      const requiredTags = $this.data("required_tags");
+      requiredTags?.split(",")?.forEach(tag => {
+        if (tag && !selectedTags.has(tag)) {
+          display = false;
+        }
+      });
+
+      // Toggle based on tags/excluded_tags
+      const excludedTags = $this.data("excluded_tags");
+      excludedTags?.split(",")?.forEach(tag => {
+        if (tag && selectedTags.has(tag)) {
           display = false;
         }
       });
