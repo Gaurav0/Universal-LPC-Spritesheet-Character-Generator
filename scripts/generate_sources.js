@@ -1,7 +1,14 @@
-const fs = require('fs');
-const readline = require('readline');
+const fs = require("fs");
+const readline = require("readline");
 
-require('child_process').fork('scripts/zPositioning/parse_zpos.js');
+const DEBUG = false; // change this to print debug log
+const onlyIfTemplate = true; // print debugging log only if there is a template
+
+require("child_process").fork("scripts/zPositioning/parse_zpos.js");
+
+// copied from https://github.com/mikemaccana/dynamic-template/blob/046fee36aecc1f48cf3dc454d9d36bb0e96e0784/index.js
+const es6DynamicTemplate = (templateString, templateVariables) =>
+  templateString.replace(/\${(.*?)}/g, (_, g) => templateVariables[g]);
 
 var licensesFound = [];
 function searchCredit(fileName, credits, origFileName) {
@@ -18,112 +25,141 @@ function searchCredit(fileName, credits, origFileName) {
 
   for (var creditsIndex = 0; creditsIndex < credits.length; creditsIndex++) {
     const credit = credits[creditsIndex];
-    if (credit.file === fileName || credit.file === fileName + ".png" || credit.file + "/" === fileName) {
+    if (
+      credit.file === fileName ||
+      credit.file === fileName + ".png" ||
+      credit.file + "/" === fileName
+    ) {
       return credit;
     }
   }
-  
-  const index = fileName.lastIndexOf("\/");
+
+  const index = fileName.lastIndexOf("/");
   if (index > -1) {
     return searchCredit(fileName.substring(0, index), credits, origFileName);
   } else {
-    console.error("missing credit after searching recursively filename:", origFileName);
+    console.error(
+      "missing credit after searching recursively filename:",
+      origFileName
+    );
     return undefined;
   }
 }
 
 function parseJson(json) {
-  const definition = JSON.parse(fs.readFileSync(`sheet_definitions/${json}`));
-  const variants = definition.variants
-  const name = definition.name
-  const typeName = definition.type_name
-  const credits = definition.credits
-  const defaultAnimations = ['spellcast', 'thrust', 'walk', 'slash', 'shoot', 'hurt', 'watering'];
+  const templateIndex = json.lastIndexOf("%");
+  let searchFileName = json;
+  let queryObj = null;
+  if (templateIndex > -1) {
+    searchFileName = searchFileName.substring(0, templateIndex);
+    const query = json.substring(templateIndex + 1);
+    queryObj = Object.fromEntries(new URLSearchParams(query));
+    const replObj = Object.fromEntries(
+      Object.keys(queryObj).map((key) => [key, ""])
+    );
+    searchFileName = es6DynamicTemplate(searchFileName, replObj)
+      .replace(/_+/, "_");
+  }
+  const filePath = `sheet_definitions/${searchFileName}.json`;
+  if (DEBUG && (!onlyIfTemplate || queryObj))
+    console.log(`Parsing ${filePath}`);
+  const definition = JSON.parse(fs.readFileSync(filePath));
+  const { variants, name, credits, template } = definition;
+  const typeName = definition.type_name;
+  const defaultAnimations = [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+  ];
 
-  var requiredSexes = [];
-  var animations = [];
-  var previewRow = 2;
-  var previewColumn = 0;
-  var previewXOffset = 0;
-  var previewYOffset = 0;
+  const requiredSexes = [];
+  const animations = definition.animations ?? defaultAnimations;
 
-  if (definition.preview_row !== undefined) {
-    previewRow = definition.preview_row
-  }
-  if (definition.preview_column !== undefined){
-    previewColumn = definition.preview_column;
-  }
-  if (definition.preview_x_offset !== undefined){
-    previewXOffset = definition.preview_x_offset;
-  }
-  if (definition.preview_y_offset !== undefined){
-    previewYOffset = definition.preview_y_offset;
-  }
+  const previewRow = definition.preview_row ?? 2;
+  const previewColumn = definition.preview_column ?? 0;
+  const previewXOffset = definition.preview_x_offset ?? 0;
+  const previewYOffset = definition.preview_y_offset ?? 0;
 
-  if (definition.animations !== undefined) {
-    animations = definition.animations
-  } else {
-    animations = defaultAnimations
-  }
-
-  if (definition.layer_1.male !== undefined) {
-    requiredSexes.push("male");
-  }
-  if (definition.layer_1.female !== undefined) {
-    requiredSexes.push("female");
-  }
-  if (definition.layer_1.teen !== undefined) {
-    requiredSexes.push("teen");
-  }
-  if (definition.layer_1.child !== undefined) {
-    requiredSexes.push("child");
-  }
-  if (definition.layer_1.muscular !== undefined) {
-    requiredSexes.push("muscular");
-  }
-  if (definition.layer_1.pregnant !== undefined) {
-    requiredSexes.push("pregnant");
+  const sexes = ["male", "female", "teen", "child", "muscular", "pregnant"];
+  for (const sex of sexes) {
+    if (definition.layer_1[sex]) {
+      requiredSexes.push(sex);
+    }
   }
 
   const requiredSex = requiredSexes.join(",");
   const supportedAnimations = animations.join(",");
 
-  const startHTML = `<li data-required="[REQUIRED_SEX]" data-animations="[SUPPORTED_ANIMATIONS]"><span class="condensed">${name}</span><ul>`.replace("[REQUIRED_SEX]", requiredSex).replace("[SUPPORTED_ANIMATIONS]", supportedAnimations);
-  const templateHTML = fs.readFileSync("scripts/template-general.html", 'utf8');
+  const startHTML =
+    `<li data-required="[REQUIRED_SEX]" data-animations="[SUPPORTED_ANIMATIONS]"><span class="condensed">${name}</span><ul>`
+      .replace("[REQUIRED_SEX]", requiredSex)
+      .replace("[SUPPORTED_ANIMATIONS]", supportedAnimations);
+  const templateHTML = fs.readFileSync("scripts/template-general.html", "utf8");
 
-  const endHTML = '</ul></li>';
+  const endHTML = "</ul></li>";
 
   var idx = 0;
   var listItemsHTML = `<li><input type="radio" id="${typeName}-none_${name}" name="${typeName}"> <label for="${typeName}-none">No ${typeName}</label></li>`;
   var listItemsCSV = "";
   var addedCreditsFor = [];
-  for (variant in variants) {
+  for (const variant of variants) {
     const itemName = variants[idx];
-    const itemIdFor = typeName + "-" + name.replaceAll(" ", "_") +  "_" + itemName.replaceAll(" ", "_");
+    const snakeName = name.replaceAll(" ", "_");
+    const snakeItemName = itemName.replaceAll(" ", "_")
+    const itemIdFor = `${typeName}-${snakeName}_${snakeItemName}`;
     var matchBodyColor = false;
     if (definition[`match_body_color`] !== undefined) {
       matchBodyColor = true;
     }
     var dataFiles = "";
     var sexIdx = 0;
-    for (sex in requiredSexes) {
-      for (jdx =1; jdx < 10; jdx++) {
+    for (const sex of requiredSexes) {
+      for (jdx = 1; jdx < 10; jdx++) {
         const layerDefinition = definition[`layer_${jdx}`];
         if (layerDefinition !== undefined) {
           if (sexIdx === 0) {
             const zPos = definition[`layer_${jdx}`].zPos;
-            dataFiles += "data-preview_row=" + previewRow + " data-preview_column=" + previewColumn + " data-preview_x_offset=" + previewXOffset + " data-preview_y_offset=" + previewYOffset +  " data-layer_" + jdx + "_zpos=" + zPos + " ";
+            dataFiles += `data-preview_row=${previewRow} data-preview_column=${previewColumn} data-preview_x_offset=${previewXOffset} data-preview_y_offset=${previewYOffset} data-layer_${jdx}_zpos=${zPos} `;
             const custom_animation = layerDefinition.custom_animation;
             if (custom_animation !== undefined) {
-              dataFiles += `data-layer_${jdx}_custom_animation=` + custom_animation + " "
+              dataFiles += `data-layer_${jdx}_custom_animation=${custom_animation} `;
             }
           }
-          const file = layerDefinition[requiredSexes[sexIdx]]
+          const file = layerDefinition[requiredSexes[sexIdx]];
           if (file !== null && file !== "") {
-            const imageFileName = "\"" + file + itemName.replaceAll(" ", "_") + ".png\" ";
-            const fileNameForCreditSearch = file + itemName.replaceAll(" ", "_");
-            dataFiles += "data-layer_" + jdx + "_" + requiredSexes[sexIdx] + "=" + imageFileName;
-            const creditToUse = searchCredit(fileNameForCreditSearch, credits, fileNameForCreditSearch);
+            let imageFileName =
+              '"' + file + itemName.replaceAll(" ", "_") + '.png" ';
+            let fileNameForCreditSearch = file + itemName.replaceAll(" ", "_");
+            if (queryObj) {
+              fileNameForCreditSearch = es6DynamicTemplate(
+                fileNameForCreditSearch,
+                queryObj
+              );
+              imageFileName = es6DynamicTemplate(imageFileName, queryObj);
+            }
+            if (DEBUG && (!onlyIfTemplate || queryObj))
+              console.log(
+                `Searching for credits to use for ${imageFileName} in ${fileNameForCreditSearch} for layer ${jdx}`
+              );
+            const creditToUse = searchCredit(
+              fileNameForCreditSearch,
+              credits,
+              fileNameForCreditSearch
+            );
+            if (DEBUG && (!onlyIfTemplate || queryObj))
+              console.log(
+                `file name set for ${sex} is ${imageFileName} for layer ${jdx}`
+              );
+            dataFiles += `data-layer_${jdx}_${requiredSexes[sexIdx]}=${imageFileName} `;
+            if (template) {
+              const mungedTemplate = JSON.stringify(template)
+                .replace(/"/g, "'");
+              dataFiles += `data-layer_${jdx}_template="${mungedTemplate}" `;
+            }
             if (creditToUse !== undefined) {
               var licenseIdx = 0;
               for (license in creditToUse.licenses) {
@@ -131,18 +167,20 @@ function parseJson(json) {
                 if (!licensesFound.includes(licenseName)) {
                   licensesFound.push(licenseName);
                 }
-                licenseIdx+=1
+                licenseIdx += 1;
               }
-              const licenses = "\"" + creditToUse.licenses.join(',') + "\"";
-              dataFiles += "data-layer_" + jdx + "_" + requiredSexes[sexIdx] + "_licenses=" + licenses;
-              const authors = "\"" + creditToUse.authors.join(',') + "\"";
-              dataFiles += "data-layer_" + jdx + "_" + requiredSexes[sexIdx] + "_authors=" + authors;
-              const urls = "\"" + creditToUse.urls.join(',') + "\"";
-              dataFiles += "data-layer_" + jdx + "_" + requiredSexes[sexIdx] + "_urls=" + urls;
-              const notes = "\"" + creditToUse.notes.replaceAll("\"", "**") + "\"";
-              dataFiles += "data-layer_" + jdx + "_" + requiredSexes[sexIdx] + "_notes=" + notes;
+              const licenses = '"' + creditToUse.licenses.join(",") + '" ';
+              dataFiles += `data-layer_${jdx}_${requiredSexes[sexIdx]}_licenses=${licenses} `;
+              const authors = '"' + creditToUse.authors.join(",") + '" ';
+              dataFiles += `data-layer_${jdx}_${requiredSexes[sexIdx]}_authors=${authors} `;
+              const urls = '"' + creditToUse.urls.join(",") + '" ';
+              dataFiles += `data-layer_${jdx}_${requiredSexes[sexIdx]}_urls=${urls} `;
+              const notes =
+                '"' + creditToUse.notes.replaceAll('"', "**") + '" ';
+              dataFiles += `data-layer_${jdx}_${requiredSexes[sexIdx]}_notes=${notes} `;
               if (!addedCreditsFor.includes(imageFileName)) {
-                listItemsCSV += `${"\"" + file + itemName + ".png\""},${notes},${authors},${licenses},${urls}\n`;
+                const quotedShortName = '"' + file + itemName + '.png"';
+                listItemsCSV += `${quotedShortName},${notes},${authors},${licenses},${urls}\n`;
                 addedCreditsFor.push(imageFileName);
               }
             } else {
@@ -173,37 +211,38 @@ function parseJson(json) {
 }
 
 var lineReader = readline.createInterface({
-  input: fs.createReadStream('sources/source_index.html')
+  input: fs.createReadStream("sources/source_index.html"),
 });
-var htmlGenerated = '<!-- THIS FILE IS AUTO-GENERATED. PLEASE DONT ALTER IT MANUALLY -->\n';
-var csvGenerated = "filename,notes,authors,licenses,urls\n"
+var htmlGenerated =
+  "<!-- THIS FILE IS AUTO-GENERATED. PLEASE DONT ALTER IT MANUALLY -->\n";
+var csvGenerated = "filename,notes,authors,licenses,urls\n";
 
-lineReader.on('line', function (line) {
-  if (line.includes('div_sheet_')) {
-    const definition = line.replace("div_sheet_","");
-    const parsedResult = parseJson(`${definition}.json`.replaceAll("\t", ""));
+lineReader.on("line", function (line) {
+  if (line.includes("div_sheet_")) {
+    const definition = line.replace("div_sheet_", "");
+    const parsedResult = parseJson(definition.replaceAll("\t", ""));
     const newLineHTML = parsedResult.html;
-    htmlGenerated+=newLineHTML+"\n";
-    csvGenerated+=parsedResult.csv;
+    htmlGenerated += newLineHTML + "\n";
+    csvGenerated += parsedResult.csv;
   } else {
-    htmlGenerated+=line+"\n";
+    htmlGenerated += line + "\n";
   }
 });
 
-lineReader.on('close', function (line) {
-  fs.writeFile('index.html', htmlGenerated, function(err) {
+lineReader.on("close", function (line) {
+  fs.writeFile("index.html", htmlGenerated, function (err) {
     if (err) {
-        return console.log(err);
+      return console.error(err);
     } else {
-        console.log('HTML Updated!');
+      console.log("HTML Updated!");
     }
   });
-  fs.writeFile('CREDITS.csv', csvGenerated, function(err) {
+  fs.writeFile("CREDITS.csv", csvGenerated, function (err) {
     if (err) {
-        return console.log(err);
+      return console.error(err);
     } else {
-        console.log('CSV Updated!');
-        console.log('Found licenses:', licensesFound)
+      console.log("CSV Updated!");
+      console.log("Found licenses:", licensesFound);
     }
   });
 });
