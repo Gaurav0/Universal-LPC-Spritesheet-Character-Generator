@@ -14,13 +14,13 @@ Although this particular repository focuses on character sprites, LPC includes m
 
 The concept of the Liberated Pixel Cup was introduced by Bart Kelsey and Chris Webber. It was originally a competition on [OpenGameArt.org](https://opengameart.org) sponsored by Creative Commons, Mozilla, and the Free Software Foundation. (Note: These organizations do not sponsor and are not involved with this generator.) The idea was to create a body of artwork with a common [style](https://lpc.opengameart.org/static/LPC-Style-Guide/build/index.html).
 
-This was originally based on https://github.com/makrohn/Universal-LPC-spritesheet, which contained an xcf file combining all the assets from pngs. That repository was originally included in this repository as a submodule, and probably represented the first (albeit offline) LPC Spritesheet Generator. Thanks to @makrohn for creating it.
+This was originally based on https://github.com/makrohn/Universal-LPC-spritesheet, which contained an xcf file combining all the assets from pngs. That repository was originally included in this repository as a submodule, and probably represented the first (albeit offline) LPC Spritesheet Generator. Thanks to [@makrohn](https://github.com/makrohn) for creating it.
 
-@Gaurav0 was the original author of this repository. However, life came in the way and he did not keep up with maintaining it. Thanks to @sanderfrenken for maintaining the primary fork of the repository for many years.
+[@Gaurav0](https://github.com/Gaurav0) was the original author of this repository. However, life came in the way and he did not keep up with maintaining it. Thanks to [@sanderfrenken](https://github.com/sanderfrenken) for maintaining the primary fork of the repository for many years.
 
-@jrconway3 and @bluecarrot16 have been the key art focused maintainers of the repository.
+[@jrconway3](https://github.com/jrconway3) and [@bluecarrot16](https://github.com/bluecarrot16) have been the key art focused maintainers of the repository.
 
-@ElizaWy has revised and expanded the LPC paradigm. See https://github.com/ElizaWy/LPC
+[@ElizaWy](https://github.com/ElizaWy) has revised and expanded the LPC paradigm. See https://github.com/ElizaWy/LPC
 
 ### Licensing and Attribution (Credits)
 
@@ -70,111 +70,7 @@ If you don't want to *show* the entire credits file directly, should include a s
 
 **For additional information on the licensing and attribution requirement, please refer here on [OpenGameArt.org](https://opengameart.org/content/faq#q-proprietary).**
 
-### Contributing
-
-**Important: all art submitted to this project must be available under one of the supported licenses, see above section `Licensing and Attribution (Credits)`.**
-
-- If you are submitting art that was made by (or derived from work made by) someone else, please be sure that you have the rights to distribute that art under the licenses you choose.
-
-- When adding new artwork to this project, please add valid licensing information inside the json files as well (part of the *credits* object). Note the entire list of authors for that image, a URL for each piece of art from which this image is derived, and a list of licenses under which the art is available.
-
-- While it is recommended that all new artwork follows either the refined [style guide](https://bztsrc.gitlab.io/lpc-refined/), or the [revised guide](https://github.com/ElizaWy/LPC/wiki/Style-Guide), it is not required.
-
-This information must be part of the JSON definition for the assets, for instance:
-
-```
-  "credits": [
-    {
-      "file": "arms/hands/ring/stud",
-      "notes": "",
-      "authors": [
-        "bluecarrot16"
-      ],
-      "licenses": [
-        "CC0"
-      ],
-      "urls": [
-        "https://opengameart.org/content/lpc-jewelry"
-      ]
-    }
-  ]
-```
-
-If you don't add license information for your newly added files, the generation of the site sources will fail.
-
-To add sheets to an existing category, add the sheets to the correct folder(s) in `spritesheets/`.
-In addition, locate the correct `sheet_definition` in `sheet_definitions/`, and add the name of your added sheet to the `variants` array.
-
-To add a new category, add the sheets to the correct folder(s) in `spritesheets/`.
-In addition, create a json file in `sheet_definitions/`, and define the required properties.
-For example, you have created at this point:
-
-`body_robot.json`
-
-A category can exist of n-layers. For each layer, define the z-position the sheet needs to be drawn at.
-For an example of a multi-layered definition, refer here [here](/sheet_definitions/tail_lizard.json).
-
-You can optionally also specify the available animations the asset supports. You do not have to feel obligated to fill out all animations, and some assets may not work well on all animations anyway. In the sheet definition, you can add the "animations" array below "variants". Again, refer here [here](/sheet_definitions/tail_lizard.json):
-```
-  "animations": [
-    "spellcast",
-    "thrust",
-    ...etc
-  ]
-```
-
-If you add this animations list, users can filter the results based on the animations supported. If this list is not included in your sheet definition, then it is assumed the default list of animations are all supported:
-```
-    "spellcast",
-    "thrust",
-    "walk",
-    "slash",
-    "shoot",
-    "hurt",
-    "watering",
-```
-
-As such, if you wish to include less than this list, such as only walk and slash, you should still include the animations definition to restrict it to just those assets. Users will still be able to access your asset, but it won't appear if the animations filter is used and you did not include that animation in your sheet definition.
-
-Finally, to get your sheet to appear, in `source_index.html`, add your new category at the desired position by adding a `div_sheet_` like this:
-
-`div_sheet_body_robot`
-
-Make sure the name starts with `div_sheet_`, and match the postfix with the name of your json, in this case `body_robot`.
-
-At this point, you will need to run a script that will generate the final `index.html`.
-In order to do that, run:
-
-`node scripts/generate_sources.js` 
-
-This will generate the `index.html` from the `source_index.html`.
-
-In case you want to push your changes, be sure to run this script and never change the `index.html` manually.
-The CI will reject any PR's that contain manual changes made on the `index.html`.
-
-#### z-positions
-
-In order to facilitate easier management of the z-positions of the assets in this repo, there is a [script](/scripts/zPositioning/parse_zpos.js) that traverses all JSON files and write's the layer's z-position to a CSV.
-
-To run this script, use:
-
-`node scripts/zPositioning/parse_zpos.js`
-
-This [CSV file](/scripts/zPositioning/z_positions.csv) will be regenerated each time one invokes:
-
-`node scripts/generate_sources.js`
-
-Therefore, before creating a PR, make sure you have committed the CSV to the repo as well.
-
-Using this CSV, one can more clearly see the overview of all the z-position used per asset's layer.
-
-Moreover, one can adjust the z-position from within the CSV, and then run:
-
-`node scripts/zPositioning/update_zpos.js`
-
-In order to reflect the changes made back into the JSON files.
-
-**Concluding, please remember that the JSON files will always contain the source of truth with regard to the z-position an asset will be rendered at. The CSV is there to give an overview of the z-positions in use, and provides a mean to easily alter them from a single file.**
+### [Contributing](CONTRIBUTING.md) ⤴
 
 ### Animation Frame Guide
 
@@ -216,10 +112,19 @@ You may instead wish to use a web server locally for development. Some free reco
   <dt>Universal LPC (ULPC)</dt>
   <dd>LPC originally expanded to add some new animation sizes and bases. This generator helped ensure that many assets covered all those bases and animations. LPC originally included only spellcast, slash, thrust, walk, shoot, and hurt animations for male and female adult bases. It also stuck to a standard 64x64 format. The most notable change in ULPC was to add weapons with oversize animation frames.</dd>
   <dt>LPC Revised (LPCR)</dt>
-  <dd>LPC changes proposed by @ElizaWy that in some cases changed the number and order of animation frames, a new color palette, and the smaller heads.</dd>
+  <dd>LPC changes proposed by [@ElizaWy](https://github.com/ElizaWy) that in some cases changed the number and order of animation frames, a new color palette, and the smaller heads.</dd>
   <dt>LPC Expanded (LPCE)</dt>
-  <dd>Additional expansion of animations and bases proposed by @ElizaWy and others. New animations included bow, climb, run, and jump. New bases included child and elderly. Many of the assets in this repository are not yet drawn for these new animations and bases. Help wanted.</dd>
+  <dd>Additional expansion of animations and bases proposed by [@ElizaWy](https://github.com/ElizaWy) and others. New animations included bow, climb, run, and jump. New bases included child and elderly. Many of the assets in this repository are not yet drawn for these new animations and bases. Help wanted.</dd>
 </dl>
+
+### Alternative LPC Character generators
+
+- https://pflat.itch.io/lpc-character-generator
+- https://vitruvianstudio.github.io/
+
+### Tools
+
+- [lpctools](https://github.com/bluecarrot16/lpctools)
 
 ### Examples
 ![example](/readme-images/example.png)
