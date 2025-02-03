@@ -117,5 +117,14 @@ You may instead wish to use a web server locally for development. Some free reco
   <dd>Additional expansion of animations and bases proposed by [@ElizaWy](https://github.com/ElizaWy) and others. New animations included bow, climb, run, and jump. New bases included child and elderly. Many of the assets in this repository are not yet drawn for these new animations and bases. Help wanted.</dd>
 </dl>
 
+### Alternative LPC Character generators
+
+- https://pflat.itch.io/lpc-character-generator
+- https://vitruvianstudio.github.io/
+
+### Tools
+
+- [lpctools](https://github.com/bluecarrot16/lpctools)
+
 ### Examples
 ![example](/readme-images/example.png)
