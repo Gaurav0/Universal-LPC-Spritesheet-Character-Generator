@@ -63,8 +63,14 @@ function parseJson(json) {
   const filePath = `sheet_definitions/${searchFileName}.json`;
   if (DEBUG && (!onlyIfTemplate || queryObj))
     console.log(`Parsing ${filePath}`);
-  const definition = JSON.parse(fs.readFileSync(filePath));
-  const { variants, name, credits, template } = definition;
+  let definition = null;
+  try {
+    definition = JSON.parse(fs.readFileSync(filePath));
+  } catch(e) {
+    console.error("error in", filePath);
+    throw e;
+  }
+  const { variants, name, credits, template, tags = [], excluded = [] } = definition;
   const typeName = definition.type_name;
   const defaultAnimations = [
     "spellcast",
@@ -127,6 +133,7 @@ function parseJson(json) {
           if (sex === requiredSexes[0]) {
             const zPos = definition[`layer_${jdx}`].zPos;
             dataFiles += `data-preview_row=${previewRow} data-preview_column=${previewColumn} data-preview_x_offset=${previewXOffset} data-preview_y_offset=${previewYOffset} data-layer_${jdx}_zpos=${zPos} `;
+            dataFiles += `data-tags="${tags.join(',')}" data-excluded="${excluded.join(',')}" `;
             const custom_animation = layerDefinition.custom_animation;
             if (custom_animation !== undefined) {
               dataFiles += `data-layer_${jdx}_custom_animation=${custom_animation} `;
@@ -218,7 +225,12 @@ let csvGenerated = "filename,notes,authors,licenses,urls\n";
 lineReader.on("line", function (line) {
   if (line.includes("div_sheet_")) {
     const definition = line.replace("div_sheet_", "");
-    const parsedResult = parseJson(definition.replaceAll("\t", ""));
+    let parsedResult = null
+    try {
+      parsedResult = parseJson(definition.replaceAll("\t", ""));
+    } catch(e) {
+      return;
+    }
     const newLineHTML = parsedResult.html;
     htmlGenerated += newLineHTML + "\n";
     csvGenerated += parsedResult.csv;

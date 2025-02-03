@@ -1,6 +1,7 @@
 {
   "name": "Heater Shield Trim",
   "type_name": "shield_trim",
+  "excluded": ["heater"],
   "layer_2": {
     "zPos": 6,
     "male": "shield/heater/original/trim/bg/",

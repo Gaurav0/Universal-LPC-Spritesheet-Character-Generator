@@ -877,6 +877,16 @@ $(document).ready(function () {
     const bodyType = getBodyTypeName();
     const selectedAnims = getSelectedAnimations();
     const allowedLicenses = getAllowedLicenses();
+
+    // only interested in tags if on a selected item
+    const selectedTags = new Set();
+    $("input[type=radio]:checked").each(function () {
+      const tags = $(this).data("tags");
+      tags && tags.split(",").forEach(tag =>
+        selectedTags.add(tag)
+      );
+    });
+
     let hasUnsupported = false;
     let hasProhibited = false;
 
@@ -966,6 +976,14 @@ $(document).ready(function () {
           }
         }
       }
+
+      // Toggle based on tags/excluded
+      const excluded = $this.data("excluded");
+      excluded?.split(",")?.forEach(tag => {
+        if (selectedTags.has(tag)) {
+          display = false;
+        }
+      });
 
       // Display Result
       if (display) {

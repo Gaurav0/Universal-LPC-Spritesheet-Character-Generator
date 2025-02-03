@@ -1,6 +1,7 @@
 {
   "name": "Revised Heater Shield Base",
   "type_name": "shield",
+  "tags": ["heater"],
   "layer_1": {
     "zPos": 2,
     "male": "shield/heater/revised/wood/bg/",
