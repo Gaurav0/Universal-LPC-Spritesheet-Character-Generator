@@ -70,7 +70,7 @@ If you don't want to *show* the entire credits file directly, should include a s
 
 **For additional information on the licensing and attribution requirement, please refer here on [OpenGameArt.org](https://opengameart.org/content/faq#q-proprietary).**
 
-### [Contributing](CONTRIBUTING.md)
+### [Contributing](CONTRIBUTING.md) ⤴
 
 ### Animation Frame Guide
 
