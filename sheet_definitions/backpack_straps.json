@@ -1,6 +1,9 @@
 {
   "name": "Straps",
   "type_name": "backpack_straps",
+  "tags": ["backpack_straps"],
+  "required_tags": ["backpack"],
+  "excluded_tags": ["cape", "wings"],
   "layer_1": {
     "zPos": 110,
     "male": "backpack/straps/male/",
