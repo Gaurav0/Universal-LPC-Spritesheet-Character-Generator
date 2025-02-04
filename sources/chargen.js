@@ -877,6 +877,8 @@ $(document).ready(function () {
     const bodyType = getBodyTypeName();
     const selectedAnims = getSelectedAnimations();
     const allowedLicenses = getAllowedLicenses();
+    const promises = [];
+    const lists = new Set();
 
     // only interested in tags if on a selected item
     const selectedTags = new Set();
@@ -988,7 +990,8 @@ $(document).ready(function () {
 
       // Display Result
       if (display) {
-        $this.show();
+        promises.push($this.show().promise());
+        lists.add($this);
       } else {
         $this.hide();
       }
@@ -1040,7 +1043,8 @@ $(document).ready(function () {
 
       // Display Result
       if (display) {
-        $this.parent().show();
+        promises.push($this.parent().show().promise());
+        lists.add($this);
       } else {
         $this.parent().hide();
       }
@@ -1056,6 +1060,14 @@ $(document).ready(function () {
       $(".removeIncompatibleWithLicenses").show();
     } else {
       $(".removeIncompatibleWithLicenses").hide();
+    }
+
+    if (promises.length > 0) {
+      Promise.allSettled(promises).finally(() => {
+        for (const $li of lists) {
+          drawPreviews.call($li.get(0));
+        }
+      });
     }
   }
 
