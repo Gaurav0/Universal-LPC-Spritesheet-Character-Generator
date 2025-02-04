@@ -579,7 +579,7 @@ $(document).ready(function () {
   function whichPropChecked(ids, key, vals) {
     const regExps = vals.map(val => new RegExp(String.raw`^${key}-${val}`, "i"));
     const els = findIdsByRegExp(ids, regExps);
-    for (const i = 0; i < vals.length; ++i) {
+    for (let i = 0; i < vals.length; ++i) {
       if (els[i] === true) {
         return vals[i];
       }
@@ -886,12 +886,14 @@ $(document).ready(function () {
         selectedTags.add(tag)
       );
     });
-    console.log('selectedTags', selectedTags);
 
     let hasUnsupported = false;
     let hasProhibited = false;
 
-    $("#chooser li").each(function (index) {
+    $("#chooser li[data-required]").each(function (index) {
+      let hasExcluded = false;
+      let excludedText = '';
+
       // Toggle Required Body Type
       const $this = $(this);
       const dataRequired = $this.data("required");
@@ -900,6 +902,40 @@ $(document).ready(function () {
         const requiredTypes = dataRequired.split(",");
         if (!requiredTypes.includes(bodyType)) {
           display = false;
+        }
+      }
+
+      if (display) {
+        // Toggle based on tags/required_tags
+        const $firstButton = $this
+        .find("input[type=radio][parentname]")
+        .eq(0);
+        if ($firstButton.length > 0) {
+          const requiredTags = $this
+            .find("input[type=radio]")
+            .data("required_tags");
+          requiredTags?.split(",")?.forEach(tag => {
+            if (tag && !selectedTags.has(tag)) {
+              display = false;
+            }
+          });
+        }
+      }
+
+      if (display) {
+        // Toggle based on tags/excluded_tags
+        const $firstButton = $this
+          .find("input[type=radio][parentname]")
+          .eq(0);
+        if ($firstButton.length > 0) {
+          const excludedTags = $firstButton
+            .data("excluded_tags");
+          excludedTags?.split(",")?.forEach(tag => {
+            if (tag && selectedTags.has(tag)) {
+              hasExcluded = true;
+              excludedText = `${$firstButton.attr("name")} is not allowed with ${tag}`;
+            }
+          });
         }
       }
 
@@ -956,9 +992,17 @@ $(document).ready(function () {
       } else {
         $this.hide();
       }
+
+      if (hasExcluded) {
+        $this.find('.excluded-hide').each(function() { $(this).hide().attr('hidden', 'hidden'); });
+        $this.find('.excluded-text').each(function() { $(this).show().attr('hidden', null).text(excludedText); });
+      } else {
+        $this.find('.excluded-hide').each(function() { $(this).show().attr('hidden', null); });
+        $this.find('.excluded-text').each(function() { $(this).hide().attr('hidden', 'hidden').text(''); });
+      }
     });
 
-    $("input[type=radio]").each(function () {
+    $("input[type=radio]:not(.none)").each(function () {
       const $this = $(this);
       let display = true;
 

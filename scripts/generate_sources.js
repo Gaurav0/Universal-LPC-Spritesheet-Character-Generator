@@ -109,7 +109,8 @@ function parseJson(json) {
 
   const endHTML = "</ul></li>";
 
-  let listItemsHTML = `<li><input type="radio" id="${typeName}-none_${name}" name="${typeName}"> <label for="${typeName}-none">No ${typeName}</label></li>`;
+  const id = `${typeName}-none_${name.replaceAll(' ', '_')}`;
+  let listItemsHTML = `<li class="excluded-hide"><input type="radio" id="${id}" name="${typeName}" class="none"> <label for="${id}">No ${typeName}</label></li><li class="excluded-text"></li>`;
   let listItemsCSV = "";
   const addedCreditsFor = [];
   for (const variant of variants) {
