@@ -1,6 +1,8 @@
 {
   "name": "Wood",
   "type_name": "cargo",
+  "tags": ["backpack_contents"],
+  "required_tags": ["backpack"],
   "layer_1": {
     "zPos": 140,
     "male": "backpack/basket_contents/wood/fg/",

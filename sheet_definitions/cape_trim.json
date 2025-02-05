@@ -1,6 +1,8 @@
 {
   "name": "Cape Trim",
   "type_name": "cape_trim",
+  "tags": ["cape_trim"],
+  "required_tags": ["cape"],
   "layer_1": {
     "zPos": 90,
     "female": "cape/trim/female/",

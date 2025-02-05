@@ -63,8 +63,15 @@ function parseJson(json) {
   const filePath = `sheet_definitions/${searchFileName}.json`;
   if (DEBUG && (!onlyIfTemplate || queryObj))
     console.log(`Parsing ${filePath}`);
-  const definition = JSON.parse(fs.readFileSync(filePath));
-  const { variants, name, credits, template } = definition;
+  let definition = null;
+  try {
+    definition = JSON.parse(fs.readFileSync(filePath));
+  } catch(e) {
+    console.error("error in", filePath);
+    throw e;
+  }
+  const { variants, name, credits, template, } = definition;
+  const { tags = [], required_tags = [], excluded_tags = [] } = definition;
   const typeName = definition.type_name;
   const defaultAnimations = [
     "spellcast",
@@ -102,7 +109,8 @@ function parseJson(json) {
 
   const endHTML = "</ul></li>";
 
-  let listItemsHTML = `<li><input type="radio" id="${typeName}-none_${name}" name="${typeName}"> <label for="${typeName}-none">No ${typeName}</label></li>`;
+  const id = `${typeName}-none_${name.replaceAll(' ', '_')}`;
+  let listItemsHTML = `<li class="excluded-hide"><input type="radio" id="${id}" name="${typeName}" class="none"> <label for="${id}">No ${typeName}</label></li><li class="excluded-text"></li>`;
   let listItemsCSV = "";
   const addedCreditsFor = [];
   for (const variant of variants) {
@@ -127,6 +135,7 @@ function parseJson(json) {
           if (sex === requiredSexes[0]) {
             const zPos = definition[`layer_${jdx}`].zPos;
             dataFiles += `data-preview_row=${previewRow} data-preview_column=${previewColumn} data-preview_x_offset=${previewXOffset} data-preview_y_offset=${previewYOffset} data-layer_${jdx}_zpos=${zPos} `;
+            dataFiles += `data-tags="${tags.join(',')}" data-required_tags="${required_tags.join(',')}" data-excluded_tags="${excluded_tags.join(',')}" `;
             const custom_animation = layerDefinition.custom_animation;
             if (custom_animation !== undefined) {
               dataFiles += `data-layer_${jdx}_custom_animation=${custom_animation} `;
@@ -218,7 +227,12 @@ let csvGenerated = "filename,notes,authors,licenses,urls\n";
 lineReader.on("line", function (line) {
   if (line.includes("div_sheet_")) {
     const definition = line.replace("div_sheet_", "");
-    const parsedResult = parseJson(definition.replaceAll("\t", ""));
+    let parsedResult = null
+    try {
+      parsedResult = parseJson(definition.replaceAll("\t", ""));
+    } catch(e) {
+      return;
+    }
     const newLineHTML = parsedResult.html;
     htmlGenerated += newLineHTML + "\n";
     csvGenerated += parsedResult.csv;

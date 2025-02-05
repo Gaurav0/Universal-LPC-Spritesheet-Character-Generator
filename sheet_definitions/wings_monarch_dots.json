@@ -1,6 +1,8 @@
 {
   "name": "Monarch Wings Dots",
   "type_name": "wings_dots",
+  "tags": ["wings"],
+  "excluded_tags": ["backpack", "cape"],
   "layer_1": {
     "zPos": 86,
     "male": "body/wings/monarch/dots/fg/",

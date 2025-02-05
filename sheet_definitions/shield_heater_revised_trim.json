@@ -1,6 +1,7 @@
 {
   "name": "Revised Heater Shield Trim",
   "type_name": "shield_trim",
+  "required_tags": ["heater"],
   "layer_1": {
     "zPos": 6,
     "male": "shield/heater/revised/trim/bg/",

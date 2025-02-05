@@ -1,6 +1,8 @@
 {
   "name": "Batlike Lizard Wings",
   "type_name": "wings",
+  "tags": ["wings"],
+  "excluded_tags": ["backpack", "cape"],
   "layer_1": {
     "zPos": 105,
     "male": "body/wings/bat/lizard/adult/fg/",

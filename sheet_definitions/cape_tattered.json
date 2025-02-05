@@ -1,6 +1,8 @@
 {
   "name": "Tattered",
   "type_name": "cape",
+  "tags": ["cape"],
+  "excluded_tags": ["backpack", "wings"],
   "layer_1": {
     "zPos": 85,
     "male": "cape/tattered/female/",
