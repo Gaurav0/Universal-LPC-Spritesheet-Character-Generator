@@ -10,6 +10,8 @@ require("child_process").fork("scripts/zPositioning/parse_zpos.js");
 const es6DynamicTemplate = (templateString, templateVariables) =>
   templateString.replace(/\${(.*?)}/g, (_, g) => templateVariables[g]);
 
+const templateHTML = fs.readFileSync("scripts/template-general.html", "utf8");
+
 const licensesFound = [];
 function searchCredit(fileName, credits, origFileName) {
   if (credits.count <= 0) {
@@ -99,107 +101,113 @@ function parseJson(json) {
   }
 
   const requiredSex = requiredSexes.join(",");
-  const supportedAnimations = animations.join(",");
+  const supportedAnimations = animations.join(",");  const snakeName = name.replaceAll(" ", "_");
+  let idFor = `${typeName}-${snakeName}`;
+  if (queryObj) {
+    const vals = Object.values(queryObj)
+      .map(val => val.replaceAll(" ", "_"))
+      .join("_");
+    idFor = `${typeName}-${snakeName}_${vals}`;
+  }
 
-  const startHTML =
-    `<li data-required="[REQUIRED_SEX]" data-animations="[SUPPORTED_ANIMATIONS]"><span class="condensed">${name}</span><ul>`
+  let startHTML =
+    `<li id="[ID_FOR]" class="variant-list" data-required="[REQUIRED_SEX]" data-animations="[SUPPORTED_ANIMATIONS]"><span class="condensed">${name}</span><ul>`
+      .replace("[ID_FOR]", idFor)
       .replace("[REQUIRED_SEX]", requiredSex)
       .replace("[SUPPORTED_ANIMATIONS]", supportedAnimations);
-  const templateHTML = fs.readFileSync("scripts/template-general.html", "utf8");
 
   const endHTML = "</ul></li>";
+  
+  let listCreditToUse = "";
 
   const id = `${typeName}-none_${name.replaceAll(' ', '_')}`;
   let listItemsHTML = `<li class="excluded-hide"><input type="radio" id="${id}" name="${typeName}" class="none"> <label for="${id}">No ${typeName}</label></li><li class="excluded-text"></li>`;
   let listItemsCSV = "";
   const addedCreditsFor = [];
   for (const variant of variants) {
-    const snakeName = name.replaceAll(" ", "_");
-    const snakeItemName = variant.replaceAll(" ", "_")
-    let itemIdFor = `${typeName}-${snakeName}_${snakeItemName}`;
-    if (queryObj) {
-      const vals = Object.values(queryObj)
-        .map(val => val.replaceAll(" ", "_"))
-        .join("_");
-      itemIdFor = `${typeName}-${snakeName}_${vals}_${snakeItemName}`;
-    }
+    const snakeItemName = variant.replaceAll(" ", "_");
+    const itemIdFor = `${idFor}_${snakeItemName}`;
     let matchBodyColor = false;
     if (definition[`match_body_color`] !== undefined) {
       matchBodyColor = true;
     }
     let dataFiles = "";
     for (const sex of requiredSexes) {
+      // TODO: move any non-layer, non-variant specific code here!
       for (jdx = 1; jdx < 10; jdx++) {
         const layerDefinition = definition[`layer_${jdx}`];
-        if (layerDefinition !== undefined) {
-          if (sex === requiredSexes[0]) {
-            const zPos = definition[`layer_${jdx}`].zPos;
-            dataFiles += `data-preview_row=${previewRow} data-preview_column=${previewColumn} data-preview_x_offset=${previewXOffset} data-preview_y_offset=${previewYOffset} data-layer_${jdx}_zpos=${zPos} `;
-            dataFiles += `data-tags="${tags.join(',')}" data-required_tags="${required_tags.join(',')}" data-excluded_tags="${excluded_tags.join(',')}" `;
-            const custom_animation = layerDefinition.custom_animation;
-            if (custom_animation !== undefined) {
-              dataFiles += `data-layer_${jdx}_custom_animation=${custom_animation} `;
-            }
-          }
-          const file = layerDefinition[sex];
-          if (file !== null && file !== "") {
-            let imageFileName =
-              '"' + file + snakeItemName + '.png" ';
-            let fileNameForCreditSearch = file + snakeItemName;
-            if (queryObj) {
-              fileNameForCreditSearch = es6DynamicTemplate(
-                fileNameForCreditSearch,
-                queryObj
-              );
-              imageFileName = es6DynamicTemplate(imageFileName, queryObj);
-            }
-            if (DEBUG && (!onlyIfTemplate || queryObj))
-              console.log(
-                `Searching for credits to use for ${imageFileName} in ${fileNameForCreditSearch} for layer ${jdx}`
-              );
-            const creditToUse = searchCredit(
-              fileNameForCreditSearch,
-              credits,
-              fileNameForCreditSearch
-            );
-            if (DEBUG && (!onlyIfTemplate || queryObj))
-              console.log(
-                `file name set for ${sex} is ${imageFileName} for layer ${jdx}`
-              );
-            dataFiles += `data-layer_${jdx}_${sex}=${imageFileName} `;
-            if (template) {
-              const mungedTemplate = JSON.stringify(template)
-                .replace(/"/g, "'");
-              dataFiles += `data-layer_${jdx}_template="${mungedTemplate}" `;
-            }
-            if (creditToUse !== undefined) {
-              for (license in creditToUse.licenses) {
-                if (!licensesFound.includes(license)) {
-                  licensesFound.push(license);
-                }
-              }
-              const licenses = '"' + creditToUse.licenses.join(",") + '" ';
-              dataFiles += `data-layer_${jdx}_${sex}_licenses=${licenses} `;
-              const authors = '"' + creditToUse.authors.join(",") + '" ';
-              dataFiles += `data-layer_${jdx}_${sex}_authors=${authors} `;
-              const urls = '"' + creditToUse.urls.join(",") + '" ';
-              dataFiles += `data-layer_${jdx}_${sex}_urls=${urls} `;
-              const notes =
-                '"' + creditToUse.notes.replaceAll('"', "**") + '" ';
-              dataFiles += `data-layer_${jdx}_${sex}_notes=${notes} `;
-              if (!addedCreditsFor.includes(imageFileName)) {
-                const quotedShortName = '"' + file + variant + '.png"';
-                listItemsCSV += `${quotedShortName},${notes},${authors},${licenses},${urls}\n`;
-                addedCreditsFor.push(imageFileName);
-              }
-            } else {
-              throw Error(`missing credit inside ${json}`);
-            }
-          }
-        } else {
+        if (layerDefinition === undefined) {
           break;
         }
-      }
+        if (sex === requiredSexes[0]) {
+          const zPos = definition[`layer_${jdx}`].zPos;
+          dataFiles += `data-preview_row=${previewRow} data-preview_column=${previewColumn} data-preview_x_offset=${previewXOffset} data-preview_y_offset=${previewYOffset} data-layer_${jdx}_zpos=${zPos} `;
+          dataFiles += `data-tags="${tags.join(',')}" data-required_tags="${required_tags.join(',')}" data-excluded_tags="${excluded_tags.join(',')}" `;
+          const custom_animation = layerDefinition.custom_animation;
+          if (custom_animation !== undefined) {
+            dataFiles += `data-layer_${jdx}_custom_animation=${custom_animation} `;
+          }
+        }
+        const file = layerDefinition[sex];
+        if (file !== null && file !== "") {
+          let imageFileName =
+            '"' + file + snakeItemName + '.png" ';
+          let fileNameForCreditSearch = file + snakeItemName;
+          if (queryObj) {
+            fileNameForCreditSearch = es6DynamicTemplate(
+              fileNameForCreditSearch,
+              queryObj
+            );
+            imageFileName = es6DynamicTemplate(imageFileName, queryObj);
+          }
+          if (DEBUG && (!onlyIfTemplate || queryObj))
+            console.log(
+              `Searching for credits to use for ${imageFileName} in ${fileNameForCreditSearch} for layer ${jdx}`
+            );
+          const creditToUse = searchCredit(
+            fileNameForCreditSearch,
+            credits,
+            fileNameForCreditSearch
+          );
+          if (DEBUG && (!onlyIfTemplate || queryObj))
+            console.log(
+              `file name set for ${sex} is ${imageFileName} for layer ${jdx}`
+            );
+          dataFiles += `data-layer_${jdx}_${sex}=${imageFileName} `;
+          if (template) {
+            const mungedTemplate = JSON.stringify(template)
+              .replace(/"/g, "'");
+            dataFiles += `data-layer_${jdx}_template="${mungedTemplate}" `;
+          }
+          if (creditToUse !== undefined) {
+            // comparing via JSON.stringify is faster than node-deep-equal library
+            if (listCreditToUse === "" || JSON.stringify(listCreditToUse) !== JSON.stringify(creditToUse)) {
+              listCreditToUse = creditToUse
+            }
+            for (license in creditToUse.licenses) {
+              if (!licensesFound.includes(license)) {
+                licensesFound.push(license);
+              }
+            }
+            const licenses = '"' + creditToUse.licenses.join(",") + '" ';
+            dataFiles += `data-layer_${jdx}_${sex}_licenses=${licenses} `;
+            const authors = '"' + creditToUse.authors.join(",") + '" ';
+            dataFiles += `data-layer_${jdx}_${sex}_authors=${authors} `;
+            const urls = '"' + creditToUse.urls.join(",") + '" ';
+            dataFiles += `data-layer_${jdx}_${sex}_urls=${urls} `;
+            const notes =
+              '"' + creditToUse.notes.replaceAll('"', "**") + '" ';
+            dataFiles += `data-layer_${jdx}_${sex}_notes=${notes} `;
+            if (!addedCreditsFor.includes(imageFileName)) {
+              const quotedShortName = '"' + file + variant + '.png"';
+              listItemsCSV += `${quotedShortName},${notes},${authors},${licenses},${urls}\n`;
+              addedCreditsFor.push(imageFileName);
+            }
+          } else {
+            throw Error(`missing credit inside ${json}`);
+          } // if creditToUse
+        } // if file
+      } // for jdx
     }
     listItemsHTML += templateHTML
       .replaceAll("[ID_FOR]", itemIdFor)
@@ -209,13 +217,13 @@ function parseJson(json) {
       .replaceAll("[MATCH_BODY_COLOR]", matchBodyColor)
       .replaceAll("[VARIANT]", variant)
       .replaceAll("[DATA_FILE]", dataFiles);
-  }
+  } // for variant
   const html = startHTML + listItemsHTML + endHTML;
   let parsed = {};
   parsed.html = html;
   parsed.csv = listItemsCSV;
   return parsed;
-}
+} // fn parseJson
 
 const lineReader = readline.createInterface({
   input: fs.createReadStream("sources/source_index.html"),
