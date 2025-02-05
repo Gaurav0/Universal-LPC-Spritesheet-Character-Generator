@@ -118,6 +118,7 @@ function parseJson(json) {
 
   const endHTML = "</ul></li>";
   
+  let canUseListCredits = true;
   let listCreditToUse = null;
   let listDataFiles = "";
 
@@ -182,8 +183,12 @@ function parseJson(json) {
           }
           if (creditToUse !== undefined) {
             // comparing via JSON.stringify is faster than node-deep-equal library
-            if (listCreditToUse === null || JSON.stringify(listCreditToUse) !== JSON.stringify(creditToUse)) {
-              listCreditToUse = creditToUse
+            if (listCreditToUse !== null &&
+                JSON.stringify(listCreditToUse) !== JSON.stringify(creditToUse))
+            {
+              canUseListCredits = false;
+            } else if (listCreditToUse === null) {
+              listCreditToUse = creditToUse;
             }
             for (license in creditToUse.licenses) {
               if (!licensesFound.includes(license)) {
@@ -191,14 +196,16 @@ function parseJson(json) {
               }
             }
             const licenses = '"' + creditToUse.licenses.join(",") + '" ';
-            // dataFiles += `data-layer_${jdx}_${sex}_licenses=${licenses} `;
             const authors = '"' + creditToUse.authors.join(",") + '" ';
-            // dataFiles += `data-layer_${jdx}_${sex}_authors=${authors} `;
             const urls = '"' + creditToUse.urls.join(",") + '" ';
-            // dataFiles += `data-layer_${jdx}_${sex}_urls=${urls} `;
             const notes =
               '"' + creditToUse.notes.replaceAll('"', "**") + '" ';
-            // dataFiles += `data-layer_${jdx}_${sex}_notes=${notes} `;
+            if (!canUseListCredits) {
+              dataFiles += `data-layer_${jdx}_${sex}_licenses=${licenses} `;
+              dataFiles += `data-layer_${jdx}_${sex}_authors=${authors} `;
+              dataFiles += `data-layer_${jdx}_${sex}_urls=${urls} `;
+              dataFiles += `data-layer_${jdx}_${sex}_notes=${notes} `;
+            }
             if (!addedCreditsFor.includes(imageFileName)) {
               const quotedShortName = '"' + file + variant + '.png"';
               listItemsCSV += `${quotedShortName},${notes},${authors},${licenses},${urls}\n`;

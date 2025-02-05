@@ -109,7 +109,7 @@ $(document).ready(function () {
   nextFrame();
 
   // set params and redraw when any radio button is clicked on
-  $("input[type=radio]").each(function () {
+  $("#chooser input[type=radio]").each(function () {
     $(this).click(function () {
       if (matchBodyColor) {
         matchBodyColorForThisAsset = $(this).attr("matchBodyColor");
@@ -239,12 +239,16 @@ $(document).ready(function () {
 
   $(".removeIncompatibleWithLicenses").click(function () {
     const allowedLicenses = getAllowedLicenses();
+    const bodyTypeName = getBodyTypeName();
     $("#chooser li.variant").each(function () {
       const $this = $(this);
-      const licenses = $this.data(`${getBodyTypeName()}_licenses`);
+      let licenses = $this.data(`${bodyTypeName}_licenses`);
       $this.find("input[type=radio]").each(function () {
         const $parent = $this;
         const $el = $(this);
+        // check if variant specific license; otherwise fall back to list licenses
+        licenses = $(this).data(`layer_1_${bodyTypeName}_licenses`) || licenses;
+
         // Toggle allowed licenses
         if (licenses !== undefined) {
           const licensesForAsset = licenses.split(",");
@@ -268,7 +272,7 @@ $(document).ready(function () {
 
   $(".removeUnsupported").click(function () {
     const selectedAnims = getSelectedAnimations();
-    $("input[type=radio]").each(function () {
+    $("#chooser input[type=radio]").each(function () {
       const $li = $(this).closest("li[data-animations]");
       if ($li.data("animations") && selectedAnims.length > 0) {
         const requiredAnimations = $li.data("animations").split(",");
@@ -646,7 +650,7 @@ $(document).ready(function () {
     };
 
     zPosition = 0;
-    $("input[type=radio]:checked").each(function (index) {
+    $("#chooser input[type=radio]:checked").each(function (index) {
       const $this = $(this);
       for (jdx = 1; jdx < 10; jdx++) {
         const bodyTypeKey = `layer_${jdx}_${bodyTypeName}`;
@@ -658,10 +662,10 @@ $(document).ready(function () {
           const name = $this.attr(`parentName`);
           const variant = $this.attr(`variant`);
           const $liVariant = $this.closest("li.variant");
-          const licenses = $liVariant.data(`${bodyTypeName}_licenses`);
-          const authors = $liVariant.data(`${bodyTypeName}_authors`);
-          const urls = $liVariant.data(`${bodyTypeName}_urls`);
-          const notes = $liVariant.data(`${bodyTypeName}_notes`);
+          const licenses = $this.data(`${bodyTypeKey}_licenses`) || $liVariant.data(`${bodyTypeName}_licenses`);
+          const authors = $this.data(`${bodyTypeKey}_authors`) || $liVariant.data(`${bodyTypeName}_authors`);
+          const urls = $this.data(`${bodyTypeKey}_urls`) || $liVariant.data(`${bodyTypeName}_urls`);
+          const notes = $this.data(`${bodyTypeKey}_notes`) || $liVariant.data(`${bodyTypeName}_notes`);
 
           if (fileName !== "") {
             const supportedAnimations = $this
@@ -888,7 +892,7 @@ $(document).ready(function () {
 
     // only interested in tags if on a selected item
     const selectedTags = new Set();
-    $("input[type=radio]:checked").each(function () {
+    $("#chooser input[type=radio]:checked").each(function () {
       const tags = $(this).data("tags");
       tags && tags.split(",").forEach(tag =>
         selectedTags.add(tag)
@@ -1016,9 +1020,10 @@ $(document).ready(function () {
       let display = true;
 
       // Toggle allowed licenses
-      const licenses = $this
-        .closest("li.variant")
-        .data(`${getBodyTypeName()}_licenses`);
+      const bodyTypeName = getBodyTypeName();
+      const licenses =
+        $this.data(`layer_1_${bodyTypeName}_licenses`) ||
+        $this.closest("li.variant").data(`${bodyTypeName}_licenses`);
       if (licenses !== undefined) {
         const licensesForAsset = licenses.split(",");
         if (
@@ -1080,18 +1085,18 @@ $(document).ready(function () {
   }
 
   function interpretParams() {
-    $("input[type=radio]").each(function () {
+    $("#chooser input[type=radio]").each(function () {
       const words = $(this).attr("id").split("-");
       const initial = words[0];
       $(this).prop(
         "checked",
-        $(this).attr("checked") || params[initial] == words[1]
+        $(this).attr("checked") || params[initial] === words[1]
       );
     });
   }
 
   function setParams() {
-    $("input[type=radio]:checked").each(function () {
+    $("#chooser input[type=radio]:checked").each(function () {
       const words = $(this).attr("id").split("-");
       const initial = words[0];
       if (!$(this).attr("checked") || params[initial]) {
