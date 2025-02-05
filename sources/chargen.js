@@ -240,7 +240,7 @@ $(document).ready(function () {
   $(".removeIncompatibleWithLicenses").click(function () {
     const allowedLicenses = getAllowedLicenses();
     const bodyTypeName = getBodyTypeName();
-    $("#chooser li.variant").each(function () {
+    $("#chooser li.variant-list").each(function () {
       const $this = $(this);
       let licenses = $this.data(`${bodyTypeName}_licenses`);
       $this.find("input[type=radio]").each(function () {
@@ -325,7 +325,7 @@ $(document).ready(function () {
     document.body.appendChild(a);
     a.innerHTML = "dummyhtml";
     a.click();
-    document.removeChild(a);
+    document.body.removeChild(a);
   });
 
   $(".importFromClipboard").click(async function () {
@@ -655,13 +655,13 @@ $(document).ready(function () {
       for (jdx = 1; jdx < 10; jdx++) {
         const bodyTypeKey = `layer_${jdx}_${bodyTypeName}`;
         if ($this.data(bodyTypeKey)) {
+          const $liVariant = $this.closest("li.variant-list");
           const zPos = $this.data(`layer_${jdx}_zpos`);
           const custom_animation = $this.data(`layer_${jdx}_custom_animation`);
-          const fileName = $this.data(bodyTypeKey);
+          const fileName = $this.data(bodyTypeKey) || $liVariant.data();
           const parentName = $this.attr(`name`);
           const name = $this.attr(`parentName`);
           const variant = $this.attr(`variant`);
-          const $liVariant = $this.closest("li.variant");
           const licenses = $this.data(`${bodyTypeKey}_licenses`) || $liVariant.data(`${bodyTypeName}_licenses`);
           const authors = $this.data(`${bodyTypeKey}_authors`) || $liVariant.data(`${bodyTypeName}_authors`);
           const urls = $this.data(`${bodyTypeKey}_urls`) || $liVariant.data(`${bodyTypeName}_urls`);
@@ -1023,7 +1023,7 @@ $(document).ready(function () {
       const bodyTypeName = getBodyTypeName();
       const licenses =
         $this.data(`layer_1_${bodyTypeName}_licenses`) ||
-        $this.closest("li.variant").data(`${bodyTypeName}_licenses`);
+        $this.closest("li.variant-list").data(`${bodyTypeName}_licenses`);
       if (licenses !== undefined) {
         const licensesForAsset = licenses.split(",");
         if (
