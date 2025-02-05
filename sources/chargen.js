@@ -239,22 +239,27 @@ $(document).ready(function () {
 
   $(".removeIncompatibleWithLicenses").click(function () {
     const allowedLicenses = getAllowedLicenses();
-    $("input[type=radio]").each(function () {
-      // Toggle allowed licenses
-      const licenses = $(this).data(`layer_1_${getBodyTypeName()}_licenses`);
-      if (licenses !== undefined) {
-        const licensesForAsset = licenses.split(",");
-        if (
-          !allowedLicenses.some((allowedLicense) =>
-            licensesForAsset.includes(allowedLicense)
-          )
-        ) {
-          if ($(this).prop("checked")) {
-            $(this).attr("checked", false).prop("checked", false);
-            $(this).closest("ul").find("input[type=radio][id*=none]").click();
+    $("#chooser li.variant").each(function () {
+      const $this = $(this);
+      const licenses = $this.data(`${getBodyTypeName()}_licenses`);
+      $this.find("input[type=radio]").each(function () {
+        const $parent = $this;
+        const $el = $(this);
+        // Toggle allowed licenses
+        if (licenses !== undefined) {
+          const licensesForAsset = licenses.split(",");
+          if (
+            !allowedLicenses.some((allowedLicense) =>
+              licensesForAsset.includes(allowedLicense)
+            )
+          ) {
+            if ($el.prop("checked")) {
+              $el.attr("checked", false).prop("checked", false);
+              $parent.find("input[type=radio][id*=none]").click();
+            }
           }
         }
-      }
+      });
     });
     setParams();
     redraw();
@@ -652,10 +657,11 @@ $(document).ready(function () {
           const parentName = $this.attr(`name`);
           const name = $this.attr(`parentName`);
           const variant = $this.attr(`variant`);
-          const licenses = $this.data(`${bodyTypeKey}_licenses`);
-          const authors = $this.data(`${bodyTypeKey}_authors`);
-          const urls = $this.data(`${bodyTypeKey}_urls`);
-          const notes = $this.data(`${bodyTypeKey}_notes`);
+          const $liVariant = $this.closest("li.variant");
+          const licenses = $liVariant.data(`${bodyTypeName}_licenses`);
+          const authors = $liVariant.data(`${bodyTypeName}_authors`);
+          const urls = $liVariant.data(`${bodyTypeName}_urls`);
+          const notes = $liVariant.data(`${bodyTypeName}_notes`);
 
           if (fileName !== "") {
             const supportedAnimations = $this
@@ -1010,7 +1016,9 @@ $(document).ready(function () {
       let display = true;
 
       // Toggle allowed licenses
-      const licenses = $this.data(`layer_1_${getBodyTypeName()}_licenses`);
+      const licenses = $this
+        .closest("li.variant")
+        .data(`${getBodyTypeName()}_licenses`);
       if (licenses !== undefined) {
         const licensesForAsset = licenses.split(",");
         if (

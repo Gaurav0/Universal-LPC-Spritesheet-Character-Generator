@@ -111,14 +111,15 @@ function parseJson(json) {
   }
 
   let startHTML =
-    `<li id="[ID_FOR]" class="variant-list" data-required="[REQUIRED_SEX]" data-animations="[SUPPORTED_ANIMATIONS]"><span class="condensed">${name}</span><ul>`
+    `<li id="[ID_FOR]" class="variant-list" data-required="[REQUIRED_SEX]" data-animations="[SUPPORTED_ANIMATIONS]" [DATA_FILE]><span class="condensed">${name}</span><ul>`
       .replace("[ID_FOR]", idFor)
       .replace("[REQUIRED_SEX]", requiredSex)
       .replace("[SUPPORTED_ANIMATIONS]", supportedAnimations);
 
   const endHTML = "</ul></li>";
   
-  let listCreditToUse = "";
+  let listCreditToUse = null;
+  let listDataFiles = "";
 
   const id = `${typeName}-none_${name.replaceAll(' ', '_')}`;
   let listItemsHTML = `<li class="excluded-hide"><input type="radio" id="${id}" name="${typeName}" class="none"> <label for="${id}">No ${typeName}</label></li><li class="excluded-text"></li>`;
@@ -181,7 +182,7 @@ function parseJson(json) {
           }
           if (creditToUse !== undefined) {
             // comparing via JSON.stringify is faster than node-deep-equal library
-            if (listCreditToUse === "" || JSON.stringify(listCreditToUse) !== JSON.stringify(creditToUse)) {
+            if (listCreditToUse === null || JSON.stringify(listCreditToUse) !== JSON.stringify(creditToUse)) {
               listCreditToUse = creditToUse
             }
             for (license in creditToUse.licenses) {
@@ -190,14 +191,14 @@ function parseJson(json) {
               }
             }
             const licenses = '"' + creditToUse.licenses.join(",") + '" ';
-            dataFiles += `data-layer_${jdx}_${sex}_licenses=${licenses} `;
+            // dataFiles += `data-layer_${jdx}_${sex}_licenses=${licenses} `;
             const authors = '"' + creditToUse.authors.join(",") + '" ';
-            dataFiles += `data-layer_${jdx}_${sex}_authors=${authors} `;
+            // dataFiles += `data-layer_${jdx}_${sex}_authors=${authors} `;
             const urls = '"' + creditToUse.urls.join(",") + '" ';
-            dataFiles += `data-layer_${jdx}_${sex}_urls=${urls} `;
+            // dataFiles += `data-layer_${jdx}_${sex}_urls=${urls} `;
             const notes =
               '"' + creditToUse.notes.replaceAll('"', "**") + '" ';
-            dataFiles += `data-layer_${jdx}_${sex}_notes=${notes} `;
+            // dataFiles += `data-layer_${jdx}_${sex}_notes=${notes} `;
             if (!addedCreditsFor.includes(imageFileName)) {
               const quotedShortName = '"' + file + variant + '.png"';
               listItemsCSV += `${quotedShortName},${notes},${authors},${licenses},${urls}\n`;
@@ -218,6 +219,20 @@ function parseJson(json) {
       .replaceAll("[VARIANT]", variant)
       .replaceAll("[DATA_FILE]", dataFiles);
   } // for variant
+
+  for (const sex of requiredSexes) {
+    const licenses = '"' + listCreditToUse.licenses.join(",") + '" ';
+    listDataFiles += `data-${sex}_licenses=${licenses} `;
+    const authors = '"' + listCreditToUse.authors.join(",") + '" ';
+    listDataFiles += `data-${sex}_authors=${authors} `;
+    const urls = '"' + listCreditToUse.urls.join(",") + '" ';
+    listDataFiles += `data-${sex}_urls=${urls} `;
+    const notes =
+      '"' + listCreditToUse.notes.replaceAll('"', "**") + '" ';
+    listDataFiles += `data-${sex}_notes=${notes} `;
+  }
+  startHTML = startHTML.replaceAll("[DATA_FILE]", listDataFiles);
+
   const html = startHTML + listItemsHTML + endHTML;
   let parsed = {};
   parsed.html = html;
