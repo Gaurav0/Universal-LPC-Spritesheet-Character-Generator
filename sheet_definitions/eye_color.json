@@ -1,14 +1,31 @@
 {
-  "name": "Eyes",
-  "type_name": "eyes",
+  "name": "Eye Color",
+  "type_name": "eye_color",
+  "replace_in_path": {
+    "expression": {
+      "none": "default",
+      "Neutral": "default",
+      "Closing_Eyes": "closing",
+      "Closed_Eyes": "default",
+      "Looking_Left": "look_l",
+      "Looking_Right": "look_r",
+      "Rolling_Eyes": "eyeroll",
+      "Shock": "shock",
+      "Angry": "anger",
+      "Sad": "sad",
+      "Happy": "happy",
+      "Blush": "default",
+      "Shame": "default"
+    }
+  },
   "layer_1": {
     "zPos": 105,
-    "male": "eyes/human/adult/",
-    "muscular": "eyes/human/adult/",
-    "female": "eyes/human/adult/",
-    "teen": "eyes/human/adult/",
-    "pregnant": "eyes/human/adult/",
-    "child": "eyes/human/child/"
+    "male": "eyes/human/adult/${expression}/",
+    "muscular": "eyes/human/adult/${expression}/",
+    "female": "eyes/human/adult/${expression}/",
+    "teen": "eyes/human/adult/${expression}/",
+    "pregnant": "eyes/human/adult/${expression}/",
+    "child": "eyes/human/child/${expression}/"
   },
   "variants": [
     "blue",

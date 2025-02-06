@@ -2,7 +2,8 @@ const fs = require("fs");
 const readline = require("readline");
 
 const DEBUG = false; // change this to print debug log
-const onlyIfTemplate = true; // print debugging log only if there is a template
+const onlyIfTemplate = false; // print debugging log only if there is a template
+const onlyIfReplace = true; // print debugging log only if there is replace key
 
 require("child_process").fork("scripts/zPositioning/parse_zpos.js");
 
@@ -72,7 +73,7 @@ function parseJson(json) {
     console.error("error in", filePath);
     throw e;
   }
-  const { variants, name, credits, template, } = definition;
+  const { variants, name, credits, template, replace_in_path } = definition;
   const { tags = [], required_tags = [], excluded_tags = [] } = definition;
   const typeName = definition.type_name;
   const defaultAnimations = [
@@ -101,7 +102,8 @@ function parseJson(json) {
   }
 
   const requiredSex = requiredSexes.join(",");
-  const supportedAnimations = animations.join(",");  const snakeName = name.replaceAll(" ", "_");
+  const supportedAnimations = animations.join(",");
+  const snakeName = name.replaceAll(" ", "_");
   let idFor = `${typeName}-${snakeName}`;
   if (queryObj) {
     const vals = Object.values(queryObj)
@@ -181,6 +183,11 @@ function parseJson(json) {
               .replace(/"/g, "'");
             dataFiles += `data-layer_${jdx}_template="${mungedTemplate}" `;
           }
+          if (replace_in_path) {
+            const mungedReplace = JSON.stringify(replace_in_path)
+              .replace(/"/g, "'");
+            dataFiles += `data-layer_${jdx}_replace="${mungedReplace}" `;
+          }
           if (creditToUse !== undefined) {
             // comparing via JSON.stringify is faster than node-deep-equal library
             if (listCreditToUse !== null &&
@@ -221,7 +228,7 @@ function parseJson(json) {
       .replaceAll("[ID_FOR]", itemIdFor)
       .replaceAll("[TYPE_NAME]", typeName)
       .replaceAll("[NAME]", variant)
-      .replaceAll("[PARENT_NAME]", name)
+      .replaceAll("[PARENT_NAME]", name.replaceAll(" ", "_"))
       .replaceAll("[MATCH_BODY_COLOR]", matchBodyColor)
       .replaceAll("[VARIANT]", variant)
       .replaceAll("[DATA_FILE]", dataFiles);
