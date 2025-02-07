@@ -109,7 +109,7 @@ $(document).ready(function () {
   nextFrame();
 
   // set params and redraw when any radio button is clicked on
-  $("input[type=radio]").each(function () {
+  $("#chooser input[type=radio]").each(function () {
     $(this).click(function () {
       if (matchBodyColor) {
         matchBodyColorForThisAsset = $(this).attr("matchBodyColor");
@@ -239,22 +239,31 @@ $(document).ready(function () {
 
   $(".removeIncompatibleWithLicenses").click(function () {
     const allowedLicenses = getAllowedLicenses();
-    $("input[type=radio]").each(function () {
-      // Toggle allowed licenses
-      const licenses = $(this).data(`layer_1_${getBodyTypeName()}_licenses`);
-      if (licenses !== undefined) {
-        const licensesForAsset = licenses.split(",");
-        if (
-          !allowedLicenses.some((allowedLicense) =>
-            licensesForAsset.includes(allowedLicense)
-          )
-        ) {
-          if ($(this).prop("checked")) {
-            $(this).attr("checked", false).prop("checked", false);
-            $(this).closest("ul").find("input[type=radio][id*=none]").click();
+    const bodyTypeName = getBodyTypeName();
+    $("#chooser li.variant-list").each(function () {
+      const $this = $(this);
+      let licenses = $this.data(`${bodyTypeName}_licenses`);
+      $this.find("input[type=radio]").each(function () {
+        const $parent = $this;
+        const $el = $(this);
+        // check if variant specific license; otherwise fall back to list licenses
+        licenses = $(this).data(`layer_1_${bodyTypeName}_licenses`) || licenses;
+
+        // Toggle allowed licenses
+        if (licenses !== undefined) {
+          const licensesForAsset = licenses.split(",");
+          if (
+            !allowedLicenses.some((allowedLicense) =>
+              licensesForAsset.includes(allowedLicense)
+            )
+          ) {
+            if ($el.prop("checked")) {
+              $el.attr("checked", false).prop("checked", false);
+              $parent.find("input[type=radio][id*=none]").click();
+            }
           }
         }
-      }
+      });
     });
     setParams();
     redraw();
@@ -263,7 +272,7 @@ $(document).ready(function () {
 
   $(".removeUnsupported").click(function () {
     const selectedAnims = getSelectedAnimations();
-    $("input[type=radio]").each(function () {
+    $("#chooser input[type=radio]").each(function () {
       const $li = $(this).closest("li[data-animations]");
       if ($li.data("animations") && selectedAnims.length > 0) {
         const requiredAnimations = $li.data("animations").split(",");
@@ -316,7 +325,7 @@ $(document).ready(function () {
     document.body.appendChild(a);
     a.innerHTML = "dummyhtml";
     a.click();
-    document.removeChild(a);
+    document.body.removeChild(a);
   });
 
   $(".importFromClipboard").click(async function () {
@@ -641,21 +650,22 @@ $(document).ready(function () {
     };
 
     zPosition = 0;
-    $("input[type=radio]:checked").each(function (index) {
+    $("#chooser input[type=radio]:checked").each(function (index) {
       const $this = $(this);
       for (jdx = 1; jdx < 10; jdx++) {
         const bodyTypeKey = `layer_${jdx}_${bodyTypeName}`;
         if ($this.data(bodyTypeKey)) {
+          const $liVariant = $this.closest("li.variant-list");
           const zPos = $this.data(`layer_${jdx}_zpos`);
           const custom_animation = $this.data(`layer_${jdx}_custom_animation`);
-          const fileName = $this.data(bodyTypeKey);
+          const fileName = $this.data(bodyTypeKey) || $liVariant.data();
           const parentName = $this.attr(`name`);
           const name = $this.attr(`parentName`);
           const variant = $this.attr(`variant`);
-          const licenses = $this.data(`${bodyTypeKey}_licenses`);
-          const authors = $this.data(`${bodyTypeKey}_authors`);
-          const urls = $this.data(`${bodyTypeKey}_urls`);
-          const notes = $this.data(`${bodyTypeKey}_notes`);
+          const licenses = $this.data(`${bodyTypeKey}_licenses`) || $liVariant.data(`${bodyTypeName}_licenses`);
+          const authors = $this.data(`${bodyTypeKey}_authors`) || $liVariant.data(`${bodyTypeName}_authors`);
+          const urls = $this.data(`${bodyTypeKey}_urls`) || $liVariant.data(`${bodyTypeName}_urls`);
+          const notes = $this.data(`${bodyTypeKey}_notes`) || $liVariant.data(`${bodyTypeName}_notes`);
 
           if (fileName !== "") {
             const supportedAnimations = $this
@@ -882,7 +892,7 @@ $(document).ready(function () {
 
     // only interested in tags if on a selected item
     const selectedTags = new Set();
-    $("input[type=radio]:checked").each(function () {
+    $("#chooser input[type=radio]:checked").each(function () {
       const tags = $(this).data("tags");
       tags && tags.split(",").forEach(tag =>
         selectedTags.add(tag)
@@ -1010,7 +1020,10 @@ $(document).ready(function () {
       let display = true;
 
       // Toggle allowed licenses
-      const licenses = $this.data(`layer_1_${getBodyTypeName()}_licenses`);
+      const bodyTypeName = getBodyTypeName();
+      const licenses =
+        $this.data(`layer_1_${bodyTypeName}_licenses`) ||
+        $this.closest("li.variant-list").data(`${bodyTypeName}_licenses`);
       if (licenses !== undefined) {
         const licensesForAsset = licenses.split(",");
         if (
@@ -1072,18 +1085,18 @@ $(document).ready(function () {
   }
 
   function interpretParams() {
-    $("input[type=radio]").each(function () {
+    $("#chooser input[type=radio]").each(function () {
       const words = $(this).attr("id").split("-");
       const initial = words[0];
       $(this).prop(
         "checked",
-        $(this).attr("checked") || params[initial] == words[1]
+        $(this).attr("checked") || params[initial] === words[1]
       );
     });
   }
 
   function setParams() {
-    $("input[type=radio]:checked").each(function () {
+    $("#chooser input[type=radio]:checked").each(function () {
       const words = $(this).attr("id").split("-");
       const initial = words[0];
       if (!$(this).attr("checked") || params[initial]) {
