@@ -4,7 +4,7 @@
   "tags": ["wings"],
   "required_tags": ["monarch"],
   "layer_1": {
-    "zPos": 86,
+    "zPos": 106,
     "male": "body/wings/monarch/dots/fg/",
     "muscular": "body/wings/monarch/dots/fg/",
     "female": "body/wings/monarch/dots/fg/",

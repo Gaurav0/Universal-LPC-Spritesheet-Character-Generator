@@ -3,7 +3,7 @@
   "type_name": "wings",
   "tags": ["wings", "monarch"],
   "layer_1": {
-    "zPos": 85,
+    "zPos": 105,
     "male": "body/wings/monarch/base/fg/",
     "muscular": "body/wings/monarch/base/fg/",
     "female": "body/wings/monarch/base/fg/",
