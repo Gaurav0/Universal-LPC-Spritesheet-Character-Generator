@@ -5,6 +5,9 @@
   "required_tags": ["cape"],
   "layer_1": {
     "zPos": 90,
+    "male": "cape/trim/female/",
+    "muscular": "cape/trim/female/",
+    "teen": "cape/trim/female/",
     "female": "cape/trim/female/",
     "pregnant": "cape/trim/female/"
   },
