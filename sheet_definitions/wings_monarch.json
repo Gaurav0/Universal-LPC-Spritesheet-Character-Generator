@@ -1,8 +1,7 @@
 {
   "name": "Monarch Wings",
   "type_name": "wings",
-  "tags": ["wings"],
-  "excluded_tags": ["backpack", "cape"],
+  "tags": ["wings", "monarch"],
   "layer_1": {
     "zPos": 85,
     "male": "body/wings/monarch/base/fg/",

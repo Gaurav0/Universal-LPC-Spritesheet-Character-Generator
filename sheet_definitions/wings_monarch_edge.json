@@ -2,7 +2,7 @@
   "name": "Monarch Wings Edge",
   "type_name": "wings_edge",
   "tags": ["wings"],
-  "excluded_tags": ["backpack", "cape"],
+  "required_tags": ["monarch"],
   "layer_1": {
     "zPos": 86,
     "male": "body/wings/monarch/edge/fg/",
