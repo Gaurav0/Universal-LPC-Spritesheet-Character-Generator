@@ -2,6 +2,10 @@ $.expr[":"].icontains = function (a, i, m) {
   return jQuery(a).text().toUpperCase().indexOf(m[3].toUpperCase()) >= 0;
 };
 
+// copied from https://github.com/mikemaccana/dynamic-template/blob/046fee36aecc1f48cf3dc454d9d36bb0e96e0784/index.js
+const es6DynamicTemplate = (templateString, templateVariables) =>
+  templateString.replace(/\${(.*?)}/g, (_, g) => templateVariables[g]);
+
 // adapted from tiny-debounce
 // https://github.com/vuejs-tips/tiny-debounce/blob/ac7eb88715b9fb81124d4d5fa714abde0853dce9/index.js
 function debounce(fn, delay) {
@@ -107,6 +111,11 @@ $(document).ready(function () {
   redraw();
   showOrHideElements();
   nextFrame();
+
+  function getParent(id) {
+    const el = document.getElementById(id);
+    return el.getAttribute("parentname");
+  }
 
   // set params and redraw when any radio button is clicked on
   $("#chooser input[type=radio]").each(function () {
@@ -707,6 +716,35 @@ $(document).ready(function () {
     didStartRenderAfterLoad = false;
   }
 
+  function makeDynamicSubstitutions(fileName, $el, jdx) {
+    const mungedReplacements = $el.data(`layer_${jdx}_replace`);
+    if (mungedReplacements && fileName.includes('${')) {
+      const replacements = mungedReplacements.replace(/'/g, '"');
+      let parsedReplacements = null;
+      try {
+        parsedReplacements = JSON.parse(replacements);
+      } catch {
+        console.error("Error parsing template", replacements);
+      }
+      if (parsedReplacements) {
+        const keys = Object.keys(parsedReplacements);
+        const entries = keys.map(key => {
+          const id = `${key}-${jHash.val(key)}`;
+          return [key, parsedReplacements[key][getParent(id)]];
+        });
+        const replObj = Object.fromEntries(entries);
+        fileName = es6DynamicTemplate(fileName, replObj);
+      }
+    }
+    return fileName;
+  }
+
+  function dynamicReplacements(itemToDraw) {
+    const { fileName, name, parentName, variant } = itemToDraw;
+    const el = document.getElementById(`${parentName}-${name}_${variant}`);
+    itemToDraw.fileName = makeDynamicSubstitutions(fileName, $(el), 1);
+  }
+
   function loadItemsToDraw() {
     if (!canRender()) {
       return setTimeout(loadItemsToDraw, 100);
@@ -786,9 +824,12 @@ $(document).ready(function () {
       return parseInt(lhs.zPos) - parseInt(rhs.zPos);
     });
     for (item in itemsToDraw) {
-      const supportedAnimations = itemsToDraw[itemIdx].supportedAnimations;
-      const filePath = itemsToDraw[itemIdx].fileName;
-      const custom_animation = itemsToDraw[itemIdx].custom_animation;
+      const itemToDraw = itemsToDraw[itemIdx];
+      const supportedAnimations = itemToDraw.supportedAnimations;
+      const custom_animation = itemToDraw.custom_animation;
+
+      dynamicReplacements(itemToDraw);
+      const filePath = itemToDraw.fileName;
 
       if (custom_animation !== undefined) {
         const img = loadImage(filePath, false);
@@ -833,7 +874,7 @@ $(document).ready(function () {
             }
           }
           ctx.drawImage(customAnimationCanvas, 0, universalSheetHeight);
-          if (itemsToDraw[itemIdx].zPos >= 140) {
+          if (itemToDraw.zPos >= 140) {
             didPutUniversalForCustomAnimation = custom_animation;
           }
         }
@@ -1092,6 +1133,10 @@ $(document).ready(function () {
         "checked",
         $(this).attr("checked") || params[initial] === words[1]
       );
+      const $parent = $(this).closest("li.variant-list");
+      if ($parent.attr('open')) {
+        drawPreviews.call($parent.get(0));
+      }
     });
   }
 
@@ -1173,11 +1218,13 @@ $(document).ready(function () {
   }
 
   function drawImage(ctx, img, dy) {
-    try {
-      ctx.drawImage(img, 0, dy);
-      zPosition++;
-    } catch (err) {
-      if (DEBUG) console.error("Error: could not find " + img.src);
+    if (ctx && img) {
+      try {
+        ctx.drawImage(img, 0, dy);
+        zPosition++;
+      } catch (err) {
+        if (DEBUG) console.error("Error: could not find " + img.src);
+      }
     }
   }
 
@@ -1269,6 +1316,9 @@ $(document).ready(function () {
         for (jdx = 1; jdx < 10; jdx++) {
           imageLink = $this.data(`layer_${jdx}_${bodyTypeName}`);
           if (imageLink) {
+            imageLink = makeDynamicSubstitutions(imageLink, $this, jdx);
+
+            // custom animations
             if (animation === $this.data(`layer_${jdx}_custom_animation`)) {
               const previewToDraw = {};
               previewToDraw.link = updatePreviewLink(
