@@ -1,7 +1,7 @@
 {
   "name": "Christmas Hat",
   "type_name": "hat",
-  "tags": ["santa"],
+  "tags": ["santa", "santa_hat"],
   "layer_1": {
     "zPos": 130,
     "female": "hat/holiday/christmas/adult/",
