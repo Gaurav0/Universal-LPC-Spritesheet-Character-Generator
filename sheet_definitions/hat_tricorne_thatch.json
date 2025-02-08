@@ -1,6 +1,8 @@
 {
   "name": "Tricorne Thatching",
   "type_name": "hat_trim",
+  "tags": ["tricorne", "hat_trim", "thatching"],
+  "required_tags": ["tricorne_basic"],
   "layer_1": {
     "zPos": 131,
     "male": "hat/pirate/tricorne/basic/thatching/adult/",

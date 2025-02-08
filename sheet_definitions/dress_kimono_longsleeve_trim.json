@@ -1,6 +1,8 @@
 {
   "name": "Kimono Sleeves Trim",
   "type_name": "dress_sleeves_trim",
+  "tags": ["arms", "sleeves_trim"],
+  "required_tags": ["kimono_long_sleeves"],
   "layer_1": {
     "zPos": 32,
     "female": "dress/kimono/sleeves/trim/universal/female/",

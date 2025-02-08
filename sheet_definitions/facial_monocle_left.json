@@ -1,6 +1,7 @@
 {
   "name": "Left Monocle",
   "type_name": "facial_left",
+  "tags": ["facial", "monocle", "monocle_left"],
   "layer_1": {
     "zPos": 115,
     "male": "facial/monocle/left/adult/",

@@ -1,6 +1,8 @@
 {
   "name": "Bicorne Foreaft Commodore Trim",
   "type_name": "hat_trim",
+  "tags": ["bicorne", "foreaft", "commodore_trim"],
+  "required_tags": ["foreaft_commodore"],
   "layer_1": {
     "zPos": 131,
     "male": "hat/pirate/bicorne/foreaft/commodore/trim/adult/",

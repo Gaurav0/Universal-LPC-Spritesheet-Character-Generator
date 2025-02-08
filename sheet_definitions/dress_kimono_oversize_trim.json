@@ -1,6 +1,8 @@
 {
   "name": "Kimono Oversized Sleeves Trim",
   "type_name": "dress_sleeves_trim",
+  "tags": ["arms", "sleeves_trim"],
+  "required_tags": ["kimono_over_sleeves"],
   "layer_1": {
     "zPos": 32,
     "female": "dress/kimono/sleeves_oversize/trim/universal/female/",

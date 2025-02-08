@@ -1,8 +1,7 @@
 {
   "name": "Backpack",
   "type_name": "backpack",
-  "tags": ["backpack"],
-  "excluded_tags": ["cape", "wings"],
+  "tags": ["back", "backpack"],
   "preview_row": 0,
   "layer_1": {
     "zPos": 110,

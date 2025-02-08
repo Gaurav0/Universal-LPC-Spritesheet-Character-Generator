@@ -1,6 +1,8 @@
 {
   "name": "Tricorne Captain Trim",
   "type_name": "hat_trim",
+  "tags": ["tricorne", "captain_trim"],
+  "required_tags": ["captain"],
   "layer_1": {
     "zPos": 131,
     "male": "hat/pirate/tricorne/captain/trim/adult/",

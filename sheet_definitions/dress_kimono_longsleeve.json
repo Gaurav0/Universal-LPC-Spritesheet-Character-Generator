@@ -1,6 +1,7 @@
 {
   "name": "Kimono Sleeves",
   "type_name": "dress_sleeves",
+  "tags": ["arms", "sleeves", "kimono_long_sleeves"],
   "layer_1": {
     "zPos": 31,
     "female": "dress/kimono/sleeves/universal/female/",

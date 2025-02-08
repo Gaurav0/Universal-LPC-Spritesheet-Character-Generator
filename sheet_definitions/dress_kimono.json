@@ -1,6 +1,7 @@
 {
   "name": "Kimono",
   "type_name": "dress",
+  "tags": ["dress", "kimono", "kimono_simple"],
   "layer_1": {
     "zPos": 30,
     "female": "dress/kimono/normal/universal/female/",

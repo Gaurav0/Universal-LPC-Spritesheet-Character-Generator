@@ -1,6 +1,7 @@
 {
   "name": "Split Kimono",
   "type_name": "dress",
+  "tags": ["dress", "kimono", "kimono_split"],
   "layer_1": {
     "zPos": 30,
     "female": "dress/kimono/split/universal/female/",

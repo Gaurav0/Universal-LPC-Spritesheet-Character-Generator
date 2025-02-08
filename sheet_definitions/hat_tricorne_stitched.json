@@ -1,6 +1,8 @@
 {
   "name": "Tricorne Stitching",
   "type_name": "hat_trim",
+  "tags": ["tricorne", "hat_trim", "stitching"],
+  "required_tags": ["tricorne_basic"],
   "layer_1": {
     "zPos": 131,
     "male": "hat/pirate/tricorne/basic/stitching/adult/",

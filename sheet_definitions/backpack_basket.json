@@ -1,8 +1,7 @@
 {
   "name": "Basket",
   "type_name": "backpack",
-  "tags": ["backpack"],
-  "excluded_tags": ["cape", "wings"],
+  "tags": ["back", "backpack", "basket"],
   "layer_1": {
     "zPos": 130,
     "male": "backpack/basket/fg/",

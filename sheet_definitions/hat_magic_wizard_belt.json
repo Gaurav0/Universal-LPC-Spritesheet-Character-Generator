@@ -1,6 +1,8 @@
 {
   "name": "Wizard Hat Belt",
   "type_name": "hat_trim",
+  "tags": ["wizard", "hat_trim"],
+  "required_tags": ["pointed_wizard"],
   "layer_1": {
     "zPos": 131,
     "male": "hat/magic/wizard/belt/adult/",

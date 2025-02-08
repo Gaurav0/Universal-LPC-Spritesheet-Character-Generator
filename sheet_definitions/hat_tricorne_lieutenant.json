@@ -1,6 +1,7 @@
 {
   "name": "Tricorne Lieutenant",
   "type_name": "hat",
+  "tags": ["tricorne", "lieutenant"],
   "layer_1": {
     "zPos": 130,
     "male": "hat/pirate/tricorne/lieutenant/adult/",

@@ -1,6 +1,8 @@
 {
   "name": "Celestial Wizard Moon Hat Second Color",
   "type_name": "hat_trim",
+  "tags": ["wizard", "hat_trim"],
+  "required_tags": ["celestial_moon"],
   "layer_1": {
     "zPos": 131,
     "male": "hat/magic/celestial_moon/trim/adult/",

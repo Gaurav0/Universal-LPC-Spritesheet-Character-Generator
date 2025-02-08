@@ -1,6 +1,7 @@
 {
   "name": "Bicorne Foreaft Commodore",
   "type_name": "hat",
+  "tags": ["bicorne", "foreaft", "foreaft_commodore"],
   "layer_1": {
     "zPos": 130,
     "male": "hat/pirate/bicorne/foreaft/commodore/adult/",
