@@ -49,7 +49,7 @@ cape_solid.json,layer_1,85,cape/solid/female/ cape/solid/female/ cape/solid/fema
 cape_solid.json,layer_2,5,cape/solid_behind/ cape/solid_behind/ cape/solid_behind/ cape/solid_behind/
 cape_tattered.json,layer_1,85,cape/tattered/female/ cape/tattered/female/ cape/tattered/female/ cape/tattered/female/
 cape_tattered.json,layer_2,5,cape/tattered_behind/ cape/tattered_behind/ cape/tattered_behind/ cape/tattered_behind/
-cape_trim.json,layer_1,90,cape/trim/female/ cape/trim/female/
+cape_trim.json,layer_1,90,cape/trim/female/ cape/trim/female/ cape/trim/female/ cape/trim/female/
 dress_bodice.json,layer_1,45,dress/bodice/female/
 dress_kimono.json,layer_1,30,dress/kimono/normal/universal/female/
 dress_kimono_longsleeve.json,layer_1,31,dress/kimono/sleeves/universal/female/
@@ -68,17 +68,6 @@ dress_slit.json,layer_1,30,dress/slit/female/
 eye_color.json,layer_1,105,eyes/human/adult/${expression}/ eyes/human/adult/${expression}/ eyes/human/adult/${expression}/ eyes/human/adult/${expression}/ eyes/human/child/${expression}/
 eyebrows_thick.json,layer_1,106,eyes/eyebrows/thick/adult/ eyes/eyebrows/thick/adult/ eyes/eyebrows/thick/adult/ eyes/eyebrows/thick/adult/ eyes/eyebrows/thick/child/
 eyebrows_thin.json,layer_1,106,eyes/eyebrows/thin/adult/ eyes/eyebrows/thin/adult/ eyes/eyebrows/thin/adult/ eyes/eyebrows/thin/adult/ eyes/eyebrows/thin/child/
-eyes_adult_anger.json,layer_1,105,eyes/human/adult/anger/ eyes/human/adult/anger/ eyes/human/adult/anger/ eyes/human/adult/anger/
-eyes_adult_closing.json,layer_1,105,eyes/human/adult/closing/ eyes/human/adult/closing/ eyes/human/adult/closing/ eyes/human/adult/closing/
-eyes_adult_default.json,layer_1,105,eyes/human/adult/default/ eyes/human/adult/default/ eyes/human/adult/default/ eyes/human/adult/default/
-eyes_adult_eyeroll.json,layer_1,105,eyes/human/adult/eyeroll/ eyes/human/adult/eyeroll/ eyes/human/adult/eyeroll/ eyes/human/adult/eyeroll/
-eyes_adult_look_l.json,layer_1,105,eyes/human/adult/look_l/ eyes/human/adult/look_l/ eyes/human/adult/look_l/ eyes/human/adult/look_l/
-eyes_adult_look_r.json,layer_1,105,eyes/human/adult/look_r/ eyes/human/adult/look_r/ eyes/human/adult/look_r/ eyes/human/adult/look_r/
-eyes_adult_neutral.json,layer_1,105,eyes/human/adult/neutral/ eyes/human/adult/neutral/ eyes/human/adult/neutral/ eyes/human/adult/neutral/
-eyes_adult_sad.json,layer_1,105,eyes/human/adult/sad/ eyes/human/adult/sad/ eyes/human/adult/sad/ eyes/human/adult/sad/
-eyes_adult_sad2.json,layer_1,105,eyes/human/adult/sad2/ eyes/human/adult/sad2/ eyes/human/adult/sad2/ eyes/human/adult/sad2/
-eyes_adult_shame.json,layer_1,105,eyes/human/adult/shame/ eyes/human/adult/shame/ eyes/human/adult/shame/ eyes/human/adult/shame/
-eyes_adult_shock.json,layer_1,105,eyes/human/adult/shock/ eyes/human/adult/shock/ eyes/human/adult/shock/ eyes/human/adult/shock/
 eyes_child.json,layer_1,105,eyes/human/child/
 eyes_cyclops.json,layer_1,105,eyes/cyclops/adult/ eyes/cyclops/adult/ eyes/cyclops/adult/ eyes/cyclops/adult/ eyes/cyclops/child/
 eyes_elderly_anger.json,layer_1,105,eyes/human/elderly/anger/ eyes/human/elderly/anger/ eyes/human/elderly/anger/ eyes/human/elderly/anger/
@@ -831,9 +820,9 @@ wheelchair.json,layer_1,-2,body/wheelchair/adult/background/ body/wheelchair/adu
 wheelchair.json,layer_2,140,body/wheelchair/adult/foreground/ body/wheelchair/adult/foreground/ body/wheelchair/adult/foreground/ body/wheelchair/adult/foreground/
 wings_bat.json,layer_1,105,body/wings/bat/adult/fg/ body/wings/bat/adult/fg/ body/wings/bat/adult/fg/ body/wings/bat/adult/fg/
 wings_bat.json,layer_2,5,body/wings/bat/adult/bg/ body/wings/bat/adult/bg/ body/wings/bat/adult/bg/ body/wings/bat/adult/bg/
-wings_dragonfly.json,layer_1,85,body/wings/dragonfly/solid/fg/ body/wings/dragonfly/solid/fg/ body/wings/dragonfly/solid/fg/ body/wings/dragonfly/solid/fg/ body/wings/dragonfly/solid/fg/
+wings_dragonfly.json,layer_1,105,body/wings/dragonfly/solid/fg/ body/wings/dragonfly/solid/fg/ body/wings/dragonfly/solid/fg/ body/wings/dragonfly/solid/fg/ body/wings/dragonfly/solid/fg/
 wings_dragonfly.json,layer_2,5,body/wings/dragonfly/solid/bg/ body/wings/dragonfly/solid/bg/ body/wings/dragonfly/solid/bg/ body/wings/dragonfly/solid/bg/ body/wings/dragonfly/solid/bg/
-wings_dragonfly_transparent.json,layer_1,101,body/wings/dragonfly/transparent/fg/ body/wings/dragonfly/transparent/fg/ body/wings/dragonfly/transparent/fg/ body/wings/dragonfly/transparent/fg/ body/wings/dragonfly/transparent/fg/
+wings_dragonfly_transparent.json,layer_1,105,body/wings/dragonfly/transparent/fg/ body/wings/dragonfly/transparent/fg/ body/wings/dragonfly/transparent/fg/ body/wings/dragonfly/transparent/fg/ body/wings/dragonfly/transparent/fg/
 wings_dragonfly_transparent.json,layer_2,5,body/wings/dragonfly/transparent/bg/ body/wings/dragonfly/transparent/bg/ body/wings/dragonfly/transparent/bg/ body/wings/dragonfly/transparent/bg/ body/wings/dragonfly/transparent/bg/
 wings_feathered.json,layer_1,105,body/wings/feathered/adult/fg/ body/wings/feathered/adult/fg/ body/wings/feathered/adult/fg/ body/wings/feathered/adult/fg/
 wings_feathered.json,layer_2,5,body/wings/feathered/adult/bg/ body/wings/feathered/adult/bg/ body/wings/feathered/adult/bg/ body/wings/feathered/adult/bg/
@@ -843,13 +832,13 @@ wings_lizard_alt.json,layer_1,105,body/wings/lizard/alt/adult/fg/ body/wings/liz
 wings_lizard_alt.json,layer_2,5,body/wings/lizard/alt/adult/bg/ body/wings/lizard/alt/adult/bg/ body/wings/lizard/alt/adult/bg/ body/wings/lizard/alt/adult/bg/
 wings_lizard_bat.json,layer_1,105,body/wings/bat/lizard/adult/fg/ body/wings/bat/lizard/adult/fg/ body/wings/bat/lizard/adult/fg/ body/wings/bat/lizard/adult/fg/
 wings_lizard_bat.json,layer_2,5,body/wings/bat/lizard/adult/bg/ body/wings/bat/lizard/adult/bg/ body/wings/bat/lizard/adult/bg/ body/wings/bat/lizard/adult/bg/
-wings_lunar.json,layer_1,85,body/wings/lunar/fg/ body/wings/lunar/fg/ body/wings/lunar/fg/ body/wings/lunar/fg/ body/wings/lunar/fg/
+wings_lunar.json,layer_1,105,body/wings/lunar/fg/ body/wings/lunar/fg/ body/wings/lunar/fg/ body/wings/lunar/fg/ body/wings/lunar/fg/
 wings_lunar.json,layer_2,5,body/wings/lunar/bg/ body/wings/lunar/bg/ body/wings/lunar/bg/ body/wings/lunar/bg/ body/wings/lunar/bg/
-wings_monarch.json,layer_1,85,body/wings/monarch/base/fg/ body/wings/monarch/base/fg/ body/wings/monarch/base/fg/ body/wings/monarch/base/fg/ body/wings/monarch/base/fg/
+wings_monarch.json,layer_1,105,body/wings/monarch/base/fg/ body/wings/monarch/base/fg/ body/wings/monarch/base/fg/ body/wings/monarch/base/fg/ body/wings/monarch/base/fg/
 wings_monarch.json,layer_2,5,body/wings/monarch/base/bg/ body/wings/monarch/base/bg/ body/wings/monarch/base/bg/ body/wings/monarch/base/bg/ body/wings/monarch/base/bg/
-wings_monarch_dots.json,layer_1,86,body/wings/monarch/dots/fg/ body/wings/monarch/dots/fg/ body/wings/monarch/dots/fg/ body/wings/monarch/dots/fg/ body/wings/monarch/dots/fg/
+wings_monarch_dots.json,layer_1,106,body/wings/monarch/dots/fg/ body/wings/monarch/dots/fg/ body/wings/monarch/dots/fg/ body/wings/monarch/dots/fg/ body/wings/monarch/dots/fg/
 wings_monarch_dots.json,layer_2,6,body/wings/monarch/dots/bg/ body/wings/monarch/dots/bg/ body/wings/monarch/dots/bg/ body/wings/monarch/dots/bg/ body/wings/monarch/dots/bg/
-wings_monarch_edge.json,layer_1,86,body/wings/monarch/edge/fg/ body/wings/monarch/edge/fg/ body/wings/monarch/edge/fg/ body/wings/monarch/edge/fg/ body/wings/monarch/edge/fg/
+wings_monarch_edge.json,layer_1,106,body/wings/monarch/edge/fg/ body/wings/monarch/edge/fg/ body/wings/monarch/edge/fg/ body/wings/monarch/edge/fg/ body/wings/monarch/edge/fg/
 wings_monarch_edge.json,layer_2,6,body/wings/monarch/edge/bg/ body/wings/monarch/edge/bg/ body/wings/monarch/edge/bg/ body/wings/monarch/edge/bg/ body/wings/monarch/edge/bg/
 wings_pixie.json,layer_1,140,body/wings/pixie/solid/fg/ body/wings/pixie/solid/fg/ body/wings/pixie/solid/fg/ body/wings/pixie/solid/fg/ body/wings/pixie/solid/fg/
 wings_pixie.json,layer_2,5,body/wings/pixie/solid/bg/ body/wings/pixie/solid/bg/ body/wings/pixie/solid/bg/ body/wings/pixie/solid/bg/ body/wings/pixie/solid/bg/

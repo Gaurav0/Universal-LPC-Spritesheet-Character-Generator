@@ -1,6 +1,7 @@
 {
   "name": "Celestial Wizard Moon Hat",
   "type_name": "hat",
+  "tags": ["wizard", "celestial_moon"],
   "layer_1": {
     "zPos": 130,
     "male": "hat/magic/celestial_moon/adult/",

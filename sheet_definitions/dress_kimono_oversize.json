@@ -1,6 +1,7 @@
 {
   "name": "Kimono Oversized Sleeves",
   "type_name": "dress_sleeves",
+  "tags": ["arms", "sleeves", "kimono_over_sleeves"],
   "layer_1": {
     "zPos": 31,
     "female": "dress/kimono/sleeves_oversize/universal/female/",

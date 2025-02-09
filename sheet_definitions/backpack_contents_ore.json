@@ -1,8 +1,8 @@
 {
   "name": "Ore",
   "type_name": "cargo",
-  "tags": ["backpack_contents"],
-  "required_tags": ["backpack"],
+  "tags": ["back", "basket_contents"],
+  "required_tags": ["basket"],
   "layer_1": {
     "zPos": 140,
     "male": "backpack/basket_contents/ore/fg/",

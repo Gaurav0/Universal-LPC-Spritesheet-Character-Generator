@@ -4,18 +4,21 @@
   "replace_in_path": {
     "expression": {
       "none": "default",
-      "Neutral": "default",
+      "Neutral": "neutral",
       "Closing_Eyes": "closing",
-      "Closed_Eyes": "default",
+      "Closed_Eyes": "none",
       "Looking_Left": "look_l",
       "Looking_Right": "look_r",
       "Rolling_Eyes": "eyeroll",
       "Shock": "shock",
       "Angry": "anger",
+      "Angry_Alt": "default",
       "Sad": "sad",
-      "Happy": "happy",
-      "Blush": "default",
-      "Shame": "default"
+      "Sad_Alt": "sad2",
+      "Happy": "none",
+      "Happy_Alt": "none",
+      "Blush": "none",
+      "Shame": "shame"
     }
   },
   "layer_1": {

@@ -1,6 +1,8 @@
 {
   "name": "Bicorne Athwart Admiral Trim",
   "type_name": "hat_trim",
+  "tags": ["bicorne", "athwart", "admiral_trim"],
+  "required_tags": ["athwart_admiral"],
   "layer_1": {
     "zPos": 131,
     "male": "hat/pirate/bicorne/athwart/admiral/trim/adult/",

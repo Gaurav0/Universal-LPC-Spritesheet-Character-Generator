@@ -1,6 +1,7 @@
 {
   "name": "Tricorne",
   "type_name": "hat",
+  "tags": ["tricorne", "tricorne_basic"],
   "layer_1": {
     "zPos": 130,
     "male": "hat/pirate/tricorne/basic/adult/",

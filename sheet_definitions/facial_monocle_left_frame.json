@@ -1,6 +1,8 @@
 {
   "name": "Left Monocle Frame Color",
   "type_name": "facial_left_trim",
+  "tags": ["facial", "monocle", "monocle_trim"],
+  "required_tags": ["monocle_left"],
   "layer_1": {
     "zPos": 115,
     "male": "facial/monocle/left/frame/adult/",

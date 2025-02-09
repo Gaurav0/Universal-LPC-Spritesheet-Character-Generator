@@ -1,6 +1,8 @@
 {
   "name": "Elf Trim",
   "type_name": "hat_trim",
+  "tags": ["santa", "santa_wool"],
+  "required_tags": ["santa_hat"],
   "layer_1": {
     "zPos": 130,
     "female": "hat/holiday/elf/adult/",
