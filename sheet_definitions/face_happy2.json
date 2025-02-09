@@ -1,14 +1,8 @@
 {
   "name": "Happy Alt",
   "type_name": "expression",
-  "layer_1": {
-    "zPos": 106,
-    "male": "head/faces/global/happy2/",
-    "muscular": "head/faces/global/happy2/",
-    "female": "head/faces/global/happy2/",
-    "teen": "head/faces/global/happy2/",
-    "pregnant": "head/faces/global/happy2/"
-  },
+  "tags": ["expression"],
+  "required_tags": ["human"],
   "variants": [
     "light",
     "amber",

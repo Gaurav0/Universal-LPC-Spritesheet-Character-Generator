@@ -2,6 +2,17 @@
   "name": "Eye Color",
   "type_name": "eye_color",
   "replace_in_path": {
+    "head": {
+      "Human_male": "adult",
+      "Human_male_small": "adult",
+      "Human_male_plump": "adult",
+      "Human_male_gaunt": "adult",
+      "Human_female": "adult",
+      "Human_female_small": "adult",
+      "Human_male_elderly": "elderly",
+      "Human_female_elderly": "elderly",
+      "Human_elderly_small": "elderly"
+    },
     "expression": {
       "none": "default",
       "Neutral": "neutral",

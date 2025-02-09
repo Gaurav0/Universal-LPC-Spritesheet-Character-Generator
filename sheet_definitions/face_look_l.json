@@ -1,14 +1,8 @@
 {
   "name": "Looking Left",
   "type_name": "expression",
-  "template": {
-    "head": {
-      "human_male": "male",
-      "human_female": "female",
-      "human_male_elderly": "elderly",
-      "human_female_elderly": "elderly"
-    }
-  },
+  "tags": ["expression"],
+  "required_tags": ["human"],
   "layer_1": {
     "zPos": 101,
     "male": "head/faces/${head}/look_l/",
