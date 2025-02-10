@@ -2,7 +2,7 @@
   "name": "Sad Alt",
   "type_name": "expression",
   "tags": ["expression"],
-  "required_tags": ["human"],
+  "required_tags": ["human", "adult"],
   "layer_1": {
     "zPos": 101,
     "male": "head/faces/global/sad2/",

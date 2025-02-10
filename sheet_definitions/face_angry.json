@@ -3,6 +3,19 @@
   "type_name": "expression",
   "tags": ["expression"],
   "required_tags": ["human"],
+  "replace_in_path": {
+    "head": {
+      "Human_male": "male",
+      "Human_male_small": "male",
+      "Human_male_plump": "male",
+      "Human_male_gaunt": "male",
+      "Human_female": "female",
+      "Human_female_small": "female",
+      "Human_male_elderly": "elderly",
+      "Human_female_elderly": "elderly",
+      "Human_elderly_small": "elderly"
+    }
+  },
   "layer_1": {
     "zPos": 101,
     "male": "head/faces/${head}/anger/",
