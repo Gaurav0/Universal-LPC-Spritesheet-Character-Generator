@@ -86,6 +86,7 @@ face_closed.json,layer_1,101,head/faces/${head}/closed/ head/faces/${head}/close
 face_closing.json,layer_1,101,head/faces/${head}/closing/ head/faces/${head}/closing/ head/faces/${head}/closing/ head/faces/${head}/closing/
 face_eyeroll.json,layer_1,101,head/faces/${head}/eyeroll/ head/faces/${head}/eyeroll/ head/faces/${head}/eyeroll/ head/faces/${head}/eyeroll/
 face_happy.json,layer_1,101,head/faces/${head}/happy/ head/faces/${head}/happy/ head/faces/${head}/happy/ head/faces/${head}/happy/
+face_happy2.json,layer_1,106,head/faces/global/happy2/ head/faces/global/happy2/ head/faces/global/happy2/ head/faces/global/happy2/
 face_look_l.json,layer_1,101,head/faces/${head}/look_l/ head/faces/${head}/look_l/ head/faces/${head}/look_l/ head/faces/${head}/look_l/
 face_look_r.json,layer_1,101,head/faces/${head}/look_r/ head/faces/${head}/look_r/ head/faces/${head}/look_r/ head/faces/${head}/look_r/
 face_neutral.json,layer_1,101,head/faces/${head}/neutral/ head/faces/${head}/neutral/ head/faces/${head}/neutral/ head/faces/${head}/neutral/
