@@ -92,9 +92,8 @@
       "file": "eyes/human/adult",
       "notes": "original by Redshrike, Expressions by ElizaWy, eyes split from expressions and mapped to all frames by JaidynReiman",
       "authors": [
-        "Mark Weyer",
-        "Johannes Sjölund (wulax)",
-        "Matthew Krohn (makrohn)",
+        "JaidynReiman",
+        "ElizaWy",
         "Stephen Challener (Redshrike)"
       ],
       "licenses": [
@@ -128,9 +127,8 @@
       "file": "eyes/human/elderly",
       "notes": "original by Redshrike, Elderly Heads and Expressions by ElizaWy, eyes split from expressions and mapped to all frames by JaidynReiman",
       "authors": [
-        "Mark Weyer",
-        "Johannes Sjölund (wulax)",
-        "Matthew Krohn (makrohn)",
+        "JaidynReiman",
+        "ElizaWy",
         "Stephen Challener (Redshrike)"
       ],
       "licenses": [
