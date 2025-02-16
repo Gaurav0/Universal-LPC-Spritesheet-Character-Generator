@@ -3,11 +3,11 @@
   "type_name": "shoes",
   "layer_1": {
     "zPos": 25,
-    "male": "feet/boots_fold/universal/male/",
-    "muscular": "feet/boots_fold/universal/male/",
-    "female": "feet/boots_fold/universal/female/",
-    "teen": "feet/boots_fold/universal/female/",
-    "pregnant": "feet/boots_fold/universal/female/"
+    "male": "feet/boots_fold/male/",
+    "muscular": "feet/boots_fold/male/",
+    "female": "feet/boots_fold/thin/",
+    "teen": "feet/boots_fold/thin/",
+    "pregnant": "feet/boots_fold/thin/"
   },
   "variants": [
     "black",
@@ -43,6 +43,25 @@
     "silver",
     "gold"
   ],
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
+  ],
   "credits": [
     {
       "file": "feet/boots_fold",
@@ -56,7 +75,8 @@
         "GPL 3.0"
       ],
       "urls": [
-        "https://opengameart.org/content/lpc-relm-outfit-pieces-2-kimonos-2-sleeves-2-boots-tabi-socks"
+        "https://opengameart.org/content/lpc-relm-outfit-pieces-2-kimonos-2-sleeves-2-boots-tabi-socks",
+        "https://opengameart.org/content/lpc-expanded-socks-shoes"
       ]
     }
   ]
