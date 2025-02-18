@@ -74,6 +74,24 @@ $(document).ready(function () {
     backslash: 46 * universalFrameSize,
     halfslash: 50 * universalFrameSize,
   };
+  
+  const animationFrameCounts = {
+	spellcast: 7,
+	thrust: 8,
+	walk: 9,
+	slash: 6,
+	shoot: 13,
+	hurt: 6,
+	climb: 6,
+	idle: 2,
+	jump: 5,
+	sit: 3,
+	emote: 3,
+	run: 8,
+	combat_idle: 2,
+	backslash: 13,
+	halfslash: 7
+  };
 
   const sexes = ["male", "female", "teen", "child", "muscular", "pregnant"];
 
@@ -437,6 +455,97 @@ $(document).ready(function () {
     }
     $("#frame-cycle").text(animationItems.join("-"));
   });
+  
+  $(".exportSplitAnimations").click(async function() {
+  const zip = new JSZip();
+  const bodyType = getBodyTypeName();
+  const timestamp = new Date().toISOString().replace(/[:\.]/g, '-').substring(0, 19);
+
+  // Helper to convert canvas to blob
+  const canvasToBlob = (canvas) => {
+	return new Promise((resolve) => {
+	  canvas.toBlob((blob) => resolve(blob), 'image/png');
+	});
+  };
+
+  // Export standard animations
+  for (const [name, startY] of Object.entries(base_animations)) {
+	const rows = name === 'hurt' || name === 'climb' ? 1 : 4; // Special cases
+	const frames = animationFrameCounts[name];
+	
+	if (hasContentInRegion(ctx, 0, startY, frames * universalFrameSize, rows * universalFrameSize)) {
+	  const animCanvas = document.createElement('canvas');
+	  animCanvas.width = frames * universalFrameSize;
+	  animCanvas.height = rows * universalFrameSize;
+	  const animCtx = animCanvas.getContext('2d');
+	  
+	  animCtx.drawImage(canvas, 
+		0, startY,
+		frames * universalFrameSize, rows * universalFrameSize,
+		0, 0,
+		frames * universalFrameSize, rows * universalFrameSize
+	  );
+
+	  const blob = await canvasToBlob(animCanvas);
+	  zip.file(`standard/${name}.png`, blob);
+	}
+  }
+
+  // Handle custom animations
+  let currentY = universalSheetHeight;
+  for (const animName of addedCustomAnimations) {
+	const anim = customAnimations[animName];
+	if (!anim) continue;
+
+	const width = anim.frameSize * anim.frames[0].length;
+	const height = anim.frameSize * anim.frames.length;
+
+	if (hasContentInRegion(ctx, 0, currentY, width, height)) {
+	  const animCanvas = document.createElement('canvas'); 
+	  animCanvas.width = width;
+	  animCanvas.height = height;
+	  const animCtx = animCanvas.getContext('2d');
+
+	  animCtx.drawImage(canvas,
+		0, currentY, width, height,
+		0, 0, width, height
+	  );
+
+	  const blob = await canvasToBlob(animCanvas);
+	  zip.file(`custom/${animName}.png`, blob);
+	}
+	currentY += height;
+  }
+
+  // Generate and download zip
+  try {
+	const content = await zip.generateAsync({
+	  type: 'blob',
+	  compression: 'DEFLATE',
+	  compressionOptions: { level: 9 }
+	});
+
+	const link = document.createElement('a');
+	link.download = `lpc_${bodyType}_animations_${timestamp}.zip`;
+	link.href = URL.createObjectURL(content);
+	link.click();
+	URL.revokeObjectURL(link.href);
+  } catch (error) {
+	console.error('Error creating zip file:', error);
+	alert('Error creating zip file. Please try again.');
+  }
+  });
+
+  // Helper function to check if a region has non-transparent pixels
+  function hasContentInRegion(ctx, x, y, width, height) {
+    try {
+      const imageData = ctx.getImageData(x, y, width, height);
+      return imageData.data.some(pixel => pixel !== 0);
+    } catch (e) {
+      console.warn('Error checking region content:', e);
+      return false;
+    }
+  }
 
   function clearCustomAnimationPreviews() {
     for (let i = 0; i < addedCustomAnimations.length; ++i) {
