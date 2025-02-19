@@ -8,6 +8,7 @@
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script type="text/javascript" src="sources/jhash-2.2.min.js"></script>
 	<script type="text/javascript" src="sources/custom-animations.js"></script>
+	<script type="text/javascript" src="sources/jszip.min.js"></script>
 	<script type="module">
 		// make sure modern ESM library TinyGesture is loaded before chargen.js
 		import TinyGesture from 'https://cdn.jsdelivr.net/npm/tinygesture@3.0.0/+esm';
@@ -29,7 +30,11 @@
 				<summary>Controls</summary>
 				<div>
 					<label class="control-label">Download:</label>
-					<a id="saveAsPNG"><input type="button" value="Image (PNG)"></a>
+					<a id="saveAsPNG"><input type="button" value="Download as single image (PNG)"></a>
+					<button type="button" class="exportSplitAnimations">Download as multiple images + credits</button>
+				</div>
+				<div>
+					<label class="control-label">Download credits:</label>
 					<button type="button" class="generateSheetCreditsTxt">Credits (text)</button>
 					<button type="button" class="generateSheetCreditsCsv">Credits (CSV)</button>
 				</div>
