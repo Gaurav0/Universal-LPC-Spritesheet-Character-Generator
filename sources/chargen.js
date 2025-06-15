@@ -456,9 +456,73 @@ $(document).ready(function () {
     $("#frame-cycle").text(animationItems.join("-"));
   });
   
+  async function newZip() {
+    const zip = new JSZip();
+
+    const creditsFolder = zip.folder("credits");
+    
+    if (!creditsFolder) {
+      throw new Error("Failed to create folder structure in zip file");
+    }
+
+    // Add JSON export
+    try {
+      const spritesheet = Object.assign({}, itemsMeta);
+      spritesheet["layers"] = itemsToDraw;
+      await zip.file("character.json", JSON.stringify(spritesheet, null, 2));
+    } catch (err) {
+      throw new Error(`Failed to add character.json: ${err.message}`);
+    }
+
+    // Add credits in multiple formats
+    try {
+      await creditsFolder.file("credits.txt", sheetCreditsToTxt());
+      await creditsFolder.file("credits.csv", sheetCreditsToCSV());
+    } catch (err) {
+      throw new Error(`Failed to add credits files: ${err.message}`);
+    }
+
+    return zip
+  }
+
+  async function downloadZip(zip, filename) {
+    try {
+      const content = await zip.generateAsync({
+        type: 'blob',
+        compression: 'DEFLATE',
+        compressionOptions: { level: 9 }
+      });
+
+      const link = document.createElement('a');
+      link.download = filename;
+      link.href = URL.createObjectURL(content);
+      link.click();
+      URL.revokeObjectURL(link.href);
+    } catch (err) {
+      throw new Error(`Failed to generate zip file: ${err.message}`);
+    }
+  }
+
+  // Helper to convert canvas to blob
+  const canvasToBlob = (canvas) => {
+    return new Promise((resolve, reject) => {
+      try {
+        canvas.toBlob((blob) => {
+          if (blob) {
+            resolve(blob);
+          } else {
+            reject(new Error("Failed to create blob from canvas"));
+          }
+        }, 'image/png');
+      } catch (err) {
+        reject(new Error(`Canvas to Blob conversion failed: ${err.message}`));
+      }
+    });
+  };
+
 $(".exportSplitAnimations").click(async function() {
   try {
-    const zip = new JSZip();
+    const zip = await newZip();
     const bodyType = getBodyTypeName();
     const timestamp = new Date().toISOString().replace(/[:\.]/g, '-').substring(0, 19);
 
@@ -466,27 +530,10 @@ $(".exportSplitAnimations").click(async function() {
     const standardFolder = zip.folder("standard");
     const customFolder = zip.folder("custom");
     const creditsFolder = zip.folder("credits");
-    
+
     if (!standardFolder || !customFolder || !creditsFolder) {
       throw new Error("Failed to create folder structure in zip file");
     }
-
-    // Helper to convert canvas to blob
-    const canvasToBlob = (canvas) => {
-      return new Promise((resolve, reject) => {
-        try {
-          canvas.toBlob((blob) => {
-            if (blob) {
-              resolve(blob);
-            } else {
-              reject(new Error("Failed to create blob from canvas"));
-            }
-          }, 'image/png');
-        } catch (err) {
-          reject(new Error(`Canvas to Blob conversion failed: ${err.message}`));
-        }
-      });
-    };
 
     // Export standard animations
     const exportedStandard = [];
@@ -565,23 +612,6 @@ $(".exportSplitAnimations").click(async function() {
       }
     }
 
-    // Add JSON export
-    try {
-      const spritesheet = Object.assign({}, itemsMeta);
-      spritesheet["layers"] = itemsToDraw;
-      await zip.file("character.json", JSON.stringify(spritesheet, null, 2));
-    } catch (err) {
-      throw new Error(`Failed to add character.json: ${err.message}`);
-    }
-
-    // Add credits in multiple formats
-    try {
-      await creditsFolder.file("credits.txt", sheetCreditsToTxt());
-      await creditsFolder.file("credits.csv", sheetCreditsToCSV());
-    } catch (err) {
-      throw new Error(`Failed to add credits files: ${err.message}`);
-    }
-
     // Add metadata about the export
     try {
       const metadata = {
@@ -604,32 +634,18 @@ $(".exportSplitAnimations").click(async function() {
     }
 
     // Generate and download zip
-    try {
-      const content = await zip.generateAsync({
-        type: 'blob',
-        compression: 'DEFLATE',
-        compressionOptions: { level: 9 }
-      });
+    await downloadZip(zip, `lpc_${bodyType}_animations_${timestamp}.zip`);
 
-      const link = document.createElement('a');
-      link.download = `lpc_${bodyType}_animations_${timestamp}.zip`;
-      link.href = URL.createObjectURL(content);
-      link.click();
-      URL.revokeObjectURL(link.href);
-
-      // Show success message with any failures
-      if (failedStandard.length > 0 || failedCustom.length > 0) {
-        const failureMessage = [];
-        if (failedStandard.length > 0) {
-          failureMessage.push(`Failed to export standard animations: ${failedStandard.join(', ')}`);
-        }
-        if (failedCustom.length > 0) {
-          failureMessage.push(`Failed to export custom animations: ${failedCustom.join(', ')}`);
-        }
-        alert(`Export completed with some issues:\n${failureMessage.join('\n')}`);
+    // Show success message with any failures
+    if (failedStandard.length > 0 || failedCustom.length > 0) {
+      const failureMessage = [];
+      if (failedStandard.length > 0) {
+        failureMessage.push(`Failed to export standard animations: ${failedStandard.join(', ')}`);
       }
-    } catch (err) {
-      throw new Error(`Failed to generate zip file: ${err.message}`);
+      if (failedCustom.length > 0) {
+        failureMessage.push(`Failed to export custom animations: ${failedCustom.join(', ')}`);
+      }
+      alert(`Export completed with some issues:\n${failureMessage.join('\n')}`);
     }
 
   } catch (error) {
