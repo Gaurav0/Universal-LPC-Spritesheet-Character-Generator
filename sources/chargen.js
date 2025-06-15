@@ -669,6 +669,11 @@ $(".exportSplitAnimations").click(async function() {
     try {
       const zip = await newZip();
 
+      const itemsFolder = zip.folder("items");
+      if (!itemsFolder) {
+        throw new Error("Failed to create folder structure in zip file");
+      }
+
       const exportedItems = [];
       const failedItems = [];
 
@@ -693,7 +698,7 @@ $(".exportSplitAnimations").click(async function() {
           }
           
           const blob = await canvasToBlob(itemCanvas);
-          await zip.file(fileName, blob);
+          await itemsFolder.file(fileName, blob);
           exportedItems.push(fileName);
         } catch (err) {
           console.error(`Failed to export item spritesheet ${fileName}:`, err);
