@@ -1002,6 +1002,89 @@ $(".exportSplitAnimations").click(async function() {
     }
   }
 
+  function drawCustomAnimationItem(destCtx, itemToDraw, requiredCanvasWidth, requiredCanvasHeight, didPutUniversalForCustomAnimation) {
+    const custom_animation = itemToDraw.custom_animation;
+    const filePath = itemToDraw.fileName;
+    const img = loadImage(filePath, false);
+    const customAnimationDefinition = customAnimations[custom_animation];
+    const frameSize = customAnimationDefinition.frameSize;
+
+    const customAnimationCanvas = document.createElement("canvas");
+    customAnimationCanvas.width = requiredCanvasWidth;
+    customAnimationCanvas.height =
+      requiredCanvasHeight - universalSheetHeight;
+    const customAnimationContext = customAnimationCanvas.getContext("2d");
+
+    const indexInArray = addedCustomAnimations.indexOf(custom_animation);
+    let offSetInAdditionToOtherCustomActions = 0;
+    for (let i = 0; i < indexInArray; ++i) {
+      const otherCustomAction = customAnimations[addedCustomAnimations[i]];
+      offSetInAdditionToOtherCustomActions +=
+        otherCustomAction.frameSize * otherCustomAction.frames.length;
+    }
+
+    if (didPutUniversalForCustomAnimation !== custom_animation) {
+      for (let i = 0; i < customAnimationDefinition.frames.length; ++i) {
+        const frames = customAnimationDefinition.frames[i];
+        for (let j = 0; j < frames.length; ++j) {
+          const frameCoordinateX = parseInt(frames[j].split(",")[1]);
+          const frameCoordinateRowName = frames[j].split(",")[0];
+          const frameCoordinateY =
+            animationRowsLayout[frameCoordinateRowName] + 1;
+          const offSet = (frameSize - universalFrameSize) / 2;
+
+          const imgDataSingleFrame = destCtx.getImageData(
+            universalFrameSize * frameCoordinateX,
+            universalFrameSize * frameCoordinateY,
+            universalFrameSize,
+            universalFrameSize
+          );
+          customAnimationContext.putImageData(
+            imgDataSingleFrame,
+            frameSize * j + offSet,
+            frameSize * i + offSet + offSetInAdditionToOtherCustomActions
+          );
+        }
+      }
+      destCtx.drawImage(customAnimationCanvas, 0, universalSheetHeight);
+      if (itemToDraw.zPos >= 140) {
+        didPutUniversalForCustomAnimation = custom_animation;
+      }
+    }
+    destCtx.drawImage(
+      img,
+      0,
+      universalSheetHeight + offSetInAdditionToOtherCustomActions
+    );
+
+    return didPutUniversalForCustomAnimation
+  }
+
+  function drawStandardAnimationItem(destCtx, itemToDraw) {
+    const supportedAnimations = itemToDraw.supportedAnimations;
+    const filePath = itemToDraw.fileName;
+    const splitPath = splitFilePath(filePath);
+
+    for (const [key, value] of Object.entries(base_animations)) {
+      let animationToCheck = key;
+      if (key === "combat_idle") {
+        animationToCheck = "combat";
+      } else if (key === "backslash") {
+        animationToCheck = "1h_slash";
+      } else if (key === "halfslash") {
+        animationToCheck = "1h_halfslash";
+      }
+      if (supportedAnimations.includes(animationToCheck)) {
+        const newFile = `${splitPath.directory}/${key}/${splitPath.file}`;
+        const img = loadImage(newFile, false);
+        drawImage(destCtx, img, value);
+      } else {
+        // Enable this to see missing animations in the console
+        // console.warn(`supportedAnimations does not contain ${key} for asset ${file}. skipping render`)
+      }
+    }
+  }
+
   function drawItemsToDraw() {
     if (!canRender()) {
       return;
@@ -1042,85 +1125,15 @@ $(".exportSplitAnimations").click(async function() {
     });
     for (item in itemsToDraw) {
       const itemToDraw = itemsToDraw[itemIdx];
-      const supportedAnimations = itemToDraw.supportedAnimations;
       const custom_animation = itemToDraw.custom_animation;
 
       dynamicReplacements(itemToDraw);
-      const filePath = itemToDraw.fileName;
 
       if (custom_animation !== undefined) {
-        const img = loadImage(filePath, false);
-        const customAnimationDefinition = customAnimations[custom_animation];
-        const frameSize = customAnimationDefinition.frameSize;
-
-        const customAnimationCanvas = document.createElement("canvas");
-        customAnimationCanvas.width = requiredCanvasWidth;
-        customAnimationCanvas.height =
-          requiredCanvasHeight - universalSheetHeight;
-        const customAnimationContext = customAnimationCanvas.getContext("2d");
-
-        const indexInArray = addedCustomAnimations.indexOf(custom_animation);
-        let offSetInAdditionToOtherCustomActions = 0;
-        for (let i = 0; i < indexInArray; ++i) {
-          const otherCustomAction = customAnimations[addedCustomAnimations[i]];
-          offSetInAdditionToOtherCustomActions +=
-            otherCustomAction.frameSize * otherCustomAction.frames.length;
-        }
-
-        if (didPutUniversalForCustomAnimation !== custom_animation) {
-          for (let i = 0; i < customAnimationDefinition.frames.length; ++i) {
-            const frames = customAnimationDefinition.frames[i];
-            for (let j = 0; j < frames.length; ++j) {
-              const frameCoordinateX = parseInt(frames[j].split(",")[1]);
-              const frameCoordinateRowName = frames[j].split(",")[0];
-              const frameCoordinateY =
-                animationRowsLayout[frameCoordinateRowName] + 1;
-              const offSet = (frameSize - universalFrameSize) / 2;
-
-              const imgDataSingleFrame = ctx.getImageData(
-                universalFrameSize * frameCoordinateX,
-                universalFrameSize * frameCoordinateY,
-                universalFrameSize,
-                universalFrameSize
-              );
-              customAnimationContext.putImageData(
-                imgDataSingleFrame,
-                frameSize * j + offSet,
-                frameSize * i + offSet + offSetInAdditionToOtherCustomActions
-              );
-            }
-          }
-          ctx.drawImage(customAnimationCanvas, 0, universalSheetHeight);
-          if (itemToDraw.zPos >= 140) {
-            didPutUniversalForCustomAnimation = custom_animation;
-          }
-        }
-        ctx.drawImage(
-          img,
-          0,
-          universalSheetHeight + offSetInAdditionToOtherCustomActions
-        );
+        didPutUniversalForCustomAnimation = drawCustomAnimationItem(ctx, itemToDraw,
+          requiredCanvasWidth, requiredCanvasHeight, didPutUniversalForCustomAnimation);
       } else {
-        const splitPath = splitFilePath(filePath);
-
-        for (const [key, value] of Object.entries(base_animations)) {
-          let animationToCheck = key;
-          if (key === "combat_idle") {
-            animationToCheck = "combat";
-          } else if (key === "backslash") {
-            animationToCheck = "1h_slash";
-          } else if (key === "halfslash") {
-            animationToCheck = "1h_halfslash";
-          }
-          if (supportedAnimations.includes(animationToCheck)) {
-            const newFile = `${splitPath.directory}/${key}/${splitPath.file}`;
-            const img = loadImage(newFile, false);
-            drawImage(ctx, img, value);
-          } else {
-            // Enable this to see missing animations in the console
-            // console.warn(`supportedAnimations does not contain ${key} for asset ${file}. skipping render`)
-          }
-        }
+        drawStandardAnimationItem(ctx, itemToDraw);
       }
       itemIdx += 1;
     }
