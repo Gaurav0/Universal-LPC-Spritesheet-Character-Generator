@@ -665,6 +665,60 @@ $(".exportSplitAnimations").click(async function() {
     }
   }
 
+  $(".exportSplitItemSheets").click(async () => {
+    try {
+      const zip = await newZip();
+
+      const exportedItems = [];
+      const failedItems = [];
+
+      const itemCanvas = document.createElement("canvas");
+      itemCanvas.width = canvas.width;
+      itemCanvas.height = canvas.height;
+      const itemCtx = itemCanvas.getContext("2d");
+
+      let didPutUniversalForCustomAnimation = "";
+      for (let itemToDraw of itemsToDraw) {
+        const fileName = `${itemToDraw.zPos}`.padStart(3, '0')
+          + `_${itemToDraw.fileName.replace(/\//g, '_')}`;
+
+        try {
+          itemCtx.clearRect(0, 0, itemCanvas.width, itemCanvas.height);
+          const custom_animation = itemToDraw.custom_animation;
+          if (custom_animation !== undefined) {
+            didPutUniversalForCustomAnimation = drawCustomAnimationItem(itemCtx, itemToDraw,
+              itemCanvas.width, itemCanvas.height, didPutUniversalForCustomAnimation);
+          } else {
+            drawStandardAnimationItem(itemCtx, itemToDraw);
+          }
+          
+          const blob = await canvasToBlob(itemCanvas);
+          await zip.file(fileName, blob);
+          exportedItems.push(fileName);
+        } catch (err) {
+          console.error(`Failed to export item spritesheet ${fileName}:`, err);
+          failedItems.push(fileName);
+        }
+      }
+
+      const bodyType = getBodyTypeName();
+      const timestamp = new Date().toISOString().replace(/[:\.]/g, '-').substring(0, 19);
+      await downloadZip(zip, `lpc_${bodyType}_split_item_spritesheets_${timestamp}.zip`);
+
+      // Show success message with any failures
+      if (failedItems.length > 0) {
+        const failureMessage = [];
+        if (failedItems.length > 0) {
+          failureMessage.push(`Failed to export item spritesheets: ${failedItems.join(', ')}`);
+        }
+        alert(`Export completed with some issues:\n${failureMessage.join('\n')}`);
+      }
+    } catch (error) {
+      console.error('Export error:', error);
+      alert(`Export failed: ${error.message}\nCheck console for details.`);
+    }
+  });
+
   function clearCustomAnimationPreviews() {
     for (let i = 0; i < addedCustomAnimations.length; ++i) {
       $("#whichAnim")
