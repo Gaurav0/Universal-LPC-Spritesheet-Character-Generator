@@ -734,7 +734,7 @@ $(".exportSplitAnimations").click(async function() {
       }
 
       // Generate and download zip
-      await downloadZip(zip, `lpc_${bodyType}_animations_${timestamp}.zip`);
+      await downloadZip(zip, `lpc_${bodyType}_item_animations_${timestamp}.zip`);
 
       // Show success message with any failures
       if (failedStandard.length > 0 || failedCustom.length > 0) {
@@ -807,7 +807,7 @@ $(".exportSplitAnimations").click(async function() {
 
       const bodyType = getBodyTypeName();
       const timestamp = new Date().toISOString().replace(/[:\.]/g, '-').substring(0, 19);
-      await downloadZip(zip, `lpc_${bodyType}_split_item_spritesheets_${timestamp}.zip`);
+      await downloadZip(zip, `lpc_${bodyType}_item_spritesheets_${timestamp}.zip`);
 
       // Show success message with any failures
       if (failedItems.length > 0) {
