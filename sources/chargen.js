@@ -694,7 +694,7 @@ $(".exportSplitAnimations").click(async function() {
             didPutUniversalForCustomAnimation = drawCustomAnimationItem(itemCtx, itemToDraw,
               itemCanvas.width, itemCanvas.height, didPutUniversalForCustomAnimation);
           } else {
-            drawStandardAnimationItem(itemCtx, itemToDraw);
+            drawItemOnStandardAnimations(itemCtx, itemToDraw);
           }
           
           const blob = await canvasToBlob(itemCanvas);
@@ -1135,28 +1135,33 @@ $(".exportSplitAnimations").click(async function() {
     return didPutUniversalForCustomAnimation
   }
 
-  function drawStandardAnimationItem(destCtx, itemToDraw) {
+  function drawItemOnStandardAnimation(destCtx, destY, animName, itemToDraw) {
+    let animationToCheck = animName;
+    if (animName === "combat_idle") {
+      animationToCheck = "combat";
+    } else if (animName === "backslash") {
+      animationToCheck = "1h_slash";
+    } else if (animName === "halfslash") {
+      animationToCheck = "1h_halfslash";
+    }
     const supportedAnimations = itemToDraw.supportedAnimations;
-    const filePath = itemToDraw.fileName;
-    const splitPath = splitFilePath(filePath);
+    if (supportedAnimations.includes(animationToCheck)) {
+      const filePath = itemToDraw.fileName;
+      const splitPath = splitFilePath(filePath);
+      const newFile = `${splitPath.directory}/${animName}/${splitPath.file}`;
+      const img = loadImage(newFile, false);
+      drawImage(destCtx, img, destY);
+      return true
+    } else {
+      // Enable this to see missing animations in the console
+      // console.warn(`supportedAnimations does not contain ${key} for asset ${file}. skipping render`)
+    }
+    return false
+  }
 
+  function drawItemOnStandardAnimations(destCtx, itemToDraw) {
     for (const [key, value] of Object.entries(base_animations)) {
-      let animationToCheck = key;
-      if (key === "combat_idle") {
-        animationToCheck = "combat";
-      } else if (key === "backslash") {
-        animationToCheck = "1h_slash";
-      } else if (key === "halfslash") {
-        animationToCheck = "1h_halfslash";
-      }
-      if (supportedAnimations.includes(animationToCheck)) {
-        const newFile = `${splitPath.directory}/${key}/${splitPath.file}`;
-        const img = loadImage(newFile, false);
-        drawImage(destCtx, img, value);
-      } else {
-        // Enable this to see missing animations in the console
-        // console.warn(`supportedAnimations does not contain ${key} for asset ${file}. skipping render`)
-      }
+      drawItemOnStandardAnimation(destCtx, value, key, itemToDraw);
     }
   }
 
@@ -1208,7 +1213,7 @@ $(".exportSplitAnimations").click(async function() {
         didPutUniversalForCustomAnimation = drawCustomAnimationItem(ctx, itemToDraw,
           requiredCanvasWidth, requiredCanvasHeight, didPutUniversalForCustomAnimation);
       } else {
-        drawStandardAnimationItem(ctx, itemToDraw);
+        drawItemOnStandardAnimations(ctx, itemToDraw);
       }
       itemIdx += 1;
     }
