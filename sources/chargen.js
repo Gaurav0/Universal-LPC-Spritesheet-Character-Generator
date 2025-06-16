@@ -678,7 +678,7 @@ $(".exportSplitAnimations").click(async function() {
       const failedStandard = [];
       
       const itemCanvas = document.createElement("canvas");
-      const itemCtx = itemCanvas.getContext('2d', {willReadFrequently: true});
+      const itemCtx = itemCanvas.getContext('2d');
       itemCtx.clearRect(0, 0, itemCanvas.width, itemCanvas.height);
 
       for (const name of Object.keys(base_animations)) {
@@ -694,8 +694,7 @@ $(".exportSplitAnimations").click(async function() {
           const itemFileName = getItemFileName(item);
 
           try {
-            if (drawItemOnStandardAnimation(itemCtx, 0, name, item)
-            && hasContentInRegion(itemCtx, 0, 0, itemCanvas.width, itemCanvas.height)) {
+            if (drawItemOnStandardAnimation(itemCtx, 0, name, item)) {
               const blob = await canvasToBlob(itemCanvas);
               await animFolder.file(`${itemFileName}`, blob);
               itemCtx.clearRect(0, 0, itemCanvas.width, itemCanvas.height);
@@ -1251,12 +1250,12 @@ $(".exportSplitAnimations").click(async function() {
       const newFile = `${splitPath.directory}/${animName}/${splitPath.file}`;
       const img = loadImage(newFile, false);
       drawImage(destCtx, img, destY);
-      return true
+      return img;
     } else {
       // Enable this to see missing animations in the console
       // console.warn(`supportedAnimations does not contain ${key} for asset ${file}. skipping render`)
     }
-    return false
+    return null;
   }
 
   function drawItemOnStandardAnimations(destCtx, itemToDraw) {
