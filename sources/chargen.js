@@ -1176,12 +1176,36 @@ $(".exportSplitAnimations").click(async function() {
     }
   }
 
+  function copyFramesToCustomAnimation(customAnimationContext, customAnimationDefinition, offSetY, srcCtx, srcRowsLayout) {
+    const frameSize = customAnimationDefinition.frameSize;
+    for (let i = 0; i < customAnimationDefinition.frames.length; ++i) {
+      const frames = customAnimationDefinition.frames[i];
+      for (let j = 0; j < frames.length; ++j) {
+        const srcColumn = parseInt(frames[j].split(",")[1]);
+        const srcRowName = frames[j].split(",")[0];
+        const srcRow = srcRowsLayout ? (srcRowsLayout[srcRowName] + 1) : i;
+        const offSet = (frameSize - universalFrameSize) / 2;
+
+        const imgDataSingleFrame = srcCtx.getImageData(
+          universalFrameSize * srcColumn,
+          universalFrameSize * srcRow,
+          universalFrameSize,
+          universalFrameSize
+        );
+        customAnimationContext.putImageData(
+          imgDataSingleFrame,
+          frameSize * j + offSet,
+          frameSize * i + offSet + offSetY
+        );
+      }
+    }
+  }
+
   function drawCustomAnimationItem(destCtx, itemToDraw, requiredCanvasWidth, requiredCanvasHeight, didPutUniversalForCustomAnimation) {
     const custom_animation = itemToDraw.custom_animation;
     const filePath = itemToDraw.fileName;
     const img = loadImage(filePath, false);
     const customAnimationDefinition = customAnimations[custom_animation];
-    const frameSize = customAnimationDefinition.frameSize;
 
     const customAnimationCanvas = document.createElement("canvas");
     customAnimationCanvas.width = requiredCanvasWidth;
@@ -1198,28 +1222,9 @@ $(".exportSplitAnimations").click(async function() {
     }
 
     if (didPutUniversalForCustomAnimation !== custom_animation) {
-      for (let i = 0; i < customAnimationDefinition.frames.length; ++i) {
-        const frames = customAnimationDefinition.frames[i];
-        for (let j = 0; j < frames.length; ++j) {
-          const frameCoordinateX = parseInt(frames[j].split(",")[1]);
-          const frameCoordinateRowName = frames[j].split(",")[0];
-          const frameCoordinateY =
-            animationRowsLayout[frameCoordinateRowName] + 1;
-          const offSet = (frameSize - universalFrameSize) / 2;
+      copyFramesToCustomAnimation(customAnimationContext, customAnimationDefinition,
+        offSetInAdditionToOtherCustomActions, destCtx, animationRowsLayout);
 
-          const imgDataSingleFrame = destCtx.getImageData(
-            universalFrameSize * frameCoordinateX,
-            universalFrameSize * frameCoordinateY,
-            universalFrameSize,
-            universalFrameSize
-          );
-          customAnimationContext.putImageData(
-            imgDataSingleFrame,
-            frameSize * j + offSet,
-            frameSize * i + offSet + offSetInAdditionToOtherCustomActions
-          );
-        }
-      }
       destCtx.drawImage(customAnimationCanvas, 0, universalSheetHeight);
       if (itemToDraw.zPos >= 140) {
         didPutUniversalForCustomAnimation = custom_animation;
