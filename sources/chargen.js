@@ -654,6 +654,10 @@ $(".exportSplitAnimations").click(async function() {
   }
 });
 
+  const getItemFileName = (item) =>
+    `${item.zPos}`.padStart(3, '0')
+      + ` ${item.parentName} ${item.name} ${item.variant}.png`;
+
   // Helper function to check if a region has non-transparent pixels
   function hasContentInRegion(ctx, x, y, width, height) {
     try {
@@ -684,8 +688,7 @@ $(".exportSplitAnimations").click(async function() {
 
       let didPutUniversalForCustomAnimation = "";
       for (let itemToDraw of itemsToDraw) {
-        const fileName = `${itemToDraw.zPos}`.padStart(3, '0')
-          + `_${itemToDraw.fileName.replace(/\//g, '_')}`;
+        const fileName = getItemFileName(itemToDraw);
 
         try {
           itemCtx.clearRect(0, 0, itemCanvas.width, itemCanvas.height);
