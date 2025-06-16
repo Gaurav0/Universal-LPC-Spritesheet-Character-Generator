@@ -678,7 +678,8 @@ $(".exportSplitAnimations").click(async function() {
       const failedStandard = [];
       
       const itemCanvas = document.createElement("canvas");
-      const itemCtx = itemCanvas.getContext('2d');
+      const itemCtx = itemCanvas.getContext('2d', {willReadFrequently: true});
+      itemCtx.clearRect(0, 0, itemCanvas.width, itemCanvas.height);
 
       for (const name of Object.keys(base_animations)) {
         const rows = name === 'hurt' || name === 'climb' ? 1 : 4;
