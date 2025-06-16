@@ -1587,7 +1587,7 @@ $(".exportSplitAnimations").click(async function() {
       const img = new Image();
       img.src = "spritesheets/" + imgRef;
       img.onload = imageLoadDone;
-      img.onerror = imageLoadError;
+      img.onerror = (event) => imageLoadError(event, imgRef);
       images[imgRef] = img;
       return img;
     }
@@ -1601,9 +1601,10 @@ $(".exportSplitAnimations").click(async function() {
     }
   }
 
-  function imageLoadError(event) {
+  function imageLoadError(event, imgRef) {
     if (DEBUG)
       console.error("There was an error loading image:", event.target.src);
+    delete images[imgRef];
     imageLoadDone();
   }
 
