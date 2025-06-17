@@ -673,9 +673,12 @@ $(".exportSplitAnimations").click(async function() {
         throw new Error("Failed to create folder structure in zip file");
       }
 
-      // Export standard animations
+      // Export items to standard animations,
+      // and custom animations where applicable
       const exportedStandard = [];
       const failedStandard = [];
+      const exportedCustom = [];
+      const failedCustom = [];
       
       const itemCanvas = document.createElement("canvas");
       const itemCtx = itemCanvas.getContext('2d');
@@ -697,20 +700,41 @@ $(".exportSplitAnimations").click(async function() {
             if (drawItemOnStandardAnimation(itemCtx, 0, name, item)) {
               const blob = await canvasToBlob(itemCanvas);
               await animFolder.file(`${itemFileName}`, blob);
-              itemCtx.clearRect(0, 0, itemCanvas.width, itemCanvas.height);
+              exportedStandard.push(`${name}/${itemFileName}`);
 
-              exportedStandard.push(itemFileName);
+              for (const custAnimName of addedCustomAnimations) {
+                const custAnim = customAnimations[custAnimName];
+                const custFrames = custAnim.frames;
+                const custBaseAnimName = custFrames[0][0].split(",")[0].split("-")[0];
+                if (custBaseAnimName !== name)
+                  continue;
+
+                try {
+                  const custCanvas = document.createElement("canvas");
+                  const custFrameSize = custAnim.frameSize;
+                  custCanvas.width = custFrameSize * custFrames[0].length;
+                  custCanvas.height = custFrameSize * custFrames.length;
+                  const custCtx = custCanvas.getContext("2d");
+                  copyFramesToCustomAnimation(custCtx, custAnim, 0, itemCtx, null);
+
+                  const custAnimFolder = customFolder.folder(custAnimName);
+                  const custBlob = await canvasToBlob(custCanvas);
+                  await custAnimFolder.file(`${itemFileName}`, custBlob);
+                  exportedCustom.push(`${custAnimName}/${itemFileName}`);
+                } catch (err) {
+                  console.error(`Failed to export item ${itemFileName} in custom animation ${custAnimName}:`, err);
+                  failedCustom.push(`${custAnimName}/${itemFileName}`);
+                }
+              }
+
+              itemCtx.clearRect(0, 0, itemCanvas.width, itemCanvas.height);
             }
           } catch (err) {
             console.error(`Failed to export item ${itemFileName} in standard animation ${name}:`, err);
-            failedStandard.push(itemFileName);
+            failedStandard.push(`${name}/${itemFileName}`);
           }
         }
       }
-
-      // Handle custom animations TODO
-      const exportedCustom = [];
-      const failedCustom = [];
 
       // Add metadata about the export
       try {
