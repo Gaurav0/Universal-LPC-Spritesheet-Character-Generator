@@ -675,10 +675,10 @@ $(".exportSplitAnimations").click(async function() {
 
       // Export items to standard animations,
       // and custom animations where applicable
-      const exportedStandard = [];
-      const failedStandard = [];
-      const exportedCustom = [];
-      const failedCustom = [];
+      const exportedStandard = {};
+      const failedStandard = {};
+      const exportedCustom = {};
+      const failedCustom = {};
       
       const itemCanvas = document.createElement("canvas");
       const itemCtx = itemCanvas.getContext('2d');
@@ -692,6 +692,9 @@ $(".exportSplitAnimations").click(async function() {
         itemCanvas.height = rows * universalFrameSize;
 
         const animFolder = standardFolder.folder(name);
+        const exportedItems = [];
+        exportedStandard[name] = exportedItems;
+        const failedItems = [];
 
         for (item of itemsToDraw) {
           const itemFileName = getItemFileName(item);
@@ -699,8 +702,8 @@ $(".exportSplitAnimations").click(async function() {
           try {
             if (drawItemOnStandardAnimation(itemCtx, 0, name, item)) {
               const blob = await canvasToBlob(itemCanvas);
-              await animFolder.file(`${itemFileName}`, blob);
-              exportedStandard.push(`${name}/${itemFileName}`);
+              await animFolder.file(itemFileName, blob);
+              exportedItems.push(itemFileName);
 
               for (const custAnimName of addedCustomAnimations) {
                 const custAnim = customAnimations[custAnimName];
@@ -708,6 +711,10 @@ $(".exportSplitAnimations").click(async function() {
                 const custBaseAnimName = custFrames[0][0].split(",")[0].split("-")[0];
                 if (custBaseAnimName !== name)
                   continue;
+
+                const custExportedItems = exportedCustom[custAnimName] || [];
+                exportedCustom[custAnimName] = custExportedItems;
+                const custFailedItems = failedCustom[custAnimName] || [];
 
                 try {
                   const custCanvas = document.createElement("canvas");
@@ -719,11 +726,12 @@ $(".exportSplitAnimations").click(async function() {
 
                   const custAnimFolder = customFolder.folder(custAnimName);
                   const custBlob = await canvasToBlob(custCanvas);
-                  await custAnimFolder.file(`${itemFileName}`, custBlob);
-                  exportedCustom.push(`${custAnimName}/${itemFileName}`);
+                  await custAnimFolder.file(itemFileName, custBlob);
+                  custExportedItems.push(itemFileName);
                 } catch (err) {
                   console.error(`Failed to export item ${itemFileName} in custom animation ${custAnimName}:`, err);
-                  failedCustom.push(`${custAnimName}/${itemFileName}`);
+                  custFailedItems.push(itemFileName);
+                  failedCustom[custAnimName] = custFailedItems;
                 }
               }
 
@@ -731,7 +739,8 @@ $(".exportSplitAnimations").click(async function() {
             }
           } catch (err) {
             console.error(`Failed to export item ${itemFileName} in standard animation ${name}:`, err);
-            failedStandard.push(`${name}/${itemFileName}`);
+            failedItems.push(itemFileName);
+            failedStandard[name] = failedItems;
           }
         }
       }
@@ -743,6 +752,9 @@ $(".exportSplitAnimations").click(async function() {
           continue;
 
         const itemFileName = getItemFileName(item);
+        const custExportedItems = exportedCustom[custName] || [];
+        exportedCustom[custName] = custExportedItems;
+        const custFailedItems = failedCustom[custName] || [];
 
         try {
           const custAnim = customAnimations[custName];
@@ -757,11 +769,12 @@ $(".exportSplitAnimations").click(async function() {
 
           const blob = await canvasToBlob(itemCanvas);
           const animFolder = customFolder.folder(custName);
-          await animFolder.file(`${itemFileName}`, blob);
-          exportedStandard.push(`${custName}/${itemFileName}`);
+          await animFolder.file(itemFileName, blob);
+          custExportedItems.push(itemFileName);
         } catch (err) {
           console.error(`Failed to export item ${itemFileName} in custom animation ${custName}:`, err);
-          failedStandard.push(`${custName}/${itemFileName}`);
+          custFailedItems.push(itemFileName);
+          failedCustom[custName] = custFailedItems;
         }
       }
 
@@ -790,13 +803,25 @@ $(".exportSplitAnimations").click(async function() {
       await downloadZip(zip, `lpc_${bodyType}_item_animations_${timestamp}.zip`);
 
       // Show success message with any failures
-      if (failedStandard.length > 0 || failedCustom.length > 0) {
+      const numFailedStandard = Object.keys(failedStandard).length;
+      const numFailedCustom = Object.keys(failedCustom).length;
+      if (numFailedStandard > 0 || numFailedCustom > 0) {
         const failureMessage = [];
-        if (failedStandard.length > 0) {
-          failureMessage.push(`Failed to export standard animations: ${failedStandard.join(', ')}`);
+        if (numFailedStandard > 0) {
+          failureMessage.push("Failed to export standard animations:");
+          for (const [anim, failedItems] of Object.entries(failedStandard)) {
+            for (const item of failedItems) {
+              failureMessage.push(`${anim}/${item}`)
+            }
+          }
         }
-        if (failedCustom.length > 0) {
-          failureMessage.push(`Failed to export custom animations: ${failedCustom.join(', ')}`);
+        if (numFailedCustom > 0) {
+          failureMessage.push("Failed to export custom animations:");
+          for (const [anim, failedItems] of Object.entries(failedCustom)) {
+            for (const item of failedItems) {
+              failureMessage.push(`${anim}/${item}`)
+            }
+          }
         }
         alert(`Export completed with some issues:\n${failureMessage.join('\n')}`);
       }
