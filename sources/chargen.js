@@ -736,6 +736,35 @@ $(".exportSplitAnimations").click(async function() {
         }
       }
 
+      // Export items exclusive to custom animations
+      for (item of itemsToDraw) {
+        const custName = item.custom_animation;
+        if (!custName)
+          continue;
+
+        const itemFileName = getItemFileName(item);
+
+        try {
+          const custAnim = customAnimations[custName];
+          const custFrameSize = custAnim.frameSize;
+          const custFrames = custAnim.frames;
+          itemCanvas.width = custFrameSize * custFrames[0].length;
+          itemCanvas.height = custFrameSize * custFrames.length;
+
+          const img = loadImage(item.fileName, false);
+          itemCtx.clearRect(0, 0, itemCanvas.width, itemCanvas.height);
+          itemCtx.drawImage(img, 0, 0);
+
+          const blob = await canvasToBlob(itemCanvas);
+          const animFolder = customFolder.folder(custName);
+          await animFolder.file(`${itemFileName}`, blob);
+          exportedStandard.push(`${custName}/${itemFileName}`);
+        } catch (err) {
+          console.error(`Failed to export item ${itemFileName} in custom animation ${custName}:`, err);
+          failedStandard.push(`${custName}/${itemFileName}`);
+        }
+      }
+
       // Add metadata about the export
       try {
         const metadata = {
