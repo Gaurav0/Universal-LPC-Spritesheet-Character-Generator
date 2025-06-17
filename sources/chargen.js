@@ -868,7 +868,7 @@ $(".exportSplitAnimations").click(async function() {
           itemCtx.clearRect(0, 0, itemCanvas.width, itemCanvas.height);
           const custom_animation = itemToDraw.custom_animation;
           if (custom_animation !== undefined) {
-            didPutUniversalForCustomAnimation = drawCustomAnimationItem(itemCtx, itemToDraw,
+            didPutUniversalForCustomAnimation = drawCustomAnimationItemSheet(itemCtx, itemToDraw,
               itemCanvas.width, itemCanvas.height, didPutUniversalForCustomAnimation);
           } else {
             drawItemOnStandardAnimations(itemCtx, itemToDraw);
@@ -1279,7 +1279,7 @@ $(".exportSplitAnimations").click(async function() {
     }
   }
 
-  function drawCustomAnimationItem(destCtx, itemToDraw, requiredCanvasWidth, requiredCanvasHeight, didPutUniversalForCustomAnimation) {
+  function drawCustomAnimationItemSheet(destCtx, itemToDraw, requiredCanvasWidth, requiredCanvasHeight, didPutUniversalForCustomAnimation) {
     const custom_animation = itemToDraw.custom_animation;
     const filePath = itemToDraw.fileName;
     const img = loadImage(filePath, false);
@@ -1392,7 +1392,7 @@ $(".exportSplitAnimations").click(async function() {
       dynamicReplacements(itemToDraw);
 
       if (custom_animation !== undefined) {
-        didPutUniversalForCustomAnimation = drawCustomAnimationItem(ctx, itemToDraw,
+        didPutUniversalForCustomAnimation = drawCustomAnimationItemSheet(ctx, itemToDraw,
           requiredCanvasWidth, requiredCanvasHeight, didPutUniversalForCustomAnimation);
       } else {
         drawItemOnStandardAnimations(ctx, itemToDraw);
