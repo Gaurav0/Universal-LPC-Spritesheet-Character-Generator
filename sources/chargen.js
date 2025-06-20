@@ -658,6 +658,9 @@ $(".exportSplitAnimations").click(async function() {
     `${item.zPos}`.padStart(3, '0')
       + ` ${item.parentName} ${item.name} ${item.variant}.png`;
 
+  const isCustomAnimationBasedOnStandardAnimation = (custAnim, stdAnimName) =>
+    (custAnim.frames[0][0].split(",")[0].split("-")[0] === stdAnimName)
+  
   $(".exportSplitItemAnimations").click(async function() {
     try {
       const zip = await newZip();
@@ -707,18 +710,16 @@ $(".exportSplitAnimations").click(async function() {
 
               for (const custAnimName of addedCustomAnimations) {
                 const custAnim = customAnimations[custAnimName];
-                const custFrames = custAnim.frames;
-                const custBaseAnimName = custFrames[0][0].split(",")[0].split("-")[0];
-                if (custBaseAnimName !== name)
+                if (!isCustomAnimationBasedOnStandardAnimation(custAnim, name))
                   continue;
 
                 const custExportedItems = exportedCustom[custAnimName] || [];
                 exportedCustom[custAnimName] = custExportedItems;
                 const custFailedItems = failedCustom[custAnimName] || [];
-
                 try {
                   const custCanvas = document.createElement("canvas");
                   const custFrameSize = custAnim.frameSize;
+                  const custFrames = custAnim.frames;
                   custCanvas.width = custFrameSize * custFrames[0].length;
                   custCanvas.height = custFrameSize * custFrames.length;
                   const custCtx = custCanvas.getContext("2d");
@@ -726,7 +727,7 @@ $(".exportSplitAnimations").click(async function() {
 
                   const custAnimFolder = customFolder.folder(custAnimName);
                   const custBlob = await canvasToBlob(custCanvas);
-                  await custAnimFolder.file(itemFileName, custBlob);
+                  custAnimFolder.file(itemFileName, custBlob);
                   custExportedItems.push(itemFileName);
                 } catch (err) {
                   console.error(`Failed to export item ${itemFileName} in custom animation ${custAnimName}:`, err);
