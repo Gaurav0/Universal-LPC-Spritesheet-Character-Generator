@@ -522,6 +522,30 @@ $(document).ready(function () {
 
 const newTimeStamp = () => new Date().toISOString().replace(/[:\.]/g, '-').substring(0, 19);
 
+const addMetadataToZip = (zip, bodyType, timestamp, exportedStandard, failedStandard, exportedCustom, failedCustom) => {
+  const metadata = {
+    exportTimestamp: timestamp,
+    bodyType: bodyType,
+    standardAnimations: {
+      exported: exportedStandard,
+      failed: failedStandard
+    },
+    customAnimations: {
+      exported: exportedCustom,
+      failed: failedCustom
+    },
+    frameSize: universalFrameSize,
+    frameCounts: animationFrameCounts
+  };
+  try {
+    const creditsFolder = zip.folder("credits");
+    creditsFolder.file("metadata.json", JSON.stringify(metadata, null, 2));
+  } catch (err) {
+    throw new Error(`Failed to add metadata.json: ${err.message}`);
+  }
+  return metadata;
+}
+
 $(".exportSplitAnimations").click(async function() {
   try {
     const zip = await newZip();
@@ -615,25 +639,7 @@ $(".exportSplitAnimations").click(async function() {
     }
 
     // Add metadata about the export
-    try {
-      const metadata = {
-        exportTimestamp: timestamp,
-        bodyType: bodyType,
-        standardAnimations: {
-          exported: exportedStandard,
-          failed: failedStandard
-        },
-        customAnimations: {
-          exported: exportedCustom,
-          failed: failedCustom
-        },
-        frameSize: universalFrameSize,
-        frameCounts: animationFrameCounts
-      };
-      await creditsFolder.file("metadata.json", JSON.stringify(metadata, null, 2));
-    } catch (err) {
-      throw new Error(`Failed to add metadata.json: ${err.message}`);
-    }
+    addMetadataToZip(zip, bodyType, timestamp, exportedStandard, failedStandard, exportedCustom, failedCustom);
 
     // Generate and download zip
     await downloadZip(zip, `lpc_${bodyType}_animations_${timestamp}.zip`);
@@ -782,25 +788,7 @@ $(".exportSplitAnimations").click(async function() {
       }
 
       // Add metadata about the export
-      try {
-        const metadata = {
-          exportTimestamp: timestamp,
-          bodyType: bodyType,
-          standardAnimations: {
-            exported: exportedStandard,
-            failed: failedStandard
-          },
-          customAnimations: {
-            exported: exportedCustom,
-            failed: failedCustom
-          },
-          frameSize: universalFrameSize,
-          frameCounts: animationFrameCounts
-        };
-        await creditsFolder.file("metadata.json", JSON.stringify(metadata, null, 2));
-      } catch (err) {
-        throw new Error(`Failed to add metadata.json: ${err.message}`);
-      }
+      addMetadataToZip(zip, bodyType, timestamp, exportedStandard, failedStandard, exportedCustom, failedCustom);
 
       // Generate and download zip
       await downloadZip(zip, `lpc_${bodyType}_item_animations_${timestamp}.zip`);
