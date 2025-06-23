@@ -1245,6 +1245,14 @@ $(".exportSplitAnimations").click(async function() {
     }
   }
 
+  /**
+   * 
+   * @param {CanvasRenderingContext2D} customAnimationContext 
+   * @param {CustomAnimationDefinition} customAnimationDefinition 
+   * @param {number} offSetY 
+   * @param {CanvasRenderingContext2D} srcCtx 
+   * @param {AnimationRowsLayout} srcRowsLayout 
+   */
   function copyFramesToCustomAnimation(customAnimationContext, customAnimationDefinition, offSetY, srcCtx, srcRowsLayout) {
     const frameSize = customAnimationDefinition.frameSize;
     for (let i = 0; i < customAnimationDefinition.frames.length; ++i) {
@@ -1253,19 +1261,19 @@ $(".exportSplitAnimations").click(async function() {
         const srcColumn = parseInt(frames[j].split(",")[1]);
         const srcRowName = frames[j].split(",")[0];
         const srcRow = srcRowsLayout ? (srcRowsLayout[srcRowName] + 1) : i;
-        const offSet = (frameSize - universalFrameSize) / 2;
 
-        const imgDataSingleFrame = srcCtx.getImageData(
-          universalFrameSize * srcColumn,
-          universalFrameSize * srcRow,
-          universalFrameSize,
-          universalFrameSize
-        );
-        customAnimationContext.putImageData(
-          imgDataSingleFrame,
-          frameSize * j + offSet,
-          frameSize * i + offSet + offSetY
-        );
+        copyFrame(customAnimationContext,
+          {
+            x: frameSize * j,
+            y: frameSize * i + offSetY
+          },
+          frameSize,
+          srcCtx,
+          {
+            x: universalFrameSize * srcColumn,
+            y: universalFrameSize * srcRow,
+          },
+          universalFrameSize)
       }
     }
   }
