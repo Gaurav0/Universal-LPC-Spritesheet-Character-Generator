@@ -520,11 +520,13 @@ $(document).ready(function () {
     });
   };
 
+const newTimeStamp = () => new Date().toISOString().replace(/[:\.]/g, '-').substring(0, 19);
+
 $(".exportSplitAnimations").click(async function() {
   try {
     const zip = await newZip();
     const bodyType = getBodyTypeName();
-    const timestamp = new Date().toISOString().replace(/[:\.]/g, '-').substring(0, 19);
+    const timestamp = newTimeStamp()
 
     // Create folders in zip
     const standardFolder = zip.folder("standard");
@@ -665,7 +667,7 @@ $(".exportSplitAnimations").click(async function() {
     try {
       const zip = await newZip();
       const bodyType = getBodyTypeName();
-      const timestamp = new Date().toISOString().replace(/[:\.]/g, '-').substring(0, 19);
+      const timestamp = newTimeStamp();
 
       // Create folders in zip
       const standardFolder = zip.folder("standard");
@@ -885,7 +887,7 @@ $(".exportSplitAnimations").click(async function() {
       }
 
       const bodyType = getBodyTypeName();
-      const timestamp = new Date().toISOString().replace(/[:\.]/g, '-').substring(0, 19);
+      const timestamp = newTimeStamp();
       await downloadZip(zip, `lpc_${bodyType}_item_spritesheets_${timestamp}.zip`);
 
       // Show success message with any failures
