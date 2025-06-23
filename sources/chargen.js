@@ -376,7 +376,7 @@ $(document).ready(function () {
 
   $(".exportToClipboard").click(function () {
     const spritesheet = Object.assign({}, itemsMeta);
-    spritesheet["layers"] = itemsToDraw;
+    spritesheet.layers = itemsToDraw;
     navigator.clipboard.writeText(JSON.stringify(spritesheet, null, "  "));
   });
 
@@ -468,7 +468,7 @@ $(document).ready(function () {
     // Add JSON export
     try {
       const spritesheet = Object.assign({}, itemsMeta);
-      spritesheet["layers"] = itemsToDraw;
+      spritesheet.layers = itemsToDraw;
       await zip.file("character.json", JSON.stringify(spritesheet, null, 2));
     } catch (err) {
       throw new Error(`Failed to add character.json: ${err.message}`);
