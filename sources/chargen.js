@@ -1336,8 +1336,8 @@ $(".exportSplitAnimations").click(async function() {
       drawImage(destCtx, img, destY);
       return img;
     } else {
-      // Enable this to see missing animations in the console
-      // console.warn(`supportedAnimations does not contain ${key} for asset ${file}. skipping render`)
+      if (DEBUG)
+        console.log(`supportedAnimations does not contain ${animationToCheck} for asset ${itemToDraw.fileName}. skipping render`);
     }
     return null;
   }
