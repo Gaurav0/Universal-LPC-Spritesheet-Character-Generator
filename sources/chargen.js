@@ -681,10 +681,7 @@ $(".exportSplitAnimations").click(async function() {
     `${item.zPos}`.padStart(3, '0')
       + ` ${item.parentName} ${item.name} ${item.variant}.png`;
 
-  const isCustomAnimationBasedOnStandardAnimation = (custAnim, stdAnimName) =>
-    (custAnim.frames[0][0].split(",")[0].split("-")[0] === stdAnimName)
-  
-  $(".exportSplitItemAnimations").click(async function() {
+    $(".exportSplitItemAnimations").click(async function() {
     try {
       const zip = await newZip();
       const bodyType = getBodyTypeName();

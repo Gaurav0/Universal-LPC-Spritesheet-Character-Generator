@@ -154,3 +154,9 @@ const customAnimationSize = (customAnimation) => ({
   width: customAnimation.frameSize * customAnimation.frames[0].length,
   height: customAnimation.frameSize * customAnimation.frames.length
 })
+
+const customAnimationBase = (custAnim) =>
+  (custAnim.frames[0][0].split(",")[0].split("-")[0])
+
+const isCustomAnimationBasedOnStandardAnimation = (custAnim, stdAnimName) =>
+  (customAnimationBase(custAnim) === stdAnimName)
