@@ -483,7 +483,7 @@ $(document).ready(function () {
     $("#frame-cycle").text(animationItems.join("-"));
   });
   
-  async function newZip() {
+  function newZip() {
     const zip = new JSZip();
 
     const creditsFolder = zip.folder("credits");
@@ -496,15 +496,15 @@ $(document).ready(function () {
     try {
       const spritesheet = Object.assign({}, itemsMeta);
       spritesheet.layers = itemsToDraw;
-      await zip.file("character.json", JSON.stringify(spritesheet, null, 2));
+      zip.file("character.json", JSON.stringify(spritesheet, null, 2));
     } catch (err) {
       throw new Error(`Failed to add character.json: ${err.message}`);
     }
 
     // Add credits in multiple formats
     try {
-      await creditsFolder.file("credits.txt", sheetCreditsToTxt());
-      await creditsFolder.file("credits.csv", sheetCreditsToCSV());
+      creditsFolder.file("credits.txt", sheetCreditsToTxt());
+      creditsFolder.file("credits.csv", sheetCreditsToCSV());
     } catch (err) {
       throw new Error(`Failed to add credits files: ${err.message}`);
     }
@@ -689,7 +689,7 @@ const addMetadataToZip = (zip, bodyType, timestamp, exportedStandard, failedStan
 
 $(".exportSplitAnimations").click(async function() {
   try {
-    const zip = await newZip();
+    const zip = newZip();
     const bodyType = getBodyTypeName();
     const timestamp = newTimeStamp()
 
@@ -808,7 +808,7 @@ $(".exportSplitAnimations").click(async function() {
   
   $(".exportSplitItemAnimations").click(async function() {
     try {
-      const zip = await newZip();
+      const zip = newZip();
       const bodyType = getBodyTypeName();
       const timestamp = newTimeStamp();
 
@@ -971,7 +971,7 @@ $(".exportSplitAnimations").click(async function() {
 
   $(".exportSplitItemSheets").click(async () => {
     try {
-      const zip = await newZip();
+      const zip = newZip();
 
       const itemsFolder = zip.folder("items");
       if (!itemsFolder) {
