@@ -871,13 +871,15 @@ $(".exportSplitAnimations").click(async function() {
             drawCustomAnimationItemSheet(itemCtx, itemCanvas, itemToDraw,
               itemCanvas.width, itemCanvas.height, null);
           } else {
-            drawItemOnStandardAnimations(itemCtx, itemToDraw);
+            const drawnAnimations = drawItemOnStandardAnimations(itemCtx, itemToDraw);
 
             let offSetY = universalSheetHeight;
             for (custAnimName of addedCustomAnimations) {
               const custAnim = customAnimations[custAnimName];
-              drawFramesToCustomAnimation(itemCtx, custAnim, offSetY, itemCanvas, animationRowsLayout);
-              offSetY += customAnimationSize(custAnim).height;
+              if (drawnAnimations[customAnimationBase(custAnim)]) {
+                drawFramesToCustomAnimation(itemCtx, custAnim, offSetY, itemCanvas, animationRowsLayout);
+                offSetY += customAnimationSize(custAnim).height;
+              }
             }
           }
           
@@ -1367,9 +1369,11 @@ $(".exportSplitAnimations").click(async function() {
   }
 
   function drawItemOnStandardAnimations(destCtx, itemToDraw) {
+    let drawnAnimations = {};
     for (const [key, value] of Object.entries(base_animations)) {
-      drawItemOnStandardAnimation(destCtx, value, key, itemToDraw);
+      drawnAnimations[key] = drawItemOnStandardAnimation(destCtx, value, key, itemToDraw);
     }
+    return drawnAnimations;
   }
 
   /**
