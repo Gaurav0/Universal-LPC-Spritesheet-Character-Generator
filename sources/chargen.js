@@ -9,6 +9,15 @@
     variant: string,
     supportedAnimations: string
   }} ItemToDraw
+
+ * @typedef {{
+      bodyTypeName: string,
+      url: string,
+      spritesheets: string,
+      version: number,
+      datetime: string,
+      credits: string[],
+  }} ItemsMeta
  */
 
 $.expr[":"].icontains = function (a, i, m) {
@@ -58,7 +67,9 @@ $(document).ready(function () {
   /** @type {ItemToDraw[]} */
   let itemsToDraw = [];
 
+  /** @type {ItemsMeta} */
   let itemsMeta = {};
+
   let params = jHash.val();
   let sheetCredits = [];
 
