@@ -1,3 +1,16 @@
+/**
+
+ * @typedef {{
+    fileName:string,
+    zPos: number,
+    custom_animation: string?,
+    parentName: string,
+    name: string,
+    variant: string,
+    supportedAnimations: string
+  }} ItemToDraw
+ */
+
 $.expr[":"].icontains = function (a, i, m) {
   return jQuery(a).text().toUpperCase().indexOf(m[3].toUpperCase()) >= 0;
 };
@@ -41,7 +54,10 @@ const DEBUG = debugQueryString() ?? isLocalhost;
 
 $(document).ready(function () {
   let matchBodyColor = true;
+  
+  /** @type {ItemToDraw[]} */
   let itemsToDraw = [];
+
   let itemsMeta = {};
   let params = jHash.val();
   let sheetCredits = [];
@@ -851,7 +867,7 @@ $(".exportSplitAnimations").click(async function() {
       itemCanvas.height = canvas.height;
       const itemCtx = itemCanvas.getContext("2d");
 
-            for (let itemToDraw of itemsToDraw) {
+      for (let itemToDraw of itemsToDraw) {
         const fileName = getItemFileName(itemToDraw);
 
         try {
@@ -1277,7 +1293,7 @@ $(".exportSplitAnimations").click(async function() {
     }
   }
 
-/**
+  /**
    * 
    * @param {CanvasRenderingContext2D} destCtx 
    * @param {CanvasImageSource} baseCanvas
