@@ -573,6 +573,120 @@ const addMetadataToZip = (zip, bodyType, timestamp, exportedStandard, failedStan
   return metadata;
 }
 
+  /**
+   * 
+   * @param {string} custom_animation 
+   * @param {string[]} addedCustomAnimations 
+   * @returns 
+   */
+  function customAnimationY(custom_animation, addedCustomAnimations) {
+    let y = universalSheetHeight;
+    for (const custAnimName of addedCustomAnimations) {
+      if (custAnimName === custom_animation)
+        break;
+      const otherCustomAction = customAnimations[custAnimName];
+      y += customAnimationSize(otherCustomAction).height;
+    }
+    return y;
+  }
+
+  /**
+   * 
+   * @param {CanvasRenderingContext2D} destCtx 
+   * @param {CanvasImageSource} baseCanvas
+   * @param {ItemToDraw} itemToDraw 
+   * @param {number} requiredCanvasWidth 
+   * @param {number} requiredCanvasHeight 
+   * @param {string?} didPutUniversalForCustomAnimation 
+   * @returns 
+   */
+  function drawCustomAnimationItem(destCtx, itemToDraw, addedCustomAnimations) {
+    const custom_animation = itemToDraw.custom_animation;
+    const filePath = itemToDraw.fileName;
+    const img = loadImage(filePath, false);
+    const y = customAnimationY(custom_animation, addedCustomAnimations);
+    destCtx.drawImage(img, 0, y);
+  }
+
+  /**
+   * 
+   * @param {HTMLCanvasElement} srcCanvas 
+   * @param {CanvasRenderingContext2D} srcCtx 
+   * @param {{x: number?, y: number?, width: number, height: number}} srcRect
+   * @returns {HTMLCanvasElement}
+   */
+  function newAnimationFromSheet(srcCanvas, srcCtx, srcRect) {
+    const { x, y, width, height } = srcRect;
+    const fromSubregion = x !== undefined && y !== undefined;
+    if (fromSubregion && !hasContentInRegion(srcCtx, x, y, width, height))
+      return null;
+
+    const animCanvas = document.createElement('canvas');
+    animCanvas.width = width;
+    animCanvas.height = height;
+    const animCtx = animCanvas.getContext('2d');
+
+    if (!animCtx) {
+      throw new Error("Failed to get canvas context");
+    }
+
+    if (fromSubregion) {
+      animCtx.drawImage(srcCanvas,
+        x, y, width, height,
+        0, 0, width, height);
+    } else {
+      animCtx.drawImage(srcCanvas, 0, 0);
+    }
+
+    return animCanvas;
+  }
+
+  /**
+   * 
+   * @param {HTMLCanvasElement} destCanvas 
+   * @param {ItemToDraw} itemToDraw 
+   * @param {string[]} addedCustomAnimations 
+   */
+  function drawItemSheet(destCanvas, itemToDraw, addedCustomAnimations) {
+    const destCtx = destCanvas.getContext("2d");
+    const custom_animation = itemToDraw.custom_animation;
+    if (custom_animation !== undefined) {
+      drawCustomAnimationItem(destCtx, itemToDraw, addedCustomAnimations);
+    } else {
+      for (const [key, value] of Object.entries(base_animations)) {
+        if (!drawItemOnStandardAnimation(destCtx, value, key, itemToDraw))
+          continue;
+
+        let offSetY = universalSheetHeight;
+        for (const custAnimName of addedCustomAnimations) {
+          const custAnim = customAnimations[custAnimName];
+          if (key === customAnimationBase(custAnim)) {
+            drawFramesToCustomAnimation(destCtx, custAnim, offSetY, destCanvas, animationRowsLayout);
+          }
+          offSetY += customAnimationSize(custAnim).height;
+        }
+      }
+    }
+  }
+
+  /**
+   * 
+   * @param {*} folder 
+   * @param {string} name 
+   * @param {HTMLCanvasElement} srcCanvas 
+   * @param {CanvasRenderingContext2D} srcCtx 
+   * @param {{x: number?, y: number?, width: number, height: number}} srcRect 
+   * @returns {HTMLCanvasElement}
+   */
+  async function addAnimationToZipFolder(folder, name, srcCanvas, srcCtx, srcRect) {
+    const animCanvas = newAnimationFromSheet(srcCanvas, srcCtx, srcRect);
+    if (animCanvas) {
+      const blob = await canvasToBlob(animCanvas);
+      folder.file(`${name}.png`, blob);
+    }
+    return animCanvas;
+  }
+
 $(".exportSplitAnimations").click(async function() {
   try {
     const zip = await newZip();
