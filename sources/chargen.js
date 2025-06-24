@@ -1371,6 +1371,47 @@ $(".exportSplitAnimations").click(async function() {
     }
   }
 
+  /**
+   * 
+   * @param {ItemToDraw[]} items 
+   * @returns {string[]}
+   */
+  function buildCustomAnimationList(items) {
+    const list = [];
+    for (const item of items) {
+      const customAnimationString = item.custom_animation;
+      if (customAnimationString !== undefined) {
+        if (!list.includes(customAnimationString)) {
+          list.push(customAnimationString);
+        }
+      }
+    }
+    return list;
+  }
+
+  /**
+   * 
+   * @param {string[]} customAnimationList 
+   * @returns {{width:number, height:number}}
+   */
+  function getTotalSheetSize(customAnimationList) {
+    let height = universalSheetHeight;
+    let width = universalSheetWidth;
+    for (const customAnimationString of customAnimationList) {
+        const customAnimation = customAnimations[customAnimationString];
+        const customAnimationWidth =
+          customAnimation.frameSize * customAnimation.frames[0].length;
+        const customAnimationHeight =
+          customAnimation.frameSize * customAnimation.frames.length;
+        width = Math.max(
+          width,
+          customAnimationWidth
+        );
+        height = height + customAnimationHeight;
+    }
+    return {width, height};
+  }
+
   function drawItemsToDraw() {
     if (!canRender()) {
       return;
@@ -1378,31 +1419,11 @@ $(".exportSplitAnimations").click(async function() {
     if (DEBUG) console.log(`Start drawItemsToDraw`);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    let requiredCanvasHeight = universalSheetHeight;
-    let requiredCanvasWidth = universalSheetWidth;
     clearCustomAnimationPreviews();
-    addedCustomAnimations = [];
-    for (let i = 0; i < itemsToDraw.length; ++i) {
-      const customAnimationString = itemsToDraw[i].custom_animation;
-      if (customAnimationString !== undefined) {
-        if (addedCustomAnimations.includes(customAnimationString)) {
-          continue;
-        }
-        addedCustomAnimations.push(customAnimationString);
-        const customAnimation = customAnimations[customAnimationString];
-        const customAnimationWidth =
-          customAnimation.frameSize * customAnimation.frames[0].length;
-        const customAnimationHeight =
-          customAnimation.frameSize * customAnimation.frames.length;
-        requiredCanvasWidth = Math.max(
-          requiredCanvasWidth,
-          customAnimationWidth
-        );
-        requiredCanvasHeight = requiredCanvasHeight + customAnimationHeight;
-      }
-    }
-    canvas.width = requiredCanvasWidth;
-    canvas.height = requiredCanvasHeight;
+    addedCustomAnimations = buildCustomAnimationList(itemsToDraw);
+    const {width, height} = getTotalSheetSize(addedCustomAnimations);
+    canvas.width = width;
+    canvas.height = height;
 
     let itemIdx = 0;
     let didPutUniversalForCustomAnimation = "";
@@ -1417,7 +1438,7 @@ $(".exportSplitAnimations").click(async function() {
 
       if (custom_animation !== undefined) {
         didPutUniversalForCustomAnimation = drawCustomAnimationItemSheet(ctx, canvas, itemToDraw,
-          requiredCanvasWidth, requiredCanvasHeight, didPutUniversalForCustomAnimation);
+          width, height, didPutUniversalForCustomAnimation);
       } else {
         drawItemOnStandardAnimations(ctx, itemToDraw);
       }
