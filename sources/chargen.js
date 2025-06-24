@@ -680,8 +680,8 @@ $(".exportSplitAnimations").click(async function() {
   const getItemFileName = (item) =>
     `${item.zPos}`.padStart(3, '0')
       + ` ${item.parentName} ${item.name} ${item.variant}.png`;
-
-    $(".exportSplitItemAnimations").click(async function() {
+  
+  $(".exportSplitItemAnimations").click(async function() {
     try {
       const zip = await newZip();
       const bodyType = getBodyTypeName();
@@ -872,6 +872,13 @@ $(".exportSplitAnimations").click(async function() {
               itemCanvas.width, itemCanvas.height, null);
           } else {
             drawItemOnStandardAnimations(itemCtx, itemToDraw);
+
+            let offSetY = universalSheetHeight;
+            for (custAnimName of addedCustomAnimations) {
+              const custAnim = customAnimations[custAnimName];
+              drawFramesToCustomAnimation(itemCtx, custAnim, offSetY, itemCanvas, animationRowsLayout);
+              offSetY += customAnimationSize(custAnim).height;
+            }
           }
           
           const blob = await canvasToBlob(itemCanvas);
