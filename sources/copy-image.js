@@ -4,17 +4,6 @@
  */
 
 /**
- * @param {CanvasRenderingContext2D} destCtx 
- * @param {Point} destPoint 
- * @param {CanvasImageSource} src 
- * @param {Rectangle} srcRect 
- */
-function drawImage(destCtx, destPoint, src, srcRect) {
-    destCtx.drawImage(src, srcRect.x, srcRect.y, srcRect.width, srcRect.height,
-        destPoint.x, destPoint.y, srcRect.width, srcRect.height);
-}
-
-/**
  * 
  * @param {CanvasRenderingContext2D} destCtx 
  * @param {Point} destFramePos 
@@ -25,13 +14,17 @@ function drawImage(destCtx, destPoint, src, srcRect) {
  */
 function drawFrameToFrame(destCtx, destFramePos, destFrameSize, src, srcFramePos, srcFrameSize) {
     const offSet = (destFrameSize - srcFrameSize) / 2;
-    drawImage(destCtx, {
+    const destPoint = {
         x: destFramePos.x + offSet,
         y: destFramePos.y + offSet
-    }, src, {
+    };
+    const srcRect = {
         x: srcFramePos.x,
         y: srcFramePos.y,
         width: srcFrameSize,
         height: srcFrameSize
-    })
+    };
+
+    destCtx.drawImage(src, srcRect.x, srcRect.y, srcRect.width, srcRect.height,
+        destPoint.x, destPoint.y, srcRect.width, srcRect.height);
 }
