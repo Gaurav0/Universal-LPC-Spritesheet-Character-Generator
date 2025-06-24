@@ -705,33 +705,21 @@ $(".exportSplitAnimations").click(async function() {
     // Export standard animations
     const exportedStandard = [];
     const failedStandard = [];
-    
-    for (const [name, startY] of Object.entries(base_animations)) {
+
+    for (const [name, y] of Object.entries(base_animations)) {
       try {
         const rows = name === 'hurt' || name === 'climb' ? 1 : 4;
         const frames = animationFrameCounts[name];
-        
-        if (hasContentInRegion(ctx, 0, startY, frames * universalFrameSize, rows * universalFrameSize)) {
-          const animCanvas = document.createElement('canvas');
-          animCanvas.width = frames * universalFrameSize;
-          animCanvas.height = rows * universalFrameSize;
-          const animCtx = animCanvas.getContext('2d');
-          
-          if (!animCtx) {
-            throw new Error("Failed to get canvas context");
-          }
-          
-          animCtx.drawImage(canvas, 
-            0, startY,
-            frames * universalFrameSize, rows * universalFrameSize,
-            0, 0,
-            frames * universalFrameSize, rows * universalFrameSize
-          );
+        const srcRect = {
+          x: 0, y,
+          width: frames * universalFrameSize,
+          height: rows * universalFrameSize
+        };
+        const animCanvas = await addAnimationToZipFolder(standardFolder, name,
+          canvas, ctx, srcRect);
 
-          const blob = await canvasToBlob(animCanvas);
-          await standardFolder.file(`${name}.png`, blob);
+        if (animCanvas)
           exportedStandard.push(name);
-        }
       } catch (err) {
         console.error(`Failed to export standard animation ${name}:`, err);
         failedStandard.push(name);
@@ -741,8 +729,8 @@ $(".exportSplitAnimations").click(async function() {
     // Handle custom animations
     const exportedCustom = [];
     const failedCustom = [];
-    let currentY = universalSheetHeight;
-    
+    let y = universalSheetHeight;
+
     for (const animName of addedCustomAnimations) {
       try {
         const anim = customAnimations[animName];
@@ -750,28 +738,14 @@ $(".exportSplitAnimations").click(async function() {
           throw new Error("Animation definition not found");
         }
 
-        const {width, height} = customAnimationSize(anim);
+        const srcRect = { x: 0, y, ...customAnimationSize(anim) };
+        const animCanvas = await addAnimationToZipFolder(customFolder, animName,
+          canvas, ctx, srcRect);
 
-        if (hasContentInRegion(ctx, 0, currentY, width, height)) {
-          const animCanvas = document.createElement('canvas'); 
-          animCanvas.width = width;
-          animCanvas.height = height;
-          const animCtx = animCanvas.getContext('2d');
-          
-          if (!animCtx) {
-            throw new Error("Failed to get canvas context");
-          }
-
-          animCtx.drawImage(canvas,
-            0, currentY, width, height,
-            0, 0, width, height
-          );
-
-          const blob = await canvasToBlob(animCanvas);
-          await customFolder.file(`${animName}.png`, blob);
+        if (animCanvas)
           exportedCustom.push(animName);
-        }
-        currentY += height;
+
+        y += srcRect.height;
       } catch (err) {
         console.error(`Failed to export custom animation ${animName}:`, err);
         failedCustom.push(animName);
@@ -991,23 +965,8 @@ $(".exportSplitAnimations").click(async function() {
 
         try {
           itemCtx.clearRect(0, 0, itemCanvas.width, itemCanvas.height);
-          const custom_animation = itemToDraw.custom_animation;
-          if (custom_animation !== undefined) {
-            drawCustomAnimationItemSheet(itemCtx, itemCanvas, itemToDraw,
-              itemCanvas.width, itemCanvas.height, null);
-          } else {
-            const drawnAnimations = drawItemOnStandardAnimations(itemCtx, itemToDraw);
+          drawItemSheet(itemCanvas, itemToDraw, addedCustomAnimations);
 
-            let offSetY = universalSheetHeight;
-            for (custAnimName of addedCustomAnimations) {
-              const custAnim = customAnimations[custAnimName];
-              if (drawnAnimations[customAnimationBase(custAnim)]) {
-                drawFramesToCustomAnimation(itemCtx, custAnim, offSetY, itemCanvas, animationRowsLayout);
-                offSetY += customAnimationSize(custAnim).height;
-              }
-            }
-          }
-          
           const blob = await canvasToBlob(itemCanvas);
           await itemsFolder.file(fileName, blob);
           exportedItems.push(fileName);
