@@ -611,15 +611,16 @@ const addMetadataToZip = (zip, bodyType, timestamp, exportedStandard, failedStan
   /**
    * 
    * @param {HTMLCanvasElement} srcCanvas 
-   * @param {CanvasRenderingContext2D} srcCtx 
    * @param {{x: number?, y: number?, width: number, height: number}} srcRect
    * @returns {HTMLCanvasElement}
    */
-  function newAnimationFromSheet(srcCanvas, srcCtx, srcRect) {
+  function newAnimationFromSheet(srcCanvas, srcRect) {
     const { x, y, width, height } = srcRect;
     const fromSubregion = x !== undefined && y !== undefined;
-    if (fromSubregion && !hasContentInRegion(srcCtx, x, y, width, height))
-      return null;
+    if (fromSubregion) {
+      if (!hasContentInRegion(srcCanvas.getContext("2d"), x, y, width, height))
+        return null;
+    }
 
     const animCanvas = document.createElement('canvas');
     animCanvas.width = width;
@@ -674,12 +675,11 @@ const addMetadataToZip = (zip, bodyType, timestamp, exportedStandard, failedStan
    * @param {*} folder 
    * @param {string} name 
    * @param {HTMLCanvasElement} srcCanvas 
-   * @param {CanvasRenderingContext2D} srcCtx 
    * @param {{x: number?, y: number?, width: number, height: number}} srcRect 
    * @returns {HTMLCanvasElement}
    */
-  async function addAnimationToZipFolder(folder, name, srcCanvas, srcCtx, srcRect) {
-    const animCanvas = newAnimationFromSheet(srcCanvas, srcCtx, srcRect);
+  async function addAnimationToZipFolder(folder, name, srcCanvas, srcRect) {
+    const animCanvas = newAnimationFromSheet(srcCanvas, srcRect);
     if (animCanvas) {
       const blob = await canvasToBlob(animCanvas);
       folder.file(`${name}.png`, blob);
@@ -716,7 +716,7 @@ $(".exportSplitAnimations").click(async function() {
           height: rows * universalFrameSize
         };
         const animCanvas = await addAnimationToZipFolder(standardFolder, name,
-          canvas, ctx, srcRect);
+          canvas, srcRect);
 
         if (animCanvas)
           exportedStandard.push(name);
@@ -740,7 +740,7 @@ $(".exportSplitAnimations").click(async function() {
 
         const srcRect = { x: 0, y, ...customAnimationSize(anim) };
         const animCanvas = await addAnimationToZipFolder(customFolder, animName,
-          canvas, ctx, srcRect);
+          canvas, srcRect);
 
         if (animCanvas)
           exportedCustom.push(animName);
