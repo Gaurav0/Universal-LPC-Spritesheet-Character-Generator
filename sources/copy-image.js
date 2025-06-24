@@ -6,13 +6,12 @@
 /**
  * @param {CanvasRenderingContext2D} destCtx 
  * @param {Point} destPoint 
- * @param {CanvasRenderingContext2D} srcCtx 
+ * @param {CanvasImageSource} src 
  * @param {Rectangle} srcRect 
  */
-function copyImageData(destCtx, destPoint, srcCtx, srcRect) {
-    const { x, y, width, height } = srcRect;
-    const srcImageData = srcCtx.getImageData(x, y, width, height);
-    destCtx.putImageData(srcImageData, destPoint.x, destPoint.y);
+function drawImage(destCtx, destPoint, src, srcRect) {
+    destCtx.drawImage(src, srcRect.x, srcRect.y, srcRect.width, srcRect.height,
+        destPoint.x, destPoint.y, srcRect.width, srcRect.height);
 }
 
 /**
@@ -20,16 +19,16 @@ function copyImageData(destCtx, destPoint, srcCtx, srcRect) {
  * @param {CanvasRenderingContext2D} destCtx 
  * @param {Point} destFramePos 
  * @param {number} destFrameSize 
- * @param {CanvasRenderingContext2D} srcCtx 
+ * @param {CanvasImageSource} src 
  * @param {Point} srcFramePos 
  * @param {number} srcFrameSize 
  */
-function copyFrame(destCtx, destFramePos, destFrameSize, srcCtx, srcFramePos, srcFrameSize) {
+function drawFrameToFrame(destCtx, destFramePos, destFrameSize, src, srcFramePos, srcFrameSize) {
     const offSet = (destFrameSize - srcFrameSize) / 2;
-    copyImageData(destCtx, {
+    drawImage(destCtx, {
         x: destFramePos.x + offSet,
         y: destFramePos.y + offSet
-    }, srcCtx, {
+    }, src, {
         x: srcFramePos.x,
         y: srcFramePos.y,
         width: srcFrameSize,

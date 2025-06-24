@@ -731,7 +731,7 @@ $(".exportSplitAnimations").click(async function() {
                   custCanvas.width = custFrameSize * custFrames[0].length;
                   custCanvas.height = custFrameSize * custFrames.length;
                   const custCtx = custCanvas.getContext("2d");
-                  copyFramesToCustomAnimation(custCtx, custAnim, 0, itemCtx, null);
+                  drawFramesToCustomAnimation(custCtx, custAnim, 0, itemCanvas, null);
 
                   const custAnimFolder = customFolder.folder(custAnimName);
                   const custBlob = await canvasToBlob(custCanvas);
@@ -851,16 +851,15 @@ $(".exportSplitAnimations").click(async function() {
       itemCanvas.height = canvas.height;
       const itemCtx = itemCanvas.getContext("2d");
 
-      let didPutUniversalForCustomAnimation = "";
-      for (let itemToDraw of itemsToDraw) {
+            for (let itemToDraw of itemsToDraw) {
         const fileName = getItemFileName(itemToDraw);
 
         try {
           itemCtx.clearRect(0, 0, itemCanvas.width, itemCanvas.height);
           const custom_animation = itemToDraw.custom_animation;
           if (custom_animation !== undefined) {
-            didPutUniversalForCustomAnimation = drawCustomAnimationItemSheet(itemCtx, itemToDraw,
-              itemCanvas.width, itemCanvas.height, didPutUniversalForCustomAnimation);
+            drawCustomAnimationItemSheet(itemCtx, itemCanvas, itemToDraw,
+              itemCanvas.width, itemCanvas.height, null);
           } else {
             drawItemOnStandardAnimations(itemCtx, itemToDraw);
           }
@@ -1250,10 +1249,10 @@ $(".exportSplitAnimations").click(async function() {
    * @param {CanvasRenderingContext2D} customAnimationContext 
    * @param {CustomAnimationDefinition} customAnimationDefinition 
    * @param {number} offSetY 
-   * @param {CanvasRenderingContext2D} srcCtx 
+   * @param {CanvasImageSource} src 
    * @param {AnimationRowsLayout} srcRowsLayout 
    */
-  function copyFramesToCustomAnimation(customAnimationContext, customAnimationDefinition, offSetY, srcCtx, srcRowsLayout) {
+  function drawFramesToCustomAnimation(customAnimationContext, customAnimationDefinition, offSetY, src, srcRowsLayout) {
     const frameSize = customAnimationDefinition.frameSize;
     for (let i = 0; i < customAnimationDefinition.frames.length; ++i) {
       const frames = customAnimationDefinition.frames[i];
@@ -1262,13 +1261,13 @@ $(".exportSplitAnimations").click(async function() {
         const srcRowName = frames[j].split(",")[0];
         const srcRow = srcRowsLayout ? (srcRowsLayout[srcRowName] + 1) : i;
 
-        copyFrame(customAnimationContext,
+        drawFrameToFrame(customAnimationContext,
           {
             x: frameSize * j,
             y: frameSize * i + offSetY
           },
           frameSize,
-          srcCtx,
+          src,
           {
             x: universalFrameSize * srcColumn,
             y: universalFrameSize * srcRow,
@@ -1278,7 +1277,17 @@ $(".exportSplitAnimations").click(async function() {
     }
   }
 
-  function drawCustomAnimationItemSheet(destCtx, itemToDraw, requiredCanvasWidth, requiredCanvasHeight, didPutUniversalForCustomAnimation) {
+/**
+   * 
+   * @param {CanvasRenderingContext2D} destCtx 
+   * @param {CanvasImageSource} baseCanvas
+   * @param {ItemToDraw} itemToDraw 
+   * @param {number} requiredCanvasWidth 
+   * @param {number} requiredCanvasHeight 
+   * @param {string?} didPutUniversalForCustomAnimation 
+   * @returns 
+   */
+  function drawCustomAnimationItemSheet(destCtx, baseCanvas, itemToDraw, requiredCanvasWidth, requiredCanvasHeight, didPutUniversalForCustomAnimation) {
     const custom_animation = itemToDraw.custom_animation;
     const filePath = itemToDraw.fileName;
     const img = loadImage(filePath, false);
@@ -1299,8 +1308,8 @@ $(".exportSplitAnimations").click(async function() {
     }
 
     if (didPutUniversalForCustomAnimation !== custom_animation) {
-      copyFramesToCustomAnimation(customAnimationContext, customAnimationDefinition,
-        offSetInAdditionToOtherCustomActions, destCtx, animationRowsLayout);
+      drawFramesToCustomAnimation(customAnimationContext, customAnimationDefinition,
+        offSetInAdditionToOtherCustomActions, baseCanvas, animationRowsLayout);
 
       destCtx.drawImage(customAnimationCanvas, 0, universalSheetHeight);
       if (itemToDraw.zPos >= 140) {
@@ -1391,7 +1400,7 @@ $(".exportSplitAnimations").click(async function() {
       dynamicReplacements(itemToDraw);
 
       if (custom_animation !== undefined) {
-        didPutUniversalForCustomAnimation = drawCustomAnimationItemSheet(ctx, itemToDraw,
+        didPutUniversalForCustomAnimation = drawCustomAnimationItemSheet(ctx, canvas, itemToDraw,
           requiredCanvasWidth, requiredCanvasHeight, didPutUniversalForCustomAnimation);
       } else {
         drawItemOnStandardAnimations(ctx, itemToDraw);
