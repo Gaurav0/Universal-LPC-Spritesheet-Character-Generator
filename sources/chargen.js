@@ -610,15 +610,14 @@ const addMetadataToZip = (zip, bodyType, timestamp, exportedStandard, failedStan
 
   /**
    * 
-   * @param {HTMLCanvasElement} srcCanvas 
+   * @param {CanvasImageSource} src 
    * @param {{x: number?, y: number?, width: number, height: number}} srcRect
-   * @returns {HTMLCanvasElement}
    */
-  function newAnimationFromSheet(srcCanvas, srcRect) {
+  function newAnimationFromSheet(src, srcRect) {
     const { x, y, width, height } = srcRect;
     const fromSubregion = x !== undefined && y !== undefined;
     if (fromSubregion) {
-      if (!hasContentInRegion(srcCanvas.getContext("2d"), x, y, width, height))
+      if (!hasContentInRegion(src.getContext("2d"), x, y, width, height))
         return null;
     }
 
@@ -632,11 +631,11 @@ const addMetadataToZip = (zip, bodyType, timestamp, exportedStandard, failedStan
     }
 
     if (fromSubregion) {
-      animCtx.drawImage(srcCanvas,
+      animCtx.drawImage(src,
         x, y, width, height,
         0, 0, width, height);
     } else {
-      animCtx.drawImage(srcCanvas, 0, 0);
+      animCtx.drawImage(src, 0, 0);
     }
 
     return animCanvas;
@@ -674,12 +673,11 @@ const addMetadataToZip = (zip, bodyType, timestamp, exportedStandard, failedStan
    * 
    * @param {*} folder 
    * @param {string} name 
-   * @param {HTMLCanvasElement} srcCanvas 
+   * @param {CanvasImageSource} src 
    * @param {{x: number?, y: number?, width: number, height: number}} srcRect 
-   * @returns {HTMLCanvasElement}
    */
-  async function addAnimationToZipFolder(folder, name, srcCanvas, srcRect) {
-    const animCanvas = newAnimationFromSheet(srcCanvas, srcRect);
+  async function addAnimationToZipFolder(folder, name, src, srcRect) {
+    const animCanvas = newAnimationFromSheet(src, srcRect);
     if (animCanvas) {
       const blob = await canvasToBlob(animCanvas);
       folder.file(`${name}.png`, blob);
