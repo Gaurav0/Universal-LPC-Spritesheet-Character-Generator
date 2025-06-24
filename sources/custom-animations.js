@@ -144,3 +144,13 @@ const customAnimations = {
     ]
   },
 }
+
+/**
+ * 
+ * @param {CustomAnimationDefinition} customAnimation 
+ * @returns {{width:number, height:number}}
+ */
+const customAnimationSize = (customAnimation) => ({
+  width: customAnimation.frameSize * customAnimation.frames[0].length,
+  height: customAnimation.frameSize * customAnimation.frames.length
+})

@@ -625,8 +625,7 @@ $(".exportSplitAnimations").click(async function() {
           throw new Error("Animation definition not found");
         }
 
-        const width = anim.frameSize * anim.frames[0].length;
-        const height = anim.frameSize * anim.frames.length;
+        const {width, height} = customAnimationSize(anim);
 
         if (hasContentInRegion(ctx, 0, currentY, width, height)) {
           const animCanvas = document.createElement('canvas'); 
@@ -742,10 +741,9 @@ $(".exportSplitAnimations").click(async function() {
                 const custFailedItems = failedCustom[custAnimName] || [];
                 try {
                   const custCanvas = document.createElement("canvas");
-                  const custFrameSize = custAnim.frameSize;
-                  const custFrames = custAnim.frames;
-                  custCanvas.width = custFrameSize * custFrames[0].length;
-                  custCanvas.height = custFrameSize * custFrames.length;
+                  const {width: custWidth, height: custHeight} = customAnimationSize(custAnim);
+                  custCanvas.width = custWidth;
+                  custCanvas.height = custHeight;
                   const custCtx = custCanvas.getContext("2d");
                   drawFramesToCustomAnimation(custCtx, custAnim, 0, itemCanvas, null);
 
@@ -783,10 +781,9 @@ $(".exportSplitAnimations").click(async function() {
 
         try {
           const custAnim = customAnimations[custName];
-          const custFrameSize = custAnim.frameSize;
-          const custFrames = custAnim.frames;
-          itemCanvas.width = custFrameSize * custFrames[0].length;
-          itemCanvas.height = custFrameSize * custFrames.length;
+          const {width: custWidth, height: custHeight} = customAnimationSize(custAnim);
+          itemCanvas.width = custWidth;
+          itemCanvas.height = custHeight;
 
           const img = loadImage(item.fileName, false);
           itemCtx.clearRect(0, 0, itemCanvas.width, itemCanvas.height);
@@ -1395,21 +1392,19 @@ $(".exportSplitAnimations").click(async function() {
    * @returns {{width:number, height:number}}
    */
   function getTotalSheetSize(customAnimationList) {
-    let height = universalSheetHeight;
-    let width = universalSheetWidth;
+    let sheetHeight = universalSheetHeight;
+    let sheetWidth = universalSheetWidth;
     for (const customAnimationString of customAnimationList) {
         const customAnimation = customAnimations[customAnimationString];
-        const customAnimationWidth =
-          customAnimation.frameSize * customAnimation.frames[0].length;
-        const customAnimationHeight =
-          customAnimation.frameSize * customAnimation.frames.length;
-        width = Math.max(
-          width,
+        const {width: customAnimationWidth, height: customAnimationHeight} =
+          customAnimationSize(customAnimation)
+        sheetWidth = Math.max(
+          sheetWidth,
           customAnimationWidth
         );
-        height = height + customAnimationHeight;
+        sheetHeight = sheetHeight + customAnimationHeight;
     }
-    return {width, height};
+    return {width: sheetWidth, height: sheetHeight};
   }
 
   function drawItemsToDraw() {
