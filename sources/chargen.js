@@ -1213,7 +1213,6 @@ $(".exportSplitAnimations").click(async function() {
       credits: "",
     };
 
-    zPosition = 0;
     $("#chooser input[type=radio]:checked").each(function (index) {
       const $this = $(this);
       for (jdx = 1; jdx < 10; jdx++) {
@@ -1379,54 +1378,6 @@ $(".exportSplitAnimations").click(async function() {
     }
   }
 
-  /**
-   * 
-   * @param {CanvasRenderingContext2D} destCtx 
-   * @param {CanvasImageSource} baseCanvas
-   * @param {ItemToDraw} itemToDraw 
-   * @param {number} requiredCanvasWidth 
-   * @param {number} requiredCanvasHeight 
-   * @param {string?} didPutUniversalForCustomAnimation 
-   * @returns 
-   */
-  function drawCustomAnimationItemSheet(destCtx, baseCanvas, itemToDraw, requiredCanvasWidth, requiredCanvasHeight, didPutUniversalForCustomAnimation) {
-    const custom_animation = itemToDraw.custom_animation;
-    const filePath = itemToDraw.fileName;
-    const img = loadImage(filePath, false);
-    const customAnimationDefinition = customAnimations[custom_animation];
-
-    const customAnimationCanvas = document.createElement("canvas");
-    customAnimationCanvas.width = requiredCanvasWidth;
-    customAnimationCanvas.height =
-      requiredCanvasHeight - universalSheetHeight;
-    const customAnimationContext = customAnimationCanvas.getContext("2d");
-
-    const indexInArray = addedCustomAnimations.indexOf(custom_animation);
-    let offSetInAdditionToOtherCustomActions = 0;
-    for (let i = 0; i < indexInArray; ++i) {
-      const otherCustomAction = customAnimations[addedCustomAnimations[i]];
-      offSetInAdditionToOtherCustomActions +=
-        otherCustomAction.frameSize * otherCustomAction.frames.length;
-    }
-
-    if (didPutUniversalForCustomAnimation !== custom_animation) {
-      drawFramesToCustomAnimation(customAnimationContext, customAnimationDefinition,
-        offSetInAdditionToOtherCustomActions, baseCanvas, animationRowsLayout);
-
-      destCtx.drawImage(customAnimationCanvas, 0, universalSheetHeight);
-      if (itemToDraw.zPos >= 140) {
-        didPutUniversalForCustomAnimation = custom_animation;
-      }
-    }
-    destCtx.drawImage(
-      img,
-      0,
-      universalSheetHeight + offSetInAdditionToOtherCustomActions
-    );
-
-    return didPutUniversalForCustomAnimation
-  }
-
   function getItemAnimationImage(itemToDraw, animName) {
     let animationToCheck = animName;
     if (animName === "combat_idle") {
@@ -1454,14 +1405,6 @@ $(".exportSplitAnimations").click(async function() {
     if (img)
       destCtx.drawImage(img, 0, destY);
     return img;
-  }
-
-  function drawItemOnStandardAnimations(destCtx, itemToDraw) {
-    let drawnAnimations = {};
-    for (const [key, value] of Object.entries(base_animations)) {
-      drawnAnimations[key] = drawItemOnStandardAnimation(destCtx, value, key, itemToDraw);
-    }
-    return drawnAnimations;
   }
 
   /**
@@ -1831,17 +1774,6 @@ $(".exportSplitAnimations").click(async function() {
         callback(layers, prevctx);
       });
       return img;
-    }
-  }
-
-  function drawImage(ctx, img, dy) {
-    if (ctx && img) {
-      try {
-        ctx.drawImage(img, 0, dy);
-        zPosition++;
-      } catch (err) {
-        if (DEBUG) console.error("Error: could not find " + img.src);
-      }
     }
   }
 
