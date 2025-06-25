@@ -1519,24 +1519,12 @@ $(".exportSplitAnimations").click(async function() {
     canvas.width = width;
     canvas.height = height;
 
-    let itemIdx = 0;
-    let didPutUniversalForCustomAnimation = "";
     itemsToDraw.sort(function (lhs, rhs) {
       return parseInt(lhs.zPos) - parseInt(rhs.zPos);
     });
-    for (item in itemsToDraw) {
-      const itemToDraw = itemsToDraw[itemIdx];
-      const custom_animation = itemToDraw.custom_animation;
-
+    for (const itemToDraw of itemsToDraw) {
       dynamicReplacements(itemToDraw);
-
-      if (custom_animation !== undefined) {
-        didPutUniversalForCustomAnimation = drawCustomAnimationItemSheet(ctx, canvas, itemToDraw,
-          width, height, didPutUniversalForCustomAnimation);
-      } else {
-        drawItemOnStandardAnimations(ctx, itemToDraw);
-      }
-      itemIdx += 1;
+      drawItemSheet(canvas, itemToDraw, addedCustomAnimations);
     }
     addCustomAnimationPreviews();
   }
