@@ -842,17 +842,7 @@ $(".exportSplitAnimations").click(async function() {
       const exportedCustom = {};
       const failedCustom = {};
       
-      const itemCanvas = document.createElement("canvas");
-      const itemCtx = itemCanvas.getContext('2d');
-      itemCtx.clearRect(0, 0, itemCanvas.width, itemCanvas.height);
-
       for (const name of Object.keys(base_animations)) {
-        const rows = name === 'hurt' || name === 'climb' ? 1 : 4;
-        const frames = animationFrameCounts[name];
-
-        itemCanvas.width = frames * universalFrameSize;
-        itemCanvas.height = rows * universalFrameSize;
-
         const animFolder = standardFolder.folder(name);
         const exportedItems = [];
         exportedStandard[name] = exportedItems;
@@ -862,39 +852,33 @@ $(".exportSplitAnimations").click(async function() {
           const itemFileName = getItemFileName(item);
 
           try {
-            if (drawItemOnStandardAnimation(itemCtx, 0, name, item)) {
-              const blob = await canvasToBlob(itemCanvas);
-              await animFolder.file(itemFileName, blob);
-              exportedItems.push(itemFileName);
+            const img = getItemAnimationImage(item, name);
+            if (!img)
+              continue;
 
-              for (const custAnimName of addedCustomAnimations) {
-                const custAnim = customAnimations[custAnimName];
-                if (!isCustomAnimationBasedOnStandardAnimation(custAnim, name))
-                  continue;
+            const animCanvas = await addAnimationToZipFolder(animFolder, itemFileName, img, null);
+            if (!animCanvas)
+              continue;
 
-                const custExportedItems = exportedCustom[custAnimName] || [];
-                exportedCustom[custAnimName] = custExportedItems;
-                const custFailedItems = failedCustom[custAnimName] || [];
-                try {
-                  const custCanvas = document.createElement("canvas");
-                  const {width: custWidth, height: custHeight} = customAnimationSize(custAnim);
-                  custCanvas.width = custWidth;
-                  custCanvas.height = custHeight;
-                  const custCtx = custCanvas.getContext("2d");
-                  drawFramesToCustomAnimation(custCtx, custAnim, 0, itemCanvas, null);
+            exportedItems.push(itemFileName);
 
-                  const custAnimFolder = customFolder.folder(custAnimName);
-                  const custBlob = await canvasToBlob(custCanvas);
-                  custAnimFolder.file(itemFileName, custBlob);
+            for (const custAnimName of addedCustomAnimations) {
+              const custAnim = customAnimations[custAnimName];
+              if (!isCustomAnimationBasedOnStandardAnimation(custAnim, name))
+                continue;
+
+              const custExportedItems = exportedCustom[custAnimName] || [];
+              exportedCustom[custAnimName] = custExportedItems;
+              const custFailedItems = failedCustom[custAnimName] || [];
+              try {
+                const custAnimFolder = customFolder.folder(custAnimName);
+                if (addStandardAnimationToZipCustomFolder(custAnimFolder, itemFileName, img, custAnim))
                   custExportedItems.push(itemFileName);
-                } catch (err) {
-                  console.error(`Failed to export item ${itemFileName} in custom animation ${custAnimName}:`, err);
-                  custFailedItems.push(itemFileName);
-                  failedCustom[custAnimName] = custFailedItems;
-                }
+              } catch (err) {
+                console.error(`Failed to export item ${itemFileName} in custom animation ${custAnimName}:`, err);
+                custFailedItems.push(itemFileName);
+                failedCustom[custAnimName] = custFailedItems;
               }
-
-              itemCtx.clearRect(0, 0, itemCanvas.width, itemCanvas.height);
             }
           } catch (err) {
             console.error(`Failed to export item ${itemFileName} in standard animation ${name}:`, err);
@@ -916,19 +900,15 @@ $(".exportSplitAnimations").click(async function() {
         const custFailedItems = failedCustom[custName] || [];
 
         try {
-          const custAnim = customAnimations[custName];
-          const {width: custWidth, height: custHeight} = customAnimationSize(custAnim);
-          itemCanvas.width = custWidth;
-          itemCanvas.height = custHeight;
-
           const img = loadImage(item.fileName, false);
-          itemCtx.clearRect(0, 0, itemCanvas.width, itemCanvas.height);
-          itemCtx.drawImage(img, 0, 0);
+          if (!img)
+            continue;
 
-          const blob = await canvasToBlob(itemCanvas);
+          const custAnim = customAnimations[custName];
+          const custSize = customAnimationSize(custAnim);
           const animFolder = customFolder.folder(custName);
-          await animFolder.file(itemFileName, blob);
-          custExportedItems.push(itemFileName);
+          if (await addAnimationToZipFolder(animFolder, itemFileName, img, custSize))
+            custExportedItems.push(itemFileName);
         } catch (err) {
           console.error(`Failed to export item ${itemFileName} in custom animation ${custName}:`, err);
           custFailedItems.push(itemFileName);
