@@ -1725,13 +1725,14 @@ $(".exportSplitAnimations").click(async function() {
     if (!allowLoading) {
       return images[imgRef];
     }
-    imagesToLoad += 1;
     if (images[imgRef]) {
+      imagesToLoad += 1;
       setTimeout(function () {
         imageLoadDone();
       }, 10);
       return images[imgRef];
-    } else {
+    } else if(!(imgRef in images)) {
+      imagesToLoad += 1;
       if (DEBUG) console.log(`loading new image ${imgRef}`);
       const img = new Image();
       img.src = "spritesheets/" + imgRef;
@@ -1753,7 +1754,7 @@ $(".exportSplitAnimations").click(async function() {
   function imageLoadError(event, imgRef) {
     if (DEBUG)
       console.error("There was an error loading image:", event.target.src);
-    delete images[imgRef];
+    images[imgRef] = null;
     imageLoadDone();
   }
 
