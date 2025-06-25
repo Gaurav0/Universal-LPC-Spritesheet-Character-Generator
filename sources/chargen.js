@@ -1430,7 +1430,7 @@ $(".exportSplitAnimations").click(async function() {
     return didPutUniversalForCustomAnimation
   }
 
-  function drawItemOnStandardAnimation(destCtx, destY, animName, itemToDraw) {
+  function getItemAnimationImage(itemToDraw, animName) {
     let animationToCheck = animName;
     if (animName === "combat_idle") {
       animationToCheck = "combat";
@@ -1444,14 +1444,19 @@ $(".exportSplitAnimations").click(async function() {
       const filePath = itemToDraw.fileName;
       const splitPath = splitFilePath(filePath);
       const newFile = `${splitPath.directory}/${animName}/${splitPath.file}`;
-      const img = loadImage(newFile, false);
-      drawImage(destCtx, img, destY);
-      return img;
+      return loadImage(newFile, false);
     } else {
       if (DEBUG)
         console.log(`supportedAnimations does not contain ${animationToCheck} for asset ${itemToDraw.fileName}. skipping render`);
     }
     return null;
+  }
+
+  function drawItemOnStandardAnimation(destCtx, destY, animName, itemToDraw) {
+    const img = getItemAnimationImage(itemToDraw, animName);
+    if (img)
+      destCtx.drawImage(img, 0, destY);
+    return img;
   }
 
   function drawItemOnStandardAnimations(destCtx, itemToDraw) {
