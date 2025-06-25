@@ -674,10 +674,10 @@ const addMetadataToZip = (zip, bodyType, timestamp, exportedStandard, failedStan
    * @param {*} folder 
    * @param {string} name 
    * @param {CanvasImageSource} src 
-   * @param {{x: number?, y: number?, width: number, height: number}} srcRect 
+   * @param {{x: number?, y: number?, width: number, height: number}?} srcRect 
    */
   async function addAnimationToZipFolder(folder, name, src, srcRect) {
-    const animCanvas = newAnimationFromSheet(src, srcRect);
+    const animCanvas = srcRect ? newAnimationFromSheet(src, srcRect) : src;
     if (animCanvas) {
       const blob = await canvasToBlob(animCanvas);
       folder.file(`${name}.png`, blob);
