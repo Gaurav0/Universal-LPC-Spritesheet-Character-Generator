@@ -641,6 +641,23 @@ const addMetadataToZip = (zip, bodyType, timestamp, exportedStandard, failedStan
     return animCanvas;
   }
 
+  function newStandardAnimationForCustomAnimation(src, custAnim) {
+    const custCanvas = document.createElement("canvas");
+    const {width: custWidth, height: custHeight} = customAnimationSize(custAnim);
+    custCanvas.width = custWidth;
+    custCanvas.height = custHeight;
+    const custCtx = custCanvas.getContext("2d");
+    drawFramesToCustomAnimation(custCtx, custAnim, 0, src, null);
+    return custCanvas;
+  }
+
+  async function addStandardAnimationToZipCustomFolder(custAnimFolder, itemFileName, src, custAnim) {
+    const custCanvas = newStandardAnimationForCustomAnimation(src, custAnim);
+    const custBlob = await canvasToBlob(custCanvas);
+    custAnimFolder.file(itemFileName, custBlob);
+    return custCanvas;
+  }
+
   /**
    * 
    * @param {HTMLCanvasElement} destCanvas 
