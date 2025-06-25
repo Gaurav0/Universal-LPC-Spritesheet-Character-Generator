@@ -777,7 +777,32 @@ $(".exportSplitAnimations").click(async function() {
   const getItemFileName = (item) =>
     `${item.zPos}`.padStart(3, '0')
       + ` ${item.parentName} ${item.name} ${item.variant}.png`;
-  
+
+  function reportFailedItemAnimations(failedStandard, failedCustom) {
+    const numFailedStandard = Object.keys(failedStandard).length;
+    const numFailedCustom = Object.keys(failedCustom).length;
+    if (numFailedStandard > 0 || numFailedCustom > 0) {
+      const failureMessage = [];
+      if (numFailedStandard > 0) {
+        failureMessage.push("Failed to export standard animations:");
+        for (const [anim, failedItems] of Object.entries(failedStandard)) {
+          for (const item of failedItems) {
+            failureMessage.push(`${anim}/${item}`)
+          }
+        }
+      }
+      if (numFailedCustom > 0) {
+        failureMessage.push("Failed to export custom animations:");
+        for (const [anim, failedItems] of Object.entries(failedCustom)) {
+          for (const item of failedItems) {
+            failureMessage.push(`${anim}/${item}`)
+          }
+        }
+      }
+      alert(`Export completed with some issues:\n${failureMessage.join('\n')}`);
+    }
+  }
+
   $(".exportSplitItemAnimations").click(async function() {
     try {
       const zip = newZip();
@@ -901,28 +926,7 @@ $(".exportSplitAnimations").click(async function() {
       await downloadZip(zip, `lpc_${bodyType}_item_animations_${timestamp}.zip`);
 
       // Show success message with any failures
-      const numFailedStandard = Object.keys(failedStandard).length;
-      const numFailedCustom = Object.keys(failedCustom).length;
-      if (numFailedStandard > 0 || numFailedCustom > 0) {
-        const failureMessage = [];
-        if (numFailedStandard > 0) {
-          failureMessage.push("Failed to export standard animations:");
-          for (const [anim, failedItems] of Object.entries(failedStandard)) {
-            for (const item of failedItems) {
-              failureMessage.push(`${anim}/${item}`)
-            }
-          }
-        }
-        if (numFailedCustom > 0) {
-          failureMessage.push("Failed to export custom animations:");
-          for (const [anim, failedItems] of Object.entries(failedCustom)) {
-            for (const item of failedItems) {
-              failureMessage.push(`${anim}/${item}`)
-            }
-          }
-        }
-        alert(`Export completed with some issues:\n${failureMessage.join('\n')}`);
-      }
+      reportFailedItemAnimations(failedStandard, failedCustom);
 
     } catch (error) {
       console.error('Export error:', error);
