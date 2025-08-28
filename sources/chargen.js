@@ -792,8 +792,7 @@ $(".exportSplitAnimations").click(async function() {
 });
 
   const getItemFileName = (item) =>
-    `${item.zPos}`.padStart(3, '0')
-      + ` ${item.parentName} ${item.name} ${item.variant}.png`;
+    `${item.zPos}`.padStart(3, '0') + ` ${item.fileName.replace(/\//g, ' ')}`;
 
   function reportFailedItemAnimations(failedStandard, failedCustom) {
     const numFailedStandard = Object.keys(failedStandard).length;
