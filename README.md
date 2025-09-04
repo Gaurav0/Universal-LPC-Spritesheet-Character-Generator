@@ -78,7 +78,7 @@ You can look at [the Animation Guide in Eliza's repository](https://github.com/E
 
 Also, each animation has a frame cycle documented which you can see next to the animation preview.
 
-### Run
+### Run This Project Locally for Development
 
 Traditionally, you could run this project, by opening `index.html` in your browser of choice.
 However, today's browsers have some security restrictions that do make this somewhat impractical.
@@ -93,13 +93,31 @@ You may instead wish to use a web server locally for development. Some free reco
 - brew serve (Mac only)
 - Lighttpd
 
+### Plugins and Development Tools for Use in Game Engines
+
+#### Godot
+
+There is a [plugin available for Godot 3.5](https://godotengine.org/asset-library/asset/1673)
+
+There is another [plugin available for Godot 4.2](https://godotengine.org/asset-library/asset/2212)
+
+#### RPG Maker MZ
+
+There is a project under development for a [set of plugins and demo game](https://github.com/LiberatedPixelCup/RPG_Maker_MZ_LPC_Starter_Kit) under this organization.
+
+#### Other Game Engines
+
+We would really like to see similar tools developed for other popular game engines. If you know of any that have been developed, please open a pull request to this repository and add it to this README.
+
+If an engine is not listed above, try Google. However, it is very likely that you will have to do some coding.
+
 ### FAQ
 
 <dl>
   <dt>May I use this art in my commercial game?</dt>
   <dd>Yes, however you must follow all the terms of the license(s) for the art you are using. See <a href="#licensing-and-attribution-credits">Licensing and Attribution (Credits)</a></dd>
   <dt>How do I use the output of this generator in &lt;insert game engine&gt;?</dt>
-  <dd>There may be resources available to do this already. We are working on providing a list in the future for a few common game engines. For now, try Google. In most cases, however, you will likely have to write some code.</dd>
+  <dd>There may be resources available to do this already. We have added a <a href="#other-game-engines">list</a> for a few common game engines. If your favorite engine is not listed there, try Google. In most cases, however, you will still have to write some code.</dd>
   <dt>I downloaded the image, but I forgot to get the &lt;url, credits, etc.&gt; How do I get back to where I was?</dt>
   <dd>It is recommended that you "export to JSON" to avoid this problem in the future and save the json file with the png image file. See <a href="https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator/issues/143">Issue #143</a></dd>
 </dl>
