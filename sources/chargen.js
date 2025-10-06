@@ -88,7 +88,7 @@ $(document).ready(function () {
   let didStartRenderAfterLoad = false;
 
   const canvas = $("#spritesheet").get(0);
-  const ctx = canvas.getContext("2d");
+  const ctx = canvas.getContext("2d", { willReadFrequently: true });
   const images = {};
   const universalFrameSize = 64;
   const universalSheetWidth = 832;
