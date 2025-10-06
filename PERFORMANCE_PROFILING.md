@@ -234,30 +234,6 @@ profiler.disable()  // Disable at runtime
 - When disabled: **zero overhead** (all methods early-return)
 - When enabled: <1ms per operation (minimal impact)
 
-## Next Steps
-
-After identifying bottlenecks with the profiler:
-
-1. **If image loading is slow (>60% of time)**:
-   - Consider sprite atlases
-   - Implement HTTP/2 preloading
-   - Use ImageBitmap API
-
-2. **If drawing is slow (>60% of time)**:
-   - Implement OffscreenCanvas + Web Workers
-   - Optimize canvas operations
-   - Reduce composite layers
-
-3. **If DOM updates are slow**:
-   - Debounce filter operations
-   - Use virtual scrolling for long lists
-   - Optimize jQuery selectors
-
-4. **If memory is growing**:
-   - Implement image cache eviction
-   - Dispose unused canvas contexts
-   - Profile with Chrome Memory tab
-
 ## Troubleshooting
 
 ### "profiler is not defined"
@@ -305,15 +281,6 @@ The profiler itself has minimal overhead (<1ms per operation). If you see signif
    - Record metrics with `profiler.report()`
    - Make code changes
    - Record again and compare
-
-## Contributing
-
-When optimizing performance:
-1. Always profile first (don't guess!)
-2. Document baseline metrics
-3. Make targeted changes
-4. Measure improvement
-5. Include before/after metrics in PR
 
 ---
 
