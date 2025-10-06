@@ -61,6 +61,16 @@ const isLocalhost = window.location.hostname === "localhost";
 const debugQueryString = () => bool(jHash.val("debug"));
 const DEBUG = debugQueryString() ?? isLocalhost;
 
+// Initialize performance profiler (uses same DEBUG flag as console logging)
+const profiler = new PerformanceProfiler({
+  enabled: DEBUG,
+  verbose: false,
+  logSlowOperations: true
+});
+
+// Always expose profiler for manual control
+window.profiler = profiler;
+
 $(document).ready(function () {
   let matchBodyColor = true;
   
@@ -78,7 +88,7 @@ $(document).ready(function () {
   let didStartRenderAfterLoad = false;
 
   const canvas = $("#spritesheet").get(0);
-  const ctx = canvas.getContext("2d", { willReadFrequently: true });
+  const ctx = canvas.getContext("2d");
   const images = {};
   const universalFrameSize = 64;
   const universalSheetWidth = 832;
@@ -1197,6 +1207,7 @@ $(".exportSplitAnimations").click(async function() {
   }
 
   function redraw() {
+    profiler.mark('redraw:start');
     itemsToDraw = [];
     const bodyTypeName = getBodyTypeName();
 
@@ -1255,6 +1266,8 @@ $(".exportSplitAnimations").click(async function() {
     const creditsTxt = sheetCreditsToTxt();
     $("textarea#creditsText").val(creditsTxt);
     itemsMeta["credits"] = sheetCredits;
+    profiler.mark('redraw:end');
+    profiler.measure('redraw', 'redraw:start', 'redraw:end');
 
     if (images["uploaded"] != null) {
       const itemToDraw = {};
@@ -1308,6 +1321,7 @@ $(".exportSplitAnimations").click(async function() {
     if (!canRender()) {
       return setTimeout(loadItemsToDraw, 100);
     }
+    profiler.mark('loadItemsToDraw:start');
     resetLoading();
     let itemIdx = 0;
     for (const item of itemsToDraw) {
@@ -1342,6 +1356,8 @@ $(".exportSplitAnimations").click(async function() {
       }
       itemIdx += 1;
     }
+    profiler.mark('loadItemsToDraw:end');
+    profiler.measure('loadItemsToDraw', 'loadItemsToDraw:start', 'loadItemsToDraw:end');
   }
 
   /**
@@ -1449,6 +1465,7 @@ $(".exportSplitAnimations").click(async function() {
     if (!canRender()) {
       return;
     }
+    profiler.mark('drawItemsToDraw:start');
     if (DEBUG) console.log(`Start drawItemsToDraw`);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -1466,6 +1483,8 @@ $(".exportSplitAnimations").click(async function() {
       drawItemSheet(canvas, itemToDraw, addedCustomAnimations);
     }
     addCustomAnimationPreviews();
+    profiler.mark('drawItemsToDraw:end');
+    profiler.measure('drawItemsToDraw', 'drawItemsToDraw:start', 'drawItemsToDraw:end');
   }
 
   function canRender() {
@@ -1483,6 +1502,7 @@ $(".exportSplitAnimations").click(async function() {
   }
 
   function showOrHideElements() {
+    profiler.mark('showOrHideElements:start');
     const bodyType = getBodyTypeName();
     const selectedAnims = getSelectedAnimations();
     const allowedLicenses = getAllowedLicenses();
@@ -1679,7 +1699,12 @@ $(".exportSplitAnimations").click(async function() {
         for (const $li of lists) {
           drawPreviews.call($li.get(0));
         }
+        profiler.mark('showOrHideElements:end');
+        profiler.measure('showOrHideElements', 'showOrHideElements:start', 'showOrHideElements:end');
       });
+    } else {
+      profiler.mark('showOrHideElements:end');
+      profiler.measure('showOrHideElements', 'showOrHideElements:start', 'showOrHideElements:end');
     }
   }
 
@@ -1732,10 +1757,15 @@ $(".exportSplitAnimations").click(async function() {
       return images[imgRef];
     } else if(!(imgRef in images)) {
       imagesToLoad += 1;
+      profiler.mark(`image-load:${imgRef}:start`);
       if (DEBUG) console.log(`loading new image ${imgRef}`);
       const img = new Image();
       img.src = "spritesheets/" + imgRef;
-      img.onload = imageLoadDone;
+      img.onload = function() {
+        profiler.mark(`image-load:${imgRef}:end`);
+        profiler.measure(`image-load:${imgRef}`, `image-load:${imgRef}:start`, `image-load:${imgRef}:end`);
+        imageLoadDone();
+      };
       img.onerror = (event) => imageLoadError(event, imgRef);
       images[imgRef] = img;
       return img;
@@ -1783,6 +1813,7 @@ $(".exportSplitAnimations").click(async function() {
   }
 
   function drawPreviews() {
+    profiler.mark('drawPreviews:start');
     const buttons = $(this)
       .find("input[type=radio]")
       .filter(function () {
@@ -1906,6 +1937,8 @@ $(".exportSplitAnimations").click(async function() {
         }
       }
     }
+    profiler.mark('drawPreviews:end');
+    profiler.measure('drawPreviews', 'drawPreviews:start', 'drawPreviews:end');
   }
 
   function nextFrame() {

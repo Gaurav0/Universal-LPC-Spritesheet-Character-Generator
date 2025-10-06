@@ -150,5 +150,24 @@ If an engine is not listed above, try Google. However, it is very likely that yo
 - [recompile full sheets using lpctools](tools/REBUILD.md)
 - [convert assets to vitruvian studios](tools/VITRUVIAN.md)
 
+### Development
+
+#### Performance Profiling
+
+The generator includes built-in performance profiling tools to help identify rendering bottlenecks and optimize performance. See [PERFORMANCE_PROFILING.md](PERFORMANCE_PROFILING.md) for detailed documentation.
+
+**Quick Start:**
+- Profiler is automatically enabled when running on `localhost`
+- Override with `?debug=true` or `?debug=false` in the URL
+- View metrics in Chrome DevTools → Performance tab
+- Run `profiler.report()` in the console for a summary
+
+**What it tracks:**
+- Canvas rendering time (drawing, compositing)
+- Image loading performance
+- UI update operations
+- Frame rate (FPS)
+- Memory usage
+
 ### Examples
 ![example](/readme-images/example.png)
