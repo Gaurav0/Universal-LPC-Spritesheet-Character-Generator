@@ -42,7 +42,22 @@ window.itemMetadata = {
         "child": "shadow/child/",
         "teen": "shadow/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shadow",
+        "notes": "",
+        "authors": [
+          "drjamgo@hotmail.com"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/shadow-for-lpc-sprite"
+        ]
+      }
+    ]
   },
   "body-body": {
     "name": "Body color",
@@ -113,7 +128,204 @@ window.itemMetadata = {
         "teen": "body/bodies/teen/",
         "child": "body/bodies/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/bodies/male",
+        "notes": "see details at https://opengameart.org/content/lpc-character-bases; 'Thick' Male Revised Run/Climb by JaidynReiman (based on ElizaWy's LPC Revised)",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman",
+          "Benjamin K. Smith (BenCreating)",
+          "Evert",
+          "Eliza Wyatt (ElizaWy)",
+          "TheraHedwig",
+          "MuffinElZangano",
+          "Durrani",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-male-jumping-animation-by-durrani",
+          "https://opengameart.org/content/lpc-runcycle-and-diagonal-walkcycle",
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://opengameart.org/content/lpc-be-seated",
+          "https://opengameart.org/content/lpc-runcycle-for-male-muscular-and-pregnant-character-bases-with-modular-heads",
+          "https://opengameart.org/content/lpc-jump-expanded",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      },
+      {
+        "file": "body/bodies/female",
+        "notes": "see details at https://opengameart.org/content/lpc-character-bases",
+        "authors": [
+          "Benjamin K. Smith (BenCreating)",
+          "bluecarrot16",
+          "TheraHedwig",
+          "Evert",
+          "MuffinElZangano",
+          "Durrani",
+          "Pierre Vigier (pvigier)",
+          "ElizaWy",
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-ladies",
+          "https://opengameart.org/content/lpc-7-womens-shirts",
+          "https://opengameart.org/content/lpc-jump-expanded",
+          "https://opengameart.org/content/lpc-be-seated",
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://gitlab.com/vagabondgame/lpc-characters",
+          "https://opengameart.org/content/lpc-male-jumping-animation-by-durrani",
+          "https://opengameart.org/content/lpc-runcycle-and-diagonal-walkcycle"
+        ]
+      },
+      {
+        "file": "body/bodies/muscular",
+        "notes": "see details at https://opengameart.org/content/lpc-character-bases",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman",
+          "Evert",
+          "TheraHedwig",
+          "MuffinElZangano",
+          "Durrani",
+          "Sander Frenken (castelonia)",
+          "Benjamin K. Smith (BenCreating)",
+          "Eliza Wyatt (ElizaWy)",
+          "dalonedrau",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-barbarian-sprite-base",
+          "https://opengameart.org/content/lpc-muscular-swing-animation",
+          "https://opengameart.org/content/lpc-muscular-hurt-animation",
+          "https://opengameart.org/content/lpc-jump-expanded",
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://opengameart.org/content/lpc-be-seated",
+          "https://opengameart.org/content/lpc-jump-expanded",
+          "https://opengameart.org/content/lpc-character-bases",
+          "https://opengameart.org/content/lpc-male-jumping-animation-by-durrani"
+        ]
+      },
+      {
+        "file": "body/bodies/teen",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Evert",
+          "TheraHedwig",
+          "Benjamin K. Smith (BenCreating)",
+          "MuffinElZangano",
+          "Durrani",
+          "Pierre Vigier (pvigier)",
+          "Eliza Wyatt (ElizaWy)",
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-ladies",
+          "https://opengameart.org/content/lpc-teen-unisex-base-clothes",
+          "https://opengameart.org/content/lpc-jump-expanded",
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://opengameart.org/content/lpc-be-seated",
+          "https://gitlab.com/vagabondgame/lpc-characters",
+          "https://opengameart.org/content/lpc-male-jumping-animation-by-durrani",
+          "https://opengameart.org/content/lpc-jump-expanded"
+        ]
+      },
+      {
+        "file": "body/bodies/pregnant",
+        "notes": "see details at https://opengameart.org/content/lpc-character-bases; Pregnant Revised Run/Combat Idle/Emotes by JaidynReiman (based on ElizaWy's LPC Revised)",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman",
+          "Evert",
+          "TheraHedwig",
+          "MuffinElZangano",
+          "Durrani",
+          "Benjamin K. Smith (BenCreating)",
+          "Pierre Vigier (pvigier)",
+          "Eliza Wyatt (ElizaWy)",
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-ladies",
+          "https://opengameart.org/content/lpc-pregnancy-bases-maternity-wear",
+          "https://opengameart.org/content/lpc-7-womens-shirts",
+          "https://opengameart.org/content/lpc-jump-expanded",
+          "https://gitlab.com/vagabondgame/lpc-characters",
+          "https://opengameart.org/content/lpc-jump-expanded",
+          "https://opengameart.org/content/lpc-male-jumping-animation-by-durrani",
+          "https://opengameart.org/content/lpc-runcycle-and-diagonal-walkcycle"
+        ]
+      },
+      {
+        "file": "body/bodies/child",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Benjamin K. Smith (BenCreating)",
+          "ElizaWy",
+          "MuffinElZangano",
+          "Durrani",
+          "Nila122",
+          "kheftel",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-child-standing-template",
+          "https://opengameart.org/content/lpc-children-walk-animation",
+          "https://opengameart.org/content/lpc-male-jumping-animation-by-durrani",
+          "https://opengameart.org/content/lpc-male-jumping-animation-by-durrani",
+          "https://opengameart.org/content/lpc-jump-expanded",
+          "https://opengameart.org/content/lpc-jump-expanded"
+        ]
+      }
+    ]
   },
   "body-special-body_zombie": {
     "name": "Zombie",
@@ -149,7 +361,31 @@ window.itemMetadata = {
         "female": "body/bodies/zombie/",
         "teen": "body/bodies/zombie/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/bodies/zombie",
+        "notes": "",
+        "authors": [
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)",
+          "Sander Frenken (castelonia)",
+          "Benjamin K. Smith (BenCreating)",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-zombie",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ]
   },
   "body-special-body_skeleton": {
     "name": "Skeleton",
@@ -185,7 +421,29 @@ window.itemMetadata = {
         "female": "body/bodies/skeleton/",
         "teen": "body/bodies/skeleton/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/bodies/skeleton",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-skeleton",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ]
   },
   "body-wounds-wound_arm": {
     "name": "Arm",
@@ -225,7 +483,24 @@ window.itemMetadata = {
         "pregnant": "body/wound/",
         "teen": "body/wound/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/wound/arm.png",
+        "notes": "",
+        "authors": [
+          "Benjamin K. Smith (BenCreating)",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-zombie"
+        ]
+      }
+    ]
   },
   "body-wounds-wound_brain": {
     "name": "Brain",
@@ -275,7 +550,24 @@ window.itemMetadata = {
         "pregnant": "body/wound/",
         "teen": "body/wound/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/wound/brain.png",
+        "notes": "",
+        "authors": [
+          "Benjamin K. Smith (BenCreating)",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-zombie"
+        ]
+      }
+    ]
   },
   "body-wounds-wound_ribs": {
     "name": "Ribs",
@@ -315,7 +607,24 @@ window.itemMetadata = {
         "pregnant": "body/wound/",
         "teen": "body/wound/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/wound/ribs.png",
+        "notes": "",
+        "authors": [
+          "Benjamin K. Smith (BenCreating)",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-zombie"
+        ]
+      }
+    ]
   },
   "body-wounds-wound_eye_left": {
     "name": "Left Eye",
@@ -365,7 +674,25 @@ window.itemMetadata = {
         "pregnant": "body/wound/",
         "teen": "body/wound/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/wound/eye_left.png",
+        "notes": "Zombie by BenCreating, commissioned by castelonia; flipped (left eye) variant by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "Benjamin K. Smith (BenCreating)",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-zombie"
+        ]
+      }
+    ]
   },
   "body-wounds-wound_eye_right": {
     "name": "Right Eye",
@@ -415,7 +742,24 @@ window.itemMetadata = {
         "pregnant": "body/wound/",
         "teen": "body/wound/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/wound/eye_right.png",
+        "notes": "",
+        "authors": [
+          "Benjamin K. Smith (BenCreating)",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-zombie"
+        ]
+      }
+    ]
   },
   "body-wounds-wound_mouth": {
     "name": "Mouth",
@@ -465,7 +809,24 @@ window.itemMetadata = {
         "pregnant": "body/wound/",
         "teen": "body/wound/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/wound/mouth.png",
+        "notes": "",
+        "authors": [
+          "Benjamin K. Smith (BenCreating)",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-zombie"
+        ]
+      }
+    ]
   },
   "body-prostheses-prosthesis_hook": {
     "name": "Hook hand",
@@ -502,7 +863,22 @@ window.itemMetadata = {
         "zPos": 100,
         "male": "body/prosthesis/hook/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/prosthesis/hook",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      }
+    ]
   },
   "body-prostheses-prosthesis_peg_leg": {
     "name": "Peg leg",
@@ -539,7 +915,22 @@ window.itemMetadata = {
         "zPos": 100,
         "male": "body/prosthesis/peg_leg/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/prosthesis/peg_leg",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      }
+    ]
   },
   "body-wheelchair-wheelchair": {
     "name": "Wheelchair",
@@ -593,7 +984,23 @@ window.itemMetadata = {
         "pregnant": "body/wheelchair/adult/foreground/",
         "teen": "body/wheelchair/adult/foreground/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/wheelchair",
+        "notes": "",
+        "authors": [
+          "Eliza Wyatt"
+        ],
+        "licenses": [
+          "CC-BY 3.0",
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-revised-elders"
+        ]
+      }
+    ]
   },
   "body-tails-tail_wolf": {
     "name": "Wolf Tail",
@@ -686,7 +1093,24 @@ window.itemMetadata = {
         "teen": "body/tail/wolf/adult/bg/",
         "child": "body/tail/wolf/child/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/tail/wolf",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
+        ]
+      }
+    ]
   },
   "body-tails-tail_wolf_fluffy": {
     "name": "Fluffy Wolf Tail",
@@ -779,7 +1203,24 @@ window.itemMetadata = {
         "teen": "body/tail/fluffy/adult/bg/",
         "child": "body/tail/fluffy/child/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/tail/fluffy",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
+        ]
+      }
+    ]
   },
   "body-tails-tail_cat": {
     "name": "Cat Tail",
@@ -872,7 +1313,24 @@ window.itemMetadata = {
         "teen": "body/tail/cat/adult/bg/",
         "child": "body/tail/cat/child/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/tail/cat",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
+        ]
+      }
+    ]
   },
   "body-tails-tail_lizard_alt": {
     "name": "Lizard Tail (Alt Colors)",
@@ -965,7 +1423,26 @@ window.itemMetadata = {
         "teen": "body/tail/lizard/alt/adult/bg/",
         "child": "body/tail/lizard/alt/child/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/tail/lizard",
+        "notes": "edited for v3 bases and recolored by bluecarrot16, additional animations added by JaidynReiman",
+        "authors": [
+          "Nila122",
+          "bluecarrot16",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/drakes-and-lizardfolk"
+        ]
+      }
+    ]
   },
   "body-wings-wings_feathered": {
     "name": "Feathered Wings",
@@ -1057,7 +1534,24 @@ window.itemMetadata = {
         "pregnant": "body/wings/feathered/adult/bg/",
         "teen": "body/wings/feathered/adult/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/wings/feathered",
+        "notes": "Original by ElizaWy, added to most remaining frames by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "Stephen Challener (Redshrike)",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-wings-new-animations"
+        ]
+      }
+    ]
   },
   "body-wings-wings_bat": {
     "name": "Bat Wings",
@@ -1160,7 +1654,23 @@ window.itemMetadata = {
         "pregnant": "body/wings/bat/adult/bg/",
         "teen": "body/wings/bat/adult/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/wings/bat",
+        "notes": "Original by ElizaWy, added to most remaining frames by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-wings-new-animations"
+        ]
+      }
+    ]
   },
   "body-wings-wings_lizard_alt": {
     "name": "Lizard Wings (Alt Colors)",
@@ -1252,7 +1762,27 @@ window.itemMetadata = {
         "pregnant": "body/wings/lizard/alt/adult/bg/",
         "teen": "body/wings/lizard/alt/adult/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/wings/lizard",
+        "notes": "edited for v3 bases and recolored by bluecarrot16, sit/jump/run/emote/revised combat by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "Nila122",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/drakes-and-lizardfolk",
+          "https://opengameart.org/content/lpc-wings-new-animations"
+        ]
+      }
+    ]
   },
   "body-wings-monarch wings-wings_monarch": {
     "name": "Monarch Wings",
@@ -1335,7 +1865,23 @@ window.itemMetadata = {
         "teen": "body/wings/monarch/base/bg/",
         "child": "body/wings/monarch/base/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/wings/monarch",
+        "notes": "In dedication to my grandmother, Sharon Rowe",
+        "authors": [
+          "The Foreman"
+        ],
+        "licenses": [
+          "OGA-BY 4.0",
+          "CC-BY-SA 4.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-fairy-wings"
+        ]
+      }
+    ]
   },
   "body-wings-monarch wings-wings_monarch_edge": {
     "name": "Monarch Wings Edge",
@@ -1418,7 +1964,23 @@ window.itemMetadata = {
         "teen": "body/wings/monarch/edge/bg/",
         "child": "body/wings/monarch/edge/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/wings/monarch",
+        "notes": "In dedication to my grandmother, Sharon Rowe",
+        "authors": [
+          "The Foreman"
+        ],
+        "licenses": [
+          "OGA-BY 4.0",
+          "CC-BY-SA 4.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-fairy-wings"
+        ]
+      }
+    ]
   },
   "body-wings-monarch wings-wings_monarch_dots": {
     "name": "Monarch Wings Dots",
@@ -1501,7 +2063,23 @@ window.itemMetadata = {
         "teen": "body/wings/monarch/dots/bg/",
         "child": "body/wings/monarch/dots/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/wings/monarch",
+        "notes": "In dedication to my grandmother, Sharon Rowe",
+        "authors": [
+          "The Foreman"
+        ],
+        "licenses": [
+          "OGA-BY 4.0",
+          "CC-BY-SA 4.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-fairy-wings"
+        ]
+      }
+    ]
   },
   "body-wings-pixie wings-wings_pixie": {
     "name": "Pixie Wings",
@@ -1583,7 +2161,23 @@ window.itemMetadata = {
         "teen": "body/wings/pixie/solid/bg/",
         "child": "body/wings/pixie/solid/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/wings/pixie",
+        "notes": "In dedication to my grandmother, Sharon Rowe",
+        "authors": [
+          "The Foreman"
+        ],
+        "licenses": [
+          "OGA-BY 4.0",
+          "CC-BY-SA 4.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-fairy-wings"
+        ]
+      }
+    ]
   },
   "body-wings-pixie wings-wings_pixie_transparent": {
     "name": "Transparent Pixie Wings",
@@ -1665,7 +2259,23 @@ window.itemMetadata = {
         "teen": "body/wings/pixie/transparent/bg/",
         "child": "body/wings/pixie/transparent/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/wings/pixie",
+        "notes": "In dedication to my grandmother, Sharon Rowe",
+        "authors": [
+          "The Foreman"
+        ],
+        "licenses": [
+          "OGA-BY 4.0",
+          "CC-BY-SA 4.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-fairy-wings"
+        ]
+      }
+    ]
   },
   "body-wings-wings_lunar": {
     "name": "Lunar Wings",
@@ -1746,7 +2356,23 @@ window.itemMetadata = {
         "teen": "body/wings/lunar/bg/",
         "child": "body/wings/lunar/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/wings/lunar",
+        "notes": "In dedication to my grandmother, Sharon Rowe",
+        "authors": [
+          "The Foreman"
+        ],
+        "licenses": [
+          "OGA-BY 4.0",
+          "CC-BY-SA 4.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-fairy-wings-pack-2"
+        ]
+      }
+    ]
   },
   "body-wings-dragonfly wings-wings_dragonfly": {
     "name": "Dragonfly Wings",
@@ -1828,7 +2454,23 @@ window.itemMetadata = {
         "teen": "body/wings/dragonfly/solid/bg/",
         "child": "body/wings/dragonfly/solid/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/wings/dragonfly",
+        "notes": "In dedication to my grandmother, Sharon Rowe",
+        "authors": [
+          "The Foreman"
+        ],
+        "licenses": [
+          "OGA-BY 4.0",
+          "CC-BY-SA 4.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-fairy-wings-pack-2"
+        ]
+      }
+    ]
   },
   "body-wings-dragonfly wings-wings_dragonfly_transparent": {
     "name": "Transparent Dragonfly Wings",
@@ -1910,7 +2552,23 @@ window.itemMetadata = {
         "teen": "body/wings/dragonfly/transparent/bg/",
         "child": "body/wings/dragonfly/transparent/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/wings/dragonfly",
+        "notes": "In dedication to my grandmother, Sharon Rowe",
+        "authors": [
+          "The Foreman"
+        ],
+        "licenses": [
+          "OGA-BY 4.0",
+          "CC-BY-SA 4.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-fairy-wings-pack-2"
+        ]
+      }
+    ]
   },
   "body-lizard-wings_lizard": {
     "name": "Lizard Wings",
@@ -1990,7 +2648,27 @@ window.itemMetadata = {
         "pregnant": "body/wings/lizard/adult/bg/",
         "teen": "body/wings/lizard/adult/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/wings/lizard",
+        "notes": "edited for v3 bases and recolored by bluecarrot16, sit/jump/run/emote/revised combat by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "Nila122",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/drakes-and-lizardfolk",
+          "https://opengameart.org/content/lpc-wings-new-animations"
+        ]
+      }
+    ]
   },
   "body-lizard-wings_lizard_bat": {
     "name": "Batlike Lizard Wings",
@@ -2070,7 +2748,23 @@ window.itemMetadata = {
         "pregnant": "body/wings/bat/lizard/adult/bg/",
         "teen": "body/wings/bat/lizard/adult/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/wings/bat",
+        "notes": "Original by ElizaWy, added to most remaining frames by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-wings-new-animations"
+        ]
+      }
+    ]
   },
   "body-lizard-tail_lizard": {
     "name": "Lizard tail",
@@ -2151,7 +2845,26 @@ window.itemMetadata = {
         "teen": "body/tail/lizard/adult/bg/",
         "child": "body/tail/lizard/child/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "body/tail/lizard",
+        "notes": "edited for v3 bases and recolored by bluecarrot16, additional animations added by JaidynReiman",
+        "authors": [
+          "Nila122",
+          "bluecarrot16",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/drakes-and-lizardfolk"
+        ]
+      }
+    ]
   },
   "head-heads-heads_human_child": {
     "name": "Human child",
@@ -2217,7 +2930,28 @@ window.itemMetadata = {
         "zPos": 100,
         "child": "head/heads/human/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/human/child",
+        "notes": "",
+        "authors": [
+          "Stephen Challener (Redshrike)",
+          "kheftel",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/",
+          "https://opengameart.org/content/lpc-child-standing-template",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ]
   },
   "head-heads-heads_human_female": {
     "name": "Human female",
@@ -2292,7 +3026,27 @@ window.itemMetadata = {
         "pregnant": "head/heads/human/female/",
         "teen": "head/heads/human/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/human/female",
+        "notes": "original head by Redshrike, tweaks by BenCreating, modular version by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Benjamin K. Smith (BenCreating)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ]
   },
   "head-heads-heads_human_male": {
     "name": "Human male",
@@ -2366,7 +3120,27 @@ window.itemMetadata = {
         "pregnant": "head/heads/human/male/",
         "teen": "head/heads/human/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/human/male",
+        "notes": "original head by Redshrike, tweaks by BenCreating, modular version by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Benjamin K. Smith (BenCreating)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ]
   },
   "head-heads-heads_human_female_elderly": {
     "name": "Human female elderly",
@@ -2440,7 +3214,27 @@ window.itemMetadata = {
         "pregnant": "head/heads/human/female_elderly/",
         "teen": "head/heads/human/female_elderly/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/human/female_elderly",
+        "notes": "",
+        "authors": [
+          "Benjamin K. Smith (BenCreating)",
+          "Eliza Wyatt (ElizaWy)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-revised-elders",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ]
   },
   "head-heads-heads_human_male_elderly": {
     "name": "Human male elderly",
@@ -2514,7 +3308,27 @@ window.itemMetadata = {
         "pregnant": "head/heads/human/male_elderly/",
         "teen": "head/heads/human/male_elderly/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/human/male_elderly",
+        "notes": "",
+        "authors": [
+          "Benjamin K. Smith (BenCreating)",
+          "Eliza Wyatt (ElizaWy)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-revised-elders",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ]
   },
   "head-heads-heads_human_male_plump": {
     "name": "Human male plump",
@@ -2588,7 +3402,25 @@ window.itemMetadata = {
         "pregnant": "head/heads/human/male_plump/",
         "teen": "head/heads/human/male_plump/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/human/male_plump",
+        "notes": "original head by Redshrike, plump version by ??",
+        "authors": [
+          "Stephen Challener (Redshrike)",
+          "??"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ]
   },
   "head-heads-heads_human_male_gaunt": {
     "name": "Human male gaunt",
@@ -2662,7 +3494,26 @@ window.itemMetadata = {
         "pregnant": "head/heads/human/male_gaunt/",
         "teen": "head/heads/human/male_gaunt/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/human/male_gaunt",
+        "notes": "original head by Redshrike, gaunt version by bluecarrot16",
+        "authors": [
+          "Stephen Challener (Redshrike)",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ]
   },
   "head-heads-heads_human_male_small": {
     "name": "Human male small",
@@ -2737,7 +3588,22 @@ window.itemMetadata = {
         "pregnant": "head/heads/human/male_small/",
         "teen": "head/heads/human/male_small/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/human/male_small",
+        "notes": "original head by Redshrike, reduced size head by ElizaWy",
+        "authors": [
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY"
+        ],
+        "urls": []
+      }
+    ]
   },
   "head-heads-heads_human_female_small": {
     "name": "Human female small",
@@ -2812,7 +3678,22 @@ window.itemMetadata = {
         "pregnant": "head/heads/human/female_small/",
         "teen": "head/heads/human/female_small/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/human/female_small",
+        "notes": "original head by Redshrike, reduced size head by ElizaWy",
+        "authors": [
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY"
+        ],
+        "urls": []
+      }
+    ]
   },
   "head-heads-heads_human_elderly_small": {
     "name": "Human elderly small",
@@ -2887,7 +3768,22 @@ window.itemMetadata = {
         "pregnant": "head/heads/human/elderly_small/",
         "teen": "head/heads/human/elderly_small/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/human/elderly_small",
+        "notes": "original head by Redshrike, elderly & reduced size head by ElizaWy",
+        "authors": [
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY"
+        ],
+        "urls": []
+      }
+    ]
   },
   "head-heads-heads_boarman": {
     "name": "Boarman",
@@ -2962,7 +3858,26 @@ window.itemMetadata = {
         "pregnant": "head/heads/boarman/adult/",
         "teen": "head/heads/boarman/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/boarman",
+        "notes": "pig by daneeklu adapted to boarman by BenCreating, placed to v3 bases by bluecarrot16",
+        "authors": [
+          "Benjamin K. Smith (BenCreating)",
+          "Daniel Eddeland (daneeklu)"
+        ],
+        "licenses": [
+          "CC-BY 3.0",
+          "GPL 2.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-style-farm-animals",
+          "https://opengameart.org/content/lpc-wild-boar",
+          "https://opengameart.org/content/lpc-boarman"
+        ]
+      }
+    ]
   },
   "head-heads-heads_boarman_child": {
     "name": "Boarman child",
@@ -3029,7 +3944,28 @@ window.itemMetadata = {
         "zPos": 100,
         "child": "head/heads/boarman/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/boarman/child",
+        "notes": "pig by daneeklu adapted to boarman by BenCreating, adapted to child version by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Benjamin K. Smith (BenCreating)",
+          "Daniel Eddeland (daneeklu)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-style-farm-animals",
+          "https://opengameart.org/content/lpc-wild-boar",
+          "https://opengameart.org/content/lpc-boarman",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ]
   },
   "head-heads-heads_pig": {
     "name": "Pig",
@@ -3103,7 +4039,25 @@ window.itemMetadata = {
         "pregnant": "head/heads/pig/adult/",
         "teen": "head/heads/pig/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/pig",
+        "notes": "original pig by daneeklu, adapted to modular head by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Daniel Eddeland (daneeklu)"
+        ],
+        "licenses": [
+          "CC-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-style-farm-animals",
+          "http://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ]
   },
   "head-heads-heads_pig_child": {
     "name": "Pig child",
@@ -3169,7 +4123,25 @@ window.itemMetadata = {
         "zPos": 100,
         "child": "head/heads/pig/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/pig/child",
+        "notes": "original pig by daneeklu, adapted to modular head by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Daniel Eddeland (daneeklu)"
+        ],
+        "licenses": [
+          "CC-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-style-farm-animals",
+          "http://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ]
   },
   "head-heads-heads_sheep": {
     "name": "Sheep",
@@ -3243,7 +4215,25 @@ window.itemMetadata = {
         "pregnant": "head/heads/sheep/adult/",
         "teen": "head/heads/sheep/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/sheep",
+        "notes": "original sheep by daneeklu, adapted to modular head by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Daniel Eddeland (daneeklu)"
+        ],
+        "licenses": [
+          "CC-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-style-farm-animals",
+          "http://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ]
   },
   "head-heads-heads_sheep_child": {
     "name": "Sheep child",
@@ -3309,7 +4299,25 @@ window.itemMetadata = {
         "zPos": 100,
         "child": "head/heads/sheep/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/sheep/child",
+        "notes": "original sheep by daneeklu, adapted to modular head by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Daniel Eddeland (daneeklu)"
+        ],
+        "licenses": [
+          "CC-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-style-farm-animals",
+          "http://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ]
   },
   "head-heads-heads_minotaur": {
     "name": "Minotaur",
@@ -3383,7 +4391,27 @@ window.itemMetadata = {
         "pregnant": "head/heads/minotaur/male/",
         "teen": "head/heads/minotaur/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/minotaur",
+        "notes": "original cow by daneeklu, combined with horns by Nila122 and adapted to minotaur by Evert",
+        "authors": [
+          "Evert",
+          "Nila122",
+          "Daniel Eddeland (daneeklu)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-style-farm-animals",
+          "https://opengameart.org/content/lpc-lizard-headgear",
+          "https://opengameart.org/content/lpc-faun-and-minotaur"
+        ]
+      }
+    ]
   },
   "head-heads-heads_minotaur_female": {
     "name": "Minotaur female",
@@ -3457,7 +4485,27 @@ window.itemMetadata = {
         "pregnant": "head/heads/minotaur/female/",
         "teen": "head/heads/minotaur/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/minotaur/female",
+        "notes": "original cow by daneeklu, adapted to minotaur by Evert, female version modified by bluecarrot16 to remove horns",
+        "authors": [
+          "bluecarrot16",
+          "Evert",
+          "Daniel Eddeland (daneeklu)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-style-farm-animals",
+          "https://opengameart.org/content/lpc-faun-and-minotaur",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ]
   },
   "head-heads-heads_minotaur_child": {
     "name": "Minotaur child",
@@ -3523,7 +4571,29 @@ window.itemMetadata = {
         "zPos": 100,
         "child": "head/heads/minotaur/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/minotaur/child",
+        "notes": "original cow by daneeklu, combined with horns by Nila122 and adapted to minotaur by Evert; child version by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Evert",
+          "Nila122",
+          "Daniel Eddeland (daneeklu)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-style-farm-animals",
+          "https://opengameart.org/content/lpc-lizard-headgear",
+          "https://opengameart.org/content/lpc-faun-and-minotaur",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ]
   },
   "head-heads-heads_wartotaur": {
     "name": "Wartotaur",
@@ -3597,7 +4667,27 @@ window.itemMetadata = {
         "pregnant": "head/heads/wartotaur/adult/",
         "teen": "head/heads/wartotaur/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/wartotaur",
+        "notes": "original \"wart-o-taur\" concept and sprite by Redshrike, extended to 4 directions and head extracted by Evert, cleanup and hurt/cast animations by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Evert",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/tower-defense-prototyping-assets-4-monsters-some-tiles-a-background-image",
+          "https://opengameart.org/content/wartotaur-4-directions",
+          "https://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ]
   },
   "head-heads-heads_wolf_child": {
     "name": "Wolf child",
@@ -3663,7 +4753,30 @@ window.itemMetadata = {
         "zPos": 100,
         "child": "head/heads/wolf/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/wolf/child",
+        "notes": "original wolf animation by Redshrike, commissioned by William.Thompsonj; wolfman sprite by BenCreating, commissioned by castelonia; child version by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "Benjamin K. Smith (BenCreating)",
+          "William.Thompsonj",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-wolf-animation",
+          "https://opengameart.org/content/lpc-wolfman",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ]
   },
   "head-heads-heads_wolf_female": {
     "name": "Wolf female",
@@ -3737,7 +4850,30 @@ window.itemMetadata = {
         "pregnant": "head/heads/wolf/female/",
         "teen": "head/heads/wolf/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/wolf/female",
+        "notes": "original wolf animation by Redshrike, commissioned by William.Thompsonj; wolfman sprite by BenCreating, commissioned by castelonia; tweaks and headless version by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "Benjamin K. Smith (BenCreating)",
+          "William.Thompsonj",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-wolf-animation",
+          "https://opengameart.org/content/lpc-wolfman",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ]
   },
   "head-heads-heads_wolf_male": {
     "name": "Wolf male",
@@ -3811,7 +4947,30 @@ window.itemMetadata = {
         "pregnant": "head/heads/wolf/male/",
         "teen": "head/heads/wolf/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/wolf/male",
+        "notes": "original wolf animation by Redshrike, commissioned by William.Thompsonj; wolfman sprite by BenCreating, commissioned by castelonia; tweaks and headless version by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "Benjamin K. Smith (BenCreating)",
+          "William.Thompsonj",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-wolf-animation",
+          "https://opengameart.org/content/lpc-wolfman",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ]
   },
   "head-heads-heads_rabbit": {
     "name": "Rabbit",
@@ -3885,7 +5044,26 @@ window.itemMetadata = {
         "pregnant": "head/heads/rabbit/adult/",
         "teen": "head/heads/rabbit/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/rabbit",
+        "notes": "original rabbit by Redshrike, adapted to modular head by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/bunny-rabbit-lpc-style-for-pixelfarm",
+          "http://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ]
   },
   "head-heads-heads_rabbit_child": {
     "name": "Rabbit child",
@@ -3951,7 +5129,26 @@ window.itemMetadata = {
         "zPos": 100,
         "child": "head/heads/rabbit/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/rabbit/child",
+        "notes": "original rabbit by Redshrike, adapted to modular head by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/bunny-rabbit-lpc-style-for-pixelfarm",
+          "http://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ]
   },
   "head-heads-heads_rat": {
     "name": "Rat",
@@ -4025,7 +5222,26 @@ window.itemMetadata = {
         "pregnant": "head/heads/rat/adult/",
         "teen": "head/heads/rat/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/rat",
+        "notes": "original rabbit by Redshrike, adapted to modular head by bluecarrot16, modified to rat by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/bunny-rabbit-lpc-style-for-pixelfarm",
+          "http://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ]
   },
   "head-heads-heads_rat_child": {
     "name": "Rat child",
@@ -4091,7 +5307,26 @@ window.itemMetadata = {
         "zPos": 100,
         "child": "head/heads/rat/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/rat/child",
+        "notes": "original rabbit by Redshrike, adapted to modular head by bluecarrot16, modified to rat by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/bunny-rabbit-lpc-style-for-pixelfarm",
+          "http://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ]
   },
   "head-heads-heads_mouse": {
     "name": "Mouse",
@@ -4164,7 +5399,26 @@ window.itemMetadata = {
         "pregnant": "head/heads/mouse/adult/",
         "teen": "head/heads/mouse/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/mouse",
+        "notes": "original rabbit by Redshrike, adapted to modular head by bluecarrot16, modified to mouse head by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/bunny-rabbit-lpc-style-for-pixelfarm",
+          "http://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ]
   },
   "head-heads-heads_mouse_child": {
     "name": "Mouse child",
@@ -4230,7 +5484,26 @@ window.itemMetadata = {
         "zPos": 100,
         "child": "head/heads/mouse/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/mouse/child",
+        "notes": "original rabbit by Redshrike, adapted to modular head by bluecarrot16, modified to mouse head by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/bunny-rabbit-lpc-style-for-pixelfarm",
+          "http://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ]
   },
   "head-heads-heads_lizard_child": {
     "name": "Lizard child",
@@ -4288,7 +5561,27 @@ window.itemMetadata = {
         "zPos": 100,
         "child": "head/heads/lizard/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/lizard/child",
+        "notes": "original lizard/drake by Nila122, reworked by BenCreating, modular head and further revisions by bluecarrot16, child version by bluecarrot16. Nila122 gave blanket permission to MedicineStorm to use Nila122's LPC assets under OGA-BY 3.0 (where original or derived only from other works under OGA-BY).",
+        "authors": [
+          "bluecarrot16",
+          "Benjamin K. Smith (BenCreating)",
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/drakes-and-lizardfolk",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ]
   },
   "head-heads-heads_lizard_female": {
     "name": "Lizard female",
@@ -4354,7 +5647,27 @@ window.itemMetadata = {
         "pregnant": "head/heads/lizard/female/",
         "teen": "head/heads/lizard/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/lizard/female",
+        "notes": "original lizard/drake by Nila122, reworked by BenCreating, modular head and further revisions by bluecarrot16. Nila122 gave blanket permission to MedicineStorm to use Nila122's LPC assets under OGA-BY 3.0 (where original or derived only from other works under OGA-BY).",
+        "authors": [
+          "bluecarrot16",
+          "Benjamin K. Smith (BenCreating)",
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/drakes-and-lizardfolk",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ]
   },
   "head-heads-heads_lizard_male": {
     "name": "Lizard male",
@@ -4420,7 +5733,27 @@ window.itemMetadata = {
         "pregnant": "head/heads/lizard/male/",
         "teen": "head/heads/lizard/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/lizard/male",
+        "notes": "original lizard/drake by Nila122, reworked by BenCreating, modular head and further revisions by bluecarrot16. Nila122 gave blanket permission to MedicineStorm to use Nila122's LPC assets under OGA-BY 3.0 (where original or derived only from other works under OGA-BY).",
+        "authors": [
+          "bluecarrot16",
+          "Benjamin K. Smith (BenCreating)",
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/drakes-and-lizardfolk",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ]
   },
   "head-heads-heads_orc_child": {
     "name": "Orc child",
@@ -4486,7 +5819,28 @@ window.itemMetadata = {
         "zPos": 100,
         "child": "head/heads/orc/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/orc/child",
+        "notes": "child base by kheftel, orc version created by Nila122, head extracted by bluecarrot16",
+        "authors": [
+          "Nila122",
+          "kheftel",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-child-standing-template",
+          "https://opengameart.org/content/lpc-children-walk-animation"
+        ]
+      }
+    ]
   },
   "head-heads-heads_orc_female": {
     "name": "Orc female",
@@ -4552,7 +5906,30 @@ window.itemMetadata = {
         "pregnant": "head/heads/orc/female/",
         "teen": "head/heads/orc/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/orc/female",
+        "notes": "human head adapted to orc by madmarcel, hurt/cast animations made by makrohn, headless version and tweaks by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Matthew Krohn (makrohn)",
+          "Marcel van de Steeg (MadMarcel)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-female-orcogregoblintroll-base-walkcycle",
+          "https://opengameart.org/content/lpc-ladies",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ]
   },
   "head-heads-heads_orc_male": {
     "name": "Orc male",
@@ -4626,7 +6003,30 @@ window.itemMetadata = {
         "pregnant": "head/heads/orc/male/",
         "teen": "head/heads/orc/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/orc/male",
+        "notes": "Sinbad the ogre design by Zi Ye, original 4-direction sprite by Redshrike, additional hurt/cast animations by makrohn, headless version by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Matthew Krohn (makrohn)",
+          "Stephen Challener (Redshrike)",
+          "Zi Ye"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/four-characters-my-lpc-entries",
+          "https://opengameart.org/content/sinbad-the-ogre",
+          "https://opengameart.org/content/lpc-male-sheets",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ]
   },
   "head-heads-heads_goblin": {
     "name": "Goblin",
@@ -4700,7 +6100,28 @@ window.itemMetadata = {
         "pregnant": "head/heads/goblin/adult/",
         "teen": "head/heads/goblin/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/goblin",
+        "notes": "original goblin by Redshrike, commisioned by William.Thomsponj; modular head extracted and enlarged by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Stephen Challener (Redshrike)",
+          "William.Thomsponj"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 4.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-goblin",
+          "https://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ]
   },
   "head-heads-heads_goblin_child": {
     "name": "Goblin child",
@@ -4766,7 +6187,28 @@ window.itemMetadata = {
         "zPos": 100,
         "child": "head/heads/goblin/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/goblin/child",
+        "notes": "original goblin by Redshrike, commisioned by William.Thomsponj; modular head extracted and slightly modified by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Stephen Challener (Redshrike)",
+          "William.Thomsponj"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 4.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-goblin",
+          "https://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ]
   },
   "head-heads-heads_alien": {
     "name": "Alien",
@@ -4838,7 +6280,27 @@ window.itemMetadata = {
         "pregnant": "head/heads/alien/adult/",
         "teen": "head/heads/alien/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/alien",
+        "notes": "based on lizard originally by Nila122, modified by BenCreating, further edited by bluecarrot16. Nila122 gave blanket permission to MedicineStorm to use Nila122's LPC assets under OGA-BY 3.0 (where original or derived only from other works under OGA-BY).",
+        "authors": [
+          "bluecarrot16",
+          "Benjamin K. Smith (BenCreating)",
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/drakes-and-lizardfolk",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ]
   },
   "head-heads-heads_troll": {
     "name": "Troll",
@@ -4912,7 +6374,26 @@ window.itemMetadata = {
         "pregnant": "head/heads/troll/adult/",
         "teen": "head/heads/troll/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/troll",
+        "notes": "original \"Muscleman/Ogre/Minotaur\" by Reemax, modified to \"Troll\" by AntumDeluge, edited to LPC style and converted to modular head by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "AntumDeluge",
+          "Tuomo Untinen (reemax)"
+        ],
+        "licenses": [
+          "CC-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/musclemanogreminotaur",
+          "https://opengameart.org/content/trolls-0",
+          "https://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ]
   },
   "head-heads-heads_troll_child": {
     "name": "Troll child",
@@ -4978,7 +6459,26 @@ window.itemMetadata = {
         "zPos": 100,
         "child": "head/heads/troll/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/troll/child",
+        "notes": "original \"Muscleman/Ogre/Minotaur\" by Reemax, modified to \"Troll\" by AntumDeluge, edited to LPC style and converted to modular head by bluecarrot16; child version by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "AntumDeluge",
+          "Tuomo Untinen (reemax)"
+        ],
+        "licenses": [
+          "CC-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/musclemanogreminotaur",
+          "https://opengameart.org/content/trolls-0",
+          "https://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ]
   },
   "head-heads-heads_skeleton": {
     "name": "Skeleton",
@@ -5031,7 +6531,29 @@ window.itemMetadata = {
         "pregnant": "head/heads/skeleton/adult/",
         "teen": "head/heads/skeleton/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/skeleton",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-skeleton",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ]
   },
   "head-heads-heads_zombie": {
     "name": "Zombie",
@@ -5105,7 +6627,28 @@ window.itemMetadata = {
         "pregnant": "head/heads/zombie/adult/",
         "teen": "head/heads/zombie/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/zombie",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Benjamin K. Smith (BenCreating)",
+          "Sander Frenken (castelonia)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-zombie",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ]
   },
   "head-heads-heads_jack": {
     "name": "Jack O Lantern",
@@ -5157,7 +6700,25 @@ window.itemMetadata = {
         "pregnant": "head/heads/jack/adult/",
         "teen": "head/heads/jack/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/jack",
+        "notes": "original pumpkin by Joshua Taylor, modified to head by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Joshua Taylor"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/fruit-and-veggie-inventory",
+          "https://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ]
   },
   "head-heads-heads_vampire": {
     "name": "Vampire",
@@ -5231,7 +6792,26 @@ window.itemMetadata = {
         "pregnant": "head/heads/vampire/adult/",
         "teen": "head/heads/vampire/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/vampire",
+        "notes": "original head by Redshrike, gaunt version by bluecarrot16, vampire fangs by bluecarrot16",
+        "authors": [
+          "Stephen Challener (Redshrike)",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ]
   },
   "head-heads-heads_frankenstein": {
     "name": "Frankenstein",
@@ -5305,7 +6885,26 @@ window.itemMetadata = {
         "pregnant": "head/heads/frankenstein/adult/",
         "teen": "head/heads/frankenstein/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/heads/frankenstein",
+        "notes": "original head by Redshrike, frankenstein's monster version by bluecarrot16",
+        "authors": [
+          "Stephen Challener (Redshrike)",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ]
   },
   "head-face-face_neutral": {
     "name": "Neutral",
@@ -5380,7 +6979,78 @@ window.itemMetadata = {
         "teen": "head/faces/${head}/neutral/",
         "pregnant": "head/faces/${head}/neutral/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/faces",
+        "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/elderly/neutral",
+        "notes": "Original by Redshrike, Elderly Head/Eyes by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/female/neutral",
+        "notes": "Original by Redshrike, spellcast and jump overrides by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/male/neutral",
+        "notes": "Original by Redshrike, spellcast and jump overrides by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ]
   },
   "head-face-face_closing": {
     "name": "Closing Eyes",
@@ -5455,7 +7125,73 @@ window.itemMetadata = {
         "teen": "head/faces/${head}/closing/",
         "pregnant": "head/faces/${head}/closing/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/faces",
+        "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/elderly/closing",
+        "notes": "Original by Redshrike, closing Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/female/closing",
+        "notes": "Original by Redshrike, closing Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/male/closing",
+        "notes": "Original by Redshrike, closing Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ]
   },
   "head-face-face_closed": {
     "name": "Closed Eyes",
@@ -5530,7 +7266,73 @@ window.itemMetadata = {
         "teen": "head/faces/${head}/closed/",
         "pregnant": "head/faces/${head}/closed/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/faces",
+        "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/elderly/closed",
+        "notes": "Original by Redshrike, Closed Eye Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/female/closed",
+        "notes": "Original by Redshrike, Closed Eye Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/male/closed",
+        "notes": "Original by Redshrike, Closed Eye Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ]
   },
   "head-face-face_look_r": {
     "name": "Looking Right",
@@ -5605,7 +7407,73 @@ window.itemMetadata = {
         "teen": "head/faces/${head}/look_r/",
         "pregnant": "head/faces/${head}/look_r/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/faces",
+        "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/elderly/look_r",
+        "notes": "Original by Redshrike, Looking Right Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/female/look_r",
+        "notes": "Original by Redshrike, Looking Right Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/male/look_r",
+        "notes": "Original by Redshrike, Looking Right Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ]
   },
   "head-face-face_look_l": {
     "name": "Looking Left",
@@ -5680,7 +7548,73 @@ window.itemMetadata = {
         "teen": "head/faces/${head}/look_l/",
         "pregnant": "head/faces/${head}/look_l/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/faces",
+        "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/elderly/look_l",
+        "notes": "Original by Redshrike, Looking Left Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/female/look_l",
+        "notes": "Original by Redshrike, Looking Left Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/male/look_l",
+        "notes": "Original by Redshrike, Looking Left Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ]
   },
   "head-face-face_eyeroll": {
     "name": "Rolling Eyes",
@@ -5755,7 +7689,73 @@ window.itemMetadata = {
         "teen": "head/faces/${head}/eyeroll/",
         "pregnant": "head/faces/${head}/eyeroll/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/faces",
+        "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/elderly/eyeroll",
+        "notes": "Original by Redshrike, Eyeroll Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/female/eyeroll",
+        "notes": "Original by Redshrike, Eyeroll Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/male/eyeroll",
+        "notes": "Original by Redshrike, Eyeroll Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ]
   },
   "head-face-face_shock": {
     "name": "Shock",
@@ -5830,7 +7830,73 @@ window.itemMetadata = {
         "teen": "head/faces/${head}/shock/",
         "pregnant": "head/faces/${head}/shock/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/faces",
+        "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/elderly/shock",
+        "notes": "Original by Redshrike, Shock Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/female/shock",
+        "notes": "Original by Redshrike, Shock Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/male/shock",
+        "notes": "Original by Redshrike, Shock Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ]
   },
   "head-face-face_angry": {
     "name": "Angry",
@@ -5905,7 +7971,73 @@ window.itemMetadata = {
         "teen": "head/faces/${head}/anger/",
         "pregnant": "head/faces/${head}/anger/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/faces",
+        "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/elderly/anger",
+        "notes": "Original by Redshrike, Anger Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/female/anger",
+        "notes": "Original by Redshrike, Anger Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/male/anger",
+        "notes": "Original by Redshrike, Anger Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ]
   },
   "head-face-face_angry2": {
     "name": "Angry Alt",
@@ -5980,7 +8112,27 @@ window.itemMetadata = {
         "teen": "head/faces/global/angry2/",
         "pregnant": "head/faces/global/angry2/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/faces/global/angry2",
+        "notes": "Original Bases by Redshrike, Alt Angry Expression by Laetissima and Pennomi, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "Thane Brimhall (pennomi)",
+          "laetissima",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-base-character-expressions",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ]
   },
   "head-face-face_sad": {
     "name": "Sad",
@@ -6055,7 +8207,73 @@ window.itemMetadata = {
         "teen": "head/faces/${head}/sad/",
         "pregnant": "head/faces/${head}/sad/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/faces",
+        "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/elderly/sad",
+        "notes": "Original by Redshrike, Sad Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/female/sad",
+        "notes": "Original by Redshrike, Sad Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/male/sad",
+        "notes": "Original by Redshrike, Sad Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ]
   },
   "head-face-face_sad2": {
     "name": "Sad Alt",
@@ -6131,7 +8349,27 @@ window.itemMetadata = {
         "teen": "head/faces/global/sad2/",
         "pregnant": "head/faces/global/sad2/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/faces/global/sad2",
+        "notes": "Original Bases by Redshrike, Alt Sad Expression by Laetissima and Pennomi, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "Thane Brimhall (pennomi)",
+          "laetissima",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-base-character-expressions",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ]
   },
   "head-face-face_happy": {
     "name": "Happy",
@@ -6206,7 +8444,73 @@ window.itemMetadata = {
         "teen": "head/faces/${head}/happy/",
         "pregnant": "head/faces/${head}/happy/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/faces",
+        "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/elderly/happy",
+        "notes": "Original by Redshrike, Happy Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/female/happy",
+        "notes": "Original by Redshrike, Happy Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/male/happy",
+        "notes": "Original by Redshrike, Happy Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ]
   },
   "head-face-face_happy2": {
     "name": "Happy Alt",
@@ -6281,7 +8585,27 @@ window.itemMetadata = {
         "teen": "head/faces/global/happy2/",
         "pregnant": "head/faces/global/happy2/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/faces/global/happy2",
+        "notes": "Original Bases by Redshrike, Alt Happy Expression by Laetissima and Pennomi, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "Thane Brimhall (pennomi)",
+          "laetissima",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-base-character-expressions",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ]
   },
   "head-face-face_blush": {
     "name": "Blush",
@@ -6356,7 +8680,73 @@ window.itemMetadata = {
         "teen": "head/faces/${head}/blush/",
         "pregnant": "head/faces/${head}/blush/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/faces",
+        "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/elderly/blush",
+        "notes": "Original by Redshrike, Blush Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/female/blush",
+        "notes": "Original by Redshrike, Blush Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/male/blush",
+        "notes": "Original by Redshrike, Blush Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ]
   },
   "head-face-face_shame": {
     "name": "Shame",
@@ -6431,7 +8821,73 @@ window.itemMetadata = {
         "teen": "head/faces/${head}/shame/",
         "pregnant": "head/faces/${head}/shame/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/faces",
+        "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/elderly/shame",
+        "notes": "Original by Redshrike, Shame Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/female/shame",
+        "notes": "Original by Redshrike, Shame Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/male/shame",
+        "notes": "Original by Redshrike, Shame Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ]
   },
   "head-face-face_tears": {
     "name": "Tears",
@@ -6485,7 +8941,27 @@ window.itemMetadata = {
         "teen": "head/faces/global/tears/",
         "pregnant": "head/faces/global/tears/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/faces/global/tears",
+        "notes": "Original Bases by Redshrike, Tears Expression by Laetissima and Pennomi, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "Thane Brimhall (pennomi)",
+          "laetissima",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-base-character-expressions",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ]
   },
   "head-eye_color": {
     "name": "Eye Color",
@@ -6543,7 +9019,79 @@ window.itemMetadata = {
         "pregnant": "eyes/human/${head}/${expression}/",
         "child": "eyes/human/child/${expression}/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "eyes/human",
+        "notes": "original by Redshrike, mapped to all frames by Matthew Krohn & JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "Matthew Krohn (makrohn)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles"
+        ]
+      },
+      {
+        "file": "eyes/human/adult",
+        "notes": "original by Redshrike, Expressions by ElizaWy, eyes split from expressions and mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
+        ]
+      },
+      {
+        "file": "eyes/human/adult/default",
+        "notes": "original by Redshrike, mapped to all frames by Matthew Krohn & JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "Matthew Krohn (makrohn)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles"
+        ]
+      },
+      {
+        "file": "eyes/human/elderly",
+        "notes": "original by Redshrike, Elderly Heads and Expressions by ElizaWy, eyes split from expressions and mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
+        ]
+      }
+    ]
   },
   "head-other eyes-eyes_child": {
     "name": "Child Eyes",
@@ -6581,7 +9129,26 @@ window.itemMetadata = {
         "zPos": 105,
         "child": "eyes/human/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "eyes/human/child",
+        "notes": "original by Redshrike, mapped to all frames by Matthew Krohn & JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "Matthew Krohn (makrohn)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles"
+        ]
+      }
+    ]
   },
   "head-other eyes-eyes_cyclops": {
     "name": "Cyclops Eyes",
@@ -6641,7 +9208,23 @@ window.itemMetadata = {
         "pregnant": "eyes/cyclops/adult/",
         "child": "eyes/cyclops/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "eyes/cyclops",
+        "notes": "original by kirts, repositioned by JaidynReiman along with shading and recolors",
+        "authors": [
+          "kirts",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/cyclops-and-his-eye"
+        ]
+      }
+    ]
   },
   "head-ears-head_ears_big": {
     "name": "Big ears",
@@ -6714,7 +9297,28 @@ window.itemMetadata = {
         "pregnant": "head/ears/big/adult/",
         "child": "head/ears/big/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/ears/big",
+        "notes": "adapted to v3 base by bluecarrot16; expanded to other animations and child by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "bluecarrot16",
+          "Thane Brimhall (pennomi)",
+          "laetissima",
+          "Matthew Krohn (makrohn)"
+        ],
+        "licenses": [
+          "GPL 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-base-character-expressions",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "head-ears-head_ears_elven": {
     "name": "Elven ears",
@@ -6787,7 +9391,29 @@ window.itemMetadata = {
         "pregnant": "head/ears/elven/adult/",
         "child": "head/ears/elven/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/ears/elven",
+        "notes": "adapted to v3 base by bluecarrot16; expanded to other animations and child by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "bluecarrot16",
+          "Thane Brimhall (pennomi)",
+          "laetissima",
+          "Matthew Krohn (makrohn)",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "GPL 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-base-character-expressions",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "head-ears-head_ears_long": {
     "name": "Long ears",
@@ -6860,7 +9486,27 @@ window.itemMetadata = {
         "pregnant": "head/ears/long/adult/",
         "child": "head/ears/long/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/ears/long",
+        "notes": "adapted to v3 base by bluecarrot16; expanded to other animations and child by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "bluecarrot16",
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-long-ears",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "head-ears-head_ears_medium": {
     "name": "Medium Elven Ears",
@@ -6933,7 +9579,24 @@ window.itemMetadata = {
         "pregnant": "head/ears/medium/adult/",
         "child": "head/ears/medium/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/ears/medium",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-new-elven-ear-variants"
+        ]
+      }
+    ]
   },
   "head-ears-head_ears_hang": {
     "name": "Hanging Elven Ears",
@@ -7006,7 +9669,24 @@ window.itemMetadata = {
         "pregnant": "head/ears/hang/adult/",
         "child": "head/ears/hang/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/ears/hang",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-new-elven-ear-variants"
+        ]
+      }
+    ]
   },
   "head-ears-head_ears_down": {
     "name": "Downward Elven Ears",
@@ -7079,7 +9759,24 @@ window.itemMetadata = {
         "pregnant": "head/ears/down/adult/",
         "child": "head/ears/down/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/ears/down",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-new-elven-ear-variants"
+        ]
+      }
+    ]
   },
   "head-ears-head_ears_dragon": {
     "name": "Dragon Ears",
@@ -7152,7 +9849,24 @@ window.itemMetadata = {
         "pregnant": "head/ears/dragon/adult/",
         "child": "head/ears/dragon/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/ears/dragon",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-new-elven-ear-variants"
+        ]
+      }
+    ]
   },
   "head-furry ears-top ears-head_ears_cat": {
     "name": "Cat Ears",
@@ -7246,7 +9960,24 @@ window.itemMetadata = {
         "teen": "head/ears/cat/adult_back/",
         "child": "head/ears/cat/child_back/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/ears/cat",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
+        ]
+      }
+    ]
   },
   "head-furry ears-top ears-head_ears_cat_skin": {
     "name": "Cat Ears Skintone",
@@ -7329,7 +10060,24 @@ window.itemMetadata = {
         "teen": "head/ears/cat/skin/adult_back/",
         "child": "head/ears/cat/skin/child_back/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/ears/cat",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
+        ]
+      }
+    ]
   },
   "head-furry ears-top ears-head_ears_wolf": {
     "name": "Wolf Ears",
@@ -7423,7 +10171,24 @@ window.itemMetadata = {
         "teen": "head/ears/wolf/adult_back/",
         "child": "head/ears/wolf/child_back/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/ears/wolf",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
+        ]
+      }
+    ]
   },
   "head-furry ears-top ears-head_ears_wolf_skin": {
     "name": "Wolf Ears Skintone",
@@ -7506,7 +10271,24 @@ window.itemMetadata = {
         "teen": "head/ears/wolf/skin/adult_back/",
         "child": "head/ears/wolf/skin/child_back/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/ears/wolf",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
+        ]
+      }
+    ]
   },
   "head-furry ears-side ears-head_ears_lykon": {
     "name": "Side Wolf Ears",
@@ -7591,7 +10373,24 @@ window.itemMetadata = {
         "pregnant": "head/ears/lykon/adult/",
         "child": "head/ears/lykon/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/ears/lykon",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
+        ]
+      }
+    ]
   },
   "head-furry ears-side ears-head_ears_lykon_skin": {
     "name": "Side Wolf Ears Skintone",
@@ -7665,7 +10464,24 @@ window.itemMetadata = {
         "pregnant": "head/ears/lykon/skin/adult/",
         "child": "head/ears/lykon/skin/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/ears/lykon",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
+        ]
+      }
+    ]
   },
   "head-furry ears-side ears-head_ears_zabos": {
     "name": "Side Cat Ears",
@@ -7750,7 +10566,24 @@ window.itemMetadata = {
         "pregnant": "head/ears/zabos/adult/",
         "child": "head/ears/zabos/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/ears/zabos",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
+        ]
+      }
+    ]
   },
   "head-furry ears-side ears-head_ears_zabos_skin": {
     "name": "Side Cat Ears Skintone",
@@ -7824,7 +10657,24 @@ window.itemMetadata = {
         "pregnant": "head/ears/zabos/skin/adult/",
         "child": "head/ears/zabos/skin/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/ears/zabos",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
+        ]
+      }
+    ]
   },
   "head-furry ears-side ears-head_ears_avyon": {
     "name": "Feather Ears",
@@ -7909,7 +10759,24 @@ window.itemMetadata = {
         "pregnant": "head/ears/avyon/adult/",
         "child": "head/ears/avyon/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/ears/avyon",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
+        ]
+      }
+    ]
   },
   "head-furry ears-side ears-head_ears_avyon_skin": {
     "name": "Feather Ears Skintone",
@@ -7983,7 +10850,24 @@ window.itemMetadata = {
         "pregnant": "head/ears/avyon/skin/adult/",
         "child": "head/ears/avyon/skin/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/ears/avyon",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
+        ]
+      }
+    ]
   },
   "head-nose-head_nose_big": {
     "name": "Big nose",
@@ -8054,7 +10938,25 @@ window.itemMetadata = {
         "teen": "head/nose/big/adult/",
         "pregnant": "head/nose/big/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/nose/big",
+        "notes": "",
+        "authors": [
+          "Thane Brimhall (pennomi)",
+          "laetissima",
+          "Matthew Krohn (makrohn)"
+        ],
+        "licenses": [
+          "GPL 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-base-character-expressions"
+        ]
+      }
+    ]
   },
   "head-nose-head_nose_button": {
     "name": "Button nose",
@@ -8125,7 +11027,25 @@ window.itemMetadata = {
         "teen": "head/nose/button/adult/",
         "pregnant": "head/nose/button/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/nose/button",
+        "notes": "",
+        "authors": [
+          "Thane Brimhall (pennomi)",
+          "laetissima",
+          "Matthew Krohn (makrohn)"
+        ],
+        "licenses": [
+          "GPL 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-base-character-expressions"
+        ]
+      }
+    ]
   },
   "head-nose-head_nose_straight": {
     "name": "Straight nose",
@@ -8196,7 +11116,25 @@ window.itemMetadata = {
         "teen": "head/nose/straight/adult/",
         "pregnant": "head/nose/straight/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/nose/straight",
+        "notes": "",
+        "authors": [
+          "Thane Brimhall (pennomi)",
+          "laetissima",
+          "Matthew Krohn (makrohn)"
+        ],
+        "licenses": [
+          "GPL 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-base-character-expressions"
+        ]
+      }
+    ]
   },
   "head-nose-head_nose_elderly": {
     "name": "Elderly nose",
@@ -8267,7 +11205,22 @@ window.itemMetadata = {
         "teen": "head/nose/elderly/adult/",
         "pregnant": "head/nose/elderly/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/nose/elderly",
+        "notes": "",
+        "authors": [
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-revised-elders"
+        ]
+      }
+    ]
   },
   "head-nose-head_nose_large": {
     "name": "Large nose",
@@ -8338,7 +11291,23 @@ window.itemMetadata = {
         "teen": "head/nose/large/adult/",
         "pregnant": "head/nose/large/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/nose/large",
+        "notes": "",
+        "authors": [
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head/Head%20Overlay%2001%20-%20Large%20Nose",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "head-eyebrows-eyebrows_thick": {
     "name": "Thick Eyebrows",
@@ -8415,7 +11384,23 @@ window.itemMetadata = {
         "pregnant": "eyes/eyebrows/thick/adult/",
         "child": "eyes/eyebrows/thick/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "eyes/eyebrows/thick",
+        "notes": "",
+        "authors": [
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Hair",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "head-eyebrows-eyebrows_thin": {
     "name": "Thin Eyebrows",
@@ -8492,7 +11477,23 @@ window.itemMetadata = {
         "pregnant": "eyes/eyebrows/thin/adult/",
         "child": "eyes/eyebrows/thin/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "eyes/eyebrows/thin",
+        "notes": "",
+        "authors": [
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Hair",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "head-head_wrinkles": {
     "name": "Wrinkles",
@@ -8562,7 +11563,20 @@ window.itemMetadata = {
         "teen": "head/wrinkles/",
         "pregnant": "head/wrinkles/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/wrinkles",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": []
+      }
+    ]
   },
   "head-beards-beards_beard": {
     "name": "Basic Beard",
@@ -8637,7 +11651,24 @@ window.itemMetadata = {
         "teen": "beards/beard/basic/",
         "pregnant": "beards/beard/basic/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "beards/beard/basic",
+        "notes": "Original by Nemisys, repositioning by JaidynReiman.",
+        "authors": [
+          "JaidynReiman",
+          "Carlo Enrico Victoria (Nemisys)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-white-beard"
+        ]
+      }
+    ]
   },
   "head-beards-beards_winter": {
     "name": "Winter Beard",
@@ -8712,7 +11743,22 @@ window.itemMetadata = {
         "teen": "beards/beard/winter/female/",
         "pregnant": "beards/beard/winter/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "beards/beard/winter",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-santa"
+        ]
+      }
+    ]
   },
   "head-beards-beards_5oclock_shadow": {
     "name": "5 O'clock Shadow",
@@ -8787,7 +11833,25 @@ window.itemMetadata = {
         "teen": "beards/beard/5oclock_shadow/",
         "pregnant": "beards/beard/5oclock_shadow/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "beards/beard/5oclock_shadow",
+        "notes": "Original by Pennomi, repositioning by JaidynReiman.",
+        "authors": [
+          "JaidynReiman",
+          "Thane Brimhall (pennomi)",
+          "laetissima"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-base-character-expressions"
+        ]
+      }
+    ]
   },
   "head-beards-beards_trimmed": {
     "name": "Trimmed Beard",
@@ -8862,7 +11926,23 @@ window.itemMetadata = {
         "teen": "beards/beard/trimmed/",
         "pregnant": "beards/beard/trimmed/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "beards/beard/trimmed",
+        "notes": "",
+        "authors": [
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Hair",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "head-beards-beards_medium": {
     "name": "Medium Beard",
@@ -8937,7 +12017,23 @@ window.itemMetadata = {
         "teen": "beards/beard/medium/",
         "pregnant": "beards/beard/medium/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "beards/beard/medium",
+        "notes": "",
+        "authors": [
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Hair",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "head-mustaches-beards_bigstache": {
     "name": "Big Mustache",
@@ -9012,7 +12108,25 @@ window.itemMetadata = {
         "teen": "beards/mustache/bigstache/",
         "pregnant": "beards/mustache/bigstache/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "beards/mustache/bigstache",
+        "notes": "Original by Pennomi, repositioning by JaidynReiman.",
+        "authors": [
+          "JaidynReiman",
+          "Thane Brimhall (pennomi)",
+          "laetissima"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-base-character-expressions"
+        ]
+      }
+    ]
   },
   "head-mustaches-beards_mustache": {
     "name": "Mustache",
@@ -9087,7 +12201,24 @@ window.itemMetadata = {
         "teen": "beards/mustache/basic/",
         "pregnant": "beards/mustache/basic/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "beards/mustache/basic",
+        "notes": "Original by Nemisys, repositioning by JaidynReiman.",
+        "authors": [
+          "JaidynReiman",
+          "Carlo Enrico Victoria (Nemisys)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-brunet-mustache"
+        ]
+      }
+    ]
   },
   "head-mustaches-beards_french": {
     "name": "French Mustache",
@@ -9162,7 +12293,25 @@ window.itemMetadata = {
         "teen": "beards/mustache/french/",
         "pregnant": "beards/mustache/french/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "beards/mustache/french",
+        "notes": "Original by Pennomi, repositioning by JaidynReiman.",
+        "authors": [
+          "JaidynReiman",
+          "Thane Brimhall (pennomi)",
+          "laetissima"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-base-character-expressions"
+        ]
+      }
+    ]
   },
   "head-mustaches-beards_walrus": {
     "name": "Walrus Mustache",
@@ -9237,7 +12386,23 @@ window.itemMetadata = {
         "teen": "beards/mustache/walrus/",
         "pregnant": "beards/mustache/walrus/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "beards/mustache/walrus",
+        "notes": "",
+        "authors": [
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Hair",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "head-mustaches-beards_chevron": {
     "name": "Chevron Mustache",
@@ -9312,7 +12477,23 @@ window.itemMetadata = {
         "teen": "beards/mustache/chevron/",
         "pregnant": "beards/mustache/chevron/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "beards/mustache/chevron",
+        "notes": "",
+        "authors": [
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Hair",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "head-mustaches-beards_handlebar": {
     "name": "Handlebar Mustache",
@@ -9387,7 +12568,23 @@ window.itemMetadata = {
         "teen": "beards/mustache/handlebar/",
         "pregnant": "beards/mustache/handlebar/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "beards/mustache/handlebar",
+        "notes": "",
+        "authors": [
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Hair",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "head-mustaches-beards_lampshade": {
     "name": "Lampshade Mustache",
@@ -9462,7 +12659,23 @@ window.itemMetadata = {
         "teen": "beards/mustache/lampshade/",
         "pregnant": "beards/mustache/lampshade/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "beards/mustache/lampshade",
+        "notes": "",
+        "authors": [
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Hair",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "head-mustaches-beards_horseshoe": {
     "name": "Horseshoe Mustache",
@@ -9537,7 +12750,23 @@ window.itemMetadata = {
         "teen": "beards/mustache/horseshoe/",
         "pregnant": "beards/mustache/horseshoe/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "beards/mustache/horseshoe",
+        "notes": "",
+        "authors": [
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Hair",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-bangs-hairext_braidl": {
     "name": "Left Braid",
@@ -9616,7 +12845,25 @@ window.itemMetadata = {
         "teen": "hair/extensions/bangs/braidl/adult/",
         "child": "hair/extensions/bangs/braidl/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/extensions/bangs/braidl",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-bangs-hairext_braidr": {
     "name": "Right Braid",
@@ -9695,7 +12942,25 @@ window.itemMetadata = {
         "teen": "hair/extensions/bangs/braidr/adult/",
         "child": "hair/extensions/bangs/braidr/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/extensions/bangs/braidr",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-bangs-hairext_xlong_bangl": {
     "name": "Left XLong Bang",
@@ -9774,7 +13039,25 @@ window.itemMetadata = {
         "teen": "hair/extensions/bangs/xlong_bangl/adult/",
         "child": "hair/extensions/bangs/xlong_bangl/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/extensions/bangs/xlong_bangl",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-relm-hair-xlong-ponytail",
+          "https://opengameart.org/content/lpc-expanded-xlong-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-bangs-hairext_xlong_bangr": {
     "name": "Right XLong Bang",
@@ -9853,7 +13136,25 @@ window.itemMetadata = {
         "teen": "hair/extensions/bangs/xlong_bangr/adult/",
         "child": "hair/extensions/bangs/xlong_bangr/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/extensions/bangs/xlong_bangr",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-relm-hair-xlong-ponytail",
+          "https://opengameart.org/content/lpc-expanded-xlong-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-bangs-hairext_xlong_braidl": {
     "name": "Left XLong Braid",
@@ -9941,7 +13242,25 @@ window.itemMetadata = {
         "teen": "hair/extensions/bangs/xlong_braidl/adult/bg/",
         "child": "hair/extensions/bangs/xlong_braidl/child/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/extensions/bangs/xlong_braidl",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-relm-hair-xlong-ponytail",
+          "https://opengameart.org/content/lpc-expanded-xlong-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-bangs-hairext_xlong_braidr": {
     "name": "Right XLong Braid",
@@ -10029,7 +13348,25 @@ window.itemMetadata = {
         "teen": "hair/extensions/bangs/xlong_braidr/adult/bg/",
         "child": "hair/extensions/bangs/xlong_braidr/child/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/extensions/bangs/xlong_braidr",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-relm-hair-xlong-ponytail",
+          "https://opengameart.org/content/lpc-expanded-xlong-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-bangs-hairext_long_straightl": {
     "name": "Left Long Straight",
@@ -10106,7 +13443,24 @@ window.itemMetadata = {
         "pregnant": "hair/extensions/bangs/long_straightl/adult/",
         "teen": "hair/extensions/bangs/long_straightl/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/extensions/bangs/long_straightl",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-expanded-long-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-bangs-hairext_long_straightr": {
     "name": "Right Long Straight",
@@ -10183,7 +13537,24 @@ window.itemMetadata = {
         "pregnant": "hair/extensions/bangs/long_straightr/adult/",
         "teen": "hair/extensions/bangs/long_straightr/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/extensions/bangs/long_straightr",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-expanded-long-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-bangs-hairext_long_wavyl": {
     "name": "Left Long Wavy",
@@ -10260,7 +13631,24 @@ window.itemMetadata = {
         "pregnant": "hair/extensions/bangs/long_wavyl/adult/",
         "teen": "hair/extensions/bangs/long_wavyl/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/extensions/bangs/long_wavyl",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-expanded-long-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-bangs-hairext_long_wavyr": {
     "name": "Right Long Wavy",
@@ -10337,7 +13725,24 @@ window.itemMetadata = {
         "pregnant": "hair/extensions/bangs/long_wavyr/adult/",
         "teen": "hair/extensions/bangs/long_wavyr/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/extensions/bangs/long_wavyr",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-expanded-long-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-bangs-hairext_xlong_wavyl": {
     "name": "Left XLong Wavy",
@@ -10414,7 +13819,24 @@ window.itemMetadata = {
         "pregnant": "hair/extensions/bangs/xlong_wavyl/adult/",
         "teen": "hair/extensions/bangs/xlong_wavyl/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/extensions/bangs/xlong_wavyl",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-expanded-xlong-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-bangs-hairext_xlong_wavyr": {
     "name": "Right XLong Wavy",
@@ -10491,7 +13913,24 @@ window.itemMetadata = {
         "pregnant": "hair/extensions/bangs/xlong_wavyr/adult/",
         "teen": "hair/extensions/bangs/xlong_wavyr/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/extensions/bangs/xlong_wavyr",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-expanded-xlong-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-bangs-hairext_xlong_curlyl": {
     "name": "Left XLong Curly",
@@ -10568,7 +14007,24 @@ window.itemMetadata = {
         "pregnant": "hair/extensions/bangs/xlong_curlyl/adult/",
         "teen": "hair/extensions/bangs/xlong_curlyl/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/extensions/bangs/xlong_curlyl",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-expanded-xlong-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-bangs-hairext_xlong_curlyr": {
     "name": "Right XLong Curly",
@@ -10645,7 +14101,24 @@ window.itemMetadata = {
         "pregnant": "hair/extensions/bangs/xlong_curlyr/adult/",
         "teen": "hair/extensions/bangs/xlong_curlyr/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/extensions/bangs/xlong_curlyr",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-expanded-xlong-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-ponytails-hairext_topknot_short": {
     "name": "Short Topknot",
@@ -10724,7 +14197,25 @@ window.itemMetadata = {
         "teen": "hair/extensions/ponytails/topknot_short/adult/",
         "child": "hair/extensions/ponytails/topknot_short/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/extensions/ponytails/topknot_short",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-ponytails-hairext_topknot_long": {
     "name": "Long Topknot",
@@ -10812,7 +14303,25 @@ window.itemMetadata = {
         "teen": "hair/extensions/ponytails/topknot_long/adult/bg/",
         "child": "hair/extensions/ponytails/topknot_long/child/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/extensions/ponytails/topknot_long",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-ponytails-hairext_topknot_relm": {
     "name": "Relm Topknot",
@@ -10897,7 +14406,25 @@ window.itemMetadata = {
         "pregnant": "hair/extensions/ponytails/relm_ponytail/adult/bg/",
         "teen": "hair/extensions/ponytails/relm_ponytail/adult/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/extensions/ponytails/relm_ponytail",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-relm-hair-xlong-ponytail",
+          "https://opengameart.org/content/lpc-expanded-xlong-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-knot / ties-hairext_high_bun": {
     "name": "High Bun",
@@ -10974,7 +14501,22 @@ window.itemMetadata = {
         "pregnant": "hair/extensions/ties/high_bun/adult/",
         "teen": "hair/extensions/ties/high_bun/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/extensions/ties/high_bun",
+        "notes": "Custom by JaidynReiman",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-expanded-xlong-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-hair_afro": {
     "name": "Afro",
@@ -11051,7 +14593,22 @@ window.itemMetadata = {
         "pregnant": "hair/afro/adult/",
         "teen": "hair/afro/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/afro",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-hair_natural": {
     "name": "Natural",
@@ -11128,7 +14685,25 @@ window.itemMetadata = {
         "pregnant": "hair/natural/adult/",
         "teen": "hair/natural/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/natural",
+        "notes": "Original by bluecarrot16, animations by ElizaWy.",
+        "authors": [
+          "ElizaWy",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-hair",
+          "https://github.com/ElizaWy/LPC/blob/main/Characters/Hair",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-hair_dreadlocks_short": {
     "name": "Dreadlocks short",
@@ -11205,7 +14780,25 @@ window.itemMetadata = {
         "pregnant": "hair/dreadlocks_short/adult/",
         "teen": "hair/dreadlocks_short/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/dreadlocks_short",
+        "notes": "Original by bluecarrot16. Animated by ElizaWy.",
+        "authors": [
+          "ElizaWy",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-hair",
+          "https://github.com/ElizaWy/LPC/blob/main/Characters/Hair",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-hair_twists_fade": {
     "name": "Twists fade",
@@ -11282,7 +14875,22 @@ window.itemMetadata = {
         "pregnant": "hair/twists_fade/adult/",
         "teen": "hair/twists_fade/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/twists_fade",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-hair_twists_straight": {
     "name": "Twists straight",
@@ -11359,7 +14967,22 @@ window.itemMetadata = {
         "pregnant": "hair/twists_straight/adult/",
         "teen": "hair/twists_straight/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/twists_straight",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-hair_dreadlocks_long": {
     "name": "Dreadlocks long",
@@ -11436,7 +15059,22 @@ window.itemMetadata = {
         "pregnant": "hair/dreadlocks_long/adult/",
         "teen": "hair/dreadlocks_long/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/dreadlocks_long",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-hair_flat_top_straight": {
     "name": "Flat top straight",
@@ -11513,7 +15151,25 @@ window.itemMetadata = {
         "pregnant": "hair/flat_top_straight/adult/",
         "teen": "hair/flat_top_straight/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/flat_top_straight",
+        "notes": "Original by bluecarrot16, animated by ElizaWy.",
+        "authors": [
+          "ElizaWy",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-hair",
+          "https://github.com/ElizaWy/LPC/blob/main/Characters/Hair",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-hair_flat_top_fade": {
     "name": "Flat top fade",
@@ -11590,7 +15246,25 @@ window.itemMetadata = {
         "pregnant": "hair/flat_top_fade/adult/",
         "teen": "hair/flat_top_fade/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/flat_top_fade",
+        "notes": "Original by bluecarrot16, animated by ElizaWy.",
+        "authors": [
+          "ElizaWy",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-hair",
+          "https://github.com/ElizaWy/LPC/blob/main/Characters/Hair",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-hair_cornrows": {
     "name": "Cornrows",
@@ -11667,7 +15341,25 @@ window.itemMetadata = {
         "pregnant": "hair/cornrows/adult/",
         "teen": "hair/cornrows/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/cornrows",
+        "notes": "Original by bluecarrot16, animated by ElizaWy.",
+        "authors": [
+          "ElizaWy",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-hair",
+          "https://github.com/ElizaWy/LPC/blob/main/Characters/Hair",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-hair_jewfro": {
     "name": "Jewfro",
@@ -11747,7 +15439,26 @@ window.itemMetadata = {
         "teen": "hair/jewfro/adult/",
         "child": "hair/jewfro/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/jewfro",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles",
+          "https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-hair_curly_short": {
     "name": "Curly short",
@@ -11825,7 +15536,23 @@ window.itemMetadata = {
         "pregnant": "hair/curly_short/adult/",
         "teen": "hair/curly_short/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/curly_short",
+        "notes": "",
+        "authors": [
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-hair",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-hair_curly_long": {
     "name": "Curly long",
@@ -11903,7 +15630,22 @@ window.itemMetadata = {
         "pregnant": "hair/curly_long/adult/",
         "teen": "hair/curly_long/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/curly_long",
+        "notes": "",
+        "authors": [
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-hair_curls_large": {
     "name": "Large Curls",
@@ -11989,7 +15731,24 @@ window.itemMetadata = {
         "pregnant": "hair/curls_large/adult/bg/",
         "teen": "hair/curls_large/adult/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/curls_large",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0+"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-expanded-xlong-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-hair_curls_large_xlong": {
     "name": "Large Curls XLong",
@@ -12075,7 +15834,24 @@ window.itemMetadata = {
         "pregnant": "hair/curls_large_xlong/adult/bg/",
         "teen": "hair/curls_large_xlong/adult/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/curls_large_xlong",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0+"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-expanded-xlong-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-hair_balding": {
     "name": "Balding",
@@ -12154,7 +15930,22 @@ window.itemMetadata = {
         "pregnant": "hair/balding/adult/",
         "teen": "hair/balding/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/balding",
+        "notes": "",
+        "authors": [
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-hair_longhawk": {
     "name": "Longhawk",
@@ -12233,7 +16024,25 @@ window.itemMetadata = {
         "pregnant": "hair/longhawk/adult/",
         "teen": "hair/longhawk/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/longhawk",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Manuel Riecke (MrBeast)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-expanded-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-hair_shorthawk": {
     "name": "Shorthawk",
@@ -12312,7 +16121,25 @@ window.itemMetadata = {
         "pregnant": "hair/shorthawk/adult/",
         "teen": "hair/shorthawk/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/shorthawk",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Manuel Riecke (MrBeast)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-expanded-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-hair_high_and_tight": {
     "name": "High and tight",
@@ -12391,7 +16218,25 @@ window.itemMetadata = {
         "pregnant": "hair/high_and_tight/adult/",
         "teen": "hair/high_and_tight/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/high_and_tight",
+        "notes": "",
+        "authors": [
+          "Skorpio",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-skorpios-scifi-sprite-pack",
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-hair_buzzcut": {
     "name": "Buzzcut",
@@ -12470,7 +16315,22 @@ window.itemMetadata = {
         "pregnant": "hair/buzzcut/adult/",
         "teen": "hair/buzzcut/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/buzzcut",
+        "notes": "",
+        "authors": [
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_plain": {
     "name": "Plain",
@@ -12550,7 +16410,28 @@ window.itemMetadata = {
         "pregnant": "hair/plain/adult/",
         "teen": "hair/plain/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/plain",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Manuel Riecke (MrBeast)",
+          "Joe White"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/ponytail-and-plain-hairstyles",
+          "https://opengameart.org/content/lpc-expanded-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_pixie": {
     "name": "Pixie",
@@ -12630,7 +16511,25 @@ window.itemMetadata = {
         "pregnant": "hair/pixie/adult/",
         "teen": "hair/pixie/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/pixie",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Manuel Riecke (MrBeast)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-expanded-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_page": {
     "name": "Page",
@@ -12710,7 +16609,26 @@ window.itemMetadata = {
         "pregnant": "hair/page/adult/",
         "teen": "hair/page/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/page",
+        "notes": "",
+        "authors": [
+          "Page",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-expanded-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_page2": {
     "name": "Page2",
@@ -12790,7 +16708,28 @@ window.itemMetadata = {
         "pregnant": "hair/page2/adult/",
         "teen": "hair/page2/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/page2",
+        "notes": "Original by Johannes Sjölund (wulax). Edited, animated, and recolored by ElizaWy.",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Hair",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_idol": {
     "name": "Idol",
@@ -12870,7 +16809,26 @@ window.itemMetadata = {
         "pregnant": "hair/idol/adult/",
         "teen": "hair/idol/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/idol",
+        "notes": "Original CC0 by Thecilekli. Edited by bluecarrot16 and ElizaWy. Animated by ElizaWy.",
+        "authors": [
+          "thecilekli",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-korean-idol-hairstyle-male-with-12-colors",
+          "https://opengameart.org/content/lpc-hair",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Hair",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_mop": {
     "name": "Mop",
@@ -12950,7 +16908,25 @@ window.itemMetadata = {
         "pregnant": "hair/mop/adult/",
         "teen": "hair/mop/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/mop",
+        "notes": "(george)",
+        "authors": [
+          "Radomir Dopieralski",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/alternate-lpc-character-sprites-george",
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_parted": {
     "name": "Parted",
@@ -13030,7 +17006,27 @@ window.itemMetadata = {
         "pregnant": "hair/parted/adult/",
         "teen": "hair/parted/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/parted",
+        "notes": "down 4 and 5 added by JaidynReiman; recolors by Joe White; original by Manuel Riecke (MrBeast)",
+        "authors": [
+          "JaidynReiman",
+          "Joe White",
+          "Manuel Riecke (MrBeast)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24",
+          "https://opengameart.org/content/lpc-expanded-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_parted2": {
     "name": "Parted 2",
@@ -13110,7 +17106,25 @@ window.itemMetadata = {
         "pregnant": "hair/parted2/adult/",
         "teen": "hair/parted2/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/parted2",
+        "notes": "",
+        "authors": [
+          "Skorpio",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-skorpios-scifi-sprite-pack",
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_parted3": {
     "name": "Parted 3",
@@ -13190,7 +17204,23 @@ window.itemMetadata = {
         "pregnant": "hair/parted3/adult/",
         "teen": "hair/parted3/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/parted3",
+        "notes": "",
+        "authors": [
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Hair",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_parted_side_bangs": {
     "name": "Side Parted w/Bangs",
@@ -13272,7 +17302,26 @@ window.itemMetadata = {
         "teen": "hair/parted_side_bangs/adult/",
         "child": "hair/parted_side_bangs/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/parted_side_bangs",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles",
+          "https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_parted_side_bangs2": {
     "name": "Side Parted w/Bangs 2",
@@ -13354,7 +17403,26 @@ window.itemMetadata = {
         "teen": "hair/parted_side_bangs2/adult/",
         "child": "hair/parted_side_bangs2/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/parted_side_bangs2",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles",
+          "https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_messy1": {
     "name": "Messy1",
@@ -13434,7 +17502,25 @@ window.itemMetadata = {
         "pregnant": "hair/messy1/adult/",
         "teen": "hair/messy1/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/messy1",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Manuel Riecke (MrBeast)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-expanded-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_messy2": {
     "name": "Messy2",
@@ -13514,7 +17600,25 @@ window.itemMetadata = {
         "pregnant": "hair/messy2/adult/",
         "teen": "hair/messy2/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/messy2",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Manuel Riecke (MrBeast)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-expanded-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_messy3": {
     "name": "Messy3",
@@ -13594,7 +17698,24 @@ window.itemMetadata = {
         "pregnant": "hair/messy3/adult/",
         "teen": "hair/messy3/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/messy3",
+        "notes": "",
+        "authors": [
+          "Fabzy",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/the-revolution-hair",
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_bedhead": {
     "name": "Bedhead",
@@ -13674,7 +17795,25 @@ window.itemMetadata = {
         "pregnant": "hair/bedhead/adult/",
         "teen": "hair/bedhead/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/bedhead",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Manuel Riecke (MrBeast)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-expanded-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_unkempt": {
     "name": "Unkempt",
@@ -13754,7 +17893,25 @@ window.itemMetadata = {
         "pregnant": "hair/unkempt/adult/",
         "teen": "hair/unkempt/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/unkempt",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Manuel Riecke (MrBeast)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-expanded-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_bangs": {
     "name": "Bangs",
@@ -13834,7 +17991,25 @@ window.itemMetadata = {
         "pregnant": "hair/bangs/adult/",
         "teen": "hair/bangs/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/bangs",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Manuel Riecke (MrBeast)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-expanded-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_bangsshort": {
     "name": "Bangsshort",
@@ -13914,7 +18089,25 @@ window.itemMetadata = {
         "pregnant": "hair/bangsshort/adult/",
         "teen": "hair/bangsshort/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/bangsshort",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Manuel Riecke (MrBeast)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-expanded-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_swoop": {
     "name": "Swoop",
@@ -13994,7 +18187,25 @@ window.itemMetadata = {
         "pregnant": "hair/swoop/adult/",
         "teen": "hair/swoop/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/swoop",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Manuel Riecke (MrBeast)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-expanded-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_swoop_side": {
     "name": "Side Swoop",
@@ -14076,7 +18287,26 @@ window.itemMetadata = {
         "teen": "hair/swoop_side/adult/",
         "child": "hair/swoop_side/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/swoop_side",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles",
+          "https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_curtains": {
     "name": "Curtains",
@@ -14156,7 +18386,26 @@ window.itemMetadata = {
         "pregnant": "hair/curtains/adult/",
         "teen": "hair/curtains/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/curtains",
+        "notes": "(star)",
+        "authors": [
+          "Mandi Paugh",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "GPL 2.0",
+          "GPL 3.0",
+          "CC-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/star-overland",
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_single": {
     "name": "Single",
@@ -14244,7 +18493,27 @@ window.itemMetadata = {
         "pregnant": "hair/single/adult/bg/",
         "teen": "hair/single/adult/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/single",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/3-hairs-for-lpc",
+          "https://opengameart.org/content/lpc-expanded-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_cowlick": {
     "name": "Cowlick",
@@ -14324,7 +18593,25 @@ window.itemMetadata = {
         "pregnant": "hair/cowlick/adult/",
         "teen": "hair/cowlick/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/cowlick",
+        "notes": "Original by bluecarrot16, animated by ElizaWy.",
+        "authors": [
+          "ElizaWy",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-hair",
+          "https://github.com/ElizaWy/LPC/blob/main/Characters/Hair",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_cowlick_tall": {
     "name": "Cowlick tall",
@@ -14404,7 +18691,24 @@ window.itemMetadata = {
         "pregnant": "hair/cowlick_tall/adult/",
         "teen": "hair/cowlick_tall/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/cowlick_tall",
+        "notes": "",
+        "authors": [
+          "Fabzy",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/the-revolution-hair",
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked_porcupine": {
     "name": "Spiked porcupine",
@@ -14485,7 +18789,24 @@ window.itemMetadata = {
         "pregnant": "hair/spiked_porcupine/adult/",
         "teen": "hair/spiked_porcupine/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/spiked_porcupine",
+        "notes": "",
+        "authors": [
+          "Fabzy",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/the-revolution-hair",
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked_liberty2": {
     "name": "Spiked liberty2",
@@ -14566,7 +18887,24 @@ window.itemMetadata = {
         "pregnant": "hair/spiked_liberty2/adult/",
         "teen": "hair/spiked_liberty2/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/spiked_liberty2",
+        "notes": "",
+        "authors": [
+          "Cobra Hubbard (BlueVortexGames)",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/anime-lpc-hair",
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked_liberty": {
     "name": "Spiked liberty",
@@ -14647,7 +18985,24 @@ window.itemMetadata = {
         "pregnant": "hair/spiked_liberty/adult/",
         "teen": "hair/spiked_liberty/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/spiked_liberty",
+        "notes": "",
+        "authors": [
+          "Fabzy",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/the-revolution-hair",
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked_beehive": {
     "name": "Spiked beehive",
@@ -14728,7 +19083,24 @@ window.itemMetadata = {
         "pregnant": "hair/spiked_beehive/adult/",
         "teen": "hair/spiked_beehive/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/spiked_beehive",
+        "notes": "",
+        "authors": [
+          "Fabzy",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/the-revolution-hair",
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked": {
     "name": "Spiked",
@@ -14809,7 +19181,23 @@ window.itemMetadata = {
         "pregnant": "hair/spiked/adult/",
         "teen": "hair/spiked/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/spiked",
+        "notes": "",
+        "authors": [
+          "kcilds/Rocetti/Eredah"
+        ],
+        "licenses": [
+          "CC-BY 4.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/eredah-rpg-character-base-48x64-ongoing",
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked2": {
     "name": "Spiked2",
@@ -14890,7 +19278,24 @@ window.itemMetadata = {
         "pregnant": "hair/spiked2/adult/",
         "teen": "hair/spiked2/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/spiked2",
+        "notes": "",
+        "authors": [
+          "Fabzy",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/the-revolution-hair",
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_halfmessy": {
     "name": "Halfmessy",
@@ -14971,7 +19376,27 @@ window.itemMetadata = {
         "pregnant": "hair/halfmessy/adult/",
         "teen": "hair/halfmessy/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/halfmessy",
+        "notes": "",
+        "authors": [
+          "Nila122",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0",
+          "GPL 2.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/more-lpc-clothes-and-hair",
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-hair_bunches": {
     "name": "Bunches",
@@ -15061,7 +19486,27 @@ window.itemMetadata = {
         "pregnant": "hair/bunches/adult/bg/",
         "teen": "hair/bunches/adult/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/bunches",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Barbara Riviera",
+          "Manuel Riecke (MrBeast)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/concept-art-for-lpc-entry",
+          "https://opengameart.org/content/lpc-expanded-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-hair_pigtails": {
     "name": "Pigtails",
@@ -15143,7 +19588,25 @@ window.itemMetadata = {
         "pregnant": "hair/pigtails/adult/",
         "teen": "hair/pigtails/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/pigtails",
+        "notes": "(betty)",
+        "authors": [
+          "Radomir Dopieralski",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/one-more-lpc-alternate-character",
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-hair_pigtails_bangs": {
     "name": "Pigtails bangs",
@@ -15225,7 +19688,25 @@ window.itemMetadata = {
         "pregnant": "hair/pigtails_bangs/adult/",
         "teen": "hair/pigtails_bangs/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/pigtails_bangs",
+        "notes": "(astarea)",
+        "authors": [
+          "Emilio J. Sanchez-Sierra",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/steampun-a-fy-with-concept-art",
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-hair_bob": {
     "name": "Bob",
@@ -15308,7 +19789,25 @@ window.itemMetadata = {
         "pregnant": "hair/bob/adult/",
         "teen": "hair/bob/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/bob",
+        "notes": "Original by bluecarrot16. Edited and animated by ElizaWy.",
+        "authors": [
+          "ElizaWy",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-hair",
+          "https://github.com/ElizaWy/LPC/blob/main/Characters/Hair",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-hair_lob": {
     "name": "Lob",
@@ -15391,7 +19890,22 @@ window.itemMetadata = {
         "pregnant": "hair/lob/adult/",
         "teen": "hair/lob/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/lob",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-hair_bob_side_part": {
     "name": "Bob side part",
@@ -15474,7 +19988,27 @@ window.itemMetadata = {
         "pregnant": "hair/bob_side_part/adult/",
         "teen": "hair/bob_side_part/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/bob_side_part",
+        "notes": "Original by Thecilekli. Touchups by BlueCarrot16. Edited and animated by ElizaWy.",
+        "authors": [
+          "thecilekli",
+          "bluecarrot16",
+          "ElizaWy"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pink-short-hair",
+          "https://opengameart.org/content/lpc-hair",
+          "https://github.com/ElizaWy/LPC/blob/main/Characters/Hair",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-hair_relm_short": {
     "name": "Relm Short",
@@ -15559,7 +20093,24 @@ window.itemMetadata = {
         "teen": "hair/relm_short/adult/",
         "child": "hair/relm_short/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/relm_short",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-relm-hair-xlong-ponytail"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_half_up": {
     "name": "Half up",
@@ -15643,7 +20194,22 @@ window.itemMetadata = {
         "pregnant": "hair/half_up/adult/",
         "teen": "hair/half_up/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/half_up",
+        "notes": "",
+        "authors": [
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_bangs_bun": {
     "name": "Bangs bun",
@@ -15727,7 +20293,25 @@ window.itemMetadata = {
         "pregnant": "hair/bangs_bun/adult/",
         "teen": "hair/bangs_bun/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/bangs_bun",
+        "notes": "Original by bluecarrot16, animated by ElizaWy.",
+        "authors": [
+          "ElizaWy",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-hair",
+          "https://github.com/ElizaWy/LPC/blob/main/Characters/Hair",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_topknot_short": {
     "name": "Short Topknot",
@@ -15822,7 +20406,42 @@ window.itemMetadata = {
         "teen": "hair/extensions/ponytails/topknot_short/adult/",
         "child": "hair/extensions/ponytails/topknot_short/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/parted_side_bangs",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles",
+          "https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24"
+        ]
+      },
+      {
+        "file": "hair/extensions/ponytails/topknot_short",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_topknot_short2": {
     "name": "Short Topknot 2",
@@ -15917,7 +20536,42 @@ window.itemMetadata = {
         "teen": "hair/extensions/ponytails/topknot_short/adult/",
         "child": "hair/extensions/ponytails/topknot_short/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/parted_side_bangs2",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles",
+          "https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24"
+        ]
+      },
+      {
+        "file": "hair/extensions/ponytails/topknot_short",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_topknot_long": {
     "name": "Long Topknot",
@@ -16021,7 +20675,42 @@ window.itemMetadata = {
         "teen": "hair/extensions/ponytails/topknot_long/adult/fg/",
         "child": "hair/extensions/ponytails/topknot_long/child/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/parted_side_bangs",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles",
+          "https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24"
+        ]
+      },
+      {
+        "file": "hair/extensions/ponytails/topknot_long",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_topknot_long2": {
     "name": "Long Topknot 2",
@@ -16125,7 +20814,42 @@ window.itemMetadata = {
         "teen": "hair/extensions/ponytails/topknot_long/adult/fg/",
         "child": "hair/extensions/ponytails/topknot_long/child/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/parted_side_bangs2",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles",
+          "https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24"
+        ]
+      },
+      {
+        "file": "hair/extensions/ponytails/topknot_long",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_ponytail": {
     "name": "Ponytail",
@@ -16217,7 +20941,25 @@ window.itemMetadata = {
         "pregnant": "hair/ponytail/adult/bg/",
         "teen": "hair/ponytail/adult/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/ponytail",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Manuel Riecke (MrBeast)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-expanded-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_ponytail2": {
     "name": "Ponytail2",
@@ -16309,7 +21051,28 @@ window.itemMetadata = {
         "pregnant": "hair/ponytail2/adult/bg/",
         "teen": "hair/ponytail2/adult/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/ponytail2",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Manuel Riecke (MrBeast)",
+          "Joe White"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/ponytail-and-plain-hairstyles",
+          "https://opengameart.org/content/lpc-expanded-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_high_ponytail": {
     "name": "High ponytail",
@@ -16401,7 +21164,25 @@ window.itemMetadata = {
         "pregnant": "hair/high_ponytail/adult/bg/",
         "teen": "hair/high_ponytail/adult/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/high_ponytail",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-hair",
+          "https://opengameart.org/content/lpc-expanded-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_braid": {
     "name": "Braid",
@@ -16493,7 +21274,27 @@ window.itemMetadata = {
         "pregnant": "hair/braid/adult/bg/",
         "teen": "hair/braid/adult/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/braid",
+        "notes": "",
+        "authors": [
+          "Nila122",
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0",
+          "GPL 2.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/3-hairs-for-lpc",
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_braid2": {
     "name": "Braid2",
@@ -16585,7 +21386,25 @@ window.itemMetadata = {
         "pregnant": "hair/braid2/adult/bg/",
         "teen": "hair/braid2/adult/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/braid2",
+        "notes": "(lidia)",
+        "authors": [
+          "Yamilian",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-heroine",
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_shoulderl": {
     "name": "Shoulderl",
@@ -16677,7 +21496,28 @@ window.itemMetadata = {
         "pregnant": "hair/shoulderl/adult/bg/",
         "teen": "hair/shoulderl/adult/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/shoulderl",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Lanea Zimmerman (Sharm)",
+          "Manuel Riecke (MrBeast)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://github.com/jrconway3/Universal-LPC-spritesheet/commit/c32ce8a7edd9fc7fe7daa62a39cf64e5946020a2",
+          "https://opengameart.org/content/lpc-expanded-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_shoulderr": {
     "name": "Shoulderr",
@@ -16769,7 +21609,28 @@ window.itemMetadata = {
         "pregnant": "hair/shoulderr/adult/bg/",
         "teen": "hair/shoulderr/adult/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/shoulderr",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Lanea Zimmerman (Sharm)",
+          "Manuel Riecke (MrBeast)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://github.com/jrconway3/Universal-LPC-spritesheet/commit/c32ce8a7edd9fc7fe7daa62a39cf64e5946020a2",
+          "https://opengameart.org/content/lpc-expanded-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_long_tied": {
     "name": "Long tied",
@@ -16861,7 +21722,26 @@ window.itemMetadata = {
         "pregnant": "hair/long_tied/adult/bg/",
         "teen": "hair/long_tied/adult/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/long_tied",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "thecilekli",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-long-tied-hair-with-12-colors",
+          "https://opengameart.org/content/lpc-hair",
+          "https://opengameart.org/content/lpc-expanded-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_relm_ponytail": {
     "name": "Relm w/Ponytail",
@@ -16965,7 +21845,25 @@ window.itemMetadata = {
         "teen": "hair/relm_ponytail/adult/fg/",
         "child": "hair/relm_ponytail/child/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/relm_ponytail",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-relm-hair-xlong-ponytail",
+          "https://opengameart.org/content/lpc-expanded-xlong-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_loose": {
     "name": "Loose",
@@ -17050,7 +21948,25 @@ window.itemMetadata = {
         "pregnant": "hair/loose/adult/",
         "teen": "hair/loose/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/loose",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Manuel Riecke (MrBeast)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-expanded-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_bangslong": {
     "name": "Bangslong",
@@ -17135,7 +22051,25 @@ window.itemMetadata = {
         "pregnant": "hair/bangslong/adult/",
         "teen": "hair/bangslong/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/bangslong",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Manuel Riecke (MrBeast)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-expanded-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_bangslong2": {
     "name": "Bangslong2",
@@ -17228,7 +22162,27 @@ window.itemMetadata = {
         "pregnant": "hair/bangslong2/adult/bg/",
         "teen": "hair/bangslong2/adult/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/bangslong2",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Barbara Riviera",
+          "Manuel Riecke (MrBeast)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/concept-art-for-lpc-entry",
+          "https://opengameart.org/content/lpc-expanded-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_long": {
     "name": "Long",
@@ -17313,7 +22267,25 @@ window.itemMetadata = {
         "pregnant": "hair/long/adult/",
         "teen": "hair/long/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/long",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Manuel Riecke (MrBeast)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-expanded-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_long_messy": {
     "name": "Long messy",
@@ -17398,7 +22370,26 @@ window.itemMetadata = {
         "pregnant": "hair/long_messy/adult/",
         "teen": "hair/long_messy/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/long_messy",
+        "notes": "(puck)",
+        "authors": [
+          "Mandi Paugh",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "GPL 2.0",
+          "GPL 3.0",
+          "CC-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/puck-overland",
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_long_messy2": {
     "name": "Long messy2",
@@ -17483,7 +22474,25 @@ window.itemMetadata = {
         "pregnant": "hair/long_messy2/adult/",
         "teen": "hair/long_messy2/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/long_messy2",
+        "notes": "(shura)",
+        "authors": [
+          "Yamilian",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-heroine-2",
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_curtains_long": {
     "name": "Curtains long",
@@ -17568,7 +22577,26 @@ window.itemMetadata = {
         "pregnant": "hair/curtains_long/adult/",
         "teen": "hair/curtains_long/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/curtains_long",
+        "notes": "(trevor)",
+        "authors": [
+          "Mandi Paugh",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "GPL 2.0",
+          "GPL 3.0",
+          "CC-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/trevor-overland",
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_wavy": {
     "name": "Wavy",
@@ -17661,7 +22689,27 @@ window.itemMetadata = {
         "pregnant": "hair/wavy/adult/bg/",
         "teen": "hair/wavy/adult/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/wavy",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/3-hairs-for-lpc",
+          "https://opengameart.org/content/lpc-expanded-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_wavy_child": {
     "name": "Child Wavy",
@@ -17728,7 +22776,25 @@ window.itemMetadata = {
         "zPos": 120,
         "child": "hair/wavy/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/wavy/child",
+        "notes": "",
+        "authors": [
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/3-hairs-for-lpc"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_long_center_part": {
     "name": "Long center part",
@@ -17821,7 +22887,24 @@ window.itemMetadata = {
         "pregnant": "hair/long_center_part/adult/bg/",
         "teen": "hair/long_center_part/adult/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/long_center_part",
+        "notes": "",
+        "authors": [
+          "thecilekli",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-long-straight-hair-with-12-colors",
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_long_straight": {
     "name": "Long straight",
@@ -17906,7 +22989,26 @@ window.itemMetadata = {
         "pregnant": "hair/long_straight/adult/",
         "teen": "hair/long_straight/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/long_straight",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "thecilekli",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-long-straight-hair-with-12-colors",
+          "https://opengameart.org/content/lpc-hair",
+          "https://opengameart.org/content/lpc-expanded-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_princess": {
     "name": "Princess",
@@ -18000,7 +23102,26 @@ window.itemMetadata = {
         "pregnant": "hair/princess/adult/bg/",
         "teen": "hair/princess/adult/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/princess",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Lanea Zimmerman (Sharm)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-expanded-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_sara": {
     "name": "Sara",
@@ -18094,7 +23215,28 @@ window.itemMetadata = {
         "pregnant": "hair/sara/adult/bg/",
         "teen": "hair/sara/adult/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/sara",
+        "notes": "",
+        "authors": [
+          "Stephen Challener (Redshrike)",
+          "William.Thompsonj",
+          "Mandi Paugh",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-sara",
+          "https://opengameart.org/content/lpc-hair",
+          "https://opengameart.org/content/lpc-expanded-xlong-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_long_band": {
     "name": "Long band",
@@ -18188,7 +23330,24 @@ window.itemMetadata = {
         "pregnant": "hair/long_band/adult/bg/",
         "teen": "hair/long_band/adult/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/long_band",
+        "notes": "",
+        "authors": [
+          "Mandi Paugh",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/fantasy-rpg-npcs",
+          "https://opengameart.org/content/lpc-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_xlong": {
     "name": "Xlong",
@@ -18282,7 +23441,27 @@ window.itemMetadata = {
         "pregnant": "hair/xlong/adult/bg/",
         "teen": "hair/xlong/adult/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/xlong",
+        "notes": "Original by Nila122; cleaned up, resplit into separate layers, and added jump/run/sit/revised combat by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-clothes-and-hair",
+          "https://opengameart.org/content/lpc-expanded-xlong-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_xlong_wavy": {
     "name": "XLong Wavy",
@@ -18376,7 +23555,23 @@ window.itemMetadata = {
         "pregnant": "hair/xlong_wavy/adult/bg/",
         "teen": "hair/xlong_wavy/adult/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/xlong_wavy",
+        "notes": "Custom by JaidynReiman; inspiration for spellcast frames from Nila122's XLong",
+        "authors": [
+          "JaidynReiman",
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-expanded-xlong-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_relm_xlong": {
     "name": "Relm XLong",
@@ -18470,7 +23665,24 @@ window.itemMetadata = {
         "pregnant": "hair/relm_xlong/adult/bg/",
         "teen": "hair/relm_xlong/adult/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hair/relm_xlong",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-expanded-xlong-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-appendages-head_horns_backwards": {
     "name": "Backwards Horns",
@@ -18598,7 +23810,24 @@ window.itemMetadata = {
         "teen": "head/horns/backwards/adult/bg/",
         "child": "head/horns/backwards/child/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/horns/backwards",
+        "notes": "",
+        "authors": [
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-lizard-headgear"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-appendages-head_horns_curled": {
     "name": "Curled Horns",
@@ -18717,7 +23946,24 @@ window.itemMetadata = {
         "teen": "head/horns/curled/adult/",
         "child": "head/horns/curled/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/horns/curled",
+        "notes": "",
+        "authors": [
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-lizard-headgear"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-appendages-head_fins_fin": {
     "name": "Fin",
@@ -18800,7 +24046,26 @@ window.itemMetadata = {
         "teen": "head/fins/fin/adult/",
         "child": "head/fins/fin/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/fins",
+        "notes": "adapted to v3 base by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-lizard-headgear",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-appendages-head_fins_fin_short": {
     "name": "Short fin",
@@ -18883,7 +24148,26 @@ window.itemMetadata = {
         "teen": "head/fins/fin_short/adult/",
         "child": "head/fins/fin_short/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "head/fins",
+        "notes": "adapted to v3 base by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-lizard-headgear",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-hoods-hat_hood_cloth": {
     "name": "Hood",
@@ -18971,7 +24255,26 @@ window.itemMetadata = {
         "pregnant": "hat/cloth/hood/adult/",
         "teen": "hat/cloth/hood/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/cloth/hood",
+        "notes": "Brown hood by Wulax, original black/white recolors by ??, mapped to idle/run/jump/revised combat by JaidynReiman, along with additional recolors.",
+        "authors": [
+          "Johannes Sjölund (wulax)",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-hoods-hat_hood_sack_cloth": {
     "name": "Sack Cloth Hood",
@@ -19057,7 +24360,26 @@ window.itemMetadata = {
         "pregnant": "hat/cloth/hood_sack/adult/",
         "teen": "hat/cloth/hood_sack/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/cloth/hood_sack/adult",
+        "notes": "original by Nila122, adapted to human heads by JaidynReiman",
+        "authors": [
+          "Nila122",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-lizard-headgear",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-hoods-hat_hood_hijab": {
     "name": "Hijab",
@@ -19143,7 +24465,23 @@ window.itemMetadata = {
         "pregnant": "hat/cloth/hijab/thin/",
         "teen": "hat/cloth/hijab/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/cloth/hijab",
+        "notes": "",
+        "authors": [
+          "thecilekli"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-hijab",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-hoods-hat_helmet_mail": {
     "name": "Mail",
@@ -19212,7 +24550,27 @@ window.itemMetadata = {
         "muscular": "hat/helmet/mail/adult/",
         "teen": "hat/helmet/mail/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/helmet/mail",
+        "notes": "reduced palette version by Napsio",
+        "authors": [
+          "Napsio",
+          "Johannes Sjölund (wulax)",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-bandanas-hat_bandana": {
     "name": "Bandana",
@@ -19300,7 +24658,28 @@ window.itemMetadata = {
         "pregnant": "hat/cloth/bandana/adult/",
         "teen": "hat/cloth/bandana/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/cloth/bandana",
+        "notes": "",
+        "authors": [
+          "Matthew Krohn (makrohn)",
+          "JaidynReiman",
+          "Marcel van de Steeg (MadMarcel)",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-female-orcogregoblintroll-base-walkcycle",
+          "https://github.com/makrohn/Universal-LPC-spritesheet/commit/f50007cb47c235d8896cafae7a613f0b6a9a09a8?short_path=02b86d4#diff-02b86d45789a3e3e8e79519c7d17d15c9e6ecc9b4ddecb1bcd8dfbbaef430b75",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-bandanas-hat_bandana2": {
     "name": "Bordered Bandana",
@@ -19385,7 +24764,29 @@ window.itemMetadata = {
         "pregnant": "hat/cloth/bandana2/adult/",
         "teen": "hat/cloth/bandana2/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/cloth/bandana2",
+        "notes": "",
+        "authors": [
+          "Napsio (Vitruvian Studio)",
+          "JaidynReiman",
+          "Michael Whitlock (bigbeargames)",
+          "Matthew Krohn (makrohn)",
+          "Marcel van de Steeg (MadMarcel)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-female-orcogregoblintroll-base-walkcycle",
+          "https://github.com/makrohn/Universal-LPC-spritesheet/commit/f50007cb47c235d8896cafae7a613f0b6a9a09a8?short_path=02b86d4#diff-02b86d45789a3e3e8e79519c7d17d15c9e6ecc9b4ddecb1bcd8dfbbaef430b75",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-bandanas-hat_bandana_pirate": {
     "name": "Pirate Bandana",
@@ -19470,7 +24871,25 @@ window.itemMetadata = {
         "pregnant": "hat/pirate/bandana/adult/",
         "teen": "hat/pirate/bandana/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/pirate/bandana",
+        "notes": "Original Bandana by Fabzy, Pirate Version by Bluecarrot16, layers and added animations by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "Fabzy"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/the-revolution-hair",
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-bandanas-hat_bandana_pirate_skull": {
     "name": "Skull Bandana Overlay",
@@ -19555,7 +24974,25 @@ window.itemMetadata = {
         "pregnant": "hat/pirate/bandana/skull/adult/",
         "teen": "hat/pirate/bandana/skull/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/pirate/bandana",
+        "notes": "Original Bandana by Fabzy, Pirate Version by Bluecarrot16, layers and added animations by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "Fabzy"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/the-revolution-hair",
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_kerchief": {
     "name": "Kerchief",
@@ -19640,7 +25077,29 @@ window.itemMetadata = {
         "pregnant": "hat/pirate/kerchief/adult/",
         "teen": "hat/pirate/kerchief/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/pirate/kerchief",
+        "notes": "original Kerchief by Nila122, recolors by bluecarrot16, more frames by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman",
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/more-lpc-clothes-and-hair",
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_tied": {
     "name": "Tied Headband",
@@ -19725,7 +25184,25 @@ window.itemMetadata = {
         "pregnant": "hat/headband/tied/adult/",
         "teen": "hat/headband/tied/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/headband/tied",
+        "notes": "",
+        "authors": [
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-lizard-headgear",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_thick": {
     "name": "Thick Headband",
@@ -19812,7 +25289,25 @@ window.itemMetadata = {
         "teen": "hat/headband/thick/adult/",
         "child": "hat/headband/thick/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/headband/thick",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-relm-hair-xlong-ponytail",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_thick_rune": {
     "name": "Thick Headband Rune",
@@ -19899,7 +25394,25 @@ window.itemMetadata = {
         "teen": "hat/headband/thick/rune/adult/",
         "child": "hat/headband/thick/rune/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/headband/thick",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-relm-hair-xlong-ponytail",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_hairtie": {
     "name": "Hair Tie",
@@ -19986,7 +25499,25 @@ window.itemMetadata = {
         "teen": "hat/headband/hairtie/adult/",
         "child": "hat/headband/hairtie/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/headband/hairtie",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-relm-hair-xlong-ponytail",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_hairtie_rune": {
     "name": "Hair Tie Rune",
@@ -20073,7 +25604,25 @@ window.itemMetadata = {
         "teen": "hat/headband/hairtie/rune/adult/",
         "child": "hat/headband/hairtie/rune/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/headband/hairtie",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-relm-hair-xlong-ponytail",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_leather": {
     "name": "Leather Cap",
@@ -20159,7 +25708,27 @@ window.itemMetadata = {
         "pregnant": "hat/cloth/leather_cap/adult/",
         "teen": "hat/cloth/leather_cap/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/cloth/leather_cap",
+        "notes": "original by Johannes Sjölund (wulax), female by Matthew Krohn, mapped to all frames w/recolors by JaidynReiman",
+        "authors": [
+          "Johannes Sjölund (wulax)",
+          "Matthew Krohn (Makrohn)",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_leather_feather": {
     "name": "Leather Cap Feather",
@@ -20244,7 +25813,27 @@ window.itemMetadata = {
         "pregnant": "hat/cloth/leather_cap/feather/adult/",
         "teen": "hat/cloth/leather_cap/feather/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/cloth/leather_cap",
+        "notes": "original by Johannes Sjölund (wulax), female by Matthew Krohn, mapped to all frames w/recolors by JaidynReiman",
+        "authors": [
+          "Johannes Sjölund (wulax)",
+          "Matthew Krohn (Makrohn)",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_bonnie": {
     "name": "Bonnie",
@@ -20329,7 +25918,24 @@ window.itemMetadata = {
         "teen": "hat/pirate/bonnie/adult/",
         "pregnant": "hat/pirate/bonnie/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/pirate/bonnie",
+        "notes": "Bonnie Hat by Bluecarrot16, layers and added animations by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_bonnie_tilt": {
     "name": "Bonnie Alt Tilt",
@@ -20414,7 +26020,24 @@ window.itemMetadata = {
         "teen": "hat/pirate/bonnie/tilt/adult/",
         "pregnant": "hat/pirate/bonnie/tilt/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/pirate/bonnie",
+        "notes": "Bonnie Hat by Bluecarrot16, layers and added animations by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_bonnie_feather": {
     "name": "Bonnie feather",
@@ -20499,7 +26122,24 @@ window.itemMetadata = {
         "teen": "hat/pirate/bonnie/feather/adult/",
         "pregnant": "hat/pirate/bonnie/feather/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/pirate/bonnie",
+        "notes": "Bonnie Hat by Bluecarrot16, layers and added animations by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_cavalier": {
     "name": "Cavalier",
@@ -20584,7 +26224,24 @@ window.itemMetadata = {
         "teen": "hat/pirate/cavalier/adult/",
         "pregnant": "hat/pirate/cavalier/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/pirate/cavalier",
+        "notes": "Cavalier Hat by Bluecarrot16, layers and added animations by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_cavalier_feather": {
     "name": "Cavalier feather",
@@ -20669,7 +26326,24 @@ window.itemMetadata = {
         "teen": "hat/pirate/cavalier/feather/adult/",
         "pregnant": "hat/pirate/cavalier/feather/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/pirate/cavalier",
+        "notes": "Cavalier Hat by Bluecarrot16, layers and added animations by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-basic-hat_tricorne": {
     "name": "Tricorne",
@@ -20758,7 +26432,23 @@ window.itemMetadata = {
         "teen": "hat/pirate/tricorne/basic/adult/",
         "pregnant": "hat/pirate/tricorne/basic/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/pirate/tricorne",
+        "notes": "Pirate Hat by Bluecarrot16, layers and added animations by JaidynReiman",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-basic-hat_tricorne_stitched": {
     "name": "Tricorne Stitching",
@@ -20850,7 +26540,23 @@ window.itemMetadata = {
         "teen": "hat/pirate/tricorne/basic/stitching/adult/",
         "pregnant": "hat/pirate/tricorne/basic/stitching/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/pirate/tricorne",
+        "notes": "Pirate Hat by Bluecarrot16, layers and added animations by JaidynReiman",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-basic-hat_tricorne_thatch": {
     "name": "Tricorne Thatching",
@@ -20942,7 +26648,23 @@ window.itemMetadata = {
         "teen": "hat/pirate/tricorne/basic/thatching/adult/",
         "pregnant": "hat/pirate/tricorne/basic/thatching/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/pirate/tricorne",
+        "notes": "Pirate Hat by Bluecarrot16, layers and added animations by JaidynReiman",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-lieutenant-hat_tricorne_lieutenant": {
     "name": "Tricorne Lieutenant",
@@ -21031,7 +26753,23 @@ window.itemMetadata = {
         "teen": "hat/pirate/tricorne/lieutenant/adult/",
         "pregnant": "hat/pirate/tricorne/lieutenant/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/pirate/tricorne/lieutenant",
+        "notes": "Pirate Hat by Bluecarrot16, layers and added animations by JaidynReiman",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-lieutenant-hat_tricorne_lieutenant_trim": {
     "name": "Tricorne Lieutenant Trim",
@@ -21131,7 +26869,23 @@ window.itemMetadata = {
         "teen": "hat/pirate/tricorne/lieutenant/trim/adult/",
         "pregnant": "hat/pirate/tricorne/lieutenant/trim/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/pirate/tricorne/lieutenant",
+        "notes": "Pirate Hat by Bluecarrot16, layers and added animations by JaidynReiman",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-captain-hat_tricorne_captain": {
     "name": "Tricorne Captain",
@@ -21220,7 +26974,23 @@ window.itemMetadata = {
         "teen": "hat/pirate/tricorne/captain/adult/",
         "pregnant": "hat/pirate/tricorne/captain/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/pirate/tricorne/captain",
+        "notes": "Pirate Hat by Bluecarrot16, layers and added animations by JaidynReiman",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-captain-hat_tricorne_captain_trim": {
     "name": "Tricorne Captain Trim",
@@ -21320,7 +27090,23 @@ window.itemMetadata = {
         "teen": "hat/pirate/tricorne/captain/trim/adult/",
         "pregnant": "hat/pirate/tricorne/captain/trim/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/pirate/tricorne/captain",
+        "notes": "Pirate Hat by Bluecarrot16, layers and added animations by JaidynReiman",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-captain-hat_tricorne_captain_skull": {
     "name": "Tricorne Captain Skull",
@@ -21406,7 +27192,23 @@ window.itemMetadata = {
         "teen": "hat/pirate/tricorne/captain/skull/adult/",
         "pregnant": "hat/pirate/tricorne/captain/skull/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/pirate/tricorne/captain",
+        "notes": "Pirate Hat by Bluecarrot16, layers and added animations by JaidynReiman",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-basic-hat_bicorne_athwart_basic": {
     "name": "Bicorne Athwart",
@@ -21492,7 +27294,23 @@ window.itemMetadata = {
         "teen": "hat/pirate/bicorne/athwart/basic/adult/",
         "pregnant": "hat/pirate/bicorne/athwart/basic/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/pirate/bicorne/athwart",
+        "notes": "Pirate Hat by Bluecarrot16, layers and added animations by JaidynReiman",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-basic-hat_bicorne_athwart_basic_skull": {
     "name": "Bicorne Athwart Skull",
@@ -21578,7 +27396,24 @@ window.itemMetadata = {
         "teen": "hat/pirate/bicorne/athwart/basic/skull/adult/",
         "pregnant": "hat/pirate/bicorne/athwart/basic/skull/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/pirate/bicorne/athwart/basic/skull",
+        "notes": "Pirate Hat by Bluecarrot16, Pirate Skull mapped to Basic Athwart by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-captain-hat_bicorne_athwart_captain": {
     "name": "Bicorne Athwart Captain",
@@ -21664,7 +27499,24 @@ window.itemMetadata = {
         "teen": "hat/pirate/bicorne/athwart/captain/adult/",
         "pregnant": "hat/pirate/bicorne/athwart/captain/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/pirate/bicorne/athwart/captain",
+        "notes": "Pirate Hat by Bluecarrot16, layers and added animations by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-captain-hat_bicorne_athwart_captain_skull": {
     "name": "Bicorne Athwart Captain Skull",
@@ -21750,7 +27602,24 @@ window.itemMetadata = {
         "teen": "hat/pirate/bicorne/athwart/captain/skull/adult/",
         "pregnant": "hat/pirate/bicorne/athwart/captain/skull/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/pirate/bicorne/athwart/captain",
+        "notes": "Pirate Hat by Bluecarrot16, layers and added animations by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-admiral-hat_bicorne_athwart_admiral": {
     "name": "Bicorne Athwart Admiral",
@@ -21840,7 +27709,24 @@ window.itemMetadata = {
         "teen": "hat/pirate/bicorne/athwart/admiral/adult/",
         "pregnant": "hat/pirate/bicorne/athwart/admiral/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/pirate/bicorne/athwart/admiral",
+        "notes": "Pirate Hat by Bluecarrot16, layers and added animations by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-admiral-hat_bicorne_athwart_admiral_trim": {
     "name": "Bicorne Athwart Admiral Trim",
@@ -21941,7 +27827,24 @@ window.itemMetadata = {
         "teen": "hat/pirate/bicorne/athwart/admiral/trim/adult/",
         "pregnant": "hat/pirate/bicorne/athwart/admiral/trim/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/pirate/bicorne/athwart/admiral",
+        "notes": "Pirate Hat by Bluecarrot16, layers and added animations by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-admiral-hat_bicorne_athwart_admiral_cockade": {
     "name": "Bicorne Athwart Admiral Cockade",
@@ -22027,7 +27930,24 @@ window.itemMetadata = {
         "teen": "hat/pirate/bicorne/athwart/admiral/cockade/adult/",
         "pregnant": "hat/pirate/bicorne/athwart/admiral/cockade/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/pirate/bicorne/athwart/admiral",
+        "notes": "Pirate Hat by Bluecarrot16, layers and added animations by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-commodore-hat_bicorne_athwart_commodore": {
     "name": "Bicorne Athwart Commodore",
@@ -22113,7 +28033,24 @@ window.itemMetadata = {
         "teen": "hat/pirate/bicorne/athwart/commodore/adult/",
         "pregnant": "hat/pirate/bicorne/athwart/commodore/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/pirate/bicorne/athwart/commodore",
+        "notes": "Pirate Hat by Bluecarrot16, layers and added animations by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-commodore-hat_bicorne_athwart_commodore_trim": {
     "name": "Bicorne Athwart Commodore Trim",
@@ -22208,7 +28145,24 @@ window.itemMetadata = {
         "teen": "hat/pirate/bicorne/athwart/commodore/trim/adult/",
         "pregnant": "hat/pirate/bicorne/athwart/commodore/trim/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/pirate/bicorne/athwart/commodore",
+        "notes": "Pirate Hat by Bluecarrot16, layers and added animations by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne foreaft-hat_bicorne_foreaft": {
     "name": "Bicorne foreaft",
@@ -22293,7 +28247,24 @@ window.itemMetadata = {
         "teen": "hat/pirate/bicorne/foreaft/adult/",
         "pregnant": "hat/pirate/bicorne/foreaft/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/pirate/bicorne/foreaft",
+        "notes": "Pirate Hat by Bluecarrot16, layers and added animations by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne foreaft-hat_bicorne_foreaft_commodore": {
     "name": "Bicorne Foreaft Commodore",
@@ -22382,7 +28353,24 @@ window.itemMetadata = {
         "teen": "hat/pirate/bicorne/foreaft/commodore/adult/",
         "pregnant": "hat/pirate/bicorne/foreaft/commodore/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/pirate/bicorne/foreaft/commodore",
+        "notes": "Pirate Hat by Bluecarrot16, layers and added animations by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne foreaft-hat_bicorne_foreaft_commodore_trim": {
     "name": "Bicorne Foreaft Commodore Trim",
@@ -22482,7 +28470,24 @@ window.itemMetadata = {
         "teen": "hat/pirate/bicorne/foreaft/commodore/trim/adult/",
         "pregnant": "hat/pirate/bicorne/foreaft/commodore/trim/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/pirate/bicorne/foreaft/commodore",
+        "notes": "Pirate Hat by Bluecarrot16, layers and added animations by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-hat_magic_large": {
     "name": "Large Hat",
@@ -22544,7 +28549,26 @@ window.itemMetadata = {
         "pregnant": "hat/magic/large/adult/",
         "teen": "hat/magic/large/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/magic/large",
+        "notes": "",
+        "authors": [
+          "Stafford McIntyre",
+          "PlatForge project",
+          "Evert"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/wizard-2",
+          "https://opengameart.org/content/wizard-hat",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-wizard-hat_magic_wizard": {
     "name": "Wizard Hat Base",
@@ -22639,7 +28663,28 @@ window.itemMetadata = {
         "pregnant": "hat/magic/wizard/base/adult/",
         "teen": "hat/magic/wizard/base/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/magic/wizard",
+        "notes": "Original Wizard Hat and Recolors by bigbeargames and reemax; split into separate layers with new recolors by JaidynReiman",
+        "authors": [
+          "Michael Whitlock (bigbeargames)",
+          "Tuomo Untinen (reemax)",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-items-and-game-effects",
+          "https://opengameart.org/content/lpc-pointed-hats",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-wizard-hat_magic_wizard_belt": {
     "name": "Wizard Hat Belt",
@@ -22736,7 +28781,28 @@ window.itemMetadata = {
         "pregnant": "hat/magic/wizard/belt/adult/",
         "teen": "hat/magic/wizard/belt/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/magic/wizard",
+        "notes": "Original Wizard Hat and Recolors by bigbeargames and reemax; split into separate layers with new recolors by JaidynReiman",
+        "authors": [
+          "Michael Whitlock (bigbeargames)",
+          "Tuomo Untinen (reemax)",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-items-and-game-effects",
+          "https://opengameart.org/content/lpc-pointed-hats",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-wizard-hat_magic_wizard_buckle": {
     "name": "Wizard Hat Buckle",
@@ -22811,7 +28877,28 @@ window.itemMetadata = {
         "pregnant": "hat/magic/wizard/buckle/adult/",
         "teen": "hat/magic/wizard/buckle/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/magic/wizard",
+        "notes": "Original Wizard Hat and Recolors by bigbeargames and reemax; split into separate layers with new recolors by JaidynReiman",
+        "authors": [
+          "Michael Whitlock (bigbeargames)",
+          "Tuomo Untinen (reemax)",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-items-and-game-effects",
+          "https://opengameart.org/content/lpc-pointed-hats",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-celestial-hat_magic_celestial": {
     "name": "Celestial Wizard Hat",
@@ -22900,7 +28987,25 @@ window.itemMetadata = {
         "pregnant": "hat/magic/celestial/adult/",
         "teen": "hat/magic/celestial/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/magic/celestial",
+        "notes": "Original by Tracy, Adapted to ULPC by Big Bear Games, reduced colors by Napsio",
+        "authors": [
+          "Napsio",
+          "Michael Whitlock (bigbeargames)",
+          "Tracy"
+        ],
+        "licenses": [
+          "CC-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-celestial-wizard-hats",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-celestial-hat_magic_celestial_trim": {
     "name": "Celestial Wizard Hat Second Color",
@@ -22999,7 +29104,26 @@ window.itemMetadata = {
         "pregnant": "hat/magic/celestial/trim/adult/",
         "teen": "hat/magic/celestial/trim/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/magic/celestial",
+        "notes": "Original by Tracy, Adapted to ULPC by Big Bear Games, reduced colors by Napsio, second color layer by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "Napsio",
+          "Michael Whitlock (bigbeargames)",
+          "Tracy"
+        ],
+        "licenses": [
+          "CC-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-celestial-wizard-hats",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-celestial-hat_magic_celestial_moon": {
     "name": "Celestial Wizard Moon Hat",
@@ -23088,7 +29212,25 @@ window.itemMetadata = {
         "pregnant": "hat/magic/celestial_moon/adult/",
         "teen": "hat/magic/celestial_moon/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/magic/celestial_moon",
+        "notes": "sheet_definitions/hat_magic_celestial.json",
+        "authors": [
+          "Napsio",
+          "Michael Whitlock (bigbeargames)",
+          "Tracy"
+        ],
+        "licenses": [
+          "CC-BY 3.0"
+        ],
+        "urls": [
+          "https:/opengameart.org/content/lpc-celestial-wizard-hats",
+          "https:/opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-celestial-hat_magic_celestial_moon_trim": {
     "name": "Celestial Wizard Moon Hat Second Color",
@@ -23187,7 +29329,25 @@ window.itemMetadata = {
         "pregnant": "hat/magic/celestial_moon/trim/adult/",
         "teen": "hat/magic/celestial_moon/trim/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/magic/celestial_moon",
+        "notes": "sheet_definitions/hat_magic_celestial.json",
+        "authors": [
+          "Napsio",
+          "Michael Whitlock (bigbeargames)",
+          "Tracy"
+        ],
+        "licenses": [
+          "CC-BY 3.0"
+        ],
+        "urls": [
+          "https:/opengameart.org/content/lpc-celestial-wizard-hats",
+          "https:/opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-formal-hat_formal_tophat": {
     "name": "Formal Tophat",
@@ -23274,7 +29434,24 @@ window.itemMetadata = {
         "pregnant": "hat/formal/tophat/adult/",
         "teen": "hat/formal/tophat/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/formal/tophat",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-gentleman",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-formal-hat_formal_bowler": {
     "name": "Formal Bowler Hat",
@@ -23361,7 +29538,24 @@ window.itemMetadata = {
         "pregnant": "hat/formal/bowler/adult/",
         "teen": "hat/formal/bowler/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/formal/bowler",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-gentleman",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-formal-hat_formal_crown": {
     "name": "Crown",
@@ -23458,7 +29652,26 @@ window.itemMetadata = {
         "pregnant": "hat/formal/crown/adult/",
         "teen": "hat/formal/crown/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/formal/crown",
+        "notes": "",
+        "authors": [
+          "DarkwallLKE",
+          "Charles Sanchez (CharlesGabriel)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-crown",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-formal-hat_formal_tiara": {
     "name": "Tiara",
@@ -23556,7 +29769,24 @@ window.itemMetadata = {
         "teen": "hat/formal/tiara/adult/",
         "muscular": "hat/formal/tiara/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/formal/tiara",
+        "notes": "",
+        "authors": [
+          "Luke Mehl"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/female-mage-clothing-set",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-holiday-hat_holiday_christmas": {
     "name": "Christmas Hat",
@@ -23644,7 +29874,25 @@ window.itemMetadata = {
         "muscular": "hat/holiday/christmas/adult/",
         "pregnant": "hat/holiday/christmas/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/holiday/christmas",
+        "notes": "Santa/Elf Hat by bluecarrot16, untrimmed Santa Hat by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-santa",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-holiday-hat_holiday_santa": {
     "name": "Santa Trim",
@@ -23734,7 +29982,25 @@ window.itemMetadata = {
         "pregnant": "hat/holiday/santa/adult/",
         "muscular": "hat/holiday/santa/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/holiday/santa",
+        "notes": "Santa Hat by bluecarrot16, split into layers by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-santa",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-holiday-hat_holiday_elf": {
     "name": "Elf Trim",
@@ -23824,7 +30090,25 @@ window.itemMetadata = {
         "muscular": "hat/holiday/elf/adult/",
         "pregnant": "hat/holiday/elf/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/holiday/elf",
+        "notes": "Christmas Elf by bluecarrot16, split into layers by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-santa",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_armet": {
     "name": "Armet",
@@ -23893,7 +30177,26 @@ window.itemMetadata = {
         "muscular": "hat/helmet/armet/adult/",
         "teen": "hat/helmet/armet/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/helmet/armet",
+        "notes": "previously called helmet/armor",
+        "authors": [
+          "bluecarrot16",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_armet_simple": {
     "name": "Simple Armet",
@@ -23962,7 +30265,26 @@ window.itemMetadata = {
         "muscular": "hat/helmet/armet_simple/adult/",
         "teen": "hat/helmet/armet_simple/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/helmet/armet_simple",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_barbarian": {
     "name": "Barbarian",
@@ -24031,7 +30353,27 @@ window.itemMetadata = {
         "muscular": "hat/helmet/barbarian/adult/",
         "teen": "hat/helmet/barbarian/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/helmet/barbarian",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY 3.0",
+          "CC-BY 4.0",
+          "OGA-BY 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-helmets",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_barbarian_nasal": {
     "name": "Barbarian nasal",
@@ -24100,7 +30442,27 @@ window.itemMetadata = {
         "muscular": "hat/helmet/barbarian_nasal/adult/",
         "teen": "hat/helmet/barbarian_nasal/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/helmet/barbarian_nasal",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY 3.0",
+          "CC-BY 4.0",
+          "OGA-BY 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-helmets",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_barbarian_viking": {
     "name": "Barbarian Viking",
@@ -24169,7 +30531,27 @@ window.itemMetadata = {
         "muscular": "hat/helmet/barbarian_viking/adult/",
         "teen": "hat/helmet/barbarian_viking/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/helmet/barbarian_viking",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY 3.0",
+          "CC-BY 4.0",
+          "OGA-BY 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-helmets",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_barbuta": {
     "name": "Barbuta",
@@ -24238,7 +30620,27 @@ window.itemMetadata = {
         "muscular": "hat/helmet/barbuta/male/",
         "teen": "hat/helmet/barbuta/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/helmet/barbuta",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 3.0",
+          "CC-BY 4.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-helmets",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_barbuta_simple": {
     "name": "Simple barbuta",
@@ -24307,7 +30709,27 @@ window.itemMetadata = {
         "muscular": "hat/helmet/barbuta_simple/adult/",
         "teen": "hat/helmet/barbuta_simple/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/helmet/barbuta_simple",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 3.0",
+          "CC-BY 4.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-helmets",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_bascinet": {
     "name": "Bascinet",
@@ -24376,7 +30798,29 @@ window.itemMetadata = {
         "muscular": "hat/helmet/bascinet/adult/",
         "teen": "hat/helmet/bascinet/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/helmet/bascinet",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 4.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-realistic-helmet-pack",
+          "https://opengameart.org/content/lpc-helmets-mega-pack",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_bascinet_round": {
     "name": "Round bascinet",
@@ -24445,7 +30889,30 @@ window.itemMetadata = {
         "muscular": "hat/helmet/bascinet_round/adult/",
         "teen": "hat/helmet/bascinet_round/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/helmet/bascinet_round",
+        "notes": "Original Bascinet Round by ElizaWy/Bluecarrot16, split from visor and base Bascinet by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman",
+          "ElizaWy",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 4.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-realistic-helmet-pack",
+          "https://opengameart.org/content/lpc-helmets-mega-pack",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_close": {
     "name": "Close helm",
@@ -24514,7 +30981,27 @@ window.itemMetadata = {
         "muscular": "hat/helmet/close/male/",
         "teen": "hat/helmet/close/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/helmet/close",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 3.0",
+          "CC-BY 4.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-helmets",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_flattop": {
     "name": "Flattop",
@@ -24583,7 +31070,27 @@ window.itemMetadata = {
         "muscular": "hat/helmet/flattop/male/",
         "teen": "hat/helmet/flattop/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/helmet/flattop",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 3.0",
+          "CC-BY 4.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-helmets",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_greathelm": {
     "name": "Greathelm",
@@ -24652,7 +31159,27 @@ window.itemMetadata = {
         "muscular": "hat/helmet/greathelm/male/",
         "teen": "hat/helmet/greathelm/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/helmet/greathelm",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 3.0",
+          "CC-BY 4.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-helmets",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_horned": {
     "name": "Horned helmet",
@@ -24721,7 +31248,31 @@ window.itemMetadata = {
         "muscular": "hat/helmet/horned/adult/",
         "teen": "hat/helmet/horned/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/helmet/horned",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Shaun Williams",
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-full-plate-golden-armor",
+          "https://opengameart.org/content/lpc-full-plate-golden-armor-0",
+          "https://opengameart.org/content/lpc-helmets-mega-pack",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_kettle": {
     "name": "Kettle helm",
@@ -24783,7 +31334,25 @@ window.itemMetadata = {
         "muscular": "hat/helmet/kettle/adult/",
         "teen": "hat/helmet/kettle/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/helmet/kettle",
+        "notes": "previously referred to as chain-hat",
+        "authors": [
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_legion": {
     "name": "Legion",
@@ -24852,7 +31421,30 @@ window.itemMetadata = {
         "muscular": "hat/helmet/legion/adult/",
         "teen": "hat/helmet/legion/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/helmet/legion",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Nila122",
+          "JaidynReiman",
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-roman-armor",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_maximus": {
     "name": "Maximus",
@@ -24921,7 +31513,27 @@ window.itemMetadata = {
         "muscular": "hat/helmet/maximus/adult/",
         "teen": "hat/helmet/maximus/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/helmet/maximus",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY 3.0",
+          "CC-BY 4.0",
+          "OGA-BY 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-helmets",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_morion": {
     "name": "Morion",
@@ -24990,7 +31602,27 @@ window.itemMetadata = {
         "muscular": "hat/helmet/morion/adult/",
         "teen": "hat/helmet/morion/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/helmet/morion",
+        "notes": "",
+        "authors": [
+          "ElizaWy",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 4.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-realistic-helmet-pack",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_nasal": {
     "name": "Nasal helm",
@@ -25059,7 +31691,27 @@ window.itemMetadata = {
         "muscular": "hat/helmet/nasal/adult/",
         "teen": "hat/helmet/nasal/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/helmet/nasal",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY 3.0",
+          "CC-BY 4.0",
+          "OGA-BY 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-helmets",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_norman": {
     "name": "Norman helm",
@@ -25128,7 +31780,27 @@ window.itemMetadata = {
         "muscular": "hat/helmet/norman/adult/",
         "teen": "hat/helmet/norman/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/helmet/norman",
+        "notes": "",
+        "authors": [
+          "ElizaWy",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 4.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-realistic-helmet-pack",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_pointed": {
     "name": "Pointed helm",
@@ -25197,7 +31869,27 @@ window.itemMetadata = {
         "muscular": "hat/helmet/pointed/adult/",
         "teen": "hat/helmet/pointed/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/helmet/pointed",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY 3.0",
+          "CC-BY 4.0",
+          "OGA-BY 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-helmets",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_spangenhelm": {
     "name": "Spangenhelm",
@@ -25266,7 +31958,27 @@ window.itemMetadata = {
         "muscular": "hat/helmet/spangenhelm/adult/",
         "teen": "hat/helmet/spangenhelm/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/helmet/spangenhelm",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY 3.0",
+          "CC-BY 4.0",
+          "OGA-BY 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-helmets",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_spangenhelm_viking": {
     "name": "Viking spangenhelm",
@@ -25335,7 +32047,27 @@ window.itemMetadata = {
         "muscular": "hat/helmet/spangenhelm_viking/adult/",
         "teen": "hat/helmet/spangenhelm_viking/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/helmet/spangenhelm_viking",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY 3.0",
+          "CC-BY 4.0",
+          "OGA-BY 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-helmets",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_sugarloaf": {
     "name": "Sugarloaf greathelm",
@@ -25404,7 +32136,27 @@ window.itemMetadata = {
         "muscular": "hat/helmet/sugarloaf/male/",
         "teen": "hat/helmet/sugarloaf/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/helmet/sugarloaf",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY 3.0",
+          "CC-BY 4.0",
+          "OGA-BY 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-helmets",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_sugarloaf_simple": {
     "name": "Simple sugarloaf helm",
@@ -25473,7 +32225,27 @@ window.itemMetadata = {
         "muscular": "hat/helmet/sugarloaf_simple/male/",
         "teen": "hat/helmet/sugarloaf_simple/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/helmet/sugarloaf_simple",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY 3.0",
+          "CC-BY 4.0",
+          "OGA-BY 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-helmets",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_xeon": {
     "name": "Xeon helmet",
@@ -25542,7 +32314,23 @@ window.itemMetadata = {
         "muscular": "hat/helmet/xeon/adult/",
         "teen": "hat/helmet/xeon/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/helmet/xeon",
+        "notes": "",
+        "authors": [
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/four-characters-my-lpc-entries",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_grated": {
     "name": "Grated visor",
@@ -25611,7 +32399,27 @@ window.itemMetadata = {
         "muscular": "hat/visor/grated/adult/",
         "teen": "hat/visor/grated/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/visor/grated",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY 3.0",
+          "CC-BY 4.0",
+          "OGA-BY 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-helmets",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_grated_narrow": {
     "name": "Narrow grated visor",
@@ -25680,7 +32488,27 @@ window.itemMetadata = {
         "muscular": "hat/visor/grated_narrow/adult/",
         "teen": "hat/visor/grated_narrow/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/visor/grated_narrow",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY 3.0",
+          "CC-BY 4.0",
+          "OGA-BY 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-helmets",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_horned": {
     "name": "Horned visor",
@@ -25749,7 +32577,31 @@ window.itemMetadata = {
         "muscular": "hat/visor/horned/adult/",
         "teen": "hat/visor/horned/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/visor/horned",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Shaun Williams",
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-full-plate-golden-armor",
+          "https://opengameart.org/content/lpc-full-plate-golden-armor-0",
+          "https://opengameart.org/content/lpc-helmets-mega-pack",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_pigface": {
     "name": "Pigface visor",
@@ -25818,7 +32670,29 @@ window.itemMetadata = {
         "muscular": "hat/visor/pigface/adult/",
         "teen": "hat/visor/pigface/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/visor/pigface",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 4.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-realistic-helmet-pack",
+          "https://opengameart.org/content/lpc-helmets-mega-pack",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_pigface_raised": {
     "name": "Pigface visor raised",
@@ -25887,7 +32761,29 @@ window.itemMetadata = {
         "muscular": "hat/visor/pigface_raised/adult/",
         "teen": "hat/visor/pigface_raised/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/visor/pigface_raised",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 4.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-realistic-helmet-pack",
+          "https://opengameart.org/content/lpc-helmets-mega-pack",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_round": {
     "name": "Round visor",
@@ -25956,7 +32852,29 @@ window.itemMetadata = {
         "muscular": "hat/visor/round/adult/",
         "teen": "hat/visor/round/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/visor/round",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 4.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-realistic-helmet-pack",
+          "https://opengameart.org/content/lpc-helmets-mega-pack",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_round_raised": {
     "name": "Round visor raised",
@@ -26025,7 +32943,29 @@ window.itemMetadata = {
         "muscular": "hat/visor/round_raised/adult/",
         "teen": "hat/visor/round_raised/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/visor/round_raised",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 4.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-realistic-helmet-pack",
+          "https://opengameart.org/content/lpc-helmets-mega-pack",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_slit": {
     "name": "Slit visor",
@@ -26094,7 +33034,26 @@ window.itemMetadata = {
         "muscular": "hat/visor/slit/adult/",
         "teen": "hat/visor/slit/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/visor/slit",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_slit_narrow": {
     "name": "Narrow slit visor",
@@ -26163,7 +33122,26 @@ window.itemMetadata = {
         "muscular": "hat/visor/slit/adult/",
         "teen": "hat/visor/slit/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/visor/slit",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_crest": {
     "name": "Crest",
@@ -26232,7 +33210,23 @@ window.itemMetadata = {
         "muscular": "hat/accessory/crest/adult/",
         "teen": "hat/accessory/crest/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/accessory/crest",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-helmets",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_crest_centurion": {
     "name": "Centurion Crest",
@@ -26301,7 +33295,26 @@ window.itemMetadata = {
         "muscular": "hat/accessory/crest_centurion/adult/",
         "teen": "hat/accessory/crest_centurion/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/accessory/crest_centurion",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "DCSS authors"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "http://opengameart.org/content/dungeon-crawl-32x32-tiles",
+          "https://opengameart.org/content/cc0-headgear-icons",
+          "https://opengameart.org/content/lpc-helmets-mega-pack",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_wings": {
     "name": "Helmet wings",
@@ -26399,7 +33412,26 @@ window.itemMetadata = {
         "male": "hat/accessory/wings/bg/adult/",
         "muscular": "hat/accessory/wings/bg/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/accessory/wings",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "DCSS authors"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "http://opengameart.org/content/dungeon-crawl-32x32-tiles",
+          "https://opengameart.org/content/cc0-headgear-icons",
+          "https://opengameart.org/content/lpc-helmets-mega-pack",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_horns_short": {
     "name": "Short Horns",
@@ -26497,7 +33529,23 @@ window.itemMetadata = {
         "male": "hat/accessory/horns_short/bg/adult/",
         "muscular": "hat/accessory/horns_short/bg/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/accessory/horns_short",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-helmets",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_horns_upward": {
     "name": "Upward Horns",
@@ -26595,7 +33643,23 @@ window.itemMetadata = {
         "male": "hat/accessory/horns_upward/bg/adult/",
         "muscular": "hat/accessory/horns_upward/bg/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/accessory/horns_upward",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-helmets",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_horns_downward": {
     "name": "Downward Horns",
@@ -26693,7 +33757,23 @@ window.itemMetadata = {
         "male": "hat/accessory/horns_downward/bg/adult/",
         "muscular": "hat/accessory/horns_downward/bg/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/accessory/horns_downward",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-helmets",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_plumage": {
     "name": "Plumage",
@@ -26778,7 +33858,26 @@ window.itemMetadata = {
         "muscular": "hat/accessory/plumage/adult/",
         "teen": "hat/accessory/plumage/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/accessory/plumage",
+        "notes": "",
+        "authors": [
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "CC-BY-SA 4.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-realistic-helmet-pack",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_plumage_centurion": {
     "name": "Centurion Plumage",
@@ -26863,7 +33962,26 @@ window.itemMetadata = {
         "muscular": "hat/accessory/plumage_centurion/adult/",
         "teen": "hat/accessory/plumage_centurion/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/accessory/plumage_centurion",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "DCSS authors"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "http://opengameart.org/content/dungeon-crawl-32x32-tiles",
+          "https://opengameart.org/content/cc0-headgear-icons",
+          "https://opengameart.org/content/lpc-helmets-mega-pack",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_plumage_legion": {
     "name": "Legion Plumage",
@@ -26948,7 +34066,31 @@ window.itemMetadata = {
         "muscular": "hat/accessory/plumage_legion/adult/",
         "teen": "hat/accessory/plumage_legion/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "hat/accessory/plumage_legion",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Nila122",
+          "JaidynReiman",
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-roman-armor",
+          "https://opengameart.org/content/lpc-helmets-mega-pack",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses": {
     "name": "Glasses",
@@ -27043,7 +34185,23 @@ window.itemMetadata = {
         "teen": "facial/glasses/glasses/adult/",
         "child": "facial/glasses/glasses/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "facial/glasses/glasses",
+        "notes": "",
+        "authors": [
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head%20Accessories",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_halfmoon": {
     "name": "Halfmoon Glasses",
@@ -27138,7 +34296,23 @@ window.itemMetadata = {
         "teen": "facial/glasses/halfmoon/adult/",
         "child": "facial/glasses/halfmoon/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "facial/glasses/halfmoon",
+        "notes": "",
+        "authors": [
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head%20Accessories",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_nerd": {
     "name": "Nerd Glasses",
@@ -27233,7 +34407,25 @@ window.itemMetadata = {
         "teen": "facial/glasses/nerd/adult/",
         "child": "facial/glasses/nerd/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "facial/glasses/nerd",
+        "notes": "Original by Pennomi, repositioning and recolors by JaidynReiman.",
+        "authors": [
+          "JaidynReiman",
+          "Thane Brimhall (pennomi)",
+          "laetissima"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-base-character-expressions"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_shades": {
     "name": "Shades",
@@ -27329,7 +34521,25 @@ window.itemMetadata = {
         "teen": "facial/glasses/shades/adult/",
         "child": "facial/glasses/shades/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "facial/glasses/shades",
+        "notes": "Original by Pennomi, repositioning and recolors by JaidynReiman.",
+        "authors": [
+          "JaidynReiman",
+          "Thane Brimhall (pennomi)",
+          "laetissima"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-base-character-expressions"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_secretary": {
     "name": "Secretary Glasses",
@@ -27424,7 +34634,25 @@ window.itemMetadata = {
         "teen": "facial/glasses/secretary/adult/",
         "child": "facial/glasses/secretary/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "facial/glasses/secretary",
+        "notes": "Original by Pennomi, repositioning and recolors by JaidynReiman.",
+        "authors": [
+          "JaidynReiman",
+          "Thane Brimhall (pennomi)",
+          "laetissima"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-base-character-expressions"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_round": {
     "name": "Round Glasses",
@@ -27521,7 +34749,26 @@ window.itemMetadata = {
         "teen": "facial/glasses/round/adult/",
         "child": "facial/glasses/round/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "facial/glasses/round",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Thane Brimhall (pennomi)",
+          "laetissima"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/clothing-facial-features-and-ui-elements",
+          "https://opengameart.org/content/lpc-gentleman"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_sunglasses": {
     "name": "Sunglasses",
@@ -27618,7 +34865,26 @@ window.itemMetadata = {
         "teen": "facial/glasses/sunglasses/adult/",
         "child": "facial/glasses/sunglasses/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "facial/glasses/sunglasses",
+        "notes": "",
+        "authors": [
+          "Michael Whitlock (bigbeargames)",
+          "Thane Brimhall (pennomi)",
+          "laetissima"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-base-character-expressions",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-monocle-facial_monocle_left": {
     "name": "Left Monocle",
@@ -27693,7 +34959,27 @@ window.itemMetadata = {
         "teen": "facial/monocle/left/adult/",
         "child": "facial/monocle/left/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "facial/monocle",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Thane Brimhall (pennomi)",
+          "laetissima"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/clothing-facial-features-and-ui-elements",
+          "https://opengameart.org/content/lpc-gentleman",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-monocle-facial_monocle_left_frame": {
     "name": "Left Monocle Frame Color",
@@ -27794,7 +35080,27 @@ window.itemMetadata = {
         "teen": "facial/monocle/left/frame/adult/",
         "child": "facial/monocle/left/frame/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "facial/monocle",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Thane Brimhall (pennomi)",
+          "laetissima"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/clothing-facial-features-and-ui-elements",
+          "https://opengameart.org/content/lpc-gentleman",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-monocle-facial_monocle_right": {
     "name": "Right Monocle",
@@ -27869,7 +35175,27 @@ window.itemMetadata = {
         "teen": "facial/monocle/right/adult/",
         "child": "facial/monocle/right/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "facial/monocle",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Thane Brimhall (pennomi)",
+          "laetissima"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/clothing-facial-features-and-ui-elements",
+          "https://opengameart.org/content/lpc-gentleman",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-monocle-facial_monocle_right_frame": {
     "name": "Right Monocle Frame Color",
@@ -27970,7 +35296,27 @@ window.itemMetadata = {
         "teen": "facial/monocle/right/frame/adult/",
         "child": "facial/monocle/right/frame/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "facial/monocle",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Thane Brimhall (pennomi)",
+          "laetissima"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/clothing-facial-features-and-ui-elements",
+          "https://opengameart.org/content/lpc-gentleman",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch_ambi": {
     "name": "Eyepatch Ambidextrous",
@@ -28058,7 +35404,24 @@ window.itemMetadata = {
         "teen": "facial/patches/eyepatch/ambi/adult/",
         "child": "facial/patches/eyepatch/ambi/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "facial/patches/eyepatch",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch_left": {
     "name": "Eyepatch Left",
@@ -28146,7 +35509,24 @@ window.itemMetadata = {
         "teen": "facial/patches/eyepatch/left/adult/",
         "child": "facial/patches/eyepatch/left/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "facial/patches/eyepatch",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch_right": {
     "name": "Eyepatch Right",
@@ -28234,7 +35614,24 @@ window.itemMetadata = {
         "teen": "facial/patches/eyepatch/right/adult/",
         "child": "facial/patches/eyepatch/right/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "facial/patches/eyepatch",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch2_left": {
     "name": "Eyepatch 2 Left",
@@ -28321,7 +35718,23 @@ window.itemMetadata = {
         "teen": "facial/patches/eyepatch2/left/adult/",
         "child": "facial/patches/eyepatch2/left/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "facial/patches/eyepatch2",
+        "notes": "",
+        "authors": [
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head%20Accessories",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch2_right": {
     "name": "Eyepatch 2 Right",
@@ -28408,7 +35821,23 @@ window.itemMetadata = {
         "teen": "facial/patches/eyepatch2/right/adult/",
         "child": "facial/patches/eyepatch2/right/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "facial/patches/eyepatch2",
+        "notes": "",
+        "authors": [
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head%20Accessories",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch_small_left": {
     "name": "Small Eyepatch Left",
@@ -28495,7 +35924,26 @@ window.itemMetadata = {
         "teen": "facial/patches/small/left/adult/",
         "child": "facial/patches/small/left/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "facial/patches/small",
+        "notes": "",
+        "authors": [
+          "Michael Whitlock (bigbeargames)",
+          "Thane Brimhall (pennomi)",
+          "laetissima"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-base-character-expressions",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch_small_right": {
     "name": "Small Eyepatch Right",
@@ -28582,7 +36030,26 @@ window.itemMetadata = {
         "teen": "facial/patches/small/right/adult/",
         "child": "facial/patches/small/right/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "facial/patches/small",
+        "notes": "",
+        "authors": [
+          "Michael Whitlock (bigbeargames)",
+          "Thane Brimhall (pennomi)",
+          "laetissima"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-base-character-expressions",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-facial_mask_plain": {
     "name": "Plain Mask",
@@ -28678,7 +36145,26 @@ window.itemMetadata = {
         "teen": "facial/masks/plain/adult/",
         "child": "facial/masks/plain/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "facial/masks/plain",
+        "notes": "",
+        "authors": [
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-masks",
+          "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earring_left": {
     "name": "Simple Earring Left",
@@ -28774,7 +36260,22 @@ window.itemMetadata = {
         "teen": "facial/earrings/simple/left/adult/",
         "child": "facial/earrings/simple/left/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "facial/earrings/simple",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earring_right": {
     "name": "Simple Earring Right",
@@ -28870,7 +36371,22 @@ window.itemMetadata = {
         "teen": "facial/earrings/simple/right/adult/",
         "child": "facial/earrings/simple/right/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "facial/earrings/simple",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earrings_emerald": {
     "name": "Emerald earrings",
@@ -28927,7 +36443,22 @@ window.itemMetadata = {
         "pregnant": "facial/earrings/emerald/female/",
         "teen": "facial/earrings/emerald/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "facial/earrings/emerald",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-jewelry"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earrings_moon": {
     "name": "Moon earrings",
@@ -28986,7 +36517,22 @@ window.itemMetadata = {
         "pregnant": "facial/earrings/moon/female/",
         "teen": "facial/earrings/moon/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "facial/earrings/moon",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-jewelry"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earrings_pear": {
     "name": "Pear earrings",
@@ -29043,7 +36589,22 @@ window.itemMetadata = {
         "pregnant": "facial/earrings/pear/female/",
         "teen": "facial/earrings/pear/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "facial/earrings/pear",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-jewelry"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earrings_princess": {
     "name": "Princess earrings",
@@ -29100,7 +36661,22 @@ window.itemMetadata = {
         "pregnant": "facial/earrings/princess/female/",
         "teen": "facial/earrings/princess/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "facial/earrings/princess",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-jewelry"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earrings_stud": {
     "name": "Stud earrings",
@@ -29159,7 +36735,22 @@ window.itemMetadata = {
         "pregnant": "facial/earrings/stud/female/",
         "teen": "facial/earrings/stud/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "facial/earrings/stud",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-jewelry"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_bowtie": {
     "name": "Bowtie",
@@ -29244,7 +36835,28 @@ window.itemMetadata = {
         "pregnant": "neck/tie/bowtie/adult/",
         "teen": "neck/tie/bowtie/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "neck/tie/bowtie",
+        "notes": "Originally by pennomi/laetissima/Makrohn, edited by bluecarrot16, recolors by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "bluecarrot16",
+          "Thane Brimhall (pennomi)",
+          "laetissima",
+          "Makrohn"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-2-characters",
+          "https://opengameart.org/content/lpc-gentleman"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_bowtie2": {
     "name": "Bowtie 2",
@@ -29328,7 +36940,24 @@ window.itemMetadata = {
         "pregnant": "neck/tie/bowtie2/adult/",
         "teen": "neck/tie/bowtie2/adult/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "neck/tie/bowtie2",
+        "notes": "",
+        "authors": [
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing/Feminine%2C%20Thin/Accessories",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing/Masculine%2C%20Thin/Accessories/Neckwear%2001%20-%20Bowtie",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necktie": {
     "name": "Necktie",
@@ -29413,7 +37042,28 @@ window.itemMetadata = {
         "pregnant": "neck/tie/necktie/female/",
         "teen": "neck/tie/necktie/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "neck/tie/necktie",
+        "notes": "Originally by pennomi/laetissima/Makrohn, edited by bluecarrot16, animations and recolors by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "bluecarrot16",
+          "Thane Brimhall (pennomi)",
+          "laetissima",
+          "Makrohn"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-2-characters",
+          "https://opengameart.org/content/lpc-gentleman"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_scarf": {
     "name": "Scarf",
@@ -29469,7 +37119,27 @@ window.itemMetadata = {
         "muscular": "neck/scarf/",
         "teen": "neck/scarf/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "neck/scarf",
+        "notes": "",
+        "authors": [
+          "Nila122",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-SA 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/more-lpc-clothes-and-hair"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_capeclip": {
     "name": "Capeclip",
@@ -29543,7 +37213,26 @@ window.itemMetadata = {
         "teen": "neck/capeclip/female/",
         "pregnant": "neck/capeclip/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "neck/capeclip",
+        "notes": "adapted to male body and v3 bases by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_capetie": {
     "name": "Capetie",
@@ -29617,7 +37306,25 @@ window.itemMetadata = {
         "teen": "neck/capetie/female/",
         "pregnant": "neck/capetie/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "neck/capetie",
+        "notes": "adapted to male body and v3 bases by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_jabot": {
     "name": "Jabot",
@@ -29687,7 +37394,23 @@ window.itemMetadata = {
         "female": "neck/jabot/male/",
         "teen": "neck/jabot/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "neck/jabot",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_cravat": {
     "name": "Cravat",
@@ -29757,7 +37480,23 @@ window.itemMetadata = {
         "female": "neck/cravat/male/",
         "teen": "neck/cravat/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "neck/cravat",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necklace": {
     "name": "Necklace",
@@ -29816,7 +37555,25 @@ window.itemMetadata = {
         "teen": "neck/necklace/female/",
         "pregnant": "neck/necklace/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "neck/necklace",
+        "notes": "extra animations by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Luke Mehl"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/female-mage-clothing-set",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necklace_simple": {
     "name": "Simple Necklace",
@@ -29874,7 +37631,22 @@ window.itemMetadata = {
         "teen": "neck/necklace/simple/female/",
         "pregnant": "neck/necklace/simple/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "neck/necklace/simple",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-jewelry"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necklace_chain": {
     "name": "Chain Necklace",
@@ -29932,7 +37704,22 @@ window.itemMetadata = {
         "teen": "neck/necklace/chain/female/",
         "pregnant": "neck/necklace/chain/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "neck/necklace/chain",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-jewelry"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necklace_beaded_small": {
     "name": "Small Beaded Necklace",
@@ -29990,7 +37777,22 @@ window.itemMetadata = {
         "teen": "neck/necklace/beaded_small/female/",
         "pregnant": "neck/necklace/beaded_small/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "neck/necklace/beaded_small",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-jewelry"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necklace_beaded_large": {
     "name": "Large Beaded Necklace",
@@ -30048,7 +37850,22 @@ window.itemMetadata = {
         "teen": "neck/necklace/beaded_large/female/",
         "pregnant": "neck/necklace/beaded_large/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "neck/necklace/beaded_large",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-jewelry"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_charm_box": {
     "name": "Box Charm",
@@ -30107,7 +37924,22 @@ window.itemMetadata = {
         "teen": "neck/charm/box/female/",
         "pregnant": "neck/charm/box/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "neck/charm",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-jewelry"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_charm_oval": {
     "name": "Oval Charm",
@@ -30166,7 +37998,22 @@ window.itemMetadata = {
         "teen": "neck/charm/oval/female/",
         "pregnant": "neck/charm/oval/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "neck/charm",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-jewelry"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_charm_ring": {
     "name": "Ring Charm",
@@ -30225,7 +38072,22 @@ window.itemMetadata = {
         "teen": "neck/charm/ring/female/",
         "pregnant": "neck/charm/ring/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "neck/charm",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-jewelry"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_charm_star": {
     "name": "Star Charm",
@@ -30284,7 +38146,22 @@ window.itemMetadata = {
         "teen": "neck/charm/star/female/",
         "pregnant": "neck/charm/star/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "neck/charm",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-jewelry"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_emerald": {
     "name": "Emerald cut Gem",
@@ -30341,7 +38218,22 @@ window.itemMetadata = {
         "teen": "neck/gem/emerald/female/",
         "pregnant": "neck/gem/emerald/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "neck/gem",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-jewelry"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_marquise": {
     "name": "Marquise cut Gem",
@@ -30398,7 +38290,22 @@ window.itemMetadata = {
         "teen": "neck/gem/marquise/female/",
         "pregnant": "neck/gem/marquise/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "neck/gem",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-jewelry"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_natural": {
     "name": "Natural cut Gem",
@@ -30455,7 +38362,22 @@ window.itemMetadata = {
         "teen": "neck/gem/natural/female/",
         "pregnant": "neck/gem/natural/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "neck/gem",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-jewelry"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_pear": {
     "name": "Pear cut Gem",
@@ -30512,7 +38434,22 @@ window.itemMetadata = {
         "teen": "neck/gem/pear/female/",
         "pregnant": "neck/gem/pear/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "neck/gem",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-jewelry"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_pearl": {
     "name": "Pearl Gem",
@@ -30569,7 +38506,22 @@ window.itemMetadata = {
         "teen": "neck/gem/pearl/female/",
         "pregnant": "neck/gem/pearl/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "neck/gem",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-jewelry"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_princess": {
     "name": "Princess cut Gem",
@@ -30626,7 +38578,22 @@ window.itemMetadata = {
         "teen": "neck/gem/princess/female/",
         "pregnant": "neck/gem/princess/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "neck/gem",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-jewelry"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_round": {
     "name": "Round cut Gem",
@@ -30683,7 +38650,22 @@ window.itemMetadata = {
         "teen": "neck/gem/round/female/",
         "pregnant": "neck/gem/round/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "neck/gem",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-jewelry"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_trilliant": {
     "name": "Trilliant cut Gem",
@@ -30740,7 +38722,22 @@ window.itemMetadata = {
         "teen": "neck/gem/trilliant/female/",
         "pregnant": "neck/gem/trilliant/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "neck/gem",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-jewelry"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_amulet_cross": {
     "name": "Cross amulet",
@@ -30839,7 +38836,22 @@ window.itemMetadata = {
         "teen": "neck/amulet/cross/female/",
         "pregnant": "neck/amulet/cross/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "neck/amulet/cross",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-jewelry"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_amulet_dangle": {
     "name": "Dangling amulet",
@@ -30938,7 +38950,25 @@ window.itemMetadata = {
         "teen": "neck/amulet/dangle/female/",
         "pregnant": "neck/amulet/dangle/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "neck/amulet/dangle",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "AntumDeluge"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/dungeon-crawl-32x32-tiles",
+          "https://opengameart.org/content/cc0-jewelry-icons",
+          "https://opengameart.org/content/lpc-jewelry"
+        ]
+      }
+    ]
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_amulet_spider": {
     "name": "Spider amulet",
@@ -31037,7 +39067,22 @@ window.itemMetadata = {
         "teen": "neck/amulet/spider/female/",
         "pregnant": "neck/amulet/spider/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "neck/amulet/spider",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-jewelry"
+        ]
+      }
+    ]
   },
   "arms-shoulders-shoulders_legion": {
     "name": "Legion",
@@ -31077,7 +39122,25 @@ window.itemMetadata = {
         "muscular": "shoulders/legion/male/",
         "pregnant": "shoulders/legion/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shoulders/legion",
+        "notes": "",
+        "authors": [
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-roman-armor"
+        ]
+      }
+    ]
   },
   "arms-shoulders-shoulders_plate": {
     "name": "Plate",
@@ -31122,7 +39185,45 @@ window.itemMetadata = {
         "muscular": "shoulders/plate/male/",
         "pregnant": "shoulders/plate/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shoulders/plate",
+        "notes": "recolors, adapted to v3 bases by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      },
+      {
+        "file": "shoulders/plate/female",
+        "notes": "adapted to female base by makrohn, adapted to v3 bases by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-combat-armor-for-women",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "arms-shoulders-shoulders_leather": {
     "name": "Leather",
@@ -31183,7 +39284,26 @@ window.itemMetadata = {
         "muscular": "shoulders/leather/male/",
         "pregnant": "shoulders/leather/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shoulders/leather",
+        "notes": "adapted to female base by makrohn, adapted to v3 bases by bluecarrot16",
+        "authors": [
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "arms-shoulders-shoulders_epaulets": {
     "name": "Epaulets",
@@ -31221,7 +39341,22 @@ window.itemMetadata = {
         "zPos": 60,
         "male": "shoulders/epaulets/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shoulders/epaulets",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      }
+    ]
   },
   "arms-shoulders-shoulders_mantal": {
     "name": "Mantal",
@@ -31276,7 +39411,22 @@ window.itemMetadata = {
         "zPos": 75,
         "male": "shoulders/mantal/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shoulders/mantal",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      }
+    ]
   },
   "arms-arms_armour": {
     "name": "Armour",
@@ -31322,7 +39472,46 @@ window.itemMetadata = {
         "teen": "arms/armour/plate/female/",
         "pregnant": "arms/armour/plate/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "arms/armour/plate/male",
+        "notes": "original by wulax, recolors by bigbeargames; adapted to v3 bases and further recolors by bluecarrot16",
+        "authors": [
+          "Michael Whitlock (bigbeargames)",
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      },
+      {
+        "file": "arms/armour/plate/female",
+        "notes": "original by wulax, adapted to female by makrohn, recolors by bigbeargames; adapted to v3 bases and further recolors by bluecarrot16",
+        "authors": [
+          "Michael Whitlock (bigbeargames)",
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-combat-armor-for-women",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "arms-bauldron": {
     "name": "Bauldron",
@@ -31367,7 +39556,25 @@ window.itemMetadata = {
         "female": "bauldron/female/",
         "pregnant": "bauldron/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "bauldron",
+        "notes": "",
+        "authors": [
+          "Nila122"
+        ],
+        "licenses": [
+          "GPL 2.0",
+          "GPL 3.0",
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/more-lpc-clothes-and-hair"
+        ]
+      }
+    ]
   },
   "arms-wrists-arms_bracers": {
     "name": "Bracers",
@@ -31412,7 +39619,25 @@ window.itemMetadata = {
         "pregnant": "arms/bracers/female/",
         "muscular": "arms/bracers/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "arms/bracers",
+        "notes": "",
+        "authors": [
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
+        ]
+      }
+    ]
   },
   "arms-wrists-wrists_cuffs": {
     "name": "Cuffs",
@@ -31467,7 +39692,22 @@ window.itemMetadata = {
         "zPos": 70,
         "male": "wrists/cuffs/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "wrists/cuffs",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      }
+    ]
   },
   "arms-wrists-wrists_cuffs_lace": {
     "name": "Lace Cuffs",
@@ -31505,7 +39745,22 @@ window.itemMetadata = {
         "zPos": 70,
         "male": "wrists/lace/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "wrists/lace",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      }
+    ]
   },
   "arms-arms_gloves": {
     "name": "Gloves",
@@ -31585,7 +39840,48 @@ window.itemMetadata = {
         "teen": "arms/gloves/female/",
         "pregnant": "arms/gloves/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "arms/gloves/male",
+        "notes": "metal gloves by wulax, recolors by bigbeargames, adapted to v3 bases by bluecarrot16, added to expanded animations by JaidynReiman",
+        "authors": [
+          "Michael Whitlock (bigbeargames)",
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)",
+          "bluecarrot16",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      },
+      {
+        "file": "arms/gloves/female",
+        "notes": "metal gloves by wulax, extended to female base by makrohn, recolors by bigbeargames, adapted to v3 bases by bluecarrot16, added to expanded animations by JaidynReiman",
+        "authors": [
+          "Michael Whitlock (bigbeargames)",
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "arms-arms_hands_ring_stud": {
     "name": "Stud Ring",
@@ -31629,7 +39925,22 @@ window.itemMetadata = {
         "teen": "arms/hands/ring/stud/female/",
         "pregnant": "arms/hands/ring/stud/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "arms/hands/ring/stud",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-jewelry"
+        ]
+      }
+    ]
   },
   "torso-dresses-dress_sash": {
     "name": "Sash dress",
@@ -31684,7 +39995,26 @@ window.itemMetadata = {
         "zPos": 30,
         "female": "dress/sash/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "dress/sash",
+        "notes": "adapted to v3 bases and recolored by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Thane Brimhall (pennomi)",
+          "laetissima",
+          "Matthew Krohn (makrohn)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-2-characters"
+        ]
+      }
+    ]
   },
   "torso-dresses-dress_slit": {
     "name": "Slit dress",
@@ -31739,7 +40069,28 @@ window.itemMetadata = {
         "zPos": 30,
         "female": "dress/slit/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "dress/slit",
+        "notes": "original \"TightDress\" by Nila122, by ElizaWy, extended to all animation frames and edited for v3 bases by bluecarrot16",
+        "authors": [
+          "Nila122",
+          "ElizaWy",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-clothes-and-hair",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "torso-dresses-dress_bodice": {
     "name": "Bodice",
@@ -31794,7 +40145,28 @@ window.itemMetadata = {
         "zPos": 45,
         "female": "dress/bodice/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "dress/bodice",
+        "notes": "original princess.xcf by Sharm, extended to all poses by makrohn, edited to v3 bases and animation cleanup by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Matthew Krohn (makrohn)",
+          "Lanea Zimmerman (Sharm)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-dress-in-combat-poses",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "torso-dresses-kimono-dress_kimono": {
     "name": "Kimono",
@@ -31856,7 +40228,26 @@ window.itemMetadata = {
         "female": "dress/kimono/normal/universal/female/",
         "teen": "dress/kimono/normal/universal/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "dress/kimono/normal",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-kimono-relm"
+        ]
+      }
+    ]
   },
   "torso-dresses-kimono-dress_kimono_trim": {
     "name": "Kimono Trim",
@@ -31919,7 +40310,26 @@ window.itemMetadata = {
         "female": "dress/kimono/normal/trim/universal/female/",
         "teen": "dress/kimono/normal/trim/universal/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "dress/kimono/normal",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-kimono-relm"
+        ]
+      }
+    ]
   },
   "torso-dresses-kimono-dress_kimono_split": {
     "name": "Split Kimono",
@@ -31981,7 +40391,26 @@ window.itemMetadata = {
         "female": "dress/kimono/split/universal/female/",
         "teen": "dress/kimono/split/universal/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "dress/kimono/split",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-kimono-relm"
+        ]
+      }
+    ]
   },
   "torso-dresses-kimono-dress_kimono_split_trim": {
     "name": "Split Kimono Trim",
@@ -32044,7 +40473,26 @@ window.itemMetadata = {
         "female": "dress/kimono/split/trim/universal/female/",
         "teen": "dress/kimono/split/trim/universal/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "dress/kimono/split",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-kimono-relm"
+        ]
+      }
+    ]
   },
   "torso-dresses-kimono-dress_kimono_longsleeve": {
     "name": "Kimono Sleeves",
@@ -32111,7 +40559,26 @@ window.itemMetadata = {
         "female": "dress/kimono/sleeves/universal/female_front/",
         "teen": "dress/kimono/sleeves/universal/female_front/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "dress/kimono/sleeves",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-kimono-relm"
+        ]
+      }
+    ]
   },
   "torso-dresses-kimono-dress_kimono_longsleeve_trim": {
     "name": "Kimono Sleeves Trim",
@@ -32179,7 +40646,26 @@ window.itemMetadata = {
         "female": "dress/kimono/sleeves/trim/universal/female_front/",
         "teen": "dress/kimono/sleeves/trim/universal/female_front/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "dress/kimono/sleeves",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-kimono-relm"
+        ]
+      }
+    ]
   },
   "torso-dresses-kimono-dress_kimono_oversize": {
     "name": "Kimono Oversized Sleeves",
@@ -32246,7 +40732,26 @@ window.itemMetadata = {
         "female": "dress/kimono/sleeves_oversize/universal/female_front/",
         "teen": "dress/kimono/sleeves_oversize/universal/female_front/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "dress/kimono/sleeves_oversize",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-kimono-relm"
+        ]
+      }
+    ]
   },
   "torso-dresses-kimono-dress_kimono_oversize_trim": {
     "name": "Kimono Oversized Sleeves Trim",
@@ -32314,7 +40819,26 @@ window.itemMetadata = {
         "female": "dress/kimono/sleeves_oversize/trim/universal/female_front/",
         "teen": "dress/kimono/sleeves_oversize/trim/universal/female_front/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "dress/kimono/sleeves_oversize",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-kimono-relm"
+        ]
+      }
+    ]
   },
   "torso-shirts-torso_clothes_child_shirt": {
     "name": "Child shirts",
@@ -32349,7 +40873,24 @@ window.itemMetadata = {
         "zPos": 35,
         "child": "torso/clothes/shirt/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/shirt/child",
+        "notes": "",
+        "authors": [
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-clothes-for-children"
+        ]
+      }
+    ]
   },
   "torso-shirts-sleeves-torso_clothes_shortsleeves": {
     "name": "Original Shortsleeves Overlay",
@@ -32419,7 +40960,78 @@ window.itemMetadata = {
         "female": "torso/clothes/shortsleeve/shortsleeves/female/",
         "teen": "torso/clothes/shortsleeve/shortsleeves/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/shortsleeve/shortsleeves/male",
+        "notes": "original by wulax; tweaks and further recolors by bluecarrot16; cleanup, split sleeves, and climb/jump/run/sit/emote/revised combat adapted from LPC Revised by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "http://opengameart.org/content/lpc-clothing-updates",
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      },
+      {
+        "file": "torso/clothes/shortsleeve/shortsleeves/female",
+        "notes": "original by ElizaWy, edited to v3 bases by bluecarrot16; cleanup, split sleeves, and climb/jump/run/sit/emote/revised combat adapted from LPC Revised by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-7-womens-shirts",
+          "http://opengameart.org/content/lpc-clothing-updates",
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      },
+      {
+        "file": "torso/clothes/shortsleeve/shortsleeves/teen",
+        "notes": "body by Redshrike, shirt by ElizaWy derived from base, edited by bluecarrot16 to v3 bases; cleanup and climb/jump/run/sit/emote/revised combat adapted from LPC Revised by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-teen-unisex-base-clothes",
+          "http://opengameart.org/content/lpc-clothing-updates",
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-sleeves-torso_clothes_shortsleeves2": {
     "name": "Shortsleeves 2 Overlay",
@@ -32489,7 +41101,28 @@ window.itemMetadata = {
         "female": "torso/clothes/shortsleeve/shortsleeves2/female/",
         "teen": "torso/clothes/shortsleeve/shortsleeves2/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/shortsleeve/shortsleeves2",
+        "notes": "original by ElizaWy; spellcast/thrust/shoot/hurt/male/standalone sleeves adapted from original by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "http://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-sleeves-torso_clothes_longsleeves": {
     "name": "Original Longsleeves Overlay",
@@ -32559,7 +41192,78 @@ window.itemMetadata = {
         "male": "torso/clothes/longsleeve/longsleeves/male/",
         "teen": "torso/clothes/longsleeve/longsleeves/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/longsleeve/longsleeves/male",
+        "notes": "original by wulax; tweaks and further recolors by bluecarrot16; cleanup and climb/jump/run/sit/emote/revised combat adapted from LPC Revised by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "http://opengameart.org/content/lpc-clothing-updates",
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      },
+      {
+        "file": "torso/clothes/longsleeve/longsleeves/female",
+        "notes": "original by ElizaWy, edited to v3 bases by bluecarrot16; cleanup and climb/jump/run/sit/emote/revised combat adapted from LPC Revised by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-7-womens-shirts",
+          "http://opengameart.org/content/lpc-clothing-updates",
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      },
+      {
+        "file": "torso/clothes/longsleeve/longsleeves/teen",
+        "notes": "body by Redshrike, shirt by ElizaWy derived from base, edited by bluecarrot16 to v3 bases; cleanup and climb/jump/run/sit/emote/revised combat adapted from LPC Revised by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-teen-unisex-base-clothes",
+          "http://opengameart.org/content/lpc-clothing-updates",
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-sleeves-torso_clothes_longsleeves2": {
     "name": "Longsleeves 2 Overlay",
@@ -32629,7 +41333,28 @@ window.itemMetadata = {
         "female": "torso/clothes/longsleeve/longsleeves2/female/",
         "teen": "torso/clothes/longsleeve/longsleeves2/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/longsleeve/longsleeves2",
+        "notes": "original by ElizaWy; spellcast/thrust/shoot/hurt/male/standalone sleeves adapted from original by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "http://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-sleeves-torso_clothes_longsleeves_cuffed": {
     "name": "Cuffed Longsleeves Overlay",
@@ -32699,7 +41424,28 @@ window.itemMetadata = {
         "female": "torso/clothes/longsleeve/longsleeves_cuffed/female/",
         "teen": "torso/clothes/longsleeve/longsleeves_cuffed/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/longsleeve/longsleeves_cuffed",
+        "notes": "original by ElizaWy; spellcast/thrust/shoot/hurt/male/standalone sleeves adapted from original by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "http://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve": {
     "name": "Longsleeve",
@@ -32771,7 +41517,100 @@ window.itemMetadata = {
         "teen": "torso/clothes/longsleeve/longsleeve/teen/",
         "pregnant": "torso/clothes/longsleeve/longsleeve/pregnant/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/longsleeve/longsleeve/male",
+        "notes": "original by wulax; tweaks and further recolors by bluecarrot16; cleanup and climb/jump/run/sit/emote/revised combat adapted from LPC Revised by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "http://opengameart.org/content/lpc-clothing-updates",
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      },
+      {
+        "file": "torso/clothes/longsleeve/longsleeve/female",
+        "notes": "original by ElizaWy, edited to v3 bases by bluecarrot16; cleanup and climb/jump/run/sit/emote/revised combat adapted from LPC Revised by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-7-womens-shirts",
+          "http://opengameart.org/content/lpc-clothing-updates",
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      },
+      {
+        "file": "torso/clothes/longsleeve/longsleeve/teen",
+        "notes": "body by Redshrike, shirt by ElizaWy derived from base, edited by bluecarrot16 to v3 bases; cleanup and climb/jump/run/sit/emote/revised combat adapted from LPC Revised by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-teen-unisex-base-clothes",
+          "http://opengameart.org/content/lpc-clothing-updates",
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      },
+      {
+        "file": "torso/clothes/longsleeve/longsleeve/pregnant",
+        "notes": "original by ElizaWy, edited to pregnant v3 bases by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-7-womens-shirts",
+          "http://opengameart.org/content/lpc-clothing-updates",
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve_scoop": {
     "name": "Scoop",
@@ -32843,7 +41682,101 @@ window.itemMetadata = {
         "pregnant": "torso/clothes/longsleeve/scoop/pregnant/",
         "teen": "torso/clothes/longsleeve/scoop/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/longsleeve/scoop/female",
+        "notes": "body by Redshrike, scoop shirt by ElizaWy derived from base; adapted to v3 bodies by bluecarrot16; climb/jump/run/sit/emote/revised combat adapted from LPC Revised by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-pregnancy-bases-maternity-wear",
+          "https://opengameart.org/content/lpc-7-womens-shirts",
+          "http://opengameart.org/content/lpc-clothing-updates",
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      },
+      {
+        "file": "torso/clothes/longsleeve/scoop/pregnant",
+        "notes": "body by Redshrike, scoop shirt by ElizaWy derived from base; pregnant tanktop by ElizaWy; tanktop edited by bluecarrot16 to make other pregnant shirts and match v3 bases; climb/jump/run/sit/emote/revised combat adapted from LPC Revised by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-pregnancy-bases-maternity-wear",
+          "https://opengameart.org/content/lpc-7-womens-shirts",
+          "http://opengameart.org/content/lpc-clothing-updates",
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      },
+      {
+        "file": "torso/clothes/longsleeve/scoop/male",
+        "notes": "body by Redshrike, scoop shirt by ElizaWy derived from base; adapted to v3 bodies by bluecarrot16; male version adapted from female cutouts and male longsleeve by JaidynReiman, climb/jump/run/sit/emote/revised combat adapted from LPC Revised by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "http://opengameart.org/content/lpc-clothing-updates",
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      },
+      {
+        "file": "torso/clothes/longsleeve/scoop/teen",
+        "notes": "body by Redshrike, scoop shirt by ElizaWy derived from base; adapted to v3 bodies by bluecarrot16; teen version adapted from female cutouts and teen longsleeve by JaidynReiman, climb/jump/run/sit/emote/revised combat adapted from LPC Revised by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "http://opengameart.org/content/lpc-clothing-updates",
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve_formal": {
     "name": "Collared/Formal Longsleeve",
@@ -32876,7 +41809,29 @@ window.itemMetadata = {
         "zPos": 35,
         "male": "torso/clothes/longsleeve/formal/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/longsleeve/formal",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Thane Brimhall (pennomi)",
+          "laetissima",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-2-characters",
+          "https://opengameart.org/content/lpc-gentleman"
+        ]
+      }
+    ]
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve_formal_striped": {
     "name": "Striped Collared/Formal Longsleeve",
@@ -32909,7 +41864,28 @@ window.itemMetadata = {
         "zPos": 35,
         "male": "torso/clothes/longsleeve/formal_striped/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/longsleeve/formal_striped",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Thane Brimhall (pennomi)",
+          "laetissima",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-2-characters"
+        ]
+      }
+    ]
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve_laced": {
     "name": "Longsleeve laced",
@@ -32965,7 +41941,27 @@ window.itemMetadata = {
         "zPos": 35,
         "male": "torso/clothes/longsleeve/laced/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/longsleeve/laced",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      }
+    ]
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve2": {
     "name": "Longsleeve 2",
@@ -33035,7 +42031,28 @@ window.itemMetadata = {
         "female": "torso/clothes/longsleeve/longsleeve2/female/",
         "teen": "torso/clothes/longsleeve/longsleeve2/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/longsleeve/longsleeve2",
+        "notes": "original by ElizaWy; spellcast/thrust/shoot/hurt/male adapted from original by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve2_vneck": {
     "name": "Longsleeve 2 VNeck",
@@ -33105,7 +42122,28 @@ window.itemMetadata = {
         "female": "torso/clothes/longsleeve/longsleeve2_vneck/female/",
         "teen": "torso/clothes/longsleeve/longsleeve2_vneck/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/longsleeve/longsleeve2_vneck",
+        "notes": "original by ElizaWy; spellcast/thrust/shoot/hurt/male adapted from original by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "http://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve2_scoop": {
     "name": "Longsleeve 2 Scoop",
@@ -33175,7 +42213,28 @@ window.itemMetadata = {
         "female": "torso/clothes/longsleeve/longsleeve2_scoop/female/",
         "teen": "torso/clothes/longsleeve/longsleeve2_scoop/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/longsleeve/longsleeve2_scoop",
+        "notes": "original by ElizaWy; spellcast/thrust/shoot/hurt/male adapted from original by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "http://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve2_buttoned": {
     "name": "Longsleeve 2 Buttoned",
@@ -33245,7 +42304,28 @@ window.itemMetadata = {
         "female": "torso/clothes/longsleeve/longsleeve2_buttoned/female/",
         "teen": "torso/clothes/longsleeve/longsleeve2_buttoned/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/longsleeve/longsleeve2_buttoned",
+        "notes": "original by ElizaWy; spellcast/thrust/shoot/hurt/male adapted from original by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "http://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve2_polo": {
     "name": "Longsleeve Polo",
@@ -33315,7 +42395,28 @@ window.itemMetadata = {
         "female": "torso/clothes/longsleeve/longsleeve2_polo/female/",
         "teen": "torso/clothes/longsleeve/longsleeve2_polo/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/longsleeve/longsleeve2_polo",
+        "notes": "original by ElizaWy; spellcast/thrust/shoot/hurt/male adapted from original by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "http://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve2_cardigan": {
     "name": "Cardigan",
@@ -33385,7 +42486,28 @@ window.itemMetadata = {
         "female": "torso/clothes/longsleeve/longsleeve2_cardigan/female/",
         "teen": "torso/clothes/longsleeve/longsleeve2_cardigan/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/longsleeve/longsleeve2_cardigan",
+        "notes": "original by ElizaWy; spellcast/thrust/shoot/hurt/male adapted from original by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "http://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-shortsleeve-torso_clothes_shortsleeve": {
     "name": "Shortsleeve",
@@ -33457,7 +42579,102 @@ window.itemMetadata = {
         "pregnant": "torso/clothes/shortsleeve/shortsleeve/pregnant/",
         "teen": "torso/clothes/shortsleeve/shortsleeve/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/shortsleeve/shortsleeve/male",
+        "notes": "original by ElizaWy walkcycle only; extended to all animations by adapting from longsleeve, edited to v3 bases by bluecarrot16; cleanup and climb/jump/run/sit/emote/revised combat adapted from LPC Revised by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "http://opengameart.org/content/lpc-revised-character-basics",
+          "http://opengameart.org/content/lpc-clothing-updates",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      },
+      {
+        "file": "torso/clothes/shortsleeve/shortsleeve/female",
+        "notes": "original by ElizaWy walkcycle only; extended to all animations by adapting from longsleeve, edited to v3 bases by bluecarrot16; cleanup and climb/jump/run/sit/emote/revised combat adapted from LPC Revised by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-7-womens-shirts",
+          "http://opengameart.org/content/lpc-revised-character-basics",
+          "http://opengameart.org/content/lpc-clothing-updates",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      },
+      {
+        "file": "torso/clothes/shortsleeve/shortsleeve/teen",
+        "notes": "original by ElizaWy walkcycle only; extended to all animations by adapting from longsleeve, edited to v3 bases by bluecarrot16; teen version by Nyom; cleanup and climb/jump/run/sit/emote/revised combat adapted from LPC Revised by JaidynReiman",
+        "authors": [
+          "Nyom",
+          "bluecarrot16",
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-7-womens-shirts",
+          "http://opengameart.org/content/lpc-revised-character-basics",
+          "http://opengameart.org/content/lpc-clothing-updates",
+          "https://opengameart.org/content/lpc-teen-androgynous-short-sleeve-shirt",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      },
+      {
+        "file": "torso/clothes/shortsleeve/shortsleeve/pregnant",
+        "notes": "body by Redshrike, t-shirt by ElizaWy derived from base; pregnant tanktop by ElizaWy; tanktop edited by bluecarrot16 to make other pregnant shirts and match v3 bases",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-pregnancy-bases-maternity-wear",
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "torso-shirts-shortsleeve-torso_clothes_shortsleeve_polo": {
     "name": "Shortsleeve Polo",
@@ -33527,7 +42744,28 @@ window.itemMetadata = {
         "female": "torso/clothes/shortsleeve/shortsleeve_polo/female/",
         "teen": "torso/clothes/shortsleeve/shortsleeve_polo/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/shortsleeve/shortsleeve_polo",
+        "notes": "original by ElizaWy; spellcast/thrust/shoot/hurt/male adapted from original by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "http://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-shortsleeve-torso_clothes_shortsleeve_cardigan": {
     "name": "Shortsleeve Cardigan",
@@ -33597,7 +42835,27 @@ window.itemMetadata = {
         "female": "torso/clothes/shortsleeve/shortsleeve_cardigan/female/",
         "teen": "torso/clothes/shortsleeve/shortsleeve_cardigan/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/shortsleeve/shortsleeve_cardigan",
+        "notes": "original by ElizaWy; shortsleeve cardigan adapted from original by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-shortsleeve-torso_clothes_tshirt": {
     "name": "TShirt",
@@ -33667,7 +42925,28 @@ window.itemMetadata = {
         "female": "torso/clothes/shortsleeve/tshirt/female/",
         "teen": "torso/clothes/shortsleeve/tshirt/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/shortsleeve/tshirt",
+        "notes": "original by ElizaWy; spellcast/thrust/shoot/hurt/male adapted from original by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-shortsleeve-torso_clothes_tshirt_vneck": {
     "name": "TShirt VNeck",
@@ -33737,7 +43016,28 @@ window.itemMetadata = {
         "female": "torso/clothes/shortsleeve/tshirt_vneck/female/",
         "teen": "torso/clothes/shortsleeve/tshirt_vneck/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/shortsleeve/tshirt_vneck",
+        "notes": "original by ElizaWy; spellcast/thrust/shoot/hurt/male adapted from original by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-shortsleeve-torso_clothes_tshirt_scoop": {
     "name": "TShirt Scoop",
@@ -33807,7 +43107,28 @@ window.itemMetadata = {
         "female": "torso/clothes/shortsleeve/tshirt_scoop/female/",
         "teen": "torso/clothes/shortsleeve/tshirt_scoop/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/shortsleeve/tshirt_scoop",
+        "notes": "original by ElizaWy; spellcast/thrust/shoot/hurt/male adapted from original by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "http://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-shortsleeve-torso_clothes_tshirt_buttoned": {
     "name": "TShirt Buttoned",
@@ -33877,7 +43198,28 @@ window.itemMetadata = {
         "female": "torso/clothes/shortsleeve/tshirt_buttoned/female/",
         "teen": "torso/clothes/shortsleeve/tshirt_buttoned/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/shortsleeve/tshirt_buttoned",
+        "notes": "original by ElizaWy; spellcast/thrust/shoot/hurt/male adapted from original by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "http://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless": {
     "name": "Sleeveless",
@@ -33935,7 +43277,56 @@ window.itemMetadata = {
         "male": "torso/clothes/sleeveless/sleeveless/male/",
         "female": "torso/clothes/sleeveless/sleeveless/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/sleeveless/sleeveless/male",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Matthew Krohn (makrohn)",
+          "JaidynReiman",
+          "Marcel van de Steeg (MadMarcel)",
+          "Nila122",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-female-orcogregoblintroll-base-walkcycle",
+          "https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more",
+          "https://opengameart.org/content/more-lpc-clothes-and-hair",
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      },
+      {
+        "file": "torso/clothes/sleeveless/sleeveless/female",
+        "notes": "\"pirate shirt\" by MadMarcel, edited to all poses by makrohn, edited from tube-top/tanktop to sleeveless by JaidynReiman, cleanup and re-drawing by ElizaWy, edits for v3 bases and further cleanup by bluecarrot16",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Matthew Krohn (makrohn)",
+          "Marcel van de Steeg (MadMarcel)",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-female-orcogregoblintroll-base-walkcycle",
+          "https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more",
+          "https://opengameart.org/content/lpc-7-womens-shirts",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless_laced": {
     "name": "Sleeveless laced",
@@ -33991,7 +43382,33 @@ window.itemMetadata = {
         "zPos": 35,
         "male": "torso/clothes/sleeveless/laced/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/sleeveless/laced",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Matthew Krohn (makrohn)",
+          "JaidynReiman",
+          "Marcel van de Steeg (MadMarcel)",
+          "Nila122",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-female-orcogregoblintroll-base-walkcycle",
+          "https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more",
+          "https://opengameart.org/content/more-lpc-clothes-and-hair",
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      }
+    ]
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless_striped": {
     "name": "Sleeveless striped",
@@ -34047,7 +43464,33 @@ window.itemMetadata = {
         "zPos": 35,
         "male": "torso/clothes/sleeveless/striped/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/sleeveless/striped",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Matthew Krohn (makrohn)",
+          "JaidynReiman",
+          "Marcel van de Steeg (MadMarcel)",
+          "Nila122",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-female-orcogregoblintroll-base-walkcycle",
+          "https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more",
+          "https://opengameart.org/content/more-lpc-clothes-and-hair",
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      }
+    ]
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless_tanktop": {
     "name": "Tanktop",
@@ -34105,7 +43548,54 @@ window.itemMetadata = {
         "pregnant": "torso/clothes/sleeveless/tanktop/pregnant/",
         "female": "torso/clothes/sleeveless/tanktop/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/sleeveless/tanktop/female",
+        "notes": "\"pirate shirt\" by MadMarcel, edited to all poses by makrohn, cleanup and re-drawing by ElizaWy, edits for v3 bases and further cleanup by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "Matthew Krohn (makrohn)",
+          "Marcel van de Steeg (MadMarcel)",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-female-orcogregoblintroll-base-walkcycle",
+          "https://opengameart.org/content/lpc-7-womens-shirts",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      },
+      {
+        "file": "torso/clothes/sleeveless/tanktop/pregnant",
+        "notes": "\"pirate shirt\" by MadMarcel, edited to all poses by makrohn, cleanup and re-drawing for pregnant base by ElizaWy, edits for v3 base by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "Matthew Krohn (makrohn)",
+          "Marcel van de Steeg (MadMarcel)",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-female-orcogregoblintroll-base-walkcycle",
+          "https://opengameart.org/content/lpc-7-womens-shirts",
+          "https://opengameart.org/content/lpc-pregnancy-bases-maternity-wear",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless1": {
     "name": "Original Sleeveless",
@@ -34175,7 +43665,82 @@ window.itemMetadata = {
         "male": "torso/clothes/sleeveless/sleeveless1/male/",
         "teen": "torso/clothes/sleeveless/sleeveless1/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/sleeveless/sleeveless1/male",
+        "notes": "original by ElizaWy walkcycle only; extended to all animations by adapting from longsleeve, edited to v3 bases by bluecarrot16; sleeveless variant by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "http://opengameart.org/content/lpc-revised-character-basics",
+          "http://opengameart.org/content/lpc-clothing-updates",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      },
+      {
+        "file": "torso/clothes/sleeveless/sleeveless1/female",
+        "notes": "original by ElizaWy walkcycle only; extended to all animations by adapting from longsleeve, edited to v3 bases by bluecarrot16; sleeveless variant by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-7-womens-shirts",
+          "http://opengameart.org/content/lpc-revised-character-basics",
+          "http://opengameart.org/content/lpc-clothing-updates",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      },
+      {
+        "file": "torso/clothes/sleeveless/sleeveless1/teen",
+        "notes": "original by ElizaWy walkcycle only; extended to all animations by adapting from longsleeve, edited to v3 bases by bluecarrot16; sleeveless variant by JaidynReiman",
+        "authors": [
+          "Nyom",
+          "bluecarrot16",
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-7-womens-shirts",
+          "http://opengameart.org/content/lpc-revised-character-basics",
+          "http://opengameart.org/content/lpc-clothing-updates",
+          "https://opengameart.org/content/lpc-teen-androgynous-short-sleeve-shirt",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless2": {
     "name": "Sleeveless 2",
@@ -34245,7 +43810,28 @@ window.itemMetadata = {
         "female": "torso/clothes/sleeveless/sleeveless2/female/",
         "teen": "torso/clothes/sleeveless/sleeveless2/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/sleeveless/sleeveless2",
+        "notes": "original by ElizaWy; sleeveless adapted from original by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "http://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless2_vneck": {
     "name": "Sleeveless 2 VNeck",
@@ -34315,7 +43901,28 @@ window.itemMetadata = {
         "female": "torso/clothes/sleeveless/sleeveless2_vneck/female/",
         "teen": "torso/clothes/sleeveless/sleeveless2_vneck/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/sleeveless/sleeveless2_vneck",
+        "notes": "original by ElizaWy; sleeveless adapted from original by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "http://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless2_scoop": {
     "name": "Sleeveless 2 Scoop",
@@ -34385,7 +43992,28 @@ window.itemMetadata = {
         "female": "torso/clothes/sleeveless/sleeveless2_scoop/female/",
         "teen": "torso/clothes/sleeveless/sleeveless2_scoop/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/sleeveless/sleeveless2_scoop",
+        "notes": "original by ElizaWy; sleeveless adapted from original by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "http://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless2_buttoned": {
     "name": "Sleeveless 2 Buttoned",
@@ -34455,7 +44083,28 @@ window.itemMetadata = {
         "female": "torso/clothes/sleeveless/sleeveless2_buttoned/female/",
         "teen": "torso/clothes/sleeveless/sleeveless2_buttoned/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/sleeveless/sleeveless2_buttoned",
+        "notes": "original by ElizaWy; sleeveless adapted from original by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "http://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless2_polo": {
     "name": "Sleeveless 2 Polo",
@@ -34525,7 +44174,28 @@ window.itemMetadata = {
         "female": "torso/clothes/sleeveless/sleeveless2_polo/female/",
         "teen": "torso/clothes/sleeveless/sleeveless2_polo/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/sleeveless/sleeveless2_polo",
+        "notes": "original by ElizaWy; sleeveless adapted from original by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "http://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless2_cardigan": {
     "name": "Sleeveless 2 Cardigan",
@@ -34595,7 +44265,28 @@ window.itemMetadata = {
         "female": "torso/clothes/sleeveless/sleeveless2_cardigan/female/",
         "teen": "torso/clothes/sleeveless/sleeveless2_cardigan/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/sleeveless/sleeveless2_cardigan",
+        "notes": "original by ElizaWy; sleeveless adapted from original by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "http://opengameart.org/content/lpc-revised-character-basics",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-simple-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-torso_clothes_corset": {
     "name": "Corset",
@@ -34645,7 +44336,26 @@ window.itemMetadata = {
         "zPos": 45,
         "female": "torso/clothes/corset/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/corset",
+        "notes": "original by Nila122, recolored by ElizaWy",
+        "authors": [
+          "ElizaWy",
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-SA 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-clothes-and-hair",
+          "https://opengameart.org/content/lpc-7-womens-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-torso_clothes_blouse": {
     "name": "Blouse",
@@ -34695,7 +44405,27 @@ window.itemMetadata = {
         "zPos": 35,
         "female": "torso/clothes/blouse/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/blouse",
+        "notes": "original princess.xcf by Sharm, edited to blouse by ElizaWy; adapted to v3 bases by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "Lanea Zimmerman (Sharm)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-7-womens-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-torso_clothes_blouse_longsleeve": {
     "name": "Longsleeve blouse",
@@ -34745,7 +44475,27 @@ window.itemMetadata = {
         "zPos": 35,
         "female": "torso/clothes/blouse_longsleeve/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/blouse_longsleeve",
+        "notes": "original princess.xcf by Sharm, edited to blouse by ElizaWy; blouse + longsleeve adapted to v3 bases by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "Lanea Zimmerman (Sharm)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-7-womens-shirts"
+        ]
+      }
+    ]
   },
   "torso-shirts-torso_clothes_tunic": {
     "name": "Tunic",
@@ -34800,7 +44550,31 @@ window.itemMetadata = {
         "zPos": 35,
         "female": "torso/clothes/tunic/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/tunic",
+        "notes": "\"pirate shirt\" by MadMarcel, edited to all poses by makrohn, edited from tube-top/tanktop to sleeveless then to tunic by JaidynReiman, edits for v3 bases and further cleanup by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman",
+          "Matthew Krohn (makrohn)",
+          "Marcel van de Steeg (MadMarcel)",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-female-orcogregoblintroll-base-walkcycle",
+          "https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "torso-shirts-torso_clothes_tunic_sara": {
     "name": "Sara Tunic",
@@ -34855,7 +44629,26 @@ window.itemMetadata = {
         "zPos": 35,
         "female": "torso/clothes/tunic_sara/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/tunic_sara",
+        "notes": "",
+        "authors": [
+          "Mandi Paugh",
+          "William.Thompsonj",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "http://opengameart.org/content/sara-wizard",
+          "https://opengameart.org/content/lpc-sara"
+        ]
+      }
+    ]
   },
   "torso-shirts-torso_clothes_robe": {
     "name": "Robe",
@@ -34896,7 +44689,23 @@ window.itemMetadata = {
         "zPos": 35,
         "female": "torso/clothes/robe/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/robe",
+        "notes": "",
+        "authors": [
+          "Luke Mehl"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/female-mage-clothing-set"
+        ]
+      }
+    ]
   },
   "torso-aprons-torso_aprons_overalls": {
     "name": "Overalls",
@@ -34965,7 +44774,26 @@ window.itemMetadata = {
         "female": "torso/aprons/overalls/female/",
         "teen": "torso/aprons/overalls/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/aprons/overalls",
+        "notes": "original overalls by ElizaWy, extended to all animation frames, adapted from teen to male base, and edited for v3 bases by bluecarrot16; extended to combat animations by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "bluecarrot16",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "torso-aprons-torso_aprons_suspenders": {
     "name": "Suspenders",
@@ -35038,7 +44866,24 @@ window.itemMetadata = {
         "pregnant": "torso/aprons/suspenders/female/",
         "teen": "torso/aprons/suspenders/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/aprons/suspenders",
+        "notes": "original by ElizaWy; spellcast/thrust/shoot/hurt/combat adapted from original by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "torso-aprons-torso_aprons_apron": {
     "name": "Apron",
@@ -35097,7 +44942,25 @@ window.itemMetadata = {
         "female": "torso/aprons/apron/female/",
         "teen": "torso/aprons/apron/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/aprons/apron",
+        "notes": "",
+        "authors": [
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-aprons"
+        ]
+      }
+    ]
   },
   "torso-aprons-torso_aprons_apron_half": {
     "name": "Apron half",
@@ -35152,7 +45015,24 @@ window.itemMetadata = {
         "zPos": 40,
         "female": "torso/aprons/apron_half/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/aprons/apron_half",
+        "notes": "original apron by ElizaWy, extended to all animation frames and edited for v3 bases by bluecarrot16",
+        "authors": [
+          "ElizaWy",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "torso-aprons-torso_aprons_apron_full": {
     "name": "Apron full",
@@ -35207,7 +45087,24 @@ window.itemMetadata = {
         "zPos": 40,
         "female": "torso/aprons/apron_full/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/aprons/apron_full",
+        "notes": "original apron by ElizaWy, extended to all animation frames and edited for v3 bases by bluecarrot16",
+        "authors": [
+          "ElizaWy",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "torso-torso_bandages": {
     "name": "Bandages",
@@ -35242,7 +45139,25 @@ window.itemMetadata = {
         "female": "torso/bandage/female/",
         "teen": "torso/bandage/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/bandage",
+        "notes": "",
+        "authors": [
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-bandages"
+        ]
+      }
+    ]
   },
   "torso-torso_chainmail": {
     "name": "Chainmail",
@@ -35277,7 +45192,24 @@ window.itemMetadata = {
         "female": "torso/chainmail/female/",
         "teen": "torso/chainmail/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/chainmail",
+        "notes": "minor edits by bluecarrot16",
+        "authors": [
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
+        ]
+      }
+    ]
   },
   "torso-jacket-torso_jacket_collared": {
     "name": "Collared coat",
@@ -35333,7 +45265,24 @@ window.itemMetadata = {
         "zPos": 55,
         "male": "torso/jacket/collared/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/jacket/collared",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-gentleman",
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      }
+    ]
   },
   "torso-jacket-torso_jacket_iverness": {
     "name": "Iverness cloak",
@@ -35365,7 +45314,23 @@ window.itemMetadata = {
         "zPos": 55,
         "male": "torso/jacket/iverness/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/jacket/iverness",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-gentleman"
+        ]
+      }
+    ]
   },
   "torso-jacket-torso_jacket_trench": {
     "name": "Trench coat",
@@ -35398,7 +45363,23 @@ window.itemMetadata = {
         "zPos": 55,
         "male": "torso/jacket/trench/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/jacket/trench",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-gentleman"
+        ]
+      }
+    ]
   },
   "torso-jacket-torso_jacket_tabard": {
     "name": "Tabard",
@@ -35452,7 +45433,45 @@ window.itemMetadata = {
         "teen": "torso/jacket/tabard/female/",
         "male": "torso/jacket/tabard/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/jacket/tabard",
+        "notes": "original by wulax, edited to v3 base by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      },
+      {
+        "file": "torso/jacket/tabard/female",
+        "notes": "original by wulax, edited to female base by makrohn and JaidynReiman, edited to v3 base by bluecarrot16",
+        "authors": [
+          "JaidynReiman",
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-combat-armor-for-women",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "torso-jacket-torso_jacket_frock": {
     "name": "Frock coat",
@@ -35507,7 +45526,22 @@ window.itemMetadata = {
         "zPos": 55,
         "male": "torso/jacket/frock/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/jacket/frock",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      }
+    ]
   },
   "torso-jacket-torso_jacket_santa": {
     "name": "Santa coat",
@@ -35562,7 +45596,24 @@ window.itemMetadata = {
         "zPos": 55,
         "male": "torso/jacket/santa/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/jacket/santa",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-gentleman",
+          "https://opengameart.org/content/lpc-santa"
+        ]
+      }
+    ]
   },
   "torso-jacket-jacket trim-torso_jacket_frock_collar": {
     "name": "Frock collar",
@@ -35601,7 +45652,22 @@ window.itemMetadata = {
         "zPos": 57,
         "male": "torso/jacket/trim/frock_collar/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/jacket/trim",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      }
+    ]
   },
   "torso-jacket-jacket trim-torso_jacket_frock_lace": {
     "name": "Frock coat lace",
@@ -35640,7 +45706,22 @@ window.itemMetadata = {
         "zPos": 58,
         "male": "torso/jacket/trim/frock_lace/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/jacket/trim",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      }
+    ]
   },
   "torso-jacket-jacket trim-torso_jacket_frock_lapel": {
     "name": "Frock coat lapel",
@@ -35679,7 +45760,22 @@ window.itemMetadata = {
         "zPos": 58,
         "male": "torso/jacket/trim/frock_lapel/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/jacket/trim",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      }
+    ]
   },
   "torso-jacket-jacket trim-torso_jacket_frock_buttons": {
     "name": "Frock coat buttons",
@@ -35718,7 +45814,22 @@ window.itemMetadata = {
         "zPos": 58,
         "male": "torso/jacket/trim/frock_buttons/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/jacket/trim",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      }
+    ]
   },
   "torso-jacket-jacket trim-torso_jacket_pockets": {
     "name": "Jacket pockets",
@@ -35774,7 +45885,22 @@ window.itemMetadata = {
         "zPos": 59,
         "male": "torso/jacket/trim/jacket_pockets/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/jacket/trim",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      }
+    ]
   },
   "torso-vest-torso_clothes_vest": {
     "name": "Vest",
@@ -35831,7 +45957,63 @@ window.itemMetadata = {
         "zPos": 45,
         "male": "torso/clothes/vest/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/vest",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Thane Brimhall (pennomi)",
+          "laetissima",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-2-characters",
+          "https://opengameart.org/content/lpc-gentleman",
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      },
+      {
+        "file": "torso/clothes/vest/male/gray_striped.png",
+        "notes": "",
+        "authors": [
+          "Michael Whitlock (bigbeargames)",
+          "bluecarrot16",
+          "Thane Brimhall (pennomi)",
+          "laetissima"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-2-characters"
+        ]
+      },
+      {
+        "file": "torso/clothes/vest/male/gray.png",
+        "notes": "",
+        "authors": [
+          "Michael Whitlock (bigbeargames)",
+          "bluecarrot16",
+          "Thane Brimhall (pennomi)",
+          "laetissima"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-2-characters"
+        ]
+      }
+    ]
   },
   "torso-vest-torso_clothes_vest_open": {
     "name": "Vest open",
@@ -35886,7 +46068,27 @@ window.itemMetadata = {
         "zPos": 45,
         "male": "torso/clothes/vest_open/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/clothes/vest_open",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Thane Brimhall (pennomi)",
+          "laetissima"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-2-characters",
+          "https://opengameart.org/content/lpc-gentleman",
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      }
+    ]
   },
   "torso-armour-torso_armour_plate": {
     "name": "Plate",
@@ -35939,7 +46141,65 @@ window.itemMetadata = {
         "female": "torso/armour/plate/female/",
         "teen": "torso/armour/plate/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/armour/plate/male",
+        "notes": "original by wulax, recolor by bigbeargames, color reduced to 7 colors and adapted to v3 bases by bluecarrot16, run/jump/sit/climb/revised combat by JaidynReiman",
+        "authors": [
+          "JaidynReiman, bluecarrot16, Michael Whitlock (bigbeargames), Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-combat-armor-for-women"
+        ]
+      },
+      {
+        "file": "torso/armour/plate/female",
+        "notes": "original by wulax, adapted to female base by makrohn, recolor by bigbeargames, color reduced to 7 colors and adapted to v3 bases by bluecarrot16, run/jump/sit/climb/revised combat by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "bluecarrot16",
+          "Michael Whitlock (bigbeargames)",
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-combat-armor-for-women",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      },
+      {
+        "file": "torso/armour/plate/teen",
+        "notes": "original by wulax, color reduced to 7 colors and adapted to v3 bases by bluecarrot16, adapted to teen base from male/female by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "bluecarrot16",
+          "Michael Whitlock (bigbeargames)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-combat-armor-for-women"
+        ]
+      }
+    ]
   },
   "torso-armour-torso_armour_leather": {
     "name": "Leather",
@@ -35998,7 +46258,44 @@ window.itemMetadata = {
         "female": "torso/armour/leather/female/",
         "teen": "torso/armour/leather/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/armour/leather",
+        "notes": "adapted to v3 bases by bluecarrot16",
+        "authors": [
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      },
+      {
+        "file": "torso/armour/leather/female",
+        "notes": "recolor of torso/armour/leather/female/brown.png, adapted to v3 bases by bluecarrot16",
+        "authors": [
+          "Michael Whitlock (bigbeargames)",
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-combat-armor-for-women",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "torso-armour-torso_armour_legion": {
     "name": "Legion",
@@ -36051,7 +46348,27 @@ window.itemMetadata = {
         "female": "torso/armour/legion/female/",
         "teen": "torso/armour/legion/teen/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/armour/legion",
+        "notes": "adapted to v3 bases by bluecarrot16, jump/run/sit/combat and teen by Jaidynreiman",
+        "authors": [
+          "JaidynReiman",
+          "bluecarrot16",
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-roman-armor"
+        ]
+      }
+    ]
   },
   "torso-cape-cape_solid": {
     "name": "Solid",
@@ -36125,7 +46442,44 @@ window.itemMetadata = {
         "female": "cape/solid_behind/",
         "pregnant": "cape/solid_behind/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "cape/solid/female",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more",
+          "https://opengameart.org/content/lpc-roman-armor",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      },
+      {
+        "file": "cape/solid_behind",
+        "notes": "",
+        "authors": [
+          "Nila122",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more",
+          "https://opengameart.org/content/lpc-roman-armor"
+        ]
+      }
+    ]
   },
   "torso-cape-cape_tattered": {
     "name": "Tattered",
@@ -36199,7 +46553,43 @@ window.itemMetadata = {
         "female": "cape/tattered_behind/",
         "pregnant": "cape/tattered_behind/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "cape/tattered",
+        "notes": "",
+        "authors": [
+          "Nila122",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more",
+          "https://opengameart.org/content/lpc-roman-armor"
+        ]
+      },
+      {
+        "file": "cape/tattered_behind",
+        "notes": "",
+        "authors": [
+          "Nila122",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more",
+          "https://opengameart.org/content/lpc-roman-armor"
+        ]
+      }
+    ]
   },
   "torso-cape-cape_trim": {
     "name": "Cape Trim",
@@ -36267,7 +46657,26 @@ window.itemMetadata = {
         "female": "cape/trim/female/",
         "pregnant": "cape/trim/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "cape/trim",
+        "notes": "isolated stripe from cape_trimmed, adapted to v3 bases by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "torso-backpack-backpack_straps": {
     "name": "Straps",
@@ -36329,7 +46738,24 @@ window.itemMetadata = {
         "female": "backpack/straps/female/",
         "pregnant": "backpack/straps/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "backpack/straps",
+        "notes": "trivial adjustments by bluecarrot16 to be compatible with v3 bases",
+        "authors": [
+          "Benjamin K. Smith (BenCreating)",
+          "macmanmatty"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-backpacks"
+        ]
+      }
+    ]
   },
   "torso-backpack-backpack": {
     "name": "Backpack",
@@ -36389,7 +46815,24 @@ window.itemMetadata = {
         "female": "backpack/backpack/female/",
         "pregnant": "backpack/backpack/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "backpack/backpack",
+        "notes": "trivial adjustments by bluecarrot16 to be compatible with v3 bases",
+        "authors": [
+          "Benjamin K. Smith (BenCreating)",
+          "macmanmatty"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-backpacks"
+        ]
+      }
+    ]
   },
   "torso-backpack-backpack_squarepack": {
     "name": "Square pack",
@@ -36448,7 +46891,24 @@ window.itemMetadata = {
         "female": "backpack/squarepack/female/",
         "pregnant": "backpack/squarepack/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "backpack/squarepack",
+        "notes": "trivial adjustments by bluecarrot16 to be compatible with v3 bases",
+        "authors": [
+          "Benjamin K. Smith (BenCreating)",
+          "macmanmatty"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-backpacks"
+        ]
+      }
+    ]
   },
   "torso-backpack-backpack_jetpack": {
     "name": "Jetpack",
@@ -36492,7 +46952,24 @@ window.itemMetadata = {
         "female": "backpack/jetpack/female/",
         "pregnant": "backpack/jetpack/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "backpack/jetpack",
+        "notes": "trivial adjustments by bluecarrot16 to be compatible with v3 bases",
+        "authors": [
+          "Benjamin K. Smith (BenCreating)",
+          "macmanmatty"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-backpacks"
+        ]
+      }
+    ]
   },
   "torso-backpack-backpack_jetpack_fins": {
     "name": "Jetpack fins",
@@ -36536,7 +47013,24 @@ window.itemMetadata = {
         "female": "backpack/jetpack_fins/female/",
         "pregnant": "backpack/jetpack_fins/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "backpack/jetpack_fins",
+        "notes": "trivial adjustments by bluecarrot16 to be compatible with v3 bases",
+        "authors": [
+          "Benjamin K. Smith (BenCreating)",
+          "macmanmatty"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-backpacks"
+        ]
+      }
+    ]
   },
   "torso-backpack-backpack_basket": {
     "name": "Basket",
@@ -36586,7 +47080,22 @@ window.itemMetadata = {
         "female": "backpack/basket/bg/",
         "pregnant": "backpack/basket/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "backpack/basket",
+        "notes": "full submission is CC-BY-SA 3.0/GPL 3.0, but this item is CC0",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-more-backpacks"
+        ]
+      }
+    ]
   },
   "torso-backpack-quiver": {
     "name": "Quiver",
@@ -36626,7 +47135,24 @@ window.itemMetadata = {
         "pregnant": "quiver/",
         "teen": "quiver/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "quiver",
+        "notes": "",
+        "authors": [
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
+        ]
+      }
+    ]
   },
   "torso-backpack-backpack cargo-backpack_contents_wood": {
     "name": "Wood",
@@ -36678,7 +47204,25 @@ window.itemMetadata = {
         "female": "backpack/basket_contents/wood/bg/",
         "pregnant": "backpack/basket_contents/wood/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "backpack/basket_contents/wood",
+        "notes": "this item is CC-BY-SA 3.0/GPL 3.0 because it's derived from daneeklu's log",
+        "authors": [
+          "bluecarrot16",
+          "Daniel Eddeland (daneeklu)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-farming-tilesets-magic-animations-and-ui-elements",
+          "https://opengameart.org/content/lpc-more-backpacks"
+        ]
+      }
+    ]
   },
   "torso-backpack-backpack cargo-backpack_contents_ore": {
     "name": "Ore",
@@ -36736,7 +47280,22 @@ window.itemMetadata = {
         "female": "backpack/basket_contents/ore/bg/",
         "pregnant": "backpack/basket_contents/ore/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "backpack/basket_contents/ore",
+        "notes": "full submission is CC-BY-SA 3.0/GPL 3.0, but this item is CC0",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-more-backpacks"
+        ]
+      }
+    ]
   },
   "torso-waist-belt_leather": {
     "name": "Leather Belt",
@@ -36778,7 +47337,27 @@ window.itemMetadata = {
         "female": "torso/waist/belt_leather/female/",
         "teen": "torso/waist/belt_leather/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/waist/belt_leather",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Johannes Sjölund (wulax)",
+          "Matthew Krohn (makrohn)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-combat-armor-for-women",
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      }
+    ]
   },
   "torso-waist-belt_double": {
     "name": "Double Belt",
@@ -36820,7 +47399,27 @@ window.itemMetadata = {
         "female": "torso/waist/belt_double/female/",
         "teen": "torso/waist/belt_double/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/waist/belt_double",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Johannes Sjölund (wulax)",
+          "Matthew Krohn (makrohn)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-combat-armor-for-women",
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      }
+    ]
   },
   "torso-waist-belt_loose": {
     "name": "Loose Belt",
@@ -36862,7 +47461,27 @@ window.itemMetadata = {
         "female": "torso/waist/belt_loose/female/",
         "teen": "torso/waist/belt_loose/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/waist/belt_loose",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Johannes Sjölund (wulax)",
+          "Matthew Krohn (makrohn)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-combat-armor-for-women",
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      }
+    ]
   },
   "torso-waist-belt_belly": {
     "name": "Belly belt",
@@ -36904,7 +47523,28 @@ window.itemMetadata = {
         "female": "torso/waist/belt_belly/female/",
         "teen": "torso/waist/belt_belly/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/waist/belt_belly",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Johannes Sjölund (wulax)",
+          "Matthew Krohn (makrohn)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-combat-armor-for-women",
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/lpc-santa"
+        ]
+      }
+    ]
   },
   "torso-waist-belt_other_female": {
     "name": "Other belts",
@@ -36944,7 +47584,70 @@ window.itemMetadata = {
         "zPos": 70,
         "female": "torso/waist/belt_other/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/waist/belt_other/female",
+        "notes": "",
+        "authors": [
+          "Luke Mehl"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/female-mage-clothing-set"
+        ]
+      },
+      {
+        "file": "torso/waist/belt_other/female/leather.png",
+        "notes": "",
+        "authors": [
+          "Johannes Sjölund (wulax)",
+          "Matthew Krohn (makrohn)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-combat-armor-for-women"
+        ]
+      },
+      {
+        "file": "torso/waist/belt_other/female/teal.png",
+        "notes": "",
+        "authors": [
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
+        ]
+      },
+      {
+        "file": "torso/waist/belt_other/female/white.png",
+        "notes": "",
+        "authors": [
+          "Johannes Sjölund (wulax)",
+          "Matthew Krohn (makrohn)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
+        ]
+      }
+    ]
   },
   "torso-waist-belt_other_male": {
     "name": "Other belts",
@@ -36978,7 +47681,56 @@ window.itemMetadata = {
         "zPos": 70,
         "male": "torso/waist/belt_other/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/waist/belt_other/male/formal.png",
+        "notes": "",
+        "authors": [
+          "Thane Brimhall (pennomi)",
+          "laetissima",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-2-characters",
+          "https://opengameart.org/content/lpc-gentleman"
+        ]
+      },
+      {
+        "file": "torso/waist/belt_other/male/leather.png",
+        "notes": "",
+        "authors": [
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
+        ]
+      },
+      {
+        "file": "torso/waist/belt_other/male/white.png",
+        "notes": "",
+        "authors": [
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
+        ]
+      }
+    ]
   },
   "torso-waist-belt_sash": {
     "name": "Sash",
@@ -37037,7 +47789,27 @@ window.itemMetadata = {
         "female": "torso/waist/sash/female/",
         "teen": "torso/waist/sash/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/waist/sash",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 2.0",
+          "GPL 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/more-lpc-clothes-and-hair",
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      }
+    ]
   },
   "torso-waist-belt_sash_narrow": {
     "name": "Narrow sash",
@@ -37096,7 +47868,27 @@ window.itemMetadata = {
         "female": "torso/waist/sash_narrow/female/",
         "teen": "torso/waist/sash_narrow/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/waist/sash_narrow",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 2.0",
+          "GPL 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/more-lpc-clothes-and-hair",
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      }
+    ]
   },
   "torso-waist-belt_waistband": {
     "name": "Waistband",
@@ -37153,7 +47945,44 @@ window.itemMetadata = {
         "female": "torso/waist/waistband/female/",
         "teen": "torso/waist/sash/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/waist/waistband",
+        "notes": "LPC Sara by Redshrike, contributed by William Thompsonj, Waistband Separated by Bluecarrot16",
+        "authors": [
+          "Bluecarrot16",
+          "Mandi Paugh",
+          "Stephen Challener (Redshrike)",
+          "William.Thompsonj"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "http://opengameart.org/content/sara-wizard",
+          "https://opengameart.org/content/lpc-sara"
+        ]
+      },
+      {
+        "file": "torso/waist/sash",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 2.0",
+          "GPL 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/more-lpc-clothes-and-hair",
+          "https://opengameart.org/content/lpc-pirates"
+        ]
+      }
+    ]
   },
   "torso-waist-obi-belt_obi": {
     "name": "Obi",
@@ -37227,7 +48056,24 @@ window.itemMetadata = {
         "pregnant": "torso/waist/obi/thin/",
         "teen": "torso/waist/obi/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/waist/obi",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-kimono-relm"
+        ]
+      }
+    ]
   },
   "torso-waist-obi-belt_obi_knot_left": {
     "name": "Obi Knot Left",
@@ -37301,7 +48147,24 @@ window.itemMetadata = {
         "pregnant": "torso/waist/obi/knot/left/thin/",
         "teen": "torso/waist/obi/knot/left/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/waist/obi/knot",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-kimono-relm"
+        ]
+      }
+    ]
   },
   "torso-waist-obi-belt_obi_knot_right": {
     "name": "Obi Knot Right",
@@ -37375,7 +48238,24 @@ window.itemMetadata = {
         "pregnant": "torso/waist/obi/knot/right/thin/",
         "teen": "torso/waist/obi/knot/right/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/waist/obi/knot",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-kimono-relm"
+        ]
+      }
+    ]
   },
   "torso-buckles": {
     "name": "Buckles",
@@ -37409,7 +48289,23 @@ window.itemMetadata = {
         "zPos": 75,
         "female": "torso/waist/buckles/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "torso/waist/buckles",
+        "notes": "",
+        "authors": [
+          "Luke Mehl"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/female-mage-clothing-set"
+        ]
+      }
+    ]
   },
   "legs-legs_armour": {
     "name": "Armour",
@@ -37455,7 +48351,28 @@ window.itemMetadata = {
         "female": "legs/armour/plate/thin/",
         "teen": "legs/armour/plate/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "legs/armour/plate",
+        "notes": "reduced to 7 colors an adapted to v3 bases by bluecarrot16, climb/jump/sit/emotes by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman",
+          "Michael Whitlock (bigbeargames)",
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
+        ]
+      }
+    ]
   },
   "legs-pants-legs_widepants": {
     "name": "Wide pants",
@@ -37510,7 +48427,29 @@ window.itemMetadata = {
         "zPos": 20,
         "muscular": "legs/pants/muscular/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "legs/pants/muscular",
+        "notes": "original muscular pants by ElizaWy, muscular by dalonedrau, cast and thrust frames by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "dalonedrau",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-muscular-pants",
+          "https://opengameart.org/content/lpc-muscular-swing-animation",
+          "https://opengameart.org/content/lpc-muscular-hurt-animation"
+        ]
+      }
+    ]
   },
   "legs-pants-legs_pants": {
     "name": "Pants",
@@ -37583,7 +48522,55 @@ window.itemMetadata = {
         "teen": "legs/pants/thin/",
         "pregnant": "legs/pants/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "legs/pants/male",
+        "notes": "original male pants by wulax, recolors and edits to v3 base by bluecarrot16, climb/jump/run/sit/emotes/revised combat by JaidynReiman based on ElizaWy's LPC Revised",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman",
+          "ElizaWy",
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-expanded-pants"
+        ]
+      },
+      {
+        "file": "legs/pants/thin",
+        "notes": "original male pants by wulax, edited for female by Joe White, recolors and edits to v3 base by bluecarrot16, teen legs by ElizaWy derived from base, climb/jump/run/sit/emotes/revised combat by JaidynReiman based on ElizaWy's LPC Revised",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman",
+          "ElizaWy",
+          "Joe White",
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "http://opengameart.org/content/lpc-clothing-updates",
+          "https://opengameart.org/content/lpc-expanded-pants"
+        ]
+      }
+    ]
   },
   "legs-pants-legs_pants2": {
     "name": "Long Pants",
@@ -37652,7 +48639,47 @@ window.itemMetadata = {
         "female": "legs/pants2/thin/",
         "teen": "legs/pants2/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "legs/pants2/male",
+        "notes": "original overalls by ElizaWy, base animations adapted from v3 overalls by bluecarrot16, pants by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Bluecarrot16",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-pants"
+        ]
+      },
+      {
+        "file": "legs/pants2",
+        "notes": "Original bases by Redshrike, thrust/shoot bases by Wulax, original pants by ElizaWy, climb/jump/run/sit/emotes/revised combat by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-pants"
+        ]
+      }
+    ]
   },
   "legs-pants-legs_cuffed": {
     "name": "Cuffed Pants",
@@ -37721,7 +48748,47 @@ window.itemMetadata = {
         "female": "legs/cuffed/thin/",
         "teen": "legs/cuffed/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "legs/cuffed/male",
+        "notes": "Original bases by Redshrike, thrust/shoot bases by Wulax, original overalls by ElizaWy, base animations adapted from v3 overalls by bluecarrot16, pants by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Bluecarrot16",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-pants"
+        ]
+      },
+      {
+        "file": "legs/cuffed",
+        "notes": "Original bases by Redshrike, thrust/shoot bases by Wulax, original cuffed pants by ElizaWy, climb/jump/run/sit/emotes/revised combat by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-pants"
+        ]
+      }
+    ]
   },
   "legs-pants-legs_pantaloons": {
     "name": "Pantaloons",
@@ -37794,7 +48861,68 @@ window.itemMetadata = {
         "pregnant": "legs/pantaloons/thin/",
         "teen": "legs/pantaloons/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "legs/pantaloons",
+        "notes": "Original bases by Redshrike, thrust/shoot bases by Wulax, Original Pantaloons by Nila122, climb/jump/run/sit/emotes/revised combat by JaidynReiman",
+        "authors": [
+          "Nila122",
+          "JaidynReiman",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 2.0",
+          "GPL 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/more-lpc-clothes-and-hair",
+          "https://opengameart.org/content/lpc-expanded-pants"
+        ]
+      },
+      {
+        "file": "legs/pantaloons/thin",
+        "notes": "Original bases by Redshrike, thrust/shoot bases by Wulax, Original Pantaloons by Nila122, Female/Teen version by JaidynReiman",
+        "authors": [
+          "Nila122",
+          "JaidynReiman",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-pirates",
+          "https://opengameart.org/content/more-lpc-clothes-and-hair",
+          "https://opengameart.org/content/lpc-expanded-pants"
+        ]
+      },
+      {
+        "file": "legs/pantaloons/muscular",
+        "notes": "",
+        "authors": [
+          "Nila122",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/more-lpc-clothes-and-hair"
+        ]
+      }
+    ]
   },
   "legs-pants-legs_formal": {
     "name": "Formal Pants",
@@ -37868,7 +48996,55 @@ window.itemMetadata = {
         "teen": "legs/formal/thin/",
         "pregnant": "legs/formal/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "legs/formal",
+        "notes": "Original pants by Stephen Challener (Redshrike), thrust/shoot bases by Wulax, Formal Pants by Bluecarrot16, climb/jump/run/sit/emotes/revised combat by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman",
+          "ElizaWy",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-2-characters",
+          "https://opengameart.org/content/lpc-gentleman",
+          "https://opengameart.org/content/lpc-expanded-pants"
+        ]
+      },
+      {
+        "file": "legs/formal/thin",
+        "notes": "Original pants by Stephen Challener (Redshrike), thrust/shoot bases by Wulax, Formal Pants by Bluecarrot16, Female/Thin version by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman",
+          "ElizaWy",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-2-characters",
+          "https://opengameart.org/content/lpc-gentleman",
+          "https://opengameart.org/content/lpc-expanded-pants"
+        ]
+      }
+    ]
   },
   "legs-pants-legs_formal_striped": {
     "name": "Striped Formal Pants",
@@ -37942,7 +49118,55 @@ window.itemMetadata = {
         "teen": "legs/formal_striped/thin/",
         "pregnant": "legs/formal_striped/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "legs/formal_striped",
+        "notes": "Original pants by Stephen Challener (Redshrike), thrust/shoot bases by Wulax, Striped Formal Pants by Bluecarrot16, climb/jump/run/sit/emotes/revised combat by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman",
+          "ElizaWy",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-2-characters",
+          "https://opengameart.org/content/lpc-gentleman",
+          "https://opengameart.org/content/lpc-expanded-pants"
+        ]
+      },
+      {
+        "file": "legs/formal_striped/thin",
+        "notes": "Original pants by Stephen Challener (Redshrike), thrust/shoot bases by Wulax, Striped Formal Pants by Bluecarrot16, Female/Thin version by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman",
+          "ElizaWy",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-2-characters",
+          "https://opengameart.org/content/lpc-gentleman",
+          "https://opengameart.org/content/lpc-expanded-pants"
+        ]
+      }
+    ]
   },
   "legs-pants-legs_fur": {
     "name": "Fur Pants",
@@ -38023,7 +49247,53 @@ window.itemMetadata = {
         "teen": "legs/fur/thin/",
         "pregnant": "legs/fur/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "legs/fur",
+        "notes": "Original pants by Stephen Challener (Redshrike), thrust/shoot bases by Wulax, Fur Pants Color by Evert, Edited to V3 Bases by Bluecarrot16, climb/jump/run/sit/emotes/revised combat by JaidynReiman",
+        "authors": [
+          "Bluecarrot16",
+          "JaidynReiman",
+          "Evert",
+          "ElizaWy",
+          "Nila122",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-faun-and-minotaur",
+          "https://opengameart.org/content/lpc-expanded-pants"
+        ]
+      },
+      {
+        "file": "legs/fur/thin",
+        "notes": "Original pants by Stephen Challener (Redshrike), thrust/shoot bases by Wulax, Fur Pants Color by Evert, Edited to V3 Bases by Bluecarrot16, Female/Thin version by JaidynReiman",
+        "authors": [
+          "Bluecarrot16",
+          "JaidynReiman",
+          "Evert",
+          "ElizaWy",
+          "Nila122",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-faun-and-minotaur",
+          "https://opengameart.org/content/lpc-expanded-pants"
+        ]
+      }
+    ]
   },
   "legs-pants-legs_pregnantpants": {
     "name": "Pregnancy pants",
@@ -38073,7 +49343,32 @@ window.itemMetadata = {
         "zPos": 20,
         "pregnant": "legs/pants/pregnant/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "legs/pants/pregnant",
+        "notes": "original male pants by wulax; edited for female by Joe White; recolors by JaidynReiman; walkcycle adapted to pregnant base by ElizaWy; remaining animations, recolors and edits to v3 base by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "JaidynReiman",
+          "Joe White",
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-pregnancy-bases-maternity-wear",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "legs-pants-legs_childpants": {
     "name": "Child pants",
@@ -38107,7 +49402,24 @@ window.itemMetadata = {
         "zPos": 20,
         "child": "legs/pants/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "legs/pants/child",
+        "notes": "",
+        "authors": [
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-clothes-for-children"
+        ]
+      }
+    ]
   },
   "legs-leggings-legs_leggings": {
     "name": "Leggings",
@@ -38176,7 +49488,51 @@ window.itemMetadata = {
         "female": "legs/leggings/thin/",
         "teen": "legs/leggings/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "legs/leggings/male",
+        "notes": "Original bases by Redshrike, thrust/shoot bases by Wulax, original overalls by ElizaWy, base animations adapted from v3 overalls by bluecarrot16, leggings by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "JaidynReiman",
+          "Mandi Paugh",
+          "William.Thompsonj",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-pants"
+        ]
+      },
+      {
+        "file": "legs/leggings",
+        "notes": "Original bases by Redshrike, thrust/shoot bases by Wulax, adapted from sara's leggings to v3 bases by bluecarrot16, jump/run/sit by JaidynReiman based on ElizaWy's and modified to match",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "JaidynReiman",
+          "Mandi Paugh",
+          "William.Thompsonj",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "http://opengameart.org/content/sara-wizard",
+          "https://opengameart.org/content/lpc-sara",
+          "https://opengameart.org/content/lpc-expanded-pants"
+        ]
+      }
+    ]
   },
   "legs-leggings-legs_leggings2": {
     "name": "Leggings 2",
@@ -38245,7 +49601,48 @@ window.itemMetadata = {
         "female": "legs/leggings2/thin/",
         "teen": "legs/leggings2/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "legs/leggings2/male",
+        "notes": "original overalls by ElizaWy, base animations adapted from v3 overalls by bluecarrot16, leggings by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "JaidynReiman",
+          "Mandi Paugh",
+          "William.Thompsonj",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-pants"
+        ]
+      },
+      {
+        "file": "legs/leggings2",
+        "notes": "original by ElizaWy, remaining frames",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-pants"
+        ]
+      }
+    ]
   },
   "legs-leggings-legs_hose": {
     "name": "Hose",
@@ -38314,7 +49711,48 @@ window.itemMetadata = {
         "female": "legs/hose/thin/",
         "teen": "legs/hose/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "legs/hose/male",
+        "notes": "Original bases by Redshrike, thrust/shoot bases by Wulax, original overalls and hose by ElizaWy, base animations adapted from v3 overalls by bluecarrot16, male hose by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "bluecarrot16",
+          "JaidynReiman",
+          "ElizaWy",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-pants"
+        ]
+      },
+      {
+        "file": "legs/hose",
+        "notes": "Original bases by Redshrike, thrust/shoot bases by Wulax, original by ElizaWy, remaining frames by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-pants"
+        ]
+      }
+    ]
   },
   "legs-shorts-legs_shorts": {
     "name": "Shorts",
@@ -38385,7 +49823,46 @@ window.itemMetadata = {
         "teen": "legs/shorts/shorts/thin/",
         "pregnant": "legs/shorts/shorts/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "legs/shorts/shorts/male",
+        "notes": "Original bases by Redshrike, thrust/shoot bases by Wulax, original overalls and shorts by ElizaWy, base animations adapted from v3 overalls by bluecarrot16, shorts by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Bluecarrot16",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-pants"
+        ]
+      },
+      {
+        "file": "legs/shorts/shorts",
+        "notes": "Original bases by Redshrike, thrust/shoot bases by Wulax, original shorts by ElizaWy, climb/jump/run/sit/emotes/revised combat by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-pants"
+        ]
+      }
+    ]
   },
   "legs-shorts-legs_shorts_short": {
     "name": "Short Shorts",
@@ -38456,7 +49933,46 @@ window.itemMetadata = {
         "teen": "legs/shorts/short_shorts/thin/",
         "pregnant": "legs/shorts/short_shorts/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "legs/shorts/short_shorts/male",
+        "notes": "Original bases by Redshrike, thrust/shoot bases by Wulax, original overalls and shorts by ElizaWy, base animations adapted from v3 overalls by bluecarrot16, shorts by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Bluecarrot16",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-pants"
+        ]
+      },
+      {
+        "file": "legs/shorts/short_shorts",
+        "notes": "Original bases by Redshrike, thrust/shoot bases by Wulax, original shorts by ElizaWy, climb/jump/run/sit/emotes/revised combat by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-pants"
+        ]
+      }
+    ]
   },
   "legs-skirts-legs_childskirts": {
     "name": "Child skirts",
@@ -38491,7 +50007,24 @@ window.itemMetadata = {
         "zPos": 20,
         "child": "legs/skirts/child/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "legs/skirts/child",
+        "notes": "",
+        "authors": [
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-clothes-for-children"
+        ]
+      }
+    ]
   },
   "legs-skirts-legs_skirts_plain": {
     "name": "Plain skirt",
@@ -38552,7 +50085,26 @@ window.itemMetadata = {
         "teen": "legs/skirts/plain/female/",
         "pregnant": "legs/skirts/plain/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "legs/skirts/plain",
+        "notes": "original by wulax, edited for female base by pvigier, edited for v3 base by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Pierre Vigier (pvigier)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
+        ]
+      }
+    ]
   },
   "legs-skirts-legs_skirts_slit": {
     "name": "Slit skirt",
@@ -38609,7 +50161,28 @@ window.itemMetadata = {
         "male": "legs/skirts/slit/female/",
         "female": "legs/skirts/slit/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "legs/skirts/slit",
+        "notes": "original \"TightDress\" by Nila122, edited to skirt by ElizaWy, extended to all animation frames and edited for v3 bases by bluecarrot16",
+        "authors": [
+          "Nila122",
+          "ElizaWy",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-clothes-and-hair",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "legs-skirts-legs_skirts_legion": {
     "name": "Legion skirt",
@@ -38672,7 +50245,27 @@ window.itemMetadata = {
         "pregnant": "legs/skirts/legion/female/",
         "teen": "legs/skirts/legion/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "legs/skirts/legion",
+        "notes": "original by Nila122 to legion, adapted to v3 bases by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-roman-armor",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "legs-skirts-legs_skirt_straight": {
     "name": "Straight skirt",
@@ -38731,7 +50324,24 @@ window.itemMetadata = {
         "pregnant": "legs/skirts/straight/female/",
         "teen": "legs/skirts/straight/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "legs/skirts/straight",
+        "notes": "original skirt by ElizaWy, extended to all animation frames and edited for v3 bases by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "legs-skirts-legs_skirt_belle": {
     "name": "Belle skirt",
@@ -38790,7 +50400,28 @@ window.itemMetadata = {
         "pregnant": "legs/skirts/belle/female/",
         "teen": "legs/skirts/belle/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "legs/skirts/belle",
+        "notes": "extended to all poses by makrohn, edited to v3 bases and animation cleanup by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Matthew Krohn (makrohn)",
+          "Lanea Zimmerman (Sharm)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-dress-in-combat-poses",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "legs-skirts-legs_skirt_overskirt": {
     "name": "Overskirt",
@@ -38849,7 +50480,28 @@ window.itemMetadata = {
         "pregnant": "legs/skirts/overskirt/female/",
         "teen": "legs/skirts/overskirt/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "legs/skirts/overskirt",
+        "notes": "original princess.xcf by Sharm, extended to all poses by makrohn, edited to v3 bases and animation cleanup by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Matthew Krohn (makrohn)",
+          "Lanea Zimmerman (Sharm)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-dress-in-combat-poses",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "feet-feet_armour": {
     "name": "Armour",
@@ -38895,7 +50547,41 @@ window.itemMetadata = {
         "pregnant": "feet/armour/plate/female/",
         "teen": "feet/armour/plate/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "feet/armour/plate",
+        "notes": "original by wulax, recolors by bigbeargames, edits for v3 base and recolors by bluecarrot16",
+        "authors": [
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
+        ]
+      },
+      {
+        "file": "feet/armour/plate/female",
+        "notes": "original by wulax, edited for female base by makrohn, recolors by bigbeargames, edits for v3 base and recolors by bluecarrot16",
+        "authors": [
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
+        ]
+      }
+    ]
   },
   "feet-shoes-feet_shoes_basic": {
     "name": "Basic Shoes",
@@ -38976,7 +50662,47 @@ window.itemMetadata = {
         "male": "feet/shoes/basic/male/",
         "muscular": "feet/shoes/basic/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "feet/shoes",
+        "notes": "original by wulax, edited for v3 base by bluecarrot16, Jump/Sit/Emote/Run/Revised Combat by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "bluecarrot16",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "http://opengameart.org/content/lpc-clothing-updates",
+          "https://opengameart.org/content/lpc-expanded-socks-shoes"
+        ]
+      },
+      {
+        "file": "feet/shoes/basic/thin",
+        "notes": "original by wulax, edited for female base by Joe White, edited for v3 base by bluecarrot16, Jump/Sit/Emote/Run/Revised Combat by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "Joe White",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "http://opengameart.org/content/lpc-clothing-updates",
+          "https://opengameart.org/content/lpc-expanded-socks-shoes"
+        ]
+      }
+    ]
   },
   "feet-shoes-feet_shoes_revised": {
     "name": "Revised Shoes",
@@ -39057,7 +50783,44 @@ window.itemMetadata = {
         "teen": "feet/shoes/revised/thin/",
         "pregnant": "feet/shoes/revised/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "feet/shoes/revised/male",
+        "notes": "original overalls and shoes by ElizaWy, base animations adapted from v3 overalls by bluecarrot16, shoes by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Bluecarrot16",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-socks-shoes"
+        ]
+      },
+      {
+        "file": "feet/shoes/revised",
+        "notes": "original by ElizaWy, remaining frames by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-socks-shoes"
+        ]
+      }
+    ]
   },
   "feet-shoes-feet_shoes_sara": {
     "name": "Sara Shoes",
@@ -39139,7 +50902,53 @@ window.itemMetadata = {
         "pregnant": "feet/shoes/sara/thin/",
         "teen": "feet/shoes/sara/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "feet/shoes/sara/thin",
+        "notes": "LPC Sara by Redshrike, contributed by William Thompsonj, Shoes Separated by Bluecarrot16, Jump/Sit/Emote/Run/Revised Combat by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "Bluecarrot16",
+          "Mandi Paugh",
+          "Stephen Challener (Redshrike)",
+          "William.Thompsonj"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 3.0+",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "http://opengameart.org/content/sara-wizard",
+          "https://opengameart.org/content/lpc-sara",
+          "https://opengameart.org/content/lpc-expanded-socks-shoes"
+        ]
+      },
+      {
+        "file": "feet/shoes/sara/male",
+        "notes": "LPC Sara by Redshrike, contributed by William Thompsonj, Shoes Separated by Bluecarrot16, Male Version and Jump/Sit/Emote/Run/Revised Combat by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "Bluecarrot16",
+          "Mandi Paugh",
+          "Stephen Challener (Redshrike)",
+          "William.Thompsonj"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 3.0+",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "http://opengameart.org/content/sara-wizard",
+          "https://opengameart.org/content/lpc-sara",
+          "https://opengameart.org/content/lpc-expanded-socks-shoes"
+        ]
+      }
+    ]
   },
   "feet-shoes-feet_shoes_ghillies": {
     "name": "Ghillies",
@@ -39220,7 +51029,29 @@ window.itemMetadata = {
         "male": "feet/shoes/ghillies/male/",
         "muscular": "feet/shoes/ghillies/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "feet/shoes/ghillies",
+        "notes": "original by pennomi, laetissima and makrohn; edited for v3 bases by bluecarrot16, Jump/Sit/Emote/Run/Revised Combat by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman",
+          "Thane Brimhall (pennomi)",
+          "laetissima",
+          "Matthew Krohn (makrohn)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-2-characters",
+          "http://opengameart.org/content/lpc-clothing-updates",
+          "https://opengameart.org/content/lpc-expanded-socks-shoes"
+        ]
+      }
+    ]
   },
   "feet-boots-feet_boots_basic": {
     "name": "Basic Boots",
@@ -39301,7 +51132,47 @@ window.itemMetadata = {
         "teen": "feet/boots/basic/thin/",
         "pregnant": "feet/boots/basic/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "feet/boots/basic",
+        "notes": "original by Nila122, edited for male and v3 bases by bluecarrot16, Jump/Sit/Emote/Run/Revised Combat by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "bluecarrot16",
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-clothes-and-hair",
+          "https://opengameart.org/content/lpc-expanded-socks-shoes"
+        ]
+      },
+      {
+        "file": "feet/boots/basic/thin",
+        "notes": "original by Nila122, edited for v3 bases by bluecarrot16, Jump/Sit/Emote/Run/Revised Combat by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "bluecarrot16",
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-clothes-and-hair",
+          "https://opengameart.org/content/lpc-expanded-socks-shoes"
+        ]
+      }
+    ]
   },
   "feet-boots-feet_boots_revised": {
     "name": "Revised Boots",
@@ -39382,7 +51253,46 @@ window.itemMetadata = {
         "teen": "feet/boots/revised/thin/",
         "pregnant": "feet/boots/revised/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "feet/boots/revised/male",
+        "notes": "original overalls and boots by ElizaWy, base animations adapted from v3 overalls by bluecarrot16, boots by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Bluecarrot16",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-socks-shoes"
+        ]
+      },
+      {
+        "file": "feet/boots/revised",
+        "notes": "original by ElizaWy, remaining frames by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-socks-shoes"
+        ]
+      }
+    ]
   },
   "feet-boots-feet_boots_fold": {
     "name": "Folded Rim Boots",
@@ -39463,7 +51373,25 @@ window.itemMetadata = {
         "teen": "feet/boots/fold/thin/",
         "pregnant": "feet/boots/fold/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "feet/boots/fold",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-kimono-relm",
+          "https://opengameart.org/content/lpc-expanded-socks-shoes"
+        ]
+      }
+    ]
   },
   "feet-boots-feet_boots_rim": {
     "name": "Rimmed Boots",
@@ -39544,7 +51472,25 @@ window.itemMetadata = {
         "teen": "feet/boots/rimmed/thin/",
         "pregnant": "feet/boots/rimmed/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "feet/boots/rimmed",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-kimono-relm",
+          "https://opengameart.org/content/lpc-expanded-socks-shoes"
+        ]
+      }
+    ]
   },
   "feet-shoe accessory-feet_plate_toe": {
     "name": "Plated Toe",
@@ -39601,7 +51547,25 @@ window.itemMetadata = {
         "teen": "feet/accessory/plate_toe/thin/",
         "pregnant": "feet/accessory/plate_toe/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "feet/accessory/plate_toe",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-kimono-relm",
+          "https://opengameart.org/content/lpc-expanded-socks-shoes"
+        ]
+      }
+    ]
   },
   "feet-shoe accessory-feet_plate_toe_thick": {
     "name": "Thick Plated Toe",
@@ -39658,7 +51622,25 @@ window.itemMetadata = {
         "teen": "feet/accessory/plate_toe_thick/thin/",
         "pregnant": "feet/accessory/plate_toe_thick/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "feet/accessory/plate_toe_thick",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-kimono-relm",
+          "https://opengameart.org/content/lpc-expanded-socks-shoes"
+        ]
+      }
+    ]
   },
   "feet-socks-feet_socks_ankle": {
     "name": "Ankle Socks",
@@ -39729,7 +51711,44 @@ window.itemMetadata = {
         "teen": "feet/socks/ankle/thin/",
         "pregnant": "feet/socks/ankle/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "feet/socks/ankle/male",
+        "notes": "original overalls and thin socks by ElizaWy, base animations adapted from v3 overalls by bluecarrot16, socks by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Bluecarrot16",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-socks-shoes"
+        ]
+      },
+      {
+        "file": "feet/socks/ankle",
+        "notes": "original by ElizaWy, remaining frames by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-socks-shoes"
+        ]
+      }
+    ]
   },
   "feet-socks-feet_socks_high": {
     "name": "High Socks",
@@ -39800,7 +51819,44 @@ window.itemMetadata = {
         "teen": "feet/socks/high/thin/",
         "pregnant": "feet/socks/high/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "feet/socks/high/male",
+        "notes": "original overalls and thin socks by ElizaWy, base animations adapted from v3 overalls by bluecarrot16, socks by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Bluecarrot16",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-socks-shoes"
+        ]
+      },
+      {
+        "file": "feet/socks/high",
+        "notes": "original by ElizaWy, remaining frames by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Clothing",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more",
+          "https://opengameart.org/content/lpc-expanded-socks-shoes"
+        ]
+      }
+    ]
   },
   "feet-socks-feet_socks_tabi": {
     "name": "Tabi Socks",
@@ -39873,7 +51929,27 @@ window.itemMetadata = {
         "teen": "feet/socks/tabi/thin/",
         "pregnant": "feet/socks/tabi/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "feet/socks/tabi",
+        "notes": "",
+        "authors": [
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-kimono-relm",
+          "https://opengameart.org/content/lpc-expanded-socks-shoes"
+        ]
+      }
+    ]
   },
   "feet-feet_slippers": {
     "name": "Slippers",
@@ -39945,7 +52021,28 @@ window.itemMetadata = {
         "teen": "feet/slippers/thin/",
         "pregnant": "feet/slippers/thin/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "feet/slippers",
+        "notes": "original by Luke Mehl, Joe White did thrust/shoot animations, edited for v3 bases and male sprites by bluecarrot16, Jump/Sit/Emote/Run/Revised Combat by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman",
+          "Joe White",
+          "Luke Mehl"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/thin-mage-clothing-set",
+          "http://opengameart.org/content/lpc-clothing-updates",
+          "https://opengameart.org/content/lpc-expanded-socks-shoes"
+        ]
+      }
+    ]
   },
   "feet-feet_sandals": {
     "name": "Sandals",
@@ -40025,7 +52122,30 @@ window.itemMetadata = {
         "male": "feet/sandals/male/",
         "muscular": "feet/sandals/male/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "feet/sandals",
+        "notes": "edited for v3 bases by bluecarrot16, Jump/Sit/Emote/Run/Revised Combat by JaidynReiman",
+        "authors": [
+          "Nila122",
+          "JaidynReiman",
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-roman-armor",
+          "http://opengameart.org/content/lpc-clothing-updates",
+          "https://opengameart.org/content/lpc-expanded-socks-shoes"
+        ]
+      }
+    ]
   },
   "feet-feet_hoofs": {
     "name": "Hoofs",
@@ -40084,7 +52204,39 @@ window.itemMetadata = {
         "teen": "feet/hoofs/female/",
         "pregnant": "feet/hoofs/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "feet/hoofs",
+        "notes": "",
+        "authors": [
+          "Evert"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-faun-and-minotaur"
+        ]
+      },
+      {
+        "file": "feet/hoofs/female",
+        "notes": "edited for v3 female bases by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Evert"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-faun-and-minotaur",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ]
   },
   "tools-tool_rod": {
     "name": "Rod",
@@ -40133,7 +52285,26 @@ window.itemMetadata = {
         "pregnant": "tools/rod/foreground/",
         "teen": "tools/rod/foreground/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "tools/rod",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Pierre Vigier (pvigier)",
+          "Tuomo Untinen (reemax)",
+          "Johannes Sjölund (wulax)",
+          "and Inboxninja"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-hand-tools"
+        ]
+      }
+    ]
   },
   "tools-tool_smash": {
     "name": "Smash",
@@ -40192,7 +52363,26 @@ window.itemMetadata = {
         "pregnant": "tools/smash/foreground/",
         "teen": "tools/smash/foreground/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "tools/smash",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Pierre Vigier (pvigier)",
+          "Tuomo Untinen (reemax)",
+          "Johannes Sjölund (wulax)",
+          "and Inboxninja"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-hand-tools"
+        ]
+      }
+    ]
   },
   "tools-tool_thrust": {
     "name": "Thrust",
@@ -40241,7 +52431,26 @@ window.itemMetadata = {
         "pregnant": "tools/thrust/foreground/",
         "teen": "tools/thrust/foreground/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "tools/thrust",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Pierre Vigier (pvigier)",
+          "Tuomo Untinen (reemax)",
+          "Johannes Sjölund (wulax)",
+          "and Inboxninja"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-hand-tools"
+        ]
+      }
+    ]
   },
   "tools-tool_whip": {
     "name": "Whip",
@@ -40290,7 +52499,24 @@ window.itemMetadata = {
         "pregnant": "tools/whip/",
         "teen": "tools/whip/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "tools/whip",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "GPL 3.0",
+          "CC-BY 4.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-more-weapons"
+        ]
+      }
+    ]
   },
   "weapons-shield-shield": {
     "name": "Shield",
@@ -40335,7 +52561,275 @@ window.itemMetadata = {
         "female": "shield/female/",
         "pregnant": "shield/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/male/crusader.png",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      },
+      {
+        "file": "shield/female/crusader.png",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      },
+      {
+        "file": "shield/male/spartan.png",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      },
+      {
+        "file": "shield/female/spartan.png",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      },
+      {
+        "file": "shield/male/round_black.png",
+        "notes": "?",
+        "authors": [
+          "Johannes Sjölund (wulax)",
+          "Michael Whitlock (bigbeargames)",
+          "DarkwallLKE",
+          "Tuomo Untinen (reemax)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-shields-pack"
+        ]
+      },
+      {
+        "file": "shield/female/round_black.png",
+        "notes": "?",
+        "authors": [
+          "Johannes Sjölund (wulax)",
+          "Michael Whitlock (bigbeargames)",
+          "DarkwallLKE",
+          "Tuomo Untinen (reemax)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-shields-pack"
+        ]
+      },
+      {
+        "file": "shield/male/round_brown.png",
+        "notes": "",
+        "authors": [
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
+        ]
+      },
+      {
+        "file": "shield/female/round_brown.png",
+        "notes": "",
+        "authors": [
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
+        ]
+      },
+      {
+        "file": "shield/male/round_gold.png",
+        "notes": "?",
+        "authors": [
+          "Johannes Sjölund (wulax)",
+          "Michael Whitlock (bigbeargames)",
+          "DarkwallLKE",
+          "Tuomo Untinen (reemax)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-shields-pack"
+        ]
+      },
+      {
+        "file": "shield/female/round_gold.png",
+        "notes": "?",
+        "authors": [
+          "Johannes Sjölund (wulax)",
+          "Michael Whitlock (bigbeargames)",
+          "DarkwallLKE",
+          "Tuomo Untinen (reemax)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-shields-pack"
+        ]
+      },
+      {
+        "file": "shield/male/round_green.png",
+        "notes": "?",
+        "authors": [
+          "Johannes Sjölund (wulax)",
+          "Michael Whitlock (bigbeargames)",
+          "DarkwallLKE",
+          "Tuomo Untinen (reemax)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-shields-pack"
+        ]
+      },
+      {
+        "file": "shield/female/round_green.png",
+        "notes": "?",
+        "authors": [
+          "Johannes Sjölund (wulax)",
+          "Michael Whitlock (bigbeargames)",
+          "DarkwallLKE",
+          "Tuomo Untinen (reemax)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-shields-pack"
+        ]
+      },
+      {
+        "file": "shield/male/round_silver.png",
+        "notes": "?",
+        "authors": [
+          "Johannes Sjölund (wulax)",
+          "Michael Whitlock (bigbeargames)",
+          "DarkwallLKE",
+          "Tuomo Untinen (reemax)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-shields-pack"
+        ]
+      },
+      {
+        "file": "shield/female/round_silver.png",
+        "notes": "?",
+        "authors": [
+          "Johannes Sjölund (wulax)",
+          "Michael Whitlock (bigbeargames)",
+          "DarkwallLKE",
+          "Tuomo Untinen (reemax)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-shields-pack"
+        ]
+      },
+      {
+        "file": "shield/male/round_yellow.png",
+        "notes": "?",
+        "authors": [
+          "Johannes Sjölund (wulax)",
+          "Michael Whitlock (bigbeargames)",
+          "DarkwallLKE",
+          "Tuomo Untinen (reemax)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-shields-pack"
+        ]
+      },
+      {
+        "file": "shield/female/round_yellow.png",
+        "notes": "?",
+        "authors": [
+          "Johannes Sjölund (wulax)",
+          "Michael Whitlock (bigbeargames)",
+          "DarkwallLKE",
+          "Tuomo Untinen (reemax)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-shields-pack"
+        ]
+      }
+    ]
   },
   "weapons-shield-shield_kite": {
     "name": "Kite",
@@ -40382,7 +52876,27 @@ window.itemMetadata = {
         "female": "shield/kite/female/",
         "pregnant": "shield/kite/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/kite",
+        "notes": "",
+        "authors": [
+          "DarkwallLKE",
+          "Tuomo Untinen (reemax)",
+          "Michael Whitlock (bigbeargames)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-kite-shield",
+          "https://opengameart.org/content/lpc-shields-pack"
+        ]
+      }
+    ]
   },
   "weapons-shield-shield_spartan": {
     "name": "Spartan shield",
@@ -40427,7 +52941,23 @@ window.itemMetadata = {
         "female": "shield/spartan/fg/female/",
         "pregnant": "shield/spartan/fg/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/spartan",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-two-engrailed shield-shield_two_engrailed": {
     "name": "Two engrailed shield",
@@ -40473,7 +53003,23 @@ window.itemMetadata = {
         "female": "shield/two_engrailed/paint/fg/female/",
         "pregnant": "shield/two_engrailed/paint/fg/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/two_engrailed",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-two-engrailed shield-shield_two_engrailed_trim": {
     "name": "Two engrailed shield trim",
@@ -40519,7 +53065,23 @@ window.itemMetadata = {
         "female": "shield/two_engrailed/trim/fg/female/",
         "pregnant": "shield/two_engrailed/trim/fg/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/two_engrailed",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-two-engrailed shield-shield_crusader": {
     "name": "Crusader shield",
@@ -40565,7 +53127,23 @@ window.itemMetadata = {
         "female": "shield/crusader/fg/female/",
         "pregnant": "shield/crusader/fg/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/crusader",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-two-engrailed shield-shield_plus": {
     "name": "Plus shield",
@@ -40611,7 +53189,23 @@ window.itemMetadata = {
         "female": "shield/plus/fg/female/",
         "pregnant": "shield/plus/fg/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/plus",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-scutum shield-shield_scutum": {
     "name": "Scutum shield",
@@ -40657,7 +53251,23 @@ window.itemMetadata = {
         "female": "shield/scutum/paint/fg/female/",
         "pregnant": "shield/scutum/paint/fg/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/scutum",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-scutum shield-shield_scutum_trim": {
     "name": "Scutum shield trim",
@@ -40703,7 +53313,23 @@ window.itemMetadata = {
         "female": "shield/scutum_trim/fg/female/",
         "pregnant": "shield/scutum_trim/fg/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-shield_heater_wood": {
     "name": "Heater Shield Base",
@@ -40768,7 +53394,24 @@ window.itemMetadata = {
         "pregnant": "shield/heater/original/wood/fg/",
         "teen": "shield/heater/original/wood/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/original/wood",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-shield_heater_paint": {
     "name": "Heater Shield Paint",
@@ -40901,7 +53544,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/original/paint/fg/",
         "teen": "shield/heater/original/paint/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/original/paint",
+        "notes": "original by ElizaWy, extended to all animation frames and v3 character base by bluecarrot16, expanded by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Props/Shield%2001%20-%20Heater%20Shield",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-shield_heater_trim": {
     "name": "Heater Shield Trim",
@@ -40968,7 +53629,24 @@ window.itemMetadata = {
         "pregnant": "shield/heater/original/trim/bg/",
         "teen": "shield/heater/original/trim/bg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/original/trim",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_barry": {
     "name": "barry",
@@ -41051,7 +53729,24 @@ window.itemMetadata = {
         "pregnant": "shield/heater/original/pattern/barry/fg/",
         "teen": "shield/heater/original/pattern/barry/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/original/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_bend_sinister": {
     "name": "bend_sinister",
@@ -41134,7 +53829,24 @@ window.itemMetadata = {
         "pregnant": "shield/heater/original/pattern/bend_sinister/fg/",
         "teen": "shield/heater/original/pattern/bend_sinister/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/original/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_bend": {
     "name": "bend",
@@ -41217,7 +53929,24 @@ window.itemMetadata = {
         "pregnant": "shield/heater/original/pattern/bend/fg/",
         "teen": "shield/heater/original/pattern/bend/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/original/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_bendy_sinister": {
     "name": "bendy_sinister",
@@ -41300,7 +54029,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/original/pattern/bendy_sinister/fg/",
         "teen": "shield/heater/original/pattern/bendy_sinister/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/original/pattern/bendy_sinister",
+        "notes": "pattern by ElizaWy, mapped by bluecarrot / Sander Franken, remaining angles finished by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_bendy": {
     "name": "bendy",
@@ -41383,7 +54130,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/original/pattern/bendy/fg/",
         "teen": "shield/heater/original/pattern/bendy/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/original/pattern/bendy",
+        "notes": "pattern by ElizaWy, mapped by bluecarrot / Sander Franken, remaining angles finished by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_bordure": {
     "name": "bordure",
@@ -41466,7 +54231,24 @@ window.itemMetadata = {
         "pregnant": "shield/heater/original/pattern/bordure/fg/",
         "teen": "shield/heater/original/pattern/bordure/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/original/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_chevron_inverted": {
     "name": "chevron_inverted",
@@ -41549,7 +54331,24 @@ window.itemMetadata = {
         "pregnant": "shield/heater/original/pattern/chevron_inverted/fg/",
         "teen": "shield/heater/original/pattern/chevron_inverted/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/original/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_chevron": {
     "name": "chevron",
@@ -41632,7 +54431,24 @@ window.itemMetadata = {
         "pregnant": "shield/heater/original/pattern/chevron/fg/",
         "teen": "shield/heater/original/pattern/chevron/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/original/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_chief": {
     "name": "chief",
@@ -41715,7 +54531,24 @@ window.itemMetadata = {
         "pregnant": "shield/heater/original/pattern/chief/fg/",
         "teen": "shield/heater/original/pattern/chief/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/original/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_cross": {
     "name": "cross",
@@ -41798,7 +54631,24 @@ window.itemMetadata = {
         "pregnant": "shield/heater/original/pattern/cross/fg/",
         "teen": "shield/heater/original/pattern/cross/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/original/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_fess": {
     "name": "fess",
@@ -41881,7 +54731,24 @@ window.itemMetadata = {
         "pregnant": "shield/heater/original/pattern/fess/fg/",
         "teen": "shield/heater/original/pattern/fess/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/original/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_lozengy": {
     "name": "lozengy",
@@ -41964,7 +54831,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/original/pattern/lozengy/fg/",
         "teen": "shield/heater/original/pattern/lozengy/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/original/pattern/lozengy",
+        "notes": "pattern by ElizaWy, mapped by bluecarrot / Sander Franken, remaining angles finished by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_pale": {
     "name": "pale",
@@ -42047,7 +54932,24 @@ window.itemMetadata = {
         "pregnant": "shield/heater/original/pattern/pale/fg/",
         "teen": "shield/heater/original/pattern/pale/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/original/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_pall": {
     "name": "pall",
@@ -42130,7 +55032,24 @@ window.itemMetadata = {
         "pregnant": "shield/heater/original/pattern/pall/fg/",
         "teen": "shield/heater/original/pattern/pall/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/original/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_paly": {
     "name": "paly",
@@ -42213,7 +55132,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/original/pattern/paly/fg/",
         "teen": "shield/heater/original/pattern/paly/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/original/pattern/paly",
+        "notes": "pattern by ElizaWy, mapped by bluecarrot / Sander Franken, remaining angles finished by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_bend_sinister": {
     "name": "per_bend_sinister",
@@ -42296,7 +55233,24 @@ window.itemMetadata = {
         "pregnant": "shield/heater/original/pattern/per_bend_sinister/fg/",
         "teen": "shield/heater/original/pattern/per_bend_sinister/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/original/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_bend": {
     "name": "per_bend",
@@ -42379,7 +55333,24 @@ window.itemMetadata = {
         "pregnant": "shield/heater/original/pattern/per_bend/fg/",
         "teen": "shield/heater/original/pattern/per_bend/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/original/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_chevron_inverted": {
     "name": "per_chevron_inverted",
@@ -42462,7 +55433,24 @@ window.itemMetadata = {
         "pregnant": "shield/heater/original/pattern/per_chevron_inverted/fg/",
         "teen": "shield/heater/original/pattern/per_chevron_inverted/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/original/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_chevron": {
     "name": "per_chevron",
@@ -42545,7 +55533,24 @@ window.itemMetadata = {
         "pregnant": "shield/heater/original/pattern/per_chevron/fg/",
         "teen": "shield/heater/original/pattern/per_chevron/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/original/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_fess": {
     "name": "per_fess",
@@ -42628,7 +55633,24 @@ window.itemMetadata = {
         "pregnant": "shield/heater/original/pattern/per_fess/fg/",
         "teen": "shield/heater/original/pattern/per_fess/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/original/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_pale": {
     "name": "per_pale",
@@ -42711,7 +55733,24 @@ window.itemMetadata = {
         "pregnant": "shield/heater/original/pattern/per_pale/fg/",
         "teen": "shield/heater/original/pattern/per_pale/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/original/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_saltire": {
     "name": "per_saltire",
@@ -42794,7 +55833,24 @@ window.itemMetadata = {
         "pregnant": "shield/heater/original/pattern/per_saltire/fg/",
         "teen": "shield/heater/original/pattern/per_saltire/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/original/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_quarterly": {
     "name": "quarterly",
@@ -42877,7 +55933,24 @@ window.itemMetadata = {
         "pregnant": "shield/heater/original/pattern/quarterly/fg/",
         "teen": "shield/heater/original/pattern/quarterly/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/original/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_saltire": {
     "name": "saltire",
@@ -42960,7 +56033,24 @@ window.itemMetadata = {
         "pregnant": "shield/heater/original/pattern/saltire/fg/",
         "teen": "shield/heater/original/pattern/saltire/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/original/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-shield_heater_revised_wood": {
     "name": "Revised Heater Shield Base",
@@ -43025,7 +56115,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/revised/wood/fg/",
         "teen": "shield/heater/revised/wood/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/revised/wood",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-shield_heater_revised_paint": {
     "name": "Revised Heater Shield Paint",
@@ -43158,7 +56266,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/revised/paint/fg/",
         "teen": "shield/heater/revised/paint/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/revised/paint",
+        "notes": "original by ElizaWy, extended to all animation frames and v3 character base by bluecarrot16, adjusted postioning by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Props/Shield%2001%20-%20Heater%20Shield",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-shield_heater_revised_trim": {
     "name": "Revised Heater Shield Trim",
@@ -43225,7 +56351,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/revised/trim/fg/",
         "teen": "shield/heater/revised/trim/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/revised/trim",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_barry": {
     "name": "revised_barry",
@@ -43308,7 +56452,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/revised/pattern/barry/fg/",
         "teen": "shield/heater/revised/pattern/barry/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/revised/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_bend_sinister": {
     "name": "revised_bend_sinister",
@@ -43391,7 +56553,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/revised/pattern/bend_sinister/fg/",
         "teen": "shield/heater/revised/pattern/bend_sinister/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/revised/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_bend": {
     "name": "revised_bend",
@@ -43474,7 +56654,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/revised/pattern/bend/fg/",
         "teen": "shield/heater/revised/pattern/bend/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/revised/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_bendy_sinister": {
     "name": "revised_bendy_sinister",
@@ -43557,7 +56755,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/revised/pattern/bendy_sinister/fg/",
         "teen": "shield/heater/revised/pattern/bendy_sinister/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/revised/pattern/bendy_sinister",
+        "notes": "pattern by ElizaWy, mapped by bluecarrot / Sander Franken, remaining angles finished by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_bendy": {
     "name": "revised_bendy",
@@ -43640,7 +56856,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/revised/pattern/bendy/fg/",
         "teen": "shield/heater/revised/pattern/bendy/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/revised/pattern/bendy",
+        "notes": "pattern by ElizaWy, mapped by bluecarrot / Sander Franken, remaining angles finished by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_bordure": {
     "name": "revised_bordure",
@@ -43723,7 +56957,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/revised/pattern/bordure/fg/",
         "teen": "shield/heater/revised/pattern/bordure/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/revised/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_chevron_inverted": {
     "name": "revised_chevron_inverted",
@@ -43806,7 +57058,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/revised/pattern/chevron_inverted/fg/",
         "teen": "shield/heater/revised/pattern/chevron_inverted/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/revised/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_chevron": {
     "name": "revised_chevron",
@@ -43889,7 +57159,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/revised/pattern/chevron/fg/",
         "teen": "shield/heater/revised/pattern/chevron/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/revised/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_chief": {
     "name": "revised_chief",
@@ -43972,7 +57260,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/revised/pattern/chief/fg/",
         "teen": "shield/heater/revised/pattern/chief/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/revised/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_cross": {
     "name": "revised_cross",
@@ -44055,7 +57361,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/revised/pattern/cross/fg/",
         "teen": "shield/heater/revised/pattern/cross/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/revised/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_fess": {
     "name": "revised_fess",
@@ -44138,7 +57462,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/revised/pattern/fess/fg/",
         "teen": "shield/heater/revised/pattern/fess/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/revised/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_lozengy": {
     "name": "revised_lozengy",
@@ -44221,7 +57563,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/revised/pattern/lozengy/fg/",
         "teen": "shield/heater/revised/pattern/lozengy/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/revised/pattern/lozengy",
+        "notes": "pattern by ElizaWy, mapped by bluecarrot / Sander Franken, remaining angles finished by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_pale": {
     "name": "revised_pale",
@@ -44304,7 +57664,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/revised/pattern/pale/fg/",
         "teen": "shield/heater/revised/pattern/pale/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/revised/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_pall": {
     "name": "revised_pall",
@@ -44387,7 +57765,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/revised/pattern/pall/fg/",
         "teen": "shield/heater/revised/pattern/pall/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/revised/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_paly": {
     "name": "revised_paly",
@@ -44470,7 +57866,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/revised/pattern/paly/fg/",
         "teen": "shield/heater/revised/pattern/paly/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/revised/pattern/paly",
+        "notes": "pattern by ElizaWy, mapped by bluecarrot / Sander Franken, remaining angles finished by JaidynReiman",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_bend_sinister": {
     "name": "revised_per_bend_sinister",
@@ -44553,7 +57967,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/revised/pattern/per_bend_sinister/fg/",
         "teen": "shield/heater/revised/pattern/per_bend_sinister/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/revised/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_bend": {
     "name": "revised_per_bend",
@@ -44636,7 +58068,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/revised/pattern/per_bend/fg/",
         "teen": "shield/heater/revised/pattern/per_bend/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/revised/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_chevron_inverted": {
     "name": "revised_per_chevron_inverted",
@@ -44719,7 +58169,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/revised/pattern/per_chevron_inverted/fg/",
         "teen": "shield/heater/revised/pattern/per_chevron_inverted/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/revised/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_chevron": {
     "name": "revised_per_chevron",
@@ -44802,7 +58270,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/revised/pattern/per_chevron/fg/",
         "teen": "shield/heater/revised/pattern/per_chevron/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/revised/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_fess": {
     "name": "revised_per_fess",
@@ -44885,7 +58371,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/revised/pattern/per_fess/fg/",
         "teen": "shield/heater/revised/pattern/per_fess/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/revised/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_pale": {
     "name": "revised_per_pale",
@@ -44968,7 +58472,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/revised/pattern/per_pale/fg/",
         "teen": "shield/heater/revised/pattern/per_pale/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/revised/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_saltire": {
     "name": "revised_per_saltire",
@@ -45051,7 +58573,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/revised/pattern/per_saltire/fg/",
         "teen": "shield/heater/revised/pattern/per_saltire/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/revised/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_quarterly": {
     "name": "revised_quarterly",
@@ -45134,7 +58674,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/revised/pattern/quarterly/fg/",
         "teen": "shield/heater/revised/pattern/quarterly/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/revised/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_saltire": {
     "name": "revised_saltire",
@@ -45217,7 +58775,25 @@ window.itemMetadata = {
         "pregnant": "shield/heater/revised/pattern/saltire/fg/",
         "teen": "shield/heater/revised/pattern/saltire/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "shield/heater/revised/pattern",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-shields"
+        ]
+      }
+    ]
   },
   "weapons-ranged-weapon_ranged_crossbow": {
     "name": "Crossbow",
@@ -45262,7 +58838,23 @@ window.itemMetadata = {
         "female": "weapon/ranged/crossbow/foreground/",
         "pregnant": "weapon/ranged/crossbow/foreground/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/ranged/crossbow",
+        "notes": "original by drjamgo, modified for v3 character bases and split into layers by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "drjamgo@hotmail.com"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-crossbow-final"
+        ]
+      }
+    ]
   },
   "weapons-ranged-weapon_ranged_slingshot": {
     "name": "Slingshot",
@@ -45307,7 +58899,24 @@ window.itemMetadata = {
         "female": "weapon/ranged/slingshot/background/",
         "pregnant": "weapon/ranged/slingshot/background/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/ranged/slingshot",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "GPL 3.0",
+          "CC-BY 4.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-more-weapons"
+        ]
+      }
+    ]
   },
   "weapons-ranged-weapon_ranged_boomerang": {
     "name": "Boomerang",
@@ -45346,7 +58955,24 @@ window.itemMetadata = {
         "female": "weapon/ranged/boomerang/",
         "pregnant": "weapon/ranged/boomerang/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/ranged/boomerang",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "GPL 3.0",
+          "CC-BY 4.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-more-weapons"
+        ]
+      }
+    ]
   },
   "weapons-ranged-bow-weapon_ranged_bow_arrow": {
     "name": "Ammo",
@@ -45381,7 +59007,24 @@ window.itemMetadata = {
         "pregnant": "weapon/ranged/bow/arrow/",
         "teen": "weapon/ranged/bow/arrow/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/ranged/bow/arrow",
+        "notes": "",
+        "authors": [
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
+        ]
+      }
+    ]
   },
   "weapons-ranged-bow-weapon_ranged_bow_great": {
     "name": "Great",
@@ -45454,7 +59097,26 @@ window.itemMetadata = {
         "pregnant": "weapon/ranged/bow/great/walk/foreground/",
         "teen": "weapon/ranged/bow/great/walk/foreground/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/ranged/bow/great",
+        "notes": "modified by daneeklu, from \"normal\" bow by wulax; walk animations by pvigier; split into layers and tweaked for v3 character bases by bluecarrot16",
+        "authors": [
+          "Daniel Eddeland (daneeklu)",
+          "gr3yh47",
+          "Johannes Sjölund (wulax)",
+          "Pierre Vigier (pvigier)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident",
+          "https://opengameart.org/content/lpc-walk-animations-for-bows"
+        ]
+      }
+    ]
   },
   "weapons-ranged-bow-weapon_ranged_bow_normal": {
     "name": "Normal",
@@ -45527,7 +59189,26 @@ window.itemMetadata = {
         "pregnant": "weapon/ranged/bow/normal/walk/foreground/",
         "teen": "weapon/ranged/bow/normal/walk/foreground/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/ranged/bow/normal",
+        "notes": "original by wulax, walk animations by pvigier, split into layers and tweaked for v3 character bases by bluecarrot16. pvigier has agreed to license this sheet as OGA-BY 3.0+.",
+        "authors": [
+          "Johannes Sjölund (wulax)",
+          "Pierre Vigier (pvigier)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "GPL 3.0",
+          "CC-BY 4.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-walk-animations-for-bows"
+        ]
+      }
+    ]
   },
   "weapons-ranged-bow-weapon_ranged_bow_recurve": {
     "name": "Recurve",
@@ -45600,7 +59281,26 @@ window.itemMetadata = {
         "pregnant": "weapon/ranged/bow/recurve/walk/foreground/",
         "teen": "weapon/ranged/bow/recurve/walk/foreground/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/ranged/bow/recurve",
+        "notes": "modified by daneeklu, from \"normal\" bow by wulax; walk animations by pvigier; split into layers and tweaked for v3 character bases by bluecarrot16",
+        "authors": [
+          "Daniel Eddeland (daneeklu)",
+          "gr3yh47",
+          "Johannes Sjölund (wulax)",
+          "Pierre Vigier (pvigier)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident",
+          "https://opengameart.org/content/lpc-walk-animations-for-bows"
+        ]
+      }
+    ]
   },
   "weapons-sword-weapon_sword_dagger": {
     "name": "Dagger",
@@ -45645,7 +59345,27 @@ window.itemMetadata = {
         "female": "weapon/sword/dagger/behind/",
         "pregnant": "weapon/sword/dagger/behind/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/sword/dagger",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Johannes Sjölund (wulax)",
+          "Matthew Krohn (makrohn)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-extended-weapon-animations"
+        ]
+      }
+    ]
   },
   "weapons-sword-weapon_sword_glowsword": {
     "name": "Glowsword",
@@ -45707,7 +59427,27 @@ window.itemMetadata = {
         "female": "weapon/sword/glowsword/attack_slash/",
         "pregnant": "weapon/sword/glowsword/attack_slash/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/sword/glowsword",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "tskaufma",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-glow-sword",
+          "https://opengameart.org/content/lpc-extended-weapon-animations"
+        ]
+      }
+    ]
   },
   "weapons-sword-weapon_sword_longsword": {
     "name": "Longsword",
@@ -45800,7 +59540,25 @@ window.itemMetadata = {
         "female": "weapon/sword/longsword/attack_thrust/",
         "pregnant": "weapon/sword/longsword/attack_thrust/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/sword/longsword",
+        "notes": "",
+        "authors": [
+          "Johannes Sjölund (wulax)",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-extended-weapon-animations"
+        ]
+      }
+    ]
   },
   "weapons-sword-weapon_sword_rapier": {
     "name": "Rapier",
@@ -45861,7 +59619,25 @@ window.itemMetadata = {
         "female": "weapon/sword/rapier/attack_slash/",
         "pregnant": "weapon/sword/rapier/attack_slash/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/sword/rapier",
+        "notes": "",
+        "authors": [
+          "Johannes Sjölund (wulax)",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-extended-weapon-animations"
+        ]
+      }
+    ]
   },
   "weapons-sword-weapon_sword_saber": {
     "name": "Saber",
@@ -45922,7 +59698,26 @@ window.itemMetadata = {
         "female": "weapon/sword/saber/attack_slash/",
         "pregnant": "weapon/sword/saber/attack_slash/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/sword/saber",
+        "notes": "",
+        "authors": [
+          "Daniel Eddeland (daneeklu)",
+          "Johannes Sjölund (wulax)",
+          "gr3yh47",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-extended-weapon-animations"
+        ]
+      }
+    ]
   },
   "weapons-sword-weapon_sword_katana": {
     "name": "Katana",
@@ -45985,7 +59780,22 @@ window.itemMetadata = {
         "female": "weapon/sword/katana/slash/behind/",
         "pregnant": "weapon/sword/katana/slash/behind/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/sword/katana",
+        "notes": "",
+        "authors": [
+          "Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-dcss-swords"
+        ]
+      }
+    ]
   },
   "weapons-sword-weapon_sword_scimitar": {
     "name": "Scimitar",
@@ -46048,7 +59858,22 @@ window.itemMetadata = {
         "female": "weapon/sword/scimitar/slash/behind/",
         "pregnant": "weapon/sword/scimitar/slash/behind/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/sword/scimitar",
+        "notes": "",
+        "authors": [
+          "Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-dcss-swords"
+        ]
+      }
+    ]
   },
   "weapons-sword-weapon_sword_longsword_alt": {
     "name": "Longsword alt",
@@ -46111,7 +59936,22 @@ window.itemMetadata = {
         "female": "weapon/sword/longsword_alt/slash/behind/",
         "pregnant": "weapon/sword/longsword_alt/slash/behind/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/sword/longsword_alt",
+        "notes": "",
+        "authors": [
+          "Pierre Vigier and DCSS artists (see https://github.com/crawl/tiles/blob/master/ARTISTS.md)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-dcss-swords"
+        ]
+      }
+    ]
   },
   "weapons-sword-weapon_sword_arming": {
     "name": "Arming Sword",
@@ -46230,7 +60070,23 @@ window.itemMetadata = {
         "pregnant": "weapon/sword/arming/attack_halfslash/fg/",
         "teen": "weapon/sword/arming/attack_halfslash/fg/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/sword/arming",
+        "notes": "",
+        "authors": [
+          "ElizaWy; walk and down by JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Props/Sword%2001%20-%20Arming%20Sword",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ]
   },
   "weapons-blunt-weapon_blunt_flail": {
     "name": "Flail",
@@ -46291,7 +60147,25 @@ window.itemMetadata = {
         "female": "weapon/blunt/flail/attack_slash/",
         "pregnant": "weapon/blunt/flail/attack_slash/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/blunt/flail",
+        "notes": "",
+        "authors": [
+          "Benjamin K. Smith (BenCreating)",
+          "bluecarrot16",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-weapons"
+        ]
+      }
+    ]
   },
   "weapons-blunt-weapon_blunt_mace": {
     "name": "Mace",
@@ -46352,7 +60226,25 @@ window.itemMetadata = {
         "female": "weapon/blunt/mace/attack_slash/",
         "pregnant": "weapon/blunt/mace/attack_slash/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/blunt/mace",
+        "notes": "",
+        "authors": [
+          "Johannes Sjölund (wulax)",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-extended-weapon-animations"
+        ]
+      }
+    ]
   },
   "weapons-blunt-weapon_blunt_waraxe": {
     "name": "Waraxe",
@@ -46413,7 +60305,25 @@ window.itemMetadata = {
         "female": "weapon/blunt/waraxe/attack_slash/",
         "pregnant": "weapon/blunt/waraxe/attack_slash/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/blunt/waraxe",
+        "notes": "",
+        "authors": [
+          "Benjamin K. Smith (BenCreating)",
+          "bluecarrot16",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-weapons"
+        ]
+      }
+    ]
   },
   "weapons-blunt-weapon_blunt_club": {
     "name": "Club",
@@ -46460,7 +60370,24 @@ window.itemMetadata = {
         "female": "weapon/blunt/club/background/",
         "pregnant": "weapon/blunt/club/background/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/blunt/club",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "GPL 3.0",
+          "CC-BY 4.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-more-weapons"
+        ]
+      }
+    ]
   },
   "weapons-polearm-weapon_polearm_cane": {
     "name": "Cane",
@@ -46493,7 +60420,23 @@ window.itemMetadata = {
         "female": "weapon/polearm/cane/female/",
         "pregnant": "weapon/polearm/cane/female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/polearm/cane",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-gentleman"
+        ]
+      }
+    ]
   },
   "weapons-polearm-weapon_polearm_spear": {
     "name": "Spear",
@@ -46548,7 +60491,25 @@ window.itemMetadata = {
         "teen": "weapon/polearm/spear/background/",
         "pregnant": "weapon/polearm/spear/background/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/polearm/spear",
+        "notes": "original by wulax, walk animations redone by pvigier, split into layers and tweaked for v3 character bases by bluecarrot16",
+        "authors": [
+          "Pierre Vigier (pvigier)",
+          "Johannes Sjölund (wulax)",
+          "Inboxninja"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-spear-and-shovel-reworked"
+        ]
+      }
+    ]
   },
   "weapons-polearm-weapon_polearm_scythe": {
     "name": "Scythe",
@@ -46609,7 +60570,22 @@ window.itemMetadata = {
         "female": "weapon/polearm/scythe/attack_slash/",
         "pregnant": "weapon/polearm/scythe/attack_slash/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/polearm/scythe",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-extended-weapon-animations"
+        ]
+      }
+    ]
   },
   "weapons-polearm-weapon_polearm_halberd": {
     "name": "Halberd",
@@ -46686,7 +60662,25 @@ window.itemMetadata = {
         "female": "weapon/polearm/halberd/attack_slash/",
         "pregnant": "weapon/polearm/halberd/attack_slash/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/polearm/halberd",
+        "notes": "",
+        "authors": [
+          "Benjamin K. Smith (BenCreating)",
+          "bluecarrot16",
+          "Sander Frenken (castelonia)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-weapons"
+        ]
+      }
+    ]
   },
   "weapons-polearm-weapon_polearm_longspear": {
     "name": "Long spear",
@@ -46765,7 +60759,24 @@ window.itemMetadata = {
         "teen": "weapon/polearm/longspear/background/thrust/",
         "pregnant": "weapon/polearm/longspear/background/thrust/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/polearm/longspear",
+        "notes": "original by wulax from expansion_pack-0.04 walk animations adapted from those by pvigier, split into layers and tweaked for v3 character bases by bluecarrot16",
+        "authors": [
+          "Pierre Vigier (pvigier)",
+          "Johannes Sjölund (wulax)",
+          "Inboxninja"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
+        ]
+      }
+    ]
   },
   "weapons-polearm-weapon_polearm_dragonspear": {
     "name": "Dragon spear",
@@ -46844,7 +60855,25 @@ window.itemMetadata = {
         "teen": "weapon/polearm/dragonspear/background/thrust/",
         "pregnant": "weapon/polearm/dragonspear/background/thrust/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/polearm/dragonspear",
+        "notes": "original \"dragon spear\" by daneeklu and gr3yh47; adapted to opposite hand and split into layers by bluecarrot16",
+        "authors": [
+          "Daniel Eddeland (daneeklu)",
+          "gr3yh47",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident",
+          "https://opengameart.org/content/lpc-extended-weapon-animations"
+        ]
+      }
+    ]
   },
   "weapons-polearm-weapon_polearm_trident": {
     "name": "Trident",
@@ -46923,7 +60952,25 @@ window.itemMetadata = {
         "teen": "weapon/polearm/trident/background/thrust/",
         "pregnant": "weapon/polearm/trident/background/thrust/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/polearm/trident",
+        "notes": "original \"trident\" by daneeklu and gr3yh47; adapted to opposite hand and split into layers by bluecarrot16",
+        "authors": [
+          "Daniel Eddeland (daneeklu)",
+          "gr3yh47",
+          "Johannes Sjölund (wulax)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-weapons-two-bows-a-spear-and-a-trident",
+          "https://opengameart.org/content/lpc-extended-weapon-animations"
+        ]
+      }
+    ]
   },
   "weapons-magic-weapon_magic_simple": {
     "name": "Simple staff",
@@ -46971,7 +61018,23 @@ window.itemMetadata = {
         "teen": "weapon/magic/simple/background/",
         "pregnant": "weapon/magic/simple/background/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/magic/simple",
+        "notes": "original by DrJamgo, hands switched and split into to layers by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Dr. Jamgo"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-simple-staff"
+        ]
+      }
+    ]
   },
   "weapons-magic-weapon_magic_loop": {
     "name": "Loop staff",
@@ -47048,7 +61111,24 @@ window.itemMetadata = {
         "teen": "weapon/magic/loop/thrust/background/",
         "pregnant": "weapon/magic/loop/thrust/background/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/magic/loop",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "GPL 3.0",
+          "CC-BY 4.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-more-weapons"
+        ]
+      }
+    ]
   },
   "weapons-magic-weapon_magic_diamond": {
     "name": "Diamond staff",
@@ -47125,7 +61205,24 @@ window.itemMetadata = {
         "teen": "weapon/magic/diamond/thrust/background/",
         "pregnant": "weapon/magic/diamond/thrust/background/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/magic/diamond",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "GPL 3.0",
+          "CC-BY 4.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-more-weapons"
+        ]
+      }
+    ]
   },
   "weapons-magic-weapon_magic_gnarled": {
     "name": "Gnarled staff",
@@ -47202,7 +61299,24 @@ window.itemMetadata = {
         "teen": "weapon/magic/gnarled/thrust/background/",
         "pregnant": "weapon/magic/gnarled/thrust/background/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/magic/gnarled",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "GPL 3.0",
+          "CC-BY 4.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-more-weapons"
+        ]
+      }
+    ]
   },
   "weapons-magic-weapon_magic_s": {
     "name": "S staff",
@@ -47279,7 +61393,25 @@ window.itemMetadata = {
         "teen": "weapon/magic/s/thrust/background/",
         "pregnant": "weapon/magic/s/thrust/background/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/magic/s",
+        "notes": "Wooden staff by LordNeo, first adapted to LPC by bigbeargames; re-drawn and walk animations added by bluecarrot16",
+        "authors": [
+          "LordNeo",
+          "Michael Whitlock (bigbeargames)",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/staff-64-x64",
+          "https://opengameart.org/content/lpc-magic-staff"
+        ]
+      }
+    ]
   },
   "weapons-magic-weapon_magic_crystal": {
     "name": "Crystal",
@@ -47350,7 +61482,24 @@ window.itemMetadata = {
         "teen": "weapon/magic/crystal/thrust/background/",
         "pregnant": "weapon/magic/crystal/thrust/background/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/magic/crystal",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "GPL 3.0",
+          "CC-BY 4.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-more-weapons"
+        ]
+      }
+    ]
   },
   "weapons-magic-weapon_magic_wand": {
     "name": "Wand",
@@ -47382,7 +61531,24 @@ window.itemMetadata = {
         "female": "weapon/magic/wand/female/",
         "pregnant": "weapon/magic/wand//female/"
       }
-    }
+    },
+    "credits": [
+      {
+        "file": "weapon/magic/wand",
+        "notes": "",
+        "authors": [
+          "Matthew Krohn (makrohn)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0",
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-wands"
+        ]
+      }
+    ]
   }
 };
 

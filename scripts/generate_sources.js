@@ -136,7 +136,8 @@ function parseJson(json) {
     excluded_tags: excluded_tags,
     path: path || ["other"],
     variants: variants || [],
-    layers: layers
+    layers: layers,
+    credits: credits || []
   };
 
   let startHTML =

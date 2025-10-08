@@ -277,6 +277,100 @@ const AnimationPreview = {
 	}
 };
 
+// Credits/Attribution component
+const Credits = {
+	view: function() {
+		// Collect credits from all selected items
+		const allCredits = [];
+		const seenFiles = new Set();
+
+		for (const [categoryPath, selection] of Object.entries(state.selections)) {
+			const { itemId } = selection;
+			const meta = window.itemMetadata[itemId];
+
+			if (meta && meta.credits) {
+				for (const credit of meta.credits) {
+					// Avoid duplicates based on file name
+					if (!seenFiles.has(credit.file)) {
+						seenFiles.add(credit.file);
+						allCredits.push(credit);
+					}
+				}
+			}
+		}
+
+		// Helper functions for download
+		const creditsToCsv = () => {
+			const header = "filename,notes,authors,licenses,urls";
+			let csvBody = header + "\n";
+			allCredits.forEach(credit => {
+				const authors = credit.authors.join(", ");
+				const licenses = credit.licenses.join(", ");
+				const urls = credit.urls.join(", ");
+				const notes = credit.notes || "";
+				csvBody += `"${credit.file}","${notes}","${authors}","${licenses}","${urls}"\n`;
+			});
+			return csvBody;
+		};
+
+		const creditsToTxt = () => {
+			let txt = "";
+			allCredits.forEach(credit => {
+				txt += `${credit.file}\n`;
+				if (credit.notes) {
+					txt += `\t- Note: ${credit.notes}\n`;
+				}
+				txt += `\t- Licenses:\n\t\t- ${credit.licenses.join("\n\t\t- ")}\n`;
+				txt += `\t- Authors:\n\t\t- ${credit.authors.join("\n\t\t- ")}\n`;
+				txt += `\t- Links:\n\t\t- ${credit.urls.join("\n\t\t- ")}\n\n`;
+			});
+			return txt;
+		};
+
+		const downloadFile = (content, filename) => {
+			const blob = new Blob([content], { type: "text/plain" });
+			const url = URL.createObjectURL(blob);
+			const a = document.createElement("a");
+			a.href = url;
+			a.download = filename;
+			a.click();
+			URL.revokeObjectURL(url);
+		};
+
+		return m("div.box", [
+			m("h3.title.is-5", "Credits & Attribution"),
+			m("p.subtitle.is-6", "You must credit the authors of this artwork"),
+
+			allCredits.length > 0 ? [
+				m("div.content", { style: "max-height: 300px; overflow-y: auto;" },
+					allCredits.map(credit =>
+						m("div.mb-3", { key: credit.file }, [
+							m("strong", credit.file),
+							credit.notes ? m("p.is-size-7", credit.notes) : null,
+							m("p.is-size-7", [
+								m("strong", "Licenses: "),
+								credit.licenses.join(", ")
+							]),
+							m("p.is-size-7", [
+								m("strong", "Authors: "),
+								credit.authors.join(", ")
+							])
+						])
+					)
+				),
+				m("div.buttons.mt-3", [
+					m("button.button.is-small", {
+						onclick: () => downloadFile(creditsToTxt(), "credits.txt")
+					}, "Download TXT"),
+					m("button.button.is-small", {
+						onclick: () => downloadFile(creditsToCsv(), "credits.csv")
+					}, "Download CSV")
+				])
+			] : m("p.has-text-grey", "No items selected")
+		]);
+	}
+};
+
 // Trigger canvas re-render when state changes
 function triggerRender() {
 	if (window.canvasRenderer) {
@@ -290,7 +384,8 @@ const App = {
 		return m("div", [
 			m(BodyTypeSelector),
 			m(CurrentSelections),
-			m(CategoryTree)
+			m(CategoryTree),
+			m(Credits)
 		]);
 	}
 };
