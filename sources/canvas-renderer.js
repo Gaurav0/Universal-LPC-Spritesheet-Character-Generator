@@ -191,8 +191,10 @@ export function stopPreviewAnimation() {
 /**
  * Build sprite path from item metadata for a specific animation
  */
-function getSpritePath(itemId, variant, bodyType, animation, layerNum = 1) {
-  const meta = window.itemMetadata[itemId];
+function getSpritePath(itemId, variant, bodyType, animation, layerNum = 1, selections = {}, meta = null) {
+  if (!meta) {
+    meta = window.itemMetadata[itemId];
+  }
   if (!meta) return null;
 
   const layerKey = `layer_${layerNum}`;
@@ -200,8 +202,24 @@ function getSpritePath(itemId, variant, bodyType, animation, layerNum = 1) {
   if (!layer) return null;
 
   // Get the file path for this body type
-  const basePath = layer[bodyType];
+  let basePath = layer[bodyType];
   if (!basePath) return null;
+
+  // Replace template variables like ${head}
+  if (basePath.includes('${head}')) {
+    // Find the selected head and extract its type from the itemId
+    for (const [categoryPath, selection] of Object.entries(selections)) {
+      const selMeta = window.itemMetadata[selection.itemId];
+      if (selMeta && selMeta.path && selMeta.path[0] === 'head' && selMeta.path[1] === 'heads') {
+        // Extract head type from itemId: "head-heads-heads_human_male" -> "male"
+        // The pattern is usually: heads_<type>_<subtype> or heads_<type>
+        const itemIdParts = selection.itemId.split('_');
+        const headType = itemIdParts[itemIdParts.length - 1]; // Last part is the type (male, female, elderly, etc.)
+        basePath = basePath.replace('${head}', headType);
+        break;
+      }
+    }
+  }
 
   // If no variant specified, try to extract from itemId
   if (!variant) {
@@ -288,6 +306,11 @@ export async function renderCharacter(selections, bodyType) {
 
       // Add each animation for this layer
       for (const [animName, yPos] of Object.entries(ANIMATIONS)) {
+        // Skip if item doesn't have animations array (custom animations only)
+        if (!meta.animations || meta.animations.length === 0) {
+          continue;
+        }
+
         // Map folder name to metadata name for checking support
         // e.g., "combat_idle" -> check for "combat" or "1h_slash" in metadata
         let metadataAnimName = animName;
@@ -311,7 +334,7 @@ export async function renderCharacter(selections, bodyType) {
           if (!meta.animations.includes(animName)) continue;
         }
 
-        const spritePath = getSpritePath(itemId, variant, bodyType, animName, layerNum);
+        const spritePath = getSpritePath(itemId, variant, bodyType, animName, layerNum, selections, meta);
 
         itemsToDraw.push({
           itemId,
@@ -342,7 +365,7 @@ export async function renderCharacter(selections, bodyType) {
       // Draw at the correct y position for this animation
       ctx.drawImage(img, 0, item.yPos);
     } catch (err) {
-      console.error(`Failed to render ${item.itemId} ${item.animation} (${item.spritePath}):`, err);
+      console.warn(`Failed to load sprite: ${item.spritePath} (${item.itemId} - ${item.animation})`);
     }
   }
 }

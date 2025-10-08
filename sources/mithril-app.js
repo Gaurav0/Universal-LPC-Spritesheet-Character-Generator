@@ -4,7 +4,8 @@
 // Global state
 const state = {
 	selections: {}, // key: category path, value: { itemId, name }
-	bodyType: "male" // male, female, teen, child, muscular, pregnant
+	bodyType: "male", // male, female, teen, child, muscular, pregnant
+	expandedNodes: {} // key: path string, value: boolean (true if expanded)
 };
 
 // Helper function to capitalize strings for display
@@ -14,18 +15,15 @@ function capitalize(str) {
 
 // Item with variants component
 const ItemWithVariants = {
-	oninit: function(vnode) {
-		vnode.state.expanded = false;
-	},
 	view: function(vnode) {
 		const { itemId, meta, categoryPath } = vnode.attrs;
-		const isExpanded = vnode.state.expanded;
+		const isExpanded = state.expandedNodes[itemId] || false;
 		const displayName = meta.name;
 
-		return m("div", { style: "padding-left: 1.5rem;" }, [
+		return m("div", [
 			m("div.tree-label", {
 				onclick: () => {
-					vnode.state.expanded = !vnode.state.expanded;
+					state.expandedNodes[itemId] = !isExpanded;
 				}
 			}, [
 				m("span.tree-arrow", { class: isExpanded ? 'expanded' : 'collapsed' }),
@@ -78,19 +76,16 @@ const BodyTypeSelector = {
 
 // Recursive tree node component
 const TreeNode = {
-	oninit: function(vnode) {
-		vnode.state.expanded = false;
-		vnode.state.showingVariants = false;
-	},
 	view: function(vnode) {
-		const { name, node } = vnode.attrs;
-		const isExpanded = vnode.state.expanded;
+		const { name, node, pathPrefix = "" } = vnode.attrs;
+		const nodePath = pathPrefix ? `${pathPrefix}-${name}` : name;
+		const isExpanded = state.expandedNodes[nodePath] || false;
 		const displayName = capitalize(name);
 
 		return m("div",
 			m("div.tree-label", {
 				onclick: () => {
-					vnode.state.expanded = !vnode.state.expanded;
+					state.expandedNodes[nodePath] = !isExpanded;
 				}
 			}, [
 				m("span.tree-arrow", { class: isExpanded ? 'expanded' : 'collapsed' }),
@@ -99,7 +94,7 @@ const TreeNode = {
 			isExpanded ? m("div.tree-node", [
 				// Render child categories
 				Object.entries(node.children || {}).map(([childName, childNode]) =>
-					m(TreeNode, { key: childName, name: childName, node: childNode })
+					m(TreeNode, { key: childName, name: childName, node: childNode, pathPrefix: nodePath })
 				),
 				// Render items in this category
 				(node.items || [])
@@ -174,12 +169,37 @@ const CategoryTree = {
 		}
 
 		return m("div.box", [
-			m("h3.title.is-5", "Available Items"),
+			m("div", { style: "display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;" }, [
+				m("h3.title.is-5", { style: "margin-bottom: 0;" }, "Available Items"),
+				m("div.buttons", { style: "margin-bottom: 0;" }, [
+					m("button.button.is-small", {
+						onclick: () => { state.expandedNodes = {}; }
+					}, "Collapse All"),
+					m("button.button.is-small", {
+						onclick: () => {
+							for (const [categoryPath, selection] of Object.entries(state.selections)) {
+								const { itemId } = selection;
+								const meta = window.itemMetadata[itemId];
+								if (meta && meta.path) {
+									let pathSoFar = "";
+									// Expand all path segments (categories)
+									for (const segment of meta.path) {
+										pathSoFar = pathSoFar ? `${pathSoFar}-${segment}` : segment;
+										state.expandedNodes[pathSoFar] = true;
+									}
+									// Also expand the item itself (to show variants)
+									state.expandedNodes[itemId] = true;
+								}
+							}
+						}
+					}, "Expand Selected")
+				])
+			]),
 			m("div",
 				Object.entries(window.categoryTree.children || {}).map(([categoryName, categoryNode]) =>
-					m(TreeNode, { key: categoryName, name: categoryName, node: categoryNode })
-				)
+				m(TreeNode, { key: categoryName, name: categoryName, node: categoryNode })
 			)
+		)
 		]);
 	}
 };
