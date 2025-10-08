@@ -3,7 +3,8 @@
 // Contains metadata for all customization items to avoid DOM queries at runtime
 
 window.itemMetadata = {
-  "shadow-Shadow": {
+  "body-shadow": {
+    "name": "Shadow",
     "required": [
       "male",
       "female",
@@ -24,28 +25,16 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "child": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "body",
+      "shadow"
+    ],
+    "variants": [
+      "shadow"
+    ]
   },
-  "body-Body_color": {
+  "body-body": {
+    "name": "Body color",
     "required": [
       "male",
       "female",
@@ -76,40 +65,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "body",
+      "body"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "body-Zombie": {
+  "body-special-body_zombie": {
+    "name": "Zombie",
     "required": [
       "male",
       "female",
@@ -127,25 +112,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "body",
+      "special",
+      "body_zombie"
+    ],
+    "variants": [
+      "zombie"
+    ]
   },
-  "body-Skeleton": {
+  "body-special-body_skeleton": {
+    "name": "Skeleton",
     "required": [
       "male",
       "female",
@@ -163,25 +140,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "body",
+      "special",
+      "body_skeleton"
+    ],
+    "variants": [
+      "skeleton"
+    ]
   },
-  "wound_arm-Arm": {
+  "body-wounds-wound_arm": {
+    "name": "Arm",
     "required": [
       "male",
       "female",
@@ -201,30 +170,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "body",
+      "wounds",
+      "wound_arm"
+    ],
+    "variants": [
+      "arm"
+    ]
   },
-  "wound_brain-Brain": {
+  "body-wounds-wound_brain": {
+    "name": "Brain",
     "required": [
       "male",
       "female",
@@ -254,30 +210,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "body",
+      "wounds",
+      "wound_brain"
+    ],
+    "variants": [
+      "brain"
+    ]
   },
-  "wound_ribs-Ribs": {
+  "body-wounds-wound_ribs": {
+    "name": "Ribs",
     "required": [
       "male",
       "female",
@@ -297,30 +240,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "body",
+      "wounds",
+      "wound_ribs"
+    ],
+    "variants": [
+      "ribs"
+    ]
   },
-  "wound_eye_left-Left_Eye": {
+  "body-wounds-wound_eye_left": {
+    "name": "Left Eye",
     "required": [
       "male",
       "female",
@@ -350,30 +280,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "body",
+      "wounds",
+      "wound_eye_left"
+    ],
+    "variants": [
+      "eye_left"
+    ]
   },
-  "wound_eye_right-Right_Eye": {
+  "body-wounds-wound_eye_right": {
+    "name": "Right Eye",
     "required": [
       "male",
       "female",
@@ -403,30 +320,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "body",
+      "wounds",
+      "wound_eye_right"
+    ],
+    "variants": [
+      "eye_right"
+    ]
   },
-  "wound_mouth-Mouth": {
+  "body-wounds-wound_mouth": {
+    "name": "Mouth",
     "required": [
       "male",
       "female",
@@ -456,30 +360,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "body",
+      "wounds",
+      "wound_mouth"
+    ],
+    "variants": [
+      "mouth"
+    ]
   },
-  "prosthesis_hand-Hook_hand": {
+  "body-prostheses-prosthesis_hook": {
+    "name": "Hook hand",
     "required": [
       "male"
     ],
@@ -495,13 +386,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "body",
+      "prostheses",
+      "prosthesis_hook"
+    ],
+    "variants": [
+      "hook"
+    ]
   },
-  "prosthesis_leg-Peg_leg": {
+  "body-prostheses-prosthesis_peg_leg": {
+    "name": "Peg leg",
     "required": [
       "male"
     ],
@@ -517,13 +412,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "body",
+      "prostheses",
+      "prosthesis_peg_leg"
+    ],
+    "variants": [
+      "peg_leg"
+    ]
   },
-  "wheelchair-Wheelchair": {
+  "body-wheelchair-wheelchair": {
+    "name": "Wheelchair",
     "required": [
       "male",
       "female",
@@ -543,30 +442,21 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY 3.0",
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "CC-BY 3.0",
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "CC-BY 3.0",
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "CC-BY 3.0",
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "CC-BY 3.0",
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "body",
+      "wheelchair",
+      "wheelchair"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "pink",
+      "tan",
+      "white"
+    ]
   },
-  "tail-Wolf_Tail": {
+  "body-tails-tail_wolf": {
+    "name": "Wolf Tail",
     "required": [
       "male",
       "female",
@@ -597,40 +487,49 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "body",
+      "tails",
+      "tail_wolf"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "tail-Fluffy_Wolf_Tail": {
+  "body-tails-tail_wolf_fluffy": {
+    "name": "Fluffy Wolf Tail",
     "required": [
       "male",
       "female",
@@ -661,40 +560,49 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "body",
+      "tails",
+      "tail_wolf_fluffy"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "tail-Cat_Tail": {
+  "body-tails-tail_cat": {
+    "name": "Cat Tail",
     "required": [
       "male",
       "female",
@@ -725,40 +633,49 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "body",
+      "tails",
+      "tail_cat"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "tail-Lizard_Tail_(Alt_Colors)": {
+  "body-tails-tail_lizard_alt": {
+    "name": "Lizard Tail (Alt Colors)",
     "required": [
       "male",
       "female",
@@ -789,40 +706,49 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "body",
+      "tails",
+      "tail_lizard_alt"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "wings-Feathered_Wings": {
+  "body-wings-wings_feathered": {
+    "name": "Feathered Wings",
     "required": [
       "male",
       "female",
@@ -854,25 +780,49 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "body",
+      "wings",
+      "wings_feathered"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "wings-Bat_Wings": {
+  "body-wings-wings_bat": {
+    "name": "Bat Wings",
     "required": [
       "male",
       "female",
@@ -904,25 +854,60 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "body",
+      "wings",
+      "wings_bat"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose",
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "lavender",
+      "zombie_green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "wings-Lizard_Wings_(Alt_Colors)": {
+  "body-wings-wings_lizard_alt": {
+    "name": "Lizard Wings (Alt Colors)",
     "required": [
       "male",
       "female",
@@ -954,35 +939,49 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "body",
+      "wings",
+      "wings_lizard_alt"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "wings-Monarch_Wings": {
+  "body-wings-monarch wings-wings_monarch": {
+    "name": "Monarch Wings",
     "required": [
       "male",
       "female",
@@ -1006,34 +1005,46 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "female": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "teen": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "child": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "muscular": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "pregnant": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ]
-    }
+    "path": [
+      "body",
+      "wings",
+      "monarch wings",
+      "wings_monarch"
+    ],
+    "variants": [
+      "monarch",
+      "amber",
+      "black",
+      "blue",
+      "bluegray",
+      "bright_green",
+      "bronze",
+      "brown",
+      "ceramic",
+      "forest",
+      "gold",
+      "green",
+      "iron",
+      "lavender",
+      "light",
+      "maroon",
+      "navy",
+      "orange",
+      "pale_green",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "silver",
+      "sky",
+      "teal",
+      "white",
+      "yellow",
+      "zombie_green"
+    ]
   },
-  "wings_edge-Monarch_Wings_Edge": {
+  "body-wings-monarch wings-wings_monarch_edge": {
+    "name": "Monarch Wings Edge",
     "required": [
       "male",
       "female",
@@ -1058,34 +1069,45 @@ window.itemMetadata = {
       "monarch"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "female": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "teen": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "child": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "muscular": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "pregnant": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ]
-    }
+    "path": [
+      "body",
+      "wings",
+      "monarch wings",
+      "wings_monarch_edge"
+    ],
+    "variants": [
+      "amber",
+      "black",
+      "blue",
+      "bluegray",
+      "bright_green",
+      "bronze",
+      "brown",
+      "ceramic",
+      "forest",
+      "gold",
+      "green",
+      "iron",
+      "lavender",
+      "light",
+      "maroon",
+      "navy",
+      "orange",
+      "pale_green",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "silver",
+      "sky",
+      "teal",
+      "white",
+      "yellow",
+      "zombie_green"
+    ]
   },
-  "wings_dots-Monarch_Wings_Dots": {
+  "body-wings-monarch wings-wings_monarch_dots": {
+    "name": "Monarch Wings Dots",
     "required": [
       "male",
       "female",
@@ -1110,34 +1132,45 @@ window.itemMetadata = {
       "monarch"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "female": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "teen": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "child": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "muscular": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "pregnant": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ]
-    }
+    "path": [
+      "body",
+      "wings",
+      "monarch wings",
+      "wings_monarch_dots"
+    ],
+    "variants": [
+      "amber",
+      "black",
+      "blue",
+      "bluegray",
+      "bright_green",
+      "bronze",
+      "brown",
+      "ceramic",
+      "forest",
+      "gold",
+      "green",
+      "iron",
+      "lavender",
+      "light",
+      "maroon",
+      "navy",
+      "orange",
+      "pale_green",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "silver",
+      "sky",
+      "teal",
+      "white",
+      "yellow",
+      "zombie_green"
+    ]
   },
-  "wings-Pixie_Wings": {
+  "body-wings-pixie wings-wings_pixie": {
+    "name": "Pixie Wings",
     "required": [
       "male",
       "female",
@@ -1160,34 +1193,46 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "female": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "teen": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "child": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "muscular": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "pregnant": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ]
-    }
+    "path": [
+      "body",
+      "wings",
+      "pixie wings",
+      "wings_pixie"
+    ],
+    "variants": [
+      "pixie",
+      "amber",
+      "black",
+      "blue",
+      "bluegray",
+      "bright_green",
+      "bronze",
+      "brown",
+      "ceramic",
+      "forest",
+      "gold",
+      "green",
+      "iron",
+      "lavender",
+      "light",
+      "maroon",
+      "navy",
+      "orange",
+      "pale_green",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "silver",
+      "sky",
+      "teal",
+      "white",
+      "yellow",
+      "zombie_green"
+    ]
   },
-  "wings-Transparent_Pixie_Wings": {
+  "body-wings-pixie wings-wings_pixie_transparent": {
+    "name": "Transparent Pixie Wings",
     "required": [
       "male",
       "female",
@@ -1210,34 +1255,46 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "female": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "teen": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "child": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "muscular": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "pregnant": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ]
-    }
+    "path": [
+      "body",
+      "wings",
+      "pixie wings",
+      "wings_pixie_transparent"
+    ],
+    "variants": [
+      "pixie",
+      "amber",
+      "black",
+      "blue",
+      "bluegray",
+      "bright_green",
+      "bronze",
+      "brown",
+      "ceramic",
+      "forest",
+      "gold",
+      "green",
+      "iron",
+      "lavender",
+      "light",
+      "maroon",
+      "navy",
+      "orange",
+      "pale_green",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "silver",
+      "sky",
+      "teal",
+      "white",
+      "yellow",
+      "zombie_green"
+    ]
   },
-  "wings-Lunar_Wings": {
+  "body-wings-wings_lunar": {
+    "name": "Lunar Wings",
     "required": [
       "male",
       "female",
@@ -1260,34 +1317,45 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "female": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "teen": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "child": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "muscular": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "pregnant": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ]
-    }
+    "path": [
+      "body",
+      "wings",
+      "wings_lunar"
+    ],
+    "variants": [
+      "lunar",
+      "amber",
+      "black",
+      "blue",
+      "bluegray",
+      "bright_green",
+      "bronze",
+      "brown",
+      "ceramic",
+      "forest",
+      "gold",
+      "green",
+      "iron",
+      "lavender",
+      "light",
+      "maroon",
+      "navy",
+      "orange",
+      "pale_green",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "silver",
+      "sky",
+      "teal",
+      "white",
+      "yellow",
+      "zombie_green"
+    ]
   },
-  "wings-Dragonfly_Wings": {
+  "body-wings-dragonfly wings-wings_dragonfly": {
+    "name": "Dragonfly Wings",
     "required": [
       "male",
       "female",
@@ -1310,34 +1378,46 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "female": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "teen": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "child": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "muscular": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "pregnant": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ]
-    }
+    "path": [
+      "body",
+      "wings",
+      "dragonfly wings",
+      "wings_dragonfly"
+    ],
+    "variants": [
+      "dragonfly",
+      "amber",
+      "black",
+      "blue",
+      "bluegray",
+      "bright_green",
+      "bronze",
+      "brown",
+      "ceramic",
+      "forest",
+      "gold",
+      "green",
+      "iron",
+      "lavender",
+      "light",
+      "maroon",
+      "navy",
+      "orange",
+      "pale_green",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "silver",
+      "sky",
+      "teal",
+      "white",
+      "yellow",
+      "zombie_green"
+    ]
   },
-  "wings-Transparent_Dragonfly_Wings": {
+  "body-wings-dragonfly wings-wings_dragonfly_transparent": {
+    "name": "Transparent Dragonfly Wings",
     "required": [
       "male",
       "female",
@@ -1360,34 +1440,46 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "female": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "teen": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "child": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "muscular": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ],
-      "pregnant": [
-        "OGA-BY 4.0",
-        "CC-BY-SA 4.0"
-      ]
-    }
+    "path": [
+      "body",
+      "wings",
+      "dragonfly wings",
+      "wings_dragonfly_transparent"
+    ],
+    "variants": [
+      "dragonfly",
+      "amber",
+      "black",
+      "blue",
+      "bluegray",
+      "bright_green",
+      "bronze",
+      "brown",
+      "ceramic",
+      "forest",
+      "gold",
+      "green",
+      "iron",
+      "lavender",
+      "light",
+      "maroon",
+      "navy",
+      "orange",
+      "pale_green",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "silver",
+      "sky",
+      "teal",
+      "white",
+      "yellow",
+      "zombie_green"
+    ]
   },
-  "wings-Lizard_Wings": {
+  "body-lizard-wings_lizard": {
+    "name": "Lizard Wings",
     "required": [
       "male",
       "female",
@@ -1419,35 +1511,37 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "body",
+      "lizard",
+      "wings_lizard"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "wings-Batlike_Lizard_Wings": {
+  "body-lizard-wings_lizard_bat": {
+    "name": "Batlike Lizard Wings",
     "required": [
       "male",
       "female",
@@ -1479,25 +1573,37 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "body",
+      "lizard",
+      "wings_lizard_bat"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "tail-Lizard_tail": {
+  "body-lizard-tail_lizard": {
+    "name": "Lizard tail",
     "required": [
       "male",
       "female",
@@ -1528,40 +1634,37 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "body",
+      "lizard",
+      "tail_lizard"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "head-Human_child": {
+  "head-heads-heads_human_child": {
+    "name": "Human child",
     "required": [
       "child"
     ],
@@ -1590,15 +1693,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "child": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_human_child"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "head-Human_female": {
+  "head-heads-heads_human_female": {
+    "name": "Human female",
     "required": [
       "male",
       "female",
@@ -1632,35 +1758,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_human_female"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "head-Human_male": {
+  "head-heads-heads_human_male": {
+    "name": "Human male",
     "required": [
       "male",
       "female",
@@ -1693,35 +1822,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_human_male"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "head-Human_female_elderly": {
+  "head-heads-heads_human_female_elderly": {
+    "name": "Human female elderly",
     "required": [
       "male",
       "female",
@@ -1754,30 +1886,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_human_female_elderly"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "head-Human_male_elderly": {
+  "head-heads-heads_human_male_elderly": {
+    "name": "Human male elderly",
     "required": [
       "male",
       "female",
@@ -1810,30 +1950,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_human_male_elderly"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "head-Human_male_plump": {
+  "head-heads-heads_human_male_plump": {
+    "name": "Human male plump",
     "required": [
       "male",
       "female",
@@ -1866,30 +2014,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_human_male_plump"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "head-Human_male_gaunt": {
+  "head-heads-heads_human_male_gaunt": {
+    "name": "Human male gaunt",
     "required": [
       "male",
       "female",
@@ -1922,35 +2078,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_human_male_gaunt"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "head-Human_male_small": {
+  "head-heads-heads_human_male_small": {
+    "name": "Human male small",
     "required": [
       "male",
       "female",
@@ -1984,30 +2143,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_human_male_small"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "head-Human_female_small": {
+  "head-heads-heads_human_female_small": {
+    "name": "Human female small",
     "required": [
       "male",
       "female",
@@ -2041,30 +2208,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_human_female_small"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "head-Human_elderly_small": {
+  "head-heads-heads_human_elderly_small": {
+    "name": "Human elderly small",
     "required": [
       "male",
       "female",
@@ -2098,30 +2273,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_human_elderly_small"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "head-Boarman": {
+  "head-heads-heads_boarman": {
+    "name": "Boarman",
     "required": [
       "male",
       "female",
@@ -2155,30 +2338,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY 3.0",
-        "GPL 2.0"
-      ],
-      "female": [
-        "CC-BY 3.0",
-        "GPL 2.0"
-      ],
-      "teen": [
-        "CC-BY 3.0",
-        "GPL 2.0"
-      ],
-      "muscular": [
-        "CC-BY 3.0",
-        "GPL 2.0"
-      ],
-      "pregnant": [
-        "CC-BY 3.0",
-        "GPL 2.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_boarman"
+    ],
+    "variants": [
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie"
+    ]
   },
-  "head-Boarman_child": {
+  "head-heads-heads_boarman_child": {
+    "name": "Boarman child",
     "required": [
       "child"
     ],
@@ -2208,14 +2399,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "child": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_boarman_child"
+    ],
+    "variants": [
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie"
+    ]
   },
-  "head-Pig": {
+  "head-heads-heads_pig": {
+    "name": "Pig",
     "required": [
       "male",
       "female",
@@ -2248,30 +2463,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_pig"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "head-Pig_child": {
+  "head-heads-heads_pig_child": {
+    "name": "Pig child",
     "required": [
       "child"
     ],
@@ -2300,14 +2523,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "child": [
-        "CC-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_pig_child"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "head-Sheep": {
+  "head-heads-heads_sheep": {
+    "name": "Sheep",
     "required": [
       "male",
       "female",
@@ -2340,30 +2587,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_sheep"
+    ],
+    "variants": [
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie"
+    ]
   },
-  "head-Sheep_child": {
+  "head-heads-heads_sheep_child": {
+    "name": "Sheep child",
     "required": [
       "child"
     ],
@@ -2392,14 +2647,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "child": [
-        "CC-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_sheep_child"
+    ],
+    "variants": [
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie"
+    ]
   },
-  "head-Minotaur": {
+  "head-heads-heads_minotaur": {
+    "name": "Minotaur",
     "required": [
       "male",
       "female",
@@ -2432,30 +2711,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_minotaur"
+    ],
+    "variants": [
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie"
+    ]
   },
-  "head-Minotaur_female": {
+  "head-heads-heads_minotaur_female": {
+    "name": "Minotaur female",
     "required": [
       "male",
       "female",
@@ -2488,30 +2775,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_minotaur_female"
+    ],
+    "variants": [
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie"
+    ]
   },
-  "head-Minotaur_child": {
+  "head-heads-heads_minotaur_child": {
+    "name": "Minotaur child",
     "required": [
       "child"
     ],
@@ -2540,14 +2835,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "child": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_minotaur_child"
+    ],
+    "variants": [
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie"
+    ]
   },
-  "head-Wartotaur": {
+  "head-heads-heads_wartotaur": {
+    "name": "Wartotaur",
     "required": [
       "male",
       "female",
@@ -2580,30 +2899,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_wartotaur"
+    ],
+    "variants": [
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie"
+    ]
   },
-  "head-Wolf_child": {
+  "head-heads-heads_wolf_child": {
+    "name": "Wolf child",
     "required": [
       "child"
     ],
@@ -2632,14 +2959,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "child": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_wolf_child"
+    ],
+    "variants": [
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie"
+    ]
   },
-  "head-Wolf_female": {
+  "head-heads-heads_wolf_female": {
+    "name": "Wolf female",
     "required": [
       "male",
       "female",
@@ -2672,30 +3023,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_wolf_female"
+    ],
+    "variants": [
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie"
+    ]
   },
-  "head-Wolf_male": {
+  "head-heads-heads_wolf_male": {
+    "name": "Wolf male",
     "required": [
       "male",
       "female",
@@ -2728,30 +3087,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_wolf_male"
+    ],
+    "variants": [
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie"
+    ]
   },
-  "head-Rabbit": {
+  "head-heads-heads_rabbit": {
+    "name": "Rabbit",
     "required": [
       "male",
       "female",
@@ -2784,35 +3151,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_rabbit"
+    ],
+    "variants": [
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie"
+    ]
   },
-  "head-Rabbit_child": {
+  "head-heads-heads_rabbit_child": {
+    "name": "Rabbit child",
     "required": [
       "child"
     ],
@@ -2841,113 +3211,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "child": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_rabbit_child"
+    ],
+    "variants": [
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie"
+    ]
   },
-  "head-Rat": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [
-      "animal",
-      "adult"
-    ],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY-SA 3.0"
-      ]
-    }
-  },
-  "head-Rat_child": {
-    "required": [
-      "child"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [
-      "animal",
-      "child"
-    ],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "child": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY-SA 3.0"
-      ]
-    }
-  },
-  "head-Mouse": {
+  "head-heads-heads_rat": {
+    "name": "Rat",
     "required": [
       "male",
       "female",
@@ -2980,35 +3275,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_rat"
+    ],
+    "variants": [
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie"
+    ]
   },
-  "head-Mouse_child": {
+  "head-heads-heads_rat_child": {
+    "name": "Rat child",
     "required": [
       "child"
     ],
@@ -3037,15 +3335,161 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "child": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_rat_child"
+    ],
+    "variants": [
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie"
+    ]
   },
-  "head-Lizard_child": {
+  "head-heads-heads_mouse": {
+    "name": "Mouse",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "animal",
+      "adult"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "heads_mouse"
+    ],
+    "variants": [
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green"
+    ]
+  },
+  "head-heads-heads_mouse_child": {
+    "name": "Mouse child",
+    "required": [
+      "child"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "animal",
+      "child"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "heads_mouse_child"
+    ],
+    "variants": [
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie"
+    ]
+  },
+  "head-heads-heads_lizard_child": {
+    "name": "Lizard child",
     "required": [
       "child"
     ],
@@ -3074,15 +3518,30 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "child": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_lizard_child"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green"
+    ]
   },
-  "head-Lizard_female": {
+  "head-heads-heads_lizard_female": {
+    "name": "Lizard female",
     "required": [
       "male",
       "female",
@@ -3115,35 +3574,30 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_lizard_female"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green"
+    ]
   },
-  "head-Lizard_male": {
+  "head-heads-heads_lizard_male": {
+    "name": "Lizard male",
     "required": [
       "male",
       "female",
@@ -3176,35 +3630,30 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_lizard_male"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green"
+    ]
   },
-  "head-Orc_child": {
+  "head-heads-heads_orc_child": {
+    "name": "Orc child",
     "required": [
       "child"
     ],
@@ -3233,15 +3682,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "child": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_orc_child"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "head-Orc_female": {
+  "head-heads-heads_orc_female": {
+    "name": "Orc female",
     "required": [
       "male",
       "female",
@@ -3274,35 +3746,30 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_orc_female"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green"
+    ]
   },
-  "head-Orc_male": {
+  "head-heads-heads_orc_male": {
+    "name": "Orc male",
     "required": [
       "male",
       "female",
@@ -3335,35 +3802,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_orc_male"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "head-Goblin": {
+  "head-heads-heads_goblin": {
+    "name": "Goblin",
     "required": [
       "male",
       "female",
@@ -3396,40 +3866,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_goblin"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "head-Goblin_child": {
+  "head-heads-heads_goblin_child": {
+    "name": "Goblin child",
     "required": [
       "child"
     ],
@@ -3458,16 +3926,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "child": [
-        "OGA-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_goblin_child"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "head-Alien": {
+  "head-heads-heads_alien": {
+    "name": "Alien",
     "required": [
       "male",
       "female",
@@ -3499,35 +3989,37 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_alien"
+    ],
+    "variants": [
+      "lavender",
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "head-Troll": {
+  "head-heads-heads_troll": {
+    "name": "Troll",
     "required": [
       "male",
       "female",
@@ -3560,25 +4052,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY 3.0"
-      ],
-      "female": [
-        "CC-BY 3.0"
-      ],
-      "teen": [
-        "CC-BY 3.0"
-      ],
-      "muscular": [
-        "CC-BY 3.0"
-      ],
-      "pregnant": [
-        "CC-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_troll"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "head-Troll_child": {
+  "head-heads-heads_troll_child": {
+    "name": "Troll child",
     "required": [
       "child"
     ],
@@ -3607,13 +4112,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "child": [
-        "CC-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_troll_child"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "head-Skeleton": {
+  "head-heads-heads_skeleton": {
+    "name": "Skeleton",
     "required": [
       "male",
       "female",
@@ -3646,35 +4176,17 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_skeleton"
+    ],
+    "variants": [
+      "skeleton"
+    ]
   },
-  "head-Zombie": {
+  "head-heads-heads_zombie": {
+    "name": "Zombie",
     "required": [
       "male",
       "female",
@@ -3707,30 +4219,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_zombie"
+    ],
+    "variants": [
+      "zombie",
+      "zombie_green",
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "head-Jack_O_Lantern": {
+  "head-heads-heads_jack": {
+    "name": "Jack O Lantern",
     "required": [
       "male",
       "female",
@@ -3762,30 +4282,17 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_jack"
+    ],
+    "variants": [
+      "jack"
+    ]
   },
-  "head-Vampire": {
+  "head-heads-heads_vampire": {
+    "name": "Vampire",
     "required": [
       "male",
       "female",
@@ -3818,35 +4325,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_vampire"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "head-Frankenstein": {
+  "head-heads-heads_frankenstein": {
+    "name": "Frankenstein",
     "required": [
       "male",
       "female",
@@ -3879,35 +4389,38 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "heads",
+      "heads_frankenstein"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "zombie",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "expression-Neutral": {
+  "head-face-face_neutral": {
+    "name": "Neutral",
     "required": [
       "male",
       "female",
@@ -3941,25 +4454,38 @@ window.itemMetadata = {
       "human"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "face",
+      "face_neutral"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "expression-Closing_Eyes": {
+  "head-face-face_closing": {
+    "name": "Closing Eyes",
     "required": [
       "male",
       "female",
@@ -3993,25 +4519,38 @@ window.itemMetadata = {
       "human"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "face",
+      "face_closing"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "expression-Closed_Eyes": {
+  "head-face-face_closed": {
+    "name": "Closed Eyes",
     "required": [
       "male",
       "female",
@@ -4045,25 +4584,38 @@ window.itemMetadata = {
       "human"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "face",
+      "face_closed"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "expression-Looking_Right": {
+  "head-face-face_look_r": {
+    "name": "Looking Right",
     "required": [
       "male",
       "female",
@@ -4097,25 +4649,38 @@ window.itemMetadata = {
       "human"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "face",
+      "face_look_r"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "expression-Looking_Left": {
+  "head-face-face_look_l": {
+    "name": "Looking Left",
     "required": [
       "male",
       "female",
@@ -4149,25 +4714,38 @@ window.itemMetadata = {
       "human"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "face",
+      "face_look_l"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "expression-Rolling_Eyes": {
+  "head-face-face_eyeroll": {
+    "name": "Rolling Eyes",
     "required": [
       "male",
       "female",
@@ -4201,25 +4779,38 @@ window.itemMetadata = {
       "human"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "face",
+      "face_eyeroll"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "expression-Shock": {
+  "head-face-face_shock": {
+    "name": "Shock",
     "required": [
       "male",
       "female",
@@ -4253,25 +4844,38 @@ window.itemMetadata = {
       "human"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "face",
+      "face_shock"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "expression-Angry": {
+  "head-face-face_angry": {
+    "name": "Angry",
     "required": [
       "male",
       "female",
@@ -4305,25 +4909,38 @@ window.itemMetadata = {
       "human"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "face",
+      "face_angry"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "expression-Angry_Alt": {
+  "head-face-face_angry2": {
+    "name": "Angry Alt",
     "required": [
       "male",
       "female",
@@ -4357,30 +4974,38 @@ window.itemMetadata = {
       "human"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "face",
+      "face_angry2"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "expression-Sad": {
+  "head-face-face_sad": {
+    "name": "Sad",
     "required": [
       "male",
       "female",
@@ -4414,25 +5039,38 @@ window.itemMetadata = {
       "human"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "face",
+      "face_sad"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "expression-Sad_Alt": {
+  "head-face-face_sad2": {
+    "name": "Sad Alt",
     "required": [
       "male",
       "female",
@@ -4467,30 +5105,38 @@ window.itemMetadata = {
       "adult"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "face",
+      "face_sad2"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "expression-Happy": {
+  "head-face-face_happy": {
+    "name": "Happy",
     "required": [
       "male",
       "female",
@@ -4524,25 +5170,38 @@ window.itemMetadata = {
       "human"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "face",
+      "face_happy"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "expression-Happy_Alt": {
+  "head-face-face_happy2": {
+    "name": "Happy Alt",
     "required": [
       "male",
       "female",
@@ -4576,30 +5235,38 @@ window.itemMetadata = {
       "human"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "face",
+      "face_happy2"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "expression-Blush": {
+  "head-face-face_blush": {
+    "name": "Blush",
     "required": [
       "male",
       "female",
@@ -4633,25 +5300,38 @@ window.itemMetadata = {
       "human"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "face",
+      "face_blush"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "expression-Shame": {
+  "head-face-face_shame": {
+    "name": "Shame",
     "required": [
       "male",
       "female",
@@ -4685,25 +5365,38 @@ window.itemMetadata = {
       "human"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "face",
+      "face_shame"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "expression_crying-Tears": {
+  "head-face-face_tears": {
+    "name": "Tears",
     "required": [
       "male",
       "female",
@@ -4737,30 +5430,17 @@ window.itemMetadata = {
       "human"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "face",
+      "face_tears"
+    ],
+    "variants": [
+      "blue"
+    ]
   },
-  "eye_color-Eye_Color": {
+  "head-eye_color": {
+    "name": "Eye Color",
     "required": [
       "male",
       "female",
@@ -4791,40 +5471,23 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "eye_color"
+    ],
+    "variants": [
+      "blue",
+      "brown",
+      "gray",
+      "green",
+      "orange",
+      "purple",
+      "red",
+      "yellow"
+    ]
   },
-  "eyes-Child_Eyes": {
+  "head-other eyes-eyes_child": {
+    "name": "Child Eyes",
     "required": [
       "child"
     ],
@@ -4839,15 +5502,24 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "child": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "other eyes",
+      "eyes_child"
+    ],
+    "variants": [
+      "blue",
+      "brown",
+      "gray",
+      "green",
+      "orange",
+      "purple",
+      "red",
+      "yellow"
+    ]
   },
-  "eyes-Cyclops_Eyes": {
+  "head-other eyes-eyes_cyclops": {
+    "name": "Cyclops Eyes",
     "required": [
       "male",
       "female",
@@ -4878,28 +5550,25 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "child": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "other eyes",
+      "eyes_cyclops"
+    ],
+    "variants": [
+      "cyclops",
+      "blue",
+      "brown",
+      "gray",
+      "green",
+      "orange",
+      "purple",
+      "red",
+      "yellow"
+    ]
   },
-  "ears-Big_ears": {
+  "head-ears-head_ears_big": {
+    "name": "Big ears",
     "required": [
       "male",
       "female",
@@ -4930,34 +5599,38 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "child": [
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "ears",
+      "head_ears_big"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "ears-Elven_ears": {
+  "head-ears-head_ears_elven": {
+    "name": "Elven ears",
     "required": [
       "male",
       "female",
@@ -4988,34 +5661,38 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "child": [
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "ears",
+      "head_ears_elven"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "ears-Long_ears": {
+  "head-ears-head_ears_long": {
+    "name": "Long ears",
     "required": [
       "male",
       "female",
@@ -5046,40 +5723,38 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "ears",
+      "head_ears_long"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "ears-Medium_Elven_Ears": {
+  "head-ears-head_ears_medium": {
+    "name": "Medium Elven Ears",
     "required": [
       "male",
       "female",
@@ -5110,40 +5785,38 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "ears",
+      "head_ears_medium"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "ears-Hanging_Elven_Ears": {
+  "head-ears-head_ears_hang": {
+    "name": "Hanging Elven Ears",
     "required": [
       "male",
       "female",
@@ -5174,40 +5847,38 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "ears",
+      "head_ears_hang"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "ears-Downward_Elven_Ears": {
+  "head-ears-head_ears_down": {
+    "name": "Downward Elven Ears",
     "required": [
       "male",
       "female",
@@ -5238,40 +5909,38 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "ears",
+      "head_ears_down"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "ears-Dragon_Ears": {
+  "head-ears-head_ears_dragon": {
+    "name": "Dragon Ears",
     "required": [
       "male",
       "female",
@@ -5302,40 +5971,38 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "ears",
+      "head_ears_dragon"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "furry_ears-Cat_Ears": {
+  "head-furry ears-top ears-head_ears_cat": {
+    "name": "Cat Ears",
     "required": [
       "male",
       "female",
@@ -5366,40 +6033,50 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "furry ears",
+      "top ears",
+      "head_ears_cat"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "furry_ears_skin-Cat_Ears_Skintone": {
+  "head-furry ears-top ears-head_ears_cat_skin": {
+    "name": "Cat Ears Skintone",
     "required": [
       "male",
       "female",
@@ -5430,40 +6107,39 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "furry ears",
+      "top ears",
+      "head_ears_cat_skin"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "furry_ears-Wolf_Ears": {
+  "head-furry ears-top ears-head_ears_wolf": {
+    "name": "Wolf Ears",
     "required": [
       "male",
       "female",
@@ -5494,40 +6170,50 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "furry ears",
+      "top ears",
+      "head_ears_wolf"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "furry_ears_skin-Wolf_Ears_Skintone": {
+  "head-furry ears-top ears-head_ears_wolf_skin": {
+    "name": "Wolf Ears Skintone",
     "required": [
       "male",
       "female",
@@ -5558,40 +6244,39 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "furry ears",
+      "top ears",
+      "head_ears_wolf_skin"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "ears-Side_Wolf_Ears": {
+  "head-furry ears-side ears-head_ears_lykon": {
+    "name": "Side Wolf Ears",
     "required": [
       "male",
       "female",
@@ -5622,40 +6307,50 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "furry ears",
+      "side ears",
+      "head_ears_lykon"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "ears_inner-Side_Wolf_Ears_Skintone": {
+  "head-furry ears-side ears-head_ears_lykon_skin": {
+    "name": "Side Wolf Ears Skintone",
     "required": [
       "male",
       "female",
@@ -5686,40 +6381,39 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "furry ears",
+      "side ears",
+      "head_ears_lykon_skin"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "ears-Side_Cat_Ears": {
+  "head-furry ears-side ears-head_ears_zabos": {
+    "name": "Side Cat Ears",
     "required": [
       "male",
       "female",
@@ -5750,40 +6444,50 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "furry ears",
+      "side ears",
+      "head_ears_zabos"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "ears_inner-Side_Cat_Ears_Skintone": {
+  "head-furry ears-side ears-head_ears_zabos_skin": {
+    "name": "Side Cat Ears Skintone",
     "required": [
       "male",
       "female",
@@ -5814,40 +6518,39 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "furry ears",
+      "side ears",
+      "head_ears_zabos_skin"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "ears-Feather_Ears": {
+  "head-furry ears-side ears-head_ears_avyon": {
+    "name": "Feather Ears",
     "required": [
       "male",
       "female",
@@ -5878,40 +6581,50 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "furry ears",
+      "side ears",
+      "head_ears_avyon"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "ears_inner-Feather_Ears_Skintone": {
+  "head-furry ears-side ears-head_ears_avyon_skin": {
+    "name": "Feather Ears Skintone",
     "required": [
       "male",
       "female",
@@ -5942,40 +6655,39 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "furry ears",
+      "side ears",
+      "head_ears_avyon_skin"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "nose-Big_nose": {
+  "head-nose-head_nose_big": {
+    "name": "Big nose",
     "required": [
       "male",
       "female",
@@ -6005,30 +6717,38 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "nose",
+      "head_nose_big"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "nose-Button_nose": {
+  "head-nose-head_nose_button": {
+    "name": "Button nose",
     "required": [
       "male",
       "female",
@@ -6058,30 +6778,38 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "nose",
+      "head_nose_button"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "nose-Straight_nose": {
+  "head-nose-head_nose_straight": {
+    "name": "Straight nose",
     "required": [
       "male",
       "female",
@@ -6111,30 +6839,38 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "nose",
+      "head_nose_straight"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "nose-Elderly_nose": {
+  "head-nose-head_nose_elderly": {
+    "name": "Elderly nose",
     "required": [
       "male",
       "female",
@@ -6164,25 +6900,38 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "nose",
+      "head_nose_elderly"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "nose-Large_nose": {
+  "head-nose-head_nose_large": {
+    "name": "Large nose",
     "required": [
       "male",
       "female",
@@ -6212,25 +6961,38 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "nose",
+      "head_nose_large"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "eyebrows-Thick_Eyebrows": {
+  "head-eyebrows-eyebrows_thick": {
+    "name": "Thick Eyebrows",
     "required": [
       "male",
       "female",
@@ -6261,28 +7023,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "eyebrows",
+      "eyebrows_thick"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "eyebrows-Thin_Eyebrows": {
+  "head-eyebrows-eyebrows_thin": {
+    "name": "Thin Eyebrows",
     "required": [
       "male",
       "female",
@@ -6313,28 +7089,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "eyebrows",
+      "eyebrows_thin"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "wrinkes-Wrinkles": {
+  "head-head_wrinkles": {
+    "name": "Wrinkles",
     "required": [
       "male",
       "female",
@@ -6364,25 +7154,37 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "head_wrinkles"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ]
   },
-  "beard-Basic_Beard": {
+  "head-beards-beards_beard": {
+    "name": "Basic Beard",
     "required": [
       "male",
       "female",
@@ -6412,30 +7214,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "beards",
+      "beards_beard"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "beard-Winter_Beard": {
+  "head-beards-beards_winter": {
+    "name": "Winter Beard",
     "required": [
       "male",
       "female",
@@ -6465,25 +7279,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "beards",
+      "beards_winter"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "beard-5_O'clock_Shadow": {
+  "head-beards-beards_5oclock_shadow": {
+    "name": "5 O'clock Shadow",
     "required": [
       "male",
       "female",
@@ -6513,30 +7344,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "beards",
+      "beards_5oclock_shadow"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "beard-Trimmed_Beard": {
+  "head-beards-beards_trimmed": {
+    "name": "Trimmed Beard",
     "required": [
       "male",
       "female",
@@ -6566,25 +7409,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "beards",
+      "beards_trimmed"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "beard-Medium_Beard": {
+  "head-beards-beards_medium": {
+    "name": "Medium Beard",
     "required": [
       "male",
       "female",
@@ -6614,25 +7474,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "beards",
+      "beards_medium"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "mustache-Big_Mustache": {
+  "head-mustaches-beards_bigstache": {
+    "name": "Big Mustache",
     "required": [
       "male",
       "female",
@@ -6662,30 +7539,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "mustaches",
+      "beards_bigstache"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "mustache-Mustache": {
+  "head-mustaches-beards_mustache": {
+    "name": "Mustache",
     "required": [
       "male",
       "female",
@@ -6715,30 +7604,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "mustaches",
+      "beards_mustache"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "mustache-French_Mustache": {
+  "head-mustaches-beards_french": {
+    "name": "French Mustache",
     "required": [
       "male",
       "female",
@@ -6768,30 +7669,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "mustaches",
+      "beards_french"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "mustache-Walrus_Mustache": {
+  "head-mustaches-beards_walrus": {
+    "name": "Walrus Mustache",
     "required": [
       "male",
       "female",
@@ -6821,25 +7734,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "mustaches",
+      "beards_walrus"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "mustache-Chevron_Mustache": {
+  "head-mustaches-beards_chevron": {
+    "name": "Chevron Mustache",
     "required": [
       "male",
       "female",
@@ -6869,25 +7799,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "mustaches",
+      "beards_chevron"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "mustache-Handlebar_Mustache": {
+  "head-mustaches-beards_handlebar": {
+    "name": "Handlebar Mustache",
     "required": [
       "male",
       "female",
@@ -6917,25 +7864,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "mustaches",
+      "beards_handlebar"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "mustache-Lampshade_Mustache": {
+  "head-mustaches-beards_lampshade": {
+    "name": "Lampshade Mustache",
     "required": [
       "male",
       "female",
@@ -6965,25 +7929,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "mustaches",
+      "beards_lampshade"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "mustache-Horseshoe_Mustache": {
+  "head-mustaches-beards_horseshoe": {
+    "name": "Horseshoe Mustache",
     "required": [
       "male",
       "female",
@@ -7013,25 +7994,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "mustaches",
+      "beards_horseshoe"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hairextl-Left_Braid": {
+  "head-hair-hair extensions-bangs-hairext_braidl": {
+    "name": "Left Braid",
     "required": [
       "male",
       "female",
@@ -7062,46 +8060,44 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "bangs",
+      "hairext_braidl"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hairextr-Right_Braid": {
+  "head-hair-hair extensions-bangs-hairext_braidr": {
+    "name": "Right Braid",
     "required": [
       "male",
       "female",
@@ -7132,46 +8128,44 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "bangs",
+      "hairext_braidr"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hairextl-Left_XLong_Bang": {
+  "head-hair-hair extensions-bangs-hairext_xlong_bangl": {
+    "name": "Left XLong Bang",
     "required": [
       "male",
       "female",
@@ -7202,40 +8196,44 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "bangs",
+      "hairext_xlong_bangl"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hairextr-Right_XLong_Bang": {
+  "head-hair-hair extensions-bangs-hairext_xlong_bangr": {
+    "name": "Right XLong Bang",
     "required": [
       "male",
       "female",
@@ -7266,632 +8264,44 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "bangs",
+      "hairext_xlong_bangr"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hairextl-Left_XLong_Braid": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "child",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h/backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hairextr-Right_XLong_Braid": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "child",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h/backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hairextl-Left_Long_Straight": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hairextr-Right_Long_Straight": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hairextl-Left_Long_Wavy": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hairextr-Right_Long_Wavy": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hairextl-Left_XLong_Wavy": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hairextr-Right_XLong_Wavy": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hairextl-Left_XLong_Curly": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hairextr-Right_XLong_Curly": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "ponytail-Short_Topknot": {
+  "head-hair-hair extensions-bangs-hairext_xlong_braidl": {
+    "name": "Left XLong Braid",
     "required": [
       "male",
       "female",
@@ -7922,46 +8332,44 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "bangs",
+      "hairext_xlong_braidl"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "ponytail-Long_Topknot": {
+  "head-hair-hair extensions-bangs-hairext_xlong_braidr": {
+    "name": "Right XLong Braid",
     "required": [
       "male",
       "female",
@@ -7992,46 +8400,44 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "bangs",
+      "hairext_xlong_braidr"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "ponytail-Relm_Topknot": {
+  "head-hair-hair extensions-bangs-hairext_long_straightl": {
+    "name": "Left Long Straight",
     "required": [
       "male",
       "female",
@@ -8061,35 +8467,716 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "bangs",
+      "hairext_long_straightl"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "updo-High_Bun": {
+  "head-hair-hair extensions-bangs-hairext_long_straightr": {
+    "name": "Right Long Straight",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "bangs",
+      "hairext_long_straightr"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-bangs-hairext_long_wavyl": {
+    "name": "Left Long Wavy",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "bangs",
+      "hairext_long_wavyl"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-bangs-hairext_long_wavyr": {
+    "name": "Right Long Wavy",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "bangs",
+      "hairext_long_wavyr"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-bangs-hairext_xlong_wavyl": {
+    "name": "Left XLong Wavy",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "bangs",
+      "hairext_xlong_wavyl"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-bangs-hairext_xlong_wavyr": {
+    "name": "Right XLong Wavy",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "bangs",
+      "hairext_xlong_wavyr"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-bangs-hairext_xlong_curlyl": {
+    "name": "Left XLong Curly",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "bangs",
+      "hairext_xlong_curlyl"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-bangs-hairext_xlong_curlyr": {
+    "name": "Right XLong Curly",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "bangs",
+      "hairext_xlong_curlyr"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-ponytails-hairext_topknot_short": {
+    "name": "Short Topknot",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "child",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h/backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "ponytails",
+      "hairext_topknot_short"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-ponytails-hairext_topknot_long": {
+    "name": "Long Topknot",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "child",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h/backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "ponytails",
+      "hairext_topknot_long"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-ponytails-hairext_topknot_relm": {
+    "name": "Relm Topknot",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "ponytails",
+      "hairext_topknot_relm"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-knot / ties-hairext_high_bun": {
+    "name": "High Bun",
     "required": [
       "male",
       "female",
@@ -8119,25 +9206,44 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "knot / ties",
+      "hairext_high_bun"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Afro": {
+  "head-hair-hair extensions-afro-hair_afro": {
+    "name": "Afro",
     "required": [
       "male",
       "female",
@@ -8167,25 +9273,44 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "hair_afro"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Natural": {
+  "head-hair-hair extensions-afro-hair_natural": {
+    "name": "Natural",
     "required": [
       "male",
       "female",
@@ -8215,25 +9340,44 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "hair_natural"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Dreadlocks_short": {
+  "head-hair-hair extensions-afro-hair_dreadlocks_short": {
+    "name": "Dreadlocks short",
     "required": [
       "male",
       "female",
@@ -8263,25 +9407,44 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "hair_dreadlocks_short"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Twists_fade": {
+  "head-hair-hair extensions-afro-hair_twists_fade": {
+    "name": "Twists fade",
     "required": [
       "male",
       "female",
@@ -8311,25 +9474,44 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "hair_twists_fade"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Twists_straight": {
+  "head-hair-hair extensions-afro-hair_twists_straight": {
+    "name": "Twists straight",
     "required": [
       "male",
       "female",
@@ -8359,25 +9541,44 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "hair_twists_straight"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Dreadlocks_long": {
+  "head-hair-hair extensions-afro-hair_dreadlocks_long": {
+    "name": "Dreadlocks long",
     "required": [
       "male",
       "female",
@@ -8407,25 +9608,44 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "hair_dreadlocks_long"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Flat_top_straight": {
+  "head-hair-hair extensions-afro-hair_flat_top_straight": {
+    "name": "Flat top straight",
     "required": [
       "male",
       "female",
@@ -8455,25 +9675,44 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "hair_flat_top_straight"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Flat_top_fade": {
+  "head-hair-hair extensions-afro-hair_flat_top_fade": {
+    "name": "Flat top fade",
     "required": [
       "male",
       "female",
@@ -8503,25 +9742,44 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "hair_flat_top_fade"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Cornrows": {
+  "head-hair-hair extensions-afro-hair_cornrows": {
+    "name": "Cornrows",
     "required": [
       "male",
       "female",
@@ -8551,1044 +9809,44 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "hair_cornrows"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Jewfro": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "child",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hair-Curly_short": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
-  },
-  "hair-Curly_long": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
-  },
-  "hair-Large_Curls": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0+"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0+"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0+"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0+"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0+"
-      ]
-    }
-  },
-  "hair-Large_Curls_XLong": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0+"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0+"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0+"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0+"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0+"
-      ]
-    }
-  },
-  "hair-Balding": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
-  },
-  "hair-Longhawk": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hair-Shorthawk": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hair-High_and_tight": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hair-Buzzcut": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
-  },
-  "hair-Plain": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hair-Pixie": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hair-Page": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hair-Page2": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hair-Idol": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
-  },
-  "hair-Mop": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hair-Parted": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hair-Parted_2": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hair-Parted_3": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
-  },
-  "hair-Side_Parted_w/Bangs": {
+  "head-hair-hair extensions-afro-curly-hair_jewfro": {
+    "name": "Jewfro",
     "required": [
       "male",
       "female",
@@ -9619,46 +9877,1292 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "hair_jewfro"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Side_Parted_w/Bangs_2": {
+  "head-hair-hair extensions-afro-curly-hair_curly_short": {
+    "name": "Curly short",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "hair_curly_short"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-hair_curly_long": {
+    "name": "Curly long",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "hair_curly_long"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-hair_curls_large": {
+    "name": "Large Curls",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "hair_curls_large"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-hair_curls_large_xlong": {
+    "name": "Large Curls XLong",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "hair_curls_large_xlong"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-hair_balding": {
+    "name": "Balding",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "hair_balding"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-hair_longhawk": {
+    "name": "Longhawk",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "hair_longhawk"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-hair_shorthawk": {
+    "name": "Shorthawk",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "hair_shorthawk"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-hair_high_and_tight": {
+    "name": "High and tight",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "hair_high_and_tight"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-hair_buzzcut": {
+    "name": "Buzzcut",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "hair_buzzcut"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_plain": {
+    "name": "Plain",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "hair_plain"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_pixie": {
+    "name": "Pixie",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "hair_pixie"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_page": {
+    "name": "Page",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "hair_page"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_page2": {
+    "name": "Page2",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "hair_page2"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_idol": {
+    "name": "Idol",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "hair_idol"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_mop": {
+    "name": "Mop",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "hair_mop"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_parted": {
+    "name": "Parted",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "hair_parted"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_parted2": {
+    "name": "Parted 2",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "hair_parted2"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_parted3": {
+    "name": "Parted 3",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "hair_parted3"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_parted_side_bangs": {
+    "name": "Side Parted w/Bangs",
     "required": [
       "male",
       "female",
@@ -9689,465 +11193,47 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "hair_parted_side_bangs"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Messy1": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hair-Messy2": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hair-Messy3": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0"
-      ]
-    }
-  },
-  "hair-Bedhead": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hair-Unkempt": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hair-Bangs": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hair-Bangsshort": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hair-Swoop": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hair-Side_Swoop": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_parted_side_bangs2": {
+    "name": "Side Parted w/Bangs 2",
     "required": [
       "male",
       "female",
@@ -10178,46 +11264,47 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "hair_parted_side_bangs2"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Curtains": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_messy1": {
+    "name": "Messy1",
     "required": [
       "male",
       "female",
@@ -10247,35 +11334,47 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "GPL 2.0",
-        "GPL 3.0",
-        "CC-BY 3.0"
-      ],
-      "female": [
-        "GPL 2.0",
-        "GPL 3.0",
-        "CC-BY 3.0"
-      ],
-      "teen": [
-        "GPL 2.0",
-        "GPL 3.0",
-        "CC-BY 3.0"
-      ],
-      "muscular": [
-        "GPL 2.0",
-        "GPL 3.0",
-        "CC-BY 3.0"
-      ],
-      "pregnant": [
-        "GPL 2.0",
-        "GPL 3.0",
-        "CC-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "hair_messy1"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Single": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_messy2": {
+    "name": "Messy2",
     "required": [
       "male",
       "female",
@@ -10305,40 +11404,47 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "hair_messy2"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Cowlick": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_messy3": {
+    "name": "Messy3",
     "required": [
       "male",
       "female",
@@ -10368,25 +11474,47 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "hair_messy3"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Cowlick_tall": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_bedhead": {
+    "name": "Bedhead",
     "required": [
       "male",
       "female",
@@ -10416,25 +11544,47 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "hair_bedhead"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Spiked_porcupine": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_unkempt": {
+    "name": "Unkempt",
     "required": [
       "male",
       "female",
@@ -10464,25 +11614,47 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "hair_unkempt"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Spiked_liberty2": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_bangs": {
+    "name": "Bangs",
     "required": [
       "male",
       "female",
@@ -10512,25 +11684,47 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY 3.0"
-      ],
-      "female": [
-        "CC-BY 3.0"
-      ],
-      "teen": [
-        "CC-BY 3.0"
-      ],
-      "muscular": [
-        "CC-BY 3.0"
-      ],
-      "pregnant": [
-        "CC-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "hair_bangs"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Spiked_liberty": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_bangsshort": {
+    "name": "Bangsshort",
     "required": [
       "male",
       "female",
@@ -10560,25 +11754,47 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "hair_bangsshort"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Spiked_beehive": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_swoop": {
+    "name": "Swoop",
     "required": [
       "male",
       "female",
@@ -10608,487 +11824,47 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "hair_swoop"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Spiked": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY 4.0"
-      ],
-      "female": [
-        "CC-BY 4.0"
-      ],
-      "teen": [
-        "CC-BY 4.0"
-      ],
-      "muscular": [
-        "CC-BY 4.0"
-      ],
-      "pregnant": [
-        "CC-BY 4.0"
-      ]
-    }
-  },
-  "hair-Spiked2": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0"
-      ]
-    }
-  },
-  "hair-Halfmessy": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0",
-        "GPL 2.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0",
-        "GPL 2.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0",
-        "GPL 2.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0",
-        "GPL 2.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0",
-        "GPL 2.0"
-      ]
-    }
-  },
-  "hair-Bunches": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hair-Pigtails": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hair-Pigtails_bangs": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hair-Bob": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
-  },
-  "hair-Lob": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
-  },
-  "hair-Bob_side_part": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
-  },
-  "hair-Relm_Short": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_swoop_side": {
+    "name": "Side Swoop",
     "required": [
       "male",
       "female",
@@ -11119,40 +11895,47 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "hair_swoop_side"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Half_up": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_curtains": {
+    "name": "Curtains",
     "required": [
       "male",
       "female",
@@ -11182,25 +11965,47 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "hair_curtains"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Bangs_bun": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_single": {
+    "name": "Single",
     "required": [
       "male",
       "female",
@@ -11230,25 +12035,1119 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "hair_single"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Short_Topknot": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_cowlick": {
+    "name": "Cowlick",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "hair_cowlick"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_cowlick_tall": {
+    "name": "Cowlick tall",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "hair_cowlick_tall"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked_porcupine": {
+    "name": "Spiked porcupine",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "hair_spiked_porcupine"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked_liberty2": {
+    "name": "Spiked liberty2",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "hair_spiked_liberty2"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked_liberty": {
+    "name": "Spiked liberty",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "hair_spiked_liberty"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked_beehive": {
+    "name": "Spiked beehive",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "hair_spiked_beehive"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked": {
+    "name": "Spiked",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "hair_spiked"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked2": {
+    "name": "Spiked2",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "hair_spiked2"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_halfmessy": {
+    "name": "Halfmessy",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "hair_halfmessy"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-hair_bunches": {
+    "name": "Bunches",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "hair_bunches"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-hair_pigtails": {
+    "name": "Pigtails",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "hair_pigtails"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-hair_pigtails_bangs": {
+    "name": "Pigtails bangs",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "hair_pigtails_bangs"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-hair_bob": {
+    "name": "Bob",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "hair_bob"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-hair_lob": {
+    "name": "Lob",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "hair_lob"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-hair_bob_side_part": {
+    "name": "Bob side part",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "hair_bob_side_part"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-hair_relm_short": {
+    "name": "Relm Short",
     "required": [
       "male",
       "female",
@@ -11279,46 +13178,198 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "hair_relm_short"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Short_Topknot_2": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_half_up": {
+    "name": "Half up",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "hair_half_up"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_bangs_bun": {
+    "name": "Bangs bun",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "hair_bangs_bun"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_topknot_short": {
+    "name": "Short Topknot",
     "required": [
       "male",
       "female",
@@ -11349,46 +13400,51 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "hair_topknot_short"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Long_Topknot": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_topknot_short2": {
+    "name": "Short Topknot 2",
     "required": [
       "male",
       "female",
@@ -11419,46 +13475,51 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "hair_topknot_short2"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Long_Topknot_2": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_topknot_long": {
+    "name": "Long Topknot",
     "required": [
       "male",
       "female",
@@ -11489,485 +13550,51 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "hair_topknot_long"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Ponytail": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hair-Ponytail2": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hair-High_ponytail": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
-  },
-  "hair-Braid": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0",
-        "GPL 2.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0",
-        "GPL 2.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0",
-        "GPL 2.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0",
-        "GPL 2.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0",
-        "GPL 2.0"
-      ]
-    }
-  },
-  "hair-Braid2": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hair-Shoulderl": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hair-Shoulderr": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hair-Long_tied": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
-  },
-  "hair-Relm_w/Ponytail": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_topknot_long2": {
+    "name": "Long Topknot 2",
     "required": [
       "male",
       "female",
@@ -11998,40 +13625,51 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "hair_topknot_long2"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Loose": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_ponytail": {
+    "name": "Ponytail",
     "required": [
       "male",
       "female",
@@ -12061,30 +13699,51 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "hair_ponytail"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Bangslong": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_ponytail2": {
+    "name": "Ponytail2",
     "required": [
       "male",
       "female",
@@ -12114,30 +13773,51 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "hair_ponytail2"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Bangslong2": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_high_ponytail": {
+    "name": "High ponytail",
     "required": [
       "male",
       "female",
@@ -12167,30 +13847,51 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "hair_high_ponytail"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Long": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_braid": {
+    "name": "Braid",
     "required": [
       "male",
       "female",
@@ -12220,30 +13921,51 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "hair_braid"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Long_messy": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_braid2": {
+    "name": "Braid2",
     "required": [
       "male",
       "female",
@@ -12273,35 +13995,51 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "GPL 2.0",
-        "GPL 3.0",
-        "CC-BY 3.0"
-      ],
-      "female": [
-        "GPL 2.0",
-        "GPL 3.0",
-        "CC-BY 3.0"
-      ],
-      "teen": [
-        "GPL 2.0",
-        "GPL 3.0",
-        "CC-BY 3.0"
-      ],
-      "muscular": [
-        "GPL 2.0",
-        "GPL 3.0",
-        "CC-BY 3.0"
-      ],
-      "pregnant": [
-        "GPL 2.0",
-        "GPL 3.0",
-        "CC-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "hair_braid2"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Long_messy2": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_shoulderl": {
+    "name": "Shoulderl",
     "required": [
       "male",
       "female",
@@ -12331,30 +14069,51 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "hair_shoulderl"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Curtains_long": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_shoulderr": {
+    "name": "Shoulderr",
     "required": [
       "male",
       "female",
@@ -12384,35 +14143,51 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "GPL 2.0",
-        "GPL 3.0",
-        "CC-BY 3.0"
-      ],
-      "female": [
-        "GPL 2.0",
-        "GPL 3.0",
-        "CC-BY 3.0"
-      ],
-      "teen": [
-        "GPL 2.0",
-        "GPL 3.0",
-        "CC-BY 3.0"
-      ],
-      "muscular": [
-        "GPL 2.0",
-        "GPL 3.0",
-        "CC-BY 3.0"
-      ],
-      "pregnant": [
-        "GPL 2.0",
-        "GPL 3.0",
-        "CC-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "hair_shoulderr"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Wavy": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_long_tied": {
+    "name": "Long tied",
     "required": [
       "male",
       "female",
@@ -12442,40 +14217,726 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "hair_long_tied"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Child_Wavy": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_relm_ponytail": {
+    "name": "Relm w/Ponytail",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "child",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "hair_relm_ponytail"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_loose": {
+    "name": "Loose",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hair_loose"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_bangslong": {
+    "name": "Bangslong",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hair_bangslong"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_bangslong2": {
+    "name": "Bangslong2",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hair_bangslong2"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_long": {
+    "name": "Long",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hair_long"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_long_messy": {
+    "name": "Long messy",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hair_long_messy"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_long_messy2": {
+    "name": "Long messy2",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hair_long_messy2"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_curtains_long": {
+    "name": "Curtains long",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hair_curtains_long"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_wavy": {
+    "name": "Wavy",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hair_wavy"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_wavy_child": {
+    "name": "Child Wavy",
     "required": [
       "child"
     ],
@@ -12491,16 +14952,52 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "child": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hair_wavy_child"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Long_center_part": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_long_center_part": {
+    "name": "Long center part",
     "required": [
       "male",
       "female",
@@ -12530,25 +15027,52 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hair_long_center_part"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Long_straight": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_long_straight": {
+    "name": "Long straight",
     "required": [
       "male",
       "female",
@@ -12578,25 +15102,52 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hair_long_straight"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Princess": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_princess": {
+    "name": "Princess",
     "required": [
       "male",
       "female",
@@ -12626,35 +15177,53 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "very long",
+      "hair_princess"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Sara": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_sara": {
+    "name": "Sara",
     "required": [
       "male",
       "female",
@@ -12684,30 +15253,53 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "very long",
+      "hair_sara"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Long_band": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_long_band": {
+    "name": "Long band",
     "required": [
       "male",
       "female",
@@ -12737,25 +15329,53 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "very long",
+      "hair_long_band"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Xlong": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_xlong": {
+    "name": "Xlong",
     "required": [
       "male",
       "female",
@@ -12785,40 +15405,53 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "very long",
+      "hair_xlong"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-XLong_Wavy": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_xlong_wavy": {
+    "name": "XLong Wavy",
     "required": [
       "male",
       "female",
@@ -12848,25 +15481,53 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "very long",
+      "hair_xlong_wavy"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "hair-Relm_XLong": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_relm_xlong": {
+    "name": "Relm XLong",
     "required": [
       "male",
       "female",
@@ -12896,836 +15557,53 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "very long",
+      "hair_relm_xlong"
+    ],
+    "variants": [
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose"
+    ]
   },
-  "horns-Backwards_Horns": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "child",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ]
-    }
-  },
-  "horns-Curled_Horns": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "child",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ]
-    }
-  },
-  "fins-Fin": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "child",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ]
-    }
-  },
-  "fins-Short_fin": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "child",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ]
-    }
-  },
-  "hat-Hood": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hat-Sack_Cloth_Hood": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "hat-Hijab": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
-  },
-  "bandana-Mail": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "bandana-Bandana": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ]
-    }
-  },
-  "bandana-Bordered_Bandana": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ]
-    }
-  },
-  "bandana-Pirate_Bandana": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0"
-      ]
-    }
-  },
-  "bandana_overlay-Skull_Bandana_Overlay": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0"
-      ]
-    }
-  },
-  "headcover-Kerchief": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "headcover-Tied_Headband": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "headcover-Thick_Headband": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-appendages-head_horns_backwards": {
+    "name": "Backwards Horns",
     "required": [
       "male",
       "female",
@@ -13756,40 +15634,84 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "appendages",
+      "head_horns_backwards"
+    ],
+    "variants": [
+      "horns",
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose",
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "skin_black",
+      "lavender",
+      "skin_blue",
+      "zombie_green",
+      "skin_green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie",
+      "metallic_steel",
+      "metallic_iron",
+      "metallic_ceramic",
+      "metallic_brass",
+      "metallic_copper",
+      "metallic_bronze",
+      "metallic_silver",
+      "metallic_gold"
+    ]
   },
-  "headcover_rune-Thick_Headband_Rune": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-appendages-head_horns_curled": {
+    "name": "Curled Horns",
     "required": [
       "male",
       "female",
@@ -13820,40 +15742,84 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "appendages",
+      "head_horns_curled"
+    ],
+    "variants": [
+      "horns",
+      "blonde",
+      "ash",
+      "sandy",
+      "platinum",
+      "strawberry",
+      "redhead",
+      "ginger",
+      "carrot",
+      "chestnut",
+      "light brown",
+      "dark brown",
+      "black",
+      "raven",
+      "dark gray",
+      "gray",
+      "white",
+      "red",
+      "orange",
+      "gold",
+      "green",
+      "blue",
+      "navy",
+      "violet",
+      "purple",
+      "pink",
+      "rose",
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "skin_black",
+      "lavender",
+      "skin_blue",
+      "zombie_green",
+      "skin_green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie",
+      "metallic_steel",
+      "metallic_iron",
+      "metallic_ceramic",
+      "metallic_brass",
+      "metallic_copper",
+      "metallic_bronze",
+      "metallic_silver",
+      "metallic_gold"
+    ]
   },
-  "hairtie-Hair_Tie": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-appendages-head_fins_fin": {
+    "name": "Fin",
     "required": [
       "male",
       "female",
@@ -13884,40 +15850,48 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "appendages",
+      "head_fins_fin"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "hairtie_rune-Hair_Tie_Rune": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-appendages-head_fins_fin_short": {
+    "name": "Short fin",
     "required": [
       "male",
       "female",
@@ -13948,40 +15922,48 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "appendages",
+      "head_fins_fin_short"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "hat-Leather_Cap": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-hoods-hat_hood_cloth": {
+    "name": "Hood",
     "required": [
       "male",
       "female",
@@ -14011,35 +15993,55 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "head coverings",
+      "hoods",
+      "hat_hood_cloth"
+    ],
+    "variants": [
+      "hood_black",
+      "hood_brown",
+      "hood_white",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat_accessory-Leather_Cap_Feather": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-hoods-hat_hood_sack_cloth": {
+    "name": "Sack Cloth Hood",
     "required": [
       "male",
       "female",
@@ -14069,35 +16071,53 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "head coverings",
+      "hoods",
+      "hat_hood_sack_cloth"
+    ],
+    "variants": [
+      "base",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat-Bonnie": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-hoods-hat_hood_hijab": {
+    "name": "Hijab",
     "required": [
       "male",
       "female",
@@ -14127,25 +16147,53 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "head coverings",
+      "hoods",
+      "hat_hood_hijab"
+    ],
+    "variants": [
+      "base",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat-Bonnie_Alt_Tilt": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-hoods-hat_helmet_mail": {
+    "name": "Mail",
     "required": [
       "male",
       "female",
@@ -14175,25 +16223,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "head coverings",
+      "hoods",
+      "hat_helmet_mail"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat_accessory-Bonnie_feather": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-bandanas-hat_bandana": {
+    "name": "Bandana",
     "required": [
       "male",
       "female",
@@ -14223,25 +16282,55 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "head coverings",
+      "bandanas",
+      "hat_bandana"
+    ],
+    "variants": [
+      "bandana_gray",
+      "bandana_red",
+      "bandana_white",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat-Cavalier": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-bandanas-hat_bandana2": {
+    "name": "Bordered Bandana",
     "required": [
       "male",
       "female",
@@ -14271,25 +16360,52 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "head coverings",
+      "bandanas",
+      "hat_bandana2"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat_accessory-Cavalier_feather": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-bandanas-hat_bandana_pirate": {
+    "name": "Pirate Bandana",
     "required": [
       "male",
       "female",
@@ -14319,25 +16435,1107 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "head coverings",
+      "bandanas",
+      "hat_bandana_pirate"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat-Tricorne": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-bandanas-hat_bandana_pirate_skull": {
+    "name": "Skull Bandana Overlay",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "head coverings",
+      "bandanas",
+      "hat_bandana_pirate_skull"
+    ],
+    "variants": [
+      "white",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "yellow"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_kerchief": {
+    "name": "Kerchief",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "head coverings",
+      "headbands",
+      "hat_headband_kerchief"
+    ],
+    "variants": [
+      "white",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "yellow"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_tied": {
+    "name": "Tied Headband",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "head coverings",
+      "headbands",
+      "hat_headband_tied"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_thick": {
+    "name": "Thick Headband",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "child",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "head coverings",
+      "headbands",
+      "hat_headband_thick"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_thick_rune": {
+    "name": "Thick Headband Rune",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "child",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "head coverings",
+      "headbands",
+      "hat_headband_thick_rune"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_hairtie": {
+    "name": "Hair Tie",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "child",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "head coverings",
+      "headbands",
+      "hat_headband_hairtie"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_hairtie_rune": {
+    "name": "Hair Tie Rune",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "child",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "head coverings",
+      "headbands",
+      "hat_headband_hairtie_rune"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_leather": {
+    "name": "Leather Cap",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "caps",
+      "hat_cap_leather"
+    ],
+    "variants": [
+      "base",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_leather_feather": {
+    "name": "Leather Cap Feather",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "caps",
+      "hat_cap_leather_feather"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_bonnie": {
+    "name": "Bonnie",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "caps",
+      "hat_cap_bonnie"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_bonnie_tilt": {
+    "name": "Bonnie Alt Tilt",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "caps",
+      "hat_cap_bonnie_tilt"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_bonnie_feather": {
+    "name": "Bonnie feather",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "caps",
+      "hat_cap_bonnie_feather"
+    ],
+    "variants": [
+      "white",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "yellow"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_cavalier": {
+    "name": "Cavalier",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "caps",
+      "hat_cap_cavalier"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_cavalier_feather": {
+    "name": "Cavalier feather",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "caps",
+      "hat_cap_cavalier_feather"
+    ],
+    "variants": [
+      "white",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "yellow"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-basic-hat_tricorne": {
+    "name": "Tricorne",
     "required": [
       "male",
       "female",
@@ -14370,25 +17568,53 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "tricorne",
+      "basic",
+      "hat_tricorne"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat_trim-Tricorne_Stitching": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-basic-hat_tricorne_stitched": {
+    "name": "Tricorne Stitching",
     "required": [
       "male",
       "female",
@@ -14424,25 +17650,53 @@ window.itemMetadata = {
       "tricorne_basic"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "tricorne",
+      "basic",
+      "hat_tricorne_stitched"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat_trim-Tricorne_Thatching": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-basic-hat_tricorne_thatch": {
+    "name": "Tricorne Thatching",
     "required": [
       "male",
       "female",
@@ -14478,25 +17732,53 @@ window.itemMetadata = {
       "tricorne_basic"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "tricorne",
+      "basic",
+      "hat_tricorne_thatch"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat-Tricorne_Lieutenant": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-lieutenant-hat_tricorne_lieutenant": {
+    "name": "Tricorne Lieutenant",
     "required": [
       "male",
       "female",
@@ -14529,25 +17811,53 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "tricorne",
+      "lieutenant",
+      "hat_tricorne_lieutenant"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat_trim-Tricorne_Lieutenant_Trim": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-lieutenant-hat_tricorne_lieutenant_trim": {
+    "name": "Tricorne Lieutenant Trim",
     "required": [
       "male",
       "female",
@@ -14582,25 +17892,62 @@ window.itemMetadata = {
       "lieutenant"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "tricorne",
+      "lieutenant",
+      "hat_tricorne_lieutenant_trim"
+    ],
+    "variants": [
+      "base",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat-Tricorne_Captain": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-captain-hat_tricorne_captain": {
+    "name": "Tricorne Captain",
     "required": [
       "male",
       "female",
@@ -14633,25 +17980,53 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "tricorne",
+      "captain",
+      "hat_tricorne_captain"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat_trim-Tricorne_Captain_Trim": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-captain-hat_tricorne_captain_trim": {
+    "name": "Tricorne Captain Trim",
     "required": [
       "male",
       "female",
@@ -14686,25 +18061,62 @@ window.itemMetadata = {
       "captain"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "tricorne",
+      "captain",
+      "hat_tricorne_captain_trim"
+    ],
+    "variants": [
+      "base",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat_overlay-Tricorne_Captain_Skull": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-captain-hat_tricorne_captain_skull": {
+    "name": "Tricorne Captain Skull",
     "required": [
       "male",
       "female",
@@ -14734,25 +18146,53 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "tricorne",
+      "captain",
+      "hat_tricorne_captain_skull"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat-Bicorne_Athwart": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-basic-hat_bicorne_athwart_basic": {
+    "name": "Bicorne Athwart",
     "required": [
       "male",
       "female",
@@ -14782,25 +18222,53 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "bicorne athwart",
+      "basic",
+      "hat_bicorne_athwart_basic"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat_overlay-Bicorne_Athwart_Skull": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-basic-hat_bicorne_athwart_basic_skull": {
+    "name": "Bicorne Athwart Skull",
     "required": [
       "male",
       "female",
@@ -14830,25 +18298,53 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "bicorne athwart",
+      "basic",
+      "hat_bicorne_athwart_basic_skull"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat-Bicorne_Athwart_Captain": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-captain-hat_bicorne_athwart_captain": {
+    "name": "Bicorne Athwart Captain",
     "required": [
       "male",
       "female",
@@ -14878,25 +18374,53 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "bicorne athwart",
+      "captain",
+      "hat_bicorne_athwart_captain"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat_overlay-Bicorne_Athwart_Captain_Skull": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-captain-hat_bicorne_athwart_captain_skull": {
+    "name": "Bicorne Athwart Captain Skull",
     "required": [
       "male",
       "female",
@@ -14926,25 +18450,53 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "bicorne athwart",
+      "captain",
+      "hat_bicorne_athwart_captain_skull"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat-Bicorne_Athwart_Admiral": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-admiral-hat_bicorne_athwart_admiral": {
+    "name": "Bicorne Athwart Admiral",
     "required": [
       "male",
       "female",
@@ -14978,25 +18530,53 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "bicorne athwart",
+      "admiral",
+      "hat_bicorne_athwart_admiral"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat_trim-Bicorne_Athwart_Admiral_Trim": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-admiral-hat_bicorne_athwart_admiral_trim": {
+    "name": "Bicorne Athwart Admiral Trim",
     "required": [
       "male",
       "female",
@@ -15032,25 +18612,62 @@ window.itemMetadata = {
       "athwart_admiral"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "bicorne athwart",
+      "admiral",
+      "hat_bicorne_athwart_admiral_trim"
+    ],
+    "variants": [
+      "base",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat_accessory-Bicorne_Athwart_Admiral_Cockade": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-admiral-hat_bicorne_athwart_admiral_cockade": {
+    "name": "Bicorne Athwart Admiral Cockade",
     "required": [
       "male",
       "female",
@@ -15080,25 +18697,53 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "bicorne athwart",
+      "admiral",
+      "hat_bicorne_athwart_admiral_cockade"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat-Bicorne_Athwart_Commodore": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-commodore-hat_bicorne_athwart_commodore": {
+    "name": "Bicorne Athwart Commodore",
     "required": [
       "male",
       "female",
@@ -15128,25 +18773,53 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "bicorne athwart",
+      "commodore",
+      "hat_bicorne_athwart_commodore"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat_trim-Bicorne_Athwart_Commodore_Trim": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-commodore-hat_bicorne_athwart_commodore_trim": {
+    "name": "Bicorne Athwart Commodore Trim",
     "required": [
       "male",
       "female",
@@ -15176,25 +18849,62 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "bicorne athwart",
+      "commodore",
+      "hat_bicorne_athwart_commodore_trim"
+    ],
+    "variants": [
+      "base",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat-Bicorne_foreaft": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne foreaft-hat_bicorne_foreaft": {
+    "name": "Bicorne foreaft",
     "required": [
       "male",
       "female",
@@ -15224,25 +18934,52 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "bicorne foreaft",
+      "hat_bicorne_foreaft"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat-Bicorne_Foreaft_Commodore": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne foreaft-hat_bicorne_foreaft_commodore": {
+    "name": "Bicorne Foreaft Commodore",
     "required": [
       "male",
       "female",
@@ -15276,25 +19013,52 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "bicorne foreaft",
+      "hat_bicorne_foreaft_commodore"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat_trim-Bicorne_Foreaft_Commodore_Trim": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne foreaft-hat_bicorne_foreaft_commodore_trim": {
+    "name": "Bicorne Foreaft Commodore Trim",
     "required": [
       "male",
       "female",
@@ -15330,25 +19094,61 @@ window.itemMetadata = {
       "foreaft_commodore"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "bicorne foreaft",
+      "hat_bicorne_foreaft_commodore_trim"
+    ],
+    "variants": [
+      "base",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat-Large_Hat": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-hat_magic_large": {
+    "name": "Large Hat",
     "required": [
       "male",
       "female",
@@ -15378,25 +19178,29 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "magic",
+      "hat_magic_large"
+    ],
+    "variants": [
+      "brown"
+    ]
   },
-  "hat-Wizard_Hat_Base": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-wizard-hat_magic_wizard": {
+    "name": "Wizard Hat Base",
     "required": [
       "male",
       "female",
@@ -15429,35 +19233,59 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "magic",
+      "wizard",
+      "hat_magic_wizard"
+    ],
+    "variants": [
+      "base_black",
+      "base_brown",
+      "base_gray",
+      "base_red",
+      "base_teal",
+      "base_yellow",
+      "white",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "yellow"
+    ]
   },
-  "hat_trim-Wizard_Hat_Belt": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-wizard-hat_magic_wizard_belt": {
+    "name": "Wizard Hat Belt",
     "required": [
       "male",
       "female",
@@ -15492,35 +19320,59 @@ window.itemMetadata = {
       "pointed_wizard"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "magic",
+      "wizard",
+      "hat_magic_wizard_belt"
+    ],
+    "variants": [
+      "base_black",
+      "base_brown",
+      "base_gray",
+      "base_maroon",
+      "base_teal",
+      "base_yellow",
+      "white",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "yellow"
+    ]
   },
-  "hat_buckle-Wizard_Hat_Buckle": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-wizard-hat_magic_wizard_buckle": {
+    "name": "Wizard Hat Buckle",
     "required": [
       "male",
       "female",
@@ -15555,35 +19407,37 @@ window.itemMetadata = {
       "pointed_wizard"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "magic",
+      "wizard",
+      "hat_magic_wizard_buckle"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat-Celestial_Wizard_Hat": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-celestial-hat_magic_celestial": {
+    "name": "Celestial Wizard Hat",
     "required": [
       "male",
       "female",
@@ -15616,25 +19470,53 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY 3.0"
-      ],
-      "female": [
-        "CC-BY 3.0"
-      ],
-      "teen": [
-        "CC-BY 3.0"
-      ],
-      "muscular": [
-        "CC-BY 3.0"
-      ],
-      "pregnant": [
-        "CC-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "magic",
+      "celestial",
+      "hat_magic_celestial"
+    ],
+    "variants": [
+      "white",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "yellow"
+    ]
   },
-  "hat_trim-Celestial_Wizard_Hat_Second_Color": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-celestial-hat_magic_celestial_trim": {
+    "name": "Celestial Wizard Hat Second Color",
     "required": [
       "male",
       "female",
@@ -15669,25 +19551,61 @@ window.itemMetadata = {
       "celestial"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY 3.0"
-      ],
-      "female": [
-        "CC-BY 3.0"
-      ],
-      "teen": [
-        "CC-BY 3.0"
-      ],
-      "muscular": [
-        "CC-BY 3.0"
-      ],
-      "pregnant": [
-        "CC-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "magic",
+      "celestial",
+      "hat_magic_celestial_trim"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat-Celestial_Wizard_Moon_Hat": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-celestial-hat_magic_celestial_moon": {
+    "name": "Celestial Wizard Moon Hat",
     "required": [
       "male",
       "female",
@@ -15720,25 +19638,53 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY 3.0"
-      ],
-      "female": [
-        "CC-BY 3.0"
-      ],
-      "teen": [
-        "CC-BY 3.0"
-      ],
-      "muscular": [
-        "CC-BY 3.0"
-      ],
-      "pregnant": [
-        "CC-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "magic",
+      "celestial",
+      "hat_magic_celestial_moon"
+    ],
+    "variants": [
+      "white",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "yellow"
+    ]
   },
-  "hat_trim-Celestial_Wizard_Moon_Hat_Second_Color": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-celestial-hat_magic_celestial_moon_trim": {
+    "name": "Celestial Wizard Moon Hat Second Color",
     "required": [
       "male",
       "female",
@@ -15773,25 +19719,61 @@ window.itemMetadata = {
       "celestial_moon"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY 3.0"
-      ],
-      "female": [
-        "CC-BY 3.0"
-      ],
-      "teen": [
-        "CC-BY 3.0"
-      ],
-      "muscular": [
-        "CC-BY 3.0"
-      ],
-      "pregnant": [
-        "CC-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "magic",
+      "celestial",
+      "hat_magic_celestial_moon_trim"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat-Formal_Tophat": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-formal-hat_formal_tophat": {
+    "name": "Formal Tophat",
     "required": [
       "male",
       "female",
@@ -15821,30 +19803,54 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "formal",
+      "hat_formal_tophat"
+    ],
+    "variants": [
+      "base",
+      "base_brown",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat-Formal_Bowler_Hat": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-formal-hat_formal_bowler": {
+    "name": "Formal Bowler Hat",
     "required": [
       "male",
       "female",
@@ -15874,30 +19880,54 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "formal",
+      "hat_formal_bowler"
+    ],
+    "variants": [
+      "base",
+      "base_brown",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat-Crown": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-formal-hat_formal_crown": {
+    "name": "Crown",
     "required": [
       "male",
       "female",
@@ -15927,30 +19957,64 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "formal",
+      "hat_formal_crown"
+    ],
+    "variants": [
+      "crown_gold",
+      "crown_red",
+      "crown_blue",
+      "crown_gray",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat-Tiara": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-formal-hat_formal_tiara": {
+    "name": "Tiara",
     "required": [
       "male",
       "female",
@@ -15980,30 +20044,65 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "formal",
+      "hat_formal_tiara"
+    ],
+    "variants": [
+      "tiara_bronze",
+      "tiara_gold",
+      "tiara_iron",
+      "tiara_purple",
+      "tiara_silver",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat-Christmas_Hat": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-holiday-hat_holiday_christmas": {
+    "name": "Christmas Hat",
     "required": [
       "male",
       "female",
@@ -16036,30 +20135,52 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "holiday",
+      "hat_holiday_christmas"
+    ],
+    "variants": [
+      "red",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "hat_trim-Santa_Trim": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-holiday-hat_holiday_santa": {
+    "name": "Santa Trim",
     "required": [
       "male",
       "female",
@@ -16094,30 +20215,52 @@ window.itemMetadata = {
       "santa_hat"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "holiday",
+      "hat_holiday_santa"
+    ],
+    "variants": [
+      "white",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "yellow"
+    ]
   },
-  "hat_trim-Elf_Trim": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-holiday-hat_holiday_elf": {
+    "name": "Elf Trim",
     "required": [
       "male",
       "female",
@@ -16152,30 +20295,52 @@ window.itemMetadata = {
       "santa_hat"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "hats",
+      "holiday",
+      "hat_holiday_elf"
+    ],
+    "variants": [
+      "white",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "yellow"
+    ]
   },
-  "hat-Armet": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_armet": {
+    "name": "Armet",
     "required": [
       "male",
       "female",
@@ -16205,35 +20370,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmets",
+      "hat_helmet_armet"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat-Simple_Armet": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_armet_simple": {
+    "name": "Simple Armet",
     "required": [
       "male",
       "female",
@@ -16263,35 +20429,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmets",
+      "hat_helmet_armet_simple"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat-Barbarian": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_barbarian": {
+    "name": "Barbarian",
     "required": [
       "male",
       "female",
@@ -16321,45 +20488,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmets",
+      "hat_helmet_barbarian"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat-Barbarian_nasal": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_barbarian_nasal": {
+    "name": "Barbarian nasal",
     "required": [
       "male",
       "female",
@@ -16389,45 +20547,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmets",
+      "hat_helmet_barbarian_nasal"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat-Barbarian_Viking": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_barbarian_viking": {
+    "name": "Barbarian Viking",
     "required": [
       "male",
       "female",
@@ -16457,45 +20606,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmets",
+      "hat_helmet_barbarian_viking"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat-Barbuta": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_barbuta": {
+    "name": "Barbuta",
     "required": [
       "male",
       "female",
@@ -16525,45 +20665,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmets",
+      "hat_helmet_barbuta"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat-Simple_barbuta": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_barbuta_simple": {
+    "name": "Simple barbuta",
     "required": [
       "male",
       "female",
@@ -16593,45 +20724,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmets",
+      "hat_helmet_barbuta_simple"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat-Bascinet": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_bascinet": {
+    "name": "Bascinet",
     "required": [
       "male",
       "female",
@@ -16661,40 +20783,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmets",
+      "hat_helmet_bascinet"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat-Round_bascinet": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_bascinet_round": {
+    "name": "Round bascinet",
     "required": [
       "male",
       "female",
@@ -16724,40 +20842,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmets",
+      "hat_helmet_bascinet_round"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat-Close_helm": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_close": {
+    "name": "Close helm",
     "required": [
       "male",
       "female",
@@ -16787,45 +20901,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmets",
+      "hat_helmet_close"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat-Flattop": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_flattop": {
+    "name": "Flattop",
     "required": [
       "male",
       "female",
@@ -16855,45 +20960,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmets",
+      "hat_helmet_flattop"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat-Greathelm": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_greathelm": {
+    "name": "Greathelm",
     "required": [
       "male",
       "female",
@@ -16923,45 +21019,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmets",
+      "hat_helmet_greathelm"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat-Horned_helmet": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_horned": {
+    "name": "Horned helmet",
     "required": [
       "male",
       "female",
@@ -16991,30 +21078,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmets",
+      "hat_helmet_horned"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat-Kettle_helm": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_kettle": {
+    "name": "Kettle helm",
     "required": [
       "male",
       "female",
@@ -17044,35 +21137,29 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmets",
+      "hat_helmet_kettle"
+    ],
+    "variants": [
+      "steel"
+    ]
   },
-  "hat-Legion": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_legion": {
+    "name": "Legion",
     "required": [
       "male",
       "female",
@@ -17102,40 +21189,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmets",
+      "hat_helmet_legion"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat-Maximus": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_maximus": {
+    "name": "Maximus",
     "required": [
       "male",
       "female",
@@ -17165,45 +21248,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmets",
+      "hat_helmet_maximus"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat-Morion": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_morion": {
+    "name": "Morion",
     "required": [
       "male",
       "female",
@@ -17233,40 +21307,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmets",
+      "hat_helmet_morion"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat-Nasal_helm": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_nasal": {
+    "name": "Nasal helm",
     "required": [
       "male",
       "female",
@@ -17296,45 +21366,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmets",
+      "hat_helmet_nasal"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat-Norman_helm": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_norman": {
+    "name": "Norman helm",
     "required": [
       "male",
       "female",
@@ -17364,40 +21425,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmets",
+      "hat_helmet_norman"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat-Pointed_helm": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_pointed": {
+    "name": "Pointed helm",
     "required": [
       "male",
       "female",
@@ -17427,45 +21484,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmets",
+      "hat_helmet_pointed"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat-Spangenhelm": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_spangenhelm": {
+    "name": "Spangenhelm",
     "required": [
       "male",
       "female",
@@ -17495,45 +21543,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmets",
+      "hat_helmet_spangenhelm"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat-Viking_spangenhelm": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_spangenhelm_viking": {
+    "name": "Viking spangenhelm",
     "required": [
       "male",
       "female",
@@ -17563,45 +21602,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmets",
+      "hat_helmet_spangenhelm_viking"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat-Sugarloaf_greathelm": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_sugarloaf": {
+    "name": "Sugarloaf greathelm",
     "required": [
       "male",
       "female",
@@ -17631,45 +21661,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmets",
+      "hat_helmet_sugarloaf"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat-Simple_sugarloaf_helm": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_sugarloaf_simple": {
+    "name": "Simple sugarloaf helm",
     "required": [
       "male",
       "female",
@@ -17699,45 +21720,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmets",
+      "hat_helmet_sugarloaf_simple"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "hat-Xeon_helmet": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_xeon": {
+    "name": "Xeon helmet",
     "required": [
       "male",
       "female",
@@ -17767,25 +21779,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmets",
+      "hat_helmet_xeon"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "visor-Grated_visor": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_grated": {
+    "name": "Grated visor",
     "required": [
       "male",
       "female",
@@ -17815,45 +21838,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "visors",
+      "hat_visor_grated"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "visor-Narrow_grated_visor": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_grated_narrow": {
+    "name": "Narrow grated visor",
     "required": [
       "male",
       "female",
@@ -17883,45 +21897,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY 3.0",
-        "CC-BY 4.0",
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "visors",
+      "hat_visor_grated_narrow"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "visor-Horned_visor": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_horned": {
+    "name": "Horned visor",
     "required": [
       "male",
       "female",
@@ -17951,30 +21956,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "visors",
+      "hat_visor_horned"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "visor-Pigface_visor": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_pigface": {
+    "name": "Pigface visor",
     "required": [
       "male",
       "female",
@@ -18004,40 +22015,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "visors",
+      "hat_visor_pigface"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "visor-Pigface_visor_raised": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_pigface_raised": {
+    "name": "Pigface visor raised",
     "required": [
       "male",
       "female",
@@ -18067,40 +22074,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "visors",
+      "hat_visor_pigface_raised"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "visor-Round_visor": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_round": {
+    "name": "Round visor",
     "required": [
       "male",
       "female",
@@ -18130,40 +22133,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "visors",
+      "hat_visor_round"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "visor-Round_visor_raised": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_round_raised": {
+    "name": "Round visor raised",
     "required": [
       "male",
       "female",
@@ -18193,40 +22192,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 4.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "visors",
+      "hat_visor_round_raised"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "visor-Slit_visor": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_slit": {
+    "name": "Slit visor",
     "required": [
       "male",
       "female",
@@ -18256,35 +22251,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "visors",
+      "hat_visor_slit"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "visor-Narrow_slit_visor": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_slit_narrow": {
+    "name": "Narrow slit visor",
     "required": [
       "male",
       "female",
@@ -18314,35 +22310,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "visors",
+      "hat_visor_slit_narrow"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "accessory-Crest": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_crest": {
+    "name": "Crest",
     "required": [
       "male",
       "female",
@@ -18372,25 +22369,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmet accessories",
+      "hat_accessory_crest"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "accessory-Centurion_Crest": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_crest_centurion": {
+    "name": "Centurion Crest",
     "required": [
       "male",
       "female",
@@ -18420,25 +22428,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmet accessories",
+      "hat_accessory_crest_centurion"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "accessory-Helmet_wings": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_wings": {
+    "name": "Helmet wings",
     "required": [
       "male",
       "female",
@@ -18467,22 +22486,60 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmet accessories",
+      "hat_accessory_wings"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "accessory-Short_Horns": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_horns_short": {
+    "name": "Short Horns",
     "required": [
       "male",
       "female",
@@ -18511,22 +22568,60 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmet accessories",
+      "hat_accessory_horns_short"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "accessory-Upward_Horns": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_horns_upward": {
+    "name": "Upward Horns",
     "required": [
       "male",
       "female",
@@ -18555,22 +22650,60 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmet accessories",
+      "hat_accessory_horns_upward"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "accessory-Downward_Horns": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_horns_downward": {
+    "name": "Downward Horns",
     "required": [
       "male",
       "female",
@@ -18599,22 +22732,135 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmet accessories",
+      "hat_accessory_horns_downward"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "accessory-Plumage": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_plumage": {
+    "name": "Plumage",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmet accessories",
+      "hat_accessory_plumage"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_plumage_centurion": {
+    "name": "Centurion Plumage",
     "required": [
       "male",
       "female",
@@ -18644,40 +22890,52 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "CC-BY-SA 4.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "CC-BY-SA 4.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "CC-BY-SA 4.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "CC-BY-SA 4.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "CC-BY-SA 4.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmet accessories",
+      "hat_accessory_plumage_centurion"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "accessory-Centurion_Plumage": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_plumage_legion": {
+    "name": "Legion Plumage",
     "required": [
       "male",
       "female",
@@ -18707,192 +22965,52 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "helmets",
+      "helmet accessories",
+      "hat_accessory_plumage_legion"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "accessory-Legion_Plumage": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "facial_eyes-Glasses": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "child",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
-  },
-  "facial_eyes-Halfmoon_Glasses": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "child",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
-  },
-  "facial_eyes-Nerd_Glasses": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses": {
+    "name": "Glasses",
     "required": [
       "male",
       "female",
@@ -18923,34 +23041,60 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "accessories",
+      "glasses",
+      "facial_glasses"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "facial_eyes-Shades": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_halfmoon": {
+    "name": "Halfmoon Glasses",
     "required": [
       "male",
       "female",
@@ -18981,34 +23125,60 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "accessories",
+      "glasses",
+      "facial_glasses_halfmoon"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "facial_eyes-Secretary_Glasses": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_nerd": {
+    "name": "Nerd Glasses",
     "required": [
       "male",
       "female",
@@ -19039,34 +23209,60 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "accessories",
+      "glasses",
+      "facial_glasses_nerd"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "facial_eyes-Round_Glasses": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_shades": {
+    "name": "Shades",
     "required": [
       "male",
       "female",
@@ -19097,34 +23293,61 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "accessories",
+      "glasses",
+      "facial_glasses_shades"
+    ],
+    "variants": [
+      "base",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "facial_eyes-Sunglasses": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_secretary": {
+    "name": "Secretary Glasses",
     "required": [
       "male",
       "female",
@@ -19155,34 +23378,232 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "accessories",
+      "glasses",
+      "facial_glasses_secretary"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "facial_left-Left_Monocle": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_round": {
+    "name": "Round Glasses",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "child",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "accessories",
+      "glasses",
+      "facial_glasses_round"
+    ],
+    "variants": [
+      "base",
+      "sunglasses",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_sunglasses": {
+    "name": "Sunglasses",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "child",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "accessories",
+      "glasses",
+      "facial_glasses_sunglasses"
+    ],
+    "variants": [
+      "base",
+      "sunglasses",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
+  },
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-monocle-facial_monocle_left": {
+    "name": "Left Monocle",
     "required": [
       "male",
       "female",
@@ -19217,34 +23638,36 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "accessories",
+      "monocle",
+      "facial_monocle_left"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "facial_left_trim-Left_Monocle_Frame_Color": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-monocle-facial_monocle_left_frame": {
+    "name": "Left Monocle Frame Color",
     "required": [
       "male",
       "female",
@@ -19281,34 +23704,60 @@ window.itemMetadata = {
       "monocle_left"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "accessories",
+      "monocle",
+      "facial_monocle_left_frame"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "facial_right-Right_Monocle": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-monocle-facial_monocle_right": {
+    "name": "Right Monocle",
     "required": [
       "male",
       "female",
@@ -19343,34 +23792,36 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "accessories",
+      "monocle",
+      "facial_monocle_right"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "facial_right_trim-Right_Monocle_Frame_Color": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-monocle-facial_monocle_right_frame": {
+    "name": "Right Monocle Frame Color",
     "required": [
       "male",
       "female",
@@ -19407,34 +23858,60 @@ window.itemMetadata = {
       "monocle_right"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "accessories",
+      "monocle",
+      "facial_monocle_right_frame"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "facial_eyes-Eyepatch_Ambidextrous": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch_ambi": {
+    "name": "Eyepatch Ambidextrous",
     "required": [
       "male",
       "female",
@@ -19465,34 +23942,53 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "accessories",
+      "eyepatches",
+      "facial_eyepatch_ambi"
+    ],
+    "variants": [
+      "base",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "facial_eyes-Eyepatch_Left": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch_left": {
+    "name": "Eyepatch Left",
     "required": [
       "male",
       "female",
@@ -19523,34 +24019,53 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "accessories",
+      "eyepatches",
+      "facial_eyepatch_left"
+    ],
+    "variants": [
+      "base",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "facial_eyes-Eyepatch_Right": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch_right": {
+    "name": "Eyepatch Right",
     "required": [
       "male",
       "female",
@@ -19581,34 +24096,53 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "accessories",
+      "eyepatches",
+      "facial_eyepatch_right"
+    ],
+    "variants": [
+      "base",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "facial_eyes-Eyepatch_2_Left": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch2_left": {
+    "name": "Eyepatch 2 Left",
     "required": [
       "male",
       "female",
@@ -19639,28 +24173,52 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "accessories",
+      "eyepatches",
+      "facial_eyepatch2_left"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "facial_eyes-Eyepatch_2_Right": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch2_right": {
+    "name": "Eyepatch 2 Right",
     "required": [
       "male",
       "female",
@@ -19691,28 +24249,52 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "accessories",
+      "eyepatches",
+      "facial_eyepatch2_right"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "facial_eyes-Small_Eyepatch_Left": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch_small_left": {
+    "name": "Small Eyepatch Left",
     "required": [
       "male",
       "female",
@@ -19743,34 +24325,52 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "accessories",
+      "eyepatches",
+      "facial_eyepatch_small_left"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "facial_eyes-Small_Eyepatch_Right": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch_small_right": {
+    "name": "Small Eyepatch Right",
     "required": [
       "male",
       "female",
@@ -19801,34 +24401,52 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "accessories",
+      "eyepatches",
+      "facial_eyepatch_small_right"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "facial_mask-Plain_Mask": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-facial_mask_plain": {
+    "name": "Plain Mask",
     "required": [
       "male",
       "female",
@@ -19859,46 +24477,61 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "child": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "accessories",
+      "facial_mask_plain"
+    ],
+    "variants": [
+      "dark",
+      "white",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "earring_left-Simple_Earring_Left": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earring_left": {
+    "name": "Simple Earring Left",
     "required": [
       "male",
       "female",
@@ -19929,28 +24562,61 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "child": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "accessories",
+      "earrings",
+      "facial_earring_left"
+    ],
+    "variants": [
+      "base",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "earring_right-Simple_Earring_Right": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earring_right": {
+    "name": "Simple Earring Right",
     "required": [
       "male",
       "female",
@@ -19981,28 +24647,61 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "child": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "accessories",
+      "earrings",
+      "facial_earring_right"
+    ],
+    "variants": [
+      "base",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "earrings-Emerald_earrings": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earrings_emerald": {
+    "name": "Emerald earrings",
     "required": [
       "male",
       "female",
@@ -20022,25 +24721,34 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "accessories",
+      "earrings",
+      "facial_earrings_emerald"
+    ],
+    "variants": [
+      "blue",
+      "green",
+      "orange",
+      "purple",
+      "red",
+      "yellow"
+    ]
   },
-  "earrings-Moon_earrings": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earrings_moon": {
+    "name": "Moon earrings",
     "required": [
       "male",
       "female",
@@ -20060,25 +24768,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "accessories",
+      "earrings",
+      "facial_earrings_moon"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "earrings-Pear_earrings": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earrings_pear": {
+    "name": "Pear earrings",
     "required": [
       "male",
       "female",
@@ -20098,25 +24817,34 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "accessories",
+      "earrings",
+      "facial_earrings_pear"
+    ],
+    "variants": [
+      "blue",
+      "green",
+      "orange",
+      "purple",
+      "red",
+      "yellow"
+    ]
   },
-  "earrings-Princess_earrings": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earrings_princess": {
+    "name": "Princess earrings",
     "required": [
       "male",
       "female",
@@ -20136,25 +24864,34 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "accessories",
+      "earrings",
+      "facial_earrings_princess"
+    ],
+    "variants": [
+      "blue",
+      "green",
+      "orange",
+      "purple",
+      "red",
+      "yellow"
+    ]
   },
-  "earrings-Stud_earrings": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earrings_stud": {
+    "name": "Stud earrings",
     "required": [
       "male",
       "female",
@@ -20174,25 +24911,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "accessories",
+      "earrings",
+      "facial_earrings_stud"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "neck-Bowtie": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_bowtie": {
+    "name": "Bowtie",
     "required": [
       "male",
       "female",
@@ -20222,30 +24970,52 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "neck",
+      "neck_bowtie"
+    ],
+    "variants": [
+      "base",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "neck-Bowtie_2": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_bowtie2": {
+    "name": "Bowtie 2",
     "required": [
       "male",
       "female",
@@ -20275,25 +25045,51 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "neck",
+      "neck_bowtie2"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "neck-Necktie": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necktie": {
+    "name": "Necktie",
     "required": [
       "male",
       "female",
@@ -20323,30 +25119,52 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "neck",
+      "neck_necktie"
+    ],
+    "variants": [
+      "base",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "neck-Scarf": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_scarf": {
+    "name": "Scarf",
     "required": [
       "male",
       "female",
@@ -20366,40 +25184,33 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-SA 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-SA 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-SA 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-SA 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-SA 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "neck",
+      "neck_scarf"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "brown",
+      "gray",
+      "red",
+      "white"
+    ]
   },
-  "neck-Capeclip": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_capeclip": {
+    "name": "Capeclip",
     "required": [
       "male",
       "female",
@@ -20419,35 +25230,51 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "neck",
+      "neck_capeclip"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "neck-Capetie": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_capetie": {
+    "name": "Capetie",
     "required": [
       "male",
       "female",
@@ -20467,35 +25294,51 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "neck",
+      "neck_capetie"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "neck-Jabot": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_jabot": {
+    "name": "Jabot",
     "required": [
       "male",
       "female",
@@ -20513,22 +25356,51 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "neck",
+      "neck_jabot"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "neck-Cravat": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_cravat": {
+    "name": "Cravat",
     "required": [
       "male",
       "female",
@@ -20546,22 +25418,51 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "neck",
+      "neck_cravat"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "necklace-Necklace": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necklace": {
+    "name": "Necklace",
     "required": [
       "male",
       "female",
@@ -20581,30 +25482,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "neck",
+      "neck_necklace"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold",
+      "pirate"
+    ]
   },
-  "necklace-Simple_Necklace": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necklace_simple": {
+    "name": "Simple Necklace",
     "required": [
       "male",
       "female",
@@ -20624,25 +25531,35 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "neck",
+      "neck_necklace_simple"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "necklace-Chain_Necklace": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necklace_chain": {
+    "name": "Chain Necklace",
     "required": [
       "male",
       "female",
@@ -20662,25 +25579,35 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "neck",
+      "neck_necklace_chain"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "necklace-Small_Beaded_Necklace": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necklace_beaded_small": {
+    "name": "Small Beaded Necklace",
     "required": [
       "male",
       "female",
@@ -20700,25 +25627,35 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "neck",
+      "neck_necklace_beaded_small"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "necklace-Large_Beaded_Necklace": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necklace_beaded_large": {
+    "name": "Large Beaded Necklace",
     "required": [
       "male",
       "female",
@@ -20738,25 +25675,35 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "neck",
+      "neck_necklace_beaded_large"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "charm-Box_Charm": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_charm_box": {
+    "name": "Box Charm",
     "required": [
       "male",
       "female",
@@ -20776,25 +25723,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "neck",
+      "necklace charms",
+      "neck_charm_box"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "charm-Oval_Charm": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_charm_oval": {
+    "name": "Oval Charm",
     "required": [
       "male",
       "female",
@@ -20814,25 +25772,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "neck",
+      "necklace charms",
+      "neck_charm_oval"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "charm-Ring_Charm": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_charm_ring": {
+    "name": "Ring Charm",
     "required": [
       "male",
       "female",
@@ -20852,25 +25821,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "neck",
+      "necklace charms",
+      "neck_charm_ring"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "charm-Star_Charm": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_charm_star": {
+    "name": "Star Charm",
     "required": [
       "male",
       "female",
@@ -20890,25 +25870,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "neck",
+      "necklace charms",
+      "neck_charm_star"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "charm-Emerald_cut_Gem": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_emerald": {
+    "name": "Emerald cut Gem",
     "required": [
       "male",
       "female",
@@ -20928,25 +25919,34 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "neck",
+      "necklace charms",
+      "neck_gem_emerald"
+    ],
+    "variants": [
+      "blue",
+      "green",
+      "orange",
+      "purple",
+      "red",
+      "yellow"
+    ]
   },
-  "charm-Marquise_cut_Gem": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_marquise": {
+    "name": "Marquise cut Gem",
     "required": [
       "male",
       "female",
@@ -20966,25 +25966,34 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "neck",
+      "necklace charms",
+      "neck_gem_marquise"
+    ],
+    "variants": [
+      "blue",
+      "green",
+      "orange",
+      "purple",
+      "red",
+      "yellow"
+    ]
   },
-  "charm-Natural_cut_Gem": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_natural": {
+    "name": "Natural cut Gem",
     "required": [
       "male",
       "female",
@@ -21004,25 +26013,34 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "neck",
+      "necklace charms",
+      "neck_gem_natural"
+    ],
+    "variants": [
+      "blue",
+      "green",
+      "orange",
+      "purple",
+      "red",
+      "yellow"
+    ]
   },
-  "charm-Pear_cut_Gem": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_pear": {
+    "name": "Pear cut Gem",
     "required": [
       "male",
       "female",
@@ -21042,25 +26060,34 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "neck",
+      "necklace charms",
+      "neck_gem_pear"
+    ],
+    "variants": [
+      "blue",
+      "green",
+      "orange",
+      "purple",
+      "red",
+      "yellow"
+    ]
   },
-  "charm-Pearl_Gem": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_pearl": {
+    "name": "Pearl Gem",
     "required": [
       "male",
       "female",
@@ -21080,25 +26107,34 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "neck",
+      "necklace charms",
+      "neck_gem_pearl"
+    ],
+    "variants": [
+      "blue",
+      "green",
+      "orange",
+      "purple",
+      "red",
+      "yellow"
+    ]
   },
-  "charm-Princess_cut_Gem": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_princess": {
+    "name": "Princess cut Gem",
     "required": [
       "male",
       "female",
@@ -21118,25 +26154,34 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "neck",
+      "necklace charms",
+      "neck_gem_princess"
+    ],
+    "variants": [
+      "blue",
+      "green",
+      "orange",
+      "purple",
+      "red",
+      "yellow"
+    ]
   },
-  "charm-Round_cut_Gem": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_round": {
+    "name": "Round cut Gem",
     "required": [
       "male",
       "female",
@@ -21156,25 +26201,34 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "neck",
+      "necklace charms",
+      "neck_gem_round"
+    ],
+    "variants": [
+      "blue",
+      "green",
+      "orange",
+      "purple",
+      "red",
+      "yellow"
+    ]
   },
-  "charm-Trilliant_cut_Gem": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_trilliant": {
+    "name": "Trilliant cut Gem",
     "required": [
       "male",
       "female",
@@ -21194,25 +26248,34 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "neck",
+      "necklace charms",
+      "neck_gem_trilliant"
+    ],
+    "variants": [
+      "blue",
+      "green",
+      "orange",
+      "purple",
+      "red",
+      "yellow"
+    ]
   },
-  "charm-Cross_amulet": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_amulet_cross": {
+    "name": "Cross amulet",
     "required": [
       "male",
       "female",
@@ -21232,25 +26295,76 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "neck",
+      "necklace charms",
+      "neck_amulet_cross"
+    ],
+    "variants": [
+      "brass_blue",
+      "brass_green",
+      "brass_orange",
+      "brass_purple",
+      "brass_red",
+      "brass_yellow",
+      "bronze_blue",
+      "bronze_green",
+      "bronze_orange",
+      "bronze_purple",
+      "bronze_red",
+      "bronze_yellow",
+      "ceramic_blue",
+      "ceramic_green",
+      "ceramic_orange",
+      "ceramic_purple",
+      "ceramic_red",
+      "ceramic_yellow",
+      "copper_blue",
+      "copper_green",
+      "copper_orange",
+      "copper_purple",
+      "copper_red",
+      "copper_yellow",
+      "gold_blue",
+      "gold_green",
+      "gold_orange",
+      "gold_purple",
+      "gold_red",
+      "gold_yellow",
+      "iron_blue",
+      "iron_green",
+      "iron_orange",
+      "iron_purple",
+      "iron_red",
+      "iron_yellow",
+      "silver_blue",
+      "silver_green",
+      "silver_orange",
+      "silver_purple",
+      "silver_red",
+      "silver_yellow",
+      "steel_blue",
+      "steel_green",
+      "steel_orange",
+      "steel_purple",
+      "steel_red",
+      "steel_yellow"
+    ]
   },
-  "charm-Dangling_amulet": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_amulet_dangle": {
+    "name": "Dangling amulet",
     "required": [
       "male",
       "female",
@@ -21270,25 +26384,76 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "neck",
+      "necklace charms",
+      "neck_amulet_dangle"
+    ],
+    "variants": [
+      "brass_blue",
+      "brass_green",
+      "brass_orange",
+      "brass_purple",
+      "brass_red",
+      "brass_yellow",
+      "bronze_blue",
+      "bronze_green",
+      "bronze_orange",
+      "bronze_purple",
+      "bronze_red",
+      "bronze_yellow",
+      "ceramic_blue",
+      "ceramic_green",
+      "ceramic_orange",
+      "ceramic_purple",
+      "ceramic_red",
+      "ceramic_yellow",
+      "copper_blue",
+      "copper_green",
+      "copper_orange",
+      "copper_purple",
+      "copper_red",
+      "copper_yellow",
+      "gold_blue",
+      "gold_green",
+      "gold_orange",
+      "gold_purple",
+      "gold_red",
+      "gold_yellow",
+      "iron_blue",
+      "iron_green",
+      "iron_orange",
+      "iron_purple",
+      "iron_red",
+      "iron_yellow",
+      "silver_blue",
+      "silver_green",
+      "silver_orange",
+      "silver_purple",
+      "silver_red",
+      "silver_yellow",
+      "steel_blue",
+      "steel_green",
+      "steel_orange",
+      "steel_purple",
+      "steel_red",
+      "steel_yellow"
+    ]
   },
-  "charm-Spider_amulet": {
+  "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_amulet_spider": {
+    "name": "Spider amulet",
     "required": [
       "male",
       "female",
@@ -21308,25 +26473,76 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "head",
+      "hair",
+      "hair extensions",
+      "afro",
+      "curly",
+      "bald/shaved",
+      "short",
+      "spiky",
+      "pigtails",
+      "bob",
+      "braids, ponytails, updos",
+      "long",
+      "neck",
+      "necklace charms",
+      "neck_amulet_spider"
+    ],
+    "variants": [
+      "brass_blue",
+      "brass_green",
+      "brass_orange",
+      "brass_purple",
+      "brass_red",
+      "brass_yellow",
+      "bronze_blue",
+      "bronze_green",
+      "bronze_orange",
+      "bronze_purple",
+      "bronze_red",
+      "bronze_yellow",
+      "ceramic_blue",
+      "ceramic_green",
+      "ceramic_orange",
+      "ceramic_purple",
+      "ceramic_red",
+      "ceramic_yellow",
+      "copper_blue",
+      "copper_green",
+      "copper_orange",
+      "copper_purple",
+      "copper_red",
+      "copper_yellow",
+      "gold_blue",
+      "gold_green",
+      "gold_orange",
+      "gold_purple",
+      "gold_red",
+      "gold_yellow",
+      "iron_blue",
+      "iron_green",
+      "iron_orange",
+      "iron_purple",
+      "iron_red",
+      "iron_yellow",
+      "silver_blue",
+      "silver_green",
+      "silver_orange",
+      "silver_purple",
+      "silver_red",
+      "silver_yellow",
+      "steel_blue",
+      "steel_green",
+      "steel_orange",
+      "steel_purple",
+      "steel_red",
+      "steel_yellow"
+    ]
   },
-  "shoulders-Legion": {
+  "arms-shoulders-shoulders_legion": {
+    "name": "Legion",
     "required": [
       "male",
       "female",
@@ -21345,34 +26561,19 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "arms",
+      "shoulders",
+      "shoulders_legion"
+    ],
+    "variants": [
+      "bronze",
+      "steel",
+      "gold"
+    ]
   },
-  "shoulders-Plate": {
+  "arms-shoulders-shoulders_plate": {
+    "name": "Plate",
     "required": [
       "male",
       "female",
@@ -21391,30 +26592,24 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "arms",
+      "shoulders",
+      "shoulders_plate"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "shoulders-Leather": {
+  "arms-shoulders-shoulders_leather": {
+    "name": "Leather",
     "required": [
       "male",
       "female",
@@ -21433,30 +26628,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "arms",
+      "shoulders",
+      "shoulders_leather"
+    ],
+    "variants": [
+      "leather",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shoulders-Epaulets": {
+  "arms-shoulders-shoulders_epaulets": {
+    "name": "Epaulets",
     "required": [
       "male"
     ],
@@ -21472,13 +26677,23 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "arms",
+      "shoulders",
+      "shoulders_epaulets"
+    ],
+    "variants": [
+      "bronze",
+      "gold",
+      "silver",
+      "red",
+      "blue",
+      "teal",
+      "yellow"
+    ]
   },
-  "shoulders-Mantal": {
+  "arms-shoulders-shoulders_mantal": {
+    "name": "Mantal",
     "required": [
       "male"
     ],
@@ -21494,13 +26709,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "arms",
+      "shoulders",
+      "shoulders_mantal"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "arms-Armour": {
+  "arms-arms_armour": {
+    "name": "Armour",
     "required": [
       "male",
       "female",
@@ -21520,35 +26762,23 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "arms",
+      "arms_armour"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "bauldron-Bauldron": {
+  "arms-bauldron": {
+    "name": "Bauldron",
     "required": [
       "male",
       "female",
@@ -21568,40 +26798,22 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "GPL 2.0",
-        "GPL 3.0",
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "GPL 2.0",
-        "GPL 3.0",
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "GPL 2.0",
-        "GPL 3.0",
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "GPL 2.0",
-        "GPL 3.0",
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "GPL 2.0",
-        "GPL 3.0",
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "arms",
+      "bauldron"
+    ],
+    "variants": [
+      "brown",
+      "charcoal",
+      "leather",
+      "slate",
+      "tan",
+      "walnut",
+      "white"
+    ]
   },
-  "bracers-Bracers": {
+  "arms-wrists-arms_bracers": {
+    "name": "Bracers",
     "required": [
       "male",
       "female",
@@ -21620,30 +26832,24 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "arms",
+      "wrists",
+      "arms_bracers"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "wrists-Cuffs": {
+  "arms-wrists-wrists_cuffs": {
+    "name": "Cuffs",
     "required": [
       "male"
     ],
@@ -21659,13 +26865,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "arms",
+      "wrists",
+      "wrists_cuffs"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "wrists-Lace_Cuffs": {
+  "arms-wrists-wrists_cuffs_lace": {
+    "name": "Lace Cuffs",
     "required": [
       "male"
     ],
@@ -21681,13 +26914,23 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "arms",
+      "wrists",
+      "wrists_cuffs_lace"
+    ],
+    "variants": [
+      "bronze",
+      "gold",
+      "silver",
+      "red",
+      "blue",
+      "teal",
+      "yellow"
+    ]
   },
-  "gloves-Gloves": {
+  "arms-arms_gloves": {
+    "name": "Gloves",
     "required": [
       "male",
       "female",
@@ -21717,35 +26960,47 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "arms",
+      "arms_gloves"
+    ],
+    "variants": [
+      "brass",
+      "bronze",
+      "ceramic",
+      "copper",
+      "gold",
+      "iron",
+      "silver",
+      "steel",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "ring-Stud_Ring": {
+  "arms-arms_hands_ring_stud": {
+    "name": "Stud Ring",
     "required": [
       "male",
       "female",
@@ -21765,25 +27020,21 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "arms",
+      "arms_hands_ring_stud"
+    ],
+    "variants": [
+      "blue",
+      "green",
+      "orange",
+      "purple",
+      "red",
+      "yellow"
+    ]
   },
-  "dress-Sash_dress": {
+  "torso-dresses-dress_sash": {
+    "name": "Sash dress",
     "required": [
       "female"
     ],
@@ -21799,14 +27050,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "dresses",
+      "dress_sash"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "dress-Slit_dress": {
+  "torso-dresses-dress_slit": {
+    "name": "Slit dress",
     "required": [
       "female"
     ],
@@ -21822,16 +27099,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "dresses",
+      "dress_slit"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "vest-Bodice": {
+  "torso-dresses-dress_bodice": {
+    "name": "Bodice",
     "required": [
       "female"
     ],
@@ -21847,15 +27148,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "dresses",
+      "dress_bodice"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "dress-Kimono": {
+  "torso-dresses-kimono-dress_kimono": {
+    "name": "Kimono",
     "required": [
       "female",
       "teen"
@@ -21876,20 +27202,41 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "dresses",
+      "kimono",
+      "dress_kimono"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "dress_trim-Kimono_Trim": {
+  "torso-dresses-kimono-dress_kimono_trim": {
+    "name": "Kimono Trim",
     "required": [
       "female",
       "teen"
@@ -21911,20 +27258,41 @@ window.itemMetadata = {
       "kimono_simple"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "dresses",
+      "kimono",
+      "dress_kimono_trim"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "dress-Split_Kimono": {
+  "torso-dresses-kimono-dress_kimono_split": {
+    "name": "Split Kimono",
     "required": [
       "female",
       "teen"
@@ -21945,20 +27313,41 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "dresses",
+      "kimono",
+      "dress_kimono_split"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "dress_trim-Split_Kimono_Trim": {
+  "torso-dresses-kimono-dress_kimono_split_trim": {
+    "name": "Split Kimono Trim",
     "required": [
       "female",
       "teen"
@@ -21980,20 +27369,41 @@ window.itemMetadata = {
       "kimono_split"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "dresses",
+      "kimono",
+      "dress_kimono_split_trim"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "dress_sleeves-Kimono_Sleeves": {
+  "torso-dresses-kimono-dress_kimono_longsleeve": {
+    "name": "Kimono Sleeves",
     "required": [
       "female",
       "teen"
@@ -22014,20 +27424,41 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "dresses",
+      "kimono",
+      "dress_kimono_longsleeve"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "dress_sleeves_trim-Kimono_Sleeves_Trim": {
+  "torso-dresses-kimono-dress_kimono_longsleeve_trim": {
+    "name": "Kimono Sleeves Trim",
     "required": [
       "female",
       "teen"
@@ -22049,20 +27480,41 @@ window.itemMetadata = {
       "kimono_long_sleeves"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "dresses",
+      "kimono",
+      "dress_kimono_longsleeve_trim"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "dress_sleeves-Kimono_Oversized_Sleeves": {
+  "torso-dresses-kimono-dress_kimono_oversize": {
+    "name": "Kimono Oversized Sleeves",
     "required": [
       "female",
       "teen"
@@ -22083,20 +27535,41 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "dresses",
+      "kimono",
+      "dress_kimono_oversize"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "dress_sleeves_trim-Kimono_Oversized_Sleeves_Trim": {
+  "torso-dresses-kimono-dress_kimono_oversize_trim": {
+    "name": "Kimono Oversized Sleeves Trim",
     "required": [
       "female",
       "teen"
@@ -22118,20 +27591,41 @@ window.itemMetadata = {
       "kimono_over_sleeves"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "dresses",
+      "kimono",
+      "dress_kimono_oversize_trim"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Child_shirts": {
+  "torso-shirts-torso_clothes_child_shirt": {
+    "name": "Child shirts",
     "required": [
       "child"
     ],
@@ -22141,15 +27635,26 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "child": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "torso_clothes_child_shirt"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "brown",
+      "gray",
+      "green",
+      "lavender",
+      "lightblue",
+      "pink",
+      "red",
+      "white"
+    ]
   },
-  "sleeves-Original_Shortsleeves_Overlay": {
+  "torso-shirts-sleeves-torso_clothes_shortsleeves": {
+    "name": "Original Shortsleeves Overlay",
     "required": [
       "male",
       "female",
@@ -22177,25 +27682,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "sleeves",
+      "torso_clothes_shortsleeves"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "sleeves-Shortsleeves_2_Overlay": {
+  "torso-shirts-sleeves-torso_clothes_shortsleeves2": {
+    "name": "Shortsleeves 2 Overlay",
     "required": [
       "male",
       "female",
@@ -22223,19 +27744,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "sleeves",
+      "torso_clothes_shortsleeves2"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "sleeves-Original_Longsleeves_Overlay": {
+  "torso-shirts-sleeves-torso_clothes_longsleeves": {
+    "name": "Original Longsleeves Overlay",
     "required": [
       "male",
       "female",
@@ -22263,25 +27806,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "sleeves",
+      "torso_clothes_longsleeves"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "sleeves-Longsleeves_2_Overlay": {
+  "torso-shirts-sleeves-torso_clothes_longsleeves2": {
+    "name": "Longsleeves 2 Overlay",
     "required": [
       "male",
       "female",
@@ -22309,19 +27868,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "sleeves",
+      "torso_clothes_longsleeves2"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "sleeves-Cuffed_Longsleeves_Overlay": {
+  "torso-shirts-sleeves-torso_clothes_longsleeves_cuffed": {
+    "name": "Cuffed Longsleeves Overlay",
     "required": [
       "male",
       "female",
@@ -22349,19 +27930,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "sleeves",
+      "torso_clothes_longsleeves_cuffed"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Longsleeve": {
+  "torso-shirts-longsleeve-torso_clothes_longsleeve": {
+    "name": "Longsleeve",
     "required": [
       "male",
       "female",
@@ -22390,30 +27993,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "longsleeve",
+      "torso_clothes_longsleeve"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Scoop": {
+  "torso-shirts-longsleeve-torso_clothes_longsleeve_scoop": {
+    "name": "Scoop",
     "required": [
       "male",
       "female",
@@ -22442,26 +28056,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "longsleeve",
+      "torso_clothes_longsleeve_scoop"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Collared/Formal_Longsleeve": {
+  "torso-shirts-longsleeve-torso_clothes_longsleeve_formal": {
+    "name": "Collared/Formal Longsleeve",
     "required": [
       "male"
     ],
@@ -22477,14 +28106,18 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "longsleeve",
+      "torso_clothes_longsleeve_formal"
+    ],
+    "variants": [
+      "white"
+    ]
   },
-  "clothes-Striped_Collared/Formal_Longsleeve": {
+  "torso-shirts-longsleeve-torso_clothes_longsleeve_formal_striped": {
+    "name": "Striped Collared/Formal Longsleeve",
     "required": [
       "male"
     ],
@@ -22500,14 +28133,18 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "longsleeve",
+      "torso_clothes_longsleeve_formal_striped"
+    ],
+    "variants": [
+      "white"
+    ]
   },
-  "clothes-Longsleeve_laced": {
+  "torso-shirts-longsleeve-torso_clothes_longsleeve_laced": {
+    "name": "Longsleeve laced",
     "required": [
       "male"
     ],
@@ -22523,14 +28160,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "longsleeve",
+      "torso_clothes_longsleeve_laced"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Longsleeve_2": {
+  "torso-shirts-longsleeve-torso_clothes_longsleeve2": {
+    "name": "Longsleeve 2",
     "required": [
       "male",
       "female",
@@ -22558,19 +28222,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "longsleeve",
+      "torso_clothes_longsleeve2"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Longsleeve_2_VNeck": {
+  "torso-shirts-longsleeve-torso_clothes_longsleeve2_vneck": {
+    "name": "Longsleeve 2 VNeck",
     "required": [
       "male",
       "female",
@@ -22598,19 +28284,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "longsleeve",
+      "torso_clothes_longsleeve2_vneck"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Longsleeve_2_Scoop": {
+  "torso-shirts-longsleeve-torso_clothes_longsleeve2_scoop": {
+    "name": "Longsleeve 2 Scoop",
     "required": [
       "male",
       "female",
@@ -22638,19 +28346,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "longsleeve",
+      "torso_clothes_longsleeve2_scoop"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Longsleeve_2_Buttoned": {
+  "torso-shirts-longsleeve-torso_clothes_longsleeve2_buttoned": {
+    "name": "Longsleeve 2 Buttoned",
     "required": [
       "male",
       "female",
@@ -22678,19 +28408,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "longsleeve",
+      "torso_clothes_longsleeve2_buttoned"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Longsleeve_Polo": {
+  "torso-shirts-longsleeve-torso_clothes_longsleeve2_polo": {
+    "name": "Longsleeve Polo",
     "required": [
       "male",
       "female",
@@ -22718,19 +28470,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "longsleeve",
+      "torso_clothes_longsleeve2_polo"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Cardigan": {
+  "torso-shirts-longsleeve-torso_clothes_longsleeve2_cardigan": {
+    "name": "Cardigan",
     "required": [
       "male",
       "female",
@@ -22758,19 +28532,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "longsleeve",
+      "torso_clothes_longsleeve2_cardigan"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Shortsleeve": {
+  "torso-shirts-shortsleeve-torso_clothes_shortsleeve": {
+    "name": "Shortsleeve",
     "required": [
       "male",
       "female",
@@ -22799,30 +28595,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "shortsleeve",
+      "torso_clothes_shortsleeve"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Shortsleeve_Polo": {
+  "torso-shirts-shortsleeve-torso_clothes_shortsleeve_polo": {
+    "name": "Shortsleeve Polo",
     "required": [
       "male",
       "female",
@@ -22850,19 +28657,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "shortsleeve",
+      "torso_clothes_shortsleeve_polo"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Shortsleeve_Cardigan": {
+  "torso-shirts-shortsleeve-torso_clothes_shortsleeve_cardigan": {
+    "name": "Shortsleeve Cardigan",
     "required": [
       "male",
       "female",
@@ -22890,19 +28719,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "shortsleeve",
+      "torso_clothes_shortsleeve_cardigan"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-TShirt": {
+  "torso-shirts-shortsleeve-torso_clothes_tshirt": {
+    "name": "TShirt",
     "required": [
       "male",
       "female",
@@ -22930,19 +28781,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "shortsleeve",
+      "torso_clothes_tshirt"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-TShirt_VNeck": {
+  "torso-shirts-shortsleeve-torso_clothes_tshirt_vneck": {
+    "name": "TShirt VNeck",
     "required": [
       "male",
       "female",
@@ -22970,19 +28843,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "shortsleeve",
+      "torso_clothes_tshirt_vneck"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-TShirt_Scoop": {
+  "torso-shirts-shortsleeve-torso_clothes_tshirt_scoop": {
+    "name": "TShirt Scoop",
     "required": [
       "male",
       "female",
@@ -23010,19 +28905,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "shortsleeve",
+      "torso_clothes_tshirt_scoop"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-TShirt_Buttoned": {
+  "torso-shirts-shortsleeve-torso_clothes_tshirt_buttoned": {
+    "name": "TShirt Buttoned",
     "required": [
       "male",
       "female",
@@ -23050,19 +28967,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "shortsleeve",
+      "torso_clothes_tshirt_buttoned"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Sleeveless": {
+  "torso-shirts-sleeveless-torso_clothes_sleeveless": {
+    "name": "Sleeveless",
     "required": [
       "male",
       "female"
@@ -23079,20 +29018,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "sleeveless",
+      "torso_clothes_sleeveless"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Sleeveless_laced": {
+  "torso-shirts-sleeveless-torso_clothes_sleeveless_laced": {
+    "name": "Sleeveless laced",
     "required": [
       "male"
     ],
@@ -23108,15 +29068,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "sleeveless",
+      "torso_clothes_sleeveless_laced"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Sleeveless_striped": {
+  "torso-shirts-sleeveless-torso_clothes_sleeveless_striped": {
+    "name": "Sleeveless striped",
     "required": [
       "male"
     ],
@@ -23132,15 +29118,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "sleeveless",
+      "torso_clothes_sleeveless_striped"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Tanktop": {
+  "torso-shirts-sleeveless-torso_clothes_sleeveless_tanktop": {
+    "name": "Tanktop",
     "required": [
       "female",
       "pregnant"
@@ -23157,20 +29169,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "sleeveless",
+      "torso_clothes_sleeveless_tanktop"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Original_Sleeveless": {
+  "torso-shirts-sleeveless-torso_clothes_sleeveless1": {
+    "name": "Original Sleeveless",
     "required": [
       "male",
       "female",
@@ -23198,25 +29231,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "sleeveless",
+      "torso_clothes_sleeveless1"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Sleeveless_2": {
+  "torso-shirts-sleeveless-torso_clothes_sleeveless2": {
+    "name": "Sleeveless 2",
     "required": [
       "male",
       "female",
@@ -23244,19 +29293,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "sleeveless",
+      "torso_clothes_sleeveless2"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Sleeveless_2_VNeck": {
+  "torso-shirts-sleeveless-torso_clothes_sleeveless2_vneck": {
+    "name": "Sleeveless 2 VNeck",
     "required": [
       "male",
       "female",
@@ -23284,19 +29355,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "sleeveless",
+      "torso_clothes_sleeveless2_vneck"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Sleeveless_2_Scoop": {
+  "torso-shirts-sleeveless-torso_clothes_sleeveless2_scoop": {
+    "name": "Sleeveless 2 Scoop",
     "required": [
       "male",
       "female",
@@ -23324,19 +29417,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "sleeveless",
+      "torso_clothes_sleeveless2_scoop"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Sleeveless_2_Buttoned": {
+  "torso-shirts-sleeveless-torso_clothes_sleeveless2_buttoned": {
+    "name": "Sleeveless 2 Buttoned",
     "required": [
       "male",
       "female",
@@ -23364,19 +29479,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "sleeveless",
+      "torso_clothes_sleeveless2_buttoned"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Sleeveless_2_Polo": {
+  "torso-shirts-sleeveless-torso_clothes_sleeveless2_polo": {
+    "name": "Sleeveless 2 Polo",
     "required": [
       "male",
       "female",
@@ -23404,19 +29541,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "sleeveless",
+      "torso_clothes_sleeveless2_polo"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Sleeveless_2_Cardigan": {
+  "torso-shirts-sleeveless-torso_clothes_sleeveless2_cardigan": {
+    "name": "Sleeveless 2 Cardigan",
     "required": [
       "male",
       "female",
@@ -23444,19 +29603,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "sleeveless",
+      "torso_clothes_sleeveless2_cardigan"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "vest-Corset": {
+  "torso-shirts-torso_clothes_corset": {
+    "name": "Corset",
     "required": [
       "female"
     ],
@@ -23472,15 +29653,35 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "female": [
-        "OGA-SA 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "torso_clothes_corset"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "sky",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Blouse": {
+  "torso-shirts-torso_clothes_blouse": {
+    "name": "Blouse",
     "required": [
       "female"
     ],
@@ -23496,15 +29697,35 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "torso_clothes_blouse"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "sky",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Longsleeve_blouse": {
+  "torso-shirts-torso_clothes_blouse_longsleeve": {
+    "name": "Longsleeve blouse",
     "required": [
       "female"
     ],
@@ -23520,15 +29741,35 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "torso_clothes_blouse_longsleeve"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "sky",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Tunic": {
+  "torso-shirts-torso_clothes_tunic": {
+    "name": "Tunic",
     "required": [
       "female"
     ],
@@ -23544,15 +29785,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "torso_clothes_tunic"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Sara_Tunic": {
+  "torso-shirts-torso_clothes_tunic_sara": {
+    "name": "Sara Tunic",
     "required": [
       "female"
     ],
@@ -23568,13 +29834,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "female": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "torso_clothes_tunic_sara"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "clothes-Robe": {
+  "torso-shirts-torso_clothes_robe": {
+    "name": "Robe",
     "required": [
       "female"
     ],
@@ -23590,14 +29883,26 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "shirts",
+      "torso_clothes_robe"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "brown",
+      "dark brown",
+      "dark gray",
+      "forest green",
+      "light gray",
+      "purple",
+      "red",
+      "white"
+    ]
   },
-  "overalls-Overalls": {
+  "torso-aprons-torso_aprons_overalls": {
+    "name": "Overalls",
     "required": [
       "male",
       "female",
@@ -23625,22 +29930,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "aprons",
+      "torso_aprons_overalls"
+    ],
+    "variants": [
+      "leather",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "overalls-Suspenders": {
+  "torso-aprons-torso_aprons_suspenders": {
+    "name": "Suspenders",
     "required": [
       "male",
       "female",
@@ -23670,25 +29993,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "aprons",
+      "torso_aprons_suspenders"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "apron-Apron": {
+  "torso-aprons-torso_aprons_apron": {
+    "name": "Apron",
     "required": [
       "male",
       "female",
@@ -23706,28 +30044,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "aprons",
+      "torso_aprons_apron"
+    ],
+    "variants": [
+      "leather",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "apron-Apron_half": {
+  "torso-aprons-torso_aprons_apron_half": {
+    "name": "Apron half",
     "required": [
       "female"
     ],
@@ -23743,14 +30093,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "aprons",
+      "torso_aprons_apron_half"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "apron-Apron_full": {
+  "torso-aprons-torso_aprons_apron_full": {
+    "name": "Apron full",
     "required": [
       "female"
     ],
@@ -23766,14 +30142,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "aprons",
+      "torso_aprons_apron_full"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "bandages-Bandages": {
+  "torso-torso_bandages": {
+    "name": "Bandages",
     "required": [
       "male",
       "female",
@@ -23791,28 +30193,16 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "torso_bandages"
+    ],
+    "variants": [
+      "white"
+    ]
   },
-  "chainmail-Chainmail": {
+  "torso-torso_chainmail": {
+    "name": "Chainmail",
     "required": [
       "male",
       "female",
@@ -23830,25 +30220,16 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "torso_chainmail"
+    ],
+    "variants": [
+      "gray"
+    ]
   },
-  "jacket-Collared_coat": {
+  "torso-jacket-torso_jacket_collared": {
+    "name": "Collared coat",
     "required": [
       "male"
     ],
@@ -23864,14 +30245,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "jacket",
+      "torso_jacket_collared"
+    ],
+    "variants": [
+      "brown striped",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "jacket-Iverness_cloak": {
+  "torso-jacket-torso_jacket_iverness": {
+    "name": "Iverness cloak",
     "required": [
       "male"
     ],
@@ -23887,14 +30295,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "jacket",
+      "torso_jacket_iverness"
+    ],
+    "variants": [
+      "black"
+    ]
   },
-  "jacket-Trench_coat": {
+  "torso-jacket-torso_jacket_trench": {
+    "name": "Trench coat",
     "required": [
       "male"
     ],
@@ -23910,14 +30321,18 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "jacket",
+      "torso_jacket_trench"
+    ],
+    "variants": [
+      "dark gray",
+      "gray"
+    ]
   },
-  "jacket-Tabard": {
+  "torso-jacket-torso_jacket_tabard": {
+    "name": "Tabard",
     "required": [
       "male",
       "female",
@@ -23935,25 +30350,35 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "jacket",
+      "torso_jacket_tabard"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "sky",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "jacket-Frock_coat": {
+  "torso-jacket-torso_jacket_frock": {
+    "name": "Frock coat",
     "required": [
       "male"
     ],
@@ -23969,13 +30394,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "jacket",
+      "torso_jacket_frock"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "jacket-Santa_coat": {
+  "torso-jacket-torso_jacket_santa": {
+    "name": "Santa coat",
     "required": [
       "male"
     ],
@@ -23991,14 +30443,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "jacket",
+      "torso_jacket_santa"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "jacket_collar-Frock_collar": {
+  "torso-jacket-jacket trim-torso_jacket_frock_collar": {
+    "name": "Frock collar",
     "required": [
       "male"
     ],
@@ -24014,13 +30492,24 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "jacket",
+      "jacket trim",
+      "torso_jacket_frock_collar"
+    ],
+    "variants": [
+      "bronze",
+      "gold",
+      "silver",
+      "red",
+      "blue",
+      "teal",
+      "yellow"
+    ]
   },
-  "jacket_trim-Frock_coat_lace": {
+  "torso-jacket-jacket trim-torso_jacket_frock_lace": {
+    "name": "Frock coat lace",
     "required": [
       "male"
     ],
@@ -24036,13 +30525,24 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "jacket",
+      "jacket trim",
+      "torso_jacket_frock_lace"
+    ],
+    "variants": [
+      "bronze",
+      "gold",
+      "silver",
+      "red",
+      "blue",
+      "teal",
+      "yellow"
+    ]
   },
-  "jacket_trim-Frock_coat_lapel": {
+  "torso-jacket-jacket trim-torso_jacket_frock_lapel": {
+    "name": "Frock coat lapel",
     "required": [
       "male"
     ],
@@ -24058,13 +30558,24 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "jacket",
+      "jacket trim",
+      "torso_jacket_frock_lapel"
+    ],
+    "variants": [
+      "bronze",
+      "gold",
+      "silver",
+      "red",
+      "blue",
+      "teal",
+      "yellow"
+    ]
   },
-  "jacket_trim-Frock_coat_buttons": {
+  "torso-jacket-jacket trim-torso_jacket_frock_buttons": {
+    "name": "Frock coat buttons",
     "required": [
       "male"
     ],
@@ -24080,13 +30591,24 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "jacket",
+      "jacket trim",
+      "torso_jacket_frock_buttons"
+    ],
+    "variants": [
+      "bronze",
+      "gold",
+      "silver",
+      "red",
+      "blue",
+      "teal",
+      "yellow"
+    ]
   },
-  "jacket_pockets-Jacket_pockets": {
+  "torso-jacket-jacket trim-torso_jacket_pockets": {
+    "name": "Jacket pockets",
     "required": [
       "male"
     ],
@@ -24102,13 +30624,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "jacket",
+      "jacket trim",
+      "torso_jacket_pockets"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "vest-Vest": {
+  "torso-vest-torso_clothes_vest": {
+    "name": "Vest",
     "required": [
       "male"
     ],
@@ -24124,14 +30674,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "vest",
+      "torso_clothes_vest"
+    ],
+    "variants": [
+      "gray striped",
+      "green striped",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "vest-Vest_open": {
+  "torso-vest-torso_clothes_vest_open": {
+    "name": "Vest open",
     "required": [
       "male"
     ],
@@ -24147,14 +30725,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "vest",
+      "torso_clothes_vest_open"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "armour-Plate": {
+  "torso-armour-torso_armour_plate": {
+    "name": "Plate",
     "required": [
       "male",
       "female",
@@ -24182,25 +30786,24 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "armour",
+      "torso_armour_plate"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "armour-Leather": {
+  "torso-armour-torso_armour_leather": {
+    "name": "Leather",
     "required": [
       "male",
       "female",
@@ -24218,25 +30821,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "armour",
+      "torso_armour_leather"
+    ],
+    "variants": [
+      "leather",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "armour-Legion": {
+  "torso-armour-torso_armour_legion": {
+    "name": "Legion",
     "required": [
       "male",
       "female",
@@ -24264,28 +30882,24 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "armour",
+      "torso_armour_legion"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "cape-Solid": {
+  "torso-cape-cape_solid": {
+    "name": "Solid",
     "required": [
       "male",
       "female",
@@ -24308,35 +30922,40 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "cape",
+      "cape_solid"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "cape-Tattered": {
+  "torso-cape-cape_tattered": {
+    "name": "Tattered",
     "required": [
       "male",
       "female",
@@ -24359,35 +30978,40 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "cape",
+      "cape_tattered"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "cape_trim-Cape_Trim": {
+  "torso-cape-cape_trim": {
+    "name": "Cape Trim",
     "required": [
       "male",
       "female",
@@ -24412,35 +31036,40 @@ window.itemMetadata = {
       "cape"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "cape",
+      "cape_trim"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "backpack_straps-Straps": {
+  "torso-backpack-backpack_straps": {
+    "name": "Straps",
     "required": [
       "male",
       "female",
@@ -24464,26 +31093,36 @@ window.itemMetadata = {
       "backpack"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "backpack",
+      "backpack_straps"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "sky",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "backpack-Backpack": {
+  "torso-backpack-backpack": {
+    "name": "Backpack",
     "required": [
       "male",
       "female",
@@ -24505,26 +31144,36 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "backpack",
+      "backpack"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "sky",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "backpack-Square_pack": {
+  "torso-backpack-backpack_squarepack": {
+    "name": "Square pack",
     "required": [
       "male",
       "female",
@@ -24545,26 +31194,36 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "backpack",
+      "backpack_squarepack"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "sky",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "backpack-Jetpack": {
+  "torso-backpack-backpack_jetpack": {
+    "name": "Jetpack",
     "required": [
       "male",
       "female",
@@ -24587,26 +31246,19 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "backpack",
+      "backpack_jetpack"
+    ],
+    "variants": [
+      "bronze",
+      "gold",
+      "steel"
+    ]
   },
-  "cargo-Jetpack_fins": {
+  "torso-backpack-backpack_jetpack_fins": {
+    "name": "Jetpack fins",
     "required": [
       "male",
       "female",
@@ -24629,26 +31281,19 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "backpack",
+      "backpack_jetpack_fins"
+    ],
+    "variants": [
+      "bronze",
+      "gold",
+      "steel"
+    ]
   },
-  "backpack-Basket": {
+  "torso-backpack-backpack_basket": {
+    "name": "Basket",
     "required": [
       "male",
       "female",
@@ -24671,22 +31316,18 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "torso",
+      "backpack",
+      "backpack_basket"
+    ],
+    "variants": [
+      "round",
+      "square"
+    ]
   },
-  "quiver-Quiver": {
+  "torso-backpack-quiver": {
+    "name": "Quiver",
     "required": [
       "male",
       "female",
@@ -24706,35 +31347,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "backpack",
+      "quiver"
+    ],
+    "variants": [
+      "quiver"
+    ]
   },
-  "cargo-Wood": {
+  "torso-backpack-backpack cargo-backpack_contents_wood": {
+    "name": "Wood",
     "required": [
       "male",
       "female",
@@ -24758,26 +31381,19 @@ window.itemMetadata = {
       "basket"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "backpack",
+      "backpack cargo",
+      "backpack_contents_wood"
+    ],
+    "variants": [
+      "3_logs",
+      "9_logs"
+    ]
   },
-  "cargo-Ore": {
+  "torso-backpack-backpack cargo-backpack_contents_ore": {
+    "name": "Ore",
     "required": [
       "male",
       "female",
@@ -24801,22 +31417,25 @@ window.itemMetadata = {
       "basket"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "torso",
+      "backpack",
+      "backpack cargo",
+      "backpack_contents_ore"
+    ],
+    "variants": [
+      "coal",
+      "iron",
+      "steel",
+      "tin",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "belt-Leather_Belt": {
+  "torso-waist-belt_leather": {
+    "name": "Leather Belt",
     "required": [
       "male",
       "female",
@@ -24834,25 +31453,23 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "waist",
+      "belt_leather"
+    ],
+    "variants": [
+      "brown",
+      "charcoal",
+      "leather",
+      "slate",
+      "tan",
+      "walnut",
+      "white"
+    ]
   },
-  "belt-Double_Belt": {
+  "torso-waist-belt_double": {
+    "name": "Double Belt",
     "required": [
       "male",
       "female",
@@ -24870,25 +31487,23 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "waist",
+      "belt_double"
+    ],
+    "variants": [
+      "brown",
+      "charcoal",
+      "leather",
+      "slate",
+      "tan",
+      "walnut",
+      "white"
+    ]
   },
-  "belt-Loose_Belt": {
+  "torso-waist-belt_loose": {
+    "name": "Loose Belt",
     "required": [
       "male",
       "female",
@@ -24906,25 +31521,23 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "waist",
+      "belt_loose"
+    ],
+    "variants": [
+      "brown",
+      "charcoal",
+      "leather",
+      "slate",
+      "tan",
+      "walnut",
+      "white"
+    ]
   },
-  "belt-Belly_belt": {
+  "torso-waist-belt_belly": {
+    "name": "Belly belt",
     "required": [
       "male",
       "female",
@@ -24942,326 +31555,23 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "waist",
+      "belt_belly"
+    ],
+    "variants": [
+      "brown",
+      "charcoal",
+      "leather",
+      "slate",
+      "tan",
+      "walnut",
+      "white"
+    ]
   },
-  "belt-Other_belts": {
-    "required": [
-      "male"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "sash-Sash": {
-    "required": [
-      "male",
-      "female",
-      "teen"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ]
-    }
-  },
-  "sash-Narrow_sash": {
-    "required": [
-      "male",
-      "female",
-      "teen"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ]
-    }
-  },
-  "sash-Waistband": {
-    "required": [
-      "female",
-      "teen"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ]
-    }
-  },
-  "sash-Obi": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "sash_tie-Obi_Knot_Left": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "sash_tie-Obi_Knot_Right": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "buckles-Buckles": {
+  "torso-waist-belt_other_female": {
+    "name": "Other belts",
     "required": [
       "female"
     ],
@@ -25277,14 +31587,425 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "torso",
+      "waist",
+      "belt_other_female"
+    ],
+    "variants": [
+      "black",
+      "bronze",
+      "brown",
+      "gold",
+      "iron",
+      "leather",
+      "silver",
+      "teal",
+      "white"
+    ]
   },
-  "legs-Armour": {
+  "torso-waist-belt_other_male": {
+    "name": "Other belts",
+    "required": [
+      "male"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "torso",
+      "waist",
+      "belt_other_male"
+    ],
+    "variants": [
+      "formal",
+      "leather",
+      "white"
+    ]
+  },
+  "torso-waist-belt_sash": {
+    "name": "Sash",
+    "required": [
+      "male",
+      "female",
+      "teen"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "torso",
+      "waist",
+      "belt_sash"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
+  },
+  "torso-waist-belt_sash_narrow": {
+    "name": "Narrow sash",
+    "required": [
+      "male",
+      "female",
+      "teen"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "torso",
+      "waist",
+      "belt_sash_narrow"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
+  },
+  "torso-waist-belt_waistband": {
+    "name": "Waistband",
+    "required": [
+      "female",
+      "teen"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "torso",
+      "waist",
+      "belt_waistband"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
+  },
+  "torso-waist-obi-belt_obi": {
+    "name": "Obi",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "torso",
+      "waist",
+      "obi",
+      "belt_obi"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
+  },
+  "torso-waist-obi-belt_obi_knot_left": {
+    "name": "Obi Knot Left",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "torso",
+      "waist",
+      "obi",
+      "belt_obi_knot_left"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
+  },
+  "torso-waist-obi-belt_obi_knot_right": {
+    "name": "Obi Knot Right",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "torso",
+      "waist",
+      "obi",
+      "belt_obi_knot_right"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
+  },
+  "torso-buckles": {
+    "name": "Buckles",
+    "required": [
+      "female"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "torso",
+      "buckles"
+    ],
+    "variants": [
+      "bronze",
+      "gold",
+      "iron",
+      "silver"
+    ]
+  },
+  "legs-legs_armour": {
+    "name": "Armour",
     "required": [
       "male",
       "female",
@@ -25306,25 +32027,23 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "legs",
+      "legs_armour"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "legs-Wide_pants": {
+  "legs-pants-legs_widepants": {
+    "name": "Wide pants",
     "required": [
       "muscular"
     ],
@@ -25340,14 +32059,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "legs",
+      "pants",
+      "legs_widepants"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "legs-Pants": {
+  "legs-pants-legs_pants": {
+    "name": "Pants",
     "required": [
       "male",
       "female",
@@ -25377,35 +32122,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "legs",
+      "pants",
+      "legs_pants"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "legs-Long_Pants": {
+  "legs-pants-legs_pants2": {
+    "name": "Long Pants",
     "required": [
       "male",
       "female",
@@ -25433,22 +32183,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "legs",
+      "pants",
+      "legs_pants2"
+    ],
+    "variants": [
+      "leather",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "legs-Cuffed_Pants": {
+  "legs-pants-legs_cuffed": {
+    "name": "Cuffed Pants",
     "required": [
       "male",
       "female",
@@ -25476,22 +32244,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "legs",
+      "pants",
+      "legs_cuffed"
+    ],
+    "variants": [
+      "leather",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "legs-Pantaloons": {
+  "legs-pants-legs_pantaloons": {
+    "name": "Pantaloons",
     "required": [
       "male",
       "female",
@@ -25521,40 +32307,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "GPL 2.0",
-        "GPL 3.0",
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "legs",
+      "pants",
+      "legs_pantaloons"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "legs-Formal_Pants": {
+  "legs-pants-legs_formal": {
+    "name": "Formal Pants",
     "required": [
       "male",
       "female",
@@ -25584,35 +32370,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "legs",
+      "pants",
+      "legs_formal"
+    ],
+    "variants": [
+      "base",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "legs-Striped_Formal_Pants": {
+  "legs-pants-legs_formal_striped": {
+    "name": "Striped Formal Pants",
     "required": [
       "male",
       "female",
@@ -25642,35 +32434,41 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "legs",
+      "pants",
+      "legs_formal_striped"
+    ],
+    "variants": [
+      "base",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "legs-Fur_Pants": {
+  "legs-pants-legs_fur": {
+    "name": "Fur Pants",
     "required": [
       "male",
       "female",
@@ -25700,30 +32498,48 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "legs",
+      "pants",
+      "legs_fur"
+    ],
+    "variants": [
+      "base",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "legs-Pregnancy_pants": {
+  "legs-pants-legs_pregnantpants": {
+    "name": "Pregnancy pants",
     "required": [
       "pregnant"
     ],
@@ -25739,14 +32555,35 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "legs",
+      "pants",
+      "legs_pregnantpants"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "sky",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "legs-Child_pants": {
+  "legs-pants-legs_childpants": {
+    "name": "Child pants",
     "required": [
       "child"
     ],
@@ -25756,15 +32593,25 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "child": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "legs",
+      "pants",
+      "legs_childpants"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "brown",
+      "darkblue",
+      "green",
+      "lightblue",
+      "maroon",
+      "red",
+      "white"
+    ]
   },
-  "legs-Leggings": {
+  "legs-leggings-legs_leggings": {
+    "name": "Leggings",
     "required": [
       "male",
       "female",
@@ -25792,22 +32639,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "legs",
+      "leggings",
+      "legs_leggings"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "legs-Leggings_2": {
+  "legs-leggings-legs_leggings2": {
+    "name": "Leggings 2",
     "required": [
       "male",
       "female",
@@ -25835,22 +32700,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "legs",
+      "leggings",
+      "legs_leggings2"
+    ],
+    "variants": [
+      "leather",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "legs-Hose": {
+  "legs-leggings-legs_hose": {
+    "name": "Hose",
     "required": [
       "male",
       "female",
@@ -25878,22 +32761,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "legs",
+      "leggings",
+      "legs_hose"
+    ],
+    "variants": [
+      "leather",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "legs-Shorts": {
+  "legs-shorts-legs_shorts": {
+    "name": "Shorts",
     "required": [
       "male",
       "female",
@@ -25922,26 +32823,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "legs",
+      "shorts",
+      "legs_shorts"
+    ],
+    "variants": [
+      "leather",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "legs-Short_Shorts": {
+  "legs-shorts-legs_shorts_short": {
+    "name": "Short Shorts",
     "required": [
       "male",
       "female",
@@ -25970,26 +32885,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "legs",
+      "shorts",
+      "legs_shorts_short"
+    ],
+    "variants": [
+      "leather",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "legs-Child_skirts": {
+  "legs-skirts-legs_childskirts": {
+    "name": "Child skirts",
     "required": [
       "child"
     ],
@@ -25999,15 +32928,26 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "child": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "legs",
+      "skirts",
+      "legs_childskirts"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "darkblue",
+      "green",
+      "lavender",
+      "lightblue",
+      "maroon",
+      "pink",
+      "red",
+      "white"
+    ]
   },
-  "legs-Plain_skirt": {
+  "legs-skirts-legs_skirts_plain": {
+    "name": "Plain skirt",
     "required": [
       "male",
       "female",
@@ -26026,30 +32966,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "legs",
+      "skirts",
+      "legs_skirts_plain"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "legs-Slit_skirt": {
+  "legs-skirts-legs_skirts_slit": {
+    "name": "Slit skirt",
     "required": [
       "male",
       "female"
@@ -26066,22 +33016,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "legs",
+      "skirts",
+      "legs_skirts_slit"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "legs-Legion_skirt": {
+  "legs-skirts-legs_skirts_legion": {
+    "name": "Legion skirt",
     "required": [
       "male",
       "female",
@@ -26101,40 +33069,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "legs",
+      "skirts",
+      "legs_skirts_legion"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "legs-Straight_skirt": {
+  "legs-skirts-legs_skirt_straight": {
+    "name": "Straight skirt",
     "required": [
       "female",
       "teen",
@@ -26152,22 +33120,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "legs",
+      "skirts",
+      "legs_skirt_straight"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "legs-Belle_skirt": {
+  "legs-skirts-legs_skirt_belle": {
+    "name": "Belle skirt",
     "required": [
       "female",
       "teen",
@@ -26185,25 +33171,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "legs",
+      "skirts",
+      "legs_skirt_belle"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "apron-Overskirt": {
+  "legs-skirts-legs_skirt_overskirt": {
+    "name": "Overskirt",
     "required": [
       "female",
       "teen",
@@ -26221,25 +33222,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "legs",
+      "skirts",
+      "legs_skirt_overskirt"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shoes-Armour": {
+  "feet-feet_armour": {
+    "name": "Armour",
     "required": [
       "male",
       "female",
@@ -26259,35 +33275,23 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "feet",
+      "feet_armour"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "shoes-Basic_Shoes": {
+  "feet-shoes-feet_shoes_basic": {
+    "name": "Basic Shoes",
     "required": [
       "male",
       "female",
@@ -26317,35 +33321,48 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "feet",
+      "shoes",
+      "feet_shoes_basic"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "shoes-Revised_Shoes": {
+  "feet-shoes-feet_shoes_revised": {
+    "name": "Revised Shoes",
     "required": [
       "male",
       "female",
@@ -26375,30 +33392,48 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "feet",
+      "shoes",
+      "feet_shoes_revised"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "shoes-Sara_Shoes": {
+  "feet-shoes-feet_shoes_sara": {
+    "name": "Sara Shoes",
     "required": [
       "male",
       "female",
@@ -26428,40 +33463,49 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0+",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0+",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0+",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0+",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY 3.0+",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "feet",
+      "shoes",
+      "feet_shoes_sara"
+    ],
+    "variants": [
+      "sara",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "shoes-Ghillies": {
+  "feet-shoes-feet_shoes_ghillies": {
+    "name": "Ghillies",
     "required": [
       "male",
       "female",
@@ -26491,30 +33535,48 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "feet",
+      "shoes",
+      "feet_shoes_ghillies"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "shoes-Basic_Boots": {
+  "feet-boots-feet_boots_basic": {
+    "name": "Basic Boots",
     "required": [
       "male",
       "female",
@@ -26544,40 +33606,48 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "feet",
+      "boots",
+      "feet_boots_basic"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "shoes-Revised_Boots": {
+  "feet-boots-feet_boots_revised": {
+    "name": "Revised Boots",
     "required": [
       "male",
       "female",
@@ -26607,30 +33677,48 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "feet",
+      "boots",
+      "feet_boots_revised"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "shoes-Folded_Rim_Boots": {
+  "feet-boots-feet_boots_fold": {
+    "name": "Folded Rim Boots",
     "required": [
       "male",
       "female",
@@ -26660,35 +33748,48 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "feet",
+      "boots",
+      "feet_boots_fold"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "shoes-Rimmed_Boots": {
+  "feet-boots-feet_boots_rim": {
+    "name": "Rimmed Boots",
     "required": [
       "male",
       "female",
@@ -26718,35 +33819,48 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "feet",
+      "boots",
+      "feet_boots_rim"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "shoes_toe-Plated_Toe": {
+  "feet-shoe accessory-feet_plate_toe": {
+    "name": "Plated Toe",
     "required": [
       "male",
       "female",
@@ -26776,35 +33890,24 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "feet",
+      "shoe accessory",
+      "feet_plate_toe"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "shoes_toe-Thick_Plated_Toe": {
+  "feet-shoe accessory-feet_plate_toe_thick": {
+    "name": "Thick Plated Toe",
     "required": [
       "male",
       "female",
@@ -26834,35 +33937,24 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "feet",
+      "shoe accessory",
+      "feet_plate_toe_thick"
+    ],
+    "variants": [
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
   },
-  "socks-Ankle_Socks": {
+  "feet-socks-feet_socks_ankle": {
+    "name": "Ankle Socks",
     "required": [
       "male",
       "female",
@@ -26891,26 +33983,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "feet",
+      "socks",
+      "feet_socks_ankle"
+    ],
+    "variants": [
+      "leather",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "socks-High_Socks": {
+  "feet-socks-feet_socks_high": {
+    "name": "High Socks",
     "required": [
       "male",
       "female",
@@ -26939,84 +34045,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
-  "socks-Tabi_Socks": {
-    "required": [
-      "male",
-      "female",
-      "teen",
-      "muscular",
-      "pregnant"
+    "path": [
+      "feet",
+      "socks",
+      "feet_socks_high"
     ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering",
-      "idle",
-      "jump",
-      "run",
-      "sit",
-      "emote",
-      "climb",
-      "combat",
-      "1h_slash",
-      "1h_backslash",
-      "1h_halfslash"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "CC-BY 3.0+",
-        "GPL 3.0"
-      ]
-    }
+    "variants": [
+      "leather",
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shoes-Slippers": {
+  "feet-socks-feet_socks_tabi": {
+    "name": "Tabi Socks",
     "required": [
       "male",
       "female",
@@ -27046,30 +34108,40 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "feet",
+      "socks",
+      "feet_socks_tabi"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shoes-Sandals": {
+  "feet-feet_slippers": {
+    "name": "Slippers",
     "required": [
       "male",
       "female",
@@ -27099,40 +34171,109 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "feet",
+      "feet_slippers"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shoes-Hoofs": {
+  "feet-feet_sandals": {
+    "name": "Sandals",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "feet",
+      "feet_sandals"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow",
+      "steel",
+      "iron",
+      "ceramic",
+      "brass",
+      "copper",
+      "bronze",
+      "silver",
+      "gold"
+    ]
+  },
+  "feet-feet_hoofs": {
+    "name": "Hoofs",
     "required": [
       "male",
       "female",
@@ -27152,30 +34293,36 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "feet",
+      "feet_hoofs"
+    ],
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ]
   },
-  "weapon-Rod": {
+  "tools-tool_rod": {
+    "name": "Rod",
     "required": [
       "male",
       "female",
@@ -27195,25 +34342,16 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "tools",
+      "tool_rod"
+    ],
+    "variants": [
+      "rod"
+    ]
   },
-  "weapon-Smash": {
+  "tools-tool_smash": {
+    "name": "Smash",
     "required": [
       "male",
       "female",
@@ -27233,25 +34371,18 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "tools",
+      "tool_smash"
+    ],
+    "variants": [
+      "axe",
+      "hammer",
+      "pickaxe"
+    ]
   },
-  "weapon-Thrust": {
+  "tools-tool_thrust": {
+    "name": "Thrust",
     "required": [
       "male",
       "female",
@@ -27271,25 +34402,18 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "tools",
+      "tool_thrust"
+    ],
+    "variants": [
+      "hoe",
+      "shovel",
+      "watering"
+    ]
   },
-  "weapon-Whip": {
+  "tools-tool_whip": {
+    "name": "Whip",
     "required": [
       "male",
       "female",
@@ -27309,35 +34433,16 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ]
-    }
+    "path": [
+      "tools",
+      "tool_whip"
+    ],
+    "variants": [
+      "whip"
+    ]
   },
-  "shield-Shield": {
+  "weapons-shield-shield": {
+    "name": "Shield",
     "required": [
       "male",
       "female",
@@ -27356,22 +34461,24 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "shield"
+    ],
+    "variants": [
+      "crusader",
+      "spartan",
+      "round black",
+      "round brown",
+      "round gold",
+      "round green",
+      "round silver",
+      "round yellow"
+    ]
   },
-  "shield-Kite": {
+  "weapons-shield-shield_kite": {
+    "name": "Kite",
     "required": [
       "male",
       "female",
@@ -27390,30 +34497,26 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 2.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "shield_kite"
+    ],
+    "variants": [
+      "kite blue blue",
+      "kite blue gray",
+      "kite gray blue",
+      "kite gray gray",
+      "kite gray green",
+      "kite gray orange",
+      "kite gray",
+      "kite green gray",
+      "kite orange",
+      "kite red gray"
+    ]
   },
-  "shield-Spartan_shield": {
+  "weapons-shield-shield_spartan": {
+    "name": "Spartan shield",
     "required": [
       "male",
       "female",
@@ -27432,22 +34535,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "shield_spartan"
+    ],
+    "variants": [
+      "spartan"
+    ]
   },
-  "shield-Two_engrailed_shield": {
+  "weapons-shield-two-engrailed shield-shield_two_engrailed": {
+    "name": "Two engrailed shield",
     "required": [
       "male",
       "female",
@@ -27466,22 +34564,18 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "two-engrailed shield",
+      "shield_two_engrailed"
+    ],
+    "variants": [
+      "two_engrailed"
+    ]
   },
-  "shield_trim-Two_engrailed_shield_trim": {
+  "weapons-shield-two-engrailed shield-shield_two_engrailed_trim": {
+    "name": "Two engrailed shield trim",
     "required": [
       "male",
       "female",
@@ -27500,22 +34594,18 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "two-engrailed shield",
+      "shield_two_engrailed_trim"
+    ],
+    "variants": [
+      "two_engrailed_trim"
+    ]
   },
-  "shield-Crusader_shield": {
+  "weapons-shield-two-engrailed shield-shield_crusader": {
+    "name": "Crusader shield",
     "required": [
       "male",
       "female",
@@ -27534,22 +34624,18 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "two-engrailed shield",
+      "shield_crusader"
+    ],
+    "variants": [
+      "crusader"
+    ]
   },
-  "shield-Plus_shield": {
+  "weapons-shield-two-engrailed shield-shield_plus": {
+    "name": "Plus shield",
     "required": [
       "male",
       "female",
@@ -27568,22 +34654,18 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "two-engrailed shield",
+      "shield_plus"
+    ],
+    "variants": [
+      "plus"
+    ]
   },
-  "shield-Scutum_shield": {
+  "weapons-shield-scutum shield-shield_scutum": {
+    "name": "Scutum shield",
     "required": [
       "male",
       "female",
@@ -27602,22 +34684,18 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "scutum shield",
+      "shield_scutum"
+    ],
+    "variants": [
+      "scutum"
+    ]
   },
-  "shield_trim-Scutum_shield_trim": {
+  "weapons-shield-scutum shield-shield_scutum_trim": {
+    "name": "Scutum shield trim",
     "required": [
       "male",
       "female",
@@ -27636,22 +34714,18 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "scutum shield",
+      "shield_scutum_trim"
+    ],
+    "variants": [
+      "scutum_trim"
+    ]
   },
-  "shield-Heater_Shield_Base": {
+  "weapons-shield-heater shield-shield_heater_wood": {
+    "name": "Heater Shield Base",
     "required": [
       "male",
       "female",
@@ -27683,25 +34757,22 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "shield_heater_wood"
+    ],
+    "variants": [
+      "brown",
+      "coffee",
+      "oak",
+      "tan",
+      "umber"
+    ]
   },
-  "shield_paint-Heater_Shield_Paint": {
+  "weapons-shield-heater shield-shield_heater_paint": {
+    "name": "Heater Shield Paint",
     "required": [
       "male",
       "female",
@@ -27731,25 +34802,92 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "shield_heater_paint"
+    ],
+    "variants": [
+      "aegean",
+      "amber",
+      "amethyst",
+      "apple",
+      "apricot",
+      "azure",
+      "beige",
+      "black",
+      "blue",
+      "blue_violet",
+      "bronze",
+      "brown",
+      "cerise",
+      "cerulean",
+      "charcoal",
+      "chocolate",
+      "coffee",
+      "coral",
+      "cornflower",
+      "cyan",
+      "denim",
+      "dove",
+      "emerald",
+      "fern",
+      "forest",
+      "garnet",
+      "gray",
+      "green",
+      "heather",
+      "honey",
+      "ice",
+      "indigo",
+      "ivory",
+      "lavender",
+      "leather",
+      "lemon",
+      "linen",
+      "mauve",
+      "midnight",
+      "mint",
+      "mustard",
+      "navy",
+      "neptune",
+      "oak",
+      "ochre",
+      "olivine",
+      "orange",
+      "peach",
+      "pearl",
+      "periwinkle",
+      "pink",
+      "plum",
+      "porcelain",
+      "powder",
+      "purple",
+      "red",
+      "red_orange",
+      "royal",
+      "salmon",
+      "sepia",
+      "shadow",
+      "silver",
+      "sky",
+      "smoke",
+      "soot",
+      "spring",
+      "swamp",
+      "tan",
+      "tawny",
+      "teal",
+      "tumeric",
+      "umber",
+      "white",
+      "wine",
+      "yellow"
+    ]
   },
-  "shield_trim-Heater_Shield_Trim": {
+  "weapons-shield-heater shield-shield_heater_trim": {
+    "name": "Heater Shield Trim",
     "required": [
       "male",
       "female",
@@ -27781,25 +34919,24 @@ window.itemMetadata = {
       "heater"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "shield_heater_trim"
+    ],
+    "variants": [
+      "brass",
+      "bronze",
+      "copper",
+      "gold",
+      "iron",
+      "silver",
+      "steel"
+    ]
   },
-  "shield_pattern-barry": {
+  "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_barry": {
+    "name": "barry",
     "required": [
       "male",
       "female",
@@ -27829,25 +34966,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "heater shield pattern",
+      "shield_heater_pattern_barry"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-bend_sinister": {
+  "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_bend_sinister": {
+    "name": "bend_sinister",
     "required": [
       "male",
       "female",
@@ -27877,25 +35031,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "heater shield pattern",
+      "shield_heater_pattern_bend_sinister"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-bend": {
+  "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_bend": {
+    "name": "bend",
     "required": [
       "male",
       "female",
@@ -27925,25 +35096,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "heater shield pattern",
+      "shield_heater_pattern_bend"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-bendy_sinister": {
+  "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_bendy_sinister": {
+    "name": "bendy_sinister",
     "required": [
       "male",
       "female",
@@ -27973,25 +35161,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "heater shield pattern",
+      "shield_heater_pattern_bendy_sinister"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-bendy": {
+  "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_bendy": {
+    "name": "bendy",
     "required": [
       "male",
       "female",
@@ -28021,25 +35226,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "heater shield pattern",
+      "shield_heater_pattern_bendy"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-bordure": {
+  "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_bordure": {
+    "name": "bordure",
     "required": [
       "male",
       "female",
@@ -28069,25 +35291,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "heater shield pattern",
+      "shield_heater_pattern_bordure"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-chevron_inverted": {
+  "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_chevron_inverted": {
+    "name": "chevron_inverted",
     "required": [
       "male",
       "female",
@@ -28117,25 +35356,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "heater shield pattern",
+      "shield_heater_pattern_chevron_inverted"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-chevron": {
+  "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_chevron": {
+    "name": "chevron",
     "required": [
       "male",
       "female",
@@ -28165,25 +35421,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "heater shield pattern",
+      "shield_heater_pattern_chevron"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-chief": {
+  "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_chief": {
+    "name": "chief",
     "required": [
       "male",
       "female",
@@ -28213,25 +35486,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "heater shield pattern",
+      "shield_heater_pattern_chief"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-cross": {
+  "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_cross": {
+    "name": "cross",
     "required": [
       "male",
       "female",
@@ -28261,25 +35551,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "heater shield pattern",
+      "shield_heater_pattern_cross"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-fess": {
+  "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_fess": {
+    "name": "fess",
     "required": [
       "male",
       "female",
@@ -28309,25 +35616,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "heater shield pattern",
+      "shield_heater_pattern_fess"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-lozengy": {
+  "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_lozengy": {
+    "name": "lozengy",
     "required": [
       "male",
       "female",
@@ -28357,25 +35681,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "heater shield pattern",
+      "shield_heater_pattern_lozengy"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-pale": {
+  "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_pale": {
+    "name": "pale",
     "required": [
       "male",
       "female",
@@ -28405,25 +35746,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "heater shield pattern",
+      "shield_heater_pattern_pale"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-pall": {
+  "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_pall": {
+    "name": "pall",
     "required": [
       "male",
       "female",
@@ -28453,25 +35811,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "heater shield pattern",
+      "shield_heater_pattern_pall"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-paly": {
+  "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_paly": {
+    "name": "paly",
     "required": [
       "male",
       "female",
@@ -28501,25 +35876,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "heater shield pattern",
+      "shield_heater_pattern_paly"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-per_bend_sinister": {
+  "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_bend_sinister": {
+    "name": "per_bend_sinister",
     "required": [
       "male",
       "female",
@@ -28549,25 +35941,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "heater shield pattern",
+      "shield_heater_pattern_per_bend_sinister"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-per_bend": {
+  "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_bend": {
+    "name": "per_bend",
     "required": [
       "male",
       "female",
@@ -28597,25 +36006,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "heater shield pattern",
+      "shield_heater_pattern_per_bend"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-per_chevron_inverted": {
+  "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_chevron_inverted": {
+    "name": "per_chevron_inverted",
     "required": [
       "male",
       "female",
@@ -28645,25 +36071,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "heater shield pattern",
+      "shield_heater_pattern_per_chevron_inverted"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-per_chevron": {
+  "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_chevron": {
+    "name": "per_chevron",
     "required": [
       "male",
       "female",
@@ -28693,25 +36136,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "heater shield pattern",
+      "shield_heater_pattern_per_chevron"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-per_fess": {
+  "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_fess": {
+    "name": "per_fess",
     "required": [
       "male",
       "female",
@@ -28741,25 +36201,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "heater shield pattern",
+      "shield_heater_pattern_per_fess"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-per_pale": {
+  "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_pale": {
+    "name": "per_pale",
     "required": [
       "male",
       "female",
@@ -28789,25 +36266,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "heater shield pattern",
+      "shield_heater_pattern_per_pale"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-per_saltire": {
+  "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_saltire": {
+    "name": "per_saltire",
     "required": [
       "male",
       "female",
@@ -28837,25 +36331,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "heater shield pattern",
+      "shield_heater_pattern_per_saltire"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-quarterly": {
+  "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_quarterly": {
+    "name": "quarterly",
     "required": [
       "male",
       "female",
@@ -28885,25 +36396,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "heater shield pattern",
+      "shield_heater_pattern_quarterly"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-saltire": {
+  "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_saltire": {
+    "name": "saltire",
     "required": [
       "male",
       "female",
@@ -28933,25 +36461,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "heater shield pattern",
+      "shield_heater_pattern_saltire"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield-Revised_Heater_Shield_Base": {
+  "weapons-shield-heater shield-shield_heater_revised_wood": {
+    "name": "Revised Heater Shield Base",
     "required": [
       "male",
       "female",
@@ -28983,25 +36528,22 @@ window.itemMetadata = {
     ],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "shield_heater_revised_wood"
+    ],
+    "variants": [
+      "brown",
+      "coffee",
+      "oak",
+      "tan",
+      "umber"
+    ]
   },
-  "shield_paint-Revised_Heater_Shield_Paint": {
+  "weapons-shield-heater shield-shield_heater_revised_paint": {
+    "name": "Revised Heater Shield Paint",
     "required": [
       "male",
       "female",
@@ -29031,25 +36573,92 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "shield_heater_revised_paint"
+    ],
+    "variants": [
+      "aegean",
+      "amber",
+      "amethyst",
+      "apple",
+      "apricot",
+      "azure",
+      "beige",
+      "black",
+      "blue",
+      "blue_violet",
+      "bronze",
+      "brown",
+      "cerise",
+      "cerulean",
+      "charcoal",
+      "chocolate",
+      "coffee",
+      "coral",
+      "cornflower",
+      "cyan",
+      "denim",
+      "dove",
+      "emerald",
+      "fern",
+      "forest",
+      "garnet",
+      "gray",
+      "green",
+      "heather",
+      "honey",
+      "ice",
+      "indigo",
+      "ivory",
+      "lavender",
+      "leather",
+      "lemon",
+      "linen",
+      "mauve",
+      "midnight",
+      "mint",
+      "mustard",
+      "navy",
+      "neptune",
+      "oak",
+      "ochre",
+      "olivine",
+      "orange",
+      "peach",
+      "pearl",
+      "periwinkle",
+      "pink",
+      "plum",
+      "porcelain",
+      "powder",
+      "purple",
+      "red",
+      "red_orange",
+      "royal",
+      "salmon",
+      "sepia",
+      "shadow",
+      "silver",
+      "sky",
+      "smoke",
+      "soot",
+      "spring",
+      "swamp",
+      "tan",
+      "tawny",
+      "teal",
+      "tumeric",
+      "umber",
+      "white",
+      "wine",
+      "yellow"
+    ]
   },
-  "shield_trim-Revised_Heater_Shield_Trim": {
+  "weapons-shield-heater shield-shield_heater_revised_trim": {
+    "name": "Revised Heater Shield Trim",
     "required": [
       "male",
       "female",
@@ -29081,25 +36690,24 @@ window.itemMetadata = {
       "heater"
     ],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "shield_heater_revised_trim"
+    ],
+    "variants": [
+      "brass",
+      "bronze",
+      "copper",
+      "gold",
+      "iron",
+      "silver",
+      "steel"
+    ]
   },
-  "shield_pattern-revised_barry": {
+  "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_barry": {
+    "name": "revised_barry",
     "required": [
       "male",
       "female",
@@ -29129,25 +36737,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "revised heater shield pattern",
+      "shield_heater_revised_pattern_barry"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-revised_bend_sinister": {
+  "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_bend_sinister": {
+    "name": "revised_bend_sinister",
     "required": [
       "male",
       "female",
@@ -29177,25 +36802,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "revised heater shield pattern",
+      "shield_heater_revised_pattern_bend_sinister"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-revised_bend": {
+  "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_bend": {
+    "name": "revised_bend",
     "required": [
       "male",
       "female",
@@ -29225,25 +36867,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "revised heater shield pattern",
+      "shield_heater_revised_pattern_bend"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-revised_bendy_sinister": {
+  "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_bendy_sinister": {
+    "name": "revised_bendy_sinister",
     "required": [
       "male",
       "female",
@@ -29273,25 +36932,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "revised heater shield pattern",
+      "shield_heater_revised_pattern_bendy_sinister"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-revised_bendy": {
+  "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_bendy": {
+    "name": "revised_bendy",
     "required": [
       "male",
       "female",
@@ -29321,25 +36997,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "revised heater shield pattern",
+      "shield_heater_revised_pattern_bendy"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-revised_bordure": {
+  "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_bordure": {
+    "name": "revised_bordure",
     "required": [
       "male",
       "female",
@@ -29369,25 +37062,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "revised heater shield pattern",
+      "shield_heater_revised_pattern_bordure"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-revised_chevron_inverted": {
+  "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_chevron_inverted": {
+    "name": "revised_chevron_inverted",
     "required": [
       "male",
       "female",
@@ -29417,25 +37127,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "revised heater shield pattern",
+      "shield_heater_revised_pattern_chevron_inverted"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-revised_chevron": {
+  "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_chevron": {
+    "name": "revised_chevron",
     "required": [
       "male",
       "female",
@@ -29465,25 +37192,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "revised heater shield pattern",
+      "shield_heater_revised_pattern_chevron"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-revised_chief": {
+  "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_chief": {
+    "name": "revised_chief",
     "required": [
       "male",
       "female",
@@ -29513,25 +37257,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "revised heater shield pattern",
+      "shield_heater_revised_pattern_chief"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-revised_cross": {
+  "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_cross": {
+    "name": "revised_cross",
     "required": [
       "male",
       "female",
@@ -29561,25 +37322,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "revised heater shield pattern",
+      "shield_heater_revised_pattern_cross"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-revised_fess": {
+  "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_fess": {
+    "name": "revised_fess",
     "required": [
       "male",
       "female",
@@ -29609,25 +37387,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "revised heater shield pattern",
+      "shield_heater_revised_pattern_fess"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-revised_lozengy": {
+  "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_lozengy": {
+    "name": "revised_lozengy",
     "required": [
       "male",
       "female",
@@ -29657,25 +37452,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "revised heater shield pattern",
+      "shield_heater_revised_pattern_lozengy"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-revised_pale": {
+  "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_pale": {
+    "name": "revised_pale",
     "required": [
       "male",
       "female",
@@ -29705,25 +37517,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "revised heater shield pattern",
+      "shield_heater_revised_pattern_pale"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-revised_pall": {
+  "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_pall": {
+    "name": "revised_pall",
     "required": [
       "male",
       "female",
@@ -29753,25 +37582,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "revised heater shield pattern",
+      "shield_heater_revised_pattern_pall"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-revised_paly": {
+  "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_paly": {
+    "name": "revised_paly",
     "required": [
       "male",
       "female",
@@ -29801,25 +37647,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "revised heater shield pattern",
+      "shield_heater_revised_pattern_paly"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-revised_per_bend_sinister": {
+  "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_bend_sinister": {
+    "name": "revised_per_bend_sinister",
     "required": [
       "male",
       "female",
@@ -29849,25 +37712,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "revised heater shield pattern",
+      "shield_heater_revised_pattern_per_bend_sinister"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-revised_per_bend": {
+  "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_bend": {
+    "name": "revised_per_bend",
     "required": [
       "male",
       "female",
@@ -29897,25 +37777,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "revised heater shield pattern",
+      "shield_heater_revised_pattern_per_bend"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-revised_per_chevron_inverted": {
+  "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_chevron_inverted": {
+    "name": "revised_per_chevron_inverted",
     "required": [
       "male",
       "female",
@@ -29945,25 +37842,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "revised heater shield pattern",
+      "shield_heater_revised_pattern_per_chevron_inverted"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-revised_per_chevron": {
+  "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_chevron": {
+    "name": "revised_per_chevron",
     "required": [
       "male",
       "female",
@@ -29993,25 +37907,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "revised heater shield pattern",
+      "shield_heater_revised_pattern_per_chevron"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-revised_per_fess": {
+  "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_fess": {
+    "name": "revised_per_fess",
     "required": [
       "male",
       "female",
@@ -30041,25 +37972,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "revised heater shield pattern",
+      "shield_heater_revised_pattern_per_fess"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-revised_per_pale": {
+  "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_pale": {
+    "name": "revised_per_pale",
     "required": [
       "male",
       "female",
@@ -30089,25 +38037,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "revised heater shield pattern",
+      "shield_heater_revised_pattern_per_pale"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-revised_per_saltire": {
+  "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_saltire": {
+    "name": "revised_per_saltire",
     "required": [
       "male",
       "female",
@@ -30137,25 +38102,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "revised heater shield pattern",
+      "shield_heater_revised_pattern_per_saltire"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-revised_quarterly": {
+  "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_quarterly": {
+    "name": "revised_quarterly",
     "required": [
       "male",
       "female",
@@ -30185,25 +38167,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "revised heater shield pattern",
+      "shield_heater_revised_pattern_quarterly"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "shield_pattern-revised_saltire": {
+  "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_saltire": {
+    "name": "revised_saltire",
     "required": [
       "male",
       "female",
@@ -30233,25 +38232,42 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "shield",
+      "heater shield",
+      "revised heater shield pattern",
+      "shield_heater_revised_pattern_saltire"
+    ],
+    "variants": [
+      "black",
+      "blue",
+      "bluegray",
+      "brown",
+      "charcoal",
+      "forest",
+      "gray",
+      "green",
+      "lavender",
+      "leather",
+      "maroon",
+      "navy",
+      "orange",
+      "pink",
+      "purple",
+      "red",
+      "rose",
+      "sky",
+      "slate",
+      "tan",
+      "teal",
+      "walnut",
+      "white",
+      "yellow"
+    ]
   },
-  "weapon-Crossbow": {
+  "weapons-ranged-weapon_ranged_crossbow": {
+    "name": "Crossbow",
     "required": [
       "male",
       "female",
@@ -30270,22 +38286,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "ranged",
+      "weapon_ranged_crossbow"
+    ],
+    "variants": [
+      "crossbow"
+    ]
   },
-  "weapon-Slingshot": {
+  "weapons-ranged-weapon_ranged_slingshot": {
+    "name": "Slingshot",
     "required": [
       "male",
       "female",
@@ -30304,30 +38315,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "ranged",
+      "weapon_ranged_slingshot"
+    ],
+    "variants": [
+      "slingshot"
+    ]
   },
-  "weapon-Boomerang": {
+  "weapons-ranged-weapon_ranged_boomerang": {
+    "name": "Boomerang",
     "required": [
       "male",
       "female",
@@ -30346,30 +38344,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "ranged",
+      "weapon_ranged_boomerang"
+    ],
+    "variants": [
+      "boomerang"
+    ]
   },
-  "ammo-Ammo": {
+  "weapons-ranged-bow-weapon_ranged_bow_arrow": {
+    "name": "Ammo",
     "required": [
       "male",
       "female",
@@ -30383,35 +38368,18 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "ranged",
+      "bow",
+      "weapon_ranged_bow_arrow"
+    ],
+    "variants": [
+      "arrow"
+    ]
   },
-  "weapon-Great": {
+  "weapons-ranged-bow-weapon_ranged_bow_great": {
+    "name": "Great",
     "required": [
       "male",
       "female",
@@ -30426,25 +38394,29 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "ranged",
+      "bow",
+      "weapon_ranged_bow_great"
+    ],
+    "variants": [
+      "light",
+      "medium",
+      "red",
+      "dark",
+      "brass",
+      "bronze",
+      "ceramic",
+      "copper",
+      "gold",
+      "iron",
+      "silver",
+      "steel"
+    ]
   },
-  "weapon-Normal": {
+  "weapons-ranged-bow-weapon_ranged_bow_normal": {
+    "name": "Normal",
     "required": [
       "male",
       "female",
@@ -30459,35 +38431,29 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "ranged",
+      "bow",
+      "weapon_ranged_bow_normal"
+    ],
+    "variants": [
+      "light",
+      "medium",
+      "red",
+      "dark",
+      "brass",
+      "bronze",
+      "ceramic",
+      "copper",
+      "gold",
+      "iron",
+      "silver",
+      "steel"
+    ]
   },
-  "weapon-Recurve": {
+  "weapons-ranged-bow-weapon_ranged_bow_recurve": {
+    "name": "Recurve",
     "required": [
       "male",
       "female",
@@ -30502,25 +38468,29 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "ranged",
+      "bow",
+      "weapon_ranged_bow_recurve"
+    ],
+    "variants": [
+      "light",
+      "medium",
+      "red",
+      "dark",
+      "brass",
+      "bronze",
+      "ceramic",
+      "copper",
+      "gold",
+      "iron",
+      "silver",
+      "steel"
+    ]
   },
-  "weapon-Dagger": {
+  "weapons-sword-weapon_sword_dagger": {
+    "name": "Dagger",
     "required": [
       "male",
       "female",
@@ -30539,30 +38509,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "sword",
+      "weapon_sword_dagger"
+    ],
+    "variants": [
+      "dagger"
+    ]
   },
-  "weapon-Glowsword": {
+  "weapons-sword-weapon_sword_glowsword": {
+    "name": "Glowsword",
     "required": [
       "male",
       "female",
@@ -30581,26 +38538,18 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "sword",
+      "weapon_sword_glowsword"
+    ],
+    "variants": [
+      "blue",
+      "red"
+    ]
   },
-  "weapon-Longsword": {
+  "weapons-sword-weapon_sword_longsword": {
+    "name": "Longsword",
     "required": [
       "male",
       "female",
@@ -30619,26 +38568,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "sword",
+      "weapon_sword_longsword"
+    ],
+    "variants": [
+      "longsword"
+    ]
   },
-  "weapon-Rapier": {
+  "weapons-sword-weapon_sword_rapier": {
+    "name": "Rapier",
     "required": [
       "male",
       "female",
@@ -30657,26 +38597,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "sword",
+      "weapon_sword_rapier"
+    ],
+    "variants": [
+      "rapier"
+    ]
   },
-  "weapon-Saber": {
+  "weapons-sword-weapon_sword_saber": {
+    "name": "Saber",
     "required": [
       "male",
       "female",
@@ -30695,22 +38626,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "sword",
+      "weapon_sword_saber"
+    ],
+    "variants": [
+      "saber"
+    ]
   },
-  "weapon-Katana": {
+  "weapons-sword-weapon_sword_katana": {
+    "name": "Katana",
     "required": [
       "male",
       "female",
@@ -30729,22 +38655,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "sword",
+      "weapon_sword_katana"
+    ],
+    "variants": [
+      "katana"
+    ]
   },
-  "weapon-Scimitar": {
+  "weapons-sword-weapon_sword_scimitar": {
+    "name": "Scimitar",
     "required": [
       "male",
       "female",
@@ -30763,22 +38684,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "sword",
+      "weapon_sword_scimitar"
+    ],
+    "variants": [
+      "scimitar"
+    ]
   },
-  "weapon-Longsword_alt": {
+  "weapons-sword-weapon_sword_longsword_alt": {
+    "name": "Longsword alt",
     "required": [
       "male",
       "female",
@@ -30797,22 +38713,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "sword",
+      "weapon_sword_longsword_alt"
+    ],
+    "variants": [
+      "longsword_alt"
+    ]
   },
-  "weapon-Arming_Sword": {
+  "weapons-sword-weapon_sword_arming": {
+    "name": "Arming Sword",
     "required": [
       "male",
       "female",
@@ -30842,25 +38753,24 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "sword",
+      "weapon_sword_arming"
+    ],
+    "variants": [
+      "brass",
+      "bronze",
+      "ceramic",
+      "copper",
+      "gold",
+      "iron",
+      "silver",
+      "steel"
+    ]
   },
-  "weapon-Flail": {
+  "weapons-blunt-weapon_blunt_flail": {
+    "name": "Flail",
     "required": [
       "male",
       "female",
@@ -30879,26 +38789,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "blunt",
+      "weapon_blunt_flail"
+    ],
+    "variants": [
+      "flail"
+    ]
   },
-  "weapon-Mace": {
+  "weapons-blunt-weapon_blunt_mace": {
+    "name": "Mace",
     "required": [
       "male",
       "female",
@@ -30917,26 +38818,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "blunt",
+      "weapon_blunt_mace"
+    ],
+    "variants": [
+      "mace"
+    ]
   },
-  "weapon-Waraxe": {
+  "weapons-blunt-weapon_blunt_waraxe": {
+    "name": "Waraxe",
     "required": [
       "male",
       "female",
@@ -30955,26 +38847,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "blunt",
+      "weapon_blunt_waraxe"
+    ],
+    "variants": [
+      "waraxe"
+    ]
   },
-  "weapon-Club": {
+  "weapons-blunt-weapon_blunt_club": {
+    "name": "Club",
     "required": [
       "male",
       "female",
@@ -30993,30 +38876,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "blunt",
+      "weapon_blunt_club"
+    ],
+    "variants": [
+      "club"
+    ]
   },
-  "weapon-Cane": {
+  "weapons-polearm-weapon_polearm_cane": {
+    "name": "Cane",
     "required": [
       "male",
       "female",
@@ -31030,26 +38900,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "polearm",
+      "weapon_polearm_cane"
+    ],
+    "variants": [
+      "cane"
+    ]
   },
-  "weapon-Spear": {
+  "weapons-polearm-weapon_polearm_spear": {
+    "name": "Spear",
     "required": [
       "male",
       "female",
@@ -31065,25 +38926,28 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "polearm",
+      "weapon_polearm_spear"
+    ],
+    "variants": [
+      "medium",
+      "light",
+      "red",
+      "dark",
+      "brass",
+      "bronze",
+      "ceramic",
+      "copper",
+      "gold",
+      "iron",
+      "silver",
+      "steel"
+    ]
   },
-  "weapon-Scythe": {
+  "weapons-polearm-weapon_polearm_scythe": {
+    "name": "Scythe",
     "required": [
       "male",
       "female",
@@ -31102,22 +38966,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "polearm",
+      "weapon_polearm_scythe"
+    ],
+    "variants": [
+      "scythe"
+    ]
   },
-  "weapon-Halberd": {
+  "weapons-polearm-weapon_polearm_halberd": {
+    "name": "Halberd",
     "required": [
       "male",
       "female",
@@ -31136,26 +38995,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "polearm",
+      "weapon_polearm_halberd"
+    ],
+    "variants": [
+      "halberd"
+    ]
   },
-  "weapon-Long_spear": {
+  "weapons-polearm-weapon_polearm_longspear": {
+    "name": "Long spear",
     "required": [
       "male",
       "female",
@@ -31175,25 +39025,28 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "polearm",
+      "weapon_polearm_longspear"
+    ],
+    "variants": [
+      "medium",
+      "light",
+      "red",
+      "dark",
+      "brass",
+      "bronze",
+      "ceramic",
+      "copper",
+      "gold",
+      "iron",
+      "silver",
+      "steel"
+    ]
   },
-  "weapon-Dragon_spear": {
+  "weapons-polearm-weapon_polearm_dragonspear": {
+    "name": "Dragon spear",
     "required": [
       "male",
       "female",
@@ -31213,25 +39066,28 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "polearm",
+      "weapon_polearm_dragonspear"
+    ],
+    "variants": [
+      "medium",
+      "light",
+      "red",
+      "dark",
+      "brass",
+      "bronze",
+      "ceramic",
+      "copper",
+      "gold",
+      "iron",
+      "silver",
+      "steel"
+    ]
   },
-  "weapon-Trident": {
+  "weapons-polearm-weapon_polearm_trident": {
+    "name": "Trident",
     "required": [
       "male",
       "female",
@@ -31251,25 +39107,28 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "polearm",
+      "weapon_polearm_trident"
+    ],
+    "variants": [
+      "medium",
+      "light",
+      "red",
+      "dark",
+      "brass",
+      "bronze",
+      "ceramic",
+      "copper",
+      "gold",
+      "iron",
+      "silver",
+      "steel"
+    ]
   },
-  "weapon-Simple_staff": {
+  "weapons-magic-weapon_magic_simple": {
+    "name": "Simple staff",
     "required": [
       "male",
       "female",
@@ -31289,25 +39148,17 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "magic",
+      "weapon_magic_simple"
+    ],
+    "variants": [
+      "simple"
+    ]
   },
-  "weapon-Loop_staff": {
+  "weapons-magic-weapon_magic_loop": {
+    "name": "Loop staff",
     "required": [
       "male",
       "female",
@@ -31327,35 +39178,28 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "magic",
+      "weapon_magic_loop"
+    ],
+    "variants": [
+      "medium",
+      "light",
+      "red",
+      "dark",
+      "brass",
+      "bronze",
+      "ceramic",
+      "copper",
+      "gold",
+      "iron",
+      "silver",
+      "steel"
+    ]
   },
-  "weapon-Diamond_staff": {
+  "weapons-magic-weapon_magic_diamond": {
+    "name": "Diamond staff",
     "required": [
       "male",
       "female",
@@ -31375,35 +39219,28 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "magic",
+      "weapon_magic_diamond"
+    ],
+    "variants": [
+      "medium",
+      "light",
+      "red",
+      "dark",
+      "brass",
+      "bronze",
+      "ceramic",
+      "copper",
+      "gold",
+      "iron",
+      "silver",
+      "steel"
+    ]
   },
-  "weapon-Gnarled_staff": {
+  "weapons-magic-weapon_magic_gnarled": {
+    "name": "Gnarled staff",
     "required": [
       "male",
       "female",
@@ -31423,35 +39260,28 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "magic",
+      "weapon_magic_gnarled"
+    ],
+    "variants": [
+      "medium",
+      "light",
+      "red",
+      "dark",
+      "brass",
+      "bronze",
+      "ceramic",
+      "copper",
+      "gold",
+      "iron",
+      "silver",
+      "steel"
+    ]
   },
-  "weapon-S_staff": {
+  "weapons-magic-weapon_magic_s": {
+    "name": "S staff",
     "required": [
       "male",
       "female",
@@ -31471,25 +39301,28 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC0"
-      ],
-      "female": [
-        "CC0"
-      ],
-      "teen": [
-        "CC0"
-      ],
-      "muscular": [
-        "CC0"
-      ],
-      "pregnant": [
-        "CC0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "magic",
+      "weapon_magic_s"
+    ],
+    "variants": [
+      "medium",
+      "light",
+      "red",
+      "dark",
+      "brass",
+      "bronze",
+      "ceramic",
+      "copper",
+      "gold",
+      "iron",
+      "silver",
+      "steel"
+    ]
   },
-  "weapon_magic_crystal-Crystal": {
+  "weapons-magic-weapon_magic_crystal": {
+    "name": "Crystal",
     "required": [
       "male",
       "female",
@@ -31509,35 +39342,22 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "female": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "teen": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0+",
-        "GPL 3.0",
-        "CC-BY 4.0"
-      ]
-    }
+    "path": [
+      "weapons",
+      "magic",
+      "weapon_magic_crystal"
+    ],
+    "variants": [
+      "blue",
+      "orange",
+      "green",
+      "purple",
+      "red",
+      "yellow"
+    ]
   },
-  "weapon-Wand": {
+  "weapons-magic-weapon_magic_wand": {
+    "name": "Wand",
     "required": [
       "male",
       "female",
@@ -31550,27 +39370,1276 @@ window.itemMetadata = {
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0",
-        "OGA-BY 3.0"
+    "path": [
+      "weapons",
+      "magic",
+      "weapon_magic_wand"
+    ],
+    "variants": [
+      "wand"
+    ]
+  }
+};
+
+window.categoryTree = {
+  "items": [],
+  "children": {
+    "body": {
+      "items": [
+        "body-shadow",
+        "body-body"
       ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0",
-        "OGA-BY 3.0"
+      "children": {
+        "special": {
+          "items": [
+            "body-special-body_zombie",
+            "body-special-body_skeleton"
+          ],
+          "children": {}
+        },
+        "wounds": {
+          "items": [
+            "body-wounds-wound_arm",
+            "body-wounds-wound_brain",
+            "body-wounds-wound_ribs",
+            "body-wounds-wound_eye_left",
+            "body-wounds-wound_eye_right",
+            "body-wounds-wound_mouth"
+          ],
+          "children": {}
+        },
+        "prostheses": {
+          "items": [
+            "body-prostheses-prosthesis_hook",
+            "body-prostheses-prosthesis_peg_leg"
+          ],
+          "children": {}
+        },
+        "wheelchair": {
+          "items": [
+            "body-wheelchair-wheelchair"
+          ],
+          "children": {}
+        },
+        "tails": {
+          "items": [
+            "body-tails-tail_wolf",
+            "body-tails-tail_wolf_fluffy",
+            "body-tails-tail_cat",
+            "body-tails-tail_lizard_alt"
+          ],
+          "children": {}
+        },
+        "wings": {
+          "items": [
+            "body-wings-wings_feathered",
+            "body-wings-wings_bat",
+            "body-wings-wings_lizard_alt",
+            "body-wings-wings_lunar"
+          ],
+          "children": {
+            "monarch wings": {
+              "items": [
+                "body-wings-monarch wings-wings_monarch",
+                "body-wings-monarch wings-wings_monarch_edge",
+                "body-wings-monarch wings-wings_monarch_dots"
+              ],
+              "children": {}
+            },
+            "pixie wings": {
+              "items": [
+                "body-wings-pixie wings-wings_pixie",
+                "body-wings-pixie wings-wings_pixie_transparent"
+              ],
+              "children": {}
+            },
+            "dragonfly wings": {
+              "items": [
+                "body-wings-dragonfly wings-wings_dragonfly",
+                "body-wings-dragonfly wings-wings_dragonfly_transparent"
+              ],
+              "children": {}
+            }
+          }
+        },
+        "lizard": {
+          "items": [
+            "body-lizard-wings_lizard",
+            "body-lizard-wings_lizard_bat",
+            "body-lizard-tail_lizard"
+          ],
+          "children": {}
+        }
+      }
+    },
+    "head": {
+      "items": [
+        "head-eye_color",
+        "head-head_wrinkles"
       ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0",
-        "OGA-BY 3.0"
+      "children": {
+        "heads": {
+          "items": [
+            "head-heads-heads_human_child",
+            "head-heads-heads_human_female",
+            "head-heads-heads_human_male",
+            "head-heads-heads_human_female_elderly",
+            "head-heads-heads_human_male_elderly",
+            "head-heads-heads_human_male_plump",
+            "head-heads-heads_human_male_gaunt",
+            "head-heads-heads_human_male_small",
+            "head-heads-heads_human_female_small",
+            "head-heads-heads_human_elderly_small",
+            "head-heads-heads_boarman",
+            "head-heads-heads_boarman_child",
+            "head-heads-heads_pig",
+            "head-heads-heads_pig_child",
+            "head-heads-heads_sheep",
+            "head-heads-heads_sheep_child",
+            "head-heads-heads_minotaur",
+            "head-heads-heads_minotaur_female",
+            "head-heads-heads_minotaur_child",
+            "head-heads-heads_wartotaur",
+            "head-heads-heads_wolf_child",
+            "head-heads-heads_wolf_female",
+            "head-heads-heads_wolf_male",
+            "head-heads-heads_rabbit",
+            "head-heads-heads_rabbit_child",
+            "head-heads-heads_rat",
+            "head-heads-heads_rat_child",
+            "head-heads-heads_mouse",
+            "head-heads-heads_mouse_child",
+            "head-heads-heads_lizard_child",
+            "head-heads-heads_lizard_female",
+            "head-heads-heads_lizard_male",
+            "head-heads-heads_orc_child",
+            "head-heads-heads_orc_female",
+            "head-heads-heads_orc_male",
+            "head-heads-heads_goblin",
+            "head-heads-heads_goblin_child",
+            "head-heads-heads_alien",
+            "head-heads-heads_troll",
+            "head-heads-heads_troll_child",
+            "head-heads-heads_skeleton",
+            "head-heads-heads_zombie",
+            "head-heads-heads_jack",
+            "head-heads-heads_vampire",
+            "head-heads-heads_frankenstein"
+          ],
+          "children": {}
+        },
+        "face": {
+          "items": [
+            "head-face-face_neutral",
+            "head-face-face_closing",
+            "head-face-face_closed",
+            "head-face-face_look_r",
+            "head-face-face_look_l",
+            "head-face-face_eyeroll",
+            "head-face-face_shock",
+            "head-face-face_angry",
+            "head-face-face_angry2",
+            "head-face-face_sad",
+            "head-face-face_sad2",
+            "head-face-face_happy",
+            "head-face-face_happy2",
+            "head-face-face_blush",
+            "head-face-face_shame",
+            "head-face-face_tears"
+          ],
+          "children": {}
+        },
+        "other eyes": {
+          "items": [
+            "head-other eyes-eyes_child",
+            "head-other eyes-eyes_cyclops"
+          ],
+          "children": {}
+        },
+        "ears": {
+          "items": [
+            "head-ears-head_ears_big",
+            "head-ears-head_ears_elven",
+            "head-ears-head_ears_long",
+            "head-ears-head_ears_medium",
+            "head-ears-head_ears_hang",
+            "head-ears-head_ears_down",
+            "head-ears-head_ears_dragon"
+          ],
+          "children": {}
+        },
+        "furry ears": {
+          "items": [],
+          "children": {
+            "top ears": {
+              "items": [
+                "head-furry ears-top ears-head_ears_cat",
+                "head-furry ears-top ears-head_ears_cat_skin",
+                "head-furry ears-top ears-head_ears_wolf",
+                "head-furry ears-top ears-head_ears_wolf_skin"
+              ],
+              "children": {}
+            },
+            "side ears": {
+              "items": [
+                "head-furry ears-side ears-head_ears_lykon",
+                "head-furry ears-side ears-head_ears_lykon_skin",
+                "head-furry ears-side ears-head_ears_zabos",
+                "head-furry ears-side ears-head_ears_zabos_skin",
+                "head-furry ears-side ears-head_ears_avyon",
+                "head-furry ears-side ears-head_ears_avyon_skin"
+              ],
+              "children": {}
+            }
+          }
+        },
+        "nose": {
+          "items": [
+            "head-nose-head_nose_big",
+            "head-nose-head_nose_button",
+            "head-nose-head_nose_straight",
+            "head-nose-head_nose_elderly",
+            "head-nose-head_nose_large"
+          ],
+          "children": {}
+        },
+        "eyebrows": {
+          "items": [
+            "head-eyebrows-eyebrows_thick",
+            "head-eyebrows-eyebrows_thin"
+          ],
+          "children": {}
+        },
+        "beards": {
+          "items": [
+            "head-beards-beards_beard",
+            "head-beards-beards_winter",
+            "head-beards-beards_5oclock_shadow",
+            "head-beards-beards_trimmed",
+            "head-beards-beards_medium"
+          ],
+          "children": {}
+        },
+        "mustaches": {
+          "items": [
+            "head-mustaches-beards_bigstache",
+            "head-mustaches-beards_mustache",
+            "head-mustaches-beards_french",
+            "head-mustaches-beards_walrus",
+            "head-mustaches-beards_chevron",
+            "head-mustaches-beards_handlebar",
+            "head-mustaches-beards_lampshade",
+            "head-mustaches-beards_horseshoe"
+          ],
+          "children": {}
+        },
+        "hair": {
+          "items": [],
+          "children": {
+            "hair extensions": {
+              "items": [],
+              "children": {
+                "bangs": {
+                  "items": [
+                    "head-hair-hair extensions-bangs-hairext_braidl",
+                    "head-hair-hair extensions-bangs-hairext_braidr",
+                    "head-hair-hair extensions-bangs-hairext_xlong_bangl",
+                    "head-hair-hair extensions-bangs-hairext_xlong_bangr",
+                    "head-hair-hair extensions-bangs-hairext_xlong_braidl",
+                    "head-hair-hair extensions-bangs-hairext_xlong_braidr",
+                    "head-hair-hair extensions-bangs-hairext_long_straightl",
+                    "head-hair-hair extensions-bangs-hairext_long_straightr",
+                    "head-hair-hair extensions-bangs-hairext_long_wavyl",
+                    "head-hair-hair extensions-bangs-hairext_long_wavyr",
+                    "head-hair-hair extensions-bangs-hairext_xlong_wavyl",
+                    "head-hair-hair extensions-bangs-hairext_xlong_wavyr",
+                    "head-hair-hair extensions-bangs-hairext_xlong_curlyl",
+                    "head-hair-hair extensions-bangs-hairext_xlong_curlyr"
+                  ],
+                  "children": {}
+                },
+                "ponytails": {
+                  "items": [
+                    "head-hair-hair extensions-ponytails-hairext_topknot_short",
+                    "head-hair-hair extensions-ponytails-hairext_topknot_long",
+                    "head-hair-hair extensions-ponytails-hairext_topknot_relm"
+                  ],
+                  "children": {}
+                },
+                "knot / ties": {
+                  "items": [
+                    "head-hair-hair extensions-knot / ties-hairext_high_bun"
+                  ],
+                  "children": {}
+                },
+                "afro": {
+                  "items": [
+                    "head-hair-hair extensions-afro-hair_afro",
+                    "head-hair-hair extensions-afro-hair_natural",
+                    "head-hair-hair extensions-afro-hair_dreadlocks_short",
+                    "head-hair-hair extensions-afro-hair_twists_fade",
+                    "head-hair-hair extensions-afro-hair_twists_straight",
+                    "head-hair-hair extensions-afro-hair_dreadlocks_long",
+                    "head-hair-hair extensions-afro-hair_flat_top_straight",
+                    "head-hair-hair extensions-afro-hair_flat_top_fade",
+                    "head-hair-hair extensions-afro-hair_cornrows"
+                  ],
+                  "children": {
+                    "curly": {
+                      "items": [
+                        "head-hair-hair extensions-afro-curly-hair_jewfro",
+                        "head-hair-hair extensions-afro-curly-hair_curly_short",
+                        "head-hair-hair extensions-afro-curly-hair_curly_long",
+                        "head-hair-hair extensions-afro-curly-hair_curls_large",
+                        "head-hair-hair extensions-afro-curly-hair_curls_large_xlong"
+                      ],
+                      "children": {
+                        "bald/shaved": {
+                          "items": [
+                            "head-hair-hair extensions-afro-curly-bald/shaved-hair_balding",
+                            "head-hair-hair extensions-afro-curly-bald/shaved-hair_longhawk",
+                            "head-hair-hair extensions-afro-curly-bald/shaved-hair_shorthawk",
+                            "head-hair-hair extensions-afro-curly-bald/shaved-hair_high_and_tight",
+                            "head-hair-hair extensions-afro-curly-bald/shaved-hair_buzzcut"
+                          ],
+                          "children": {
+                            "short": {
+                              "items": [
+                                "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_plain",
+                                "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_pixie",
+                                "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_page",
+                                "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_page2",
+                                "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_idol",
+                                "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_mop",
+                                "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_parted",
+                                "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_parted2",
+                                "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_parted3",
+                                "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_parted_side_bangs",
+                                "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_parted_side_bangs2",
+                                "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_messy1",
+                                "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_messy2",
+                                "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_messy3",
+                                "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_bedhead",
+                                "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_unkempt",
+                                "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_bangs",
+                                "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_bangsshort",
+                                "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_swoop",
+                                "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_swoop_side",
+                                "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_curtains",
+                                "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_single",
+                                "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_cowlick",
+                                "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_cowlick_tall"
+                              ],
+                              "children": {
+                                "spiky": {
+                                  "items": [
+                                    "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked_porcupine",
+                                    "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked_liberty2",
+                                    "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked_liberty",
+                                    "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked_beehive",
+                                    "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked",
+                                    "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked2",
+                                    "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_halfmessy"
+                                  ],
+                                  "children": {
+                                    "pigtails": {
+                                      "items": [
+                                        "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-hair_bunches",
+                                        "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-hair_pigtails",
+                                        "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-hair_pigtails_bangs"
+                                      ],
+                                      "children": {
+                                        "bob": {
+                                          "items": [
+                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-hair_bob",
+                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-hair_lob",
+                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-hair_bob_side_part",
+                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-hair_relm_short"
+                                          ],
+                                          "children": {
+                                            "braids, ponytails, updos": {
+                                              "items": [
+                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_half_up",
+                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_bangs_bun",
+                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_topknot_short",
+                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_topknot_short2",
+                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_topknot_long",
+                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_topknot_long2",
+                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_ponytail",
+                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_ponytail2",
+                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_high_ponytail",
+                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_braid",
+                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_braid2",
+                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_shoulderl",
+                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_shoulderr",
+                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_long_tied",
+                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_relm_ponytail"
+                                              ],
+                                              "children": {
+                                                "long": {
+                                                  "items": [
+                                                    "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_loose",
+                                                    "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_bangslong",
+                                                    "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_bangslong2",
+                                                    "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_long",
+                                                    "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_long_messy",
+                                                    "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_long_messy2",
+                                                    "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_curtains_long",
+                                                    "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_wavy",
+                                                    "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_wavy_child",
+                                                    "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_long_center_part",
+                                                    "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_long_straight"
+                                                  ],
+                                                  "children": {
+                                                    "very long": {
+                                                      "items": [
+                                                        "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_princess",
+                                                        "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_sara",
+                                                        "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_long_band",
+                                                        "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_xlong",
+                                                        "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_xlong_wavy",
+                                                        "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_relm_xlong"
+                                                      ],
+                                                      "children": {}
+                                                    },
+                                                    "appendages": {
+                                                      "items": [
+                                                        "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-appendages-head_horns_backwards",
+                                                        "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-appendages-head_horns_curled",
+                                                        "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-appendages-head_fins_fin",
+                                                        "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-appendages-head_fins_fin_short"
+                                                      ],
+                                                      "children": {}
+                                                    },
+                                                    "head coverings": {
+                                                      "items": [],
+                                                      "children": {
+                                                        "hoods": {
+                                                          "items": [
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-hoods-hat_hood_cloth",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-hoods-hat_hood_sack_cloth",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-hoods-hat_hood_hijab",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-hoods-hat_helmet_mail"
+                                                          ],
+                                                          "children": {}
+                                                        },
+                                                        "bandanas": {
+                                                          "items": [
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-bandanas-hat_bandana",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-bandanas-hat_bandana2",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-bandanas-hat_bandana_pirate",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-bandanas-hat_bandana_pirate_skull"
+                                                          ],
+                                                          "children": {}
+                                                        },
+                                                        "headbands": {
+                                                          "items": [
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_kerchief",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_tied",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_thick",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_thick_rune",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_hairtie",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_hairtie_rune"
+                                                          ],
+                                                          "children": {}
+                                                        }
+                                                      }
+                                                    },
+                                                    "hats": {
+                                                      "items": [],
+                                                      "children": {
+                                                        "caps": {
+                                                          "items": [
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_leather",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_leather_feather",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_bonnie",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_bonnie_tilt",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_bonnie_feather",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_cavalier",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_cavalier_feather"
+                                                          ],
+                                                          "children": {}
+                                                        },
+                                                        "tricorne": {
+                                                          "items": [],
+                                                          "children": {
+                                                            "basic": {
+                                                              "items": [
+                                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-basic-hat_tricorne",
+                                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-basic-hat_tricorne_stitched",
+                                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-basic-hat_tricorne_thatch"
+                                                              ],
+                                                              "children": {}
+                                                            },
+                                                            "lieutenant": {
+                                                              "items": [
+                                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-lieutenant-hat_tricorne_lieutenant",
+                                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-lieutenant-hat_tricorne_lieutenant_trim"
+                                                              ],
+                                                              "children": {}
+                                                            },
+                                                            "captain": {
+                                                              "items": [
+                                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-captain-hat_tricorne_captain",
+                                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-captain-hat_tricorne_captain_trim",
+                                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-captain-hat_tricorne_captain_skull"
+                                                              ],
+                                                              "children": {}
+                                                            }
+                                                          }
+                                                        },
+                                                        "bicorne athwart": {
+                                                          "items": [],
+                                                          "children": {
+                                                            "basic": {
+                                                              "items": [
+                                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-basic-hat_bicorne_athwart_basic",
+                                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-basic-hat_bicorne_athwart_basic_skull"
+                                                              ],
+                                                              "children": {}
+                                                            },
+                                                            "captain": {
+                                                              "items": [
+                                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-captain-hat_bicorne_athwart_captain",
+                                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-captain-hat_bicorne_athwart_captain_skull"
+                                                              ],
+                                                              "children": {}
+                                                            },
+                                                            "admiral": {
+                                                              "items": [
+                                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-admiral-hat_bicorne_athwart_admiral",
+                                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-admiral-hat_bicorne_athwart_admiral_trim",
+                                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-admiral-hat_bicorne_athwart_admiral_cockade"
+                                                              ],
+                                                              "children": {}
+                                                            },
+                                                            "commodore": {
+                                                              "items": [
+                                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-commodore-hat_bicorne_athwart_commodore",
+                                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-commodore-hat_bicorne_athwart_commodore_trim"
+                                                              ],
+                                                              "children": {}
+                                                            }
+                                                          }
+                                                        },
+                                                        "bicorne foreaft": {
+                                                          "items": [
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne foreaft-hat_bicorne_foreaft",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne foreaft-hat_bicorne_foreaft_commodore",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne foreaft-hat_bicorne_foreaft_commodore_trim"
+                                                          ],
+                                                          "children": {}
+                                                        },
+                                                        "magic": {
+                                                          "items": [
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-hat_magic_large"
+                                                          ],
+                                                          "children": {
+                                                            "wizard": {
+                                                              "items": [
+                                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-wizard-hat_magic_wizard",
+                                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-wizard-hat_magic_wizard_belt",
+                                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-wizard-hat_magic_wizard_buckle"
+                                                              ],
+                                                              "children": {}
+                                                            },
+                                                            "celestial": {
+                                                              "items": [
+                                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-celestial-hat_magic_celestial",
+                                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-celestial-hat_magic_celestial_trim",
+                                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-celestial-hat_magic_celestial_moon",
+                                                                "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-celestial-hat_magic_celestial_moon_trim"
+                                                              ],
+                                                              "children": {}
+                                                            }
+                                                          }
+                                                        },
+                                                        "formal": {
+                                                          "items": [
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-formal-hat_formal_tophat",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-formal-hat_formal_bowler",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-formal-hat_formal_crown",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-formal-hat_formal_tiara"
+                                                          ],
+                                                          "children": {}
+                                                        },
+                                                        "holiday": {
+                                                          "items": [
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-holiday-hat_holiday_christmas",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-holiday-hat_holiday_santa",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-holiday-hat_holiday_elf"
+                                                          ],
+                                                          "children": {}
+                                                        }
+                                                      }
+                                                    },
+                                                    "helmets": {
+                                                      "items": [],
+                                                      "children": {
+                                                        "helmets": {
+                                                          "items": [
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_armet",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_armet_simple",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_barbarian",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_barbarian_nasal",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_barbarian_viking",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_barbuta",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_barbuta_simple",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_bascinet",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_bascinet_round",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_close",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_flattop",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_greathelm",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_horned",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_kettle",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_legion",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_maximus",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_morion",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_nasal",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_norman",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_pointed",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_spangenhelm",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_spangenhelm_viking",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_sugarloaf",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_sugarloaf_simple",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_xeon"
+                                                          ],
+                                                          "children": {}
+                                                        },
+                                                        "visors": {
+                                                          "items": [
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_grated",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_grated_narrow",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_horned",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_pigface",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_pigface_raised",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_round",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_round_raised",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_slit",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_slit_narrow"
+                                                          ],
+                                                          "children": {}
+                                                        },
+                                                        "helmet accessories": {
+                                                          "items": [
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_crest",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_crest_centurion",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_wings",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_horns_short",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_horns_upward",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_horns_downward",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_plumage",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_plumage_centurion",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_plumage_legion"
+                                                          ],
+                                                          "children": {}
+                                                        }
+                                                      }
+                                                    },
+                                                    "accessories": {
+                                                      "items": [
+                                                        "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-facial_mask_plain"
+                                                      ],
+                                                      "children": {
+                                                        "glasses": {
+                                                          "items": [
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_halfmoon",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_nerd",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_shades",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_secretary",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_round",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_sunglasses"
+                                                          ],
+                                                          "children": {}
+                                                        },
+                                                        "monocle": {
+                                                          "items": [
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-monocle-facial_monocle_left",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-monocle-facial_monocle_left_frame",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-monocle-facial_monocle_right",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-monocle-facial_monocle_right_frame"
+                                                          ],
+                                                          "children": {}
+                                                        },
+                                                        "eyepatches": {
+                                                          "items": [
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch_ambi",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch_left",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch_right",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch2_left",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch2_right",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch_small_left",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch_small_right"
+                                                          ],
+                                                          "children": {}
+                                                        },
+                                                        "earrings": {
+                                                          "items": [
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earring_left",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earring_right",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earrings_emerald",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earrings_moon",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earrings_pear",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earrings_princess",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earrings_stud"
+                                                          ],
+                                                          "children": {}
+                                                        }
+                                                      }
+                                                    },
+                                                    "neck": {
+                                                      "items": [
+                                                        "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_bowtie",
+                                                        "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_bowtie2",
+                                                        "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necktie",
+                                                        "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_scarf",
+                                                        "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_capeclip",
+                                                        "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_capetie",
+                                                        "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_jabot",
+                                                        "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_cravat",
+                                                        "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necklace",
+                                                        "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necklace_simple",
+                                                        "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necklace_chain",
+                                                        "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necklace_beaded_small",
+                                                        "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necklace_beaded_large"
+                                                      ],
+                                                      "children": {
+                                                        "necklace charms": {
+                                                          "items": [
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_charm_box",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_charm_oval",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_charm_ring",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_charm_star",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_emerald",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_marquise",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_natural",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_pear",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_pearl",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_princess",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_round",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_trilliant",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_amulet_cross",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_amulet_dangle",
+                                                            "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_amulet_spider"
+                                                          ],
+                                                          "children": {}
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "arms": {
+      "items": [
+        "arms-arms_armour",
+        "arms-bauldron",
+        "arms-arms_gloves",
+        "arms-arms_hands_ring_stud"
       ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0",
-        "OGA-BY 3.0"
-      ]
+      "children": {
+        "shoulders": {
+          "items": [
+            "arms-shoulders-shoulders_legion",
+            "arms-shoulders-shoulders_plate",
+            "arms-shoulders-shoulders_leather",
+            "arms-shoulders-shoulders_epaulets",
+            "arms-shoulders-shoulders_mantal"
+          ],
+          "children": {}
+        },
+        "wrists": {
+          "items": [
+            "arms-wrists-arms_bracers",
+            "arms-wrists-wrists_cuffs",
+            "arms-wrists-wrists_cuffs_lace"
+          ],
+          "children": {}
+        }
+      }
+    },
+    "torso": {
+      "items": [
+        "torso-torso_bandages",
+        "torso-torso_chainmail",
+        "torso-buckles"
+      ],
+      "children": {
+        "dresses": {
+          "items": [
+            "torso-dresses-dress_sash",
+            "torso-dresses-dress_slit",
+            "torso-dresses-dress_bodice"
+          ],
+          "children": {
+            "kimono": {
+              "items": [
+                "torso-dresses-kimono-dress_kimono",
+                "torso-dresses-kimono-dress_kimono_trim",
+                "torso-dresses-kimono-dress_kimono_split",
+                "torso-dresses-kimono-dress_kimono_split_trim",
+                "torso-dresses-kimono-dress_kimono_longsleeve",
+                "torso-dresses-kimono-dress_kimono_longsleeve_trim",
+                "torso-dresses-kimono-dress_kimono_oversize",
+                "torso-dresses-kimono-dress_kimono_oversize_trim"
+              ],
+              "children": {}
+            }
+          }
+        },
+        "shirts": {
+          "items": [
+            "torso-shirts-torso_clothes_child_shirt",
+            "torso-shirts-torso_clothes_corset",
+            "torso-shirts-torso_clothes_blouse",
+            "torso-shirts-torso_clothes_blouse_longsleeve",
+            "torso-shirts-torso_clothes_tunic",
+            "torso-shirts-torso_clothes_tunic_sara",
+            "torso-shirts-torso_clothes_robe"
+          ],
+          "children": {
+            "sleeves": {
+              "items": [
+                "torso-shirts-sleeves-torso_clothes_shortsleeves",
+                "torso-shirts-sleeves-torso_clothes_shortsleeves2",
+                "torso-shirts-sleeves-torso_clothes_longsleeves",
+                "torso-shirts-sleeves-torso_clothes_longsleeves2",
+                "torso-shirts-sleeves-torso_clothes_longsleeves_cuffed"
+              ],
+              "children": {}
+            },
+            "longsleeve": {
+              "items": [
+                "torso-shirts-longsleeve-torso_clothes_longsleeve",
+                "torso-shirts-longsleeve-torso_clothes_longsleeve_scoop",
+                "torso-shirts-longsleeve-torso_clothes_longsleeve_formal",
+                "torso-shirts-longsleeve-torso_clothes_longsleeve_formal_striped",
+                "torso-shirts-longsleeve-torso_clothes_longsleeve_laced",
+                "torso-shirts-longsleeve-torso_clothes_longsleeve2",
+                "torso-shirts-longsleeve-torso_clothes_longsleeve2_vneck",
+                "torso-shirts-longsleeve-torso_clothes_longsleeve2_scoop",
+                "torso-shirts-longsleeve-torso_clothes_longsleeve2_buttoned",
+                "torso-shirts-longsleeve-torso_clothes_longsleeve2_polo",
+                "torso-shirts-longsleeve-torso_clothes_longsleeve2_cardigan"
+              ],
+              "children": {}
+            },
+            "shortsleeve": {
+              "items": [
+                "torso-shirts-shortsleeve-torso_clothes_shortsleeve",
+                "torso-shirts-shortsleeve-torso_clothes_shortsleeve_polo",
+                "torso-shirts-shortsleeve-torso_clothes_shortsleeve_cardigan",
+                "torso-shirts-shortsleeve-torso_clothes_tshirt",
+                "torso-shirts-shortsleeve-torso_clothes_tshirt_vneck",
+                "torso-shirts-shortsleeve-torso_clothes_tshirt_scoop",
+                "torso-shirts-shortsleeve-torso_clothes_tshirt_buttoned"
+              ],
+              "children": {}
+            },
+            "sleeveless": {
+              "items": [
+                "torso-shirts-sleeveless-torso_clothes_sleeveless",
+                "torso-shirts-sleeveless-torso_clothes_sleeveless_laced",
+                "torso-shirts-sleeveless-torso_clothes_sleeveless_striped",
+                "torso-shirts-sleeveless-torso_clothes_sleeveless_tanktop",
+                "torso-shirts-sleeveless-torso_clothes_sleeveless1",
+                "torso-shirts-sleeveless-torso_clothes_sleeveless2",
+                "torso-shirts-sleeveless-torso_clothes_sleeveless2_vneck",
+                "torso-shirts-sleeveless-torso_clothes_sleeveless2_scoop",
+                "torso-shirts-sleeveless-torso_clothes_sleeveless2_buttoned",
+                "torso-shirts-sleeveless-torso_clothes_sleeveless2_polo",
+                "torso-shirts-sleeveless-torso_clothes_sleeveless2_cardigan"
+              ],
+              "children": {}
+            }
+          }
+        },
+        "aprons": {
+          "items": [
+            "torso-aprons-torso_aprons_overalls",
+            "torso-aprons-torso_aprons_suspenders",
+            "torso-aprons-torso_aprons_apron",
+            "torso-aprons-torso_aprons_apron_half",
+            "torso-aprons-torso_aprons_apron_full"
+          ],
+          "children": {}
+        },
+        "jacket": {
+          "items": [
+            "torso-jacket-torso_jacket_collared",
+            "torso-jacket-torso_jacket_iverness",
+            "torso-jacket-torso_jacket_trench",
+            "torso-jacket-torso_jacket_tabard",
+            "torso-jacket-torso_jacket_frock",
+            "torso-jacket-torso_jacket_santa"
+          ],
+          "children": {
+            "jacket trim": {
+              "items": [
+                "torso-jacket-jacket trim-torso_jacket_frock_collar",
+                "torso-jacket-jacket trim-torso_jacket_frock_lace",
+                "torso-jacket-jacket trim-torso_jacket_frock_lapel",
+                "torso-jacket-jacket trim-torso_jacket_frock_buttons",
+                "torso-jacket-jacket trim-torso_jacket_pockets"
+              ],
+              "children": {}
+            }
+          }
+        },
+        "vest": {
+          "items": [
+            "torso-vest-torso_clothes_vest",
+            "torso-vest-torso_clothes_vest_open"
+          ],
+          "children": {}
+        },
+        "armour": {
+          "items": [
+            "torso-armour-torso_armour_plate",
+            "torso-armour-torso_armour_leather",
+            "torso-armour-torso_armour_legion"
+          ],
+          "children": {}
+        },
+        "cape": {
+          "items": [
+            "torso-cape-cape_solid",
+            "torso-cape-cape_tattered",
+            "torso-cape-cape_trim"
+          ],
+          "children": {}
+        },
+        "backpack": {
+          "items": [
+            "torso-backpack-backpack_straps",
+            "torso-backpack-backpack",
+            "torso-backpack-backpack_squarepack",
+            "torso-backpack-backpack_jetpack",
+            "torso-backpack-backpack_jetpack_fins",
+            "torso-backpack-backpack_basket",
+            "torso-backpack-quiver"
+          ],
+          "children": {
+            "backpack cargo": {
+              "items": [
+                "torso-backpack-backpack cargo-backpack_contents_wood",
+                "torso-backpack-backpack cargo-backpack_contents_ore"
+              ],
+              "children": {}
+            }
+          }
+        },
+        "waist": {
+          "items": [
+            "torso-waist-belt_leather",
+            "torso-waist-belt_double",
+            "torso-waist-belt_loose",
+            "torso-waist-belt_belly",
+            "torso-waist-belt_other_female",
+            "torso-waist-belt_other_male",
+            "torso-waist-belt_sash",
+            "torso-waist-belt_sash_narrow",
+            "torso-waist-belt_waistband"
+          ],
+          "children": {
+            "obi": {
+              "items": [
+                "torso-waist-obi-belt_obi",
+                "torso-waist-obi-belt_obi_knot_left",
+                "torso-waist-obi-belt_obi_knot_right"
+              ],
+              "children": {}
+            }
+          }
+        }
+      }
+    },
+    "legs": {
+      "items": [
+        "legs-legs_armour"
+      ],
+      "children": {
+        "pants": {
+          "items": [
+            "legs-pants-legs_widepants",
+            "legs-pants-legs_pants",
+            "legs-pants-legs_pants2",
+            "legs-pants-legs_cuffed",
+            "legs-pants-legs_pantaloons",
+            "legs-pants-legs_formal",
+            "legs-pants-legs_formal_striped",
+            "legs-pants-legs_fur",
+            "legs-pants-legs_pregnantpants",
+            "legs-pants-legs_childpants"
+          ],
+          "children": {}
+        },
+        "leggings": {
+          "items": [
+            "legs-leggings-legs_leggings",
+            "legs-leggings-legs_leggings2",
+            "legs-leggings-legs_hose"
+          ],
+          "children": {}
+        },
+        "shorts": {
+          "items": [
+            "legs-shorts-legs_shorts",
+            "legs-shorts-legs_shorts_short"
+          ],
+          "children": {}
+        },
+        "skirts": {
+          "items": [
+            "legs-skirts-legs_childskirts",
+            "legs-skirts-legs_skirts_plain",
+            "legs-skirts-legs_skirts_slit",
+            "legs-skirts-legs_skirts_legion",
+            "legs-skirts-legs_skirt_straight",
+            "legs-skirts-legs_skirt_belle",
+            "legs-skirts-legs_skirt_overskirt"
+          ],
+          "children": {}
+        }
+      }
+    },
+    "feet": {
+      "items": [
+        "feet-feet_armour",
+        "feet-feet_slippers",
+        "feet-feet_sandals",
+        "feet-feet_hoofs"
+      ],
+      "children": {
+        "shoes": {
+          "items": [
+            "feet-shoes-feet_shoes_basic",
+            "feet-shoes-feet_shoes_revised",
+            "feet-shoes-feet_shoes_sara",
+            "feet-shoes-feet_shoes_ghillies"
+          ],
+          "children": {}
+        },
+        "boots": {
+          "items": [
+            "feet-boots-feet_boots_basic",
+            "feet-boots-feet_boots_revised",
+            "feet-boots-feet_boots_fold",
+            "feet-boots-feet_boots_rim"
+          ],
+          "children": {}
+        },
+        "shoe accessory": {
+          "items": [
+            "feet-shoe accessory-feet_plate_toe",
+            "feet-shoe accessory-feet_plate_toe_thick"
+          ],
+          "children": {}
+        },
+        "socks": {
+          "items": [
+            "feet-socks-feet_socks_ankle",
+            "feet-socks-feet_socks_high",
+            "feet-socks-feet_socks_tabi"
+          ],
+          "children": {}
+        }
+      }
+    },
+    "tools": {
+      "items": [
+        "tools-tool_rod",
+        "tools-tool_smash",
+        "tools-tool_thrust",
+        "tools-tool_whip"
+      ],
+      "children": {}
+    },
+    "weapons": {
+      "items": [],
+      "children": {
+        "shield": {
+          "items": [
+            "weapons-shield-shield",
+            "weapons-shield-shield_kite",
+            "weapons-shield-shield_spartan"
+          ],
+          "children": {
+            "two-engrailed shield": {
+              "items": [
+                "weapons-shield-two-engrailed shield-shield_two_engrailed",
+                "weapons-shield-two-engrailed shield-shield_two_engrailed_trim",
+                "weapons-shield-two-engrailed shield-shield_crusader",
+                "weapons-shield-two-engrailed shield-shield_plus"
+              ],
+              "children": {}
+            },
+            "scutum shield": {
+              "items": [
+                "weapons-shield-scutum shield-shield_scutum",
+                "weapons-shield-scutum shield-shield_scutum_trim"
+              ],
+              "children": {}
+            },
+            "heater shield": {
+              "items": [
+                "weapons-shield-heater shield-shield_heater_wood",
+                "weapons-shield-heater shield-shield_heater_paint",
+                "weapons-shield-heater shield-shield_heater_trim",
+                "weapons-shield-heater shield-shield_heater_revised_wood",
+                "weapons-shield-heater shield-shield_heater_revised_paint",
+                "weapons-shield-heater shield-shield_heater_revised_trim"
+              ],
+              "children": {
+                "heater shield pattern": {
+                  "items": [
+                    "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_barry",
+                    "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_bend_sinister",
+                    "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_bend",
+                    "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_bendy_sinister",
+                    "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_bendy",
+                    "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_bordure",
+                    "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_chevron_inverted",
+                    "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_chevron",
+                    "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_chief",
+                    "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_cross",
+                    "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_fess",
+                    "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_lozengy",
+                    "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_pale",
+                    "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_pall",
+                    "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_paly",
+                    "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_bend_sinister",
+                    "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_bend",
+                    "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_chevron_inverted",
+                    "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_chevron",
+                    "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_fess",
+                    "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_pale",
+                    "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_saltire",
+                    "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_quarterly",
+                    "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_saltire"
+                  ],
+                  "children": {}
+                },
+                "revised heater shield pattern": {
+                  "items": [
+                    "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_barry",
+                    "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_bend_sinister",
+                    "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_bend",
+                    "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_bendy_sinister",
+                    "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_bendy",
+                    "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_bordure",
+                    "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_chevron_inverted",
+                    "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_chevron",
+                    "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_chief",
+                    "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_cross",
+                    "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_fess",
+                    "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_lozengy",
+                    "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_pale",
+                    "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_pall",
+                    "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_paly",
+                    "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_bend_sinister",
+                    "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_bend",
+                    "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_chevron_inverted",
+                    "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_chevron",
+                    "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_fess",
+                    "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_pale",
+                    "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_saltire",
+                    "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_quarterly",
+                    "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_saltire"
+                  ],
+                  "children": {}
+                }
+              }
+            }
+          }
+        },
+        "ranged": {
+          "items": [
+            "weapons-ranged-weapon_ranged_crossbow",
+            "weapons-ranged-weapon_ranged_slingshot",
+            "weapons-ranged-weapon_ranged_boomerang"
+          ],
+          "children": {
+            "bow": {
+              "items": [
+                "weapons-ranged-bow-weapon_ranged_bow_arrow",
+                "weapons-ranged-bow-weapon_ranged_bow_great",
+                "weapons-ranged-bow-weapon_ranged_bow_normal",
+                "weapons-ranged-bow-weapon_ranged_bow_recurve"
+              ],
+              "children": {}
+            }
+          }
+        },
+        "sword": {
+          "items": [
+            "weapons-sword-weapon_sword_dagger",
+            "weapons-sword-weapon_sword_glowsword",
+            "weapons-sword-weapon_sword_longsword",
+            "weapons-sword-weapon_sword_rapier",
+            "weapons-sword-weapon_sword_saber",
+            "weapons-sword-weapon_sword_katana",
+            "weapons-sword-weapon_sword_scimitar",
+            "weapons-sword-weapon_sword_longsword_alt",
+            "weapons-sword-weapon_sword_arming"
+          ],
+          "children": {}
+        },
+        "blunt": {
+          "items": [
+            "weapons-blunt-weapon_blunt_flail",
+            "weapons-blunt-weapon_blunt_mace",
+            "weapons-blunt-weapon_blunt_waraxe",
+            "weapons-blunt-weapon_blunt_club"
+          ],
+          "children": {}
+        },
+        "polearm": {
+          "items": [
+            "weapons-polearm-weapon_polearm_cane",
+            "weapons-polearm-weapon_polearm_spear",
+            "weapons-polearm-weapon_polearm_scythe",
+            "weapons-polearm-weapon_polearm_halberd",
+            "weapons-polearm-weapon_polearm_longspear",
+            "weapons-polearm-weapon_polearm_dragonspear",
+            "weapons-polearm-weapon_polearm_trident"
+          ],
+          "children": {}
+        },
+        "magic": {
+          "items": [
+            "weapons-magic-weapon_magic_simple",
+            "weapons-magic-weapon_magic_loop",
+            "weapons-magic-weapon_magic_diamond",
+            "weapons-magic-weapon_magic_gnarled",
+            "weapons-magic-weapon_magic_s",
+            "weapons-magic-weapon_magic_crystal",
+            "weapons-magic-weapon_magic_wand"
+          ],
+          "children": {}
+        }
+      }
     }
   }
 };

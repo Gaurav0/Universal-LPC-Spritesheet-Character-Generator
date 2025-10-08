@@ -74,9 +74,8 @@ function parseJson(json) {
     console.error("error in", filePath);
     throw e;
   }
-  const { variants, name, credits, template, replace_in_path } = definition;
+  const { variants, name, credits, template, replace_in_path, path } = definition;
   const { tags = [], required_tags = [], excluded_tags = [] } = definition;
-  const typeName = definition.type_name;
   const defaultAnimations = [
     "spellcast",
     "thrust",
@@ -104,27 +103,33 @@ function parseJson(json) {
 
   const requiredSex = requiredSexes.join(",");
   const supportedAnimations = animations.join(",");
-  const snakeName = name.replaceAll(" ", "_");
-  let idFor = `${typeName}-${snakeName}`;
+
+  // Use path as the unique identifier (join with -)
+  const itemPath = path || ["other", searchFileName];
+  let pathId = itemPath.join("-");
+  // pathId is the ID, no need for separate idFor variable
   if (queryObj) {
     const vals = Object.values(queryObj)
       .map(val => val.replaceAll(" ", "_"))
       .join("_");
-    idFor = `${typeName}-${snakeName}_${vals}`;
+    pathId = `${pathId}_${vals}`;
   }
 
   // Collect metadata for this item
-  itemMetadata[idFor] = {
+  itemMetadata[pathId] = {
+    name: name,
     required: requiredSexes,
     animations: animations,
     tags: tags,
     required_tags: required_tags,
-    excluded_tags: excluded_tags
+    excluded_tags: excluded_tags,
+    path: path || ["other"],
+    variants: variants || []
   };
 
   let startHTML =
     `<li id="[ID_FOR]" class="variant-list" data-required="[REQUIRED_SEX]" data-animations="[SUPPORTED_ANIMATIONS]" [DATA_FILE]><span class="condensed">${name}</span><ul>`
-      .replace("[ID_FOR]", idFor)
+      .replace("[ID_FOR]", pathId)
       .replace("[REQUIRED_SEX]", requiredSex)
       .replace("[SUPPORTED_ANIMATIONS]", supportedAnimations);
 
@@ -134,13 +139,15 @@ function parseJson(json) {
   let listCreditToUse = null;
   let listDataFiles = "";
 
-  const id = `${typeName}-none_${name.replaceAll(' ', '_')}`;
-  let listItemsHTML = `<li class="excluded-hide"><input type="radio" id="${id}" name="${typeName}" class="none"> <label for="${id}">No ${typeName}</label></li><li class="excluded-text"></li>`;
+  // Use pathId for radio button grouping
+  const radioGroupName = pathId.replace(/\//g, "_");
+  const id = `${pathId}-none`.replace(/\//g, "_");
+  let listItemsHTML = `<li class="excluded-hide"><input type="radio" id="${id}" name="${radioGroupName}" class="none"> <label for="${id}">No ${name}</label></li><li class="excluded-text"></li>`;
   let listItemsCSV = "";
   const addedCreditsFor = [];
   for (const variant of variants) {
     const snakeItemName = variant.replaceAll(" ", "_");
-    const itemIdFor = `${idFor}_${snakeItemName}`;
+    const itemIdFor = `${pathId}_${snakeItemName}`;
     let matchBodyColor = false;
     if (definition[`match_body_color`] !== undefined) {
       matchBodyColor = true;
@@ -245,8 +252,8 @@ function parseJson(json) {
   } // for variant
 
   // Add license info to metadata
-  if (!itemMetadata[idFor].licenses) {
-    itemMetadata[idFor].licenses = {};
+  if (!itemMetadata[pathId].licenses) {
+    itemMetadata[pathId].licenses = {};
   }
 
   for (const sex of requiredSexes) {
@@ -261,7 +268,7 @@ function parseJson(json) {
     listDataFiles += `data-${sex}_notes=${notes} `;
 
     // Store licenses in metadata
-    itemMetadata[idFor].licenses[sex] = listCreditToUse.licenses;
+    itemMetadata[pathId].licenses[sex] = listCreditToUse.licenses;
   }
   startHTML = startHTML.replaceAll("[DATA_FILE]", listDataFiles);
 
@@ -314,11 +321,36 @@ lineReader.on("close", function (line) {
   });
 
   // Generate item-metadata.js for runtime use
+  // Build category tree from paths
+  const categoryTree = { items: [], children: {} };
+  const duplicatePaths = [];
+
+  for (const [itemId, meta] of Object.entries(itemMetadata)) {
+    const itemPath = meta.path || ["Other"];
+
+    // Navigate/create tree structure (skip the last element which is the filename)
+    let current = categoryTree;
+    // Only use path elements except the last one (which is the filename)
+    const categoryPath = itemPath.slice(0, -1);
+
+    for (const segment of categoryPath) {
+      if (!current.children[segment]) {
+        current.children[segment] = { items: [], children: {} };
+      }
+      current = current.children[segment];
+    }
+
+    // Add item to the category (not as a child)
+    current.items.push(itemId);
+  }
+
   const metadataJS = `// THIS FILE IS AUTO-GENERATED. PLEASE DON'T ALTER IT MANUALLY
 // Generated from sheet_definitions/*.json by scripts/generate_sources.js
 // Contains metadata for all customization items to avoid DOM queries at runtime
 
 window.itemMetadata = ${JSON.stringify(itemMetadata, null, 2)};
+
+window.categoryTree = ${JSON.stringify(categoryTree, null, 2)};
 `;
 
   fs.writeFile("item-metadata.js", metadataJS, function (err) {
