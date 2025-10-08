@@ -59,12 +59,30 @@
 	</div>
 
 	<div id="preview-column">
+		<div id="mithril-preview"></div>
 		<canvas id="spritesheet" width="832" height="1344"></canvas>
 	</div>
 
 	<script type="module">
-		import { initCanvas, renderCharacter } from './sources/canvas-renderer.js';
-		window.canvasRenderer = { initCanvas, renderCharacter };
+		import {
+			initCanvas,
+			renderCharacter,
+			initPreviewCanvas,
+			setPreviewAnimation,
+			getAnimationList,
+			startPreviewAnimation,
+			stopPreviewAnimation
+		} from './sources/canvas-renderer.js';
+
+		window.canvasRenderer = {
+			initCanvas,
+			renderCharacter,
+			initPreviewCanvas,
+			setPreviewAnimation,
+			getAnimationList,
+			startPreviewAnimation,
+			stopPreviewAnimation
+		};
 
 		// Wait for canvas to be ready, then load Mithril app
 		document.addEventListener('DOMContentLoaded', () => {

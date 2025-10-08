@@ -35,9 +35,40 @@ const METADATA_TO_FOLDER = {
 
 let canvas = null;
 let ctx = null;
+let previewCanvas = null;
+let previewCtx = null;
 let loadedImages = {};
 let imagesToLoad = 0;
 let imagesLoaded = 0;
+
+// Animation preview state
+let animationFrames = [1, 2, 3, 4, 5, 6, 7, 8]; // default for walk
+let animRowStart = 8; // default for walk (row number)
+let animRowNum = 4; // default for walk (number of rows to stack)
+let currentFrameIndex = 0;
+let lastFrameTime = Date.now();
+let animationFrameId = null;
+
+// Animation definitions with frame cycles
+const ANIMATION_CONFIGS = {
+  'spellcast': { row: 0, num: 4, cycle: [0, 1, 2, 3, 4, 5, 6] },
+  'thrust': { row: 4, num: 4, cycle: [0, 1, 2, 3, 4, 5, 6, 7] },
+  'walk': { row: 8, num: 4, cycle: [1, 2, 3, 4, 5, 6, 7, 8] },
+  'slash': { row: 12, num: 4, cycle: [0, 1, 2, 3, 4, 5] },
+  'shoot': { row: 16, num: 4, cycle: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+  'hurt': { row: 20, num: 1, cycle: [0, 1, 2, 3, 4, 5] },
+  'climb': { row: 21, num: 1, cycle: [0, 1, 2, 3, 4, 5] },
+  'idle': { row: 22, num: 4, cycle: [0, 0, 1] },
+  'jump': { row: 26, num: 4, cycle: [0, 1, 2, 3, 4, 1] },
+  'sit': { row: 30, num: 4, cycle: [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2] },
+  'emote': { row: 34, num: 4, cycle: [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2] },
+  'run': { row: 38, num: 4, cycle: [0, 1, 2, 3, 4, 5, 6, 7] },
+  'watering': { row: 4, num: 4, cycle: [0, 1, 4, 4, 4, 4, 5] },
+  'combat': { row: 42, num: 4, cycle: [0, 0, 1] },
+  '1h_slash': { row: 46, num: 4, cycle: [0, 1, 2, 3, 4, 5, 6] },
+  '1h_backslash': { row: 46, num: 4, cycle: [0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12] },
+  '1h_halfslash': { row: 50, num: 4, cycle: [0, 1, 2, 3, 4, 5] }
+};
 
 /**
  * Initialize the canvas
@@ -47,6 +78,114 @@ export function initCanvas(canvasElement) {
   ctx = canvas.getContext('2d');
   canvas.width = SHEET_WIDTH;
   canvas.height = SHEET_HEIGHT;
+}
+
+/**
+ * Initialize the preview canvas
+ */
+export function initPreviewCanvas(previewCanvasElement) {
+  previewCanvas = previewCanvasElement;
+  previewCtx = previewCanvas.getContext('2d');
+  previewCanvas.width = 4 * FRAME_SIZE; // 256px
+  previewCanvas.height = FRAME_SIZE; // 64px
+}
+
+/**
+ * Set which animation to preview
+ */
+export function setPreviewAnimation(animationName) {
+  const config = ANIMATION_CONFIGS[animationName];
+  if (!config) {
+    console.error('Unknown animation:', animationName);
+    return;
+  }
+
+  animationFrames = config.cycle;
+  animRowStart = config.row;
+  animRowNum = config.num;
+  currentFrameIndex = 0;
+
+  return animationFrames; // Return for display
+}
+
+/**
+ * Get list of available animations for dropdown
+ */
+export function getAnimationList() {
+  return [
+    { value: 'spellcast', label: 'Spellcast' },
+    { value: 'thrust', label: 'Thrust' },
+    { value: 'walk', label: 'Walk' },
+    { value: 'slash', label: 'Slash' },
+    { value: 'shoot', label: 'Shoot' },
+    { value: 'hurt', label: 'Hurt' },
+    { value: 'climb', label: 'Climb' },
+    { value: 'idle', label: 'Idle' },
+    { value: 'jump', label: 'Jump' },
+    { value: 'sit', label: 'Sit' },
+    { value: 'emote', label: 'Emote' },
+    { value: 'run', label: 'Run' },
+    { value: 'watering', label: 'Watering' },
+    { value: 'combat', label: 'Combat Idle' },
+    { value: '1h_slash', label: '1-Handed Slash' },
+    { value: '1h_backslash', label: '1-Handed Backslash' },
+    { value: '1h_halfslash', label: '1-Handed Halfslash' }
+  ];
+}
+
+/**
+ * Start the preview animation loop
+ */
+export function startPreviewAnimation() {
+  if (animationFrameId !== null) {
+    return; // Already running
+  }
+
+  function nextFrame() {
+    const fpsInterval = 1000 / 8; // 8 FPS
+    const now = Date.now();
+    const elapsed = now - lastFrameTime;
+
+    if (elapsed > fpsInterval) {
+      lastFrameTime = now - (elapsed % fpsInterval);
+
+      if (previewCtx && canvas) {
+        previewCtx.clearRect(0, 0, previewCanvas.width, previewCanvas.height);
+
+        currentFrameIndex = (currentFrameIndex + 1) % animationFrames.length;
+        const currentFrame = animationFrames[currentFrameIndex];
+
+        // Draw stacked rows from main canvas to preview
+        for (let i = 0; i < animRowNum; i++) {
+          previewCtx.drawImage(
+            canvas,
+            currentFrame * FRAME_SIZE,           // source x
+            (animRowStart + i) * FRAME_SIZE,     // source y
+            FRAME_SIZE,                          // source width
+            FRAME_SIZE,                          // source height
+            i * FRAME_SIZE,                      // dest x (spread horizontally)
+            0,                                   // dest y
+            FRAME_SIZE,                          // dest width
+            FRAME_SIZE                           // dest height
+          );
+        }
+      }
+    }
+
+    animationFrameId = requestAnimationFrame(nextFrame);
+  }
+
+  nextFrame();
+}
+
+/**
+ * Stop the preview animation loop
+ */
+export function stopPreviewAnimation() {
+  if (animationFrameId !== null) {
+    cancelAnimationFrame(animationFrameId);
+    animationFrameId = null;
+  }
 }
 
 /**
@@ -122,8 +261,6 @@ export async function renderCharacter(selections, bodyType) {
     return;
   }
 
-  console.log('renderCharacter called with:', { selections, bodyType });
-
   // Clear canvas
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -131,16 +268,13 @@ export async function renderCharacter(selections, bodyType) {
   const itemsToDraw = [];
 
   for (const [categoryPath, selection] of Object.entries(selections)) {
-    console.log('Processing selection:', categoryPath, selection);
     const { itemId, variant } = selection;
     const meta = window.itemMetadata[itemId];
-    console.log('Metadata for', itemId, ':', meta);
 
     if (!meta) continue;
 
     // Check if this body type is supported
     if (!meta.required.includes(bodyType)) {
-      console.log(`Skipping ${itemId} - not available for ${bodyType}`);
       continue;
     }
 
@@ -197,18 +331,6 @@ export async function renderCharacter(selections, bodyType) {
     if (a.yPos !== b.yPos) return a.yPos - b.yPos;
     return a.zPos - b.zPos;
   });
-
-  console.log('Items to draw:', itemsToDraw.length, 'animation frames');
-
-  // Group by animation to see what's being drawn for each row
-  const byAnimation = {};
-  for (const item of itemsToDraw) {
-    if (!byAnimation[item.animation]) {
-      byAnimation[item.animation] = [];
-    }
-    byAnimation[item.animation].push(`${item.itemId} (z:${item.zPos})`);
-  }
-  console.table(byAnimation);
 
   // Load and draw images
   imagesLoaded = 0;
