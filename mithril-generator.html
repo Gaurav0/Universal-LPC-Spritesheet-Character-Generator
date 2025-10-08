@@ -62,6 +62,18 @@
 		<canvas id="spritesheet" width="832" height="1344"></canvas>
 	</div>
 
+	<script type="module">
+		import { initCanvas, renderCharacter } from './sources/canvas-renderer.js';
+		window.canvasRenderer = { initCanvas, renderCharacter };
+
+		// Wait for canvas to be ready, then load Mithril app
+		document.addEventListener('DOMContentLoaded', () => {
+			const canvas = document.getElementById("spritesheet");
+			if (canvas) {
+				initCanvas(canvas);
+			}
+		});
+	</script>
 	<script type="text/javascript" src="sources/mithril-app.js"></script>
 </body>
 </html>

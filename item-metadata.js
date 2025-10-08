@@ -31,7 +31,18 @@ window.itemMetadata = {
     ],
     "variants": [
       "shadow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 0,
+        "male": "shadow/adult/",
+        "muscular": "shadow/adult/",
+        "female": "shadow/adult/",
+        "pregnant": "shadow/adult/",
+        "child": "shadow/child/",
+        "teen": "shadow/adult/"
+      }
+    }
   },
   "body-body": {
     "name": "Body color",
@@ -91,7 +102,18 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 10,
+        "male": "body/bodies/male/",
+        "muscular": "body/bodies/muscular/",
+        "female": "body/bodies/female/",
+        "pregnant": "body/bodies/pregnant/",
+        "teen": "body/bodies/teen/",
+        "child": "body/bodies/child/"
+      }
+    }
   },
   "body-special-body_zombie": {
     "name": "Zombie",
@@ -119,7 +141,15 @@ window.itemMetadata = {
     ],
     "variants": [
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 10,
+        "male": "body/bodies/zombie/",
+        "female": "body/bodies/zombie/",
+        "teen": "body/bodies/zombie/"
+      }
+    }
   },
   "body-special-body_skeleton": {
     "name": "Skeleton",
@@ -147,7 +177,15 @@ window.itemMetadata = {
     ],
     "variants": [
       "skeleton"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 10,
+        "male": "body/bodies/skeleton/",
+        "female": "body/bodies/skeleton/",
+        "teen": "body/bodies/skeleton/"
+      }
+    }
   },
   "body-wounds-wound_arm": {
     "name": "Arm",
@@ -177,7 +215,17 @@ window.itemMetadata = {
     ],
     "variants": [
       "arm"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 15,
+        "male": "body/wound/",
+        "muscular": "body/wound/",
+        "female": "body/wound/",
+        "pregnant": "body/wound/",
+        "teen": "body/wound/"
+      }
+    }
   },
   "body-wounds-wound_brain": {
     "name": "Brain",
@@ -217,7 +265,17 @@ window.itemMetadata = {
     ],
     "variants": [
       "brain"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "body/wound/",
+        "muscular": "body/wound/",
+        "female": "body/wound/",
+        "pregnant": "body/wound/",
+        "teen": "body/wound/"
+      }
+    }
   },
   "body-wounds-wound_ribs": {
     "name": "Ribs",
@@ -247,7 +305,17 @@ window.itemMetadata = {
     ],
     "variants": [
       "ribs"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 15,
+        "male": "body/wound/",
+        "muscular": "body/wound/",
+        "female": "body/wound/",
+        "pregnant": "body/wound/",
+        "teen": "body/wound/"
+      }
+    }
   },
   "body-wounds-wound_eye_left": {
     "name": "Left Eye",
@@ -287,7 +355,17 @@ window.itemMetadata = {
     ],
     "variants": [
       "eye_left"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "body/wound/",
+        "muscular": "body/wound/",
+        "female": "body/wound/",
+        "pregnant": "body/wound/",
+        "teen": "body/wound/"
+      }
+    }
   },
   "body-wounds-wound_eye_right": {
     "name": "Right Eye",
@@ -327,7 +405,17 @@ window.itemMetadata = {
     ],
     "variants": [
       "eye_right"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "body/wound/",
+        "muscular": "body/wound/",
+        "female": "body/wound/",
+        "pregnant": "body/wound/",
+        "teen": "body/wound/"
+      }
+    }
   },
   "body-wounds-wound_mouth": {
     "name": "Mouth",
@@ -367,7 +455,17 @@ window.itemMetadata = {
     ],
     "variants": [
       "mouth"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "body/wound/",
+        "muscular": "body/wound/",
+        "female": "body/wound/",
+        "pregnant": "body/wound/",
+        "teen": "body/wound/"
+      }
+    }
   },
   "body-prostheses-prosthesis_hook": {
     "name": "Hook hand",
@@ -393,7 +491,18 @@ window.itemMetadata = {
     ],
     "variants": [
       "hook"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "is_mask": true,
+        "male": "body/prosthesis/hook/male/mask/"
+      },
+      "layer_2": {
+        "zPos": 100,
+        "male": "body/prosthesis/hook/male/"
+      }
+    }
   },
   "body-prostheses-prosthesis_peg_leg": {
     "name": "Peg leg",
@@ -419,7 +528,18 @@ window.itemMetadata = {
     ],
     "variants": [
       "peg_leg"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "is_mask": true,
+        "male": "body/prosthesis/peg_leg/male/mask/"
+      },
+      "layer_2": {
+        "zPos": 100,
+        "male": "body/prosthesis/peg_leg/male/"
+      }
+    }
   },
   "body-wheelchair-wheelchair": {
     "name": "Wheelchair",
@@ -453,7 +573,27 @@ window.itemMetadata = {
       "pink",
       "tan",
       "white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "custom_animation": "wheelchair",
+        "zPos": -2,
+        "male": "body/wheelchair/adult/background/",
+        "muscular": "body/wheelchair/adult/background/",
+        "female": "body/wheelchair/adult/background/",
+        "pregnant": "body/wheelchair/adult/background/",
+        "teen": "body/wheelchair/adult/background/"
+      },
+      "layer_2": {
+        "custom_animation": "wheelchair",
+        "zPos": 140,
+        "male": "body/wheelchair/adult/foreground/",
+        "muscular": "body/wheelchair/adult/foreground/",
+        "female": "body/wheelchair/adult/foreground/",
+        "pregnant": "body/wheelchair/adult/foreground/",
+        "teen": "body/wheelchair/adult/foreground/"
+      }
+    }
   },
   "body-tails-tail_wolf": {
     "name": "Wolf Tail",
@@ -526,7 +666,27 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 125,
+        "male": "body/tail/wolf/adult/fg/",
+        "muscular": "body/tail/wolf/adult/fg/",
+        "female": "body/tail/wolf/adult/fg/",
+        "pregnant": "body/tail/wolf/adult/fg/",
+        "teen": "body/tail/wolf/adult/fg/",
+        "child": "body/tail/wolf/child/fg/"
+      },
+      "layer_2": {
+        "zPos": 5,
+        "male": "body/tail/wolf/adult/bg/",
+        "muscular": "body/tail/wolf/adult/bg/",
+        "female": "body/tail/wolf/adult/bg/",
+        "pregnant": "body/tail/wolf/adult/bg/",
+        "teen": "body/tail/wolf/adult/bg/",
+        "child": "body/tail/wolf/child/bg/"
+      }
+    }
   },
   "body-tails-tail_wolf_fluffy": {
     "name": "Fluffy Wolf Tail",
@@ -599,7 +759,27 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 125,
+        "male": "body/tail/fluffy/adult/fg/",
+        "muscular": "body/tail/fluffy/adult/fg/",
+        "female": "body/tail/fluffy/adult/fg/",
+        "pregnant": "body/tail/fluffy/adult/fg/",
+        "teen": "body/tail/fluffy/adult/fg/",
+        "child": "body/tail/fluffy/child/fg/"
+      },
+      "layer_2": {
+        "zPos": 5,
+        "male": "body/tail/fluffy/adult/bg/",
+        "muscular": "body/tail/fluffy/adult/bg/",
+        "female": "body/tail/fluffy/adult/bg/",
+        "pregnant": "body/tail/fluffy/adult/bg/",
+        "teen": "body/tail/fluffy/adult/bg/",
+        "child": "body/tail/fluffy/child/bg/"
+      }
+    }
   },
   "body-tails-tail_cat": {
     "name": "Cat Tail",
@@ -672,7 +852,27 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 125,
+        "male": "body/tail/cat/adult/fg/",
+        "muscular": "body/tail/cat/adult/fg/",
+        "female": "body/tail/cat/adult/fg/",
+        "pregnant": "body/tail/cat/adult/fg/",
+        "teen": "body/tail/cat/adult/fg/",
+        "child": "body/tail/cat/child/fg/"
+      },
+      "layer_2": {
+        "zPos": 5,
+        "male": "body/tail/cat/adult/bg/",
+        "muscular": "body/tail/cat/adult/bg/",
+        "female": "body/tail/cat/adult/bg/",
+        "pregnant": "body/tail/cat/adult/bg/",
+        "teen": "body/tail/cat/adult/bg/",
+        "child": "body/tail/cat/child/bg/"
+      }
+    }
   },
   "body-tails-tail_lizard_alt": {
     "name": "Lizard Tail (Alt Colors)",
@@ -745,7 +945,27 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 85,
+        "male": "body/tail/lizard/alt/adult/fg/",
+        "muscular": "body/tail/lizard/alt/adult/fg/",
+        "female": "body/tail/lizard/alt/adult/fg/",
+        "pregnant": "body/tail/lizard/alt/adult/fg/",
+        "teen": "body/tail/lizard/alt/adult/fg/",
+        "child": "body/tail/lizard/alt/child/fg/"
+      },
+      "layer_2": {
+        "zPos": 5,
+        "male": "body/tail/lizard/alt/adult/bg/",
+        "muscular": "body/tail/lizard/alt/adult/bg/",
+        "female": "body/tail/lizard/alt/adult/bg/",
+        "pregnant": "body/tail/lizard/alt/adult/bg/",
+        "teen": "body/tail/lizard/alt/adult/bg/",
+        "child": "body/tail/lizard/alt/child/bg/"
+      }
+    }
   },
   "body-wings-wings_feathered": {
     "name": "Feathered Wings",
@@ -819,7 +1039,25 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 105,
+        "male": "body/wings/feathered/adult/fg/",
+        "muscular": "body/wings/feathered/adult/fg/",
+        "female": "body/wings/feathered/adult/fg/",
+        "pregnant": "body/wings/feathered/adult/fg/",
+        "teen": "body/wings/feathered/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 5,
+        "male": "body/wings/feathered/adult/bg/",
+        "muscular": "body/wings/feathered/adult/bg/",
+        "female": "body/wings/feathered/adult/bg/",
+        "pregnant": "body/wings/feathered/adult/bg/",
+        "teen": "body/wings/feathered/adult/bg/"
+      }
+    }
   },
   "body-wings-wings_bat": {
     "name": "Bat Wings",
@@ -904,7 +1142,25 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 105,
+        "male": "body/wings/bat/adult/fg/",
+        "muscular": "body/wings/bat/adult/fg/",
+        "female": "body/wings/bat/adult/fg/",
+        "pregnant": "body/wings/bat/adult/fg/",
+        "teen": "body/wings/bat/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 5,
+        "male": "body/wings/bat/adult/bg/",
+        "muscular": "body/wings/bat/adult/bg/",
+        "female": "body/wings/bat/adult/bg/",
+        "pregnant": "body/wings/bat/adult/bg/",
+        "teen": "body/wings/bat/adult/bg/"
+      }
+    }
   },
   "body-wings-wings_lizard_alt": {
     "name": "Lizard Wings (Alt Colors)",
@@ -978,7 +1234,25 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 105,
+        "male": "body/wings/lizard/alt/adult/fg/",
+        "muscular": "body/wings/lizard/alt/adult/fg/",
+        "female": "body/wings/lizard/alt/adult/fg/",
+        "pregnant": "body/wings/lizard/alt/adult/fg/",
+        "teen": "body/wings/lizard/alt/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 5,
+        "male": "body/wings/lizard/alt/adult/bg/",
+        "muscular": "body/wings/lizard/alt/adult/bg/",
+        "female": "body/wings/lizard/alt/adult/bg/",
+        "pregnant": "body/wings/lizard/alt/adult/bg/",
+        "teen": "body/wings/lizard/alt/adult/bg/"
+      }
+    }
   },
   "body-wings-monarch wings-wings_monarch": {
     "name": "Monarch Wings",
@@ -1041,7 +1315,27 @@ window.itemMetadata = {
       "white",
       "yellow",
       "zombie_green"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 105,
+        "male": "body/wings/monarch/base/fg/",
+        "muscular": "body/wings/monarch/base/fg/",
+        "female": "body/wings/monarch/base/fg/",
+        "pregnant": "body/wings/monarch/base/fg/",
+        "teen": "body/wings/monarch/base/fg/",
+        "child": "body/wings/monarch/base/fg/"
+      },
+      "layer_2": {
+        "zPos": 5,
+        "male": "body/wings/monarch/base/bg/",
+        "muscular": "body/wings/monarch/base/bg/",
+        "female": "body/wings/monarch/base/bg/",
+        "pregnant": "body/wings/monarch/base/bg/",
+        "teen": "body/wings/monarch/base/bg/",
+        "child": "body/wings/monarch/base/bg/"
+      }
+    }
   },
   "body-wings-monarch wings-wings_monarch_edge": {
     "name": "Monarch Wings Edge",
@@ -1104,7 +1398,27 @@ window.itemMetadata = {
       "white",
       "yellow",
       "zombie_green"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 106,
+        "male": "body/wings/monarch/edge/fg/",
+        "muscular": "body/wings/monarch/edge/fg/",
+        "female": "body/wings/monarch/edge/fg/",
+        "pregnant": "body/wings/monarch/edge/fg/",
+        "teen": "body/wings/monarch/edge/fg/",
+        "child": "body/wings/monarch/edge/fg/"
+      },
+      "layer_2": {
+        "zPos": 6,
+        "male": "body/wings/monarch/edge/bg/",
+        "muscular": "body/wings/monarch/edge/bg/",
+        "female": "body/wings/monarch/edge/bg/",
+        "pregnant": "body/wings/monarch/edge/bg/",
+        "teen": "body/wings/monarch/edge/bg/",
+        "child": "body/wings/monarch/edge/bg/"
+      }
+    }
   },
   "body-wings-monarch wings-wings_monarch_dots": {
     "name": "Monarch Wings Dots",
@@ -1167,7 +1481,27 @@ window.itemMetadata = {
       "white",
       "yellow",
       "zombie_green"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 106,
+        "male": "body/wings/monarch/dots/fg/",
+        "muscular": "body/wings/monarch/dots/fg/",
+        "female": "body/wings/monarch/dots/fg/",
+        "pregnant": "body/wings/monarch/dots/fg/",
+        "teen": "body/wings/monarch/dots/fg/",
+        "child": "body/wings/monarch/dots/fg/"
+      },
+      "layer_2": {
+        "zPos": 6,
+        "male": "body/wings/monarch/dots/bg/",
+        "muscular": "body/wings/monarch/dots/bg/",
+        "female": "body/wings/monarch/dots/bg/",
+        "pregnant": "body/wings/monarch/dots/bg/",
+        "teen": "body/wings/monarch/dots/bg/",
+        "child": "body/wings/monarch/dots/bg/"
+      }
+    }
   },
   "body-wings-pixie wings-wings_pixie": {
     "name": "Pixie Wings",
@@ -1229,7 +1563,27 @@ window.itemMetadata = {
       "white",
       "yellow",
       "zombie_green"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 140,
+        "male": "body/wings/pixie/solid/fg/",
+        "muscular": "body/wings/pixie/solid/fg/",
+        "female": "body/wings/pixie/solid/fg/",
+        "pregnant": "body/wings/pixie/solid/fg/",
+        "teen": "body/wings/pixie/solid/fg/",
+        "child": "body/wings/pixie/solid/fg/"
+      },
+      "layer_2": {
+        "zPos": 5,
+        "male": "body/wings/pixie/solid/bg/",
+        "muscular": "body/wings/pixie/solid/bg/",
+        "female": "body/wings/pixie/solid/bg/",
+        "pregnant": "body/wings/pixie/solid/bg/",
+        "teen": "body/wings/pixie/solid/bg/",
+        "child": "body/wings/pixie/solid/bg/"
+      }
+    }
   },
   "body-wings-pixie wings-wings_pixie_transparent": {
     "name": "Transparent Pixie Wings",
@@ -1291,7 +1645,27 @@ window.itemMetadata = {
       "white",
       "yellow",
       "zombie_green"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 140,
+        "male": "body/wings/pixie/transparent/fg/",
+        "muscular": "body/wings/pixie/transparent/fg/",
+        "female": "body/wings/pixie/transparent/fg/",
+        "pregnant": "body/wings/pixie/transparent/fg/",
+        "teen": "body/wings/pixie/transparent/fg/",
+        "child": "body/wings/pixie/transparent/fg/"
+      },
+      "layer_2": {
+        "zPos": 5,
+        "male": "body/wings/pixie/transparent/bg/",
+        "muscular": "body/wings/pixie/transparent/bg/",
+        "female": "body/wings/pixie/transparent/bg/",
+        "pregnant": "body/wings/pixie/transparent/bg/",
+        "teen": "body/wings/pixie/transparent/bg/",
+        "child": "body/wings/pixie/transparent/bg/"
+      }
+    }
   },
   "body-wings-wings_lunar": {
     "name": "Lunar Wings",
@@ -1352,7 +1726,27 @@ window.itemMetadata = {
       "white",
       "yellow",
       "zombie_green"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 105,
+        "male": "body/wings/lunar/fg/",
+        "muscular": "body/wings/lunar/fg/",
+        "female": "body/wings/lunar/fg/",
+        "pregnant": "body/wings/lunar/fg/",
+        "teen": "body/wings/lunar/fg/",
+        "child": "body/wings/lunar/fg/"
+      },
+      "layer_2": {
+        "zPos": 5,
+        "male": "body/wings/lunar/bg/",
+        "muscular": "body/wings/lunar/bg/",
+        "female": "body/wings/lunar/bg/",
+        "pregnant": "body/wings/lunar/bg/",
+        "teen": "body/wings/lunar/bg/",
+        "child": "body/wings/lunar/bg/"
+      }
+    }
   },
   "body-wings-dragonfly wings-wings_dragonfly": {
     "name": "Dragonfly Wings",
@@ -1414,7 +1808,27 @@ window.itemMetadata = {
       "white",
       "yellow",
       "zombie_green"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 105,
+        "male": "body/wings/dragonfly/solid/fg/",
+        "muscular": "body/wings/dragonfly/solid/fg/",
+        "female": "body/wings/dragonfly/solid/fg/",
+        "pregnant": "body/wings/dragonfly/solid/fg/",
+        "teen": "body/wings/dragonfly/solid/fg/",
+        "child": "body/wings/dragonfly/solid/fg/"
+      },
+      "layer_2": {
+        "zPos": 5,
+        "male": "body/wings/dragonfly/solid/bg/",
+        "muscular": "body/wings/dragonfly/solid/bg/",
+        "female": "body/wings/dragonfly/solid/bg/",
+        "pregnant": "body/wings/dragonfly/solid/bg/",
+        "teen": "body/wings/dragonfly/solid/bg/",
+        "child": "body/wings/dragonfly/solid/bg/"
+      }
+    }
   },
   "body-wings-dragonfly wings-wings_dragonfly_transparent": {
     "name": "Transparent Dragonfly Wings",
@@ -1476,7 +1890,27 @@ window.itemMetadata = {
       "white",
       "yellow",
       "zombie_green"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 105,
+        "male": "body/wings/dragonfly/transparent/fg/",
+        "muscular": "body/wings/dragonfly/transparent/fg/",
+        "female": "body/wings/dragonfly/transparent/fg/",
+        "pregnant": "body/wings/dragonfly/transparent/fg/",
+        "teen": "body/wings/dragonfly/transparent/fg/",
+        "child": "body/wings/dragonfly/transparent/fg/"
+      },
+      "layer_2": {
+        "zPos": 5,
+        "male": "body/wings/dragonfly/transparent/bg/",
+        "muscular": "body/wings/dragonfly/transparent/bg/",
+        "female": "body/wings/dragonfly/transparent/bg/",
+        "pregnant": "body/wings/dragonfly/transparent/bg/",
+        "teen": "body/wings/dragonfly/transparent/bg/",
+        "child": "body/wings/dragonfly/transparent/bg/"
+      }
+    }
   },
   "body-lizard-wings_lizard": {
     "name": "Lizard Wings",
@@ -1538,7 +1972,25 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 105,
+        "male": "body/wings/lizard/adult/fg/",
+        "muscular": "body/wings/lizard/adult/fg/",
+        "female": "body/wings/lizard/adult/fg/",
+        "pregnant": "body/wings/lizard/adult/fg/",
+        "teen": "body/wings/lizard/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 5,
+        "male": "body/wings/lizard/adult/bg/",
+        "muscular": "body/wings/lizard/adult/bg/",
+        "female": "body/wings/lizard/adult/bg/",
+        "pregnant": "body/wings/lizard/adult/bg/",
+        "teen": "body/wings/lizard/adult/bg/"
+      }
+    }
   },
   "body-lizard-wings_lizard_bat": {
     "name": "Batlike Lizard Wings",
@@ -1600,7 +2052,25 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 105,
+        "male": "body/wings/bat/lizard/adult/fg/",
+        "muscular": "body/wings/bat/lizard/adult/fg/",
+        "female": "body/wings/bat/lizard/adult/fg/",
+        "pregnant": "body/wings/bat/lizard/adult/fg/",
+        "teen": "body/wings/bat/lizard/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 5,
+        "male": "body/wings/bat/lizard/adult/bg/",
+        "muscular": "body/wings/bat/lizard/adult/bg/",
+        "female": "body/wings/bat/lizard/adult/bg/",
+        "pregnant": "body/wings/bat/lizard/adult/bg/",
+        "teen": "body/wings/bat/lizard/adult/bg/"
+      }
+    }
   },
   "body-lizard-tail_lizard": {
     "name": "Lizard tail",
@@ -1661,7 +2131,27 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 85,
+        "male": "body/tail/lizard/adult/fg/",
+        "muscular": "body/tail/lizard/adult/fg/",
+        "female": "body/tail/lizard/adult/fg/",
+        "pregnant": "body/tail/lizard/adult/fg/",
+        "teen": "body/tail/lizard/adult/fg/",
+        "child": "body/tail/lizard/child/fg/"
+      },
+      "layer_2": {
+        "zPos": 5,
+        "male": "body/tail/lizard/adult/bg/",
+        "muscular": "body/tail/lizard/adult/bg/",
+        "female": "body/tail/lizard/adult/bg/",
+        "pregnant": "body/tail/lizard/adult/bg/",
+        "teen": "body/tail/lizard/adult/bg/",
+        "child": "body/tail/lizard/child/bg/"
+      }
+    }
   },
   "head-heads-heads_human_child": {
     "name": "Human child",
@@ -1721,7 +2211,13 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "child": "head/heads/human/child/"
+      }
+    }
   },
   "head-heads-heads_human_female": {
     "name": "Human female",
@@ -1786,7 +2282,17 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/human/female/",
+        "muscular": "head/heads/human/female/",
+        "female": "head/heads/human/female/",
+        "pregnant": "head/heads/human/female/",
+        "teen": "head/heads/human/female/"
+      }
+    }
   },
   "head-heads-heads_human_male": {
     "name": "Human male",
@@ -1850,7 +2356,17 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/human/male/",
+        "muscular": "head/heads/human/male/",
+        "female": "head/heads/human/male/",
+        "pregnant": "head/heads/human/male/",
+        "teen": "head/heads/human/male/"
+      }
+    }
   },
   "head-heads-heads_human_female_elderly": {
     "name": "Human female elderly",
@@ -1914,7 +2430,17 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/human/female_elderly/",
+        "muscular": "head/heads/human/female_elderly/",
+        "female": "head/heads/human/female_elderly/",
+        "pregnant": "head/heads/human/female_elderly/",
+        "teen": "head/heads/human/female_elderly/"
+      }
+    }
   },
   "head-heads-heads_human_male_elderly": {
     "name": "Human male elderly",
@@ -1978,7 +2504,17 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/human/male_elderly/",
+        "muscular": "head/heads/human/male_elderly/",
+        "female": "head/heads/human/male_elderly/",
+        "pregnant": "head/heads/human/male_elderly/",
+        "teen": "head/heads/human/male_elderly/"
+      }
+    }
   },
   "head-heads-heads_human_male_plump": {
     "name": "Human male plump",
@@ -2042,7 +2578,17 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/human/male_plump/",
+        "muscular": "head/heads/human/male_plump/",
+        "female": "head/heads/human/male_plump/",
+        "pregnant": "head/heads/human/male_plump/",
+        "teen": "head/heads/human/male_plump/"
+      }
+    }
   },
   "head-heads-heads_human_male_gaunt": {
     "name": "Human male gaunt",
@@ -2106,7 +2652,17 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/human/male_gaunt/",
+        "muscular": "head/heads/human/male_gaunt/",
+        "female": "head/heads/human/male_gaunt/",
+        "pregnant": "head/heads/human/male_gaunt/",
+        "teen": "head/heads/human/male_gaunt/"
+      }
+    }
   },
   "head-heads-heads_human_male_small": {
     "name": "Human male small",
@@ -2171,7 +2727,17 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/human/male_small/",
+        "muscular": "head/heads/human/male_small/",
+        "female": "head/heads/human/male_small/",
+        "pregnant": "head/heads/human/male_small/",
+        "teen": "head/heads/human/male_small/"
+      }
+    }
   },
   "head-heads-heads_human_female_small": {
     "name": "Human female small",
@@ -2236,7 +2802,17 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/human/female_small/",
+        "muscular": "head/heads/human/female_small/",
+        "female": "head/heads/human/female_small/",
+        "pregnant": "head/heads/human/female_small/",
+        "teen": "head/heads/human/female_small/"
+      }
+    }
   },
   "head-heads-heads_human_elderly_small": {
     "name": "Human elderly small",
@@ -2301,7 +2877,17 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/human/elderly_small/",
+        "muscular": "head/heads/human/elderly_small/",
+        "female": "head/heads/human/elderly_small/",
+        "pregnant": "head/heads/human/elderly_small/",
+        "teen": "head/heads/human/elderly_small/"
+      }
+    }
   },
   "head-heads-heads_boarman": {
     "name": "Boarman",
@@ -2366,7 +2952,17 @@ window.itemMetadata = {
       "bright_green",
       "dark_green",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/boarman/adult/",
+        "muscular": "head/heads/boarman/adult/",
+        "female": "head/heads/boarman/adult/",
+        "pregnant": "head/heads/boarman/adult/",
+        "teen": "head/heads/boarman/adult/"
+      }
+    }
   },
   "head-heads-heads_boarman_child": {
     "name": "Boarman child",
@@ -2427,7 +3023,13 @@ window.itemMetadata = {
       "bright_green",
       "dark_green",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "child": "head/heads/boarman/child/"
+      }
+    }
   },
   "head-heads-heads_pig": {
     "name": "Pig",
@@ -2491,7 +3093,17 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/pig/adult/",
+        "muscular": "head/heads/pig/adult/",
+        "female": "head/heads/pig/adult/",
+        "pregnant": "head/heads/pig/adult/",
+        "teen": "head/heads/pig/adult/"
+      }
+    }
   },
   "head-heads-heads_pig_child": {
     "name": "Pig child",
@@ -2551,7 +3163,13 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "child": "head/heads/pig/child/"
+      }
+    }
   },
   "head-heads-heads_sheep": {
     "name": "Sheep",
@@ -2615,7 +3233,17 @@ window.itemMetadata = {
       "bright_green",
       "dark_green",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/sheep/adult/",
+        "muscular": "head/heads/sheep/adult/",
+        "female": "head/heads/sheep/adult/",
+        "pregnant": "head/heads/sheep/adult/",
+        "teen": "head/heads/sheep/adult/"
+      }
+    }
   },
   "head-heads-heads_sheep_child": {
     "name": "Sheep child",
@@ -2675,7 +3303,13 @@ window.itemMetadata = {
       "bright_green",
       "dark_green",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "child": "head/heads/sheep/child/"
+      }
+    }
   },
   "head-heads-heads_minotaur": {
     "name": "Minotaur",
@@ -2739,7 +3373,17 @@ window.itemMetadata = {
       "bright_green",
       "dark_green",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/minotaur/male/",
+        "muscular": "head/heads/minotaur/male/",
+        "female": "head/heads/minotaur/male/",
+        "pregnant": "head/heads/minotaur/male/",
+        "teen": "head/heads/minotaur/male/"
+      }
+    }
   },
   "head-heads-heads_minotaur_female": {
     "name": "Minotaur female",
@@ -2803,7 +3447,17 @@ window.itemMetadata = {
       "bright_green",
       "dark_green",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/minotaur/female/",
+        "muscular": "head/heads/minotaur/female/",
+        "female": "head/heads/minotaur/female/",
+        "pregnant": "head/heads/minotaur/female/",
+        "teen": "head/heads/minotaur/female/"
+      }
+    }
   },
   "head-heads-heads_minotaur_child": {
     "name": "Minotaur child",
@@ -2863,7 +3517,13 @@ window.itemMetadata = {
       "bright_green",
       "dark_green",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "child": "head/heads/minotaur/child/"
+      }
+    }
   },
   "head-heads-heads_wartotaur": {
     "name": "Wartotaur",
@@ -2927,7 +3587,17 @@ window.itemMetadata = {
       "bright_green",
       "dark_green",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/wartotaur/adult/",
+        "muscular": "head/heads/wartotaur/adult/",
+        "female": "head/heads/wartotaur/adult/",
+        "pregnant": "head/heads/wartotaur/adult/",
+        "teen": "head/heads/wartotaur/adult/"
+      }
+    }
   },
   "head-heads-heads_wolf_child": {
     "name": "Wolf child",
@@ -2987,7 +3657,13 @@ window.itemMetadata = {
       "bright_green",
       "dark_green",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "child": "head/heads/wolf/child/"
+      }
+    }
   },
   "head-heads-heads_wolf_female": {
     "name": "Wolf female",
@@ -3051,7 +3727,17 @@ window.itemMetadata = {
       "bright_green",
       "dark_green",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/wolf/female/",
+        "muscular": "head/heads/wolf/female/",
+        "female": "head/heads/wolf/female/",
+        "pregnant": "head/heads/wolf/female/",
+        "teen": "head/heads/wolf/female/"
+      }
+    }
   },
   "head-heads-heads_wolf_male": {
     "name": "Wolf male",
@@ -3115,7 +3801,17 @@ window.itemMetadata = {
       "bright_green",
       "dark_green",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/wolf/male/",
+        "muscular": "head/heads/wolf/male/",
+        "female": "head/heads/wolf/male/",
+        "pregnant": "head/heads/wolf/male/",
+        "teen": "head/heads/wolf/male/"
+      }
+    }
   },
   "head-heads-heads_rabbit": {
     "name": "Rabbit",
@@ -3179,7 +3875,17 @@ window.itemMetadata = {
       "bright_green",
       "dark_green",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/rabbit/adult/",
+        "muscular": "head/heads/rabbit/adult/",
+        "female": "head/heads/rabbit/adult/",
+        "pregnant": "head/heads/rabbit/adult/",
+        "teen": "head/heads/rabbit/adult/"
+      }
+    }
   },
   "head-heads-heads_rabbit_child": {
     "name": "Rabbit child",
@@ -3239,7 +3945,13 @@ window.itemMetadata = {
       "bright_green",
       "dark_green",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "child": "head/heads/rabbit/child/"
+      }
+    }
   },
   "head-heads-heads_rat": {
     "name": "Rat",
@@ -3303,7 +4015,17 @@ window.itemMetadata = {
       "bright_green",
       "dark_green",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/rat/adult/",
+        "muscular": "head/heads/rat/adult/",
+        "female": "head/heads/rat/adult/",
+        "pregnant": "head/heads/rat/adult/",
+        "teen": "head/heads/rat/adult/"
+      }
+    }
   },
   "head-heads-heads_rat_child": {
     "name": "Rat child",
@@ -3363,7 +4085,13 @@ window.itemMetadata = {
       "bright_green",
       "dark_green",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "child": "head/heads/rat/child/"
+      }
+    }
   },
   "head-heads-heads_mouse": {
     "name": "Mouse",
@@ -3426,7 +4154,17 @@ window.itemMetadata = {
       "pale_green",
       "bright_green",
       "dark_green"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/mouse/adult/",
+        "muscular": "head/heads/mouse/adult/",
+        "female": "head/heads/mouse/adult/",
+        "pregnant": "head/heads/mouse/adult/",
+        "teen": "head/heads/mouse/adult/"
+      }
+    }
   },
   "head-heads-heads_mouse_child": {
     "name": "Mouse child",
@@ -3486,7 +4224,13 @@ window.itemMetadata = {
       "bright_green",
       "dark_green",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "child": "head/heads/mouse/child/"
+      }
+    }
   },
   "head-heads-heads_lizard_child": {
     "name": "Lizard child",
@@ -3538,7 +4282,13 @@ window.itemMetadata = {
       "pale_green",
       "bright_green",
       "dark_green"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "child": "head/heads/lizard/child/"
+      }
+    }
   },
   "head-heads-heads_lizard_female": {
     "name": "Lizard female",
@@ -3594,7 +4344,17 @@ window.itemMetadata = {
       "pale_green",
       "bright_green",
       "dark_green"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/lizard/female/",
+        "muscular": "head/heads/lizard/female/",
+        "female": "head/heads/lizard/female/",
+        "pregnant": "head/heads/lizard/female/",
+        "teen": "head/heads/lizard/female/"
+      }
+    }
   },
   "head-heads-heads_lizard_male": {
     "name": "Lizard male",
@@ -3650,7 +4410,17 @@ window.itemMetadata = {
       "pale_green",
       "bright_green",
       "dark_green"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/lizard/male/",
+        "muscular": "head/heads/lizard/male/",
+        "female": "head/heads/lizard/male/",
+        "pregnant": "head/heads/lizard/male/",
+        "teen": "head/heads/lizard/male/"
+      }
+    }
   },
   "head-heads-heads_orc_child": {
     "name": "Orc child",
@@ -3710,7 +4480,13 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "child": "head/heads/orc/child/"
+      }
+    }
   },
   "head-heads-heads_orc_female": {
     "name": "Orc female",
@@ -3766,7 +4542,17 @@ window.itemMetadata = {
       "pale_green",
       "bright_green",
       "dark_green"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/orc/female/",
+        "muscular": "head/heads/orc/female/",
+        "female": "head/heads/orc/female/",
+        "pregnant": "head/heads/orc/female/",
+        "teen": "head/heads/orc/female/"
+      }
+    }
   },
   "head-heads-heads_orc_male": {
     "name": "Orc male",
@@ -3830,7 +4616,17 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/orc/male/",
+        "muscular": "head/heads/orc/male/",
+        "female": "head/heads/orc/male/",
+        "pregnant": "head/heads/orc/male/",
+        "teen": "head/heads/orc/male/"
+      }
+    }
   },
   "head-heads-heads_goblin": {
     "name": "Goblin",
@@ -3894,7 +4690,17 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/goblin/adult/",
+        "muscular": "head/heads/goblin/adult/",
+        "female": "head/heads/goblin/adult/",
+        "pregnant": "head/heads/goblin/adult/",
+        "teen": "head/heads/goblin/adult/"
+      }
+    }
   },
   "head-heads-heads_goblin_child": {
     "name": "Goblin child",
@@ -3954,7 +4760,13 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "child": "head/heads/goblin/child/"
+      }
+    }
   },
   "head-heads-heads_alien": {
     "name": "Alien",
@@ -4016,7 +4828,17 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/alien/adult/",
+        "muscular": "head/heads/alien/adult/",
+        "female": "head/heads/alien/adult/",
+        "pregnant": "head/heads/alien/adult/",
+        "teen": "head/heads/alien/adult/"
+      }
+    }
   },
   "head-heads-heads_troll": {
     "name": "Troll",
@@ -4080,7 +4902,17 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/troll/adult/",
+        "muscular": "head/heads/troll/adult/",
+        "female": "head/heads/troll/adult/",
+        "pregnant": "head/heads/troll/adult/",
+        "teen": "head/heads/troll/adult/"
+      }
+    }
   },
   "head-heads-heads_troll_child": {
     "name": "Troll child",
@@ -4140,7 +4972,13 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "child": "head/heads/troll/child/"
+      }
+    }
   },
   "head-heads-heads_skeleton": {
     "name": "Skeleton",
@@ -4183,7 +5021,17 @@ window.itemMetadata = {
     ],
     "variants": [
       "skeleton"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/skeleton/adult/",
+        "muscular": "head/heads/skeleton/adult/",
+        "female": "head/heads/skeleton/adult/",
+        "pregnant": "head/heads/skeleton/adult/",
+        "teen": "head/heads/skeleton/adult/"
+      }
+    }
   },
   "head-heads-heads_zombie": {
     "name": "Zombie",
@@ -4247,7 +5095,17 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/zombie/adult/",
+        "muscular": "head/heads/zombie/adult/",
+        "female": "head/heads/zombie/adult/",
+        "pregnant": "head/heads/zombie/adult/",
+        "teen": "head/heads/zombie/adult/"
+      }
+    }
   },
   "head-heads-heads_jack": {
     "name": "Jack O Lantern",
@@ -4289,7 +5147,17 @@ window.itemMetadata = {
     ],
     "variants": [
       "jack"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/jack/adult/",
+        "muscular": "head/heads/jack/adult/",
+        "female": "head/heads/jack/adult/",
+        "pregnant": "head/heads/jack/adult/",
+        "teen": "head/heads/jack/adult/"
+      }
+    }
   },
   "head-heads-heads_vampire": {
     "name": "Vampire",
@@ -4353,7 +5221,17 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/vampire/adult/",
+        "muscular": "head/heads/vampire/adult/",
+        "female": "head/heads/vampire/adult/",
+        "pregnant": "head/heads/vampire/adult/",
+        "teen": "head/heads/vampire/adult/"
+      }
+    }
   },
   "head-heads-heads_frankenstein": {
     "name": "Frankenstein",
@@ -4417,7 +5295,17 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/frankenstein/adult/",
+        "muscular": "head/heads/frankenstein/adult/",
+        "female": "head/heads/frankenstein/adult/",
+        "pregnant": "head/heads/frankenstein/adult/",
+        "teen": "head/heads/frankenstein/adult/"
+      }
+    }
   },
   "head-face-face_neutral": {
     "name": "Neutral",
@@ -4482,7 +5370,17 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 101,
+        "male": "head/faces/${head}/neutral/",
+        "muscular": "head/faces/${head}/neutral/",
+        "female": "head/faces/${head}/neutral/",
+        "teen": "head/faces/${head}/neutral/",
+        "pregnant": "head/faces/${head}/neutral/"
+      }
+    }
   },
   "head-face-face_closing": {
     "name": "Closing Eyes",
@@ -4547,7 +5445,17 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 101,
+        "male": "head/faces/${head}/closing/",
+        "muscular": "head/faces/${head}/closing/",
+        "female": "head/faces/${head}/closing/",
+        "teen": "head/faces/${head}/closing/",
+        "pregnant": "head/faces/${head}/closing/"
+      }
+    }
   },
   "head-face-face_closed": {
     "name": "Closed Eyes",
@@ -4612,7 +5520,17 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 101,
+        "male": "head/faces/${head}/closed/",
+        "muscular": "head/faces/${head}/closed/",
+        "female": "head/faces/${head}/closed/",
+        "teen": "head/faces/${head}/closed/",
+        "pregnant": "head/faces/${head}/closed/"
+      }
+    }
   },
   "head-face-face_look_r": {
     "name": "Looking Right",
@@ -4677,7 +5595,17 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 101,
+        "male": "head/faces/${head}/look_r/",
+        "muscular": "head/faces/${head}/look_r/",
+        "female": "head/faces/${head}/look_r/",
+        "teen": "head/faces/${head}/look_r/",
+        "pregnant": "head/faces/${head}/look_r/"
+      }
+    }
   },
   "head-face-face_look_l": {
     "name": "Looking Left",
@@ -4742,7 +5670,17 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 101,
+        "male": "head/faces/${head}/look_l/",
+        "muscular": "head/faces/${head}/look_l/",
+        "female": "head/faces/${head}/look_l/",
+        "teen": "head/faces/${head}/look_l/",
+        "pregnant": "head/faces/${head}/look_l/"
+      }
+    }
   },
   "head-face-face_eyeroll": {
     "name": "Rolling Eyes",
@@ -4807,7 +5745,17 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 101,
+        "male": "head/faces/${head}/eyeroll/",
+        "muscular": "head/faces/${head}/eyeroll/",
+        "female": "head/faces/${head}/eyeroll/",
+        "teen": "head/faces/${head}/eyeroll/",
+        "pregnant": "head/faces/${head}/eyeroll/"
+      }
+    }
   },
   "head-face-face_shock": {
     "name": "Shock",
@@ -4872,7 +5820,17 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 101,
+        "male": "head/faces/${head}/shock/",
+        "muscular": "head/faces/${head}/shock/",
+        "female": "head/faces/${head}/shock/",
+        "teen": "head/faces/${head}/shock/",
+        "pregnant": "head/faces/${head}/shock/"
+      }
+    }
   },
   "head-face-face_angry": {
     "name": "Angry",
@@ -4937,7 +5895,17 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 101,
+        "male": "head/faces/${head}/anger/",
+        "muscular": "head/faces/${head}/anger/",
+        "female": "head/faces/${head}/anger/",
+        "teen": "head/faces/${head}/anger/",
+        "pregnant": "head/faces/${head}/anger/"
+      }
+    }
   },
   "head-face-face_angry2": {
     "name": "Angry Alt",
@@ -5002,7 +5970,17 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 106,
+        "male": "head/faces/global/angry2/",
+        "muscular": "head/faces/global/angry2/",
+        "female": "head/faces/global/angry2/",
+        "teen": "head/faces/global/angry2/",
+        "pregnant": "head/faces/global/angry2/"
+      }
+    }
   },
   "head-face-face_sad": {
     "name": "Sad",
@@ -5067,7 +6045,17 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 101,
+        "male": "head/faces/${head}/sad/",
+        "muscular": "head/faces/${head}/sad/",
+        "female": "head/faces/${head}/sad/",
+        "teen": "head/faces/${head}/sad/",
+        "pregnant": "head/faces/${head}/sad/"
+      }
+    }
   },
   "head-face-face_sad2": {
     "name": "Sad Alt",
@@ -5133,7 +6121,17 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 101,
+        "male": "head/faces/global/sad2/",
+        "muscular": "head/faces/global/sad2/",
+        "female": "head/faces/global/sad2/",
+        "teen": "head/faces/global/sad2/",
+        "pregnant": "head/faces/global/sad2/"
+      }
+    }
   },
   "head-face-face_happy": {
     "name": "Happy",
@@ -5198,7 +6196,17 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 101,
+        "male": "head/faces/${head}/happy/",
+        "muscular": "head/faces/${head}/happy/",
+        "female": "head/faces/${head}/happy/",
+        "teen": "head/faces/${head}/happy/",
+        "pregnant": "head/faces/${head}/happy/"
+      }
+    }
   },
   "head-face-face_happy2": {
     "name": "Happy Alt",
@@ -5263,7 +6271,17 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 106,
+        "male": "head/faces/global/happy2/",
+        "muscular": "head/faces/global/happy2/",
+        "female": "head/faces/global/happy2/",
+        "teen": "head/faces/global/happy2/",
+        "pregnant": "head/faces/global/happy2/"
+      }
+    }
   },
   "head-face-face_blush": {
     "name": "Blush",
@@ -5328,7 +6346,17 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 101,
+        "male": "head/faces/${head}/blush/",
+        "muscular": "head/faces/${head}/blush/",
+        "female": "head/faces/${head}/blush/",
+        "teen": "head/faces/${head}/blush/",
+        "pregnant": "head/faces/${head}/blush/"
+      }
+    }
   },
   "head-face-face_shame": {
     "name": "Shame",
@@ -5393,7 +6421,17 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 101,
+        "male": "head/faces/${head}/shame/",
+        "muscular": "head/faces/${head}/shame/",
+        "female": "head/faces/${head}/shame/",
+        "teen": "head/faces/${head}/shame/",
+        "pregnant": "head/faces/${head}/shame/"
+      }
+    }
   },
   "head-face-face_tears": {
     "name": "Tears",
@@ -5437,7 +6475,17 @@ window.itemMetadata = {
     ],
     "variants": [
       "blue"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 107,
+        "male": "head/faces/global/tears/",
+        "muscular": "head/faces/global/tears/",
+        "female": "head/faces/global/tears/",
+        "teen": "head/faces/global/tears/",
+        "pregnant": "head/faces/global/tears/"
+      }
+    }
   },
   "head-eye_color": {
     "name": "Eye Color",
@@ -5484,7 +6532,18 @@ window.itemMetadata = {
       "purple",
       "red",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 105,
+        "male": "eyes/human/${head}/${expression}/",
+        "muscular": "eyes/human/${head}/${expression}/",
+        "female": "eyes/human/${head}/${expression}/",
+        "teen": "eyes/human/${head}/${expression}/",
+        "pregnant": "eyes/human/${head}/${expression}/",
+        "child": "eyes/human/child/${expression}/"
+      }
+    }
   },
   "head-other eyes-eyes_child": {
     "name": "Child Eyes",
@@ -5516,7 +6575,13 @@ window.itemMetadata = {
       "purple",
       "red",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 105,
+        "child": "eyes/human/child/"
+      }
+    }
   },
   "head-other eyes-eyes_cyclops": {
     "name": "Cyclops Eyes",
@@ -5565,7 +6630,18 @@ window.itemMetadata = {
       "purple",
       "red",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 105,
+        "male": "eyes/cyclops/adult/",
+        "muscular": "eyes/cyclops/adult/",
+        "female": "eyes/cyclops/adult/",
+        "teen": "eyes/cyclops/adult/",
+        "pregnant": "eyes/cyclops/adult/",
+        "child": "eyes/cyclops/child/"
+      }
+    }
   },
   "head-ears-head_ears_big": {
     "name": "Big ears",
@@ -5627,7 +6703,18 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 105,
+        "male": "head/ears/big/adult/",
+        "muscular": "head/ears/big/adult/",
+        "female": "head/ears/big/adult/",
+        "teen": "head/ears/big/adult/",
+        "pregnant": "head/ears/big/adult/",
+        "child": "head/ears/big/child/"
+      }
+    }
   },
   "head-ears-head_ears_elven": {
     "name": "Elven ears",
@@ -5689,7 +6776,18 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 126,
+        "male": "head/ears/elven/adult/",
+        "muscular": "head/ears/elven/adult/",
+        "female": "head/ears/elven/adult/",
+        "teen": "head/ears/elven/adult/",
+        "pregnant": "head/ears/elven/adult/",
+        "child": "head/ears/elven/child/"
+      }
+    }
   },
   "head-ears-head_ears_long": {
     "name": "Long ears",
@@ -5751,7 +6849,18 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 126,
+        "male": "head/ears/long/adult/",
+        "muscular": "head/ears/long/adult/",
+        "female": "head/ears/long/adult/",
+        "teen": "head/ears/long/adult/",
+        "pregnant": "head/ears/long/adult/",
+        "child": "head/ears/long/child/"
+      }
+    }
   },
   "head-ears-head_ears_medium": {
     "name": "Medium Elven Ears",
@@ -5813,7 +6922,18 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 126,
+        "male": "head/ears/medium/adult/",
+        "muscular": "head/ears/medium/adult/",
+        "female": "head/ears/medium/adult/",
+        "teen": "head/ears/medium/adult/",
+        "pregnant": "head/ears/medium/adult/",
+        "child": "head/ears/medium/child/"
+      }
+    }
   },
   "head-ears-head_ears_hang": {
     "name": "Hanging Elven Ears",
@@ -5875,7 +6995,18 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 126,
+        "male": "head/ears/hang/adult/",
+        "muscular": "head/ears/hang/adult/",
+        "female": "head/ears/hang/adult/",
+        "teen": "head/ears/hang/adult/",
+        "pregnant": "head/ears/hang/adult/",
+        "child": "head/ears/hang/child/"
+      }
+    }
   },
   "head-ears-head_ears_down": {
     "name": "Downward Elven Ears",
@@ -5937,7 +7068,18 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 126,
+        "male": "head/ears/down/adult/",
+        "muscular": "head/ears/down/adult/",
+        "female": "head/ears/down/adult/",
+        "teen": "head/ears/down/adult/",
+        "pregnant": "head/ears/down/adult/",
+        "child": "head/ears/down/child/"
+      }
+    }
   },
   "head-ears-head_ears_dragon": {
     "name": "Dragon Ears",
@@ -5999,7 +7141,18 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 126,
+        "male": "head/ears/dragon/adult/",
+        "muscular": "head/ears/dragon/adult/",
+        "female": "head/ears/dragon/adult/",
+        "teen": "head/ears/dragon/adult/",
+        "pregnant": "head/ears/dragon/adult/",
+        "child": "head/ears/dragon/child/"
+      }
+    }
   },
   "head-furry ears-top ears-head_ears_cat": {
     "name": "Cat Ears",
@@ -6073,7 +7226,27 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "male": "head/ears/cat/adult_front/",
+        "muscular": "head/ears/cat/adult_front/",
+        "female": "head/ears/cat/adult_front/",
+        "teen": "head/ears/cat/adult_front/",
+        "pregnant": "head/ears/cat/adult_front/",
+        "child": "head/ears/cat/child_front/"
+      },
+      "layer_2": {
+        "zPos": 8,
+        "male": "head/ears/cat/adult_back/",
+        "muscular": "head/ears/cat/adult_back/",
+        "female": "head/ears/cat/adult_back/",
+        "pregnant": "head/ears/cat/adult_back/",
+        "teen": "head/ears/cat/adult_back/",
+        "child": "head/ears/cat/child_back/"
+      }
+    }
   },
   "head-furry ears-top ears-head_ears_cat_skin": {
     "name": "Cat Ears Skintone",
@@ -6136,7 +7309,27 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 131,
+        "male": "head/ears/cat/skin/adult_front/",
+        "muscular": "head/ears/cat/skin/adult_front/",
+        "female": "head/ears/cat/skin/adult_front/",
+        "teen": "head/ears/cat/skin/adult_front/",
+        "pregnant": "head/ears/cat/skin/adult_front/",
+        "child": "head/ears/cat/skin/child_front/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "head/ears/cat/skin/adult_back/",
+        "muscular": "head/ears/cat/skin/adult_back/",
+        "female": "head/ears/cat/skin/adult_back/",
+        "pregnant": "head/ears/cat/skin/adult_back/",
+        "teen": "head/ears/cat/skin/adult_back/",
+        "child": "head/ears/cat/skin/child_back/"
+      }
+    }
   },
   "head-furry ears-top ears-head_ears_wolf": {
     "name": "Wolf Ears",
@@ -6210,7 +7403,27 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "male": "head/ears/wolf/adult_front/",
+        "muscular": "head/ears/wolf/adult_front/",
+        "female": "head/ears/wolf/adult_front/",
+        "teen": "head/ears/wolf/adult_front/",
+        "pregnant": "head/ears/wolf/adult_front/",
+        "child": "head/ears/wolf/child_front/"
+      },
+      "layer_2": {
+        "zPos": 8,
+        "male": "head/ears/wolf/adult_back/",
+        "muscular": "head/ears/wolf/adult_back/",
+        "female": "head/ears/wolf/adult_back/",
+        "pregnant": "head/ears/wolf/adult_back/",
+        "teen": "head/ears/wolf/adult_back/",
+        "child": "head/ears/wolf/child_back/"
+      }
+    }
   },
   "head-furry ears-top ears-head_ears_wolf_skin": {
     "name": "Wolf Ears Skintone",
@@ -6273,7 +7486,27 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 131,
+        "male": "head/ears/wolf/skin/adult_front/",
+        "muscular": "head/ears/wolf/skin/adult_front/",
+        "female": "head/ears/wolf/skin/adult_front/",
+        "teen": "head/ears/wolf/skin/adult_front/",
+        "pregnant": "head/ears/wolf/skin/adult_front/",
+        "child": "head/ears/wolf/skin/child_front/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "head/ears/wolf/skin/adult_back/",
+        "muscular": "head/ears/wolf/skin/adult_back/",
+        "female": "head/ears/wolf/skin/adult_back/",
+        "pregnant": "head/ears/wolf/skin/adult_back/",
+        "teen": "head/ears/wolf/skin/adult_back/",
+        "child": "head/ears/wolf/skin/child_back/"
+      }
+    }
   },
   "head-furry ears-side ears-head_ears_lykon": {
     "name": "Side Wolf Ears",
@@ -6347,7 +7580,18 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 126,
+        "male": "head/ears/lykon/adult/",
+        "muscular": "head/ears/lykon/adult/",
+        "female": "head/ears/lykon/adult/",
+        "teen": "head/ears/lykon/adult/",
+        "pregnant": "head/ears/lykon/adult/",
+        "child": "head/ears/lykon/child/"
+      }
+    }
   },
   "head-furry ears-side ears-head_ears_lykon_skin": {
     "name": "Side Wolf Ears Skintone",
@@ -6410,7 +7654,18 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 127,
+        "male": "head/ears/lykon/skin/adult/",
+        "muscular": "head/ears/lykon/skin/adult/",
+        "female": "head/ears/lykon/skin/adult/",
+        "teen": "head/ears/lykon/skin/adult/",
+        "pregnant": "head/ears/lykon/skin/adult/",
+        "child": "head/ears/lykon/skin/child/"
+      }
+    }
   },
   "head-furry ears-side ears-head_ears_zabos": {
     "name": "Side Cat Ears",
@@ -6484,7 +7739,18 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 126,
+        "male": "head/ears/zabos/adult/",
+        "muscular": "head/ears/zabos/adult/",
+        "female": "head/ears/zabos/adult/",
+        "teen": "head/ears/zabos/adult/",
+        "pregnant": "head/ears/zabos/adult/",
+        "child": "head/ears/zabos/child/"
+      }
+    }
   },
   "head-furry ears-side ears-head_ears_zabos_skin": {
     "name": "Side Cat Ears Skintone",
@@ -6547,7 +7813,18 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 127,
+        "male": "head/ears/zabos/skin/adult/",
+        "muscular": "head/ears/zabos/skin/adult/",
+        "female": "head/ears/zabos/skin/adult/",
+        "teen": "head/ears/zabos/skin/adult/",
+        "pregnant": "head/ears/zabos/skin/adult/",
+        "child": "head/ears/zabos/skin/child/"
+      }
+    }
   },
   "head-furry ears-side ears-head_ears_avyon": {
     "name": "Feather Ears",
@@ -6621,7 +7898,18 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 126,
+        "male": "head/ears/avyon/adult/",
+        "muscular": "head/ears/avyon/adult/",
+        "female": "head/ears/avyon/adult/",
+        "teen": "head/ears/avyon/adult/",
+        "pregnant": "head/ears/avyon/adult/",
+        "child": "head/ears/avyon/child/"
+      }
+    }
   },
   "head-furry ears-side ears-head_ears_avyon_skin": {
     "name": "Feather Ears Skintone",
@@ -6684,7 +7972,18 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 127,
+        "male": "head/ears/avyon/skin/adult/",
+        "muscular": "head/ears/avyon/skin/adult/",
+        "female": "head/ears/avyon/skin/adult/",
+        "teen": "head/ears/avyon/skin/adult/",
+        "pregnant": "head/ears/avyon/skin/adult/",
+        "child": "head/ears/avyon/skin/child/"
+      }
+    }
   },
   "head-nose-head_nose_big": {
     "name": "Big nose",
@@ -6745,7 +8044,17 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 105,
+        "male": "head/nose/big/adult/",
+        "muscular": "head/nose/big/adult/",
+        "female": "head/nose/big/adult/",
+        "teen": "head/nose/big/adult/",
+        "pregnant": "head/nose/big/adult/"
+      }
+    }
   },
   "head-nose-head_nose_button": {
     "name": "Button nose",
@@ -6806,7 +8115,17 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 105,
+        "male": "head/nose/button/adult/",
+        "muscular": "head/nose/button/adult/",
+        "female": "head/nose/button/adult/",
+        "teen": "head/nose/button/adult/",
+        "pregnant": "head/nose/button/adult/"
+      }
+    }
   },
   "head-nose-head_nose_straight": {
     "name": "Straight nose",
@@ -6867,7 +8186,17 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 105,
+        "male": "head/nose/straight/adult/",
+        "muscular": "head/nose/straight/adult/",
+        "female": "head/nose/straight/adult/",
+        "teen": "head/nose/straight/adult/",
+        "pregnant": "head/nose/straight/adult/"
+      }
+    }
   },
   "head-nose-head_nose_elderly": {
     "name": "Elderly nose",
@@ -6928,7 +8257,17 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 105,
+        "male": "head/nose/elderly/adult/",
+        "muscular": "head/nose/elderly/adult/",
+        "female": "head/nose/elderly/adult/",
+        "teen": "head/nose/elderly/adult/",
+        "pregnant": "head/nose/elderly/adult/"
+      }
+    }
   },
   "head-nose-head_nose_large": {
     "name": "Large nose",
@@ -6989,7 +8328,17 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 105,
+        "male": "head/nose/large/adult/",
+        "muscular": "head/nose/large/adult/",
+        "female": "head/nose/large/adult/",
+        "teen": "head/nose/large/adult/",
+        "pregnant": "head/nose/large/adult/"
+      }
+    }
   },
   "head-eyebrows-eyebrows_thick": {
     "name": "Thick Eyebrows",
@@ -7055,7 +8404,18 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 106,
+        "male": "eyes/eyebrows/thick/adult/",
+        "muscular": "eyes/eyebrows/thick/adult/",
+        "female": "eyes/eyebrows/thick/adult/",
+        "teen": "eyes/eyebrows/thick/adult/",
+        "pregnant": "eyes/eyebrows/thick/adult/",
+        "child": "eyes/eyebrows/thick/child/"
+      }
+    }
   },
   "head-eyebrows-eyebrows_thin": {
     "name": "Thin Eyebrows",
@@ -7121,7 +8481,18 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 106,
+        "male": "eyes/eyebrows/thin/adult/",
+        "muscular": "eyes/eyebrows/thin/adult/",
+        "female": "eyes/eyebrows/thin/adult/",
+        "teen": "eyes/eyebrows/thin/adult/",
+        "pregnant": "eyes/eyebrows/thin/adult/",
+        "child": "eyes/eyebrows/thin/child/"
+      }
+    }
   },
   "head-head_wrinkles": {
     "name": "Wrinkles",
@@ -7181,7 +8552,17 @@ window.itemMetadata = {
       "fur_grey",
       "fur_white",
       "zombie"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 102,
+        "male": "head/wrinkles/",
+        "muscular": "head/wrinkles/",
+        "female": "head/wrinkles/",
+        "teen": "head/wrinkles/",
+        "pregnant": "head/wrinkles/"
+      }
+    }
   },
   "head-beards-beards_beard": {
     "name": "Basic Beard",
@@ -7246,7 +8627,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 110,
+        "male": "beards/beard/basic/",
+        "female": "beards/beard/basic/",
+        "muscular": "beards/beard/basic/",
+        "teen": "beards/beard/basic/",
+        "pregnant": "beards/beard/basic/"
+      }
+    }
   },
   "head-beards-beards_winter": {
     "name": "Winter Beard",
@@ -7311,7 +8702,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 110,
+        "male": "beards/beard/winter/male/",
+        "female": "beards/beard/winter/female/",
+        "muscular": "beards/beard/winter/male/",
+        "teen": "beards/beard/winter/female/",
+        "pregnant": "beards/beard/winter/female/"
+      }
+    }
   },
   "head-beards-beards_5oclock_shadow": {
     "name": "5 O'clock Shadow",
@@ -7376,7 +8777,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 111,
+        "male": "beards/beard/5oclock_shadow/",
+        "female": "beards/beard/5oclock_shadow/",
+        "muscular": "beards/beard/5oclock_shadow/",
+        "teen": "beards/beard/5oclock_shadow/",
+        "pregnant": "beards/beard/5oclock_shadow/"
+      }
+    }
   },
   "head-beards-beards_trimmed": {
     "name": "Trimmed Beard",
@@ -7441,7 +8852,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 110,
+        "male": "beards/beard/trimmed/",
+        "female": "beards/beard/trimmed/",
+        "muscular": "beards/beard/trimmed/",
+        "teen": "beards/beard/trimmed/",
+        "pregnant": "beards/beard/trimmed/"
+      }
+    }
   },
   "head-beards-beards_medium": {
     "name": "Medium Beard",
@@ -7506,7 +8927,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 110,
+        "male": "beards/beard/medium/",
+        "female": "beards/beard/medium/",
+        "muscular": "beards/beard/medium/",
+        "teen": "beards/beard/medium/",
+        "pregnant": "beards/beard/medium/"
+      }
+    }
   },
   "head-mustaches-beards_bigstache": {
     "name": "Big Mustache",
@@ -7571,7 +9002,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 111,
+        "male": "beards/mustache/bigstache/",
+        "female": "beards/mustache/bigstache/",
+        "muscular": "beards/mustache/bigstache/",
+        "teen": "beards/mustache/bigstache/",
+        "pregnant": "beards/mustache/bigstache/"
+      }
+    }
   },
   "head-mustaches-beards_mustache": {
     "name": "Mustache",
@@ -7636,7 +9077,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 111,
+        "male": "beards/mustache/basic/",
+        "female": "beards/mustache/basic/",
+        "muscular": "beards/mustache/basic/",
+        "teen": "beards/mustache/basic/",
+        "pregnant": "beards/mustache/basic/"
+      }
+    }
   },
   "head-mustaches-beards_french": {
     "name": "French Mustache",
@@ -7701,7 +9152,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 111,
+        "male": "beards/mustache/french/",
+        "female": "beards/mustache/french/",
+        "muscular": "beards/mustache/french/",
+        "teen": "beards/mustache/french/",
+        "pregnant": "beards/mustache/french/"
+      }
+    }
   },
   "head-mustaches-beards_walrus": {
     "name": "Walrus Mustache",
@@ -7766,7 +9227,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 111,
+        "male": "beards/mustache/walrus/",
+        "female": "beards/mustache/walrus/",
+        "muscular": "beards/mustache/walrus/",
+        "teen": "beards/mustache/walrus/",
+        "pregnant": "beards/mustache/walrus/"
+      }
+    }
   },
   "head-mustaches-beards_chevron": {
     "name": "Chevron Mustache",
@@ -7831,7 +9302,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 111,
+        "male": "beards/mustache/chevron/",
+        "female": "beards/mustache/chevron/",
+        "muscular": "beards/mustache/chevron/",
+        "teen": "beards/mustache/chevron/",
+        "pregnant": "beards/mustache/chevron/"
+      }
+    }
   },
   "head-mustaches-beards_handlebar": {
     "name": "Handlebar Mustache",
@@ -7896,7 +9377,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 111,
+        "male": "beards/mustache/handlebar/",
+        "female": "beards/mustache/handlebar/",
+        "muscular": "beards/mustache/handlebar/",
+        "teen": "beards/mustache/handlebar/",
+        "pregnant": "beards/mustache/handlebar/"
+      }
+    }
   },
   "head-mustaches-beards_lampshade": {
     "name": "Lampshade Mustache",
@@ -7961,7 +9452,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 111,
+        "male": "beards/mustache/lampshade/",
+        "female": "beards/mustache/lampshade/",
+        "muscular": "beards/mustache/lampshade/",
+        "teen": "beards/mustache/lampshade/",
+        "pregnant": "beards/mustache/lampshade/"
+      }
+    }
   },
   "head-mustaches-beards_horseshoe": {
     "name": "Horseshoe Mustache",
@@ -8026,7 +9527,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 111,
+        "male": "beards/mustache/horseshoe/",
+        "female": "beards/mustache/horseshoe/",
+        "muscular": "beards/mustache/horseshoe/",
+        "teen": "beards/mustache/horseshoe/",
+        "pregnant": "beards/mustache/horseshoe/"
+      }
+    }
   },
   "head-hair-hair extensions-bangs-hairext_braidl": {
     "name": "Left Braid",
@@ -8094,7 +9605,18 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 128,
+        "male": "hair/extensions/bangs/braidl/adult/",
+        "muscular": "hair/extensions/bangs/braidl/adult/",
+        "female": "hair/extensions/bangs/braidl/adult/",
+        "pregnant": "hair/extensions/bangs/braidl/adult/",
+        "teen": "hair/extensions/bangs/braidl/adult/",
+        "child": "hair/extensions/bangs/braidl/child/"
+      }
+    }
   },
   "head-hair-hair extensions-bangs-hairext_braidr": {
     "name": "Right Braid",
@@ -8162,7 +9684,18 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 128,
+        "male": "hair/extensions/bangs/braidr/adult/",
+        "muscular": "hair/extensions/bangs/braidr/adult/",
+        "female": "hair/extensions/bangs/braidr/adult/",
+        "pregnant": "hair/extensions/bangs/braidr/adult/",
+        "teen": "hair/extensions/bangs/braidr/adult/",
+        "child": "hair/extensions/bangs/braidr/child/"
+      }
+    }
   },
   "head-hair-hair extensions-bangs-hairext_xlong_bangl": {
     "name": "Left XLong Bang",
@@ -8230,7 +9763,18 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 128,
+        "male": "hair/extensions/bangs/xlong_bangl/adult/",
+        "muscular": "hair/extensions/bangs/xlong_bangl/adult/",
+        "female": "hair/extensions/bangs/xlong_bangl/adult/",
+        "pregnant": "hair/extensions/bangs/xlong_bangl/adult/",
+        "teen": "hair/extensions/bangs/xlong_bangl/adult/",
+        "child": "hair/extensions/bangs/xlong_bangl/child/"
+      }
+    }
   },
   "head-hair-hair extensions-bangs-hairext_xlong_bangr": {
     "name": "Right XLong Bang",
@@ -8298,7 +9842,18 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 128,
+        "male": "hair/extensions/bangs/xlong_bangr/adult/",
+        "muscular": "hair/extensions/bangs/xlong_bangr/adult/",
+        "female": "hair/extensions/bangs/xlong_bangr/adult/",
+        "pregnant": "hair/extensions/bangs/xlong_bangr/adult/",
+        "teen": "hair/extensions/bangs/xlong_bangr/adult/",
+        "child": "hair/extensions/bangs/xlong_bangr/child/"
+      }
+    }
   },
   "head-hair-hair extensions-bangs-hairext_xlong_braidl": {
     "name": "Left XLong Braid",
@@ -8366,7 +9921,27 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 128,
+        "male": "hair/extensions/bangs/xlong_braidl/adult/fg/",
+        "muscular": "hair/extensions/bangs/xlong_braidl/adult/fg/",
+        "female": "hair/extensions/bangs/xlong_braidl/adult/fg/",
+        "pregnant": "hair/extensions/bangs/xlong_braidl/adult/fg/",
+        "teen": "hair/extensions/bangs/xlong_braidl/adult/fg/",
+        "child": "hair/extensions/bangs/xlong_braidl/child/fg/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "hair/extensions/bangs/xlong_braidl/adult/bg/",
+        "muscular": "hair/extensions/bangs/xlong_braidl/adult/bg/",
+        "female": "hair/extensions/bangs/xlong_braidl/adult/bg/",
+        "pregnant": "hair/extensions/bangs/xlong_braidl/adult/bg/",
+        "teen": "hair/extensions/bangs/xlong_braidl/adult/bg/",
+        "child": "hair/extensions/bangs/xlong_braidl/child/bg/"
+      }
+    }
   },
   "head-hair-hair extensions-bangs-hairext_xlong_braidr": {
     "name": "Right XLong Braid",
@@ -8434,7 +10009,27 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 128,
+        "male": "hair/extensions/bangs/xlong_braidr/adult/fg/",
+        "muscular": "hair/extensions/bangs/xlong_braidr/adult/fg/",
+        "female": "hair/extensions/bangs/xlong_braidr/adult/fg/",
+        "pregnant": "hair/extensions/bangs/xlong_braidr/adult/fg/",
+        "teen": "hair/extensions/bangs/xlong_braidr/adult/fg/",
+        "child": "hair/extensions/bangs/xlong_braidr/child/fg/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "hair/extensions/bangs/xlong_braidr/adult/bg/",
+        "muscular": "hair/extensions/bangs/xlong_braidr/adult/bg/",
+        "female": "hair/extensions/bangs/xlong_braidr/adult/bg/",
+        "pregnant": "hair/extensions/bangs/xlong_braidr/adult/bg/",
+        "teen": "hair/extensions/bangs/xlong_braidr/adult/bg/",
+        "child": "hair/extensions/bangs/xlong_braidr/child/bg/"
+      }
+    }
   },
   "head-hair-hair extensions-bangs-hairext_long_straightl": {
     "name": "Left Long Straight",
@@ -8501,7 +10096,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 128,
+        "male": "hair/extensions/bangs/long_straightl/adult/",
+        "muscular": "hair/extensions/bangs/long_straightl/adult/",
+        "female": "hair/extensions/bangs/long_straightl/adult/",
+        "pregnant": "hair/extensions/bangs/long_straightl/adult/",
+        "teen": "hair/extensions/bangs/long_straightl/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-bangs-hairext_long_straightr": {
     "name": "Right Long Straight",
@@ -8568,7 +10173,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 128,
+        "male": "hair/extensions/bangs/long_straightr/adult/",
+        "muscular": "hair/extensions/bangs/long_straightr/adult/",
+        "female": "hair/extensions/bangs/long_straightr/adult/",
+        "pregnant": "hair/extensions/bangs/long_straightr/adult/",
+        "teen": "hair/extensions/bangs/long_straightr/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-bangs-hairext_long_wavyl": {
     "name": "Left Long Wavy",
@@ -8635,7 +10250,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 128,
+        "male": "hair/extensions/bangs/long_wavyl/adult/",
+        "muscular": "hair/extensions/bangs/long_wavyl/adult/",
+        "female": "hair/extensions/bangs/long_wavyl/adult/",
+        "pregnant": "hair/extensions/bangs/long_wavyl/adult/",
+        "teen": "hair/extensions/bangs/long_wavyl/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-bangs-hairext_long_wavyr": {
     "name": "Right Long Wavy",
@@ -8702,7 +10327,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 128,
+        "male": "hair/extensions/bangs/long_wavyr/adult/",
+        "muscular": "hair/extensions/bangs/long_wavyr/adult/",
+        "female": "hair/extensions/bangs/long_wavyr/adult/",
+        "pregnant": "hair/extensions/bangs/long_wavyr/adult/",
+        "teen": "hair/extensions/bangs/long_wavyr/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-bangs-hairext_xlong_wavyl": {
     "name": "Left XLong Wavy",
@@ -8769,7 +10404,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 128,
+        "male": "hair/extensions/bangs/xlong_wavyl/adult/",
+        "muscular": "hair/extensions/bangs/xlong_wavyl/adult/",
+        "female": "hair/extensions/bangs/xlong_wavyl/adult/",
+        "pregnant": "hair/extensions/bangs/xlong_wavyl/adult/",
+        "teen": "hair/extensions/bangs/xlong_wavyl/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-bangs-hairext_xlong_wavyr": {
     "name": "Right XLong Wavy",
@@ -8836,7 +10481,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 128,
+        "male": "hair/extensions/bangs/xlong_wavyr/adult/",
+        "muscular": "hair/extensions/bangs/xlong_wavyr/adult/",
+        "female": "hair/extensions/bangs/xlong_wavyr/adult/",
+        "pregnant": "hair/extensions/bangs/xlong_wavyr/adult/",
+        "teen": "hair/extensions/bangs/xlong_wavyr/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-bangs-hairext_xlong_curlyl": {
     "name": "Left XLong Curly",
@@ -8903,7 +10558,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 128,
+        "male": "hair/extensions/bangs/xlong_curlyl/adult/",
+        "muscular": "hair/extensions/bangs/xlong_curlyl/adult/",
+        "female": "hair/extensions/bangs/xlong_curlyl/adult/",
+        "pregnant": "hair/extensions/bangs/xlong_curlyl/adult/",
+        "teen": "hair/extensions/bangs/xlong_curlyl/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-bangs-hairext_xlong_curlyr": {
     "name": "Right XLong Curly",
@@ -8970,7 +10635,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 128,
+        "male": "hair/extensions/bangs/xlong_curlyr/adult/",
+        "muscular": "hair/extensions/bangs/xlong_curlyr/adult/",
+        "female": "hair/extensions/bangs/xlong_curlyr/adult/",
+        "pregnant": "hair/extensions/bangs/xlong_curlyr/adult/",
+        "teen": "hair/extensions/bangs/xlong_curlyr/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-ponytails-hairext_topknot_short": {
     "name": "Short Topknot",
@@ -9038,7 +10713,18 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 128,
+        "male": "hair/extensions/ponytails/topknot_short/adult/",
+        "muscular": "hair/extensions/ponytails/topknot_short/adult/",
+        "female": "hair/extensions/ponytails/topknot_short/adult/",
+        "pregnant": "hair/extensions/ponytails/topknot_short/adult/",
+        "teen": "hair/extensions/ponytails/topknot_short/adult/",
+        "child": "hair/extensions/ponytails/topknot_short/child/"
+      }
+    }
   },
   "head-hair-hair extensions-ponytails-hairext_topknot_long": {
     "name": "Long Topknot",
@@ -9106,7 +10792,27 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 128,
+        "male": "hair/extensions/ponytails/topknot_long/adult/fg/",
+        "muscular": "hair/extensions/ponytails/topknot_long/adult/fg/",
+        "female": "hair/extensions/ponytails/topknot_long/adult/fg/",
+        "pregnant": "hair/extensions/ponytails/topknot_long/adult/fg/",
+        "teen": "hair/extensions/ponytails/topknot_long/adult/fg/",
+        "child": "hair/extensions/ponytails/topknot_long/child/fg/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "hair/extensions/ponytails/topknot_long/adult/bg/",
+        "muscular": "hair/extensions/ponytails/topknot_long/adult/bg/",
+        "female": "hair/extensions/ponytails/topknot_long/adult/bg/",
+        "pregnant": "hair/extensions/ponytails/topknot_long/adult/bg/",
+        "teen": "hair/extensions/ponytails/topknot_long/adult/bg/",
+        "child": "hair/extensions/ponytails/topknot_long/child/bg/"
+      }
+    }
   },
   "head-hair-hair extensions-ponytails-hairext_topknot_relm": {
     "name": "Relm Topknot",
@@ -9173,7 +10879,25 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 128,
+        "male": "hair/extensions/ponytails/relm_ponytail/adult/fg/",
+        "muscular": "hair/extensions/ponytails/relm_ponytail/adult/fg/",
+        "female": "hair/extensions/ponytails/relm_ponytail/adult/fg/",
+        "pregnant": "hair/extensions/ponytails/relm_ponytail/adult/fg/",
+        "teen": "hair/extensions/ponytails/relm_ponytail/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "hair/extensions/ponytails/relm_ponytail/adult/bg/",
+        "muscular": "hair/extensions/ponytails/relm_ponytail/adult/bg/",
+        "female": "hair/extensions/ponytails/relm_ponytail/adult/bg/",
+        "pregnant": "hair/extensions/ponytails/relm_ponytail/adult/bg/",
+        "teen": "hair/extensions/ponytails/relm_ponytail/adult/bg/"
+      }
+    }
   },
   "head-hair-hair extensions-knot / ties-hairext_high_bun": {
     "name": "High Bun",
@@ -9240,7 +10964,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 128,
+        "male": "hair/extensions/ties/high_bun/adult/",
+        "muscular": "hair/extensions/ties/high_bun/adult/",
+        "female": "hair/extensions/ties/high_bun/adult/",
+        "pregnant": "hair/extensions/ties/high_bun/adult/",
+        "teen": "hair/extensions/ties/high_bun/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-hair_afro": {
     "name": "Afro",
@@ -9307,7 +11041,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/afro/adult/",
+        "muscular": "hair/afro/adult/",
+        "female": "hair/afro/adult/",
+        "pregnant": "hair/afro/adult/",
+        "teen": "hair/afro/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-hair_natural": {
     "name": "Natural",
@@ -9374,7 +11118,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/natural/adult/",
+        "muscular": "hair/natural/adult/",
+        "female": "hair/natural/adult/",
+        "pregnant": "hair/natural/adult/",
+        "teen": "hair/natural/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-hair_dreadlocks_short": {
     "name": "Dreadlocks short",
@@ -9441,7 +11195,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/dreadlocks_short/adult/",
+        "muscular": "hair/dreadlocks_short/adult/",
+        "female": "hair/dreadlocks_short/adult/",
+        "pregnant": "hair/dreadlocks_short/adult/",
+        "teen": "hair/dreadlocks_short/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-hair_twists_fade": {
     "name": "Twists fade",
@@ -9508,7 +11272,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/twists_fade/adult/",
+        "muscular": "hair/twists_fade/adult/",
+        "female": "hair/twists_fade/adult/",
+        "pregnant": "hair/twists_fade/adult/",
+        "teen": "hair/twists_fade/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-hair_twists_straight": {
     "name": "Twists straight",
@@ -9575,7 +11349,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/twists_straight/adult/",
+        "muscular": "hair/twists_straight/adult/",
+        "female": "hair/twists_straight/adult/",
+        "pregnant": "hair/twists_straight/adult/",
+        "teen": "hair/twists_straight/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-hair_dreadlocks_long": {
     "name": "Dreadlocks long",
@@ -9642,7 +11426,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/dreadlocks_long/adult/",
+        "muscular": "hair/dreadlocks_long/adult/",
+        "female": "hair/dreadlocks_long/adult/",
+        "pregnant": "hair/dreadlocks_long/adult/",
+        "teen": "hair/dreadlocks_long/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-hair_flat_top_straight": {
     "name": "Flat top straight",
@@ -9709,7 +11503,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/flat_top_straight/adult/",
+        "muscular": "hair/flat_top_straight/adult/",
+        "female": "hair/flat_top_straight/adult/",
+        "pregnant": "hair/flat_top_straight/adult/",
+        "teen": "hair/flat_top_straight/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-hair_flat_top_fade": {
     "name": "Flat top fade",
@@ -9776,7 +11580,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/flat_top_fade/adult/",
+        "muscular": "hair/flat_top_fade/adult/",
+        "female": "hair/flat_top_fade/adult/",
+        "pregnant": "hair/flat_top_fade/adult/",
+        "teen": "hair/flat_top_fade/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-hair_cornrows": {
     "name": "Cornrows",
@@ -9843,7 +11657,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/cornrows/adult/",
+        "muscular": "hair/cornrows/adult/",
+        "female": "hair/cornrows/adult/",
+        "pregnant": "hair/cornrows/adult/",
+        "teen": "hair/cornrows/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-hair_jewfro": {
     "name": "Jewfro",
@@ -9912,7 +11736,18 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/jewfro/adult/",
+        "muscular": "hair/jewfro/adult/",
+        "female": "hair/jewfro/adult/",
+        "pregnant": "hair/jewfro/adult/",
+        "teen": "hair/jewfro/adult/",
+        "child": "hair/jewfro/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-hair_curly_short": {
     "name": "Curly short",
@@ -9980,7 +11815,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/curly_short/adult/",
+        "muscular": "hair/curly_short/adult/",
+        "female": "hair/curly_short/adult/",
+        "pregnant": "hair/curly_short/adult/",
+        "teen": "hair/curly_short/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-hair_curly_long": {
     "name": "Curly long",
@@ -10048,7 +11893,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/curly_long/adult/",
+        "muscular": "hair/curly_long/adult/",
+        "female": "hair/curly_long/adult/",
+        "pregnant": "hair/curly_long/adult/",
+        "teen": "hair/curly_long/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-hair_curls_large": {
     "name": "Large Curls",
@@ -10116,7 +11971,25 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/curls_large/adult/fg/",
+        "muscular": "hair/curls_large/adult/fg/",
+        "female": "hair/curls_large/adult/fg/",
+        "pregnant": "hair/curls_large/adult/fg/",
+        "teen": "hair/curls_large/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "hair/curls_large/adult/bg/",
+        "muscular": "hair/curls_large/adult/bg/",
+        "female": "hair/curls_large/adult/bg/",
+        "pregnant": "hair/curls_large/adult/bg/",
+        "teen": "hair/curls_large/adult/bg/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-hair_curls_large_xlong": {
     "name": "Large Curls XLong",
@@ -10184,7 +12057,25 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/curls_large_xlong/adult/fg/",
+        "muscular": "hair/curls_large_xlong/adult/fg/",
+        "female": "hair/curls_large_xlong/adult/fg/",
+        "pregnant": "hair/curls_large_xlong/adult/fg/",
+        "teen": "hair/curls_large_xlong/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "hair/curls_large_xlong/adult/bg/",
+        "muscular": "hair/curls_large_xlong/adult/bg/",
+        "female": "hair/curls_large_xlong/adult/bg/",
+        "pregnant": "hair/curls_large_xlong/adult/bg/",
+        "teen": "hair/curls_large_xlong/adult/bg/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-hair_balding": {
     "name": "Balding",
@@ -10253,7 +12144,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/balding/adult/",
+        "muscular": "hair/balding/adult/",
+        "female": "hair/balding/adult/",
+        "pregnant": "hair/balding/adult/",
+        "teen": "hair/balding/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-hair_longhawk": {
     "name": "Longhawk",
@@ -10322,7 +12223,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/longhawk/adult/",
+        "muscular": "hair/longhawk/adult/",
+        "female": "hair/longhawk/adult/",
+        "pregnant": "hair/longhawk/adult/",
+        "teen": "hair/longhawk/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-hair_shorthawk": {
     "name": "Shorthawk",
@@ -10391,7 +12302,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/shorthawk/adult/",
+        "muscular": "hair/shorthawk/adult/",
+        "female": "hair/shorthawk/adult/",
+        "pregnant": "hair/shorthawk/adult/",
+        "teen": "hair/shorthawk/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-hair_high_and_tight": {
     "name": "High and tight",
@@ -10460,7 +12381,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/high_and_tight/adult/",
+        "muscular": "hair/high_and_tight/adult/",
+        "female": "hair/high_and_tight/adult/",
+        "pregnant": "hair/high_and_tight/adult/",
+        "teen": "hair/high_and_tight/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-hair_buzzcut": {
     "name": "Buzzcut",
@@ -10529,7 +12460,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/buzzcut/adult/",
+        "muscular": "hair/buzzcut/adult/",
+        "female": "hair/buzzcut/adult/",
+        "pregnant": "hair/buzzcut/adult/",
+        "teen": "hair/buzzcut/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_plain": {
     "name": "Plain",
@@ -10599,7 +12540,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/plain/adult/",
+        "muscular": "hair/plain/adult/",
+        "female": "hair/plain/adult/",
+        "pregnant": "hair/plain/adult/",
+        "teen": "hair/plain/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_pixie": {
     "name": "Pixie",
@@ -10669,7 +12620,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/pixie/adult/",
+        "muscular": "hair/pixie/adult/",
+        "female": "hair/pixie/adult/",
+        "pregnant": "hair/pixie/adult/",
+        "teen": "hair/pixie/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_page": {
     "name": "Page",
@@ -10739,7 +12700,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/page/adult/",
+        "muscular": "hair/page/adult/",
+        "female": "hair/page/adult/",
+        "pregnant": "hair/page/adult/",
+        "teen": "hair/page/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_page2": {
     "name": "Page2",
@@ -10809,7 +12780,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/page2/adult/",
+        "muscular": "hair/page2/adult/",
+        "female": "hair/page2/adult/",
+        "pregnant": "hair/page2/adult/",
+        "teen": "hair/page2/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_idol": {
     "name": "Idol",
@@ -10879,7 +12860,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/idol/adult/",
+        "muscular": "hair/idol/adult/",
+        "female": "hair/idol/adult/",
+        "pregnant": "hair/idol/adult/",
+        "teen": "hair/idol/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_mop": {
     "name": "Mop",
@@ -10949,7 +12940,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/mop/adult/",
+        "muscular": "hair/mop/adult/",
+        "female": "hair/mop/adult/",
+        "pregnant": "hair/mop/adult/",
+        "teen": "hair/mop/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_parted": {
     "name": "Parted",
@@ -11019,7 +13020,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/parted/adult/",
+        "muscular": "hair/parted/adult/",
+        "female": "hair/parted/adult/",
+        "pregnant": "hair/parted/adult/",
+        "teen": "hair/parted/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_parted2": {
     "name": "Parted 2",
@@ -11089,7 +13100,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/parted2/adult/",
+        "muscular": "hair/parted2/adult/",
+        "female": "hair/parted2/adult/",
+        "pregnant": "hair/parted2/adult/",
+        "teen": "hair/parted2/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_parted3": {
     "name": "Parted 3",
@@ -11159,7 +13180,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/parted3/adult/",
+        "muscular": "hair/parted3/adult/",
+        "female": "hair/parted3/adult/",
+        "pregnant": "hair/parted3/adult/",
+        "teen": "hair/parted3/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_parted_side_bangs": {
     "name": "Side Parted w/Bangs",
@@ -11230,7 +13261,18 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/parted_side_bangs/adult/",
+        "muscular": "hair/parted_side_bangs/adult/",
+        "female": "hair/parted_side_bangs/adult/",
+        "pregnant": "hair/parted_side_bangs/adult",
+        "teen": "hair/parted_side_bangs/adult/",
+        "child": "hair/parted_side_bangs/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_parted_side_bangs2": {
     "name": "Side Parted w/Bangs 2",
@@ -11301,7 +13343,18 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/parted_side_bangs2/adult/",
+        "muscular": "hair/parted_side_bangs2/adult/",
+        "female": "hair/parted_side_bangs2/adult/",
+        "pregnant": "hair/parted_side_bangs2/adult",
+        "teen": "hair/parted_side_bangs2/adult/",
+        "child": "hair/parted_side_bangs2/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_messy1": {
     "name": "Messy1",
@@ -11371,7 +13424,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/messy1/adult/",
+        "muscular": "hair/messy1/adult/",
+        "female": "hair/messy1/adult/",
+        "pregnant": "hair/messy1/adult/",
+        "teen": "hair/messy1/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_messy2": {
     "name": "Messy2",
@@ -11441,7 +13504,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/messy2/adult/",
+        "muscular": "hair/messy2/adult/",
+        "female": "hair/messy2/adult/",
+        "pregnant": "hair/messy2/adult/",
+        "teen": "hair/messy2/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_messy3": {
     "name": "Messy3",
@@ -11511,7 +13584,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/messy3/adult/",
+        "muscular": "hair/messy3/adult/",
+        "female": "hair/messy3/adult/",
+        "pregnant": "hair/messy3/adult/",
+        "teen": "hair/messy3/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_bedhead": {
     "name": "Bedhead",
@@ -11581,7 +13664,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/bedhead/adult/",
+        "muscular": "hair/bedhead/adult/",
+        "female": "hair/bedhead/adult/",
+        "pregnant": "hair/bedhead/adult/",
+        "teen": "hair/bedhead/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_unkempt": {
     "name": "Unkempt",
@@ -11651,7 +13744,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/unkempt/adult/",
+        "muscular": "hair/unkempt/adult/",
+        "female": "hair/unkempt/adult/",
+        "pregnant": "hair/unkempt/adult/",
+        "teen": "hair/unkempt/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_bangs": {
     "name": "Bangs",
@@ -11721,7 +13824,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/bangs/adult/",
+        "muscular": "hair/bangs/adult/",
+        "female": "hair/bangs/adult/",
+        "pregnant": "hair/bangs/adult/",
+        "teen": "hair/bangs/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_bangsshort": {
     "name": "Bangsshort",
@@ -11791,7 +13904,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/bangsshort/adult/",
+        "muscular": "hair/bangsshort/adult/",
+        "female": "hair/bangsshort/adult/",
+        "pregnant": "hair/bangsshort/adult/",
+        "teen": "hair/bangsshort/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_swoop": {
     "name": "Swoop",
@@ -11861,7 +13984,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/swoop/adult/",
+        "muscular": "hair/swoop/adult/",
+        "female": "hair/swoop/adult/",
+        "pregnant": "hair/swoop/adult/",
+        "teen": "hair/swoop/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_swoop_side": {
     "name": "Side Swoop",
@@ -11932,7 +14065,18 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/swoop_side/adult/",
+        "muscular": "hair/swoop_side/adult/",
+        "female": "hair/swoop_side/adult/",
+        "pregnant": "hair/swoop_side/adult/",
+        "teen": "hair/swoop_side/adult/",
+        "child": "hair/swoop_side/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_curtains": {
     "name": "Curtains",
@@ -12002,7 +14146,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/curtains/adult/",
+        "muscular": "hair/curtains/adult/",
+        "female": "hair/curtains/adult/",
+        "pregnant": "hair/curtains/adult/",
+        "teen": "hair/curtains/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_single": {
     "name": "Single",
@@ -12072,7 +14226,25 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/single/adult/fg/",
+        "muscular": "hair/single/adult/fg/",
+        "female": "hair/single/adult/fg/",
+        "pregnant": "hair/single/adult/fg/",
+        "teen": "hair/single/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "hair/single/adult/bg/",
+        "muscular": "hair/single/adult/bg/",
+        "female": "hair/single/adult/bg/",
+        "pregnant": "hair/single/adult/bg/",
+        "teen": "hair/single/adult/bg/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_cowlick": {
     "name": "Cowlick",
@@ -12142,7 +14314,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/cowlick/adult/",
+        "muscular": "hair/cowlick/adult/",
+        "female": "hair/cowlick/adult/",
+        "pregnant": "hair/cowlick/adult/",
+        "teen": "hair/cowlick/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_cowlick_tall": {
     "name": "Cowlick tall",
@@ -12212,7 +14394,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/cowlick_tall/adult/",
+        "muscular": "hair/cowlick_tall/adult/",
+        "female": "hair/cowlick_tall/adult/",
+        "pregnant": "hair/cowlick_tall/adult/",
+        "teen": "hair/cowlick_tall/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked_porcupine": {
     "name": "Spiked porcupine",
@@ -12283,7 +14475,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/spiked_porcupine/adult/",
+        "muscular": "hair/spiked_porcupine/adult/",
+        "female": "hair/spiked_porcupine/adult/",
+        "pregnant": "hair/spiked_porcupine/adult/",
+        "teen": "hair/spiked_porcupine/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked_liberty2": {
     "name": "Spiked liberty2",
@@ -12354,7 +14556,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/spiked_liberty2/adult/",
+        "muscular": "hair/spiked_liberty2/adult/",
+        "female": "hair/spiked_liberty2/adult/",
+        "pregnant": "hair/spiked_liberty2/adult/",
+        "teen": "hair/spiked_liberty2/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked_liberty": {
     "name": "Spiked liberty",
@@ -12425,7 +14637,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/spiked_liberty/adult/",
+        "muscular": "hair/spiked_liberty/adult/",
+        "female": "hair/spiked_liberty/adult/",
+        "pregnant": "hair/spiked_liberty/adult/",
+        "teen": "hair/spiked_liberty/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked_beehive": {
     "name": "Spiked beehive",
@@ -12496,7 +14718,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/spiked_beehive/adult/",
+        "muscular": "hair/spiked_beehive/adult/",
+        "female": "hair/spiked_beehive/adult/",
+        "pregnant": "hair/spiked_beehive/adult/",
+        "teen": "hair/spiked_beehive/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked": {
     "name": "Spiked",
@@ -12567,7 +14799,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/spiked/adult/",
+        "muscular": "hair/spiked/adult/",
+        "female": "hair/spiked/adult/",
+        "pregnant": "hair/spiked/adult/",
+        "teen": "hair/spiked/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked2": {
     "name": "Spiked2",
@@ -12638,7 +14880,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/spiked2/adult/",
+        "muscular": "hair/spiked2/adult/",
+        "female": "hair/spiked2/adult/",
+        "pregnant": "hair/spiked2/adult/",
+        "teen": "hair/spiked2/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_halfmessy": {
     "name": "Halfmessy",
@@ -12709,7 +14961,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/halfmessy/adult/",
+        "muscular": "hair/halfmessy/adult/",
+        "female": "hair/halfmessy/adult/",
+        "pregnant": "hair/halfmessy/adult/",
+        "teen": "hair/halfmessy/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-hair_bunches": {
     "name": "Bunches",
@@ -12781,7 +15043,25 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/bunches/adult/fg/",
+        "muscular": "hair/bunches/adult/fg/",
+        "female": "hair/bunches/adult/fg/",
+        "pregnant": "hair/bunches/adult/fg/",
+        "teen": "hair/bunches/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "hair/bunches/adult/bg/",
+        "muscular": "hair/bunches/adult/bg/",
+        "female": "hair/bunches/adult/bg/",
+        "pregnant": "hair/bunches/adult/bg/",
+        "teen": "hair/bunches/adult/bg/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-hair_pigtails": {
     "name": "Pigtails",
@@ -12853,7 +15133,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/pigtails/adult/",
+        "muscular": "hair/pigtails/adult/",
+        "female": "hair/pigtails/adult/",
+        "pregnant": "hair/pigtails/adult/",
+        "teen": "hair/pigtails/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-hair_pigtails_bangs": {
     "name": "Pigtails bangs",
@@ -12925,7 +15215,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/pigtails_bangs/adult/",
+        "muscular": "hair/pigtails_bangs/adult/",
+        "female": "hair/pigtails_bangs/adult/",
+        "pregnant": "hair/pigtails_bangs/adult/",
+        "teen": "hair/pigtails_bangs/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-hair_bob": {
     "name": "Bob",
@@ -12998,7 +15298,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/bob/adult/",
+        "muscular": "hair/bob/adult/",
+        "female": "hair/bob/adult/",
+        "pregnant": "hair/bob/adult/",
+        "teen": "hair/bob/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-hair_lob": {
     "name": "Lob",
@@ -13071,7 +15381,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/lob/adult/",
+        "muscular": "hair/lob/adult/",
+        "female": "hair/lob/adult/",
+        "pregnant": "hair/lob/adult/",
+        "teen": "hair/lob/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-hair_bob_side_part": {
     "name": "Bob side part",
@@ -13144,7 +15464,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/bob_side_part/adult/",
+        "muscular": "hair/bob_side_part/adult/",
+        "female": "hair/bob_side_part/adult/",
+        "pregnant": "hair/bob_side_part/adult/",
+        "teen": "hair/bob_side_part/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-hair_relm_short": {
     "name": "Relm Short",
@@ -13218,7 +15548,18 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/relm_short/adult/",
+        "muscular": "hair/relm_short/adult/",
+        "female": "hair/relm_short/adult/",
+        "pregnant": "hair/relm_short/adult/",
+        "teen": "hair/relm_short/adult/",
+        "child": "hair/relm_short/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_half_up": {
     "name": "Half up",
@@ -13292,7 +15633,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/half_up/adult/",
+        "muscular": "hair/half_up/adult/",
+        "female": "hair/half_up/adult/",
+        "pregnant": "hair/half_up/adult/",
+        "teen": "hair/half_up/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_bangs_bun": {
     "name": "Bangs bun",
@@ -13366,7 +15717,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/bangs_bun/adult/",
+        "muscular": "hair/bangs_bun/adult/",
+        "female": "hair/bangs_bun/adult/",
+        "pregnant": "hair/bangs_bun/adult/",
+        "teen": "hair/bangs_bun/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_topknot_short": {
     "name": "Short Topknot",
@@ -13441,7 +15802,27 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/parted_side_bangs/adult/",
+        "muscular": "hair/parted_side_bangs/adult/",
+        "female": "hair/parted_side_bangs/adult/",
+        "pregnant": "hair/parted_side_bangs/adult/",
+        "teen": "hair/parted_side_bangs/adult/",
+        "child": "hair/parted_side_bangs/child/"
+      },
+      "layer_2": {
+        "zPos": 145,
+        "male": "hair/extensions/ponytails/topknot_short/adult/",
+        "muscular": "hair/extensions/ponytails/topknot_short/adult/",
+        "female": "hair/extensions/ponytails/topknot_short/adult/",
+        "pregnant": "hair/extensions/ponytails/topknot_short/adult/",
+        "teen": "hair/extensions/ponytails/topknot_short/adult/",
+        "child": "hair/extensions/ponytails/topknot_short/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_topknot_short2": {
     "name": "Short Topknot 2",
@@ -13516,7 +15897,27 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/parted_side_bangs2/adult/",
+        "muscular": "hair/parted_side_bangs2/adult/",
+        "female": "hair/parted_side_bangs2/adult/",
+        "pregnant": "hair/parted_side_bangs2/adult/",
+        "teen": "hair/parted_side_bangs2/adult/",
+        "child": "hair/parted_side_bangs2/child/"
+      },
+      "layer_2": {
+        "zPos": 145,
+        "male": "hair/extensions/ponytails/topknot_short/adult/",
+        "muscular": "hair/extensions/ponytails/topknot_short/adult/",
+        "female": "hair/extensions/ponytails/topknot_short/adult/",
+        "pregnant": "hair/extensions/ponytails/topknot_short/adult/",
+        "teen": "hair/extensions/ponytails/topknot_short/adult/",
+        "child": "hair/extensions/ponytails/topknot_short/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_topknot_long": {
     "name": "Long Topknot",
@@ -13591,7 +15992,36 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/parted_side_bangs/adult/",
+        "muscular": "hair/parted_side_bangs/adult/",
+        "female": "hair/parted_side_bangs/adult/",
+        "pregnant": "hair/parted_side_bangs/adult/",
+        "teen": "hair/parted_side_bangs/adult/",
+        "child": "hair/parted_side_bangs/child/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "hair/extensions/ponytails/topknot_long/adult/bg/",
+        "muscular": "hair/extensions/ponytails/topknot_long/adult/bg/",
+        "female": "hair/extensions/ponytails/topknot_long/adult/bg/",
+        "pregnant": "hair/extensions/ponytails/topknot_long/adult/bg/",
+        "teen": "hair/extensions/ponytails/topknot_long/adult/bg/",
+        "child": "hair/extensions/ponytails/topknot_long/child/bg/"
+      },
+      "layer_3": {
+        "zPos": 145,
+        "male": "hair/extensions/ponytails/topknot_long/adult/fg/",
+        "muscular": "hair/extensions/ponytails/topknot_long/adult/fg/",
+        "female": "hair/extensions/ponytails/topknot_long/adult/fg/",
+        "pregnant": "hair/extensions/ponytails/topknot_long/adult/fg/",
+        "teen": "hair/extensions/ponytails/topknot_long/adult/fg/",
+        "child": "hair/extensions/ponytails/topknot_long/child/fg/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_topknot_long2": {
     "name": "Long Topknot 2",
@@ -13666,7 +16096,36 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/parted_side_bangs2/adult/",
+        "muscular": "hair/parted_side_bangs2/adult/",
+        "female": "hair/parted_side_bangs2/adult/",
+        "pregnant": "hair/parted_side_bangs2/adult/",
+        "teen": "hair/parted_side_bangs2/adult/",
+        "child": "hair/parted_side_bangs2/child/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "hair/extensions/ponytails/topknot_long/adult/bg/",
+        "muscular": "hair/extensions/ponytails/topknot_long/adult/bg/",
+        "female": "hair/extensions/ponytails/topknot_long/adult/bg/",
+        "pregnant": "hair/extensions/ponytails/topknot_long/adult/bg/",
+        "teen": "hair/extensions/ponytails/topknot_long/adult/bg/",
+        "child": "hair/extensions/ponytails/topknot_long/child/bg/"
+      },
+      "layer_3": {
+        "zPos": 145,
+        "male": "hair/extensions/ponytails/topknot_long/adult/fg/",
+        "muscular": "hair/extensions/ponytails/topknot_long/adult/fg/",
+        "female": "hair/extensions/ponytails/topknot_long/adult/fg/",
+        "pregnant": "hair/extensions/ponytails/topknot_long/adult/fg/",
+        "teen": "hair/extensions/ponytails/topknot_long/adult/fg/",
+        "child": "hair/extensions/ponytails/topknot_long/child/fg/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_ponytail": {
     "name": "Ponytail",
@@ -13740,7 +16199,25 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/ponytail/adult/fg/",
+        "muscular": "hair/ponytail/adult/fg/",
+        "female": "hair/ponytail/adult/fg/",
+        "pregnant": "hair/ponytail/adult/fg/",
+        "teen": "hair/ponytail/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "hair/ponytail/adult/bg/",
+        "muscular": "hair/ponytail/adult/bg/",
+        "female": "hair/ponytail/adult/bg/",
+        "pregnant": "hair/ponytail/adult/bg/",
+        "teen": "hair/ponytail/adult/bg/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_ponytail2": {
     "name": "Ponytail2",
@@ -13814,7 +16291,25 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/ponytail2/adult/fg/",
+        "muscular": "hair/ponytail2/adult/fg/",
+        "female": "hair/ponytail2/adult/fg/",
+        "pregnant": "hair/ponytail2/adult/fg/",
+        "teen": "hair/ponytail2/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "hair/ponytail2/adult/bg/",
+        "muscular": "hair/ponytail2/adult/bg/",
+        "female": "hair/ponytail2/adult/bg/",
+        "pregnant": "hair/ponytail2/adult/bg/",
+        "teen": "hair/ponytail2/adult/bg/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_high_ponytail": {
     "name": "High ponytail",
@@ -13888,7 +16383,25 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/high_ponytail/adult/fg/",
+        "muscular": "hair/high_ponytail/adult/fg/",
+        "female": "hair/high_ponytail/adult/fg/",
+        "pregnant": "hair/high_ponytail/adult/fg/",
+        "teen": "hair/high_ponytail/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "hair/high_ponytail/adult/bg/",
+        "muscular": "hair/high_ponytail/adult/bg/",
+        "female": "hair/high_ponytail/adult/bg/",
+        "pregnant": "hair/high_ponytail/adult/bg/",
+        "teen": "hair/high_ponytail/adult/bg/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_braid": {
     "name": "Braid",
@@ -13962,7 +16475,25 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/braid/adult/fg/",
+        "muscular": "hair/braid/adult/fg/",
+        "female": "hair/braid/adult/fg/",
+        "pregnant": "hair/braid/adult/fg/",
+        "teen": "hair/braid/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "hair/braid/adult/bg/",
+        "muscular": "hair/braid/adult/bg/",
+        "female": "hair/braid/adult/bg/",
+        "pregnant": "hair/braid/adult/bg/",
+        "teen": "hair/braid/adult/bg/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_braid2": {
     "name": "Braid2",
@@ -14036,7 +16567,25 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/braid2/adult/fg/",
+        "muscular": "hair/braid2/adult/fg/",
+        "female": "hair/braid2/adult/fg/",
+        "pregnant": "hair/braid2/adult/fg/",
+        "teen": "hair/braid2/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "hair/braid2/adult/bg/",
+        "muscular": "hair/braid2/adult/bg/",
+        "female": "hair/braid2/adult/bg/",
+        "pregnant": "hair/braid2/adult/bg/",
+        "teen": "hair/braid2/adult/bg/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_shoulderl": {
     "name": "Shoulderl",
@@ -14110,7 +16659,25 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/shoulderl/adult/fg/",
+        "muscular": "hair/shoulderl/adult/fg/",
+        "female": "hair/shoulderl/adult/fg/",
+        "pregnant": "hair/shoulderl/adult/fg/",
+        "teen": "hair/shoulderl/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "hair/shoulderl/adult/bg/",
+        "muscular": "hair/shoulderl/adult/bg/",
+        "female": "hair/shoulderl/adult/bg/",
+        "pregnant": "hair/shoulderl/adult/bg/",
+        "teen": "hair/shoulderl/adult/bg/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_shoulderr": {
     "name": "Shoulderr",
@@ -14184,7 +16751,25 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/shoulderr/adult/fg/",
+        "muscular": "hair/shoulderr/adult/fg/",
+        "female": "hair/shoulderr/adult/fg/",
+        "pregnant": "hair/shoulderr/adult/fg/",
+        "teen": "hair/shoulderr/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "hair/shoulderr/adult/bg/",
+        "muscular": "hair/shoulderr/adult/bg/",
+        "female": "hair/shoulderr/adult/bg/",
+        "pregnant": "hair/shoulderr/adult/bg/",
+        "teen": "hair/shoulderr/adult/bg/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_long_tied": {
     "name": "Long tied",
@@ -14258,7 +16843,25 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/long_tied/adult/fg/",
+        "muscular": "hair/long_tied/adult/fg/",
+        "female": "hair/long_tied/adult/fg/",
+        "pregnant": "hair/long_tied/adult/fg/",
+        "teen": "hair/long_tied/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "hair/long_tied/adult/bg/",
+        "muscular": "hair/long_tied/adult/bg/",
+        "female": "hair/long_tied/adult/bg/",
+        "pregnant": "hair/long_tied/adult/bg/",
+        "teen": "hair/long_tied/adult/bg/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_relm_ponytail": {
     "name": "Relm w/Ponytail",
@@ -14333,7 +16936,36 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/relm_ponytail/adult/mg/",
+        "muscular": "hair/relm_ponytail/adult/mg/",
+        "female": "hair/relm_ponytail/adult/mg/",
+        "pregnant": "hair/relm_ponytail/adult/mg/",
+        "teen": "hair/relm_ponytail/adult/mg/",
+        "child": "hair/relm_ponytail/child/mg/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "hair/relm_ponytail/adult/bg/",
+        "muscular": "hair/relm_ponytail/adult/bg/",
+        "female": "hair/relm_ponytail/adult/bg/",
+        "pregnant": "hair/relm_ponytail/adult/bg/",
+        "teen": "hair/relm_ponytail/adult/bg/",
+        "child": "hair/relm_ponytail/child/bg/"
+      },
+      "layer_3": {
+        "zPos": 145,
+        "male": "hair/relm_ponytail/adult/fg/",
+        "muscular": "hair/relm_ponytail/adult/fg/",
+        "female": "hair/relm_ponytail/adult/fg/",
+        "pregnant": "hair/relm_ponytail/adult/fg/",
+        "teen": "hair/relm_ponytail/adult/fg/",
+        "child": "hair/relm_ponytail/child/fg/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_loose": {
     "name": "Loose",
@@ -14408,7 +17040,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/loose/adult/",
+        "muscular": "hair/loose/adult/",
+        "female": "hair/loose/adult/",
+        "pregnant": "hair/loose/adult/",
+        "teen": "hair/loose/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_bangslong": {
     "name": "Bangslong",
@@ -14483,7 +17125,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/bangslong/adult/",
+        "muscular": "hair/bangslong/adult/",
+        "female": "hair/bangslong/adult/",
+        "pregnant": "hair/bangslong/adult/",
+        "teen": "hair/bangslong/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_bangslong2": {
     "name": "Bangslong2",
@@ -14558,7 +17210,25 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/bangslong2/adult/fg/",
+        "muscular": "hair/bangslong2/adult/fg/",
+        "female": "hair/bangslong2/adult/fg/",
+        "pregnant": "hair/bangslong2/adult/fg/",
+        "teen": "hair/bangslong2/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "hair/bangslong2/adult/bg/",
+        "muscular": "hair/bangslong2/adult/bg/",
+        "female": "hair/bangslong2/adult/bg/",
+        "pregnant": "hair/bangslong2/adult/bg/",
+        "teen": "hair/bangslong2/adult/bg/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_long": {
     "name": "Long",
@@ -14633,7 +17303,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/long/adult/",
+        "muscular": "hair/long/adult/",
+        "female": "hair/long/adult/",
+        "pregnant": "hair/long/adult/",
+        "teen": "hair/long/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_long_messy": {
     "name": "Long messy",
@@ -14708,7 +17388,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/long_messy/adult/",
+        "muscular": "hair/long_messy/adult/",
+        "female": "hair/long_messy/adult/",
+        "pregnant": "hair/long_messy/adult/",
+        "teen": "hair/long_messy/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_long_messy2": {
     "name": "Long messy2",
@@ -14783,7 +17473,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/long_messy2/adult/",
+        "muscular": "hair/long_messy2/adult/",
+        "female": "hair/long_messy2/adult/",
+        "pregnant": "hair/long_messy2/adult/",
+        "teen": "hair/long_messy2/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_curtains_long": {
     "name": "Curtains long",
@@ -14858,7 +17558,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/curtains_long/adult/",
+        "muscular": "hair/curtains_long/adult/",
+        "female": "hair/curtains_long/adult/",
+        "pregnant": "hair/curtains_long/adult/",
+        "teen": "hair/curtains_long/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_wavy": {
     "name": "Wavy",
@@ -14933,7 +17643,25 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/wavy/adult/fg/",
+        "muscular": "hair/wavy/adult/fg/",
+        "female": "hair/wavy/adult/fg/",
+        "pregnant": "hair/wavy/adult/fg/",
+        "teen": "hair/wavy/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "hair/wavy/adult/bg/",
+        "muscular": "hair/wavy/adult/bg/",
+        "female": "hair/wavy/adult/bg/",
+        "pregnant": "hair/wavy/adult/bg/",
+        "teen": "hair/wavy/adult/bg/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_wavy_child": {
     "name": "Child Wavy",
@@ -14994,7 +17722,13 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "child": "hair/wavy/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_long_center_part": {
     "name": "Long center part",
@@ -15069,7 +17803,25 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/long_center_part/adult/fg/",
+        "muscular": "hair/long_center_part/adult/fg/",
+        "female": "hair/long_center_part/adult/fg/",
+        "pregnant": "hair/long_center_part/adult/fg/",
+        "teen": "hair/long_center_part/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "hair/long_center_part/adult/bg/",
+        "muscular": "hair/long_center_part/adult/bg/",
+        "female": "hair/long_center_part/adult/bg/",
+        "pregnant": "hair/long_center_part/adult/bg/",
+        "teen": "hair/long_center_part/adult/bg/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_long_straight": {
     "name": "Long straight",
@@ -15144,7 +17896,17 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/long_straight/adult/",
+        "muscular": "hair/long_straight/adult/",
+        "female": "hair/long_straight/adult/",
+        "pregnant": "hair/long_straight/adult/",
+        "teen": "hair/long_straight/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_princess": {
     "name": "Princess",
@@ -15220,7 +17982,25 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/princess/adult/fg/",
+        "muscular": "hair/princess/adult/fg/",
+        "female": "hair/princess/adult/fg/",
+        "pregnant": "hair/princess/adult/fg/",
+        "teen": "hair/princess/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "hair/princess/adult/bg/",
+        "muscular": "hair/princess/adult/bg/",
+        "female": "hair/princess/adult/bg/",
+        "pregnant": "hair/princess/adult/bg/",
+        "teen": "hair/princess/adult/bg/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_sara": {
     "name": "Sara",
@@ -15296,7 +18076,25 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/sara/adult/fg/",
+        "muscular": "hair/sara/adult/fg/",
+        "female": "hair/sara/adult/fg/",
+        "pregnant": "hair/sara/adult/fg/",
+        "teen": "hair/sara/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "hair/sara/adult/bg/",
+        "muscular": "hair/sara/adult/bg/",
+        "female": "hair/sara/adult/bg/",
+        "pregnant": "hair/sara/adult/bg/",
+        "teen": "hair/sara/adult/bg/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_long_band": {
     "name": "Long band",
@@ -15372,7 +18170,25 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/long_band/adult/fg/",
+        "muscular": "hair/long_band/adult/fg/",
+        "female": "hair/long_band/adult/fg/",
+        "pregnant": "hair/long_band/adult/fg/",
+        "teen": "hair/long_band/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "hair/long_band/adult/bg/",
+        "muscular": "hair/long_band/adult/bg/",
+        "female": "hair/long_band/adult/bg/",
+        "pregnant": "hair/long_band/adult/bg/",
+        "teen": "hair/long_band/adult/bg/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_xlong": {
     "name": "Xlong",
@@ -15448,7 +18264,25 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/xlong/adult/fg/",
+        "muscular": "hair/xlong/adult/fg/",
+        "female": "hair/xlong/adult/fg/",
+        "pregnant": "hair/xlong/adult/fg/",
+        "teen": "hair/xlong/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "hair/xlong/adult/bg/",
+        "muscular": "hair/xlong/adult/bg/",
+        "female": "hair/xlong/adult/bg/",
+        "pregnant": "hair/xlong/adult/bg/",
+        "teen": "hair/xlong/adult/bg/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_xlong_wavy": {
     "name": "XLong Wavy",
@@ -15524,7 +18358,25 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/xlong_wavy/adult/fg/",
+        "muscular": "hair/xlong_wavy/adult/fg/",
+        "female": "hair/xlong_wavy/adult/fg/",
+        "pregnant": "hair/xlong_wavy/adult/fg/",
+        "teen": "hair/xlong_wavy/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "hair/xlong_wavy/adult/bg/",
+        "muscular": "hair/xlong_wavy/adult/bg/",
+        "female": "hair/xlong_wavy/adult/bg/",
+        "pregnant": "hair/xlong_wavy/adult/bg/",
+        "teen": "hair/xlong_wavy/adult/bg/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_relm_xlong": {
     "name": "Relm XLong",
@@ -15600,7 +18452,25 @@ window.itemMetadata = {
       "purple",
       "pink",
       "rose"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hair/relm_xlong/adult/fg/",
+        "muscular": "hair/relm_xlong/adult/fg/",
+        "female": "hair/relm_xlong/adult/fg/",
+        "pregnant": "hair/relm_xlong/adult/fg/",
+        "teen": "hair/relm_xlong/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "hair/relm_xlong/adult/bg/",
+        "muscular": "hair/relm_xlong/adult/bg/",
+        "female": "hair/relm_xlong/adult/bg/",
+        "pregnant": "hair/relm_xlong/adult/bg/",
+        "teen": "hair/relm_xlong/adult/bg/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-appendages-head_horns_backwards": {
     "name": "Backwards Horns",
@@ -15708,7 +18578,27 @@ window.itemMetadata = {
       "metallic_bronze",
       "metallic_silver",
       "metallic_gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 126,
+        "male": "head/horns/backwards/adult/fg/",
+        "muscular": "head/horns/backwards/adult/fg/",
+        "female": "head/horns/backwards/adult/fg/",
+        "pregnant": "head/horns/backwards/adult/fg/",
+        "teen": "head/horns/backwards/adult/fg/",
+        "child": "head/horns/backwards/child/fg/"
+      },
+      "layer_2": {
+        "zPos": 7,
+        "male": "head/horns/backwards/adult/bg/",
+        "muscular": "head/horns/backwards/adult/bg/",
+        "female": "head/horns/backwards/adult/bg/",
+        "pregnant": "head/horns/backwards/adult/bg/",
+        "teen": "head/horns/backwards/adult/bg/",
+        "child": "head/horns/backwards/child/bg/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-appendages-head_horns_curled": {
     "name": "Curled Horns",
@@ -15816,7 +18706,18 @@ window.itemMetadata = {
       "metallic_bronze",
       "metallic_silver",
       "metallic_gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 126,
+        "male": "head/horns/curled/adult/",
+        "muscular": "head/horns/curled/adult/",
+        "female": "head/horns/curled/adult/",
+        "pregnant": "head/horns/curled/adult/",
+        "teen": "head/horns/curled/adult/",
+        "child": "head/horns/curled/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-appendages-head_fins_fin": {
     "name": "Fin",
@@ -15888,7 +18789,18 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 125,
+        "male": "head/fins/fin/adult/",
+        "muscular": "head/fins/fin/adult/",
+        "female": "head/fins/fin/adult/",
+        "pregnant": "head/fins/fin/adult/",
+        "teen": "head/fins/fin/adult/",
+        "child": "head/fins/fin/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-appendages-head_fins_fin_short": {
     "name": "Short fin",
@@ -15960,7 +18872,18 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 125,
+        "male": "head/fins/fin_short/adult/",
+        "muscular": "head/fins/fin_short/adult/",
+        "female": "head/fins/fin_short/adult/",
+        "pregnant": "head/fins/fin_short/adult/",
+        "teen": "head/fins/fin_short/adult/",
+        "child": "head/fins/fin_short/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-hoods-hat_hood_cloth": {
     "name": "Hood",
@@ -16038,7 +18961,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "male": "hat/cloth/hood/adult/",
+        "female": "hat/cloth/hood/adult/",
+        "muscular": "hat/cloth/hood/adult/",
+        "pregnant": "hat/cloth/hood/adult/",
+        "teen": "hat/cloth/hood/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-hoods-hat_hood_sack_cloth": {
     "name": "Sack Cloth Hood",
@@ -16114,7 +19047,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "male": "hat/cloth/hood_sack/adult/",
+        "female": "hat/cloth/hood_sack/adult/",
+        "muscular": "hat/cloth/hood_sack/adult/",
+        "pregnant": "hat/cloth/hood_sack/adult/",
+        "teen": "hat/cloth/hood_sack/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-hoods-hat_hood_hijab": {
     "name": "Hijab",
@@ -16190,7 +19133,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "male": "hat/cloth/hijab/male/",
+        "female": "hat/cloth/hijab/thin/",
+        "muscular": "hat/cloth/hijab/male/",
+        "pregnant": "hat/cloth/hijab/thin/",
+        "teen": "hat/cloth/hijab/thin/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-hoods-hat_helmet_mail": {
     "name": "Mail",
@@ -16249,7 +19202,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 125,
+        "female": "hat/helmet/mail/adult/",
+        "pregnant": "hat/helmet/mail/adult/",
+        "male": "hat/helmet/mail/adult/",
+        "muscular": "hat/helmet/mail/adult/",
+        "teen": "hat/helmet/mail/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-bandanas-hat_bandana": {
     "name": "Bandana",
@@ -16327,7 +19290,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hat/cloth/bandana/adult/",
+        "female": "hat/cloth/bandana/adult/",
+        "muscular": "hat/cloth/bandana/adult/",
+        "pregnant": "hat/cloth/bandana/adult/",
+        "teen": "hat/cloth/bandana/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-bandanas-hat_bandana2": {
     "name": "Bordered Bandana",
@@ -16402,7 +19375,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hat/cloth/bandana2/adult/",
+        "female": "hat/cloth/bandana2/adult/",
+        "muscular": "hat/cloth/bandana2/adult/",
+        "pregnant": "hat/cloth/bandana2/adult/",
+        "teen": "hat/cloth/bandana2/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-bandanas-hat_bandana_pirate": {
     "name": "Pirate Bandana",
@@ -16477,7 +19460,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 120,
+        "male": "hat/pirate/bandana/adult/",
+        "muscular": "hat/pirate/bandana/adult/",
+        "female": "hat/pirate/bandana/adult/",
+        "pregnant": "hat/pirate/bandana/adult/",
+        "teen": "hat/pirate/bandana/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-bandanas-hat_bandana_pirate_skull": {
     "name": "Skull Bandana Overlay",
@@ -16552,7 +19545,17 @@ window.itemMetadata = {
       "teal",
       "walnut",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 121,
+        "male": "hat/pirate/bandana/skull/adult/",
+        "muscular": "hat/pirate/bandana/skull/adult/",
+        "female": "hat/pirate/bandana/skull/adult/",
+        "pregnant": "hat/pirate/bandana/skull/adult/",
+        "teen": "hat/pirate/bandana/skull/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_kerchief": {
     "name": "Kerchief",
@@ -16627,7 +19630,17 @@ window.itemMetadata = {
       "teal",
       "walnut",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 125,
+        "male": "hat/pirate/kerchief/adult/",
+        "muscular": "hat/pirate/kerchief/adult/",
+        "female": "hat/pirate/kerchief/adult/",
+        "pregnant": "hat/pirate/kerchief/adult/",
+        "teen": "hat/pirate/kerchief/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_tied": {
     "name": "Tied Headband",
@@ -16702,7 +19715,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 125,
+        "male": "hat/headband/tied/adult/",
+        "female": "hat/headband/tied/adult/",
+        "muscular": "hat/headband/tied/adult/",
+        "pregnant": "hat/headband/tied/adult/",
+        "teen": "hat/headband/tied/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_thick": {
     "name": "Thick Headband",
@@ -16778,7 +19801,18 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 125,
+        "female": "hat/headband/thick/adult/",
+        "male": "hat/headband/thick/adult/",
+        "muscular": "hat/headband/thick/adult/",
+        "pregnant": "hat/headband/thick/adult/",
+        "teen": "hat/headband/thick/adult/",
+        "child": "hat/headband/thick/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_thick_rune": {
     "name": "Thick Headband Rune",
@@ -16854,7 +19888,18 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 126,
+        "female": "hat/headband/thick/rune/adult/",
+        "male": "hat/headband/thick/rune/adult/",
+        "muscular": "hat/headband/thick/rune/adult/",
+        "pregnant": "hat/headband/thick/rune/adult/",
+        "teen": "hat/headband/thick/rune/adult/",
+        "child": "hat/headband/thick/rune/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_hairtie": {
     "name": "Hair Tie",
@@ -16930,7 +19975,18 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 125,
+        "female": "hat/headband/hairtie/adult/",
+        "male": "hat/headband/hairtie/adult/",
+        "muscular": "hat/headband/hairtie/adult/",
+        "pregnant": "hat/headband/hairtie/adult/",
+        "teen": "hat/headband/hairtie/adult/",
+        "child": "hat/headband/hairtie/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_hairtie_rune": {
     "name": "Hair Tie Rune",
@@ -17006,7 +20062,18 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 126,
+        "female": "hat/headband/hairtie/rune/adult/",
+        "male": "hat/headband/hairtie/rune/adult/",
+        "muscular": "hat/headband/hairtie/rune/adult/",
+        "pregnant": "hat/headband/hairtie/rune/adult/",
+        "teen": "hat/headband/hairtie/rune/adult/",
+        "child": "hat/headband/hairtie/rune/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_leather": {
     "name": "Leather Cap",
@@ -17082,7 +20149,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "male": "hat/cloth/leather_cap/adult/",
+        "female": "hat/cloth/leather_cap/adult/",
+        "muscular": "hat/cloth/leather_cap/adult/",
+        "pregnant": "hat/cloth/leather_cap/adult/",
+        "teen": "hat/cloth/leather_cap/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_leather_feather": {
     "name": "Leather Cap Feather",
@@ -17157,7 +20234,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 131,
+        "male": "hat/cloth/leather_cap/feather/adult/",
+        "female": "hat/cloth/leather_cap/feather/adult/",
+        "muscular": "hat/cloth/leather_cap/feather/adult/",
+        "pregnant": "hat/cloth/leather_cap/feather/adult/",
+        "teen": "hat/cloth/leather_cap/feather/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_bonnie": {
     "name": "Bonnie",
@@ -17232,7 +20319,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "male": "hat/pirate/bonnie/adult/",
+        "muscular": "hat/pirate/bonnie/adult/",
+        "female": "hat/pirate/bonnie/adult/",
+        "teen": "hat/pirate/bonnie/adult/",
+        "pregnant": "hat/pirate/bonnie/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_bonnie_tilt": {
     "name": "Bonnie Alt Tilt",
@@ -17307,7 +20404,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "male": "hat/pirate/bonnie/tilt/adult/",
+        "muscular": "hat/pirate/bonnie/tilt/adult/",
+        "female": "hat/pirate/bonnie/tilt/adult/",
+        "teen": "hat/pirate/bonnie/tilt/adult/",
+        "pregnant": "hat/pirate/bonnie/tilt/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_bonnie_feather": {
     "name": "Bonnie feather",
@@ -17382,7 +20489,17 @@ window.itemMetadata = {
       "teal",
       "walnut",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 131,
+        "male": "hat/pirate/bonnie/feather/adult/",
+        "muscular": "hat/pirate/bonnie/feather/adult/",
+        "female": "hat/pirate/bonnie/feather/adult/",
+        "teen": "hat/pirate/bonnie/feather/adult/",
+        "pregnant": "hat/pirate/bonnie/feather/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_cavalier": {
     "name": "Cavalier",
@@ -17457,7 +20574,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "male": "hat/pirate/cavalier/adult/",
+        "muscular": "hat/pirate/cavalier/adult/",
+        "female": "hat/pirate/cavalier/adult/",
+        "teen": "hat/pirate/cavalier/adult/",
+        "pregnant": "hat/pirate/cavalier/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_cavalier_feather": {
     "name": "Cavalier feather",
@@ -17532,7 +20659,17 @@ window.itemMetadata = {
       "teal",
       "walnut",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 131,
+        "male": "hat/pirate/cavalier/feather/adult/",
+        "muscular": "hat/pirate/cavalier/feather/adult/",
+        "female": "hat/pirate/cavalier/feather/adult/",
+        "teen": "hat/pirate/cavalier/feather/adult/",
+        "pregnant": "hat/pirate/cavalier/feather/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-basic-hat_tricorne": {
     "name": "Tricorne",
@@ -17611,7 +20748,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "male": "hat/pirate/tricorne/basic/adult/",
+        "muscular": "hat/pirate/tricorne/basic/adult/",
+        "female": "hat/pirate/tricorne/basic/adult/",
+        "teen": "hat/pirate/tricorne/basic/adult/",
+        "pregnant": "hat/pirate/tricorne/basic/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-basic-hat_tricorne_stitched": {
     "name": "Tricorne Stitching",
@@ -17693,7 +20840,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 131,
+        "male": "hat/pirate/tricorne/basic/stitching/adult/",
+        "muscular": "hat/pirate/tricorne/basic/stitching/adult/",
+        "female": "hat/pirate/tricorne/basic/stitching/adult/",
+        "teen": "hat/pirate/tricorne/basic/stitching/adult/",
+        "pregnant": "hat/pirate/tricorne/basic/stitching/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-basic-hat_tricorne_thatch": {
     "name": "Tricorne Thatching",
@@ -17775,7 +20932,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 131,
+        "male": "hat/pirate/tricorne/basic/thatching/adult/",
+        "muscular": "hat/pirate/tricorne/basic/thatching/adult/",
+        "female": "hat/pirate/tricorne/basic/thatching/adult/",
+        "teen": "hat/pirate/tricorne/basic/thatching/adult/",
+        "pregnant": "hat/pirate/tricorne/basic/thatching/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-lieutenant-hat_tricorne_lieutenant": {
     "name": "Tricorne Lieutenant",
@@ -17854,7 +21021,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "male": "hat/pirate/tricorne/lieutenant/adult/",
+        "muscular": "hat/pirate/tricorne/lieutenant/adult/",
+        "female": "hat/pirate/tricorne/lieutenant/adult/",
+        "teen": "hat/pirate/tricorne/lieutenant/adult/",
+        "pregnant": "hat/pirate/tricorne/lieutenant/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-lieutenant-hat_tricorne_lieutenant_trim": {
     "name": "Tricorne Lieutenant Trim",
@@ -17944,7 +21121,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 131,
+        "male": "hat/pirate/tricorne/lieutenant/trim/adult/",
+        "muscular": "hat/pirate/tricorne/lieutenant/trim/adult/",
+        "female": "hat/pirate/tricorne/lieutenant/trim/adult/",
+        "teen": "hat/pirate/tricorne/lieutenant/trim/adult/",
+        "pregnant": "hat/pirate/tricorne/lieutenant/trim/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-captain-hat_tricorne_captain": {
     "name": "Tricorne Captain",
@@ -18023,7 +21210,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "male": "hat/pirate/tricorne/captain/adult/",
+        "muscular": "hat/pirate/tricorne/captain/adult/",
+        "female": "hat/pirate/tricorne/captain/adult/",
+        "teen": "hat/pirate/tricorne/captain/adult/",
+        "pregnant": "hat/pirate/tricorne/captain/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-captain-hat_tricorne_captain_trim": {
     "name": "Tricorne Captain Trim",
@@ -18113,7 +21310,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 131,
+        "male": "hat/pirate/tricorne/captain/trim/adult/",
+        "muscular": "hat/pirate/tricorne/captain/trim/adult/",
+        "female": "hat/pirate/tricorne/captain/trim/adult/",
+        "teen": "hat/pirate/tricorne/captain/trim/adult/",
+        "pregnant": "hat/pirate/tricorne/captain/trim/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-captain-hat_tricorne_captain_skull": {
     "name": "Tricorne Captain Skull",
@@ -18189,7 +21396,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 131,
+        "male": "hat/pirate/tricorne/captain/skull/adult/",
+        "muscular": "hat/pirate/tricorne/captain/skull/adult/",
+        "female": "hat/pirate/tricorne/captain/skull/adult/",
+        "teen": "hat/pirate/tricorne/captain/skull/adult/",
+        "pregnant": "hat/pirate/tricorne/captain/skull/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-basic-hat_bicorne_athwart_basic": {
     "name": "Bicorne Athwart",
@@ -18265,7 +21482,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "male": "hat/pirate/bicorne/athwart/basic/adult/",
+        "muscular": "hat/pirate/bicorne/athwart/basic/adult/",
+        "female": "hat/pirate/bicorne/athwart/basic/adult/",
+        "teen": "hat/pirate/bicorne/athwart/basic/adult/",
+        "pregnant": "hat/pirate/bicorne/athwart/basic/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-basic-hat_bicorne_athwart_basic_skull": {
     "name": "Bicorne Athwart Skull",
@@ -18341,7 +21568,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 131,
+        "male": "hat/pirate/bicorne/athwart/basic/skull/adult/",
+        "muscular": "hat/pirate/bicorne/athwart/basic/skull/adult/",
+        "female": "hat/pirate/bicorne/athwart/basic/skull/adult/",
+        "teen": "hat/pirate/bicorne/athwart/basic/skull/adult/",
+        "pregnant": "hat/pirate/bicorne/athwart/basic/skull/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-captain-hat_bicorne_athwart_captain": {
     "name": "Bicorne Athwart Captain",
@@ -18417,7 +21654,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "male": "hat/pirate/bicorne/athwart/captain/adult/",
+        "muscular": "hat/pirate/bicorne/athwart/captain/adult/",
+        "female": "hat/pirate/bicorne/athwart/captain/adult/",
+        "teen": "hat/pirate/bicorne/athwart/captain/adult/",
+        "pregnant": "hat/pirate/bicorne/athwart/captain/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-captain-hat_bicorne_athwart_captain_skull": {
     "name": "Bicorne Athwart Captain Skull",
@@ -18493,7 +21740,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 131,
+        "male": "hat/pirate/bicorne/athwart/captain/skull/adult/",
+        "muscular": "hat/pirate/bicorne/athwart/captain/skull/adult/",
+        "female": "hat/pirate/bicorne/athwart/captain/skull/adult/",
+        "teen": "hat/pirate/bicorne/athwart/captain/skull/adult/",
+        "pregnant": "hat/pirate/bicorne/athwart/captain/skull/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-admiral-hat_bicorne_athwart_admiral": {
     "name": "Bicorne Athwart Admiral",
@@ -18573,7 +21830,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "male": "hat/pirate/bicorne/athwart/admiral/adult/",
+        "muscular": "hat/pirate/bicorne/athwart/admiral/adult/",
+        "female": "hat/pirate/bicorne/athwart/admiral/adult/",
+        "teen": "hat/pirate/bicorne/athwart/admiral/adult/",
+        "pregnant": "hat/pirate/bicorne/athwart/admiral/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-admiral-hat_bicorne_athwart_admiral_trim": {
     "name": "Bicorne Athwart Admiral Trim",
@@ -18664,7 +21931,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 131,
+        "male": "hat/pirate/bicorne/athwart/admiral/trim/adult/",
+        "muscular": "hat/pirate/bicorne/athwart/admiral/trim/adult/",
+        "female": "hat/pirate/bicorne/athwart/admiral/trim/adult/",
+        "teen": "hat/pirate/bicorne/athwart/admiral/trim/adult/",
+        "pregnant": "hat/pirate/bicorne/athwart/admiral/trim/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-admiral-hat_bicorne_athwart_admiral_cockade": {
     "name": "Bicorne Athwart Admiral Cockade",
@@ -18740,7 +22017,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 132,
+        "male": "hat/pirate/bicorne/athwart/admiral/cockade/adult/",
+        "muscular": "hat/pirate/bicorne/athwart/admiral/cockade/adult/",
+        "female": "hat/pirate/bicorne/athwart/admiral/cockade/adult/",
+        "teen": "hat/pirate/bicorne/athwart/admiral/cockade/adult/",
+        "pregnant": "hat/pirate/bicorne/athwart/admiral/cockade/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-commodore-hat_bicorne_athwart_commodore": {
     "name": "Bicorne Athwart Commodore",
@@ -18816,7 +22103,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "male": "hat/pirate/bicorne/athwart/commodore/adult/",
+        "muscular": "hat/pirate/bicorne/athwart/commodore/adult/",
+        "female": "hat/pirate/bicorne/athwart/commodore/adult/",
+        "teen": "hat/pirate/bicorne/athwart/commodore/adult/",
+        "pregnant": "hat/pirate/bicorne/athwart/commodore/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-commodore-hat_bicorne_athwart_commodore_trim": {
     "name": "Bicorne Athwart Commodore Trim",
@@ -18901,7 +22198,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 131,
+        "male": "hat/pirate/bicorne/athwart/commodore/trim/adult/",
+        "muscular": "hat/pirate/bicorne/athwart/commodore/trim/adult/",
+        "female": "hat/pirate/bicorne/athwart/commodore/trim/adult/",
+        "teen": "hat/pirate/bicorne/athwart/commodore/trim/adult/",
+        "pregnant": "hat/pirate/bicorne/athwart/commodore/trim/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne foreaft-hat_bicorne_foreaft": {
     "name": "Bicorne foreaft",
@@ -18976,7 +22283,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "male": "hat/pirate/bicorne/foreaft/adult/",
+        "muscular": "hat/pirate/bicorne/foreaft/adult/",
+        "female": "hat/pirate/bicorne/foreaft/adult/",
+        "teen": "hat/pirate/bicorne/foreaft/adult/",
+        "pregnant": "hat/pirate/bicorne/foreaft/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne foreaft-hat_bicorne_foreaft_commodore": {
     "name": "Bicorne Foreaft Commodore",
@@ -19055,7 +22372,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "male": "hat/pirate/bicorne/foreaft/commodore/adult/",
+        "muscular": "hat/pirate/bicorne/foreaft/commodore/adult/",
+        "female": "hat/pirate/bicorne/foreaft/commodore/adult/",
+        "teen": "hat/pirate/bicorne/foreaft/commodore/adult/",
+        "pregnant": "hat/pirate/bicorne/foreaft/commodore/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne foreaft-hat_bicorne_foreaft_commodore_trim": {
     "name": "Bicorne Foreaft Commodore Trim",
@@ -19145,7 +22472,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 131,
+        "male": "hat/pirate/bicorne/foreaft/commodore/trim/adult/",
+        "muscular": "hat/pirate/bicorne/foreaft/commodore/trim/adult/",
+        "female": "hat/pirate/bicorne/foreaft/commodore/trim/adult/",
+        "teen": "hat/pirate/bicorne/foreaft/commodore/trim/adult/",
+        "pregnant": "hat/pirate/bicorne/foreaft/commodore/trim/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-hat_magic_large": {
     "name": "Large Hat",
@@ -19197,7 +22534,17 @@ window.itemMetadata = {
     ],
     "variants": [
       "brown"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "male": "hat/magic/large/adult/",
+        "female": "hat/magic/large/adult/",
+        "muscular": "hat/magic/large/adult/",
+        "pregnant": "hat/magic/large/adult/",
+        "teen": "hat/magic/large/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-wizard-hat_magic_wizard": {
     "name": "Wizard Hat Base",
@@ -19282,7 +22629,17 @@ window.itemMetadata = {
       "teal",
       "walnut",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "male": "hat/magic/wizard/base/adult/",
+        "female": "hat/magic/wizard/base/adult/",
+        "muscular": "hat/magic/wizard/base/adult/",
+        "pregnant": "hat/magic/wizard/base/adult/",
+        "teen": "hat/magic/wizard/base/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-wizard-hat_magic_wizard_belt": {
     "name": "Wizard Hat Belt",
@@ -19369,7 +22726,17 @@ window.itemMetadata = {
       "teal",
       "walnut",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 131,
+        "male": "hat/magic/wizard/belt/adult/",
+        "female": "hat/magic/wizard/belt/adult/",
+        "muscular": "hat/magic/wizard/belt/adult/",
+        "pregnant": "hat/magic/wizard/belt/adult/",
+        "teen": "hat/magic/wizard/belt/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-wizard-hat_magic_wizard_buckle": {
     "name": "Wizard Hat Buckle",
@@ -19434,7 +22801,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 132,
+        "male": "hat/magic/wizard/buckle/adult/",
+        "female": "hat/magic/wizard/buckle/adult/",
+        "muscular": "hat/magic/wizard/buckle/adult/",
+        "pregnant": "hat/magic/wizard/buckle/adult/",
+        "teen": "hat/magic/wizard/buckle/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-celestial-hat_magic_celestial": {
     "name": "Celestial Wizard Hat",
@@ -19513,7 +22890,17 @@ window.itemMetadata = {
       "teal",
       "walnut",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "male": "hat/magic/celestial/adult/",
+        "female": "hat/magic/celestial/adult/",
+        "muscular": "hat/magic/celestial/adult/",
+        "pregnant": "hat/magic/celestial/adult/",
+        "teen": "hat/magic/celestial/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-celestial-hat_magic_celestial_trim": {
     "name": "Celestial Wizard Hat Second Color",
@@ -19602,7 +22989,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 131,
+        "male": "hat/magic/celestial/trim/adult/",
+        "female": "hat/magic/celestial/trim/adult/",
+        "muscular": "hat/magic/celestial/trim/adult/",
+        "pregnant": "hat/magic/celestial/trim/adult/",
+        "teen": "hat/magic/celestial/trim/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-celestial-hat_magic_celestial_moon": {
     "name": "Celestial Wizard Moon Hat",
@@ -19681,7 +23078,17 @@ window.itemMetadata = {
       "teal",
       "walnut",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "male": "hat/magic/celestial_moon/adult/",
+        "female": "hat/magic/celestial_moon/adult/",
+        "muscular": "hat/magic/celestial_moon/adult/",
+        "pregnant": "hat/magic/celestial_moon/adult/",
+        "teen": "hat/magic/celestial_moon/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-celestial-hat_magic_celestial_moon_trim": {
     "name": "Celestial Wizard Moon Hat Second Color",
@@ -19770,7 +23177,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 131,
+        "male": "hat/magic/celestial_moon/trim/adult/",
+        "female": "hat/magic/celestial_moon/trim/adult/",
+        "muscular": "hat/magic/celestial_moon/trim/adult/",
+        "pregnant": "hat/magic/celestial_moon/trim/adult/",
+        "teen": "hat/magic/celestial_moon/trim/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-formal-hat_formal_tophat": {
     "name": "Formal Tophat",
@@ -19847,7 +23264,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "male": "hat/formal/tophat/adult/",
+        "female": "hat/formal/tophat/adult/",
+        "muscular": "hat/formal/tophat/adult/",
+        "pregnant": "hat/formal/tophat/adult/",
+        "teen": "hat/formal/tophat/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-formal-hat_formal_bowler": {
     "name": "Formal Bowler Hat",
@@ -19924,7 +23351,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "male": "hat/formal/bowler/adult/",
+        "female": "hat/formal/bowler/adult/",
+        "muscular": "hat/formal/bowler/adult/",
+        "pregnant": "hat/formal/bowler/adult/",
+        "teen": "hat/formal/bowler/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-formal-hat_formal_crown": {
     "name": "Crown",
@@ -20011,7 +23448,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "male": "hat/formal/crown/adult/",
+        "female": "hat/formal/crown/adult/",
+        "muscular": "hat/formal/crown/adult/",
+        "pregnant": "hat/formal/crown/adult/",
+        "teen": "hat/formal/crown/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-formal-hat_formal_tiara": {
     "name": "Tiara",
@@ -20099,7 +23546,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "female": "hat/formal/tiara/adult/",
+        "pregnant": "hat/formal/tiara/adult/",
+        "male": "hat/formal/tiara/adult/",
+        "teen": "hat/formal/tiara/adult/",
+        "muscular": "hat/formal/tiara/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-holiday-hat_holiday_christmas": {
     "name": "Christmas Hat",
@@ -20177,7 +23634,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "female": "hat/holiday/christmas/adult/",
+        "male": "hat/holiday/christmas/adult/",
+        "teen": "hat/holiday/christmas/adult/",
+        "muscular": "hat/holiday/christmas/adult/",
+        "pregnant": "hat/holiday/christmas/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-holiday-hat_holiday_santa": {
     "name": "Santa Trim",
@@ -20257,7 +23724,17 @@ window.itemMetadata = {
       "teal",
       "walnut",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 131,
+        "female": "hat/holiday/santa/adult/",
+        "male": "hat/holiday/santa/adult/",
+        "teen": "hat/holiday/santa/adult/",
+        "pregnant": "hat/holiday/santa/adult/",
+        "muscular": "hat/holiday/santa/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-holiday-hat_holiday_elf": {
     "name": "Elf Trim",
@@ -20337,7 +23814,17 @@ window.itemMetadata = {
       "teal",
       "walnut",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "female": "hat/holiday/elf/adult/",
+        "male": "hat/holiday/elf/adult/",
+        "teen": "hat/holiday/elf/adult/",
+        "muscular": "hat/holiday/elf/adult/",
+        "pregnant": "hat/holiday/elf/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_armet": {
     "name": "Armet",
@@ -20396,7 +23883,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "female": "hat/helmet/armet/adult/",
+        "pregnant": "hat/helmet/armet/adult/",
+        "male": "hat/helmet/armet/adult/",
+        "muscular": "hat/helmet/armet/adult/",
+        "teen": "hat/helmet/armet/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_armet_simple": {
     "name": "Simple Armet",
@@ -20455,7 +23952,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "female": "hat/helmet/armet_simple/adult/",
+        "pregnant": "hat/helmet/armet_simple/adult/",
+        "male": "hat/helmet/armet_simple/adult/",
+        "muscular": "hat/helmet/armet_simple/adult/",
+        "teen": "hat/helmet/armet_simple/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_barbarian": {
     "name": "Barbarian",
@@ -20514,7 +24021,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "female": "hat/helmet/barbarian/adult/",
+        "pregnant": "hat/helmet/barbarian/adult/",
+        "male": "hat/helmet/barbarian/adult/",
+        "muscular": "hat/helmet/barbarian/adult/",
+        "teen": "hat/helmet/barbarian/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_barbarian_nasal": {
     "name": "Barbarian nasal",
@@ -20573,7 +24090,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "female": "hat/helmet/barbarian_nasal/adult/",
+        "pregnant": "hat/helmet/barbarian_nasal/adult/",
+        "male": "hat/helmet/barbarian_nasal/adult/",
+        "muscular": "hat/helmet/barbarian_nasal/adult/",
+        "teen": "hat/helmet/barbarian_nasal/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_barbarian_viking": {
     "name": "Barbarian Viking",
@@ -20632,7 +24159,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "female": "hat/helmet/barbarian_viking/adult/",
+        "pregnant": "hat/helmet/barbarian_viking/adult/",
+        "male": "hat/helmet/barbarian_viking/adult/",
+        "muscular": "hat/helmet/barbarian_viking/adult/",
+        "teen": "hat/helmet/barbarian_viking/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_barbuta": {
     "name": "Barbuta",
@@ -20691,7 +24228,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "female": "hat/helmet/barbuta/female/",
+        "pregnant": "hat/helmet/barbuta/female/",
+        "male": "hat/helmet/barbuta/male/",
+        "muscular": "hat/helmet/barbuta/male/",
+        "teen": "hat/helmet/barbuta/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_barbuta_simple": {
     "name": "Simple barbuta",
@@ -20750,7 +24297,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "female": "hat/helmet/barbuta_simple/adult/",
+        "pregnant": "hat/helmet/barbuta_simple/adult/",
+        "male": "hat/helmet/barbuta_simple/adult/",
+        "muscular": "hat/helmet/barbuta_simple/adult/",
+        "teen": "hat/helmet/barbuta_simple/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_bascinet": {
     "name": "Bascinet",
@@ -20809,7 +24366,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "female": "hat/helmet/bascinet/adult/",
+        "pregnant": "hat/helmet/bascinet/adult/",
+        "male": "hat/helmet/bascinet/adult/",
+        "muscular": "hat/helmet/bascinet/adult/",
+        "teen": "hat/helmet/bascinet/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_bascinet_round": {
     "name": "Round bascinet",
@@ -20868,7 +24435,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "female": "hat/helmet/bascinet_round/adult/",
+        "pregnant": "hat/helmet/bascinet_round/adult/",
+        "male": "hat/helmet/bascinet_round/adult/",
+        "muscular": "hat/helmet/bascinet_round/adult/",
+        "teen": "hat/helmet/bascinet_round/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_close": {
     "name": "Close helm",
@@ -20927,7 +24504,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "female": "hat/helmet/close/female/",
+        "pregnant": "hat/helmet/close/female/",
+        "male": "hat/helmet/close/male/",
+        "muscular": "hat/helmet/close/male/",
+        "teen": "hat/helmet/close/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_flattop": {
     "name": "Flattop",
@@ -20986,7 +24573,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "female": "hat/helmet/flattop/female/",
+        "pregnant": "hat/helmet/flattop/female/",
+        "male": "hat/helmet/flattop/male/",
+        "muscular": "hat/helmet/flattop/male/",
+        "teen": "hat/helmet/flattop/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_greathelm": {
     "name": "Greathelm",
@@ -21045,7 +24642,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "female": "hat/helmet/greathelm/female/",
+        "pregnant": "hat/helmet/greathelm/female/",
+        "male": "hat/helmet/greathelm/male/",
+        "muscular": "hat/helmet/greathelm/male/",
+        "teen": "hat/helmet/greathelm/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_horned": {
     "name": "Horned helmet",
@@ -21104,7 +24711,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "female": "hat/helmet/horned/adult/",
+        "pregnant": "hat/helmet/horned/adult/",
+        "male": "hat/helmet/horned/adult/",
+        "muscular": "hat/helmet/horned/adult/",
+        "teen": "hat/helmet/horned/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_kettle": {
     "name": "Kettle helm",
@@ -21156,7 +24773,17 @@ window.itemMetadata = {
     ],
     "variants": [
       "steel"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 135,
+        "female": "hat/helmet/kettle/adult/",
+        "pregnant": "hat/helmet/kettle/adult/",
+        "male": "hat/helmet/kettle/adult/",
+        "muscular": "hat/helmet/kettle/adult/",
+        "teen": "hat/helmet/kettle/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_legion": {
     "name": "Legion",
@@ -21215,7 +24842,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "female": "hat/helmet/legion/adult/",
+        "pregnant": "hat/helmet/legion/adult/",
+        "male": "hat/helmet/legion/adult/",
+        "muscular": "hat/helmet/legion/adult/",
+        "teen": "hat/helmet/legion/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_maximus": {
     "name": "Maximus",
@@ -21274,7 +24911,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "female": "hat/helmet/maximus/adult/",
+        "pregnant": "hat/helmet/maximus/adult/",
+        "male": "hat/helmet/maximus/adult/",
+        "muscular": "hat/helmet/maximus/adult/",
+        "teen": "hat/helmet/maximus/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_morion": {
     "name": "Morion",
@@ -21333,7 +24980,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 135,
+        "female": "hat/helmet/morion/adult/",
+        "pregnant": "hat/helmet/morion/adult/",
+        "male": "hat/helmet/morion/adult/",
+        "muscular": "hat/helmet/morion/adult/",
+        "teen": "hat/helmet/morion/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_nasal": {
     "name": "Nasal helm",
@@ -21392,7 +25049,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "female": "hat/helmet/nasal/adult/",
+        "pregnant": "hat/helmet/nasal/adult/",
+        "male": "hat/helmet/nasal/adult/",
+        "muscular": "hat/helmet/nasal/adult/",
+        "teen": "hat/helmet/nasal/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_norman": {
     "name": "Norman helm",
@@ -21451,7 +25118,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 135,
+        "female": "hat/helmet/norman/adult/",
+        "pregnant": "hat/helmet/norman/adult/",
+        "male": "hat/helmet/norman/adult/",
+        "muscular": "hat/helmet/norman/adult/",
+        "teen": "hat/helmet/norman/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_pointed": {
     "name": "Pointed helm",
@@ -21510,7 +25187,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 135,
+        "female": "hat/helmet/pointed/adult/",
+        "pregnant": "hat/helmet/pointed/adult/",
+        "male": "hat/helmet/pointed/adult/",
+        "muscular": "hat/helmet/pointed/adult/",
+        "teen": "hat/helmet/pointed/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_spangenhelm": {
     "name": "Spangenhelm",
@@ -21569,7 +25256,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "female": "hat/helmet/spangenhelm/adult/",
+        "pregnant": "hat/helmet/spangenhelm/adult/",
+        "male": "hat/helmet/spangenhelm/adult/",
+        "muscular": "hat/helmet/spangenhelm/adult/",
+        "teen": "hat/helmet/spangenhelm/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_spangenhelm_viking": {
     "name": "Viking spangenhelm",
@@ -21628,7 +25325,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "female": "hat/helmet/spangenhelm_viking/adult/",
+        "pregnant": "hat/helmet/spangenhelm_viking/adult/",
+        "male": "hat/helmet/spangenhelm_viking/adult/",
+        "muscular": "hat/helmet/spangenhelm_viking/adult/",
+        "teen": "hat/helmet/spangenhelm_viking/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_sugarloaf": {
     "name": "Sugarloaf greathelm",
@@ -21687,7 +25394,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "female": "hat/helmet/sugarloaf/female/",
+        "pregnant": "hat/helmet/sugarloaf/female/",
+        "male": "hat/helmet/sugarloaf/male/",
+        "muscular": "hat/helmet/sugarloaf/male/",
+        "teen": "hat/helmet/sugarloaf/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_sugarloaf_simple": {
     "name": "Simple sugarloaf helm",
@@ -21746,7 +25463,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "female": "hat/helmet/sugarloaf_simple/female/",
+        "pregnant": "hat/helmet/sugarloaf_simple/female/",
+        "male": "hat/helmet/sugarloaf_simple/male/",
+        "muscular": "hat/helmet/sugarloaf_simple/male/",
+        "teen": "hat/helmet/sugarloaf_simple/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_xeon": {
     "name": "Xeon helmet",
@@ -21805,7 +25532,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "female": "hat/helmet/xeon/adult/",
+        "pregnant": "hat/helmet/xeon/adult/",
+        "male": "hat/helmet/xeon/adult/",
+        "muscular": "hat/helmet/xeon/adult/",
+        "teen": "hat/helmet/xeon/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_grated": {
     "name": "Grated visor",
@@ -21864,7 +25601,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 132,
+        "female": "hat/visor/grated/adult/",
+        "pregnant": "hat/visor/grated/adult/",
+        "male": "hat/visor/grated/adult/",
+        "muscular": "hat/visor/grated/adult/",
+        "teen": "hat/visor/grated/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_grated_narrow": {
     "name": "Narrow grated visor",
@@ -21923,7 +25670,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 132,
+        "female": "hat/visor/grated_narrow/adult/",
+        "pregnant": "hat/visor/grated_narrow/adult/",
+        "male": "hat/visor/grated_narrow/adult/",
+        "muscular": "hat/visor/grated_narrow/adult/",
+        "teen": "hat/visor/grated_narrow/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_horned": {
     "name": "Horned visor",
@@ -21982,7 +25739,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 132,
+        "female": "hat/visor/horned/adult/",
+        "pregnant": "hat/visor/horned/adult/",
+        "male": "hat/visor/horned/adult/",
+        "muscular": "hat/visor/horned/adult/",
+        "teen": "hat/visor/horned/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_pigface": {
     "name": "Pigface visor",
@@ -22041,7 +25808,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 132,
+        "female": "hat/visor/pigface/adult/",
+        "pregnant": "hat/visor/pigface/adult/",
+        "male": "hat/visor/pigface/adult/",
+        "muscular": "hat/visor/pigface/adult/",
+        "teen": "hat/visor/pigface/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_pigface_raised": {
     "name": "Pigface visor raised",
@@ -22100,7 +25877,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 132,
+        "female": "hat/visor/pigface_raised/adult/",
+        "pregnant": "hat/visor/pigface_raised/adult/",
+        "male": "hat/visor/pigface_raised/adult/",
+        "muscular": "hat/visor/pigface_raised/adult/",
+        "teen": "hat/visor/pigface_raised/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_round": {
     "name": "Round visor",
@@ -22159,7 +25946,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 132,
+        "female": "hat/visor/round/adult/",
+        "pregnant": "hat/visor/round/adult/",
+        "male": "hat/visor/round/adult/",
+        "muscular": "hat/visor/round/adult/",
+        "teen": "hat/visor/round/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_round_raised": {
     "name": "Round visor raised",
@@ -22218,7 +26015,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 132,
+        "female": "hat/visor/round_raised/adult/",
+        "pregnant": "hat/visor/round_raised/adult/",
+        "male": "hat/visor/round_raised/adult/",
+        "muscular": "hat/visor/round_raised/adult/",
+        "teen": "hat/visor/round_raised/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_slit": {
     "name": "Slit visor",
@@ -22277,7 +26084,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 132,
+        "female": "hat/visor/slit/adult/",
+        "pregnant": "hat/visor/slit/adult/",
+        "male": "hat/visor/slit/adult/",
+        "muscular": "hat/visor/slit/adult/",
+        "teen": "hat/visor/slit/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_slit_narrow": {
     "name": "Narrow slit visor",
@@ -22336,7 +26153,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 132,
+        "female": "hat/visor/slit/adult/",
+        "pregnant": "hat/visor/slit/adult/",
+        "male": "hat/visor/slit/adult/",
+        "muscular": "hat/visor/slit/adult/",
+        "teen": "hat/visor/slit/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_crest": {
     "name": "Crest",
@@ -22395,7 +26222,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 139,
+        "female": "hat/accessory/crest/adult/",
+        "pregnant": "hat/accessory/crest/adult/",
+        "male": "hat/accessory/crest/adult/",
+        "muscular": "hat/accessory/crest/adult/",
+        "teen": "hat/accessory/crest/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_crest_centurion": {
     "name": "Centurion Crest",
@@ -22454,7 +26291,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 139,
+        "female": "hat/accessory/crest_centurion/adult/",
+        "pregnant": "hat/accessory/crest_centurion/adult/",
+        "male": "hat/accessory/crest_centurion/adult/",
+        "muscular": "hat/accessory/crest_centurion/adult/",
+        "teen": "hat/accessory/crest_centurion/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_wings": {
     "name": "Helmet wings",
@@ -22536,7 +26383,23 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 139,
+        "female": "hat/accessory/wings/fg/adult/",
+        "pregnant": "hat/accessory/wings/fg/adult/",
+        "male": "hat/accessory/wings/fg/adult/",
+        "muscular": "hat/accessory/wings/fg/adult/"
+      },
+      "layer_2": {
+        "zPos": 125,
+        "female": "hat/accessory/wings/bg/adult/",
+        "pregnant": "hat/accessory/wings/bg/adult/",
+        "male": "hat/accessory/wings/bg/adult/",
+        "muscular": "hat/accessory/wings/bg/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_horns_short": {
     "name": "Short Horns",
@@ -22618,7 +26481,23 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 139,
+        "female": "hat/accessory/horns_short/fg/adult/",
+        "pregnant": "hat/accessory/horns_short/fg/adult/",
+        "male": "hat/accessory/horns_short/fg/adult/",
+        "muscular": "hat/accessory/horns_short/fg/adult/"
+      },
+      "layer_2": {
+        "zPos": 125,
+        "female": "hat/accessory/horns_short/bg/adult/",
+        "pregnant": "hat/accessory/horns_short/bg/adult/",
+        "male": "hat/accessory/horns_short/bg/adult/",
+        "muscular": "hat/accessory/horns_short/bg/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_horns_upward": {
     "name": "Upward Horns",
@@ -22700,7 +26579,23 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 139,
+        "female": "hat/accessory/horns_upward/fg/adult/",
+        "pregnant": "hat/accessory/horns_upward/fg/adult/",
+        "male": "hat/accessory/horns_upward/fg/adult/",
+        "muscular": "hat/accessory/horns_upward/fg/adult/"
+      },
+      "layer_2": {
+        "zPos": 125,
+        "female": "hat/accessory/horns_upward/bg/adult/",
+        "pregnant": "hat/accessory/horns_upward/bg/adult/",
+        "male": "hat/accessory/horns_upward/bg/adult/",
+        "muscular": "hat/accessory/horns_upward/bg/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_horns_downward": {
     "name": "Downward Horns",
@@ -22782,7 +26677,23 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 139,
+        "female": "hat/accessory/horns_downward/fg/adult/",
+        "pregnant": "hat/accessory/horns_downward/fg/adult/",
+        "male": "hat/accessory/horns_downward/fg/adult/",
+        "muscular": "hat/accessory/horns_downward/fg/adult/"
+      },
+      "layer_2": {
+        "zPos": 125,
+        "female": "hat/accessory/horns_downward/bg/adult/",
+        "pregnant": "hat/accessory/horns_downward/bg/adult/",
+        "male": "hat/accessory/horns_downward/bg/adult/",
+        "muscular": "hat/accessory/horns_downward/bg/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_plumage": {
     "name": "Plumage",
@@ -22857,7 +26768,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 139,
+        "female": "hat/accessory/plumage/adult/",
+        "pregnant": "hat/accessory/plumage/adult/",
+        "male": "hat/accessory/plumage/adult/",
+        "muscular": "hat/accessory/plumage/adult/",
+        "teen": "hat/accessory/plumage/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_plumage_centurion": {
     "name": "Centurion Plumage",
@@ -22932,7 +26853,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 139,
+        "female": "hat/accessory/plumage_centurion/adult/",
+        "pregnant": "hat/accessory/plumage_centurion/adult/",
+        "male": "hat/accessory/plumage_centurion/adult/",
+        "muscular": "hat/accessory/plumage_centurion/adult/",
+        "teen": "hat/accessory/plumage_centurion/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_plumage_legion": {
     "name": "Legion Plumage",
@@ -23007,7 +26938,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 139,
+        "female": "hat/accessory/plumage_legion/adult/",
+        "pregnant": "hat/accessory/plumage_legion/adult/",
+        "male": "hat/accessory/plumage_legion/adult/",
+        "muscular": "hat/accessory/plumage_legion/adult/",
+        "teen": "hat/accessory/plumage_legion/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses": {
     "name": "Glasses",
@@ -23091,7 +27032,18 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "facial/glasses/glasses/adult/",
+        "muscular": "facial/glasses/glasses/adult/",
+        "female": "facial/glasses/glasses/adult/",
+        "pregnant": "facial/glasses/glasses/adult/",
+        "teen": "facial/glasses/glasses/adult/",
+        "child": "facial/glasses/glasses/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_halfmoon": {
     "name": "Halfmoon Glasses",
@@ -23175,7 +27127,18 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "facial/glasses/halfmoon/adult/",
+        "muscular": "facial/glasses/halfmoon/adult/",
+        "female": "facial/glasses/halfmoon/adult/",
+        "pregnant": "facial/glasses/halfmoon/adult/",
+        "teen": "facial/glasses/halfmoon/adult/",
+        "child": "facial/glasses/halfmoon/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_nerd": {
     "name": "Nerd Glasses",
@@ -23259,7 +27222,18 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "facial/glasses/nerd/adult/",
+        "muscular": "facial/glasses/nerd/adult/",
+        "female": "facial/glasses/nerd/adult/",
+        "pregnant": "facial/glasses/nerd/adult/",
+        "teen": "facial/glasses/nerd/adult/",
+        "child": "facial/glasses/nerd/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_shades": {
     "name": "Shades",
@@ -23344,7 +27318,18 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "facial/glasses/shades/adult/",
+        "muscular": "facial/glasses/shades/adult/",
+        "female": "facial/glasses/shades/adult/",
+        "pregnant": "facial/glasses/shades/adult/",
+        "teen": "facial/glasses/shades/adult/",
+        "child": "facial/glasses/shades/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_secretary": {
     "name": "Secretary Glasses",
@@ -23428,7 +27413,18 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "facial/glasses/secretary/adult/",
+        "muscular": "facial/glasses/secretary/adult/",
+        "female": "facial/glasses/secretary/adult/",
+        "pregnant": "facial/glasses/secretary/adult/",
+        "teen": "facial/glasses/secretary/adult/",
+        "child": "facial/glasses/secretary/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_round": {
     "name": "Round Glasses",
@@ -23514,7 +27510,18 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "facial/glasses/round/adult/",
+        "muscular": "facial/glasses/round/adult/",
+        "female": "facial/glasses/round/adult/",
+        "pregnant": "facial/glasses/round/adult/",
+        "teen": "facial/glasses/round/adult/",
+        "child": "facial/glasses/round/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_sunglasses": {
     "name": "Sunglasses",
@@ -23600,7 +27607,18 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "facial/glasses/sunglasses/adult/",
+        "muscular": "facial/glasses/sunglasses/adult/",
+        "female": "facial/glasses/sunglasses/adult/",
+        "pregnant": "facial/glasses/sunglasses/adult/",
+        "teen": "facial/glasses/sunglasses/adult/",
+        "child": "facial/glasses/sunglasses/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-monocle-facial_monocle_left": {
     "name": "Left Monocle",
@@ -23664,7 +27682,18 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "facial/monocle/left/adult/",
+        "muscular": "facial/monocle/left/adult/",
+        "female": "facial/monocle/left/adult/",
+        "pregnant": "facial/monocle/left/adult/",
+        "teen": "facial/monocle/left/adult/",
+        "child": "facial/monocle/left/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-monocle-facial_monocle_left_frame": {
     "name": "Left Monocle Frame Color",
@@ -23754,7 +27783,18 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "facial/monocle/left/frame/adult/",
+        "muscular": "facial/monocle/left/frame/adult/",
+        "female": "facial/monocle/left/frame/adult/",
+        "pregnant": "facial/monocle/left/frame/adult/",
+        "teen": "facial/monocle/left/frame/adult/",
+        "child": "facial/monocle/left/frame/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-monocle-facial_monocle_right": {
     "name": "Right Monocle",
@@ -23818,7 +27858,18 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "facial/monocle/right/adult/",
+        "muscular": "facial/monocle/right/adult/",
+        "female": "facial/monocle/right/adult/",
+        "pregnant": "facial/monocle/right/adult/",
+        "teen": "facial/monocle/right/adult/",
+        "child": "facial/monocle/right/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-monocle-facial_monocle_right_frame": {
     "name": "Right Monocle Frame Color",
@@ -23908,7 +27959,18 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "facial/monocle/right/frame/adult/",
+        "muscular": "facial/monocle/right/frame/adult/",
+        "female": "facial/monocle/right/frame/adult/",
+        "pregnant": "facial/monocle/right/frame/adult/",
+        "teen": "facial/monocle/right/frame/adult/",
+        "child": "facial/monocle/right/frame/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch_ambi": {
     "name": "Eyepatch Ambidextrous",
@@ -23985,7 +28047,18 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "facial/patches/eyepatch/ambi/adult/",
+        "muscular": "facial/patches/eyepatch/ambi/adult/",
+        "female": "facial/patches/eyepatch/ambi/adult/",
+        "pregnant": "facial/patches/eyepatch/ambi/adult/",
+        "teen": "facial/patches/eyepatch/ambi/adult/",
+        "child": "facial/patches/eyepatch/ambi/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch_left": {
     "name": "Eyepatch Left",
@@ -24062,7 +28135,18 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "facial/patches/eyepatch/left/adult/",
+        "muscular": "facial/patches/eyepatch/left/adult/",
+        "female": "facial/patches/eyepatch/left/adult/",
+        "pregnant": "facial/patches/eyepatch/left/adult/",
+        "teen": "facial/patches/eyepatch/left/adult/",
+        "child": "facial/patches/eyepatch/left/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch_right": {
     "name": "Eyepatch Right",
@@ -24139,7 +28223,18 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "facial/patches/eyepatch/right/adult/",
+        "muscular": "facial/patches/eyepatch/right/adult/",
+        "female": "facial/patches/eyepatch/right/adult/",
+        "pregnant": "facial/patches/eyepatch/right/adult/",
+        "teen": "facial/patches/eyepatch/right/adult/",
+        "child": "facial/patches/eyepatch/right/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch2_left": {
     "name": "Eyepatch 2 Left",
@@ -24215,7 +28310,18 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "facial/patches/eyepatch2/left/adult/",
+        "muscular": "facial/patches/eyepatch2/left/adult/",
+        "female": "facial/patches/eyepatch2/left/adult/",
+        "pregnant": "facial/patches/eyepatch2/left/adult/",
+        "teen": "facial/patches/eyepatch2/left/adult/",
+        "child": "facial/patches/eyepatch2/left/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch2_right": {
     "name": "Eyepatch 2 Right",
@@ -24291,7 +28397,18 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "facial/patches/eyepatch2/right/adult/",
+        "muscular": "facial/patches/eyepatch2/right/adult/",
+        "female": "facial/patches/eyepatch2/right/adult/",
+        "pregnant": "facial/patches/eyepatch2/right/adult/",
+        "teen": "facial/patches/eyepatch2/right/adult/",
+        "child": "facial/patches/eyepatch2/right/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch_small_left": {
     "name": "Small Eyepatch Left",
@@ -24367,7 +28484,18 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "facial/patches/small/left/adult/",
+        "muscular": "facial/patches/small/left/adult/",
+        "female": "facial/patches/small/left/adult/",
+        "pregnant": "facial/patches/small/left/adult/",
+        "teen": "facial/patches/small/left/adult/",
+        "child": "facial/patches/small/left/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch_small_right": {
     "name": "Small Eyepatch Right",
@@ -24443,7 +28571,18 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "facial/patches/small/right/adult/",
+        "muscular": "facial/patches/small/right/adult/",
+        "female": "facial/patches/small/right/adult/",
+        "pregnant": "facial/patches/small/right/adult/",
+        "teen": "facial/patches/small/right/adult/",
+        "child": "facial/patches/small/right/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-facial_mask_plain": {
     "name": "Plain Mask",
@@ -24528,7 +28667,18 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 114,
+        "male": "facial/masks/plain/adult/",
+        "muscular": "facial/masks/plain/adult/",
+        "female": "facial/masks/plain/adult/",
+        "pregnant": "facial/masks/plain/adult/",
+        "teen": "facial/masks/plain/adult/",
+        "child": "facial/masks/plain/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earring_left": {
     "name": "Simple Earring Left",
@@ -24613,7 +28763,18 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "facial/earrings/simple/left/adult/",
+        "muscular": "facial/earrings/simple/left/adult/",
+        "female": "facial/earrings/simple/left/adult/",
+        "pregnant": "facial/earrings/simple/left/adult/",
+        "teen": "facial/earrings/simple/left/adult/",
+        "child": "facial/earrings/simple/left/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earring_right": {
     "name": "Simple Earring Right",
@@ -24698,7 +28859,18 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "facial/earrings/simple/right/adult/",
+        "muscular": "facial/earrings/simple/right/adult/",
+        "female": "facial/earrings/simple/right/adult/",
+        "pregnant": "facial/earrings/simple/right/adult/",
+        "teen": "facial/earrings/simple/right/adult/",
+        "child": "facial/earrings/simple/right/child/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earrings_emerald": {
     "name": "Emerald earrings",
@@ -24745,7 +28917,17 @@ window.itemMetadata = {
       "purple",
       "red",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "facial/earrings/emerald/male/",
+        "muscular": "facial/earrings/emerald/male/",
+        "female": "facial/earrings/emerald/female/",
+        "pregnant": "facial/earrings/emerald/female/",
+        "teen": "facial/earrings/emerald/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earrings_moon": {
     "name": "Moon earrings",
@@ -24794,7 +28976,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "facial/earrings/moon/male/",
+        "muscular": "facial/earrings/moon/male/",
+        "female": "facial/earrings/moon/female/",
+        "pregnant": "facial/earrings/moon/female/",
+        "teen": "facial/earrings/moon/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earrings_pear": {
     "name": "Pear earrings",
@@ -24841,7 +29033,17 @@ window.itemMetadata = {
       "purple",
       "red",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "facial/earrings/pear/male/",
+        "muscular": "facial/earrings/pear/male/",
+        "female": "facial/earrings/pear/female/",
+        "pregnant": "facial/earrings/pear/female/",
+        "teen": "facial/earrings/pear/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earrings_princess": {
     "name": "Princess earrings",
@@ -24888,7 +29090,17 @@ window.itemMetadata = {
       "purple",
       "red",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "facial/earrings/princess/male/",
+        "muscular": "facial/earrings/princess/male/",
+        "female": "facial/earrings/princess/female/",
+        "pregnant": "facial/earrings/princess/female/",
+        "teen": "facial/earrings/princess/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earrings_stud": {
     "name": "Stud earrings",
@@ -24937,7 +29149,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "facial/earrings/stud/male/",
+        "muscular": "facial/earrings/stud/male/",
+        "female": "facial/earrings/stud/female/",
+        "pregnant": "facial/earrings/stud/female/",
+        "teen": "facial/earrings/stud/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_bowtie": {
     "name": "Bowtie",
@@ -25012,7 +29234,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 90,
+        "male": "neck/tie/bowtie/adult/",
+        "female": "neck/tie/bowtie/adult/",
+        "muscular": "neck/tie/bowtie/adult/",
+        "pregnant": "neck/tie/bowtie/adult/",
+        "teen": "neck/tie/bowtie/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_bowtie2": {
     "name": "Bowtie 2",
@@ -25086,7 +29318,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 90,
+        "male": "neck/tie/bowtie2/adult/",
+        "female": "neck/tie/bowtie2/adult/",
+        "muscular": "neck/tie/bowtie2/adult/",
+        "pregnant": "neck/tie/bowtie2/adult/",
+        "teen": "neck/tie/bowtie2/adult/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necktie": {
     "name": "Necktie",
@@ -25161,7 +29403,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 90,
+        "male": "neck/tie/necktie/male/",
+        "female": "neck/tie/necktie/female/",
+        "muscular": "neck/tie/necktie/male/",
+        "pregnant": "neck/tie/necktie/female/",
+        "teen": "neck/tie/necktie/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_scarf": {
     "name": "Scarf",
@@ -25207,7 +29459,17 @@ window.itemMetadata = {
       "gray",
       "red",
       "white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 90,
+        "male": "neck/scarf/",
+        "female": "neck/scarf/",
+        "pregnant": "neck/scarf/",
+        "muscular": "neck/scarf/",
+        "teen": "neck/scarf/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_capeclip": {
     "name": "Capeclip",
@@ -25271,7 +29533,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 90,
+        "male": "neck/capeclip/male/",
+        "muscular": "neck/capeclip/male/",
+        "female": "neck/capeclip/female/",
+        "teen": "neck/capeclip/female/",
+        "pregnant": "neck/capeclip/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_capetie": {
     "name": "Capetie",
@@ -25335,7 +29607,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 90,
+        "male": "neck/capetie/male/",
+        "muscular": "neck/capetie/male/",
+        "female": "neck/capetie/female/",
+        "teen": "neck/capetie/female/",
+        "pregnant": "neck/capetie/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_jabot": {
     "name": "Jabot",
@@ -25397,7 +29679,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 90,
+        "male": "neck/jabot/male/",
+        "female": "neck/jabot/male/",
+        "teen": "neck/jabot/male/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_cravat": {
     "name": "Cravat",
@@ -25459,7 +29749,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 90,
+        "male": "neck/cravat/male/",
+        "female": "neck/cravat/male/",
+        "teen": "neck/cravat/male/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necklace": {
     "name": "Necklace",
@@ -25508,7 +29806,17 @@ window.itemMetadata = {
       "silver",
       "gold",
       "pirate"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 80,
+        "male": "neck/necklace/female/",
+        "muscular": "neck/necklace/female/",
+        "female": "neck/necklace/female/",
+        "teen": "neck/necklace/female/",
+        "pregnant": "neck/necklace/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necklace_simple": {
     "name": "Simple Necklace",
@@ -25556,7 +29864,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 80,
+        "male": "neck/necklace/simple/male/",
+        "muscular": "neck/necklace/simple/male/",
+        "female": "neck/necklace/simple/female/",
+        "teen": "neck/necklace/simple/female/",
+        "pregnant": "neck/necklace/simple/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necklace_chain": {
     "name": "Chain Necklace",
@@ -25604,7 +29922,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 80,
+        "male": "neck/necklace/chain/male/",
+        "muscular": "neck/necklace/chain/male/",
+        "female": "neck/necklace/chain/female/",
+        "teen": "neck/necklace/chain/female/",
+        "pregnant": "neck/necklace/chain/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necklace_beaded_small": {
     "name": "Small Beaded Necklace",
@@ -25652,7 +29980,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 80,
+        "male": "neck/necklace/beaded_small/male/",
+        "muscular": "neck/necklace/beaded_small/male/",
+        "female": "neck/necklace/beaded_small/female/",
+        "teen": "neck/necklace/beaded_small/female/",
+        "pregnant": "neck/necklace/beaded_small/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necklace_beaded_large": {
     "name": "Large Beaded Necklace",
@@ -25700,7 +30038,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 80,
+        "male": "neck/necklace/beaded_large/male/",
+        "muscular": "neck/necklace/beaded_large/male/",
+        "female": "neck/necklace/beaded_large/female/",
+        "teen": "neck/necklace/beaded_large/female/",
+        "pregnant": "neck/necklace/beaded_large/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_charm_box": {
     "name": "Box Charm",
@@ -25749,7 +30097,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 81,
+        "male": "neck/charm/box/male/",
+        "muscular": "neck/charm/box/male/",
+        "female": "neck/charm/box/female/",
+        "teen": "neck/charm/box/female/",
+        "pregnant": "neck/charm/box/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_charm_oval": {
     "name": "Oval Charm",
@@ -25798,7 +30156,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 81,
+        "male": "neck/charm/oval/male/",
+        "muscular": "neck/charm/oval/male/",
+        "female": "neck/charm/oval/female/",
+        "teen": "neck/charm/oval/female/",
+        "pregnant": "neck/charm/oval/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_charm_ring": {
     "name": "Ring Charm",
@@ -25847,7 +30215,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 81,
+        "male": "neck/charm/ring/male/",
+        "muscular": "neck/charm/ring/male/",
+        "female": "neck/charm/ring/female/",
+        "teen": "neck/charm/ring/female/",
+        "pregnant": "neck/charm/ring/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_charm_star": {
     "name": "Star Charm",
@@ -25896,7 +30274,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 81,
+        "male": "neck/charm/star/male/",
+        "muscular": "neck/charm/star/male/",
+        "female": "neck/charm/star/female/",
+        "teen": "neck/charm/star/female/",
+        "pregnant": "neck/charm/star/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_emerald": {
     "name": "Emerald cut Gem",
@@ -25943,7 +30331,17 @@ window.itemMetadata = {
       "purple",
       "red",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 81,
+        "male": "neck/gem/emerald/male/",
+        "muscular": "neck/gem/emerald/male/",
+        "female": "neck/gem/emerald/female/",
+        "teen": "neck/gem/emerald/female/",
+        "pregnant": "neck/gem/emerald/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_marquise": {
     "name": "Marquise cut Gem",
@@ -25990,7 +30388,17 @@ window.itemMetadata = {
       "purple",
       "red",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 81,
+        "male": "neck/gem/marquise/male/",
+        "muscular": "neck/gem/marquise/male/",
+        "female": "neck/gem/marquise/female/",
+        "teen": "neck/gem/marquise/female/",
+        "pregnant": "neck/gem/marquise/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_natural": {
     "name": "Natural cut Gem",
@@ -26037,7 +30445,17 @@ window.itemMetadata = {
       "purple",
       "red",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 81,
+        "male": "neck/gem/natural/male/",
+        "muscular": "neck/gem/natural/male/",
+        "female": "neck/gem/natural/female/",
+        "teen": "neck/gem/natural/female/",
+        "pregnant": "neck/gem/natural/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_pear": {
     "name": "Pear cut Gem",
@@ -26084,7 +30502,17 @@ window.itemMetadata = {
       "purple",
       "red",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 81,
+        "male": "neck/gem/pear/male/",
+        "muscular": "neck/gem/pear/male/",
+        "female": "neck/gem/pear/female/",
+        "teen": "neck/gem/pear/female/",
+        "pregnant": "neck/gem/pear/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_pearl": {
     "name": "Pearl Gem",
@@ -26131,7 +30559,17 @@ window.itemMetadata = {
       "purple",
       "red",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 81,
+        "male": "neck/gem/pearl/male/",
+        "muscular": "neck/gem/pearl/male/",
+        "female": "neck/gem/pearl/female/",
+        "teen": "neck/gem/pearl/female/",
+        "pregnant": "neck/gem/pearl/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_princess": {
     "name": "Princess cut Gem",
@@ -26178,7 +30616,17 @@ window.itemMetadata = {
       "purple",
       "red",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 81,
+        "male": "neck/gem/princess/male/",
+        "muscular": "neck/gem/princess/male/",
+        "female": "neck/gem/princess/female/",
+        "teen": "neck/gem/princess/female/",
+        "pregnant": "neck/gem/princess/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_round": {
     "name": "Round cut Gem",
@@ -26225,7 +30673,17 @@ window.itemMetadata = {
       "purple",
       "red",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 81,
+        "male": "neck/gem/round/male/",
+        "muscular": "neck/gem/round/male/",
+        "female": "neck/gem/round/female/",
+        "teen": "neck/gem/round/female/",
+        "pregnant": "neck/gem/round/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_trilliant": {
     "name": "Trilliant cut Gem",
@@ -26272,7 +30730,17 @@ window.itemMetadata = {
       "purple",
       "red",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 81,
+        "male": "neck/gem/trilliant/male/",
+        "muscular": "neck/gem/trilliant/male/",
+        "female": "neck/gem/trilliant/female/",
+        "teen": "neck/gem/trilliant/female/",
+        "pregnant": "neck/gem/trilliant/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_amulet_cross": {
     "name": "Cross amulet",
@@ -26361,7 +30829,17 @@ window.itemMetadata = {
       "steel_purple",
       "steel_red",
       "steel_yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 81,
+        "male": "neck/amulet/cross/male/",
+        "muscular": "neck/amulet/cross/male/",
+        "female": "neck/amulet/cross/female/",
+        "teen": "neck/amulet/cross/female/",
+        "pregnant": "neck/amulet/cross/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_amulet_dangle": {
     "name": "Dangling amulet",
@@ -26450,7 +30928,17 @@ window.itemMetadata = {
       "steel_purple",
       "steel_red",
       "steel_yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 81,
+        "male": "neck/amulet/dangle/male/",
+        "muscular": "neck/amulet/dangle/male/",
+        "female": "neck/amulet/dangle/female/",
+        "teen": "neck/amulet/dangle/female/",
+        "pregnant": "neck/amulet/dangle/female/"
+      }
+    }
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_amulet_spider": {
     "name": "Spider amulet",
@@ -26539,7 +31027,17 @@ window.itemMetadata = {
       "steel_purple",
       "steel_red",
       "steel_yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 81,
+        "male": "neck/amulet/spider/male/",
+        "muscular": "neck/amulet/spider/male/",
+        "female": "neck/amulet/spider/female/",
+        "teen": "neck/amulet/spider/female/",
+        "pregnant": "neck/amulet/spider/female/"
+      }
+    }
   },
   "arms-shoulders-shoulders_legion": {
     "name": "Legion",
@@ -26570,7 +31068,16 @@ window.itemMetadata = {
       "bronze",
       "steel",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 60,
+        "male": "shoulders/legion/male/",
+        "female": "shoulders/legion/female/",
+        "muscular": "shoulders/legion/male/",
+        "pregnant": "shoulders/legion/female/"
+      }
+    }
   },
   "arms-shoulders-shoulders_plate": {
     "name": "Plate",
@@ -26606,7 +31113,16 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 65,
+        "male": "shoulders/plate/male/",
+        "female": "shoulders/plate/female/",
+        "muscular": "shoulders/plate/male/",
+        "pregnant": "shoulders/plate/female/"
+      }
+    }
   },
   "arms-shoulders-shoulders_leather": {
     "name": "Leather",
@@ -26658,7 +31174,16 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 60,
+        "male": "shoulders/leather/male/",
+        "female": "shoulders/leather/female/",
+        "muscular": "shoulders/leather/male/",
+        "pregnant": "shoulders/leather/female/"
+      }
+    }
   },
   "arms-shoulders-shoulders_epaulets": {
     "name": "Epaulets",
@@ -26690,7 +31215,13 @@ window.itemMetadata = {
       "blue",
       "teal",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 60,
+        "male": "shoulders/epaulets/male/"
+      }
+    }
   },
   "arms-shoulders-shoulders_mantal": {
     "name": "Mantal",
@@ -26739,7 +31270,13 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 75,
+        "male": "shoulders/mantal/male/"
+      }
+    }
   },
   "arms-arms_armour": {
     "name": "Armour",
@@ -26775,7 +31312,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 60,
+        "male": "arms/armour/plate/male/",
+        "muscular": "arms/armour/plate/male/",
+        "female": "arms/armour/plate/female/",
+        "teen": "arms/armour/plate/female/",
+        "pregnant": "arms/armour/plate/female/"
+      }
+    }
   },
   "arms-bauldron": {
     "name": "Bauldron",
@@ -26810,7 +31357,17 @@ window.itemMetadata = {
       "tan",
       "walnut",
       "white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 65,
+        "male": "bauldron/male/",
+        "muscular": "bauldron/male/",
+        "teen": "bauldron/female/",
+        "female": "bauldron/female/",
+        "pregnant": "bauldron/female/"
+      }
+    }
   },
   "arms-wrists-arms_bracers": {
     "name": "Bracers",
@@ -26846,7 +31403,16 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 70,
+        "male": "arms/bracers/male/",
+        "female": "arms/bracers/female/",
+        "pregnant": "arms/bracers/female/",
+        "muscular": "arms/bracers/male/"
+      }
+    }
   },
   "arms-wrists-wrists_cuffs": {
     "name": "Cuffs",
@@ -26895,7 +31461,13 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 70,
+        "male": "wrists/cuffs/male/"
+      }
+    }
   },
   "arms-wrists-wrists_cuffs_lace": {
     "name": "Lace Cuffs",
@@ -26927,7 +31499,13 @@ window.itemMetadata = {
       "blue",
       "teal",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 70,
+        "male": "wrists/lace/male/"
+      }
+    }
   },
   "arms-arms_gloves": {
     "name": "Gloves",
@@ -26997,7 +31575,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 70,
+        "male": "arms/gloves/male/",
+        "muscular": "arms/gloves/male/",
+        "female": "arms/gloves/female/",
+        "teen": "arms/gloves/female/",
+        "pregnant": "arms/gloves/female/"
+      }
+    }
   },
   "arms-arms_hands_ring_stud": {
     "name": "Stud Ring",
@@ -27031,7 +31619,17 @@ window.itemMetadata = {
       "purple",
       "red",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 75,
+        "male": "arms/hands/ring/stud/male/",
+        "muscular": "arms/hands/ring/stud/male/",
+        "female": "arms/hands/ring/stud/female/",
+        "teen": "arms/hands/ring/stud/female/",
+        "pregnant": "arms/hands/ring/stud/female/"
+      }
+    }
   },
   "torso-dresses-dress_sash": {
     "name": "Sash dress",
@@ -27080,7 +31678,13 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 30,
+        "female": "dress/sash/female/"
+      }
+    }
   },
   "torso-dresses-dress_slit": {
     "name": "Slit dress",
@@ -27129,7 +31733,13 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 30,
+        "female": "dress/slit/female/"
+      }
+    }
   },
   "torso-dresses-dress_bodice": {
     "name": "Bodice",
@@ -27178,7 +31788,13 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 45,
+        "female": "dress/bodice/female/"
+      }
+    }
   },
   "torso-dresses-kimono-dress_kimono": {
     "name": "Kimono",
@@ -27233,7 +31849,14 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 30,
+        "female": "dress/kimono/normal/universal/female/",
+        "teen": "dress/kimono/normal/universal/female/"
+      }
+    }
   },
   "torso-dresses-kimono-dress_kimono_trim": {
     "name": "Kimono Trim",
@@ -27289,7 +31912,14 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 31,
+        "female": "dress/kimono/normal/trim/universal/female/",
+        "teen": "dress/kimono/normal/trim/universal/female/"
+      }
+    }
   },
   "torso-dresses-kimono-dress_kimono_split": {
     "name": "Split Kimono",
@@ -27344,7 +31974,14 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 30,
+        "female": "dress/kimono/split/universal/female/",
+        "teen": "dress/kimono/split/universal/female/"
+      }
+    }
   },
   "torso-dresses-kimono-dress_kimono_split_trim": {
     "name": "Split Kimono Trim",
@@ -27400,7 +32037,14 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 31,
+        "female": "dress/kimono/split/trim/universal/female/",
+        "teen": "dress/kimono/split/trim/universal/female/"
+      }
+    }
   },
   "torso-dresses-kimono-dress_kimono_longsleeve": {
     "name": "Kimono Sleeves",
@@ -27455,7 +32099,19 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 31,
+        "female": "dress/kimono/sleeves/universal/female/",
+        "teen": "dress/kimono/sleeves/universal/female/"
+      },
+      "layer_2": {
+        "zPos": 145,
+        "female": "dress/kimono/sleeves/universal/female_front/",
+        "teen": "dress/kimono/sleeves/universal/female_front/"
+      }
+    }
   },
   "torso-dresses-kimono-dress_kimono_longsleeve_trim": {
     "name": "Kimono Sleeves Trim",
@@ -27511,7 +32167,19 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 32,
+        "female": "dress/kimono/sleeves/trim/universal/female/",
+        "teen": "dress/kimono/sleeves/trim/universal/female/"
+      },
+      "layer_2": {
+        "zPos": 146,
+        "female": "dress/kimono/sleeves/trim/universal/female_front/",
+        "teen": "dress/kimono/sleeves/trim/universal/female_front/"
+      }
+    }
   },
   "torso-dresses-kimono-dress_kimono_oversize": {
     "name": "Kimono Oversized Sleeves",
@@ -27566,7 +32234,19 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 31,
+        "female": "dress/kimono/sleeves_oversize/universal/female/",
+        "teen": "dress/kimono/sleeves_oversize/universal/female/"
+      },
+      "layer_2": {
+        "zPos": 145,
+        "female": "dress/kimono/sleeves_oversize/universal/female_front/",
+        "teen": "dress/kimono/sleeves_oversize/universal/female_front/"
+      }
+    }
   },
   "torso-dresses-kimono-dress_kimono_oversize_trim": {
     "name": "Kimono Oversized Sleeves Trim",
@@ -27622,7 +32302,19 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 32,
+        "female": "dress/kimono/sleeves_oversize/trim/universal/female/",
+        "teen": "dress/kimono/sleeves_oversize/trim/universal/female/"
+      },
+      "layer_2": {
+        "zPos": 146,
+        "female": "dress/kimono/sleeves_oversize/trim/universal/female_front/",
+        "teen": "dress/kimono/sleeves_oversize/trim/universal/female_front/"
+      }
+    }
   },
   "torso-shirts-torso_clothes_child_shirt": {
     "name": "Child shirts",
@@ -27651,7 +32343,13 @@ window.itemMetadata = {
       "pink",
       "red",
       "white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "child": "torso/clothes/shirt/child/"
+      }
+    }
   },
   "torso-shirts-sleeves-torso_clothes_shortsleeves": {
     "name": "Original Shortsleeves Overlay",
@@ -27713,7 +32411,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 36,
+        "male": "torso/clothes/shortsleeve/shortsleeves/male/",
+        "female": "torso/clothes/shortsleeve/shortsleeves/female/",
+        "teen": "torso/clothes/shortsleeve/shortsleeves/teen/"
+      }
+    }
   },
   "torso-shirts-sleeves-torso_clothes_shortsleeves2": {
     "name": "Shortsleeves 2 Overlay",
@@ -27775,7 +32481,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 36,
+        "male": "torso/clothes/shortsleeve/shortsleeves2/male/",
+        "female": "torso/clothes/shortsleeve/shortsleeves2/female/",
+        "teen": "torso/clothes/shortsleeve/shortsleeves2/teen/"
+      }
+    }
   },
   "torso-shirts-sleeves-torso_clothes_longsleeves": {
     "name": "Original Longsleeves Overlay",
@@ -27837,7 +32551,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "female": "torso/clothes/longsleeve/longsleeves/female/",
+        "male": "torso/clothes/longsleeve/longsleeves/male/",
+        "teen": "torso/clothes/longsleeve/longsleeves/teen/"
+      }
+    }
   },
   "torso-shirts-sleeves-torso_clothes_longsleeves2": {
     "name": "Longsleeves 2 Overlay",
@@ -27899,7 +32621,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 36,
+        "male": "torso/clothes/longsleeve/longsleeves2/male/",
+        "female": "torso/clothes/longsleeve/longsleeves2/female/",
+        "teen": "torso/clothes/longsleeve/longsleeves2/teen/"
+      }
+    }
   },
   "torso-shirts-sleeves-torso_clothes_longsleeves_cuffed": {
     "name": "Cuffed Longsleeves Overlay",
@@ -27961,7 +32691,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 36,
+        "male": "torso/clothes/longsleeve/longsleeves_cuffed/male/",
+        "female": "torso/clothes/longsleeve/longsleeves_cuffed/female/",
+        "teen": "torso/clothes/longsleeve/longsleeves_cuffed/teen/"
+      }
+    }
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve": {
     "name": "Longsleeve",
@@ -28024,7 +32762,16 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "female": "torso/clothes/longsleeve/longsleeve/female/",
+        "male": "torso/clothes/longsleeve/longsleeve/male/",
+        "teen": "torso/clothes/longsleeve/longsleeve/teen/",
+        "pregnant": "torso/clothes/longsleeve/longsleeve/pregnant/"
+      }
+    }
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve_scoop": {
     "name": "Scoop",
@@ -28087,7 +32834,16 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "male": "torso/clothes/longsleeve/scoop/male/",
+        "female": "torso/clothes/longsleeve/scoop/female/",
+        "pregnant": "torso/clothes/longsleeve/scoop/pregnant/",
+        "teen": "torso/clothes/longsleeve/scoop/female/"
+      }
+    }
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve_formal": {
     "name": "Collared/Formal Longsleeve",
@@ -28114,7 +32870,13 @@ window.itemMetadata = {
     ],
     "variants": [
       "white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "male": "torso/clothes/longsleeve/formal/male/"
+      }
+    }
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve_formal_striped": {
     "name": "Striped Collared/Formal Longsleeve",
@@ -28141,7 +32903,13 @@ window.itemMetadata = {
     ],
     "variants": [
       "white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "male": "torso/clothes/longsleeve/formal_striped/male/"
+      }
+    }
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve_laced": {
     "name": "Longsleeve laced",
@@ -28191,7 +32959,13 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "male": "torso/clothes/longsleeve/laced/male/"
+      }
+    }
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve2": {
     "name": "Longsleeve 2",
@@ -28253,7 +33027,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "male": "torso/clothes/longsleeve/longsleeve2/male/",
+        "female": "torso/clothes/longsleeve/longsleeve2/female/",
+        "teen": "torso/clothes/longsleeve/longsleeve2/teen/"
+      }
+    }
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve2_vneck": {
     "name": "Longsleeve 2 VNeck",
@@ -28315,7 +33097,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "male": "torso/clothes/longsleeve/longsleeve2_vneck/male/",
+        "female": "torso/clothes/longsleeve/longsleeve2_vneck/female/",
+        "teen": "torso/clothes/longsleeve/longsleeve2_vneck/teen/"
+      }
+    }
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve2_scoop": {
     "name": "Longsleeve 2 Scoop",
@@ -28377,7 +33167,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "male": "torso/clothes/longsleeve/longsleeve2_scoop/male/",
+        "female": "torso/clothes/longsleeve/longsleeve2_scoop/female/",
+        "teen": "torso/clothes/longsleeve/longsleeve2_scoop/teen/"
+      }
+    }
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve2_buttoned": {
     "name": "Longsleeve 2 Buttoned",
@@ -28439,7 +33237,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "male": "torso/clothes/longsleeve/longsleeve2_buttoned/male/",
+        "female": "torso/clothes/longsleeve/longsleeve2_buttoned/female/",
+        "teen": "torso/clothes/longsleeve/longsleeve2_buttoned/teen/"
+      }
+    }
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve2_polo": {
     "name": "Longsleeve Polo",
@@ -28501,7 +33307,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "male": "torso/clothes/longsleeve/longsleeve2_polo/male/",
+        "female": "torso/clothes/longsleeve/longsleeve2_polo/female/",
+        "teen": "torso/clothes/longsleeve/longsleeve2_polo/teen/"
+      }
+    }
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve2_cardigan": {
     "name": "Cardigan",
@@ -28563,7 +33377,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "male": "torso/clothes/longsleeve/longsleeve2_cardigan/male/",
+        "female": "torso/clothes/longsleeve/longsleeve2_cardigan/female/",
+        "teen": "torso/clothes/longsleeve/longsleeve2_cardigan/teen/"
+      }
+    }
   },
   "torso-shirts-shortsleeve-torso_clothes_shortsleeve": {
     "name": "Shortsleeve",
@@ -28626,7 +33448,16 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "female": "torso/clothes/shortsleeve/shortsleeve/female/",
+        "male": "torso/clothes/shortsleeve/shortsleeve/male/",
+        "pregnant": "torso/clothes/shortsleeve/shortsleeve/pregnant/",
+        "teen": "torso/clothes/shortsleeve/shortsleeve/teen/"
+      }
+    }
   },
   "torso-shirts-shortsleeve-torso_clothes_shortsleeve_polo": {
     "name": "Shortsleeve Polo",
@@ -28688,7 +33519,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "male": "torso/clothes/shortsleeve/shortsleeve_polo/male/",
+        "female": "torso/clothes/shortsleeve/shortsleeve_polo/female/",
+        "teen": "torso/clothes/shortsleeve/shortsleeve_polo/teen/"
+      }
+    }
   },
   "torso-shirts-shortsleeve-torso_clothes_shortsleeve_cardigan": {
     "name": "Shortsleeve Cardigan",
@@ -28750,7 +33589,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "male": "torso/clothes/shortsleeve/shortsleeve_cardigan/male/",
+        "female": "torso/clothes/shortsleeve/shortsleeve_cardigan/female/",
+        "teen": "torso/clothes/shortsleeve/shortsleeve_cardigan/teen/"
+      }
+    }
   },
   "torso-shirts-shortsleeve-torso_clothes_tshirt": {
     "name": "TShirt",
@@ -28812,7 +33659,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "male": "torso/clothes/shortsleeve/tshirt/male/",
+        "female": "torso/clothes/shortsleeve/tshirt/female/",
+        "teen": "torso/clothes/shortsleeve/tshirt/teen/"
+      }
+    }
   },
   "torso-shirts-shortsleeve-torso_clothes_tshirt_vneck": {
     "name": "TShirt VNeck",
@@ -28874,7 +33729,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "male": "torso/clothes/shortsleeve/tshirt_vneck/male/",
+        "female": "torso/clothes/shortsleeve/tshirt_vneck/female/",
+        "teen": "torso/clothes/shortsleeve/tshirt_vneck/teen/"
+      }
+    }
   },
   "torso-shirts-shortsleeve-torso_clothes_tshirt_scoop": {
     "name": "TShirt Scoop",
@@ -28936,7 +33799,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "male": "torso/clothes/shortsleeve/tshirt_scoop/male/",
+        "female": "torso/clothes/shortsleeve/tshirt_scoop/female/",
+        "teen": "torso/clothes/shortsleeve/tshirt_scoop/teen/"
+      }
+    }
   },
   "torso-shirts-shortsleeve-torso_clothes_tshirt_buttoned": {
     "name": "TShirt Buttoned",
@@ -28998,7 +33869,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "male": "torso/clothes/shortsleeve/tshirt_buttoned/male/",
+        "female": "torso/clothes/shortsleeve/tshirt_buttoned/female/",
+        "teen": "torso/clothes/shortsleeve/tshirt_buttoned/teen/"
+      }
+    }
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless": {
     "name": "Sleeveless",
@@ -29049,7 +33928,14 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "male": "torso/clothes/sleeveless/sleeveless/male/",
+        "female": "torso/clothes/sleeveless/sleeveless/female/"
+      }
+    }
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless_laced": {
     "name": "Sleeveless laced",
@@ -29099,7 +33985,13 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "male": "torso/clothes/sleeveless/laced/male/"
+      }
+    }
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless_striped": {
     "name": "Sleeveless striped",
@@ -29149,7 +34041,13 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "male": "torso/clothes/sleeveless/striped/male/"
+      }
+    }
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless_tanktop": {
     "name": "Tanktop",
@@ -29200,7 +34098,14 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "pregnant": "torso/clothes/sleeveless/tanktop/pregnant/",
+        "female": "torso/clothes/sleeveless/tanktop/female/"
+      }
+    }
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless1": {
     "name": "Original Sleeveless",
@@ -29262,7 +34167,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "female": "torso/clothes/sleeveless/sleeveless1/female/",
+        "male": "torso/clothes/sleeveless/sleeveless1/male/",
+        "teen": "torso/clothes/sleeveless/sleeveless1/teen/"
+      }
+    }
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless2": {
     "name": "Sleeveless 2",
@@ -29324,7 +34237,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "male": "torso/clothes/sleeveless/sleeveless2/male/",
+        "female": "torso/clothes/sleeveless/sleeveless2/female/",
+        "teen": "torso/clothes/sleeveless/sleeveless2/teen/"
+      }
+    }
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless2_vneck": {
     "name": "Sleeveless 2 VNeck",
@@ -29386,7 +34307,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "male": "torso/clothes/sleeveless/sleeveless2_vneck/male/",
+        "female": "torso/clothes/sleeveless/sleeveless2_vneck/female/",
+        "teen": "torso/clothes/sleeveless/sleeveless2_vneck/teen/"
+      }
+    }
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless2_scoop": {
     "name": "Sleeveless 2 Scoop",
@@ -29448,7 +34377,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "male": "torso/clothes/sleeveless/sleeveless2_scoop/male/",
+        "female": "torso/clothes/sleeveless/sleeveless2_scoop/female/",
+        "teen": "torso/clothes/sleeveless/sleeveless2_scoop/teen/"
+      }
+    }
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless2_buttoned": {
     "name": "Sleeveless 2 Buttoned",
@@ -29510,7 +34447,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "male": "torso/clothes/sleeveless/sleeveless2_buttoned/male/",
+        "female": "torso/clothes/sleeveless/sleeveless2_buttoned/female/",
+        "teen": "torso/clothes/sleeveless/sleeveless2_buttoned/teen/"
+      }
+    }
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless2_polo": {
     "name": "Sleeveless 2 Polo",
@@ -29572,7 +34517,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "male": "torso/clothes/sleeveless/sleeveless2_polo/male/",
+        "female": "torso/clothes/sleeveless/sleeveless2_polo/female/",
+        "teen": "torso/clothes/sleeveless/sleeveless2_polo/teen/"
+      }
+    }
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless2_cardigan": {
     "name": "Sleeveless 2 Cardigan",
@@ -29634,7 +34587,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "male": "torso/clothes/sleeveless/sleeveless2_cardigan/male/",
+        "female": "torso/clothes/sleeveless/sleeveless2_cardigan/female/",
+        "teen": "torso/clothes/sleeveless/sleeveless2_cardigan/teen/"
+      }
+    }
   },
   "torso-shirts-torso_clothes_corset": {
     "name": "Corset",
@@ -29678,7 +34639,13 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 45,
+        "female": "torso/clothes/corset/female/"
+      }
+    }
   },
   "torso-shirts-torso_clothes_blouse": {
     "name": "Blouse",
@@ -29722,7 +34689,13 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "female": "torso/clothes/blouse/female/"
+      }
+    }
   },
   "torso-shirts-torso_clothes_blouse_longsleeve": {
     "name": "Longsleeve blouse",
@@ -29766,7 +34739,13 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "female": "torso/clothes/blouse_longsleeve/female/"
+      }
+    }
   },
   "torso-shirts-torso_clothes_tunic": {
     "name": "Tunic",
@@ -29815,7 +34794,13 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "female": "torso/clothes/tunic/female/"
+      }
+    }
   },
   "torso-shirts-torso_clothes_tunic_sara": {
     "name": "Sara Tunic",
@@ -29864,7 +34849,13 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "female": "torso/clothes/tunic_sara/female/"
+      }
+    }
   },
   "torso-shirts-torso_clothes_robe": {
     "name": "Robe",
@@ -29899,7 +34890,13 @@ window.itemMetadata = {
       "purple",
       "red",
       "white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "female": "torso/clothes/robe/female/"
+      }
+    }
   },
   "torso-aprons-torso_aprons_overalls": {
     "name": "Overalls",
@@ -29960,7 +34957,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 38,
+        "male": "torso/aprons/overalls/male/",
+        "female": "torso/aprons/overalls/female/",
+        "teen": "torso/aprons/overalls/teen/"
+      }
+    }
   },
   "torso-aprons-torso_aprons_suspenders": {
     "name": "Suspenders",
@@ -30023,7 +35028,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 38,
+        "male": "torso/aprons/suspenders/male/",
+        "muscular": "torso/aprons/suspenders/male/",
+        "female": "torso/aprons/suspenders/female/",
+        "pregnant": "torso/aprons/suspenders/female/",
+        "teen": "torso/aprons/suspenders/teen/"
+      }
+    }
   },
   "torso-aprons-torso_aprons_apron": {
     "name": "Apron",
@@ -30074,7 +35089,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 40,
+        "male": "torso/aprons/apron/male/",
+        "female": "torso/aprons/apron/female/",
+        "teen": "torso/aprons/apron/male/"
+      }
+    }
   },
   "torso-aprons-torso_aprons_apron_half": {
     "name": "Apron half",
@@ -30123,7 +35146,13 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 40,
+        "female": "torso/aprons/apron_half/female/"
+      }
+    }
   },
   "torso-aprons-torso_aprons_apron_full": {
     "name": "Apron full",
@@ -30172,7 +35201,13 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 40,
+        "female": "torso/aprons/apron_full/female/"
+      }
+    }
   },
   "torso-torso_bandages": {
     "name": "Bandages",
@@ -30199,7 +35234,15 @@ window.itemMetadata = {
     ],
     "variants": [
       "white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 110,
+        "male": "torso/bandage/male/",
+        "female": "torso/bandage/female/",
+        "teen": "torso/bandage/male/"
+      }
+    }
   },
   "torso-torso_chainmail": {
     "name": "Chainmail",
@@ -30226,7 +35269,15 @@ window.itemMetadata = {
     ],
     "variants": [
       "gray"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 50,
+        "male": "torso/chainmail/male/",
+        "female": "torso/chainmail/female/",
+        "teen": "torso/chainmail/female/"
+      }
+    }
   },
   "torso-jacket-torso_jacket_collared": {
     "name": "Collared coat",
@@ -30276,7 +35327,13 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 55,
+        "male": "torso/jacket/collared/male/"
+      }
+    }
   },
   "torso-jacket-torso_jacket_iverness": {
     "name": "Iverness cloak",
@@ -30302,7 +35359,13 @@ window.itemMetadata = {
     ],
     "variants": [
       "black"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 55,
+        "male": "torso/jacket/iverness/male/"
+      }
+    }
   },
   "torso-jacket-torso_jacket_trench": {
     "name": "Trench coat",
@@ -30329,7 +35392,13 @@ window.itemMetadata = {
     "variants": [
       "dark gray",
       "gray"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 55,
+        "male": "torso/jacket/trench/male/"
+      }
+    }
   },
   "torso-jacket-torso_jacket_tabard": {
     "name": "Tabard",
@@ -30375,7 +35444,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 55,
+        "female": "torso/jacket/tabard/female/",
+        "teen": "torso/jacket/tabard/female/",
+        "male": "torso/jacket/tabard/male/"
+      }
+    }
   },
   "torso-jacket-torso_jacket_frock": {
     "name": "Frock coat",
@@ -30424,7 +35501,13 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 55,
+        "male": "torso/jacket/frock/male/"
+      }
+    }
   },
   "torso-jacket-torso_jacket_santa": {
     "name": "Santa coat",
@@ -30473,7 +35556,13 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 55,
+        "male": "torso/jacket/santa/male/"
+      }
+    }
   },
   "torso-jacket-jacket trim-torso_jacket_frock_collar": {
     "name": "Frock collar",
@@ -30506,7 +35595,13 @@ window.itemMetadata = {
       "blue",
       "teal",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 57,
+        "male": "torso/jacket/trim/frock_collar/"
+      }
+    }
   },
   "torso-jacket-jacket trim-torso_jacket_frock_lace": {
     "name": "Frock coat lace",
@@ -30539,7 +35634,13 @@ window.itemMetadata = {
       "blue",
       "teal",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 58,
+        "male": "torso/jacket/trim/frock_lace/"
+      }
+    }
   },
   "torso-jacket-jacket trim-torso_jacket_frock_lapel": {
     "name": "Frock coat lapel",
@@ -30572,7 +35673,13 @@ window.itemMetadata = {
       "blue",
       "teal",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 58,
+        "male": "torso/jacket/trim/frock_lapel/"
+      }
+    }
   },
   "torso-jacket-jacket trim-torso_jacket_frock_buttons": {
     "name": "Frock coat buttons",
@@ -30605,7 +35712,13 @@ window.itemMetadata = {
       "blue",
       "teal",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 58,
+        "male": "torso/jacket/trim/frock_buttons/"
+      }
+    }
   },
   "torso-jacket-jacket trim-torso_jacket_pockets": {
     "name": "Jacket pockets",
@@ -30655,7 +35768,13 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 59,
+        "male": "torso/jacket/trim/jacket_pockets/"
+      }
+    }
   },
   "torso-vest-torso_clothes_vest": {
     "name": "Vest",
@@ -30706,7 +35825,13 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 45,
+        "male": "torso/clothes/vest/male/"
+      }
+    }
   },
   "torso-vest-torso_clothes_vest_open": {
     "name": "Vest open",
@@ -30755,7 +35880,13 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 45,
+        "male": "torso/clothes/vest_open/male/"
+      }
+    }
   },
   "torso-armour-torso_armour_plate": {
     "name": "Plate",
@@ -30800,7 +35931,15 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 60,
+        "male": "torso/armour/plate/male/",
+        "female": "torso/armour/plate/female/",
+        "teen": "torso/armour/plate/teen/"
+      }
+    }
   },
   "torso-armour-torso_armour_leather": {
     "name": "Leather",
@@ -30851,7 +35990,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 60,
+        "male": "torso/armour/leather/male/",
+        "female": "torso/armour/leather/female/",
+        "teen": "torso/armour/leather/male/"
+      }
+    }
   },
   "torso-armour-torso_armour_legion": {
     "name": "Legion",
@@ -30896,7 +36043,15 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 60,
+        "male": "torso/armour/legion/male/",
+        "female": "torso/armour/legion/female/",
+        "teen": "torso/armour/legion/teen/"
+      }
+    }
   },
   "torso-cape-cape_solid": {
     "name": "Solid",
@@ -30952,7 +36107,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 85,
+        "male": "cape/solid/female/",
+        "muscular": "cape/solid/female/",
+        "teen": "cape/solid/female/",
+        "female": "cape/solid/female/",
+        "pregnant": "cape/solid/female/"
+      },
+      "layer_2": {
+        "zPos": 5,
+        "male": "cape/solid_behind/",
+        "muscular": "cape/solid_behind/",
+        "teen": "cape/solid_behind/",
+        "female": "cape/solid_behind/",
+        "pregnant": "cape/solid_behind/"
+      }
+    }
   },
   "torso-cape-cape_tattered": {
     "name": "Tattered",
@@ -31008,7 +36181,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 85,
+        "male": "cape/tattered/female/",
+        "muscular": "cape/tattered/female/",
+        "teen": "cape/tattered/female/",
+        "female": "cape/tattered/female/",
+        "pregnant": "cape/tattered/female/"
+      },
+      "layer_2": {
+        "zPos": 5,
+        "male": "cape/tattered_behind/",
+        "muscular": "cape/tattered_behind/",
+        "teen": "cape/tattered_behind/",
+        "female": "cape/tattered_behind/",
+        "pregnant": "cape/tattered_behind/"
+      }
+    }
   },
   "torso-cape-cape_trim": {
     "name": "Cape Trim",
@@ -31066,7 +36257,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 90,
+        "male": "cape/trim/female/",
+        "muscular": "cape/trim/female/",
+        "teen": "cape/trim/female/",
+        "female": "cape/trim/female/",
+        "pregnant": "cape/trim/female/"
+      }
+    }
   },
   "torso-backpack-backpack_straps": {
     "name": "Straps",
@@ -31119,7 +36320,16 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 110,
+        "male": "backpack/straps/male/",
+        "muscular": "backpack/straps/male/",
+        "female": "backpack/straps/female/",
+        "pregnant": "backpack/straps/female/"
+      }
+    }
   },
   "torso-backpack-backpack": {
     "name": "Backpack",
@@ -31170,7 +36380,16 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 110,
+        "male": "backpack/backpack/male/",
+        "muscular": "backpack/backpack/male/",
+        "female": "backpack/backpack/female/",
+        "pregnant": "backpack/backpack/female/"
+      }
+    }
   },
   "torso-backpack-backpack_squarepack": {
     "name": "Square pack",
@@ -31220,7 +36439,16 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 110,
+        "male": "backpack/squarepack/male/",
+        "muscular": "backpack/squarepack/male/",
+        "female": "backpack/squarepack/female/",
+        "pregnant": "backpack/squarepack/female/"
+      }
+    }
   },
   "torso-backpack-backpack_jetpack": {
     "name": "Jetpack",
@@ -31255,7 +36483,16 @@ window.itemMetadata = {
       "bronze",
       "gold",
       "steel"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 110,
+        "male": "backpack/jetpack/male/",
+        "muscular": "backpack/jetpack/male/",
+        "female": "backpack/jetpack/female/",
+        "pregnant": "backpack/jetpack/female/"
+      }
+    }
   },
   "torso-backpack-backpack_jetpack_fins": {
     "name": "Jetpack fins",
@@ -31290,7 +36527,16 @@ window.itemMetadata = {
       "bronze",
       "gold",
       "steel"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 112,
+        "male": "backpack/jetpack_fins/male/",
+        "muscular": "backpack/jetpack_fins/male/",
+        "female": "backpack/jetpack_fins/female/",
+        "pregnant": "backpack/jetpack_fins/female/"
+      }
+    }
   },
   "torso-backpack-backpack_basket": {
     "name": "Basket",
@@ -31324,7 +36570,23 @@ window.itemMetadata = {
     "variants": [
       "round",
       "square"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 130,
+        "male": "backpack/basket/fg/",
+        "muscular": "backpack/basket/fg/",
+        "female": "backpack/basket/fg/",
+        "pregnant": "backpack/basket/fg/"
+      },
+      "layer_2": {
+        "zPos": 5,
+        "male": "backpack/basket/bg/",
+        "muscular": "backpack/basket/bg/",
+        "female": "backpack/basket/bg/",
+        "pregnant": "backpack/basket/bg/"
+      }
+    }
   },
   "torso-backpack-quiver": {
     "name": "Quiver",
@@ -31354,7 +36616,17 @@ window.itemMetadata = {
     ],
     "variants": [
       "quiver"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 8,
+        "male": "quiver/",
+        "muscular": "quiver/",
+        "female": "quiver/",
+        "pregnant": "quiver/",
+        "teen": "quiver/"
+      }
+    }
   },
   "torso-backpack-backpack cargo-backpack_contents_wood": {
     "name": "Wood",
@@ -31390,7 +36662,23 @@ window.itemMetadata = {
     "variants": [
       "3_logs",
       "9_logs"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 140,
+        "male": "backpack/basket_contents/wood/fg/",
+        "muscular": "backpack/basket_contents/wood/fg/",
+        "female": "backpack/basket_contents/wood/fg/",
+        "pregnant": "backpack/basket_contents/wood/fg/"
+      },
+      "layer_2": {
+        "zPos": 5,
+        "male": "backpack/basket_contents/wood/bg/",
+        "muscular": "backpack/basket_contents/wood/bg/",
+        "female": "backpack/basket_contents/wood/bg/",
+        "pregnant": "backpack/basket_contents/wood/bg/"
+      }
+    }
   },
   "torso-backpack-backpack cargo-backpack_contents_ore": {
     "name": "Ore",
@@ -31432,7 +36720,23 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 140,
+        "male": "backpack/basket_contents/ore/fg/",
+        "muscular": "backpack/basket_contents/ore/fg/",
+        "female": "backpack/basket_contents/ore/fg/",
+        "pregnant": "backpack/basket_contents/ore/fg/"
+      },
+      "layer_2": {
+        "zPos": 5,
+        "male": "backpack/basket_contents/ore/bg/",
+        "muscular": "backpack/basket_contents/ore/bg/",
+        "female": "backpack/basket_contents/ore/bg/",
+        "pregnant": "backpack/basket_contents/ore/bg/"
+      }
+    }
   },
   "torso-waist-belt_leather": {
     "name": "Leather Belt",
@@ -31466,7 +36770,15 @@ window.itemMetadata = {
       "tan",
       "walnut",
       "white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 70,
+        "male": "torso/waist/belt_leather/male/",
+        "female": "torso/waist/belt_leather/female/",
+        "teen": "torso/waist/belt_leather/male/"
+      }
+    }
   },
   "torso-waist-belt_double": {
     "name": "Double Belt",
@@ -31500,7 +36812,15 @@ window.itemMetadata = {
       "tan",
       "walnut",
       "white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 70,
+        "male": "torso/waist/belt_double/male/",
+        "female": "torso/waist/belt_double/female/",
+        "teen": "torso/waist/belt_double/male/"
+      }
+    }
   },
   "torso-waist-belt_loose": {
     "name": "Loose Belt",
@@ -31534,7 +36854,15 @@ window.itemMetadata = {
       "tan",
       "walnut",
       "white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 70,
+        "male": "torso/waist/belt_loose/male/",
+        "female": "torso/waist/belt_loose/female/",
+        "teen": "torso/waist/belt_loose/male/"
+      }
+    }
   },
   "torso-waist-belt_belly": {
     "name": "Belly belt",
@@ -31568,7 +36896,15 @@ window.itemMetadata = {
       "tan",
       "walnut",
       "white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 70,
+        "male": "torso/waist/belt_belly/male/",
+        "female": "torso/waist/belt_belly/female/",
+        "teen": "torso/waist/belt_belly/male/"
+      }
+    }
   },
   "torso-waist-belt_other_female": {
     "name": "Other belts",
@@ -31602,7 +36938,13 @@ window.itemMetadata = {
       "silver",
       "teal",
       "white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 70,
+        "female": "torso/waist/belt_other/female/"
+      }
+    }
   },
   "torso-waist-belt_other_male": {
     "name": "Other belts",
@@ -31630,7 +36972,13 @@ window.itemMetadata = {
       "formal",
       "leather",
       "white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 70,
+        "male": "torso/waist/belt_other/male/"
+      }
+    }
   },
   "torso-waist-belt_sash": {
     "name": "Sash",
@@ -31681,7 +37029,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 65,
+        "male": "torso/waist/sash/male/",
+        "female": "torso/waist/sash/female/",
+        "teen": "torso/waist/sash/male/"
+      }
+    }
   },
   "torso-waist-belt_sash_narrow": {
     "name": "Narrow sash",
@@ -31732,7 +37088,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 65,
+        "male": "torso/waist/sash_narrow/male/",
+        "female": "torso/waist/sash_narrow/female/",
+        "teen": "torso/waist/sash_narrow/male/"
+      }
+    }
   },
   "torso-waist-belt_waistband": {
     "name": "Waistband",
@@ -31782,7 +37146,14 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 65,
+        "female": "torso/waist/waistband/female/",
+        "teen": "torso/waist/sash/male/"
+      }
+    }
   },
   "torso-waist-obi-belt_obi": {
     "name": "Obi",
@@ -31846,7 +37217,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 65,
+        "male": "torso/waist/obi/male/",
+        "muscular": "torso/waist/obi/male/",
+        "female": "torso/waist/obi/thin/",
+        "pregnant": "torso/waist/obi/thin/",
+        "teen": "torso/waist/obi/thin/"
+      }
+    }
   },
   "torso-waist-obi-belt_obi_knot_left": {
     "name": "Obi Knot Left",
@@ -31910,7 +37291,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 66,
+        "male": "torso/waist/obi/knot/left/male/",
+        "muscular": "torso/waist/obi/knot/left/male/",
+        "female": "torso/waist/obi/knot/left/thin/",
+        "pregnant": "torso/waist/obi/knot/left/thin/",
+        "teen": "torso/waist/obi/knot/left/thin/"
+      }
+    }
   },
   "torso-waist-obi-belt_obi_knot_right": {
     "name": "Obi Knot Right",
@@ -31974,7 +37365,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 66,
+        "male": "torso/waist/obi/knot/right/male/",
+        "muscular": "torso/waist/obi/knot/right/male/",
+        "female": "torso/waist/obi/knot/right/thin/",
+        "pregnant": "torso/waist/obi/knot/right/thin/",
+        "teen": "torso/waist/obi/knot/right/thin/"
+      }
+    }
   },
   "torso-buckles": {
     "name": "Buckles",
@@ -32002,7 +37403,13 @@ window.itemMetadata = {
       "gold",
       "iron",
       "silver"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 75,
+        "female": "torso/waist/buckles/female/"
+      }
+    }
   },
   "legs-legs_armour": {
     "name": "Armour",
@@ -32040,7 +37447,15 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 20,
+        "male": "legs/armour/plate/male/",
+        "female": "legs/armour/plate/thin/",
+        "teen": "legs/armour/plate/thin/"
+      }
+    }
   },
   "legs-pants-legs_widepants": {
     "name": "Wide pants",
@@ -32089,7 +37504,13 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 20,
+        "muscular": "legs/pants/muscular/"
+      }
+    }
   },
   "legs-pants-legs_pants": {
     "name": "Pants",
@@ -32152,7 +37573,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 20,
+        "male": "legs/pants/male/",
+        "muscular": "legs/pants/male/",
+        "female": "legs/pants/thin/",
+        "teen": "legs/pants/thin/",
+        "pregnant": "legs/pants/thin/"
+      }
+    }
   },
   "legs-pants-legs_pants2": {
     "name": "Long Pants",
@@ -32213,7 +37644,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 20,
+        "male": "legs/pants2/male/",
+        "female": "legs/pants2/thin/",
+        "teen": "legs/pants2/thin/"
+      }
+    }
   },
   "legs-pants-legs_cuffed": {
     "name": "Cuffed Pants",
@@ -32274,7 +37713,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 20,
+        "male": "legs/cuffed/male/",
+        "female": "legs/cuffed/thin/",
+        "teen": "legs/cuffed/thin/"
+      }
+    }
   },
   "legs-pants-legs_pantaloons": {
     "name": "Pantaloons",
@@ -32337,7 +37784,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 20,
+        "male": "legs/pantaloons/male/",
+        "muscular": "legs/pantaloons/muscular/",
+        "female": "legs/pantaloons/thin/",
+        "pregnant": "legs/pantaloons/thin/",
+        "teen": "legs/pantaloons/thin/"
+      }
+    }
   },
   "legs-pants-legs_formal": {
     "name": "Formal Pants",
@@ -32401,7 +37858,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 20,
+        "male": "legs/formal/male/",
+        "muscular": "legs/formal/male/",
+        "female": "legs/formal/thin/",
+        "teen": "legs/formal/thin/",
+        "pregnant": "legs/formal/thin/"
+      }
+    }
   },
   "legs-pants-legs_formal_striped": {
     "name": "Striped Formal Pants",
@@ -32465,7 +37932,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 20,
+        "male": "legs/formal_striped/male/",
+        "muscular": "legs/formal_striped/male/",
+        "female": "legs/formal_striped/thin/",
+        "teen": "legs/formal_striped/thin/",
+        "pregnant": "legs/formal_striped/thin/"
+      }
+    }
   },
   "legs-pants-legs_fur": {
     "name": "Fur Pants",
@@ -32536,7 +38013,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 20,
+        "male": "legs/fur/male/",
+        "muscular": "legs/fur/male/",
+        "female": "legs/fur/thin/",
+        "teen": "legs/fur/thin/",
+        "pregnant": "legs/fur/thin/"
+      }
+    }
   },
   "legs-pants-legs_pregnantpants": {
     "name": "Pregnancy pants",
@@ -32580,7 +38067,13 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 20,
+        "pregnant": "legs/pants/pregnant/"
+      }
+    }
   },
   "legs-pants-legs_childpants": {
     "name": "Child pants",
@@ -32608,7 +38101,13 @@ window.itemMetadata = {
       "maroon",
       "red",
       "white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 20,
+        "child": "legs/pants/child/"
+      }
+    }
   },
   "legs-leggings-legs_leggings": {
     "name": "Leggings",
@@ -32669,7 +38168,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 20,
+        "male": "legs/leggings/male/",
+        "female": "legs/leggings/thin/",
+        "teen": "legs/leggings/thin/"
+      }
+    }
   },
   "legs-leggings-legs_leggings2": {
     "name": "Leggings 2",
@@ -32730,7 +38237,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 20,
+        "male": "legs/leggings2/male/",
+        "female": "legs/leggings2/thin/",
+        "teen": "legs/leggings2/thin/"
+      }
+    }
   },
   "legs-leggings-legs_hose": {
     "name": "Hose",
@@ -32791,7 +38306,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 20,
+        "male": "legs/hose/male/",
+        "female": "legs/hose/thin/",
+        "teen": "legs/hose/thin/"
+      }
+    }
   },
   "legs-shorts-legs_shorts": {
     "name": "Shorts",
@@ -32853,7 +38376,16 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 20,
+        "male": "legs/shorts/shorts/male/",
+        "female": "legs/shorts/shorts/thin/",
+        "teen": "legs/shorts/shorts/thin/",
+        "pregnant": "legs/shorts/shorts/thin/"
+      }
+    }
   },
   "legs-shorts-legs_shorts_short": {
     "name": "Short Shorts",
@@ -32915,7 +38447,16 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 20,
+        "male": "legs/shorts/short_shorts/male/",
+        "female": "legs/shorts/short_shorts/thin/",
+        "teen": "legs/shorts/short_shorts/thin/",
+        "pregnant": "legs/shorts/short_shorts/thin/"
+      }
+    }
   },
   "legs-skirts-legs_childskirts": {
     "name": "Child skirts",
@@ -32944,7 +38485,13 @@ window.itemMetadata = {
       "pink",
       "red",
       "white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 20,
+        "child": "legs/skirts/child/"
+      }
+    }
   },
   "legs-skirts-legs_skirts_plain": {
     "name": "Plain skirt",
@@ -32996,7 +38543,16 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 20,
+        "male": "legs/skirts/plain/male/",
+        "female": "legs/skirts/plain/female/",
+        "teen": "legs/skirts/plain/female/",
+        "pregnant": "legs/skirts/plain/female/"
+      }
+    }
   },
   "legs-skirts-legs_skirts_slit": {
     "name": "Slit skirt",
@@ -33046,7 +38602,14 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 20,
+        "male": "legs/skirts/slit/female/",
+        "female": "legs/skirts/slit/female/"
+      }
+    }
   },
   "legs-skirts-legs_skirts_legion": {
     "name": "Legion skirt",
@@ -33099,7 +38662,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 20,
+        "male": "legs/skirts/legion/male/",
+        "muscular": "legs/skirts/legion/male/",
+        "female": "legs/skirts/legion/female/",
+        "pregnant": "legs/skirts/legion/female/",
+        "teen": "legs/skirts/legion/female/"
+      }
+    }
   },
   "legs-skirts-legs_skirt_straight": {
     "name": "Straight skirt",
@@ -33150,7 +38723,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 20,
+        "female": "legs/skirts/straight/female/",
+        "pregnant": "legs/skirts/straight/female/",
+        "teen": "legs/skirts/straight/female/"
+      }
+    }
   },
   "legs-skirts-legs_skirt_belle": {
     "name": "Belle skirt",
@@ -33201,7 +38782,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 20,
+        "female": "legs/skirts/belle/female/",
+        "pregnant": "legs/skirts/belle/female/",
+        "teen": "legs/skirts/belle/female/"
+      }
+    }
   },
   "legs-skirts-legs_skirt_overskirt": {
     "name": "Overskirt",
@@ -33252,7 +38841,15 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 35,
+        "female": "legs/skirts/overskirt/female/",
+        "pregnant": "legs/skirts/overskirt/female/",
+        "teen": "legs/skirts/overskirt/female/"
+      }
+    }
   },
   "feet-feet_armour": {
     "name": "Armour",
@@ -33288,7 +38885,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 15,
+        "male": "feet/armour/plate/male/",
+        "muscular": "feet/armour/plate/male/",
+        "female": "feet/armour/plate/female/",
+        "pregnant": "feet/armour/plate/female/",
+        "teen": "feet/armour/plate/female/"
+      }
+    }
   },
   "feet-shoes-feet_shoes_basic": {
     "name": "Basic Shoes",
@@ -33359,7 +38966,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 15,
+        "female": "feet/shoes/basic/thin/",
+        "pregnant": "feet/shoes/basic/thin/",
+        "teen": "feet/shoes/basic/thin/",
+        "male": "feet/shoes/basic/male/",
+        "muscular": "feet/shoes/basic/male/"
+      }
+    }
   },
   "feet-shoes-feet_shoes_revised": {
     "name": "Revised Shoes",
@@ -33430,7 +39047,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 15,
+        "male": "feet/shoes/revised/male/",
+        "muscular": "feet/shoes/revised/male/",
+        "female": "feet/shoes/revised/thin/",
+        "teen": "feet/shoes/revised/thin/",
+        "pregnant": "feet/shoes/revised/thin/"
+      }
+    }
   },
   "feet-shoes-feet_shoes_sara": {
     "name": "Sara Shoes",
@@ -33502,7 +39129,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 15,
+        "male": "feet/shoes/sara/male/",
+        "muscular": "feet/shoes/sara/male/",
+        "female": "feet/shoes/sara/thin/",
+        "pregnant": "feet/shoes/sara/thin/",
+        "teen": "feet/shoes/sara/thin/"
+      }
+    }
   },
   "feet-shoes-feet_shoes_ghillies": {
     "name": "Ghillies",
@@ -33573,7 +39210,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 15,
+        "female": "feet/shoes/ghillies/thin/",
+        "teen": "feet/shoes/ghillies/thin/",
+        "pregnant": "feet/shoes/ghillies/thin/",
+        "male": "feet/shoes/ghillies/male/",
+        "muscular": "feet/shoes/ghillies/male/"
+      }
+    }
   },
   "feet-boots-feet_boots_basic": {
     "name": "Basic Boots",
@@ -33644,7 +39291,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 25,
+        "male": "feet/boots/basic/male/",
+        "muscular": "feet/boots/basic/male/",
+        "female": "feet/boots/basic/thin/",
+        "teen": "feet/boots/basic/thin/",
+        "pregnant": "feet/boots/basic/thin/"
+      }
+    }
   },
   "feet-boots-feet_boots_revised": {
     "name": "Revised Boots",
@@ -33715,7 +39372,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 25,
+        "male": "feet/boots/revised/male/",
+        "muscular": "feet/boots/revised/male/",
+        "female": "feet/boots/revised/thin/",
+        "teen": "feet/boots/revised/thin/",
+        "pregnant": "feet/boots/revised/thin/"
+      }
+    }
   },
   "feet-boots-feet_boots_fold": {
     "name": "Folded Rim Boots",
@@ -33786,7 +39453,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 25,
+        "male": "feet/boots/fold/male/",
+        "muscular": "feet/boots/fold/male/",
+        "female": "feet/boots/fold/thin/",
+        "teen": "feet/boots/fold/thin/",
+        "pregnant": "feet/boots/fold/thin/"
+      }
+    }
   },
   "feet-boots-feet_boots_rim": {
     "name": "Rimmed Boots",
@@ -33857,7 +39534,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 25,
+        "male": "feet/boots/rimmed/male/",
+        "muscular": "feet/boots/rimmed/male/",
+        "female": "feet/boots/rimmed/thin/",
+        "teen": "feet/boots/rimmed/thin/",
+        "pregnant": "feet/boots/rimmed/thin/"
+      }
+    }
   },
   "feet-shoe accessory-feet_plate_toe": {
     "name": "Plated Toe",
@@ -33904,7 +39591,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 27,
+        "male": "feet/accessory/plate_toe/male/",
+        "muscular": "feet/accessory/plate_toe/male/",
+        "female": "feet/accessory/plate_toe/thin/",
+        "teen": "feet/accessory/plate_toe/thin/",
+        "pregnant": "feet/accessory/plate_toe/thin/"
+      }
+    }
   },
   "feet-shoe accessory-feet_plate_toe_thick": {
     "name": "Thick Plated Toe",
@@ -33951,7 +39648,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 27,
+        "male": "feet/accessory/plate_toe_thick/male/",
+        "muscular": "feet/accessory/plate_toe_thick/male/",
+        "female": "feet/accessory/plate_toe_thick/thin/",
+        "teen": "feet/accessory/plate_toe_thick/thin/",
+        "pregnant": "feet/accessory/plate_toe_thick/thin/"
+      }
+    }
   },
   "feet-socks-feet_socks_ankle": {
     "name": "Ankle Socks",
@@ -34013,7 +39720,16 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 14,
+        "male": "feet/socks/ankle/male/",
+        "female": "feet/socks/ankle/thin/",
+        "teen": "feet/socks/ankle/thin/",
+        "pregnant": "feet/socks/ankle/thin/"
+      }
+    }
   },
   "feet-socks-feet_socks_high": {
     "name": "High Socks",
@@ -34075,7 +39791,16 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 14,
+        "male": "feet/socks/high/male/",
+        "female": "feet/socks/high/thin/",
+        "teen": "feet/socks/high/thin/",
+        "pregnant": "feet/socks/high/thin/"
+      }
+    }
   },
   "feet-socks-feet_socks_tabi": {
     "name": "Tabi Socks",
@@ -34138,7 +39863,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 14,
+        "male": "feet/socks/tabi/male/",
+        "muscular": "feet/socks/tabi/male/",
+        "female": "feet/socks/tabi/thin/",
+        "teen": "feet/socks/tabi/thin/",
+        "pregnant": "feet/socks/tabi/thin/"
+      }
+    }
   },
   "feet-feet_slippers": {
     "name": "Slippers",
@@ -34200,7 +39935,17 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 15,
+        "male": "feet/slippers/male/",
+        "muscular": "feet/slippers/male/",
+        "female": "feet/slippers/thin/",
+        "teen": "feet/slippers/thin/",
+        "pregnant": "feet/slippers/thin/"
+      }
+    }
   },
   "feet-feet_sandals": {
     "name": "Sandals",
@@ -34270,7 +40015,17 @@ window.itemMetadata = {
       "bronze",
       "silver",
       "gold"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 15,
+        "female": "feet/sandals/thin/",
+        "teen": "feet/sandals/thin/",
+        "pregnant": "feet/sandals/thin/",
+        "male": "feet/sandals/male/",
+        "muscular": "feet/sandals/male/"
+      }
+    }
   },
   "feet-feet_hoofs": {
     "name": "Hoofs",
@@ -34319,7 +40074,17 @@ window.itemMetadata = {
       "fur_gold",
       "fur_grey",
       "fur_white"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 15,
+        "male": "feet/hoofs/male/",
+        "muscular": "feet/hoofs/male/",
+        "female": "feet/hoofs/female/",
+        "teen": "feet/hoofs/female/",
+        "pregnant": "feet/hoofs/female/"
+      }
+    }
   },
   "tools-tool_rod": {
     "name": "Rod",
@@ -34348,7 +40113,27 @@ window.itemMetadata = {
     ],
     "variants": [
       "rod"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 9,
+        "custom_animation": "tool_rod",
+        "male": "tools/rod/background/",
+        "muscular": "tools/rod/background/",
+        "female": "tools/rod/background/",
+        "pregnant": "tools/rod/background/",
+        "teen": "tools/rod/background/"
+      },
+      "layer_2": {
+        "zPos": 150,
+        "custom_animation": "tool_rod",
+        "male": "tools/rod/foreground/",
+        "muscular": "tools/rod/foreground/",
+        "female": "tools/rod/foreground/",
+        "pregnant": "tools/rod/foreground/",
+        "teen": "tools/rod/foreground/"
+      }
+    }
   },
   "tools-tool_smash": {
     "name": "Smash",
@@ -34379,7 +40164,35 @@ window.itemMetadata = {
       "axe",
       "hammer",
       "pickaxe"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 140,
+        "male": "tools/smash/universal/male/",
+        "muscular": "tools/smash/universal/male/",
+        "female": "tools/smash/universal/female/",
+        "pregnant": "tools/smash/universal/female/",
+        "teen": "tools/smash/universal/female/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "custom_animation": "slash_128",
+        "male": "tools/smash/background/",
+        "muscular": "tools/smash/background/",
+        "female": "tools/smash/background/",
+        "pregnant": "tools/smash/background/",
+        "teen": "tools/smash/background/"
+      },
+      "layer_3": {
+        "zPos": 150,
+        "custom_animation": "slash_128",
+        "male": "tools/smash/foreground/",
+        "muscular": "tools/smash/foreground/",
+        "female": "tools/smash/foreground/",
+        "pregnant": "tools/smash/foreground/",
+        "teen": "tools/smash/foreground/"
+      }
+    }
   },
   "tools-tool_thrust": {
     "name": "Thrust",
@@ -34410,7 +40223,25 @@ window.itemMetadata = {
       "hoe",
       "shovel",
       "watering"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 9,
+        "male": "tools/thrust/background/",
+        "muscular": "tools/thrust/background/",
+        "female": "tools/thrust/background/",
+        "pregnant": "tools/thrust/background/",
+        "teen": "tools/thrust/background/"
+      },
+      "layer_2": {
+        "zPos": 150,
+        "male": "tools/thrust/foreground/",
+        "muscular": "tools/thrust/foreground/",
+        "female": "tools/thrust/foreground/",
+        "pregnant": "tools/thrust/foreground/",
+        "teen": "tools/thrust/foreground/"
+      }
+    }
   },
   "tools-tool_whip": {
     "name": "Whip",
@@ -34439,7 +40270,27 @@ window.itemMetadata = {
     ],
     "variants": [
       "whip"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 9,
+        "custom_animation": "tool_whip",
+        "male": "tools/whip/background/",
+        "muscular": "tools/whip/background/",
+        "female": "tools/whip/background/",
+        "pregnant": "tools/whip/background/",
+        "teen": "tools/whip/background/"
+      },
+      "layer_2": {
+        "zPos": 150,
+        "custom_animation": "tool_whip",
+        "male": "tools/whip/",
+        "muscular": "tools/whip/",
+        "female": "tools/whip/",
+        "pregnant": "tools/whip/",
+        "teen": "tools/whip/"
+      }
+    }
   },
   "weapons-shield-shield": {
     "name": "Shield",
@@ -34475,7 +40326,16 @@ window.itemMetadata = {
       "round green",
       "round silver",
       "round yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 110,
+        "male": "shield/male/",
+        "muscular": "shield/male/",
+        "female": "shield/female/",
+        "pregnant": "shield/female/"
+      }
+    }
   },
   "weapons-shield-shield_kite": {
     "name": "Kite",
@@ -34513,7 +40373,16 @@ window.itemMetadata = {
       "kite green gray",
       "kite orange",
       "kite red gray"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 110,
+        "male": "shield/kite/male/",
+        "muscular": "shield/kite/male/",
+        "female": "shield/kite/female/",
+        "pregnant": "shield/kite/female/"
+      }
+    }
   },
   "weapons-shield-shield_spartan": {
     "name": "Spartan shield",
@@ -34542,7 +40411,23 @@ window.itemMetadata = {
     ],
     "variants": [
       "spartan"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 2,
+        "male": "shield/spartan/bg/",
+        "muscular": "shield/spartan/bg/",
+        "female": "shield/spartan/bg/",
+        "pregnant": "shield/spartan/bg/"
+      },
+      "layer_2": {
+        "zPos": 110,
+        "male": "shield/spartan/fg/male/",
+        "muscular": "shield/spartan/fg/male/",
+        "female": "shield/spartan/fg/female/",
+        "pregnant": "shield/spartan/fg/female/"
+      }
+    }
   },
   "weapons-shield-two-engrailed shield-shield_two_engrailed": {
     "name": "Two engrailed shield",
@@ -34572,7 +40457,23 @@ window.itemMetadata = {
     ],
     "variants": [
       "two_engrailed"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 2,
+        "male": "shield/two_engrailed/paint/bg/",
+        "muscular": "shield/two_engrailed/paint/bg/",
+        "female": "shield/two_engrailed/paint/bg/",
+        "pregnant": "shield/two_engrailed/paint/bg/"
+      },
+      "layer_2": {
+        "zPos": 110,
+        "male": "shield/two_engrailed/paint/fg/male/",
+        "muscular": "shield/two_engrailed/paint/fg/male/",
+        "female": "shield/two_engrailed/paint/fg/female/",
+        "pregnant": "shield/two_engrailed/paint/fg/female/"
+      }
+    }
   },
   "weapons-shield-two-engrailed shield-shield_two_engrailed_trim": {
     "name": "Two engrailed shield trim",
@@ -34602,7 +40503,23 @@ window.itemMetadata = {
     ],
     "variants": [
       "two_engrailed_trim"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 3,
+        "male": "shield/two_engrailed/trim/bg/",
+        "muscular": "shield/two_engrailed/trim/bg/",
+        "female": "shield/two_engrailed/trim/bg/",
+        "pregnant": "shield/two_engrailed/trim/bg/"
+      },
+      "layer_2": {
+        "zPos": 115,
+        "male": "shield/two_engrailed/trim/fg/male/",
+        "muscular": "shield/two_engrailed/trim/fg/male/",
+        "female": "shield/two_engrailed/trim/fg/female/",
+        "pregnant": "shield/two_engrailed/trim/fg/female/"
+      }
+    }
   },
   "weapons-shield-two-engrailed shield-shield_crusader": {
     "name": "Crusader shield",
@@ -34632,7 +40549,23 @@ window.itemMetadata = {
     ],
     "variants": [
       "crusader"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 2,
+        "male": "shield/crusader/bg/",
+        "muscular": "shield/crusader/bg/",
+        "female": "shield/crusader/bg/",
+        "pregnant": "shield/crusader/bg/"
+      },
+      "layer_2": {
+        "zPos": 110,
+        "male": "shield/crusader/fg/male/",
+        "muscular": "shield/crusader/fg/male/",
+        "female": "shield/crusader/fg/female/",
+        "pregnant": "shield/crusader/fg/female/"
+      }
+    }
   },
   "weapons-shield-two-engrailed shield-shield_plus": {
     "name": "Plus shield",
@@ -34662,7 +40595,23 @@ window.itemMetadata = {
     ],
     "variants": [
       "plus"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 2,
+        "male": "shield/plus/bg/",
+        "muscular": "shield/plus/bg/",
+        "female": "shield/plus/bg/",
+        "pregnant": "shield/plus/bg/"
+      },
+      "layer_2": {
+        "zPos": 110,
+        "male": "shield/plus/fg/male/",
+        "muscular": "shield/plus/fg/male/",
+        "female": "shield/plus/fg/female/",
+        "pregnant": "shield/plus/fg/female/"
+      }
+    }
   },
   "weapons-shield-scutum shield-shield_scutum": {
     "name": "Scutum shield",
@@ -34692,7 +40641,23 @@ window.itemMetadata = {
     ],
     "variants": [
       "scutum"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 2,
+        "male": "shield/scutum/paint/bg/",
+        "muscular": "shield/scutum/paint/bg/",
+        "female": "shield/scutum/paint/bg/",
+        "pregnant": "shield/scutum/paint/bg/"
+      },
+      "layer_2": {
+        "zPos": 110,
+        "male": "shield/scutum/paint/fg/male/",
+        "muscular": "shield/scutum/paint/fg/male/",
+        "female": "shield/scutum/paint/fg/female/",
+        "pregnant": "shield/scutum/paint/fg/female/"
+      }
+    }
   },
   "weapons-shield-scutum shield-shield_scutum_trim": {
     "name": "Scutum shield trim",
@@ -34722,7 +40687,23 @@ window.itemMetadata = {
     ],
     "variants": [
       "scutum_trim"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 3,
+        "male": "shield/scutum_trim/bg/",
+        "muscular": "shield/scutum_trim/bg/",
+        "female": "shield/scutum_trim/bg/",
+        "pregnant": "shield/scutum_trim/bg/"
+      },
+      "layer_2": {
+        "zPos": 115,
+        "male": "shield/scutum_trim/fg/male/",
+        "muscular": "shield/scutum_trim/fg/male/",
+        "female": "shield/scutum_trim/fg/female/",
+        "pregnant": "shield/scutum_trim/fg/female/"
+      }
+    }
   },
   "weapons-shield-heater shield-shield_heater_wood": {
     "name": "Heater Shield Base",
@@ -34769,7 +40750,25 @@ window.itemMetadata = {
       "oak",
       "tan",
       "umber"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 2,
+        "male": "shield/heater/original/wood/bg/",
+        "muscular": "shield/heater/original/wood/bg/",
+        "female": "shield/heater/original/wood/bg/",
+        "pregnant": "shield/heater/original/wood/bg/",
+        "teen": "shield/heater/original/wood/bg/"
+      },
+      "layer_2": {
+        "zPos": 110,
+        "male": "shield/heater/original/wood/fg/",
+        "muscular": "shield/heater/original/wood/fg/",
+        "female": "shield/heater/original/wood/fg/",
+        "pregnant": "shield/heater/original/wood/fg/",
+        "teen": "shield/heater/original/wood/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-shield_heater_paint": {
     "name": "Heater Shield Paint",
@@ -34884,7 +40883,25 @@ window.itemMetadata = {
       "white",
       "wine",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 3,
+        "male": "shield/heater/original/paint/bg/",
+        "muscular": "shield/heater/original/paint/bg/",
+        "female": "shield/heater/original/paint/bg/",
+        "pregnant": "shield/heater/original/paint/bg/",
+        "teen": "shield/heater/original/paint/bg/"
+      },
+      "layer_2": {
+        "zPos": 111,
+        "male": "shield/heater/original/paint/fg/",
+        "muscular": "shield/heater/original/paint/fg/",
+        "female": "shield/heater/original/paint/fg/",
+        "pregnant": "shield/heater/original/paint/fg/",
+        "teen": "shield/heater/original/paint/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-shield_heater_trim": {
     "name": "Heater Shield Trim",
@@ -34933,7 +40950,25 @@ window.itemMetadata = {
       "iron",
       "silver",
       "steel"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 115,
+        "male": "shield/heater/original/trim/fg/",
+        "muscular": "shield/heater/original/trim/fg/",
+        "female": "shield/heater/original/trim/fg/",
+        "pregnant": "shield/heater/original/trim/fg/",
+        "teen": "shield/heater/original/trim/fg/"
+      },
+      "layer_2": {
+        "zPos": 6,
+        "male": "shield/heater/original/trim/bg/",
+        "muscular": "shield/heater/original/trim/bg/",
+        "female": "shield/heater/original/trim/bg/",
+        "pregnant": "shield/heater/original/trim/bg/",
+        "teen": "shield/heater/original/trim/bg/"
+      }
+    }
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_barry": {
     "name": "barry",
@@ -34998,7 +41033,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/original/pattern/barry/bg/",
+        "muscular": "shield/heater/original/pattern/barry/bg/",
+        "female": "shield/heater/original/pattern/barry/bg/",
+        "pregnant": "shield/heater/original/pattern/barry/bg/",
+        "teen": "shield/heater/original/pattern/barry/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/original/pattern/barry/fg/",
+        "muscular": "shield/heater/original/pattern/barry/fg/",
+        "female": "shield/heater/original/pattern/barry/fg/",
+        "pregnant": "shield/heater/original/pattern/barry/fg/",
+        "teen": "shield/heater/original/pattern/barry/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_bend_sinister": {
     "name": "bend_sinister",
@@ -35063,7 +41116,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/original/pattern/bend_sinister/bg/",
+        "muscular": "shield/heater/original/pattern/bend_sinister/bg/",
+        "female": "shield/heater/original/pattern/bend_sinister/bg/",
+        "pregnant": "shield/heater/original/pattern/bend_sinister/bg/",
+        "teen": "shield/heater/original/pattern/bend_sinister/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/original/pattern/bend_sinister/fg/",
+        "muscular": "shield/heater/original/pattern/bend_sinister/fg/",
+        "female": "shield/heater/original/pattern/bend_sinister/fg/",
+        "pregnant": "shield/heater/original/pattern/bend_sinister/fg/",
+        "teen": "shield/heater/original/pattern/bend_sinister/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_bend": {
     "name": "bend",
@@ -35128,7 +41199,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/original/pattern/bend/bg/",
+        "muscular": "shield/heater/original/pattern/bend/bg/",
+        "female": "shield/heater/original/pattern/bend/bg/",
+        "pregnant": "shield/heater/original/pattern/bend/bg/",
+        "teen": "shield/heater/original/pattern/bend/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/original/pattern/bend/fg/",
+        "muscular": "shield/heater/original/pattern/bend/fg/",
+        "female": "shield/heater/original/pattern/bend/fg/",
+        "pregnant": "shield/heater/original/pattern/bend/fg/",
+        "teen": "shield/heater/original/pattern/bend/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_bendy_sinister": {
     "name": "bendy_sinister",
@@ -35193,7 +41282,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/original/pattern/bendy_sinister/bg/",
+        "muscular": "shield/heater/original/pattern/bendy_sinister/bg/",
+        "female": "shield/heater/original/pattern/bendy_sinister/bg/",
+        "pregnant": "shield/heater/original/pattern/bendy_sinister/bg/",
+        "teen": "shield/heater/original/pattern/bendy_sinister/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/original/pattern/bendy_sinister/fg/",
+        "muscular": "shield/heater/original/pattern/bendy_sinister/fg/",
+        "female": "shield/heater/original/pattern/bendy_sinister/fg/",
+        "pregnant": "shield/heater/original/pattern/bendy_sinister/fg/",
+        "teen": "shield/heater/original/pattern/bendy_sinister/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_bendy": {
     "name": "bendy",
@@ -35258,7 +41365,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/original/pattern/bendy/bg/",
+        "muscular": "shield/heater/original/pattern/bendy/bg/",
+        "female": "shield/heater/original/pattern/bendy/bg/",
+        "pregnant": "shield/heater/original/pattern/bendy/bg/",
+        "teen": "shield/heater/original/pattern/bendy/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/original/pattern/bendy/fg/",
+        "muscular": "shield/heater/original/pattern/bendy/fg/",
+        "female": "shield/heater/original/pattern/bendy/fg/",
+        "pregnant": "shield/heater/original/pattern/bendy/fg/",
+        "teen": "shield/heater/original/pattern/bendy/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_bordure": {
     "name": "bordure",
@@ -35323,7 +41448,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/original/pattern/bordure/bg/",
+        "muscular": "shield/heater/original/pattern/bordure/bg/",
+        "female": "shield/heater/original/pattern/bordure/bg/",
+        "pregnant": "shield/heater/original/pattern/bordure/bg/",
+        "teen": "shield/heater/original/pattern/bordure/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/original/pattern/bordure/fg/",
+        "muscular": "shield/heater/original/pattern/bordure/fg/",
+        "female": "shield/heater/original/pattern/bordure/fg/",
+        "pregnant": "shield/heater/original/pattern/bordure/fg/",
+        "teen": "shield/heater/original/pattern/bordure/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_chevron_inverted": {
     "name": "chevron_inverted",
@@ -35388,7 +41531,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/original/pattern/chevron_inverted/bg/",
+        "muscular": "shield/heater/original/pattern/chevron_inverted/bg/",
+        "female": "shield/heater/original/pattern/chevron_inverted/bg/",
+        "pregnant": "shield/heater/original/pattern/chevron_inverted/bg/",
+        "teen": "shield/heater/original/pattern/chevron_inverted/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/original/pattern/chevron_inverted/fg/",
+        "muscular": "shield/heater/original/pattern/chevron_inverted/fg/",
+        "female": "shield/heater/original/pattern/chevron_inverted/fg/",
+        "pregnant": "shield/heater/original/pattern/chevron_inverted/fg/",
+        "teen": "shield/heater/original/pattern/chevron_inverted/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_chevron": {
     "name": "chevron",
@@ -35453,7 +41614,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/original/pattern/chevron/bg/",
+        "muscular": "shield/heater/original/pattern/chevron/bg/",
+        "female": "shield/heater/original/pattern/chevron/bg/",
+        "pregnant": "shield/heater/original/pattern/chevron/bg/",
+        "teen": "shield/heater/original/pattern/chevron/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/original/pattern/chevron/fg/",
+        "muscular": "shield/heater/original/pattern/chevron/fg/",
+        "female": "shield/heater/original/pattern/chevron/fg/",
+        "pregnant": "shield/heater/original/pattern/chevron/fg/",
+        "teen": "shield/heater/original/pattern/chevron/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_chief": {
     "name": "chief",
@@ -35518,7 +41697,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/original/pattern/chief/bg/",
+        "muscular": "shield/heater/original/pattern/chief/bg/",
+        "female": "shield/heater/original/pattern/chief/bg/",
+        "pregnant": "shield/heater/original/pattern/chief/bg/",
+        "teen": "shield/heater/original/pattern/chief/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/original/pattern/chief/fg/",
+        "muscular": "shield/heater/original/pattern/chief/fg/",
+        "female": "shield/heater/original/pattern/chief/fg/",
+        "pregnant": "shield/heater/original/pattern/chief/fg/",
+        "teen": "shield/heater/original/pattern/chief/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_cross": {
     "name": "cross",
@@ -35583,7 +41780,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/original/pattern/cross/bg/",
+        "muscular": "shield/heater/original/pattern/cross/bg/",
+        "female": "shield/heater/original/pattern/cross/bg/",
+        "pregnant": "shield/heater/original/pattern/cross/bg/",
+        "teen": "shield/heater/original/pattern/cross/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/original/pattern/cross/fg/",
+        "muscular": "shield/heater/original/pattern/cross/fg/",
+        "female": "shield/heater/original/pattern/cross/fg/",
+        "pregnant": "shield/heater/original/pattern/cross/fg/",
+        "teen": "shield/heater/original/pattern/cross/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_fess": {
     "name": "fess",
@@ -35648,7 +41863,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/original/pattern/fess/bg/",
+        "muscular": "shield/heater/original/pattern/fess/bg/",
+        "female": "shield/heater/original/pattern/fess/bg/",
+        "pregnant": "shield/heater/original/pattern/fess/bg/",
+        "teen": "shield/heater/original/pattern/fess/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/original/pattern/fess/fg/",
+        "muscular": "shield/heater/original/pattern/fess/fg/",
+        "female": "shield/heater/original/pattern/fess/fg/",
+        "pregnant": "shield/heater/original/pattern/fess/fg/",
+        "teen": "shield/heater/original/pattern/fess/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_lozengy": {
     "name": "lozengy",
@@ -35713,7 +41946,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/original/pattern/lozengy/bg/",
+        "muscular": "shield/heater/original/pattern/lozengy/bg/",
+        "female": "shield/heater/original/pattern/lozengy/bg/",
+        "pregnant": "shield/heater/original/pattern/lozengy/bg/",
+        "teen": "shield/heater/original/pattern/lozengy/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/original/pattern/lozengy/fg/",
+        "muscular": "shield/heater/original/pattern/lozengy/fg/",
+        "female": "shield/heater/original/pattern/lozengy/fg/",
+        "pregnant": "shield/heater/original/pattern/lozengy/fg/",
+        "teen": "shield/heater/original/pattern/lozengy/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_pale": {
     "name": "pale",
@@ -35778,7 +42029,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/original/pattern/pale/bg/",
+        "muscular": "shield/heater/original/pattern/pale/bg/",
+        "female": "shield/heater/original/pattern/pale/bg/",
+        "pregnant": "shield/heater/original/pattern/pale/bg/",
+        "teen": "shield/heater/original/pattern/pale/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/original/pattern/pale/fg/",
+        "muscular": "shield/heater/original/pattern/pale/fg/",
+        "female": "shield/heater/original/pattern/pale/fg/",
+        "pregnant": "shield/heater/original/pattern/pale/fg/",
+        "teen": "shield/heater/original/pattern/pale/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_pall": {
     "name": "pall",
@@ -35843,7 +42112,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/original/pattern/pall/bg/",
+        "muscular": "shield/heater/original/pattern/pall/bg/",
+        "female": "shield/heater/original/pattern/pall/bg/",
+        "pregnant": "shield/heater/original/pattern/pall/bg/",
+        "teen": "shield/heater/original/pattern/pall/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/original/pattern/pall/fg/",
+        "muscular": "shield/heater/original/pattern/pall/fg/",
+        "female": "shield/heater/original/pattern/pall/fg/",
+        "pregnant": "shield/heater/original/pattern/pall/fg/",
+        "teen": "shield/heater/original/pattern/pall/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_paly": {
     "name": "paly",
@@ -35908,7 +42195,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/original/pattern/paly/bg/",
+        "muscular": "shield/heater/original/pattern/paly/bg/",
+        "female": "shield/heater/original/pattern/paly/bg/",
+        "pregnant": "shield/heater/original/pattern/paly/bg/",
+        "teen": "shield/heater/original/pattern/paly/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/original/pattern/paly/fg/",
+        "muscular": "shield/heater/original/pattern/paly/fg/",
+        "female": "shield/heater/original/pattern/paly/fg/",
+        "pregnant": "shield/heater/original/pattern/paly/fg/",
+        "teen": "shield/heater/original/pattern/paly/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_bend_sinister": {
     "name": "per_bend_sinister",
@@ -35973,7 +42278,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/original/pattern/per_bend_sinister/bg/",
+        "muscular": "shield/heater/original/pattern/per_bend_sinister/bg/",
+        "female": "shield/heater/original/pattern/per_bend_sinister/bg/",
+        "pregnant": "shield/heater/original/pattern/per_bend_sinister/bg/",
+        "teen": "shield/heater/original/pattern/per_bend_sinister/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/original/pattern/per_bend_sinister/fg/",
+        "muscular": "shield/heater/original/pattern/per_bend_sinister/fg/",
+        "female": "shield/heater/original/pattern/per_bend_sinister/fg/",
+        "pregnant": "shield/heater/original/pattern/per_bend_sinister/fg/",
+        "teen": "shield/heater/original/pattern/per_bend_sinister/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_bend": {
     "name": "per_bend",
@@ -36038,7 +42361,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/original/pattern/per_bend/bg/",
+        "muscular": "shield/heater/original/pattern/per_bend/bg/",
+        "female": "shield/heater/original/pattern/per_bend/bg/",
+        "pregnant": "shield/heater/original/pattern/per_bend/bg/",
+        "teen": "shield/heater/original/pattern/per_bend/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/original/pattern/per_bend/fg/",
+        "muscular": "shield/heater/original/pattern/per_bend/fg/",
+        "female": "shield/heater/original/pattern/per_bend/fg/",
+        "pregnant": "shield/heater/original/pattern/per_bend/fg/",
+        "teen": "shield/heater/original/pattern/per_bend/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_chevron_inverted": {
     "name": "per_chevron_inverted",
@@ -36103,7 +42444,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/original/pattern/per_chevron_inverted/bg/",
+        "muscular": "shield/heater/original/pattern/per_chevron_inverted/bg/",
+        "female": "shield/heater/original/pattern/per_chevron_inverted/bg/",
+        "pregnant": "shield/heater/original/pattern/per_chevron_inverted/bg/",
+        "teen": "shield/heater/original/pattern/per_chevron_inverted/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/original/pattern/per_chevron_inverted/fg/",
+        "muscular": "shield/heater/original/pattern/per_chevron_inverted/fg/",
+        "female": "shield/heater/original/pattern/per_chevron_inverted/fg/",
+        "pregnant": "shield/heater/original/pattern/per_chevron_inverted/fg/",
+        "teen": "shield/heater/original/pattern/per_chevron_inverted/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_chevron": {
     "name": "per_chevron",
@@ -36168,7 +42527,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/original/pattern/per_chevron/bg/",
+        "muscular": "shield/heater/original/pattern/per_chevron/bg/",
+        "female": "shield/heater/original/pattern/per_chevron/bg/",
+        "pregnant": "shield/heater/original/pattern/per_chevron/bg/",
+        "teen": "shield/heater/original/pattern/per_chevron/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/original/pattern/per_chevron/fg/",
+        "muscular": "shield/heater/original/pattern/per_chevron/fg/",
+        "female": "shield/heater/original/pattern/per_chevron/fg/",
+        "pregnant": "shield/heater/original/pattern/per_chevron/fg/",
+        "teen": "shield/heater/original/pattern/per_chevron/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_fess": {
     "name": "per_fess",
@@ -36233,7 +42610,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/original/pattern/per_fess/bg/",
+        "muscular": "shield/heater/original/pattern/per_fess/bg/",
+        "female": "shield/heater/original/pattern/per_fess/bg/",
+        "pregnant": "shield/heater/original/pattern/per_fess/bg/",
+        "teen": "shield/heater/original/pattern/per_fess/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/original/pattern/per_fess/fg/",
+        "muscular": "shield/heater/original/pattern/per_fess/fg/",
+        "female": "shield/heater/original/pattern/per_fess/fg/",
+        "pregnant": "shield/heater/original/pattern/per_fess/fg/",
+        "teen": "shield/heater/original/pattern/per_fess/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_pale": {
     "name": "per_pale",
@@ -36298,7 +42693,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/original/pattern/per_pale/bg/",
+        "muscular": "shield/heater/original/pattern/per_pale/bg/",
+        "female": "shield/heater/original/pattern/per_pale/bg/",
+        "pregnant": "shield/heater/original/pattern/per_pale/bg/",
+        "teen": "shield/heater/original/pattern/per_pale/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/original/pattern/per_pale/fg/",
+        "muscular": "shield/heater/original/pattern/per_pale/fg/",
+        "female": "shield/heater/original/pattern/per_pale/fg/",
+        "pregnant": "shield/heater/original/pattern/per_pale/fg/",
+        "teen": "shield/heater/original/pattern/per_pale/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_saltire": {
     "name": "per_saltire",
@@ -36363,7 +42776,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/original/pattern/per_saltire/bg/",
+        "muscular": "shield/heater/original/pattern/per_saltire/bg/",
+        "female": "shield/heater/original/pattern/per_saltire/bg/",
+        "pregnant": "shield/heater/original/pattern/per_saltire/bg/",
+        "teen": "shield/heater/original/pattern/per_saltire/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/original/pattern/per_saltire/fg/",
+        "muscular": "shield/heater/original/pattern/per_saltire/fg/",
+        "female": "shield/heater/original/pattern/per_saltire/fg/",
+        "pregnant": "shield/heater/original/pattern/per_saltire/fg/",
+        "teen": "shield/heater/original/pattern/per_saltire/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_quarterly": {
     "name": "quarterly",
@@ -36428,7 +42859,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/original/pattern/quarterly/bg/",
+        "muscular": "shield/heater/original/pattern/quarterly/bg/",
+        "female": "shield/heater/original/pattern/quarterly/bg/",
+        "pregnant": "shield/heater/original/pattern/quarterly/bg/",
+        "teen": "shield/heater/original/pattern/quarterly/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/original/pattern/quarterly/fg/",
+        "muscular": "shield/heater/original/pattern/quarterly/fg/",
+        "female": "shield/heater/original/pattern/quarterly/fg/",
+        "pregnant": "shield/heater/original/pattern/quarterly/fg/",
+        "teen": "shield/heater/original/pattern/quarterly/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_saltire": {
     "name": "saltire",
@@ -36493,7 +42942,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/original/pattern/saltire/bg/",
+        "muscular": "shield/heater/original/pattern/saltire/bg/",
+        "female": "shield/heater/original/pattern/saltire/bg/",
+        "pregnant": "shield/heater/original/pattern/saltire/bg/",
+        "teen": "shield/heater/original/pattern/saltire/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/original/pattern/saltire/fg/",
+        "muscular": "shield/heater/original/pattern/saltire/fg/",
+        "female": "shield/heater/original/pattern/saltire/fg/",
+        "pregnant": "shield/heater/original/pattern/saltire/fg/",
+        "teen": "shield/heater/original/pattern/saltire/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-shield_heater_revised_wood": {
     "name": "Revised Heater Shield Base",
@@ -36540,7 +43007,25 @@ window.itemMetadata = {
       "oak",
       "tan",
       "umber"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 2,
+        "male": "shield/heater/revised/wood/bg/",
+        "muscular": "shield/heater/revised/wood/bg/",
+        "female": "shield/heater/revised/wood/bg/",
+        "pregnant": "shield/heater/revised/wood/bg/",
+        "teen": "shield/heater/revised/wood/bg/"
+      },
+      "layer_2": {
+        "zPos": 110,
+        "male": "shield/heater/revised/wood/fg/",
+        "muscular": "shield/heater/revised/wood/fg/",
+        "female": "shield/heater/revised/wood/fg/",
+        "pregnant": "shield/heater/revised/wood/fg/",
+        "teen": "shield/heater/revised/wood/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-shield_heater_revised_paint": {
     "name": "Revised Heater Shield Paint",
@@ -36655,7 +43140,25 @@ window.itemMetadata = {
       "white",
       "wine",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 3,
+        "male": "shield/heater/revised/paint/bg/",
+        "muscular": "shield/heater/revised/paint/bg/",
+        "female": "shield/heater/revised/paint/bg/",
+        "pregnant": "shield/heater/revised/paint/bg/",
+        "teen": "shield/heater/revised/paint/bg/"
+      },
+      "layer_2": {
+        "zPos": 111,
+        "male": "shield/heater/revised/paint/fg/",
+        "muscular": "shield/heater/revised/paint/fg/",
+        "female": "shield/heater/revised/paint/fg/",
+        "pregnant": "shield/heater/revised/paint/fg/",
+        "teen": "shield/heater/revised/paint/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-shield_heater_revised_trim": {
     "name": "Revised Heater Shield Trim",
@@ -36704,7 +43207,25 @@ window.itemMetadata = {
       "iron",
       "silver",
       "steel"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 6,
+        "male": "shield/heater/revised/trim/bg/",
+        "muscular": "shield/heater/revised/trim/bg/",
+        "female": "shield/heater/revised/trim/bg/",
+        "pregnant": "shield/heater/revised/trim/bg/",
+        "teen": "shield/heater/revised/trim/bg/"
+      },
+      "layer_2": {
+        "zPos": 115,
+        "male": "shield/heater/revised/trim/fg/",
+        "muscular": "shield/heater/revised/trim/fg/",
+        "female": "shield/heater/revised/trim/fg/",
+        "pregnant": "shield/heater/revised/trim/fg/",
+        "teen": "shield/heater/revised/trim/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_barry": {
     "name": "revised_barry",
@@ -36769,7 +43290,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/revised/pattern/barry/bg/",
+        "muscular": "shield/heater/revised/pattern/barry/bg/",
+        "female": "shield/heater/revised/pattern/barry/bg/",
+        "pregnant": "shield/heater/revised/pattern/barry/bg/",
+        "teen": "shield/heater/revised/pattern/barry/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/revised/pattern/barry/fg/",
+        "muscular": "shield/heater/revised/pattern/barry/fg/",
+        "female": "shield/heater/revised/pattern/barry/fg/",
+        "pregnant": "shield/heater/revised/pattern/barry/fg/",
+        "teen": "shield/heater/revised/pattern/barry/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_bend_sinister": {
     "name": "revised_bend_sinister",
@@ -36834,7 +43373,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/revised/pattern/bend_sinister/bg/",
+        "muscular": "shield/heater/revised/pattern/bend_sinister/bg/",
+        "female": "shield/heater/revised/pattern/bend_sinister/bg/",
+        "pregnant": "shield/heater/revised/pattern/bend_sinister/bg/",
+        "teen": "shield/heater/revised/pattern/bend_sinister/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/revised/pattern/bend_sinister/fg/",
+        "muscular": "shield/heater/revised/pattern/bend_sinister/fg/",
+        "female": "shield/heater/revised/pattern/bend_sinister/fg/",
+        "pregnant": "shield/heater/revised/pattern/bend_sinister/fg/",
+        "teen": "shield/heater/revised/pattern/bend_sinister/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_bend": {
     "name": "revised_bend",
@@ -36899,7 +43456,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/revised/pattern/bend/bg/",
+        "muscular": "shield/heater/revised/pattern/bend/bg/",
+        "female": "shield/heater/revised/pattern/bend/bg/",
+        "pregnant": "shield/heater/revised/pattern/bend/bg/",
+        "teen": "shield/heater/revised/pattern/bend/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/revised/pattern/bend/fg/",
+        "muscular": "shield/heater/revised/pattern/bend/fg/",
+        "female": "shield/heater/revised/pattern/bend/fg/",
+        "pregnant": "shield/heater/revised/pattern/bend/fg/",
+        "teen": "shield/heater/revised/pattern/bend/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_bendy_sinister": {
     "name": "revised_bendy_sinister",
@@ -36964,7 +43539,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/revised/pattern/bendy_sinister/bg/",
+        "muscular": "shield/heater/revised/pattern/bendy_sinister/bg/",
+        "female": "shield/heater/revised/pattern/bendy_sinister/bg/",
+        "pregnant": "shield/heater/revised/pattern/bendy_sinister/bg/",
+        "teen": "shield/heater/revised/pattern/bendy_sinister/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/revised/pattern/bendy_sinister/fg/",
+        "muscular": "shield/heater/revised/pattern/bendy_sinister/fg/",
+        "female": "shield/heater/revised/pattern/bendy_sinister/fg/",
+        "pregnant": "shield/heater/revised/pattern/bendy_sinister/fg/",
+        "teen": "shield/heater/revised/pattern/bendy_sinister/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_bendy": {
     "name": "revised_bendy",
@@ -37029,7 +43622,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/revised/pattern/bendy/bg/",
+        "muscular": "shield/heater/revised/pattern/bendy/bg/",
+        "female": "shield/heater/revised/pattern/bendy/bg/",
+        "pregnant": "shield/heater/revised/pattern/bendy/bg/",
+        "teen": "shield/heater/revised/pattern/bendy/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/revised/pattern/bendy/fg/",
+        "muscular": "shield/heater/revised/pattern/bendy/fg/",
+        "female": "shield/heater/revised/pattern/bendy/fg/",
+        "pregnant": "shield/heater/revised/pattern/bendy/fg/",
+        "teen": "shield/heater/revised/pattern/bendy/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_bordure": {
     "name": "revised_bordure",
@@ -37094,7 +43705,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/revised/pattern/bordure/bg/",
+        "muscular": "shield/heater/revised/pattern/bordure/bg/",
+        "female": "shield/heater/revised/pattern/bordure/bg/",
+        "pregnant": "shield/heater/revised/pattern/bordure/bg/",
+        "teen": "shield/heater/revised/pattern/bordure/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/revised/pattern/bordure/fg/",
+        "muscular": "shield/heater/revised/pattern/bordure/fg/",
+        "female": "shield/heater/revised/pattern/bordure/fg/",
+        "pregnant": "shield/heater/revised/pattern/bordure/fg/",
+        "teen": "shield/heater/revised/pattern/bordure/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_chevron_inverted": {
     "name": "revised_chevron_inverted",
@@ -37159,7 +43788,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/revised/pattern/chevron_inverted/bg/",
+        "muscular": "shield/heater/revised/pattern/chevron_inverted/bg/",
+        "female": "shield/heater/revised/pattern/chevron_inverted/bg/",
+        "pregnant": "shield/heater/revised/pattern/chevron_inverted/bg/",
+        "teen": "shield/heater/revised/pattern/chevron_inverted/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/revised/pattern/chevron_inverted/fg/",
+        "muscular": "shield/heater/revised/pattern/chevron_inverted/fg/",
+        "female": "shield/heater/revised/pattern/chevron_inverted/fg/",
+        "pregnant": "shield/heater/revised/pattern/chevron_inverted/fg/",
+        "teen": "shield/heater/revised/pattern/chevron_inverted/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_chevron": {
     "name": "revised_chevron",
@@ -37224,7 +43871,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/revised/pattern/chevron/bg/",
+        "muscular": "shield/heater/revised/pattern/chevron/bg/",
+        "female": "shield/heater/revised/pattern/chevron/bg/",
+        "pregnant": "shield/heater/revised/pattern/chevron/bg/",
+        "teen": "shield/heater/revised/pattern/chevron/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/revised/pattern/chevron/fg/",
+        "muscular": "shield/heater/revised/pattern/chevron/fg/",
+        "female": "shield/heater/revised/pattern/chevron/fg/",
+        "pregnant": "shield/heater/revised/pattern/chevron/fg/",
+        "teen": "shield/heater/revised/pattern/chevron/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_chief": {
     "name": "revised_chief",
@@ -37289,7 +43954,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/revised/pattern/chief/bg/",
+        "muscular": "shield/heater/revised/pattern/chief/bg/",
+        "female": "shield/heater/revised/pattern/chief/bg/",
+        "pregnant": "shield/heater/revised/pattern/chief/bg/",
+        "teen": "shield/heater/revised/pattern/chief/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/revised/pattern/chief/fg/",
+        "muscular": "shield/heater/revised/pattern/chief/fg/",
+        "female": "shield/heater/revised/pattern/chief/fg/",
+        "pregnant": "shield/heater/revised/pattern/chief/fg/",
+        "teen": "shield/heater/revised/pattern/chief/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_cross": {
     "name": "revised_cross",
@@ -37354,7 +44037,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/revised/pattern/cross/bg/",
+        "muscular": "shield/heater/revised/pattern/cross/bg/",
+        "female": "shield/heater/revised/pattern/cross/bg/",
+        "pregnant": "shield/heater/revised/pattern/cross/bg/",
+        "teen": "shield/heater/revised/pattern/cross/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/revised/pattern/cross/fg/",
+        "muscular": "shield/heater/revised/pattern/cross/fg/",
+        "female": "shield/heater/revised/pattern/cross/fg/",
+        "pregnant": "shield/heater/revised/pattern/cross/fg/",
+        "teen": "shield/heater/revised/pattern/cross/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_fess": {
     "name": "revised_fess",
@@ -37419,7 +44120,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/revised/pattern/fess/bg/",
+        "muscular": "shield/heater/revised/pattern/fess/bg/",
+        "female": "shield/heater/revised/pattern/fess/bg/",
+        "pregnant": "shield/heater/revised/pattern/fess/bg/",
+        "teen": "shield/heater/revised/pattern/fess/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/revised/pattern/fess/fg/",
+        "muscular": "shield/heater/revised/pattern/fess/fg/",
+        "female": "shield/heater/revised/pattern/fess/fg/",
+        "pregnant": "shield/heater/revised/pattern/fess/fg/",
+        "teen": "shield/heater/revised/pattern/fess/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_lozengy": {
     "name": "revised_lozengy",
@@ -37484,7 +44203,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/revised/pattern/lozengy/bg/",
+        "muscular": "shield/heater/revised/pattern/lozengy/bg/",
+        "female": "shield/heater/revised/pattern/lozengy/bg/",
+        "pregnant": "shield/heater/revised/pattern/lozengy/bg/",
+        "teen": "shield/heater/revised/pattern/lozengy/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/revised/pattern/lozengy/fg/",
+        "muscular": "shield/heater/revised/pattern/lozengy/fg/",
+        "female": "shield/heater/revised/pattern/lozengy/fg/",
+        "pregnant": "shield/heater/revised/pattern/lozengy/fg/",
+        "teen": "shield/heater/revised/pattern/lozengy/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_pale": {
     "name": "revised_pale",
@@ -37549,7 +44286,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/revised/pattern/pale/bg/",
+        "muscular": "shield/heater/revised/pattern/pale/bg/",
+        "female": "shield/heater/revised/pattern/pale/bg/",
+        "pregnant": "shield/heater/revised/pattern/pale/bg/",
+        "teen": "shield/heater/revised/pattern/pale/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/revised/pattern/pale/fg/",
+        "muscular": "shield/heater/revised/pattern/pale/fg/",
+        "female": "shield/heater/revised/pattern/pale/fg/",
+        "pregnant": "shield/heater/revised/pattern/pale/fg/",
+        "teen": "shield/heater/revised/pattern/pale/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_pall": {
     "name": "revised_pall",
@@ -37614,7 +44369,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/revised/pattern/pall/bg/",
+        "muscular": "shield/heater/revised/pattern/pall/bg/",
+        "female": "shield/heater/revised/pattern/pall/bg/",
+        "pregnant": "shield/heater/revised/pattern/pall/bg/",
+        "teen": "shield/heater/revised/pattern/pall/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/revised/pattern/pall/fg/",
+        "muscular": "shield/heater/revised/pattern/pall/fg/",
+        "female": "shield/heater/revised/pattern/pall/fg/",
+        "pregnant": "shield/heater/revised/pattern/pall/fg/",
+        "teen": "shield/heater/revised/pattern/pall/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_paly": {
     "name": "revised_paly",
@@ -37679,7 +44452,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/revised/pattern/paly/bg/",
+        "muscular": "shield/heater/revised/pattern/paly/bg/",
+        "female": "shield/heater/revised/pattern/paly/bg/",
+        "pregnant": "shield/heater/revised/pattern/paly/bg/",
+        "teen": "shield/heater/revised/pattern/paly/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/revised/pattern/paly/fg/",
+        "muscular": "shield/heater/revised/pattern/paly/fg/",
+        "female": "shield/heater/revised/pattern/paly/fg/",
+        "pregnant": "shield/heater/revised/pattern/paly/fg/",
+        "teen": "shield/heater/revised/pattern/paly/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_bend_sinister": {
     "name": "revised_per_bend_sinister",
@@ -37744,7 +44535,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/revised/pattern/per_bend_sinister/bg/",
+        "muscular": "shield/heater/revised/pattern/per_bend_sinister/bg/",
+        "female": "shield/heater/revised/pattern/per_bend_sinister/bg/",
+        "pregnant": "shield/heater/revised/pattern/per_bend_sinister/bg/",
+        "teen": "shield/heater/revised/pattern/per_bend_sinister/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/revised/pattern/per_bend_sinister/fg/",
+        "muscular": "shield/heater/revised/pattern/per_bend_sinister/fg/",
+        "female": "shield/heater/revised/pattern/per_bend_sinister/fg/",
+        "pregnant": "shield/heater/revised/pattern/per_bend_sinister/fg/",
+        "teen": "shield/heater/revised/pattern/per_bend_sinister/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_bend": {
     "name": "revised_per_bend",
@@ -37809,7 +44618,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/revised/pattern/per_bend/bg/",
+        "muscular": "shield/heater/revised/pattern/per_bend/bg/",
+        "female": "shield/heater/revised/pattern/per_bend/bg/",
+        "pregnant": "shield/heater/revised/pattern/per_bend/bg/",
+        "teen": "shield/heater/revised/pattern/per_bend/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/revised/pattern/per_bend/fg/",
+        "muscular": "shield/heater/revised/pattern/per_bend/fg/",
+        "female": "shield/heater/revised/pattern/per_bend/fg/",
+        "pregnant": "shield/heater/revised/pattern/per_bend/fg/",
+        "teen": "shield/heater/revised/pattern/per_bend/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_chevron_inverted": {
     "name": "revised_per_chevron_inverted",
@@ -37874,7 +44701,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/revised/pattern/per_chevron_inverted/bg/",
+        "muscular": "shield/heater/revised/pattern/per_chevron_inverted/bg/",
+        "female": "shield/heater/revised/pattern/per_chevron_inverted/bg/",
+        "pregnant": "shield/heater/revised/pattern/per_chevron_inverted/bg/",
+        "teen": "shield/heater/revised/pattern/per_chevron_inverted/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/revised/pattern/per_chevron_inverted/fg/",
+        "muscular": "shield/heater/revised/pattern/per_chevron_inverted/fg/",
+        "female": "shield/heater/revised/pattern/per_chevron_inverted/fg/",
+        "pregnant": "shield/heater/revised/pattern/per_chevron_inverted/fg/",
+        "teen": "shield/heater/revised/pattern/per_chevron_inverted/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_chevron": {
     "name": "revised_per_chevron",
@@ -37939,7 +44784,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/revised/pattern/per_chevron/bg/",
+        "muscular": "shield/heater/revised/pattern/per_chevron/bg/",
+        "female": "shield/heater/revised/pattern/per_chevron/bg/",
+        "pregnant": "shield/heater/revised/pattern/per_chevron/bg/",
+        "teen": "shield/heater/revised/pattern/per_chevron/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/revised/pattern/per_chevron/fg/",
+        "muscular": "shield/heater/revised/pattern/per_chevron/fg/",
+        "female": "shield/heater/revised/pattern/per_chevron/fg/",
+        "pregnant": "shield/heater/revised/pattern/per_chevron/fg/",
+        "teen": "shield/heater/revised/pattern/per_chevron/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_fess": {
     "name": "revised_per_fess",
@@ -38004,7 +44867,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/revised/pattern/per_fess/bg/",
+        "muscular": "shield/heater/revised/pattern/per_fess/bg/",
+        "female": "shield/heater/revised/pattern/per_fess/bg/",
+        "pregnant": "shield/heater/revised/pattern/per_fess/bg/",
+        "teen": "shield/heater/revised/pattern/per_fess/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/revised/pattern/per_fess/fg/",
+        "muscular": "shield/heater/revised/pattern/per_fess/fg/",
+        "female": "shield/heater/revised/pattern/per_fess/fg/",
+        "pregnant": "shield/heater/revised/pattern/per_fess/fg/",
+        "teen": "shield/heater/revised/pattern/per_fess/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_pale": {
     "name": "revised_per_pale",
@@ -38069,7 +44950,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/revised/pattern/per_pale/bg/",
+        "muscular": "shield/heater/revised/pattern/per_pale/bg/",
+        "female": "shield/heater/revised/pattern/per_pale/bg/",
+        "pregnant": "shield/heater/revised/pattern/per_pale/bg/",
+        "teen": "shield/heater/revised/pattern/per_pale/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/revised/pattern/per_pale/fg/",
+        "muscular": "shield/heater/revised/pattern/per_pale/fg/",
+        "female": "shield/heater/revised/pattern/per_pale/fg/",
+        "pregnant": "shield/heater/revised/pattern/per_pale/fg/",
+        "teen": "shield/heater/revised/pattern/per_pale/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_saltire": {
     "name": "revised_per_saltire",
@@ -38134,7 +45033,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/revised/pattern/per_saltire/bg/",
+        "muscular": "shield/heater/revised/pattern/per_saltire/bg/",
+        "female": "shield/heater/revised/pattern/per_saltire/bg/",
+        "pregnant": "shield/heater/revised/pattern/per_saltire/bg/",
+        "teen": "shield/heater/revised/pattern/per_saltire/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/revised/pattern/per_saltire/fg/",
+        "muscular": "shield/heater/revised/pattern/per_saltire/fg/",
+        "female": "shield/heater/revised/pattern/per_saltire/fg/",
+        "pregnant": "shield/heater/revised/pattern/per_saltire/fg/",
+        "teen": "shield/heater/revised/pattern/per_saltire/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_quarterly": {
     "name": "revised_quarterly",
@@ -38199,7 +45116,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/revised/pattern/quarterly/bg/",
+        "muscular": "shield/heater/revised/pattern/quarterly/bg/",
+        "female": "shield/heater/revised/pattern/quarterly/bg/",
+        "pregnant": "shield/heater/revised/pattern/quarterly/bg/",
+        "teen": "shield/heater/revised/pattern/quarterly/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/revised/pattern/quarterly/fg/",
+        "muscular": "shield/heater/revised/pattern/quarterly/fg/",
+        "female": "shield/heater/revised/pattern/quarterly/fg/",
+        "pregnant": "shield/heater/revised/pattern/quarterly/fg/",
+        "teen": "shield/heater/revised/pattern/quarterly/fg/"
+      }
+    }
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_saltire": {
     "name": "revised_saltire",
@@ -38264,7 +45199,25 @@ window.itemMetadata = {
       "walnut",
       "white",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 4,
+        "male": "shield/heater/revised/pattern/saltire/bg/",
+        "muscular": "shield/heater/revised/pattern/saltire/bg/",
+        "female": "shield/heater/revised/pattern/saltire/bg/",
+        "pregnant": "shield/heater/revised/pattern/saltire/bg/",
+        "teen": "shield/heater/revised/pattern/saltire/bg/"
+      },
+      "layer_2": {
+        "zPos": 112,
+        "male": "shield/heater/revised/pattern/saltire/fg/",
+        "muscular": "shield/heater/revised/pattern/saltire/fg/",
+        "female": "shield/heater/revised/pattern/saltire/fg/",
+        "pregnant": "shield/heater/revised/pattern/saltire/fg/",
+        "teen": "shield/heater/revised/pattern/saltire/fg/"
+      }
+    }
   },
   "weapons-ranged-weapon_ranged_crossbow": {
     "name": "Crossbow",
@@ -38293,7 +45246,23 @@ window.itemMetadata = {
     ],
     "variants": [
       "crossbow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": -1,
+        "male": "weapon/ranged/crossbow/background/",
+        "muscular": "weapon/ranged/crossbow/background/",
+        "female": "weapon/ranged/crossbow/background/",
+        "pregnant": "weapon/ranged/crossbow/background/"
+      },
+      "layer_2": {
+        "zPos": 140,
+        "male": "weapon/ranged/crossbow/foreground/",
+        "muscular": "weapon/ranged/crossbow/foreground/",
+        "female": "weapon/ranged/crossbow/foreground/",
+        "pregnant": "weapon/ranged/crossbow/foreground/"
+      }
+    }
   },
   "weapons-ranged-weapon_ranged_slingshot": {
     "name": "Slingshot",
@@ -38322,7 +45291,23 @@ window.itemMetadata = {
     ],
     "variants": [
       "slingshot"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 140,
+        "male": "weapon/ranged/slingshot/foreground/",
+        "muscular": "weapon/ranged/slingshot/foreground/",
+        "female": "weapon/ranged/slingshot/foreground/",
+        "pregnant": "weapon/ranged/slingshot/foreground/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "weapon/ranged/slingshot/background/",
+        "muscular": "weapon/ranged/slingshot/background/",
+        "female": "weapon/ranged/slingshot/background/",
+        "pregnant": "weapon/ranged/slingshot/background/"
+      }
+    }
   },
   "weapons-ranged-weapon_ranged_boomerang": {
     "name": "Boomerang",
@@ -38351,7 +45336,17 @@ window.itemMetadata = {
     ],
     "variants": [
       "boomerang"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "custom_animation": "slash_reverse_oversize",
+        "zPos": 140,
+        "male": "weapon/ranged/boomerang/",
+        "muscular": "weapon/ranged/boomerang/",
+        "female": "weapon/ranged/boomerang/",
+        "pregnant": "weapon/ranged/boomerang/"
+      }
+    }
   },
   "weapons-ranged-bow-weapon_ranged_bow_arrow": {
     "name": "Ammo",
@@ -38376,7 +45371,17 @@ window.itemMetadata = {
     ],
     "variants": [
       "arrow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 150,
+        "male": "weapon/ranged/bow/arrow/",
+        "muscular": "weapon/ranged/bow/arrow/",
+        "female": "weapon/ranged/bow/arrow/",
+        "pregnant": "weapon/ranged/bow/arrow/",
+        "teen": "weapon/ranged/bow/arrow/"
+      }
+    }
   },
   "weapons-ranged-bow-weapon_ranged_bow_great": {
     "name": "Great",
@@ -38413,7 +45418,43 @@ window.itemMetadata = {
       "iron",
       "silver",
       "steel"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": -1,
+        "male": "weapon/ranged/bow/great/universal/background/",
+        "muscular": "weapon/ranged/bow/great/universal/background/",
+        "female": "weapon/ranged/bow/great/universal/background/",
+        "pregnant": "weapon/ranged/bow/great/universal/background/",
+        "teen": "weapon/ranged/bow/great/universal/background/"
+      },
+      "layer_2": {
+        "zPos": 140,
+        "male": "weapon/ranged/bow/great/universal/foreground/",
+        "muscular": "weapon/ranged/bow/great/universal/foreground/",
+        "female": "weapon/ranged/bow/great/universal/foreground/",
+        "pregnant": "weapon/ranged/bow/great/universal/foreground/",
+        "teen": "weapon/ranged/bow/great/universal/foreground/"
+      },
+      "layer_3": {
+        "custom_animation": "walk_128",
+        "zPos": -1,
+        "male": "weapon/ranged/bow/great/walk/background/",
+        "muscular": "weapon/ranged/bow/great/walk/background/",
+        "female": "weapon/ranged/bow/great/walk/background/",
+        "pregnant": "weapon/ranged/bow/great/walk/background/",
+        "teen": "weapon/ranged/bow/great/walk/background/"
+      },
+      "layer_4": {
+        "custom_animation": "walk_128",
+        "zPos": 141,
+        "male": "weapon/ranged/bow/great/walk/foreground/",
+        "muscular": "weapon/ranged/bow/great/walk/foreground/",
+        "female": "weapon/ranged/bow/great/walk/foreground/",
+        "pregnant": "weapon/ranged/bow/great/walk/foreground/",
+        "teen": "weapon/ranged/bow/great/walk/foreground/"
+      }
+    }
   },
   "weapons-ranged-bow-weapon_ranged_bow_normal": {
     "name": "Normal",
@@ -38450,7 +45491,43 @@ window.itemMetadata = {
       "iron",
       "silver",
       "steel"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": -1,
+        "male": "weapon/ranged/bow/normal/universal/background/",
+        "muscular": "weapon/ranged/bow/normal/universal/background/",
+        "female": "weapon/ranged/bow/normal/universal/background/",
+        "pregnant": "weapon/ranged/bow/normal/universal/background/",
+        "teen": "weapon/ranged/bow/normal/universal/background/"
+      },
+      "layer_2": {
+        "zPos": 140,
+        "male": "weapon/ranged/bow/normal/universal/foreground/",
+        "muscular": "weapon/ranged/bow/normal/universal/foreground/",
+        "female": "weapon/ranged/bow/normal/universal/foreground/",
+        "pregnant": "weapon/ranged/bow/normal/universal/foreground/",
+        "teen": "weapon/ranged/bow/normal/universal/foreground/"
+      },
+      "layer_3": {
+        "custom_animation": "walk_128",
+        "zPos": -1,
+        "male": "weapon/ranged/bow/normal/walk/background/",
+        "muscular": "weapon/ranged/bow/normal/walk/background/",
+        "female": "weapon/ranged/bow/normal/walk/background/",
+        "pregnant": "weapon/ranged/bow/normal/walk/background/",
+        "teen": "weapon/ranged/bow/normal/walk/background/"
+      },
+      "layer_4": {
+        "custom_animation": "walk_128",
+        "zPos": 141,
+        "male": "weapon/ranged/bow/normal/walk/foreground/",
+        "muscular": "weapon/ranged/bow/normal/walk/foreground/",
+        "female": "weapon/ranged/bow/normal/walk/foreground/",
+        "pregnant": "weapon/ranged/bow/normal/walk/foreground/",
+        "teen": "weapon/ranged/bow/normal/walk/foreground/"
+      }
+    }
   },
   "weapons-ranged-bow-weapon_ranged_bow_recurve": {
     "name": "Recurve",
@@ -38487,7 +45564,43 @@ window.itemMetadata = {
       "iron",
       "silver",
       "steel"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": -1,
+        "male": "weapon/ranged/bow/recurve/universal/background/",
+        "muscular": "weapon/ranged/bow/recurve/universal/background/",
+        "female": "weapon/ranged/bow/recurve/universal/background/",
+        "pregnant": "weapon/ranged/bow/recurve/universal/background/",
+        "teen": "weapon/ranged/bow/recurve/universal/background/"
+      },
+      "layer_2": {
+        "zPos": 140,
+        "male": "weapon/ranged/bow/recurve/universal/foreground/",
+        "muscular": "weapon/ranged/bow/recurve/universal/foreground/",
+        "female": "weapon/ranged/bow/recurve/universal/foreground/",
+        "pregnant": "weapon/ranged/bow/recurve/universal/foreground/",
+        "teen": "weapon/ranged/bow/recurve/universal/foreground/"
+      },
+      "layer_3": {
+        "custom_animation": "walk_128",
+        "zPos": -1,
+        "male": "weapon/ranged/bow/recurve/walk/background/",
+        "muscular": "weapon/ranged/bow/recurve/walk/background/",
+        "female": "weapon/ranged/bow/recurve/walk/background/",
+        "pregnant": "weapon/ranged/bow/recurve/walk/background/",
+        "teen": "weapon/ranged/bow/recurve/walk/background/"
+      },
+      "layer_4": {
+        "custom_animation": "walk_128",
+        "zPos": 141,
+        "male": "weapon/ranged/bow/recurve/walk/foreground/",
+        "muscular": "weapon/ranged/bow/recurve/walk/foreground/",
+        "female": "weapon/ranged/bow/recurve/walk/foreground/",
+        "pregnant": "weapon/ranged/bow/recurve/walk/foreground/",
+        "teen": "weapon/ranged/bow/recurve/walk/foreground/"
+      }
+    }
   },
   "weapons-sword-weapon_sword_dagger": {
     "name": "Dagger",
@@ -38516,7 +45629,23 @@ window.itemMetadata = {
     ],
     "variants": [
       "dagger"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 140,
+        "male": "weapon/sword/dagger/",
+        "muscular": "weapon/sword/dagger/",
+        "female": "weapon/sword/dagger/",
+        "pregnant": "weapon/sword/dagger/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "weapon/sword/dagger/behind/",
+        "muscular": "weapon/sword/dagger/behind/",
+        "female": "weapon/sword/dagger/behind/",
+        "pregnant": "weapon/sword/dagger/behind/"
+      }
+    }
   },
   "weapons-sword-weapon_sword_glowsword": {
     "name": "Glowsword",
@@ -38546,7 +45675,39 @@ window.itemMetadata = {
     "variants": [
       "blue",
       "red"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 140,
+        "male": "weapon/sword/glowsword/",
+        "muscular": "weapon/sword/glowsword/",
+        "female": "weapon/sword/glowsword/",
+        "pregnant": "weapon/sword/glowsword/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "weapon/sword/glowsword/universal_behind/",
+        "muscular": "weapon/sword/glowsword/universal_behind/",
+        "female": "weapon/sword/glowsword/universal_behind/",
+        "pregnant": "weapon/sword/glowsword/universal_behind/"
+      },
+      "layer_3": {
+        "zPos": 8,
+        "custom_animation": "slash_oversize",
+        "male": "weapon/sword/glowsword/attack_slash/behind/",
+        "muscular": "weapon/sword/glowsword/attack_slash/behind/",
+        "female": "weapon/sword/glowsword/attack_slash/behind/",
+        "pregnant": "weapon/sword/glowsword/attack_slash/behind/"
+      },
+      "layer_4": {
+        "zPos": 150,
+        "custom_animation": "slash_oversize",
+        "male": "weapon/sword/glowsword/attack_slash/",
+        "muscular": "weapon/sword/glowsword/attack_slash/",
+        "female": "weapon/sword/glowsword/attack_slash/",
+        "pregnant": "weapon/sword/glowsword/attack_slash/"
+      }
+    }
   },
   "weapons-sword-weapon_sword_longsword": {
     "name": "Longsword",
@@ -38575,7 +45736,71 @@ window.itemMetadata = {
     ],
     "variants": [
       "longsword"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 140,
+        "male": "weapon/sword/longsword/",
+        "muscular": "weapon/sword/longsword/",
+        "female": "weapon/sword/longsword/",
+        "pregnant": "weapon/sword/longsword/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "weapon/sword/longsword/universal_behind/",
+        "muscular": "weapon/sword/longsword/universal_behind/",
+        "female": "weapon/sword/longsword/universal_behind/",
+        "pregnant": "weapon/sword/longsword/universal_behind/"
+      },
+      "layer_3": {
+        "zPos": -1,
+        "custom_animation": "slash_oversize",
+        "male": "weapon/sword/longsword/attack_slash/behind/",
+        "muscular": "weapon/sword/longsword/attack_slash/behind/",
+        "female": "weapon/sword/longsword/attack_slash/behind/",
+        "pregnant": "weapon/sword/longsword/attack_slash/behind/"
+      },
+      "layer_4": {
+        "zPos": 150,
+        "custom_animation": "slash_oversize",
+        "male": "weapon/sword/longsword/attack_slash/",
+        "muscular": "weapon/sword/longsword/attack_slash/",
+        "female": "weapon/sword/longsword/attack_slash/",
+        "pregnant": "weapon/sword/longsword/attack_slash/"
+      },
+      "layer_5": {
+        "zPos": -1,
+        "custom_animation": "slash_reverse_oversize",
+        "male": "weapon/sword/longsword/attack_slash_reverse/behind/",
+        "muscular": "weapon/sword/longsword/attack_slash_reverse/behind/",
+        "female": "weapon/sword/longsword/attack_slash_reverse/behind/",
+        "pregnant": "weapon/sword/longsword/attack_slash_reverse/behind/"
+      },
+      "layer_6": {
+        "zPos": 150,
+        "custom_animation": "slash_reverse_oversize",
+        "male": "weapon/sword/longsword/attack_slash_reverse/",
+        "muscular": "weapon/sword/longsword/attack_slash_reverse/",
+        "female": "weapon/sword/longsword/attack_slash_reverse/",
+        "pregnant": "weapon/sword/longsword/attack_slash_reverse/"
+      },
+      "layer_7": {
+        "zPos": -1,
+        "custom_animation": "thrust_oversize",
+        "male": "weapon/sword/longsword/attack_thrust/behind/",
+        "muscular": "weapon/sword/longsword/attack_thrust/behind/",
+        "female": "weapon/sword/longsword/attack_thrust/behind/",
+        "pregnant": "weapon/sword/longsword/attack_thrust/behind/"
+      },
+      "layer_8": {
+        "zPos": 150,
+        "custom_animation": "thrust_oversize",
+        "male": "weapon/sword/longsword/attack_thrust/",
+        "muscular": "weapon/sword/longsword/attack_thrust/",
+        "female": "weapon/sword/longsword/attack_thrust/",
+        "pregnant": "weapon/sword/longsword/attack_thrust/"
+      }
+    }
   },
   "weapons-sword-weapon_sword_rapier": {
     "name": "Rapier",
@@ -38604,7 +45829,39 @@ window.itemMetadata = {
     ],
     "variants": [
       "rapier"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 140,
+        "male": "weapon/sword/rapier/",
+        "muscular": "weapon/sword/rapier/",
+        "female": "weapon/sword/rapier/",
+        "pregnant": "weapon/sword/rapier/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "weapon/sword/rapier/universal_behind/",
+        "muscular": "weapon/sword/rapier/universal_behind/",
+        "female": "weapon/sword/rapier/universal_behind/",
+        "pregnant": "weapon/sword/rapier/universal_behind/"
+      },
+      "layer_3": {
+        "zPos": 8,
+        "custom_animation": "slash_oversize",
+        "male": "weapon/sword/rapier/attack_slash/behind/",
+        "muscular": "weapon/sword/rapier/attack_slash/behind/",
+        "female": "weapon/sword/rapier/attack_slash/behind/",
+        "pregnant": "weapon/sword/rapier/attack_slash/behind/"
+      },
+      "layer_4": {
+        "zPos": 150,
+        "custom_animation": "slash_oversize",
+        "male": "weapon/sword/rapier/attack_slash/",
+        "muscular": "weapon/sword/rapier/attack_slash/",
+        "female": "weapon/sword/rapier/attack_slash/",
+        "pregnant": "weapon/sword/rapier/attack_slash/"
+      }
+    }
   },
   "weapons-sword-weapon_sword_saber": {
     "name": "Saber",
@@ -38633,7 +45890,39 @@ window.itemMetadata = {
     ],
     "variants": [
       "saber"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 140,
+        "male": "weapon/sword/saber/",
+        "muscular": "weapon/sword/saber/",
+        "female": "weapon/sword/saber/",
+        "pregnant": "weapon/sword/saber/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "weapon/sword/saber/universal_behind/",
+        "muscular": "weapon/sword/saber/universal_behind/",
+        "female": "weapon/sword/saber/universal_behind/",
+        "pregnant": "weapon/sword/saber/universal_behind/"
+      },
+      "layer_3": {
+        "zPos": 8,
+        "custom_animation": "slash_oversize",
+        "male": "weapon/sword/saber/attack_slash/behind/",
+        "muscular": "weapon/sword/saber/attack_slash/behind/",
+        "female": "weapon/sword/saber/attack_slash/behind/",
+        "pregnant": "weapon/sword/saber/attack_slash/behind/"
+      },
+      "layer_4": {
+        "zPos": 150,
+        "custom_animation": "slash_oversize",
+        "male": "weapon/sword/saber/attack_slash/",
+        "muscular": "weapon/sword/saber/attack_slash/",
+        "female": "weapon/sword/saber/attack_slash/",
+        "pregnant": "weapon/sword/saber/attack_slash/"
+      }
+    }
   },
   "weapons-sword-weapon_sword_katana": {
     "name": "Katana",
@@ -38662,7 +45951,41 @@ window.itemMetadata = {
     ],
     "variants": [
       "katana"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "custom_animation": "walk_128",
+        "zPos": 140,
+        "male": "weapon/sword/katana/walk/",
+        "muscular": "weapon/sword/katana/walk/",
+        "female": "weapon/sword/katana/walk/",
+        "pregnant": "weapon/sword/katana/walk/"
+      },
+      "layer_2": {
+        "custom_animation": "walk_128",
+        "zPos": 9,
+        "male": "weapon/sword/katana/walk/behind/",
+        "muscular": "weapon/sword/katana/walk/behind/",
+        "female": "weapon/sword/katana/walk/behind/",
+        "pregnant": "weapon/sword/katana/walk/behind/"
+      },
+      "layer_3": {
+        "custom_animation": "slash_128",
+        "zPos": 140,
+        "male": "weapon/sword/katana/slash/",
+        "muscular": "weapon/sword/katana/slash/",
+        "female": "weapon/sword/katana/slash/",
+        "pregnant": "weapon/sword/katana/slash/"
+      },
+      "layer_4": {
+        "custom_animation": "slash_128",
+        "zPos": 9,
+        "male": "weapon/sword/katana/slash/behind/",
+        "muscular": "weapon/sword/katana/slash/behind/",
+        "female": "weapon/sword/katana/slash/behind/",
+        "pregnant": "weapon/sword/katana/slash/behind/"
+      }
+    }
   },
   "weapons-sword-weapon_sword_scimitar": {
     "name": "Scimitar",
@@ -38691,7 +46014,41 @@ window.itemMetadata = {
     ],
     "variants": [
       "scimitar"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "custom_animation": "walk_128",
+        "zPos": 140,
+        "male": "weapon/sword/scimitar/walk/",
+        "muscular": "weapon/sword/scimitar/walk/",
+        "female": "weapon/sword/scimitar/walk/",
+        "pregnant": "weapon/sword/scimitar/walk/"
+      },
+      "layer_2": {
+        "custom_animation": "walk_128",
+        "zPos": 9,
+        "male": "weapon/sword/scimitar/walk/behind/",
+        "muscular": "weapon/sword/scimitar/walk/behind/",
+        "female": "weapon/sword/scimitar/walk/behind/",
+        "pregnant": "weapon/sword/scimitar/walk/behind/"
+      },
+      "layer_3": {
+        "custom_animation": "slash_128",
+        "zPos": 140,
+        "male": "weapon/sword/scimitar/slash/",
+        "muscular": "weapon/sword/scimitar/slash/",
+        "female": "weapon/sword/scimitar/slash/",
+        "pregnant": "weapon/sword/scimitar/slash/"
+      },
+      "layer_4": {
+        "custom_animation": "slash_128",
+        "zPos": 9,
+        "male": "weapon/sword/scimitar/slash/behind/",
+        "muscular": "weapon/sword/scimitar/slash/behind/",
+        "female": "weapon/sword/scimitar/slash/behind/",
+        "pregnant": "weapon/sword/scimitar/slash/behind/"
+      }
+    }
   },
   "weapons-sword-weapon_sword_longsword_alt": {
     "name": "Longsword alt",
@@ -38720,7 +46077,41 @@ window.itemMetadata = {
     ],
     "variants": [
       "longsword_alt"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "custom_animation": "walk_128",
+        "zPos": 140,
+        "male": "weapon/sword/longsword_alt/walk/",
+        "muscular": "weapon/sword/longsword_alt/walk/",
+        "female": "weapon/sword/longsword_alt/walk/",
+        "pregnant": "weapon/sword/longsword_alt/walk/"
+      },
+      "layer_2": {
+        "custom_animation": "walk_128",
+        "zPos": 9,
+        "male": "weapon/sword/longsword_alt/walk/behind/",
+        "muscular": "weapon/sword/longsword_alt/walk/behind/",
+        "female": "weapon/sword/longsword_alt/walk/behind/",
+        "pregnant": "weapon/sword/longsword_alt/walk/behind/"
+      },
+      "layer_3": {
+        "custom_animation": "slash_128",
+        "zPos": 140,
+        "male": "weapon/sword/longsword_alt/slash/",
+        "muscular": "weapon/sword/longsword_alt/slash/",
+        "female": "weapon/sword/longsword_alt/slash/",
+        "pregnant": "weapon/sword/longsword_alt/slash/"
+      },
+      "layer_4": {
+        "custom_animation": "slash_128",
+        "zPos": 9,
+        "male": "weapon/sword/longsword_alt/slash/behind/",
+        "muscular": "weapon/sword/longsword_alt/slash/behind/",
+        "female": "weapon/sword/longsword_alt/slash/behind/",
+        "pregnant": "weapon/sword/longsword_alt/slash/behind/"
+      }
+    }
   },
   "weapons-sword-weapon_sword_arming": {
     "name": "Arming Sword",
@@ -38767,7 +46158,79 @@ window.itemMetadata = {
       "iron",
       "silver",
       "steel"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 140,
+        "male": "weapon/sword/arming/universal/fg/",
+        "muscular": "weapon/sword/arming/universal/fg/",
+        "female": "weapon/sword/arming/universal/fg/",
+        "pregnant": "weapon/sword/arming/universal/fg/",
+        "teen": "weapon/sword/arming/universal/fg/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "weapon/sword/arming/universal/bg/",
+        "muscular": "weapon/sword/arming/universal/bg/",
+        "female": "weapon/sword/arming/universal/bg/",
+        "pregnant": "weapon/sword/arming/universal/bg/",
+        "teen": "weapon/sword/arming/universal/bg/"
+      },
+      "layer_3": {
+        "zPos": 8,
+        "custom_animation": "slash_128",
+        "male": "weapon/sword/arming/attack_slash/bg/",
+        "muscular": "weapon/sword/arming/attack_slash/bg/",
+        "female": "weapon/sword/arming/attack_slash/bg/",
+        "pregnant": "weapon/sword/arming/attack_slash/bg/",
+        "teen": "weapon/sword/arming/attack_slash/bg/"
+      },
+      "layer_4": {
+        "zPos": 150,
+        "custom_animation": "slash_128",
+        "male": "weapon/sword/arming/attack_slash/fg/",
+        "muscular": "weapon/sword/arming/attack_slash/fg/",
+        "female": "weapon/sword/arming/attack_slash/fg/",
+        "pregnant": "weapon/sword/arming/attack_slash/fg/",
+        "teen": "weapon/sword/arming/attack_slash/fg/"
+      },
+      "layer_5": {
+        "zPos": 8,
+        "custom_animation": "backslash_128",
+        "male": "weapon/sword/arming/attack_backslash/bg/",
+        "muscular": "weapon/sword/arming/attack_backslash/bg/",
+        "female": "weapon/sword/arming/attack_backslash/bg/",
+        "pregnant": "weapon/sword/arming/attack_backslash/bg/",
+        "teen": "weapon/sword/arming/attack_backslash/bg/"
+      },
+      "layer_6": {
+        "zPos": 150,
+        "custom_animation": "backslash_128",
+        "male": "weapon/sword/arming/attack_backslash/fg/",
+        "muscular": "weapon/sword/arming/attack_backslash/fg/",
+        "female": "weapon/sword/arming/attack_backslash/fg/",
+        "pregnant": "weapon/sword/arming/attack_backslash/fg/",
+        "teen": "weapon/sword/arming/attack_backslash/fg/"
+      },
+      "layer_7": {
+        "zPos": 8,
+        "custom_animation": "halfslash_128",
+        "male": "weapon/sword/arming/attack_halfslash/bg/",
+        "muscular": "weapon/sword/arming/attack_halfslash/bg/",
+        "female": "weapon/sword/arming/attack_halfslash/bg/",
+        "pregnant": "weapon/sword/arming/attack_halfslash/bg/",
+        "teen": "weapon/sword/arming/attack_halfslash/bg/"
+      },
+      "layer_8": {
+        "zPos": 150,
+        "custom_animation": "halfslash_128",
+        "male": "weapon/sword/arming/attack_halfslash/fg/",
+        "muscular": "weapon/sword/arming/attack_halfslash/fg/",
+        "female": "weapon/sword/arming/attack_halfslash/fg/",
+        "pregnant": "weapon/sword/arming/attack_halfslash/fg/",
+        "teen": "weapon/sword/arming/attack_halfslash/fg/"
+      }
+    }
   },
   "weapons-blunt-weapon_blunt_flail": {
     "name": "Flail",
@@ -38796,7 +46259,39 @@ window.itemMetadata = {
     ],
     "variants": [
       "flail"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 9,
+        "male": "weapon/blunt/flail/behind/",
+        "muscular": "weapon/blunt/flail/behind/",
+        "female": "weapon/blunt/flail/behind/",
+        "pregnant": "weapon/blunt/flail/behind/"
+      },
+      "layer_2": {
+        "zPos": 140,
+        "male": "weapon/blunt/flail/",
+        "muscular": "weapon/blunt/flail/",
+        "female": "weapon/blunt/flail/",
+        "pregnant": "weapon/blunt/flail/"
+      },
+      "layer_3": {
+        "custom_animation": "slash_oversize",
+        "zPos": 8,
+        "male": "weapon/blunt/flail/attack_slash/behind/",
+        "muscular": "weapon/blunt/flail/attack_slash/behind/",
+        "female": "weapon/blunt/flail/attack_slash/behind/",
+        "pregnant": "weapon/blunt/flail/attack_slash/behind/"
+      },
+      "layer_4": {
+        "custom_animation": "slash_oversize",
+        "zPos": 150,
+        "male": "weapon/blunt/flail/attack_slash/",
+        "muscular": "weapon/blunt/flail/attack_slash/",
+        "female": "weapon/blunt/flail/attack_slash/",
+        "pregnant": "weapon/blunt/flail/attack_slash/"
+      }
+    }
   },
   "weapons-blunt-weapon_blunt_mace": {
     "name": "Mace",
@@ -38825,7 +46320,39 @@ window.itemMetadata = {
     ],
     "variants": [
       "mace"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 140,
+        "male": "weapon/blunt/mace/",
+        "muscular": "weapon/blunt/mace/",
+        "female": "weapon/blunt/mace/",
+        "pregnant": "weapon/blunt/mace/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "weapon/blunt/mace/universal_behind/",
+        "muscular": "weapon/blunt/mace/universal_behind/",
+        "female": "weapon/blunt/mace/universal_behind/",
+        "pregnant": "weapon/blunt/mace/universal_behind/"
+      },
+      "layer_3": {
+        "zPos": 9,
+        "custom_animation": "slash_oversize",
+        "male": "weapon/blunt/mace/attack_slash/behind/",
+        "muscular": "weapon/blunt/mace/attack_slash/behind/",
+        "female": "weapon/blunt/mace/attack_slash/behind/",
+        "pregnant": "weapon/blunt/mace/attack_slash/behind/"
+      },
+      "layer_4": {
+        "zPos": 150,
+        "custom_animation": "slash_oversize",
+        "male": "weapon/blunt/mace/attack_slash/",
+        "muscular": "weapon/blunt/mace/attack_slash/",
+        "female": "weapon/blunt/mace/attack_slash/",
+        "pregnant": "weapon/blunt/mace/attack_slash/"
+      }
+    }
   },
   "weapons-blunt-weapon_blunt_waraxe": {
     "name": "Waraxe",
@@ -38854,7 +46381,39 @@ window.itemMetadata = {
     ],
     "variants": [
       "waraxe"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 9,
+        "male": "weapon/blunt/waraxe/behind/",
+        "muscular": "weapon/blunt/waraxe/behind/",
+        "female": "weapon/blunt/waraxe/behind/",
+        "pregnant": "weapon/blunt/waraxe/behind/"
+      },
+      "layer_2": {
+        "zPos": 140,
+        "male": "weapon/blunt/waraxe/",
+        "muscular": "weapon/blunt/waraxe/",
+        "female": "weapon/blunt/waraxe/",
+        "pregnant": "weapon/blunt/waraxe/"
+      },
+      "layer_3": {
+        "custom_animation": "slash_oversize",
+        "zPos": 8,
+        "male": "weapon/blunt/waraxe/attack_slash/behind/",
+        "muscular": "weapon/blunt/waraxe/attack_slash/behind/",
+        "female": "weapon/blunt/waraxe/attack_slash/behind/",
+        "pregnant": "weapon/blunt/waraxe/attack_slash/behind/"
+      },
+      "layer_4": {
+        "custom_animation": "slash_oversize",
+        "zPos": 150,
+        "male": "weapon/blunt/waraxe/attack_slash/",
+        "muscular": "weapon/blunt/waraxe/attack_slash/",
+        "female": "weapon/blunt/waraxe/attack_slash/",
+        "pregnant": "weapon/blunt/waraxe/attack_slash/"
+      }
+    }
   },
   "weapons-blunt-weapon_blunt_club": {
     "name": "Club",
@@ -38883,7 +46442,25 @@ window.itemMetadata = {
     ],
     "variants": [
       "club"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "custom_animation": "slash_reverse_oversize",
+        "zPos": 140,
+        "male": "weapon/blunt/club/",
+        "muscular": "weapon/blunt/club/",
+        "female": "weapon/blunt/club/",
+        "pregnant": "weapon/blunt/club/"
+      },
+      "layer_2": {
+        "custom_animation": "slash_reverse_oversize",
+        "zPos": 9,
+        "male": "weapon/blunt/club/background/",
+        "muscular": "weapon/blunt/club/background/",
+        "female": "weapon/blunt/club/background/",
+        "pregnant": "weapon/blunt/club/background/"
+      }
+    }
   },
   "weapons-polearm-weapon_polearm_cane": {
     "name": "Cane",
@@ -38907,7 +46484,16 @@ window.itemMetadata = {
     ],
     "variants": [
       "cane"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 140,
+        "male": "weapon/polearm/cane/male/",
+        "muscular": "weapon/polearm/cane/male/",
+        "female": "weapon/polearm/cane/female/",
+        "pregnant": "weapon/polearm/cane/female/"
+      }
+    }
   },
   "weapons-polearm-weapon_polearm_spear": {
     "name": "Spear",
@@ -38944,7 +46530,25 @@ window.itemMetadata = {
       "iron",
       "silver",
       "steel"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 140,
+        "male": "weapon/polearm/spear/foreground/",
+        "muscular": "weapon/polearm/spear/foreground/",
+        "female": "weapon/polearm/spear/foreground/",
+        "teen": "weapon/polearm/spear/foreground/",
+        "pregnant": "weapon/polearm/spear/foreground/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "weapon/polearm/spear/background/",
+        "muscular": "weapon/polearm/spear/background/",
+        "female": "weapon/polearm/spear/background/",
+        "teen": "weapon/polearm/spear/background/",
+        "pregnant": "weapon/polearm/spear/background/"
+      }
+    }
   },
   "weapons-polearm-weapon_polearm_scythe": {
     "name": "Scythe",
@@ -38973,7 +46577,39 @@ window.itemMetadata = {
     ],
     "variants": [
       "scythe"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 140,
+        "male": "weapon/polearm/scythe/",
+        "muscular": "weapon/polearm/scythe/",
+        "female": "weapon/polearm/scythe/",
+        "pregnant": "weapon/polearm/scythe/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "weapon/polearm/scythe/universal_behind/",
+        "muscular": "weapon/polearm/scythe/universal_behind/",
+        "female": "weapon/polearm/scythe/universal_behind/",
+        "pregnant": "weapon/polearm/scythe/universal_behind/"
+      },
+      "layer_3": {
+        "zPos": 8,
+        "custom_animation": "slash_oversize",
+        "male": "weapon/polearm/scythe/attack_slash/behind/",
+        "muscular": "weapon/polearm/scythe/attack_slash/behind/",
+        "female": "weapon/polearm/scythe/attack_slash/behind/",
+        "pregnant": "weapon/polearm/scythe/attack_slash/behind/"
+      },
+      "layer_4": {
+        "zPos": 150,
+        "custom_animation": "slash_oversize",
+        "male": "weapon/polearm/scythe/attack_slash/",
+        "muscular": "weapon/polearm/scythe/attack_slash/",
+        "female": "weapon/polearm/scythe/attack_slash/",
+        "pregnant": "weapon/polearm/scythe/attack_slash/"
+      }
+    }
   },
   "weapons-polearm-weapon_polearm_halberd": {
     "name": "Halberd",
@@ -39002,7 +46638,55 @@ window.itemMetadata = {
     ],
     "variants": [
       "halberd"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 8,
+        "male": "weapon/polearm/halberd/behind/",
+        "muscular": "weapon/polearm/halberd/behind/",
+        "female": "weapon/polearm/halberd/behind/",
+        "pregnant": "weapon/polearm/halberd/behind/"
+      },
+      "layer_2": {
+        "zPos": 140,
+        "male": "weapon/polearm/halberd/",
+        "muscular": "weapon/polearm/halberd/",
+        "female": "weapon/polearm/halberd/",
+        "pregnant": "weapon/polearm/halberd/"
+      },
+      "layer_3": {
+        "custom_animation": "thrust_oversize",
+        "zPos": 9,
+        "male": "weapon/polearm/halberd/attack_thrust/behind/",
+        "muscular": "weapon/polearm/halberd/attack_thrust/behind/",
+        "female": "weapon/polearm/halberd/attack_thrust/behind/",
+        "pregnant": "weapon/polearm/halberd/attack_thrust/behind/"
+      },
+      "layer_4": {
+        "custom_animation": "thrust_oversize",
+        "zPos": 150,
+        "male": "weapon/polearm/halberd/attack_thrust/",
+        "muscular": "weapon/polearm/halberd/attack_thrust/",
+        "female": "weapon/polearm/halberd/attack_thrust/",
+        "pregnant": "weapon/polearm/halberd/attack_thrust/"
+      },
+      "layer_5": {
+        "custom_animation": "slash_oversize",
+        "zPos": 8,
+        "male": "weapon/polearm/halberd/attack_slash/behind/",
+        "muscular": "weapon/polearm/halberd/attack_slash/behind/",
+        "female": "weapon/polearm/halberd/attack_slash/behind/",
+        "pregnant": "weapon/polearm/halberd/attack_slash/behind/"
+      },
+      "layer_6": {
+        "custom_animation": "slash_oversize",
+        "zPos": 150,
+        "male": "weapon/polearm/halberd/attack_slash/",
+        "muscular": "weapon/polearm/halberd/attack_slash/",
+        "female": "weapon/polearm/halberd/attack_slash/",
+        "pregnant": "weapon/polearm/halberd/attack_slash/"
+      }
+    }
   },
   "weapons-polearm-weapon_polearm_longspear": {
     "name": "Long spear",
@@ -39043,7 +46727,45 @@ window.itemMetadata = {
       "iron",
       "silver",
       "steel"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 140,
+        "custom_animation": "walk_128",
+        "male": "weapon/polearm/longspear/foreground/walk/",
+        "muscular": "weapon/polearm/longspear/foreground/walk/",
+        "female": "weapon/polearm/longspear/foreground/walk/",
+        "teen": "weapon/polearm/longspear/foreground/walk/",
+        "pregnant": "weapon/polearm/longspear/foreground/walk/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "custom_animation": "walk_128",
+        "male": "weapon/polearm/longspear/background/walk/",
+        "muscular": "weapon/polearm/longspear/background/walk/",
+        "female": "weapon/polearm/longspear/background/walk/",
+        "teen": "weapon/polearm/longspear/background/walk/",
+        "pregnant": "weapon/polearm/longspear/background/walk/"
+      },
+      "layer_3": {
+        "custom_animation": "thrust_oversize",
+        "zPos": 150,
+        "male": "weapon/polearm/longspear/foreground/thrust/",
+        "muscular": "weapon/polearm/longspear/foreground/thrust/",
+        "female": "weapon/polearm/longspear/foreground/thrust/",
+        "teen": "weapon/polearm/longspear/foreground/thrust/",
+        "pregnant": "weapon/polearm/longspear/foreground/thrust/"
+      },
+      "layer_4": {
+        "custom_animation": "thrust_oversize",
+        "zPos": -1,
+        "male": "weapon/polearm/longspear/background/thrust/",
+        "muscular": "weapon/polearm/longspear/background/thrust/",
+        "female": "weapon/polearm/longspear/background/thrust/",
+        "teen": "weapon/polearm/longspear/background/thrust/",
+        "pregnant": "weapon/polearm/longspear/background/thrust/"
+      }
+    }
   },
   "weapons-polearm-weapon_polearm_dragonspear": {
     "name": "Dragon spear",
@@ -39084,7 +46806,45 @@ window.itemMetadata = {
       "iron",
       "silver",
       "steel"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 140,
+        "custom_animation": "walk_128",
+        "male": "weapon/polearm/dragonspear/foreground/walk/",
+        "muscular": "weapon/polearm/dragonspear/foreground/walk/",
+        "female": "weapon/polearm/dragonspear/foreground/walk/",
+        "teen": "weapon/polearm/dragonspear/foreground/walk/",
+        "pregnant": "weapon/polearm/dragonspear/foreground/walk/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "custom_animation": "walk_128",
+        "male": "weapon/polearm/dragonspear/background/walk/",
+        "muscular": "weapon/polearm/dragonspear/background/walk/",
+        "female": "weapon/polearm/dragonspear/background/walk/",
+        "teen": "weapon/polearm/dragonspear/background/walk/",
+        "pregnant": "weapon/polearm/dragonspear/background/walk/"
+      },
+      "layer_3": {
+        "custom_animation": "thrust_oversize",
+        "zPos": 150,
+        "male": "weapon/polearm/dragonspear/foreground/thrust/",
+        "muscular": "weapon/polearm/dragonspear/foreground/thrust/",
+        "female": "weapon/polearm/dragonspear/foreground/thrust/",
+        "teen": "weapon/polearm/dragonspear/foreground/thrust/",
+        "pregnant": "weapon/polearm/dragonspear/foreground/thrust/"
+      },
+      "layer_4": {
+        "custom_animation": "thrust_oversize",
+        "zPos": -1,
+        "male": "weapon/polearm/dragonspear/background/thrust/",
+        "muscular": "weapon/polearm/dragonspear/background/thrust/",
+        "female": "weapon/polearm/dragonspear/background/thrust/",
+        "teen": "weapon/polearm/dragonspear/background/thrust/",
+        "pregnant": "weapon/polearm/dragonspear/background/thrust/"
+      }
+    }
   },
   "weapons-polearm-weapon_polearm_trident": {
     "name": "Trident",
@@ -39125,7 +46885,45 @@ window.itemMetadata = {
       "iron",
       "silver",
       "steel"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 140,
+        "custom_animation": "walk_128",
+        "male": "weapon/polearm/trident/foreground/walk/",
+        "muscular": "weapon/polearm/trident/foreground/walk/",
+        "female": "weapon/polearm/trident/foreground/walk/",
+        "teen": "weapon/polearm/trident/foreground/walk/",
+        "pregnant": "weapon/polearm/trident/foreground/walk/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "custom_animation": "walk_128",
+        "male": "weapon/polearm/trident/background/walk/",
+        "muscular": "weapon/polearm/trident/background/walk/",
+        "female": "weapon/polearm/trident/background/walk/",
+        "teen": "weapon/polearm/trident/background/walk/",
+        "pregnant": "weapon/polearm/trident/background/walk/"
+      },
+      "layer_3": {
+        "custom_animation": "thrust_oversize",
+        "zPos": 150,
+        "male": "weapon/polearm/trident/foreground/thrust/",
+        "muscular": "weapon/polearm/trident/foreground/thrust/",
+        "female": "weapon/polearm/trident/foreground/thrust/",
+        "teen": "weapon/polearm/trident/foreground/thrust/",
+        "pregnant": "weapon/polearm/trident/foreground/thrust/"
+      },
+      "layer_4": {
+        "custom_animation": "thrust_oversize",
+        "zPos": -1,
+        "male": "weapon/polearm/trident/background/thrust/",
+        "muscular": "weapon/polearm/trident/background/thrust/",
+        "female": "weapon/polearm/trident/background/thrust/",
+        "teen": "weapon/polearm/trident/background/thrust/",
+        "pregnant": "weapon/polearm/trident/background/thrust/"
+      }
+    }
   },
   "weapons-magic-weapon_magic_simple": {
     "name": "Simple staff",
@@ -39155,7 +46953,25 @@ window.itemMetadata = {
     ],
     "variants": [
       "simple"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 140,
+        "male": "weapon/magic/simple/foreground/",
+        "muscular": "weapon/magic/simple/foreground/",
+        "female": "weapon/magic/simple/foreground/",
+        "teen": "weapon/magic/simple/foreground/",
+        "pregnant": "weapon/magic/simple/foreground/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "weapon/magic/simple/background/",
+        "muscular": "weapon/magic/simple/background/",
+        "female": "weapon/magic/simple/background/",
+        "teen": "weapon/magic/simple/background/",
+        "pregnant": "weapon/magic/simple/background/"
+      }
+    }
   },
   "weapons-magic-weapon_magic_loop": {
     "name": "Loop staff",
@@ -39196,7 +47012,43 @@ window.itemMetadata = {
       "iron",
       "silver",
       "steel"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 140,
+        "male": "weapon/magic/loop/universal/foreground/",
+        "muscular": "weapon/magic/loop/universal/foreground/",
+        "female": "weapon/magic/loop/universal/foreground/",
+        "teen": "weapon/magic/loop/universal/foreground/",
+        "pregnant": "weapon/magic/loop/universal/foreground/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "weapon/magic/loop/universal/background/",
+        "muscular": "weapon/magic/loop/universal/background/",
+        "female": "weapon/magic/loop/universal/background/",
+        "teen": "weapon/magic/loop/universal/background/",
+        "pregnant": "weapon/magic/loop/universal/background/"
+      },
+      "layer_3": {
+        "custom_animation": "thrust_oversize",
+        "zPos": 150,
+        "male": "weapon/magic/loop/thrust/foreground/",
+        "muscular": "weapon/magic/loop/thrust/foreground/",
+        "female": "weapon/magic/loop/thrust/foreground/",
+        "teen": "weapon/magic/loop/thrust/foreground/",
+        "pregnant": "weapon/magic/loop/thrust/foreground/"
+      },
+      "layer_4": {
+        "custom_animation": "thrust_oversize",
+        "zPos": -1,
+        "male": "weapon/magic/loop/thrust/background/",
+        "muscular": "weapon/magic/loop/thrust/background/",
+        "female": "weapon/magic/loop/thrust/background/",
+        "teen": "weapon/magic/loop/thrust/background/",
+        "pregnant": "weapon/magic/loop/thrust/background/"
+      }
+    }
   },
   "weapons-magic-weapon_magic_diamond": {
     "name": "Diamond staff",
@@ -39237,7 +47089,43 @@ window.itemMetadata = {
       "iron",
       "silver",
       "steel"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 140,
+        "male": "weapon/magic/diamond/universal/foreground/",
+        "muscular": "weapon/magic/diamond/universal/foreground/",
+        "female": "weapon/magic/diamond/universal/foreground/",
+        "teen": "weapon/magic/diamond/universal/foreground/",
+        "pregnant": "weapon/magic/diamond/universal/foreground/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "weapon/magic/diamond/universal/background/",
+        "muscular": "weapon/magic/diamond/universal/background/",
+        "female": "weapon/magic/diamond/universal/background/",
+        "teen": "weapon/magic/diamond/universal/background/",
+        "pregnant": "weapon/magic/diamond/universal/background/"
+      },
+      "layer_3": {
+        "custom_animation": "thrust_oversize",
+        "zPos": 150,
+        "male": "weapon/magic/diamond/thrust/foreground/",
+        "muscular": "weapon/magic/diamond/thrust/foreground/",
+        "female": "weapon/magic/diamond/thrust/foreground/",
+        "teen": "weapon/magic/diamond/thrust/foreground/",
+        "pregnant": "weapon/magic/diamond/thrust/foreground/"
+      },
+      "layer_4": {
+        "custom_animation": "thrust_oversize",
+        "zPos": -1,
+        "male": "weapon/magic/diamond/thrust/background/",
+        "muscular": "weapon/magic/diamond/thrust/background/",
+        "female": "weapon/magic/diamond/thrust/background/",
+        "teen": "weapon/magic/diamond/thrust/background/",
+        "pregnant": "weapon/magic/diamond/thrust/background/"
+      }
+    }
   },
   "weapons-magic-weapon_magic_gnarled": {
     "name": "Gnarled staff",
@@ -39278,7 +47166,43 @@ window.itemMetadata = {
       "iron",
       "silver",
       "steel"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 140,
+        "male": "weapon/magic/gnarled/universal/foreground/",
+        "muscular": "weapon/magic/gnarled/universal/foreground/",
+        "female": "weapon/magic/gnarled/universal/foreground/",
+        "teen": "weapon/magic/gnarled/universal/foreground/",
+        "pregnant": "weapon/magic/gnarled/universal/foreground/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "weapon/magic/gnarled/universal/background/",
+        "muscular": "weapon/magic/gnarled/universal/background/",
+        "female": "weapon/magic/gnarled/universal/background/",
+        "teen": "weapon/magic/gnarled/universal/background/",
+        "pregnant": "weapon/magic/gnarled/universal/background/"
+      },
+      "layer_3": {
+        "custom_animation": "thrust_oversize",
+        "zPos": 150,
+        "male": "weapon/magic/gnarled/thrust/foreground/",
+        "muscular": "weapon/magic/gnarled/thrust/foreground/",
+        "female": "weapon/magic/gnarled/thrust/foreground/",
+        "teen": "weapon/magic/gnarled/thrust/foreground/",
+        "pregnant": "weapon/magic/gnarled/thrust/foreground/"
+      },
+      "layer_4": {
+        "custom_animation": "thrust_oversize",
+        "zPos": -1,
+        "male": "weapon/magic/gnarled/thrust/background/",
+        "muscular": "weapon/magic/gnarled/thrust/background/",
+        "female": "weapon/magic/gnarled/thrust/background/",
+        "teen": "weapon/magic/gnarled/thrust/background/",
+        "pregnant": "weapon/magic/gnarled/thrust/background/"
+      }
+    }
   },
   "weapons-magic-weapon_magic_s": {
     "name": "S staff",
@@ -39319,7 +47243,43 @@ window.itemMetadata = {
       "iron",
       "silver",
       "steel"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 140,
+        "male": "weapon/magic/s/universal/foreground/",
+        "muscular": "weapon/magic/s/universal/foreground/",
+        "female": "weapon/magic/s/universal/foreground/",
+        "teen": "weapon/magic/s/universal/foreground/",
+        "pregnant": "weapon/magic/s/universal/foreground/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "weapon/magic/s/universal/background/",
+        "muscular": "weapon/magic/s/universal/background/",
+        "female": "weapon/magic/s/universal/background/",
+        "teen": "weapon/magic/s/universal/background/",
+        "pregnant": "weapon/magic/s/universal/background/"
+      },
+      "layer_3": {
+        "custom_animation": "thrust_oversize",
+        "zPos": 150,
+        "male": "weapon/magic/s/thrust/foreground/",
+        "muscular": "weapon/magic/s/thrust/foreground/",
+        "female": "weapon/magic/s/thrust/foreground/",
+        "teen": "weapon/magic/s/thrust/foreground/",
+        "pregnant": "weapon/magic/s/thrust/foreground/"
+      },
+      "layer_4": {
+        "custom_animation": "thrust_oversize",
+        "zPos": -1,
+        "male": "weapon/magic/s/thrust/background/",
+        "muscular": "weapon/magic/s/thrust/background/",
+        "female": "weapon/magic/s/thrust/background/",
+        "teen": "weapon/magic/s/thrust/background/",
+        "pregnant": "weapon/magic/s/thrust/background/"
+      }
+    }
   },
   "weapons-magic-weapon_magic_crystal": {
     "name": "Crystal",
@@ -39354,7 +47314,43 @@ window.itemMetadata = {
       "purple",
       "red",
       "yellow"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 140,
+        "male": "weapon/magic/crystal/universal/foreground/",
+        "muscular": "weapon/magic/crystal/universal/foreground/",
+        "female": "weapon/magic/crystal/universal/foreground/",
+        "teen": "weapon/magic/crystal/universal/foreground/",
+        "pregnant": "weapon/magic/crystal/universal/foreground/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "weapon/magic/crystal/universal/background/",
+        "muscular": "weapon/magic/crystal/universal/background/",
+        "female": "weapon/magic/crystal/universal/background/",
+        "teen": "weapon/magic/crystal/universal/background/",
+        "pregnant": "weapon/magic/crystal/universal/background/"
+      },
+      "layer_3": {
+        "custom_animation": "thrust_oversize",
+        "zPos": 150,
+        "male": "weapon/magic/crystal/thrust/foreground/",
+        "muscular": "weapon/magic/crystal/thrust/foreground/",
+        "female": "weapon/magic/crystal/thrust/foreground/",
+        "teen": "weapon/magic/crystal/thrust/foreground/",
+        "pregnant": "weapon/magic/crystal/thrust/foreground/"
+      },
+      "layer_4": {
+        "custom_animation": "thrust_oversize",
+        "zPos": -1,
+        "male": "weapon/magic/crystal/thrust/background/",
+        "muscular": "weapon/magic/crystal/thrust/background/",
+        "female": "weapon/magic/crystal/thrust/background/",
+        "teen": "weapon/magic/crystal/thrust/background/",
+        "pregnant": "weapon/magic/crystal/thrust/background/"
+      }
+    }
   },
   "weapons-magic-weapon_magic_wand": {
     "name": "Wand",
@@ -39377,7 +47373,16 @@ window.itemMetadata = {
     ],
     "variants": [
       "wand"
-    ]
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 140,
+        "male": "weapon/magic/wand/male/",
+        "muscular": "weapon/magic/wand/male/",
+        "female": "weapon/magic/wand/female/",
+        "pregnant": "weapon/magic/wand//female/"
+      }
+    }
   }
 };
 

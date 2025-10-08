@@ -115,6 +115,17 @@ function parseJson(json) {
     pathId = `${pathId}_${vals}`;
   }
 
+  // Collect layer information (file paths and zPos)
+  const layers = {};
+  for (let i = 1; i < 10; i++) {
+    const layerDef = definition[`layer_${i}`];
+    if (layerDef) {
+      layers[`layer_${i}`] = layerDef;
+    } else {
+      break;
+    }
+  }
+
   // Collect metadata for this item
   itemMetadata[pathId] = {
     name: name,
@@ -124,7 +135,8 @@ function parseJson(json) {
     required_tags: required_tags,
     excluded_tags: excluded_tags,
     path: path || ["other"],
-    variants: variants || []
+    variants: variants || [],
+    layers: layers
   };
 
   let startHTML =

@@ -33,15 +33,19 @@ const ItemWithVariants = {
 			]),
 			isExpanded ? m("div.tree-node",
 				meta.variants.map(variant => {
-					const variantId = `${itemId}_${variant}`;
-					const isSelected = state.selections[categoryPath]?.itemId === variantId;
+					const isSelected = state.selections[categoryPath]?.variant === variant;
 					const variantDisplayName = variant.replaceAll("_", " ");
 
 					return m("div", {
 						key: variant,
 						style: "padding: 0.25rem 0 0.25rem 1.5rem; cursor: pointer;" + (isSelected ? " font-weight: bold; color: #3273dc;" : ""),
 						onclick: () => {
-							state.selections[categoryPath] = { itemId: variantId, name: `${displayName} (${variantDisplayName})` };
+							state.selections[categoryPath] = {
+								itemId: itemId,
+								variant: variant,
+								name: `${displayName} (${variantDisplayName})`
+							};
+							triggerRender();
 						}
 					}, capitalize(variantDisplayName));
 				})
@@ -63,6 +67,7 @@ const BodyTypeSelector = {
 						class: state.bodyType === type ? "is-primary" : "",
 						onclick: () => {
 							state.bodyType = type;
+							triggerRender();
 						}
 					}, capitalize(type))
 				)
@@ -97,27 +102,34 @@ const TreeNode = {
 					m(TreeNode, { key: childName, name: childName, node: childNode })
 				),
 				// Render items in this category
-				(node.items || []).map(itemId => {
-					const meta = window.itemMetadata[itemId];
-					const displayName = meta ? meta.name : itemId;
-					const categoryPath = meta.path.slice(0, -1).join("-");
-					const hasVariants = meta && meta.variants && meta.variants.length > 0;
+				(node.items || [])
+					.filter(itemId => {
+						const meta = window.itemMetadata[itemId];
+						// Filter: Only show items compatible with current body type
+						return meta && meta.required.includes(state.bodyType);
+					})
+					.map(itemId => {
+						const meta = window.itemMetadata[itemId];
+						const displayName = meta.name;
+						const categoryPath = meta.path.slice(0, -1).join("-");
+						const hasVariants = meta.variants && meta.variants.length > 0;
 
-					if (!hasVariants) {
-						// Simple item with no variants
-						const isSelected = state.selections[categoryPath]?.itemId === itemId;
-						return m("div", {
-							key: itemId,
-							style: "padding: 0.25rem 0 0.25rem 1.5rem; cursor: pointer;" + (isSelected ? " font-weight: bold; color: #3273dc;" : ""),
-							onclick: () => {
-								state.selections[categoryPath] = { itemId, name: displayName };
-							}
-						}, displayName);
-					}
+						if (!hasVariants) {
+							// Simple item with no variants
+							const isSelected = state.selections[categoryPath]?.itemId === itemId;
+							return m("div", {
+								key: itemId,
+								style: "padding: 0.25rem 0 0.25rem 1.5rem; cursor: pointer;" + (isSelected ? " font-weight: bold; color: #3273dc;" : ""),
+								onclick: () => {
+									state.selections[categoryPath] = { itemId, name: displayName };
+									triggerRender();
+								}
+							}, displayName);
+						}
 
-					// Item with variants - create a sub-component
-					return m(ItemWithVariants, { key: itemId, itemId, meta, categoryPath });
-				})
+						// Item with variants - create a sub-component
+						return m(ItemWithVariants, { key: itemId, itemId, meta, categoryPath });
+					})
 			]) : null
 		);
 	}
@@ -144,6 +156,7 @@ const CurrentSelections = {
 						m("button.delete.is-small", {
 							onclick: () => {
 								delete state.selections[categoryPath];
+								triggerRender();
 							}
 						})
 					]);
@@ -170,6 +183,13 @@ const CategoryTree = {
 		]);
 	}
 };
+
+// Trigger canvas re-render when state changes
+function triggerRender() {
+	if (window.canvasRenderer) {
+		window.canvasRenderer.renderCharacter(state.selections, state.bodyType);
+	}
+}
 
 // Main app component
 const App = {
