@@ -983,6 +983,30 @@ const App = {
 m.mount(document.getElementById("mithril-filters"), App);
 m.mount(document.getElementById("mithril-preview"), AnimationPreview);
 
+// Listen for browser back/forward navigation
+window.addEventListener('hashchange', function() {
+	console.log('Hash changed, reloading selections from URL');
+
+	// Clear current selections
+	state.selections = {};
+
+	// Reload from hash
+	loadSelectionsFromHash();
+
+	// If nothing in hash, set defaults
+	if (Object.keys(state.selections).length === 0) {
+		selectDefaults();
+	}
+
+	// Re-render with new selections
+	if (window.canvasRenderer) {
+		window.canvasRenderer.renderCharacter(state.selections, state.bodyType);
+	}
+
+	// Redraw Mithril UI
+	m.redraw();
+});
+
 // Expose initialization to be called after canvas init
 window.setDefaultSelections = function() {
 	// First, try to load from URL hash
