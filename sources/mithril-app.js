@@ -1,9 +1,18 @@
 // Mithril-based character generator
 // Clean rewrite without jQuery dependencies
 
+/**
+ * Convert variant name to filename format (spaces to underscores)
+ * @param {string} variant - Variant name (e.g., "light brown")
+ * @returns {string} - Filename format (e.g., "light_brown")
+ */
+function variantToFilename(variant) {
+	return variant.replaceAll(' ', '_');
+}
+
 // Global state
 const state = {
-	selections: {}, // key: category path, value: { itemId, name }
+	selections: {}, // key: itemId, value: { itemId, variant, name }
 	bodyType: "male", // male, female, teen, child, muscular, pregnant
 	expandedNodes: {}, // key: path string, value: boolean (true if expanded)
 	searchQuery: "" // current search query
@@ -37,11 +46,11 @@ function syncSelectionsToHash() {
 	// Add body type
 	params.bodyType = state.bodyType;
 
-	// Add selections - use itemId as key (without variant suffix if present)
+	// Add selections - use itemId as key
 	// itemId "body-body" with variant "light" -> "body-body=light"
 	// itemId "body-shadow" with variant "shadow" -> "body-shadow=shadow"
 	// itemId "head-heads-heads_human_male" with variant "light" -> "head-heads-heads_human_male=light"
-	for (const [categoryPath, selection] of Object.entries(state.selections)) {
+	for (const [selectionKey, selection] of Object.entries(state.selections)) {
 		// Use the itemId directly as the key
 		const key = selection.itemId;
 
@@ -58,10 +67,8 @@ function loadSelectionsFromHash() {
 	const params = getHashParams();
 	console.log('Loading from hash, params:', params);
 
-	// Load body type
-	if (params.bodyType) {
-		state.bodyType = params.bodyType;
-	}
+	// Build new selections object without mutating state yet
+	const newSelections = {};
 
 	// Load selections
 	// Format: "body-body=light", "body-shadow=shadow", "head-heads-heads_human_male=light"
@@ -75,24 +82,25 @@ function loadSelectionsFromHash() {
 			continue;
 		}
 
-		// Build category path from metadata
-		// For 2-element paths like ["body", "body"], use full path "body/body"
-		// For 3+ element paths like ["head", "heads", "heads_human_male"], use all but last "head/heads"
-		const categoryPath = meta.path.length === 2
-			? meta.path.join('/')
-			: meta.path.slice(0, -1).join('/');
-
 		// Use the variant from URL, or first variant, or empty string
 		const actualVariant = variant || meta.variants?.[0] || '';
 
-		console.log(`Loading: itemId=${itemId}, categoryPath=${categoryPath}, variant=${actualVariant}`);
+		console.log(`Loading: itemId=${itemId}, variant=${actualVariant}`);
 
-		// Store selection
-		state.selections[categoryPath] = {
+		// Store selection in new object
+		newSelections[itemId] = {
 			itemId: itemId,
 			variant: actualVariant,
 			name: meta.name + (actualVariant ? ` (${actualVariant})` : '')
 		};
+	}
+
+	// Now update state once with complete new selections
+	state.selections = newSelections;
+
+	// Load body type
+	if (params.bodyType) {
+		state.bodyType = params.bodyType;
 	}
 
 	console.log('Final selections after load:', state.selections);
@@ -204,7 +212,7 @@ function getItemFileName(itemId, variant, name) {
 // Item with variants component
 const ItemWithVariants = {
 	view: function(vnode) {
-		const { itemId, meta, categoryPath, isSearchMatch } = vnode.attrs;
+		const { itemId, meta, isSearchMatch } = vnode.attrs;
 		const isExpanded = state.expandedNodes[itemId] || false;
 		const displayName = meta.name;
 
@@ -221,21 +229,56 @@ const ItemWithVariants = {
 			]),
 			isExpanded ? m("div.tree-node",
 				meta.variants.map(variant => {
-					const isSelected = state.selections[categoryPath]?.variant === variant;
+					const isSelected = state.selections[itemId]?.variant === variant;
 					const variantDisplayName = variant.replaceAll("_", " ");
+
+					// Get preview metadata from item metadata
+					const previewRow = meta.preview_row ?? 2;
+					const previewCol = meta.preview_column ?? 0;
+					const previewXOffset = meta.preview_x_offset ?? 0;
+					const previewYOffset = meta.preview_y_offset ?? 0;
+
+					// Get sprite path for preview image from first layer
+					const layer1 = meta.layers?.layer_1;
+					const basePath = layer1?.[state.bodyType];
+					// Use default animation for preview (walk if supported, otherwise first available)
+					const defaultAnim = meta.animations.includes('walk') ? 'walk' : meta.animations[0];
+					const previewSrc = basePath ? `spritesheets/${basePath}${defaultAnim}/${variantToFilename(variant)}.png` : null;
+
+					// Calculate object position for cropping
+					const objectPosX = -(previewCol * 64 + previewXOffset);
+					const objectPosY = -(previewRow * 64 + previewYOffset);
 
 					return m("div", {
 						key: variant,
-						style: "padding: 0.25rem 0 0.25rem 1.5rem; cursor: pointer;" + (isSelected ? " font-weight: bold; color: #3273dc;" : ""),
+						class: "variant-item" + (isSelected ? " selected" : ""),
+						style: "display: flex; align-items: center; gap: 0.75rem; padding: 0.5rem 0.5rem 0.5rem 1.5rem; cursor: pointer; border-radius: 4px; transition: background-color 0.15s;" + (isSelected ? " font-weight: bold; color: #3273dc; background-color: #eff5fb;" : ""),
+						onmouseover: (e) => {
+							const div = e.currentTarget;
+							const currentlySelected = state.selections[itemId]?.variant === variant;
+							if (!currentlySelected) div.style.backgroundColor = '#f5f5f5';
+						},
+						onmouseout: (e) => {
+							const div = e.currentTarget;
+							const currentlySelected = state.selections[itemId]?.variant === variant;
+							if (!currentlySelected) div.style.backgroundColor = '';
+						},
 						onclick: () => {
-							state.selections[categoryPath] = {
+							state.selections[itemId] = {
 								itemId: itemId,
 								variant: variant,
 								name: `${displayName} (${variantDisplayName})`
 							};
-							triggerRender();
+							
 						}
-					}, capitalize(variantDisplayName));
+					}, [
+						previewSrc ? m("img", {
+							src: previewSrc,
+							style: `width: 64px; height: 64px; object-fit: none; object-position: ${objectPosX}px ${objectPosY}px; image-rendering: pixelated; border: 2px solid ${isSelected ? '#3273dc' : '#dbdbdb'}; border-radius: 4px; background-color: white; flex-shrink: 0;`,
+							alt: variantDisplayName
+						}) : null,
+						m("span", { style: "flex: 1;" }, capitalize(variantDisplayName))
+					]);
 				})
 			) : null
 		]);
@@ -255,7 +298,7 @@ const BodyTypeSelector = {
 						class: state.bodyType === type ? "is-primary" : "",
 						onclick: () => {
 							state.bodyType = type;
-							triggerRender();
+							
 						}
 					}, capitalize(type))
 				)
@@ -353,26 +396,25 @@ const TreeNode = {
 					.map(itemId => {
 						const meta = window.itemMetadata[itemId];
 						const displayName = meta.name;
-						const categoryPath = meta.path.slice(0, -1).join("-");
 						const hasVariants = meta.variants && meta.variants.length > 0;
 						const isSearchMatch = searchQuery && searchQuery.length >= 2 && matchesSearch(meta.name, searchQuery);
 
 						if (!hasVariants) {
 							// Simple item with no variants
-							const isSelected = state.selections[categoryPath]?.itemId === itemId;
+							const isSelected = state.selections[itemId]?.itemId === itemId;
 							return m("div", {
 								key: itemId,
 								class: isSearchMatch ? "search-result" : "",
 								style: "padding: 0.25rem 0 0.25rem 1.5rem; cursor: pointer;" + (isSelected ? " font-weight: bold; color: #3273dc;" : ""),
 								onclick: () => {
-									state.selections[categoryPath] = { itemId, name: displayName };
-									triggerRender();
+									state.selections[itemId] = { itemId, name: displayName };
+									
 								}
 							}, displayName);
 						}
 
 						// Item with variants - create a sub-component
-						return m(ItemWithVariants, { key: itemId, itemId, meta, categoryPath, isSearchMatch });
+						return m(ItemWithVariants, { key: itemId, itemId, meta, isSearchMatch });
 					})
 			]) : null
 		);
@@ -394,13 +436,13 @@ const CurrentSelections = {
 		return m("div", [
 			m("h3.title.is-5", "Current Selections"),
 			m("div.tags",
-				Object.entries(state.selections).map(([categoryPath, selection]) => {
-					return m("span.tag.is-info.is-medium", { key: categoryPath }, [
+				Object.entries(state.selections).map(([selectionKey, selection]) => {
+					return m("span.tag.is-info.is-medium", { key: selectionKey }, [
 						m("span", selection.name),
 						m("button.delete.is-small", {
 							onclick: () => {
-								delete state.selections[categoryPath];
-								triggerRender();
+								delete state.selections[selectionKey];
+								
 							}
 						})
 					]);
@@ -596,7 +638,7 @@ const Download = {
 				const imported = window.canvasRenderer.importStateFromJSON(json);
 				state.bodyType = imported.bodyType;
 				state.selections = imported.selections;
-				triggerRender();
+				
 				m.redraw(); // Force Mithril to update the UI
 				alert('Imported successfully!');
 			} catch (err) {
@@ -957,12 +999,8 @@ const Credits = {
 	}
 };
 
-// Trigger canvas re-render when state changes
-function triggerRender() {
-	// Sync to URL hash
-	syncSelectionsToHash();
-
-	// Render character
+// Render the character canvas based on current state
+function renderCharacter() {
 	if (window.canvasRenderer) {
 		window.canvasRenderer.renderCharacter(state.selections, state.bodyType);
 	}
@@ -970,6 +1008,25 @@ function triggerRender() {
 
 // Main app component
 const App = {
+	oninit: function(vnode) {
+		// Track previous state to detect changes
+		vnode.state.prevSelections = JSON.stringify(state.selections);
+		vnode.state.prevBodyType = state.bodyType;
+	},
+	onupdate: function(vnode) {
+		// Only sync hash and render canvas if selections or bodyType changed
+		const currentSelections = JSON.stringify(state.selections);
+		const currentBodyType = state.bodyType;
+
+		if (currentSelections !== vnode.state.prevSelections || currentBodyType !== vnode.state.prevBodyType) {
+			syncSelectionsToHash();
+			renderCharacter();
+
+			// Update tracked state
+			vnode.state.prevSelections = currentSelections;
+			vnode.state.prevBodyType = currentBodyType;
+		}
+	},
 	view: function() {
 		return m("div", [
 			m(FiltersPanel),
@@ -983,28 +1040,45 @@ const App = {
 m.mount(document.getElementById("mithril-filters"), App);
 m.mount(document.getElementById("mithril-preview"), AnimationPreview);
 
+// Store the current hash to detect external changes
+let lastKnownHash = window.location.hash;
+
 // Listen for browser back/forward navigation
 window.addEventListener('hashchange', function() {
-	console.log('Hash changed, reloading selections from URL');
+	const currentHash = window.location.hash;
 
-	// Clear current selections
-	state.selections = {};
+	// Check if this is an external change (browser navigation) vs our own update
+	// Our afterStateChange() will update the hash, but we don't want to reload from it
+	// We can detect external changes by checking if the hash is different from what we expect
+	const params = getHashParams();
+	const expectedHash = '#' + Object.entries({
+		bodyType: state.bodyType,
+		...Object.fromEntries(
+			Object.values(state.selections).map(s => [s.itemId, s.variant || ''])
+		)
+	}).map(([k, v]) => `${encodeURIComponent(k)}=${encodeURIComponent(v)}`).join('&');
 
-	// Reload from hash
+	// If the hash matches what we expect from current state, ignore (it's our own update)
+	if (currentHash === expectedHash) {
+		console.log('Hash changed by us, ignoring');
+		lastKnownHash = currentHash;
+		return;
+	}
+
+	console.log('Hash changed externally (back/forward button), reloading selections from URL');
+
+	// Load from hash (updates state once)
 	loadSelectionsFromHash();
 
-	// If nothing in hash, set defaults
+	// If nothing loaded from hash, use defaults
 	if (Object.keys(state.selections).length === 0) {
 		selectDefaults();
 	}
 
-	// Re-render with new selections
-	if (window.canvasRenderer) {
-		window.canvasRenderer.renderCharacter(state.selections, state.bodyType);
-	}
-
-	// Redraw Mithril UI
+	// Trigger redraw which calls App.onupdate (syncs hash and renders canvas)
 	m.redraw();
+
+	lastKnownHash = currentHash;
 });
 
 // Expose initialization to be called after canvas init
@@ -1022,6 +1096,5 @@ window.setDefaultSelections = function() {
 		}
 	}
 
-	// Redraw Mithril UI to show loaded selections
-	m.redraw();
+	// Note: m.redraw() not needed - called from oninit which auto-redraws after lifecycle hooks
 };

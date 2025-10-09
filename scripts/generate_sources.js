@@ -137,7 +137,11 @@ function parseJson(json) {
     path: path || ["other"],
     variants: variants || [],
     layers: layers,
-    credits: credits || []
+    credits: credits || [],
+    preview_row: previewRow,
+    preview_column: previewColumn,
+    preview_x_offset: previewXOffset,
+    preview_y_offset: previewYOffset
   };
 
   let startHTML =

@@ -24,6 +24,15 @@ const ANIMATIONS = {
   halfslash: 50 * FRAME_SIZE
 };
 
+/**
+ * Convert variant name to filename format (spaces to underscores)
+ * @param {string} variant - Variant name (e.g., "light brown")
+ * @returns {string} - Filename format (e.g., "light_brown")
+ */
+function variantToFilename(variant) {
+  return variant.replaceAll(' ', '_');
+}
+
 // Map metadata animation names to actual folder names
 // Metadata uses "combat", "1h_slash", etc. but folders are named differently
 const METADATA_TO_FOLDER = {
@@ -228,7 +237,7 @@ function getSpritePath(itemId, variant, bodyType, animation, layerNum = 1, selec
   }
 
   // Build full path: spritesheets/ + basePath + animation/ + variant.png
-  return `spritesheets/${basePath}${animation}/${variant}.png`;
+  return `spritesheets/${basePath}${animation}/${variantToFilename(variant)}.png`;
 }
 
 /**
@@ -403,7 +412,7 @@ export async function renderCharacter(selections, bodyType) {
         }
 
         // Custom animations use direct file path
-        const spritePath = `spritesheets/${basePath}${variant}.png`;
+        const spritePath = `spritesheets/${basePath}${variantToFilename(variant)}.png`;
 
         customAnimationItems.push({
           itemId,
@@ -735,7 +744,7 @@ export async function renderSingleItem(itemId, variant, bodyType, selections) {
       let basePath = layer[bodyType];
       if (!basePath) continue;
 
-      const spritePath = `spritesheets/${basePath}${variant}.png`;
+      const spritePath = `spritesheets/${basePath}${variantToFilename(variant)}.png`;
       customSprites.push({ spritePath, zPos });
     }
 

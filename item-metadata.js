@@ -57,7 +57,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/shadow-for-lpc-sprite"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-body": {
     "name": "Body color",
@@ -325,7 +329,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-jump-expanded"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-special-body_zombie": {
     "name": "Zombie",
@@ -385,7 +393,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-character-bases"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-special-body_skeleton": {
     "name": "Skeleton",
@@ -443,7 +455,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-character-bases"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-wounds-wound_arm": {
     "name": "Arm",
@@ -500,7 +516,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-zombie"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-wounds-wound_brain": {
     "name": "Brain",
@@ -567,7 +587,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-zombie"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-wounds-wound_ribs": {
     "name": "Ribs",
@@ -624,7 +648,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-zombie"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-wounds-wound_eye_left": {
     "name": "Left Eye",
@@ -692,7 +720,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-zombie"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-wounds-wound_eye_right": {
     "name": "Right Eye",
@@ -759,7 +791,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-zombie"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-wounds-wound_mouth": {
     "name": "Mouth",
@@ -826,7 +862,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-zombie"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-prostheses-prosthesis_hook": {
     "name": "Hook hand",
@@ -878,7 +918,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-pirates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-prostheses-prosthesis_peg_leg": {
     "name": "Peg leg",
@@ -930,7 +974,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-pirates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-wheelchair-wheelchair": {
     "name": "Wheelchair",
@@ -1000,7 +1048,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-revised-elders"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-tails-tail_wolf": {
     "name": "Wolf Tail",
@@ -1110,7 +1162,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-tails-tail_wolf_fluffy": {
     "name": "Fluffy Wolf Tail",
@@ -1220,7 +1276,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-tails-tail_cat": {
     "name": "Cat Tail",
@@ -1330,7 +1390,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-tails-tail_lizard_alt": {
     "name": "Lizard Tail (Alt Colors)",
@@ -1442,7 +1506,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/drakes-and-lizardfolk"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-wings-wings_feathered": {
     "name": "Feathered Wings",
@@ -1551,7 +1619,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-wings-new-animations"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-wings-wings_bat": {
     "name": "Bat Wings",
@@ -1670,7 +1742,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-wings-new-animations"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-wings-wings_lizard_alt": {
     "name": "Lizard Wings (Alt Colors)",
@@ -1782,7 +1858,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-wings-new-animations"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-wings-monarch wings-wings_monarch": {
     "name": "Monarch Wings",
@@ -1881,7 +1961,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-fairy-wings"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-wings-monarch wings-wings_monarch_edge": {
     "name": "Monarch Wings Edge",
@@ -1980,7 +2064,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-fairy-wings"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-wings-monarch wings-wings_monarch_dots": {
     "name": "Monarch Wings Dots",
@@ -2079,7 +2167,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-fairy-wings"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-wings-pixie wings-wings_pixie": {
     "name": "Pixie Wings",
@@ -2177,7 +2269,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-fairy-wings"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-wings-pixie wings-wings_pixie_transparent": {
     "name": "Transparent Pixie Wings",
@@ -2275,7 +2371,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-fairy-wings"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-wings-wings_lunar": {
     "name": "Lunar Wings",
@@ -2372,7 +2472,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-fairy-wings-pack-2"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-wings-dragonfly wings-wings_dragonfly": {
     "name": "Dragonfly Wings",
@@ -2470,7 +2574,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-fairy-wings-pack-2"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-wings-dragonfly wings-wings_dragonfly_transparent": {
     "name": "Transparent Dragonfly Wings",
@@ -2568,7 +2676,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-fairy-wings-pack-2"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-lizard-wings_lizard": {
     "name": "Lizard Wings",
@@ -2668,7 +2780,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-wings-new-animations"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-lizard-wings_lizard_bat": {
     "name": "Batlike Lizard Wings",
@@ -2764,7 +2880,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-wings-new-animations"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "body-lizard-tail_lizard": {
     "name": "Lizard tail",
@@ -2864,7 +2984,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/drakes-and-lizardfolk"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_human_child": {
     "name": "Human child",
@@ -2951,7 +3075,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-character-bases"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_human_female": {
     "name": "Human female",
@@ -3046,7 +3174,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-character-bases"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_human_male": {
     "name": "Human male",
@@ -3140,7 +3272,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-character-bases"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_human_female_elderly": {
     "name": "Human female elderly",
@@ -3234,7 +3370,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-character-bases"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_human_male_elderly": {
     "name": "Human male elderly",
@@ -3328,7 +3468,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-character-bases"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_human_male_plump": {
     "name": "Human male plump",
@@ -3420,7 +3564,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-folk"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_human_male_gaunt": {
     "name": "Human male gaunt",
@@ -3513,7 +3661,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-folk"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_human_male_small": {
     "name": "Human male small",
@@ -3603,7 +3755,11 @@ window.itemMetadata = {
         ],
         "urls": []
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_human_female_small": {
     "name": "Human female small",
@@ -3693,7 +3849,11 @@ window.itemMetadata = {
         ],
         "urls": []
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_human_elderly_small": {
     "name": "Human elderly small",
@@ -3783,7 +3943,11 @@ window.itemMetadata = {
         ],
         "urls": []
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_boarman": {
     "name": "Boarman",
@@ -3877,7 +4041,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-boarman"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_boarman_child": {
     "name": "Boarman child",
@@ -3965,7 +4133,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-character-bases"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_pig": {
     "name": "Pig",
@@ -4057,7 +4229,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-folk"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_pig_child": {
     "name": "Pig child",
@@ -4141,7 +4317,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-folk"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_sheep": {
     "name": "Sheep",
@@ -4233,7 +4413,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-folk"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_sheep_child": {
     "name": "Sheep child",
@@ -4317,7 +4501,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-folk"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_minotaur": {
     "name": "Minotaur",
@@ -4411,7 +4599,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-faun-and-minotaur"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_minotaur_female": {
     "name": "Minotaur female",
@@ -4505,7 +4697,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-character-bases"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_minotaur_child": {
     "name": "Minotaur child",
@@ -4593,7 +4789,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-character-bases"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_wartotaur": {
     "name": "Wartotaur",
@@ -4687,7 +4887,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-folk"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_wolf_child": {
     "name": "Wolf child",
@@ -4776,7 +4980,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-character-bases"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_wolf_female": {
     "name": "Wolf female",
@@ -4873,7 +5081,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-character-bases"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_wolf_male": {
     "name": "Wolf male",
@@ -4970,7 +5182,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-character-bases"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_rabbit": {
     "name": "Rabbit",
@@ -5063,7 +5279,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-folk"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_rabbit_child": {
     "name": "Rabbit child",
@@ -5148,7 +5368,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-folk"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_rat": {
     "name": "Rat",
@@ -5241,7 +5465,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-folk"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_rat_child": {
     "name": "Rat child",
@@ -5326,7 +5554,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-folk"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_mouse": {
     "name": "Mouse",
@@ -5418,7 +5650,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-folk"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_mouse_child": {
     "name": "Mouse child",
@@ -5503,7 +5739,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-folk"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_lizard_child": {
     "name": "Lizard child",
@@ -5581,7 +5821,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-character-bases"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_lizard_female": {
     "name": "Lizard female",
@@ -5667,7 +5911,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-character-bases"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_lizard_male": {
     "name": "Lizard male",
@@ -5753,7 +6001,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-character-bases"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_orc_child": {
     "name": "Orc child",
@@ -5840,7 +6092,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-children-walk-animation"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_orc_female": {
     "name": "Orc female",
@@ -5929,7 +6185,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-character-bases"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_orc_male": {
     "name": "Orc male",
@@ -6026,7 +6286,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-character-bases"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_goblin": {
     "name": "Goblin",
@@ -6121,7 +6385,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-folk"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_goblin_child": {
     "name": "Goblin child",
@@ -6208,7 +6476,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-folk"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_alien": {
     "name": "Alien",
@@ -6300,7 +6572,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-character-bases"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_troll": {
     "name": "Troll",
@@ -6393,7 +6669,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-folk"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_troll_child": {
     "name": "Troll child",
@@ -6478,7 +6758,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-folk"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_skeleton": {
     "name": "Skeleton",
@@ -6553,7 +6837,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-character-bases"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_zombie": {
     "name": "Zombie",
@@ -6648,7 +6936,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-character-bases"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_jack": {
     "name": "Jack O Lantern",
@@ -6718,7 +7010,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-folk"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_vampire": {
     "name": "Vampire",
@@ -6811,7 +7107,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-folk"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-heads-heads_frankenstein": {
     "name": "Frankenstein",
@@ -6904,7 +7204,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-folk"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-face-face_neutral": {
     "name": "Neutral",
@@ -7050,7 +7354,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/ulpc-expanded-expressions"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-face-face_closing": {
     "name": "Closing Eyes",
@@ -7191,7 +7499,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/ulpc-expanded-expressions"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-face-face_closed": {
     "name": "Closed Eyes",
@@ -7332,7 +7644,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/ulpc-expanded-expressions"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-face-face_look_r": {
     "name": "Looking Right",
@@ -7473,7 +7789,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/ulpc-expanded-expressions"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-face-face_look_l": {
     "name": "Looking Left",
@@ -7614,7 +7934,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/ulpc-expanded-expressions"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-face-face_eyeroll": {
     "name": "Rolling Eyes",
@@ -7755,7 +8079,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/ulpc-expanded-expressions"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-face-face_shock": {
     "name": "Shock",
@@ -7896,7 +8224,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/ulpc-expanded-expressions"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-face-face_angry": {
     "name": "Angry",
@@ -8037,7 +8369,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/ulpc-expanded-expressions"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-face-face_angry2": {
     "name": "Angry Alt",
@@ -8132,7 +8468,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/ulpc-expanded-expressions"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-face-face_sad": {
     "name": "Sad",
@@ -8273,7 +8613,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/ulpc-expanded-expressions"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-face-face_sad2": {
     "name": "Sad Alt",
@@ -8369,7 +8713,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/ulpc-expanded-expressions"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-face-face_happy": {
     "name": "Happy",
@@ -8510,7 +8858,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/ulpc-expanded-expressions"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-face-face_happy2": {
     "name": "Happy Alt",
@@ -8605,7 +8957,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/ulpc-expanded-expressions"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-face-face_blush": {
     "name": "Blush",
@@ -8746,7 +9102,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/ulpc-expanded-expressions"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-face-face_shame": {
     "name": "Shame",
@@ -8887,7 +9247,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/ulpc-expanded-expressions"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-face-face_tears": {
     "name": "Tears",
@@ -8961,7 +9325,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/ulpc-expanded-expressions"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-eye_color": {
     "name": "Eye Color",
@@ -9091,7 +9459,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-other eyes-eyes_child": {
     "name": "Child Eyes",
@@ -9148,7 +9520,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-other eyes-eyes_cyclops": {
     "name": "Cyclops Eyes",
@@ -9224,7 +9600,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/cyclops-and-his-eye"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-ears-head_ears_big": {
     "name": "Big ears",
@@ -9318,7 +9698,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-ears-head_ears_elven": {
     "name": "Elven ears",
@@ -9413,7 +9797,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-ears-head_ears_long": {
     "name": "Long ears",
@@ -9506,7 +9894,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-ears-head_ears_medium": {
     "name": "Medium Elven Ears",
@@ -9596,7 +9988,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-new-elven-ear-variants"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-ears-head_ears_hang": {
     "name": "Hanging Elven Ears",
@@ -9686,7 +10082,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-new-elven-ear-variants"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-ears-head_ears_down": {
     "name": "Downward Elven Ears",
@@ -9776,7 +10176,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-new-elven-ear-variants"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-ears-head_ears_dragon": {
     "name": "Dragon Ears",
@@ -9866,7 +10270,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-new-elven-ear-variants"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-furry ears-top ears-head_ears_cat": {
     "name": "Cat Ears",
@@ -9977,7 +10385,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-furry ears-top ears-head_ears_cat_skin": {
     "name": "Cat Ears Skintone",
@@ -10077,7 +10489,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-furry ears-top ears-head_ears_wolf": {
     "name": "Wolf Ears",
@@ -10188,7 +10604,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-furry ears-top ears-head_ears_wolf_skin": {
     "name": "Wolf Ears Skintone",
@@ -10288,7 +10708,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-furry ears-side ears-head_ears_lykon": {
     "name": "Side Wolf Ears",
@@ -10390,7 +10814,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-furry ears-side ears-head_ears_lykon_skin": {
     "name": "Side Wolf Ears Skintone",
@@ -10481,7 +10909,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-furry ears-side ears-head_ears_zabos": {
     "name": "Side Cat Ears",
@@ -10583,7 +11015,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-furry ears-side ears-head_ears_zabos_skin": {
     "name": "Side Cat Ears Skintone",
@@ -10674,7 +11110,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-furry ears-side ears-head_ears_avyon": {
     "name": "Feather Ears",
@@ -10776,7 +11216,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-furry ears-side ears-head_ears_avyon_skin": {
     "name": "Feather Ears Skintone",
@@ -10867,7 +11311,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-nose-head_nose_big": {
     "name": "Big nose",
@@ -10956,7 +11404,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-base-character-expressions"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-nose-head_nose_button": {
     "name": "Button nose",
@@ -11045,7 +11497,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-base-character-expressions"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-nose-head_nose_straight": {
     "name": "Straight nose",
@@ -11134,7 +11590,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-base-character-expressions"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-nose-head_nose_elderly": {
     "name": "Elderly nose",
@@ -11220,7 +11680,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-revised-elders"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-nose-head_nose_large": {
     "name": "Large nose",
@@ -11307,7 +11771,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-eyebrows-eyebrows_thick": {
     "name": "Thick Eyebrows",
@@ -11400,7 +11868,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-eyebrows-eyebrows_thin": {
     "name": "Thin Eyebrows",
@@ -11493,7 +11965,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-head_wrinkles": {
     "name": "Wrinkles",
@@ -11576,7 +12052,11 @@ window.itemMetadata = {
         ],
         "urls": []
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-beards-beards_beard": {
     "name": "Basic Beard",
@@ -11668,7 +12148,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-white-beard"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-beards-beards_winter": {
     "name": "Winter Beard",
@@ -11758,7 +12242,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-santa"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-beards-beards_5oclock_shadow": {
     "name": "5 O'clock Shadow",
@@ -11851,7 +12339,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-base-character-expressions"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-beards-beards_trimmed": {
     "name": "Trimmed Beard",
@@ -11942,7 +12434,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-beards-beards_medium": {
     "name": "Medium Beard",
@@ -12033,7 +12529,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-mustaches-beards_bigstache": {
     "name": "Big Mustache",
@@ -12126,7 +12626,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-base-character-expressions"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-mustaches-beards_mustache": {
     "name": "Mustache",
@@ -12218,7 +12722,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-brunet-mustache"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-mustaches-beards_french": {
     "name": "French Mustache",
@@ -12311,7 +12819,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-base-character-expressions"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-mustaches-beards_walrus": {
     "name": "Walrus Mustache",
@@ -12402,7 +12914,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-mustaches-beards_chevron": {
     "name": "Chevron Mustache",
@@ -12493,7 +13009,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-mustaches-beards_handlebar": {
     "name": "Handlebar Mustache",
@@ -12584,7 +13104,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-mustaches-beards_lampshade": {
     "name": "Lampshade Mustache",
@@ -12675,7 +13199,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-mustaches-beards_horseshoe": {
     "name": "Horseshoe Mustache",
@@ -12766,7 +13294,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-bangs-hairext_braidl": {
     "name": "Left Braid",
@@ -12863,7 +13395,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-bangs-hairext_braidr": {
     "name": "Right Braid",
@@ -12960,7 +13496,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-bangs-hairext_xlong_bangl": {
     "name": "Left XLong Bang",
@@ -13057,7 +13597,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-xlong-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-bangs-hairext_xlong_bangr": {
     "name": "Right XLong Bang",
@@ -13154,7 +13698,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-xlong-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-bangs-hairext_xlong_braidl": {
     "name": "Left XLong Braid",
@@ -13260,7 +13808,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-xlong-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-bangs-hairext_xlong_braidr": {
     "name": "Right XLong Braid",
@@ -13366,7 +13918,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-xlong-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-bangs-hairext_long_straightl": {
     "name": "Left Long Straight",
@@ -13460,7 +14016,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-long-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-bangs-hairext_long_straightr": {
     "name": "Right Long Straight",
@@ -13554,7 +14114,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-long-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-bangs-hairext_long_wavyl": {
     "name": "Left Long Wavy",
@@ -13648,7 +14212,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-long-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-bangs-hairext_long_wavyr": {
     "name": "Right Long Wavy",
@@ -13742,7 +14310,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-long-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-bangs-hairext_xlong_wavyl": {
     "name": "Left XLong Wavy",
@@ -13836,7 +14408,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-xlong-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-bangs-hairext_xlong_wavyr": {
     "name": "Right XLong Wavy",
@@ -13930,7 +14506,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-xlong-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-bangs-hairext_xlong_curlyl": {
     "name": "Left XLong Curly",
@@ -14024,7 +14604,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-xlong-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-bangs-hairext_xlong_curlyr": {
     "name": "Right XLong Curly",
@@ -14118,7 +14702,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-xlong-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-ponytails-hairext_topknot_short": {
     "name": "Short Topknot",
@@ -14215,7 +14803,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-ponytails-hairext_topknot_long": {
     "name": "Long Topknot",
@@ -14321,7 +14913,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-ponytails-hairext_topknot_relm": {
     "name": "Relm Topknot",
@@ -14424,7 +15020,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-xlong-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-knot / ties-hairext_high_bun": {
     "name": "High Bun",
@@ -14516,7 +15116,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-xlong-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-hair_afro": {
     "name": "Afro",
@@ -14608,7 +15212,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-hair_natural": {
     "name": "Natural",
@@ -14703,7 +15311,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-hair_dreadlocks_short": {
     "name": "Dreadlocks short",
@@ -14798,7 +15410,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-hair_twists_fade": {
     "name": "Twists fade",
@@ -14890,7 +15506,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-hair_twists_straight": {
     "name": "Twists straight",
@@ -14982,7 +15602,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-hair_dreadlocks_long": {
     "name": "Dreadlocks long",
@@ -15074,7 +15698,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-hair_flat_top_straight": {
     "name": "Flat top straight",
@@ -15169,7 +15797,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-hair_flat_top_fade": {
     "name": "Flat top fade",
@@ -15264,7 +15896,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-hair_cornrows": {
     "name": "Cornrows",
@@ -15359,7 +15995,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-hair_jewfro": {
     "name": "Jewfro",
@@ -15458,7 +16098,11 @@ window.itemMetadata = {
           "https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-hair_curly_short": {
     "name": "Curly short",
@@ -15552,7 +16196,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-hair_curly_long": {
     "name": "Curly long",
@@ -15645,7 +16293,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-hair_curls_large": {
     "name": "Large Curls",
@@ -15748,7 +16400,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-xlong-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-hair_curls_large_xlong": {
     "name": "Large Curls XLong",
@@ -15851,7 +16507,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-xlong-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-hair_balding": {
     "name": "Balding",
@@ -15945,7 +16605,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-hair_longhawk": {
     "name": "Longhawk",
@@ -16042,7 +16706,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-hair_shorthawk": {
     "name": "Shorthawk",
@@ -16139,7 +16807,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-hair_high_and_tight": {
     "name": "High and tight",
@@ -16236,7 +16908,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-hair_buzzcut": {
     "name": "Buzzcut",
@@ -16330,7 +17006,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_plain": {
     "name": "Plain",
@@ -16431,7 +17111,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_pixie": {
     "name": "Pixie",
@@ -16529,7 +17213,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_page": {
     "name": "Page",
@@ -16628,7 +17316,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_page2": {
     "name": "Page2",
@@ -16729,7 +17421,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_idol": {
     "name": "Idol",
@@ -16828,7 +17524,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_mop": {
     "name": "Mop",
@@ -16926,7 +17626,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_parted": {
     "name": "Parted",
@@ -17026,7 +17730,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_parted2": {
     "name": "Parted 2",
@@ -17124,7 +17832,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_parted3": {
     "name": "Parted 3",
@@ -17220,7 +17932,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_parted_side_bangs": {
     "name": "Side Parted w/Bangs",
@@ -17321,7 +18037,11 @@ window.itemMetadata = {
           "https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_parted_side_bangs2": {
     "name": "Side Parted w/Bangs 2",
@@ -17422,7 +18142,11 @@ window.itemMetadata = {
           "https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_messy1": {
     "name": "Messy1",
@@ -17520,7 +18244,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_messy2": {
     "name": "Messy2",
@@ -17618,7 +18346,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_messy3": {
     "name": "Messy3",
@@ -17715,7 +18447,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_bedhead": {
     "name": "Bedhead",
@@ -17813,7 +18549,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_unkempt": {
     "name": "Unkempt",
@@ -17911,7 +18651,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_bangs": {
     "name": "Bangs",
@@ -18009,7 +18753,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_bangsshort": {
     "name": "Bangsshort",
@@ -18107,7 +18855,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_swoop": {
     "name": "Swoop",
@@ -18205,7 +18957,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_swoop_side": {
     "name": "Side Swoop",
@@ -18306,7 +19062,11 @@ window.itemMetadata = {
           "https://github.com/jrconway3/Universal-LPC-spritesheet/commit/46ddcf05a0e43e7aa6ffd47d350eef0eb529ac24"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_curtains": {
     "name": "Curtains",
@@ -18405,7 +19165,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_single": {
     "name": "Single",
@@ -18513,7 +19277,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_cowlick": {
     "name": "Cowlick",
@@ -18611,7 +19379,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-hair_cowlick_tall": {
     "name": "Cowlick tall",
@@ -18708,7 +19480,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked_porcupine": {
     "name": "Spiked porcupine",
@@ -18806,7 +19582,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked_liberty2": {
     "name": "Spiked liberty2",
@@ -18904,7 +19684,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked_liberty": {
     "name": "Spiked liberty",
@@ -19002,7 +19786,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked_beehive": {
     "name": "Spiked beehive",
@@ -19100,7 +19888,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked": {
     "name": "Spiked",
@@ -19197,7 +19989,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_spiked2": {
     "name": "Spiked2",
@@ -19295,7 +20091,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-hair_halfmessy": {
     "name": "Halfmessy",
@@ -19396,7 +20196,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-hair_bunches": {
     "name": "Bunches",
@@ -19506,7 +20310,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-hair_pigtails": {
     "name": "Pigtails",
@@ -19606,7 +20414,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-hair_pigtails_bangs": {
     "name": "Pigtails bangs",
@@ -19706,7 +20518,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-hair_bob": {
     "name": "Bob",
@@ -19807,7 +20623,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-hair_lob": {
     "name": "Lob",
@@ -19905,7 +20725,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-hair_bob_side_part": {
     "name": "Bob side part",
@@ -20008,7 +20832,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-hair_relm_short": {
     "name": "Relm Short",
@@ -20110,7 +20938,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-relm-hair-xlong-ponytail"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_half_up": {
     "name": "Half up",
@@ -20209,7 +21041,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_bangs_bun": {
     "name": "Bangs bun",
@@ -20311,7 +21147,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_topknot_short": {
     "name": "Short Topknot",
@@ -20441,7 +21281,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_topknot_short2": {
     "name": "Short Topknot 2",
@@ -20571,7 +21415,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_topknot_long": {
     "name": "Long Topknot",
@@ -20710,7 +21558,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_topknot_long2": {
     "name": "Long Topknot 2",
@@ -20849,7 +21701,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-1-hairstyle-2-hair-extensions-3-previously-unofficially-released-hairstyles"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_ponytail": {
     "name": "Ponytail",
@@ -20959,7 +21815,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_ponytail2": {
     "name": "Ponytail2",
@@ -21072,7 +21932,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_high_ponytail": {
     "name": "High ponytail",
@@ -21182,7 +22046,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_braid": {
     "name": "Braid",
@@ -21294,7 +22162,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_braid2": {
     "name": "Braid2",
@@ -21404,7 +22276,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_shoulderl": {
     "name": "Shoulderl",
@@ -21517,7 +22393,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_shoulderr": {
     "name": "Shoulderr",
@@ -21630,7 +22510,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_long_tied": {
     "name": "Long tied",
@@ -21741,7 +22625,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-hair_relm_ponytail": {
     "name": "Relm w/Ponytail",
@@ -21863,7 +22751,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-xlong-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_loose": {
     "name": "Loose",
@@ -21966,7 +22858,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_bangslong": {
     "name": "Bangslong",
@@ -22069,7 +22965,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_bangslong2": {
     "name": "Bangslong2",
@@ -22182,7 +23082,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_long": {
     "name": "Long",
@@ -22285,7 +23189,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_long_messy": {
     "name": "Long messy",
@@ -22389,7 +23297,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_long_messy2": {
     "name": "Long messy2",
@@ -22492,7 +23404,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_curtains_long": {
     "name": "Curtains long",
@@ -22596,7 +23512,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_wavy": {
     "name": "Wavy",
@@ -22709,7 +23629,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_wavy_child": {
     "name": "Child Wavy",
@@ -22794,7 +23718,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/3-hairs-for-lpc"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_long_center_part": {
     "name": "Long center part",
@@ -22904,7 +23832,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hair_long_straight": {
     "name": "Long straight",
@@ -23008,7 +23940,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_princess": {
     "name": "Princess",
@@ -23121,7 +24057,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_sara": {
     "name": "Sara",
@@ -23236,7 +24176,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-xlong-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_long_band": {
     "name": "Long band",
@@ -23347,7 +24291,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_xlong": {
     "name": "Xlong",
@@ -23461,7 +24409,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-xlong-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_xlong_wavy": {
     "name": "XLong Wavy",
@@ -23571,7 +24523,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-xlong-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-very long-hair_relm_xlong": {
     "name": "Relm XLong",
@@ -23682,7 +24638,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-xlong-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-appendages-head_horns_backwards": {
     "name": "Backwards Horns",
@@ -23827,7 +24787,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-lizard-headgear"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-appendages-head_horns_curled": {
     "name": "Curled Horns",
@@ -23963,7 +24927,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-lizard-headgear"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-appendages-head_fins_fin": {
     "name": "Fin",
@@ -24065,7 +25033,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-appendages-head_fins_fin_short": {
     "name": "Short fin",
@@ -24167,7 +25139,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-hoods-hat_hood_cloth": {
     "name": "Hood",
@@ -24274,7 +25250,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-hoods-hat_hood_sack_cloth": {
     "name": "Sack Cloth Hood",
@@ -24379,7 +25359,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-hoods-hat_hood_hijab": {
     "name": "Hijab",
@@ -24481,7 +25465,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-hoods-hat_helmet_mail": {
     "name": "Mail",
@@ -24570,7 +25558,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-bandanas-hat_bandana": {
     "name": "Bandana",
@@ -24679,7 +25671,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-bandanas-hat_bandana2": {
     "name": "Bordered Bandana",
@@ -24786,7 +25782,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-bandanas-hat_bandana_pirate": {
     "name": "Pirate Bandana",
@@ -24889,7 +25889,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-bandanas-hat_bandana_pirate_skull": {
     "name": "Skull Bandana Overlay",
@@ -24992,7 +25996,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_kerchief": {
     "name": "Kerchief",
@@ -25099,7 +26107,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_tied": {
     "name": "Tied Headband",
@@ -25202,7 +26214,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_thick": {
     "name": "Thick Headband",
@@ -25307,7 +26323,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_thick_rune": {
     "name": "Thick Headband Rune",
@@ -25412,7 +26432,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_hairtie": {
     "name": "Hair Tie",
@@ -25517,7 +26541,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-head coverings-headbands-hat_headband_hairtie_rune": {
     "name": "Hair Tie Rune",
@@ -25622,7 +26650,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_leather": {
     "name": "Leather Cap",
@@ -25728,7 +26760,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_leather_feather": {
     "name": "Leather Cap Feather",
@@ -25833,7 +26869,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_bonnie": {
     "name": "Bonnie",
@@ -25935,7 +26975,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_bonnie_tilt": {
     "name": "Bonnie Alt Tilt",
@@ -26037,7 +27081,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_bonnie_feather": {
     "name": "Bonnie feather",
@@ -26139,7 +27187,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_cavalier": {
     "name": "Cavalier",
@@ -26241,7 +27293,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-caps-hat_cap_cavalier_feather": {
     "name": "Cavalier feather",
@@ -26343,7 +27399,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-basic-hat_tricorne": {
     "name": "Tricorne",
@@ -26448,7 +27508,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-basic-hat_tricorne_stitched": {
     "name": "Tricorne Stitching",
@@ -26556,7 +27620,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-basic-hat_tricorne_thatch": {
     "name": "Tricorne Thatching",
@@ -26664,7 +27732,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-lieutenant-hat_tricorne_lieutenant": {
     "name": "Tricorne Lieutenant",
@@ -26769,7 +27841,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-lieutenant-hat_tricorne_lieutenant_trim": {
     "name": "Tricorne Lieutenant Trim",
@@ -26885,7 +27961,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-captain-hat_tricorne_captain": {
     "name": "Tricorne Captain",
@@ -26990,7 +28070,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-captain-hat_tricorne_captain_trim": {
     "name": "Tricorne Captain Trim",
@@ -27106,7 +28190,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-tricorne-captain-hat_tricorne_captain_skull": {
     "name": "Tricorne Captain Skull",
@@ -27208,7 +28296,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-basic-hat_bicorne_athwart_basic": {
     "name": "Bicorne Athwart",
@@ -27310,7 +28402,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-basic-hat_bicorne_athwart_basic_skull": {
     "name": "Bicorne Athwart Skull",
@@ -27413,7 +28509,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-captain-hat_bicorne_athwart_captain": {
     "name": "Bicorne Athwart Captain",
@@ -27516,7 +28616,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-captain-hat_bicorne_athwart_captain_skull": {
     "name": "Bicorne Athwart Captain Skull",
@@ -27619,7 +28723,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-admiral-hat_bicorne_athwart_admiral": {
     "name": "Bicorne Athwart Admiral",
@@ -27726,7 +28834,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-admiral-hat_bicorne_athwart_admiral_trim": {
     "name": "Bicorne Athwart Admiral Trim",
@@ -27844,7 +28956,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-admiral-hat_bicorne_athwart_admiral_cockade": {
     "name": "Bicorne Athwart Admiral Cockade",
@@ -27947,7 +29063,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-commodore-hat_bicorne_athwart_commodore": {
     "name": "Bicorne Athwart Commodore",
@@ -28050,7 +29170,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne athwart-commodore-hat_bicorne_athwart_commodore_trim": {
     "name": "Bicorne Athwart Commodore Trim",
@@ -28162,7 +29286,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne foreaft-hat_bicorne_foreaft": {
     "name": "Bicorne foreaft",
@@ -28264,7 +29392,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne foreaft-hat_bicorne_foreaft_commodore": {
     "name": "Bicorne Foreaft Commodore",
@@ -28370,7 +29502,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-bicorne foreaft-hat_bicorne_foreaft_commodore_trim": {
     "name": "Bicorne Foreaft Commodore Trim",
@@ -28487,7 +29623,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-hat_magic_large": {
     "name": "Large Hat",
@@ -28568,7 +29708,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-wizard-hat_magic_wizard": {
     "name": "Wizard Hat Base",
@@ -28684,7 +29828,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-wizard-hat_magic_wizard_belt": {
     "name": "Wizard Hat Belt",
@@ -28802,7 +29950,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-wizard-hat_magic_wizard_buckle": {
     "name": "Wizard Hat Buckle",
@@ -28898,7 +30050,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-celestial-hat_magic_celestial": {
     "name": "Celestial Wizard Hat",
@@ -29005,7 +30161,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-celestial-hat_magic_celestial_trim": {
     "name": "Celestial Wizard Hat Second Color",
@@ -29123,7 +30283,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-celestial-hat_magic_celestial_moon": {
     "name": "Celestial Wizard Moon Hat",
@@ -29230,7 +30394,11 @@ window.itemMetadata = {
           "https:/opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-magic-celestial-hat_magic_celestial_moon_trim": {
     "name": "Celestial Wizard Moon Hat Second Color",
@@ -29347,7 +30515,11 @@ window.itemMetadata = {
           "https:/opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-formal-hat_formal_tophat": {
     "name": "Formal Tophat",
@@ -29451,7 +30623,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-formal-hat_formal_bowler": {
     "name": "Formal Bowler Hat",
@@ -29555,7 +30731,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-formal-hat_formal_crown": {
     "name": "Crown",
@@ -29671,7 +30851,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-formal-hat_formal_tiara": {
     "name": "Tiara",
@@ -29786,7 +30970,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-holiday-hat_holiday_christmas": {
     "name": "Christmas Hat",
@@ -29892,7 +31080,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-holiday-hat_holiday_santa": {
     "name": "Santa Trim",
@@ -30000,7 +31192,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-hats-holiday-hat_holiday_elf": {
     "name": "Elf Trim",
@@ -30108,7 +31304,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_armet": {
     "name": "Armet",
@@ -30196,7 +31396,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_armet_simple": {
     "name": "Simple Armet",
@@ -30284,7 +31488,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_barbarian": {
     "name": "Barbarian",
@@ -30373,7 +31581,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_barbarian_nasal": {
     "name": "Barbarian nasal",
@@ -30462,7 +31674,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_barbarian_viking": {
     "name": "Barbarian Viking",
@@ -30551,7 +31767,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_barbuta": {
     "name": "Barbuta",
@@ -30640,7 +31860,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_barbuta_simple": {
     "name": "Simple barbuta",
@@ -30729,7 +31953,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_bascinet": {
     "name": "Bascinet",
@@ -30820,7 +32048,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_bascinet_round": {
     "name": "Round bascinet",
@@ -30912,7 +32144,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_close": {
     "name": "Close helm",
@@ -31001,7 +32237,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_flattop": {
     "name": "Flattop",
@@ -31090,7 +32330,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_greathelm": {
     "name": "Greathelm",
@@ -31179,7 +32423,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_horned": {
     "name": "Horned helmet",
@@ -31272,7 +32520,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_kettle": {
     "name": "Kettle helm",
@@ -31352,7 +32604,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_legion": {
     "name": "Legion",
@@ -31444,7 +32700,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_maximus": {
     "name": "Maximus",
@@ -31533,7 +32793,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_morion": {
     "name": "Morion",
@@ -31622,7 +32886,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_nasal": {
     "name": "Nasal helm",
@@ -31711,7 +32979,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_norman": {
     "name": "Norman helm",
@@ -31800,7 +33072,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_pointed": {
     "name": "Pointed helm",
@@ -31889,7 +33165,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_spangenhelm": {
     "name": "Spangenhelm",
@@ -31978,7 +33258,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_spangenhelm_viking": {
     "name": "Viking spangenhelm",
@@ -32067,7 +33351,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_sugarloaf": {
     "name": "Sugarloaf greathelm",
@@ -32156,7 +33444,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_sugarloaf_simple": {
     "name": "Simple sugarloaf helm",
@@ -32245,7 +33537,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmets-hat_helmet_xeon": {
     "name": "Xeon helmet",
@@ -32330,7 +33626,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_grated": {
     "name": "Grated visor",
@@ -32419,7 +33719,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_grated_narrow": {
     "name": "Narrow grated visor",
@@ -32508,7 +33812,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_horned": {
     "name": "Horned visor",
@@ -32601,7 +33909,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_pigface": {
     "name": "Pigface visor",
@@ -32692,7 +34004,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_pigface_raised": {
     "name": "Pigface visor raised",
@@ -32783,7 +34099,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_round": {
     "name": "Round visor",
@@ -32874,7 +34194,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_round_raised": {
     "name": "Round visor raised",
@@ -32965,7 +34289,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_slit": {
     "name": "Slit visor",
@@ -33053,7 +34381,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-visors-hat_visor_slit_narrow": {
     "name": "Narrow slit visor",
@@ -33141,7 +34473,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_crest": {
     "name": "Crest",
@@ -33226,7 +34562,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_crest_centurion": {
     "name": "Centurion Crest",
@@ -33314,7 +34654,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_wings": {
     "name": "Helmet wings",
@@ -33431,7 +34775,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_horns_short": {
     "name": "Short Horns",
@@ -33545,7 +34893,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_horns_upward": {
     "name": "Upward Horns",
@@ -33659,7 +35011,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_horns_downward": {
     "name": "Downward Horns",
@@ -33773,7 +35129,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_plumage": {
     "name": "Plumage",
@@ -33877,7 +35237,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_plumage_centurion": {
     "name": "Centurion Plumage",
@@ -33981,7 +35345,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-helmets-helmet accessories-hat_accessory_plumage_legion": {
     "name": "Legion Plumage",
@@ -34090,7 +35458,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses": {
     "name": "Glasses",
@@ -34201,7 +35573,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_halfmoon": {
     "name": "Halfmoon Glasses",
@@ -34312,7 +35688,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_nerd": {
     "name": "Nerd Glasses",
@@ -34425,7 +35805,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-base-character-expressions"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_shades": {
     "name": "Shades",
@@ -34539,7 +35923,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-base-character-expressions"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_secretary": {
     "name": "Secretary Glasses",
@@ -34652,7 +36040,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-base-character-expressions"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_round": {
     "name": "Round Glasses",
@@ -34768,7 +36160,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-gentleman"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-glasses-facial_glasses_sunglasses": {
     "name": "Sunglasses",
@@ -34884,7 +36280,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-monocle-facial_monocle_left": {
     "name": "Left Monocle",
@@ -34979,7 +36379,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-monocle-facial_monocle_left_frame": {
     "name": "Left Monocle Frame Color",
@@ -35100,7 +36504,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-monocle-facial_monocle_right": {
     "name": "Right Monocle",
@@ -35195,7 +36603,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-monocle-facial_monocle_right_frame": {
     "name": "Right Monocle Frame Color",
@@ -35316,7 +36728,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch_ambi": {
     "name": "Eyepatch Ambidextrous",
@@ -35421,7 +36837,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch_left": {
     "name": "Eyepatch Left",
@@ -35526,7 +36946,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch_right": {
     "name": "Eyepatch Right",
@@ -35631,7 +37055,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch2_left": {
     "name": "Eyepatch 2 Left",
@@ -35734,7 +37162,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch2_right": {
     "name": "Eyepatch 2 Right",
@@ -35837,7 +37269,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch_small_left": {
     "name": "Small Eyepatch Left",
@@ -35943,7 +37379,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-eyepatches-facial_eyepatch_small_right": {
     "name": "Small Eyepatch Right",
@@ -36049,7 +37489,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-facial_mask_plain": {
     "name": "Plain Mask",
@@ -36164,7 +37608,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earring_left": {
     "name": "Simple Earring Left",
@@ -36275,7 +37723,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-pirates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earring_right": {
     "name": "Simple Earring Right",
@@ -36386,7 +37838,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-pirates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earrings_emerald": {
     "name": "Emerald earrings",
@@ -36458,7 +37914,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-jewelry"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earrings_moon": {
     "name": "Moon earrings",
@@ -36532,7 +37992,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-jewelry"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earrings_pear": {
     "name": "Pear earrings",
@@ -36604,7 +38068,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-jewelry"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earrings_princess": {
     "name": "Princess earrings",
@@ -36676,7 +38144,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-jewelry"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-accessories-earrings-facial_earrings_stud": {
     "name": "Stud earrings",
@@ -36750,7 +38222,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-jewelry"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_bowtie": {
     "name": "Bowtie",
@@ -36856,7 +38332,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-gentleman"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_bowtie2": {
     "name": "Bowtie 2",
@@ -36957,7 +38437,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necktie": {
     "name": "Necktie",
@@ -37063,7 +38547,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-gentleman"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_scarf": {
     "name": "Scarf",
@@ -37139,7 +38627,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/more-lpc-clothes-and-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_capeclip": {
     "name": "Capeclip",
@@ -37232,7 +38724,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_capetie": {
     "name": "Capetie",
@@ -37324,7 +38820,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-curly-hair-elven-ears-white-cape-with-blue-trim-and-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_jabot": {
     "name": "Jabot",
@@ -37410,7 +38910,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-pirates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_cravat": {
     "name": "Cravat",
@@ -37496,7 +39000,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-pirates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necklace": {
     "name": "Necklace",
@@ -37573,7 +39081,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necklace_simple": {
     "name": "Simple Necklace",
@@ -37646,7 +39158,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-jewelry"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necklace_chain": {
     "name": "Chain Necklace",
@@ -37719,7 +39235,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-jewelry"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necklace_beaded_small": {
     "name": "Small Beaded Necklace",
@@ -37792,7 +39312,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-jewelry"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-neck_necklace_beaded_large": {
     "name": "Large Beaded Necklace",
@@ -37865,7 +39389,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-jewelry"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_charm_box": {
     "name": "Box Charm",
@@ -37939,7 +39467,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-jewelry"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_charm_oval": {
     "name": "Oval Charm",
@@ -38013,7 +39545,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-jewelry"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_charm_ring": {
     "name": "Ring Charm",
@@ -38087,7 +39623,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-jewelry"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_charm_star": {
     "name": "Star Charm",
@@ -38161,7 +39701,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-jewelry"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_emerald": {
     "name": "Emerald cut Gem",
@@ -38233,7 +39777,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-jewelry"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_marquise": {
     "name": "Marquise cut Gem",
@@ -38305,7 +39853,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-jewelry"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_natural": {
     "name": "Natural cut Gem",
@@ -38377,7 +39929,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-jewelry"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_pear": {
     "name": "Pear cut Gem",
@@ -38449,7 +40005,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-jewelry"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_pearl": {
     "name": "Pearl Gem",
@@ -38521,7 +40081,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-jewelry"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_princess": {
     "name": "Princess cut Gem",
@@ -38593,7 +40157,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-jewelry"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_round": {
     "name": "Round cut Gem",
@@ -38665,7 +40233,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-jewelry"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_gem_trilliant": {
     "name": "Trilliant cut Gem",
@@ -38737,7 +40309,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-jewelry"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_amulet_cross": {
     "name": "Cross amulet",
@@ -38851,7 +40427,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-jewelry"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_amulet_dangle": {
     "name": "Dangling amulet",
@@ -38968,7 +40548,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-jewelry"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "head-hair-hair extensions-afro-curly-bald/shaved-short-spiky-pigtails-bob-braids, ponytails, updos-long-neck-necklace charms-neck_amulet_spider": {
     "name": "Spider amulet",
@@ -39082,7 +40666,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-jewelry"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "arms-shoulders-shoulders_legion": {
     "name": "Legion",
@@ -39140,7 +40728,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-roman-armor"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "arms-shoulders-shoulders_plate": {
     "name": "Plate",
@@ -39223,7 +40815,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "arms-shoulders-shoulders_leather": {
     "name": "Leather",
@@ -39303,7 +40899,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "arms-shoulders-shoulders_epaulets": {
     "name": "Epaulets",
@@ -39356,7 +40956,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-pirates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "arms-shoulders-shoulders_mantal": {
     "name": "Mantal",
@@ -39426,7 +41030,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-pirates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "arms-arms_armour": {
     "name": "Armour",
@@ -39511,7 +41119,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "arms-bauldron": {
     "name": "Bauldron",
@@ -39574,7 +41186,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/more-lpc-clothes-and-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "arms-wrists-arms_bracers": {
     "name": "Bracers",
@@ -39637,7 +41253,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "arms-wrists-wrists_cuffs": {
     "name": "Cuffs",
@@ -39707,7 +41327,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-pirates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "arms-wrists-wrists_cuffs_lace": {
     "name": "Lace Cuffs",
@@ -39760,7 +41384,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-pirates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "arms-arms_gloves": {
     "name": "Gloves",
@@ -39881,7 +41509,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "arms-arms_hands_ring_stud": {
     "name": "Stud Ring",
@@ -39940,7 +41572,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-jewelry"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-dresses-dress_sash": {
     "name": "Sash dress",
@@ -40014,7 +41650,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-2-characters"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-dresses-dress_slit": {
     "name": "Slit dress",
@@ -40090,7 +41730,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-dresses-dress_bodice": {
     "name": "Bodice",
@@ -40166,7 +41810,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-dresses-kimono-dress_kimono": {
     "name": "Kimono",
@@ -40247,7 +41895,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-kimono-relm"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-dresses-kimono-dress_kimono_trim": {
     "name": "Kimono Trim",
@@ -40329,7 +41981,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-kimono-relm"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-dresses-kimono-dress_kimono_split": {
     "name": "Split Kimono",
@@ -40410,7 +42066,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-kimono-relm"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-dresses-kimono-dress_kimono_split_trim": {
     "name": "Split Kimono Trim",
@@ -40492,7 +42152,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-kimono-relm"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-dresses-kimono-dress_kimono_longsleeve": {
     "name": "Kimono Sleeves",
@@ -40578,7 +42242,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-kimono-relm"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-dresses-kimono-dress_kimono_longsleeve_trim": {
     "name": "Kimono Sleeves Trim",
@@ -40665,7 +42333,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-kimono-relm"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-dresses-kimono-dress_kimono_oversize": {
     "name": "Kimono Oversized Sleeves",
@@ -40751,7 +42423,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-kimono-relm"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-dresses-kimono-dress_kimono_oversize_trim": {
     "name": "Kimono Oversized Sleeves Trim",
@@ -40838,7 +42514,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-kimono-relm"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-torso_clothes_child_shirt": {
     "name": "Child shirts",
@@ -40890,7 +42570,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-clothes-for-children"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-sleeves-torso_clothes_shortsleeves": {
     "name": "Original Shortsleeves Overlay",
@@ -41031,7 +42715,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-simple-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-sleeves-torso_clothes_shortsleeves2": {
     "name": "Shortsleeves 2 Overlay",
@@ -41122,7 +42810,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-simple-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-sleeves-torso_clothes_longsleeves": {
     "name": "Original Longsleeves Overlay",
@@ -41263,7 +42955,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-simple-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-sleeves-torso_clothes_longsleeves2": {
     "name": "Longsleeves 2 Overlay",
@@ -41354,7 +43050,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-simple-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-sleeves-torso_clothes_longsleeves_cuffed": {
     "name": "Cuffed Longsleeves Overlay",
@@ -41445,7 +43145,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-simple-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve": {
     "name": "Longsleeve",
@@ -41610,7 +43314,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-simple-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve_scoop": {
     "name": "Scoop",
@@ -41776,7 +43484,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-simple-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve_formal": {
     "name": "Collared/Formal Longsleeve",
@@ -41831,7 +43543,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-gentleman"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve_formal_striped": {
     "name": "Striped Collared/Formal Longsleeve",
@@ -41885,7 +43601,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-2-characters"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve_laced": {
     "name": "Longsleeve laced",
@@ -41961,7 +43681,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-pirates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve2": {
     "name": "Longsleeve 2",
@@ -42052,7 +43776,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-simple-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve2_vneck": {
     "name": "Longsleeve 2 VNeck",
@@ -42143,7 +43871,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-simple-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve2_scoop": {
     "name": "Longsleeve 2 Scoop",
@@ -42234,7 +43966,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-simple-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve2_buttoned": {
     "name": "Longsleeve 2 Buttoned",
@@ -42325,7 +44061,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-simple-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve2_polo": {
     "name": "Longsleeve Polo",
@@ -42416,7 +44156,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-simple-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-longsleeve-torso_clothes_longsleeve2_cardigan": {
     "name": "Cardigan",
@@ -42507,7 +44251,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-simple-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-shortsleeve-torso_clothes_shortsleeve": {
     "name": "Shortsleeve",
@@ -42674,7 +44422,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-shortsleeve-torso_clothes_shortsleeve_polo": {
     "name": "Shortsleeve Polo",
@@ -42765,7 +44517,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-simple-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-shortsleeve-torso_clothes_shortsleeve_cardigan": {
     "name": "Shortsleeve Cardigan",
@@ -42855,7 +44611,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-simple-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-shortsleeve-torso_clothes_tshirt": {
     "name": "TShirt",
@@ -42946,7 +44706,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-simple-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-shortsleeve-torso_clothes_tshirt_vneck": {
     "name": "TShirt VNeck",
@@ -43037,7 +44801,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-simple-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-shortsleeve-torso_clothes_tshirt_scoop": {
     "name": "TShirt Scoop",
@@ -43128,7 +44896,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-simple-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-shortsleeve-torso_clothes_tshirt_buttoned": {
     "name": "TShirt Buttoned",
@@ -43219,7 +44991,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-simple-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless": {
     "name": "Sleeveless",
@@ -43326,7 +45102,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless_laced": {
     "name": "Sleeveless laced",
@@ -43408,7 +45188,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-pirates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless_striped": {
     "name": "Sleeveless striped",
@@ -43490,7 +45274,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-pirates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless_tanktop": {
     "name": "Tanktop",
@@ -43595,7 +45383,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless1": {
     "name": "Original Sleeveless",
@@ -43740,7 +45532,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-simple-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless2": {
     "name": "Sleeveless 2",
@@ -43831,7 +45627,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-simple-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless2_vneck": {
     "name": "Sleeveless 2 VNeck",
@@ -43922,7 +45722,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-simple-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless2_scoop": {
     "name": "Sleeveless 2 Scoop",
@@ -44013,7 +45817,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-simple-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless2_buttoned": {
     "name": "Sleeveless 2 Buttoned",
@@ -44104,7 +45912,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-simple-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless2_polo": {
     "name": "Sleeveless 2 Polo",
@@ -44195,7 +46007,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-simple-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-sleeveless-torso_clothes_sleeveless2_cardigan": {
     "name": "Sleeveless 2 Cardigan",
@@ -44286,7 +46102,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-simple-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-torso_clothes_corset": {
     "name": "Corset",
@@ -44355,7 +46175,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-7-womens-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-torso_clothes_blouse": {
     "name": "Blouse",
@@ -44425,7 +46249,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-7-womens-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-torso_clothes_blouse_longsleeve": {
     "name": "Longsleeve blouse",
@@ -44495,7 +46323,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-7-womens-shirts"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-torso_clothes_tunic": {
     "name": "Tunic",
@@ -44574,7 +46406,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-torso_clothes_tunic_sara": {
     "name": "Sara Tunic",
@@ -44648,7 +46484,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-sara"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-shirts-torso_clothes_robe": {
     "name": "Robe",
@@ -44705,7 +46545,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/female-mage-clothing-set"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-aprons-torso_aprons_overalls": {
     "name": "Overalls",
@@ -44793,7 +46637,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-aprons-torso_aprons_suspenders": {
     "name": "Suspenders",
@@ -44883,7 +46731,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-aprons-torso_aprons_apron": {
     "name": "Apron",
@@ -44960,7 +46812,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-aprons"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-aprons-torso_aprons_apron_half": {
     "name": "Apron half",
@@ -45032,7 +46888,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-aprons-torso_aprons_apron_full": {
     "name": "Apron full",
@@ -45104,7 +46964,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-torso_bandages": {
     "name": "Bandages",
@@ -45157,7 +47021,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-bandages"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-torso_chainmail": {
     "name": "Chainmail",
@@ -45209,7 +47077,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-jacket-torso_jacket_collared": {
     "name": "Collared coat",
@@ -45282,7 +47154,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-pirates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-jacket-torso_jacket_iverness": {
     "name": "Iverness cloak",
@@ -45330,7 +47206,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-gentleman"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-jacket-torso_jacket_trench": {
     "name": "Trench coat",
@@ -45379,7 +47259,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-gentleman"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-jacket-torso_jacket_tabard": {
     "name": "Tabard",
@@ -45471,7 +47355,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-jacket-torso_jacket_frock": {
     "name": "Frock coat",
@@ -45541,7 +47429,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-pirates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-jacket-torso_jacket_santa": {
     "name": "Santa coat",
@@ -45613,7 +47505,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-santa"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-jacket-jacket trim-torso_jacket_frock_collar": {
     "name": "Frock collar",
@@ -45667,7 +47563,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-pirates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-jacket-jacket trim-torso_jacket_frock_lace": {
     "name": "Frock coat lace",
@@ -45721,7 +47621,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-pirates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-jacket-jacket trim-torso_jacket_frock_lapel": {
     "name": "Frock coat lapel",
@@ -45775,7 +47679,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-pirates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-jacket-jacket trim-torso_jacket_frock_buttons": {
     "name": "Frock coat buttons",
@@ -45829,7 +47737,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-pirates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-jacket-jacket trim-torso_jacket_pockets": {
     "name": "Jacket pockets",
@@ -45900,7 +47812,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-pirates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-vest-torso_clothes_vest": {
     "name": "Vest",
@@ -46013,7 +47929,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-2-characters"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-vest-torso_clothes_vest_open": {
     "name": "Vest open",
@@ -46088,7 +48008,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-pirates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-armour-torso_armour_plate": {
     "name": "Plate",
@@ -46199,7 +48123,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-combat-armor-for-women"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-armour-torso_armour_leather": {
     "name": "Leather",
@@ -46295,7 +48223,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-armour-torso_armour_legion": {
     "name": "Legion",
@@ -46368,7 +48300,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-roman-armor"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-cape-cape_solid": {
     "name": "Solid",
@@ -46479,7 +48415,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-roman-armor"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-cape-cape_tattered": {
     "name": "Tattered",
@@ -46589,7 +48529,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-roman-armor"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-cape-cape_trim": {
     "name": "Cape Trim",
@@ -46676,7 +48620,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-backpack-backpack_straps": {
     "name": "Straps",
@@ -46755,7 +48703,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-backpacks"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-backpack-backpack": {
     "name": "Backpack",
@@ -46832,7 +48784,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-backpacks"
         ]
       }
-    ]
+    ],
+    "preview_row": 0,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-backpack-backpack_squarepack": {
     "name": "Square pack",
@@ -46908,7 +48864,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-backpacks"
         ]
       }
-    ]
+    ],
+    "preview_row": 0,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-backpack-backpack_jetpack": {
     "name": "Jetpack",
@@ -46969,7 +48929,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-backpacks"
         ]
       }
-    ]
+    ],
+    "preview_row": 0,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-backpack-backpack_jetpack_fins": {
     "name": "Jetpack fins",
@@ -47030,7 +48994,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-backpacks"
         ]
       }
-    ]
+    ],
+    "preview_row": 0,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-backpack-backpack_basket": {
     "name": "Basket",
@@ -47095,7 +49063,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-more-backpacks"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-backpack-quiver": {
     "name": "Quiver",
@@ -47152,7 +49124,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-backpack-backpack cargo-backpack_contents_wood": {
     "name": "Wood",
@@ -47222,7 +49198,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-more-backpacks"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-backpack-backpack cargo-backpack_contents_ore": {
     "name": "Ore",
@@ -47295,7 +49275,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-more-backpacks"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-waist-belt_leather": {
     "name": "Leather Belt",
@@ -47357,7 +49341,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-pirates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-waist-belt_double": {
     "name": "Double Belt",
@@ -47419,7 +49407,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-pirates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-waist-belt_loose": {
     "name": "Loose Belt",
@@ -47481,7 +49473,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-pirates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-waist-belt_belly": {
     "name": "Belly belt",
@@ -47544,7 +49540,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-santa"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-waist-belt_other_female": {
     "name": "Other belts",
@@ -47647,7 +49647,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-waist-belt_other_male": {
     "name": "Other belts",
@@ -47730,7 +49734,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-waist-belt_sash": {
     "name": "Sash",
@@ -47809,7 +49817,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-pirates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-waist-belt_sash_narrow": {
     "name": "Narrow sash",
@@ -47888,7 +49900,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-pirates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-waist-belt_waistband": {
     "name": "Waistband",
@@ -47982,7 +49998,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-pirates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-waist-obi-belt_obi": {
     "name": "Obi",
@@ -48073,7 +50093,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-kimono-relm"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-waist-obi-belt_obi_knot_left": {
     "name": "Obi Knot Left",
@@ -48164,7 +50188,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-kimono-relm"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-waist-obi-belt_obi_knot_right": {
     "name": "Obi Knot Right",
@@ -48255,7 +50283,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-kimono-relm"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "torso-buckles": {
     "name": "Buckles",
@@ -48305,7 +50337,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/female-mage-clothing-set"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "legs-legs_armour": {
     "name": "Armour",
@@ -48372,7 +50408,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "legs-pants-legs_widepants": {
     "name": "Wide pants",
@@ -48449,7 +50489,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-muscular-hurt-animation"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "legs-pants-legs_pants": {
     "name": "Pants",
@@ -48570,7 +50614,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-pants"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "legs-pants-legs_pants2": {
     "name": "Long Pants",
@@ -48679,7 +50727,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-pants"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "legs-pants-legs_cuffed": {
     "name": "Cuffed Pants",
@@ -48788,7 +50840,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-pants"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "legs-pants-legs_pantaloons": {
     "name": "Pantaloons",
@@ -48922,7 +50978,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/more-lpc-clothes-and-hair"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "legs-pants-legs_formal": {
     "name": "Formal Pants",
@@ -49044,7 +51104,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-pants"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "legs-pants-legs_formal_striped": {
     "name": "Striped Formal Pants",
@@ -49166,7 +51230,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-pants"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "legs-pants-legs_fur": {
     "name": "Fur Pants",
@@ -49293,7 +51361,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-pants"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "legs-pants-legs_pregnantpants": {
     "name": "Pregnancy pants",
@@ -49368,7 +51440,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "legs-pants-legs_childpants": {
     "name": "Child pants",
@@ -49419,7 +51495,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-clothes-for-children"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "legs-leggings-legs_leggings": {
     "name": "Leggings",
@@ -49532,7 +51612,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-pants"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "legs-leggings-legs_leggings2": {
     "name": "Leggings 2",
@@ -49642,7 +51726,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-pants"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "legs-leggings-legs_hose": {
     "name": "Hose",
@@ -49752,7 +51840,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-pants"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "legs-shorts-legs_shorts": {
     "name": "Shorts",
@@ -49862,7 +51954,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-pants"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "legs-shorts-legs_shorts_short": {
     "name": "Short Shorts",
@@ -49972,7 +52068,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-pants"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "legs-skirts-legs_childskirts": {
     "name": "Child skirts",
@@ -50024,7 +52124,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-clothes-for-children"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "legs-skirts-legs_skirts_plain": {
     "name": "Plain skirt",
@@ -50104,7 +52208,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "legs-skirts-legs_skirts_slit": {
     "name": "Slit skirt",
@@ -50182,7 +52290,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "legs-skirts-legs_skirts_legion": {
     "name": "Legion skirt",
@@ -50265,7 +52377,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "legs-skirts-legs_skirt_straight": {
     "name": "Straight skirt",
@@ -50341,7 +52457,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "legs-skirts-legs_skirt_belle": {
     "name": "Belle skirt",
@@ -50421,7 +52541,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "legs-skirts-legs_skirt_overskirt": {
     "name": "Overskirt",
@@ -50501,7 +52625,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "feet-feet_armour": {
     "name": "Armour",
@@ -50581,7 +52709,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "feet-shoes-feet_shoes_basic": {
     "name": "Basic Shoes",
@@ -50702,7 +52834,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-socks-shoes"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "feet-shoes-feet_shoes_revised": {
     "name": "Revised Shoes",
@@ -50820,7 +52956,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-socks-shoes"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "feet-shoes-feet_shoes_sara": {
     "name": "Sara Shoes",
@@ -50948,7 +53088,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-socks-shoes"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "feet-shoes-feet_shoes_ghillies": {
     "name": "Ghillies",
@@ -51051,7 +53195,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-socks-shoes"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "feet-boots-feet_boots_basic": {
     "name": "Basic Boots",
@@ -51172,7 +53320,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-socks-shoes"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "feet-boots-feet_boots_revised": {
     "name": "Revised Boots",
@@ -51292,7 +53444,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-socks-shoes"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "feet-boots-feet_boots_fold": {
     "name": "Folded Rim Boots",
@@ -51391,7 +53547,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-socks-shoes"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "feet-boots-feet_boots_rim": {
     "name": "Rimmed Boots",
@@ -51490,7 +53650,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-socks-shoes"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "feet-shoe accessory-feet_plate_toe": {
     "name": "Plated Toe",
@@ -51565,7 +53729,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-socks-shoes"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "feet-shoe accessory-feet_plate_toe_thick": {
     "name": "Thick Plated Toe",
@@ -51640,7 +53808,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-socks-shoes"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "feet-socks-feet_socks_ankle": {
     "name": "Ankle Socks",
@@ -51748,7 +53920,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-socks-shoes"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "feet-socks-feet_socks_high": {
     "name": "High Socks",
@@ -51856,7 +54032,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-socks-shoes"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "feet-socks-feet_socks_tabi": {
     "name": "Tabi Socks",
@@ -51949,7 +54129,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-socks-shoes"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "feet-feet_slippers": {
     "name": "Slippers",
@@ -52042,7 +54226,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-socks-shoes"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "feet-feet_sandals": {
     "name": "Sandals",
@@ -52145,7 +54333,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-socks-shoes"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "feet-feet_hoofs": {
     "name": "Hoofs",
@@ -52236,7 +54428,11 @@ window.itemMetadata = {
           "http://opengameart.org/content/lpc-clothing-updates"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "tools-tool_rod": {
     "name": "Rod",
@@ -52304,7 +54500,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hand-tools"
         ]
       }
-    ]
+    ],
+    "preview_row": 0,
+    "preview_column": 0,
+    "preview_x_offset": 304,
+    "preview_y_offset": 24
   },
   "tools-tool_smash": {
     "name": "Smash",
@@ -52382,7 +54582,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hand-tools"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "tools-tool_thrust": {
     "name": "Thrust",
@@ -52450,7 +54654,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-hand-tools"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "tools-tool_whip": {
     "name": "Whip",
@@ -52516,7 +54724,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-more-weapons"
         ]
       }
-    ]
+    ],
+    "preview_row": 3,
+    "preview_column": 12,
+    "preview_x_offset": 24,
+    "preview_y_offset": 48
   },
   "weapons-shield-shield": {
     "name": "Shield",
@@ -52829,7 +55041,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields-pack"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-shield_kite": {
     "name": "Kite",
@@ -52896,7 +55112,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields-pack"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-shield_spartan": {
     "name": "Spartan shield",
@@ -52957,7 +55177,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-two-engrailed shield-shield_two_engrailed": {
     "name": "Two engrailed shield",
@@ -53019,7 +55243,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-two-engrailed shield-shield_two_engrailed_trim": {
     "name": "Two engrailed shield trim",
@@ -53081,7 +55309,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-two-engrailed shield-shield_crusader": {
     "name": "Crusader shield",
@@ -53143,7 +55375,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-two-engrailed shield-shield_plus": {
     "name": "Plus shield",
@@ -53205,7 +55441,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-scutum shield-shield_scutum": {
     "name": "Scutum shield",
@@ -53267,7 +55507,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-scutum shield-shield_scutum_trim": {
     "name": "Scutum shield trim",
@@ -53329,7 +55573,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-shield_heater_wood": {
     "name": "Heater Shield Base",
@@ -53411,7 +55659,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-shield_heater_paint": {
     "name": "Heater Shield Paint",
@@ -53562,7 +55814,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-shield_heater_trim": {
     "name": "Heater Shield Trim",
@@ -53646,7 +55902,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_barry": {
     "name": "barry",
@@ -53746,7 +56006,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_bend_sinister": {
     "name": "bend_sinister",
@@ -53846,7 +56110,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_bend": {
     "name": "bend",
@@ -53946,7 +56214,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_bendy_sinister": {
     "name": "bendy_sinister",
@@ -54047,7 +56319,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_bendy": {
     "name": "bendy",
@@ -54148,7 +56424,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_bordure": {
     "name": "bordure",
@@ -54248,7 +56528,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_chevron_inverted": {
     "name": "chevron_inverted",
@@ -54348,7 +56632,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_chevron": {
     "name": "chevron",
@@ -54448,7 +56736,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_chief": {
     "name": "chief",
@@ -54548,7 +56840,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_cross": {
     "name": "cross",
@@ -54648,7 +56944,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_fess": {
     "name": "fess",
@@ -54748,7 +57048,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_lozengy": {
     "name": "lozengy",
@@ -54849,7 +57153,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_pale": {
     "name": "pale",
@@ -54949,7 +57257,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_pall": {
     "name": "pall",
@@ -55049,7 +57361,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_paly": {
     "name": "paly",
@@ -55150,7 +57466,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_bend_sinister": {
     "name": "per_bend_sinister",
@@ -55250,7 +57570,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_bend": {
     "name": "per_bend",
@@ -55350,7 +57674,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_chevron_inverted": {
     "name": "per_chevron_inverted",
@@ -55450,7 +57778,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_chevron": {
     "name": "per_chevron",
@@ -55550,7 +57882,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_fess": {
     "name": "per_fess",
@@ -55650,7 +57986,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_pale": {
     "name": "per_pale",
@@ -55750,7 +58090,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_per_saltire": {
     "name": "per_saltire",
@@ -55850,7 +58194,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_quarterly": {
     "name": "quarterly",
@@ -55950,7 +58298,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-heater shield pattern-shield_heater_pattern_saltire": {
     "name": "saltire",
@@ -56050,7 +58402,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-shield_heater_revised_wood": {
     "name": "Revised Heater Shield Base",
@@ -56133,7 +58489,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-shield_heater_revised_paint": {
     "name": "Revised Heater Shield Paint",
@@ -56284,7 +58644,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-shield_heater_revised_trim": {
     "name": "Revised Heater Shield Trim",
@@ -56369,7 +58733,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_barry": {
     "name": "revised_barry",
@@ -56470,7 +58838,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_bend_sinister": {
     "name": "revised_bend_sinister",
@@ -56571,7 +58943,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_bend": {
     "name": "revised_bend",
@@ -56672,7 +59048,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_bendy_sinister": {
     "name": "revised_bendy_sinister",
@@ -56773,7 +59153,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_bendy": {
     "name": "revised_bendy",
@@ -56874,7 +59258,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_bordure": {
     "name": "revised_bordure",
@@ -56975,7 +59363,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_chevron_inverted": {
     "name": "revised_chevron_inverted",
@@ -57076,7 +59468,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_chevron": {
     "name": "revised_chevron",
@@ -57177,7 +59573,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_chief": {
     "name": "revised_chief",
@@ -57278,7 +59678,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_cross": {
     "name": "revised_cross",
@@ -57379,7 +59783,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_fess": {
     "name": "revised_fess",
@@ -57480,7 +59888,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_lozengy": {
     "name": "revised_lozengy",
@@ -57581,7 +59993,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_pale": {
     "name": "revised_pale",
@@ -57682,7 +60098,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_pall": {
     "name": "revised_pall",
@@ -57783,7 +60203,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_paly": {
     "name": "revised_paly",
@@ -57884,7 +60308,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_bend_sinister": {
     "name": "revised_per_bend_sinister",
@@ -57985,7 +60413,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_bend": {
     "name": "revised_per_bend",
@@ -58086,7 +60518,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_chevron_inverted": {
     "name": "revised_per_chevron_inverted",
@@ -58187,7 +60623,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_chevron": {
     "name": "revised_per_chevron",
@@ -58288,7 +60728,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_fess": {
     "name": "revised_per_fess",
@@ -58389,7 +60833,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_pale": {
     "name": "revised_per_pale",
@@ -58490,7 +60938,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_per_saltire": {
     "name": "revised_per_saltire",
@@ -58591,7 +61043,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_quarterly": {
     "name": "revised_quarterly",
@@ -58692,7 +61148,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-shield-heater shield-revised heater shield pattern-shield_heater_revised_pattern_saltire": {
     "name": "revised_saltire",
@@ -58793,7 +61253,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-shields"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-ranged-weapon_ranged_crossbow": {
     "name": "Crossbow",
@@ -58854,7 +61318,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-crossbow-final"
         ]
       }
-    ]
+    ],
+    "preview_row": 1,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 18
   },
   "weapons-ranged-weapon_ranged_slingshot": {
     "name": "Slingshot",
@@ -58916,7 +61384,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-more-weapons"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-ranged-weapon_ranged_boomerang": {
     "name": "Boomerang",
@@ -58972,7 +61444,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-more-weapons"
         ]
       }
-    ]
+    ],
+    "preview_row": 1,
+    "preview_column": 4,
+    "preview_x_offset": 16,
+    "preview_y_offset": -12
   },
   "weapons-ranged-bow-weapon_ranged_bow_arrow": {
     "name": "Ammo",
@@ -59024,7 +61500,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
         ]
       }
-    ]
+    ],
+    "preview_row": 3,
+    "preview_column": 2,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-ranged-bow-weapon_ranged_bow_great": {
     "name": "Great",
@@ -59116,7 +61596,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-walk-animations-for-bows"
         ]
       }
-    ]
+    ],
+    "preview_row": 1,
+    "preview_column": 5,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-ranged-bow-weapon_ranged_bow_normal": {
     "name": "Normal",
@@ -59208,7 +61692,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-walk-animations-for-bows"
         ]
       }
-    ]
+    ],
+    "preview_row": 1,
+    "preview_column": 5,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-ranged-bow-weapon_ranged_bow_recurve": {
     "name": "Recurve",
@@ -59300,7 +61788,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-walk-animations-for-bows"
         ]
       }
-    ]
+    ],
+    "preview_row": 1,
+    "preview_column": 5,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-sword-weapon_sword_dagger": {
     "name": "Dagger",
@@ -59365,7 +61857,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-extended-weapon-animations"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-sword-weapon_sword_glowsword": {
     "name": "Glowsword",
@@ -59447,7 +61943,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-extended-weapon-animations"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-sword-weapon_sword_longsword": {
     "name": "Longsword",
@@ -59558,7 +62058,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-extended-weapon-animations"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-sword-weapon_sword_rapier": {
     "name": "Rapier",
@@ -59637,7 +62141,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-extended-weapon-animations"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-sword-weapon_sword_saber": {
     "name": "Saber",
@@ -59717,7 +62225,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-extended-weapon-animations"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-sword-weapon_sword_katana": {
     "name": "Katana",
@@ -59795,7 +62307,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-dcss-swords"
         ]
       }
-    ]
+    ],
+    "preview_row": 5,
+    "preview_column": 0,
+    "preview_x_offset": 28,
+    "preview_y_offset": -16
   },
   "weapons-sword-weapon_sword_scimitar": {
     "name": "Scimitar",
@@ -59873,7 +62389,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-dcss-swords"
         ]
       }
-    ]
+    ],
+    "preview_row": 5,
+    "preview_column": 0,
+    "preview_x_offset": 28,
+    "preview_y_offset": -16
   },
   "weapons-sword-weapon_sword_longsword_alt": {
     "name": "Longsword alt",
@@ -59951,7 +62471,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-dcss-swords"
         ]
       }
-    ]
+    ],
+    "preview_row": 5,
+    "preview_column": 0,
+    "preview_x_offset": 28,
+    "preview_y_offset": -16
   },
   "weapons-sword-weapon_sword_arming": {
     "name": "Arming Sword",
@@ -60086,7 +62610,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-blunt-weapon_blunt_flail": {
     "name": "Flail",
@@ -60165,7 +62693,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-medieval-weapons"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-blunt-weapon_blunt_mace": {
     "name": "Mace",
@@ -60244,7 +62776,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-extended-weapon-animations"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-blunt-weapon_blunt_waraxe": {
     "name": "Waraxe",
@@ -60323,7 +62859,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-medieval-weapons"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-blunt-weapon_blunt_club": {
     "name": "Club",
@@ -60387,7 +62927,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-more-weapons"
         ]
       }
-    ]
+    ],
+    "preview_row": 1,
+    "preview_column": 1,
+    "preview_x_offset": 16,
+    "preview_y_offset": -16
   },
   "weapons-polearm-weapon_polearm_cane": {
     "name": "Cane",
@@ -60436,7 +62980,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-gentleman"
         ]
       }
-    ]
+    ],
+    "preview_row": 1,
+    "preview_column": 8,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-polearm-weapon_polearm_spear": {
     "name": "Spear",
@@ -60509,7 +63057,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-spear-and-shovel-reworked"
         ]
       }
-    ]
+    ],
+    "preview_row": 3,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-polearm-weapon_polearm_scythe": {
     "name": "Scythe",
@@ -60585,7 +63137,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-extended-weapon-animations"
         ]
       }
-    ]
+    ],
+    "preview_row": 0,
+    "preview_column": 0,
+    "preview_x_offset": 11,
+    "preview_y_offset": 204
   },
   "weapons-polearm-weapon_polearm_halberd": {
     "name": "Halberd",
@@ -60680,7 +63236,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-medieval-weapons"
         ]
       }
-    ]
+    ],
+    "preview_row": 0,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-polearm-weapon_polearm_longspear": {
     "name": "Long spear",
@@ -60776,7 +63336,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
         ]
       }
-    ]
+    ],
+    "preview_row": 0,
+    "preview_column": 0,
+    "preview_x_offset": 13,
+    "preview_y_offset": 170
   },
   "weapons-polearm-weapon_polearm_dragonspear": {
     "name": "Dragon spear",
@@ -60873,7 +63437,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-extended-weapon-animations"
         ]
       }
-    ]
+    ],
+    "preview_row": 0,
+    "preview_column": 0,
+    "preview_x_offset": 9,
+    "preview_y_offset": 48
   },
   "weapons-polearm-weapon_polearm_trident": {
     "name": "Trident",
@@ -60970,7 +63538,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-extended-weapon-animations"
         ]
       }
-    ]
+    ],
+    "preview_row": 0,
+    "preview_column": 0,
+    "preview_x_offset": 9,
+    "preview_y_offset": 38
   },
   "weapons-magic-weapon_magic_simple": {
     "name": "Simple staff",
@@ -61034,7 +63606,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-simple-staff"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-magic-weapon_magic_loop": {
     "name": "Loop staff",
@@ -61128,7 +63704,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-more-weapons"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-magic-weapon_magic_diamond": {
     "name": "Diamond staff",
@@ -61222,7 +63802,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-more-weapons"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-magic-weapon_magic_gnarled": {
     "name": "Gnarled staff",
@@ -61316,7 +63900,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-more-weapons"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-magic-weapon_magic_s": {
     "name": "S staff",
@@ -61411,7 +63999,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-magic-staff"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-magic-weapon_magic_crystal": {
     "name": "Crystal",
@@ -61499,7 +64091,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-more-weapons"
         ]
       }
-    ]
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   },
   "weapons-magic-weapon_magic_wand": {
     "name": "Wand",
@@ -61548,7 +64144,11 @@ window.itemMetadata = {
           "https://opengameart.org/content/lpc-wands"
         ]
       }
-    ]
+    ],
+    "preview_row": 1,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0
   }
 };
 
