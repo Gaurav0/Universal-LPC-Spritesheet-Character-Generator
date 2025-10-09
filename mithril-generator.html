@@ -44,6 +44,12 @@
 		.box {
 			margin-bottom: 1rem;
 		}
+		.search-result {
+			background-color: #fffbea;
+		}
+		.search-result:hover {
+			background-color: #fff3cd;
+		}
 	</style>
 	<script src="https://unpkg.com/mithril@2.2.2/mithril.min.js"></script>
 	<script type="text/javascript" src="sources/jszip.min.js"></script>
@@ -107,6 +113,11 @@
 			const canvas = document.getElementById("spritesheet");
 			if (canvas) {
 				initCanvas(canvas);
+
+				// Set defaults after canvas is ready
+				if (window.setDefaultSelections) {
+					window.setDefaultSelections();
+				}
 			}
 		});
 	</script>

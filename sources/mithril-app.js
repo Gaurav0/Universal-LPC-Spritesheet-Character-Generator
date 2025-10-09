@@ -5,8 +5,132 @@
 const state = {
 	selections: {}, // key: category path, value: { itemId, name }
 	bodyType: "male", // male, female, teen, child, muscular, pregnant
-	expandedNodes: {} // key: path string, value: boolean (true if expanded)
+	expandedNodes: {}, // key: path string, value: boolean (true if expanded)
+	searchQuery: "" // current search query
 };
+
+// URL hash parameter management
+function getHashParams() {
+	const hash = window.location.hash.substring(1); // Remove '#'
+	if (!hash) return {};
+
+	const params = {};
+	hash.split('&').forEach(pair => {
+		const [key, value] = pair.split('=');
+		if (key && value) {
+			params[decodeURIComponent(key)] = decodeURIComponent(value);
+		}
+	});
+	return params;
+}
+
+function setHashParams(params) {
+	const hash = Object.entries(params)
+		.map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`)
+		.join('&');
+	window.location.hash = hash;
+}
+
+function syncSelectionsToHash() {
+	const params = {};
+
+	// Add body type
+	if (state.bodyType !== "male") {
+		params.bodyType = state.bodyType;
+	}
+
+	// Add selections - use itemId as key (without variant suffix if present)
+	// itemId "body-body" with variant "light" -> "body-body=light"
+	// itemId "body-shadow" with variant "shadow" -> "body-shadow=shadow"
+	// itemId "head-heads-heads_human_male" with variant "light" -> "head-heads-heads_human_male=light"
+	for (const [categoryPath, selection] of Object.entries(state.selections)) {
+		// Use the itemId directly as the key
+		const key = selection.itemId;
+
+		// Use variant as value (or empty string if no variant)
+		const value = selection.variant || '';
+
+		params[key] = value;
+	}
+
+	setHashParams(params);
+}
+
+function loadSelectionsFromHash() {
+	const params = getHashParams();
+	console.log('Loading from hash, params:', params);
+
+	// Load body type
+	if (params.bodyType) {
+		state.bodyType = params.bodyType;
+	}
+
+	// Load selections
+	// Format: "body-body=light", "body-shadow=shadow", "head-heads-heads_human_male=light"
+	for (const [itemId, variant] of Object.entries(params)) {
+		if (itemId === 'bodyType') continue;
+
+		// Look up the item in metadata
+		const meta = window.itemMetadata?.[itemId];
+		if (!meta || !meta.path || meta.path.length < 2) {
+			console.warn(`Unknown itemId in URL hash: ${itemId}`);
+			continue;
+		}
+
+		// Build category path from metadata
+		// For 2-element paths like ["body", "body"], use full path "body/body"
+		// For 3+ element paths like ["head", "heads", "heads_human_male"], use all but last "head/heads"
+		const categoryPath = meta.path.length === 2
+			? meta.path.join('/')
+			: meta.path.slice(0, -1).join('/');
+
+		// Use the variant from URL, or first variant, or empty string
+		const actualVariant = variant || meta.variants?.[0] || '';
+
+		console.log(`Loading: itemId=${itemId}, categoryPath=${categoryPath}, variant=${actualVariant}`);
+
+		// Store selection
+		state.selections[categoryPath] = {
+			itemId: itemId,
+			variant: actualVariant,
+			name: meta.name + (actualVariant ? ` (${actualVariant})` : '')
+		};
+	}
+
+	console.log('Final selections after load:', state.selections);
+}
+
+// Select default items (body color light + human male light head)
+function selectDefaults() {
+	// Set default body color (light)
+	state.selections["body/body"] = {
+		itemId: "body-body",
+		variant: "light",
+		name: "Body color (light)"
+	};
+
+	// Set default head (human male light)
+	state.selections["head/heads"] = {
+		itemId: "head-heads-heads_human_male",
+		variant: "light",
+		name: "Human male (light)"
+	};
+
+	// Update URL hash
+	syncSelectionsToHash();
+
+	// Render the character with defaults
+	if (window.canvasRenderer) {
+		window.canvasRenderer.renderCharacter(state.selections, state.bodyType);
+	}
+}
+
+// Reset all selections and restore defaults
+function resetAll() {
+	state.selections = {};
+	selectDefaults();
+	m.redraw();
+}
 
 // Helper function to capitalize strings for display
 function capitalize(str) {
@@ -82,11 +206,13 @@ function getItemFileName(itemId, variant, name) {
 // Item with variants component
 const ItemWithVariants = {
 	view: function(vnode) {
-		const { itemId, meta, categoryPath } = vnode.attrs;
+		const { itemId, meta, categoryPath, isSearchMatch } = vnode.attrs;
 		const isExpanded = state.expandedNodes[itemId] || false;
 		const displayName = meta.name;
 
-		return m("div", [
+		return m("div", {
+			class: isSearchMatch ? "search-result" : ""
+		}, [
 			m("div.tree-label", {
 				onclick: () => {
 					state.expandedNodes[itemId] = !isExpanded;
@@ -140,12 +266,70 @@ const BodyTypeSelector = {
 	}
 };
 
+// Controls component (Reset All + Search)
+const Controls = {
+	view: function() {
+		return m("div.box", [
+			m("h3.title.is-5", "Controls"),
+			m("div.field", [
+				m("button.button.is-danger.is-small", {
+					onclick: resetAll
+				}, "Reset all")
+			]),
+			m("div.field", [
+				m("label.label", "Search:"),
+				m("input.input[type=search][placeholder=Search]", {
+					value: state.searchQuery,
+					oninput: (e) => {
+						state.searchQuery = e.target.value;
+					}
+				})
+			])
+		]);
+	}
+};
+
+// Helper function to check if item matches search query
+function matchesSearch(text, query) {
+	if (!query || query.length < 2) return true;
+	return text.toLowerCase().includes(query.toLowerCase());
+}
+
+// Helper function to check if a node or its children contain search matches
+function nodeHasMatches(node, query) {
+	if (!query || query.length < 2) return true;
+
+	// Check if any items in this node match
+	if (node.items && node.items.some(itemId => {
+		const meta = window.itemMetadata[itemId];
+		return meta && matchesSearch(meta.name, query);
+	})) {
+		return true;
+	}
+
+	// Check if any child nodes have matches
+	if (node.children) {
+		return Object.values(node.children).some(childNode => nodeHasMatches(childNode, query));
+	}
+
+	return false;
+}
+
 // Recursive tree node component
 const TreeNode = {
 	view: function(vnode) {
 		const { name, node, pathPrefix = "" } = vnode.attrs;
 		const nodePath = pathPrefix ? `${pathPrefix}-${name}` : name;
-		const isExpanded = state.expandedNodes[nodePath] || false;
+		const searchQuery = state.searchQuery;
+		const hasSearchMatches = nodeHasMatches(node, searchQuery);
+
+		// Hide this node if search is active and there are no matches
+		if (searchQuery && searchQuery.length >= 2 && !hasSearchMatches) {
+			return null;
+		}
+
+		// Auto-expand if search is active and has matches
+		const isExpanded = (searchQuery && searchQuery.length >= 2 && hasSearchMatches) || state.expandedNodes[nodePath] || false;
 		const displayName = capitalize(name);
 
 		return m("div",
@@ -167,19 +351,28 @@ const TreeNode = {
 					.filter(itemId => {
 						const meta = window.itemMetadata[itemId];
 						// Filter: Only show items compatible with current body type
-						return meta && meta.required.includes(state.bodyType);
+						if (!meta || !meta.required.includes(state.bodyType)) return false;
+
+						// Filter: Only show items matching search query
+						if (searchQuery && searchQuery.length >= 2 && !matchesSearch(meta.name, searchQuery)) {
+							return false;
+						}
+
+						return true;
 					})
 					.map(itemId => {
 						const meta = window.itemMetadata[itemId];
 						const displayName = meta.name;
 						const categoryPath = meta.path.slice(0, -1).join("-");
 						const hasVariants = meta.variants && meta.variants.length > 0;
+						const isSearchMatch = searchQuery && searchQuery.length >= 2 && matchesSearch(meta.name, searchQuery);
 
 						if (!hasVariants) {
 							// Simple item with no variants
 							const isSelected = state.selections[categoryPath]?.itemId === itemId;
 							return m("div", {
 								key: itemId,
+								class: isSearchMatch ? "search-result" : "",
 								style: "padding: 0.25rem 0 0.25rem 1.5rem; cursor: pointer;" + (isSelected ? " font-weight: bold; color: #3273dc;" : ""),
 								onclick: () => {
 									state.selections[categoryPath] = { itemId, name: displayName };
@@ -189,7 +382,7 @@ const TreeNode = {
 						}
 
 						// Item with variants - create a sub-component
-						return m(ItemWithVariants, { key: itemId, itemId, meta, categoryPath });
+						return m(ItemWithVariants, { key: itemId, itemId, meta, categoryPath, isSearchMatch });
 					})
 			]) : null
 		);
@@ -761,6 +954,10 @@ const Credits = {
 
 // Trigger canvas re-render when state changes
 function triggerRender() {
+	// Sync to URL hash
+	syncSelectionsToHash();
+
+	// Render character
 	if (window.canvasRenderer) {
 		window.canvasRenderer.renderCharacter(state.selections, state.bodyType);
 	}
@@ -771,6 +968,7 @@ const App = {
 	view: function() {
 		return m("div", [
 			m(BodyTypeSelector),
+			m(Controls),
 			m(CurrentSelections),
 			m(Download),
 			m(CategoryTree),
@@ -782,3 +980,22 @@ const App = {
 // Mount the components
 m.mount(document.getElementById("mithril-filters"), App);
 m.mount(document.getElementById("mithril-preview"), AnimationPreview);
+
+// Expose initialization to be called after canvas init
+window.setDefaultSelections = function() {
+	// First, try to load from URL hash
+	loadSelectionsFromHash();
+
+	// If nothing in hash, set defaults
+	if (Object.keys(state.selections).length === 0) {
+		selectDefaults();
+	} else {
+		// Render with loaded selections
+		if (window.canvasRenderer) {
+			window.canvasRenderer.renderCharacter(state.selections, state.bodyType);
+		}
+	}
+
+	// Redraw Mithril UI to show loaded selections
+	m.redraw();
+};

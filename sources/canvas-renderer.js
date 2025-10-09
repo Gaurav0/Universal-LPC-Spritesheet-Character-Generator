@@ -241,7 +241,7 @@ function getZPos(itemId, layerNum = 1) {
   const layerKey = `layer_${layerNum}`;
   const layer = meta.layers?.[layerKey];
 
-  return layer?.zPos || 100;
+  return layer?.zPos ?? 100;
 }
 
 /**
@@ -445,11 +445,9 @@ export async function renderCharacter(selections, bodyType) {
     }
   }
 
-  // Sort standard items by animation first (to group them), then by zPos
-  itemsToDraw.sort((a, b) => {
-    if (a.yPos !== b.yPos) return a.yPos - b.yPos;
-    return a.zPos - b.zPos;
-  });
+  // Sort standard items by zPos only (lower zPos = drawn first = behind)
+  // This ensures shadow (zPos=0) is drawn before body (zPos=10), etc.
+  itemsToDraw.sort((a, b) => a.zPos - b.zPos);
 
   // Calculate total canvas height needed (standard sheet + custom animations)
   let totalHeight = SHEET_HEIGHT;
