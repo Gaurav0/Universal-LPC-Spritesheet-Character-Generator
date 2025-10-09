@@ -35,9 +35,7 @@ function syncSelectionsToHash() {
 	const params = {};
 
 	// Add body type
-	if (state.bodyType !== "male") {
-		params.bodyType = state.bodyType;
-	}
+	params.bodyType = state.bodyType;
 
 	// Add selections - use itemId as key (without variant suffix if present)
 	// itemId "body-body" with variant "light" -> "body-body=light"
@@ -249,7 +247,7 @@ const BodyTypeSelector = {
 	view: function() {
 		const bodyTypes = ["male", "female", "teen", "child", "muscular", "pregnant"];
 
-		return m("div.box", [
+		return m("div", [
 			m("h3.title.is-5", "Body Type"),
 			m("div.buttons",
 				bodyTypes.map(type =>
@@ -266,25 +264,17 @@ const BodyTypeSelector = {
 	}
 };
 
-// Controls component (Reset All + Search)
+// Controls component (Search only)
 const Controls = {
 	view: function() {
-		return m("div.box", [
-			m("h3.title.is-5", "Controls"),
-			m("div.field", [
-				m("button.button.is-danger.is-small", {
-					onclick: resetAll
-				}, "Reset all")
-			]),
-			m("div.field", [
-				m("label.label", "Search:"),
-				m("input.input[type=search][placeholder=Search]", {
-					value: state.searchQuery,
-					oninput: (e) => {
-						state.searchQuery = e.target.value;
-					}
-				})
-			])
+		return m("div.field", [
+			m("label.label", "Search:"),
+			m("input.input[type=search][placeholder=Search]", {
+				value: state.searchQuery,
+				oninput: (e) => {
+					state.searchQuery = e.target.value;
+				}
+			})
 		]);
 	}
 };
@@ -395,13 +385,13 @@ const CurrentSelections = {
 		const selectionCount = Object.keys(state.selections).length;
 
 		if (selectionCount === 0) {
-			return m("div.box", [
+			return m("div", [
 				m("h3.title.is-5", "Current Selections"),
 				m("p.has-text-grey", "No items selected yet")
 			]);
 		}
 
-		return m("div.box", [
+		return m("div", [
 			m("h3.title.is-5", "Current Selections"),
 			m("div.tags",
 				Object.entries(state.selections).map(([categoryPath, selection]) => {
@@ -427,10 +417,13 @@ const CategoryTree = {
 			return m("div", "Loading...");
 		}
 
-		return m("div.box", [
-			m("div", { style: "display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;" }, [
-				m("h3.title.is-5", { style: "margin-bottom: 0;" }, "Available Items"),
-				m("div.buttons", { style: "margin-bottom: 0;" }, [
+		return m("div.box.has-background-light", [
+			m("div.mb-3", { style: "display: flex; justify-content: space-between; align-items: center;" }, [
+				m("h3.title.is-5.mb-0", "Available Items"),
+				m("div.buttons.mb-0", [
+					m("button.button.is-danger.is-small", {
+						onclick: resetAll
+					}, "Reset all"),
 					m("button.button.is-small", {
 						onclick: () => { state.expandedNodes = {}; }
 					}, "Collapse All"),
@@ -459,6 +452,18 @@ const CategoryTree = {
 				m(TreeNode, { key: categoryName, name: categoryName, node: categoryNode })
 			)
 		)
+		]);
+	}
+};
+
+// Filters Panel - combines Controls, CurrentSelections, BodyTypeSelector, and CategoryTree
+const FiltersPanel = {
+	view: function() {
+		return m("div.box", [
+			m("div.mb-4", m(Controls)),
+			m("div.mb-4", m(CurrentSelections)),
+			m("div.mb-4", m(BodyTypeSelector)),
+			m(CategoryTree)
 		]);
 	}
 };
@@ -967,11 +972,8 @@ function triggerRender() {
 const App = {
 	view: function() {
 		return m("div", [
-			m(BodyTypeSelector),
-			m(Controls),
-			m(CurrentSelections),
+			m(FiltersPanel),
 			m(Download),
-			m(CategoryTree),
 			m(Credits)
 		]);
 	}

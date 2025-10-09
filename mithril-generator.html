@@ -7,15 +7,19 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 	<link rel="stylesheet" type="text/css" href="sources/chargen.css">
 	<style>
+		#columns-container {
+			display: flex;
+			height: calc(100vh - 100px);
+		}
 		#chooser-column {
-			float: left;
 			width: 50%;
 			padding: 1rem;
+			overflow-y: auto;
 		}
 		#preview-column {
-			float: right;
 			width: 50%;
 			padding: 1rem;
+			overflow-y: auto;
 		}
 		.tree-node {
 			margin-left: 1rem;
@@ -62,13 +66,15 @@
 		<p>Free/Libre pixel art from the <a href="https://lpc.opengameart.org">Liberated Pixel Cup</a></p>
 	</section>
 
-	<div id="chooser-column">
-		<div id="mithril-filters"></div>
-	</div>
+	<div id="columns-container">
+		<div id="chooser-column">
+			<div id="mithril-filters"></div>
+		</div>
 
-	<div id="preview-column">
-		<div id="mithril-preview"></div>
-		<canvas id="spritesheet" width="832" height="1344"></canvas>
+		<div id="preview-column">
+			<div id="mithril-preview"></div>
+			<canvas id="spritesheet" width="832" height="1344"></canvas>
+		</div>
 	</div>
 
 	<script type="module">
