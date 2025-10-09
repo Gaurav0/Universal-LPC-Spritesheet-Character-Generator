@@ -14,6 +14,7 @@ const es6DynamicTemplate = (templateString, templateVariables) =>
 const templateHTML = fs.readFileSync("scripts/template-general.html", "utf8");
 
 const licensesFound = [];
+const itemMetadata = {}; // Collect metadata for runtime use
 function searchCredit(fileName, credits, origFileName) {
   if (credits.count <= 0) {
     console.error("no credits for filename:", fileName);
@@ -111,6 +112,15 @@ function parseJson(json) {
       .join("_");
     idFor = `${typeName}-${snakeName}_${vals}`;
   }
+
+  // Collect metadata for this item
+  itemMetadata[idFor] = {
+    required: requiredSexes,
+    animations: animations,
+    tags: tags,
+    required_tags: required_tags,
+    excluded_tags: excluded_tags
+  };
 
   let startHTML =
     `<li id="[ID_FOR]" class="variant-list" data-required="[REQUIRED_SEX]" data-animations="[SUPPORTED_ANIMATIONS]" [DATA_FILE]><span class="condensed">${name}</span><ul>`
@@ -234,6 +244,11 @@ function parseJson(json) {
       .replaceAll("[DATA_FILE]", dataFiles);
   } // for variant
 
+  // Add license info to metadata
+  if (!itemMetadata[idFor].licenses) {
+    itemMetadata[idFor].licenses = {};
+  }
+
   for (const sex of requiredSexes) {
     const licenses = '"' + listCreditToUse.licenses.join(",") + '" ';
     listDataFiles += `data-${sex}_licenses=${licenses} `;
@@ -244,6 +259,9 @@ function parseJson(json) {
     const notes =
       '"' + listCreditToUse.notes.replaceAll('"', "**") + '" ';
     listDataFiles += `data-${sex}_notes=${notes} `;
+
+    // Store licenses in metadata
+    itemMetadata[idFor].licenses[sex] = listCreditToUse.licenses;
   }
   startHTML = startHTML.replaceAll("[DATA_FILE]", listDataFiles);
 
@@ -292,6 +310,22 @@ lineReader.on("close", function (line) {
     } else {
       console.log("CSV Updated!");
       console.log("Found licenses:", licensesFound);
+    }
+  });
+
+  // Generate item-metadata.js for runtime use
+  const metadataJS = `// THIS FILE IS AUTO-GENERATED. PLEASE DON'T ALTER IT MANUALLY
+// Generated from sheet_definitions/*.json by scripts/generate_sources.js
+// Contains metadata for all customization items to avoid DOM queries at runtime
+
+window.itemMetadata = ${JSON.stringify(itemMetadata, null, 2)};
+`;
+
+  fs.writeFile("item-metadata.js", metadataJS, function (err) {
+    if (err) {
+      return console.error(err);
+    } else {
+      console.log("Item Metadata JS Updated!");
     }
   });
 });
