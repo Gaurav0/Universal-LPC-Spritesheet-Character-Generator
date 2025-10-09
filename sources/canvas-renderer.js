@@ -271,6 +271,25 @@ function loadImage(src) {
 }
 
 /**
+ * Load multiple images in parallel
+ * @param {Array} items - Array of items with a spritePath property
+ * @param {Function} getPath - Optional function to extract path from item (defaults to item.spritePath)
+ * @returns {Promise<Array>} Array of {item, img, success} objects
+ */
+async function loadImagesInParallel(items, getPath = (item) => item.spritePath) {
+  const promises = items.map(item =>
+    loadImage(getPath(item))
+      .then(img => ({ item, img, success: true }))
+      .catch(err => {
+        console.warn(`Failed to load sprite: ${getPath(item)}`);
+        return { item, img: null, success: false };
+      })
+  );
+
+  return Promise.all(promises);
+}
+
+/**
  * Draw a single frame from source to destination
  * @param {CanvasRenderingContext2D} destCtx - Destination context
  * @param {{x: number, y: number}} destPos - Destination position
@@ -490,14 +509,13 @@ export async function renderCharacter(selections, bodyType) {
     }
   }
 
-  // First, draw all standard animation items in their standard positions
-  for (const item of itemsToDraw) {
-    try {
-      const img = await loadImage(item.spritePath);
-      // Draw at the correct y position for this animation
+  // First, load all standard animation images in parallel
+  const loadedImages = await loadImagesInParallel(itemsToDraw);
+
+  // Then draw them in order (maintaining zPos ordering)
+  for (const { item, img, success } of loadedImages) {
+    if (success && img) {
       ctx.drawImage(img, 0, item.yPos);
-    } catch (err) {
-      console.warn(`Failed to load sprite: ${item.spritePath} (${item.itemId} - ${item.animation})`);
     }
   }
 
@@ -545,11 +563,12 @@ export async function renderCharacter(selections, bodyType) {
       // Sort by zPos to get correct layer order
       customAreaItems.sort((a, b) => a.zPos - b.zPos);
 
-      // Draw in zPos order
-      for (const areaItem of customAreaItems) {
-        try {
-          const img = await loadImage(areaItem.spritePath);
+      // Load all custom area images in parallel
+      const loadedCustomImages = await loadImagesInParallel(customAreaItems);
 
+      // Draw in zPos order
+      for (const { item: areaItem, img, success } of loadedCustomImages) {
+        if (success && img) {
           if (areaItem.type === 'custom_sprite') {
             // Draw custom sprite directly (wheelchair background or foreground)
             ctx.drawImage(img, 0, offsetY);
@@ -557,8 +576,6 @@ export async function renderCharacter(selections, bodyType) {
             // Extract and draw frames from standard sprite
             drawFramesToCustomAnimation(ctx, customAnimDef, offsetY, img);
           }
-        } catch (err) {
-          console.warn(`Failed to process custom area item: ${areaItem.spritePath}`);
         }
       }
     }
@@ -725,13 +742,13 @@ export async function renderSingleItem(itemId, variant, bodyType, selections) {
     // Sort by zPos
     customSprites.sort((a, b) => a.zPos - b.zPos);
 
-    // Draw layers
-    for (const sprite of customSprites) {
-      try {
-        const img = await loadImage(sprite.spritePath);
+    // Load all layers in parallel
+    const loadedSprites = await loadImagesInParallel(customSprites);
+
+    // Draw layers in order
+    for (const { item: sprite, img, success } of loadedSprites) {
+      if (success && img) {
         itemCtx.drawImage(img, 0, 0);
-      } catch (err) {
-        console.warn(`Failed to load custom animation sprite: ${sprite.spritePath}`);
       }
     }
   } else {
@@ -790,13 +807,13 @@ export async function renderSingleItem(itemId, variant, bodyType, selections) {
       return a.zPos - b.zPos;
     });
 
-    // Load and draw images
-    for (const sprite of spritesToDraw) {
-      try {
-        const img = await loadImage(sprite.spritePath);
+    // Load all images in parallel
+    const loadedImages = await loadImagesInParallel(spritesToDraw);
+
+    // Draw images in order
+    for (const { item: sprite, img, success } of loadedImages) {
+      if (success && img) {
         itemCtx.drawImage(img, 0, sprite.yPos);
-      } catch (err) {
-        console.warn(`Failed to load sprite: ${sprite.spritePath}`);
       }
     }
   }
@@ -883,14 +900,14 @@ export async function renderSingleItemAnimation(itemId, variant, bodyType, anima
   // Sort by zPos
   spritesToDraw.sort((a, b) => a.zPos - b.zPos);
 
-  // Load and draw images
-  for (const sprite of spritesToDraw) {
-    try {
-      const img = await loadImage(sprite.spritePath);
+  // Load all images in parallel
+  const loadedImages = await loadImagesInParallel(spritesToDraw);
+
+  // Draw images in order
+  for (const { item: sprite, img, success } of loadedImages) {
+    if (success && img) {
       // Draw at y=0 since this canvas is only for this animation
       animCtx.drawImage(img, 0, animYPos, SHEET_WIDTH, animHeight, 0, 0, SHEET_WIDTH, animHeight);
-    } catch (err) {
-      console.warn(`Failed to load sprite: ${sprite.spritePath}`);
     }
   }
 
