@@ -13,6 +13,58 @@ function capitalize(str) {
 	return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
+// Helper function to collect credits from all selected items
+function getAllCredits(selections) {
+	const allCredits = [];
+	const seenFiles = new Set();
+
+	for (const [categoryPath, selection] of Object.entries(selections)) {
+		const { itemId } = selection;
+		const meta = window.itemMetadata[itemId];
+
+		if (meta && meta.credits) {
+			for (const credit of meta.credits) {
+				// Avoid duplicates based on file name
+				if (!seenFiles.has(credit.file)) {
+					seenFiles.add(credit.file);
+					allCredits.push(credit);
+				}
+			}
+		}
+	}
+
+	return allCredits;
+}
+
+// Helper function to convert credits to CSV format
+function creditsToCsv(allCredits) {
+	const header = "filename,notes,authors,licenses,urls";
+	let csvBody = header + "\n";
+	allCredits.forEach(credit => {
+		const authors = credit.authors.join(", ");
+		const licenses = credit.licenses.join(", ");
+		const urls = credit.urls.join(", ");
+		const notes = credit.notes || "";
+		csvBody += `"${credit.file}","${notes}","${authors}","${licenses}","${urls}"\n`;
+	});
+	return csvBody;
+}
+
+// Helper function to convert credits to TXT format
+function creditsToTxt(allCredits) {
+	let txt = "";
+	allCredits.forEach(credit => {
+		txt += `${credit.file}\n`;
+		if (credit.notes) {
+			txt += `\t- Note: ${credit.notes}\n`;
+		}
+		txt += `\t- Licenses:\n\t\t- ${credit.licenses.join("\n\t\t- ")}\n`;
+		txt += `\t- Authors:\n\t\t- ${credit.authors.join("\n\t\t- ")}\n`;
+		txt += `\t- Links:\n\t\t- ${credit.urls.join("\n\t\t- ")}\n\n`;
+	});
+	return txt;
+}
+
 // Item with variants component
 const ItemWithVariants = {
 	view: function(vnode) {
@@ -297,55 +349,123 @@ const AnimationPreview = {
 	}
 };
 
+// Download component
+const Download = {
+	view: function() {
+		// Helper to download file
+		const downloadFile = (content, filename, type = "text/plain") => {
+			const blob = new Blob([content], { type });
+			const url = URL.createObjectURL(blob);
+			const a = document.createElement("a");
+			a.href = url;
+			a.download = filename;
+			a.click();
+			URL.revokeObjectURL(url);
+		};
+
+		// Export to clipboard
+		const exportToClipboard = async () => {
+			if (!window.canvasRenderer) return;
+			const json = window.canvasRenderer.exportStateAsJSON(state.selections, state.bodyType);
+			try {
+				await navigator.clipboard.writeText(json);
+				alert('Exported to clipboard!');
+			} catch (err) {
+				console.error('Failed to copy to clipboard:', err);
+				alert('Failed to copy to clipboard. Please check browser permissions.');
+			}
+		};
+
+		// Import from clipboard
+		const importFromClipboard = async () => {
+			if (!window.canvasRenderer) return;
+			try {
+				const json = await navigator.clipboard.readText();
+				const imported = window.canvasRenderer.importStateFromJSON(json);
+				state.bodyType = imported.bodyType;
+				state.selections = imported.selections;
+				triggerRender();
+				m.redraw(); // Force Mithril to update the UI
+				alert('Imported successfully!');
+			} catch (err) {
+				console.error('Failed to import from clipboard:', err);
+				alert('Failed to import. Please check clipboard content and browser permissions.');
+			}
+		};
+
+		// Save as PNG
+		const saveAsPNG = () => {
+			if (!window.canvasRenderer) return;
+			window.canvasRenderer.downloadAsPNG('character-spritesheet.png');
+		};
+
+		// Export ZIP - Split by animation
+		const exportSplitAnimations = async () => {
+			if (!window.canvasRenderer || !window.JSZip) {
+				alert('JSZip library not loaded');
+				return;
+			}
+			alert('This feature is coming soon!');
+			// TODO: Implement split by animation
+		};
+
+		// Export ZIP - Split by item
+		const exportSplitItemSheets = async () => {
+			if (!window.canvasRenderer || !window.JSZip) {
+				alert('JSZip library not loaded');
+				return;
+			}
+			alert('This feature is coming soon!');
+			// TODO: Implement split by item
+		};
+
+		// Export ZIP - Split by animation and item
+		const exportSplitItemAnimations = async () => {
+			if (!window.canvasRenderer || !window.JSZip) {
+				alert('JSZip library not loaded');
+				return;
+			}
+			alert('This feature is coming soon!');
+			// TODO: Implement split by animation and item
+		};
+
+		return m("div.box", [
+			m("h3.title.is-5", "Download"),
+			m("div.field", [
+				m("label.label", "Download:"),
+				m("div.buttons", [
+					m("button.button.is-small", { onclick: saveAsPNG }, "Spritesheet (PNG)"),
+					m("button.button.is-small", { onclick: () => {
+						const allCredits = getAllCredits(state.selections);
+						const csvContent = creditsToCsv(allCredits);
+						downloadFile(csvContent, "credits.csv", "text/csv");
+					}}, "Credits (CSV)")
+				])
+			]),
+			m("div.field", [
+				m("label.label", "Download image pack with credits and JSON (ZIP):"),
+				m("div.buttons", [
+					m("button.button.is-small", { onclick: exportSplitAnimations }, "Split by animation"),
+					m("button.button.is-small", { onclick: exportSplitItemSheets }, "Split by item"),
+					m("button.button.is-small", { onclick: exportSplitItemAnimations }, "Split by animation and item")
+				])
+			]),
+			m("div.field", [
+				m("label.label", "Import/Export:"),
+				m("div.buttons", [
+					m("button.button.is-small", { onclick: exportToClipboard }, "Export to Clipboard (JSON)"),
+					m("button.button.is-small", { onclick: importFromClipboard }, "Import from Clipboard (JSON)")
+				])
+			])
+		]);
+	}
+};
+
 // Credits/Attribution component
 const Credits = {
 	view: function() {
 		// Collect credits from all selected items
-		const allCredits = [];
-		const seenFiles = new Set();
-
-		for (const [categoryPath, selection] of Object.entries(state.selections)) {
-			const { itemId } = selection;
-			const meta = window.itemMetadata[itemId];
-
-			if (meta && meta.credits) {
-				for (const credit of meta.credits) {
-					// Avoid duplicates based on file name
-					if (!seenFiles.has(credit.file)) {
-						seenFiles.add(credit.file);
-						allCredits.push(credit);
-					}
-				}
-			}
-		}
-
-		// Helper functions for download
-		const creditsToCsv = () => {
-			const header = "filename,notes,authors,licenses,urls";
-			let csvBody = header + "\n";
-			allCredits.forEach(credit => {
-				const authors = credit.authors.join(", ");
-				const licenses = credit.licenses.join(", ");
-				const urls = credit.urls.join(", ");
-				const notes = credit.notes || "";
-				csvBody += `"${credit.file}","${notes}","${authors}","${licenses}","${urls}"\n`;
-			});
-			return csvBody;
-		};
-
-		const creditsToTxt = () => {
-			let txt = "";
-			allCredits.forEach(credit => {
-				txt += `${credit.file}\n`;
-				if (credit.notes) {
-					txt += `\t- Note: ${credit.notes}\n`;
-				}
-				txt += `\t- Licenses:\n\t\t- ${credit.licenses.join("\n\t\t- ")}\n`;
-				txt += `\t- Authors:\n\t\t- ${credit.authors.join("\n\t\t- ")}\n`;
-				txt += `\t- Links:\n\t\t- ${credit.urls.join("\n\t\t- ")}\n\n`;
-			});
-			return txt;
-		};
+		const allCredits = getAllCredits(state.selections);
 
 		const downloadFile = (content, filename) => {
 			const blob = new Blob([content], { type: "text/plain" });
@@ -380,10 +500,10 @@ const Credits = {
 				),
 				m("div.buttons.mt-3", [
 					m("button.button.is-small", {
-						onclick: () => downloadFile(creditsToTxt(), "credits.txt")
+						onclick: () => downloadFile(creditsToTxt(allCredits), "credits.txt")
 					}, "Download TXT"),
 					m("button.button.is-small", {
-						onclick: () => downloadFile(creditsToCsv(), "credits.csv")
+						onclick: () => downloadFile(creditsToCsv(allCredits), "credits.csv")
 					}, "Download CSV")
 				])
 			] : m("p.has-text-grey", "No items selected")
@@ -404,6 +524,7 @@ const App = {
 		return m("div", [
 			m(BodyTypeSelector),
 			m(CurrentSelections),
+			m(Download),
 			m(CategoryTree),
 			m(Credits)
 		]);

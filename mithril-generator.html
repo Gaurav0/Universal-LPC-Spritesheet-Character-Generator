@@ -46,6 +46,7 @@
 		}
 	</style>
 	<script src="https://unpkg.com/mithril@2.2.2/mithril.min.js"></script>
+	<script type="text/javascript" src="sources/jszip.min.js"></script>
 	<script type="text/javascript" src="item-metadata.js"></script>
 </head>
 <body>
@@ -71,7 +72,11 @@
 			setPreviewAnimation,
 			getAnimationList,
 			startPreviewAnimation,
-			stopPreviewAnimation
+			stopPreviewAnimation,
+			downloadAsPNG,
+			getCanvasBlob,
+			exportStateAsJSON,
+			importStateFromJSON
 		} from './sources/canvas-renderer.js';
 
 		window.canvasRenderer = {
@@ -81,7 +86,11 @@
 			setPreviewAnimation,
 			getAnimationList,
 			startPreviewAnimation,
-			stopPreviewAnimation
+			stopPreviewAnimation,
+			downloadAsPNG,
+			getCanvasBlob,
+			exportStateAsJSON,
+			importStateFromJSON
 		};
 
 		// Wait for canvas to be ready, then load Mithril app
