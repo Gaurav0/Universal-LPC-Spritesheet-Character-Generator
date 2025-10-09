@@ -47,6 +47,7 @@
 	</style>
 	<script src="https://unpkg.com/mithril@2.2.2/mithril.min.js"></script>
 	<script type="text/javascript" src="sources/jszip.min.js"></script>
+	<script type="text/javascript" src="sources/custom-animations.js"></script>
 	<script type="text/javascript" src="item-metadata.js"></script>
 </head>
 <body>
@@ -76,7 +77,11 @@
 			downloadAsPNG,
 			getCanvasBlob,
 			exportStateAsJSON,
-			importStateFromJSON
+			importStateFromJSON,
+			extractAnimationFromCanvas,
+			getCanvas,
+			renderSingleItem,
+			renderSingleItemAnimation
 		} from './sources/canvas-renderer.js';
 
 		window.canvasRenderer = {
@@ -90,7 +95,11 @@
 			downloadAsPNG,
 			getCanvasBlob,
 			exportStateAsJSON,
-			importStateFromJSON
+			importStateFromJSON,
+			extractAnimationFromCanvas,
+			getCanvas,
+			renderSingleItem,
+			renderSingleItemAnimation
 		};
 
 		// Wait for canvas to be ready, then load Mithril app
