@@ -266,17 +266,17 @@ const ItemWithVariants = {
 
 					return m("div", {
 						key: variant,
-						class: "variant-item" + (isSelected ? " selected" : ""),
-						style: "display: flex; align-items: center; gap: 0.75rem; padding: 0.5rem 0.5rem 0.5rem 1.5rem; cursor: pointer; border-radius: 4px; transition: background-color 0.15s;" + (isSelected ? " font-weight: bold; color: #3273dc; background-color: #eff5fb;" : ""),
+						class: "variant-item is-flex is-align-items-center p-3 ml-5 is-clickable" + (isSelected ? " has-background-link-light has-text-weight-bold has-text-link" : ""),
+						style: "gap: 0.75rem; border-radius: 4px; transition: background-color 0.15s;",
 						onmouseover: (e) => {
 							const div = e.currentTarget;
 							const currentlySelected = state.selections[itemId]?.variant === variant;
-							if (!currentlySelected) div.style.backgroundColor = '#f5f5f5';
+							if (!currentlySelected) div.classList.add('has-background-white-ter');
 						},
 						onmouseout: (e) => {
 							const div = e.currentTarget;
 							const currentlySelected = state.selections[itemId]?.variant === variant;
-							if (!currentlySelected) div.style.backgroundColor = '';
+							if (!currentlySelected) div.classList.remove('has-background-white-ter');
 						},
 						onclick: () => {
 							state.selections[itemId] = {
@@ -284,14 +284,67 @@ const ItemWithVariants = {
 								variant: variant,
 								name: `${displayName} (${variantDisplayName})`
 							};
-							
+
 						}
 					}, [
-						previewSrc ? m("img", {
-							src: previewSrc,
-							style: `width: 64px; height: 64px; object-fit: none; object-position: ${objectPosX}px ${objectPosY}px; image-rendering: pixelated; border: 2px solid ${isSelected ? '#3273dc' : '#dbdbdb'}; border-radius: 4px; background-color: white; flex-shrink: 0;`,
-							alt: variantDisplayName
-						}) : null,
+						m("canvas", {
+							width: 64,
+							height: 64,
+							class: "box p-0",
+							style: "width: 64px; height: 64px; image-rendering: pixelated; flex-shrink: 0; border: 2px solid" + (isSelected ? " hsl(217, 71%, 53%)" : " hsl(0, 0%, 86%)"),
+							oncreate: (canvasVnode) => {
+								const canvas = canvasVnode.dom;
+								const ctx = canvas.getContext('2d');
+
+								// Collect all layers for this item
+								const layersToLoad = [];
+								for (let layerNum = 1; layerNum < 10; layerNum++) {
+									const layer = meta.layers?.[`layer_${layerNum}`];
+									if (!layer) break;
+
+									const layerPath = layer[state.bodyType];
+									if (!layerPath) continue;
+
+									const hasCustomAnim = layer.custom_animation;
+									let imagePath;
+									if (hasCustomAnim) {
+										imagePath = `spritesheets/${layerPath}${variantToFilename(variant)}.png`;
+									} else {
+										const defaultAnim = meta.animations.includes('walk') ? 'walk' : meta.animations[0];
+										imagePath = `spritesheets/${layerPath}${defaultAnim}/${variantToFilename(variant)}.png`;
+									}
+
+									layersToLoad.push({
+										zPos: layer.zPos || 100,
+										path: imagePath
+									});
+								}
+
+								// Sort by zPos
+								layersToLoad.sort((a, b) => a.zPos - b.zPos);
+
+								// Load and draw all layers
+								Promise.all(layersToLoad.map(layer => {
+									return new Promise((resolve) => {
+										const img = new Image();
+										img.onload = () => resolve({ img, layer });
+										img.onerror = () => resolve({ img: null, layer });
+										img.src = layer.path;
+									});
+								})).then(loadedLayers => {
+									// Draw each layer in zPos order
+									for (const { img, layer } of loadedLayers) {
+										if (img) {
+											ctx.drawImage(
+												img,
+												previewCol * 64 - previewXOffset, previewRow * 64 - previewYOffset, 64, 64,
+												0, 0, 64, 64
+											);
+										}
+									}
+								});
+							}
+						}),
 						m("span", { style: "flex: 1;" }, capitalize(variantDisplayName))
 					]);
 				})
