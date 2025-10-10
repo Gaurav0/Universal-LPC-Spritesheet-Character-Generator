@@ -15,7 +15,8 @@ const state = {
 	selections: {}, // key: itemId, value: { itemId, variant, name }
 	bodyType: "male", // male, female, teen, child, muscular, pregnant
 	expandedNodes: {}, // key: path string, value: boolean (true if expanded)
-	searchQuery: "" // current search query
+	searchQuery: "", // current search query
+	showTransparencyGrid: true // show checkered transparency background
 };
 
 // URL hash parameter management
@@ -616,6 +617,7 @@ const AnimationPreview = {
 					const frames = window.canvasRenderer.setPreviewAnimation('walk');
 					vnode.state.frameCycle = frames.join('-');
 					window.canvasRenderer.startPreviewAnimation();
+
 					m.redraw(); // Update view with frame cycle
 				}
 			} else {
@@ -632,42 +634,62 @@ const AnimationPreview = {
 		}
 	},
 	view: function(vnode) {
-		return m("div.box", [
-			m("h3.title.is-5", "Animation Preview"),
-			m("div.field.is-horizontal", [
-				m("div.field-label.is-normal", [
-					m("label.label", "Animation")
-				]),
-				m("div.field-body", [
-					m("div.field", [
-						m("div.control", [
-							m("div.select", [
-								m("select", {
-									value: vnode.state.selectedAnimation,
-									onchange: (e) => {
-										vnode.state.selectedAnimation = e.target.value;
-										if (window.canvasRenderer) {
-											const frames = window.canvasRenderer.setPreviewAnimation(e.target.value);
-											vnode.state.frameCycle = frames.join('-');
+		return [
+			m("div.box", [
+				m("h3.title.is-5", "Animation Preview"),
+				m("div.field.is-horizontal", [
+					m("div.field-label.is-normal", [
+						m("label.label", "Animation")
+					]),
+					m("div.field-body", [
+						m("div.field", [
+							m("div.control", [
+								m("div.select", [
+									m("select", {
+										value: vnode.state.selectedAnimation,
+										onchange: (e) => {
+											vnode.state.selectedAnimation = e.target.value;
+											if (window.canvasRenderer) {
+												const frames = window.canvasRenderer.setPreviewAnimation(e.target.value);
+												vnode.state.frameCycle = frames.join('-');
+											}
 										}
-									}
-								}, ANIMATIONS.map(anim =>
-									m("option", { value: anim.value }, anim.label)
-								))
+									}, ANIMATIONS.map(anim =>
+										m("option", { value: anim.value }, anim.label)
+									))
+								])
+							])
+						]),
+						m("div.field", [
+							m("div.control", [
+								m("code.tag.is-light.is-medium", vnode.state.frameCycle)
 							])
 						])
-					]),
-					m("div.field", [
-						m("div.control", [
-							m("code.tag.is-light.is-medium", vnode.state.frameCycle)
-						])
 					])
+				]),
+				m("div.mt-3", [
+					m("canvas#previewAnimations", { width: 256, height: 64 })
 				])
 			]),
-			m("div.mt-3", [
-				m("canvas#previewAnimations", { width: 256, height: 64 })
+			m("div.box.mt-4", [
+				m("div.is-flex.is-justify-content-space-between.is-align-items-center.mb-3", [
+					m("div", [
+						m("h3.title.is-5.mb-2", "Full Spritesheet Preview"),
+						m("p", "Click to zoom in (2x), double-click to zoom out")
+					]),
+					m("label.checkbox", [
+						m("input[type=checkbox]", {
+							checked: state.showTransparencyGrid,
+							onchange: (e) => {
+								state.showTransparencyGrid = e.target.checked;
+								renderCharacter();
+							}
+						}),
+						" Show transparency grid"
+					])
+				])
 			])
-		]);
+		];
 	}
 };
 
@@ -716,9 +738,11 @@ const Download = {
 		};
 
 		// Save as PNG
-		const saveAsPNG = () => {
+		const saveAsPNG = async () => {
 			if (!window.canvasRenderer) return;
-			window.canvasRenderer.downloadAsPNG('character-spritesheet.png');
+
+			// Use offscreen canvas for export (without transparency background)
+			await window.canvasRenderer.downloadAsPNG('character-spritesheet.png', state.selections, state.bodyType);
 		};
 
 		// Export ZIP - Split by animation
@@ -1070,7 +1094,7 @@ const Credits = {
 // Render the character canvas based on current state
 function renderCharacter() {
 	if (window.canvasRenderer) {
-		window.canvasRenderer.renderCharacter(state.selections, state.bodyType);
+		window.canvasRenderer.renderCharacter(state.selections, state.bodyType, state.showTransparencyGrid);
 	}
 }
 

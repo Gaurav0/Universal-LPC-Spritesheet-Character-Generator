@@ -80,6 +80,30 @@ const ANIMATION_CONFIGS = {
 };
 
 /**
+ * Draw a checkered transparency background (like image editors)
+ * @param {CanvasRenderingContext2D} context - Canvas context
+ * @param {number} width - Canvas width
+ * @param {number} height - Canvas height
+ * @param {number} squareSize - Size of each checker square (default 8px)
+ */
+function drawTransparencyBackground(context, width, height, squareSize = 8) {
+  const lightGray = '#CCCCCC';
+  const darkGray = '#999999';
+
+  for (let y = 0; y < height; y += squareSize) {
+    for (let x = 0; x < width; x += squareSize) {
+      // Alternate colors in a checkerboard pattern
+      const isEvenRow = Math.floor(y / squareSize) % 2 === 0;
+      const isEvenCol = Math.floor(x / squareSize) % 2 === 0;
+      const isLight = isEvenRow === isEvenCol;
+
+      context.fillStyle = isLight ? lightGray : darkGray;
+      context.fillRect(x, y, squareSize, squareSize);
+    }
+  }
+}
+
+/**
  * Initialize the canvas
  */
 export function initCanvas(canvasElement) {
@@ -87,6 +111,19 @@ export function initCanvas(canvasElement) {
   ctx = canvas.getContext('2d');
   canvas.width = SHEET_WIDTH;
   canvas.height = SHEET_HEIGHT;
+
+  // Add zoom functionality: click to zoom in, double-click to zoom out
+  canvas.addEventListener('click', (e) => {
+    if (e.detail === 1) {
+      // Single click - zoom in
+      canvas.style.zoom = '2';
+    }
+  });
+
+  canvas.addEventListener('dblclick', () => {
+    // Double click - zoom out (reset)
+    canvas.style.zoom = '1';
+  });
 }
 
 /**
@@ -381,9 +418,17 @@ function drawFramesToCustomAnimation(customAnimationContext, customAnimationDefi
 
 /**
  * Render character based on selections
+ * @param {Object} selections - Selected items
+ * @param {string} bodyType - Body type
+ * @param {boolean} showTransparencyGrid - Whether to show transparency background
+ * @param {HTMLCanvasElement} targetCanvas - Canvas to render to (defaults to main canvas)
  */
-export async function renderCharacter(selections, bodyType) {
-  if (!canvas || !ctx) {
+export async function renderCharacter(selections, bodyType, showTransparencyGrid = false, targetCanvas = null) {
+  // Use provided canvas or default to main canvas
+  const renderCanvas = targetCanvas || canvas;
+  const renderCtx = renderCanvas.getContext('2d');
+
+  if (!renderCanvas || !renderCtx) {
     console.error('Canvas not initialized');
     return;
   }
@@ -507,11 +552,14 @@ export async function renderCharacter(selections, bodyType) {
   }
 
   // Resize canvas to fit all content
-  canvas.width = totalWidth;
-  canvas.height = totalHeight;
+  renderCanvas.width = totalWidth;
+  renderCanvas.height = totalHeight;
 
-  // Clear canvas
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  // Clear canvas and optionally draw transparency background
+  renderCtx.clearRect(0, 0, renderCanvas.width, renderCanvas.height);
+  if (showTransparencyGrid) {
+    drawTransparencyBackground(renderCtx, renderCanvas.width, renderCanvas.height);
+  }
 
   // Load and draw standard animation images
   imagesLoaded = 0;
@@ -537,7 +585,7 @@ export async function renderCharacter(selections, bodyType) {
   // Then draw them in order (maintaining zPos ordering)
   for (const { item, img, success } of loadedImages) {
     if (success && img) {
-      ctx.drawImage(img, 0, item.yPos);
+      renderCtx.drawImage(img, 0, item.yPos);
     }
   }
 
@@ -593,10 +641,10 @@ export async function renderCharacter(selections, bodyType) {
         if (success && img) {
           if (areaItem.type === 'custom_sprite') {
             // Draw custom sprite directly (wheelchair background or foreground)
-            ctx.drawImage(img, 0, offsetY);
+            renderCtx.drawImage(img, 0, offsetY);
           } else if (areaItem.type === 'extracted_frames') {
             // Extract and draw frames from standard sprite
-            drawFramesToCustomAnimation(ctx, customAnimDef, offsetY, img);
+            drawFramesToCustomAnimation(renderCtx, customAnimDef, offsetY, img);
           }
         }
       }
@@ -605,22 +653,45 @@ export async function renderCharacter(selections, bodyType) {
 }
 
 /**
- * Download canvas as PNG
+ * Download canvas as PNG using an offscreen canvas (without transparency background)
  */
-export function downloadAsPNG(filename = 'character-spritesheet.png') {
+export async function downloadAsPNG(filename = 'character-spritesheet.png', selections = null, bodyType = 'male') {
   if (!canvas) {
     console.error('Canvas not initialized');
     return;
   }
 
-  canvas.toBlob((blob) => {
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = filename;
-    a.click();
-    URL.revokeObjectURL(url);
-  }, 'image/png');
+  // If selections provided, use offscreen canvas without transparency background
+  if (selections && bodyType) {
+    // Create offscreen canvas
+    const offscreenCanvas = document.createElement('canvas');
+
+    // Render to offscreen canvas WITHOUT transparency grid
+    await renderCharacter(selections, bodyType, false, offscreenCanvas);
+
+    // Export offscreen canvas
+    await new Promise((resolve) => {
+      offscreenCanvas.toBlob((blob) => {
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+        a.click();
+        URL.revokeObjectURL(url);
+        resolve();
+      }, 'image/png');
+    });
+  } else {
+    // Fallback: export current canvas as-is
+    canvas.toBlob((blob) => {
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(url);
+    }, 'image/png');
+  }
 }
 
 /**
