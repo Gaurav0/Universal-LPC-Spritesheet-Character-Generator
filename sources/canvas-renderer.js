@@ -300,6 +300,7 @@ async function loadImagesInParallel(items, getPath = (item) => item.spritePath) 
 
 /**
  * Draw a single frame from source to destination
+ * If source is smaller than destination, center it without scaling
  * @param {CanvasRenderingContext2D} destCtx - Destination context
  * @param {{x: number, y: number}} destPos - Destination position
  * @param {number} destFrameSize - Destination frame size
@@ -308,11 +309,23 @@ async function loadImagesInParallel(items, getPath = (item) => item.spritePath) 
  * @param {number} srcFrameSize - Source frame size
  */
 function drawFrameToFrame(destCtx, destPos, destFrameSize, src, srcPos, srcFrameSize) {
-  destCtx.drawImage(
-    src,
-    srcPos.x, srcPos.y, srcFrameSize, srcFrameSize,  // source rect
-    destPos.x, destPos.y, destFrameSize, destFrameSize  // dest rect
-  );
+  if (srcFrameSize === destFrameSize) {
+    // Same size - direct copy
+    destCtx.drawImage(
+      src,
+      srcPos.x, srcPos.y, srcFrameSize, srcFrameSize,
+      destPos.x, destPos.y, destFrameSize, destFrameSize
+    );
+  } else {
+    // Different sizes - center the source frame in the destination without scaling
+    // For example: 64x64 source centered in 128x128 dest = offset by 32px
+    const offset = (destFrameSize - srcFrameSize) / 2;
+    destCtx.drawImage(
+      src,
+      srcPos.x, srcPos.y, srcFrameSize, srcFrameSize,  // source rect (64x64)
+      destPos.x + offset, destPos.y + offset, srcFrameSize, srcFrameSize  // dest rect (centered, not scaled)
+    );
+  }
 }
 
 /**

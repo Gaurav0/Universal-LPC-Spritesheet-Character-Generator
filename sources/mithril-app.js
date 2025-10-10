@@ -241,13 +241,28 @@ const ItemWithVariants = {
 					// Get sprite path for preview image from first layer
 					const layer1 = meta.layers?.layer_1;
 					const basePath = layer1?.[state.bodyType];
-					// Use default animation for preview (walk if supported, otherwise first available)
-					const defaultAnim = meta.animations.includes('walk') ? 'walk' : meta.animations[0];
-					const previewSrc = basePath ? `spritesheets/${basePath}${defaultAnim}/${variantToFilename(variant)}.png` : null;
+
+					// Check if this item uses a custom animation
+					const hasCustomAnimation = layer1?.custom_animation;
+
+					let previewSrc = null;
+					if (basePath) {
+						if (hasCustomAnimation) {
+							// Custom animations don't have animation subfolders
+							previewSrc = `spritesheets/${basePath}${variantToFilename(variant)}.png`;
+						} else {
+							// Standard animations have animation subfolders (walk, slash, etc.)
+							const defaultAnim = meta.animations.includes('walk') ? 'walk' : meta.animations[0];
+							previewSrc = `spritesheets/${basePath}${defaultAnim}/${variantToFilename(variant)}.png`;
+						}
+					}
 
 					// Calculate object position for cropping
-					const objectPosX = -(previewCol * 64 + previewXOffset);
-					const objectPosY = -(previewRow * 64 + previewYOffset);
+					// Negative position shifts the image left/up to show that part in the viewport
+					// Positive offset values shift the viewport right/down (to see more left/top of sprite)
+					// Negative offset values shift the viewport left/up (to see more right/bottom of sprite)
+					const objectPosX = -(previewCol * 64 - previewXOffset);
+					const objectPosY = -(previewRow * 64 - previewYOffset);
 
 					return m("div", {
 						key: variant,
