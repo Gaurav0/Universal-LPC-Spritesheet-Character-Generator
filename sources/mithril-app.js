@@ -110,14 +110,14 @@ function loadSelectionsFromHash() {
 // Select default items (body color light + human male light head)
 function selectDefaults() {
 	// Set default body color (light)
-	state.selections["body/body"] = {
+	state.selections["body-body"] = {
 		itemId: "body-body",
 		variant: "light",
 		name: "Body color (light)"
 	};
 
 	// Set default head (human male light)
-	state.selections["head/heads"] = {
+	state.selections["head-heads-heads_human_male"] = {
 		itemId: "head-heads-heads_human_male",
 		variant: "light",
 		name: "Human male (light)"
@@ -303,8 +303,27 @@ const ItemWithVariants = {
 									const layer = meta.layers?.[`layer_${layerNum}`];
 									if (!layer) break;
 
-									const layerPath = layer[state.bodyType];
+									let layerPath = layer[state.bodyType];
 									if (!layerPath) continue;
+
+									// Replace template variables like ${head}
+									if (layerPath.includes('${head}')) {
+										// Determine head type from current selections
+										const headSelection = Object.values(state.selections).find(sel =>
+											sel.itemId?.startsWith('head-heads-')
+										);
+
+										// Get the head name (e.g., "Human_male")
+										const headSelectionName = headSelection?.name || 'Human_male';
+
+										// Use replace_in_path mapping if available
+										let replacementValue = 'male'; // default
+										if (meta.replace_in_path?.head) {
+											replacementValue = meta.replace_in_path.head[headSelectionName] || 'male';
+										}
+
+										layerPath = layerPath.replace('${head}', replacementValue);
+									}
 
 									const hasCustomAnim = layer.custom_animation;
 									let imagePath;
