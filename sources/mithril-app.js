@@ -19,13 +19,55 @@ function getSelectionGroup(itemId) {
 	return meta.path.slice(0, 2).join('-');
 }
 
+// License configuration - single source of truth
+const LICENSE_CONFIG = [
+	{
+		key: "CC0",
+		label: "CC0",
+		versions: ["CC0"],
+		url: "https://creativecommons.org/public-domain/cc0/"
+	},
+	{
+		key: "CC-BY-SA",
+		label: "CC-BY-SA",
+		versions: ["CC-BY-SA 3.0", "CC-BY-SA 4.0"],
+		url: "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+		urlLabel: "4.0"
+	},
+	{
+		key: "CC-BY",
+		label: "CC-BY",
+		versions: ["CC-BY 3.0+", "CC-BY 3.0", "CC-BY 4.0", "CC-BY"],
+		url: "https://creativecommons.org/licenses/by/4.0/",
+		urlLabel: "4.0"
+	},
+	{
+		key: "OGA-BY",
+		label: "OGA-BY",
+		versions: ["OGA-BY 3.0", "OGA-BY 3.0+", "OGA-BY 4.0"],
+		url: "https://static.opengameart.org/OGA-BY-3.0.txt",
+		urlLabel: "3.0"
+	},
+	{
+		key: "GPL",
+		label: "GPL",
+		versions: ["GPL 2.0", "GPL 3.0"],
+		url: "https://www.gnu.org/licenses/gpl-3.0.en.html#license-text",
+		urlLabel: "3.0"
+	}
+];
+
 // Global state
 const state = {
 	selections: {}, // key: selectionGroup, value: { itemId, variant, name }
 	bodyType: "male", // male, female, teen, child, muscular, pregnant
 	expandedNodes: {}, // key: path string, value: boolean (true if expanded)
 	searchQuery: "", // current search query
-	showTransparencyGrid: true // show checkered transparency background
+	showTransparencyGrid: true, // show checkered transparency background
+	// License filters - all enabled by default (derived from LICENSE_CONFIG)
+	enabledLicenses: Object.fromEntries(
+		LICENSE_CONFIG.map(lic => [lic.key, true])
+	)
 };
 
 // URL hash parameter management
@@ -159,6 +201,41 @@ function resetAll() {
 // Helper function to capitalize strings for display
 function capitalize(str) {
 	return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+// Helper function to get all allowed license strings (expanded from categories)
+function getAllowedLicenses() {
+	const allowed = [];
+	for (const license of LICENSE_CONFIG) {
+		if (state.enabledLicenses[license.key]) {
+			allowed.push(...license.versions);
+		}
+	}
+	return allowed;
+}
+
+// Helper function to check if an item is compatible with selected licenses
+function isItemLicenseCompatible(itemId) {
+	const meta = window.itemMetadata?.[itemId];
+	if (!meta || !meta.credits || meta.credits.length === 0) return true; // No license info = assume compatible
+
+	const allowedLicenses = getAllowedLicenses();
+	if (allowedLicenses.length === 0) return false; // No licenses selected = nothing compatible
+
+	// Create normalized Set for fast lookup
+	const allowedSet = new Set(allowedLicenses.map(l => l.trim()));
+
+	// Check if item has at least one credit with a compatible license
+	for (const credit of meta.credits) {
+		if (credit.licenses && credit.licenses.length > 0) {
+			const hasCompatibleLicense = credit.licenses.some(license =>
+				allowedSet.has(license.trim())
+			);
+			if (hasCompatibleLicense) return true;
+		}
+	}
+
+	return false;
 }
 
 // Helper function to collect credits from all selected items
@@ -412,6 +489,90 @@ const BodyTypeSelector = {
 	}
 };
 
+// License Filters component
+const LicenseFilters = {
+	oninit: function(vnode) {
+		vnode.state.isExpanded = false; // Start collapsed by default
+	},
+	view: function(vnode) {
+
+		// Function to remove incompatible items from selections
+		const removeIncompatibleItems = () => {
+			const toRemove = [];
+			for (const [selectionGroup, selection] of Object.entries(state.selections)) {
+				if (!isItemLicenseCompatible(selection.itemId)) {
+					toRemove.push(selectionGroup);
+				}
+			}
+
+			if (toRemove.length > 0) {
+				toRemove.forEach(key => delete state.selections[key]);
+				alert(`Removed ${toRemove.length} incompatible item(s)`);
+			} else {
+				alert('No incompatible items found');
+			}
+		};
+
+		// Check if there are any incompatible selected items
+		const incompatibleSelections = Object.values(state.selections).filter(
+			selection => !isItemLicenseCompatible(selection.itemId)
+		);
+		const hasIncompatibleItems = incompatibleSelections.length > 0;
+
+		// Count how many licenses are enabled
+		const enabledCount = Object.values(state.enabledLicenses).filter(Boolean).length;
+		const totalCount = LICENSE_CONFIG.length;
+
+		return m("div.box.mb-4.has-background-light", [
+			m("div.tree-label", {
+				style: "cursor: pointer; user-select: none;",
+				onclick: () => {
+					vnode.state.isExpanded = !vnode.state.isExpanded;
+				}
+			}, [
+				m("span.tree-arrow", { class: vnode.state.isExpanded ? 'expanded' : 'collapsed' }),
+				m("span.title.is-6", { style: "display: inline;" }, "License Filters"),
+				m("span.is-size-7.has-text-grey.ml-2", `(${enabledCount}/${totalCount} enabled)`)
+			]),
+			vnode.state.isExpanded ? m("div.content.mt-3", [
+				m("ul", { style: "list-style: none; margin-left: 0;" },
+					LICENSE_CONFIG.map(license =>
+						m("li", { key: license.key, class: "mb-2" }, [
+							m("label.checkbox", [
+								m("input[type=checkbox]", {
+									checked: state.enabledLicenses[license.key],
+									onchange: (e) => {
+										state.enabledLicenses[license.key] = e.target.checked;
+									}
+								}),
+								` ${license.label} `,
+								m("a.is-size-7", {
+									href: license.url,
+									target: "_blank",
+									rel: "noopener noreferrer"
+								}, `(Show license${license.urlLabel ? ' ' + license.urlLabel : ''})`)
+							])
+						])
+					)
+				),
+				hasIncompatibleItems ? [
+					m("div.notification.is-warning.is-light.p-3.mt-2", [
+						m("p.is-size-7", [
+							m("strong", `${incompatibleSelections.length} selected item${incompatibleSelections.length > 1 ? 's are' : ' is'} incompatible`),
+							" with your current license selection. ",
+							m("span.has-text-grey", "(marked with ⚠️ above)")
+						])
+					]),
+					m("button.button.is-small.is-warning.mt-2", {
+						onclick: removeIncompatibleItems,
+						title: `Remove ${incompatibleSelections.length} incompatible item${incompatibleSelections.length > 1 ? 's' : ''}`
+					}, `Remove ${incompatibleSelections.length} Incompatible Asset${incompatibleSelections.length > 1 ? 's' : ''}`)
+				] : null
+			]) : null
+		]);
+	}
+};
+
 // Controls component (Search only)
 const Controls = {
 	view: function() {
@@ -496,6 +657,9 @@ const TreeNode = {
 							return false;
 						}
 
+						// Filter: Only show items compatible with selected licenses
+						if (!isItemLicenseCompatible(itemId)) return false;
+
 						return true;
 					})
 					.map(itemId => {
@@ -542,12 +706,33 @@ const CurrentSelections = {
 			m("h3.title.is-5", "Current Selections"),
 			m("div.tags",
 				Object.entries(state.selections).map(([selectionKey, selection]) => {
-					return m("span.tag.is-info.is-medium", { key: selectionKey }, [
+					const isCompatible = isItemLicenseCompatible(selection.itemId);
+					const meta = window.itemMetadata?.[selection.itemId];
+
+					// Get all licenses for this item
+					const allLicenses = new Set();
+					if (meta?.credits) {
+						meta.credits.forEach(credit => {
+							if (credit.licenses) {
+								credit.licenses.forEach(lic => allLicenses.add(lic.trim()));
+							}
+						});
+					}
+					const licensesText = allLicenses.size > 0 ?
+						`Licenses: ${Array.from(allLicenses).join(', ')}` :
+						'No license info';
+
+					return m("span.tag.is-medium", {
+						key: selectionKey,
+						class: isCompatible ? "is-info" : "is-warning",
+						title: isCompatible ? licensesText : `⚠️ Incompatible with selected licenses\n${licensesText}`
+					}, [
 						m("span", selection.name),
+						!isCompatible ? m("span.ml-1", "⚠️") : null,
 						m("button.delete.is-small", {
 							onclick: () => {
 								delete state.selections[selectionKey];
-								
+
 							}
 						})
 					]);
@@ -603,13 +788,14 @@ const CategoryTree = {
 	}
 };
 
-// Filters Panel - combines Controls, CurrentSelections, BodyTypeSelector, and CategoryTree
+// Filters Panel - combines Controls, BodyTypeSelector, LicenseFilters, CurrentSelections, and CategoryTree
 const FiltersPanel = {
 	view: function() {
 		return m("div.box", [
 			m("div.mb-4", m(Controls)),
-			m("div.mb-4", m(CurrentSelections)),
 			m("div.mb-4", m(BodyTypeSelector)),
+			m(LicenseFilters),
+			m("div.mb-4", m(CurrentSelections)),
 			m(CategoryTree)
 		]);
 	}
