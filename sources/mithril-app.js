@@ -57,6 +57,27 @@ const LICENSE_CONFIG = [
 	}
 ];
 
+// Animation list - used for filters and preview
+const ANIMATIONS = [
+	{ value: 'spellcast', label: 'Spellcast' },
+	{ value: 'thrust', label: 'Thrust' },
+	{ value: 'walk', label: 'Walk' },
+	{ value: 'slash', label: 'Slash' },
+	{ value: 'shoot', label: 'Shoot' },
+	{ value: 'hurt', label: 'Hurt' },
+	{ value: 'climb', label: 'Climb' },
+	{ value: 'idle', label: 'Idle' },
+	{ value: 'jump', label: 'Jump' },
+	{ value: 'sit', label: 'Sit' },
+	{ value: 'emote', label: 'Emote' },
+	{ value: 'run', label: 'Run' },
+	{ value: 'watering', label: 'Watering' },
+	{ value: 'combat', label: 'Combat Idle' },
+	{ value: '1h_slash', label: '1-Handed Slash' },
+	{ value: '1h_backslash', label: '1-Handed Backslash' },
+	{ value: '1h_halfslash', label: '1-Handed Halfslash' }
+];
+
 // Global state
 const state = {
 	selections: {}, // key: selectionGroup, value: { itemId, variant, name }
@@ -67,6 +88,10 @@ const state = {
 	// License filters - all enabled by default (derived from LICENSE_CONFIG)
 	enabledLicenses: Object.fromEntries(
 		LICENSE_CONFIG.map(lic => [lic.key, true])
+	),
+	// Animation filters - all disabled by default (filter only active when at least one is checked)
+	enabledAnimations: Object.fromEntries(
+		ANIMATIONS.map(anim => [anim.value, false])
 	)
 };
 
@@ -233,6 +258,27 @@ function isItemLicenseCompatible(itemId) {
 			);
 			if (hasCompatibleLicense) return true;
 		}
+	}
+
+	return false;
+}
+
+// Helper function to check if an item is compatible with selected animations
+function isItemAnimationCompatible(itemId) {
+	// Get list of enabled animations
+	const enabledAnims = ANIMATIONS
+		.filter(anim => state.enabledAnimations[anim.value])
+		.map(anim => anim.value);
+
+	// If no animations are selected, filter is disabled - show all items
+	if (enabledAnims.length === 0) return true;
+
+	const meta = window.itemMetadata?.[itemId];
+	if (!meta || !meta.animations || meta.animations.length === 0) return true; // No animation info = assume compatible
+
+	// Check if item supports at least one enabled animation
+	for (const itemAnim of meta.animations) {
+		if (enabledAnims.includes(itemAnim)) return true;
 	}
 
 	return false;
@@ -624,6 +670,89 @@ const LicenseFilters = {
 	}
 };
 
+// Animation Filters component
+const AnimationFilters = {
+	oninit: function(vnode) {
+		vnode.state.isExpanded = false; // Start collapsed by default
+	},
+	view: function(vnode) {
+		// Function to remove incompatible items from selections
+		const removeIncompatibleItems = () => {
+			const toRemove = [];
+			for (const [selectionGroup, selection] of Object.entries(state.selections)) {
+				if (!isItemAnimationCompatible(selection.itemId)) {
+					toRemove.push(selectionGroup);
+				}
+			}
+
+			if (toRemove.length > 0) {
+				toRemove.forEach(key => delete state.selections[key]);
+				alert(`Removed ${toRemove.length} incompatible item(s)`);
+			} else {
+				alert('No incompatible items found');
+			}
+		};
+
+		// Check if there are any incompatible selected items
+		const incompatibleSelections = Object.values(state.selections).filter(
+			selection => !isItemAnimationCompatible(selection.itemId)
+		);
+		const hasIncompatibleItems = incompatibleSelections.length > 0;
+
+		// Count how many animations are enabled
+		const enabledCount = Object.values(state.enabledAnimations).filter(Boolean).length;
+		const totalCount = ANIMATIONS.length;
+		const isFilterActive = enabledCount > 0;
+
+		return m("div.box.mb-4.has-background-light", [
+			m("div.tree-label", {
+				style: "cursor: pointer; user-select: none;",
+				onclick: () => {
+					vnode.state.isExpanded = !vnode.state.isExpanded;
+				}
+			}, [
+				m("span.tree-arrow", { class: vnode.state.isExpanded ? 'expanded' : 'collapsed' }),
+				m("span.title.is-6", { style: "display: inline;" }, "Animation Filters"),
+				m("span.is-size-7.has-text-grey.ml-2",
+					isFilterActive
+						? `(${enabledCount}/${totalCount} selected)`
+						: "(filter disabled - check animations to enable)"
+				)
+			]),
+			vnode.state.isExpanded ? m("div.content.mt-3", [
+				m("ul", { style: "list-style: none; margin-left: 0;" },
+					ANIMATIONS.map(anim =>
+						m("li", { key: anim.value, class: "mb-2" }, [
+							m("label.checkbox", [
+								m("input[type=checkbox]", {
+									checked: state.enabledAnimations[anim.value],
+									onchange: (e) => {
+										state.enabledAnimations[anim.value] = e.target.checked;
+									}
+								}),
+								` ${anim.label}`
+							])
+						])
+					)
+				),
+				hasIncompatibleItems ? [
+					m("div.notification.is-warning.is-light.p-3.mt-2", [
+						m("p.is-size-7", [
+							m("strong", `${incompatibleSelections.length} selected item${incompatibleSelections.length > 1 ? 's are' : ' is'} incompatible`),
+							" with your current animation selection. ",
+							m("span.has-text-grey", "(marked with ⚠️ above)")
+						])
+					]),
+					m("button.button.is-small.is-warning.mt-2", {
+						onclick: removeIncompatibleItems,
+						title: `Remove ${incompatibleSelections.length} incompatible item${incompatibleSelections.length > 1 ? 's' : ''}`
+					}, `Remove ${incompatibleSelections.length} Incompatible Asset${incompatibleSelections.length > 1 ? 's' : ''}`)
+				] : null
+			]) : null
+		]);
+	}
+};
+
 // Controls component (Search only)
 const Controls = {
 	view: function() {
@@ -711,6 +840,9 @@ const TreeNode = {
 						// Filter: Only show items compatible with selected licenses
 						if (!isItemLicenseCompatible(itemId)) return false;
 
+						// Filter: Only show items compatible with selected animations
+						if (!isItemAnimationCompatible(itemId)) return false;
+
 						return true;
 					})
 					.map(itemId => {
@@ -757,7 +889,9 @@ const CurrentSelections = {
 			m("h3.title.is-5", "Current Selections"),
 			m("div.tags",
 				Object.entries(state.selections).map(([selectionKey, selection]) => {
-					const isCompatible = isItemLicenseCompatible(selection.itemId);
+					const isLicenseCompatible = isItemLicenseCompatible(selection.itemId);
+					const isAnimCompatible = isItemAnimationCompatible(selection.itemId);
+					const isCompatible = isLicenseCompatible && isAnimCompatible;
 					const meta = window.itemMetadata?.[selection.itemId];
 
 					// Get all licenses for this item
@@ -773,10 +907,26 @@ const CurrentSelections = {
 						`Licenses: ${Array.from(allLicenses).join(', ')}` :
 						'No license info';
 
+					// Get supported animations for this item
+					const supportedAnims = meta?.animations || [];
+					const animsText = supportedAnims.length > 0 ?
+						`Animations: ${supportedAnims.join(', ')}` :
+						'No animation info';
+
+					// Build tooltip text
+					let tooltipText = '';
+					if (!isCompatible) {
+						const issues = [];
+						if (!isLicenseCompatible) issues.push('licenses');
+						if (!isAnimCompatible) issues.push('animations');
+						tooltipText = `⚠️ Incompatible with selected ${issues.join(' and ')}\n`;
+					}
+					tooltipText += `${licensesText}\n${animsText}`;
+
 					return m("span.tag.is-medium", {
 						key: selectionKey,
 						class: isCompatible ? "is-info" : "is-warning",
-						title: isCompatible ? licensesText : `⚠️ Incompatible with selected licenses\n${licensesText}`
+						title: tooltipText
 					}, [
 						m("span", selection.name),
 						!isCompatible ? m("span.ml-1", "⚠️") : null,
@@ -839,39 +989,19 @@ const CategoryTree = {
 	}
 };
 
-// Filters Panel - combines Controls, BodyTypeSelector, LicenseFilters, CurrentSelections, and CategoryTree
+// Filters Panel - combines Controls, BodyTypeSelector, LicenseFilters, AnimationFilters, CurrentSelections, and CategoryTree
 const FiltersPanel = {
 	view: function() {
 		return m("div.box", [
 			m("div.mb-4", m(Controls)),
 			m("div.mb-4", m(BodyTypeSelector)),
 			m(LicenseFilters),
+			m(AnimationFilters),
 			m("div.mb-4", m(CurrentSelections)),
 			m(CategoryTree)
 		]);
 	}
 };
-
-// Animation list - matches canvas-renderer.js ANIMATION_CONFIGS
-const ANIMATIONS = [
-	{ value: 'spellcast', label: 'Spellcast' },
-	{ value: 'thrust', label: 'Thrust' },
-	{ value: 'walk', label: 'Walk' },
-	{ value: 'slash', label: 'Slash' },
-	{ value: 'shoot', label: 'Shoot' },
-	{ value: 'hurt', label: 'Hurt' },
-	{ value: 'climb', label: 'Climb' },
-	{ value: 'idle', label: 'Idle' },
-	{ value: 'jump', label: 'Jump' },
-	{ value: 'sit', label: 'Sit' },
-	{ value: 'emote', label: 'Emote' },
-	{ value: 'run', label: 'Run' },
-	{ value: 'watering', label: 'Watering' },
-	{ value: 'combat', label: 'Combat Idle' },
-	{ value: '1h_slash', label: '1-Handed Slash' },
-	{ value: '1h_backslash', label: '1-Handed Backslash' },
-	{ value: '1h_halfslash', label: '1-Handed Halfslash' }
-];
 
 // Animation Preview component
 const AnimationPreview = {
