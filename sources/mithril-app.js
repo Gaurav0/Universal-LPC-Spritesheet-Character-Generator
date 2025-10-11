@@ -239,6 +239,7 @@ function isItemLicenseCompatible(itemId) {
 }
 
 // Helper function to collect credits from all selected items
+// Only includes credits for files actually being used based on current bodyType
 function getAllCredits(selections) {
 	const allCredits = [];
 	const seenFiles = new Set();
@@ -247,13 +248,63 @@ function getAllCredits(selections) {
 		const { itemId } = selection;
 		const meta = window.itemMetadata[itemId];
 
-		if (meta && meta.credits) {
-			for (const credit of meta.credits) {
-				// Avoid duplicates based on file name
-				if (!seenFiles.has(credit.file)) {
-					seenFiles.add(credit.file);
-					allCredits.push(credit);
+		if (!meta || !meta.credits) continue;
+
+		// Build set of actual file paths being used for this item
+		const usedPaths = new Set();
+
+		// Check each layer to get the base path for current bodyType
+		for (let layerNum = 1; layerNum < 10; layerNum++) {
+			const layerKey = `layer_${layerNum}`;
+			const layer = meta.layers?.[layerKey];
+			if (!layer) break;
+
+			// Get the base path for current body type
+			let basePath = layer[state.bodyType];
+			if (!basePath) continue;
+
+			// Replace template variables like ${head} if present
+			if (basePath.includes('${head}')) {
+				// Find the selected head to determine replacement value
+				const headSelection = Object.values(selections).find(sel =>
+					sel.itemId?.startsWith('head-heads-')
+				);
+
+				const headSelectionName = headSelection?.name || 'Human_male';
+				let replacementValue = 'male'; // default
+
+				if (meta.replace_in_path?.head) {
+					replacementValue = meta.replace_in_path.head[headSelectionName] || 'male';
 				}
+
+				basePath = basePath.replace('${head}', replacementValue);
+			}
+
+			// Remove trailing slash if present
+			const normalizedPath = basePath.replace(/\/$/, '');
+			usedPaths.add(normalizedPath);
+		}
+
+		// Only include credits whose file path matches one of the used paths
+		for (const credit of meta.credits) {
+			if (seenFiles.has(credit.file)) continue;
+
+			// Check if this credit's file matches any of the used paths
+			const creditFile = credit.file;
+			let isUsed = false;
+
+			for (const usedPath of usedPaths) {
+				// Match if credit file equals or starts with the used path
+				// e.g., credit.file="body/bodies/male" matches usedPath="body/bodies/male"
+				if (creditFile === usedPath || creditFile.startsWith(usedPath + '/')) {
+					isUsed = true;
+					break;
+				}
+			}
+
+			if (isUsed) {
+				seenFiles.add(credit.file);
+				allCredits.push(credit);
 			}
 		}
 	}
