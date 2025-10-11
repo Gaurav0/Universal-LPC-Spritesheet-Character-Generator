@@ -10,9 +10,18 @@ function variantToFilename(variant) {
 	return variant.replaceAll(' ', '_');
 }
 
+// Helper function to get selection group from itemId
+// Selection group = first 2 levels of path (e.g., ["head", "heads"] → "head-heads")
+// This ensures only one item per category can be selected (mimics old radio button behavior)
+function getSelectionGroup(itemId) {
+	const meta = window.itemMetadata?.[itemId];
+	if (!meta || !meta.path || meta.path.length < 2) return itemId;
+	return meta.path.slice(0, 2).join('-');
+}
+
 // Global state
 const state = {
-	selections: {}, // key: itemId, value: { itemId, variant, name }
+	selections: {}, // key: selectionGroup, value: { itemId, variant, name }
 	bodyType: "male", // male, female, teen, child, muscular, pregnant
 	expandedNodes: {}, // key: path string, value: boolean (true if expanded)
 	searchQuery: "", // current search query
@@ -47,11 +56,12 @@ function syncSelectionsToHash() {
 	// Add body type
 	params.bodyType = state.bodyType;
 
-	// Add selections - use itemId as key
+	// Add selections - use itemId as key (for URL readability)
+	// state.selections is now keyed by selectionGroup, but we store itemId in the URL
 	// itemId "body-body" with variant "light" -> "body-body=light"
 	// itemId "body-shadow" with variant "shadow" -> "body-shadow=shadow"
 	// itemId "head-heads-heads_human_male" with variant "light" -> "head-heads-heads_human_male=light"
-	for (const [selectionKey, selection] of Object.entries(state.selections)) {
+	for (const [selectionGroup, selection] of Object.entries(state.selections)) {
 		// Use the itemId directly as the key
 		const key = selection.itemId;
 
@@ -88,8 +98,9 @@ function loadSelectionsFromHash() {
 
 		console.log(`Loading: itemId=${itemId}, variant=${actualVariant}`);
 
-		// Store selection in new object
-		newSelections[itemId] = {
+		// Calculate selection group and store selection keyed by it
+		const selectionGroup = getSelectionGroup(itemId);
+		newSelections[selectionGroup] = {
 			itemId: itemId,
 			variant: actualVariant,
 			name: meta.name + (actualVariant ? ` (${actualVariant})` : '')
@@ -110,15 +121,21 @@ function loadSelectionsFromHash() {
 // Select default items (body color light + human male light head)
 function selectDefaults() {
 	// Set default body color (light)
-	state.selections["body-body"] = {
-		itemId: "body-body",
+	// selectionGroup for "body-body" is "body-body" (first 2 path levels)
+	const bodyItemId = "body-body";
+	const bodySelectionGroup = getSelectionGroup(bodyItemId);
+	state.selections[bodySelectionGroup] = {
+		itemId: bodyItemId,
 		variant: "light",
 		name: "Body color (light)"
 	};
 
 	// Set default head (human male light)
-	state.selections["head-heads-heads_human_male"] = {
-		itemId: "head-heads-heads_human_male",
+	// selectionGroup for "head-heads-heads_human_male" is "head-heads"
+	const headItemId = "head-heads-heads_human_male";
+	const headSelectionGroup = getSelectionGroup(headItemId);
+	state.selections[headSelectionGroup] = {
+		itemId: headItemId,
 		variant: "light",
 		name: "Human male (light)"
 	};
@@ -230,7 +247,9 @@ const ItemWithVariants = {
 			]),
 			isExpanded ? m("div.tree-node",
 				meta.variants.map(variant => {
-					const isSelected = state.selections[itemId]?.variant === variant;
+					const selectionGroup = getSelectionGroup(itemId);
+					const isSelected = state.selections[selectionGroup]?.itemId === itemId &&
+					                    state.selections[selectionGroup]?.variant === variant;
 					const variantDisplayName = variant.replaceAll("_", " ");
 
 					// Get preview metadata from item metadata
@@ -271,21 +290,19 @@ const ItemWithVariants = {
 						style: "gap: 0.75rem; border-radius: 4px; transition: background-color 0.15s;",
 						onmouseover: (e) => {
 							const div = e.currentTarget;
-							const currentlySelected = state.selections[itemId]?.variant === variant;
-							if (!currentlySelected) div.classList.add('has-background-white-ter');
+							if (!isSelected) div.classList.add('has-background-white-ter');
 						},
 						onmouseout: (e) => {
 							const div = e.currentTarget;
-							const currentlySelected = state.selections[itemId]?.variant === variant;
-							if (!currentlySelected) div.classList.remove('has-background-white-ter');
+							if (!isSelected) div.classList.remove('has-background-white-ter');
 						},
 						onclick: () => {
-							state.selections[itemId] = {
+							const selectionGroup = getSelectionGroup(itemId);
+							state.selections[selectionGroup] = {
 								itemId: itemId,
 								variant: variant,
 								name: `${displayName} (${variantDisplayName})`
 							};
-
 						}
 					}, [
 						m("canvas", {
@@ -489,14 +506,14 @@ const TreeNode = {
 
 						if (!hasVariants) {
 							// Simple item with no variants
-							const isSelected = state.selections[itemId]?.itemId === itemId;
+							const selectionGroup = getSelectionGroup(itemId);
+							const isSelected = state.selections[selectionGroup]?.itemId === itemId;
 							return m("div", {
 								key: itemId,
 								class: isSearchMatch ? "search-result" : "",
 								style: "padding: 0.25rem 0 0.25rem 1.5rem; cursor: pointer;" + (isSelected ? " font-weight: bold; color: #3273dc;" : ""),
 								onclick: () => {
-									state.selections[itemId] = { itemId, name: displayName };
-									
+									state.selections[selectionGroup] = { itemId, name: displayName };
 								}
 							}, displayName);
 						}
