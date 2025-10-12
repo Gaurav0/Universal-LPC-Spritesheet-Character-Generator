@@ -1,5 +1,5 @@
 // Item with variants component
-import { state, getSelectionGroup } from '../../state/state.js';
+import { state, getSelectionGroup, applyMatchBodyColor } from '../../state/state.js';
 import { variantToFilename, capitalize } from '../../utils/helpers.js';
 
 export const ItemWithVariants = {
@@ -82,6 +82,11 @@ export const ItemWithVariants = {
 								variant: variant,
 								name: `${displayName} (${variantDisplayName})`
 							};
+
+							// If this is the body color, apply match body color to other items
+							if (itemId === 'body-body') {
+								applyMatchBodyColor();
+							}
 						}
 					}, [
 						m("span.has-text-centered.is-size-7", {

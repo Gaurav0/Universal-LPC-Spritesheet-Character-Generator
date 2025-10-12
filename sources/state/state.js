@@ -8,6 +8,7 @@ export const state = {
 	expandedNodes: {}, // key: path string, value: boolean (true if expanded)
 	searchQuery: "", // current search query
 	showTransparencyGrid: true, // show checkered transparency background
+	matchBodyColorEnabled: false, // auto-match body color to other items (default: disabled)
 	// License filters - all enabled by default (derived from LICENSE_CONFIG)
 	enabledLicenses: Object.fromEntries(
 		LICENSE_CONFIG.map(lic => [lic.key, true])
@@ -150,6 +151,41 @@ export function resetAll() {
 	state.selections = {};
 	selectDefaults();
 	m.redraw();
+}
+
+// Apply match body color - when body color changes, update all items with matchBodyColor: true
+export function applyMatchBodyColor() {
+	// Only apply if feature is enabled
+	if (!state.matchBodyColorEnabled) return;
+
+	// Get the current body selection
+	const bodySelectionGroup = getSelectionGroup('body-body');
+	const bodySelection = state.selections[bodySelectionGroup];
+
+	// If no body selected, nothing to match
+	if (!bodySelection) return;
+
+	const bodyVariant = bodySelection.variant;
+	if (!bodyVariant) return;
+
+	// Update all selected items that have matchBodyColor: true
+	for (const [selectionGroup, selection] of Object.entries(state.selections)) {
+		// Skip the body itself
+		if (selectionGroup === bodySelectionGroup) continue;
+
+		const itemId = selection.itemId;
+		const meta = window.itemMetadata?.[itemId];
+
+		// Skip if no metadata or matchBodyColor is not enabled for this item
+		if (!meta || !meta.matchBodyColor) continue;
+
+		// Check if this item has the body variant available
+		if (meta.variants && meta.variants.includes(bodyVariant)) {
+			// Update the variant to match the body
+			selection.variant = bodyVariant;
+			selection.name = meta.name + ` (${bodyVariant})`;
+		}
+	}
 }
 
 // Helper function to get all allowed license strings (expanded from categories)

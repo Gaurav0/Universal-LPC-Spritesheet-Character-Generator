@@ -142,7 +142,8 @@ function parseJson(json) {
     preview_row: previewRow,
     preview_column: previewColumn,
     preview_x_offset: previewXOffset,
-    preview_y_offset: previewYOffset
+    preview_y_offset: previewYOffset,
+    matchBodyColor: definition.match_body_color || false
   };
 
   let startHTML =

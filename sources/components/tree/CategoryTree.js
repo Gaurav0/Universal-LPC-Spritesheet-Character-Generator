@@ -1,5 +1,5 @@
 // Main tree component
-import { state, resetAll } from '../../state/state.js';
+import { state, resetAll, applyMatchBodyColor } from '../../state/state.js';
 import { BodyTypeSelector } from './BodyTypeSelector.js';
 import { TreeNode } from './TreeNode.js';
 
@@ -38,6 +38,26 @@ export const CategoryTree = {
 						}
 					}, "Expand Selected")
 				])
+			]),
+			m("div.mb-3", [
+				m("label.checkbox", {
+					title: "When enabled, changing body color will automatically update all compatible items (heads, ears, noses, etc.) to the same color variant"
+				}, [
+					m("input[type=checkbox]", {
+						checked: state.matchBodyColorEnabled,
+						onchange: (e) => {
+							state.matchBodyColorEnabled = e.target.checked;
+							// If enabling the checkbox, immediately apply match body color
+							if (e.target.checked) {
+								applyMatchBodyColor();
+							}
+						}
+					}),
+					" Match body color"
+				]),
+				m("p.is-size-7.has-text-grey.mt-1.ml-4", {
+					style: "line-height: 1.3;"
+				}, "Auto-update heads, ears, and other items when body color changes")
 			]),
 			m("div", [
 				// Body Type as first tree item
