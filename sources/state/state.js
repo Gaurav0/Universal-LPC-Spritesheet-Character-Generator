@@ -75,7 +75,6 @@ export function syncSelectionsToHash() {
 
 export function loadSelectionsFromHash() {
 	const params = getHashParams();
-	console.log('Loading from hash, params:', params);
 
 	// Build new selections object without mutating state yet
 	const newSelections = {};
@@ -88,14 +87,14 @@ export function loadSelectionsFromHash() {
 		// Look up the item in metadata
 		const meta = window.itemMetadata?.[itemId];
 		if (!meta || !meta.path || meta.path.length < 2) {
-			console.warn(`Unknown itemId in URL hash: ${itemId}`);
+			if (window.DEBUG) {
+				console.warn(`Unknown itemId in URL hash: ${itemId}`);
+			}
 			continue;
 		}
 
 		// Use the variant from URL, or first variant, or empty string
 		const actualVariant = variant || meta.variants?.[0] || '';
-
-		console.log(`Loading: itemId=${itemId}, variant=${actualVariant}`);
 
 		// Calculate selection group and store selection keyed by it
 		const selectionGroup = getSelectionGroup(itemId);
@@ -113,8 +112,6 @@ export function loadSelectionsFromHash() {
 	if (params.bodyType) {
 		state.bodyType = params.bodyType;
 	}
-
-	console.log('Final selections after load:', state.selections);
 }
 
 // Select default items (body color light + human male light head)
@@ -233,12 +230,9 @@ export function initHashChangeListener() {
 
 		// If the hash matches what we expect from current state, ignore (it's our own update)
 		if (currentHash === expectedHash) {
-			console.log('Hash changed by us, ignoring');
 			lastKnownHash = currentHash;
 			return;
 		}
-
-		console.log('Hash changed externally (back/forward button), reloading selections from URL');
 
 		// Load from hash (updates state once)
 		loadSelectionsFromHash();

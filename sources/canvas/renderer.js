@@ -300,10 +300,23 @@ function loadImage(src) {
       return;
     }
 
+    // Mark start of image load for profiling
+    const profiler = window.profiler;
+    if (profiler) {
+      profiler.mark(`image-load:${src}:start`);
+    }
+
     const img = new Image();
     img.onload = () => {
       loadedImages[src] = img;
       imagesLoaded++;
+
+      // Mark end and measure
+      if (profiler) {
+        profiler.mark(`image-load:${src}:end`);
+        profiler.measure(`image-load:${src}`, `image-load:${src}:start`, `image-load:${src}:end`);
+      }
+
       resolve(img);
     };
     img.onerror = () => {
@@ -424,6 +437,12 @@ function drawFramesToCustomAnimation(customAnimationContext, customAnimationDefi
  * @param {HTMLCanvasElement} targetCanvas - Canvas to render to (defaults to main canvas)
  */
 export async function renderCharacter(selections, bodyType, showTransparencyGrid = false, targetCanvas = null) {
+  // Mark start for profiling
+  const profiler = window.profiler;
+  if (profiler) {
+    profiler.mark('renderCharacter:start');
+  }
+
   // Use provided canvas or default to main canvas
   const renderCanvas = targetCanvas || canvas;
   const renderCtx = renderCanvas.getContext('2d');
@@ -649,6 +668,12 @@ export async function renderCharacter(selections, bodyType, showTransparencyGrid
         }
       }
     }
+  }
+
+  // Mark end and measure
+  if (profiler) {
+    profiler.mark('renderCharacter:end');
+    profiler.measure('renderCharacter', 'renderCharacter:start', 'renderCharacter:end');
   }
 }
 
