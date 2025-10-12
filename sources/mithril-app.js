@@ -419,8 +419,12 @@ const ItemWithVariants = {
 				m("span.tree-arrow", { class: isExpanded ? 'expanded' : 'collapsed' }),
 				m("span", displayName)
 			]),
-			isExpanded ? m("div.tree-node",
-				meta.variants.map(variant => {
+			isExpanded ? m("div", [
+				m("div.title.is-6.mt-2.mb-2.ml-5.has-text-weight-semibold", displayName),
+				m("div.ml-5.is-flex.is-flex-wrap-wrap", {
+					style: "gap: 0.5rem;"
+				},
+					meta.variants.map(variant => {
 					const selectionGroup = getSelectionGroup(itemId);
 					const isSelected = state.selections[selectionGroup]?.itemId === itemId &&
 					                    state.selections[selectionGroup]?.variant === variant;
@@ -458,16 +462,17 @@ const ItemWithVariants = {
 					const objectPosX = -(previewCol * 64 - previewXOffset);
 					const objectPosY = -(previewRow * 64 - previewYOffset);
 
-					return m("div", {
+					return m("div.variant-item.is-flex.is-flex-direction-column.is-align-items-center.is-clickable", {
 						key: variant,
-						class: "variant-item is-flex is-align-items-center p-3 ml-5 is-clickable" + (isSelected ? " has-background-link-light has-text-weight-bold has-text-link" : ""),
-						style: "gap: 0.75rem; border-radius: 4px; transition: background-color 0.15s;",
+						class: isSelected ? "has-background-link-light has-text-weight-bold has-text-link" : "",
+						style: "gap: 0.25rem; border-radius: 4px; transition: background-color 0.15s; min-width: 80px; max-width: 120px; padding: 0.5rem 0.5rem 0.25rem 0.5rem;",
 						onmouseover: (e) => {
 							const div = e.currentTarget;
 							if (!isSelected) div.classList.add('has-background-white-ter');
 						},
 						onmouseout: (e) => {
 							const div = e.currentTarget;
+
 							if (!isSelected) div.classList.remove('has-background-white-ter');
 						},
 						onclick: () => {
@@ -479,6 +484,9 @@ const ItemWithVariants = {
 							};
 						}
 					}, [
+						m("span.has-text-centered.is-size-7", {
+							style: "word-break: break-word; line-height: 1.2;"
+						}, capitalize(variantDisplayName)),
 						m("canvas", {
 							width: 64,
 							height: 64,
@@ -555,33 +563,45 @@ const ItemWithVariants = {
 									}
 								});
 							}
-						}),
-						m("span", { style: "flex: 1;" }, capitalize(variantDisplayName))
+						})
 					]);
 				})
-			) : null
+				)
+			]) : null
 		]);
 	}
 };
 
-// Body type selector component
+// Body type selector component (styled as tree category)
 const BodyTypeSelector = {
-	view: function() {
+	oninit: function(vnode) {
+		vnode.state.isExpanded = true; // Start expanded by default
+	},
+	view: function(vnode) {
 		const bodyTypes = ["male", "female", "teen", "child", "muscular", "pregnant"];
 
-		return m("div", [
-			m("h3.title.is-5", "Body Type"),
-			m("div.buttons",
-				bodyTypes.map(type =>
-					m("button.button", {
-						class: state.bodyType === type ? "is-primary" : "",
-						onclick: () => {
-							state.bodyType = type;
-							
-						}
-					}, capitalize(type))
+		return m("div.mb-3", [
+			m("div.tree-label", {
+				onclick: () => {
+					vnode.state.isExpanded = !vnode.state.isExpanded;
+				}
+			}, [
+				m("span.tree-arrow", { class: vnode.state.isExpanded ? 'expanded' : 'collapsed' }),
+				m("span.has-text-weight-semibold", "Body Type")
+			]),
+			vnode.state.isExpanded ? m("div.ml-4.mt-2", [
+				m("div.buttons.ml-4",
+					bodyTypes.map(type =>
+						m("button.button.is-small", {
+							class: state.bodyType === type ? "is-primary" : "",
+							onclick: () => {
+								state.bodyType = type;
+
+							}
+						}, capitalize(type))
+					)
 				)
-			)
+			]) : null
 		]);
 	}
 };
@@ -622,17 +642,16 @@ const LicenseFilters = {
 
 		return m("div.box.mb-4.has-background-light", [
 			m("div.tree-label", {
-				style: "cursor: pointer; user-select: none;",
 				onclick: () => {
 					vnode.state.isExpanded = !vnode.state.isExpanded;
 				}
 			}, [
 				m("span.tree-arrow", { class: vnode.state.isExpanded ? 'expanded' : 'collapsed' }),
-				m("span.title.is-6", { style: "display: inline;" }, "License Filters"),
+				m("span.title.is-6.is-inline", "License Filters"),
 				m("span.is-size-7.has-text-grey.ml-2", `(${enabledCount}/${totalCount} enabled)`)
 			]),
 			vnode.state.isExpanded ? m("div.content.mt-3", [
-				m("ul", { style: "list-style: none; margin-left: 0;" },
+				m("ul.is-unstyled.ml-0",
 					LICENSE_CONFIG.map(license =>
 						m("li", { key: license.key, class: "mb-2" }, [
 							m("label.checkbox", [
@@ -715,12 +734,12 @@ const AnimationFilters = {
 				m("span.title.is-6", { style: "display: inline;" }, "Animation Filters"),
 				m("span.is-size-7.has-text-grey.ml-2",
 					isFilterActive
-						? `(${enabledCount}/${totalCount} selected)`
-						: "(filter disabled - check animations to enable)"
+						? `(${enabledCount}/${totalCount})`
+						: "(All)"
 				)
 			]),
 			vnode.state.isExpanded ? m("div.content.mt-3", [
-				m("ul", { style: "list-style: none; margin-left: 0;" },
+				m("ul.is-unstyled.ml-0",
 					ANIMATIONS.map(anim =>
 						m("li", { key: anim.value, class: "mb-2" }, [
 							m("label.checkbox", [
@@ -820,7 +839,7 @@ const TreeNode = {
 				m("span.tree-arrow", { class: isExpanded ? 'expanded' : 'collapsed' }),
 				m("span", displayName)
 			]),
-			isExpanded ? m("div.tree-node", [
+			isExpanded ? m("div.ml-4", [
 				// Render child categories
 				Object.entries(node.children || {}).map(([childName, childNode]) =>
 					m(TreeNode, { key: childName, name: childName, node: childNode, pathPrefix: nodePath })
@@ -980,23 +999,32 @@ const CategoryTree = {
 					}, "Expand Selected")
 				])
 			]),
-			m("div",
+			m("div", [
+				// Body Type as first tree item
+				m(BodyTypeSelector),
+				// Rest of the category tree
 				Object.entries(window.categoryTree.children || {}).map(([categoryName, categoryNode]) =>
-				m(TreeNode, { key: categoryName, name: categoryName, node: categoryNode })
-			)
-		)
+					m(TreeNode, { key: categoryName, name: categoryName, node: categoryNode })
+				)
+			])
 		]);
 	}
 };
 
-// Filters Panel - combines Controls, BodyTypeSelector, LicenseFilters, AnimationFilters, CurrentSelections, and CategoryTree
+// Filters Panel - combines Controls, LicenseFilters, AnimationFilters, CurrentSelections, and CategoryTree
 const FiltersPanel = {
 	view: function() {
 		return m("div.box", [
 			m("div.mb-4", m(Controls)),
-			m("div.mb-4", m(BodyTypeSelector)),
-			m(LicenseFilters),
-			m(AnimationFilters),
+			// Responsive wrapper for License and Animation filters
+			m("div.columns.is-multiline.m-0", [
+				m("div.column.is-half-desktop.is-12-mobile", {
+					style: "padding: 0; padding-right: 0.5rem;"
+				}, m(LicenseFilters)),
+				m("div.column.is-half-desktop.is-12-mobile", {
+					style: "padding: 0; padding-left: 0.5rem;"
+				}, m(AnimationFilters))
+			]),
 			m("div.mb-4", m(CurrentSelections)),
 			m(CategoryTree)
 		]);
@@ -1413,32 +1441,19 @@ const Download = {
 		};
 
 		return m("div.box", [
-			m("h3.title.is-5", "Download"),
-			m("div.field", [
-				m("label.label", "Download:"),
-				m("div.buttons", [
-					m("button.button.is-small", { onclick: saveAsPNG }, "Spritesheet (PNG)"),
-					m("button.button.is-small", { onclick: () => {
-						const allCredits = getAllCredits(state.selections);
-						const csvContent = creditsToCsv(allCredits);
-						downloadFile(csvContent, "credits.csv", "text/csv");
-					}}, "Credits (CSV)")
-				])
-			]),
-			m("div.field", [
-				m("label.label", "Download image pack with credits and JSON (ZIP):"),
-				m("div.buttons", [
-					m("button.button.is-small", { onclick: exportSplitAnimations }, "Split by animation"),
-					m("button.button.is-small", { onclick: exportSplitItemSheets }, "Split by item"),
-					m("button.button.is-small", { onclick: exportSplitItemAnimations }, "Split by animation and item")
-				])
-			]),
-			m("div.field", [
-				m("label.label", "Import/Export:"),
-				m("div.buttons", [
-					m("button.button.is-small", { onclick: exportToClipboard }, "Export to Clipboard (JSON)"),
-					m("button.button.is-small", { onclick: importFromClipboard }, "Import from Clipboard (JSON)")
-				])
+			m("h3.title.is-5.mb-3", "Download"),
+			m("div.buttons.is-flex.is-flex-wrap-wrap", { style: "gap: 0.5rem;" }, [
+				m("button.button.is-small.is-primary", { onclick: saveAsPNG }, "Spritesheet (PNG)"),
+				m("button.button.is-small", { onclick: () => {
+					const allCredits = getAllCredits(state.selections);
+					const csvContent = creditsToCsv(allCredits);
+					downloadFile(csvContent, "credits.csv", "text/csv");
+				}}, "Credits (CSV)"),
+				m("button.button.is-small.is-info", { onclick: exportSplitAnimations }, "ZIP: Split by animation"),
+				m("button.button.is-small.is-info", { onclick: exportSplitItemSheets }, "ZIP: Split by item"),
+				m("button.button.is-small.is-info", { onclick: exportSplitItemAnimations }, "ZIP: Split by animation and item"),
+				m("button.button.is-small.is-link", { onclick: exportToClipboard }, "Export to Clipboard (JSON)"),
+				m("button.button.is-small.is-link", { onclick: importFromClipboard }, "Import from Clipboard (JSON)")
 			])
 		]);
 	}
@@ -1524,8 +1539,8 @@ const App = {
 	},
 	view: function() {
 		return m("div", [
-			m(FiltersPanel),
 			m(Download),
+			m(FiltersPanel),
 			m(Credits)
 		]);
 	}
