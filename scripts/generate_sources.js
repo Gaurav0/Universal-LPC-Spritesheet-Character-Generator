@@ -76,6 +76,7 @@ function parseJson(json) {
   }
   const { variants, name, credits, template, replace_in_path, path } = definition;
   const { tags = [], required_tags = [], excluded_tags = [] } = definition;
+  const typeName = definition.type_name;
   const defaultAnimations = [
     "spellcast",
     "thrust",
@@ -299,8 +300,6 @@ function parseJson(json) {
 const lineReader = readline.createInterface({
   input: fs.createReadStream("sources/source_index.html"),
 });
-let htmlGenerated =
-  "<!-- THIS FILE IS AUTO-GENERATED. PLEASE DONT ALTER IT MANUALLY -->\n";
 let csvGenerated = "filename,notes,authors,licenses,urls\n";
 
 lineReader.on("line", function (line) {
@@ -312,22 +311,11 @@ lineReader.on("line", function (line) {
     } catch(e) {
       return;
     }
-    const newLineHTML = parsedResult.html;
-    htmlGenerated += newLineHTML + "\n";
     csvGenerated += parsedResult.csv;
-  } else {
-    htmlGenerated += line + "\n";
   }
 });
 
 lineReader.on("close", function (line) {
-  fs.writeFile("index.html", htmlGenerated, function (err) {
-    if (err) {
-      return console.error(err);
-    } else {
-      console.log("HTML Updated!");
-    }
-  });
   fs.writeFile("CREDITS.csv", csvGenerated, function (err) {
     if (err) {
       return console.error(err);
