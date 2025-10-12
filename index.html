@@ -21,9 +21,6 @@
 			padding: 1rem;
 			overflow-y: auto;
 		}
-		.tree-node {
-			margin-left: 1rem;
-		}
 		.tree-label {
 			cursor: pointer;
 			user-select: none;
@@ -88,56 +85,6 @@
 		</div>
 	</div>
 
-	<script type="module">
-		import {
-			initCanvas,
-			renderCharacter,
-			initPreviewCanvas,
-			setPreviewAnimation,
-			getAnimationList,
-			startPreviewAnimation,
-			stopPreviewAnimation,
-			downloadAsPNG,
-			getCanvasBlob,
-			exportStateAsJSON,
-			importStateFromJSON,
-			extractAnimationFromCanvas,
-			getCanvas,
-			renderSingleItem,
-			renderSingleItemAnimation
-		} from './sources/canvas-renderer.js';
-
-		window.canvasRenderer = {
-			initCanvas,
-			renderCharacter,
-			initPreviewCanvas,
-			setPreviewAnimation,
-			getAnimationList,
-			startPreviewAnimation,
-			stopPreviewAnimation,
-			downloadAsPNG,
-			getCanvasBlob,
-			exportStateAsJSON,
-			importStateFromJSON,
-			extractAnimationFromCanvas,
-			getCanvas,
-			renderSingleItem,
-			renderSingleItemAnimation
-		};
-
-		// Wait for canvas to be ready, then load Mithril app
-		document.addEventListener('DOMContentLoaded', () => {
-			const canvas = document.getElementById("spritesheet");
-			if (canvas) {
-				initCanvas(canvas);
-
-				// Set defaults after canvas is ready
-				if (window.setDefaultSelections) {
-					window.setDefaultSelections();
-				}
-			}
-		});
-	</script>
-	<script type="text/javascript" src="sources/mithril-app.js"></script>
+	<script type="module" src="sources/main.js"></script>
 </body>
 </html>
