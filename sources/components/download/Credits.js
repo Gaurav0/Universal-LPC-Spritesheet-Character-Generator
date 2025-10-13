@@ -1,6 +1,7 @@
 // Credits/Attribution component
 import { state } from '../../state/state.js';
 import { getAllCredits, creditsToCsv, creditsToTxt } from '../../utils/credits.js';
+import { CollapsibleSection } from '../CollapsibleSection.js';
 
 export const Credits = {
 	view: function() {
@@ -17,8 +18,13 @@ export const Credits = {
 			URL.revokeObjectURL(url);
 		};
 
-		return m("div.box", { id: "credits-section" }, [
-			m("h3.title.is-5.mb-2", "Credits & Attribution"),
+		return m(CollapsibleSection, {
+			title: "Credits & Attribution",
+			storageKey: "credits",
+			defaultOpen: true,
+			boxClass: "box",
+			id: "credits-section"
+		}, [
 			m("p.is-size-7.mb-2", [
 				"You must credit the authors of this artwork. ",
 				m("a", {

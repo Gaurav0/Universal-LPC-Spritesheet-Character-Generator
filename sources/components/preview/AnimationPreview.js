@@ -35,63 +35,41 @@ export const AnimationPreview = {
 		}
 	},
 	view: function(vnode) {
-		return [
-			m("div.box", [
-				m("h3.title.is-5", "Animation Preview"),
-				m("div.field.is-horizontal", [
-					m("div.field-label.is-normal", [
-						m("label.label", "Animation")
-					]),
-					m("div.field-body", [
-						m("div.field", [
-							m("div.control", [
-								m("div.select", [
-									m("select", {
-										value: vnode.state.selectedAnimation,
-										onchange: (e) => {
-											vnode.state.selectedAnimation = e.target.value;
-											if (window.canvasRenderer) {
-												const frames = window.canvasRenderer.setPreviewAnimation(e.target.value);
-												vnode.state.frameCycle = frames.join('-');
-											}
+		return m("div.box", [
+			m("h3.title.is-5", "Animation Preview"),
+			m("div.field.is-horizontal", [
+				m("div.field-label.is-normal", [
+					m("label.label", "Animation")
+				]),
+				m("div.field-body", [
+					m("div.field", [
+						m("div.control", [
+							m("div.select", [
+								m("select", {
+									value: vnode.state.selectedAnimation,
+									onchange: (e) => {
+										vnode.state.selectedAnimation = e.target.value;
+										if (window.canvasRenderer) {
+											const frames = window.canvasRenderer.setPreviewAnimation(e.target.value);
+											vnode.state.frameCycle = frames.join('-');
 										}
-									}, ANIMATIONS.map(anim =>
-										m("option", { value: anim.value }, anim.label)
-									))
-								])
-							])
-						]),
-						m("div.field", [
-							m("div.control", [
-								m("code.tag.is-light.is-medium", vnode.state.frameCycle)
+									}
+								}, ANIMATIONS.map(anim =>
+									m("option", { value: anim.value }, anim.label)
+								))
 							])
 						])
+					]),
+					m("div.field", [
+						m("div.control", [
+							m("code.tag.is-light.is-medium", vnode.state.frameCycle)
+						])
 					])
-				]),
-				m("div.mt-3", [
-					m("canvas#previewAnimations", { width: 256, height: 64 })
 				])
 			]),
-			m("div.box.mt-4", [
-				m("div.is-flex.is-justify-content-space-between.is-align-items-center.mb-3", [
-					m("div", [
-						m("h3.title.is-5.mb-2", "Full Spritesheet Preview"),
-						m("p", "Click to zoom in (2x), double-click to zoom out")
-					]),
-					m("label.checkbox", [
-						m("input[type=checkbox]", {
-							checked: state.showTransparencyGrid,
-							onchange: (e) => {
-								state.showTransparencyGrid = e.target.checked;
-								if (window.canvasRenderer) {
-									window.canvasRenderer.renderCharacter(state.selections, state.bodyType, state.showTransparencyGrid);
-								}
-							}
-						}),
-						" Show transparency grid"
-					])
-				])
+			m("div.mt-3", [
+				m("canvas#previewAnimations", { width: 256, height: 64 })
 			])
-		];
+		]);
 	}
 };

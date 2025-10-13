@@ -1,6 +1,7 @@
 // Download component
 import { state } from '../../state/state.js';
 import { getAllCredits, creditsToCsv, creditsToTxt, getItemFileName } from '../../utils/credits.js';
+import { CollapsibleSection } from '../CollapsibleSection.js';
 
 export const Download = {
 	view: function() {
@@ -317,8 +318,11 @@ export const Download = {
 			}
 		};
 
-		return m("div.box", [
-			m("h3.title.is-5.mb-3", "Download"),
+		return m(CollapsibleSection, {
+			title: "Download",
+			storageKey: "download",
+			defaultOpen: true
+		}, [
 			m("div.buttons.is-flex.is-flex-wrap-wrap", { style: "gap: 0.5rem;" }, [
 				m("button.button.is-small.is-primary", { onclick: saveAsPNG }, "Spritesheet (PNG)"),
 				m("button.button.is-small", { onclick: () => {

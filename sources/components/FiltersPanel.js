@@ -4,10 +4,15 @@ import { LicenseFilters } from './filters/LicenseFilters.js';
 import { AnimationFilters } from './filters/AnimationFilters.js';
 import { CurrentSelections } from './selections/CurrentSelections.js';
 import { CategoryTree } from './tree/CategoryTree.js';
+import { CollapsibleSection } from './CollapsibleSection.js';
 
 export const FiltersPanel = {
 	view: function() {
-		return m("div.box", [
+		return m(CollapsibleSection, {
+			title: "Filters",
+			storageKey: "filters",
+			defaultOpen: true
+		}, [
 			m("div.mb-4", m(SearchControl)),
 			// Responsive wrapper for License and Animation filters
 			m("div.columns.is-multiline.m-0", [

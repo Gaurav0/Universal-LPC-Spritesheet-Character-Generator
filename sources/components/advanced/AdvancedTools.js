@@ -1,5 +1,6 @@
 // Advanced Tools component - Custom file upload with z-position
 import { state } from '../../state/state.js';
+import { CollapsibleSection } from '../CollapsibleSection.js';
 
 export const AdvancedTools = {
 	view: function() {
@@ -31,8 +32,11 @@ export const AdvancedTools = {
 			m.redraw();
 		};
 
-		return m("div.box", [
-			m("h3.title.is-5.mb-3", "Advanced Tools"),
+		return m(CollapsibleSection, {
+			title: "Advanced Tools",
+			storageKey: "advanced",
+			defaultOpen: false
+		}, [
 			m("div.field", [
 				m("label.label", "Custom File Upload"),
 				m("div.control", [
