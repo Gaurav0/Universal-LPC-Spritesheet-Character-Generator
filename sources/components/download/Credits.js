@@ -17,9 +17,15 @@ export const Credits = {
 			URL.revokeObjectURL(url);
 		};
 
-		return m("div.box", [
+		return m("div.box", { id: "credits-section" }, [
 			m("h3.title.is-5", "Credits & Attribution"),
-			m("p.subtitle.is-6", "You must credit the authors of this artwork"),
+			m("p.subtitle.is-6", [
+				"You must credit the authors of this artwork. ",
+				m("a", {
+					href: "https://github.com/liberatedpixelcup/Universal-LPC-Spritesheet-Character-Generator/blob/master/README.md",
+					target: "_blank"
+				}, "Detailed attribution instructions")
+			]),
 
 			allCredits.length > 0 ? [
 				m("div.content", { style: "max-height: 300px; overflow-y: auto;" },
