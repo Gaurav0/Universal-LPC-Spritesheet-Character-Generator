@@ -111,19 +111,16 @@ export function initCanvas(canvasElement) {
   ctx = canvas.getContext('2d');
   canvas.width = SHEET_WIDTH;
   canvas.height = SHEET_HEIGHT;
+}
 
-  // Add zoom functionality: click to zoom in, double-click to zoom out
-  canvas.addEventListener('click', (e) => {
-    if (e.detail === 1) {
-      // Single click - zoom in
-      canvas.style.zoom = '2';
-    }
-  });
-
-  canvas.addEventListener('dblclick', () => {
-    // Double click - zoom out (reset)
-    canvas.style.zoom = '1';
-  });
+/**
+ * Set canvas zoom level
+ * @param {number} zoomLevel - Zoom level (0.5 to 2)
+ */
+export function setCanvasZoom(zoomLevel) {
+  if (canvas) {
+    canvas.style.zoom = zoomLevel.toString();
+  }
 }
 
 /**
@@ -134,6 +131,16 @@ export function initPreviewCanvas(previewCanvasElement) {
   previewCtx = previewCanvas.getContext('2d');
   previewCanvas.width = 4 * FRAME_SIZE; // 256px
   previewCanvas.height = FRAME_SIZE; // 64px
+}
+
+/**
+ * Set preview canvas zoom level
+ * @param {number} zoomLevel - Zoom level (0.5 to 2)
+ */
+export function setPreviewCanvasZoom(zoomLevel) {
+  if (previewCanvas) {
+    previewCanvas.style.zoom = zoomLevel.toString();
+  }
 }
 
 /**

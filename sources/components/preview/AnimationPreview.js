@@ -37,7 +37,14 @@ const PreviewCanvas = {
 export const AnimationPreview = {
 	oninit: function(vnode) {
 		vnode.state.selectedAnimation = 'walk';
-		vnode.state.frameCycle = '';
+		vnode.state.zoomLevel = 1;
+		// Initialize frame cycle for default animation
+		if (window.canvasRenderer) {
+			const frames = window.canvasRenderer.setPreviewAnimation('walk');
+			vnode.state.frameCycle = frames ? frames.join('-') : '';
+		} else {
+			vnode.state.frameCycle = '';
+		}
 	},
 	view: function(vnode) {
 		return m(CollapsibleSection, {
@@ -46,32 +53,61 @@ export const AnimationPreview = {
 			defaultOpen: true,
 			boxClass: "box"
 		}, [
-			m("div.field.is-horizontal", [
-				m("div.field-label.is-normal", [
-					m("label.label", "Animation")
-				]),
-				m("div.field-body", [
-					m("div.field", [
-						m("div.control", [
-							m("div.select", [
-								m("select", {
-									value: vnode.state.selectedAnimation,
-									onchange: (e) => {
-										vnode.state.selectedAnimation = e.target.value;
-										if (window.canvasRenderer) {
-											const frames = window.canvasRenderer.setPreviewAnimation(e.target.value);
-											vnode.state.frameCycle = frames.join('-');
-										}
-									}
-								}, ANIMATIONS.map(anim =>
-									m("option", { value: anim.value }, anim.label)
-								))
+			m("div.columns", [
+				// Animation column
+				m("div.column", [
+					m("div.field.is-horizontal.is-align-items-center", [
+						m("div.field-label.is-normal", [
+							m("label.label.mb-0", "Animation")
+						]),
+						m("div.field-body", [
+							m("div.field.has-addons.mb-0", [
+								m("div.control", [
+									m("div.select", [
+										m("select", {
+											value: vnode.state.selectedAnimation,
+											onchange: (e) => {
+												vnode.state.selectedAnimation = e.target.value;
+												if (window.canvasRenderer) {
+													const frames = window.canvasRenderer.setPreviewAnimation(e.target.value);
+													vnode.state.frameCycle = frames.join('-');
+												}
+											}
+										}, ANIMATIONS.map(anim =>
+											m("option", { value: anim.value }, anim.label)
+										))
+									])
+								]),
+								m("div.control", [
+									m("span.button.is-static.is-light", vnode.state.frameCycle)
+								])
 							])
 						])
-					]),
-					m("div.field", [
-						m("div.control", [
-							m("code.tag.is-light.is-medium", vnode.state.frameCycle)
+					])
+				]),
+				// Zoom column
+				m("div.column", [
+					m("div.field.is-horizontal.is-align-items-center", [
+						m("div.field-label.is-normal", [
+							m("label.label.mb-0", `Zoom: ${Math.round(vnode.state.zoomLevel * 100)}%`)
+						]),
+						m("div.field-body", [
+							m("div.field.mb-0", [
+								m("div.control.is-expanded", [
+									m("input.is-fullwidth[type=range]", {
+										min: 0.5,
+										max: 2,
+										step: 0.1,
+										value: vnode.state.zoomLevel,
+										oninput: (e) => {
+											vnode.state.zoomLevel = parseFloat(e.target.value);
+											if (window.canvasRenderer && window.canvasRenderer.setPreviewCanvasZoom) {
+												window.canvasRenderer.setPreviewCanvasZoom(vnode.state.zoomLevel);
+											}
+										}
+									})
+								])
+							])
 						])
 					])
 				])
