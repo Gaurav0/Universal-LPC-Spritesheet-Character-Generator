@@ -1,42 +1,51 @@
 // Animation Preview component
 import { state } from '../../state/state.js';
 import { ANIMATIONS } from '../../state/constants.js';
+import { CollapsibleSection } from '../CollapsibleSection.js';
+
+// Canvas wrapper component with its own lifecycle
+const PreviewCanvas = {
+	oncreate: function(vnode) {
+		const canvas = vnode.dom;
+		const selectedAnimation = vnode.attrs.selectedAnimation;
+		const onFrameCycleUpdate = vnode.attrs.onFrameCycleUpdate;
+
+		if (!window.canvasRenderer) {
+			console.warn('Canvas renderer not available yet');
+			return;
+		}
+
+		window.canvasRenderer.initPreviewCanvas(canvas);
+		const frames = window.canvasRenderer.setPreviewAnimation(selectedAnimation);
+		window.canvasRenderer.startPreviewAnimation();
+
+		if (onFrameCycleUpdate) {
+			onFrameCycleUpdate(frames.join('-'));
+		}
+	},
+	onremove: function() {
+		// Stop animation when canvas is removed from DOM
+		if (window.canvasRenderer) {
+			window.canvasRenderer.stopPreviewAnimation();
+		}
+	},
+	view: function(vnode) {
+		return m("canvas#previewAnimations", { width: 256, height: 64 });
+	}
+};
 
 export const AnimationPreview = {
 	oninit: function(vnode) {
 		vnode.state.selectedAnimation = 'walk';
 		vnode.state.frameCycle = '';
 	},
-	oncreate: function(vnode) {
-		// Wait for canvasRenderer to be available (module loads after this script)
-		const initPreview = () => {
-			if (window.canvasRenderer) {
-				const previewCanvas = document.getElementById("previewAnimations");
-				if (previewCanvas) {
-					window.canvasRenderer.initPreviewCanvas(previewCanvas);
-					// Set initial animation to 'walk' and get frame cycle
-					const frames = window.canvasRenderer.setPreviewAnimation('walk');
-					vnode.state.frameCycle = frames.join('-');
-					window.canvasRenderer.startPreviewAnimation();
-
-					m.redraw(); // Update view with frame cycle
-				}
-			} else {
-				// Retry after a short delay
-				setTimeout(initPreview, 50);
-			}
-		};
-		initPreview();
-	},
-	onremove: function() {
-		// Stop animation when component is removed
-		if (window.canvasRenderer) {
-			window.canvasRenderer.stopPreviewAnimation();
-		}
-	},
 	view: function(vnode) {
-		return m("div.box", [
-			m("h3.title.is-5", "Animation Preview"),
+		return m(CollapsibleSection, {
+			title: "Animation Preview",
+			storageKey: "animation-preview",
+			defaultOpen: true,
+			boxClass: "box"
+		}, [
 			m("div.field.is-horizontal", [
 				m("div.field-label.is-normal", [
 					m("label.label", "Animation")
@@ -68,7 +77,12 @@ export const AnimationPreview = {
 				])
 			]),
 			m("div.mt-3", [
-				m("canvas#previewAnimations", { width: 256, height: 64 })
+				m(PreviewCanvas, {
+					selectedAnimation: vnode.state.selectedAnimation,
+					onFrameCycleUpdate: (frameCycle) => {
+						vnode.state.frameCycle = frameCycle;
+					}
+				})
 			])
 		]);
 	}
