@@ -8,17 +8,14 @@
 	<link rel="stylesheet" type="text/css" href="sources/chargen.css">
 	<style>
 		#columns-container {
-			display: flex;
 			height: calc(100vh - 100px);
 		}
 		#chooser-column {
-			width: 50%;
 			padding: 1rem;
 			overflow-y: auto;
 			scroll-behavior: smooth;
 		}
 		#preview-column {
-			width: 50%;
 			padding: 1rem;
 			overflow-y: auto;
 		}
@@ -75,12 +72,12 @@
 		</div>
 	</section>
 
-	<div id="columns-container">
-		<div id="chooser-column">
+	<div id="columns-container" class="columns">
+		<div id="chooser-column" class="column">
 			<div id="mithril-filters"></div>
 		</div>
 
-		<div id="preview-column">
+		<div id="preview-column" class="column">
 			<div id="mithril-preview"></div>
 			<div id="mithril-spritesheet-preview"></div>
 			<div id="spritesheet-container">
