@@ -457,6 +457,9 @@ export async function renderCharacter(selections, bodyType, showTransparencyGrid
   const customAnimationItems = []; // Track items with custom animations
   const addedCustomAnimations = new Set(); // Track which custom animations we've added
 
+  // Import state to access custom uploaded image
+  const appState = await import('../state/state.js').then(m => m.state);
+
   for (const [categoryPath, selection] of Object.entries(selections)) {
     const { itemId, variant } = selection;
     const meta = window.itemMetadata[itemId];
@@ -550,6 +553,24 @@ export async function renderCharacter(selections, bodyType, showTransparencyGrid
     }
   }
 
+  // Add custom uploaded image to itemsToDraw if present
+  if (appState.customUploadedImage) {
+    // Add custom image to be drawn at all standard animation positions
+    for (const [animName, yPos] of Object.entries(ANIMATIONS)) {
+      itemsToDraw.push({
+        itemId: 'custom-upload',
+        variant: null,
+        spritePath: null, // Will draw directly from Image object
+        zPos: appState.customImageZPos,
+        layerNum: 0,
+        animation: animName,
+        yPos,
+        isCustom: false,
+        customImage: appState.customUploadedImage // Store the Image object
+      });
+    }
+  }
+
   // Sort standard items by zPos only (lower zPos = drawn first = behind)
   // This ensures shadow (zPos=0) is drawn before body (zPos=10), etc.
   itemsToDraw.sort((a, b) => a.zPos - b.zPos);
@@ -598,11 +619,26 @@ export async function renderCharacter(selections, bodyType, showTransparencyGrid
     }
   }
 
-  // First, load all standard animation images in parallel
-  const loadedImages = await loadImagesInParallel(itemsToDraw);
+  // Load all standard animation images in parallel and attach them to their items
+  const loadPromises = itemsToDraw.map(item => {
+    if (item.customImage) {
+      // Custom image already loaded
+      return Promise.resolve({ item, img: item.customImage, success: true });
+    } else {
+      // Load standard image
+      return loadImage(item.spritePath)
+        .then(img => ({ item, img, success: true }))
+        .catch(err => {
+          console.warn(`Failed to load sprite: ${item.spritePath}`);
+          return { item, img: null, success: false };
+        });
+    }
+  });
 
-  // Then draw them in order (maintaining zPos ordering)
-  for (const { item, img, success } of loadedImages) {
+  const loadedItems = await Promise.all(loadPromises);
+
+  // Draw all items in sorted z-order
+  for (const { item, img, success } of loadedItems) {
     if (success && img) {
       renderCtx.drawImage(img, 0, item.yPos);
     }

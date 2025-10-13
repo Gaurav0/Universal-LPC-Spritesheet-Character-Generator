@@ -9,6 +9,8 @@ export const state = {
 	searchQuery: "", // current search query
 	showTransparencyGrid: true, // show checkered transparency background
 	matchBodyColorEnabled: false, // auto-match body color to other items (default: disabled)
+	customUploadedImage: null, // custom uploaded image (Image object)
+	customImageZPos: 0, // z-position for custom uploaded image
 	// License filters - all enabled by default (derived from LICENSE_CONFIG)
 	enabledLicenses: Object.fromEntries(
 		LICENSE_CONFIG.map(lic => [lic.key, true])
@@ -149,6 +151,8 @@ export function selectDefaults() {
 // Reset all selections and restore defaults
 export function resetAll() {
 	state.selections = {};
+	state.customUploadedImage = null;
+	state.customImageZPos = 0;
 	selectDefaults();
 	m.redraw();
 }
