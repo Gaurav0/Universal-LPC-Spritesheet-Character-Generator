@@ -26,7 +26,11 @@ export const App = {
 		    currentCustomZPos !== vnode.state.prevCustomZPos) {
 			syncSelectionsToHash();
 			if (window.canvasRenderer) {
-				window.canvasRenderer.renderCharacter(state.selections, state.bodyType, state.showTransparencyGrid);
+				// Render to offscreen canvas (async)
+				window.canvasRenderer.renderCharacter(state.selections, state.bodyType).then(() => {
+					// Trigger redraw to update preview canvas after offscreen render completes
+					m.redraw();
+				});
 			}
 
 			// Update tracked state

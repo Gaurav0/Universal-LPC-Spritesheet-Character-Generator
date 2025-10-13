@@ -51,16 +51,14 @@ window.setDefaultSelections = function() {
 	initState();
 };
 
-// Wait for canvas to be ready, then load Mithril app
+// Wait for DOM to be ready, then load Mithril app
 document.addEventListener('DOMContentLoaded', () => {
-	const canvas = document.getElementById("spritesheet");
-	if (canvas) {
-		canvasRenderer.initCanvas(canvas);
+	// Initialize offscreen canvas
+	canvasRenderer.initCanvas();
 
-		// Set defaults after canvas is ready
-		if (window.setDefaultSelections) {
-			window.setDefaultSelections();
-		}
+	// Set defaults after canvas is ready
+	if (window.setDefaultSelections) {
+		window.setDefaultSelections();
 	}
 
 	// Initialize hash change listener

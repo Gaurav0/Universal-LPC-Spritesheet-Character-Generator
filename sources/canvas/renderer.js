@@ -1,6 +1,8 @@
 // Canvas rendering module for Mithril UI
 // Simplified renderer that draws character sprites based on selections
 
+import { state } from '../state/state.js';
+
 const FRAME_SIZE = 64;
 const SHEET_HEIGHT = 3456; // Full universal sheet height
 const SHEET_WIDTH = 832; // 13 frames * 64px
@@ -104,22 +106,47 @@ function drawTransparencyBackground(context, width, height, squareSize = 8) {
 }
 
 /**
- * Initialize the canvas
+ * Initialize the canvas (creates offscreen canvas)
  */
-export function initCanvas(canvasElement) {
-  canvas = canvasElement;
+export function initCanvas() {
+  canvas = document.createElement('canvas');
   ctx = canvas.getContext('2d');
   canvas.width = SHEET_WIDTH;
   canvas.height = SHEET_HEIGHT;
 }
 
 /**
- * Set canvas zoom level
- * @param {number} zoomLevel - Zoom level (0.5 to 2)
+ * Copy offscreen canvas to a preview canvas with optional transparency grid
+ * @param {HTMLCanvasElement} previewCanvasElement - The preview canvas to copy to
+ * @param {boolean} showTransparencyGrid - Whether to draw transparency grid background
+ * @param {number} zoomLevel - Zoom level to apply (optional, will use CSS zoom)
  */
-export function setCanvasZoom(zoomLevel) {
-  if (canvas) {
-    canvas.style.zoom = zoomLevel.toString();
+export function copyToPreviewCanvas(previewCanvasElement, showTransparencyGrid = false, zoomLevel = 1) {
+  if (!canvas || !previewCanvasElement) {
+    console.error('Canvas not initialized');
+    return;
+  }
+
+  const previewCtx = previewCanvasElement.getContext('2d');
+
+  // Match preview canvas size to offscreen canvas
+  previewCanvasElement.width = canvas.width;
+  previewCanvasElement.height = canvas.height;
+
+  // Clear preview canvas
+  previewCtx.clearRect(0, 0, previewCanvasElement.width, previewCanvasElement.height);
+
+  // Optionally draw transparency grid
+  if (showTransparencyGrid) {
+    drawTransparencyBackground(previewCtx, previewCanvasElement.width, previewCanvasElement.height);
+  }
+
+  // Copy offscreen canvas to preview
+  previewCtx.drawImage(canvas, 0, 0);
+
+  // Apply zoom via CSS
+  if (zoomLevel !== 1) {
+    previewCanvasElement.style.zoom = zoomLevel.toString();
   }
 }
 
@@ -204,6 +231,11 @@ export function startPreviewAnimation() {
 
       if (previewCtx && canvas) {
         previewCtx.clearRect(0, 0, previewCanvas.width, previewCanvas.height);
+
+        // Draw transparency grid if enabled
+        if (state.showTransparencyGrid) {
+          drawTransparencyBackground(previewCtx, previewCanvas.width, previewCanvas.height);
+        }
 
         currentFrameIndex = (currentFrameIndex + 1) % animationFrames.length;
         const currentFrame = animationFrames[currentFrameIndex];
@@ -440,10 +472,9 @@ function drawFramesToCustomAnimation(customAnimationContext, customAnimationDefi
  * Render character based on selections
  * @param {Object} selections - Selected items
  * @param {string} bodyType - Body type
- * @param {boolean} showTransparencyGrid - Whether to show transparency background
  * @param {HTMLCanvasElement} targetCanvas - Canvas to render to (defaults to main canvas)
  */
-export async function renderCharacter(selections, bodyType, showTransparencyGrid = false, targetCanvas = null) {
+export async function renderCharacter(selections, bodyType, targetCanvas = null) {
   // Mark start for profiling
   const profiler = window.profiler;
   if (profiler) {
@@ -602,11 +633,8 @@ export async function renderCharacter(selections, bodyType, showTransparencyGrid
   renderCanvas.width = totalWidth;
   renderCanvas.height = totalHeight;
 
-  // Clear canvas and optionally draw transparency background
+  // Clear canvas (no transparency background on offscreen canvas)
   renderCtx.clearRect(0, 0, renderCanvas.width, renderCanvas.height);
-  if (showTransparencyGrid) {
-    drawTransparencyBackground(renderCtx, renderCanvas.width, renderCanvas.height);
-  }
 
   // Load and draw standard animation images
   imagesLoaded = 0;
@@ -721,45 +749,23 @@ export async function renderCharacter(selections, bodyType, showTransparencyGrid
 }
 
 /**
- * Download canvas as PNG using an offscreen canvas (without transparency background)
+ * Download canvas as PNG (exports the offscreen canvas directly)
  */
-export async function downloadAsPNG(filename = 'character-spritesheet.png', selections = null, bodyType = 'male') {
+export function downloadAsPNG(filename = 'character-spritesheet.png') {
   if (!canvas) {
     console.error('Canvas not initialized');
     return;
   }
 
-  // If selections provided, use offscreen canvas without transparency background
-  if (selections && bodyType) {
-    // Create offscreen canvas
-    const offscreenCanvas = document.createElement('canvas');
-
-    // Render to offscreen canvas WITHOUT transparency grid
-    await renderCharacter(selections, bodyType, false, offscreenCanvas);
-
-    // Export offscreen canvas
-    await new Promise((resolve) => {
-      offscreenCanvas.toBlob((blob) => {
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = filename;
-        a.click();
-        URL.revokeObjectURL(url);
-        resolve();
-      }, 'image/png');
-    });
-  } else {
-    // Fallback: export current canvas as-is
-    canvas.toBlob((blob) => {
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = filename;
-      a.click();
-      URL.revokeObjectURL(url);
-    }, 'image/png');
-  }
+  // Export offscreen canvas directly
+  canvas.toBlob((blob) => {
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    a.click();
+    URL.revokeObjectURL(url);
+  }, 'image/png');
 }
 
 /**

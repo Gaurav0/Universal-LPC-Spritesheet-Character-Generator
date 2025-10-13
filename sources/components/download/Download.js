@@ -47,11 +47,11 @@ export const Download = {
 		};
 
 		// Save as PNG
-		const saveAsPNG = async () => {
+		const saveAsPNG = () => {
 			if (!window.canvasRenderer) return;
 
-			// Use offscreen canvas for export (without transparency background)
-			await window.canvasRenderer.downloadAsPNG('character-spritesheet.png', state.selections, state.bodyType);
+			// Export offscreen canvas directly
+			window.canvasRenderer.downloadAsPNG('character-spritesheet.png');
 		};
 
 		// Export ZIP - Split by animation

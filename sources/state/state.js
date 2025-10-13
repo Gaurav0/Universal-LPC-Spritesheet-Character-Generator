@@ -144,7 +144,10 @@ export function selectDefaults() {
 
 	// Render the character with defaults
 	if (window.canvasRenderer) {
-		window.canvasRenderer.renderCharacter(state.selections, state.bodyType, state.showTransparencyGrid);
+		window.canvasRenderer.renderCharacter(state.selections, state.bodyType).then(() => {
+			// Trigger redraw to update preview canvas after offscreen render completes
+			m.redraw();
+		});
 	}
 }
 
@@ -300,7 +303,10 @@ export function initState() {
 	} else {
 		// Render with loaded selections
 		if (window.canvasRenderer) {
-			window.canvasRenderer.renderCharacter(state.selections, state.bodyType, state.showTransparencyGrid);
+			window.canvasRenderer.renderCharacter(state.selections, state.bodyType).then(() => {
+				// Trigger redraw to update preview canvas after offscreen render completes
+				m.redraw();
+			});
 		}
 	}
 }
