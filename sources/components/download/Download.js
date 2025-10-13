@@ -323,6 +323,11 @@ export const Download = {
 				m("button.button.is-small.is-primary", { onclick: saveAsPNG }, "Spritesheet (PNG)"),
 				m("button.button.is-small", { onclick: () => {
 					const allCredits = getAllCredits(state.selections, state.bodyType);
+					const txtContent = creditsToTxt(allCredits);
+					downloadFile(txtContent, "credits.txt", "text/plain");
+				}}, "Credits (TXT)"),
+				m("button.button.is-small", { onclick: () => {
+					const allCredits = getAllCredits(state.selections, state.bodyType);
 					const csvContent = creditsToCsv(allCredits);
 					downloadFile(csvContent, "credits.csv", "text/csv");
 				}}, "Credits (CSV)"),
