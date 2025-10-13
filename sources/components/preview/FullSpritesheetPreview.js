@@ -4,10 +4,7 @@ import { CollapsibleSection } from '../CollapsibleSection.js';
 
 export const FullSpritesheetPreview = {
 	oninit: function(vnode) {
-		// Initialize spritesheet collapsed state from localStorage
-		// localStorage returns strings, so 'true' becomes true, anything else (including null) becomes false
-		const stored = localStorage.getItem('collapsed_spritesheet-preview');
-		vnode.state.spritesheetCollapsed = stored === 'true';
+		vnode.state.spritesheetCollapsed = false;
 
 		// Initialize zoom level to 1 (100%)
 		vnode.state.zoomLevel = 1;
