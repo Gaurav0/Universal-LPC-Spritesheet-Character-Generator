@@ -77,15 +77,20 @@ export const ItemWithVariants = {
 						},
 						onclick: () => {
 							const selectionGroup = getSelectionGroup(itemId);
-							state.selections[selectionGroup] = {
-								itemId: itemId,
-								variant: variant,
-								name: `${displayName} (${variantDisplayName})`
-							};
 
-							// If this is the body color, apply match body color to other items
-							if (itemId === 'body-body') {
-								applyMatchBodyColor();
+							if (isSelected) {
+								delete state.selections[selectionGroup];
+							} else {
+								state.selections[selectionGroup] = {
+									itemId: itemId,
+									variant: variant,
+									name: `${displayName} (${variantDisplayName})`
+								};
+
+								// If this is the body color, apply match body color to other items
+								if (itemId === 'body-body') {
+									applyMatchBodyColor();
+								}
 							}
 						}
 					}, [

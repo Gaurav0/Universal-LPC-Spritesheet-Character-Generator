@@ -68,7 +68,11 @@ export const TreeNode = {
 								class: isSearchMatch ? "search-result" : "",
 								style: "padding: 0.25rem 0 0.25rem 1.5rem; cursor: pointer;" + (isSelected ? " font-weight: bold; color: #3273dc;" : ""),
 								onclick: () => {
-									state.selections[selectionGroup] = { itemId, name: displayName };
+									if (isSelected) {
+										delete state.selections[selectionGroup];
+									} else {
+										state.selections[selectionGroup] = { itemId, name: displayName };
+									}
 								}
 							}, displayName);
 						}
