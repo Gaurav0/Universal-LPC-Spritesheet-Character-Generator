@@ -18,20 +18,27 @@ export const Credits = {
 		};
 
 		return m("div.box", { id: "credits-section" }, [
-			m("h3.title.is-5", "Credits & Attribution"),
-			m("p.subtitle.is-6", [
+			m("h3.title.is-5.mb-2", "Credits & Attribution"),
+			m("p.is-size-7.mb-2", [
 				"You must credit the authors of this artwork. ",
 				m("a", {
 					href: "https://github.com/liberatedpixelcup/Universal-LPC-Spritesheet-Character-Generator/blob/master/README.md",
 					target: "_blank"
 				}, "Detailed attribution instructions")
 			]),
+			m("p.is-size-7.mb-3", [
+				"License information for all spritesheets in this generator is available ",
+				m("a", {
+					href: "https://github.com/liberatedpixelcup/Universal-LPC-Spritesheet-Character-Generator/raw/refs/heads/master/CREDITS.csv",
+					target: "_blank"
+				}, "here")
+			]),
 
 			allCredits.length > 0 ? [
-				m("div.content", { style: "max-height: 300px; overflow-y: auto;" },
+				m("div.content.has-background-light.p-3", { style: "max-height: 300px; overflow-y: auto;" },
 					allCredits.map(credit =>
 						m("div.mb-3", { key: credit.file }, [
-							m("strong", credit.file),
+							m("strong.is-size-6", credit.file),
 							credit.notes ? m("p.is-size-7", credit.notes) : null,
 							m("p.is-size-7", [
 								m("strong", "Licenses: "),
