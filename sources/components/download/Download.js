@@ -323,7 +323,7 @@ export const Download = {
 			storageKey: "download",
 			defaultOpen: true
 		}, [
-			m("div.buttons.is-flex.is-flex-wrap-wrap", { style: "gap: 0.5rem;" }, [
+			m("div.buttons.is-flex.is-flex-wrap-wrap", { id: "download-buttons" }, [
 				m("button.button.is-small.is-primary", { onclick: saveAsPNG }, "Spritesheet (PNG)"),
 				m("button.button.is-small", { onclick: () => {
 					const allCredits = getAllCredits(state.selections, state.bodyType);

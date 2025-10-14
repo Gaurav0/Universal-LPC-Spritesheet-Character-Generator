@@ -41,7 +41,7 @@ export const Credits = {
 			]),
 
 			allCredits.length > 0 ? [
-				m("div.content.has-background-light.p-3", { style: "max-height: 300px; overflow-y: auto;" },
+				m("div.content.has-background-light.p-3",
 					allCredits.map(credit =>
 						m("div.mb-3", { key: credit.file }, [
 							m("strong.is-size-6", credit.file),

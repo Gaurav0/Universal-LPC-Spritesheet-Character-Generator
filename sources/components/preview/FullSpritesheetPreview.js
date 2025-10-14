@@ -78,9 +78,7 @@ const ScrollableContainer = {
 		});
 	},
 	view: function(vnode) {
-		return m("div.mt-3", {
-			style: "overflow: auto; max-width: 100%; max-height: 70vh; cursor: grab; user-select: none;"
-		}, vnode.children);
+		return m("div.scrollable-container.mt-3", vnode.children);
 	}
 };
 

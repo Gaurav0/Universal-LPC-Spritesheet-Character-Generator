@@ -63,10 +63,10 @@ export const TreeNode = {
 							// Simple item with no variants
 							const selectionGroup = getSelectionGroup(itemId);
 							const isSelected = state.selections[selectionGroup]?.itemId === itemId;
-							return m("div", {
+							return m("div.tree-node", {
 								key: itemId,
 								class: isSearchMatch ? "search-result" : "",
-								style: "padding: 0.25rem 0 0.25rem 1.5rem; cursor: pointer;" + (isSelected ? " font-weight: bold; color: #3273dc;" : ""),
+								style: (isSelected ? " font-weight: bold; color: #3273dc;" : ""),
 								onclick: () => {
 									if (isSelected) {
 										delete state.selections[selectionGroup];
