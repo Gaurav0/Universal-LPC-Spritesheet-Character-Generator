@@ -1,6 +1,28 @@
 // Runtime palette swapping for LPC sprites
 // Recolors body sprites on-demand without caching
 
+import { recolorImageWebGL, isWebGLAvailable } from './webgl-palette-recolor.js';
+
+// Configuration flags
+let config = {
+	forceCPU: false,  // Set to true to force CPU mode even if WebGL is available
+	useWebGL: isWebGLAvailable()
+};
+
+// Check WebGL availability once at module load
+const USE_WEBGL = config.useWebGL && !config.forceCPU;
+
+// Log which method will be used
+if (USE_WEBGL) {
+	console.log('🎨 Palette recoloring: WebGL GPU-accelerated mode enabled');
+	console.log('💡 To check stats, run: window.getPaletteRecolorStats()');
+	console.log('💡 To force CPU mode, run: window.setPaletteRecolorMode("cpu")');
+} else if (config.forceCPU) {
+	console.log('🎨 Palette recoloring: CPU mode (forced by configuration)');
+} else {
+	console.log('🎨 Palette recoloring: CPU mode (WebGL not available)');
+}
+
 /**
  * Convert hex color string to RGB object
  * @param {string} hex - Hex color (e.g., "#271920")
@@ -49,13 +71,13 @@ function buildColorMap(sourcePalette, targetPalette) {
 }
 
 /**
- * Recolor an image using palette mapping
+ * Recolor an image using palette mapping (CPU implementation)
  * @param {HTMLImageElement|HTMLCanvasElement} sourceImage - Source image
  * @param {string[]} sourcePalette - Array of hex colors (source)
  * @param {string[]} targetPalette - Array of hex colors (target)
  * @returns {HTMLCanvasElement} Recolored canvas
  */
-export function recolorImage(sourceImage, sourcePalette, targetPalette) {
+function recolorImageCPU(sourceImage, sourcePalette, targetPalette) {
 	// Create offscreen canvas
 	const canvas = document.createElement('canvas');
 	canvas.width = sourceImage.width;
@@ -98,6 +120,80 @@ export function recolorImage(sourceImage, sourcePalette, targetPalette) {
 	ctx.putImageData(imageData, 0, 0);
 
 	return canvas;
+}
+
+// Track recolor stats for debugging
+let recolorStats = { webgl: 0, cpu: 0, fallback: 0 };
+
+/**
+ * Get recolor statistics
+ * @returns {Object} Stats object with webgl, cpu, and fallback counts
+ */
+export function getRecolorStats() {
+	return { ...recolorStats };
+}
+
+/**
+ * Reset recolor statistics
+ */
+export function resetRecolorStats() {
+	recolorStats = { webgl: 0, cpu: 0, fallback: 0 };
+}
+
+/**
+ * Set palette recolor mode
+ * @param {string} mode - "webgl" or "cpu"
+ */
+export function setPaletteRecolorMode(mode) {
+	if (mode === 'cpu') {
+		config.forceCPU = true;
+		console.log('🎨 Switched to CPU mode (forced)');
+	} else if (mode === 'webgl') {
+		if (config.useWebGL) {
+			config.forceCPU = false;
+			console.log('🎨 Switched to WebGL mode');
+		} else {
+			console.warn('⚠️ WebGL not available on this browser');
+		}
+	} else {
+		console.error('Invalid mode. Use "webgl" or "cpu"');
+	}
+}
+
+/**
+ * Get current palette recolor configuration
+ * @returns {Object} Current config
+ */
+export function getPaletteRecolorConfig() {
+	return {
+		...config,
+		activeMode: (!config.forceCPU && config.useWebGL) ? 'webgl' : 'cpu'
+	};
+}
+
+/**
+ * Recolor an image using palette mapping
+ * Automatically uses WebGL if available, falls back to CPU
+ * @param {HTMLImageElement|HTMLCanvasElement} sourceImage - Source image
+ * @param {string[]} sourcePalette - Array of hex colors (source)
+ * @param {string[]} targetPalette - Array of hex colors (target)
+ * @returns {HTMLCanvasElement} Recolored canvas
+ */
+export function recolorImage(sourceImage, sourcePalette, targetPalette) {
+	const shouldUseWebGL = config.useWebGL && !config.forceCPU;
+
+	if (shouldUseWebGL) {
+		try {
+			recolorStats.webgl++;
+			return recolorImageWebGL(sourceImage, sourcePalette, targetPalette);
+		} catch (error) {
+			console.warn('⚠️ WebGL recoloring failed, falling back to CPU:', error);
+			recolorStats.fallback++;
+			return recolorImageCPU(sourceImage, sourcePalette, targetPalette);
+		}
+	}
+	recolorStats.cpu++;
+	return recolorImageCPU(sourceImage, sourcePalette, targetPalette);
 }
 
 /**

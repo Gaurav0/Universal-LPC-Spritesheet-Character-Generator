@@ -4,7 +4,28 @@
 import * as canvasRenderer from './canvas/renderer.js';
 
 // Import palette recoloring
-import { initPalettes } from './canvas/palette-recolor.js';
+import {
+	initPalettes,
+	getRecolorStats,
+	resetRecolorStats,
+	setPaletteRecolorMode,
+	getPaletteRecolorConfig
+} from './canvas/palette-recolor.js';
+
+// Expose palette recolor stats globally
+window.getPaletteRecolorStats = () => {
+	const stats = getRecolorStats();
+	const total = stats.webgl + stats.cpu + stats.fallback;
+	console.log('📊 Palette Recolor Statistics:');
+	console.log(`  WebGL (GPU): ${stats.webgl} (${total ? (stats.webgl/total*100).toFixed(1) : 0}%)`);
+	console.log(`  CPU: ${stats.cpu} (${total ? (stats.cpu/total*100).toFixed(1) : 0}%)`);
+	console.log(`  Fallback: ${stats.fallback} (${total ? (stats.fallback/total*100).toFixed(1) : 0}%)`);
+	console.log(`  Total: ${total}`);
+	return stats;
+};
+window.resetPaletteRecolorStats = resetRecolorStats;
+window.setPaletteRecolorMode = setPaletteRecolorMode;
+window.getPaletteRecolorConfig = getPaletteRecolorConfig;
 
 // Import state management
 import { initState, initHashChangeListener } from './state/state.js';

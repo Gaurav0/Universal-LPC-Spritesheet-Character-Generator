@@ -354,6 +354,9 @@ export function getImageToDraw(img, itemId, variant) {
       try {
         // For now, we only support body palette recoloring
         if (paletteConfig.type === 'body') {
+          if (window.DEBUG) {
+            console.log(`🎨 Recoloring ${itemId} from ${paletteConfig.sourceVariant} to ${variant}`);
+          }
           return recolorWithBodyPalette(img, variant);
         }
       } catch (err) {
