@@ -50,24 +50,46 @@ function packRgb(r, g, b) {
 
 /**
  * Build color mapping from source palette to target palette
+ * Returns array of {source, target} pairs for tolerance-based matching
  * @param {string[]} sourcePalette - Array of hex colors
  * @param {string[]} targetPalette - Array of hex colors
- * @returns {Map<number, {r: number, g: number, b: number}>}
+ * @returns {Array<{source: {r: number, g: number, b: number}, target: {r: number, g: number, b: number}}>}
  */
 function buildColorMap(sourcePalette, targetPalette) {
-	const colorMap = new Map();
+	const colorPairs = [];
 
 	for (let i = 0; i < sourcePalette.length; i++) {
 		const sourceRgb = hexToRgb(sourcePalette[i]);
 		const targetRgb = hexToRgb(targetPalette[i]);
 
 		if (sourceRgb && targetRgb) {
-			const key = packRgb(sourceRgb.r, sourceRgb.g, sourceRgb.b);
-			colorMap.set(key, targetRgb);
+			colorPairs.push({ source: sourceRgb, target: targetRgb });
 		}
 	}
 
-	return colorMap;
+	return colorPairs;
+}
+
+/**
+ * Find matching color in palette with tolerance (like WebGL shader)
+ * @param {number} r - Red value
+ * @param {number} g - Green value
+ * @param {number} b - Blue value
+ * @param {Array} colorPairs - Array of source/target color pairs
+ * @param {number} tolerance - Color matching tolerance (default 1, matching WebGL's ~0.004 * 255)
+ * @returns {{r: number, g: number, b: number}|null} Target color or null if no match
+ */
+function findMatchingColor(r, g, b, colorPairs, tolerance = 1) {
+	for (const pair of colorPairs) {
+		const dr = Math.abs(r - pair.source.r);
+		const dg = Math.abs(g - pair.source.g);
+		const db = Math.abs(b - pair.source.b);
+
+		if (dr <= tolerance && dg <= tolerance && db <= tolerance) {
+			return pair.target;
+		}
+	}
+	return null;
 }
 
 /**
@@ -92,9 +114,9 @@ function recolorImageCPU(sourceImage, sourcePalette, targetPalette) {
 	const pixels = imageData.data;
 
 	// Build color mapping
-	const colorMap = buildColorMap(sourcePalette, targetPalette);
+	const colorPairs = buildColorMap(sourcePalette, targetPalette);
 
-	// Recolor pixels
+	// Recolor pixels with tolerance matching (like WebGL)
 	for (let i = 0; i < pixels.length; i += 4) {
 		const r = pixels[i];
 		const g = pixels[i + 1];
@@ -104,9 +126,8 @@ function recolorImageCPU(sourceImage, sourcePalette, targetPalette) {
 		// Skip transparent pixels
 		if (a === 0) continue;
 
-		// Check if this color should be replaced
-		const key = packRgb(r, g, b);
-		const newColor = colorMap.get(key);
+		// Find matching color with tolerance
+		const newColor = findMatchingColor(r, g, b, colorPairs);
 
 		if (newColor) {
 			pixels[i] = newColor.r;
