@@ -1,6 +1,7 @@
 // Item with variants component
 import { state, getSelectionGroup, applyMatchBodyColor } from '../../state/state.js';
 import { variantToFilename, capitalize } from '../../utils/helpers.js';
+import { getBodyPalette, recolorBodyImage } from '../../canvas/palette-recolor.js';
 
 export const ItemWithVariants = {
 	view: function(vnode) {
@@ -44,14 +45,21 @@ export const ItemWithVariants = {
 					const hasCustomAnimation = layer1?.custom_animation;
 
 					let previewSrc = null;
+					let actualVariant = variant; // Track actual variant for file loading
+
+					// For body-body items, always load "light" variant (we'll recolor at render time)
+					if (itemId === 'body-body') {
+						actualVariant = 'light';
+					}
+
 					if (basePath) {
 						if (hasCustomAnimation) {
 							// Custom animations don't have animation subfolders
-							previewSrc = `spritesheets/${basePath}${variantToFilename(variant)}.png`;
+							previewSrc = `spritesheets/${basePath}${variantToFilename(actualVariant)}.png`;
 						} else {
 							// Standard animations have animation subfolders (walk, slash, etc.)
 							const defaultAnim = meta.animations.includes('walk') ? 'walk' : meta.animations[0];
-							previewSrc = `spritesheets/${basePath}${defaultAnim}/${variantToFilename(variant)}.png`;
+							previewSrc = `spritesheets/${basePath}${defaultAnim}/${variantToFilename(actualVariant)}.png`;
 						}
 					}
 
@@ -108,6 +116,10 @@ export const ItemWithVariants = {
 
 								// Collect all layers for this item
 								const layersToLoad = [];
+
+								// For body-body items, always load "light" variant (we'll recolor at render time)
+								const loadVariant = (itemId === 'body-body') ? 'light' : variant;
+
 								for (let layerNum = 1; layerNum < 10; layerNum++) {
 									const layer = meta.layers?.[`layer_${layerNum}`];
 									if (!layer) break;
@@ -137,10 +149,10 @@ export const ItemWithVariants = {
 									const hasCustomAnim = layer.custom_animation;
 									let imagePath;
 									if (hasCustomAnim) {
-										imagePath = `spritesheets/${layerPath}${variantToFilename(variant)}.png`;
+										imagePath = `spritesheets/${layerPath}${variantToFilename(loadVariant)}.png`;
 									} else {
 										const defaultAnim = meta.animations.includes('walk') ? 'walk' : meta.animations[0];
-										imagePath = `spritesheets/${layerPath}${defaultAnim}/${variantToFilename(variant)}.png`;
+										imagePath = `spritesheets/${layerPath}${defaultAnim}/${variantToFilename(loadVariant)}.png`;
 									}
 
 									layersToLoad.push({
@@ -164,11 +176,39 @@ export const ItemWithVariants = {
 									// Draw each layer in zPos order
 									for (const { img, layer } of loadedLayers) {
 										if (img) {
-											ctx.drawImage(
-												img,
-												previewCol * 64 - previewXOffset, previewRow * 64 - previewYOffset, 64, 64,
-												0, 0, 64, 64
-											);
+											// Check if this needs recoloring (body-body with non-light variant)
+											if (itemId === 'body-body' && variant !== 'light') {
+												const bodyPalette = getBodyPalette();
+												if (bodyPalette) {
+													try {
+														const recoloredCanvas = recolorBodyImage(img, variant);
+														ctx.drawImage(
+															recoloredCanvas,
+															previewCol * 64 - previewXOffset, previewRow * 64 - previewYOffset, 64, 64,
+															0, 0, 64, 64
+														);
+													} catch (err) {
+														console.warn(`Failed to recolor body variant ${variant} in preview:`, err);
+														ctx.drawImage(
+															img,
+															previewCol * 64 - previewXOffset, previewRow * 64 - previewYOffset, 64, 64,
+															0, 0, 64, 64
+														);
+													}
+												} else {
+													ctx.drawImage(
+														img,
+														previewCol * 64 - previewXOffset, previewRow * 64 - previewYOffset, 64, 64,
+														0, 0, 64, 64
+													);
+												}
+											} else {
+												ctx.drawImage(
+													img,
+													previewCol * 64 - previewXOffset, previewRow * 64 - previewYOffset, 64, 64,
+													0, 0, 64, 64
+												);
+											}
 										}
 									}
 								});

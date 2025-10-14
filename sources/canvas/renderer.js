@@ -2,6 +2,7 @@
 // Simplified renderer that draws character sprites based on selections
 
 import { state } from '../state/state.js';
+import { getBodyPalette, recolorBodyImage } from './palette-recolor.js';
 
 const FRAME_SIZE = 64;
 const SHEET_HEIGHT = 3456; // Full universal sheet height
@@ -312,6 +313,11 @@ function getSpritePath(itemId, variant, bodyType, animation, layerNum = 1, selec
     variant = parts[parts.length - 1];
   }
 
+  // For body-body items, always use "light" variant (we'll recolor at render time)
+  if (itemId === 'body-body') {
+    variant = 'light';
+  }
+
   // Build full path: spritesheets/ + basePath + animation/ + variant.png
   return `spritesheets/${basePath}${animation}/${variantToFilename(variant)}.png`;
 }
@@ -585,7 +591,8 @@ export async function renderCharacter(selections, bodyType, targetCanvas = null)
           layerNum,
           animation: animName,
           yPos,
-          isCustom: false
+          isCustom: false,
+          needsRecolor: itemId === 'body-body' && variant !== 'light' // Flag body variants for recoloring
         });
       }
     }
@@ -675,7 +682,26 @@ export async function renderCharacter(selections, bodyType, targetCanvas = null)
   // Draw all items in sorted z-order
   for (const { item, img, success } of loadedItems) {
     if (success && img) {
-      renderCtx.drawImage(img, 0, item.yPos);
+      // Check if this item needs palette recoloring
+      if (item.needsRecolor && item.variant) {
+        const bodyPalette = getBodyPalette();
+        if (bodyPalette) {
+          try {
+            const recoloredCanvas = recolorBodyImage(img, item.variant);
+            renderCtx.drawImage(recoloredCanvas, 0, item.yPos);
+          } catch (err) {
+            console.warn(`Failed to recolor body variant ${item.variant}:`, err);
+            // Fall back to drawing original image
+            renderCtx.drawImage(img, 0, item.yPos);
+          }
+        } else {
+          // Palette not loaded, draw original
+          renderCtx.drawImage(img, 0, item.yPos);
+        }
+      } else {
+        // No recoloring needed, draw original
+        renderCtx.drawImage(img, 0, item.yPos);
+      }
     }
   }
 
@@ -714,7 +740,9 @@ export async function renderCharacter(selections, bodyType, targetCanvas = null)
               zPos: item.zPos,
               spritePath: item.spritePath,
               itemId: item.itemId,
-              animation: item.animation
+              animation: item.animation,
+              needsRecolor: item.needsRecolor,
+              variant: item.variant
             });
           }
         }
@@ -729,12 +757,25 @@ export async function renderCharacter(selections, bodyType, targetCanvas = null)
       // Draw in zPos order
       for (const { item: areaItem, img, success } of loadedCustomImages) {
         if (success && img) {
+          // Check if this item needs recoloring
+          let imageToUse = img;
+          if (areaItem.needsRecolor && areaItem.variant) {
+            const bodyPalette = getBodyPalette();
+            if (bodyPalette) {
+              try {
+                imageToUse = recolorBodyImage(img, areaItem.variant);
+              } catch (err) {
+                console.warn(`Failed to recolor body variant ${areaItem.variant} in custom animation:`, err);
+              }
+            }
+          }
+
           if (areaItem.type === 'custom_sprite') {
             // Draw custom sprite directly (wheelchair background or foreground)
-            renderCtx.drawImage(img, 0, offsetY);
+            renderCtx.drawImage(imageToUse, 0, offsetY);
           } else if (areaItem.type === 'extracted_frames') {
             // Extract and draw frames from standard sprite
-            drawFramesToCustomAnimation(renderCtx, customAnimDef, offsetY, img);
+            drawFramesToCustomAnimation(renderCtx, customAnimDef, offsetY, imageToUse);
           }
         }
       }
@@ -915,7 +956,23 @@ export async function renderSingleItem(itemId, variant, bodyType, selections) {
     // Draw layers in order
     for (const { item: sprite, img, success } of loadedSprites) {
       if (success && img) {
-        itemCtx.drawImage(img, 0, 0);
+        // Check if this needs recoloring (body-body with non-light variant)
+        if (itemId === 'body-body' && variant !== 'light') {
+          const bodyPalette = getBodyPalette();
+          if (bodyPalette) {
+            try {
+              const recoloredCanvas = recolorBodyImage(img, variant);
+              itemCtx.drawImage(recoloredCanvas, 0, 0);
+            } catch (err) {
+              console.warn(`Failed to recolor body variant ${variant} in custom animation:`, err);
+              itemCtx.drawImage(img, 0, 0);
+            }
+          } else {
+            itemCtx.drawImage(img, 0, 0);
+          }
+        } else {
+          itemCtx.drawImage(img, 0, 0);
+        }
       }
     }
   } else {
@@ -980,7 +1037,23 @@ export async function renderSingleItem(itemId, variant, bodyType, selections) {
     // Draw images in order
     for (const { item: sprite, img, success } of loadedImages) {
       if (success && img) {
-        itemCtx.drawImage(img, 0, sprite.yPos);
+        // Check if this needs recoloring (body-body with non-light variant)
+        if (itemId === 'body-body' && variant !== 'light') {
+          const bodyPalette = getBodyPalette();
+          if (bodyPalette) {
+            try {
+              const recoloredCanvas = recolorBodyImage(img, variant);
+              itemCtx.drawImage(recoloredCanvas, 0, sprite.yPos);
+            } catch (err) {
+              console.warn(`Failed to recolor body variant ${variant}:`, err);
+              itemCtx.drawImage(img, 0, sprite.yPos);
+            }
+          } else {
+            itemCtx.drawImage(img, 0, sprite.yPos);
+          }
+        } else {
+          itemCtx.drawImage(img, 0, sprite.yPos);
+        }
       }
     }
   }
@@ -1073,8 +1146,25 @@ export async function renderSingleItemAnimation(itemId, variant, bodyType, anima
   // Draw images in order
   for (const { item: sprite, img, success } of loadedImages) {
     if (success && img) {
-      // Draw at y=0 since this canvas is only for this animation
-      animCtx.drawImage(img, 0, animYPos, SHEET_WIDTH, animHeight, 0, 0, SHEET_WIDTH, animHeight);
+      // Check if this needs recoloring (body-body with non-light variant)
+      if (itemId === 'body-body' && variant !== 'light') {
+        const bodyPalette = getBodyPalette();
+        if (bodyPalette) {
+          try {
+            const recoloredCanvas = recolorBodyImage(img, variant);
+            // Draw at y=0 since this canvas is only for this animation
+            animCtx.drawImage(recoloredCanvas, 0, animYPos, SHEET_WIDTH, animHeight, 0, 0, SHEET_WIDTH, animHeight);
+          } catch (err) {
+            console.warn(`Failed to recolor body variant ${variant}:`, err);
+            animCtx.drawImage(img, 0, animYPos, SHEET_WIDTH, animHeight, 0, 0, SHEET_WIDTH, animHeight);
+          }
+        } else {
+          animCtx.drawImage(img, 0, animYPos, SHEET_WIDTH, animHeight, 0, 0, SHEET_WIDTH, animHeight);
+        }
+      } else {
+        // Draw at y=0 since this canvas is only for this animation
+        animCtx.drawImage(img, 0, animYPos, SHEET_WIDTH, animHeight, 0, 0, SHEET_WIDTH, animHeight);
+      }
     }
   }
 

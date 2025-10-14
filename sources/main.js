@@ -3,6 +3,9 @@
 // Import canvas renderer
 import * as canvasRenderer from './canvas/renderer.js';
 
+// Import palette recoloring
+import { initBodyPalette } from './canvas/palette-recolor.js';
+
 // Import state management
 import { initState, initHashChangeListener } from './state/state.js';
 
@@ -52,9 +55,19 @@ window.setDefaultSelections = function() {
 };
 
 // Wait for DOM to be ready, then load Mithril app
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
 	// Initialize offscreen canvas
 	canvasRenderer.initCanvas();
+
+	// Initialize body palette for on-the-fly recoloring
+	try {
+		await initBodyPalette();
+		if (DEBUG) {
+			console.log('Body palette initialized successfully');
+		}
+	} catch (err) {
+		console.error('Failed to initialize body palette:', err);
+	}
 
 	// Set defaults after canvas is ready
 	if (window.setDefaultSelections) {
