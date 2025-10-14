@@ -2,7 +2,7 @@
 // Simplified renderer that draws character sprites based on selections
 
 import { state } from '../state/state.js';
-import { getBodyPalette, recolorBodyImage } from './palette-recolor.js';
+import { getPaletteForItem, getPaletteByType, recolorWithBodyPalette } from './palette-recolor.js';
 
 const FRAME_SIZE = 64;
 const SHEET_HEIGHT = 3456; // Full universal sheet height
@@ -313,9 +313,10 @@ function getSpritePath(itemId, variant, bodyType, animation, layerNum = 1, selec
     variant = parts[parts.length - 1];
   }
 
-  // For body-body items, always use "light" variant (we'll recolor at render time)
-  if (itemId === 'body-body') {
-    variant = 'light';
+  // Check if this item uses a palette - if so, always load the source variant
+  const paletteConfig = getPaletteForItem(itemId, meta);
+  if (paletteConfig) {
+    variant = paletteConfig.sourceVariant;
   }
 
   // Build full path: spritesheets/ + basePath + animation/ + variant.png
@@ -336,21 +337,27 @@ function getZPos(itemId, layerNum = 1) {
 }
 
 /**
- * Get image to draw - applies recoloring if needed for body-body items
+ * Get image to draw - applies recoloring if needed based on palette configuration
  * @param {HTMLImageElement|HTMLCanvasElement} img - Source image
  * @param {string} itemId - Item identifier
  * @param {string} variant - Variant name
  * @returns {HTMLImageElement|HTMLCanvasElement} Image or recolored canvas to draw
  */
 export function getImageToDraw(img, itemId, variant) {
-  // Only recolor body-body items with non-light variants
-  if (itemId === 'body-body' && variant !== 'light') {
-    const bodyPalette = getBodyPalette();
-    if (bodyPalette) {
+  const meta = window.itemMetadata?.[itemId];
+  const paletteConfig = getPaletteForItem(itemId, meta);
+
+  // Only recolor if item uses a palette and variant is not the source variant
+  if (paletteConfig && variant !== paletteConfig.sourceVariant) {
+    const palette = getPaletteByType(paletteConfig.type);
+    if (palette) {
       try {
-        return recolorBodyImage(img, variant);
+        // For now, we only support body palette recoloring
+        if (paletteConfig.type === 'body') {
+          return recolorWithBodyPalette(img, variant);
+        }
       } catch (err) {
-        console.warn(`Failed to recolor body variant ${variant}:`, err);
+        console.warn(`Failed to recolor ${paletteConfig.type} variant ${variant}:`, err);
       }
     }
   }

@@ -4,7 +4,7 @@
 import * as canvasRenderer from './canvas/renderer.js';
 
 // Import palette recoloring
-import { initBodyPalette } from './canvas/palette-recolor.js';
+import { initPalettes } from './canvas/palette-recolor.js';
 
 // Import state management
 import { initState, initHashChangeListener } from './state/state.js';
@@ -59,14 +59,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 	// Initialize offscreen canvas
 	canvasRenderer.initCanvas();
 
-	// Initialize body palette for on-the-fly recoloring
+	// Initialize palettes for on-the-fly recoloring
 	try {
-		await initBodyPalette();
+		await initPalettes();
 		if (DEBUG) {
-			console.log('Body palette initialized successfully');
+			console.log('Palettes initialized successfully');
 		}
 	} catch (err) {
-		console.error('Failed to initialize body palette:', err);
+		console.error('Failed to initialize palettes:', err);
 	}
 
 	// Set defaults after canvas is ready
