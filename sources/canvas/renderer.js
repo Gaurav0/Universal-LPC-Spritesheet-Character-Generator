@@ -53,10 +53,6 @@ let loadedImages = {};
 let imagesToLoad = 0;
 let imagesLoaded = 0;
 
-// Cache for recolored images to avoid redundant recoloring
-let recolorCache = new Map();
-let cacheStats = { hits: 0, misses: 0 };
-
 // Animation preview state
 let animationFrames = [1, 2, 3, 4, 5, 6, 7, 8]; // default for walk
 let animRowStart = 8; // default for walk (row number)
@@ -342,7 +338,6 @@ function getZPos(itemId, layerNum = 1) {
 
 /**
  * Get image to draw - applies recoloring if needed based on palette configuration
- * Uses caching to avoid recoloring the same image multiple times
  * @param {HTMLImageElement|HTMLCanvasElement} img - Source image
  * @param {string} itemId - Item identifier
  * @param {string} variant - Variant name
@@ -359,28 +354,7 @@ export function getImageToDraw(img, itemId, variant) {
       try {
         // For now, we only support body palette recoloring
         if (paletteConfig.type === 'body') {
-          // Create cache key from image source, itemId, and variant
-          // Include img.src to ensure different source images don't collide
-          const imgSrc = img.src || img.currentSrc || '';
-          const cacheKey = `${imgSrc}_${itemId}_${variant}`;
-
-          // Check cache first
-          if (recolorCache.has(cacheKey)) {
-            cacheStats.hits++;
-            if (window.DEBUG) {
-              console.log(`✅ Cache HIT for ${itemId} (${variant}) [src: ${imgSrc.substring(imgSrc.lastIndexOf('/') + 1)}]`);
-            }
-            return recolorCache.get(cacheKey);
-          }
-
-          // Not in cache - recolor and cache the result
-          cacheStats.misses++;
-          if (window.DEBUG) {
-            console.log(`🎨 Cache MISS - Recoloring ${itemId} from ${paletteConfig.sourceVariant} to ${variant} [src: ${imgSrc.substring(imgSrc.lastIndexOf('/') + 1)}]`);
-          }
-          const recolored = recolorWithBodyPalette(img, variant);
-          recolorCache.set(cacheKey, recolored);
-          return recolored;
+          return recolorWithBodyPalette(img, variant);
         }
       } catch (err) {
         console.warn(`Failed to recolor ${paletteConfig.type} variant ${variant}:`, err);
@@ -390,16 +364,6 @@ export function getImageToDraw(img, itemId, variant) {
   return img; // Return original if no recoloring needed or failed
 }
 
-/**
- * Clear the recolor cache (call when selections change to free memory)
- */
-export function clearRecolorCache() {
-  recolorCache.clear();
-  if (window.DEBUG && (cacheStats.hits > 0 || cacheStats.misses > 0)) {
-    console.log(`🗑️ Recolor cache cleared. Final stats: ${cacheStats.hits} hits, ${cacheStats.misses} misses (saved ${cacheStats.hits} recolor operations)`);
-  }
-  cacheStats = { hits: 0, misses: 0 };
-}
 
 /**
  * Load an image
@@ -819,10 +783,6 @@ export async function renderCharacter(selections, bodyType, targetCanvas = null)
     }
   }
 
-  // Clear recolor cache after render to prevent memory leaks
-  // Cache is only useful within a single render call
-  clearRecolorCache();
-
   // Mark end and measure
   if (profiler) {
     profiler.mark('renderCharacter:end');
@@ -1069,9 +1029,6 @@ export async function renderSingleItem(itemId, variant, bodyType, selections) {
     }
   }
 
-  // Clear recolor cache after render
-  clearRecolorCache();
-
   return itemCanvas;
 }
 
@@ -1165,9 +1122,6 @@ export async function renderSingleItemAnimation(itemId, variant, bodyType, anima
       animCtx.drawImage(imageToDraw, 0, animYPos, SHEET_WIDTH, animHeight, 0, 0, SHEET_WIDTH, animHeight);
     }
   }
-
-  // Clear recolor cache after render
-  clearRecolorCache();
 
   return animCanvas;
 }
