@@ -1,5 +1,5 @@
 body {
-  font-family: monospace
+  font-family: monospace;
 }
 
 .sticky {
@@ -19,7 +19,7 @@ body {
 }
 
 #columns-container {
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 100px);
   position: absolute;
   position-anchor: --header-left;
