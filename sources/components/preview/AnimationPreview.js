@@ -53,7 +53,7 @@ export const AnimationPreview = {
 			defaultOpen: true,
 			boxClass: "box"
 		}, [
-			m("div.columns", [
+			m("div.columns.is-multiline", [
 				// Animation column
 				m("div.column", [
 					m("div.field.is-horizontal.is-align-items-center", [

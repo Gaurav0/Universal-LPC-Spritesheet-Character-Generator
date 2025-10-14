@@ -5,51 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 	<title>Universal LPC Sprite Sheet Character Generator</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-	<link rel="stylesheet" type="text/css" href="sources/chargen.css">
-	<style>
-		#columns-container {
-			height: calc(100vh - 100px);
-		}
-		#chooser-column {
-			padding: 1rem;
-			overflow-y: auto;
-			scroll-behavior: smooth;
-		}
-		#preview-column {
-			padding: 1rem;
-			overflow-y: auto;
-		}
-		.tree-label {
-			cursor: pointer;
-			user-select: none;
-			padding: 0.25rem 0;
-			display: block;
-		}
-		.tree-label:hover {
-			background-color: #f5f5f5;
-		}
-		.tree-arrow {
-			display: inline-block;
-			width: 1rem;
-			text-align: center;
-			margin-right: 0.5rem;
-		}
-		.tree-arrow.collapsed::before {
-			content: "▶";
-		}
-		.tree-arrow.expanded::before {
-			content: "▼";
-		}
-		.box {
-			margin-bottom: 1rem;
-		}
-		.search-result {
-			background-color: #fffbea;
-		}
-		.search-result:hover {
-			background-color: #fff3cd;
-		}
-	</style>
+	<link rel="stylesheet" href="sources/main.css">
 	<script src="https://unpkg.com/mithril@2.2.2/mithril.min.js"></script>
 	<script type="text/javascript" src="sources/jszip.min.js"></script>
 	<script type="text/javascript" src="sources/custom-animations.js"></script>
@@ -72,7 +28,7 @@
 		</div>
 	</section>
 
-	<div id="columns-container" class="columns">
+	<div id="columns-container" class="columns is-desktop">
 		<div id="chooser-column" class="column">
 			<div id="mithril-filters"></div>
 		</div>
