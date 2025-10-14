@@ -2,6 +2,7 @@
 import { state } from '../../state/state.js';
 import { ANIMATIONS } from '../../state/constants.js';
 import { CollapsibleSection } from '../CollapsibleSection.js';
+import PinchToZoom from './PinchToZoom.js';
 
 // Canvas wrapper component with its own lifecycle
 const PreviewCanvas = {
@@ -9,6 +10,7 @@ const PreviewCanvas = {
 		const canvas = vnode.dom;
 		const selectedAnimation = vnode.attrs.selectedAnimation;
 		const onFrameCycleUpdate = vnode.attrs.onFrameCycleUpdate;
+		const zoomLevel = vnode.attrs.zoomLevel || 1;
 
 		if (!window.canvasRenderer) {
 			console.warn('Canvas renderer not available yet');
@@ -22,6 +24,22 @@ const PreviewCanvas = {
 		if (onFrameCycleUpdate) {
 			onFrameCycleUpdate(frames.join('-'));
 		}
+
+		vnode.state.zoomLevel = zoomLevel;
+		new PinchToZoom(canvas, (scale) => {
+			// Update zoom level on pinch
+			vnode.state.zoomLevel = scale;
+
+			if (window.canvasRenderer && window.canvasRenderer.setPreviewCanvasZoom) {
+				m.redraw();
+				window.canvasRenderer.setPreviewCanvasZoom(vnode.state.zoomLevel);
+			}
+
+			state.previewCanvasZoomLevel = vnode.state.zoomLevel;
+		}, vnode.state.zoomLevel);
+	},
+	onupdate: function(vnode) {
+		vnode.state.zoomLevel = state.previewCanvasZoomLevel || 1;
 	},
 	onremove: function() {
 		// Stop animation when canvas is removed from DOM
@@ -37,7 +55,7 @@ const PreviewCanvas = {
 export const AnimationPreview = {
 	oninit: function(vnode) {
 		vnode.state.selectedAnimation = 'walk';
-		vnode.state.zoomLevel = 1;
+		vnode.state.zoomLevel = state.previewCanvasZoomLevel || 1;
 		// Initialize frame cycle for default animation
 		if (window.canvasRenderer) {
 			const frames = window.canvasRenderer.setPreviewAnimation('walk');
@@ -45,6 +63,9 @@ export const AnimationPreview = {
 		} else {
 			vnode.state.frameCycle = '';
 		}
+	},
+	onupdate: function(vnode) {
+		vnode.state.zoomLevel = state.previewCanvasZoomLevel || 1;
 	},
 	view: function(vnode) {
 		return m(CollapsibleSection, {
@@ -115,6 +136,7 @@ export const AnimationPreview = {
 			m("div.mt-3", [
 				m(PreviewCanvas, {
 					selectedAnimation: vnode.state.selectedAnimation,
+					zoomLevel: vnode.state.zoomLevel,
 					onFrameCycleUpdate: (frameCycle) => {
 						vnode.state.frameCycle = frameCycle;
 					}
