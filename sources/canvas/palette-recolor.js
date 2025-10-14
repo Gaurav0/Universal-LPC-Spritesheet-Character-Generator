@@ -127,8 +127,8 @@ const PALETTE_CONFIG = [
 			['head', 'heads'],          // all heads
 			['head', 'ears'],           // ears
 			['head', 'nose'],           // noses
-			['head', 'wrinkles'],       // wrinkles
-			['face']                    // facial expressions (only 1 level path)
+			['head', 'head_wrinkles'],  // wrinkles
+			['head', 'face']            // facial expressions (happy, sad, angry, etc.)
 		]
 	}
 	// Future palette types will be added here:
