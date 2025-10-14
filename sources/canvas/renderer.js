@@ -359,14 +359,16 @@ export function getImageToDraw(img, itemId, variant) {
       try {
         // For now, we only support body palette recoloring
         if (paletteConfig.type === 'body') {
-          // Create cache key from image source and variant
-          const cacheKey = `${itemId}_${variant}`;
+          // Create cache key from image source, itemId, and variant
+          // Include img.src to ensure different source images don't collide
+          const imgSrc = img.src || img.currentSrc || '';
+          const cacheKey = `${imgSrc}_${itemId}_${variant}`;
 
           // Check cache first
           if (recolorCache.has(cacheKey)) {
             cacheStats.hits++;
             if (window.DEBUG) {
-              console.log(`✅ Cache HIT for ${itemId} (${variant}) [key: ${cacheKey.substring(0, 80)}...]`);
+              console.log(`✅ Cache HIT for ${itemId} (${variant}) [src: ${imgSrc.substring(imgSrc.lastIndexOf('/') + 1)}]`);
             }
             return recolorCache.get(cacheKey);
           }
@@ -374,7 +376,7 @@ export function getImageToDraw(img, itemId, variant) {
           // Not in cache - recolor and cache the result
           cacheStats.misses++;
           if (window.DEBUG) {
-            console.log(`🎨 Cache MISS - Recoloring ${itemId} from ${paletteConfig.sourceVariant} to ${variant} [key: ${cacheKey.substring(0, 80)}...]`);
+            console.log(`🎨 Cache MISS - Recoloring ${itemId} from ${paletteConfig.sourceVariant} to ${variant} [src: ${imgSrc.substring(imgSrc.lastIndexOf('/') + 1)}]`);
           }
           const recolored = recolorWithBodyPalette(img, variant);
           recolorCache.set(cacheKey, recolored);
