@@ -37,13 +37,12 @@ export const AnimationFilters = {
 
 		return m("div.box.mb-4.has-background-light", [
 			m("div.tree-label", {
-				style: "cursor: pointer; user-select: none;",
 				onclick: () => {
 					vnode.state.isExpanded = !vnode.state.isExpanded;
 				}
 			}, [
 				m("span.tree-arrow", { class: vnode.state.isExpanded ? 'expanded' : 'collapsed' }),
-				m("span.title.is-6", { style: "display: inline;" }, "Animation Filters"),
+				m("span.title.is-inline.is-6", "Animation Filters"),
 				m("span.is-size-7.has-text-grey.ml-2",
 					isFilterActive
 						? `(${enabledCount}/${totalCount})`
@@ -51,7 +50,7 @@ export const AnimationFilters = {
 				)
 			]),
 			vnode.state.isExpanded ? m("div.content.mt-3", [
-				m("ul", { style: "list-style: none; margin-left: 0; padding-left: 0;" },
+				m("ul.tree-list",
 					ANIMATIONS.map(anim =>
 						m("li", { key: anim.value, class: "mb-2" }, [
 							m("label.checkbox", [

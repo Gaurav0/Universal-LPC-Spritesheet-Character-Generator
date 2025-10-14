@@ -10,7 +10,7 @@ export const CategoryTree = {
 		}
 
 		return m("div.box.has-background-light", [
-			m("div.mb-3", { style: "display: flex; justify-content: space-between; align-items: center;" }, [
+			m("div.is-flex.is-justify-content-space-between.is-align-items-center.mb-3", [
 				m("h3.title.is-5.mb-0", "Available Items"),
 				m("div.buttons.mb-0", [
 					m("button.button.is-danger.is-small", {
@@ -36,7 +36,11 @@ export const CategoryTree = {
 								}
 							}
 						}
-					}, "Expand Selected")
+					}, "Expand Selected"),
+					m("button.button.is-small", {
+						class: state.compactDisplay ? "is-link" : "",
+						onclick: () => { state.compactDisplay = !state.compactDisplay; }
+					}, "CompactDisplay"),
 				])
 			]),
 			m("div.mb-3", [
@@ -44,6 +48,8 @@ export const CategoryTree = {
 					title: "When enabled, changing body color will automatically update all compatible items (heads, ears, noses, etc.) to the same color variant"
 				}, [
 					m("input[type=checkbox]", {
+						id: "match-body-color-checkbox",
+						"aria-describedby": "match-body-color-label",
 						checked: state.matchBodyColorEnabled,
 						onchange: (e) => {
 							state.matchBodyColorEnabled = e.target.checked;
@@ -56,7 +62,7 @@ export const CategoryTree = {
 					" Match body color"
 				]),
 				m("p.is-size-7.has-text-grey.mt-1.ml-4", {
-					style: "line-height: 1.3;"
+					id: "match-body-color-label"
 				}, "Auto-update heads, ears, and other items when body color changes")
 			]),
 			m("div", [

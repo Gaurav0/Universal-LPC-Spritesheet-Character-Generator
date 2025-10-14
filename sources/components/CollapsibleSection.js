@@ -22,16 +22,16 @@ export const CollapsibleSection = {
 			// Collapsible header
 			m("div", {
 				onclick: toggleCollapse,
-				style: "cursor: pointer; user-select: none; display: flex; align-items: center;"
+				class: "collapsible-header"
 			}, [
 				m("span", {
 					class: isCollapsed ? "tree-arrow collapsed" : "tree-arrow expanded"
 				}),
-				m("h3.title.is-5.mb-0", { style: "flex: 1;" }, title)
+				m("h3.title.is-5.mb-0", { class: "collapsible-title" }, title)
 			]),
 
 			// Collapsible content
-			!isCollapsed && m("div", { style: "margin-top: 1rem;" }, vnode.children)
+			!isCollapsed && m("div", { class: "collapsible-content" }, vnode.children)
 		]);
 	}
 };

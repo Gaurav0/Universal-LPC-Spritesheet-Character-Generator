@@ -8,6 +8,7 @@ export const ItemWithVariants = {
 	view: function(vnode) {
 		const { itemId, meta, isSearchMatch } = vnode.attrs;
 		const isExpanded = state.expandedNodes[itemId] || false;
+		const compactDisplay = state.compactDisplay;
 		const displayName = meta.name;
 
 		return m("div", {
@@ -22,14 +23,11 @@ export const ItemWithVariants = {
 				m("span", displayName)
 			]),
 			isExpanded ? m("div", [
-				m("div.title.is-6.mt-2.mb-2.ml-5.has-text-weight-semibold", displayName),
-				m("div.ml-5.is-flex.is-flex-wrap-wrap", {
-					style: "gap: 0.5rem;"
-				},
+				m("div.variants-container.ml-5.is-flex.is-flex-wrap-wrap",
 					meta.variants.map(variant => {
 					const selectionGroup = getSelectionGroup(itemId);
 					const isSelected = state.selections[selectionGroup]?.itemId === itemId &&
-					                    state.selections[selectionGroup]?.variant === variant;
+						state.selections[selectionGroup]?.variant === variant;
 					const variantDisplayName = variant.replaceAll("_", " ");
 
 					// Get preview metadata from item metadata
@@ -75,7 +73,6 @@ export const ItemWithVariants = {
 					return m("div.variant-item.is-flex.is-flex-direction-column.is-align-items-center.is-clickable", {
 						key: variant,
 						class: isSelected ? "has-background-link-light has-text-weight-bold has-text-link" : "",
-						style: "gap: 0.25rem; border-radius: 4px; transition: background-color 0.15s; min-width: 80px; max-width: 120px; padding: 0.5rem 0.5rem 0.25rem 0.5rem;",
 						onmouseover: (e) => {
 							const div = e.currentTarget;
 							if (!isSelected) div.classList.add('has-background-white-ter');
@@ -104,14 +101,13 @@ export const ItemWithVariants = {
 							}
 						}
 					}, [
-						m("span.has-text-centered.is-size-7", {
-							style: "word-break: break-word; line-height: 1.2;"
-						}, capitalize(variantDisplayName)),
-						m("canvas", {
-							width: 64,
-							height: 64,
-							class: "box p-0",
-							style: "width: 64px; height: 64px; image-rendering: pixelated; flex-shrink: 0; border: 2px solid" + (isSelected ? " hsl(217, 71%, 53%)" : " hsl(0, 0%, 86%)"),
+						m("span.variant-display-name.has-text-centered.is-size-7",
+							capitalize(variantDisplayName)),
+						m("canvas.variant-canvas.box.p-0", {
+							width: compactDisplay ? 32 : 64,
+							height: compactDisplay ? 32 : 64,
+							class: (compactDisplay ? " compact-display" : ""),
+							style: (isSelected ? " hsl(217, 71%, 53%)" : " hsl(0, 0%, 86%)"),
 							oncreate: (canvasVnode) => {
 								const canvas = canvasVnode.dom;
 								const ctx = canvas.getContext('2d');
@@ -176,18 +172,37 @@ export const ItemWithVariants = {
 										img.src = layer.path;
 									});
 								})).then(loadedLayers => {
+									canvas.loadedLayers = loadedLayers;
 									// Draw each layer in zPos order
 									for (const { img, layer } of loadedLayers) {
 										if (img) {
 											const imageToDraw = getImageToDraw(img, itemId, variant);
+											const size = compactDisplay ? 32 : 64;
 											ctx.drawImage(
 												imageToDraw,
 												previewCol * 64 - previewXOffset, previewRow * 64 - previewYOffset, 64, 64,
-												0, 0, 64, 64
+												0, 0, size, size
 											);
 										}
 									}
 								});
+							},
+							onupdate: (canvasVnode) => {
+								const canvas = canvasVnode.dom;
+								const ctx = canvas.getContext('2d');
+								if (canvas.loadedLayers) {
+									// Draw each layer in zPos order
+									for (const { img, layer } of canvas.loadedLayers) {
+										if (img) {
+											const size = compactDisplay ? 32 : 64;
+											ctx.drawImage(
+												img,
+												previewCol * 64 - previewXOffset, previewRow * 64 - previewYOffset, 64, 64,
+												0, 0, size, size
+											);
+										}
+									}
+								}
 							}
 						})
 					]);

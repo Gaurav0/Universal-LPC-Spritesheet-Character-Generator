@@ -46,7 +46,7 @@ export const LicenseFilters = {
 				m("span.is-size-7.has-text-grey.ml-2", `(${enabledCount}/${totalCount} enabled)`)
 			]),
 			vnode.state.isExpanded ? m("div.content.mt-3", [
-				m("ul", { style: "list-style: none; margin-left: 0; padding-left: 0;" },
+				m("ul.tree-list",
 					LICENSE_CONFIG.map(license =>
 						m("li", { key: license.key, class: "mb-2" }, [
 							m("label.checkbox", [
