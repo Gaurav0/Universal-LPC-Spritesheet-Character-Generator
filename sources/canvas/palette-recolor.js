@@ -340,23 +340,24 @@ export async function initBodyPalette() {
 }
 
 /**
- * Recolor an image using the body palette
- * Works for body, heads, ears, noses, and facial features
- * @param {HTMLImageElement|HTMLCanvasElement} sourceImage - Base source variant image (usually "light")
+ * Recolor an image using a specified palette type
+ * Works for any palette type (body, hair, cloth, eyes, etc.)
+ * @param {HTMLImageElement|HTMLCanvasElement} sourceImage - Base source variant image
  * @param {string} targetVariant - Target variant name (e.g., "amber", "bronze", "fur_copper")
+ * @param {string} paletteType - Palette type to use (e.g., "body", "hair", "cloth")
  * @returns {HTMLCanvasElement} Recolored canvas
  */
-export function recolorWithBodyPalette(sourceImage, targetVariant) {
-	const bodyPalette = loadedPalettes.body;
-	if (!bodyPalette) {
-		throw new Error('Body palette not initialized. Call initPalettes() first.');
+export function recolorWithPalette(sourceImage, targetVariant, paletteType) {
+	const palette = loadedPalettes[paletteType];
+	if (!palette) {
+		throw new Error(`${paletteType} palette not initialized. Call initPalettes() first.`);
 	}
 
-	const sourcePalette = bodyPalette.source || bodyPalette.light;
-	const targetPalette = bodyPalette[targetVariant];
+	const sourcePalette = palette.source || palette.light;
+	const targetPalette = palette[targetVariant];
 
 	if (!targetPalette) {
-		throw new Error(`Unknown body variant: ${targetVariant}`);
+		throw new Error(`Unknown ${paletteType} variant: ${targetVariant}`);
 	}
 
 	return recolorImage(sourceImage, sourcePalette, targetPalette);

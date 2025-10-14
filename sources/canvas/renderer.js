@@ -2,7 +2,7 @@
 // Simplified renderer that draws character sprites based on selections
 
 import { state } from '../state/state.js';
-import { getPaletteForItem, getPaletteByType, recolorWithBodyPalette } from './palette-recolor.js';
+import { getPaletteForItem, getPaletteByType, recolorWithPalette } from './palette-recolor.js';
 
 const FRAME_SIZE = 64;
 const SHEET_HEIGHT = 3456; // Full universal sheet height
@@ -352,10 +352,7 @@ export function getImageToDraw(img, itemId, variant) {
     const palette = getPaletteByType(paletteConfig.type);
     if (palette) {
       try {
-        // For now, we only support body palette recoloring
-        if (paletteConfig.type === 'body') {
-          return recolorWithBodyPalette(img, variant);
-        }
+        return recolorWithPalette(img, variant, paletteConfig.type);
       } catch (err) {
         console.warn(`Failed to recolor ${paletteConfig.type} variant ${variant}:`, err);
       }

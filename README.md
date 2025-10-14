@@ -173,6 +173,8 @@ The generator includes built-in performance profiling tools to help identify ren
 
 The generator uses GPU-accelerated WebGL shaders for real-time palette-based recoloring of body colors. This provides significant performance improvements over traditional CPU-based pixel manipulation.
 
+**For Contributors:** See [PALETTE_RECOLOR_GUIDE.md](PALETTE_RECOLOR_GUIDE.md) for a complete guide on integrating items with the palette system.
+
 **Console Commands:**
 
 Check current rendering mode:
@@ -205,10 +207,7 @@ setPaletteRecolorMode("webgl")
 - **CPU Mode** (fallback): Traditional per-pixel color replacement
   - Automatically used if WebGL is unavailable
   - Can be manually forced for compatibility testing
-- **Caching**: Recolored images are cached to avoid redundant operations
-  - Same source image + variant = reused result
-  - Cache cleared automatically on selection changes
-  - Reduces render time by ~1.5-2 seconds for multi-animation sprites
+- **Palette Flexibility**: Palettes support 1-32 colors per variant (not limited to 8)
 
 The system automatically detects WebGL availability and falls back to CPU mode if needed.
 
