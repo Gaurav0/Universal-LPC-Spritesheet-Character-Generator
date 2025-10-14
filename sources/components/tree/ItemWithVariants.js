@@ -36,40 +36,6 @@ export const ItemWithVariants = {
 					const previewXOffset = meta.preview_x_offset ?? 0;
 					const previewYOffset = meta.preview_y_offset ?? 0;
 
-					// Get sprite path for preview image from first layer
-					const layer1 = meta.layers?.layer_1;
-					const basePath = layer1?.[state.bodyType];
-
-					// Check if this item uses a custom animation
-					const hasCustomAnimation = layer1?.custom_animation;
-
-					let previewSrc = null;
-					let actualVariant = variant; // Track actual variant for file loading
-
-					// Check if item uses a palette - if so, load the source variant
-					const paletteConfig = getPaletteForItem(itemId, meta);
-					if (paletteConfig) {
-						actualVariant = paletteConfig.sourceVariant;
-					}
-
-					if (basePath) {
-						if (hasCustomAnimation) {
-							// Custom animations don't have animation subfolders
-							previewSrc = `spritesheets/${basePath}${variantToFilename(actualVariant)}.png`;
-						} else {
-							// Standard animations have animation subfolders (walk, slash, etc.)
-							const defaultAnim = meta.animations.includes('walk') ? 'walk' : meta.animations[0];
-							previewSrc = `spritesheets/${basePath}${defaultAnim}/${variantToFilename(actualVariant)}.png`;
-						}
-					}
-
-					// Calculate object position for cropping
-					// Negative position shifts the image left/up to show that part in the viewport
-					// Positive offset values shift the viewport right/down (to see more left/top of sprite)
-					// Negative offset values shift the viewport left/up (to see more right/bottom of sprite)
-					const objectPosX = -(previewCol * 64 - previewXOffset);
-					const objectPosY = -(previewRow * 64 - previewYOffset);
-
 					return m("div.variant-item.is-flex.is-flex-direction-column.is-align-items-center.is-clickable", {
 						key: variant,
 						class: isSelected ? "has-background-link-light has-text-weight-bold has-text-link" : "",
@@ -104,8 +70,8 @@ export const ItemWithVariants = {
 						m("span.variant-display-name.has-text-centered.is-size-7",
 							capitalize(variantDisplayName)),
 						m("canvas.variant-canvas.box.p-0", {
-							width: compactDisplay ? 32 : 64,
-							height: compactDisplay ? 32 : 64,
+							width: 64,
+							height: 64,
 							class: (compactDisplay ? " compact-display" : ""),
 							style: (isSelected ? " hsl(217, 71%, 53%)" : " hsl(0, 0%, 86%)"),
 							oncreate: (canvasVnode) => {
@@ -172,37 +138,18 @@ export const ItemWithVariants = {
 										img.src = layer.path;
 									});
 								})).then(loadedLayers => {
-									canvas.loadedLayers = loadedLayers;
-									// Draw each layer in zPos order
+									// Draw each layer in zPos order at full 64x64 resolution
 									for (const { img, layer } of loadedLayers) {
 										if (img) {
 											const imageToDraw = getImageToDraw(img, itemId, variant);
-											const size = compactDisplay ? 32 : 64;
 											ctx.drawImage(
 												imageToDraw,
 												previewCol * 64 - previewXOffset, previewRow * 64 - previewYOffset, 64, 64,
-												0, 0, size, size
+												0, 0, 64, 64
 											);
 										}
 									}
 								});
-							},
-							onupdate: (canvasVnode) => {
-								const canvas = canvasVnode.dom;
-								const ctx = canvas.getContext('2d');
-								if (canvas.loadedLayers) {
-									// Draw each layer in zPos order
-									for (const { img, layer } of canvas.loadedLayers) {
-										if (img) {
-											const size = compactDisplay ? 32 : 64;
-											ctx.drawImage(
-												img,
-												previewCol * 64 - previewXOffset, previewRow * 64 - previewYOffset, 64, 64,
-												0, 0, size, size
-											);
-										}
-									}
-								}
 							}
 						})
 					]);
