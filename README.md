@@ -205,6 +205,10 @@ setPaletteRecolorMode("webgl")
 - **CPU Mode** (fallback): Traditional per-pixel color replacement
   - Automatically used if WebGL is unavailable
   - Can be manually forced for compatibility testing
+- **Caching**: Recolored images are cached to avoid redundant operations
+  - Same source image + variant = reused result
+  - Cache cleared automatically on selection changes
+  - Reduces render time by ~1.5-2 seconds for multi-animation sprites
 
 The system automatically detects WebGL availability and falls back to CPU mode if needed.
 

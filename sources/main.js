@@ -70,6 +70,9 @@ window.DEBUG = DEBUG;
 // Expose canvas renderer to global scope for compatibility
 window.canvasRenderer = canvasRenderer;
 
+// Expose recolor cache utilities for debugging
+window.clearRecolorCache = canvasRenderer.clearRecolorCache;
+
 // Expose initialization function to be called after canvas is ready
 window.setDefaultSelections = function() {
 	initState();
