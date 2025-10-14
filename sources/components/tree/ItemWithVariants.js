@@ -1,7 +1,7 @@
 // Item with variants component
 import { state, getSelectionGroup, applyMatchBodyColor } from '../../state/state.js';
 import { variantToFilename, capitalize } from '../../utils/helpers.js';
-import { getBodyPalette, recolorBodyImage } from '../../canvas/palette-recolor.js';
+import { getImageToDraw } from '../../canvas/renderer.js';
 
 export const ItemWithVariants = {
 	view: function(vnode) {
@@ -176,39 +176,12 @@ export const ItemWithVariants = {
 									// Draw each layer in zPos order
 									for (const { img, layer } of loadedLayers) {
 										if (img) {
-											// Check if this needs recoloring (body-body with non-light variant)
-											if (itemId === 'body-body' && variant !== 'light') {
-												const bodyPalette = getBodyPalette();
-												if (bodyPalette) {
-													try {
-														const recoloredCanvas = recolorBodyImage(img, variant);
-														ctx.drawImage(
-															recoloredCanvas,
-															previewCol * 64 - previewXOffset, previewRow * 64 - previewYOffset, 64, 64,
-															0, 0, 64, 64
-														);
-													} catch (err) {
-														console.warn(`Failed to recolor body variant ${variant} in preview:`, err);
-														ctx.drawImage(
-															img,
-															previewCol * 64 - previewXOffset, previewRow * 64 - previewYOffset, 64, 64,
-															0, 0, 64, 64
-														);
-													}
-												} else {
-													ctx.drawImage(
-														img,
-														previewCol * 64 - previewXOffset, previewRow * 64 - previewYOffset, 64, 64,
-														0, 0, 64, 64
-													);
-												}
-											} else {
-												ctx.drawImage(
-													img,
-													previewCol * 64 - previewXOffset, previewRow * 64 - previewYOffset, 64, 64,
-													0, 0, 64, 64
-												);
-											}
+											const imageToDraw = getImageToDraw(img, itemId, variant);
+											ctx.drawImage(
+												imageToDraw,
+												previewCol * 64 - previewXOffset, previewRow * 64 - previewYOffset, 64, 64,
+												0, 0, 64, 64
+											);
 										}
 									}
 								});

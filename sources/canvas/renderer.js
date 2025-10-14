@@ -336,6 +336,28 @@ function getZPos(itemId, layerNum = 1) {
 }
 
 /**
+ * Get image to draw - applies recoloring if needed for body-body items
+ * @param {HTMLImageElement|HTMLCanvasElement} img - Source image
+ * @param {string} itemId - Item identifier
+ * @param {string} variant - Variant name
+ * @returns {HTMLImageElement|HTMLCanvasElement} Image or recolored canvas to draw
+ */
+export function getImageToDraw(img, itemId, variant) {
+  // Only recolor body-body items with non-light variants
+  if (itemId === 'body-body' && variant !== 'light') {
+    const bodyPalette = getBodyPalette();
+    if (bodyPalette) {
+      try {
+        return recolorBodyImage(img, variant);
+      } catch (err) {
+        console.warn(`Failed to recolor body variant ${variant}:`, err);
+      }
+    }
+  }
+  return img; // Return original if no recoloring needed or failed
+}
+
+/**
  * Load an image
  */
 function loadImage(src) {
@@ -682,26 +704,8 @@ export async function renderCharacter(selections, bodyType, targetCanvas = null)
   // Draw all items in sorted z-order
   for (const { item, img, success } of loadedItems) {
     if (success && img) {
-      // Check if this item needs palette recoloring
-      if (item.needsRecolor && item.variant) {
-        const bodyPalette = getBodyPalette();
-        if (bodyPalette) {
-          try {
-            const recoloredCanvas = recolorBodyImage(img, item.variant);
-            renderCtx.drawImage(recoloredCanvas, 0, item.yPos);
-          } catch (err) {
-            console.warn(`Failed to recolor body variant ${item.variant}:`, err);
-            // Fall back to drawing original image
-            renderCtx.drawImage(img, 0, item.yPos);
-          }
-        } else {
-          // Palette not loaded, draw original
-          renderCtx.drawImage(img, 0, item.yPos);
-        }
-      } else {
-        // No recoloring needed, draw original
-        renderCtx.drawImage(img, 0, item.yPos);
-      }
+      const imageToDraw = getImageToDraw(img, item.itemId, item.variant);
+      renderCtx.drawImage(imageToDraw, 0, item.yPos);
     }
   }
 
@@ -757,18 +761,7 @@ export async function renderCharacter(selections, bodyType, targetCanvas = null)
       // Draw in zPos order
       for (const { item: areaItem, img, success } of loadedCustomImages) {
         if (success && img) {
-          // Check if this item needs recoloring
-          let imageToUse = img;
-          if (areaItem.needsRecolor && areaItem.variant) {
-            const bodyPalette = getBodyPalette();
-            if (bodyPalette) {
-              try {
-                imageToUse = recolorBodyImage(img, areaItem.variant);
-              } catch (err) {
-                console.warn(`Failed to recolor body variant ${areaItem.variant} in custom animation:`, err);
-              }
-            }
-          }
+          const imageToUse = getImageToDraw(img, areaItem.itemId, areaItem.variant);
 
           if (areaItem.type === 'custom_sprite') {
             // Draw custom sprite directly (wheelchair background or foreground)
@@ -956,23 +949,8 @@ export async function renderSingleItem(itemId, variant, bodyType, selections) {
     // Draw layers in order
     for (const { item: sprite, img, success } of loadedSprites) {
       if (success && img) {
-        // Check if this needs recoloring (body-body with non-light variant)
-        if (itemId === 'body-body' && variant !== 'light') {
-          const bodyPalette = getBodyPalette();
-          if (bodyPalette) {
-            try {
-              const recoloredCanvas = recolorBodyImage(img, variant);
-              itemCtx.drawImage(recoloredCanvas, 0, 0);
-            } catch (err) {
-              console.warn(`Failed to recolor body variant ${variant} in custom animation:`, err);
-              itemCtx.drawImage(img, 0, 0);
-            }
-          } else {
-            itemCtx.drawImage(img, 0, 0);
-          }
-        } else {
-          itemCtx.drawImage(img, 0, 0);
-        }
+        const imageToDraw = getImageToDraw(img, itemId, variant);
+        itemCtx.drawImage(imageToDraw, 0, 0);
       }
     }
   } else {
@@ -1037,23 +1015,8 @@ export async function renderSingleItem(itemId, variant, bodyType, selections) {
     // Draw images in order
     for (const { item: sprite, img, success } of loadedImages) {
       if (success && img) {
-        // Check if this needs recoloring (body-body with non-light variant)
-        if (itemId === 'body-body' && variant !== 'light') {
-          const bodyPalette = getBodyPalette();
-          if (bodyPalette) {
-            try {
-              const recoloredCanvas = recolorBodyImage(img, variant);
-              itemCtx.drawImage(recoloredCanvas, 0, sprite.yPos);
-            } catch (err) {
-              console.warn(`Failed to recolor body variant ${variant}:`, err);
-              itemCtx.drawImage(img, 0, sprite.yPos);
-            }
-          } else {
-            itemCtx.drawImage(img, 0, sprite.yPos);
-          }
-        } else {
-          itemCtx.drawImage(img, 0, sprite.yPos);
-        }
+        const imageToDraw = getImageToDraw(img, itemId, variant);
+        itemCtx.drawImage(imageToDraw, 0, sprite.yPos);
       }
     }
   }
@@ -1146,25 +1109,9 @@ export async function renderSingleItemAnimation(itemId, variant, bodyType, anima
   // Draw images in order
   for (const { item: sprite, img, success } of loadedImages) {
     if (success && img) {
-      // Check if this needs recoloring (body-body with non-light variant)
-      if (itemId === 'body-body' && variant !== 'light') {
-        const bodyPalette = getBodyPalette();
-        if (bodyPalette) {
-          try {
-            const recoloredCanvas = recolorBodyImage(img, variant);
-            // Draw at y=0 since this canvas is only for this animation
-            animCtx.drawImage(recoloredCanvas, 0, animYPos, SHEET_WIDTH, animHeight, 0, 0, SHEET_WIDTH, animHeight);
-          } catch (err) {
-            console.warn(`Failed to recolor body variant ${variant}:`, err);
-            animCtx.drawImage(img, 0, animYPos, SHEET_WIDTH, animHeight, 0, 0, SHEET_WIDTH, animHeight);
-          }
-        } else {
-          animCtx.drawImage(img, 0, animYPos, SHEET_WIDTH, animHeight, 0, 0, SHEET_WIDTH, animHeight);
-        }
-      } else {
-        // Draw at y=0 since this canvas is only for this animation
-        animCtx.drawImage(img, 0, animYPos, SHEET_WIDTH, animHeight, 0, 0, SHEET_WIDTH, animHeight);
-      }
+      const imageToDraw = getImageToDraw(img, itemId, variant);
+      // Draw at y=0 since this canvas is only for this animation
+      animCtx.drawImage(imageToDraw, 0, animYPos, SHEET_WIDTH, animHeight, 0, 0, SHEET_WIDTH, animHeight);
     }
   }
 
