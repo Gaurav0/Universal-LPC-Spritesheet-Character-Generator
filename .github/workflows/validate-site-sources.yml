@@ -2,9 +2,13 @@ name: Validate site sources
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
+      - full_rewrite
   pull_request:
-    branches: [ master ]
+    branches:
+      - master
+      - full_rewrite
 
 jobs:
   validate_site_sources:

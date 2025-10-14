@@ -327,22 +327,6 @@ lineReader.on("close", function (line) {
   });
 
   // Generate item-metadata.js for runtime use
-  const metadataJS = `// THIS FILE IS AUTO-GENERATED. PLEASE DON'T ALTER IT MANUALLY
-// Generated from sheet_definitions/*.json by scripts/generate_sources.js
-// Contains metadata for all customization items to avoid DOM queries at runtime
-
-window.itemMetadata = ${JSON.stringify(itemMetadata, null, 2)};
-`;
-
-  fs.writeFile("item-metadata.js", metadataJS, function (err) {
-    if (err) {
-      return console.error(err);
-    } else {
-      console.log("Item Metadata JS Updated!");
-    }
-  });
-
-  // Generate item-metadata.js for runtime use
   // Build category tree from paths
   const categoryTree = { items: [], children: {} };
   const duplicatePaths = [];
