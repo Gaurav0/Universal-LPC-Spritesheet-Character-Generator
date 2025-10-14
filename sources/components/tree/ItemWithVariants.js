@@ -2,6 +2,7 @@
 import { state, getSelectionGroup, applyMatchBodyColor } from '../../state/state.js';
 import { variantToFilename, capitalize } from '../../utils/helpers.js';
 import { getImageToDraw } from '../../canvas/renderer.js';
+import { getPaletteForItem } from '../../canvas/palette-recolor.js';
 
 export const ItemWithVariants = {
 	view: function(vnode) {
@@ -47,9 +48,10 @@ export const ItemWithVariants = {
 					let previewSrc = null;
 					let actualVariant = variant; // Track actual variant for file loading
 
-					// For body-body items, always load "light" variant (we'll recolor at render time)
-					if (itemId === 'body-body') {
-						actualVariant = 'light';
+					// Check if item uses a palette - if so, load the source variant
+					const paletteConfig = getPaletteForItem(itemId, meta);
+					if (paletteConfig) {
+						actualVariant = paletteConfig.sourceVariant;
 					}
 
 					if (basePath) {
@@ -117,8 +119,9 @@ export const ItemWithVariants = {
 								// Collect all layers for this item
 								const layersToLoad = [];
 
-								// For body-body items, always load "light" variant (we'll recolor at render time)
-								const loadVariant = (itemId === 'body-body') ? 'light' : variant;
+								// Check if item uses a palette - if so, load the source variant
+								const paletteConfig = getPaletteForItem(itemId, meta);
+								const loadVariant = paletteConfig ? paletteConfig.sourceVariant : variant;
 
 								for (let layerNum = 1; layerNum < 10; layerNum++) {
 									const layer = meta.layers?.[`layer_${layerNum}`];
