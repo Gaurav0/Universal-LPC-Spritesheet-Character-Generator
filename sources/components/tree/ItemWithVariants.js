@@ -21,9 +21,7 @@ export const ItemWithVariants = {
 			]),
 			isExpanded ? m("div", [
 				m("div.title.is-6.mt-2.mb-2.ml-5.has-text-weight-semibold", displayName),
-				m("div.ml-5.is-flex.is-flex-wrap-wrap", {
-					style: "gap: 0.5rem;"
-				},
+				m("div.variants-container.ml-5.is-flex.is-flex-wrap-wrap",
 					meta.variants.map(variant => {
 					const selectionGroup = getSelectionGroup(itemId);
 					const isSelected = state.selections[selectionGroup]?.itemId === itemId &&
@@ -65,7 +63,6 @@ export const ItemWithVariants = {
 					return m("div.variant-item.is-flex.is-flex-direction-column.is-align-items-center.is-clickable", {
 						key: variant,
 						class: isSelected ? "has-background-link-light has-text-weight-bold has-text-link" : "",
-						style: "gap: 0.25rem; border-radius: 4px; transition: background-color 0.15s; min-width: 80px; max-width: 120px; padding: 0.5rem 0.5rem 0.25rem 0.5rem;",
 						onmouseover: (e) => {
 							const div = e.currentTarget;
 							if (!isSelected) div.classList.add('has-background-white-ter');
@@ -94,14 +91,13 @@ export const ItemWithVariants = {
 							}
 						}
 					}, [
-						m("span.has-text-centered.is-size-7", {
-							style: "word-break: break-word; line-height: 1.2;"
-						}, capitalize(variantDisplayName)),
-						m("canvas", {
+						m("span.variant-display-name.has-text-centered.is-size-7",
+							capitalize(variantDisplayName)),
+						m("canvas.variant-canvas", {
 							width: 64,
 							height: 64,
 							class: "box p-0",
-							style: "width: 64px; height: 64px; image-rendering: pixelated; flex-shrink: 0; border: 2px solid" + (isSelected ? " hsl(217, 71%, 53%)" : " hsl(0, 0%, 86%)"),
+							style: (isSelected ? " hsl(217, 71%, 53%)" : " hsl(0, 0%, 86%)"),
 							oncreate: (canvasVnode) => {
 								const canvas = canvasVnode.dom;
 								const ctx = canvas.getContext('2d');

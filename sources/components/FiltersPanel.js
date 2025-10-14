@@ -17,10 +17,10 @@ export const FiltersPanel = {
 			// Responsive wrapper for License and Animation filters
 			m("div.columns.is-multiline.m-0", [
 				m("div.column.is-half-desktop.is-12-mobile", {
-					style: "padding: 0; padding-right: 0.5rem;"
+					class: "filters-column"
 				}, m(LicenseFilters)),
 				m("div.column.is-half-desktop.is-12-mobile", {
-					style: "padding: 0; padding-left: 0.5rem;"
+					class: "filters-column"
 				}, m(AnimationFilters))
 			]),
 			m("div.mb-4", m(CurrentSelections)),
