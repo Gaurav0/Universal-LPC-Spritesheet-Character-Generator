@@ -8,8 +8,7 @@ This guide explains how to integrate items with the GPU-accelerated palette reco
 - [Benefits](#benefits)
 - [Understanding the System](#understanding-the-system)
 - [Creating a Palette File](#creating-a-palette-file)
-- [Configuring PALETTE_CONFIG](#configuring-palette_config)
-- [Updating Sheet Definitions](#updating-sheet-definitions)
+- [Adding Palette Support to Items](#adding-palette-support-to-items)
 - [Testing Your Integration](#testing-your-integration)
 - [Complete Example: Enabling Hair Palette](#complete-example-enabling-hair-palette)
 - [Troubleshooting](#troubleshooting)
@@ -22,8 +21,8 @@ The palette recolor system allows sprite color variants to be generated on-the-f
 2. **A palette JSON file** defining color mappings
 
 The system automatically:
-- Detects if an item should use palette-based recoloring based on its path
-- Loads the appropriate palette file at startup
+- Detects if an item should use palette-based recoloring from its sheet definition
+- Lazy-loads the appropriate palette file on first use
 - Recolors sprites in real-time using GPU acceleration (with CPU fallback)
 
 ## Benefits
@@ -43,8 +42,8 @@ The system automatically:
 The palette system consists of three main components:
 
 1. **`sources/canvas/palette-recolor.js`** - Core palette management
-   - Loads palette JSON files
-   - Maps items to palettes based on category paths
+   - Lazy-loads palette JSON files on first use
+   - Maps items to palettes based on their `recolors` field in metadata
    - Coordinates between WebGL and CPU implementations
 
 2. **`sources/canvas/webgl-palette-recolor.js`** - GPU implementation
@@ -54,6 +53,7 @@ The palette system consists of three main components:
 
 3. **`sources/canvas/renderer.js`** - Integration point
    - Calls palette system during sprite rendering
+   - Handles async palette loading
 
 ### How Color Matching Works
 
@@ -72,16 +72,20 @@ tolerance = 1  // ±1 per channel (R, G, B)
 
 This tolerance allows for slight variations in colors due to compression or anti-aliasing.
 
-### Path-Based Item Matching
+### Metadata-Based Item Matching
 
-Items are matched to palettes using their **path** from sheet definitions:
+Items declare which palette they use via a `recolors` field in their sheet definition:
 
 ```javascript
-// Example: body.json has path: ["body", "body"]
-// This matches the category pattern ['body', 'body'] in PALETTE_CONFIG
+// Example: body.json declares it uses the body palette
+{
+  "recolors": {
+    "base": "light",      // Source variant name in the palette
+    "palette": "body"     // Palette name
+  }
+}
 
-// Example: hair_afro.json has path: ["head", "hair", "hair extensions", "afro", "hair_afro"]
-// This would match category pattern ['head', 'hair'] if configured
+// The system loads tools/palettes/ulpc-body-palettes.json when needed
 ```
 
 ## Creating a Palette File
@@ -168,128 +172,83 @@ Before using a palette file, verify:
 - [ ] Colors represent a logical progression (shadow → highlight)
 - [ ] File is valid JSON (use a JSON validator)
 
-## Configuring PALETTE_CONFIG
+## Adding Palette Support to Items
 
-To enable a palette for items, add an entry to `PALETTE_CONFIG` in `sources/canvas/palette-recolor.js`.
+To enable palette recoloring for an item, add a `recolors` field to its sheet definition JSON file.
 
-### Location
+### Adding the Recolors Field
 
-Find the `PALETTE_CONFIG` array around line 237:
+Edit the item's JSON file in `sheet_definitions/` and add the `recolors` field:
 
-```javascript
-const PALETTE_CONFIG = [
-  {
-    type: 'body',
-    file: 'tools/palettes/ulpc-body-palettes.json',
-    sourceVariant: 'light',
-    categories: [
-      ['body', 'body'],
-      ['head', 'heads'],
-      ['head', 'ears'],
-      ['head', 'nose'],
-      ['head', 'head_wrinkles'],
-      ['head', 'face']
-    ]
-  }
-  // Add new palette types here
-];
-```
-
-### Configuration Fields
-
-| Field | Type | Description |
-|-------|------|-------------|
-| `type` | string | Unique identifier for this palette (e.g., 'hair', 'cloth') |
-| `file` | string | Path to palette JSON file |
-| `sourceVariant` | string | Name of the base variant in palette (usually 'light' or 'source') |
-| `categories` | array | Array of path patterns that should use this palette |
-
-### Category Path Patterns
-
-Category patterns match the beginning of an item's path array:
-
-```javascript
-// Pattern: ['head', 'hair']
-// Matches:
-//   ['head', 'hair', 'long']  ✓
-//   ['head', 'hair', 'short'] ✓
-//   ['head', 'ears']          ✗
-
-// Pattern: ['body', 'body']
-// Matches:
-//   ['body', 'body']          ✓
-//   ['body', 'armor']         ✗
-```
-
-### Adding a New Palette Type
-
-Example: Enabling the hair palette for all hair items:
-
-```javascript
-const PALETTE_CONFIG = [
-  {
-    type: 'body',
-    file: 'tools/palettes/ulpc-body-palettes.json',
-    sourceVariant: 'light',
-    categories: [
-      ['body', 'body'],
-      ['head', 'heads'],
-      ['head', 'ears'],
-      ['head', 'nose'],
-      ['head', 'head_wrinkles'],
-      ['head', 'face']
-    ]
-  },
-  // Add hair palette
-  {
-    type: 'hair',
-    file: 'tools/palettes/ulpc-hair-palettes.json',
-    sourceVariant: 'orange',  // Base color in hair palette
-    categories: [
-      ['head', 'hair']  // Matches all items with path starting with ['head', 'hair']
-    ]
-  }
-];
-```
-
-## Updating Sheet Definitions
-
-When using palette-based recoloring, sheet definition files typically **don't need changes**. The system automatically detects which items should use palettes based on their path.
-
-### What Stays the Same
-
-Sheet definitions still need:
-- `variants` array listing all available color variants
-- `path` array for category matching
-- `credits` section
-- Animation and layer configuration
-
-### Example: Hair Item Using Palette
-
-**Before** (explicit variants in file system):
 ```json
 {
-  "name": "Afro",
-  "variants": [
-    "blonde", "ash", "sandy", "platinum",
-    "strawberry", "redhead", "ginger", "carrot",
-    // ... 27 total variants
-  ],
-  "path": ["head", "hair", "hair extensions", "afro", "hair_afro"]
+  "name": "Body color",
+  "variants": ["light", "amber", "olive", ...],
+  "path": ["body", "body"],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }
 ```
 
-The generator would look for files like:
-- `spritesheets/hair/afro/adult/blonde.png`
-- `spritesheets/hair/afro/adult/ash.png`
-- etc.
+### Recolors Field Reference
 
-**After** (with palette system):
+| Field | Type | Description |
+|-------|------|-------------|
+| `base` | string | Source variant name to load (e.g., "light", "orange") |
+| `palette` | string | Palette name - must match a key in `PALETTE_FILES` |
 
-Same sheet definition, but you only need:
-- `spritesheets/hair/afro/adult/orange.png` (source variant)
+### Available Palette Names
 
-The palette system automatically generates the other 26 variants at runtime.
+The system has these palette files available (mapped in `sources/canvas/palette-recolor.js`):
+
+- `body` - Body skin tones
+- `hair` - Hair colors
+- `cloth` - Cloth/fabric colors
+- `cloth-metal` - Cloth with metallic accents
+- `metal` - Metallic colors
+- `eye` - Eye colors
+- `fur` - Fur colors
+
+### Lazy Loading
+
+Palettes are loaded automatically on first use - **no configuration needed**! When an item with a `recolors` field is first rendered, the system:
+
+1. Checks if the palette is already loaded
+2. If not, fetches the palette JSON file
+3. Caches it for future use
+4. Applies the recoloring
+
+### Complete Example
+
+Here's a complete sheet definition using palette recoloring:
+
+```json
+{
+  "name": "Body color",
+  "layer_1": {
+    "zPos": 10,
+    "male": "body/bodies/male/",
+    "female": "body/bodies/female/"
+  },
+  "variants": [
+    "light", "amber", "olive", "taupe",
+    "bronze", "brown", "black"
+  ],
+  "animations": ["walk", "idle", "jump", "run"],
+  "path": ["body", "body"],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
+}
+```
+
+With this configuration:
+- Only `spritesheets/body/bodies/male/walk/light.png` needs to exist (no other color variants per animation)
+- The palette system generates "amber", "olive", etc. at runtime
+- All 7 color variants work without needing 7 separate PNG files
 
 ### Verifying Variant Compatibility
 
@@ -344,14 +303,15 @@ resetPaletteRecolorStats()
 
 1. **Load the generator** in your browser
 2. **Open browser console** (F12)
-3. **Check palette loading**:
+3. **Select an item** that uses palette recoloring (e.g., body color)
+4. **Change to a variant that needs recoloring** (not the base variant)
+5. **Check palette loading** in console:
    ```
    Loaded body palette with 22 variants
-   Loaded hair palette with 27 variants  // If you added hair
    ```
-4. **Select an item** that should use palette recoloring
-5. **Change color variants** and verify smooth rendering
-6. **Check statistics**: Run `getPaletteRecolorStats()` to verify GPU usage
+   (Only appears when the palette is first loaded - lazy loading!)
+6. **Verify smooth rendering** and correct colors
+7. **Check statistics**: Run `getPaletteRecolorStats()` to verify GPU usage
 
 ### Performance Testing
 
@@ -407,54 +367,54 @@ Expected output:
 }
 ```
 
-### Step 2: Add Hair Palette to PALETTE_CONFIG
+### Step 2: Add Palette Mapping (if needed)
 
-Edit `sources/canvas/palette-recolor.js` around line 237:
+Check if "hair" is already in `PALETTE_FILES` in `sources/canvas/palette-recolor.js`:
 
 ```javascript
-const PALETTE_CONFIG = [
-  {
-    type: 'body',
-    file: 'tools/palettes/ulpc-body-palettes.json',
-    sourceVariant: 'light',
-    categories: [
-      ['body', 'body'],
-      ['head', 'heads'],
-      ['head', 'ears'],
-      ['head', 'nose'],
-      ['head', 'head_wrinkles'],
-      ['head', 'face']
-    ]
-  },
-  {
-    type: 'hair',
-    file: 'tools/palettes/ulpc-hair-palettes.json',
-    sourceVariant: 'orange',
-    categories: [
-      ['head', 'hair']
-    ]
-  }
-];
+const PALETTE_FILES = {
+  'body': 'tools/palettes/ulpc-body-palettes.json',
+  'hair': 'tools/palettes/ulpc-hair-palettes.json',  // ✓ Already there!
+  // ...
+};
 ```
 
-### Step 3: Identify Matching Hair Items
+If not present, add it. This is a one-time setup per palette type.
 
-Hair items have paths starting with `['head', 'hair']`:
+### Step 3: Update Hair Item Sheet Definitions
+
+Find all hair items and add the `recolors` field:
 
 ```bash
 # Find all hair items
 grep -l '"path".*"head".*"hair"' sheet_definitions/*.json
-
-# Example output:
-# sheet_definitions/hair_afro.json
-# sheet_definitions/hair_long.json
-# sheet_definitions/hair_short.json
-# ... etc
 ```
 
-These items will now automatically use the hair palette.
+Edit each hair item JSON (e.g., `sheet_definitions/hair_afro.json`):
 
-### Step 4: Ensure Source Variant Exists
+```json
+{
+  "name": "Afro",
+  "variants": ["blonde", "ash", "orange", ...],
+  "path": ["head", "hair", "hair extensions", "afro", "hair_afro"],
+  "recolors": {
+    "base": "orange",
+    "palette": "hair"
+  }
+}
+```
+
+### Step 4: Rebuild Metadata
+
+Run the build script to update item metadata:
+
+```bash
+node scripts/generate_sources.js
+```
+
+This regenerates `item-metadata.js` with the new `recolors` field.
+
+### Step 5: Ensure Source Variant Exists
 
 For each hair item, ensure the source variant image exists:
 
@@ -463,16 +423,15 @@ For each hair item, ensure the source variant image exists:
 ls spritesheets/hair/afro/adult/orange.png
 ```
 
-If missing, you'll need to create or convert the source variant file.
-
-### Step 5: Test in Browser
+### Step 6: Test in Browser
 
 1. Load the generator
 2. Open console (F12)
-3. Look for: `Loaded hair palette with 27 variants`
-4. Select a hair style
-5. Change hair colors
-6. Run `getPaletteRecolorStats()` to verify GPU usage
+3. Select a hair style
+4. Change to a non-orange color variant
+5. Look for: `Loaded hair palette with 27 variants` (lazy-loaded!)
+6. Verify correct colors render
+7. Run `getPaletteRecolorStats()` to verify GPU usage
 
 ### Before/After Comparison
 
@@ -480,24 +439,28 @@ If missing, you'll need to create or convert the source variant file.
 - 27 PNG files per hair style
 - Manual palette generation using lpctools
 - Larger repository size
+- Hard to add new colors
 
 **After:**
 - 1 PNG file per hair style (source variant)
 - Real-time GPU recoloring
 - ~60% faster rendering
 - Smaller repository
+- New colors = edit JSON only
 
 ## Troubleshooting
 
 ### Palette Not Loading
 
-**Symptom**: Console shows no "Loaded X palette" message
+**Symptom**: Console shows no "Loaded X palette" message when selecting a variant
 
 **Solutions**:
-- Check file path in PALETTE_CONFIG is correct
+- **Note**: Palettes load lazily - you'll only see the message when using a non-base variant
+- Check that `PALETTE_FILES` in `palette-recolor.js` has the palette name mapped
 - Verify JSON file is valid (use JSON validator)
 - Check browser console for fetch errors
 - Ensure palette file is committed to repository
+- Verify the item has a `recolors` field in its sheet definition
 
 ### Colors Look Wrong
 
