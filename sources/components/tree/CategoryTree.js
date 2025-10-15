@@ -6,7 +6,7 @@ import { TreeNode } from './TreeNode.js';
 export const CategoryTree = {
 	view: function() {
 		if (!window.categoryTree) {
-			return m("div", "Loading...");
+			return m("div.loading");
 		}
 
 		return m("div.box.has-background-light", [

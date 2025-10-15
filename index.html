@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 	<title>Universal LPC Sprite Sheet Character Generator</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<link rel="stylesheet" href="sources/loading.css">
 	<link rel="stylesheet" href="sources/main.css">
 	<script src="https://unpkg.com/mithril@2.2.2/mithril.min.js"></script>
 	<script type="text/javascript" src="sources/jszip.min.js"></script>
@@ -32,12 +33,12 @@
 
 	<div id="columns-container" class="columns is-desktop">
 		<div id="chooser-column" class="column">
-			<div id="mithril-filters"></div>
+			<div id="mithril-filters" class="loading"></div>
 		</div>
 
 		<div id="preview-column" class="column">
-			<div id="mithril-preview"></div>
-			<div id="mithril-spritesheet-preview"></div>
+			<div id="mithril-preview" class="loading"></div>
+			<div id="mithril-spritesheet-preview" class="loading"></div>
 		</div>
 	</div>
 
