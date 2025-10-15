@@ -53,6 +53,8 @@ window.setDefaultSelections = function() {
 
 // Wait for DOM to be ready, then load Mithril app
 document.addEventListener('DOMContentLoaded', () => {
+	clearLoadingIndicators();
+
 	// Initialize offscreen canvas
 	canvasRenderer.initCanvas();
 
@@ -69,3 +71,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	m.mount(document.getElementById("mithril-preview"), AnimationPreview);
 	m.mount(document.getElementById("mithril-spritesheet-preview"), FullSpritesheetPreview);
 });
+
+function clearLoadingIndicators() {
+	const loadingElements = document.querySelectorAll('.loading');
+	for (const element of loadingElements) {
+		element.classList.remove('loading');
+	}
+}
