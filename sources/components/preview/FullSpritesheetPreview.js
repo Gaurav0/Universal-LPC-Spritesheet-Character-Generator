@@ -1,6 +1,7 @@
 // Full Spritesheet Preview component
 import { state } from '../../state/state.js';
 import { CollapsibleSection } from '../CollapsibleSection.js';
+import PinchToZoom from './PinchToZoom.js';
 
 // Canvas wrapper component with its own lifecycle
 const SpritesheetCanvas = {
@@ -16,11 +17,23 @@ const SpritesheetCanvas = {
 
 		// Copy from offscreen canvas to preview canvas
 		window.canvasRenderer.copyToPreviewCanvas(canvas, showTransparencyGrid, zoomLevel);
+
+		vnode.state.zoomLevel = zoomLevel;
+		new PinchToZoom(canvas, (scale) => {
+			// Update zoom level on pinch
+			vnode.state.zoomLevel = scale;
+			// Trigger re-render to update preview canvas zoom
+			m.redraw();
+			// Apply zoom to canvas
+			window.canvasRenderer.copyToPreviewCanvas(canvas, showTransparencyGrid, vnode.state.zoomLevel);
+
+			state.fullSpritesheetCanvasZoomLevel = vnode.state.zoomLevel;
+		}, vnode.state.zoomLevel);
 	},
 	onupdate: function(vnode) {
 		const canvas = vnode.dom;
 		const showTransparencyGrid = vnode.attrs.showTransparencyGrid;
-		const zoomLevel = vnode.attrs.zoomLevel;
+		const zoomLevel = vnode.state.zoomLevel;
 
 		if (!window.canvasRenderer) {
 			return;
@@ -85,11 +98,12 @@ const ScrollableContainer = {
 export const FullSpritesheetPreview = {
 	oninit: function(vnode) {
 		// Initialize zoom level to 1 (100%)
-		vnode.state.zoomLevel = 1;
+		vnode.state.zoomLevel = state.fullSpritesheetCanvasZoomLevel || 1;
 	},
 	onupdate: function(vnode) {
 		// When state changes (selections, bodyType, etc.), preview canvas needs to update
 		// The SpritesheetCanvas component will handle the actual copy in its onupdate
+		vnode.state.zoomLevel = state.fullSpritesheetCanvasZoomLevel || 1;
 	},
 	view: function(vnode) {
 		return m(CollapsibleSection, {
