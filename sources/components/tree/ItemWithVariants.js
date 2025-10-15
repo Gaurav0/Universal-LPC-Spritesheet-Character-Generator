@@ -10,6 +10,7 @@ export const ItemWithVariants = {
 		const isExpanded = state.expandedNodes[itemId] || false;
 		const compactDisplay = state.compactDisplay;
 		const displayName = meta.name;
+		const rootViewNode = vnode;
 
 		return m("div", {
 			class: isSearchMatch ? "search-result" : ""
@@ -17,12 +18,25 @@ export const ItemWithVariants = {
 			m("div.tree-label", {
 				onclick: () => {
 					state.expandedNodes[itemId] = !isExpanded;
+				},
+				oninit: () => {
+					rootViewNode.state.isLoading = meta.variants.length > 0;
+					rootViewNode.state.imagesToLoad = meta.variants.length;
+					rootViewNode.state.imagesLoaded = 0;
+				},
+				onupdate: () => {
+					if (isExpanded && rootViewNode.state.isLoading) {
+						if (rootViewNode.state.imagesLoaded >= rootViewNode.state.imagesToLoad) {
+							rootViewNode.state.isLoading = false;
+						}
+					}
 				}
 			}, [
 				m("span.tree-arrow", { class: isExpanded ? 'expanded' : 'collapsed' }),
 				m("span", displayName)
 			]),
 			isExpanded ? m("div", [
+				m("div", { class: rootViewNode.state.isLoading ? "loading" : "" }),
 				m("div.variants-container.ml-5.is-flex.is-flex-wrap-wrap",
 					meta.variants.map(variant => {
 					const selectionGroup = getSelectionGroup(itemId);
@@ -149,12 +163,13 @@ export const ItemWithVariants = {
 											);
 										}
 									}
+									rootViewNode.state.imagesLoaded++;
+									m.redraw();
 								});
 							}
 						})
 					]);
-				})
-				)
+				}))
 			]) : null
 		]);
 	}

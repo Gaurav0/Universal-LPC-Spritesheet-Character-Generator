@@ -153,6 +153,7 @@ export const FullSpritesheetPreview = {
 					])
 				])
 			]),
+			m("div", { class: console.log(state.isRenderingCharacter) || state.isRenderingCharacter ? "loading" : "" }),
 			// Render preview canvas with drag-to-scroll
 			m(ScrollableContainer, [
 				m(SpritesheetCanvas, {
