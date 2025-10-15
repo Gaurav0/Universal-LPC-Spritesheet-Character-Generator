@@ -60,5 +60,9 @@
     "head",
     "face",
     "face_tears"
-  ]
+  ],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }

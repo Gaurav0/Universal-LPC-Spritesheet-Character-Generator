@@ -78,5 +78,9 @@
     "head",
     "heads",
     "heads_alien"
-  ]
+  ],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }

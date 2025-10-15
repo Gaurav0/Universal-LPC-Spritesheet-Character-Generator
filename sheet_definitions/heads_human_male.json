@@ -80,5 +80,9 @@
     "head",
     "heads",
     "heads_human_male"
-  ]
+  ],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }

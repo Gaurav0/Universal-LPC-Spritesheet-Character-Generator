@@ -74,5 +74,9 @@
     "head",
     "nose",
     "head_nose_button"
-  ]
+  ],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }

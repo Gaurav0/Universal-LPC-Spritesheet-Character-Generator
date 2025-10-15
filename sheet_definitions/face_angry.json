@@ -141,5 +141,9 @@
     "head",
     "face",
     "face_angry"
-  ]
+  ],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }

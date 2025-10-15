@@ -83,5 +83,9 @@
     "head",
     "heads",
     "heads_wolf_female"
-  ]
+  ],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }

@@ -82,5 +82,9 @@
     "head",
     "face",
     "face_angry2"
-  ]
+  ],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }

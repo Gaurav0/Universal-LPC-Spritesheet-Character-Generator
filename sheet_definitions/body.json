@@ -252,5 +252,9 @@
   "path": [
     "body",
     "body"
-  ]
+  ],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }

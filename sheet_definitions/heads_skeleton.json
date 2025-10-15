@@ -60,5 +60,9 @@
     "head",
     "heads",
     "heads_skeleton"
-  ]
+  ],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }

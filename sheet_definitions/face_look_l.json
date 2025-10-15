@@ -141,5 +141,9 @@
     "head",
     "face",
     "face_look_l"
-  ]
+  ],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }

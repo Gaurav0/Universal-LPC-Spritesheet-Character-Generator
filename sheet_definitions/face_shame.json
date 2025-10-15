@@ -128,5 +128,9 @@
     "head",
     "face",
     "face_shame"
-  ]
+  ],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }

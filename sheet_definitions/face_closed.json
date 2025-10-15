@@ -141,5 +141,9 @@
     "head",
     "face",
     "face_closed"
-  ]
+  ],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }

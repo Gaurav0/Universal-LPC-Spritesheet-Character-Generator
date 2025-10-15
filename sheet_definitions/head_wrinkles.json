@@ -68,5 +68,9 @@
   "path": [
     "head",
     "head_wrinkles"
-  ]
+  ],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }

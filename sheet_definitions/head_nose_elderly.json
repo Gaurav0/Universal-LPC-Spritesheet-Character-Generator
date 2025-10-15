@@ -71,5 +71,9 @@
     "head",
     "nose",
     "head_nose_elderly"
-  ]
+  ],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }

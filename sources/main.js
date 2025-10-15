@@ -5,7 +5,6 @@ import * as canvasRenderer from './canvas/renderer.js';
 
 // Import palette recoloring
 import {
-	initPalettes,
 	getRecolorStats,
 	resetRecolorStats,
 	setPaletteRecolorMode,
@@ -80,15 +79,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 	// Initialize offscreen canvas
 	canvasRenderer.initCanvas();
 
-	// Initialize palettes for on-the-fly recoloring
-	try {
-		await initPalettes();
-		if (DEBUG) {
-			console.log('Palettes initialized successfully');
-		}
-	} catch (err) {
-		console.error('Failed to initialize palettes:', err);
-	}
 
 	// Set defaults after canvas is ready
 	if (window.setDefaultSelections) {

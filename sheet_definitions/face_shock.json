@@ -128,5 +128,9 @@
     "head",
     "face",
     "face_shock"
-  ]
+  ],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }

@@ -72,5 +72,9 @@
     "head",
     "heads",
     "heads_lizard_male"
-  ]
+  ],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }

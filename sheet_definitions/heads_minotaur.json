@@ -80,5 +80,9 @@
     "head",
     "heads",
     "heads_minotaur"
-  ]
+  ],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }

@@ -83,5 +83,9 @@
     "head",
     "face",
     "face_sad2"
-  ]
+  ],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }

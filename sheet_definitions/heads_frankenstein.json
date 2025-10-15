@@ -79,5 +79,9 @@
     "head",
     "heads",
     "heads_frankenstein"
-  ]
+  ],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }

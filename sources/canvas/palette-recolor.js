@@ -230,128 +230,73 @@ export async function loadPalette(url) {
 	return await response.json();
 }
 
-/**
- * Palette configuration - maps item category paths to palette files
- * Each palette config defines which items use that palette based on their metadata path
- */
-const PALETTE_CONFIG = [
-	{
-		type: 'body',
-		file: 'tools/palettes/ulpc-body-palettes.json',
-		sourceVariant: 'light',
-		categories: [
-			['body', 'body'],           // body-body
-			['head', 'heads'],          // all heads
-			['head', 'ears'],           // ears
-			['head', 'nose'],           // noses
-			['head', 'head_wrinkles'],  // wrinkles
-			['head', 'face']            // facial expressions (happy, sad, angry, etc.)
-		]
-	}
-	// Future palette types will be added here:
-	// { type: 'hair', file: 'tools/palettes/ulpc-hair-palettes.json', ... }
-	// { type: 'cloth', file: 'tools/palettes/ulpc-cloth-palettes.json', ... }
-	// { type: 'eyes', file: 'tools/palettes/ulpc-eye-palettes.json', ... }
-];
-
 // Module state for loaded palettes
+// Palettes are loaded on-demand based on item metadata
 const loadedPalettes = {};
 
-/**
- * Check if an item's path matches a category pattern
- * @param {string[]} itemPath - Item's path from metadata (e.g., ["body", "body"])
- * @param {string[]} categoryPattern - Category pattern to match
- * @returns {boolean} True if path matches pattern
- */
-function pathMatchesCategory(itemPath, categoryPattern) {
-	if (!itemPath || itemPath.length < categoryPattern.length) return false;
-
-	// Check if all elements in categoryPattern match the start of itemPath
-	for (let i = 0; i < categoryPattern.length; i++) {
-		if (itemPath[i] !== categoryPattern[i]) return false;
-	}
-	return true;
-}
+// Map palette names to file paths
+const PALETTE_FILES = {
+	'body': 'tools/palettes/ulpc-body-palettes.json',
+	'hair': 'tools/palettes/ulpc-hair-palettes.json',
+	'cloth': 'tools/palettes/ulpc-cloth-palettes.json',
+	'cloth-metal': 'tools/palettes/ulpc-cloth-metal-palettes.json',
+	'metal': 'tools/palettes/ulpc-metal-palettes.json',
+	'eye': 'tools/palettes/ulpc-eye-palettes.json',
+	'fur': 'tools/palettes/ulpc-fur-palettes.json'
+};
 
 /**
- * Get palette configuration for an item
+ * Get palette configuration for an item from its metadata
  * @param {string} itemId - Item identifier
  * @param {Object} meta - Item metadata
- * @returns {Object|null} Palette config object or null if no palette applies
+ * @returns {Object|null} Palette config object with {type, base, palette} or null if item doesn't use palette recoloring
  */
 export function getPaletteForItem(itemId, meta) {
-	if (!meta || !meta.path) return null;
+	if (!meta || !meta.recolors) return null;
 
-	// Check each palette config to see if item matches
-	for (const paletteConfig of PALETTE_CONFIG) {
-		for (const category of paletteConfig.categories) {
-			if (pathMatchesCategory(meta.path, category)) {
-				return paletteConfig;
-			}
-		}
-	}
-
-	return null;
+	// Return the recolors config from item metadata
+	// This includes: { base: 'light', palette: 'body' }
+	return {
+		type: meta.recolors.palette,
+		sourceVariant: meta.recolors.base,
+		file: PALETTE_FILES[meta.recolors.palette]
+	};
 }
 
 /**
- * Initialize all palettes (call once at startup)
- * @returns {Promise<void>}
- */
-export async function initPalettes() {
-	for (const config of PALETTE_CONFIG) {
-		if (!loadedPalettes[config.type]) {
-			loadedPalettes[config.type] = await loadPalette(config.file);
-			console.log(`Loaded ${config.type} palette with ${Object.keys(loadedPalettes[config.type]).length} variants`);
-		}
-	}
-}
-
-/**
- * Get loaded palette by type
+ * Lazy-load a palette on first request
  * @param {string} paletteType - Palette type (e.g., 'body', 'hair')
- * @returns {Object|null} Palette data or null if not loaded
+ * @returns {Promise<Object>} Palette data
  */
-export function getPaletteByType(paletteType) {
-	return loadedPalettes[paletteType] || null;
-}
+async function ensurePaletteLoaded(paletteType) {
+	if (!loadedPalettes[paletteType]) {
+		const paletteFile = PALETTE_FILES[paletteType];
+		if (!paletteFile) {
+			throw new Error(`Unknown palette type: ${paletteType} (no file mapping found)`);
+		}
 
-/**
- * Get body palette (returns null if not initialized)
- * @returns {Object|null} Body palette data
- */
-export function getBodyPalette() {
-	return loadedPalettes.body || null;
-}
-
-/**
- * Initialize body palette (call once at startup)
- * @returns {Promise<Object>} Loaded palette data
- */
-export async function initBodyPalette() {
-	if (!loadedPalettes.body) {
-		const bodyConfig = PALETTE_CONFIG.find(c => c.type === 'body');
-		if (bodyConfig) {
-			loadedPalettes.body = await loadPalette(bodyConfig.file);
-			console.log(`Loaded body palette with ${Object.keys(loadedPalettes.body).length} variants`);
+		try {
+			loadedPalettes[paletteType] = await loadPalette(paletteFile);
+			console.log(`Loaded ${paletteType} palette with ${Object.keys(loadedPalettes[paletteType]).length} variants`);
+		} catch (err) {
+			throw new Error(`Failed to load ${paletteType} palette from ${paletteFile}: ${err.message}`);
 		}
 	}
-	return loadedPalettes.body;
+
+	return loadedPalettes[paletteType];
 }
 
 /**
  * Recolor an image using a specified palette type
- * Works for any palette type (body, hair, cloth, eyes, etc.)
+ * Automatically loads the palette on first use (lazy loading)
  * @param {HTMLImageElement|HTMLCanvasElement} sourceImage - Base source variant image
  * @param {string} targetVariant - Target variant name (e.g., "amber", "bronze", "fur_copper")
  * @param {string} paletteType - Palette type to use (e.g., "body", "hair", "cloth")
- * @returns {HTMLCanvasElement} Recolored canvas
+ * @returns {Promise<HTMLCanvasElement>} Recolored canvas
  */
-export function recolorWithPalette(sourceImage, targetVariant, paletteType) {
-	const palette = loadedPalettes[paletteType];
-	if (!palette) {
-		throw new Error(`${paletteType} palette not initialized. Call initPalettes() first.`);
-	}
+export async function recolorWithPalette(sourceImage, targetVariant, paletteType) {
+	// Lazy-load palette on first use
+	const palette = await ensurePaletteLoaded(paletteType);
 
 	const sourcePalette = palette.source || palette.light;
 	const targetPalette = palette[targetVariant];

@@ -78,5 +78,9 @@
     "head",
     "ears",
     "head_ears_big"
-  ]
+  ],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }

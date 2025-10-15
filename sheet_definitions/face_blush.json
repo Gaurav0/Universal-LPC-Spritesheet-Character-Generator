@@ -141,5 +141,9 @@
     "head",
     "face",
     "face_blush"
-  ]
+  ],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }

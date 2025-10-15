@@ -72,5 +72,9 @@
     "head",
     "nose",
     "head_nose_large"
-  ]
+  ],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }

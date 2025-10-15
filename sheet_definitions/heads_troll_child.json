@@ -75,5 +75,9 @@
     "head",
     "heads",
     "heads_troll_child"
-  ]
+  ],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }

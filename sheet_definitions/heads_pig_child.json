@@ -74,5 +74,9 @@
     "head",
     "heads",
     "heads_pig_child"
-  ]
+  ],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }

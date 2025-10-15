@@ -74,5 +74,9 @@
     "head",
     "ears",
     "head_ears_hang"
-  ]
+  ],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }

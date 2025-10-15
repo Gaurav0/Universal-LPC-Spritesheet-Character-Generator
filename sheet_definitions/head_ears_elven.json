@@ -79,5 +79,9 @@
     "head",
     "ears",
     "head_ears_elven"
-  ]
+  ],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }

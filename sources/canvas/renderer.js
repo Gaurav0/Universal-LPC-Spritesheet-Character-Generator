@@ -2,7 +2,7 @@
 // Simplified renderer that draws character sprites based on selections
 
 import { state } from '../state/state.js';
-import { getPaletteForItem, getPaletteByType, recolorWithPalette } from './palette-recolor.js';
+import { getPaletteForItem, recolorWithPalette } from './palette-recolor.js';
 
 const FRAME_SIZE = 64;
 const SHEET_HEIGHT = 3456; // Full universal sheet height
@@ -338,27 +338,26 @@ function getZPos(itemId, layerNum = 1) {
 
 /**
  * Get image to draw - applies recoloring if needed based on palette configuration
+ * Async because palette loading is lazy (loads on first use)
  * @param {HTMLImageElement|HTMLCanvasElement} img - Source image
  * @param {string} itemId - Item identifier
  * @param {string} variant - Variant name
- * @returns {HTMLImageElement|HTMLCanvasElement} Image or recolored canvas to draw
+ * @returns {Promise<HTMLImageElement|HTMLCanvasElement>} Image or recolored canvas to draw
  */
-export function getImageToDraw(img, itemId, variant) {
+export async function getImageToDraw(img, itemId, variant) {
   const meta = window.itemMetadata?.[itemId];
   const paletteConfig = getPaletteForItem(itemId, meta);
 
   // Only recolor if item uses a palette and variant is not the source variant
   if (paletteConfig && variant !== paletteConfig.sourceVariant) {
-    const palette = getPaletteByType(paletteConfig.type);
-    if (palette) {
-      try {
-        return recolorWithPalette(img, variant, paletteConfig.type);
-      } catch (err) {
-        console.warn(`Failed to recolor ${paletteConfig.type} variant ${variant}:`, err);
-      }
+    try {
+      return await recolorWithPalette(img, variant, paletteConfig.type);
+    } catch (err) {
+      console.warn(`Failed to recolor ${paletteConfig.type} variant ${variant}:`, err);
+      return img; // Fallback to original on error
     }
   }
-  return img; // Return original if no recoloring needed or failed
+  return img; // Return original if no recoloring needed
 }
 
 
@@ -709,7 +708,7 @@ export async function renderCharacter(selections, bodyType, targetCanvas = null)
   // Draw all items in sorted z-order
   for (const { item, img, success } of loadedItems) {
     if (success && img) {
-      const imageToDraw = getImageToDraw(img, item.itemId, item.variant);
+      const imageToDraw = await getImageToDraw(img, item.itemId, item.variant);
       renderCtx.drawImage(imageToDraw, 0, item.yPos);
     }
   }
@@ -766,7 +765,7 @@ export async function renderCharacter(selections, bodyType, targetCanvas = null)
       // Draw in zPos order
       for (const { item: areaItem, img, success } of loadedCustomImages) {
         if (success && img) {
-          const imageToUse = getImageToDraw(img, areaItem.itemId, areaItem.variant);
+          const imageToUse = await getImageToDraw(img, areaItem.itemId, areaItem.variant);
 
           if (areaItem.type === 'custom_sprite') {
             // Draw custom sprite directly (wheelchair background or foreground)
@@ -954,7 +953,7 @@ export async function renderSingleItem(itemId, variant, bodyType, selections) {
     // Draw layers in order
     for (const { item: sprite, img, success } of loadedSprites) {
       if (success && img) {
-        const imageToDraw = getImageToDraw(img, itemId, variant);
+        const imageToDraw = await getImageToDraw(img, itemId, variant);
         itemCtx.drawImage(imageToDraw, 0, 0);
       }
     }
@@ -1020,7 +1019,7 @@ export async function renderSingleItem(itemId, variant, bodyType, selections) {
     // Draw images in order
     for (const { item: sprite, img, success } of loadedImages) {
       if (success && img) {
-        const imageToDraw = getImageToDraw(img, itemId, variant);
+        const imageToDraw = await getImageToDraw(img, itemId, variant);
         itemCtx.drawImage(imageToDraw, 0, sprite.yPos);
       }
     }
@@ -1114,7 +1113,7 @@ export async function renderSingleItemAnimation(itemId, variant, bodyType, anima
   // Draw images in order
   for (const { item: sprite, img, success } of loadedImages) {
     if (success && img) {
-      const imageToDraw = getImageToDraw(img, itemId, variant);
+      const imageToDraw = await getImageToDraw(img, itemId, variant);
       // Draw at y=0 since this canvas is only for this animation
       animCtx.drawImage(imageToDraw, 0, animYPos, SHEET_WIDTH, animHeight, 0, 0, SHEET_WIDTH, animHeight);
     }

@@ -137,11 +137,11 @@ export const ItemWithVariants = {
 										img.onerror = () => resolve({ img: null, layer });
 										img.src = layer.path;
 									});
-								})).then(loadedLayers => {
+								})).then(async loadedLayers => {
 									// Draw each layer in zPos order at full 64x64 resolution
 									for (const { img, layer } of loadedLayers) {
 										if (img) {
-											const imageToDraw = getImageToDraw(img, itemId, variant);
+											const imageToDraw = await getImageToDraw(img, itemId, variant);
 											ctx.drawImage(
 												imageToDraw,
 												previewCol * 64 - previewXOffset, previewRow * 64 - previewYOffset, 64, 64,

@@ -146,5 +146,9 @@
     "head",
     "face",
     "face_neutral"
-  ]
+  ],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }

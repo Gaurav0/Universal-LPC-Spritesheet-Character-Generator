@@ -55,5 +55,9 @@
     "head",
     "heads",
     "heads_jack"
-  ]
+  ],
+  "recolors": {
+    "base": "light",
+    "palette": "body"
+  }
 }
