@@ -137,6 +137,7 @@ function parseJson(json) {
     required_tags: required_tags,
     excluded_tags: excluded_tags,
     path: path || ["other"],
+	replace_in_path: replace_in_path || {},
     variants: variants || [],
     layers: layers,
     credits: credits || [],

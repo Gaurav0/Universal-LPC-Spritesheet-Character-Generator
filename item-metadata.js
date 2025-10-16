@@ -30,6 +30,7 @@ window.itemMetadata = {
       "body",
       "shadow"
     ],
+    "replace_in_path": {},
     "variants": [
       "shadow"
     ],
@@ -122,6 +123,7 @@ window.itemMetadata = {
       "body",
       "body"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -416,6 +418,7 @@ window.itemMetadata = {
       "special",
       "body_zombie"
     ],
+    "replace_in_path": {},
     "variants": [
       "zombie"
     ],
@@ -499,6 +502,7 @@ window.itemMetadata = {
       "special",
       "body_skeleton"
     ],
+    "replace_in_path": {},
     "variants": [
       "skeleton"
     ],
@@ -582,6 +586,7 @@ window.itemMetadata = {
       "wounds",
       "wound_arm"
     ],
+    "replace_in_path": {},
     "variants": [
       "arm"
     ],
@@ -677,6 +682,7 @@ window.itemMetadata = {
       "wounds",
       "wound_brain"
     ],
+    "replace_in_path": {},
     "variants": [
       "brain"
     ],
@@ -762,6 +768,7 @@ window.itemMetadata = {
       "wounds",
       "wound_ribs"
     ],
+    "replace_in_path": {},
     "variants": [
       "ribs"
     ],
@@ -857,6 +864,7 @@ window.itemMetadata = {
       "wounds",
       "wound_eye_left"
     ],
+    "replace_in_path": {},
     "variants": [
       "eye_left"
     ],
@@ -953,6 +961,7 @@ window.itemMetadata = {
       "wounds",
       "wound_eye_right"
     ],
+    "replace_in_path": {},
     "variants": [
       "eye_right"
     ],
@@ -1048,6 +1057,7 @@ window.itemMetadata = {
       "wounds",
       "wound_mouth"
     ],
+    "replace_in_path": {},
     "variants": [
       "mouth"
     ],
@@ -1129,6 +1139,7 @@ window.itemMetadata = {
       "prostheses",
       "prosthesis_hook"
     ],
+    "replace_in_path": {},
     "variants": [
       "hook"
     ],
@@ -1192,6 +1203,7 @@ window.itemMetadata = {
       "prostheses",
       "prosthesis_peg_leg"
     ],
+    "replace_in_path": {},
     "variants": [
       "peg_leg"
     ],
@@ -1259,6 +1271,7 @@ window.itemMetadata = {
       "wheelchair",
       "wheelchair"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -1368,6 +1381,7 @@ window.itemMetadata = {
       "tails",
       "tail_wolf"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -1516,6 +1530,7 @@ window.itemMetadata = {
       "tails",
       "tail_wolf_fluffy"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -1664,6 +1679,7 @@ window.itemMetadata = {
       "tails",
       "tail_cat"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -1812,6 +1828,7 @@ window.itemMetadata = {
       "tails",
       "tail_lizard_alt"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -1963,6 +1980,7 @@ window.itemMetadata = {
       "wings",
       "wings_feathered"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -2095,6 +2113,7 @@ window.itemMetadata = {
       "wings",
       "wings_bat"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -2237,6 +2256,7 @@ window.itemMetadata = {
       "wings",
       "wings_lizard_alt"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -2375,6 +2395,7 @@ window.itemMetadata = {
       "monarch wings",
       "wings_monarch"
     ],
+    "replace_in_path": {},
     "variants": [
       "monarch",
       "amber",
@@ -2507,6 +2528,7 @@ window.itemMetadata = {
       "monarch wings",
       "wings_monarch_edge"
     ],
+    "replace_in_path": {},
     "variants": [
       "amber",
       "black",
@@ -2638,6 +2660,7 @@ window.itemMetadata = {
       "monarch wings",
       "wings_monarch_dots"
     ],
+    "replace_in_path": {},
     "variants": [
       "amber",
       "black",
@@ -2767,6 +2790,7 @@ window.itemMetadata = {
       "pixie wings",
       "wings_pixie"
     ],
+    "replace_in_path": {},
     "variants": [
       "pixie",
       "amber",
@@ -2897,6 +2921,7 @@ window.itemMetadata = {
       "pixie wings",
       "wings_pixie_transparent"
     ],
+    "replace_in_path": {},
     "variants": [
       "pixie",
       "amber",
@@ -3026,6 +3051,7 @@ window.itemMetadata = {
       "wings",
       "wings_lunar"
     ],
+    "replace_in_path": {},
     "variants": [
       "lunar",
       "amber",
@@ -3156,6 +3182,7 @@ window.itemMetadata = {
       "dragonfly wings",
       "wings_dragonfly"
     ],
+    "replace_in_path": {},
     "variants": [
       "dragonfly",
       "amber",
@@ -3286,6 +3313,7 @@ window.itemMetadata = {
       "dragonfly wings",
       "wings_dragonfly_transparent"
     ],
+    "replace_in_path": {},
     "variants": [
       "dragonfly",
       "amber",
@@ -3424,6 +3452,7 @@ window.itemMetadata = {
       "lizard",
       "wings_lizard"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -3557,6 +3586,7 @@ window.itemMetadata = {
       "lizard",
       "wings_lizard_bat"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -3675,6 +3705,7 @@ window.itemMetadata = {
       "lizard",
       "tail_lizard"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -3811,6 +3842,7 @@ window.itemMetadata = {
       "heads",
       "heads_human_child"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -3916,6 +3948,7 @@ window.itemMetadata = {
       "heads",
       "heads_human_female"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -4043,6 +4076,7 @@ window.itemMetadata = {
       "heads",
       "heads_human_male"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -4170,6 +4204,7 @@ window.itemMetadata = {
       "heads",
       "heads_human_female_elderly"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -4292,6 +4327,7 @@ window.itemMetadata = {
       "heads",
       "heads_human_male_elderly"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -4414,6 +4450,7 @@ window.itemMetadata = {
       "heads",
       "heads_human_male_plump"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -4534,6 +4571,7 @@ window.itemMetadata = {
       "heads",
       "heads_human_male_gaunt"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -4661,6 +4699,7 @@ window.itemMetadata = {
       "heads",
       "heads_human_male_small"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -4779,6 +4818,7 @@ window.itemMetadata = {
       "heads",
       "heads_human_female_small"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -4897,6 +4937,7 @@ window.itemMetadata = {
       "heads",
       "heads_human_elderly_small"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -5015,6 +5056,7 @@ window.itemMetadata = {
       "heads",
       "heads_boarman"
     ],
+    "replace_in_path": {},
     "variants": [
       "fur_black",
       "fur_brown",
@@ -5133,6 +5175,7 @@ window.itemMetadata = {
       "heads",
       "heads_boarman_child"
     ],
+    "replace_in_path": {},
     "variants": [
       "fur_black",
       "fur_brown",
@@ -5236,6 +5279,7 @@ window.itemMetadata = {
       "heads",
       "heads_pig"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -5352,6 +5396,7 @@ window.itemMetadata = {
       "heads",
       "heads_pig_child"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -5452,6 +5497,7 @@ window.itemMetadata = {
       "heads",
       "heads_sheep"
     ],
+    "replace_in_path": {},
     "variants": [
       "fur_black",
       "fur_brown",
@@ -5568,6 +5614,7 @@ window.itemMetadata = {
       "heads",
       "heads_sheep_child"
     ],
+    "replace_in_path": {},
     "variants": [
       "fur_black",
       "fur_brown",
@@ -5668,6 +5715,7 @@ window.itemMetadata = {
       "heads",
       "heads_minotaur"
     ],
+    "replace_in_path": {},
     "variants": [
       "fur_black",
       "fur_brown",
@@ -5790,6 +5838,7 @@ window.itemMetadata = {
       "heads",
       "heads_minotaur_female"
     ],
+    "replace_in_path": {},
     "variants": [
       "fur_black",
       "fur_brown",
@@ -5908,6 +5957,7 @@ window.itemMetadata = {
       "heads",
       "heads_minotaur_child"
     ],
+    "replace_in_path": {},
     "variants": [
       "fur_black",
       "fur_brown",
@@ -6012,6 +6062,7 @@ window.itemMetadata = {
       "heads",
       "heads_wartotaur"
     ],
+    "replace_in_path": {},
     "variants": [
       "fur_black",
       "fur_brown",
@@ -6130,6 +6181,7 @@ window.itemMetadata = {
       "heads",
       "heads_wolf_child"
     ],
+    "replace_in_path": {},
     "variants": [
       "fur_black",
       "fur_brown",
@@ -6235,6 +6287,7 @@ window.itemMetadata = {
       "heads",
       "heads_wolf_female"
     ],
+    "replace_in_path": {},
     "variants": [
       "fur_black",
       "fur_brown",
@@ -6360,6 +6413,7 @@ window.itemMetadata = {
       "heads",
       "heads_wolf_male"
     ],
+    "replace_in_path": {},
     "variants": [
       "fur_black",
       "fur_brown",
@@ -6485,6 +6539,7 @@ window.itemMetadata = {
       "heads",
       "heads_rabbit"
     ],
+    "replace_in_path": {},
     "variants": [
       "fur_black",
       "fur_brown",
@@ -6607,6 +6662,7 @@ window.itemMetadata = {
       "heads",
       "heads_rabbit_child"
     ],
+    "replace_in_path": {},
     "variants": [
       "fur_black",
       "fur_brown",
@@ -6709,6 +6765,7 @@ window.itemMetadata = {
       "heads",
       "heads_rat"
     ],
+    "replace_in_path": {},
     "variants": [
       "fur_black",
       "fur_brown",
@@ -6831,6 +6888,7 @@ window.itemMetadata = {
       "heads",
       "heads_rat_child"
     ],
+    "replace_in_path": {},
     "variants": [
       "fur_black",
       "fur_brown",
@@ -6933,6 +6991,7 @@ window.itemMetadata = {
       "heads",
       "heads_mouse"
     ],
+    "replace_in_path": {},
     "variants": [
       "fur_black",
       "fur_brown",
@@ -7054,6 +7113,7 @@ window.itemMetadata = {
       "heads",
       "heads_mouse_child"
     ],
+    "replace_in_path": {},
     "variants": [
       "fur_black",
       "fur_brown",
@@ -7152,6 +7212,7 @@ window.itemMetadata = {
       "heads",
       "heads_lizard_child"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -7247,6 +7308,7 @@ window.itemMetadata = {
       "heads",
       "heads_lizard_female"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -7366,6 +7428,7 @@ window.itemMetadata = {
       "heads",
       "heads_lizard_male"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -7481,6 +7544,7 @@ window.itemMetadata = {
       "heads",
       "heads_orc_child"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -7585,6 +7649,7 @@ window.itemMetadata = {
       "heads",
       "heads_orc_female"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -7707,6 +7772,7 @@ window.itemMetadata = {
       "heads",
       "heads_orc_male"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -7837,6 +7903,7 @@ window.itemMetadata = {
       "heads",
       "heads_goblin"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -7966,6 +8033,7 @@ window.itemMetadata = {
       "heads",
       "heads_goblin_child"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -8070,6 +8138,7 @@ window.itemMetadata = {
       "heads",
       "heads_alien"
     ],
+    "replace_in_path": {},
     "variants": [
       "lavender",
       "light",
@@ -8196,6 +8265,7 @@ window.itemMetadata = {
       "heads",
       "heads_troll"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -8308,6 +8378,7 @@ window.itemMetadata = {
       "heads",
       "heads_troll_child"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -8408,6 +8479,7 @@ window.itemMetadata = {
       "heads",
       "heads_skeleton"
     ],
+    "replace_in_path": {},
     "variants": [
       "skeleton"
     ],
@@ -8516,6 +8588,7 @@ window.itemMetadata = {
       "heads",
       "heads_zombie"
     ],
+    "replace_in_path": {},
     "variants": [
       "zombie",
       "zombie_green",
@@ -8638,6 +8711,7 @@ window.itemMetadata = {
       "heads",
       "heads_jack"
     ],
+    "replace_in_path": {},
     "variants": [
       "jack"
     ],
@@ -8737,6 +8811,7 @@ window.itemMetadata = {
       "heads",
       "heads_vampire"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -8863,6 +8938,7 @@ window.itemMetadata = {
       "heads",
       "heads_frankenstein"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -8990,6 +9066,19 @@ window.itemMetadata = {
       "face",
       "face_neutral"
     ],
+    "replace_in_path": {
+      "head": {
+        "Human_male": "male",
+        "Human_male_small": "male",
+        "Human_male_plump": "male",
+        "Human_male_gaunt": "male",
+        "Human_female": "female",
+        "Human_female_small": "female",
+        "Human_male_elderly": "elderly",
+        "Human_female_elderly": "elderly",
+        "Human_elderly_small": "elderly"
+      }
+    },
     "variants": [
       "light",
       "amber",
@@ -9159,6 +9248,19 @@ window.itemMetadata = {
       "face",
       "face_closing"
     ],
+    "replace_in_path": {
+      "head": {
+        "Human_male": "male",
+        "Human_male_small": "male",
+        "Human_male_plump": "male",
+        "Human_male_gaunt": "male",
+        "Human_female": "female",
+        "Human_female_small": "female",
+        "Human_male_elderly": "elderly",
+        "Human_female_elderly": "elderly",
+        "Human_elderly_small": "elderly"
+      }
+    },
     "variants": [
       "light",
       "amber",
@@ -9323,6 +9425,19 @@ window.itemMetadata = {
       "face",
       "face_closed"
     ],
+    "replace_in_path": {
+      "head": {
+        "Human_male": "male",
+        "Human_male_small": "male",
+        "Human_male_plump": "male",
+        "Human_male_gaunt": "male",
+        "Human_female": "female",
+        "Human_female_small": "female",
+        "Human_male_elderly": "elderly",
+        "Human_female_elderly": "elderly",
+        "Human_elderly_small": "elderly"
+      }
+    },
     "variants": [
       "light",
       "amber",
@@ -9487,6 +9602,19 @@ window.itemMetadata = {
       "face",
       "face_look_r"
     ],
+    "replace_in_path": {
+      "head": {
+        "Human_male": "male",
+        "Human_male_small": "male",
+        "Human_male_plump": "male",
+        "Human_male_gaunt": "male",
+        "Human_female": "female",
+        "Human_female_small": "female",
+        "Human_male_elderly": "elderly",
+        "Human_female_elderly": "elderly",
+        "Human_elderly_small": "elderly"
+      }
+    },
     "variants": [
       "light",
       "amber",
@@ -9651,6 +9779,19 @@ window.itemMetadata = {
       "face",
       "face_look_l"
     ],
+    "replace_in_path": {
+      "head": {
+        "Human_male": "male",
+        "Human_male_small": "male",
+        "Human_male_plump": "male",
+        "Human_male_gaunt": "male",
+        "Human_female": "female",
+        "Human_female_small": "female",
+        "Human_male_elderly": "elderly",
+        "Human_female_elderly": "elderly",
+        "Human_elderly_small": "elderly"
+      }
+    },
     "variants": [
       "light",
       "amber",
@@ -9815,6 +9956,19 @@ window.itemMetadata = {
       "face",
       "face_eyeroll"
     ],
+    "replace_in_path": {
+      "head": {
+        "Human_male": "male",
+        "Human_male_small": "male",
+        "Human_male_plump": "male",
+        "Human_male_gaunt": "male",
+        "Human_female": "female",
+        "Human_female_small": "female",
+        "Human_male_elderly": "elderly",
+        "Human_female_elderly": "elderly",
+        "Human_elderly_small": "elderly"
+      }
+    },
     "variants": [
       "light",
       "amber",
@@ -9979,6 +10133,7 @@ window.itemMetadata = {
       "face",
       "face_shock"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -10143,6 +10298,19 @@ window.itemMetadata = {
       "face",
       "face_angry"
     ],
+    "replace_in_path": {
+      "head": {
+        "Human_male": "male",
+        "Human_male_small": "male",
+        "Human_male_plump": "male",
+        "Human_male_gaunt": "male",
+        "Human_female": "female",
+        "Human_female_small": "female",
+        "Human_male_elderly": "elderly",
+        "Human_female_elderly": "elderly",
+        "Human_elderly_small": "elderly"
+      }
+    },
     "variants": [
       "light",
       "amber",
@@ -10307,6 +10475,7 @@ window.itemMetadata = {
       "face",
       "face_angry2"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -10430,6 +10599,19 @@ window.itemMetadata = {
       "face",
       "face_sad"
     ],
+    "replace_in_path": {
+      "head": {
+        "Human_male": "male",
+        "Human_male_small": "male",
+        "Human_male_plump": "male",
+        "Human_male_gaunt": "male",
+        "Human_female": "female",
+        "Human_female_small": "female",
+        "Human_male_elderly": "elderly",
+        "Human_female_elderly": "elderly",
+        "Human_elderly_small": "elderly"
+      }
+    },
     "variants": [
       "light",
       "amber",
@@ -10595,6 +10777,7 @@ window.itemMetadata = {
       "face",
       "face_sad2"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -10718,6 +10901,19 @@ window.itemMetadata = {
       "face",
       "face_happy"
     ],
+    "replace_in_path": {
+      "head": {
+        "Human_male": "male",
+        "Human_male_small": "male",
+        "Human_male_plump": "male",
+        "Human_male_gaunt": "male",
+        "Human_female": "female",
+        "Human_female_small": "female",
+        "Human_male_elderly": "elderly",
+        "Human_female_elderly": "elderly",
+        "Human_elderly_small": "elderly"
+      }
+    },
     "variants": [
       "light",
       "amber",
@@ -10882,6 +11078,7 @@ window.itemMetadata = {
       "face",
       "face_happy2"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -11005,6 +11202,19 @@ window.itemMetadata = {
       "face",
       "face_blush"
     ],
+    "replace_in_path": {
+      "head": {
+        "Human_male": "male",
+        "Human_male_small": "male",
+        "Human_male_plump": "male",
+        "Human_male_gaunt": "male",
+        "Human_female": "female",
+        "Human_female_small": "female",
+        "Human_male_elderly": "elderly",
+        "Human_female_elderly": "elderly",
+        "Human_elderly_small": "elderly"
+      }
+    },
     "variants": [
       "light",
       "amber",
@@ -11169,6 +11379,7 @@ window.itemMetadata = {
       "face",
       "face_shame"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -11333,6 +11544,7 @@ window.itemMetadata = {
       "face",
       "face_tears"
     ],
+    "replace_in_path": {},
     "variants": [
       "blue"
     ],
@@ -11431,6 +11643,37 @@ window.itemMetadata = {
       "head",
       "eye_color"
     ],
+    "replace_in_path": {
+      "head": {
+        "Human_male": "adult",
+        "Human_male_small": "adult",
+        "Human_male_plump": "adult",
+        "Human_male_gaunt": "adult",
+        "Human_female": "adult",
+        "Human_female_small": "adult",
+        "Human_male_elderly": "elderly",
+        "Human_female_elderly": "elderly",
+        "Human_elderly_small": "elderly"
+      },
+      "expression": {
+        "none": "default",
+        "Neutral": "neutral",
+        "Closing_Eyes": "closing",
+        "Closed_Eyes": "none",
+        "Looking_Left": "look_l",
+        "Looking_Right": "look_r",
+        "Rolling_Eyes": "eyeroll",
+        "Shock": "shock",
+        "Angry": "anger",
+        "Angry_Alt": "default",
+        "Sad": "sad",
+        "Sad_Alt": "sad2",
+        "Happy": "none",
+        "Happy_Alt": "none",
+        "Blush": "none",
+        "Shame": "shame"
+      }
+    },
     "variants": [
       "blue",
       "brown",
@@ -11584,6 +11827,7 @@ window.itemMetadata = {
       "other eyes",
       "eyes_child"
     ],
+    "replace_in_path": {},
     "variants": [
       "blue",
       "brown",
@@ -11670,6 +11914,7 @@ window.itemMetadata = {
       "other eyes",
       "eyes_cyclops"
     ],
+    "replace_in_path": {},
     "variants": [
       "cyclops",
       "blue",
@@ -11772,6 +12017,7 @@ window.itemMetadata = {
       "ears",
       "head_ears_big"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -11898,6 +12144,7 @@ window.itemMetadata = {
       "ears",
       "head_ears_elven"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -12025,6 +12272,7 @@ window.itemMetadata = {
       "ears",
       "head_ears_long"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -12156,6 +12404,7 @@ window.itemMetadata = {
       "ears",
       "head_ears_medium"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -12284,6 +12533,7 @@ window.itemMetadata = {
       "ears",
       "head_ears_hang"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -12412,6 +12662,7 @@ window.itemMetadata = {
       "ears",
       "head_ears_down"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -12540,6 +12791,7 @@ window.itemMetadata = {
       "ears",
       "head_ears_dragon"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -12669,6 +12921,7 @@ window.itemMetadata = {
       "top ears",
       "head_ears_cat"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -12818,6 +13071,7 @@ window.itemMetadata = {
       "top ears",
       "head_ears_cat_skin"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -12956,6 +13210,7 @@ window.itemMetadata = {
       "top ears",
       "head_ears_wolf"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -13105,6 +13360,7 @@ window.itemMetadata = {
       "top ears",
       "head_ears_wolf_skin"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -13243,6 +13499,7 @@ window.itemMetadata = {
       "side ears",
       "head_ears_lykon"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -13383,6 +13640,7 @@ window.itemMetadata = {
       "side ears",
       "head_ears_lykon_skin"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -13512,6 +13770,7 @@ window.itemMetadata = {
       "side ears",
       "head_ears_zabos"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -13652,6 +13911,7 @@ window.itemMetadata = {
       "side ears",
       "head_ears_zabos_skin"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -13781,6 +14041,7 @@ window.itemMetadata = {
       "side ears",
       "head_ears_avyon"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -13921,6 +14182,7 @@ window.itemMetadata = {
       "side ears",
       "head_ears_avyon_skin"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -14048,6 +14310,7 @@ window.itemMetadata = {
       "nose",
       "head_nose_big"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -14165,6 +14428,7 @@ window.itemMetadata = {
       "nose",
       "head_nose_button"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -14282,6 +14546,7 @@ window.itemMetadata = {
       "nose",
       "head_nose_straight"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -14399,6 +14664,7 @@ window.itemMetadata = {
       "nose",
       "head_nose_elderly"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -14508,6 +14774,7 @@ window.itemMetadata = {
       "nose",
       "head_nose_large"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -14619,6 +14886,7 @@ window.itemMetadata = {
       "eyebrows",
       "eyebrows_thick"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -14738,6 +15006,7 @@ window.itemMetadata = {
       "eyebrows",
       "eyebrows_thin"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -14855,6 +15124,7 @@ window.itemMetadata = {
       "head",
       "head_wrinkles"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -14962,6 +15232,7 @@ window.itemMetadata = {
       "beards",
       "beards_beard"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -15082,6 +15353,7 @@ window.itemMetadata = {
       "beards",
       "beards_winter"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -15195,6 +15467,7 @@ window.itemMetadata = {
       "beards",
       "beards_5oclock_shadow"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -15316,6 +15589,7 @@ window.itemMetadata = {
       "beards",
       "beards_trimmed"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -15430,6 +15704,7 @@ window.itemMetadata = {
       "beards",
       "beards_medium"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -15544,6 +15819,7 @@ window.itemMetadata = {
       "mustaches",
       "beards_bigstache"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -15665,6 +15941,7 @@ window.itemMetadata = {
       "mustaches",
       "beards_mustache"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -15785,6 +16062,7 @@ window.itemMetadata = {
       "mustaches",
       "beards_french"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -15906,6 +16184,7 @@ window.itemMetadata = {
       "mustaches",
       "beards_walrus"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -16020,6 +16299,7 @@ window.itemMetadata = {
       "mustaches",
       "beards_chevron"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -16134,6 +16414,7 @@ window.itemMetadata = {
       "mustaches",
       "beards_handlebar"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -16248,6 +16529,7 @@ window.itemMetadata = {
       "mustaches",
       "beards_lampshade"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -16362,6 +16644,7 @@ window.itemMetadata = {
       "mustaches",
       "beards_horseshoe"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -16479,6 +16762,7 @@ window.itemMetadata = {
       "bangs",
       "hairext_braidl"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -16620,6 +16904,7 @@ window.itemMetadata = {
       "bangs",
       "hairext_braidr"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -16761,6 +17046,7 @@ window.itemMetadata = {
       "bangs",
       "hairext_xlong_bangl"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -16896,6 +17182,7 @@ window.itemMetadata = {
       "bangs",
       "hairext_xlong_bangr"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -17031,6 +17318,7 @@ window.itemMetadata = {
       "bangs",
       "hairext_xlong_braidl"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -17175,6 +17463,7 @@ window.itemMetadata = {
       "bangs",
       "hairext_xlong_braidr"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -17318,6 +17607,7 @@ window.itemMetadata = {
       "bangs",
       "hairext_long_straightl"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -17445,6 +17735,7 @@ window.itemMetadata = {
       "bangs",
       "hairext_long_straightr"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -17572,6 +17863,7 @@ window.itemMetadata = {
       "bangs",
       "hairext_long_wavyl"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -17699,6 +17991,7 @@ window.itemMetadata = {
       "bangs",
       "hairext_long_wavyr"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -17826,6 +18119,7 @@ window.itemMetadata = {
       "bangs",
       "hairext_xlong_wavyl"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -17953,6 +18247,7 @@ window.itemMetadata = {
       "bangs",
       "hairext_xlong_wavyr"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -18080,6 +18375,7 @@ window.itemMetadata = {
       "bangs",
       "hairext_xlong_curlyl"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -18207,6 +18503,7 @@ window.itemMetadata = {
       "bangs",
       "hairext_xlong_curlyr"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -18335,6 +18632,7 @@ window.itemMetadata = {
       "ponytails",
       "hairext_topknot_short"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -18476,6 +18774,7 @@ window.itemMetadata = {
       "ponytails",
       "hairext_topknot_long"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -18625,6 +18924,7 @@ window.itemMetadata = {
       "ponytails",
       "hairext_topknot_relm"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -18761,6 +19061,7 @@ window.itemMetadata = {
       "knot / ties",
       "hairext_high_bun"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -18876,6 +19177,7 @@ window.itemMetadata = {
       "afro",
       "hair_afro"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -18991,6 +19293,7 @@ window.itemMetadata = {
       "afro",
       "hair_natural"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -19109,6 +19412,7 @@ window.itemMetadata = {
       "afro",
       "hair_dreadlocks_short"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -19227,6 +19531,7 @@ window.itemMetadata = {
       "afro",
       "hair_twists_fade"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -19342,6 +19647,7 @@ window.itemMetadata = {
       "afro",
       "hair_twists_straight"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -19457,6 +19763,7 @@ window.itemMetadata = {
       "afro",
       "hair_dreadlocks_long"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -19572,6 +19879,7 @@ window.itemMetadata = {
       "afro",
       "hair_flat_top_straight"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -19690,6 +19998,7 @@ window.itemMetadata = {
       "afro",
       "hair_flat_top_fade"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -19808,6 +20117,7 @@ window.itemMetadata = {
       "afro",
       "hair_cornrows"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -19928,6 +20238,7 @@ window.itemMetadata = {
       "curly",
       "hair_jewfro"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -20070,6 +20381,7 @@ window.itemMetadata = {
       "curly",
       "hair_curly_short"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -20187,6 +20499,7 @@ window.itemMetadata = {
       "curly",
       "hair_curly_long"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -20303,6 +20616,7 @@ window.itemMetadata = {
       "curly",
       "hair_curls_large"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -20439,6 +20753,7 @@ window.itemMetadata = {
       "curly",
       "hair_curls_large_xlong"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -20576,6 +20891,7 @@ window.itemMetadata = {
       "bald/shaved",
       "hair_balding"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -20693,6 +21009,7 @@ window.itemMetadata = {
       "bald/shaved",
       "hair_longhawk"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -20818,6 +21135,7 @@ window.itemMetadata = {
       "bald/shaved",
       "hair_shorthawk"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -20943,6 +21261,7 @@ window.itemMetadata = {
       "bald/shaved",
       "hair_high_and_tight"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -21068,6 +21387,7 @@ window.itemMetadata = {
       "bald/shaved",
       "hair_buzzcut"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -21186,6 +21506,7 @@ window.itemMetadata = {
       "short",
       "hair_plain"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -21320,6 +21641,7 @@ window.itemMetadata = {
       "short",
       "hair_pixie"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -21446,6 +21768,7 @@ window.itemMetadata = {
       "short",
       "hair_page"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -21578,6 +21901,7 @@ window.itemMetadata = {
       "short",
       "hair_page2"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -21712,6 +22036,7 @@ window.itemMetadata = {
       "short",
       "hair_idol"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -21834,6 +22159,7 @@ window.itemMetadata = {
       "short",
       "hair_mop"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -21960,6 +22286,7 @@ window.itemMetadata = {
       "short",
       "hair_parted"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -22088,6 +22415,7 @@ window.itemMetadata = {
       "short",
       "hair_parted2"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -22214,6 +22542,7 @@ window.itemMetadata = {
       "short",
       "hair_parted3"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -22334,6 +22663,7 @@ window.itemMetadata = {
       "short",
       "hair_parted_side_bangs"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -22479,6 +22809,7 @@ window.itemMetadata = {
       "short",
       "hair_parted_side_bangs2"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -22623,6 +22954,7 @@ window.itemMetadata = {
       "short",
       "hair_messy1"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -22749,6 +23081,7 @@ window.itemMetadata = {
       "short",
       "hair_messy2"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -22875,6 +23208,7 @@ window.itemMetadata = {
       "short",
       "hair_messy3"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -22995,6 +23329,7 @@ window.itemMetadata = {
       "short",
       "hair_bedhead"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -23121,6 +23456,7 @@ window.itemMetadata = {
       "short",
       "hair_unkempt"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -23247,6 +23583,7 @@ window.itemMetadata = {
       "short",
       "hair_bangs"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -23373,6 +23710,7 @@ window.itemMetadata = {
       "short",
       "hair_bangsshort"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -23499,6 +23837,7 @@ window.itemMetadata = {
       "short",
       "hair_swoop"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -23626,6 +23965,7 @@ window.itemMetadata = {
       "short",
       "hair_swoop_side"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -23770,6 +24110,7 @@ window.itemMetadata = {
       "short",
       "hair_curtains"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -23902,6 +24243,7 @@ window.itemMetadata = {
       "short",
       "hair_single"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -24048,6 +24390,7 @@ window.itemMetadata = {
       "short",
       "hair_cowlick"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -24169,6 +24512,7 @@ window.itemMetadata = {
       "short",
       "hair_cowlick_tall"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -24290,6 +24634,7 @@ window.itemMetadata = {
       "spiky",
       "hair_spiked_porcupine"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -24411,6 +24756,7 @@ window.itemMetadata = {
       "spiky",
       "hair_spiked_liberty2"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -24532,6 +24878,7 @@ window.itemMetadata = {
       "spiky",
       "hair_spiked_liberty"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -24653,6 +25000,7 @@ window.itemMetadata = {
       "spiky",
       "hair_spiked_beehive"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -24774,6 +25122,7 @@ window.itemMetadata = {
       "spiky",
       "hair_spiked"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -24894,6 +25243,7 @@ window.itemMetadata = {
       "spiky",
       "hair_spiked2"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -25015,6 +25365,7 @@ window.itemMetadata = {
       "spiky",
       "hair_halfmessy"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -25155,6 +25506,7 @@ window.itemMetadata = {
       "pigtails",
       "hair_bunches"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -25293,6 +25645,7 @@ window.itemMetadata = {
       "pigtails",
       "hair_pigtails"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -25421,6 +25774,7 @@ window.itemMetadata = {
       "pigtails",
       "hair_pigtails_bangs"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -25550,6 +25904,7 @@ window.itemMetadata = {
       "bob",
       "hair_bob"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -25674,6 +26029,7 @@ window.itemMetadata = {
       "bob",
       "hair_lob"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -25795,6 +26151,7 @@ window.itemMetadata = {
       "bob",
       "hair_bob_side_part"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -25922,6 +26279,7 @@ window.itemMetadata = {
       "bob",
       "hair_relm_short"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -26062,6 +26420,7 @@ window.itemMetadata = {
       "braids, ponytails, updos",
       "hair_half_up"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -26184,6 +26543,7 @@ window.itemMetadata = {
       "braids, ponytails, updos",
       "hair_bangs_bun"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -26310,6 +26670,7 @@ window.itemMetadata = {
       "braids, ponytails, updos",
       "hair_topknot_short"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -26484,6 +26845,7 @@ window.itemMetadata = {
       "braids, ponytails, updos",
       "hair_topknot_short2"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -26658,6 +27020,7 @@ window.itemMetadata = {
       "braids, ponytails, updos",
       "hair_topknot_long"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -26841,6 +27204,7 @@ window.itemMetadata = {
       "braids, ponytails, updos",
       "hair_topknot_long2"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -27023,6 +27387,7 @@ window.itemMetadata = {
       "braids, ponytails, updos",
       "hair_ponytail"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -27161,6 +27526,7 @@ window.itemMetadata = {
       "braids, ponytails, updos",
       "hair_ponytail2"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -27307,6 +27673,7 @@ window.itemMetadata = {
       "braids, ponytails, updos",
       "hair_high_ponytail"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -27440,6 +27807,7 @@ window.itemMetadata = {
       "braids, ponytails, updos",
       "hair_braid"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -27590,6 +27958,7 @@ window.itemMetadata = {
       "braids, ponytails, updos",
       "hair_braid2"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -27728,6 +28097,7 @@ window.itemMetadata = {
       "braids, ponytails, updos",
       "hair_shoulderl"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -27874,6 +28244,7 @@ window.itemMetadata = {
       "braids, ponytails, updos",
       "hair_shoulderr"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -28020,6 +28391,7 @@ window.itemMetadata = {
       "braids, ponytails, updos",
       "hair_long_tied"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -28155,6 +28527,7 @@ window.itemMetadata = {
       "braids, ponytails, updos",
       "hair_relm_ponytail"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -28315,6 +28688,7 @@ window.itemMetadata = {
       "long",
       "hair_loose"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -28446,6 +28820,7 @@ window.itemMetadata = {
       "long",
       "hair_bangslong"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -28577,6 +28952,7 @@ window.itemMetadata = {
       "long",
       "hair_bangslong2"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -28718,6 +29094,7 @@ window.itemMetadata = {
       "long",
       "hair_long"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -28849,6 +29226,7 @@ window.itemMetadata = {
       "long",
       "hair_long_messy"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -28986,6 +29364,7 @@ window.itemMetadata = {
       "long",
       "hair_long_messy2"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -29117,6 +29496,7 @@ window.itemMetadata = {
       "long",
       "hair_curtains_long"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -29254,6 +29634,7 @@ window.itemMetadata = {
       "long",
       "hair_wavy"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -29391,6 +29772,7 @@ window.itemMetadata = {
       "long",
       "hair_wavy_child"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -29504,6 +29886,7 @@ window.itemMetadata = {
       "long",
       "hair_long_center_part"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -29637,6 +30020,7 @@ window.itemMetadata = {
       "long",
       "hair_long_straight"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -29765,6 +30149,7 @@ window.itemMetadata = {
       "very long",
       "hair_princess"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -29911,6 +30296,7 @@ window.itemMetadata = {
       "very long",
       "hair_sara"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -30054,6 +30440,7 @@ window.itemMetadata = {
       "very long",
       "hair_long_band"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -30188,6 +30575,7 @@ window.itemMetadata = {
       "very long",
       "hair_xlong"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -30340,6 +30728,7 @@ window.itemMetadata = {
       "very long",
       "hair_xlong_wavy"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -30473,6 +30862,7 @@ window.itemMetadata = {
       "very long",
       "hair_relm_xlong"
     ],
+    "replace_in_path": {},
     "variants": [
       "blonde",
       "ash",
@@ -30618,6 +31008,7 @@ window.itemMetadata = {
       "appendages",
       "head_horns_backwards"
     ],
+    "replace_in_path": {},
     "variants": [
       "horns",
       "blonde",
@@ -30801,6 +31192,7 @@ window.itemMetadata = {
       "appendages",
       "head_horns_curled"
     ],
+    "replace_in_path": {},
     "variants": [
       "horns",
       "blonde",
@@ -30975,6 +31367,7 @@ window.itemMetadata = {
       "appendages",
       "head_fins_fin"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -31115,6 +31508,7 @@ window.itemMetadata = {
       "appendages",
       "head_fins_fin_short"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -31255,6 +31649,7 @@ window.itemMetadata = {
       "hoods",
       "hat_hood_cloth"
     ],
+    "replace_in_path": {},
     "variants": [
       "hood_black",
       "hood_brown",
@@ -31395,6 +31790,7 @@ window.itemMetadata = {
       "hoods",
       "hat_hood_sack_cloth"
     ],
+    "replace_in_path": {},
     "variants": [
       "base",
       "black",
@@ -31533,6 +31929,7 @@ window.itemMetadata = {
       "hoods",
       "hat_hood_hijab"
     ],
+    "replace_in_path": {},
     "variants": [
       "base",
       "black",
@@ -31658,6 +32055,7 @@ window.itemMetadata = {
       "hoods",
       "hat_helmet_mail"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -31780,6 +32178,7 @@ window.itemMetadata = {
       "bandanas",
       "hat_bandana"
     ],
+    "replace_in_path": {},
     "variants": [
       "bandana_gray",
       "bandana_red",
@@ -31917,6 +32316,7 @@ window.itemMetadata = {
       "bandanas",
       "hat_bandana2"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -32052,6 +32452,7 @@ window.itemMetadata = {
       "bandanas",
       "hat_bandana_pirate"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -32178,6 +32579,7 @@ window.itemMetadata = {
       "bandanas",
       "hat_bandana_pirate_skull"
     ],
+    "replace_in_path": {},
     "variants": [
       "white",
       "black",
@@ -32304,6 +32706,7 @@ window.itemMetadata = {
       "headbands",
       "hat_headband_kerchief"
     ],
+    "replace_in_path": {},
     "variants": [
       "white",
       "black",
@@ -32449,6 +32852,7 @@ window.itemMetadata = {
       "headbands",
       "hat_headband_tied"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -32586,6 +32990,7 @@ window.itemMetadata = {
       "headbands",
       "hat_headband_thick"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -32729,6 +33134,7 @@ window.itemMetadata = {
       "headbands",
       "hat_headband_thick_rune"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -32872,6 +33278,7 @@ window.itemMetadata = {
       "headbands",
       "hat_headband_hairtie"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -33015,6 +33422,7 @@ window.itemMetadata = {
       "headbands",
       "hat_headband_hairtie_rune"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -33157,6 +33565,7 @@ window.itemMetadata = {
       "caps",
       "hat_cap_leather"
     ],
+    "replace_in_path": {},
     "variants": [
       "base",
       "black",
@@ -33296,6 +33705,7 @@ window.itemMetadata = {
       "caps",
       "hat_cap_leather_feather"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -33434,6 +33844,7 @@ window.itemMetadata = {
       "caps",
       "hat_cap_bonnie"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -33559,6 +33970,7 @@ window.itemMetadata = {
       "caps",
       "hat_cap_bonnie_tilt"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -33684,6 +34096,7 @@ window.itemMetadata = {
       "caps",
       "hat_cap_bonnie_feather"
     ],
+    "replace_in_path": {},
     "variants": [
       "white",
       "black",
@@ -33809,6 +34222,7 @@ window.itemMetadata = {
       "caps",
       "hat_cap_cavalier"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -33934,6 +34348,7 @@ window.itemMetadata = {
       "caps",
       "hat_cap_cavalier_feather"
     ],
+    "replace_in_path": {},
     "variants": [
       "white",
       "black",
@@ -34063,6 +34478,7 @@ window.itemMetadata = {
       "basic",
       "hat_tricorne"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -34194,6 +34610,7 @@ window.itemMetadata = {
       "basic",
       "hat_tricorne_stitched"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -34325,6 +34742,7 @@ window.itemMetadata = {
       "basic",
       "hat_tricorne_thatch"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -34453,6 +34871,7 @@ window.itemMetadata = {
       "lieutenant",
       "hat_tricorne_lieutenant"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -34583,6 +35002,7 @@ window.itemMetadata = {
       "lieutenant",
       "hat_tricorne_lieutenant_trim"
     ],
+    "replace_in_path": {},
     "variants": [
       "base",
       "steel",
@@ -34720,6 +35140,7 @@ window.itemMetadata = {
       "captain",
       "hat_tricorne_captain"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -34850,6 +35271,7 @@ window.itemMetadata = {
       "captain",
       "hat_tricorne_captain_trim"
     ],
+    "replace_in_path": {},
     "variants": [
       "base",
       "steel",
@@ -34984,6 +35406,7 @@ window.itemMetadata = {
       "captain",
       "hat_tricorne_captain_skull"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -35109,6 +35532,7 @@ window.itemMetadata = {
       "basic",
       "hat_bicorne_athwart_basic"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -35234,6 +35658,7 @@ window.itemMetadata = {
       "basic",
       "hat_bicorne_athwart_basic_skull"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -35360,6 +35785,7 @@ window.itemMetadata = {
       "captain",
       "hat_bicorne_athwart_captain"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -35486,6 +35912,7 @@ window.itemMetadata = {
       "captain",
       "hat_bicorne_athwart_captain_skull"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -35616,6 +36043,7 @@ window.itemMetadata = {
       "admiral",
       "hat_bicorne_athwart_admiral"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -35748,6 +36176,7 @@ window.itemMetadata = {
       "admiral",
       "hat_bicorne_athwart_admiral_trim"
     ],
+    "replace_in_path": {},
     "variants": [
       "base",
       "steel",
@@ -35883,6 +36312,7 @@ window.itemMetadata = {
       "admiral",
       "hat_bicorne_athwart_admiral_cockade"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -36009,6 +36439,7 @@ window.itemMetadata = {
       "commodore",
       "hat_bicorne_athwart_commodore"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -36135,6 +36566,7 @@ window.itemMetadata = {
       "commodore",
       "hat_bicorne_athwart_commodore_trim"
     ],
+    "replace_in_path": {},
     "variants": [
       "base",
       "steel",
@@ -36269,6 +36701,7 @@ window.itemMetadata = {
       "bicorne foreaft",
       "hat_bicorne_foreaft"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -36398,6 +36831,7 @@ window.itemMetadata = {
       "bicorne foreaft",
       "hat_bicorne_foreaft_commodore"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -36529,6 +36963,7 @@ window.itemMetadata = {
       "bicorne foreaft",
       "hat_bicorne_foreaft_commodore_trim"
     ],
+    "replace_in_path": {},
     "variants": [
       "base",
       "steel",
@@ -36663,6 +37098,7 @@ window.itemMetadata = {
       "magic",
       "hat_magic_large"
     ],
+    "replace_in_path": {},
     "variants": [
       "brown"
     ],
@@ -36771,6 +37207,7 @@ window.itemMetadata = {
       "wizard",
       "hat_magic_wizard"
     ],
+    "replace_in_path": {},
     "variants": [
       "base_black",
       "base_brown",
@@ -36922,6 +37359,7 @@ window.itemMetadata = {
       "wizard",
       "hat_magic_wizard_belt"
     ],
+    "replace_in_path": {},
     "variants": [
       "base_black",
       "base_brown",
@@ -37073,6 +37511,7 @@ window.itemMetadata = {
       "wizard",
       "hat_magic_wizard_buckle"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -37200,6 +37639,7 @@ window.itemMetadata = {
       "celestial",
       "hat_magic_celestial"
     ],
+    "replace_in_path": {},
     "variants": [
       "white",
       "black",
@@ -37332,6 +37772,7 @@ window.itemMetadata = {
       "celestial",
       "hat_magic_celestial_trim"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -37471,6 +37912,7 @@ window.itemMetadata = {
       "celestial",
       "hat_magic_celestial_moon"
     ],
+    "replace_in_path": {},
     "variants": [
       "white",
       "black",
@@ -37603,6 +38045,7 @@ window.itemMetadata = {
       "celestial",
       "hat_magic_celestial_moon_trim"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -37737,6 +38180,7 @@ window.itemMetadata = {
       "formal",
       "hat_formal_tophat"
     ],
+    "replace_in_path": {},
     "variants": [
       "base",
       "base_brown",
@@ -37869,6 +38313,7 @@ window.itemMetadata = {
       "formal",
       "hat_formal_bowler"
     ],
+    "replace_in_path": {},
     "variants": [
       "base",
       "base_brown",
@@ -38001,6 +38446,7 @@ window.itemMetadata = {
       "formal",
       "hat_formal_crown"
     ],
+    "replace_in_path": {},
     "variants": [
       "crown_gold",
       "crown_red",
@@ -38145,6 +38591,7 @@ window.itemMetadata = {
       "formal",
       "hat_formal_tiara"
     ],
+    "replace_in_path": {},
     "variants": [
       "tiara_bronze",
       "tiara_gold",
@@ -38291,6 +38738,7 @@ window.itemMetadata = {
       "holiday",
       "hat_holiday_christmas"
     ],
+    "replace_in_path": {},
     "variants": [
       "red",
       "black",
@@ -38427,6 +38875,7 @@ window.itemMetadata = {
       "holiday",
       "hat_holiday_santa"
     ],
+    "replace_in_path": {},
     "variants": [
       "white",
       "black",
@@ -38563,6 +39012,7 @@ window.itemMetadata = {
       "holiday",
       "hat_holiday_elf"
     ],
+    "replace_in_path": {},
     "variants": [
       "white",
       "black",
@@ -38694,6 +39144,7 @@ window.itemMetadata = {
       "helmets",
       "hat_helmet_armet"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -38815,6 +39266,7 @@ window.itemMetadata = {
       "helmets",
       "hat_helmet_armet_simple"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -38936,6 +39388,7 @@ window.itemMetadata = {
       "helmets",
       "hat_helmet_barbarian"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -39068,6 +39521,7 @@ window.itemMetadata = {
       "helmets",
       "hat_helmet_barbarian_nasal"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -39200,6 +39654,7 @@ window.itemMetadata = {
       "helmets",
       "hat_helmet_barbarian_viking"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -39332,6 +39787,7 @@ window.itemMetadata = {
       "helmets",
       "hat_helmet_barbuta"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -39464,6 +39920,7 @@ window.itemMetadata = {
       "helmets",
       "hat_helmet_barbuta_simple"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -39596,6 +40053,7 @@ window.itemMetadata = {
       "helmets",
       "hat_helmet_bascinet"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -39725,6 +40183,7 @@ window.itemMetadata = {
       "helmets",
       "hat_helmet_bascinet_round"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -39855,6 +40314,7 @@ window.itemMetadata = {
       "helmets",
       "hat_helmet_close"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -39987,6 +40447,7 @@ window.itemMetadata = {
       "helmets",
       "hat_helmet_flattop"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -40119,6 +40580,7 @@ window.itemMetadata = {
       "helmets",
       "hat_helmet_greathelm"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -40251,6 +40713,7 @@ window.itemMetadata = {
       "helmets",
       "hat_helmet_horned"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -40372,6 +40835,7 @@ window.itemMetadata = {
       "helmets",
       "hat_helmet_kettle"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel"
     ],
@@ -40485,6 +40949,7 @@ window.itemMetadata = {
       "helmets",
       "hat_helmet_legion"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -40615,6 +41080,7 @@ window.itemMetadata = {
       "helmets",
       "hat_helmet_maximus"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -40747,6 +41213,7 @@ window.itemMetadata = {
       "helmets",
       "hat_helmet_morion"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -40874,6 +41341,7 @@ window.itemMetadata = {
       "helmets",
       "hat_helmet_nasal"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -41006,6 +41474,7 @@ window.itemMetadata = {
       "helmets",
       "hat_helmet_norman"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -41133,6 +41602,7 @@ window.itemMetadata = {
       "helmets",
       "hat_helmet_pointed"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -41265,6 +41735,7 @@ window.itemMetadata = {
       "helmets",
       "hat_helmet_spangenhelm"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -41397,6 +41868,7 @@ window.itemMetadata = {
       "helmets",
       "hat_helmet_spangenhelm_viking"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -41529,6 +42001,7 @@ window.itemMetadata = {
       "helmets",
       "hat_helmet_sugarloaf"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -41661,6 +42134,7 @@ window.itemMetadata = {
       "helmets",
       "hat_helmet_sugarloaf_simple"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -41793,6 +42267,7 @@ window.itemMetadata = {
       "helmets",
       "hat_helmet_xeon"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -41901,6 +42376,7 @@ window.itemMetadata = {
       "visors",
       "hat_visor_grated"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -42033,6 +42509,7 @@ window.itemMetadata = {
       "visors",
       "hat_visor_grated_narrow"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -42165,6 +42642,7 @@ window.itemMetadata = {
       "visors",
       "hat_visor_horned"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -42286,6 +42764,7 @@ window.itemMetadata = {
       "visors",
       "hat_visor_pigface"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -42415,6 +42894,7 @@ window.itemMetadata = {
       "visors",
       "hat_visor_pigface_raised"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -42544,6 +43024,7 @@ window.itemMetadata = {
       "visors",
       "hat_visor_round"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -42673,6 +43154,7 @@ window.itemMetadata = {
       "visors",
       "hat_visor_round_raised"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -42802,6 +43284,7 @@ window.itemMetadata = {
       "visors",
       "hat_visor_slit"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -42923,6 +43406,7 @@ window.itemMetadata = {
       "visors",
       "hat_visor_slit_narrow"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -43044,6 +43528,7 @@ window.itemMetadata = {
       "helmet accessories",
       "hat_accessory_crest"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -43152,6 +43637,7 @@ window.itemMetadata = {
       "helmet accessories",
       "hat_accessory_crest_centurion"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -43262,6 +43748,7 @@ window.itemMetadata = {
       "helmet accessories",
       "hat_accessory_wings"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -43399,6 +43886,7 @@ window.itemMetadata = {
       "helmet accessories",
       "hat_accessory_horns_short"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -43533,6 +44021,7 @@ window.itemMetadata = {
       "helmet accessories",
       "hat_accessory_horns_upward"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -43667,6 +44156,7 @@ window.itemMetadata = {
       "helmet accessories",
       "hat_accessory_horns_downward"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -43802,6 +44292,7 @@ window.itemMetadata = {
       "helmet accessories",
       "hat_accessory_plumage"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -43944,6 +44435,7 @@ window.itemMetadata = {
       "helmet accessories",
       "hat_accessory_plumage_centurion"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -44071,6 +44563,7 @@ window.itemMetadata = {
       "helmet accessories",
       "hat_accessory_plumage_legion"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -44219,6 +44712,7 @@ window.itemMetadata = {
       "glasses",
       "facial_glasses"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -44356,6 +44850,7 @@ window.itemMetadata = {
       "glasses",
       "facial_glasses_halfmoon"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -44493,6 +44988,7 @@ window.itemMetadata = {
       "glasses",
       "facial_glasses_nerd"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -44638,6 +45134,7 @@ window.itemMetadata = {
       "glasses",
       "facial_glasses_shades"
     ],
+    "replace_in_path": {},
     "variants": [
       "base",
       "black",
@@ -44784,6 +45281,7 @@ window.itemMetadata = {
       "glasses",
       "facial_glasses_secretary"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -44929,6 +45427,7 @@ window.itemMetadata = {
       "glasses",
       "facial_glasses_round"
     ],
+    "replace_in_path": {},
     "variants": [
       "base",
       "sunglasses",
@@ -45077,6 +45576,7 @@ window.itemMetadata = {
       "glasses",
       "facial_glasses_sunglasses"
     ],
+    "replace_in_path": {},
     "variants": [
       "base",
       "sunglasses",
@@ -45229,6 +45729,7 @@ window.itemMetadata = {
       "monocle",
       "facial_monocle_left"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -45358,6 +45859,7 @@ window.itemMetadata = {
       "monocle",
       "facial_monocle_left_frame"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -45509,6 +46011,7 @@ window.itemMetadata = {
       "monocle",
       "facial_monocle_right"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -45638,6 +46141,7 @@ window.itemMetadata = {
       "monocle",
       "facial_monocle_right_frame"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -45785,6 +46289,7 @@ window.itemMetadata = {
       "eyepatches",
       "facial_eyepatch_ambi"
     ],
+    "replace_in_path": {},
     "variants": [
       "base",
       "black",
@@ -45922,6 +46427,7 @@ window.itemMetadata = {
       "eyepatches",
       "facial_eyepatch_left"
     ],
+    "replace_in_path": {},
     "variants": [
       "base",
       "black",
@@ -46059,6 +46565,7 @@ window.itemMetadata = {
       "eyepatches",
       "facial_eyepatch_right"
     ],
+    "replace_in_path": {},
     "variants": [
       "base",
       "black",
@@ -46196,6 +46703,7 @@ window.itemMetadata = {
       "eyepatches",
       "facial_eyepatch2_left"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -46325,6 +46833,7 @@ window.itemMetadata = {
       "eyepatches",
       "facial_eyepatch2_right"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -46454,6 +46963,7 @@ window.itemMetadata = {
       "eyepatches",
       "facial_eyepatch_small_left"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -46592,6 +47102,7 @@ window.itemMetadata = {
       "eyepatches",
       "facial_eyepatch_small_right"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -46729,6 +47240,7 @@ window.itemMetadata = {
       "accessories",
       "facial_mask_plain"
     ],
+    "replace_in_path": {},
     "variants": [
       "dark",
       "white",
@@ -46889,6 +47401,7 @@ window.itemMetadata = {
       "earrings",
       "facial_earring_left"
     ],
+    "replace_in_path": {},
     "variants": [
       "base",
       "black",
@@ -47026,6 +47539,7 @@ window.itemMetadata = {
       "earrings",
       "facial_earring_right"
     ],
+    "replace_in_path": {},
     "variants": [
       "base",
       "black",
@@ -47152,6 +47666,7 @@ window.itemMetadata = {
       "earrings",
       "facial_earrings_emerald"
     ],
+    "replace_in_path": {},
     "variants": [
       "blue",
       "green",
@@ -47247,6 +47762,7 @@ window.itemMetadata = {
       "earrings",
       "facial_earrings_moon"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -47344,6 +47860,7 @@ window.itemMetadata = {
       "earrings",
       "facial_earrings_pear"
     ],
+    "replace_in_path": {},
     "variants": [
       "blue",
       "green",
@@ -47439,6 +47956,7 @@ window.itemMetadata = {
       "earrings",
       "facial_earrings_princess"
     ],
+    "replace_in_path": {},
     "variants": [
       "blue",
       "green",
@@ -47534,6 +48052,7 @@ window.itemMetadata = {
       "earrings",
       "facial_earrings_stud"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -47640,6 +48159,7 @@ window.itemMetadata = {
       "neck",
       "neck_bowtie"
     ],
+    "replace_in_path": {},
     "variants": [
       "base",
       "black",
@@ -47774,6 +48294,7 @@ window.itemMetadata = {
       "neck",
       "neck_bowtie2"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -47898,6 +48419,7 @@ window.itemMetadata = {
       "neck",
       "neck_necktie"
     ],
+    "replace_in_path": {},
     "variants": [
       "base",
       "black",
@@ -48022,6 +48544,7 @@ window.itemMetadata = {
       "neck",
       "neck_scarf"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -48136,6 +48659,7 @@ window.itemMetadata = {
       "neck",
       "neck_capeclip"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -48262,6 +48786,7 @@ window.itemMetadata = {
       "neck",
       "neck_capetie"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -48385,6 +48910,7 @@ window.itemMetadata = {
       "neck",
       "neck_jabot"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -48491,6 +49017,7 @@ window.itemMetadata = {
       "neck",
       "neck_cravat"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -48599,6 +49126,7 @@ window.itemMetadata = {
       "neck",
       "neck_necklace"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -48704,6 +49232,7 @@ window.itemMetadata = {
       "neck",
       "neck_necklace_simple"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -48800,6 +49329,7 @@ window.itemMetadata = {
       "neck",
       "neck_necklace_chain"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -48896,6 +49426,7 @@ window.itemMetadata = {
       "neck",
       "neck_necklace_beaded_small"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -48992,6 +49523,7 @@ window.itemMetadata = {
       "neck",
       "neck_necklace_beaded_large"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -49089,6 +49621,7 @@ window.itemMetadata = {
       "necklace charms",
       "neck_charm_box"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -49186,6 +49719,7 @@ window.itemMetadata = {
       "necklace charms",
       "neck_charm_oval"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -49283,6 +49817,7 @@ window.itemMetadata = {
       "necklace charms",
       "neck_charm_ring"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -49380,6 +49915,7 @@ window.itemMetadata = {
       "necklace charms",
       "neck_charm_star"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -49477,6 +50013,7 @@ window.itemMetadata = {
       "necklace charms",
       "neck_gem_emerald"
     ],
+    "replace_in_path": {},
     "variants": [
       "blue",
       "green",
@@ -49572,6 +50109,7 @@ window.itemMetadata = {
       "necklace charms",
       "neck_gem_marquise"
     ],
+    "replace_in_path": {},
     "variants": [
       "blue",
       "green",
@@ -49667,6 +50205,7 @@ window.itemMetadata = {
       "necklace charms",
       "neck_gem_natural"
     ],
+    "replace_in_path": {},
     "variants": [
       "blue",
       "green",
@@ -49762,6 +50301,7 @@ window.itemMetadata = {
       "necklace charms",
       "neck_gem_pear"
     ],
+    "replace_in_path": {},
     "variants": [
       "blue",
       "green",
@@ -49857,6 +50397,7 @@ window.itemMetadata = {
       "necklace charms",
       "neck_gem_pearl"
     ],
+    "replace_in_path": {},
     "variants": [
       "blue",
       "green",
@@ -49952,6 +50493,7 @@ window.itemMetadata = {
       "necklace charms",
       "neck_gem_princess"
     ],
+    "replace_in_path": {},
     "variants": [
       "blue",
       "green",
@@ -50047,6 +50589,7 @@ window.itemMetadata = {
       "necklace charms",
       "neck_gem_round"
     ],
+    "replace_in_path": {},
     "variants": [
       "blue",
       "green",
@@ -50142,6 +50685,7 @@ window.itemMetadata = {
       "necklace charms",
       "neck_gem_trilliant"
     ],
+    "replace_in_path": {},
     "variants": [
       "blue",
       "green",
@@ -50237,6 +50781,7 @@ window.itemMetadata = {
       "necklace charms",
       "neck_amulet_cross"
     ],
+    "replace_in_path": {},
     "variants": [
       "brass_blue",
       "brass_green",
@@ -50374,6 +50919,7 @@ window.itemMetadata = {
       "necklace charms",
       "neck_amulet_dangle"
     ],
+    "replace_in_path": {},
     "variants": [
       "brass_blue",
       "brass_green",
@@ -50514,6 +51060,7 @@ window.itemMetadata = {
       "necklace charms",
       "neck_amulet_spider"
     ],
+    "replace_in_path": {},
     "variants": [
       "brass_blue",
       "brass_green",
@@ -50638,6 +51185,7 @@ window.itemMetadata = {
       "shoulders",
       "shoulders_legion"
     ],
+    "replace_in_path": {},
     "variants": [
       "bronze",
       "steel",
@@ -50728,6 +51276,7 @@ window.itemMetadata = {
       "shoulders",
       "shoulders_plate"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -50839,6 +51388,7 @@ window.itemMetadata = {
       "shoulders",
       "shoulders_leather"
     ],
+    "replace_in_path": {},
     "variants": [
       "leather",
       "black",
@@ -50944,6 +51494,7 @@ window.itemMetadata = {
       "shoulders",
       "shoulders_epaulets"
     ],
+    "replace_in_path": {},
     "variants": [
       "bronze",
       "gold",
@@ -51008,6 +51559,7 @@ window.itemMetadata = {
       "shoulders",
       "shoulders_mantal"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -51092,6 +51644,7 @@ window.itemMetadata = {
       "arms",
       "arms_armour"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -51210,6 +51763,7 @@ window.itemMetadata = {
       "arms",
       "bauldron"
     ],
+    "replace_in_path": {},
     "variants": [
       "brown",
       "charcoal",
@@ -51311,6 +51865,7 @@ window.itemMetadata = {
       "wrists",
       "arms_bracers"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -51399,6 +51954,7 @@ window.itemMetadata = {
       "wrists",
       "wrists_cuffs"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -51480,6 +52036,7 @@ window.itemMetadata = {
       "wrists",
       "wrists_cuffs_lace"
     ],
+    "replace_in_path": {},
     "variants": [
       "bronze",
       "gold",
@@ -51557,6 +52114,7 @@ window.itemMetadata = {
       "arms",
       "arms_gloves"
     ],
+    "replace_in_path": {},
     "variants": [
       "brass",
       "bronze",
@@ -51701,6 +52259,7 @@ window.itemMetadata = {
       "arms",
       "arms_hands_ring_stud"
     ],
+    "replace_in_path": {},
     "variants": [
       "blue",
       "green",
@@ -51780,6 +52339,7 @@ window.itemMetadata = {
       "dresses",
       "dress_sash"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -51866,6 +52426,7 @@ window.itemMetadata = {
       "dresses",
       "dress_slit"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -51956,6 +52517,7 @@ window.itemMetadata = {
       "dresses",
       "dress_bodice"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -52051,6 +52613,7 @@ window.itemMetadata = {
       "kimono",
       "dress_kimono"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -52151,6 +52714,7 @@ window.itemMetadata = {
       "kimono",
       "dress_kimono_trim"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -52250,6 +52814,7 @@ window.itemMetadata = {
       "kimono",
       "dress_kimono_split"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -52350,6 +52915,7 @@ window.itemMetadata = {
       "kimono",
       "dress_kimono_split_trim"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -52449,6 +53015,7 @@ window.itemMetadata = {
       "kimono",
       "dress_kimono_longsleeve"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -52554,6 +53121,7 @@ window.itemMetadata = {
       "kimono",
       "dress_kimono_longsleeve_trim"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -52658,6 +53226,7 @@ window.itemMetadata = {
       "kimono",
       "dress_kimono_oversize"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -52763,6 +53332,7 @@ window.itemMetadata = {
       "kimono",
       "dress_kimono_oversize_trim"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -52855,6 +53425,7 @@ window.itemMetadata = {
       "shirts",
       "torso_clothes_child_shirt"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -52939,6 +53510,7 @@ window.itemMetadata = {
       "sleeves",
       "torso_clothes_shortsleeves"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -53103,6 +53675,7 @@ window.itemMetadata = {
       "sleeves",
       "torso_clothes_shortsleeves2"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -53211,6 +53784,7 @@ window.itemMetadata = {
       "sleeves",
       "torso_clothes_longsleeves"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -53375,6 +53949,7 @@ window.itemMetadata = {
       "sleeves",
       "torso_clothes_longsleeves2"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -53483,6 +54058,7 @@ window.itemMetadata = {
       "sleeves",
       "torso_clothes_longsleeves_cuffed"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -53592,6 +54168,7 @@ window.itemMetadata = {
       "longsleeve",
       "torso_clothes_longsleeve"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -53785,6 +54362,7 @@ window.itemMetadata = {
       "longsleeve",
       "torso_clothes_longsleeve_scoop"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -53962,6 +54540,7 @@ window.itemMetadata = {
       "longsleeve",
       "torso_clothes_longsleeve_formal"
     ],
+    "replace_in_path": {},
     "variants": [
       "white"
     ],
@@ -54029,6 +54608,7 @@ window.itemMetadata = {
       "longsleeve",
       "torso_clothes_longsleeve_formal_striped"
     ],
+    "replace_in_path": {},
     "variants": [
       "white"
     ],
@@ -54095,6 +54675,7 @@ window.itemMetadata = {
       "longsleeve",
       "torso_clothes_longsleeve_laced"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -54195,6 +54776,7 @@ window.itemMetadata = {
       "longsleeve",
       "torso_clothes_longsleeve2"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -54303,6 +54885,7 @@ window.itemMetadata = {
       "longsleeve",
       "torso_clothes_longsleeve2_vneck"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -54411,6 +54994,7 @@ window.itemMetadata = {
       "longsleeve",
       "torso_clothes_longsleeve2_scoop"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -54519,6 +55103,7 @@ window.itemMetadata = {
       "longsleeve",
       "torso_clothes_longsleeve2_buttoned"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -54627,6 +55212,7 @@ window.itemMetadata = {
       "longsleeve",
       "torso_clothes_longsleeve2_polo"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -54735,6 +55321,7 @@ window.itemMetadata = {
       "longsleeve",
       "torso_clothes_longsleeve2_cardigan"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -54844,6 +55431,7 @@ window.itemMetadata = {
       "shortsleeve",
       "torso_clothes_shortsleeve"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -55038,6 +55626,7 @@ window.itemMetadata = {
       "shortsleeve",
       "torso_clothes_shortsleeve_polo"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -55146,6 +55735,7 @@ window.itemMetadata = {
       "shortsleeve",
       "torso_clothes_shortsleeve_cardigan"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -55253,6 +55843,7 @@ window.itemMetadata = {
       "shortsleeve",
       "torso_clothes_tshirt"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -55361,6 +55952,7 @@ window.itemMetadata = {
       "shortsleeve",
       "torso_clothes_tshirt_vneck"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -55469,6 +56061,7 @@ window.itemMetadata = {
       "shortsleeve",
       "torso_clothes_tshirt_scoop"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -55577,6 +56170,7 @@ window.itemMetadata = {
       "shortsleeve",
       "torso_clothes_tshirt_buttoned"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -55674,6 +56268,7 @@ window.itemMetadata = {
       "sleeveless",
       "torso_clothes_sleeveless"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -55798,6 +56393,7 @@ window.itemMetadata = {
       "sleeveless",
       "torso_clothes_sleeveless_laced"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -55893,6 +56489,7 @@ window.itemMetadata = {
       "sleeveless",
       "torso_clothes_sleeveless_striped"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -55989,6 +56586,7 @@ window.itemMetadata = {
       "sleeveless",
       "torso_clothes_sleeveless_tanktop"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -56123,6 +56721,7 @@ window.itemMetadata = {
       "sleeveless",
       "torso_clothes_sleeveless1"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -56291,6 +56890,7 @@ window.itemMetadata = {
       "sleeveless",
       "torso_clothes_sleeveless2"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -56399,6 +56999,7 @@ window.itemMetadata = {
       "sleeveless",
       "torso_clothes_sleeveless2_vneck"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -56507,6 +57108,7 @@ window.itemMetadata = {
       "sleeveless",
       "torso_clothes_sleeveless2_scoop"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -56615,6 +57217,7 @@ window.itemMetadata = {
       "sleeveless",
       "torso_clothes_sleeveless2_buttoned"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -56723,6 +57326,7 @@ window.itemMetadata = {
       "sleeveless",
       "torso_clothes_sleeveless2_polo"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -56831,6 +57435,7 @@ window.itemMetadata = {
       "sleeveless",
       "torso_clothes_sleeveless2_cardigan"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -56926,6 +57531,7 @@ window.itemMetadata = {
       "shirts",
       "torso_clothes_corset"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -57008,6 +57614,7 @@ window.itemMetadata = {
       "shirts",
       "torso_clothes_blouse"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -57091,6 +57698,7 @@ window.itemMetadata = {
       "shirts",
       "torso_clothes_blouse_longsleeve"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -57174,6 +57782,7 @@ window.itemMetadata = {
       "shirts",
       "torso_clothes_tunic"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -57266,6 +57875,7 @@ window.itemMetadata = {
       "shirts",
       "torso_clothes_tunic_sara"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -57351,6 +57961,7 @@ window.itemMetadata = {
       "shirts",
       "torso_clothes_robe"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -57432,6 +58043,7 @@ window.itemMetadata = {
       "aprons",
       "torso_aprons_overalls"
     ],
+    "replace_in_path": {},
     "variants": [
       "leather",
       "black",
@@ -57542,6 +58154,7 @@ window.itemMetadata = {
       "aprons",
       "torso_aprons_suspenders"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -57643,6 +58256,7 @@ window.itemMetadata = {
       "aprons",
       "torso_aprons_apron"
     ],
+    "replace_in_path": {},
     "variants": [
       "leather",
       "black",
@@ -57744,6 +58358,7 @@ window.itemMetadata = {
       "aprons",
       "torso_aprons_apron_half"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -57828,6 +58443,7 @@ window.itemMetadata = {
       "aprons",
       "torso_aprons_apron_full"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -57913,6 +58529,7 @@ window.itemMetadata = {
       "torso",
       "torso_bandages"
     ],
+    "replace_in_path": {},
     "variants": [
       "white"
     ],
@@ -57992,6 +58609,7 @@ window.itemMetadata = {
       "torso",
       "torso_chainmail"
     ],
+    "replace_in_path": {},
     "variants": [
       "gray"
     ],
@@ -58066,6 +58684,7 @@ window.itemMetadata = {
       "jacket",
       "torso_jacket_collared"
     ],
+    "replace_in_path": {},
     "variants": [
       "brown striped",
       "black",
@@ -58151,6 +58770,7 @@ window.itemMetadata = {
       "jacket",
       "torso_jacket_iverness"
     ],
+    "replace_in_path": {},
     "variants": [
       "black"
     ],
@@ -58211,6 +58831,7 @@ window.itemMetadata = {
       "jacket",
       "torso_jacket_trench"
     ],
+    "replace_in_path": {},
     "variants": [
       "dark gray",
       "gray"
@@ -58274,6 +58895,7 @@ window.itemMetadata = {
       "jacket",
       "torso_jacket_tabard"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -58387,6 +59009,7 @@ window.itemMetadata = {
       "jacket",
       "torso_jacket_frock"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -58468,6 +59091,7 @@ window.itemMetadata = {
       "jacket",
       "torso_jacket_santa"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -58553,6 +59177,7 @@ window.itemMetadata = {
       "jacket trim",
       "torso_jacket_frock_collar"
     ],
+    "replace_in_path": {},
     "variants": [
       "bronze",
       "gold",
@@ -58618,6 +59243,7 @@ window.itemMetadata = {
       "jacket trim",
       "torso_jacket_frock_lace"
     ],
+    "replace_in_path": {},
     "variants": [
       "bronze",
       "gold",
@@ -58683,6 +59309,7 @@ window.itemMetadata = {
       "jacket trim",
       "torso_jacket_frock_lapel"
     ],
+    "replace_in_path": {},
     "variants": [
       "bronze",
       "gold",
@@ -58748,6 +59375,7 @@ window.itemMetadata = {
       "jacket trim",
       "torso_jacket_frock_buttons"
     ],
+    "replace_in_path": {},
     "variants": [
       "bronze",
       "gold",
@@ -58813,6 +59441,7 @@ window.itemMetadata = {
       "jacket trim",
       "torso_jacket_pockets"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -58894,6 +59523,7 @@ window.itemMetadata = {
       "vest",
       "torso_clothes_vest"
     ],
+    "replace_in_path": {},
     "variants": [
       "gray striped",
       "green striped",
@@ -59019,6 +59649,7 @@ window.itemMetadata = {
       "vest",
       "torso_clothes_vest_open"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -59118,6 +59749,7 @@ window.itemMetadata = {
       "armour",
       "torso_armour_plate"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -59242,6 +59874,7 @@ window.itemMetadata = {
       "armour",
       "torso_armour_leather"
     ],
+    "replace_in_path": {},
     "variants": [
       "leather",
       "black",
@@ -59371,6 +60004,7 @@ window.itemMetadata = {
       "armour",
       "torso_armour_legion"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -59465,6 +60099,7 @@ window.itemMetadata = {
       "cape",
       "cape_solid"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -59609,6 +60244,7 @@ window.itemMetadata = {
       "cape",
       "cape_tattered"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -59754,6 +60390,7 @@ window.itemMetadata = {
       "cape",
       "cape_trim"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -59873,6 +60510,7 @@ window.itemMetadata = {
       "backpack",
       "backpack_straps"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -59974,6 +60612,7 @@ window.itemMetadata = {
       "backpack",
       "backpack"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -60074,6 +60713,7 @@ window.itemMetadata = {
       "backpack",
       "backpack_squarepack"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -60176,6 +60816,7 @@ window.itemMetadata = {
       "backpack",
       "backpack_jetpack"
     ],
+    "replace_in_path": {},
     "variants": [
       "bronze",
       "gold",
@@ -60261,6 +60902,7 @@ window.itemMetadata = {
       "backpack",
       "backpack_jetpack_fins"
     ],
+    "replace_in_path": {},
     "variants": [
       "bronze",
       "gold",
@@ -60346,6 +60988,7 @@ window.itemMetadata = {
       "backpack",
       "backpack_basket"
     ],
+    "replace_in_path": {},
     "variants": [
       "round",
       "square"
@@ -60428,6 +61071,7 @@ window.itemMetadata = {
       "backpack",
       "quiver"
     ],
+    "replace_in_path": {},
     "variants": [
       "quiver"
     ],
@@ -60523,6 +61167,7 @@ window.itemMetadata = {
       "backpack cargo",
       "backpack_contents_wood"
     ],
+    "replace_in_path": {},
     "variants": [
       "3_logs",
       "9_logs"
@@ -60617,6 +61262,7 @@ window.itemMetadata = {
       "backpack cargo",
       "backpack_contents_ore"
     ],
+    "replace_in_path": {},
     "variants": [
       "coal",
       "iron",
@@ -60703,6 +61349,7 @@ window.itemMetadata = {
       "waist",
       "belt_leather"
     ],
+    "replace_in_path": {},
     "variants": [
       "brown",
       "charcoal",
@@ -60788,6 +61435,7 @@ window.itemMetadata = {
       "waist",
       "belt_double"
     ],
+    "replace_in_path": {},
     "variants": [
       "brown",
       "charcoal",
@@ -60873,6 +61521,7 @@ window.itemMetadata = {
       "waist",
       "belt_loose"
     ],
+    "replace_in_path": {},
     "variants": [
       "brown",
       "charcoal",
@@ -60958,6 +61607,7 @@ window.itemMetadata = {
       "waist",
       "belt_belly"
     ],
+    "replace_in_path": {},
     "variants": [
       "brown",
       "charcoal",
@@ -61042,6 +61692,7 @@ window.itemMetadata = {
       "waist",
       "belt_other_female"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "bronze",
@@ -61157,6 +61808,7 @@ window.itemMetadata = {
       "waist",
       "belt_other_male"
     ],
+    "replace_in_path": {},
     "variants": [
       "formal",
       "leather",
@@ -61254,6 +61906,7 @@ window.itemMetadata = {
       "waist",
       "belt_sash"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -61359,6 +62012,7 @@ window.itemMetadata = {
       "waist",
       "belt_sash_narrow"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -61463,6 +62117,7 @@ window.itemMetadata = {
       "waist",
       "belt_waistband"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -61585,6 +62240,7 @@ window.itemMetadata = {
       "obi",
       "belt_obi"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -61709,6 +62365,7 @@ window.itemMetadata = {
       "obi",
       "belt_obi_knot_left"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -61833,6 +62490,7 @@ window.itemMetadata = {
       "obi",
       "belt_obi_knot_right"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -61941,6 +62599,7 @@ window.itemMetadata = {
       "torso",
       "buckles"
     ],
+    "replace_in_path": {},
     "variants": [
       "bronze",
       "gold",
@@ -62009,6 +62668,7 @@ window.itemMetadata = {
       "legs",
       "legs_armour"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -62094,6 +62754,7 @@ window.itemMetadata = {
       "pants",
       "legs_widepants"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -62197,6 +62858,7 @@ window.itemMetadata = {
       "pants",
       "legs_pants"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -62349,6 +63011,7 @@ window.itemMetadata = {
       "pants",
       "legs_pants2"
     ],
+    "replace_in_path": {},
     "variants": [
       "leather",
       "black",
@@ -62478,6 +63141,7 @@ window.itemMetadata = {
       "pants",
       "legs_cuffed"
     ],
+    "replace_in_path": {},
     "variants": [
       "leather",
       "black",
@@ -62609,6 +63273,7 @@ window.itemMetadata = {
       "pants",
       "legs_pantaloons"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -62781,6 +63446,7 @@ window.itemMetadata = {
       "pants",
       "legs_formal"
     ],
+    "replace_in_path": {},
     "variants": [
       "base",
       "black",
@@ -62936,6 +63602,7 @@ window.itemMetadata = {
       "pants",
       "legs_formal_striped"
     ],
+    "replace_in_path": {},
     "variants": [
       "base",
       "black",
@@ -63091,6 +63758,7 @@ window.itemMetadata = {
       "pants",
       "legs_fur"
     ],
+    "replace_in_path": {},
     "variants": [
       "base",
       "fur_black",
@@ -63232,6 +63900,7 @@ window.itemMetadata = {
       "pants",
       "legs_pregnantpants"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -63313,6 +63982,7 @@ window.itemMetadata = {
       "pants",
       "legs_childpants"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -63395,6 +64065,7 @@ window.itemMetadata = {
       "leggings",
       "legs_leggings"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -63528,6 +64199,7 @@ window.itemMetadata = {
       "leggings",
       "legs_leggings2"
     ],
+    "replace_in_path": {},
     "variants": [
       "leather",
       "black",
@@ -63658,6 +64330,7 @@ window.itemMetadata = {
       "leggings",
       "legs_hose"
     ],
+    "replace_in_path": {},
     "variants": [
       "leather",
       "black",
@@ -63789,6 +64462,7 @@ window.itemMetadata = {
       "shorts",
       "legs_shorts"
     ],
+    "replace_in_path": {},
     "variants": [
       "leather",
       "black",
@@ -63923,6 +64597,7 @@ window.itemMetadata = {
       "shorts",
       "legs_shorts_short"
     ],
+    "replace_in_path": {},
     "variants": [
       "leather",
       "black",
@@ -64038,6 +64713,7 @@ window.itemMetadata = {
       "skirts",
       "legs_childskirts"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -64112,6 +64788,7 @@ window.itemMetadata = {
       "skirts",
       "legs_skirts_plain"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -64218,6 +64895,7 @@ window.itemMetadata = {
       "skirts",
       "legs_skirts_slit"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -64319,6 +64997,7 @@ window.itemMetadata = {
       "skirts",
       "legs_skirts_legion"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -64438,6 +65117,7 @@ window.itemMetadata = {
       "skirts",
       "legs_skirt_straight"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -64534,6 +65214,7 @@ window.itemMetadata = {
       "skirts",
       "legs_skirt_belle"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -64637,6 +65318,7 @@ window.itemMetadata = {
       "skirts",
       "legs_skirt_overskirt"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -64741,6 +65423,7 @@ window.itemMetadata = {
       "feet",
       "feet_armour"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -64865,6 +65548,7 @@ window.itemMetadata = {
       "shoes",
       "feet_shoes_basic"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -65019,6 +65703,7 @@ window.itemMetadata = {
       "shoes",
       "feet_shoes_revised"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -65165,6 +65850,7 @@ window.itemMetadata = {
       "shoes",
       "feet_shoes_sara"
     ],
+    "replace_in_path": {},
     "variants": [
       "sara",
       "black",
@@ -65331,6 +66017,7 @@ window.itemMetadata = {
       "shoes",
       "feet_shoes_ghillies"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -65462,6 +66149,7 @@ window.itemMetadata = {
       "boots",
       "feet_boots_basic"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -65621,6 +66309,7 @@ window.itemMetadata = {
       "boots",
       "feet_boots_revised"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -65769,6 +66458,7 @@ window.itemMetadata = {
       "boots",
       "feet_boots_fold"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -65901,6 +66591,7 @@ window.itemMetadata = {
       "boots",
       "feet_boots_rim"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -66033,6 +66724,7 @@ window.itemMetadata = {
       "shoe accessory",
       "feet_plate_toe"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -66141,6 +66833,7 @@ window.itemMetadata = {
       "shoe accessory",
       "feet_plate_toe_thick"
     ],
+    "replace_in_path": {},
     "variants": [
       "steel",
       "iron",
@@ -66248,6 +66941,7 @@ window.itemMetadata = {
       "socks",
       "feet_socks_ankle"
     ],
+    "replace_in_path": {},
     "variants": [
       "leather",
       "black",
@@ -66380,6 +67074,7 @@ window.itemMetadata = {
       "socks",
       "feet_socks_high"
     ],
+    "replace_in_path": {},
     "variants": [
       "leather",
       "black",
@@ -66513,6 +67208,7 @@ window.itemMetadata = {
       "socks",
       "feet_socks_tabi"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -66638,6 +67334,7 @@ window.itemMetadata = {
       "feet",
       "feet_slippers"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -66759,6 +67456,7 @@ window.itemMetadata = {
       "feet",
       "feet_sandals"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -66890,6 +67588,7 @@ window.itemMetadata = {
       "feet",
       "feet_hoofs"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "amber",
@@ -67009,6 +67708,7 @@ window.itemMetadata = {
       "tools",
       "tool_rod"
     ],
+    "replace_in_path": {},
     "variants": [
       "rod"
     ],
@@ -67100,6 +67800,7 @@ window.itemMetadata = {
       "tools",
       "tool_smash"
     ],
+    "replace_in_path": {},
     "variants": [
       "axe",
       "hammer",
@@ -67201,6 +67902,7 @@ window.itemMetadata = {
       "tools",
       "tool_thrust"
     ],
+    "replace_in_path": {},
     "variants": [
       "hoe",
       "shovel",
@@ -67292,6 +67994,7 @@ window.itemMetadata = {
       "tools",
       "tool_whip"
     ],
+    "replace_in_path": {},
     "variants": [
       "whip"
     ],
@@ -67391,6 +68094,7 @@ window.itemMetadata = {
       "shield",
       "shield"
     ],
+    "replace_in_path": {},
     "variants": [
       "crusader",
       "spartan",
@@ -67724,6 +68428,7 @@ window.itemMetadata = {
       "shield",
       "shield_kite"
     ],
+    "replace_in_path": {},
     "variants": [
       "kite blue blue",
       "kite blue gray",
@@ -67819,6 +68524,7 @@ window.itemMetadata = {
       "shield",
       "shield_spartan"
     ],
+    "replace_in_path": {},
     "variants": [
       "spartan"
     ],
@@ -67901,6 +68607,7 @@ window.itemMetadata = {
       "two-engrailed shield",
       "shield_two_engrailed"
     ],
+    "replace_in_path": {},
     "variants": [
       "two_engrailed"
     ],
@@ -67983,6 +68690,7 @@ window.itemMetadata = {
       "two-engrailed shield",
       "shield_two_engrailed_trim"
     ],
+    "replace_in_path": {},
     "variants": [
       "two_engrailed_trim"
     ],
@@ -68065,6 +68773,7 @@ window.itemMetadata = {
       "two-engrailed shield",
       "shield_crusader"
     ],
+    "replace_in_path": {},
     "variants": [
       "crusader"
     ],
@@ -68147,6 +68856,7 @@ window.itemMetadata = {
       "two-engrailed shield",
       "shield_plus"
     ],
+    "replace_in_path": {},
     "variants": [
       "plus"
     ],
@@ -68229,6 +68939,7 @@ window.itemMetadata = {
       "scutum shield",
       "shield_scutum"
     ],
+    "replace_in_path": {},
     "variants": [
       "scutum"
     ],
@@ -68311,6 +69022,7 @@ window.itemMetadata = {
       "scutum shield",
       "shield_scutum_trim"
     ],
+    "replace_in_path": {},
     "variants": [
       "scutum_trim"
     ],
@@ -68406,6 +69118,7 @@ window.itemMetadata = {
       "heater shield",
       "shield_heater_wood"
     ],
+    "replace_in_path": {},
     "variants": [
       "brown",
       "coffee",
@@ -68509,6 +69222,7 @@ window.itemMetadata = {
       "heater shield",
       "shield_heater_paint"
     ],
+    "replace_in_path": {},
     "variants": [
       "aegean",
       "amber",
@@ -68685,6 +69399,7 @@ window.itemMetadata = {
       "heater shield",
       "shield_heater_trim"
     ],
+    "replace_in_path": {},
     "variants": [
       "brass",
       "bronze",
@@ -68791,6 +69506,7 @@ window.itemMetadata = {
       "heater shield pattern",
       "shield_heater_pattern_barry"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -68914,6 +69630,7 @@ window.itemMetadata = {
       "heater shield pattern",
       "shield_heater_pattern_bend_sinister"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -69037,6 +69754,7 @@ window.itemMetadata = {
       "heater shield pattern",
       "shield_heater_pattern_bend"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -69160,6 +69878,7 @@ window.itemMetadata = {
       "heater shield pattern",
       "shield_heater_pattern_bendy_sinister"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -69284,6 +70003,7 @@ window.itemMetadata = {
       "heater shield pattern",
       "shield_heater_pattern_bendy"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -69408,6 +70128,7 @@ window.itemMetadata = {
       "heater shield pattern",
       "shield_heater_pattern_bordure"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -69531,6 +70252,7 @@ window.itemMetadata = {
       "heater shield pattern",
       "shield_heater_pattern_chevron_inverted"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -69654,6 +70376,7 @@ window.itemMetadata = {
       "heater shield pattern",
       "shield_heater_pattern_chevron"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -69777,6 +70500,7 @@ window.itemMetadata = {
       "heater shield pattern",
       "shield_heater_pattern_chief"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -69900,6 +70624,7 @@ window.itemMetadata = {
       "heater shield pattern",
       "shield_heater_pattern_cross"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -70023,6 +70748,7 @@ window.itemMetadata = {
       "heater shield pattern",
       "shield_heater_pattern_fess"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -70146,6 +70872,7 @@ window.itemMetadata = {
       "heater shield pattern",
       "shield_heater_pattern_lozengy"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -70270,6 +70997,7 @@ window.itemMetadata = {
       "heater shield pattern",
       "shield_heater_pattern_pale"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -70393,6 +71121,7 @@ window.itemMetadata = {
       "heater shield pattern",
       "shield_heater_pattern_pall"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -70516,6 +71245,7 @@ window.itemMetadata = {
       "heater shield pattern",
       "shield_heater_pattern_paly"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -70640,6 +71370,7 @@ window.itemMetadata = {
       "heater shield pattern",
       "shield_heater_pattern_per_bend_sinister"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -70763,6 +71494,7 @@ window.itemMetadata = {
       "heater shield pattern",
       "shield_heater_pattern_per_bend"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -70886,6 +71618,7 @@ window.itemMetadata = {
       "heater shield pattern",
       "shield_heater_pattern_per_chevron_inverted"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -71009,6 +71742,7 @@ window.itemMetadata = {
       "heater shield pattern",
       "shield_heater_pattern_per_chevron"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -71132,6 +71866,7 @@ window.itemMetadata = {
       "heater shield pattern",
       "shield_heater_pattern_per_fess"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -71255,6 +71990,7 @@ window.itemMetadata = {
       "heater shield pattern",
       "shield_heater_pattern_per_pale"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -71378,6 +72114,7 @@ window.itemMetadata = {
       "heater shield pattern",
       "shield_heater_pattern_per_saltire"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -71501,6 +72238,7 @@ window.itemMetadata = {
       "heater shield pattern",
       "shield_heater_pattern_quarterly"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -71624,6 +72362,7 @@ window.itemMetadata = {
       "heater shield pattern",
       "shield_heater_pattern_saltire"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -71748,6 +72487,7 @@ window.itemMetadata = {
       "heater shield",
       "shield_heater_revised_wood"
     ],
+    "replace_in_path": {},
     "variants": [
       "brown",
       "coffee",
@@ -71852,6 +72592,7 @@ window.itemMetadata = {
       "heater shield",
       "shield_heater_revised_paint"
     ],
+    "replace_in_path": {},
     "variants": [
       "aegean",
       "amber",
@@ -72028,6 +72769,7 @@ window.itemMetadata = {
       "heater shield",
       "shield_heater_revised_trim"
     ],
+    "replace_in_path": {},
     "variants": [
       "brass",
       "bronze",
@@ -72135,6 +72877,7 @@ window.itemMetadata = {
       "revised heater shield pattern",
       "shield_heater_revised_pattern_barry"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -72259,6 +73002,7 @@ window.itemMetadata = {
       "revised heater shield pattern",
       "shield_heater_revised_pattern_bend_sinister"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -72383,6 +73127,7 @@ window.itemMetadata = {
       "revised heater shield pattern",
       "shield_heater_revised_pattern_bend"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -72507,6 +73252,7 @@ window.itemMetadata = {
       "revised heater shield pattern",
       "shield_heater_revised_pattern_bendy_sinister"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -72631,6 +73377,7 @@ window.itemMetadata = {
       "revised heater shield pattern",
       "shield_heater_revised_pattern_bendy"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -72755,6 +73502,7 @@ window.itemMetadata = {
       "revised heater shield pattern",
       "shield_heater_revised_pattern_bordure"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -72879,6 +73627,7 @@ window.itemMetadata = {
       "revised heater shield pattern",
       "shield_heater_revised_pattern_chevron_inverted"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -73003,6 +73752,7 @@ window.itemMetadata = {
       "revised heater shield pattern",
       "shield_heater_revised_pattern_chevron"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -73127,6 +73877,7 @@ window.itemMetadata = {
       "revised heater shield pattern",
       "shield_heater_revised_pattern_chief"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -73251,6 +74002,7 @@ window.itemMetadata = {
       "revised heater shield pattern",
       "shield_heater_revised_pattern_cross"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -73375,6 +74127,7 @@ window.itemMetadata = {
       "revised heater shield pattern",
       "shield_heater_revised_pattern_fess"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -73499,6 +74252,7 @@ window.itemMetadata = {
       "revised heater shield pattern",
       "shield_heater_revised_pattern_lozengy"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -73623,6 +74377,7 @@ window.itemMetadata = {
       "revised heater shield pattern",
       "shield_heater_revised_pattern_pale"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -73747,6 +74502,7 @@ window.itemMetadata = {
       "revised heater shield pattern",
       "shield_heater_revised_pattern_pall"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -73871,6 +74627,7 @@ window.itemMetadata = {
       "revised heater shield pattern",
       "shield_heater_revised_pattern_paly"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -73995,6 +74752,7 @@ window.itemMetadata = {
       "revised heater shield pattern",
       "shield_heater_revised_pattern_per_bend_sinister"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -74119,6 +74877,7 @@ window.itemMetadata = {
       "revised heater shield pattern",
       "shield_heater_revised_pattern_per_bend"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -74243,6 +75002,7 @@ window.itemMetadata = {
       "revised heater shield pattern",
       "shield_heater_revised_pattern_per_chevron_inverted"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -74367,6 +75127,7 @@ window.itemMetadata = {
       "revised heater shield pattern",
       "shield_heater_revised_pattern_per_chevron"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -74491,6 +75252,7 @@ window.itemMetadata = {
       "revised heater shield pattern",
       "shield_heater_revised_pattern_per_fess"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -74615,6 +75377,7 @@ window.itemMetadata = {
       "revised heater shield pattern",
       "shield_heater_revised_pattern_per_pale"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -74739,6 +75502,7 @@ window.itemMetadata = {
       "revised heater shield pattern",
       "shield_heater_revised_pattern_per_saltire"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -74863,6 +75627,7 @@ window.itemMetadata = {
       "revised heater shield pattern",
       "shield_heater_revised_pattern_quarterly"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -74987,6 +75752,7 @@ window.itemMetadata = {
       "revised heater shield pattern",
       "shield_heater_revised_pattern_saltire"
     ],
+    "replace_in_path": {},
     "variants": [
       "black",
       "blue",
@@ -75098,6 +75864,7 @@ window.itemMetadata = {
       "ranged",
       "weapon_ranged_crossbow"
     ],
+    "replace_in_path": {},
     "variants": [
       "crossbow"
     ],
@@ -75179,6 +75946,7 @@ window.itemMetadata = {
       "ranged",
       "weapon_ranged_slingshot"
     ],
+    "replace_in_path": {},
     "variants": [
       "slingshot"
     ],
@@ -75269,6 +76037,7 @@ window.itemMetadata = {
       "ranged",
       "weapon_ranged_boomerang"
     ],
+    "replace_in_path": {},
     "variants": [
       "boomerang"
     ],
@@ -75349,6 +76118,7 @@ window.itemMetadata = {
       "bow",
       "weapon_ranged_bow_arrow"
     ],
+    "replace_in_path": {},
     "variants": [
       "arrow"
     ],
@@ -75435,6 +76205,7 @@ window.itemMetadata = {
       "bow",
       "weapon_ranged_bow_great"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "medium",
@@ -75550,6 +76321,7 @@ window.itemMetadata = {
       "bow",
       "weapon_ranged_bow_normal"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "medium",
@@ -75675,6 +76447,7 @@ window.itemMetadata = {
       "bow",
       "weapon_ranged_bow_recurve"
     ],
+    "replace_in_path": {},
     "variants": [
       "light",
       "medium",
@@ -75793,6 +76566,7 @@ window.itemMetadata = {
       "sword",
       "weapon_sword_dagger"
     ],
+    "replace_in_path": {},
     "variants": [
       "dagger"
     ],
@@ -75886,6 +76660,7 @@ window.itemMetadata = {
       "sword",
       "weapon_sword_glowsword"
     ],
+    "replace_in_path": {},
     "variants": [
       "blue",
       "red"
@@ -75992,6 +76767,7 @@ window.itemMetadata = {
       "sword",
       "weapon_sword_longsword"
     ],
+    "replace_in_path": {},
     "variants": [
       "longsword"
     ],
@@ -76127,6 +76903,7 @@ window.itemMetadata = {
       "sword",
       "weapon_sword_rapier"
     ],
+    "replace_in_path": {},
     "variants": [
       "rapier"
     ],
@@ -76230,6 +77007,7 @@ window.itemMetadata = {
       "sword",
       "weapon_sword_saber"
     ],
+    "replace_in_path": {},
     "variants": [
       "saber"
     ],
@@ -76330,6 +77108,7 @@ window.itemMetadata = {
       "sword",
       "weapon_sword_katana"
     ],
+    "replace_in_path": {},
     "variants": [
       "katana"
     ],
@@ -76428,6 +77207,7 @@ window.itemMetadata = {
       "sword",
       "weapon_sword_scimitar"
     ],
+    "replace_in_path": {},
     "variants": [
       "scimitar"
     ],
@@ -76526,6 +77306,7 @@ window.itemMetadata = {
       "sword",
       "weapon_sword_longsword_alt"
     ],
+    "replace_in_path": {},
     "variants": [
       "longsword_alt"
     ],
@@ -76635,6 +77416,7 @@ window.itemMetadata = {
       "sword",
       "weapon_sword_arming"
     ],
+    "replace_in_path": {},
     "variants": [
       "brass",
       "bronze",
@@ -76782,6 +77564,7 @@ window.itemMetadata = {
       "blunt",
       "weapon_blunt_flail"
     ],
+    "replace_in_path": {},
     "variants": [
       "flail"
     ],
@@ -76885,6 +77668,7 @@ window.itemMetadata = {
       "blunt",
       "weapon_blunt_mace"
     ],
+    "replace_in_path": {},
     "variants": [
       "mace"
     ],
@@ -76988,6 +77772,7 @@ window.itemMetadata = {
       "blunt",
       "weapon_blunt_waraxe"
     ],
+    "replace_in_path": {},
     "variants": [
       "waraxe"
     ],
@@ -77091,6 +77876,7 @@ window.itemMetadata = {
       "blunt",
       "weapon_blunt_club"
     ],
+    "replace_in_path": {},
     "variants": [
       "club"
     ],
@@ -77178,6 +77964,7 @@ window.itemMetadata = {
       "polearm",
       "weapon_polearm_cane"
     ],
+    "replace_in_path": {},
     "variants": [
       "cane"
     ],
@@ -77253,6 +78040,7 @@ window.itemMetadata = {
       "polearm",
       "weapon_polearm_spear"
     ],
+    "replace_in_path": {},
     "variants": [
       "medium",
       "light",
@@ -77352,6 +78140,7 @@ window.itemMetadata = {
       "polearm",
       "weapon_polearm_scythe"
     ],
+    "replace_in_path": {},
     "variants": [
       "scythe"
     ],
@@ -77448,6 +78237,7 @@ window.itemMetadata = {
       "polearm",
       "weapon_polearm_halberd"
     ],
+    "replace_in_path": {},
     "variants": [
       "halberd"
     ],
@@ -77568,6 +78358,7 @@ window.itemMetadata = {
       "polearm",
       "weapon_polearm_longspear"
     ],
+    "replace_in_path": {},
     "variants": [
       "medium",
       "light",
@@ -77687,6 +78478,7 @@ window.itemMetadata = {
       "polearm",
       "weapon_polearm_dragonspear"
     ],
+    "replace_in_path": {},
     "variants": [
       "medium",
       "light",
@@ -77807,6 +78599,7 @@ window.itemMetadata = {
       "polearm",
       "weapon_polearm_trident"
     ],
+    "replace_in_path": {},
     "variants": [
       "medium",
       "light",
@@ -77927,6 +78720,7 @@ window.itemMetadata = {
       "magic",
       "weapon_magic_simple"
     ],
+    "replace_in_path": {},
     "variants": [
       "simple"
     ],
@@ -78014,6 +78808,7 @@ window.itemMetadata = {
       "magic",
       "weapon_magic_loop"
     ],
+    "replace_in_path": {},
     "variants": [
       "medium",
       "light",
@@ -78141,6 +78936,7 @@ window.itemMetadata = {
       "magic",
       "weapon_magic_diamond"
     ],
+    "replace_in_path": {},
     "variants": [
       "medium",
       "light",
@@ -78268,6 +79064,7 @@ window.itemMetadata = {
       "magic",
       "weapon_magic_gnarled"
     ],
+    "replace_in_path": {},
     "variants": [
       "medium",
       "light",
@@ -78395,6 +79192,7 @@ window.itemMetadata = {
       "magic",
       "weapon_magic_s"
     ],
+    "replace_in_path": {},
     "variants": [
       "medium",
       "light",
@@ -78513,6 +79311,7 @@ window.itemMetadata = {
       "magic",
       "weapon_magic_crystal"
     ],
+    "replace_in_path": {},
     "variants": [
       "blue",
       "orange",
@@ -78627,6 +79426,7 @@ window.itemMetadata = {
       "magic",
       "weapon_magic_wand"
     ],
+    "replace_in_path": {},
     "variants": [
       "wand"
     ],
