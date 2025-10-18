@@ -4,6 +4,7 @@
 import { state, getHashParamsforSelections } from '../state/state.js';
 import { loadImage, loadImagesInParallel } from './load-image.js';
 import { es6DynamicTemplate } from '../utils/helpers.js';
+import { get2DContext } from './canvas-utils.js';
 
 const FRAME_SIZE = 64;
 const SHEET_HEIGHT = 3456; // Full universal sheet height
@@ -109,7 +110,7 @@ function drawTransparencyBackground(context, width, height, squareSize = 8) {
  */
 export function initCanvas() {
   canvas = document.createElement('canvas');
-  ctx = canvas.getContext('2d');
+  ctx = get2DContext(canvas);
   canvas.width = SHEET_WIDTH;
   canvas.height = SHEET_HEIGHT;
 }
@@ -126,7 +127,7 @@ export function copyToPreviewCanvas(previewCanvasElement, showTransparencyGrid =
     return;
   }
 
-  const previewCtx = previewCanvasElement.getContext('2d');
+  const previewCtx = get2DContext(previewCanvasElement);
 
   // Match preview canvas size to offscreen canvas
   previewCanvasElement.width = canvas.width;
@@ -154,7 +155,7 @@ export function copyToPreviewCanvas(previewCanvasElement, showTransparencyGrid =
  */
 export function initPreviewCanvas(previewCanvasElement) {
   previewCanvas = previewCanvasElement;
-  previewCtx = previewCanvas.getContext('2d');
+  previewCtx = get2DContext(previewCanvas);
   previewCanvas.width = 4 * FRAME_SIZE; // 256px
   previewCanvas.height = FRAME_SIZE; // 64px
 }
@@ -441,249 +442,261 @@ export async function renderCharacter(selections, bodyType, targetCanvas = null)
   // Import state to access custom uploaded image
   const appState = await import('../state/state.js').then(m => m.state);
 
-  for (const [categoryPath, selection] of Object.entries(selections)) {
-    const { itemId, variant } = selection;
-    const meta = window.itemMetadata[itemId];
+  try {
+    // Use provided canvas or default to main canvas
+    const renderCanvas = targetCanvas || canvas;
+    const renderCtx = get2DContext(renderCanvas);
 
-    if (!meta) continue;
-
-    // Check if this body type is supported
-    if (!meta.required.includes(bodyType)) {
-      continue;
+    if (!renderCanvas || !renderCtx) {
+      console.error('Canvas not initialized');
+      return;
     }
 
-    // Process all layers for this item
-    for (let layerNum = 1; layerNum < 10; layerNum++) {
-      // Check if this layer exists
-      const layerKey = `layer_${layerNum}`;
-      const layer = meta.layers?.[layerKey];
-      if (!layer) break;
+    for (const [categoryPath, selection] of Object.entries(selections)) {
+      const { itemId, variant } = selection;
+      const meta = window.itemMetadata[itemId];
 
-      const zPos = getZPos(itemId, layerNum);
+      if (!meta) continue;
 
-      // Check if this layer has a custom animation
-      if (layer.custom_animation) {
-        const customAnimName = layer.custom_animation;
-        addedCustomAnimations.add(customAnimName);
-
-        // Get base path for this body type
-        let basePath = layer[bodyType];
-        if (!basePath) {
-          continue;
-        }
-
-        // Custom animations use direct file path
-        const spritePath = `spritesheets/${basePath}${variantToFilename(variant)}.png`;
-
-        customAnimationItems.push({
-          itemId,
-          variant,
-          spritePath,
-          zPos,
-          layerNum,
-          customAnimation: customAnimName,
-          isCustom: true
-        });
-
-        continue; // Skip standard animation processing for this layer
+      // Check if this body type is supported
+      if (!meta.required.includes(bodyType)) {
+        continue;
       }
 
-      // Process standard animations for this layer
-      for (const [animName, yPos] of Object.entries(ANIMATIONS)) {
-        // Skip if item doesn't have animations array (custom animations only)
-        if (!meta.animations || meta.animations.length === 0) {
-          continue;
-        }
+      // Process all layers for this item
+      for (let layerNum = 1; layerNum < 10; layerNum++) {
+        // Check if this layer exists
+        const layerKey = `layer_${layerNum}`;
+        const layer = meta.layers?.[layerKey];
+        if (!layer) break;
 
-        // Map folder name to metadata name for checking support
-        // e.g., "combat_idle" -> check for "combat" or "1h_slash" in metadata
-        let metadataAnimName = animName;
-        if (animName === 'combat_idle') {
-          // combat_idle is supported if item has "combat" OR "1h_slash" in metadata
-          if (!meta.animations.includes('combat') && !meta.animations.includes('1h_slash')) {
+        const zPos = getZPos(itemId, layerNum);
+
+        // Check if this layer has a custom animation
+        if (layer.custom_animation) {
+          const customAnimName = layer.custom_animation;
+          addedCustomAnimations.add(customAnimName);
+
+          // Get base path for this body type
+          let basePath = layer[bodyType];
+          if (!basePath) {
             continue;
           }
-        } else if (animName === 'backslash') {
-          // backslash is supported if item has "1h_slash" OR "1h_backslash" in metadata
-          if (!meta.animations.includes('1h_slash') && !meta.animations.includes('1h_backslash')) {
-            continue;
-          }
-        } else if (animName === 'halfslash') {
-          // halfslash is supported if item has "1h_halfslash" in metadata
-          if (!meta.animations.includes('1h_halfslash')) {
-            continue;
-          }
-        } else {
-          // For all other animations, direct match required
-          if (!meta.animations.includes(animName)) continue;
+
+          // Custom animations use direct file path
+          const spritePath = `spritesheets/${basePath}${variantToFilename(variant)}.png`;
+
+          customAnimationItems.push({
+            itemId,
+            variant,
+            spritePath,
+            zPos,
+            layerNum,
+            customAnimation: customAnimName,
+            isCustom: true
+          });
+
+          continue; // Skip standard animation processing for this layer
         }
 
-        const spritePath = getSpritePath(itemId, variant, bodyType, animName, layerNum, selections, meta);
+        // Process standard animations for this layer
+        for (const [animName, yPos] of Object.entries(ANIMATIONS)) {
+          // Skip if item doesn't have animations array (custom animations only)
+          if (!meta.animations || meta.animations.length === 0) {
+            continue;
+          }
 
-        itemsToDraw.push({
-          itemId,
-          variant,
-          spritePath,
-          zPos,
-          layerNum,
-          animation: animName,
-          yPos,
-          isCustom: false
-        });
-      }
-    }
-  }
+          // Map folder name to metadata name for checking support
+          // e.g., "combat_idle" -> check for "combat" or "1h_slash" in metadata
+          let metadataAnimName = animName;
+          if (animName === 'combat_idle') {
+            // combat_idle is supported if item has "combat" OR "1h_slash" in metadata
+            if (!meta.animations.includes('combat') && !meta.animations.includes('1h_slash')) {
+              continue;
+            }
+          } else if (animName === 'backslash') {
+            // backslash is supported if item has "1h_slash" OR "1h_backslash" in metadata
+            if (!meta.animations.includes('1h_slash') && !meta.animations.includes('1h_backslash')) {
+              continue;
+            }
+          } else if (animName === 'halfslash') {
+            // halfslash is supported if item has "1h_halfslash" in metadata
+            if (!meta.animations.includes('1h_halfslash')) {
+              continue;
+            }
+          } else {
+            // For all other animations, direct match required
+            if (!meta.animations.includes(animName)) continue;
+          }
 
-  // Add custom uploaded image to itemsToDraw if present
-  if (appState.customUploadedImage) {
-    // Add custom image to be drawn at all standard animation positions
-    for (const [animName, yPos] of Object.entries(ANIMATIONS)) {
-      itemsToDraw.push({
-        itemId: 'custom-upload',
-        variant: null,
-        spritePath: null, // Will draw directly from Image object
-        zPos: appState.customImageZPos,
-        layerNum: 0,
-        animation: animName,
-        yPos,
-        isCustom: false,
-        customImage: appState.customUploadedImage // Store the Image object
-      });
-    }
-  }
+          const spritePath = getSpritePath(itemId, variant, bodyType, animName, layerNum, selections, meta);
 
-  // Sort standard items by zPos only (lower zPos = drawn first = behind)
-  // This ensures shadow (zPos=0) is drawn before body (zPos=10), etc.
-  itemsToDraw.sort((a, b) => a.zPos - b.zPos);
-
-  // Calculate total canvas height needed (standard sheet + custom animations)
-  let totalHeight = SHEET_HEIGHT;
-  let totalWidth = SHEET_WIDTH;
-
-  if (addedCustomAnimations.size > 0 && window.customAnimations) {
-    for (const customAnimName of addedCustomAnimations) {
-      const customAnimDef = window.customAnimations[customAnimName];
-      if (customAnimDef) {
-        const animHeight = customAnimDef.frameSize * customAnimDef.frames.length;
-        const animWidth = customAnimDef.frameSize * customAnimDef.frames[0].length;
-        totalHeight += animHeight;
-        totalWidth = Math.max(totalWidth, animWidth);
-      }
-    }
-  }
-
-  // Resize canvas to fit all content
-  renderCanvas.width = totalWidth;
-  renderCanvas.height = totalHeight;
-
-  // Clear canvas (no transparency background on offscreen canvas)
-  renderCtx.clearRect(0, 0, renderCanvas.width, renderCanvas.height);
-
-  // Calculate custom animation Y positions first (needed for drawing standard items into custom areas)
-  const customAnimYPositions = {};
-  if (addedCustomAnimations.size > 0 && window.customAnimations) {
-    let currentY = SHEET_HEIGHT;
-    for (const customAnimName of addedCustomAnimations) {
-      customAnimYPositions[customAnimName] = currentY;
-      const customAnimDef = window.customAnimations[customAnimName];
-      if (customAnimDef) {
-        const animHeight = customAnimDef.frameSize * customAnimDef.frames.length;
-        currentY += animHeight;
-      }
-    }
-  }
-
-  // Load all standard animation images in parallel and attach them to their items
-  const loadPromises = itemsToDraw.map(item => {
-    if (item.customImage) {
-      // Custom image already loaded
-      return Promise.resolve({ item, img: item.customImage, success: true });
-    } else {
-      // Load standard image
-      return loadImage(item.spritePath)
-        .then(img => ({ item, img, success: true }))
-        .catch(err => {
-          console.warn(`Failed to load sprite: ${item.spritePath}`);
-          return { item, img: null, success: false };
-        });
-    }
-  });
-
-  const loadedItems = await Promise.all(loadPromises);
-
-  // Draw all items in sorted z-order
-  for (const { item, img, success } of loadedItems) {
-    if (success && img) {
-      renderCtx.drawImage(img, 0, item.yPos);
-    }
-  }
-
-  // Now handle custom animations (wheelchair, etc.)
-  if (addedCustomAnimations.size > 0 && window.customAnimations) {
-    // For each custom animation area, we need to draw layers in zPos order
-    for (const customAnimName of addedCustomAnimations) {
-      const customAnimDef = window.customAnimations[customAnimName];
-      if (!customAnimDef) continue;
-
-      const offsetY = customAnimYPositions[customAnimName];
-      const baseAnim = window.customAnimationBase ? window.customAnimationBase(customAnimDef) : null;
-
-      // Collect all items that need to be drawn in this custom animation area
-      const customAreaItems = [];
-
-      // 1. Add custom animation sprite layers (wheelchair background/foreground)
-      for (const item of customAnimationItems) {
-        if (item.customAnimation === customAnimName) {
-          customAreaItems.push({
-            type: 'custom_sprite',
-            zPos: item.zPos,
-            spritePath: item.spritePath,
-            itemId: item.itemId
+          itemsToDraw.push({
+            itemId,
+            variant,
+            spritePath,
+            zPos,
+            layerNum,
+            animation: animName,
+            yPos,
+            isCustom: false
           });
         }
       }
+    }
 
-      // 2. Add standard items that need to be extracted into this custom animation
-      // (e.g., body "sit" frames go into wheelchair custom animation)
-      if (baseAnim) {
-        for (const item of itemsToDraw) {
-          if (item.animation === baseAnim) {
+    // Add custom uploaded image to itemsToDraw if present
+    if (appState.customUploadedImage) {
+      // Add custom image to be drawn at all standard animation positions
+      for (const [animName, yPos] of Object.entries(ANIMATIONS)) {
+        itemsToDraw.push({
+          itemId: 'custom-upload',
+          variant: null,
+          spritePath: null, // Will draw directly from Image object
+          zPos: appState.customImageZPos,
+          layerNum: 0,
+          animation: animName,
+          yPos,
+          isCustom: false,
+          customImage: appState.customUploadedImage // Store the Image object
+        });
+      }
+    }
+
+    // Sort standard items by zPos only (lower zPos = drawn first = behind)
+    // This ensures shadow (zPos=0) is drawn before body (zPos=10), etc.
+    itemsToDraw.sort((a, b) => a.zPos - b.zPos);
+
+    // Calculate total canvas height needed (standard sheet + custom animations)
+    let totalHeight = SHEET_HEIGHT;
+    let totalWidth = SHEET_WIDTH;
+
+    if (addedCustomAnimations.size > 0 && window.customAnimations) {
+      for (const customAnimName of addedCustomAnimations) {
+        const customAnimDef = window.customAnimations[customAnimName];
+        if (customAnimDef) {
+          const animHeight = customAnimDef.frameSize * customAnimDef.frames.length;
+          const animWidth = customAnimDef.frameSize * customAnimDef.frames[0].length;
+          totalHeight += animHeight;
+          totalWidth = Math.max(totalWidth, animWidth);
+        }
+      }
+    }
+
+    // Resize canvas to fit all content
+    renderCanvas.width = totalWidth;
+    renderCanvas.height = totalHeight;
+
+    // Clear canvas (no transparency background on offscreen canvas)
+    renderCtx.clearRect(0, 0, renderCanvas.width, renderCanvas.height);
+
+    // Calculate custom animation Y positions first (needed for drawing standard items into custom areas)
+    const customAnimYPositions = {};
+    if (addedCustomAnimations.size > 0 && window.customAnimations) {
+      let currentY = SHEET_HEIGHT;
+      for (const customAnimName of addedCustomAnimations) {
+        customAnimYPositions[customAnimName] = currentY;
+        const customAnimDef = window.customAnimations[customAnimName];
+        if (customAnimDef) {
+          const animHeight = customAnimDef.frameSize * customAnimDef.frames.length;
+          currentY += animHeight;
+        }
+      }
+    }
+
+    // Load all standard animation images in parallel and attach them to their items
+    const loadPromises = itemsToDraw.map(item => {
+      if (item.customImage) {
+        // Custom image already loaded
+        return Promise.resolve({ item, img: item.customImage, success: true });
+      } else {
+        // Load standard image
+        return loadImage(item.spritePath)
+          .then(img => ({ item, img, success: true }))
+          .catch(err => {
+            console.warn(`Failed to load sprite: ${item.spritePath}`);
+            return { item, img: null, success: false };
+          });
+      }
+    });
+
+    const loadedItems = await Promise.all(loadPromises);
+
+    // Draw all items in sorted z-order
+    for (const { item, img, success } of loadedItems) {
+      if (success && img) {
+        renderCtx.drawImage(img, 0, item.yPos);
+      }
+    }
+
+    // Now handle custom animations (wheelchair, etc.)
+    if (addedCustomAnimations.size > 0 && window.customAnimations) {
+      // For each custom animation area, we need to draw layers in zPos order
+      for (const customAnimName of addedCustomAnimations) {
+        const customAnimDef = window.customAnimations[customAnimName];
+        if (!customAnimDef) continue;
+
+        const offsetY = customAnimYPositions[customAnimName];
+        const baseAnim = window.customAnimationBase ? window.customAnimationBase(customAnimDef) : null;
+
+        // Collect all items that need to be drawn in this custom animation area
+        const customAreaItems = [];
+
+        // 1. Add custom animation sprite layers (wheelchair background/foreground)
+        for (const item of customAnimationItems) {
+          if (item.customAnimation === customAnimName) {
             customAreaItems.push({
-              type: 'extracted_frames',
+              type: 'custom_sprite',
               zPos: item.zPos,
               spritePath: item.spritePath,
-              itemId: item.itemId,
-              animation: item.animation
+              itemId: item.itemId
             });
           }
         }
-      }
 
-      // Sort by zPos to get correct layer order
-      customAreaItems.sort((a, b) => a.zPos - b.zPos);
+        // 2. Add standard items that need to be extracted into this custom animation
+        // (e.g., body "sit" frames go into wheelchair custom animation)
+        if (baseAnim) {
+          for (const item of itemsToDraw) {
+            if (item.animation === baseAnim) {
+              customAreaItems.push({
+                type: 'extracted_frames',
+                zPos: item.zPos,
+                spritePath: item.spritePath,
+                itemId: item.itemId,
+                animation: item.animation
+              });
+            }
+          }
+        }
 
-      // Load all custom area images in parallel
-      const loadedCustomImages = await loadImagesInParallel(customAreaItems);
+        // Sort by zPos to get correct layer order
+        customAreaItems.sort((a, b) => a.zPos - b.zPos);
 
-      // Draw in zPos order
-      for (const { item: areaItem, img, success } of loadedCustomImages) {
-        if (success && img) {
-          if (areaItem.type === 'custom_sprite') {
-            // Draw custom sprite directly (wheelchair background or foreground)
-            renderCtx.drawImage(img, 0, offsetY);
-          } else if (areaItem.type === 'extracted_frames') {
-            // Extract and draw frames from standard sprite
-            drawFramesToCustomAnimation(renderCtx, customAnimDef, offsetY, img);
+        // Load all custom area images in parallel
+        const loadedCustomImages = await loadImagesInParallel(customAreaItems);
+
+        // Draw in zPos order
+        for (const { item: areaItem, img, success } of loadedCustomImages) {
+          if (success && img) {
+            if (areaItem.type === 'custom_sprite') {
+              // Draw custom sprite directly (wheelchair background or foreground)
+              renderCtx.drawImage(img, 0, offsetY);
+            } else if (areaItem.type === 'extracted_frames') {
+              // Extract and draw frames from standard sprite
+              drawFramesToCustomAnimation(renderCtx, customAnimDef, offsetY, img);
+            }
           }
         }
       }
     }
-  }
 
-  // Mark end and measure
-  if (profiler) {
-    profiler.mark('renderCharacter:end');
-    profiler.measure('renderCharacter', 'renderCharacter:start', 'renderCharacter:end');
+  } finally { 
+    // Mark end and measure
+    if (profiler) {
+      profiler.mark('renderCharacter:end');
+      profiler.measure('renderCharacter', 'renderCharacter:start', 'renderCharacter:end');
+    }
   }
 }
 
@@ -775,7 +788,7 @@ export function extractAnimationFromCanvas(animationName) {
   const animCanvas = document.createElement('canvas');
   animCanvas.width = SHEET_WIDTH;
   animCanvas.height = srcHeight;
-  const animCtx = animCanvas.getContext('2d');
+  const animCtx = get2DContext(animCanvas);
 
   // Copy animation from main canvas
   animCtx.drawImage(canvas, 0, srcY, SHEET_WIDTH, srcHeight, 0, 0, SHEET_WIDTH, srcHeight);
@@ -828,7 +841,7 @@ export async function renderSingleItem(itemId, variant, bodyType, selections) {
     itemCanvas = document.createElement('canvas');
     itemCanvas.width = animWidth;
     itemCanvas.height = animHeight;
-    itemCtx = itemCanvas.getContext('2d');
+    itemCtx = get2DContext(itemCanvas);
 
     // Render all layers of this custom animation item
     const customSprites = [];
@@ -862,7 +875,7 @@ export async function renderSingleItem(itemId, variant, bodyType, selections) {
     itemCanvas = document.createElement('canvas');
     itemCanvas.width = SHEET_WIDTH;
     itemCanvas.height = SHEET_HEIGHT;
-    itemCtx = itemCanvas.getContext('2d');
+    itemCtx = get2DContext(itemCanvas);
 
     // Build list of sprites to draw for this item
     const spritesToDraw = [];
@@ -966,7 +979,7 @@ export async function renderSingleItemAnimation(itemId, variant, bodyType, anima
   const animCanvas = document.createElement('canvas');
   animCanvas.width = SHEET_WIDTH;
   animCanvas.height = animHeight;
-  const animCtx = animCanvas.getContext('2d');
+  const animCtx = get2DContext(animCanvas);
 
   // Build list of sprites to draw for this item & animation
   const spritesToDraw = [];
