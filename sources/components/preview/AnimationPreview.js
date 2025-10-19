@@ -122,6 +122,7 @@ export const AnimationPreview = {
 										value: vnode.state.zoomLevel,
 										oninput: (e) => {
 											vnode.state.zoomLevel = parseFloat(e.target.value);
+											state.previewCanvasZoomLevel = vnode.state.zoomLevel;
 											if (window.canvasRenderer && window.canvasRenderer.setPreviewCanvasZoom) {
 												window.canvasRenderer.setPreviewCanvasZoom(vnode.state.zoomLevel);
 											}
