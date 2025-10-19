@@ -33,7 +33,7 @@ export function getAllCredits(selections, bodyType) {
 			basePath = replaceInPath(basePath, selections, meta);
 
 			// Remove trailing slash if present
-			const normalizedPath = basePath.replace(/\/$/, '');
+			const normalizedPath = basePath.replace(/\/$/, "");
 			usedPaths.add(normalizedPath);
 		}
 
@@ -46,9 +46,12 @@ export function getAllCredits(selections, bodyType) {
 			let isUsed = false;
 
 			for (const usedPath of usedPaths) {
-				// Match if credit file equals or starts with the used path
-				// e.g., credit.file="body/bodies/male" matches usedPath="body/bodies/male"
-				if (creditFile === usedPath || creditFile.startsWith(usedPath + '/')) {
+				// Match if used path equals or starts with the credit file path
+				// e.g., usedPath="eyes/human/adult/neutral" matches credit.file="eyes/human" or "eyes/human/adult"
+				if (
+					usedPath === creditFile ||
+					usedPath.startsWith(creditFile + "/")
+				) {
 					isUsed = true;
 					break;
 				}
@@ -70,7 +73,7 @@ export function getAllCredits(selections, bodyType) {
 export function creditsToCsv(allCredits) {
 	const header = "filename,notes,authors,licenses,urls";
 	let csvBody = header + "\n";
-	allCredits.forEach(credit => {
+	allCredits.forEach((credit) => {
 		const authors = credit.authors.join(", ");
 		const licenses = credit.licenses.join(", ");
 		const urls = credit.urls.join(", ");
@@ -85,7 +88,7 @@ export function creditsToCsv(allCredits) {
  */
 export function creditsToTxt(allCredits) {
 	let txt = "";
-	allCredits.forEach(credit => {
+	allCredits.forEach((credit) => {
 		txt += `${credit.file}\n`;
 		if (credit.notes) {
 			txt += `\t- Note: ${credit.notes}\n`;
@@ -109,6 +112,6 @@ export function getItemFileName(itemId, variant, name) {
 	const zPos = layer1?.zPos || 100;
 
 	// Format: "050 body_male_light" (zPos padded to 3 digits + space + name)
-	const safeName = (name || itemId).replace(/[^a-z0-9]/gi, '_').toLowerCase();
-	return `${String(zPos).padStart(3, '0')} ${safeName}`;
+	const safeName = (name || itemId).replace(/[^a-z0-9]/gi, "_").toLowerCase();
+	return `${String(zPos).padStart(3, "0")} ${safeName}`;
 }

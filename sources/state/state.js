@@ -106,12 +106,10 @@ export function replaceInPath(path, selections, meta) {
 		const replacements = Object.fromEntries(
 			Object.entries(hashParams).map(([typeName, nameAndVariant]) => {
 				// TODO: this works for head, eye color, and faces but probably not for everything
-				// Extract name before variant (if variant exists), otherwise use whole string
-				const lastUnderscoreIdx = nameAndVariant.lastIndexOf("_");
-				const name =
-					lastUnderscoreIdx > 0
-						? nameAndVariant.substr(0, lastUnderscoreIdx) // Has variant: "Human_male_light" -> "Human_male"
-						: nameAndVariant; // No variant: "Neutral" -> "Neutral"
+				const name = nameAndVariant.substr(
+					0,
+					nameAndVariant.lastIndexOf("_"),
+				); // Extract name before variant
 				const replacement = meta.replace_in_path[typeName]?.[name];
 				return [typeName, replacement];
 			}),
@@ -234,6 +232,15 @@ export function selectDefaults() {
 		itemId: headItemId,
 		variant: "light",
 		name: "Human male (light)",
+	};
+
+	// Set default expression (neutral light)
+	const expressionItemId = "face_neutral";
+	const expressionSelectionGroup = getSelectionGroup(expressionItemId);
+	state.selections[expressionSelectionGroup] = {
+		itemId: expressionItemId,
+		variant: "light",
+		name: "Neutral (light)",
 	};
 
 	// Update URL hash
