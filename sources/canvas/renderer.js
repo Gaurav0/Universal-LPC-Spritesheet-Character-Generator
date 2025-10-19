@@ -1,9 +1,8 @@
 // Canvas rendering module for Mithril UI
 // Simplified renderer that draws character sprites based on selections
 
-import { state, getHashParamsforSelections } from '../state/state.js';
+import { state, replaceInPath } from '../state/state.js';
 import { loadImage, loadImagesInParallel } from './load-image.js';
-import { es6DynamicTemplate } from '../utils/helpers.js';
 
 const FRAME_SIZE = 64;
 const SHEET_HEIGHT = 3456; // Full universal sheet height
@@ -291,20 +290,7 @@ function getSpritePath(itemId, variant, bodyType, animation, layerNum = 1, selec
 
   // Replace template variables like ${head}
   if (basePath.includes('${')) {
-	// get params from selections
-	// TODO: this could be optimized to avoid recomputing every time
-	// or to only do it when relevant selections change
-	// or just use the selections directly instead of recomputing the hash params
-	const hashParams = getHashParamsforSelections(selections);
-    const replacements = Object.fromEntries(
-		Object.entries(hashParams).map(([typeName, nameAndVariant]) => {
-			// TODO: this works for head, eye color, and faces but probably not for everything
-			const name = nameAndVariant.substr(0, nameAndVariant.lastIndexOf('_')); // Extract name before variant
-			const replacement = meta.replace_in_path[typeName]?.[name];
-			return [typeName, replacement];
-		})
-	);
-	basePath = es6DynamicTemplate(basePath, replacements);
+	basePath = replaceInPath(basePath, selections, meta);
   }
 
   // If no variant specified, try to extract from itemId

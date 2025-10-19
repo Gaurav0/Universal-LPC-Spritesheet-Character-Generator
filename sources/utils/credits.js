@@ -1,5 +1,7 @@
 // Credit collection and formatting utilities
 
+import { replaceInPath } from "../state/state.js";
+
 /**
  * Helper function to collect credits from all selected items
  * Only includes credits for files actually being used based on current bodyType
@@ -28,21 +30,7 @@ export function getAllCredits(selections, bodyType) {
 			if (!basePath) continue;
 
 			// Replace template variables like ${head} if present
-			if (basePath.includes('${head}')) {
-				// Find the selected head to determine replacement value
-				const headSelection = Object.values(selections).find(sel =>
-					sel.itemId?.startsWith('head-heads-')
-				);
-
-				const headSelectionName = headSelection?.name || 'Human_male';
-				let replacementValue = 'male'; // default
-
-				if (meta.replace_in_path?.head) {
-					replacementValue = meta.replace_in_path.head[headSelectionName] || 'male';
-				}
-
-				basePath = basePath.replace('${head}', replacementValue);
-			}
+			basePath = replaceInPath(basePath, selections, meta);
 
 			// Remove trailing slash if present
 			const normalizedPath = basePath.replace(/\/$/, '');
