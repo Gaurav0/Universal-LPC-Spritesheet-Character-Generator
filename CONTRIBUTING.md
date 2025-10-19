@@ -86,6 +86,44 @@ This will generate the `index.html` from the `source_index.html`.
 In case you want to push your changes, be sure to run this script and never change the `index.html` manually.
 The CI will reject any PR's that contain manual changes made on the `index.html`.
 
+#### Running Tests
+
+The project includes automated tests for the Mithril components. To run the tests:
+
+1. **Install dependencies** (first time only):
+   ```bash
+   npm install
+   ```
+
+2. **Run the test suite**:
+   ```bash
+   npm test
+   ```
+
+The tests will run automatically in GitHub Actions on every push and pull request. All tests must pass before a PR can be merged.
+
+**Test Framework**: The project uses [ospec](https://github.com/MithrilJS/mithril.js/tree/master/ospec) (Mithril's official test framework), [mithril-query](https://github.com/MithrilJS/mithril-query) for component testing, and [jsdom](https://github.com/jsdom/jsdom) for DOM simulation in Node.js.
+
+**Adding New Tests**: When adding new Mithril components, please add corresponding test files in the `tests/` directory. Test files should:
+- Be named `ComponentName.test.js`
+- Import the component and required testing utilities
+- Use `o.spec()` to group related tests
+- Test component rendering, props, and basic interactions
+
+Example test structure:
+```javascript
+import mq from "mithril-query";
+import o from "ospec";
+import { MyComponent } from "../sources/components/MyComponent.js";
+
+o.spec("MyComponent", function() {
+  o("renders correctly", function() {
+    const out = mq(MyComponent, { prop: "value" });
+    out.should.contain("expected content");
+  });
+});
+```
+
 #### z-positions
 
 In order to facilitate easier management of the z-positions of the assets in this repo, there is a [script](/scripts/zPositioning/parse_zpos.js) that traverses all JSON files and write's the layer's z-position to a CSV.

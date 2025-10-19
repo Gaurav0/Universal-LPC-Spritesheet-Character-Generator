@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "scripts": {
+    "test": "ospec --preload ./test-setup.js"
+  },
+  "dependencies": {
+    "claude": "^0.1.1"
+  },
+  "devDependencies": {
+    "jsdom": "^27.0.1",
+    "mithril": "^2.3.7",
+    "mithril-query": "^4.0.1",
+    "ospec": "^4.2.1"
+  }
+}
