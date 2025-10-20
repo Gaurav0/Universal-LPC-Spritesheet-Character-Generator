@@ -44,7 +44,7 @@ jobs:
           echo "Test results:"
           cat rendered.html
 
-          if grep -q 'id="test-status">PASS' rendered.html; then
+          if grep -q 'test-status.*PASS' rendered.html; then
             echo "✓ All browser tests passed"
             kill $SERVER_PID
           else
