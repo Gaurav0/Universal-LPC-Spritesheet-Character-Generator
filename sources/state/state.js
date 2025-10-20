@@ -5,6 +5,7 @@ import { LICENSE_CONFIG, ANIMATIONS } from "./constants.js";
 export const state = {
 	selections: {}, // key: selectionGroup, value: { itemId, variant, name }
 	bodyType: "male", // male, female, teen, child, muscular, pregnant
+	selectedAnimation: "walk",
 	expandedNodes: {}, // key: path string, value: boolean (true if expanded)
 	searchQuery: "", // current search query
 	showTransparencyGrid: true, // show checkered transparency background
