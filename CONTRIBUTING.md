@@ -88,38 +88,63 @@ The CI will reject any PR's that contain manual changes made on the `index.html`
 
 #### Running Tests
 
-The project includes automated tests for the Mithril components. To run the tests:
+The project includes automated tests for the Mithril components that run directly in the browser.
 
-1. **Install dependencies** (first time only):
+**Running Tests Locally**:
+
+1. Start a local HTTP server in the project root:
    ```bash
-   npm install
+   python -m http.server 8080
+   # or use any other HTTP server
    ```
 
-2. **Run the test suite**:
-   ```bash
-   npm test
+2. Open the test runner in your browser:
+   ```
+   http://localhost:8080/tests_run.html
    ```
 
-The tests will run automatically in GitHub Actions on every push and pull request. All tests must pass before a PR can be merged.
+The tests will display with visual pass/fail indicators, error details, and a summary.
 
-**Test Framework**: The project uses [ospec](https://github.com/MithrilJS/mithril.js/tree/master/ospec) (Mithril's official test framework), [mithril-query](https://github.com/MithrilJS/mithril-query) for component testing, and [jsdom](https://github.com/jsdom/jsdom) for DOM simulation in Node.js.
+**CI Integration**: Tests run automatically in GitHub Actions on every push and pull request using Chrome headless. All tests must pass before a PR can be merged.
+
+**Test Framework**: The project uses [ospec](https://github.com/MithrilJS/mithril.js/tree/master/ospec) (Mithril's official test framework) running directly in the browser with real DOM.
+
+**Test Autodiscovery**: Test files are automatically discovered - just drop any `*.test.js` file in the `tests/` directory and it will be found and executed automatically. No configuration needed!
 
 **Adding New Tests**: When adding new Mithril components, please add corresponding test files in the `tests/` directory. Test files should:
 - Be named `ComponentName.test.js`
-- Import the component and required testing utilities
+- Use `window.o` and `window.m` (globally available in the test runner)
 - Use `o.spec()` to group related tests
-- Test component rendering, props, and basic interactions
+- Create and cleanup DOM containers in `beforeEach`/`afterEach`
+- Use `m.render()` to render components to the real DOM
+- Use native DOM queries (`querySelector`, etc.) for assertions
 
 Example test structure:
 ```javascript
-import mq from "mithril-query";
-import o from "ospec";
 import { MyComponent } from "../sources/components/MyComponent.js";
 
+const o = window.o;
+const m = window.m;
+
 o.spec("MyComponent", function() {
+  let container;
+
+  o.beforeEach(function() {
+    container = document.createElement('div');
+    document.body.appendChild(container);
+  });
+
+  o.afterEach(function() {
+    if (container && container.parentNode) {
+      container.parentNode.removeChild(container);
+    }
+  });
+
   o("renders correctly", function() {
-    const out = mq(MyComponent, { prop: "value" });
-    out.should.contain("expected content");
+    m.render(container, m(MyComponent, { prop: "value" }));
+    const element = container.querySelector(".expected-class");
+    o(element).notEquals(null);
+    o(element.textContent).equals("expected content");
   });
 });
 ```
