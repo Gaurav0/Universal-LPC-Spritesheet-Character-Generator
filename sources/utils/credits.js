@@ -1,6 +1,6 @@
 // Credit collection and formatting utilities
 
-import { replaceInPath } from "../state/state.js";
+import { replaceInPath } from "../state/path.js";
 
 /**
  * Helper function to collect credits from all selected items

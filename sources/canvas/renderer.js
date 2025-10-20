@@ -1,9 +1,9 @@
 // Canvas rendering module for Mithril UI
 // Simplified renderer that draws character sprites based on selections
 
-import { state, replaceInPath } from '../state/state.js';
+import { state } from '../state/state.js';
 import { loadImage, loadImagesInParallel } from './load-image.js';
-import { es6DynamicTemplate } from '../utils/helpers.js';
+import { getSpritePath } from '../state/path.js';
 import { get2DContext } from './canvas-utils.js';
 
 const FRAME_SIZE = 64;
@@ -271,38 +271,6 @@ export function stopPreviewAnimation() {
     cancelAnimationFrame(animationFrameId);
     animationFrameId = null;
   }
-}
-
-/**
- * Build sprite path from item metadata for a specific animation
- */
-function getSpritePath(itemId, variant, bodyType, animation, layerNum = 1, selections = {}, meta = null) {
-  if (!meta) {
-    meta = window.itemMetadata[itemId];
-  }
-  if (!meta) return null;
-
-  const layerKey = `layer_${layerNum}`;
-  const layer = meta.layers?.[layerKey];
-  if (!layer) return null;
-
-  // Get the file path for this body type
-  let basePath = layer[bodyType];
-  if (!basePath) return null;
-
-  // Replace template variables like ${head}
-  if (basePath.includes('${')) {
-	basePath = replaceInPath(basePath, selections, meta);
-  }
-
-  // If no variant specified, try to extract from itemId
-  if (!variant) {
-    const parts = itemId.split('_');
-    variant = parts[parts.length - 1];
-  }
-
-  // Build full path: spritesheets/ + basePath + animation/ + variant.png
-  return `spritesheets/${basePath}${animation}/${variantToFilename(variant)}.png`;
 }
 
 /**

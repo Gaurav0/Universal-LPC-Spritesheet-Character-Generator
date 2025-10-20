@@ -1,6 +1,5 @@
 // Global state and state operations
 import { LICENSE_CONFIG, ANIMATIONS } from "./constants.js";
-import { es6DynamicTemplate } from "../utils/helpers.js";
 
 // Global state
 export const state = {
@@ -93,32 +92,6 @@ export function getHashParamsforSelections(selections) {
 	}
 
 	return params;
-}
-
-// Replace template variables like ${head} in a path using current selections
-export function replaceInPath(path, selections, meta) {
-	if (path.includes("${")) {
-		// get params from selections
-		// TODO: this could be optimized to avoid recomputing every time
-		// or to only do it when relevant selections change
-		// or just use the selections directly instead of recomputing the hash params
-		const hashParams = getHashParamsforSelections(selections || {});
-		const replacements = Object.fromEntries(
-			Object.entries(hashParams).map(([typeName, nameAndVariant]) => {
-				// TODO: this works for head, eye color, and faces but probably not for everything
-				const name = nameAndVariant.substr(
-					0,
-					nameAndVariant.lastIndexOf("_"),
-				); // Extract name before variant
-				const replacement = meta.replace_in_path[typeName]?.[name];
-				return [typeName, replacement];
-			}),
-		);
-
-		return es6DynamicTemplate(path, replacements);
-	}
-
-	return path;
 }
 
 export function syncSelectionsToHash() {

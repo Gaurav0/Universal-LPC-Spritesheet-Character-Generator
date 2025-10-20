@@ -1,6 +1,7 @@
 // Item with variants component
-import { state, getSelectionGroup, applyMatchBodyColor, replaceInPath } from '../../state/state.js';
-import { variantToFilename, capitalize, es6DynamicTemplate } from '../../utils/helpers.js';
+import { state, getSelectionGroup, applyMatchBodyColor } from '../../state/state.js';
+import { replaceInPath } from '../../state/path.js';
+import { variantToFilename, capitalize } from '../../utils/helpers.js';
 
 export const ItemWithVariants = {
 	view: function(vnode) {
