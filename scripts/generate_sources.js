@@ -5,7 +5,7 @@ const DEBUG = false; // change this to print debug log
 const onlyIfTemplate = false; // print debugging log only if there is a template
 const onlyIfReplace = true; // print debugging log only if there is replace key
 
-require("child_process").fork("scripts/zPositioning/parse_zpos.cjs");
+require("child_process").fork("scripts/zPositioning/parse_zpos.js");
 
 // copied from https://github.com/mikemaccana/dynamic-template/blob/046fee36aecc1f48cf3dc454d9d36bb0e96e0784/index.js
 const es6DynamicTemplate = (templateString, templateVariables) =>

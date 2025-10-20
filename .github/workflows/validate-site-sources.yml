@@ -55,7 +55,7 @@ jobs:
 
       - name: Validate site sources generation
         run: |
-          node scripts/generate_sources.cjs
+          node scripts/generate_sources.js
       - name: Assert git diff
         run: |
           if [[ `git status --porcelain` ]]; then
