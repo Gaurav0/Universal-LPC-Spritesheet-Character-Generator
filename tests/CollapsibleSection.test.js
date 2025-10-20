@@ -1,22 +1,42 @@
-// CollapsibleSection component tests
-import mq from "mithril-query";
-import o from "ospec";
+// CollapsibleSection component tests - Browser compatible
 import { CollapsibleSection } from "../sources/components/CollapsibleSection.js";
 
-o.spec("CollapsibleSection", function() {
-  o("renders with a title", function() {
-    const out = mq(m(CollapsibleSection, { title: "Test Section" }));
+// Use global o and m (loaded from CDN in index.html)
+const o = window.o;
+const m = window.m;
 
-    // More specific assertion
-    out.should.have("h3.title");
-    o(out.first("h3").textContent).equals("Test Section");
+o.spec("CollapsibleSection", function() {
+  let container;
+
+  o.beforeEach(function() {
+    // Create a fresh container for each test
+    container = document.createElement("div");
+    document.body.appendChild(container);
+  });
+
+  o.afterEach(function() {
+    // Cleanup after each test
+    if (container && container.parentNode) {
+      container.parentNode.removeChild(container);
+    }
+  });
+
+  o("renders with a title", function() {
+    m.render(container, m(CollapsibleSection, { title: "Test Section" }));
 
     // Check for exact element
-    out.should.have(".collapsible-title");
+    const titleElement = container.querySelector("h3.collapsible-title");
+    o(titleElement).notEquals(null);
+    o(titleElement.textContent).equals("Test Section");
+
+    // Check for collapsible title wrapper
+    const collapsibleTitle = container.querySelector(".collapsible-title");
+    o(collapsibleTitle).notEquals(null);
   });
 
   o("renders children when not collapsed (defaultOpen: true)", function() {
-    const out = mq(
+    m.render(
+      container,
       m(
         CollapsibleSection,
         {
@@ -28,12 +48,14 @@ o.spec("CollapsibleSection", function() {
     );
 
     // Should show child content when open
-    const child = out.first("div.collapsible-content");
+    const child = container.querySelector("div.collapsible-content");
+    o(child).notEquals(null);
     o(child.textContent).equals("Child content");
   });
 
   o("hides children when collapsed (defaultOpen: false)", function() {
-    const out = mq(
+    m.render(
+      container,
       m(
         CollapsibleSection,
         {
@@ -45,12 +67,14 @@ o.spec("CollapsibleSection", function() {
     );
 
     // Should not show child content when collapsed
-    out.should.not.have("div.collapsible-content");
-    out.should.not.contain("Child content");
+    const child = container.querySelector("div.collapsible-content");
+    o(child).equals(null);
+    o(container.textContent.includes("Child content")).equals(false);
   });
 
   o("starts open by default", function() {
-    const out = mq(
+    m.render(
+      container,
       m(
         CollapsibleSection,
         {
@@ -61,12 +85,14 @@ o.spec("CollapsibleSection", function() {
     );
 
     // Should be open by default (defaultOpen: true)
-    const child = out.first("div.collapsible-content");
+    const child = container.querySelector("div.collapsible-content");
+    o(child).notEquals(null);
     o(child.textContent).equals("Content");
   });
 
   o("shows expanded arrow when open", function() {
-    const out = mq(
+    m.render(
+      container,
       m(CollapsibleSection, {
         title: "Section",
         defaultOpen: true
@@ -74,11 +100,13 @@ o.spec("CollapsibleSection", function() {
     );
 
     // Should have expanded arrow class
-    out.should.have("span.tree-arrow.expanded");
+    const arrow = container.querySelector("span.tree-arrow.expanded");
+    o(arrow).notEquals(null);
   });
 
   o("shows collapsed arrow when closed", function() {
-    const out = mq(
+    m.render(
+      container,
       m(CollapsibleSection, {
         title: "Section",
         defaultOpen: false
@@ -86,11 +114,13 @@ o.spec("CollapsibleSection", function() {
     );
 
     // Should have collapsed arrow class
-    out.should.have("span.tree-arrow.collapsed");
+    const arrow = container.querySelector("span.tree-arrow.collapsed");
+    o(arrow).notEquals(null);
   });
 
   o("applies custom box class", function() {
-    const out = mq(
+    m.render(
+      container,
       m(CollapsibleSection, {
         title: "Section",
         boxClass: "custom-box"
@@ -98,17 +128,20 @@ o.spec("CollapsibleSection", function() {
     );
 
     // Should have the custom class
-    out.should.have("div.custom-box");
+    const box = container.querySelector("div.custom-box");
+    o(box).notEquals(null);
   });
 
   o("uses default box class when not specified", function() {
-    const out = mq(
+    m.render(
+      container,
       m(CollapsibleSection, {
         title: "Section"
       })
     );
 
     // Should have default "box" class
-    out.should.have(".box");
+    const box = container.querySelector(".box");
+    o(box).notEquals(null);
   });
 });
