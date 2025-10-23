@@ -2,6 +2,7 @@
 import { state } from '../../state/state.js';
 import { CollapsibleSection } from '../CollapsibleSection.js';
 import PinchToZoom from './PinchToZoom.js';
+import { copyToPreviewCanvas } from '../../canvas/preview-canvas.js';
 
 // Canvas wrapper component with its own lifecycle
 const SpritesheetCanvas = {
@@ -16,7 +17,7 @@ const SpritesheetCanvas = {
 		}
 
 		// Copy from offscreen canvas to preview canvas
-		window.canvasRenderer.copyToPreviewCanvas(canvas, showTransparencyGrid, zoomLevel);
+		copyToPreviewCanvas(canvas, showTransparencyGrid, zoomLevel);
 
 		vnode.state.zoomLevel = zoomLevel;
 		new PinchToZoom(canvas, (scale) => {
@@ -25,7 +26,7 @@ const SpritesheetCanvas = {
 			// Trigger re-render to update preview canvas zoom
 			m.redraw();
 			// Apply zoom to canvas
-			window.canvasRenderer.copyToPreviewCanvas(canvas, showTransparencyGrid, vnode.state.zoomLevel);
+			copyToPreviewCanvas(canvas, showTransparencyGrid, vnode.state.zoomLevel);
 
 			state.fullSpritesheetCanvasZoomLevel = vnode.state.zoomLevel;
 		}, vnode.state.zoomLevel);
@@ -42,7 +43,7 @@ const SpritesheetCanvas = {
 		m.redraw();
 
 		// Copy from offscreen canvas to preview canvas
-		window.canvasRenderer.copyToPreviewCanvas(canvas, showTransparencyGrid, zoomLevel);
+		copyToPreviewCanvas(canvas, showTransparencyGrid, zoomLevel);
 	},
 	view: function() {
 		return m("canvas#spritesheet-preview");
