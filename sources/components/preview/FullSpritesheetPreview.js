@@ -3,6 +3,7 @@ import { state } from '../../state/state.js';
 import { CollapsibleSection } from '../CollapsibleSection.js';
 import PinchToZoom from './PinchToZoom.js';
 import { copyToPreviewCanvas } from '../../canvas/preview-canvas.js';
+import { applyTransparencyMaskToCanvas } from '../../canvas/mask.js';
 
 // Canvas wrapper component with its own lifecycle
 const SpritesheetCanvas = {
@@ -129,6 +130,19 @@ export const FullSpritesheetPreview = {
 						}),
 						" Show transparency grid"
 					])
+				]),
+				// Replace Mask (Pink) column
+				m("div.column.is-narrow.is-flex.is-align-items-center", [
+					m("button.button.is-small.is-info.ml-4", {
+						onclick: () => {
+							// Replace pink mask color with current body color in offscreen canvas
+							if (window.canvasRenderer) {
+								applyTransparencyMaskToCanvas();
+								// Trigger re-render to update preview canvas after replacement
+								m.redraw();
+							}
+						}
+					}, "Replace Mask (Pink)")
 				]),
 				// Zoom column
 				m("div.column", [
