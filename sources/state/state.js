@@ -9,7 +9,7 @@ export const state = {
 	expandedNodes: {}, // key: path string, value: boolean (true if expanded)
 	searchQuery: "", // current search query
 	showTransparencyGrid: true, // show checkered transparency background
-	matchBodyColorEnabled: false, // auto-match body color to other items (default: disabled)
+	matchBodyColorEnabled: true, // auto-match body color to other items (default: enabled)
 	compactDisplay: false, // compact item variant display (smaller thumbnails)
 	customUploadedImage: null, // custom uploaded image (Image object)
 	customImageZPos: 0, // z-position for custom uploaded image
