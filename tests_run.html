@@ -81,13 +81,22 @@
     <!-- Load ospec for browser -->
     <script src="https://unpkg.com/ospec@4.2.1/ospec.js"></script>
 
-    <script type="module">
+    <script>
       // Make m and o available globally for test files
       window.m = m;
       window.o = o;
     </script>
 
     <!-- Load the test runner which sets up reporter and discovers tests -->
-    <script type="module" src="tests/test-runner.js"></script>
+    <script src="tests/test-runner.js"></script>
+
+    <!-- Load Testem script to manage test running -->
+    <script src="/testem.js"></script>
+    <script src="tests/ospec-adapter.js"></script>
+
+    <script>
+      // Start the discovery process
+      discoverAndRunTests();
+    </script>
   </body>
 </html>

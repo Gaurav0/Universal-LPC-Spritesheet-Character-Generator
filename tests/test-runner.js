@@ -167,6 +167,3 @@ async function discoverAndRunTests() {
     throw error;
   }
 }
-
-// Start the discovery process
-discoverAndRunTests();

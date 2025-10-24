@@ -5,10 +5,12 @@ on:
     branches:
       - master
       - full_rewrite
+      - paint-in-place-for-real
   pull_request:
     branches:
       - master
       - full_rewrite
+      - paint-in-place-for-real
 
 jobs:
   validate_site_sources:
@@ -26,36 +28,10 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Run browser tests
-        run: |
-          npx http-server -p 8080 &
-          SERVER_PID=$!
-          sleep 3
-          echo "Fetching test results from browser..."
-
-          # Use Chrome headless with virtual time budget to let JS execute
-          # Increase virtual-time-budget if tests take longer (value is in milliseconds)
-          timeout 30 google-chrome --headless --disable-gpu \
-            --virtual-time-budget=10000 \
-            --dump-dom "http://localhost:8080/tests_run.html" > test-results-ci.html || true
-
-          sleep 1
-
-          echo "Test results:"
-          cat test-results-ci.html
-
-          if grep -q 'test-status.*PASS' test-results-ci.html; then
-            echo "✓ All browser tests passed"
-            kill $SERVER_PID
-          else
-            echo "✗ Browser tests failed"
-            kill $SERVER_PID
-            exit 1
-          fi
-
       - name: Validate site sources generation
         run: |
           node scripts/generate_sources.js
+
       - name: Assert git diff
         run: |
           if [[ `git status --porcelain` ]]; then
