@@ -3,6 +3,7 @@ import { state } from '../../state/state.js';
 import { ANIMATIONS } from '../../state/constants.js';
 import { CollapsibleSection } from '../CollapsibleSection.js';
 import PinchToZoom from './PinchToZoom.js';
+import { getCustomAnimations } from '../../canvas/renderer.js';
 
 // Canvas wrapper component with its own lifecycle
 const PreviewCanvas = {
@@ -17,15 +18,16 @@ const PreviewCanvas = {
 			return;
 		}
 
-		window.canvasRenderer.initPreviewCanvas(canvas);
 		const frames = window.canvasRenderer.setPreviewAnimation(selectedAnimation);
+		window.canvasRenderer.initPreviewCanvas(canvas);
 		window.canvasRenderer.startPreviewAnimation();
 
-		if (onFrameCycleUpdate) {
+		if (onFrameCycleUpdate && frames) {
 			onFrameCycleUpdate(frames.join('-'));
 		}
 
 		vnode.state.zoomLevel = zoomLevel;
+		vnode.state.lastAnimation = selectedAnimation;
 		new PinchToZoom(canvas, (scale) => {
 			// Update zoom level on pinch
 			vnode.state.zoomLevel = scale;
@@ -39,6 +41,19 @@ const PreviewCanvas = {
 		}, vnode.state.zoomLevel);
 	},
 	onupdate: function(vnode) {
+		const selectedAnimation = vnode.attrs.selectedAnimation;
+
+		// If animation changed, reinitialize canvas with new frameSize
+		if (vnode.state.lastAnimation !== selectedAnimation) {
+			if (window.canvasRenderer) {
+				window.canvasRenderer.stopPreviewAnimation();
+				window.canvasRenderer.setPreviewAnimation(selectedAnimation);
+				window.canvasRenderer.initPreviewCanvas(vnode.dom);
+				window.canvasRenderer.startPreviewAnimation();
+			}
+			vnode.state.lastAnimation = selectedAnimation;
+		}
+
 		vnode.state.zoomLevel = state.previewCanvasZoomLevel || 1;
 	},
 	onremove: function() {
@@ -48,7 +63,7 @@ const PreviewCanvas = {
 		}
 	},
 	view: function(vnode) {
-		return m("canvas#previewAnimations", { width: 256, height: 64 });
+		return m("canvas#previewAnimations");
 	}
 };
 
@@ -68,6 +83,16 @@ export const AnimationPreview = {
 		vnode.state.zoomLevel = state.previewCanvasZoomLevel || 1;
 	},
 	view: function(vnode) {
+		// Combine standard animations with custom animations from current render
+		const customAnims = getCustomAnimations();
+		const allAnimations = [
+			...ANIMATIONS,
+			...customAnims.map(anim => ({
+				value: anim,
+				label: anim.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
+			}))
+		];
+
 		return m(CollapsibleSection, {
 			title: "Animation Preview",
 			storageKey: "animation-preview",
@@ -91,10 +116,10 @@ export const AnimationPreview = {
 												vnode.state.selectedAnimation = e.target.value;
 												if (window.canvasRenderer) {
 													const frames = window.canvasRenderer.setPreviewAnimation(e.target.value);
-													vnode.state.frameCycle = frames.join('-');
+													vnode.state.frameCycle = frames ? frames.join('-') : '';
 												}
 											}
-										}, ANIMATIONS.map(anim =>
+										}, allAnimations.map(anim =>
 											m("option", { value: anim.value }, anim.label)
 										))
 									])
