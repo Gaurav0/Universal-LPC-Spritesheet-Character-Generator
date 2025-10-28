@@ -4,7 +4,8 @@
 import * as canvasRenderer from './canvas/renderer.js';
 
 // Import state management
-import { initState, initHashChangeListener } from './state/state.js';
+import { initState } from './state/state.js';
+import { initHashChangeListener } from './state/hash.js';
 
 // Import components
 import { App } from './components/App.js';
