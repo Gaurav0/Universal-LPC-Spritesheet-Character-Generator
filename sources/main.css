@@ -66,6 +66,19 @@ p {
   touch-action: pan-x pan-y;
 }
 
+/* Prevent canvas antialiasing/blurring */
+canvas {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+#previewAnimations, #spritesheet-preview {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
 .scrollable-container {
   overflow: auto;
   max-width: 100%;
@@ -196,4 +209,8 @@ p {
 
 #match-body-color-label {
   line-height: 1.3;
+}
+
+#netlify-link {
+  margin: -6px auto 0 0;
 }

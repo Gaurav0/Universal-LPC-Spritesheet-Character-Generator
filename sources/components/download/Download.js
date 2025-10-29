@@ -1,26 +1,20 @@
 // Download component
 import { state } from '../../state/state.js';
+import { extractAnimationFromCanvas, renderSingleItem, renderSingleItemAnimation, layers } from '../../canvas/renderer.js';
 import { getAllCredits, creditsToCsv, creditsToTxt, getItemFileName } from '../../utils/credits.js';
 import { CollapsibleSection } from '../CollapsibleSection.js';
+import { downloadFile, downloadAsPNG } from '../../canvas/download.js';
+import { importStateFromJSON, exportStateAsJSON } from '../../state/json.js';
+import { ANIMATIONS } from '../../state/constants.js';
 
 export const Download = {
 	view: function() {
-		// Helper to download file
-		const downloadFile = (content, filename, type = "text/plain") => {
-			const blob = new Blob([content], { type });
-			const url = URL.createObjectURL(blob);
-			const a = document.createElement("a");
-			a.href = url;
-			a.download = filename;
-			a.click();
-			URL.revokeObjectURL(url);
-		};
-
 		// Export to clipboard
 		const exportToClipboard = async () => {
 			if (!window.canvasRenderer) return;
-			const json = window.canvasRenderer.exportStateAsJSON(state.selections, state.bodyType);
 			try {
+				const json = exportStateAsJSON(state, layers);
+				if (window.DEBUG) console.log(json);
 				await navigator.clipboard.writeText(json);
 				alert('Exported to clipboard!');
 			} catch (err) {
@@ -34,9 +28,8 @@ export const Download = {
 			if (!window.canvasRenderer) return;
 			try {
 				const json = await navigator.clipboard.readText();
-				const imported = window.canvasRenderer.importStateFromJSON(json);
-				state.bodyType = imported.bodyType;
-				state.selections = imported.selections;
+				const imported = importStateFromJSON(json);
+				Object.assign(state, imported);
 
 				m.redraw(); // Force Mithril to update the UI
 				alert('Imported successfully!');
@@ -51,7 +44,7 @@ export const Download = {
 			if (!window.canvasRenderer) return;
 
 			// Export offscreen canvas directly
-			window.canvasRenderer.downloadAsPNG('character-spritesheet.png');
+			downloadAsPNG('character-spritesheet.png');
 		};
 
 		// Export ZIP - Split by animation
@@ -72,14 +65,14 @@ export const Download = {
 				const creditsFolder = zip.folder("credits");
 
 				// Get available animations from canvas renderer
-				const animationList = window.canvasRenderer.getAnimationList();
+				const animationList = ANIMATIONS;;
 				const exportedStandard = [];
 				const failedStandard = [];
 
 				// Create animation PNGs in standard folder (no custom animations support yet)
 				for (const anim of animationList) {
 					try {
-						const animCanvas = window.canvasRenderer.extractAnimationFromCanvas(anim.value);
+						const animCanvas = extractAnimationFromCanvas(anim.value);
 						if (animCanvas) {
 							const blob = await new Promise(resolve => animCanvas.toBlob(resolve, 'image/png'));
 							standardFolder.file(`${anim.value}.png`, blob);
@@ -92,7 +85,7 @@ export const Download = {
 				}
 
 				// Add character.json at root
-				zip.file('character.json', window.canvasRenderer.exportStateAsJSON(state.selections, state.bodyType));
+				zip.file('character.json', exportStateAsJSON(state.selections, state.bodyType));
 
 				// Add credits in credits folder
 				const allCredits = getAllCredits(state.selections, state.bodyType);
@@ -162,7 +155,7 @@ export const Download = {
 
 					try {
 						// Render just this one item
-						const itemCanvas = await window.canvasRenderer.renderSingleItem(
+						const itemCanvas = await renderSingleItem(
 							itemId,
 							variant,
 							bodyType,
@@ -181,7 +174,7 @@ export const Download = {
 				}
 
 				// Add character.json at root
-				zip.file('character.json', window.canvasRenderer.exportStateAsJSON(state.selections, state.bodyType));
+				zip.file('character.json', exportStateAsJSON(state.selections, state.bodyType));
 
 				// Add credits in credits folder
 				const allCredits = getAllCredits(state.selections, state.bodyType);
@@ -226,7 +219,7 @@ export const Download = {
 				const creditsFolder = zip.folder("credits");
 
 				// Get available animations
-				const animationList = window.canvasRenderer.getAnimationList();
+				const animationList = ANIMATIONS;
 				const exportedStandard = {};
 				const failedStandard = {};
 
@@ -245,7 +238,7 @@ export const Download = {
 
 						try {
 							// Render just this item for this animation
-							const animCanvas = await window.canvasRenderer.renderSingleItemAnimation(
+							const animCanvas = await renderSingleItemAnimation(
 								itemId,
 								variant,
 								bodyType,
@@ -266,7 +259,7 @@ export const Download = {
 				}
 
 				// Add character.json at root
-				zip.file('character.json', window.canvasRenderer.exportStateAsJSON(state.selections, state.bodyType));
+				zip.file('character.json', exportStateAsJSON(state.selections, state.bodyType));
 
 				// Add credits in credits folder
 				const allCredits = getAllCredits(state.selections, state.bodyType);

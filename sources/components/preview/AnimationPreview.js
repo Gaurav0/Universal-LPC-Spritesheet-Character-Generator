@@ -2,8 +2,10 @@
 import { state } from '../../state/state.js';
 import { ANIMATIONS } from '../../state/constants.js';
 import { CollapsibleSection } from '../CollapsibleSection.js';
+import { setPreviewAnimation, startPreviewAnimation, stopPreviewAnimation } from '../../canvas/preview-animation.js';
+import { initPreviewCanvas, setPreviewCanvasZoom } from '../../canvas/preview-canvas.js';
 import PinchToZoom from './PinchToZoom.js';
-import { getCustomAnimations } from '../../canvas/renderer.js';
+import { getCustomAnimations } from '../../canvas/preview-animation.js';
 
 // Canvas wrapper component with its own lifecycle
 const PreviewCanvas = {
@@ -18,9 +20,9 @@ const PreviewCanvas = {
 			return;
 		}
 
-		const frames = window.canvasRenderer.setPreviewAnimation(selectedAnimation);
-		window.canvasRenderer.initPreviewCanvas(canvas);
-		window.canvasRenderer.startPreviewAnimation();
+		initPreviewCanvas(canvas);
+		const frames = setPreviewAnimation(selectedAnimation);
+		startPreviewAnimation();
 
 		if (onFrameCycleUpdate && frames) {
 			onFrameCycleUpdate(frames.join('-'));
@@ -32,9 +34,9 @@ const PreviewCanvas = {
 			// Update zoom level on pinch
 			vnode.state.zoomLevel = scale;
 
-			if (window.canvasRenderer && window.canvasRenderer.setPreviewCanvasZoom) {
+			if (window.canvasRenderer) {
 				m.redraw();
-				window.canvasRenderer.setPreviewCanvasZoom(vnode.state.zoomLevel);
+				setPreviewCanvasZoom(vnode.state.zoomLevel);
 			}
 
 			state.previewCanvasZoomLevel = vnode.state.zoomLevel;
@@ -46,10 +48,10 @@ const PreviewCanvas = {
 		// If animation changed, reinitialize canvas with new frameSize
 		if (vnode.state.lastAnimation !== selectedAnimation) {
 			if (window.canvasRenderer) {
-				window.canvasRenderer.stopPreviewAnimation();
-				window.canvasRenderer.setPreviewAnimation(selectedAnimation);
-				window.canvasRenderer.initPreviewCanvas(vnode.dom);
-				window.canvasRenderer.startPreviewAnimation();
+				stopPreviewAnimation();
+				setPreviewAnimation(selectedAnimation);
+				initPreviewCanvas(vnode.dom);
+				startPreviewAnimation();
 			}
 			vnode.state.lastAnimation = selectedAnimation;
 		}
@@ -59,7 +61,7 @@ const PreviewCanvas = {
 	onremove: function() {
 		// Stop animation when canvas is removed from DOM
 		if (window.canvasRenderer) {
-			window.canvasRenderer.stopPreviewAnimation();
+			stopPreviewAnimation();
 		}
 	},
 	view: function(vnode) {
@@ -73,7 +75,7 @@ export const AnimationPreview = {
 		vnode.state.zoomLevel = state.previewCanvasZoomLevel || 1;
 		// Initialize frame cycle for default animation
 		if (window.canvasRenderer) {
-			const frames = window.canvasRenderer.setPreviewAnimation('walk');
+			const frames = setPreviewAnimation('walk');
 			vnode.state.frameCycle = frames ? frames.join('-') : '';
 		} else {
 			vnode.state.frameCycle = '';
@@ -114,8 +116,9 @@ export const AnimationPreview = {
 											value: vnode.state.selectedAnimation,
 											onchange: (e) => {
 												vnode.state.selectedAnimation = e.target.value;
+												state.selectedAnimation = vnode.state.selectedAnimation;
 												if (window.canvasRenderer) {
-													const frames = window.canvasRenderer.setPreviewAnimation(e.target.value);
+													const frames = setPreviewAnimation(e.target.value);
 													vnode.state.frameCycle = frames ? frames.join('-') : '';
 												}
 											}
@@ -147,8 +150,9 @@ export const AnimationPreview = {
 										value: vnode.state.zoomLevel,
 										oninput: (e) => {
 											vnode.state.zoomLevel = parseFloat(e.target.value);
-											if (window.canvasRenderer && window.canvasRenderer.setPreviewCanvasZoom) {
-												window.canvasRenderer.setPreviewCanvasZoom(vnode.state.zoomLevel);
+											state.previewCanvasZoomLevel = vnode.state.zoomLevel;
+											if (window.canvasRenderer) {
+												setPreviewCanvasZoom(vnode.state.zoomLevel);
 											}
 										}
 									})

@@ -4,7 +4,8 @@
 import * as canvasRenderer from './canvas/renderer.js';
 
 // Import state management
-import { initState, initHashChangeListener } from './state/state.js';
+import { initState } from './state/state.js';
+import { initHashChangeListener } from './state/hash.js';
 
 // Import components
 import { App } from './components/App.js';
@@ -50,6 +51,11 @@ window.canvasRenderer = canvasRenderer;
 window.setDefaultSelections = function() {
 	initState();
 };
+
+// Remove Netlify link if not on Netlify
+if (!window.location.hostname.includes('netlify')) {
+	document.getElementById("netlify-link").remove();
+}
 
 // Wait for DOM to be ready, then load Mithril app
 document.addEventListener('DOMContentLoaded', () => {
