@@ -41,6 +41,7 @@ export const ItemWithVariants = {
 
 					// Check if this item uses a custom animation
 					const hasCustomAnimation = layer1?.custom_animation;
+					const layer1CustomAnimation = hasCustomAnimation ? layer1.custom_animation : null;
 
 					let previewSrc = null;
 					if (basePath) {
@@ -104,6 +105,7 @@ export const ItemWithVariants = {
 								const ctx = canvas.getContext('2d');
 
 								// Collect all layers for this item
+								// Only include layers that match layer_1's custom animation (if any)
 								const layersToLoad = [];
 								for (let layerNum = 1; layerNum < 10; layerNum++) {
 									const layer = meta.layers?.[`layer_${layerNum}`];
@@ -111,6 +113,13 @@ export const ItemWithVariants = {
 
 									let layerPath = layer[state.bodyType];
 									if (!layerPath) continue;
+
+									// Filter: only include layers with matching custom animation
+									if (layer1CustomAnimation) {
+										if (layer.custom_animation !== layer1CustomAnimation) {
+											continue; // Skip layers with different custom animations
+										}
+									}
 
 									// Replace template variables like ${head}
 									if (layerPath.includes('${')) {
@@ -146,12 +155,17 @@ export const ItemWithVariants = {
 								})).then(loadedLayers => {
 									canvas.loadedLayers = loadedLayers;
 									// Draw each layer in zPos order
+									// Use universalFrameSize (64) for all calculations, matching master branch
+									const universalFrameSize = 64;
 									for (const { img, layer } of loadedLayers) {
 										if (img) {
 											const size = compactDisplay ? 32 : 64;
+											// Master branch uses: previewColumn * universalFrameSize + previewXOffset
+											const srcX = previewCol * universalFrameSize + previewXOffset;
+											const srcY = previewRow * universalFrameSize + previewYOffset;
 											ctx.drawImage(
 												img,
-												previewCol * 64 - previewXOffset, previewRow * 64 - previewYOffset, 64, 64,
+												srcX, srcY, universalFrameSize, universalFrameSize,
 												0, 0, size, size
 											);
 										}
@@ -163,12 +177,17 @@ export const ItemWithVariants = {
 								const ctx = canvas.getContext('2d');
 								if (canvas.loadedLayers) {
 									// Draw each layer in zPos order
+									// Use universalFrameSize (64) for all calculations, matching master branch
+									const universalFrameSize = 64;
 									for (const { img, layer } of canvas.loadedLayers) {
 										if (img) {
 											const size = compactDisplay ? 32 : 64;
+											// Master branch uses: previewColumn * universalFrameSize + previewXOffset
+											const srcX = previewCol * universalFrameSize + previewXOffset;
+											const srcY = previewRow * universalFrameSize + previewYOffset;
 											ctx.drawImage(
 												img,
-												previewCol * 64 - previewXOffset, previewRow * 64 - previewYOffset, 64, 64,
+												srcX, srcY, universalFrameSize, universalFrameSize,
 												0, 0, size, size
 											);
 										}
