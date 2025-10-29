@@ -6,6 +6,7 @@ import { setPreviewAnimation, startPreviewAnimation, stopPreviewAnimation } from
 import { initPreviewCanvas, setPreviewCanvasZoom } from '../../canvas/preview-canvas.js';
 import PinchToZoom from './PinchToZoom.js';
 import { getCustomAnimations } from '../../canvas/preview-animation.js';
+import { ScrollableContainer } from './ScrollableContainer.js';
 
 // Canvas wrapper component with its own lifecycle
 const PreviewCanvas = {
@@ -173,13 +174,16 @@ export const AnimationPreview = {
 				])
 			]),
 			m("div.mt-3", [
-				m(PreviewCanvas, {
-					selectedAnimation: vnode.state.selectedAnimation,
-					zoomLevel: vnode.state.zoomLevel,
-					onFrameCycleUpdate: (frameCycle) => {
-						vnode.state.frameCycle = frameCycle;
-					}
-				})
+				// Render preview canvas with drag-to-scroll
+				m(ScrollableContainer, [
+					m(PreviewCanvas, {
+						selectedAnimation: vnode.state.selectedAnimation,
+						zoomLevel: vnode.state.zoomLevel,
+						onFrameCycleUpdate: (frameCycle) => {
+							vnode.state.frameCycle = frameCycle;
+						}
+					})
+				])
 			])
 		]);
 	}
