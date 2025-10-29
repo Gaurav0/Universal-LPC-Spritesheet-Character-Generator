@@ -22,6 +22,7 @@ const METADATA_TO_FOLDER = {
 
 let canvas = null;
 let ctx = null;
+let layers = [];
 
 /**
  * Initialize the canvas (creates offscreen canvas)
@@ -33,7 +34,7 @@ export function initCanvas() {
   canvas.height = SHEET_HEIGHT;
 }
 
-export { canvas, ctx };
+export { canvas, ctx, layers };
 
 /**
  * Render character based on selections
@@ -189,6 +190,27 @@ export async function renderCharacter(selections, bodyType, targetCanvas = null)
     // Sort standard items by zPos only (lower zPos = drawn first = behind)
     // This ensures shadow (zPos=0) is drawn before body (zPos=10), etc.
     itemsToDraw.sort((a, b) => a.zPos - b.zPos);
+
+	// save layers for external access
+	layers = itemsToDraw
+		.map(item => {
+			const layer = Object.assign({}, item);
+			layer.fileName = item.spritePath.substring('spritesheets/'.length);
+			delete layer.spritePath;
+			return layer;
+		})
+		.reduce((acc, layer) => {
+			const animation = layer.animation;
+			const accLayer = acc.find(l => l.itemId === layer.itemId && l.layerNum === layer.layerNum);
+			if (!accLayer) {
+				layer.supportedAnimations = [animation];
+				delete layer.animation;
+				acc.push(layer);
+			} else {
+				accLayer.supportedAnimations.push(animation);
+			}
+			return acc;
+		}, []);
 
     // Calculate total canvas height needed (standard sheet + custom animations)
     let totalHeight = SHEET_HEIGHT;
