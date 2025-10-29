@@ -7,6 +7,7 @@ import { get2DContext, getZPos } from './canvas-utils.js';
 import { variantToFilename } from '../utils/helpers.js';
 import { drawFramesToCustomAnimation } from './draw-frames.js';
 import { FRAME_SIZE, ANIMATION_OFFSETS, ANIMATION_CONFIGS } from '../state/constants.js';
+import { customAnimations, customAnimationBase } from '../custom-animations.js';
 import { setCurrentCustomAnimations, setCustomAnimYPositions } from './preview-animation.js';
 
 const SHEET_HEIGHT = 3456; // Full universal sheet height
@@ -218,9 +219,9 @@ export async function renderCharacter(selections, bodyType, targetCanvas = null)
     let totalWidth = SHEET_WIDTH;
 	let currentCustomAnimations = {};
 
-    if (addedCustomAnimations.size > 0 && window.customAnimations) {
+    if (addedCustomAnimations.size > 0 && customAnimations) {
       for (const customAnimName of addedCustomAnimations) {
-        const customAnimDef = window.customAnimations[customAnimName];
+        const customAnimDef = customAnimations[customAnimName];
         if (customAnimDef) {
           const animHeight = customAnimDef.frameSize * customAnimDef.frames.length;
           const animWidth = customAnimDef.frameSize * customAnimDef.frames[0].length;
@@ -243,11 +244,11 @@ export async function renderCharacter(selections, bodyType, targetCanvas = null)
 
     // Calculate custom animation Y positions first (needed for drawing standard items into custom areas)
     const customAnimYPositions = {};
-    if (addedCustomAnimations.size > 0 && window.customAnimations) {
+    if (addedCustomAnimations.size > 0 && customAnimations) {
       let currentY = SHEET_HEIGHT;
       for (const customAnimName of addedCustomAnimations) {
         customAnimYPositions[customAnimName] = currentY;
-        const customAnimDef = window.customAnimations[customAnimName];
+        const customAnimDef = customAnimations[customAnimName];
         if (customAnimDef) {
           const animHeight = customAnimDef.frameSize * customAnimDef.frames.length;
           currentY += animHeight;
@@ -284,14 +285,14 @@ export async function renderCharacter(selections, bodyType, targetCanvas = null)
     }
 
     // Now handle custom animations (wheelchair, etc.)
-    if (addedCustomAnimations.size > 0 && window.customAnimations) {
+    if (addedCustomAnimations.size > 0 && customAnimations) {
       // For each custom animation area, we need to draw layers in zPos order
       for (const customAnimName of addedCustomAnimations) {
-        const customAnimDef = window.customAnimations[customAnimName];
+        const customAnimDef = customAnimations[customAnimName];
         if (!customAnimDef) continue;
 
         const offsetY = customAnimYPositions[customAnimName];
-        const baseAnim = window.customAnimationBase ? window.customAnimationBase(customAnimDef) : null;
+        const baseAnim = customAnimationBase ? customAnimationBase(customAnimDef) : null;
 
         // Collect all items that need to be drawn in this custom animation area
         const customAreaItems = [];
@@ -415,10 +416,10 @@ export async function renderSingleItem(itemId, variant, bodyType, selections) {
 
   let itemCanvas, itemCtx;
 
-  if (hasCustomAnimation && window.customAnimations) {
+  if (hasCustomAnimation && customAnimations) {
     // Custom animation item - use custom animation size
     const customAnimName = layer1.custom_animation;
-    const customAnimDef = window.customAnimations[customAnimName];
+    const customAnimDef = customAnimations[customAnimName];
     if (!customAnimDef) {
       console.error('Custom animation definition not found:', customAnimName);
       return null;
@@ -549,7 +550,7 @@ export async function renderSingleItemAnimation(itemId, variant, bodyType, anima
   const layer1 = meta.layers?.layer_1;
   const hasCustomAnimation = layer1 && layer1.custom_animation;
 
-  if (hasCustomAnimation && window.customAnimations) {
+  if (hasCustomAnimation && customAnimations) {
     // Custom animation item - just return the full item canvas (custom animations are not split by standard animation)
     return await renderSingleItem(itemId, variant, bodyType, selections);
   }

@@ -167,7 +167,7 @@ export function initHashChangeListener() {
 	let lastKnownHash = window.location.hash;
 
 	// Listen for browser back/forward navigation
-	window.addEventListener("hashchange", function () {
+	window.addEventListener("hashchange", async function () {
 		const currentHash = window.location.hash;
 
 		// Check if this is an external change (browser navigation) vs our own update
@@ -202,7 +202,7 @@ export function initHashChangeListener() {
 
 		// If nothing loaded from hash, use defaults
 		if (Object.keys(state.selections).length === 0) {
-			selectDefaults();
+			await selectDefaults();
 		}
 
 		// Trigger redraw which calls App.onupdate (syncs hash and renders canvas)

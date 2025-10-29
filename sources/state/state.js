@@ -1,6 +1,7 @@
 // Global state and state operations
 import { LICENSE_CONFIG, ANIMATIONS } from "./constants.js";
 import { syncSelectionsToHash, loadSelectionsFromHash } from "./hash.js";
+import { renderCharacter } from "../canvas/renderer.js";
 
 // Global state
 export const state = {
@@ -36,7 +37,7 @@ export function getSelectionGroup(itemId) {
 }
 
 // Select default items (body color light + human male light head)
-export function selectDefaults() {
+export async function selectDefaults() {
 	// Set default body color (light)
 	// itemId is now based on filename (e.g., "body")
 	const bodyItemId = "body";
@@ -69,23 +70,18 @@ export function selectDefaults() {
 	// Update URL hash
 	syncSelectionsToHash();
 
-	// Render the character with defaults
-	if (window.canvasRenderer) {
-		window.canvasRenderer
-			.renderCharacter(state.selections, state.bodyType)
-			.then(() => {
-				// Trigger redraw to update preview canvas after offscreen render completes
-				m.redraw();
-			});
-	}
+	await renderer.renderCharacter(state.selections, state.bodyType);
+
+	// Trigger redraw to update preview canvas after offscreen render completes
+	m.redraw();
 }
 
 // Reset all selections and restore defaults
-export function resetAll() {
+export async function resetAll() {
 	state.selections = {};
 	state.customUploadedImage = null;
 	state.customImageZPos = 0;
-	selectDefaults();
+	await selectDefaults();
 	m.redraw();
 }
 
@@ -173,22 +169,20 @@ export function isItemAnimationCompatible(itemId) {
 }
 
 // Initialize state with defaults or from URL
-export function initState() {
+export async function initState() {
 	// First, try to load from URL hash
 	loadSelectionsFromHash();
 
 	// If nothing in hash, set defaults
 	if (Object.keys(state.selections).length === 0) {
-		selectDefaults();
+		await selectDefaults();
 	} else {
 		// Render with loaded selections
 		if (window.canvasRenderer) {
-			window.canvasRenderer
-				.renderCharacter(state.selections, state.bodyType)
-				.then(() => {
-					// Trigger redraw to update preview canvas after offscreen render completes
-					m.redraw();
-				});
+			await renderCharacter(state.selections, state.bodyType);
+
+			// Trigger redraw to update preview canvas after offscreen render completes
+			m.redraw();
 		}
 	}
 }

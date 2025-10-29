@@ -48,8 +48,8 @@ window.DEBUG = DEBUG;
 window.canvasRenderer = canvasRenderer;
 
 // Expose initialization function to be called after canvas is ready
-window.setDefaultSelections = function() {
-	initState();
+window.setDefaultSelections = async function() {
+	await initState();
 };
 
 // Remove Netlify link if not on Netlify
@@ -58,7 +58,7 @@ if (!window.location.hostname.includes('netlify')) {
 }
 
 // Wait for DOM to be ready, then load Mithril app
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
 	clearLoadingIndicators();
 
 	// Initialize offscreen canvas
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// Set defaults after canvas is ready
 	if (window.setDefaultSelections) {
-		window.setDefaultSelections();
+		await window.setDefaultSelections();
 	}
 
 	// Initialize hash change listener

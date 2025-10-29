@@ -3,6 +3,7 @@ import { state } from "../state/state.js";
 import { FRAME_SIZE, ANIMATION_CONFIGS } from "../state/constants.js";
 import { drawTransparencyBackground } from "./canvas-utils.js";
 import { canvas } from "./renderer.js";
+import { customAnimations } from "../custom-animations.js";
 
 // Animation preview state
 let animationFrames = [1, 2, 3, 4, 5, 6, 7, 8]; // default for walk
@@ -24,8 +25,8 @@ export { activeCustomAnimation };
  */
 export function setPreviewAnimation(animationName) {
 	// Check if this is a custom animation
-	if (window.customAnimations && window.customAnimations[animationName]) {
-		const customAnimDef = window.customAnimations[animationName];
+	if (customAnimations && customAnimations[animationName]) {
+		const customAnimDef = customAnimations[animationName];
 		activeCustomAnimation = animationName;
 
 		// Extract frame cycle from custom animation definition
@@ -102,9 +103,8 @@ export function startPreviewAnimation() {
 				let frameSize = FRAME_SIZE;
 				let yOffset = 0;
 
-				if (activeCustomAnimation && window.customAnimations) {
-					const customAnimDef =
-						window.customAnimations[activeCustomAnimation];
+				if (activeCustomAnimation && customAnimations) {
+					const customAnimDef = customAnimations[activeCustomAnimation];
 					if (customAnimDef) {
 						frameSize = customAnimDef.frameSize;
 						yOffset =
