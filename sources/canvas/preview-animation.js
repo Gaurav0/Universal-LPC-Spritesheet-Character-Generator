@@ -13,7 +13,7 @@ let lastFrameTime = Date.now();
 let animationFrameId = null;
 
 // Track custom animations present in current render
-let currentCustomAnimations = [];
+let currentCustomAnimations = {};
 let customAnimYPositions = {}; // Y positions of custom animations in canvas
 let activeCustomAnimation = null; // Currently selected custom animation for preview
 
@@ -103,18 +103,20 @@ export function startPreviewAnimation() {
 				let yOffset = 0;
 
 				if (activeCustomAnimation && window.customAnimations) {
-					const customAnimDef = window.customAnimations[activeCustomAnimation];
+					const customAnimDef =
+						window.customAnimations[activeCustomAnimation];
 					if (customAnimDef) {
 						frameSize = customAnimDef.frameSize;
-						yOffset = customAnimYPositions[activeCustomAnimation] || 0;
+						yOffset =
+							customAnimYPositions[activeCustomAnimation] || 0;
 					}
 				}
 
 				// Draw stacked rows from main canvas to preview
 				for (let i = 0; i < animRowNum; i++) {
 					const srcY = activeCustomAnimation
-						? yOffset + i * frameSize  // Custom animation: use Y offset + row * frameSize
-						: (animRowStart + i) * FRAME_SIZE;  // Standard animation: use row * 64
+						? yOffset + i * frameSize // Custom animation: use Y offset + row * frameSize
+						: (animRowStart + i) * FRAME_SIZE; // Standard animation: use row * 64
 					previewCtx.drawImage(
 						canvas,
 						currentFrame * frameSize, // source x
@@ -156,8 +158,18 @@ export function getCustomAnimations() {
 
 /**
  * Set the list of custom animations present in current render
- * @param {string[]} customAnimations Array of custom animation names
+ * @param {Record<string, Object>} customAnimations Record of
+ * custom animation names mapped to their definitions
  */
 export function setCurrentCustomAnimations(customAnimations) {
 	currentCustomAnimations = customAnimations;
+}
+
+/**
+ * Set the Y positions for custom animations
+ * @param {Record<string, number>} yPositions Record of
+ * custom animation names mapped to their Y positions
+ */
+export function setCustomAnimYPositions(yPositions) {
+	customAnimYPositions = yPositions;
 }

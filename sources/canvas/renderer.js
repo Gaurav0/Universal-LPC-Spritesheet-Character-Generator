@@ -7,7 +7,7 @@ import { get2DContext, getZPos } from './canvas-utils.js';
 import { variantToFilename } from '../utils/helpers.js';
 import { drawFramesToCustomAnimation } from './draw-frames.js';
 import { FRAME_SIZE, ANIMATION_OFFSETS, ANIMATION_CONFIGS } from '../state/constants.js';
-import { setCurrentCustomAnimations } from './preview-animation.js';
+import { setCurrentCustomAnimations, setCustomAnimYPositions } from './preview-animation.js';
 
 const SHEET_HEIGHT = 3456; // Full universal sheet height
 const SHEET_WIDTH = 832; // 13 frames * 64px
@@ -216,6 +216,7 @@ export async function renderCharacter(selections, bodyType, targetCanvas = null)
     // Calculate total canvas height needed (standard sheet + custom animations)
     let totalHeight = SHEET_HEIGHT;
     let totalWidth = SHEET_WIDTH;
+	let currentCustomAnimations = {};
 
     if (addedCustomAnimations.size > 0 && window.customAnimations) {
       for (const customAnimName of addedCustomAnimations) {
@@ -226,6 +227,7 @@ export async function renderCharacter(selections, bodyType, targetCanvas = null)
           totalHeight += animHeight;
           totalWidth = Math.max(totalWidth, animWidth);
         }
+		currentCustomAnimations[customAnimName] = customAnimDef;
       }
     }
 
@@ -237,7 +239,7 @@ export async function renderCharacter(selections, bodyType, targetCanvas = null)
     renderCtx.clearRect(0, 0, renderCanvas.width, renderCanvas.height);
 
 	// Store custom animations for animation preview dropdown
-	setCurrentCustomAnimations(Array.from(addedCustomAnimations));
+	setCurrentCustomAnimations(currentCustomAnimations);
 
     // Calculate custom animation Y positions first (needed for drawing standard items into custom areas)
     const customAnimYPositions = {};
@@ -252,6 +254,9 @@ export async function renderCharacter(selections, bodyType, targetCanvas = null)
         }
       }
     }
+
+	// Store Y positions for external access
+	setCustomAnimYPositions(customAnimYPositions);
 
     // Load all standard animation images in parallel and attach them to their items
     const loadPromises = itemsToDraw.map(item => {

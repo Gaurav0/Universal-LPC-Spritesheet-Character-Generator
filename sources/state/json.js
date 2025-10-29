@@ -7,7 +7,6 @@ import { getAllCredits } from "../utils/credits.js";
 export function exportStateAsJSON(state, layers) {
 	const hash = createHashStringFromParams(getHashParamsforSelections(state.selections));
 	const url = `${window.location.origin}${window.location.pathname}#${hash}`;
-	console.log(getAllCredits(state.selections, state.bodyType));
 	const exportedState = {
 		version: 2,
 		bodyType: state.bodyType,
@@ -30,7 +29,6 @@ export function exportStateAsJSON(state, layers) {
  */
 export function importStateFromJSON(jsonString) {
 	try {
-		console.log(jsonString);
 		const importedState = JSON.parse(jsonString);
 		if (!importedState.version || 
 			(importedState.version === 1 && !importedState.url) ||

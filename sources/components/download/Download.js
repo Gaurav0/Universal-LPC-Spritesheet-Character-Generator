@@ -28,6 +28,7 @@ export const Download = {
 			if (!window.canvasRenderer) return;
 			try {
 				const json = await navigator.clipboard.readText();
+				if (window.DEBUG) console.log(json);
 				const imported = importStateFromJSON(json);
 				Object.assign(state, imported);
 

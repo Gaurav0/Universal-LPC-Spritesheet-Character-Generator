@@ -86,7 +86,7 @@ export const AnimationPreview = {
 	},
 	view: function(vnode) {
 		// Combine standard animations with custom animations from current render
-		const customAnims = getCustomAnimations();
+		const customAnims = Object.keys(getCustomAnimations());
 		const allAnimations = [
 			...ANIMATIONS,
 			...customAnims.map(anim => ({
@@ -94,6 +94,16 @@ export const AnimationPreview = {
 				label: anim.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
 			}))
 		];
+
+		if (!allAnimations.find(anim => anim.value === vnode.state.selectedAnimation)) {
+			// Selected animation is no longer available, reset to default
+			vnode.state.selectedAnimation = 'walk';
+			state.selectedAnimation = 'walk';
+			if (window.canvasRenderer) {
+				const frames = setPreviewAnimation('walk');
+				vnode.state.frameCycle = frames ? frames.join('-') : '';
+			}
+		}
 
 		return m(CollapsibleSection, {
 			title: "Animation Preview",
