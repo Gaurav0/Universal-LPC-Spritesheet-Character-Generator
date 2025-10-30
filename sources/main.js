@@ -54,7 +54,7 @@ window.setDefaultSelections = async function() {
 
 // Remove Netlify link if not on Netlify
 if (!window.location.hostname.includes('netlify')) {
-	document.getElementById("netlify-link").remove();
+	document.getElementById("netlify-link")?.remove();
 }
 
 // Wait for DOM to be ready, then load Mithril app
