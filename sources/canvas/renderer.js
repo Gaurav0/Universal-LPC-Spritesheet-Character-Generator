@@ -269,7 +269,9 @@ export async function renderCharacter(selections, bodyType, targetCanvas = null)
         return loadImage(item.spritePath)
           .then(img => ({ item, img, success: true }))
           .catch(err => {
-            console.warn(`Failed to load sprite: ${item.spritePath}`);
+            if (window.DEBUG) {
+				console.warn(`Failed to load sprite: ${item.spritePath}`);
+            }
             return { item, img: null, success: false };
           });
       }

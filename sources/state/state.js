@@ -70,7 +70,7 @@ export async function selectDefaults() {
 	// Update URL hash
 	syncSelectionsToHash();
 
-	await renderer.renderCharacter(state.selections, state.bodyType);
+	await renderCharacter(state.selections, state.bodyType);
 
 	// Trigger redraw to update preview canvas after offscreen render completes
 	m.redraw();
