@@ -10,8 +10,8 @@ import { FRAME_SIZE, ANIMATION_OFFSETS, ANIMATION_CONFIGS } from '../state/const
 import { customAnimations, customAnimationBase } from '../custom-animations.js';
 import { setCurrentCustomAnimations, setCustomAnimYPositions } from './preview-animation.js';
 
-const SHEET_HEIGHT = 3456; // Full universal sheet height
-const SHEET_WIDTH = 832; // 13 frames * 64px
+export const SHEET_HEIGHT = 3456; // Full universal sheet height
+export const SHEET_WIDTH = 832; // 13 frames * 64px
 
 // Map metadata animation names to actual folder names
 // Metadata uses "combat", "1h_slash", etc. but folders are named differently

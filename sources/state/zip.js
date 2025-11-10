@@ -1,18 +1,86 @@
-import { state } from './state.js';
 import { ANIMATIONS } from './constants.js';
 import {
 	extractAnimationFromCanvas,
 	renderSingleItem,
-	renderSingleItemAnimation
+	renderSingleItemAnimation,
+	SHEET_HEIGHT,
+	canvas,
+	layers,
+	addedCustomAnimations
 } from '../canvas/renderer.js';
 import {
 	getItemFileName,
 	getAllCredits,
 	creditsToTxt,
 	creditsToCsv
-} from './credits.js';
+} from '../utils/credits.js';
 import { exportStateAsJSON } from './json.js';
-import { addedCustomAnimations } from '../canvas/renderer.js';
+import { customAnimations, customAnimationSize } from '../custom-animations.js';
+
+// Helper to convert canvas to blob
+const canvasToBlob = (canvas) => {
+	return new Promise((resolve, reject) => {
+		try {
+			canvas.toBlob((blob) => {
+				if (blob) {
+					resolve(blob);
+				} else {
+					reject(new Error("Failed to create blob from canvas"));
+				}
+			}, 'image/png');
+		} catch (err) {
+			reject(new Error(`Canvas to Blob conversion failed: ${err.message}`));
+		}
+	});
+};
+
+// Helper function to check if a region has non-transparent pixels
+function hasContentInRegion(ctx, x, y, width, height) {
+	try {
+		const imageData = ctx.getImageData(x, y, width, height);
+		return imageData.data.some(pixel => pixel !== 0);
+	} catch (e) {
+		console.warn('Error checking region content:', e);
+		return false;
+	}
+}
+
+function newAnimationFromSheet(src, srcRect = {}) {
+	const { x, y, width, height } = srcRect || { width: src.width, height: src.height };
+	const fromSubregion = x !== undefined && y !== undefined;
+	if (fromSubregion) {
+		if (!hasContentInRegion(src.getContext("2d"), x, y, width, height))
+			return null;
+	} else {
+		return src;
+	}
+
+	const animCanvas = document.createElement('canvas');
+	animCanvas.width = width;
+	animCanvas.height = height;
+	const animCtx = animCanvas.getContext('2d');
+
+	if (!animCtx) {
+		throw new Error("Failed to get canvas context");
+	}
+
+	animCtx.drawImage(src,
+		x, y, width, height,
+		0, 0, width, height);
+
+	return animCanvas;
+}
+
+async function addAnimationToZipFolder(folder, fileName, srcCanvas, srcRect = {}) {
+	if (srcCanvas) {
+		const animCanvas = newAnimationFromSheet(srcCanvas, srcRect);
+		if (animCanvas) {
+			const blob = await canvasToBlob(animCanvas);
+			folder.file(fileName, blob);
+		}
+		return animCanvas;
+	}
+}
 
 // Export ZIP - Split by animation
 export const exportSplitAnimations = async () => {
@@ -24,6 +92,8 @@ export const exportSplitAnimations = async () => {
 	try {
 		const zip = new window.JSZip();
 		const timestamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, -5);
+
+		const state = (await import('./state.js')).state; // Ensure state is loaded
 		const bodyType = state.bodyType;
 
 		// Create folder structure to match original
@@ -32,7 +102,7 @@ export const exportSplitAnimations = async () => {
 		const creditsFolder = zip.folder("credits");
 
 		// Get available animations from canvas renderer
-		const animationList = ANIMATIONS;;
+		const animationList = ANIMATIONS;
 		const exportedStandard = [];
 		const failedStandard = [];
 
@@ -40,19 +110,42 @@ export const exportSplitAnimations = async () => {
 		for (const anim of animationList) {
 			try {
 				const animCanvas = extractAnimationFromCanvas(anim.value);
-				if (animCanvas) {
-					const blob = await new Promise(resolve => animCanvas.toBlob(resolve, 'image/png'));
-					standardFolder.file(`${anim.value}.png`, blob);
-					exportedStandard.push(anim.value);
-				}
+				addAnimationToZipFolder(standardFolder, `${anim.value}.png`, animCanvas,
+					new DOMRect(0, 0, animCanvas.width, animCanvas.height));
 			} catch (err) {
 				console.error(`Failed to export animation ${anim.value}:`, err);
 				failedStandard.push(anim.value);
 			}
 		}
 
+		// Handle custom animations
+		const exportedCustom = [];
+		const failedCustom = [];
+		let y = SHEET_HEIGHT;
+
+		for (const animName of addedCustomAnimations) {
+			try {
+				const anim = customAnimations[animName];
+				if (!anim) {
+				throw new Error("Animation definition not found");
+				}
+
+				const srcRect = { x: 0, y, ...customAnimationSize(anim) };
+				const animCanvas = await addAnimationToZipFolder(customFolder, `${animName}.png`,
+				canvas, srcRect);
+
+				if (animCanvas)
+				exportedCustom.push(animName);
+
+				y += srcRect.height;
+			} catch (err) {
+				console.error(`Failed to export custom animation ${animName}:`, err);
+				failedCustom.push(animName);
+			}
+		}
+
 		// Add character.json at root
-		zip.file('character.json', exportStateAsJSON(state.selections, state.bodyType));
+		zip.file('character.json', exportStateAsJSON(state, layers));
 
 		// Add credits in credits folder
 		const allCredits = getAllCredits(state.selections, state.bodyType);
@@ -68,8 +161,8 @@ export const exportSplitAnimations = async () => {
 				failed: failedStandard
 			},
 			customAnimations: {
-				exported: [],
-				failed: []
+				exported: exportedCustom,
+				failed: failedCustom
 			},
 			frameSize: 64,
 			frameCounts: {} // Would need to map animation frame counts
@@ -85,7 +178,7 @@ export const exportSplitAnimations = async () => {
 		a.click();
 		URL.revokeObjectURL(url);
 
-		if (failedStandard.length > 0) {
+		if (failedStandard.length > 0 || failedCustom.length > 0) {
 			alert(`Export completed with some issues:\nFailed to export animations: ${failedStandard.join(', ')}`);
 		} else {
 			alert('Export complete!');
@@ -106,6 +199,8 @@ export const exportSplitItemSheets = async () => {
 	try {
 		const zip = new window.JSZip();
 		const timestamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, -5);
+
+		const state = (await import('./state.js')).state; // Ensure state is loaded
 		const bodyType = state.bodyType;
 
 		// Create folder structure
@@ -141,7 +236,7 @@ export const exportSplitItemSheets = async () => {
 		}
 
 		// Add character.json at root
-		zip.file('character.json', exportStateAsJSON(state.selections, state.bodyType));
+		zip.file('character.json', exportStateAsJSON(state, layers));
 
 		// Add credits in credits folder
 		const allCredits = getAllCredits(state.selections, state.bodyType);
@@ -178,6 +273,8 @@ export const exportSplitItemAnimations = async () => {
 	try {
 		const zip = new window.JSZip();
 		const timestamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, -5);
+
+		const state = (await import('./state.js')).state; // Ensure state is loaded
 		const bodyType = state.bodyType;
 
 		// Create folder structure
@@ -226,7 +323,7 @@ export const exportSplitItemAnimations = async () => {
 		}
 
 		// Add character.json at root
-		zip.file('character.json', exportStateAsJSON(state.selections, state.bodyType));
+		zip.file('character.json', exportStateAsJSON(state, layers));
 
 		// Add credits in credits folder
 		const allCredits = getAllCredits(state.selections, state.bodyType);
