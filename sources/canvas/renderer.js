@@ -25,6 +25,7 @@ const METADATA_TO_FOLDER = {
 let canvas = null;
 let ctx = null;
 let layers = [];
+let addedCustomAnimations = new Set();
 
 /**
  * Initialize the canvas (creates offscreen canvas)
@@ -36,7 +37,7 @@ export function initCanvas() {
   canvas.height = SHEET_HEIGHT;
 }
 
-export { canvas, ctx, layers };
+export { canvas, ctx, layers, addedCustomAnimations };
 
 /**
  * Render character based on selections
@@ -63,7 +64,7 @@ export async function renderCharacter(selections, bodyType, targetCanvas = null)
   // Build list of items to draw
   const itemsToDraw = [];
   const customAnimationItems = []; // Track items with custom animations
-  const addedCustomAnimations = new Set(); // Track which custom animations we've added
+  addedCustomAnimations = new Set(); // Track which custom animations we've added
 
   // Import state to access custom uploaded image
   const appState = await import('../state/state.js').then(m => m.state);
