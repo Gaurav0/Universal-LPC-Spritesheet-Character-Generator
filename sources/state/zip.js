@@ -6,6 +6,7 @@ import {
 	SHEET_HEIGHT,
 	canvas,
 	layers,
+	customAreaItems,
 	addedCustomAnimations
 } from '../canvas/renderer.js';
 import {
@@ -14,8 +15,15 @@ import {
 	creditsToTxt,
 	creditsToCsv
 } from '../utils/credits.js';
+import { loadImage } from '../canvas/load-image.js';
+import { drawFramesToCustomAnimation } from '../canvas/draw-frames.js';
 import { exportStateAsJSON } from './json.js';
-import { customAnimations, customAnimationSize } from '../custom-animations.js';
+import {
+	customAnimations,
+	customAnimationSize,
+	isCustomAnimationBasedOnStandardAnimation
+} from '../custom-animations.js';
+import { get2DContext } from '../canvas/canvas-utils.js';
 
 // Helper to convert canvas to blob
 const canvasToBlob = (canvas) => {
@@ -34,6 +42,19 @@ const canvasToBlob = (canvas) => {
 	});
 };
 
+// Helper to convert image to canvas
+function image2canvas(img) {
+	const imgCanvas = document.createElement('canvas');
+	imgCanvas.width = img.width;
+	imgCanvas.height = img.height;
+	const imgCtx = get2DContext(imgCanvas);
+	if (!imgCtx) {
+		throw new Error("Failed to get canvas context");
+	}
+	imgCtx.drawImage(img, 0, 0);
+	return imgCanvas;
+}
+
 // Helper function to check if a region has non-transparent pixels
 function hasContentInRegion(ctx, x, y, width, height) {
 	try {
@@ -45,14 +66,12 @@ function hasContentInRegion(ctx, x, y, width, height) {
 	}
 }
 
-function newAnimationFromSheet(src, srcRect = {}) {
-	const { x, y, width, height } = srcRect || { width: src.width, height: src.height };
-	const fromSubregion = x !== undefined && y !== undefined;
+function newAnimationFromSheet(src, srcRect) {
+	const { x, y, width, height } = srcRect || { x: 0, y: 0, width: src.width, height: src.height };
+	const fromSubregion = x !== 0 || y !== 0 || width !== src.width || height !== src.height;
 	if (fromSubregion) {
 		if (!hasContentInRegion(src.getContext("2d"), x, y, width, height))
 			return null;
-	} else {
-		return src;
 	}
 
 	const animCanvas = document.createElement('canvas');
@@ -71,14 +90,24 @@ function newAnimationFromSheet(src, srcRect = {}) {
 	return animCanvas;
 }
 
-async function addAnimationToZipFolder(folder, fileName, srcCanvas, srcRect = {}) {
+async function addAnimationToZipFolder(folder, fileName, srcCanvas, srcRect) {
 	if (srcCanvas) {
 		const animCanvas = newAnimationFromSheet(srcCanvas, srcRect);
 		if (animCanvas) {
 			const blob = await canvasToBlob(animCanvas);
-			folder.file(fileName, blob);
+			if (fileName.endsWith('.png')) {
+				if (window.DEBUG) {
+					console.log(`Adding to ZIP: `, `${folder.root}${fileName}`, 'size: ', blob.size);
+				}
+				folder.file(fileName, blob);
+			} else {
+				if (window.DEBUG) {
+					console.log('Adding to ZIP: ', `${folder.root}/${fileName}.png`, 'size: ', blob.size);
+				}
+				folder.file(`${fileName}.png`, blob);
+			}
+			return animCanvas;
 		}
-		return animCanvas;
 	}
 }
 
@@ -106,11 +135,11 @@ export const exportSplitAnimations = async () => {
 		const exportedStandard = [];
 		const failedStandard = [];
 
-		// Create animation PNGs in standard folder (no custom animations support yet)
+		// Create animation PNGs in standard folder
 		for (const anim of animationList) {
 			try {
 				const animCanvas = extractAnimationFromCanvas(anim.value);
-				addAnimationToZipFolder(standardFolder, `${anim.value}.png`, animCanvas,
+				await addAnimationToZipFolder(standardFolder, `${anim.value}.png`, animCanvas,
 					new DOMRect(0, 0, animCanvas.width, animCanvas.height));
 			} catch (err) {
 				console.error(`Failed to export animation ${anim.value}:`, err);
@@ -132,10 +161,10 @@ export const exportSplitAnimations = async () => {
 
 				const srcRect = { x: 0, y, ...customAnimationSize(anim) };
 				const animCanvas = await addAnimationToZipFolder(customFolder, `${animName}.png`,
-				canvas, srcRect);
+					canvas, srcRect);
 
 				if (animCanvas)
-				exportedCustom.push(animName);
+					exportedCustom.push(animName);
 
 				y += srcRect.height;
 			} catch (err) {
@@ -225,8 +254,7 @@ export const exportSplitItemSheets = async () => {
 				);
 
 				if (itemCanvas) {
-					const blob = await new Promise(resolve => itemCanvas.toBlob(resolve, 'image/png'));
-					itemsFolder.file(`${fileName}.png`, blob);
+					await addAnimationToZipFolder(itemsFolder, `${fileName}.png`, itemCanvas);
 					exportedItems.push(fileName);
 				}
 			} catch (err) {
@@ -263,6 +291,23 @@ export const exportSplitItemSheets = async () => {
 	}
 };
 
+function newStandardAnimationForCustomAnimation(src, custAnim) {
+	const custCanvas = document.createElement("canvas");
+	const {width: custWidth, height: custHeight} = customAnimationSize(custAnim);
+	custCanvas.width = custWidth;
+	custCanvas.height = custHeight;
+	const custCtx = custCanvas.getContext("2d");
+	drawFramesToCustomAnimation(custCtx, custAnim, 0, src, null);
+	return custCanvas;
+}
+
+async function addStandardAnimationToZipCustomFolder(custAnimFolder, itemFileName, src, custAnim) {
+	const custCanvas = newStandardAnimationForCustomAnimation(src, custAnim);
+	const custBlob = await canvasToBlob(custCanvas);
+	custAnimFolder.file(itemFileName, custBlob);
+	return custCanvas;
+}
+
 // Export ZIP - Split by animation and item
 export const exportSplitItemAnimations = async () => {
 	if (!window.canvasRenderer || !window.JSZip) {
@@ -286,6 +331,8 @@ export const exportSplitItemAnimations = async () => {
 		const animationList = ANIMATIONS;
 		const exportedStandard = {};
 		const failedStandard = {};
+		const exportedCustom = {};
+		const failedCustom = {};
 
 		// For each animation, create a folder and export each item
 		for (const anim of animationList) {
@@ -311,13 +358,74 @@ export const exportSplitItemAnimations = async () => {
 					);
 
 					if (animCanvas) {
-						const blob = await new Promise(resolve => animCanvas.toBlob(resolve, 'image/png'));
-						animFolder.file(`${fileName}.png`, blob);
+						await addAnimationToZipFolder(animFolder, `${fileName}.png`, animCanvas);
 						exportedStandard[anim.value].push(fileName);
 					}
+
+					for (const custAnimName of addedCustomAnimations) {
+						const custAnim = customAnimations[custAnimName];
+						if (!isCustomAnimationBasedOnStandardAnimation(custAnim, name))
+							continue;
+
+						const custExportedItems = exportedCustom[custAnimName] || [];
+						exportedCustom[custAnimName] = custExportedItems;
+						const custFailedItems = failedCustom[custAnimName] || [];
+						try {
+							const custAnimFolder = customFolder.folder(custAnimName);
+							if (await addStandardAnimationToZipCustomFolder(custAnimFolder, itemFileName, img, custAnim))
+								custExportedItems.push(itemFileName);
+						} catch (err) {
+							console.error(`Failed to export item ${itemFileName} in custom animation ${custAnimName}:`, err);
+							custFailedItems.push(itemFileName);
+							failedCustom[custAnimName] = custFailedItems;
+						}
+					}
+
+
 				} catch (err) {
 					console.error(`Failed to export ${fileName} for ${anim.value}:`, err);
 					failedStandard[anim.value].push(fileName);
+				}
+			}
+		}
+
+		if (window.DEBUG) console.log(customAreaItems);
+
+		for (const customAnimName of Object.keys(customAreaItems)) {
+
+			// Export items exclusive to custom animations
+			for (const layer of customAreaItems[customAnimName]) {
+				const custName = layer.animation;
+
+				if (window.DEBUG) {
+					console.log('Processing layer for custom animation only export:', layer);
+				}
+
+				const spritePath = layer.spritePath;
+				const itemFileName = getItemFileName(layer.itemId, layer.variant, layer.name);
+				const custExportedItems = exportedCustom[custName] || [];
+				exportedCustom[custName] = custExportedItems;
+				const custFailedItems = failedCustom[custName] || [];
+
+				try {
+					if (window.DEBUG) {
+						console.log(`Exporting item ${itemFileName} for custom animation ${custName}`);
+					}
+					const img = await loadImage(spritePath, false);
+					if (!img)
+						continue;
+
+					const imgCanvas = image2canvas(img);
+					const custAnim = customAnimations[custName];
+					const custSize = customAnimationSize(custAnim);
+					const srcRect = { x: 0, y: 0, ...custSize };
+					const animFolder = customFolder.folder(custName);
+					if (await addAnimationToZipFolder(animFolder, itemFileName, imgCanvas, srcRect))
+						custExportedItems.push(itemFileName);
+				} catch (err) {
+					console.error(`Failed to export item ${itemFileName} in custom animation ${custName}:`, err);
+					custFailedItems.push(itemFileName);
+					failedCustom[custName] = custFailedItems;
 				}
 			}
 		}
@@ -339,8 +447,8 @@ export const exportSplitItemAnimations = async () => {
 				failed: failedStandard
 			},
 			customAnimations: {
-				exported: {},
-				failed: {}
+				exported: exportedCustom,
+				failed: failedCustom
 			},
 			frameSize: 64,
 			frameCounts: {}

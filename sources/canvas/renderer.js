@@ -25,7 +25,9 @@ const METADATA_TO_FOLDER = {
 let canvas = null;
 let ctx = null;
 let layers = [];
+let itemsToDraw = [];
 let addedCustomAnimations = new Set();
+let customAreaItems = {};
 
 /**
  * Initialize the canvas (creates offscreen canvas)
@@ -37,7 +39,7 @@ export function initCanvas() {
   canvas.height = SHEET_HEIGHT;
 }
 
-export { canvas, ctx, layers, addedCustomAnimations };
+export { canvas, ctx, layers, addedCustomAnimations, itemsToDraw, customAreaItems };
 
 /**
  * Render character based on selections
@@ -62,7 +64,7 @@ export async function renderCharacter(selections, bodyType, targetCanvas = null)
   }
 
   // Build list of items to draw
-  const itemsToDraw = [];
+  itemsToDraw = [];
   const customAnimationItems = []; // Track items with custom animations
   addedCustomAnimations = new Set(); // Track which custom animations we've added
 
@@ -298,16 +300,17 @@ export async function renderCharacter(selections, bodyType, targetCanvas = null)
         const baseAnim = customAnimationBase ? customAnimationBase(customAnimDef) : null;
 
         // Collect all items that need to be drawn in this custom animation area
-        const customAreaItems = [];
+        customAreaItems[customAnimName] = [];
 
         // 1. Add custom animation sprite layers (wheelchair background/foreground)
         for (const item of customAnimationItems) {
           if (item.customAnimation === customAnimName) {
-            customAreaItems.push({
+            customAreaItems[customAnimName].push({
               type: 'custom_sprite',
               zPos: item.zPos,
               spritePath: item.spritePath,
-              itemId: item.itemId
+              itemId: item.itemId,
+			  animation: customAnimName,
             });
           }
         }
@@ -317,7 +320,7 @@ export async function renderCharacter(selections, bodyType, targetCanvas = null)
         if (baseAnim) {
           for (const item of itemsToDraw) {
             if (item.animation === baseAnim) {
-              customAreaItems.push({
+              customAreaItems[customAnimName].push({
                 type: 'extracted_frames',
                 zPos: item.zPos,
                 spritePath: item.spritePath,
@@ -329,10 +332,10 @@ export async function renderCharacter(selections, bodyType, targetCanvas = null)
         }
 
         // Sort by zPos to get correct layer order
-        customAreaItems.sort((a, b) => a.zPos - b.zPos);
+        customAreaItems[customAnimName].sort((a, b) => a.zPos - b.zPos);
 
         // Load all custom area images in parallel
-        const loadedCustomImages = await loadImagesInParallel(customAreaItems);
+        const loadedCustomImages = await loadImagesInParallel(customAreaItems[customAnimName]);
 
         // Draw in zPos order
         for (const { item: areaItem, img, success } of loadedCustomImages) {
@@ -565,7 +568,7 @@ export async function renderSingleItemAnimation(itemId, variant, bodyType, anima
   }
 
   const { row, num } = config;
-  const animYPos = row * FRAME_SIZE;
+  const animYPos = 0;
   const animHeight = num * FRAME_SIZE;
 
   // Create a new canvas for this animation
