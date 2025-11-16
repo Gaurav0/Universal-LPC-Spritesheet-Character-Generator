@@ -417,7 +417,7 @@ export async function renderSingleItem(itemId, variant, bodyType, selections) {
   }
 
   // Check if this is a custom animation item
-  const layer1 = meta.layers?.layer_1;
+  const layer1 = meta.layers && Object.values(meta.layers).find(l => l.custom_animation);
   const hasCustomAnimation = layer1 && layer1.custom_animation;
 
   let itemCanvas, itemCtx;
@@ -434,9 +434,18 @@ export async function renderSingleItem(itemId, variant, bodyType, selections) {
     const animHeight = customAnimDef.frameSize * customAnimDef.frames.length;
     const animWidth = customAnimDef.frameSize * customAnimDef.frames[0].length;
 
+	const customLayers = Object.values(meta.layers).filter(l => l.custom_animation);
+	const customAnimationsInItem = customLayers.map(l => l.custom_animation)
+	  .filter((value, index, array) => array.indexOf(value) === index);
+	const numCustomAnims = customAnimationsInItem.length;
+	const getYPosForCustomAnim = (name) => {
+	  const index = customAnimationsInItem.indexOf(name);
+	  return SHEET_HEIGHT + index * animHeight;
+	}
+
     itemCanvas = document.createElement('canvas');
     itemCanvas.width = animWidth;
-    itemCanvas.height = animHeight;
+    itemCanvas.height = SHEET_HEIGHT + animHeight * numCustomAnims;
     itemCtx = get2DContext(itemCanvas);
 
     // Render all layers of this custom animation item
@@ -447,11 +456,12 @@ export async function renderSingleItem(itemId, variant, bodyType, selections) {
       if (!layer) break;
 
       const zPos = getZPos(itemId, layerNum);
+      const yPos = getYPosForCustomAnim(layer.custom_animation);
       let basePath = layer[bodyType];
       if (!basePath) continue;
 
       const spritePath = `spritesheets/${basePath}${variantToFilename(variant)}.png`;
-      customSprites.push({ spritePath, zPos });
+      customSprites.push({ spritePath, zPos, yPos });
     }
 
     // Sort by zPos
@@ -463,58 +473,58 @@ export async function renderSingleItem(itemId, variant, bodyType, selections) {
     // Draw layers in order
     for (const { item: sprite, img, success } of loadedSprites) {
       if (success && img) {
-        itemCtx.drawImage(img, 0, 0);
+        itemCtx.drawImage(img, 0, sprite.yPos);
       }
     }
   } else {
-    // Standard animation item - use standard sheet size
-    itemCanvas = document.createElement('canvas');
-    itemCanvas.width = SHEET_WIDTH;
-    itemCanvas.height = SHEET_HEIGHT;
-    itemCtx = get2DContext(itemCanvas);
+	// Standard animation item - use standard sheet size
+	itemCanvas = document.createElement('canvas');
+	itemCanvas.width = SHEET_WIDTH;
+	itemCanvas.height = SHEET_HEIGHT;
+	itemCtx = get2DContext(itemCanvas);
+  }
 
-    // Build list of sprites to draw for this item
-    const spritesToDraw = [];
+  // Build list of sprites to draw for this item
+  const spritesToDraw = [];
 
-    for (let layerNum = 1; layerNum < 10; layerNum++) {
-      const layerKey = `layer_${layerNum}`;
-      if (!meta.layers?.[layerKey]) break;
+  for (let layerNum = 1; layerNum < 10; layerNum++) {
+    const layerKey = `layer_${layerNum}`;
+    if (!meta.layers?.[layerKey]) break;
 
-      const zPos = getZPos(itemId, layerNum);
+    const zPos = getZPos(itemId, layerNum);
 
-      // Add each animation for this layer
-      for (const [animName, yPos] of Object.entries(ANIMATION_OFFSETS)) {
-        // Check animation support (same logic as renderCharacter)
-        let metadataAnimName = animName;
-        if (animName === 'combat_idle') {
-          if (!meta.animations.includes('combat') && !meta.animations.includes('1h_slash')) {
-            continue;
-          }
-        } else if (animName === 'backslash') {
-          if (!meta.animations.includes('1h_slash') && !meta.animations.includes('1h_backslash')) {
-            continue;
-          }
-        } else if (animName === 'halfslash') {
-          if (!meta.animations.includes('1h_halfslash')) {
-            continue;
-          }
-        } else {
-          if (!meta.animations.includes(animName)) continue;
-        }
-
-        const spritePath = getSpritePath(itemId, variant, bodyType, animName, layerNum, selections, meta);
-
-        spritesToDraw.push({
-          itemId,
-          variant,
-          spritePath,
-          zPos,
-          layerNum,
-          animation: animName,
-          yPos
-        });
+    // Add each animation for this layer
+    for (const [animName, yPos] of Object.entries(ANIMATION_OFFSETS)) {
+    // Check animation support (same logic as renderCharacter)
+    let metadataAnimName = animName;
+    if (animName === 'combat_idle') {
+      if (!meta.animations.includes('combat') && !meta.animations.includes('1h_slash')) {
+      continue;
       }
+    } else if (animName === 'backslash') {
+      if (!meta.animations.includes('1h_slash') && !meta.animations.includes('1h_backslash')) {
+      continue;
+      }
+    } else if (animName === 'halfslash') {
+      if (!meta.animations.includes('1h_halfslash')) {
+      continue;
+      }
+    } else {
+      if (!meta.animations.includes(animName)) continue;
     }
+
+    const spritePath = getSpritePath(itemId, variant, bodyType, animName, layerNum, selections, meta);
+
+    spritesToDraw.push({
+      itemId,
+      variant,
+      spritePath,
+      zPos,
+      layerNum,
+      animation: animName,
+      yPos
+    });
+	}
 
     // Sort by animation first, then by zPos
     spritesToDraw.sort((a, b) => {
