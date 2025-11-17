@@ -5,8 +5,11 @@ import { renderCharacter } from "../canvas/renderer.js";
 
 // Global state
 export const state = {
+	// state that is saved in url hash
 	selections: {}, // key: selectionGroup, value: { itemId, variant, name }
 	bodyType: "male", // male, female, teen, child, muscular, pregnant
+
+	// State that is currently not saved but could be in future
 	selectedAnimation: "walk",
 	expandedNodes: {}, // key: path string, value: boolean (true if expanded)
 	searchQuery: "", // current search query
@@ -26,6 +29,17 @@ export const state = {
 	enabledAnimations: Object.fromEntries(
 		ANIMATIONS.map((anim) => [anim.value, false]),
 	),
+
+	// Following transient state should never be saved
+	zipByAnimation: {
+		isRunning: false,
+	},
+	zipByItem: {
+		isRunning: false,
+	},
+	zipByAnimimationAndItem: {
+		isRunning: false,
+	},
 };
 
 // Helper function to get selection group from itemId

@@ -118,11 +118,15 @@ export const exportSplitAnimations = async () => {
 		return;
 	}
 
+	let state;
+
 	try {
 		const zip = new window.JSZip();
 		const timestamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, -5);
 
-		const state = (await import('./state.js')).state; // Ensure state is loaded
+		state = (await import('./state.js')).state; // Ensure state is loaded
+		state.zipByAnimation.isRunning = true;
+		m.redraw();
 		const bodyType = state.bodyType;
 
 		// Create folder structure to match original
@@ -215,6 +219,9 @@ export const exportSplitAnimations = async () => {
 	} catch (err) {
 		console.error('Export failed:', err);
 		alert(`Export failed: ${err.message}`);
+	} finally {
+		state.zipByAnimation.isRunning = false;
+		m.redraw();
 	}
 };
 
@@ -225,11 +232,15 @@ export const exportSplitItemSheets = async () => {
 		return;
 	}
 
+	let state;
+
 	try {
 		const zip = new window.JSZip();
 		const timestamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, -5);
 
-		const state = (await import('./state.js')).state; // Ensure state is loaded
+		state = (await import('./state.js')).state; // Ensure state is loaded
+		state.zipByItem.isRunning = true;
+		m.redraw();
 		const bodyType = state.bodyType;
 
 		// Create folder structure
@@ -288,6 +299,9 @@ export const exportSplitItemSheets = async () => {
 	} catch (err) {
 		console.error('Export failed:', err);
 		alert(`Export failed: ${err.message}`);
+	} finally {
+		state.zipByItem.isRunning = false;
+		m.redraw();
 	}
 };
 
@@ -315,11 +329,15 @@ export const exportSplitItemAnimations = async () => {
 		return;
 	}
 
+	let state;
+
 	try {
 		const zip = new window.JSZip();
 		const timestamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, -5);
 
-		const state = (await import('./state.js')).state; // Ensure state is loaded
+		state = (await import('./state.js')).state; // Ensure state is loaded
+		state.zipByAnimimationAndItem.isRunning = true;
+		m.redraw();
 		const bodyType = state.bodyType;
 
 		// Create folder structure
@@ -480,5 +498,8 @@ export const exportSplitItemAnimations = async () => {
 	} catch (err) {
 		console.error('Export failed:', err);
 		alert(`Export failed: ${err.message}`);
+	} finally {
+		state.zipByAnimimationAndItem.isRunning = false;
+		m.redraw();
 	}
 };

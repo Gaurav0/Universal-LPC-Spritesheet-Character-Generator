@@ -66,8 +66,11 @@ export const Download = {
 					downloadFile(csvContent, "credits.csv", "text/csv");
 				}}, "Credits (CSV)"),
 				m("button.button.is-small.is-info", { onclick: exportSplitAnimations }, "ZIP: Split by animation"),
+				state.zipByAnimation.isRunning ? m("span.loading") : null,
 				m("button.button.is-small.is-info", { onclick: exportSplitItemSheets }, "ZIP: Split by item"),
+				state.zipByItem.isRunning ? m("span.loading") : null,
 				m("button.button.is-small.is-info", { onclick: exportSplitItemAnimations }, "ZIP: Split by animation and item"),
+				state.zipByAnimimationAndItem.isRunning ? m("span.loading") : null,
 				m("button.button.is-small.is-link", { onclick: exportToClipboard }, "Export to Clipboard (JSON)"),
 				m("button.button.is-small.is-link", { onclick: importFromClipboard }, "Import from Clipboard (JSON)")
 			])
