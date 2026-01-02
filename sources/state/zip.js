@@ -1,4 +1,4 @@
-import { ANIMATIONS } from './constants.js';
+import { ANIMATIONS, ANIMATION_CONFIGS, FRAME_SIZE } from './constants.js';
 import {
 	extractAnimationFromCanvas,
 	renderSingleItem,
@@ -503,3 +503,331 @@ export const exportSplitItemAnimations = async () => {
 		m.redraw();
 	}
 };
+
+// Helper to extract individual frames from an animation canvas
+function extractFramesFromAnimation(animationCanvas, animationName, directions = ['up', 'down', 'left', 'right']) {
+	const frames = {};
+	const config = ANIMATION_CONFIGS[animationName];
+	if (!config) return frames;
+
+	const frameWidth = FRAME_SIZE;
+	const frameHeight = FRAME_SIZE;
+	const framesPerRow = 13;
+
+	for (let dirIndex = 0; dirIndex < directions.length && dirIndex < config.num; dirIndex++) {
+		const direction = directions[dirIndex];
+		frames[direction] = [];
+
+		const sourceY = dirIndex * frameHeight;
+
+		for (let frameIndex = 0; frameIndex < framesPerRow; frameIndex++) {
+			const sourceX = frameIndex * frameWidth;
+
+			// Create canvas for individual frame
+			const frameCanvas = document.createElement('canvas');
+			frameCanvas.width = frameWidth;
+			frameCanvas.height = frameHeight;
+			const frameCtx = get2DContext(frameCanvas);
+
+			if (!frameCtx) continue;
+
+			// Check if this region has content
+			if (hasContentInRegion(animationCanvas.getContext('2d'), sourceX, sourceY, frameWidth, frameHeight)) {
+				// Draw the frame
+				frameCtx.drawImage(
+					animationCanvas,
+					sourceX, sourceY, frameWidth, frameHeight,
+					0, 0, frameWidth, frameHeight
+				);
+
+				frames[direction].push({
+					canvas: frameCanvas,
+					frameNumber: frameIndex + 1 // 1-based numbering
+				});
+			}
+		}
+	}
+
+	return frames;
+}
+
+// Helper to extract individual frames from custom animation canvas
+function extractFramesFromCustomAnimation(animationCanvas, customAnimationDef, directions = ['up', 'down', 'left', 'right']) {
+	const frames = {};
+	const frameSize = customAnimationDef.frameSize;
+	const animationFrames = customAnimationDef.frames;
+
+	if (window.DEBUG) {
+		console.log(`Extracting frames from custom animation:`, {
+			frameSize,
+			animationFrames,
+			canvasSize: { width: animationCanvas.width, height: animationCanvas.height }
+		});
+	}
+
+	// Map direction names to row indices
+	const directionMap = {
+		'up': 0,
+		'down': 2,
+		'left': 1,
+		'right': 3
+	};
+
+	for (const direction of directions) {
+		const dirIndex = directionMap[direction];
+		if (dirIndex >= animationFrames.length) {
+			if (window.DEBUG) {
+				console.log(`Skipping direction ${direction} (index ${dirIndex}) - not enough rows in animation frames`);
+			}
+			continue;
+		}
+
+		frames[direction] = [];
+		const frameRow = animationFrames[dirIndex];
+
+		if (window.DEBUG) {
+			console.log(`Processing direction ${direction} (row ${dirIndex}):`, frameRow);
+		}
+
+		for (let frameIndex = 0; frameIndex < frameRow.length; frameIndex++) {
+			const sourceX = frameIndex * frameSize;
+			const sourceY = dirIndex * frameSize;
+
+			// Create canvas for individual frame
+			const frameCanvas = document.createElement('canvas');
+			frameCanvas.width = frameSize;
+			frameCanvas.height = frameSize;
+			const frameCtx = get2DContext(frameCanvas);
+
+			if (!frameCtx) {
+				if (window.DEBUG) {
+					console.warn(`Failed to get context for frame ${frameIndex} in direction ${direction}`);
+				}
+				continue;
+			}
+
+			// Draw the frame first
+			frameCtx.drawImage(
+				animationCanvas,
+				sourceX, sourceY, frameSize, frameSize,
+				0, 0, frameSize, frameSize
+			);
+
+			// For custom animations, check if the drawn frame has any content
+			// by examining the imageData after drawing
+			let hasContent = true; // Default to true for custom animations
+			try {
+				const imageData = frameCtx.getImageData(0, 0, frameSize, frameSize);
+				// Check if any pixel has alpha > 0 (not fully transparent)
+				hasContent = imageData.data.some((value, index) =>
+					index % 4 === 3 && value > 0 // Check alpha channel
+				);
+			} catch (e) {
+				// If checking fails, assume content exists
+				hasContent = true;
+				if (window.DEBUG) {
+					console.warn(`Content checking failed for ${direction} frame ${frameIndex}, assuming content exists:`, e);
+				}
+			}
+
+			// Add all frames for custom animations, even if they appear empty
+			// This ensures we don't miss valid transparent frames
+			if (hasContent || true) { // Always include custom animation frames
+				frames[direction].push({
+					canvas: frameCanvas,
+					frameNumber: frameIndex + 1 // 1-based numbering
+				});
+
+				if (window.DEBUG) {
+					console.log(`Added frame ${frameIndex + 1} for direction ${direction} (hasContent: ${hasContent})`);
+				}
+			}
+		}
+	}
+
+	return frames;
+}
+
+// Export ZIP - Individual animation frames
+export const exportIndividualFrames = async () => {
+	if (!window.canvasRenderer || !window.JSZip) {
+		alert('JSZip library not loaded');
+		return;
+	}
+
+	let state;
+
+	try {
+		const zip = new window.JSZip();
+		const timestamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, -5);
+
+		state = (await import('./state.js')).state;
+		state.zipIndividualFrames = state.zipIndividualFrames || { isRunning: false };
+		state.zipIndividualFrames.isRunning = true;
+		m.redraw();
+		const bodyType = state.bodyType;
+
+		// Create folder structure
+		const standardFolder = zip.folder("standard");
+		const customFolder = zip.folder("custom");
+		const creditsFolder = zip.folder("credits");
+
+		const exportedAnimations = [];
+		const failedAnimations = [];
+		const directions = ['up', 'down', 'left', 'right'];
+
+		// Process standard animations
+		for (const anim of ANIMATIONS) {
+			try {
+				const animationName = anim.value;
+				const animCanvas = extractAnimationFromCanvas(animationName);
+
+				if (animCanvas) {
+					const animFolder = standardFolder.folder(animationName);
+					const frames = extractFramesFromAnimation(animCanvas, animationName, directions);
+
+					for (const [direction, frameList] of Object.entries(frames)) {
+						if (frameList.length > 0) {
+							const directionFolder = animFolder.folder(direction);
+
+							for (const { canvas: frameCanvas, frameNumber } of frameList) {
+								const blob = await canvasToBlob(frameCanvas);
+								directionFolder.file(`${frameNumber}.png`, blob);
+
+								if (window.DEBUG) {
+									console.log(`Adding frame: standard/${animationName}/${direction}/${frameNumber}.png`);
+								}
+							}
+						}
+					}
+					exportedAnimations.push(animationName);
+				}
+			} catch (err) {
+				console.error(`Failed to export frames for animation ${anim.value}:`, err);
+				failedAnimations.push(anim.value);
+			}
+		}
+
+		// Process custom animations
+		const exportedCustom = [];
+		const failedCustom = [];
+		let y = SHEET_HEIGHT;
+
+		for (const animName of addedCustomAnimations) {
+			try {
+				const customAnimDef = customAnimations[animName];
+				if (!customAnimDef) {
+					throw new Error("Custom animation definition not found");
+				}
+
+				const custSize = customAnimationSize(customAnimDef);
+				const srcRect = { x: 0, y, ...custSize };
+
+				if (window.DEBUG) {
+					console.log(`Processing custom animation: ${animName}`, {
+						frameSize: customAnimDef.frameSize,
+						frames: customAnimDef.frames,
+						srcRect: srcRect
+					});
+				}
+
+				// Extract custom animation from main canvas
+				const custAnimCanvas = newAnimationFromSheet(canvas, srcRect);
+				if (custAnimCanvas) {
+					const animFolder = customFolder.folder(animName);
+					// Use the specialized custom animation frame extraction
+					const frames = extractFramesFromCustomAnimation(custAnimCanvas, customAnimDef, directions);
+
+					if (window.DEBUG) {
+						console.log(`Extracted frames for ${animName}:`, frames);
+					}
+
+					for (const [direction, frameList] of Object.entries(frames)) {
+						if (frameList.length > 0) {
+							const directionFolder = animFolder.folder(direction);
+
+							for (const { canvas: frameCanvas, frameNumber } of frameList) {
+								const blob = await canvasToBlob(frameCanvas);
+								directionFolder.file(`${frameNumber}.png`, blob);
+
+								if (window.DEBUG) {
+									console.log(`Adding frame: custom/${animName}/${direction}/${frameNumber}.png`);
+								}
+							}
+						}
+					}
+					exportedCustom.push(animName);
+				} else {
+					console.warn(`No canvas generated for custom animation: ${animName}`);
+				}
+
+				y += srcRect.height;
+			} catch (err) {
+				console.error(`Failed to export frames for custom animation ${animName}:`, err);
+				failedCustom.push(animName);
+			}
+		}
+
+		// Add character.json at root
+		zip.file('character.json', exportStateAsJSON(state, layers));
+
+		// Add credits in credits folder
+		const allCredits = getAllCredits(state.selections, state.bodyType);
+		creditsFolder.file('credits.txt', creditsToTxt(allCredits));
+		creditsFolder.file('credits.csv', creditsToCsv(allCredits));
+
+		// Add metadata.json with frame structure info
+		const metadata = {
+			exportTimestamp: timestamp,
+			bodyType: bodyType,
+			frameSize: FRAME_SIZE,
+			structure: {
+				standard: {
+					exported: exportedAnimations,
+					failed: failedAnimations
+				},
+				custom: {
+					exported: exportedCustom,
+					failed: failedCustom
+				}
+			},
+			animationConfigs: ANIMATION_CONFIGS,
+			directions: directions,
+			note: "Individual animation frames organized by standard/custom > animation > direction > frame number"
+		};
+		creditsFolder.file('metadata.json', JSON.stringify(metadata, null, 2));
+
+		// Generate and download ZIP
+		const zipBlob = await zip.generateAsync({ type: 'blob' });
+		const url = URL.createObjectURL(zipBlob);
+		const a = document.createElement('a');
+		a.href = url;
+		a.download = `lpc_${bodyType}_individual_frames_${timestamp}.zip`;
+		a.click();
+		URL.revokeObjectURL(url);
+
+		// Report results
+		const totalFailed = failedAnimations.length + failedCustom.length;
+		if (totalFailed > 0) {
+			let msg = 'Export completed with some issues:\n';
+			if (failedAnimations.length > 0) {
+				msg += `Failed standard animations: ${failedAnimations.join(', ')}\n`;
+			}
+			if (failedCustom.length > 0) {
+				msg += `Failed custom animations: ${failedCustom.join(', ')}\n`;
+			}
+			alert(msg);
+		} else {
+			alert('Individual frames export complete!');
+		}
+	} catch (err) {
+		console.error('Individual frames export failed:', err);
+		alert(`Export failed: ${err.message}`);
+	} finally {
+		if (state && state.zipIndividualFrames) {
+			state.zipIndividualFrames.isRunning = false;
+		}
+		m.redraw();
+	}
+};
+
