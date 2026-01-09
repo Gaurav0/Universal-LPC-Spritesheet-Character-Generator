@@ -7,7 +7,8 @@ import {
 	canvas,
 	layers,
 	customAreaItems,
-	addedCustomAnimations
+	addedCustomAnimations,
+	getSortedLayers
 } from '../canvas/renderer.js';
 import {
 	getItemFileName,
@@ -253,24 +254,29 @@ export const exportSplitItemSheets = async () => {
 		// Render each item individually
 		for (const [categoryPath, selection] of Object.entries(state.selections)) {
 			const { itemId, variant, name } = selection;
-			const fileName = getItemFileName(itemId, variant, name);
+			const layers = getSortedLayers(itemId);
 
-			try {
-				// Render just this one item
-				const itemCanvas = await renderSingleItem(
-					itemId,
-					variant,
-					bodyType,
-					state.selections
-				);
+			// Render each layer of the item separately
+  			for (const layer of layers) {
+				const fileName = getItemFileName(itemId, variant, name, layer.layerNum);
+				try {
+					// Render just this one item
+					const itemCanvas = await renderSingleItem(
+						itemId,
+						variant,
+						bodyType,
+						state.selections,
+						layer.layerNum
+					);
 
-				if (itemCanvas) {
-					await addAnimationToZipFolder(itemsFolder, `${fileName}.png`, itemCanvas);
-					exportedItems.push(fileName);
+					if (itemCanvas) {
+						await addAnimationToZipFolder(itemsFolder, `${fileName}.png`, itemCanvas);
+						exportedItems.push(fileName);
+					}
+				} catch (err) {
+					console.error(`Failed to export item ${fileName}:`, err);
+					failedItems.push(fileName);
 				}
-			} catch (err) {
-				console.error(`Failed to export item ${fileName}:`, err);
-				failedItems.push(fileName);
 			}
 		}
 
@@ -363,46 +369,52 @@ export const exportSplitItemAnimations = async () => {
 			// Export each item for this animation
 			for (const [categoryPath, selection] of Object.entries(state.selections)) {
 				const { itemId, variant, name } = selection;
-				const fileName = getItemFileName(itemId, variant, name);
+				const layers = getSortedLayers(itemId);
 
-				try {
-					// Render just this item for this animation
-					const animCanvas = await renderSingleItemAnimation(
-						itemId,
-						variant,
-						bodyType,
-						anim.value,
-						state.selections
-					);
+				// Render each layer of the item separately
+				for (const layer of layers) {
+					const fileName = getItemFileName(itemId, variant, name, layer.layerNum);
 
-					if (animCanvas) {
-						await addAnimationToZipFolder(animFolder, `${fileName}.png`, animCanvas);
-						exportedStandard[anim.value].push(fileName);
-					}
+					try {
+						// Render just this item for this animation
+						const animCanvas = await renderSingleItemAnimation(
+							itemId,
+							variant,
+							bodyType,
+							anim.value,
+							state.selections,
+							layer.layerNum
+						);
 
-					for (const custAnimName of addedCustomAnimations) {
-						const custAnim = customAnimations[custAnimName];
-						if (!isCustomAnimationBasedOnStandardAnimation(custAnim, name))
-							continue;
-
-						const custExportedItems = exportedCustom[custAnimName] || [];
-						exportedCustom[custAnimName] = custExportedItems;
-						const custFailedItems = failedCustom[custAnimName] || [];
-						try {
-							const custAnimFolder = customFolder.folder(custAnimName);
-							if (await addStandardAnimationToZipCustomFolder(custAnimFolder, itemFileName, img, custAnim))
-								custExportedItems.push(itemFileName);
-						} catch (err) {
-							console.error(`Failed to export item ${itemFileName} in custom animation ${custAnimName}:`, err);
-							custFailedItems.push(itemFileName);
-							failedCustom[custAnimName] = custFailedItems;
+						if (animCanvas) {
+							await addAnimationToZipFolder(animFolder, `${fileName}.png`, animCanvas);
+							exportedStandard[anim.value].push(fileName);
 						}
+
+						for (const custAnimName of addedCustomAnimations) {
+							const custAnim = customAnimations[custAnimName];
+							if (!isCustomAnimationBasedOnStandardAnimation(custAnim, name))
+								continue;
+
+							const custExportedItems = exportedCustom[custAnimName] || [];
+							exportedCustom[custAnimName] = custExportedItems;
+							const custFailedItems = failedCustom[custAnimName] || [];
+							try {
+								const custAnimFolder = customFolder.folder(custAnimName);
+								if (await addStandardAnimationToZipCustomFolder(custAnimFolder, itemFileName, img, custAnim))
+									custExportedItems.push(itemFileName);
+							} catch (err) {
+								console.error(`Failed to export item ${itemFileName} in custom animation ${custAnimName}:`, err);
+								custFailedItems.push(itemFileName);
+								failedCustom[custAnimName] = custFailedItems;
+							}
+						}
+
+
+					} catch (err) {
+						console.error(`Failed to export ${fileName} for ${anim.value}:`, err);
+						failedStandard[anim.value].push(fileName);
 					}
-
-
-				} catch (err) {
-					console.error(`Failed to export ${fileName} for ${anim.value}:`, err);
-					failedStandard[anim.value].push(fileName);
 				}
 			}
 		}

@@ -400,10 +400,39 @@ export function getCanvas() {
 }
 
 /**
+ * Get Sorted Layers (for external use)
+ */
+export function getSortedLayers(itemId) {
+  const meta = window.itemMetadata[itemId];
+  if (!meta) {
+    console.error('Item metadata not found:', itemId);
+    return null;
+  }
+  
+  // Build list of layers for itemId
+  const layersList = [];
+  for (let layerNum = 1; layerNum < 10; layerNum++) {
+    const layerKey = `layer_${layerNum}`;
+    const layer = meta.layers?.[layerKey];
+    if (!layer) break;
+
+    const zPos = getZPos(itemId, layerNum);
+
+    layersList.push({ layerNum, zPos });
+  }
+
+  // Sort by animation first, then by zPos
+  layersList.sort((a, b) => {
+    return a.zPos - b.zPos;
+  });
+  return layersList;
+}
+
+/**
  * Render a single item to a new canvas
  * Returns a canvas with just this one item rendered
  */
-export async function renderSingleItem(itemId, variant, bodyType, selections) {
+export async function renderSingleItem(itemId, variant, bodyType, selections, singleLayer = null) {
   const meta = window.itemMetadata[itemId];
   if (!meta) {
     console.error('Item metadata not found:', itemId);
@@ -434,14 +463,14 @@ export async function renderSingleItem(itemId, variant, bodyType, selections) {
     const animHeight = customAnimDef.frameSize * customAnimDef.frames.length;
     const animWidth = customAnimDef.frameSize * customAnimDef.frames[0].length;
 
-	const customLayers = Object.values(meta.layers).filter(l => l.custom_animation);
-	const customAnimationsInItem = customLayers.map(l => l.custom_animation)
-	  .filter((value, index, array) => array.indexOf(value) === index);
-	const numCustomAnims = customAnimationsInItem.length;
-	const getYPosForCustomAnim = (name) => {
-	  const index = customAnimationsInItem.indexOf(name);
-	  return SHEET_HEIGHT + index * animHeight;
-	}
+    const customLayers = Object.values(meta.layers).filter(l => l.custom_animation);
+    const customAnimationsInItem = customLayers.map(l => l.custom_animation)
+      .filter((value, index, array) => array.indexOf(value) === index);
+    const numCustomAnims = customAnimationsInItem.length;
+    const getYPosForCustomAnim = (name) => {
+      const index = customAnimationsInItem.indexOf(name);
+      return SHEET_HEIGHT + index * animHeight;
+    }
 
     itemCanvas = document.createElement('canvas');
     itemCanvas.width = animWidth;
@@ -451,6 +480,7 @@ export async function renderSingleItem(itemId, variant, bodyType, selections) {
     // Render all layers of this custom animation item
     const customSprites = [];
     for (let layerNum = 1; layerNum < 10; layerNum++) {
+      if (singleLayer !== null && layerNum !== singleLayer) continue;
       const layerKey = `layer_${layerNum}`;
       const layer = meta.layers?.[layerKey];
       if (!layer) break;
@@ -477,17 +507,18 @@ export async function renderSingleItem(itemId, variant, bodyType, selections) {
       }
     }
   } else {
-	// Standard animation item - use standard sheet size
-	itemCanvas = document.createElement('canvas');
-	itemCanvas.width = SHEET_WIDTH;
-	itemCanvas.height = SHEET_HEIGHT;
-	itemCtx = get2DContext(itemCanvas);
+    // Standard animation item - use standard sheet size
+    itemCanvas = document.createElement('canvas');
+    itemCanvas.width = SHEET_WIDTH;
+    itemCanvas.height = SHEET_HEIGHT;
+    itemCtx = get2DContext(itemCanvas);
   }
 
   // Build list of sprites to draw for this item
   const spritesToDraw = [];
 
   for (let layerNum = 1; layerNum < 10; layerNum++) {
+    if (singleLayer !== null && layerNum !== singleLayer) continue;
     const layerKey = `layer_${layerNum}`;
     if (!meta.layers?.[layerKey]) break;
 
@@ -495,36 +526,36 @@ export async function renderSingleItem(itemId, variant, bodyType, selections) {
 
     // Add each animation for this layer
     for (const [animName, yPos] of Object.entries(ANIMATION_OFFSETS)) {
-    // Check animation support (same logic as renderCharacter)
-    let metadataAnimName = animName;
-    if (animName === 'combat_idle') {
-      if (!meta.animations.includes('combat') && !meta.animations.includes('1h_slash')) {
-      continue;
+      // Check animation support (same logic as renderCharacter)
+      let metadataAnimName = animName;
+      if (animName === 'combat_idle') {
+        if (!meta.animations.includes('combat') && !meta.animations.includes('1h_slash')) {
+        continue;
+        }
+      } else if (animName === 'backslash') {
+        if (!meta.animations.includes('1h_slash') && !meta.animations.includes('1h_backslash')) {
+        continue;
+        }
+      } else if (animName === 'halfslash') {
+        if (!meta.animations.includes('1h_halfslash')) {
+        continue;
+        }
+      } else {
+        if (!meta.animations.includes(animName)) continue;
       }
-    } else if (animName === 'backslash') {
-      if (!meta.animations.includes('1h_slash') && !meta.animations.includes('1h_backslash')) {
-      continue;
-      }
-    } else if (animName === 'halfslash') {
-      if (!meta.animations.includes('1h_halfslash')) {
-      continue;
-      }
-    } else {
-      if (!meta.animations.includes(animName)) continue;
+
+      const spritePath = getSpritePath(itemId, variant, bodyType, animName, layerNum, selections, meta);
+
+      spritesToDraw.push({
+        itemId,
+        variant,
+        spritePath,
+        zPos,
+        layerNum,
+        animation: animName,
+        yPos
+      });
     }
-
-    const spritePath = getSpritePath(itemId, variant, bodyType, animName, layerNum, selections, meta);
-
-    spritesToDraw.push({
-      itemId,
-      variant,
-      spritePath,
-      zPos,
-      layerNum,
-      animation: animName,
-      yPos
-    });
-	}
 
     // Sort by animation first, then by zPos
     spritesToDraw.sort((a, b) => {
@@ -550,7 +581,7 @@ export async function renderSingleItem(itemId, variant, bodyType, selections) {
  * Render a single item for a single animation to a new canvas
  * Returns a canvas with just this one item's one animation rendered
  */
-export async function renderSingleItemAnimation(itemId, variant, bodyType, animationName, selections) {
+export async function renderSingleItemAnimation(itemId, variant, bodyType, animationName, selections, singleLayer = null) {
   const meta = window.itemMetadata[itemId];
   if (!meta) {
     console.error('Item metadata not found:', itemId);
@@ -591,6 +622,7 @@ export async function renderSingleItemAnimation(itemId, variant, bodyType, anima
   const spritesToDraw = [];
 
   for (let layerNum = 1; layerNum < 10; layerNum++) {
+    //if (singleLayer !== null && layerNum !== singleLayer) continue;
     const layerKey = `layer_${layerNum}`;
     if (!meta.layers?.[layerKey]) break;
 
