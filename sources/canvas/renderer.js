@@ -415,6 +415,46 @@ export function getSortedLayers(itemId, standardOnly = false) {
 }
 
 /**
+ * Sort Animation Layers By Custom/Standard Anims
+ */
+export function sortAnimLayers(itemId, customOnly = false) {
+  const meta = window.itemMetadata[itemId];
+  if (!meta) {
+    console.error('Item metadata not found:', itemId);
+    return null;
+  }
+  
+  // Build list of layers for itemId
+  const animsList = {};
+  for (let layerNum = 1; layerNum < 10; layerNum++) {
+    const layerKey = `layer_${layerNum}`;
+    const layer = meta.layers?.[layerKey];
+    if (!layer) break;
+    if (customOnly && !layer.custom_animation) continue;
+
+    const animName = layer.custom_animation || 'standard';
+    if (!animsList[animName]) {
+      animsList[animName] = [];
+    }
+
+    const zPos = getZPos(itemId, layerNum);
+
+    animsList[animName].push({ layerNum, zPos });
+  }
+
+  // Sort Each Animation's Layers By zPos
+  for (const animName in animsList) {
+    animsList[animName] = animsList[animName].sort((a, b) => {
+      return a.zPos - b.zPos;
+    }).map((layer, index) => {
+      return { layerNum: layer.layerNum, animLayerNum: index + 1, zPos: layer.zPos };
+    });
+  }
+
+  return animsList;
+}
+
+/**
  * Render a single item to a new canvas
  * Returns a canvas with just this one item rendered
  */
@@ -465,19 +505,22 @@ export async function renderSingleItem(itemId, variant, bodyType, selections, si
 
     // Render all layers of this custom animation item
     const customSprites = [];
-    for (let layerNum = 1; layerNum < 10; layerNum++) {
-      if (singleLayer !== null && layerNum !== singleLayer) continue;
-      const layerKey = `layer_${layerNum}`;
-      const layer = meta.layers?.[layerKey];
-      if (!layer) break;
+    const animsList = sortAnimLayers(itemId, true);
+    for (const animName in animsList) {
+      for (let layerNum = 1; layerNum < 10; layerNum++) {
+        if (singleLayer !== null && layerNum !== singleLayer) continue;
+        const animLayer = animsList[animName].find(l => l.animLayerNum === layerNum);
+        const layerKey = `layer_${animLayer.layerNum}`;
+        const layer = meta.layers?.[layerKey];
+        if (!layer) break;
 
-      const zPos = getZPos(itemId, layerNum);
-      const yPos = getYPosForCustomAnim(layer.custom_animation);
-      let basePath = layer[bodyType];
-      if (!basePath) continue;
+        const yPos = getYPosForCustomAnim(layer.custom_animation);
+        let basePath = layer[bodyType];
+        if (!basePath) continue;
 
-      const spritePath = `spritesheets/${basePath}${variantToFilename(variant)}.png`;
-      customSprites.push({ spritePath, zPos, yPos });
+        const spritePath = `spritesheets/${basePath}${variantToFilename(variant)}.png`;
+        customSprites.push({ spritePath, zPos: animLayer.zPos, yPos });
+      }
     }
 
     // Sort by zPos
