@@ -13,15 +13,6 @@ import { setCurrentCustomAnimations, setCustomAnimYPositions } from './preview-a
 export const SHEET_HEIGHT = 3456; // Full universal sheet height
 export const SHEET_WIDTH = 832; // 13 frames * 64px
 
-// Map metadata animation names to actual folder names
-// Metadata uses "combat", "1h_slash", etc. but folders are named differently
-const METADATA_TO_FOLDER = {
-  'combat': 'combat_idle',
-  '1h_slash': 'backslash',
-  '1h_backslash': 'backslash',
-  '1h_halfslash': 'halfslash'
-};
-
 let canvas = null;
 let ctx = null;
 let layers = [];
@@ -139,20 +130,14 @@ export async function renderCharacter(selections, bodyType, targetCanvas = null)
           // e.g., "combat_idle" -> check for "combat" or "1h_slash" in metadata
           let metadataAnimName = animName;
           if (animName === 'combat_idle') {
-            // combat_idle is supported if item has "combat" OR "1h_slash" in metadata
-            if (!meta.animations.includes('combat') && !meta.animations.includes('1h_slash')) {
-              continue;
-            }
+            // combat_idle is supported if item has "combat" in metadata
+            if (!meta.animations.includes('combat')) continue;
           } else if (animName === 'backslash') {
             // backslash is supported if item has "1h_slash" OR "1h_backslash" in metadata
-            if (!meta.animations.includes('1h_slash') && !meta.animations.includes('1h_backslash')) {
-              continue;
-            }
+            if (!meta.animations.includes('1h_slash') && !meta.animations.includes('1h_backslash')) continue;
           } else if (animName === 'halfslash') {
             // halfslash is supported if item has "1h_halfslash" in metadata
-            if (!meta.animations.includes('1h_halfslash')) {
-              continue;
-            }
+            if (!meta.animations.includes('1h_halfslash')) continue;
           } else {
             // For all other animations, direct match required
             if (!meta.animations.includes(animName)) continue;
@@ -402,7 +387,7 @@ export function getCanvas() {
 /**
  * Get Sorted Layers (for external use)
  */
-export function getSortedLayers(itemId) {
+export function getSortedLayers(itemId, standardOnly = false) {
   const meta = window.itemMetadata[itemId];
   if (!meta) {
     console.error('Item metadata not found:', itemId);
@@ -415,6 +400,7 @@ export function getSortedLayers(itemId) {
     const layerKey = `layer_${layerNum}`;
     const layer = meta.layers?.[layerKey];
     if (!layer) break;
+    if (standardOnly && layer.custom_animation) continue;
 
     const zPos = getZPos(itemId, layerNum);
 
@@ -529,17 +515,11 @@ export async function renderSingleItem(itemId, variant, bodyType, selections, si
       // Check animation support (same logic as renderCharacter)
       let metadataAnimName = animName;
       if (animName === 'combat_idle') {
-        if (!meta.animations.includes('combat') && !meta.animations.includes('1h_slash')) {
-        continue;
-        }
+        if (!meta.animations.includes('combat')) continue;
       } else if (animName === 'backslash') {
-        if (!meta.animations.includes('1h_slash') && !meta.animations.includes('1h_backslash')) {
-        continue;
-        }
+        if (!meta.animations.includes('1h_slash') && !meta.animations.includes('1h_backslash')) continue;
       } else if (animName === 'halfslash') {
-        if (!meta.animations.includes('1h_halfslash')) {
-        continue;
-        }
+        if (!meta.animations.includes('1h_halfslash')) continue;
       } else {
         if (!meta.animations.includes(animName)) continue;
       }
@@ -622,7 +602,7 @@ export async function renderSingleItemAnimation(itemId, variant, bodyType, anima
   const spritesToDraw = [];
 
   for (let layerNum = 1; layerNum < 10; layerNum++) {
-    //if (singleLayer !== null && layerNum !== singleLayer) continue;
+    if (singleLayer !== null && layerNum !== singleLayer) continue;
     const layerKey = `layer_${layerNum}`;
     if (!meta.layers?.[layerKey]) break;
 
@@ -630,17 +610,11 @@ export async function renderSingleItemAnimation(itemId, variant, bodyType, anima
 
     // Check animation support
     if (animationName === 'combat_idle') {
-      if (!meta.animations.includes('combat') && !meta.animations.includes('1h_slash')) {
-        continue;
-      }
+      if (!meta.animations.includes('combat')) continue;
     } else if (animationName === 'backslash') {
-      if (!meta.animations.includes('1h_slash') && !meta.animations.includes('1h_backslash')) {
-        continue;
-      }
+      if (!meta.animations.includes('1h_slash') && !meta.animations.includes('1h_backslash')) continue;
     } else if (animationName === 'halfslash') {
-      if (!meta.animations.includes('1h_halfslash')) {
-        continue;
-      }
+      if (!meta.animations.includes('1h_halfslash')) continue;
     } else {
       if (!meta.animations.includes(animationName)) continue;
     }

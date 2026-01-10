@@ -161,7 +161,7 @@ export const exportSplitAnimations = async () => {
 			try {
 				const anim = customAnimations[animName];
 				if (!anim) {
-				throw new Error("Animation definition not found");
+					throw new Error("Animation definition not found");
 				}
 
 				const srcRect = { x: 0, y, ...customAnimationSize(anim) };
@@ -254,10 +254,11 @@ export const exportSplitItemSheets = async () => {
 		// Render each item individually
 		for (const [categoryPath, selection] of Object.entries(state.selections)) {
 			const { itemId, variant, name } = selection;
-			const layers = getSortedLayers(itemId);
+			const layers = getSortedLayers(itemId, true);
 
 			// Render each layer of the item separately
   			for (const layer of layers) {
+				if (layer.custom_animation) continue;
 				const fileName = getItemFileName(itemId, variant, name, layer.layerNum);
 				try {
 					// Render just this one item
@@ -360,6 +361,7 @@ export const exportSplitItemAnimations = async () => {
 
 		// For each animation, create a folder and export each item
 		for (const anim of animationList) {
+			if (anim.noExport) continue;
 			const animFolder = standardFolder.folder(anim.value);
 			if (!animFolder) continue;
 
@@ -369,9 +371,14 @@ export const exportSplitItemAnimations = async () => {
 			// Export each item for this animation
 			for (const [categoryPath, selection] of Object.entries(state.selections)) {
 				const { itemId, variant, name } = selection;
-				const layers = getSortedLayers(itemId);
+				const meta = window.itemMetadata[itemId];
+				if (!meta || !meta.animations.includes(anim.value)) {
+					console.log('Skipping item ', itemId, ' without the animation: ', anim.value);
+					continue;
+				}
 
 				// Render each layer of the item separately
+				const layers = getSortedLayers(itemId, true);
 				for (const layer of layers) {
 					const fileName = getItemFileName(itemId, variant, name, layer.layerNum);
 
@@ -447,6 +454,7 @@ export const exportSplitItemAnimations = async () => {
 
 					const imgCanvas = image2canvas(img);
 					const custAnim = customAnimations[custName];
+					if (!custAnim) throw new Error("Custom animation not found for item: " + layer.itemId);
 					const custSize = customAnimationSize(custAnim);
 					const srcRect = { x: 0, y: 0, ...custSize };
 					const animFolder = customFolder.folder(custName);
