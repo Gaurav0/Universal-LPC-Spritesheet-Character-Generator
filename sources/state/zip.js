@@ -77,7 +77,7 @@ function newAnimationFromSheet(src, srcRect) {
 	const animCanvas = document.createElement('canvas');
 	animCanvas.width = width;
 	animCanvas.height = height;
-	const animCtx = animCanvas.getContext('2d');
+	const animCtx = get2DContext(animCanvas, true); // Set willReadFrequently to true
 
 	if (!animCtx) {
 		throw new Error("Failed to get canvas context");
@@ -310,7 +310,7 @@ function newStandardAnimationForCustomAnimation(src, custAnim) {
 	const {width: custWidth, height: custHeight} = customAnimationSize(custAnim);
 	custCanvas.width = custWidth;
 	custCanvas.height = custHeight;
-	const custCtx = custCanvas.getContext("2d");
+	const custCtx = get2DContext(custCanvas, true); // Set willReadFrequently to true
 	drawFramesToCustomAnimation(custCtx, custAnim, 0, src, null);
 	return custCanvas;
 }
