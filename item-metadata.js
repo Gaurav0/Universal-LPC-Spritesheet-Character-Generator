@@ -46581,7 +46581,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -46685,7 +46685,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -46801,7 +46801,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -46914,7 +46914,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -47010,7 +47010,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -47108,7 +47108,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -47203,7 +47203,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -47289,7 +47289,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -47375,7 +47375,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -47461,7 +47461,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -47547,7 +47547,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -47634,7 +47634,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -47721,7 +47721,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -47808,7 +47808,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -47895,7 +47895,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -47980,7 +47980,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -48065,7 +48065,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -48150,7 +48150,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -48235,7 +48235,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -48320,7 +48320,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -48405,7 +48405,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -48490,7 +48490,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -48575,7 +48575,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -48702,7 +48702,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -48832,7 +48832,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -48958,7 +48958,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -49049,7 +49049,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -49161,7 +49161,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -49267,7 +49267,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -49332,7 +49332,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -49418,7 +49418,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -49638,7 +49638,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -49727,7 +49727,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -49809,7 +49809,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -50033,7 +50033,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -50112,7 +50112,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -50199,7 +50199,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -50290,7 +50290,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -50381,7 +50381,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [
       "dress",
@@ -50481,7 +50481,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [
       "dress",
@@ -50582,7 +50582,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [
       "dress",
@@ -50682,7 +50682,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [
       "dress",
@@ -50783,7 +50783,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [
       "arms",
@@ -50888,7 +50888,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [
       "arms",
@@ -50994,7 +50994,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [
       "arms",
@@ -51099,7 +51099,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [
       "arms",
@@ -57296,7 +57296,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -57422,7 +57422,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -63197,7 +63197,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
@@ -65362,7 +65362,7 @@ window.itemMetadata = {
       "slash",
       "shoot",
       "hurt",
-      "watering"
+      "idle"
     ],
     "tags": [],
     "required_tags": [],
