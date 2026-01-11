@@ -10,11 +10,11 @@ import {
 	addedCustomAnimations
 } from '../canvas/renderer.js';
 import {
-	getItemFileName,
 	getAllCredits,
 	creditsToTxt,
 	creditsToCsv
 } from '../utils/credits.js';
+import { getItemFileName } from '../utils/fileName.js';
 import { loadImage } from '../canvas/load-image.js';
 import { drawFramesToCustomAnimation } from '../canvas/draw-frames.js';
 import { exportStateAsJSON } from './json.js';
