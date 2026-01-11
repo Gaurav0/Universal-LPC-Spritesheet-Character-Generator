@@ -32,19 +32,24 @@ export function getZPos(itemId, layerNum = 1) {
  * @param {number} height - Canvas height
  * @param {number} squareSize - Size of each checker square (default 8px)
  */
-export function drawTransparencyBackground(context, width, height, squareSize = 8) {
-  const lightGray = '#CCCCCC';
-  const darkGray = '#999999';
+export function drawTransparencyBackground(
+  context,
+  width,
+  height,
+  squareSize = 8
+) {
+  const lightGray = "#CCCCCC";
+  const darkGray = "#999999";
 
   for (let y = 0; y < height; y += squareSize) {
-	for (let x = 0; x < width; x += squareSize) {
-	  // Alternate colors in a checkerboard pattern
-	  const isEvenRow = Math.floor(y / squareSize) % 2 === 0;
-	  const isEvenCol = Math.floor(x / squareSize) % 2 === 0;
-	  const isLight = isEvenRow === isEvenCol;
+    for (let x = 0; x < width; x += squareSize) {
+      // Alternate colors in a checkerboard pattern
+      const isEvenRow = Math.floor(y / squareSize) % 2 === 0;
+      const isEvenCol = Math.floor(x / squareSize) % 2 === 0;
+      const isLight = isEvenRow === isEvenCol;
 
-	  context.fillStyle = isLight ? lightGray : darkGray;
-	  context.fillRect(x, y, squareSize, squareSize);
-	}
+      context.fillStyle = isLight ? lightGray : darkGray;
+      context.fillRect(x, y, squareSize, squareSize);
+    }
   }
 }
