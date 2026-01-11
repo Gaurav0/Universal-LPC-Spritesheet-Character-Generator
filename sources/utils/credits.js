@@ -119,6 +119,7 @@ export function getItemFileName(itemId, variant, name, layerNum = 1) {
 
 	// Get zPos from specified layer
 	const layer = meta.layers?.[`layer_${layerNum}`];
+	if (!layer) throw new Error("Requested layer number " + layerNum + " not found for item: " + itemId);
 	const zPos = layer?.zPos || 100;
 	const altName = `${itemId}_${variant ?? ''}`;
 

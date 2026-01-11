@@ -9,6 +9,7 @@ import { drawFramesToCustomAnimation } from './draw-frames.js';
 import { FRAME_SIZE, ANIMATION_OFFSETS, ANIMATION_CONFIGS } from '../state/constants.js';
 import { customAnimations, customAnimationBase } from '../custom-animations.js';
 import { setCurrentCustomAnimations, setCustomAnimYPositions } from './preview-animation.js';
+import { getSortedLayersByAnim } from './meta.js';
 
 export const SHEET_HEIGHT = 3456; // Full universal sheet height
 export const SHEET_WIDTH = 832; // 13 frames * 64px
@@ -385,76 +386,6 @@ export function getCanvas() {
 }
 
 /**
- * Get Sorted Layers (for external use)
- */
-export function getSortedLayers(itemId, standardOnly = false) {
-  const meta = window.itemMetadata[itemId];
-  if (!meta) {
-    console.error('Item metadata not found:', itemId);
-    return null;
-  }
-  
-  // Build list of layers for itemId
-  const layersList = [];
-  for (let layerNum = 1; layerNum < 10; layerNum++) {
-    const layerKey = `layer_${layerNum}`;
-    const layer = meta.layers?.[layerKey];
-    if (!layer) break;
-    if (standardOnly && layer.custom_animation) continue;
-
-    const zPos = getZPos(itemId, layerNum);
-
-    layersList.push({ layerNum, zPos });
-  }
-
-  // Sort by animation first, then by zPos
-  layersList.sort((a, b) => {
-    return a.zPos - b.zPos;
-  });
-  return layersList;
-}
-
-/**
- * Sort Animation Layers By Custom/Standard Anims
- */
-export function sortAnimLayers(itemId, customOnly = false) {
-  const meta = window.itemMetadata[itemId];
-  if (!meta) {
-    console.error('Item metadata not found:', itemId);
-    return null;
-  }
-  
-  // Build list of layers for itemId
-  const animsList = {};
-  for (let layerNum = 1; layerNum < 10; layerNum++) {
-    const layerKey = `layer_${layerNum}`;
-    const layer = meta.layers?.[layerKey];
-    if (!layer) break;
-    if (customOnly && !layer.custom_animation) continue;
-
-    const animName = layer.custom_animation || 'standard';
-    if (!animsList[animName]) {
-      animsList[animName] = [];
-    }
-
-    const zPos = getZPos(itemId, layerNum);
-
-    animsList[animName].push({ layerNum, zPos });
-  }
-
-  // Sort Each Animation's Layers By zPos
-  for (const animName in animsList) {
-    animsList[animName] = animsList[animName].sort((a, b) => {
-      return a.zPos - b.zPos;
-    }).map((layer, index) => {
-      return { layerNum: layer.layerNum, animLayerNum: index + 1, zPos: layer.zPos };
-    });
-  }
-
-  return animsList;
-}
-
-/**
  * Render a single item to a new canvas
  * Returns a canvas with just this one item rendered
  */
@@ -505,7 +436,7 @@ export async function renderSingleItem(itemId, variant, bodyType, selections, si
 
     // Render all layers of this custom animation item
     const customSprites = [];
-    const animsList = sortAnimLayers(itemId, true);
+    const animsList = getSortedLayersByAnim(itemId, true);
     for (const animName in animsList) {
       for (let layerNum = 1; layerNum < 10; layerNum++) {
         if (singleLayer !== null && layerNum !== singleLayer) continue;

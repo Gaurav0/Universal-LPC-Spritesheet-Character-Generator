@@ -7,8 +7,7 @@ import {
 	canvas,
 	layers,
 	customAreaItems,
-	addedCustomAnimations,
-	getSortedLayers
+	addedCustomAnimations
 } from '../canvas/renderer.js';
 import {
 	getItemFileName,
@@ -24,6 +23,7 @@ import {
 	customAnimationSize,
 	isCustomAnimationBasedOnStandardAnimation
 } from '../custom-animations.js';
+import { getSortedLayers} from './meta.js';
 import { get2DContext } from '../canvas/canvas-utils.js';
 
 // Helper to convert canvas to blob
@@ -373,7 +373,7 @@ export const exportSplitItemAnimations = async () => {
 				const { itemId, variant, name } = selection;
 				const meta = window.itemMetadata[itemId];
 				if (!meta || !meta.animations.includes(anim.value)) {
-					console.log('Skipping item ', itemId, ' without the animation: ', anim.value);
+            		if (window.DEBUG) console.log('Skipping item ', itemId, ' without the animation: ', anim.value);
 					continue;
 				}
 
@@ -403,9 +403,9 @@ export const exportSplitItemAnimations = async () => {
 							if (!isCustomAnimationBasedOnStandardAnimation(custAnim, name))
 								continue;
 
-							const custExportedItems = exportedCustom[custAnimName] || [];
+							const custExportedItems = exportedCustom[custAnimName] ?? [];
 							exportedCustom[custAnimName] = custExportedItems;
-							const custFailedItems = failedCustom[custAnimName] || [];
+							const custFailedItems = failedCustom[custAnimName] ?? [];
 							try {
 								const custAnimFolder = customFolder.folder(custAnimName);
 								if (await addStandardAnimationToZipCustomFolder(custAnimFolder, itemFileName, img, custAnim))
@@ -440,9 +440,9 @@ export const exportSplitItemAnimations = async () => {
 
 				const spritePath = layer.spritePath;
 				const itemFileName = getItemFileName(layer.itemId, layer.variant, layer.name);
-				const custExportedItems = exportedCustom[custName] || [];
+				const custExportedItems = exportedCustom[custName] ?? [];
 				exportedCustom[custName] = custExportedItems;
-				const custFailedItems = failedCustom[custName] || [];
+				const custFailedItems = failedCustom[custName] ?? [];
 
 				try {
 					if (window.DEBUG) {
