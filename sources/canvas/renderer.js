@@ -9,7 +9,7 @@ import { drawFramesToCustomAnimation } from './draw-frames.js';
 import { FRAME_SIZE, ANIMATION_OFFSETS, ANIMATION_CONFIGS } from '../state/constants.js';
 import { customAnimations, customAnimationBase } from '../custom-animations.js';
 import { setCurrentCustomAnimations, setCustomAnimYPositions } from './preview-animation.js';
-import { getSortedLayersByAnim } from './meta.js';
+import { getSortedLayersByAnim } from '../state/meta.js';
 
 export const SHEET_HEIGHT = 3456; // Full universal sheet height
 export const SHEET_WIDTH = 832; // 13 frames * 64px

@@ -1,4 +1,4 @@
-import { getZPos } from './canvas-utils.js';
+import { getZPos } from '../canvas/canvas-utils.js';
 
 /**
  * Sort Layers by zPos
