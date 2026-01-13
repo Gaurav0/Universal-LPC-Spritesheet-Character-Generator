@@ -3,6 +3,8 @@ import { state, getSelectionGroup, applyMatchBodyColor } from '../../state/state
 import { replaceInPath } from '../../state/path.js';
 import { variantToFilename, capitalize } from '../../utils/helpers.js';
 
+const classNames = window.classNames;
+
 export const ItemWithVariants = {
 	view: function(vnode) {
 		const { itemId, meta, isSearchMatch, isCompatible, tooltipText } = vnode.attrs;
@@ -15,7 +17,10 @@ export const ItemWithVariants = {
 		const isExpanded = state.expandedNodes[nodePath] || false;
 
 		return m("div", {
-			class: `${isSearchMatch ? "search-result" : ""} ${!isCompatible ? "has-text-grey" : ""}`
+			class: classNames({
+        "search-result": isSearchMatch,
+        "has-text-grey": !isCompatible,
+      })
 		}, [
 			m("div.tree-label", {
 				title: tooltipText,
@@ -70,9 +75,11 @@ export const ItemWithVariants = {
 
 					return m("div.variant-item.is-flex.is-flex-direction-column.is-align-items-center.is-clickable", {
 						key: variant,
-						class: isSelected ? "has-background-link-light has-text-weight-bold has-text-link" : "",
+						class: classNames({
+              "has-background-link-light has-text-weight-bold has-text-link": isSelected,
+              "is-not-compatible": !isCompatible,
+            }),
 						title: tooltipText,
-						style: !isCompatible ? "opacity: 0.5; pointer-events: none;" : "",
 						onmouseover: (e) => {
 							if (!isCompatible) return;
 							const div = e.currentTarget;
