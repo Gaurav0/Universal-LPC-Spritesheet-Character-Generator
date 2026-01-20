@@ -1255,13 +1255,7 @@ window.itemMetadata = {
       "pregnant"
     ],
     "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering"
+      "wheelchair"
     ],
     "tags": [],
     "required_tags": [],
@@ -65475,7 +65469,9 @@ window.itemMetadata = {
       "muscular",
       "pregnant"
     ],
-    "animations": [],
+    "animations": [
+      "tool_rod"
+    ],
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
@@ -65560,7 +65556,8 @@ window.itemMetadata = {
       "pregnant"
     ],
     "animations": [
-      "walk"
+      "walk",
+      "slash_128"
     ],
     "tags": [],
     "required_tags": [],
@@ -65742,7 +65739,9 @@ window.itemMetadata = {
       "muscular",
       "pregnant"
     ],
-    "animations": [],
+    "animations": [
+      "tool_whip"
+    ],
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
@@ -73768,7 +73767,9 @@ window.itemMetadata = {
       "muscular",
       "pregnant"
     ],
-    "animations": [],
+    "animations": [
+      "slash_reverse_oversize"
+    ],
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
@@ -73935,7 +73936,8 @@ window.itemMetadata = {
     "animations": [
       "walk",
       "shoot",
-      "hurt"
+      "hurt",
+      "walk_128"
     ],
     "tags": [],
     "required_tags": [],
@@ -74052,7 +74054,8 @@ window.itemMetadata = {
     "animations": [
       "walk",
       "shoot",
-      "hurt"
+      "hurt",
+      "walk_128"
     ],
     "tags": [],
     "required_tags": [],
@@ -74179,7 +74182,8 @@ window.itemMetadata = {
     "animations": [
       "walk",
       "shoot",
-      "hurt"
+      "hurt",
+      "walk_128"
     ],
     "tags": [],
     "required_tags": [],
@@ -74385,7 +74389,8 @@ window.itemMetadata = {
     ],
     "animations": [
       "walk",
-      "hurt"
+      "hurt",
+      "slash_oversize"
     ],
     "tags": [],
     "required_tags": [],
@@ -74487,7 +74492,10 @@ window.itemMetadata = {
     ],
     "animations": [
       "walk",
-      "hurt"
+      "hurt",
+      "slash_oversize",
+      "slash_reverse_oversize",
+      "thrust_oversize"
     ],
     "tags": [],
     "required_tags": [],
@@ -74618,7 +74626,8 @@ window.itemMetadata = {
     ],
     "animations": [
       "walk",
-      "hurt"
+      "hurt",
+      "slash_oversize"
     ],
     "tags": [],
     "required_tags": [],
@@ -74717,7 +74726,8 @@ window.itemMetadata = {
     ],
     "animations": [
       "walk",
-      "hurt"
+      "hurt",
+      "slash_oversize"
     ],
     "tags": [],
     "required_tags": [],
@@ -74813,7 +74823,9 @@ window.itemMetadata = {
     ],
     "animations": [
       "walk",
-      "hurt"
+      "hurt",
+      "walk_128",
+      "slash_128"
     ],
     "tags": [],
     "required_tags": [],
@@ -74906,7 +74918,9 @@ window.itemMetadata = {
       "pregnant"
     ],
     "animations": [
-      "walk"
+      "walk",
+      "walk_128",
+      "slash_128"
     ],
     "tags": [],
     "required_tags": [],
@@ -74998,7 +75012,10 @@ window.itemMetadata = {
       "muscular",
       "pregnant"
     ],
-    "animations": [],
+    "animations": [
+      "walk_128",
+      "slash_128"
+    ],
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
@@ -75094,7 +75111,10 @@ window.itemMetadata = {
       "walk",
       "hurt",
       "idle",
-      "combat"
+      "combat",
+      "slash_128",
+      "backslash_128",
+      "halfslash_128"
     ],
     "tags": [],
     "required_tags": [],
@@ -75237,7 +75257,8 @@ window.itemMetadata = {
     ],
     "animations": [
       "walk",
-      "hurt"
+      "hurt",
+      "slash_oversize"
     ],
     "tags": [],
     "required_tags": [],
@@ -75336,7 +75357,8 @@ window.itemMetadata = {
     ],
     "animations": [
       "walk",
-      "hurt"
+      "hurt",
+      "slash_oversize"
     ],
     "tags": [],
     "required_tags": [],
@@ -75435,7 +75457,8 @@ window.itemMetadata = {
     ],
     "animations": [
       "walk",
-      "hurt"
+      "hurt",
+      "slash_oversize"
     ],
     "tags": [],
     "required_tags": [],
@@ -75532,7 +75555,9 @@ window.itemMetadata = {
       "muscular",
       "pregnant"
     ],
-    "animations": [],
+    "animations": [
+      "slash_reverse_oversize"
+    ],
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
@@ -75790,7 +75815,8 @@ window.itemMetadata = {
     ],
     "animations": [
       "walk",
-      "hurt"
+      "hurt",
+      "slash_oversize"
     ],
     "tags": [],
     "required_tags": [],
@@ -75882,7 +75908,9 @@ window.itemMetadata = {
     ],
     "animations": [
       "walk",
-      "hurt"
+      "hurt",
+      "thrust_oversize",
+      "slash_oversize"
     ],
     "tags": [],
     "required_tags": [],
@@ -75996,7 +76024,10 @@ window.itemMetadata = {
       "muscular",
       "pregnant"
     ],
-    "animations": [],
+    "animations": [
+      "walk_128",
+      "thrust_oversize"
+    ],
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
@@ -76108,7 +76139,10 @@ window.itemMetadata = {
       "muscular",
       "pregnant"
     ],
-    "animations": [],
+    "animations": [
+      "walk_128",
+      "thrust_oversize"
+    ],
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
@@ -76221,7 +76255,10 @@ window.itemMetadata = {
       "muscular",
       "pregnant"
     ],
-    "animations": [],
+    "animations": [
+      "walk_128",
+      "thrust_oversize"
+    ],
     "tags": [],
     "required_tags": [],
     "excluded_tags": [],
@@ -76421,7 +76458,8 @@ window.itemMetadata = {
     ],
     "animations": [
       "walk",
-      "hurt"
+      "hurt",
+      "thrust_oversize"
     ],
     "tags": [],
     "required_tags": [],
@@ -76544,7 +76582,8 @@ window.itemMetadata = {
     ],
     "animations": [
       "walk",
-      "hurt"
+      "hurt",
+      "thrust_oversize"
     ],
     "tags": [],
     "required_tags": [],
@@ -76667,7 +76706,8 @@ window.itemMetadata = {
     ],
     "animations": [
       "walk",
-      "hurt"
+      "hurt",
+      "thrust_oversize"
     ],
     "tags": [],
     "required_tags": [],
@@ -76790,7 +76830,8 @@ window.itemMetadata = {
     ],
     "animations": [
       "walk",
-      "hurt"
+      "hurt",
+      "thrust_oversize"
     ],
     "tags": [],
     "required_tags": [],
@@ -76904,7 +76945,8 @@ window.itemMetadata = {
     ],
     "animations": [
       "walk",
-      "hurt"
+      "hurt",
+      "thrust_oversize"
     ],
     "tags": [],
     "required_tags": [],
