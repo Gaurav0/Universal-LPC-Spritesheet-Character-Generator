@@ -3,7 +3,7 @@ const readline = require("readline");
 
 const DEBUG = false; // change this to print debug log
 const onlyIfTemplate = false; // print debugging log only if there is a template
-const onlyIfReplace = true; // print debugging log only if there is replace key
+// const onlyIfReplace = true; // print debugging log only if there is replace key
 
 require("child_process").fork("scripts/zPositioning/parse_zpos.js");
 
@@ -11,10 +11,9 @@ require("child_process").fork("scripts/zPositioning/parse_zpos.js");
 const es6DynamicTemplate = (templateString, templateVariables) =>
   templateString.replace(/\${(.*?)}/g, (_, g) => templateVariables[g]);
 
-const templateHTML = fs.readFileSync("scripts/template-general.html", "utf8");
-
 const licensesFound = [];
 const itemMetadata = {}; // Collect metadata for runtime use
+
 function searchCredit(fileName, credits, origFileName) {
   if (credits.count <= 0) {
     console.error("no credits for filename:", fileName);
@@ -80,7 +79,6 @@ function parseJson(json) {
     variants,
     name,
     credits,
-    template,
     replace_in_path,
     path
   } = definition;
@@ -110,9 +108,6 @@ function parseJson(json) {
       requiredSexes.push(sex);
     }
   }
-
-  const requiredSex = requiredSexes.join(",");
-  const supportedAnimations = animations.join(",");
 
   // Build unique itemId from filename (not from path or type_name)
   // This ensures each item has a unique ID even if they share the same type_name
@@ -157,50 +152,19 @@ function parseJson(json) {
     matchBodyColor: definition.match_body_color || false
   };
 
-  let startHTML = `<li id="[ID_FOR]" class="variant-list" data-required="[REQUIRED_SEX]" data-animations="[SUPPORTED_ANIMATIONS]" [DATA_FILE]><span class="condensed">${name}</span><ul>`
-    .replace("[ID_FOR]", itemId)
-    .replace("[REQUIRED_SEX]", requiredSex)
-    .replace("[SUPPORTED_ANIMATIONS]", supportedAnimations);
-
-  const endHTML = "</ul></li>";
-
-  let canUseListCredits = true;
   let listCreditToUse = null;
-  let listDataFiles = "";
+  let listItemsCSV = "";
 
   // Use type_name for radio button grouping (ensures only one item per type can be selected)
-  const radioGroupName = typeName.replace(/\//g, "_");
-  const id = `${itemId}-none`.replace(/\//g, "_");
-  let listItemsHTML = `<li class="excluded-hide"><input type="radio" id="${id}" name="${radioGroupName}" class="none"> <label for="${id}">No ${name}</label></li><li class="excluded-text"></li>`;
-  let listItemsCSV = "";
   const addedCreditsFor = [];
   for (const variant of variants) {
     const snakeItemName = variant.replaceAll(" ", "_");
-    const itemIdFor = `${itemId}_${snakeItemName}`;
-    let matchBodyColor = false;
-    if (definition[`match_body_color`] !== undefined) {
-      matchBodyColor = true;
-    }
-    let dataFiles = "";
     for (const sex of requiredSexes) {
       // TODO: move any non-layer, non-variant specific code here!
       for (let jdx = 1; jdx < 10; jdx++) {
         const layerDefinition = definition[`layer_${jdx}`];
         if (layerDefinition === undefined) {
           break;
-        }
-        if (sex === requiredSexes[0]) {
-          const zPos = definition[`layer_${jdx}`].zPos;
-          dataFiles += `data-preview_row=${previewRow} data-preview_column=${previewColumn} data-preview_x_offset=${previewXOffset} data-preview_y_offset=${previewYOffset} data-layer_${jdx}_zpos=${zPos} `;
-          dataFiles += `data-tags="${tags.join(
-            ","
-          )}" data-required_tags="${required_tags.join(
-            ","
-          )}" data-excluded_tags="${excluded_tags.join(",")}" `;
-          const custom_animation = layerDefinition.custom_animation;
-          if (custom_animation !== undefined) {
-            dataFiles += `data-layer_${jdx}_custom_animation=${custom_animation} `;
-          }
         }
         const file = layerDefinition[sex];
         if (file !== null && file !== "") {
@@ -226,25 +190,13 @@ function parseJson(json) {
             console.log(
               `file name set for ${sex} is ${imageFileName} for layer ${jdx}`
             );
-          dataFiles += `data-layer_${jdx}_${sex}=${imageFileName} `;
-          if (template) {
-            const mungedTemplate = JSON.stringify(template).replace(/"/g, "'");
-            dataFiles += `data-layer_${jdx}_template="${mungedTemplate}" `;
-          }
-          if (replace_in_path) {
-            const mungedReplace = JSON.stringify(replace_in_path).replace(
-              /"/g,
-              "'"
-            );
-            dataFiles += `data-layer_${jdx}_replace="${mungedReplace}" `;
-          }
           if (creditToUse !== undefined) {
             // comparing via JSON.stringify is faster than node-deep-equal library
             if (
               listCreditToUse !== null &&
               JSON.stringify(listCreditToUse) !== JSON.stringify(creditToUse)
             ) {
-              canUseListCredits = false;
+              // do nothing
             } else if (listCreditToUse === null) {
               listCreditToUse = creditToUse;
             }
@@ -257,12 +209,6 @@ function parseJson(json) {
             const authors = '"' + creditToUse.authors.join(",") + '" ';
             const urls = '"' + creditToUse.urls.join(",") + '" ';
             const notes = '"' + creditToUse.notes.replaceAll('"', "**") + '" ';
-            if (!canUseListCredits) {
-              dataFiles += `data-layer_${jdx}_${sex}_licenses=${licenses} `;
-              dataFiles += `data-layer_${jdx}_${sex}_authors=${authors} `;
-              dataFiles += `data-layer_${jdx}_${sex}_urls=${urls} `;
-              dataFiles += `data-layer_${jdx}_${sex}_notes=${notes} `;
-            }
             if (!addedCreditsFor.includes(imageFileName)) {
               const quotedShortName = '"' + file + variant + '.png"';
               listItemsCSV += `${quotedShortName},${notes},${authors},${licenses},${urls}\n`;
@@ -273,15 +219,7 @@ function parseJson(json) {
           } // if creditToUse
         } // if file
       } // for jdx
-    }
-    listItemsHTML += templateHTML
-      .replaceAll("[ID_FOR]", itemIdFor)
-      .replaceAll("[TYPE_NAME]", typeName)
-      .replaceAll("[NAME]", variant)
-      .replaceAll("[PARENT_NAME]", name.replaceAll(" ", "_"))
-      .replaceAll("[MATCH_BODY_COLOR]", matchBodyColor)
-      .replaceAll("[VARIANT]", variant)
-      .replaceAll("[DATA_FILE]", dataFiles);
+    } // for sex
   } // for variant
 
   // Add license info to metadata
@@ -290,27 +228,18 @@ function parseJson(json) {
   }
 
   for (const sex of requiredSexes) {
-    const licenses = '"' + listCreditToUse.licenses.join(",") + '" ';
-    listDataFiles += `data-${sex}_licenses=${licenses} `;
-    const authors = '"' + listCreditToUse.authors.join(",") + '" ';
-    listDataFiles += `data-${sex}_authors=${authors} `;
-    const urls = '"' + listCreditToUse.urls.join(",") + '" ';
-    listDataFiles += `data-${sex}_urls=${urls} `;
-    const notes = '"' + listCreditToUse.notes.replaceAll('"', "**") + '" ';
-    listDataFiles += `data-${sex}_notes=${notes} `;
-
     // Store licenses in metadata
     itemMetadata[itemId].licenses[sex] = listCreditToUse.licenses;
   }
-  startHTML = startHTML.replaceAll("[DATA_FILE]", listDataFiles);
 
-  const html = startHTML + listItemsHTML + endHTML;
   let parsed = {};
-  parsed.html = html;
   parsed.csv = listItemsCSV;
   return parsed;
 } // fn parseJson
 
+// TODO: remove the need for the file sources/source_index.html
+// we could replace with a json
+// or walk sheet_definitions tree?
 const lineReader = readline.createInterface({
   input: fs.createReadStream("sources/source_index.html")
 });
@@ -329,7 +258,7 @@ lineReader.on("line", function(line) {
   }
 });
 
-lineReader.on("close", function(line) {
+lineReader.on("close", function() {
   fs.writeFile("CREDITS.csv", csvGenerated, function(err) {
     if (err) {
       return console.error(err);
@@ -342,7 +271,6 @@ lineReader.on("close", function(line) {
   // Generate item-metadata.js for runtime use
   // Build category tree from paths
   const categoryTree = { items: [], children: {} };
-  const duplicatePaths = [];
 
   for (const [itemId, meta] of Object.entries(itemMetadata)) {
     const itemPath = meta.path || ["Other"];
@@ -361,7 +289,7 @@ lineReader.on("close", function(line) {
 
     // Add item to the category (not as a child)
     current.items.push(itemId);
-  }
+  } // for itemMetadata
 
   const metadataJS = `// THIS FILE IS AUTO-GENERATED. PLEASE DON'T ALTER IT MANUALLY
 // Generated from sheet_definitions/*.json by scripts/generate_sources.js
@@ -379,7 +307,7 @@ window.categoryTree = ${JSON.stringify(categoryTree, null, 2)};
       console.log("Item Metadata JS Updated!");
     }
   });
-});
+}); // lineReader.on('close')
 
 function printArray(array, label) {
   const colors = {
