@@ -51,8 +51,10 @@
     "steel"
   ],
   "animations": [
+    "walk",
     "shoot",
-    "hurt"
+    "hurt",
+    "walk_128"
   ],
   "credits": [
     {

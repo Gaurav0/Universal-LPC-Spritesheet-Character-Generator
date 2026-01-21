@@ -15,6 +15,9 @@
   "variants": [
     "boomerang"
   ],
+  "animations": [
+    "slash_reverse_oversize"
+  ],
   "credits": [
     {
       "file": "weapon/ranged/boomerang",

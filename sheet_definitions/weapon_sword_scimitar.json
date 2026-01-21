@@ -39,6 +39,11 @@
   "variants": [
     "scimitar"
   ],
+  "animations": [
+    "walk",
+    "walk_128",
+    "slash_128"
+  ],
   "credits": [
     {
       "file": "weapon/sword/scimitar",

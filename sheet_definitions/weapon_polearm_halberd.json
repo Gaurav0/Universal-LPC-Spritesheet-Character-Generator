@@ -51,6 +51,12 @@
   "variants": [
     "halberd"
   ],
+  "animations": [
+    "walk",
+    "hurt",
+    "thrust_oversize",
+    "slash_oversize"
+  ],
   "credits": [
     {
       "file": "weapon/polearm/halberd",

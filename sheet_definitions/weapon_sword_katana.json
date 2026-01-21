@@ -39,6 +39,12 @@
   "variants": [
     "katana"
   ],
+  "animations": [
+    "walk",
+    "hurt",
+    "walk_128",
+    "slash_128"
+  ],
   "credits": [
     {
       "file": "weapon/sword/katana",

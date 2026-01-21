@@ -31,6 +31,10 @@
     "hammer",
     "pickaxe"
   ],
+  "animations": [
+    "walk",
+    "slash_128"
+  ],
   "credits": [
     {
       "file": "tools/smash",

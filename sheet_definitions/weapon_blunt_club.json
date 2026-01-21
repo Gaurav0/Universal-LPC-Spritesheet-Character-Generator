@@ -23,6 +23,9 @@
   "variants": [
     "club"
   ],
+  "animations": [
+    "slash_reverse_oversize"
+  ],
   "credits": [
     {
       "file": "weapon/blunt/club",

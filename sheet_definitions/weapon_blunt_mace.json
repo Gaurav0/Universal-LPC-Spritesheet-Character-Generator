@@ -33,6 +33,11 @@
   "variants": [
     "mace"
   ],
+  "animations": [
+    "walk",
+    "hurt",
+    "slash_oversize"
+  ],
   "credits": [
     {
       "file": "weapon/blunt/mace",

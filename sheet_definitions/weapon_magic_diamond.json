@@ -48,6 +48,11 @@
     "silver",
     "steel"
   ],
+  "animations": [
+    "walk",
+    "hurt",
+    "thrust_oversize"
+  ],
   "credits": [
     {
       "file": "weapon/magic/diamond",

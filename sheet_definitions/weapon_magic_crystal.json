@@ -42,6 +42,11 @@
     "red",
     "yellow"
   ],
+  "animations": [
+    "walk",
+    "hurt",
+    "thrust_oversize"
+  ],
   "credits": [
     {
       "file": "weapon/magic/crystal",
