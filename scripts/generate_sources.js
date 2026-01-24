@@ -1,10 +1,13 @@
 const fs = require("fs");
 const readline = require("readline");
-const { PALETTE_MATERIALS } = require("../sources/state/palettes.js");
+const path = require("path");
 
 const DEBUG = false; // change this to print debug log
 const onlyIfTemplate = false; // print debugging log only if there is a template
-const onlyIfReplace = true; // print debugging log only if there is replace key
+// const onlyIfReplace = true; // print debugging log only if there is replace key
+
+const SHEETS_DIR = "sheet_definitions" + path.sep;
+const PALETTES_DIR = "palette_definitions" + path.sep;
 
 require("child_process").fork("scripts/zPositioning/parse_zpos.js");
 
@@ -12,11 +15,12 @@ require("child_process").fork("scripts/zPositioning/parse_zpos.js");
 const es6DynamicTemplate = (templateString, templateVariables) =>
   templateString.replace(/\${(.*?)}/g, (_, g) => templateVariables[g]);
 
-const templateHTML = fs.readFileSync("scripts/template-general.html", "utf8");
-
+// Collect metadata for runtime use
 const licensesFound = [];
-const paletteMetadata = {};
-const itemMetadata = {}; // Collect metadata for runtime use
+const paletteMetadata = { versions: {}, materials: {} };
+const itemMetadata = {};
+const categoryTree = { items: [], children: {} };
+
 function searchCredit(fileName, credits, origFileName) {
   if (credits.count <= 0) {
     console.error("no credits for filename:", fileName);
@@ -52,13 +56,56 @@ function searchCredit(fileName, credits, origFileName) {
   }
 }
 
-function parseJson(json) {
-  const templateIndex = json.lastIndexOf("%");
-  let searchFileName = json;
+// Parse Category Tree From Meta Files and Folder Paths
+function parseTree(filePath, fileName) {
+  // Get Full Path
+  const fullPath = path.join(filePath, fileName);
+  if (DEBUG && !onlyIfTemplate)
+    console.log(`Parsing tree ${fullPath}`);
+
+  let meta = null;
+  try {
+    meta = JSON.parse(fs.readFileSync(fullPath));
+  } catch (e) {
+    console.error("error in", fullPath);
+    throw e;
+  }
+
+  const { label, priority, required, animations, path: itemPath } = meta;
+
+  let current = categoryTree;
+  const categoryPath = filePath.replace(SHEETS_DIR, "").split(path.sep);
+  const treeId = filePath.split(path.sep).pop();
+
+  for (let segment of categoryPath) {
+    if (!current.children[segment]) {
+      current.children[segment] = {
+        items: [],
+        children: {}
+      };
+
+      // Only Set Metadata on Current Tree ID
+      if (segment === treeId) {
+        current.children[segment].label = label;
+        current.children[segment].priority = priority || null;
+        current.children[segment].required = required || [];
+        current.children[segment].animations = animations || [];
+      }
+    }
+    current = current.children[segment];
+  }
+} // fn parseTree
+
+// Parse Asset JSON File
+function parseJson(filePath, fileName) {
+  let queryObj = null;
+  let treePath = null;
+  /*const templateIndex = fileName.lastIndexOf("%");
+  let searchFileName = fileName;
   let queryObj = null;
   if (templateIndex > -1) {
     searchFileName = searchFileName.substring(0, templateIndex);
-    const query = json.substring(templateIndex + 1);
+    const query = fileName.substring(templateIndex + 1);
     queryObj = Object.fromEntries(new URLSearchParams(query));
     const replObj = Object.fromEntries(
       Object.keys(queryObj).map(key => [key, ""])
@@ -67,25 +114,37 @@ function parseJson(json) {
       /_+/,
       "_"
     );
-  }
-  const filePath = `sheet_definitions/${searchFileName}.json`;
+  }*/
+  const fullPath = path.join(filePath, fileName);
+  const searchFileName = fileName.replace(".json", "");
   if (DEBUG && (!onlyIfTemplate || queryObj))
-    console.log(`Parsing ${filePath}`);
+    console.log(`Parsing ${fullPath}`);
+
+  // Read JSON Definition
   let definition = null;
   try {
-    definition = JSON.parse(fs.readFileSync(filePath));
+    definition = JSON.parse(fs.readFileSync(fullPath));
   } catch (e) {
-    console.error("error in", filePath);
+    console.error("error in", fullPath);
     throw e;
   }
+
   const {
     variants,
     name,
     credits,
-    template,
     replace_in_path,
-    path
+    //path: itemPath,
+    priority,
+    ignore
   } = definition;
+
+  // Skip Ignored Items
+  if (ignore === true) {
+    throw Error(`Skipping ignored item: ${searchFileName}`);
+  }
+
+
   const { tags = [], required_tags = [], excluded_tags = [] } = definition;
   const typeName = definition.type_name;
   const defaultAnimations = [
@@ -113,19 +172,18 @@ function parseJson(json) {
     }
   }
 
-  const requiredSex = requiredSexes.join(",");
-  const supportedAnimations = animations.join(",");
-
   // Build unique itemId from filename (not from path or type_name)
   // This ensures each item has a unique ID even if they share the same type_name
   let itemId = searchFileName;
   // Append query parameters if present
-  if (queryObj) {
+  /*if (queryObj) {
     const vals = Object.values(queryObj)
       .map(val => val.replaceAll(" ", "_"))
       .join("_");
     itemId = `${itemId}_${vals}`;
-  }
+  }*/
+  const itemPath = filePath.replace("sheet_definitions" + path.sep, "").split(path.sep);
+  itemPath.push(itemId);
 
   // Collect layer information (file paths and zPos)
   const layers = {};
@@ -182,13 +240,14 @@ function parseJson(json) {
   // Collect metadata for this item
   itemMetadata[itemId] = {
     name: name,
+    priority: priority || null,
     type_name: typeName,
     required: requiredSexes,
     animations: animations,
     tags: tags,
     required_tags: required_tags,
     excluded_tags: excluded_tags,
-    path: path || ["other"],
+    path: itemPath || treePath || ["other"],
     replace_in_path: replace_in_path || {},
     variants: variants || [],
     layers: layers,
@@ -201,31 +260,13 @@ function parseJson(json) {
     recolors: recolors || []
   };
 
-  let startHTML = `<li id="[ID_FOR]" class="variant-list" data-required="[REQUIRED_SEX]" data-animations="[SUPPORTED_ANIMATIONS]" [DATA_FILE]><span class="condensed">${name}</span><ul>`
-    .replace("[ID_FOR]", itemId)
-    .replace("[REQUIRED_SEX]", requiredSex)
-    .replace("[SUPPORTED_ANIMATIONS]", supportedAnimations);
-
-  const endHTML = "</ul></li>";
-
-  let canUseListCredits = true;
   let listCreditToUse = null;
-  let listDataFiles = "";
+  let listItemsCSV = "";
 
   // Use type_name for radio button grouping (ensures only one item per type can be selected)
-  const radioGroupName = typeName.replace(/\//g, "_");
-  const id = `${itemId}-none`.replace(/\//g, "_");
-  let listItemsHTML = `<li class="excluded-hide"><input type="radio" id="${id}" name="${radioGroupName}" class="none"> <label for="${id}">No ${name}</label></li><li class="excluded-text"></li>`;
-  let listItemsCSV = "";
   const addedCreditsFor = [];
   for (const variant of variants) {
     const snakeItemName = variant.replaceAll(" ", "_");
-    const itemIdFor = `${itemId}_${snakeItemName}`;
-    let matchBodyColor = false;
-    if (definition[`match_body_color`] !== undefined) {
-      matchBodyColor = true;
-    }
-    let dataFiles = "";
     for (const sex of requiredSexes) {
       // TODO: move any non-layer, non-variant specific code here!
       for (let jdx = 1; jdx < 10; jdx++) {
@@ -233,30 +274,17 @@ function parseJson(json) {
         if (layerDefinition === undefined) {
           break;
         }
-        if (sex === requiredSexes[0]) {
-          const zPos = definition[`layer_${jdx}`].zPos;
-          dataFiles += `data-preview_row=${previewRow} data-preview_column=${previewColumn} data-preview_x_offset=${previewXOffset} data-preview_y_offset=${previewYOffset} data-layer_${jdx}_zpos=${zPos} `;
-          dataFiles += `data-tags="${tags.join(
-            ","
-          )}" data-required_tags="${required_tags.join(
-            ","
-          )}" data-excluded_tags="${excluded_tags.join(",")}" `;
-          const custom_animation = layerDefinition.custom_animation;
-          if (custom_animation !== undefined) {
-            dataFiles += `data-layer_${jdx}_custom_animation=${custom_animation} `;
-          }
-        }
         const file = layerDefinition[sex];
         if (file !== null && file !== "") {
           let imageFileName = '"' + file + snakeItemName + '.png" ';
           let fileNameForCreditSearch = file + snakeItemName;
-          if (queryObj) {
+          /*if (queryObj) {
             fileNameForCreditSearch = es6DynamicTemplate(
               fileNameForCreditSearch,
               queryObj
             );
             imageFileName = es6DynamicTemplate(imageFileName, queryObj);
-          }
+          }*/
           if (DEBUG && (!onlyIfTemplate || queryObj))
             console.log(
               `Searching for credits to use for ${imageFileName} in ${fileNameForCreditSearch} for layer ${jdx}`
@@ -270,25 +298,13 @@ function parseJson(json) {
             console.log(
               `file name set for ${sex} is ${imageFileName} for layer ${jdx}`
             );
-          dataFiles += `data-layer_${jdx}_${sex}=${imageFileName} `;
-          if (template) {
-            const mungedTemplate = JSON.stringify(template).replace(/"/g, "'");
-            dataFiles += `data-layer_${jdx}_template="${mungedTemplate}" `;
-          }
-          if (replace_in_path) {
-            const mungedReplace = JSON.stringify(replace_in_path).replace(
-              /"/g,
-              "'"
-            );
-            dataFiles += `data-layer_${jdx}_replace="${mungedReplace}" `;
-          }
           if (creditToUse !== undefined) {
             // comparing via JSON.stringify is faster than node-deep-equal library
             if (
               listCreditToUse !== null &&
               JSON.stringify(listCreditToUse) !== JSON.stringify(creditToUse)
             ) {
-              canUseListCredits = false;
+              // do nothing
             } else if (listCreditToUse === null) {
               listCreditToUse = creditToUse;
             }
@@ -301,31 +317,17 @@ function parseJson(json) {
             const authors = '"' + creditToUse.authors.join(",") + '" ';
             const urls = '"' + creditToUse.urls.join(",") + '" ';
             const notes = '"' + creditToUse.notes.replaceAll('"', "**") + '" ';
-            if (!canUseListCredits) {
-              dataFiles += `data-layer_${jdx}_${sex}_licenses=${licenses} `;
-              dataFiles += `data-layer_${jdx}_${sex}_authors=${authors} `;
-              dataFiles += `data-layer_${jdx}_${sex}_urls=${urls} `;
-              dataFiles += `data-layer_${jdx}_${sex}_notes=${notes} `;
-            }
             if (!addedCreditsFor.includes(imageFileName)) {
               const quotedShortName = '"' + file + variant + '.png"';
               listItemsCSV += `${quotedShortName},${notes},${authors},${licenses},${urls}\n`;
               addedCreditsFor.push(imageFileName);
             }
           } else {
-            throw Error(`missing credit inside ${json}`);
+            throw Error(`missing credit inside ${fileName}`);
           } // if creditToUse
         } // if file
       } // for jdx
-    }
-    listItemsHTML += templateHTML
-      .replaceAll("[ID_FOR]", itemIdFor)
-      .replaceAll("[TYPE_NAME]", typeName)
-      .replaceAll("[NAME]", variant)
-      .replaceAll("[PARENT_NAME]", name.replaceAll(" ", "_"))
-      .replaceAll("[MATCH_BODY_COLOR]", matchBodyColor)
-      .replaceAll("[VARIANT]", variant)
-      .replaceAll("[DATA_FILE]", dataFiles);
+    } // for sex
   } // for variant
 
   // Add license info to metadata
@@ -334,99 +336,174 @@ function parseJson(json) {
   }
 
   for (const sex of requiredSexes) {
-    const licenses = '"' + listCreditToUse.licenses.join(",") + '" ';
-    listDataFiles += `data-${sex}_licenses=${licenses} `;
-    const authors = '"' + listCreditToUse.authors.join(",") + '" ';
-    listDataFiles += `data-${sex}_authors=${authors} `;
-    const urls = '"' + listCreditToUse.urls.join(",") + '" ';
-    listDataFiles += `data-${sex}_urls=${urls} `;
-    const notes = '"' + listCreditToUse.notes.replaceAll('"', "**") + '" ';
-    listDataFiles += `data-${sex}_notes=${notes} `;
-
     // Store licenses in metadata
     itemMetadata[itemId].licenses[sex] = listCreditToUse.licenses;
   }
-  startHTML = startHTML.replaceAll("[DATA_FILE]", listDataFiles);
 
-  const html = startHTML + listItemsHTML + endHTML;
   let parsed = {};
-  parsed.html = html;
   parsed.csv = listItemsCSV;
   return parsed;
 } // fn parseJson
 
 // Walk Palettes Definitions and build Metadata
-const PALETTES_DIR = "palette_definitions/";
-const palettes = fs.readdirSync(PALETTES_DIR);
-for (const palette of palettes) {
-  const filename = palette.replaceAll("\t", "");
-  const [material, version] = palette.replace(".json", "").split("_");
-  try {
-    definition = JSON.parse(fs.readFileSync(PALETTES_DIR + filename));
-    if (!paletteMetadata[material]) {
-      paletteMetadata[material] = {};
-    }
-    paletteMetadata[material][version] = definition;
-  } catch (e) {
-    console.log(`Error parsing palette file: ${filename}`);
-    continue;
-  }
-}
+const palettes = fs.readdirSync(PALETTES_DIR, { 
+  recursive: true,
+  withFileTypes: true 
+}).sort((a, b) => {
+  const pa = path.join(a.path, a.name);
+  const pb = path.join(b.path, b.name);
 
-const lineReader = readline.createInterface({
-  input: fs.createReadStream("sources/source_index.html")
+  const depthA = pa.split(path.sep).length;
+  const depthB = pb.split(path.sep).length;
+  if (depthA !== depthB) return depthA - depthB;
+
+  return pa.localeCompare(pb);
 });
-let csvGenerated = "filename,notes,authors,licenses,urls\n";
 
-lineReader.on("line", function(line) {
-  if (line.includes("div_sheet_")) {
-    const definition = line.replace("div_sheet_", "");
+// Read palette_definitions/*.json line by line
+palettes.forEach(file => {
+  if (file.isDirectory()) {
+    return;
+  } else {
+    const fullPath = path.join(file.path, file.name);
+    const json = JSON.parse(fs.readFileSync(fullPath));
+    if (file.name.startsWith("meta_")) {
+      // Handle Palette Metadata
+      const name = file.name.replace("meta_", "").replace(".json", "");
+      if (json.type == 'material') {
+        if (!paletteMetadata.materials[name]) {
+          paletteMetadata.materials[name] = json;
+          paletteMetadata.materials[name].palettes = {};
+        } else {
+          for (const [key, data] of Object.entries(json)) {
+            paletteMetadata.materials[name][key] = data;
+          }
+        }
+      } else {
+        paletteMetadata.versions[name] = json;
+      }
+      return;
+    } else {
+      const filename = file.name.replaceAll("\t", "");
+      const [material, version] = file.name.replace(".json", "").split("_");
+      try {
+        if (!paletteMetadata.materials[material]) {
+          paletteMetadata.materials[material] = { "palettes": {} };
+        }
+        paletteMetadata.materials[material].palettes[version] = json;
+      } catch (e) {
+        console.log(`Error parsing palette file: ${filename}`, e);
+        return;
+      }
+    }
+  }
+});
+
+
+// Read sheet_definitions/*.json line by line
+const files = fs.readdirSync(SHEETS_DIR, { 
+  recursive: true,
+  withFileTypes: true 
+}).sort((a, b) => {
+  const pa = path.join(a.path, a.name);
+  const pb = path.join(b.path, b.name);
+
+  const depthA = pa.split(path.sep).length;
+  const depthB = pb.split(path.sep).length;
+  if (depthA !== depthB) return depthA - depthB;
+
+  return pa.localeCompare(pb);
+});
+
+let csvGenerated = "filename,notes,authors,licenses,urls\n";
+files.forEach(file => {
+  if (file.isDirectory()) {
+    return;
+  } else if (file.name.startsWith("meta_")) {
+    // Handle Category Tree
+    parseTree(file.path, file.name);
+    return;
+  } else {
     let parsedResult = null;
     try {
-      parsedResult = parseJson(definition.replaceAll("\t", ""));
+      parsedResult = parseJson(file.path, file.name);
     } catch (e) {
+      if (DEBUG && !onlyIfTemplate)
+        console.log(e);
       return;
     }
     csvGenerated += parsedResult.csv;
   }
 });
 
-lineReader.on("close", function(line) {
-  fs.writeFile("CREDITS.csv", csvGenerated, function(err) {
-    if (err) {
-      return console.error(err);
-    } else {
-      console.log("CSV Updated!");
-      printArray(licensesFound, "Found licenses");
+fs.writeFile("CREDITS.csv", csvGenerated, function(err) {
+  if (err) {
+    return console.error(err);
+  } else {
+    console.log("CSV Updated!");
+    printArray(licensesFound, "Found licenses");
+  }
+});
+
+// Generate item-metadata.js for runtime use
+for (const [itemId, meta] of Object.entries(itemMetadata)) {
+  const itemPath = meta.path || ["Other"];
+
+  // Navigate/create tree structure (skip the last element which is the filename)
+  let current = categoryTree;
+  // Only use path elements except the last one (which is the filename)
+  const categoryPath = itemPath.slice(0, -1);
+
+  for (const segment of categoryPath) {
+    if (!current.children[segment]) {
+      current.children[segment] = { items: [], children: {} };
     }
-  });
-
-  // Generate item-metadata.js for runtime use
-  // Build category tree from paths
-  const categoryTree = { items: [], children: {} };
-  const duplicatePaths = [];
-
-  for (const [itemId, meta] of Object.entries(itemMetadata)) {
-    const itemPath = meta.path || ["Other"];
-
-    // Navigate/create tree structure (skip the last element which is the filename)
-    let current = categoryTree;
-    // Only use path elements except the last one (which is the filename)
-    const categoryPath = itemPath.slice(0, -1);
-
-    for (const segment of categoryPath) {
-      if (!current.children[segment]) {
-        current.children[segment] = { items: [], children: {} };
-      }
-      current = current.children[segment];
-    }
-
-    // Add item to the category (not as a child)
-    current.items.push(itemId);
+    current = current.children[segment];
   }
 
-  const metadataJS = `// THIS FILE IS AUTO-GENERATED. PLEASE DON'T ALTER IT MANUALLY
-// Generated from sheet_definitions/*.json by scripts/generate_sources.js
+  // Add item to the category (not as a child)
+  current.items.push(itemId);
+} // for itemMetadata
+
+function sortCategoryTree(node) {
+  const sortedChildren = Object.entries(node.children || {}).sort(
+    ([keyA, valA], [keyB, valB]) => {
+      const a = valA.priority ?? Number.POSITIVE_INFINITY;
+      const b = valB.priority ?? Number.POSITIVE_INFINITY;
+      if (a !== b) return a - b;
+      const labelA = valA.label ?? keyA;
+      const labelB = valB.label ?? keyB;
+      return labelA.localeCompare(labelB);
+    }
+  );
+
+  const reordered = {};
+  for (const [key, child] of sortedChildren) {
+    sortCategoryTree(child);
+    reordered[key] = child;
+  }
+  node.children = reordered;
+
+  if (node.items) {
+    node.items.sort((idA, idB) => {
+      const metaA = itemMetadata[idA] || {};
+      const metaB = itemMetadata[idB] || {};
+      const a = metaA.priority ?? Number.POSITIVE_INFINITY;
+      const b = metaB.priority ?? Number.POSITIVE_INFINITY;
+      if (a !== b) return a - b;
+      const nameA = metaA.name ?? idA;
+      const nameB = metaB.name ?? idB;
+      return nameA.localeCompare(nameB);
+    });
+  }
+
+  return node;
+}
+
+sortCategoryTree(categoryTree);
+
+const metadataJS = `// THIS FILE IS AUTO-GENERATED. PLEASE DON'T ALTER IT MANUALLY
+// Generated from ${SHEETS_DIR}/*.json and ${PALETTES_DIR}/*.json by scripts/generate_sources.js
 // Contains metadata for all customization items to avoid DOM queries at runtime
 
 window.itemMetadata = ${JSON.stringify(itemMetadata, null, 2)};
@@ -436,13 +513,12 @@ window.categoryTree = ${JSON.stringify(categoryTree, null, 2)};
 window.paletteMetadata = ${JSON.stringify(paletteMetadata, null, 2)};
 `;
 
-  fs.writeFile("item-metadata.js", metadataJS, function(err) {
-    if (err) {
-      return console.error(err);
-    } else {
-      console.log("Item Metadata JS Updated!");
-    }
-  });
+fs.writeFile("item-metadata.js", metadataJS, function(err) {
+  if (err) {
+    return console.error(err);
+  } else {
+    console.log("Item Metadata JS Updated!");
+  }
 });
 
 function printArray(array, label) {
