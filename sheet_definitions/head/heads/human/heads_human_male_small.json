@@ -1,0 +1,74 @@
+{
+  "name": "Human Male Small",
+  "tags": [
+    "human",
+    "adult",
+    "small"
+  ],
+  "layer_1": {
+    "zPos": 100,
+    "male": "head/heads/human/male_small/",
+    "muscular": "head/heads/human/male_small/",
+    "female": "head/heads/human/male_small/",
+    "pregnant": "head/heads/human/male_small/",
+    "teen": "head/heads/human/male_small/"
+  },
+  "match_body_color": true,
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
+  ],
+  "credits": [
+    {
+      "file": "head/heads/human/male_small",
+      "notes": "original head by Redshrike, reduced size head by ElizaWy",
+      "authors": [
+        "ElizaWy",
+        "Stephen Challener (Redshrike)"
+      ],
+      "licenses": [
+        "OGA-BY 3.0",
+        "CC-BY"
+      ],
+      "urls": []
+    }
+  ],
+  "path": [
+    "head",
+    "heads",
+    "heads_human_male_small"
+  ],
+  "recolors": {
+    "color_1": {
+      "material": "body",
+      "palettes": [
+        "ulpc",
+        "lpcr",
+        "all.lpcr"
+      ]
+    },
+    "color_2": {
+      "material": "eye",
+      "palettes": [
+        "eye.ulpc",
+        "lpcr"
+      ]
+    }
+  },
+  "type_name": "head"
+}

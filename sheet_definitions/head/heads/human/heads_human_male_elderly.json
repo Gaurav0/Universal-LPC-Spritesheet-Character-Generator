@@ -1,0 +1,78 @@
+{
+  "name": "Human Male Elderly",
+  "tags": [
+    "human",
+    "elderly"
+  ],
+  "layer_1": {
+    "zPos": 100,
+    "male": "head/heads/human/male_elderly/",
+    "muscular": "head/heads/human/male_elderly/",
+    "female": "head/heads/human/male_elderly/",
+    "pregnant": "head/heads/human/male_elderly/",
+    "teen": "head/heads/human/male_elderly/"
+  },
+  "match_body_color": true,
+  "animations": [
+    "spellcast",
+    "thrust",
+    "walk",
+    "slash",
+    "shoot",
+    "hurt",
+    "watering",
+    "idle",
+    "jump",
+    "run",
+    "sit",
+    "emote",
+    "climb",
+    "combat",
+    "1h_slash",
+    "1h_backslash",
+    "1h_halfslash"
+  ],
+  "credits": [
+    {
+      "file": "head/heads/human/male_elderly",
+      "notes": "",
+      "authors": [
+        "Benjamin K. Smith (BenCreating)",
+        "Eliza Wyatt (ElizaWy)",
+        "Stephen Challener (Redshrike)"
+      ],
+      "licenses": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+        "https://opengameart.org/content/lpc-revised-elders",
+        "https://opengameart.org/content/lpc-character-bases"
+      ]
+    }
+  ],
+  "path": [
+    "head",
+    "heads",
+    "heads_human_male_elderly"
+  ],
+  "recolors": {
+    "color_1": {
+      "material": "body",
+      "palettes": [
+        "ulpc",
+        "lpcr",
+        "all.lpcr"
+      ]
+    },
+    "color_2": {
+      "material": "eye",
+      "palettes": [
+        "eye.ulpc",
+        "lpcr"
+      ]
+    }
+  },
+  "type_name": "head"
+}
