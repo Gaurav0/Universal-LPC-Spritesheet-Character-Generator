@@ -1,0 +1,6 @@
+{
+    "type": "material",
+    "label": "Eyes",
+    "desc": "Palettes designed for eye colors. These only use 3 palettes and are not interchangeable with other types.",
+    "base": "ulpc.blue"
+}

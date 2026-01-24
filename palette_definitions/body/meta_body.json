@@ -1,0 +1,6 @@
+{
+    "type": "material",
+    "label": "Skintone",
+    "desc": "Palettes designed for skin tones and flesh colors, but may include fantasy colors.",
+    "base": "ulpc.light"
+}

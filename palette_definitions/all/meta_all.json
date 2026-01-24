@@ -1,0 +1,6 @@
+{
+    "type": "material",
+    "label": "All",
+    "desc": "Choose from any palette from any material type (except eyes).",
+    "base": "lpcr.white"
+}
