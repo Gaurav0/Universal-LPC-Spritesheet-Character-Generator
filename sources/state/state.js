@@ -41,6 +41,9 @@ export const state = {
 	zipByAnimimationAndItem: {
 		isRunning: false,
 	},
+	zipIndividualFrames: {
+		isRunning: false,
+	}
 };
 
 // Helper function to get selection group from itemId
