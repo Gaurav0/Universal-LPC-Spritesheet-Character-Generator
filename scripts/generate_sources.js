@@ -1,24 +1,18 @@
 const fs = require("fs");
-const readline = require("readline");
 const path = require("path");
-
-const DEBUG = false; // change this to print debug log
-const onlyIfTemplate = false; // print debugging log only if there is a template
-// const onlyIfReplace = true; // print debugging log only if there is replace key
 
 const SHEETS_DIR = "sheet_definitions" + path.sep;
 const PALETTES_DIR = "palette_definitions" + path.sep;
 
-require("child_process").fork("scripts/zPositioning/parse_zpos.js");
+const DEBUG = false; // change this to print debug log
+const onlyIfTemplate = false; // print debugging log only if there is a template
 
-// copied from https://github.com/mikemaccana/dynamic-template/blob/046fee36aecc1f48cf3dc454d9d36bb0e96e0784/index.js
-const es6DynamicTemplate = (templateString, templateVariables) =>
-  templateString.replace(/\${(.*?)}/g, (_, g) => templateVariables[g]);
+require("child_process").fork("scripts/zPositioning/parse_zpos.js");
 
 // Collect metadata for runtime use
 const licensesFound = [];
-const paletteMetadata = { versions: {}, materials: {} };
 const itemMetadata = {};
+const paletteMetadata = { versions: {}, materials: {} };
 const categoryTree = { items: [], children: {} };
 
 function searchCredit(fileName, credits, origFileName) {
@@ -71,10 +65,10 @@ function parseTree(filePath, fileName) {
     throw e;
   }
 
-  const { label, priority, required, animations, path: itemPath } = meta;
+  const { label, priority, required, animations } = meta;
 
   let current = categoryTree;
-  const categoryPath = filePath.replace(SHEETS_DIR, "").split(path.sep);
+  const categoryPath = filePath.replace("sheet_definitions" + path.sep, "").split(path.sep);
   const treeId = filePath.split(path.sep).pop();
 
   for (let segment of categoryPath) {
@@ -98,26 +92,9 @@ function parseTree(filePath, fileName) {
 
 // Parse Asset JSON File
 function parseJson(filePath, fileName) {
-  let queryObj = null;
-  let treePath = null;
-  /*const templateIndex = fileName.lastIndexOf("%");
-  let searchFileName = fileName;
-  let queryObj = null;
-  if (templateIndex > -1) {
-    searchFileName = searchFileName.substring(0, templateIndex);
-    const query = fileName.substring(templateIndex + 1);
-    queryObj = Object.fromEntries(new URLSearchParams(query));
-    const replObj = Object.fromEntries(
-      Object.keys(queryObj).map(key => [key, ""])
-    );
-    searchFileName = es6DynamicTemplate(searchFileName, replObj).replace(
-      /_+/,
-      "_"
-    );
-  }*/
   const fullPath = path.join(filePath, fileName);
   const searchFileName = fileName.replace(".json", "");
-  if (DEBUG && (!onlyIfTemplate || queryObj))
+  if (DEBUG && !onlyIfTemplate)
     console.log(`Parsing ${fullPath}`);
 
   // Read JSON Definition
@@ -134,9 +111,9 @@ function parseJson(filePath, fileName) {
     name,
     credits,
     replace_in_path,
-    //path: itemPath,
     priority,
-    ignore
+    ignore,
+    //path: itemPath
   } = definition;
 
   // Skip Ignored Items
@@ -175,15 +152,8 @@ function parseJson(filePath, fileName) {
   // Build unique itemId from filename (not from path or type_name)
   // This ensures each item has a unique ID even if they share the same type_name
   let itemId = searchFileName;
-  // Append query parameters if present
-  /*if (queryObj) {
-    const vals = Object.values(queryObj)
-      .map(val => val.replaceAll(" ", "_"))
-      .join("_");
-    itemId = `${itemId}_${vals}`;
-  }*/
-  const itemPath = filePath.replace("sheet_definitions" + path.sep, "").split(path.sep);
-  itemPath.push(itemId);
+  const treePath = filePath.replace("sheet_definitions" + path.sep, "").split(path.sep);
+  treePath.push(itemId);
 
   // Collect layer information (file paths and zPos)
   const layers = {};
@@ -247,7 +217,8 @@ function parseJson(filePath, fileName) {
     tags: tags,
     required_tags: required_tags,
     excluded_tags: excluded_tags,
-    path: itemPath || treePath || ["other"],
+    //path: itemPath || treePath || ["other"], TO DO: clean up item paths in json files and allow itemPath to be an override of the treePath
+    path: treePath || ["other"],
     replace_in_path: replace_in_path || {},
     variants: variants || [],
     layers: layers,
@@ -261,7 +232,7 @@ function parseJson(filePath, fileName) {
   };
 
   let listCreditToUse = null;
-  let listItemsCSV = "";
+  let listItemsCSV = [];
 
   // Use type_name for radio button grouping (ensures only one item per type can be selected)
   const addedCreditsFor = [];
@@ -278,14 +249,7 @@ function parseJson(filePath, fileName) {
         if (file !== null && file !== "") {
           let imageFileName = '"' + file + snakeItemName + '.png" ';
           let fileNameForCreditSearch = file + snakeItemName;
-          /*if (queryObj) {
-            fileNameForCreditSearch = es6DynamicTemplate(
-              fileNameForCreditSearch,
-              queryObj
-            );
-            imageFileName = es6DynamicTemplate(imageFileName, queryObj);
-          }*/
-          if (DEBUG && (!onlyIfTemplate || queryObj))
+          if (DEBUG && !onlyIfTemplate)
             console.log(
               `Searching for credits to use for ${imageFileName} in ${fileNameForCreditSearch} for layer ${jdx}`
             );
@@ -294,7 +258,7 @@ function parseJson(filePath, fileName) {
             credits,
             fileNameForCreditSearch
           );
-          if (DEBUG && (!onlyIfTemplate || queryObj))
+          if (DEBUG && !onlyIfTemplate)
             console.log(
               `file name set for ${sex} is ${imageFileName} for layer ${jdx}`
             );
@@ -319,7 +283,10 @@ function parseJson(filePath, fileName) {
             const notes = '"' + creditToUse.notes.replaceAll('"', "**") + '" ';
             if (!addedCreditsFor.includes(imageFileName)) {
               const quotedShortName = '"' + file + variant + '.png"';
-              listItemsCSV += `${quotedShortName},${notes},${authors},${licenses},${urls}\n`;
+              listItemsCSV.push({
+                priority,
+                lineText: `${quotedShortName},${notes},${authors},${licenses},${urls}\n`
+              });
               addedCreditsFor.push(imageFileName);
             }
           } else {
@@ -415,7 +382,8 @@ const files = fs.readdirSync(SHEETS_DIR, {
   return pa.localeCompare(pb);
 });
 
-let csvGenerated = "filename,notes,authors,licenses,urls\n";
+// Initialize CSV
+const csvList = [];
 files.forEach(file => {
   if (file.isDirectory()) {
     return;
@@ -432,16 +400,7 @@ files.forEach(file => {
         console.log(e);
       return;
     }
-    csvGenerated += parsedResult.csv;
-  }
-});
-
-fs.writeFile("CREDITS.csv", csvGenerated, function(err) {
-  if (err) {
-    return console.error(err);
-  } else {
-    console.log("CSV Updated!");
-    printArray(licensesFound, "Found licenses");
+    csvList.push({path: file.path.replace(SHEETS_DIR, ''), csv: parsedResult.csv});
   }
 });
 
@@ -465,6 +424,7 @@ for (const [itemId, meta] of Object.entries(itemMetadata)) {
   current.items.push(itemId);
 } // for itemMetadata
 
+// Sort Category Tree and Subitems
 function sortCategoryTree(node) {
   const sortedChildren = Object.entries(node.children || {}).sort(
     ([keyA, valA], [keyB, valB]) => {
@@ -502,8 +462,62 @@ function sortCategoryTree(node) {
 
 sortCategoryTree(categoryTree);
 
+// Sort csvList by category tree priorities
+csvList.sort((a, b) => {
+  const pathA = a.path.split(path.sep).filter(Boolean);
+  const pathB = b.path.split(path.sep).filter(Boolean);
+
+  // Compare each path segment
+  const maxLen = Math.max(pathA.length, pathB.length);
+  for (let i = 0; i < maxLen; i++) {
+    if (i >= pathA.length) return -1; // a is shorter, comes first
+    if (i >= pathB.length) return 1;  // b is shorter, comes first
+
+    const segA = pathA[i];
+    const segB = pathB[i];
+
+    if (segA === segB) continue;
+
+    // Navigate to parent node to get priorities
+    let nodeA = categoryTree;
+    let nodeB = categoryTree;
+    for (let j = 0; j <= i; j++) {
+      nodeA = nodeA.children?.[pathA[j]];
+      nodeB = nodeB.children?.[pathB[j]];
+      if (!nodeA || !nodeB) break;
+    }
+
+    const prioA = nodeA?.priority ?? Number.POSITIVE_INFINITY;
+    const prioB = nodeB?.priority ?? Number.POSITIVE_INFINITY;
+
+    if (prioA !== prioB) return prioA - prioB;
+
+    const labelA = nodeA?.label ?? segA;
+    const labelB = nodeB?.label ?? segB;
+    return labelA.localeCompare(labelB);
+  }
+
+  return 0;
+});
+
+// Generate CREDITS.csv After Sorting Everything
+let csvGenerated = "filename,notes,authors,licenses,urls\n";
+for (const result of csvList) {
+  for (const item of result.csv) {
+    csvGenerated += item.lineText;
+  }
+}
+fs.writeFile("CREDITS.csv", csvGenerated, function(err) {
+  if (err) {
+    return console.error(err);
+  } else {
+    console.log("CSV Updated!");
+    printArray(licensesFound, "Found licenses");
+  }
+});
+
 const metadataJS = `// THIS FILE IS AUTO-GENERATED. PLEASE DON'T ALTER IT MANUALLY
-// Generated from ${SHEETS_DIR}/*.json and ${PALETTES_DIR}/*.json by scripts/generate_sources.js
+// Generated from sheet_definitions/*.json by scripts/generate_sources.js
 // Contains metadata for all customization items to avoid DOM queries at runtime
 
 window.itemMetadata = ${JSON.stringify(itemMetadata, null, 2)};
