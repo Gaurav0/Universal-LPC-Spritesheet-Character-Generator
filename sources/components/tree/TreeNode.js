@@ -19,9 +19,6 @@ export const TreeNode = {
 		// Filter: Only show items compatible with current body type
 		if (node.required && node.required.length > 0 && !node.required.includes(state.bodyType)) return false;
 
-		// Filter: Only show items compatible with current body type
-		if (node.required && node.required.length > 0 && !node.required.includes(state.bodyType)) return false;
-
 		// Hide this node if search is active and there are no matches
 		if (searchQuery && searchQuery.length >= 2 && !hasSearchMatches) {
 			return null;
