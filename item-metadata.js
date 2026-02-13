@@ -470,6 +470,864 @@ window.itemMetadata = {
       ]
     }
   },
+  "body_color": {
+    "name": "Body Color",
+    "priority": 10,
+    "type_name": "body",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "child",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "body",
+      "body_color"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 20,
+        "male": "body/bodies/male/",
+        "muscular": "body/bodies/muscular/",
+        "female": "body/bodies/female/",
+        "pregnant": "body/bodies/pregnant/",
+        "teen": "body/bodies/teen/",
+        "child": "body/bodies/child/"
+      }
+    },
+    "credits": [
+      {
+        "file": "body/bodies/male",
+        "notes": "see details at https://opengameart.org/content/lpc-character-bases; 'Thick' Male Revised Run/Climb by JaidynReiman (based on ElizaWy's LPC Revised)",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman",
+          "Benjamin K. Smith (BenCreating)",
+          "Evert",
+          "Eliza Wyatt (ElizaWy)",
+          "TheraHedwig",
+          "MuffinElZangano",
+          "Durrani",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-male-jumping-animation-by-durrani",
+          "https://opengameart.org/content/lpc-runcycle-and-diagonal-walkcycle",
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://opengameart.org/content/lpc-be-seated",
+          "https://opengameart.org/content/lpc-runcycle-for-male-muscular-and-pregnant-character-bases-with-modular-heads",
+          "https://opengameart.org/content/lpc-jump-expanded",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      },
+      {
+        "file": "body/bodies/female",
+        "notes": "see details at https://opengameart.org/content/lpc-character-bases",
+        "authors": [
+          "Benjamin K. Smith (BenCreating)",
+          "bluecarrot16",
+          "TheraHedwig",
+          "Evert",
+          "MuffinElZangano",
+          "Durrani",
+          "Pierre Vigier (pvigier)",
+          "ElizaWy",
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-ladies",
+          "https://opengameart.org/content/lpc-7-womens-shirts",
+          "https://opengameart.org/content/lpc-jump-expanded",
+          "https://opengameart.org/content/lpc-be-seated",
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://gitlab.com/vagabondgame/lpc-characters",
+          "https://opengameart.org/content/lpc-male-jumping-animation-by-durrani",
+          "https://opengameart.org/content/lpc-runcycle-and-diagonal-walkcycle"
+        ]
+      },
+      {
+        "file": "body/bodies/muscular",
+        "notes": "see details at https://opengameart.org/content/lpc-character-bases",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman",
+          "Evert",
+          "TheraHedwig",
+          "MuffinElZangano",
+          "Durrani",
+          "Sander Frenken (castelonia)",
+          "Benjamin K. Smith (BenCreating)",
+          "Eliza Wyatt (ElizaWy)",
+          "dalonedrau",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-barbarian-sprite-base",
+          "https://opengameart.org/content/lpc-muscular-swing-animation",
+          "https://opengameart.org/content/lpc-muscular-hurt-animation",
+          "https://opengameart.org/content/lpc-jump-expanded",
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://opengameart.org/content/lpc-be-seated",
+          "https://opengameart.org/content/lpc-jump-expanded",
+          "https://opengameart.org/content/lpc-character-bases",
+          "https://opengameart.org/content/lpc-male-jumping-animation-by-durrani"
+        ]
+      },
+      {
+        "file": "body/bodies/teen",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Evert",
+          "TheraHedwig",
+          "Benjamin K. Smith (BenCreating)",
+          "MuffinElZangano",
+          "Durrani",
+          "Pierre Vigier (pvigier)",
+          "Eliza Wyatt (ElizaWy)",
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-ladies",
+          "https://opengameart.org/content/lpc-teen-unisex-base-clothes",
+          "https://opengameart.org/content/lpc-jump-expanded",
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://opengameart.org/content/lpc-be-seated",
+          "https://gitlab.com/vagabondgame/lpc-characters",
+          "https://opengameart.org/content/lpc-male-jumping-animation-by-durrani",
+          "https://opengameart.org/content/lpc-jump-expanded"
+        ]
+      },
+      {
+        "file": "body/bodies/pregnant",
+        "notes": "see details at https://opengameart.org/content/lpc-character-bases; Pregnant Revised Run/Combat Idle/Emotes by JaidynReiman (based on ElizaWy's LPC Revised)",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman",
+          "Evert",
+          "TheraHedwig",
+          "MuffinElZangano",
+          "Durrani",
+          "Benjamin K. Smith (BenCreating)",
+          "Pierre Vigier (pvigier)",
+          "Eliza Wyatt (ElizaWy)",
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-ladies",
+          "https://opengameart.org/content/lpc-pregnancy-bases-maternity-wear",
+          "https://opengameart.org/content/lpc-7-womens-shirts",
+          "https://opengameart.org/content/lpc-jump-expanded",
+          "https://gitlab.com/vagabondgame/lpc-characters",
+          "https://opengameart.org/content/lpc-jump-expanded",
+          "https://opengameart.org/content/lpc-male-jumping-animation-by-durrani",
+          "https://opengameart.org/content/lpc-runcycle-and-diagonal-walkcycle"
+        ]
+      },
+      {
+        "file": "body/bodies/child",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Benjamin K. Smith (BenCreating)",
+          "ElizaWy",
+          "MuffinElZangano",
+          "Durrani",
+          "Nila122",
+          "kheftel",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-child-standing-template",
+          "https://opengameart.org/content/lpc-children-walk-animation",
+          "https://opengameart.org/content/lpc-male-jumping-animation-by-durrani",
+          "https://opengameart.org/content/lpc-male-jumping-animation-by-durrani",
+          "https://opengameart.org/content/lpc-jump-expanded",
+          "https://opengameart.org/content/lpc-jump-expanded"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "child": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
+  },
+  "body": {
+    "name": "Body Color",
+    "priority": 10,
+    "type_name": "body",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "child",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "body",
+      "body"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 10,
+        "male": "body/bodies/male/",
+        "muscular": "body/bodies/muscular/",
+        "female": "body/bodies/female/",
+        "pregnant": "body/bodies/pregnant/",
+        "teen": "body/bodies/teen/",
+        "child": "body/bodies/child/"
+      }
+    },
+    "credits": [
+      {
+        "file": "body/bodies/male",
+        "notes": "see details at https://opengameart.org/content/lpc-character-bases; 'Thick' Male Revised Run/Climb by JaidynReiman (based on ElizaWy's LPC Revised)",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman",
+          "Benjamin K. Smith (BenCreating)",
+          "Evert",
+          "Eliza Wyatt (ElizaWy)",
+          "TheraHedwig",
+          "MuffinElZangano",
+          "Durrani",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-male-jumping-animation-by-durrani",
+          "https://opengameart.org/content/lpc-runcycle-and-diagonal-walkcycle",
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://opengameart.org/content/lpc-be-seated",
+          "https://opengameart.org/content/lpc-runcycle-for-male-muscular-and-pregnant-character-bases-with-modular-heads",
+          "https://opengameart.org/content/lpc-jump-expanded",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      },
+      {
+        "file": "body/bodies/female",
+        "notes": "see details at https://opengameart.org/content/lpc-character-bases",
+        "authors": [
+          "Benjamin K. Smith (BenCreating)",
+          "bluecarrot16",
+          "TheraHedwig",
+          "Evert",
+          "MuffinElZangano",
+          "Durrani",
+          "Pierre Vigier (pvigier)",
+          "ElizaWy",
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-ladies",
+          "https://opengameart.org/content/lpc-7-womens-shirts",
+          "https://opengameart.org/content/lpc-jump-expanded",
+          "https://opengameart.org/content/lpc-be-seated",
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://gitlab.com/vagabondgame/lpc-characters",
+          "https://opengameart.org/content/lpc-male-jumping-animation-by-durrani",
+          "https://opengameart.org/content/lpc-runcycle-and-diagonal-walkcycle"
+        ]
+      },
+      {
+        "file": "body/bodies/muscular",
+        "notes": "see details at https://opengameart.org/content/lpc-character-bases",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman",
+          "Evert",
+          "TheraHedwig",
+          "MuffinElZangano",
+          "Durrani",
+          "Sander Frenken (castelonia)",
+          "Benjamin K. Smith (BenCreating)",
+          "Eliza Wyatt (ElizaWy)",
+          "dalonedrau",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-barbarian-sprite-base",
+          "https://opengameart.org/content/lpc-muscular-swing-animation",
+          "https://opengameart.org/content/lpc-muscular-hurt-animation",
+          "https://opengameart.org/content/lpc-jump-expanded",
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://opengameart.org/content/lpc-be-seated",
+          "https://opengameart.org/content/lpc-jump-expanded",
+          "https://opengameart.org/content/lpc-character-bases",
+          "https://opengameart.org/content/lpc-male-jumping-animation-by-durrani"
+        ]
+      },
+      {
+        "file": "body/bodies/teen",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Evert",
+          "TheraHedwig",
+          "Benjamin K. Smith (BenCreating)",
+          "MuffinElZangano",
+          "Durrani",
+          "Pierre Vigier (pvigier)",
+          "Eliza Wyatt (ElizaWy)",
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-ladies",
+          "https://opengameart.org/content/lpc-teen-unisex-base-clothes",
+          "https://opengameart.org/content/lpc-jump-expanded",
+          "https://opengameart.org/content/lpc-revised-character-basics",
+          "https://opengameart.org/content/lpc-be-seated",
+          "https://gitlab.com/vagabondgame/lpc-characters",
+          "https://opengameart.org/content/lpc-male-jumping-animation-by-durrani",
+          "https://opengameart.org/content/lpc-jump-expanded"
+        ]
+      },
+      {
+        "file": "body/bodies/pregnant",
+        "notes": "see details at https://opengameart.org/content/lpc-character-bases; Pregnant Revised Run/Combat Idle/Emotes by JaidynReiman (based on ElizaWy's LPC Revised)",
+        "authors": [
+          "bluecarrot16",
+          "JaidynReiman",
+          "Evert",
+          "TheraHedwig",
+          "MuffinElZangano",
+          "Durrani",
+          "Benjamin K. Smith (BenCreating)",
+          "Pierre Vigier (pvigier)",
+          "Eliza Wyatt (ElizaWy)",
+          "Matthew Krohn (makrohn)",
+          "Johannes Sjölund (wulax)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-ladies",
+          "https://opengameart.org/content/lpc-pregnancy-bases-maternity-wear",
+          "https://opengameart.org/content/lpc-7-womens-shirts",
+          "https://opengameart.org/content/lpc-jump-expanded",
+          "https://gitlab.com/vagabondgame/lpc-characters",
+          "https://opengameart.org/content/lpc-jump-expanded",
+          "https://opengameart.org/content/lpc-male-jumping-animation-by-durrani",
+          "https://opengameart.org/content/lpc-runcycle-and-diagonal-walkcycle"
+        ]
+      },
+      {
+        "file": "body/bodies/child",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Benjamin K. Smith (BenCreating)",
+          "ElizaWy",
+          "MuffinElZangano",
+          "Durrani",
+          "Nila122",
+          "kheftel",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-child-standing-template",
+          "https://opengameart.org/content/lpc-children-walk-animation",
+          "https://opengameart.org/content/lpc-male-jumping-animation-by-durrani",
+          "https://opengameart.org/content/lpc-male-jumping-animation-by-durrani",
+          "https://opengameart.org/content/lpc-jump-expanded",
+          "https://opengameart.org/content/lpc-jump-expanded"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "child": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
+  },
   "shadow": {
     "name": "Shadow",
     "priority": 20,
@@ -1152,6 +2010,235 @@ window.itemMetadata = {
       "pregnant": [
         "CC-BY-SA 3.0",
         "GPL 3.0"
+      ]
+    }
+  },
+  "head_wrinkles": {
+    "name": "Wrinkles",
+    "priority": 80,
+    "type_name": "wrinkes",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "head_wrinkles"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 102,
+        "male": "head/wrinkles/",
+        "muscular": "head/wrinkles/",
+        "female": "head/wrinkles/",
+        "teen": "head/wrinkles/",
+        "pregnant": "head/wrinkles/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/wrinkles",
+        "notes": "",
+        "authors": [
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC0"
+        ],
+        "urls": []
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "CC0"
+      ],
+      "female": [
+        "CC0"
+      ],
+      "teen": [
+        "CC0"
+      ],
+      "muscular": [
+        "CC0"
+      ],
+      "pregnant": [
+        "CC0"
       ]
     }
   },
@@ -2491,6 +3578,765 @@ window.itemMetadata = {
     "licenses": {
       "male": [
         "OGA-BY 3.0"
+      ]
+    }
+  },
+  "tail_lizard": {
+    "name": "Lizard tail",
+    "priority": null,
+    "type_name": "tail",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "child",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "body",
+      "lizard",
+      "tail_lizard"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 85,
+        "male": "body/tail/lizard/adult/fg/",
+        "muscular": "body/tail/lizard/adult/fg/",
+        "female": "body/tail/lizard/adult/fg/",
+        "pregnant": "body/tail/lizard/adult/fg/",
+        "teen": "body/tail/lizard/adult/fg/",
+        "child": "body/tail/lizard/child/fg/"
+      },
+      "layer_2": {
+        "zPos": 5,
+        "male": "body/tail/lizard/adult/bg/",
+        "muscular": "body/tail/lizard/adult/bg/",
+        "female": "body/tail/lizard/adult/bg/",
+        "pregnant": "body/tail/lizard/adult/bg/",
+        "teen": "body/tail/lizard/adult/bg/",
+        "child": "body/tail/lizard/child/bg/"
+      }
+    },
+    "credits": [
+      {
+        "file": "body/tail/lizard",
+        "notes": "edited for v3 bases and recolored by bluecarrot16, additional animations added by JaidynReiman",
+        "authors": [
+          "Nila122",
+          "bluecarrot16",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/drakes-and-lizardfolk"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "child": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
+  },
+  "wings_lizard_bat": {
+    "name": "Batlike Lizard Wings",
+    "priority": null,
+    "type_name": "wings",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "wings"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "body",
+      "lizard",
+      "wings_lizard_bat"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 105,
+        "male": "body/wings/bat/lizard/adult/fg/",
+        "muscular": "body/wings/bat/lizard/adult/fg/",
+        "female": "body/wings/bat/lizard/adult/fg/",
+        "pregnant": "body/wings/bat/lizard/adult/fg/",
+        "teen": "body/wings/bat/lizard/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 5,
+        "male": "body/wings/bat/lizard/adult/bg/",
+        "muscular": "body/wings/bat/lizard/adult/bg/",
+        "female": "body/wings/bat/lizard/adult/bg/",
+        "pregnant": "body/wings/bat/lizard/adult/bg/",
+        "teen": "body/wings/bat/lizard/adult/bg/"
+      }
+    },
+    "credits": [
+      {
+        "file": "body/wings/bat",
+        "notes": "Original by ElizaWy, added to most remaining frames by JaidynReiman",
+        "authors": [
+          "ElizaWy",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-wings-new-animations"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0"
+      ]
+    }
+  },
+  "wings_lizard": {
+    "name": "Lizard Wings",
+    "priority": null,
+    "type_name": "wings",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "wings"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "body",
+      "lizard",
+      "wings_lizard"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 105,
+        "male": "body/wings/lizard/adult/fg/",
+        "muscular": "body/wings/lizard/adult/fg/",
+        "female": "body/wings/lizard/adult/fg/",
+        "pregnant": "body/wings/lizard/adult/fg/",
+        "teen": "body/wings/lizard/adult/fg/"
+      },
+      "layer_2": {
+        "zPos": 5,
+        "male": "body/wings/lizard/adult/bg/",
+        "muscular": "body/wings/lizard/adult/bg/",
+        "female": "body/wings/lizard/adult/bg/",
+        "pregnant": "body/wings/lizard/adult/bg/",
+        "teen": "body/wings/lizard/adult/bg/"
+      }
+    },
+    "credits": [
+      {
+        "file": "body/wings/lizard",
+        "notes": "edited for v3 bases and recolored by bluecarrot16, sit/jump/run/emote/revised combat by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "Nila122",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/drakes-and-lizardfolk",
+          "https://opengameart.org/content/lpc-wings-new-animations"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
       ]
     }
   },
@@ -19526,6 +21372,510 @@ window.itemMetadata = {
       ]
     }
   },
+  "head_fins_fin_short": {
+    "name": "Short fin",
+    "priority": null,
+    "type_name": "fins",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "child",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "appendages",
+      "head_fins_fin_short"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 125,
+        "male": "head/fins/fin_short/adult/",
+        "muscular": "head/fins/fin_short/adult/",
+        "female": "head/fins/fin_short/adult/",
+        "pregnant": "head/fins/fin_short/adult/",
+        "teen": "head/fins/fin_short/adult/",
+        "child": "head/fins/fin_short/child/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/fins",
+        "notes": "adapted to v3 base by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-lizard-headgear",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": false,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "child": [
+        "OGA-BY 3.0",
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0",
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0",
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ]
+    }
+  },
+  "head_fins_fin": {
+    "name": "Fin",
+    "priority": null,
+    "type_name": "fins",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "child",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "appendages",
+      "head_fins_fin"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 125,
+        "male": "head/fins/fin/adult/",
+        "muscular": "head/fins/fin/adult/",
+        "female": "head/fins/fin/adult/",
+        "pregnant": "head/fins/fin/adult/",
+        "teen": "head/fins/fin/adult/",
+        "child": "head/fins/fin/child/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/fins",
+        "notes": "adapted to v3 base by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-lizard-headgear",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": false,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "child": [
+        "OGA-BY 3.0",
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0",
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0",
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ]
+    }
+  },
   "head_horns_backwards": {
     "name": "Backwards Horns",
     "priority": null,
@@ -19864,6 +22214,1763 @@ window.itemMetadata = {
         "OGA-BY 3.0",
         "GPL 3.0",
         "CC-BY-SA 3.0"
+      ]
+    }
+  },
+  "head_ears_big": {
+    "name": "Big ears",
+    "priority": null,
+    "type_name": "ears",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "child",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "ears",
+      "head_ears_big"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 105,
+        "male": "head/ears/big/adult/",
+        "muscular": "head/ears/big/adult/",
+        "female": "head/ears/big/adult/",
+        "teen": "head/ears/big/adult/",
+        "pregnant": "head/ears/big/adult/",
+        "child": "head/ears/big/child/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/ears/big",
+        "notes": "adapted to v3 base by bluecarrot16; expanded to other animations and child by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "bluecarrot16",
+          "Thane Brimhall (pennomi)",
+          "laetissima",
+          "Matthew Krohn (makrohn)"
+        ],
+        "licenses": [
+          "GPL 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-base-character-expressions",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "female": [
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "teen": [
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "child": [
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "muscular": [
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "pregnant": [
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ]
+    }
+  },
+  "head_ears_down": {
+    "name": "Downward Elven Ears",
+    "priority": null,
+    "type_name": "ears",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "child",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "ears",
+      "head_ears_down"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 126,
+        "male": "head/ears/down/adult/",
+        "muscular": "head/ears/down/adult/",
+        "female": "head/ears/down/adult/",
+        "teen": "head/ears/down/adult/",
+        "pregnant": "head/ears/down/adult/",
+        "child": "head/ears/down/child/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/ears/down",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-new-elven-ear-variants"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "child": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ]
+    }
+  },
+  "head_ears_dragon": {
+    "name": "Dragon Ears",
+    "priority": null,
+    "type_name": "ears",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "child",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "ears",
+      "head_ears_dragon"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 126,
+        "male": "head/ears/dragon/adult/",
+        "muscular": "head/ears/dragon/adult/",
+        "female": "head/ears/dragon/adult/",
+        "teen": "head/ears/dragon/adult/",
+        "pregnant": "head/ears/dragon/adult/",
+        "child": "head/ears/dragon/child/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/ears/dragon",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-new-elven-ear-variants"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "child": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ]
+    }
+  },
+  "head_ears_elven": {
+    "name": "Elven ears",
+    "priority": null,
+    "type_name": "ears",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "child",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "ears",
+      "head_ears_elven"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 126,
+        "male": "head/ears/elven/adult/",
+        "muscular": "head/ears/elven/adult/",
+        "female": "head/ears/elven/adult/",
+        "teen": "head/ears/elven/adult/",
+        "pregnant": "head/ears/elven/adult/",
+        "child": "head/ears/elven/child/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/ears/elven",
+        "notes": "adapted to v3 base by bluecarrot16; expanded to other animations and child by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "bluecarrot16",
+          "Thane Brimhall (pennomi)",
+          "laetissima",
+          "Matthew Krohn (makrohn)",
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "GPL 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-base-character-expressions",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "female": [
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "teen": [
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "child": [
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "muscular": [
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "pregnant": [
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ]
+    }
+  },
+  "head_ears_hang": {
+    "name": "Hanging Elven Ears",
+    "priority": null,
+    "type_name": "ears",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "child",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "ears",
+      "head_ears_hang"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 126,
+        "male": "head/ears/hang/adult/",
+        "muscular": "head/ears/hang/adult/",
+        "female": "head/ears/hang/adult/",
+        "teen": "head/ears/hang/adult/",
+        "pregnant": "head/ears/hang/adult/",
+        "child": "head/ears/hang/child/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/ears/hang",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-new-elven-ear-variants"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "child": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ]
+    }
+  },
+  "head_ears_long": {
+    "name": "Long ears",
+    "priority": null,
+    "type_name": "ears",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "child",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "ears",
+      "head_ears_long"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 126,
+        "male": "head/ears/long/adult/",
+        "muscular": "head/ears/long/adult/",
+        "female": "head/ears/long/adult/",
+        "teen": "head/ears/long/adult/",
+        "pregnant": "head/ears/long/adult/",
+        "child": "head/ears/long/child/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/ears/long",
+        "notes": "adapted to v3 base by bluecarrot16; expanded to other animations and child by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "bluecarrot16",
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "GPL 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-long-ears",
+          "http://opengameart.org/content/lpc-clothing-updates"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "child": [
+        "OGA-BY 3.0",
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0",
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0",
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ]
+    }
+  },
+  "head_ears_medium": {
+    "name": "Medium Elven Ears",
+    "priority": null,
+    "type_name": "ears",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "child",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "ears",
+      "head_ears_medium"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 126,
+        "male": "head/ears/medium/adult/",
+        "muscular": "head/ears/medium/adult/",
+        "female": "head/ears/medium/adult/",
+        "teen": "head/ears/medium/adult/",
+        "pregnant": "head/ears/medium/adult/",
+        "child": "head/ears/medium/child/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/ears/medium",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-new-elven-ear-variants"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "child": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
       ]
     }
   },
@@ -20415,6 +24522,4658 @@ window.itemMetadata = {
       ],
       "pregnant": [
         "CC0"
+      ]
+    }
+  },
+  "face_angry": {
+    "name": "Angry",
+    "priority": null,
+    "type_name": "expression",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "expression"
+    ],
+    "required_tags": [
+      "human"
+    ],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "faces",
+      "face_angry"
+    ],
+    "replace_in_path": {
+      "head": {
+        "Human_Male": "male",
+        "Human_Male_Small": "male",
+        "Human_Male_Plump": "male",
+        "Human_Male_Gaunt": "male",
+        "Human_Female": "female",
+        "Human_Female_Small": "female",
+        "Human_Male_Elderly": "elderly",
+        "Human_Female_Elderly": "elderly",
+        "Human_Elderly_Small": "elderly"
+      }
+    },
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 101,
+        "male": "head/faces/${head}/anger/",
+        "muscular": "head/faces/${head}/anger/",
+        "female": "head/faces/${head}/anger/",
+        "teen": "head/faces/${head}/anger/",
+        "pregnant": "head/faces/${head}/anger/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/faces",
+        "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/elderly/anger",
+        "notes": "Original by Redshrike, Anger Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/female/anger",
+        "notes": "Original by Redshrike, Anger Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/male/anger",
+        "notes": "Original by Redshrike, Anger Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      },
+      {
+        "material": "eye",
+        "base": "undefined.undefined",
+        "variants": {
+          "eye.ulpc": [
+            "blue",
+            "green",
+            "purple",
+            "red",
+            "orange",
+            "yellow",
+            "brown",
+            "gray"
+          ],
+          "eye.lpcr": [
+            "black",
+            "blue",
+            "brown",
+            "gray",
+            "green",
+            "hazel",
+            "purple"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0"
+      ]
+    }
+  },
+  "face_angry2": {
+    "name": "Angry Alt",
+    "priority": null,
+    "type_name": "expression",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "expression"
+    ],
+    "required_tags": [
+      "human"
+    ],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "faces",
+      "face_angry2"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 106,
+        "male": "head/faces/global/angry2/",
+        "muscular": "head/faces/global/angry2/",
+        "female": "head/faces/global/angry2/",
+        "teen": "head/faces/global/angry2/",
+        "pregnant": "head/faces/global/angry2/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/faces/global/angry2",
+        "notes": "Original Bases by Redshrike, Alt Angry Expression by Laetissima and Pennomi, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "Thane Brimhall (pennomi)",
+          "laetissima",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-base-character-expressions",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      },
+      {
+        "material": "eye",
+        "base": "undefined.undefined",
+        "variants": {
+          "eye.ulpc": [
+            "blue",
+            "green",
+            "purple",
+            "red",
+            "orange",
+            "yellow",
+            "brown",
+            "gray"
+          ],
+          "eye.lpcr": [
+            "black",
+            "blue",
+            "brown",
+            "gray",
+            "green",
+            "hazel",
+            "purple"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
+  },
+  "face_blush": {
+    "name": "Blush",
+    "priority": null,
+    "type_name": "expression",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "expression"
+    ],
+    "required_tags": [
+      "human"
+    ],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "faces",
+      "face_blush"
+    ],
+    "replace_in_path": {
+      "head": {
+        "Human_Male": "male",
+        "Human_Male_Small": "male",
+        "Human_Male_Plump": "male",
+        "Human_Male_Gaunt": "male",
+        "Human_Female": "female",
+        "Human_Female_Small": "female",
+        "Human_Male_Elderly": "elderly",
+        "Human_Female_Elderly": "elderly",
+        "Human_Elderly_Small": "elderly"
+      }
+    },
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 101,
+        "male": "head/faces/${head}/blush/",
+        "muscular": "head/faces/${head}/blush/",
+        "female": "head/faces/${head}/blush/",
+        "teen": "head/faces/${head}/blush/",
+        "pregnant": "head/faces/${head}/blush/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/faces",
+        "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/elderly/blush",
+        "notes": "Original by Redshrike, Blush Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/female/blush",
+        "notes": "Original by Redshrike, Blush Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/male/blush",
+        "notes": "Original by Redshrike, Blush Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      },
+      {
+        "material": "eye",
+        "base": "undefined.undefined",
+        "variants": {
+          "eye.ulpc": [
+            "blue",
+            "green",
+            "purple",
+            "red",
+            "orange",
+            "yellow",
+            "brown",
+            "gray"
+          ],
+          "eye.lpcr": [
+            "black",
+            "blue",
+            "brown",
+            "gray",
+            "green",
+            "hazel",
+            "purple"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0"
+      ]
+    }
+  },
+  "face_closed": {
+    "name": "Closed Eyes",
+    "priority": null,
+    "type_name": "expression",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "expression"
+    ],
+    "required_tags": [
+      "human"
+    ],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "faces",
+      "face_closed"
+    ],
+    "replace_in_path": {
+      "head": {
+        "Human_Male": "male",
+        "Human_Male_Small": "male",
+        "Human_Male_Plump": "male",
+        "Human_Male_Gaunt": "male",
+        "Human_Female": "female",
+        "Human_Female_Small": "female",
+        "Human_Male_Elderly": "elderly",
+        "Human_Female_Elderly": "elderly",
+        "Human_Elderly_Small": "elderly"
+      }
+    },
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 101,
+        "male": "head/faces/${head}/closed/",
+        "muscular": "head/faces/${head}/closed/",
+        "female": "head/faces/${head}/closed/",
+        "teen": "head/faces/${head}/closed/",
+        "pregnant": "head/faces/${head}/closed/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/faces",
+        "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/elderly/closed",
+        "notes": "Original by Redshrike, Closed Eye Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/female/closed",
+        "notes": "Original by Redshrike, Closed Eye Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/male/closed",
+        "notes": "Original by Redshrike, Closed Eye Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0"
+      ]
+    }
+  },
+  "face_closing": {
+    "name": "Closing Eyes",
+    "priority": null,
+    "type_name": "expression",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "expression"
+    ],
+    "required_tags": [
+      "human"
+    ],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "faces",
+      "face_closing"
+    ],
+    "replace_in_path": {
+      "head": {
+        "Human_Male": "male",
+        "Human_Male_Small": "male",
+        "Human_Male_Plump": "male",
+        "Human_Male_Gaunt": "male",
+        "Human_Female": "female",
+        "Human_Female_Small": "female",
+        "Human_Male_Elderly": "elderly",
+        "Human_Female_Elderly": "elderly",
+        "Human_Elderly_Small": "elderly"
+      }
+    },
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 101,
+        "male": "head/faces/${head}/closing/",
+        "muscular": "head/faces/${head}/closing/",
+        "female": "head/faces/${head}/closing/",
+        "teen": "head/faces/${head}/closing/",
+        "pregnant": "head/faces/${head}/closing/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/faces",
+        "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/elderly/closing",
+        "notes": "Original by Redshrike, closing Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/female/closing",
+        "notes": "Original by Redshrike, closing Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/male/closing",
+        "notes": "Original by Redshrike, closing Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      },
+      {
+        "material": "eye",
+        "base": "undefined.undefined",
+        "variants": {
+          "eye.ulpc": [
+            "blue",
+            "green",
+            "purple",
+            "red",
+            "orange",
+            "yellow",
+            "brown",
+            "gray"
+          ],
+          "eye.lpcr": [
+            "black",
+            "blue",
+            "brown",
+            "gray",
+            "green",
+            "hazel",
+            "purple"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0"
+      ]
+    }
+  },
+  "face_eyeroll": {
+    "name": "Rolling Eyes",
+    "priority": null,
+    "type_name": "expression",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "expression"
+    ],
+    "required_tags": [
+      "human"
+    ],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "faces",
+      "face_eyeroll"
+    ],
+    "replace_in_path": {
+      "head": {
+        "Human_Male": "male",
+        "Human_Male_Small": "male",
+        "Human_Male_Plump": "male",
+        "Human_Male_Gaunt": "male",
+        "Human_Female": "female",
+        "Human_Female_Small": "female",
+        "Human_Male_Elderly": "elderly",
+        "Human_Female_Elderly": "elderly",
+        "Human_Elderly_Small": "elderly"
+      }
+    },
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 101,
+        "male": "head/faces/${head}/eyeroll/",
+        "muscular": "head/faces/${head}/eyeroll/",
+        "female": "head/faces/${head}/eyeroll/",
+        "teen": "head/faces/${head}/eyeroll/",
+        "pregnant": "head/faces/${head}/eyeroll/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/faces",
+        "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/elderly/eyeroll",
+        "notes": "Original by Redshrike, Eyeroll Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/female/eyeroll",
+        "notes": "Original by Redshrike, Eyeroll Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/male/eyeroll",
+        "notes": "Original by Redshrike, Eyeroll Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      },
+      {
+        "material": "eye",
+        "base": "undefined.undefined",
+        "variants": {
+          "eye.ulpc": [
+            "blue",
+            "green",
+            "purple",
+            "red",
+            "orange",
+            "yellow",
+            "brown",
+            "gray"
+          ],
+          "eye.lpcr": [
+            "black",
+            "blue",
+            "brown",
+            "gray",
+            "green",
+            "hazel",
+            "purple"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0"
+      ]
+    }
+  },
+  "face_happy": {
+    "name": "Happy",
+    "priority": null,
+    "type_name": "expression",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "expression"
+    ],
+    "required_tags": [
+      "human"
+    ],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "faces",
+      "face_happy"
+    ],
+    "replace_in_path": {
+      "head": {
+        "Human_Male": "male",
+        "Human_Male_Small": "male",
+        "Human_Male_Plump": "male",
+        "Human_Male_Gaunt": "male",
+        "Human_Female": "female",
+        "Human_Female_Small": "female",
+        "Human_Male_Elderly": "elderly",
+        "Human_Female_Elderly": "elderly",
+        "Human_Elderly_Small": "elderly"
+      }
+    },
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 101,
+        "male": "head/faces/${head}/happy/",
+        "muscular": "head/faces/${head}/happy/",
+        "female": "head/faces/${head}/happy/",
+        "teen": "head/faces/${head}/happy/",
+        "pregnant": "head/faces/${head}/happy/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/faces",
+        "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/elderly/happy",
+        "notes": "Original by Redshrike, Happy Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/female/happy",
+        "notes": "Original by Redshrike, Happy Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/male/happy",
+        "notes": "Original by Redshrike, Happy Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      },
+      {
+        "material": "eye",
+        "base": "undefined.undefined",
+        "variants": {
+          "eye.ulpc": [
+            "blue",
+            "green",
+            "purple",
+            "red",
+            "orange",
+            "yellow",
+            "brown",
+            "gray"
+          ],
+          "eye.lpcr": [
+            "black",
+            "blue",
+            "brown",
+            "gray",
+            "green",
+            "hazel",
+            "purple"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0"
+      ]
+    }
+  },
+  "face_happy2": {
+    "name": "Happy Alt",
+    "priority": null,
+    "type_name": "expression",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "expression"
+    ],
+    "required_tags": [
+      "human"
+    ],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "faces",
+      "face_happy2"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 106,
+        "male": "head/faces/global/happy2/",
+        "muscular": "head/faces/global/happy2/",
+        "female": "head/faces/global/happy2/",
+        "teen": "head/faces/global/happy2/",
+        "pregnant": "head/faces/global/happy2/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/faces/global/happy2",
+        "notes": "Original Bases by Redshrike, Alt Happy Expression by Laetissima and Pennomi, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "Thane Brimhall (pennomi)",
+          "laetissima",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-base-character-expressions",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      },
+      {
+        "material": "eye",
+        "base": "undefined.undefined",
+        "variants": {
+          "eye.ulpc": [
+            "blue",
+            "green",
+            "purple",
+            "red",
+            "orange",
+            "yellow",
+            "brown",
+            "gray"
+          ],
+          "eye.lpcr": [
+            "black",
+            "blue",
+            "brown",
+            "gray",
+            "green",
+            "hazel",
+            "purple"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
+  },
+  "face_look_l": {
+    "name": "Looking Left",
+    "priority": null,
+    "type_name": "expression",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "expression"
+    ],
+    "required_tags": [
+      "human"
+    ],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "faces",
+      "face_look_l"
+    ],
+    "replace_in_path": {
+      "head": {
+        "Human_Male": "male",
+        "Human_Male_Small": "male",
+        "Human_Male_Plump": "male",
+        "Human_Male_Gaunt": "male",
+        "Human_Female": "female",
+        "Human_Female_Small": "female",
+        "Human_Male_Elderly": "elderly",
+        "Human_Female_Elderly": "elderly",
+        "Human_Elderly_Small": "elderly"
+      }
+    },
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 101,
+        "male": "head/faces/${head}/look_l/",
+        "muscular": "head/faces/${head}/look_l/",
+        "female": "head/faces/${head}/look_l/",
+        "teen": "head/faces/${head}/look_l/",
+        "pregnant": "head/faces/${head}/look_l/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/faces",
+        "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/elderly/look_l",
+        "notes": "Original by Redshrike, Looking Left Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/female/look_l",
+        "notes": "Original by Redshrike, Looking Left Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/male/look_l",
+        "notes": "Original by Redshrike, Looking Left Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      },
+      {
+        "material": "eye",
+        "base": "undefined.undefined",
+        "variants": {
+          "eye.ulpc": [
+            "blue",
+            "green",
+            "purple",
+            "red",
+            "orange",
+            "yellow",
+            "brown",
+            "gray"
+          ],
+          "eye.lpcr": [
+            "black",
+            "blue",
+            "brown",
+            "gray",
+            "green",
+            "hazel",
+            "purple"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0"
+      ]
+    }
+  },
+  "face_look_r": {
+    "name": "Looking Right",
+    "priority": null,
+    "type_name": "expression",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "expression"
+    ],
+    "required_tags": [
+      "human"
+    ],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "faces",
+      "face_look_r"
+    ],
+    "replace_in_path": {
+      "head": {
+        "Human_Male": "male",
+        "Human_Male_Small": "male",
+        "Human_Male_Plump": "male",
+        "Human_Male_Gaunt": "male",
+        "Human_Female": "female",
+        "Human_Female_Small": "female",
+        "Human_Male_Elderly": "elderly",
+        "Human_Female_Elderly": "elderly",
+        "Human_Elderly_Small": "elderly"
+      }
+    },
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 101,
+        "male": "head/faces/${head}/look_r/",
+        "muscular": "head/faces/${head}/look_r/",
+        "female": "head/faces/${head}/look_r/",
+        "teen": "head/faces/${head}/look_r/",
+        "pregnant": "head/faces/${head}/look_r/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/faces",
+        "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/elderly/look_r",
+        "notes": "Original by Redshrike, Looking Right Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/female/look_r",
+        "notes": "Original by Redshrike, Looking Right Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/male/look_r",
+        "notes": "Original by Redshrike, Looking Right Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      },
+      {
+        "material": "eye",
+        "base": "undefined.undefined",
+        "variants": {
+          "eye.ulpc": [
+            "blue",
+            "green",
+            "purple",
+            "red",
+            "orange",
+            "yellow",
+            "brown",
+            "gray"
+          ],
+          "eye.lpcr": [
+            "black",
+            "blue",
+            "brown",
+            "gray",
+            "green",
+            "hazel",
+            "purple"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0"
+      ]
+    }
+  },
+  "face_neutral": {
+    "name": "Neutral",
+    "priority": null,
+    "type_name": "expression",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "expression"
+    ],
+    "required_tags": [
+      "human"
+    ],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "faces",
+      "face_neutral"
+    ],
+    "replace_in_path": {
+      "head": {
+        "Human_Male": "male",
+        "Human_Male_Small": "male",
+        "Human_Male_Plump": "male",
+        "Human_Male_Gaunt": "male",
+        "Human_Female": "female",
+        "Human_Female_Small": "female",
+        "Human_Male_Elderly": "elderly",
+        "Human_Female_Elderly": "elderly",
+        "Human_Elderly_Small": "elderly"
+      }
+    },
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 101,
+        "male": "head/faces/${head}/neutral/",
+        "muscular": "head/faces/${head}/neutral/",
+        "female": "head/faces/${head}/neutral/",
+        "teen": "head/faces/${head}/neutral/",
+        "pregnant": "head/faces/${head}/neutral/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/faces",
+        "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/elderly/neutral",
+        "notes": "Original by Redshrike, Elderly Head/Eyes by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/female/neutral",
+        "notes": "Original by Redshrike, spellcast and jump overrides by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/male/neutral",
+        "notes": "Original by Redshrike, spellcast and jump overrides by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      },
+      {
+        "material": "eye",
+        "base": "undefined.undefined",
+        "variants": {
+          "eye.ulpc": [
+            "blue",
+            "green",
+            "purple",
+            "red",
+            "orange",
+            "yellow",
+            "brown",
+            "gray"
+          ],
+          "eye.lpcr": [
+            "black",
+            "blue",
+            "brown",
+            "gray",
+            "green",
+            "hazel",
+            "purple"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0"
+      ]
+    }
+  },
+  "face_sad": {
+    "name": "Sad",
+    "priority": null,
+    "type_name": "expression",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "expression"
+    ],
+    "required_tags": [
+      "human"
+    ],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "faces",
+      "face_sad"
+    ],
+    "replace_in_path": {
+      "head": {
+        "Human_Male": "male",
+        "Human_Male_Small": "male",
+        "Human_Male_Plump": "male",
+        "Human_Male_Gaunt": "male",
+        "Human_Female": "female",
+        "Human_Female_Small": "female",
+        "Human_Male_Elderly": "elderly",
+        "Human_Female_Elderly": "elderly",
+        "Human_Elderly_Small": "elderly"
+      }
+    },
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 101,
+        "male": "head/faces/${head}/sad/",
+        "muscular": "head/faces/${head}/sad/",
+        "female": "head/faces/${head}/sad/",
+        "teen": "head/faces/${head}/sad/",
+        "pregnant": "head/faces/${head}/sad/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/faces",
+        "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/elderly/sad",
+        "notes": "Original by Redshrike, Sad Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/female/sad",
+        "notes": "Original by Redshrike, Sad Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/male/sad",
+        "notes": "Original by Redshrike, Sad Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      },
+      {
+        "material": "eye",
+        "base": "undefined.undefined",
+        "variants": {
+          "eye.ulpc": [
+            "blue",
+            "green",
+            "purple",
+            "red",
+            "orange",
+            "yellow",
+            "brown",
+            "gray"
+          ],
+          "eye.lpcr": [
+            "black",
+            "blue",
+            "brown",
+            "gray",
+            "green",
+            "hazel",
+            "purple"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0"
+      ]
+    }
+  },
+  "face_sad2": {
+    "name": "Sad Alt",
+    "priority": null,
+    "type_name": "expression",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "expression"
+    ],
+    "required_tags": [
+      "human",
+      "adult"
+    ],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "faces",
+      "face_sad2"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 101,
+        "male": "head/faces/global/sad2/",
+        "muscular": "head/faces/global/sad2/",
+        "female": "head/faces/global/sad2/",
+        "teen": "head/faces/global/sad2/",
+        "pregnant": "head/faces/global/sad2/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/faces/global/sad2",
+        "notes": "Original Bases by Redshrike, Alt Sad Expression by Laetissima and Pennomi, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "Thane Brimhall (pennomi)",
+          "laetissima",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-base-character-expressions",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      },
+      {
+        "material": "eye",
+        "base": "undefined.undefined",
+        "variants": {
+          "eye.ulpc": [
+            "blue",
+            "green",
+            "purple",
+            "red",
+            "orange",
+            "yellow",
+            "brown",
+            "gray"
+          ],
+          "eye.lpcr": [
+            "black",
+            "blue",
+            "brown",
+            "gray",
+            "green",
+            "hazel",
+            "purple"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
+  },
+  "face_shame": {
+    "name": "Shame",
+    "priority": null,
+    "type_name": "expression",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "expression"
+    ],
+    "required_tags": [
+      "human"
+    ],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "faces",
+      "face_shame"
+    ],
+    "replace_in_path": {
+      "head": {
+        "Human_Male": "male",
+        "Human_Male_Small": "male",
+        "Human_Male_Plump": "male",
+        "Human_Male_Gaunt": "male",
+        "Human_Female": "female",
+        "Human_Female_Small": "female",
+        "Human_Male_Elderly": "elderly",
+        "Human_Female_Elderly": "elderly",
+        "Human_Elderly_Small": "elderly"
+      }
+    },
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 101,
+        "male": "head/faces/${head}/shame/",
+        "muscular": "head/faces/${head}/shame/",
+        "female": "head/faces/${head}/shame/",
+        "teen": "head/faces/${head}/shame/",
+        "pregnant": "head/faces/${head}/shame/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/faces",
+        "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/elderly/shame",
+        "notes": "Original by Redshrike, Shame Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/female/shame",
+        "notes": "Original by Redshrike, Shame Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/male/shame",
+        "notes": "Original by Redshrike, Shame Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      },
+      {
+        "material": "eye",
+        "base": "undefined.undefined",
+        "variants": {
+          "eye.ulpc": [
+            "blue",
+            "green",
+            "purple",
+            "red",
+            "orange",
+            "yellow",
+            "brown",
+            "gray"
+          ],
+          "eye.lpcr": [
+            "black",
+            "blue",
+            "brown",
+            "gray",
+            "green",
+            "hazel",
+            "purple"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0"
+      ]
+    }
+  },
+  "face_shock": {
+    "name": "Shock",
+    "priority": null,
+    "type_name": "expression",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "expression"
+    ],
+    "required_tags": [
+      "human"
+    ],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "faces",
+      "face_shock"
+    ],
+    "replace_in_path": {
+      "head": {
+        "Human_Male": "male",
+        "Human_Male_Small": "male",
+        "Human_Male_Plump": "male",
+        "Human_Male_Gaunt": "male",
+        "Human_Female": "female",
+        "Human_Female_Small": "female",
+        "Human_Male_Elderly": "elderly",
+        "Human_Female_Elderly": "elderly",
+        "Human_Elderly_Small": "elderly"
+      }
+    },
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 101,
+        "male": "head/faces/${head}/shock/",
+        "muscular": "head/faces/${head}/shock/",
+        "female": "head/faces/${head}/shock/",
+        "teen": "head/faces/${head}/shock/",
+        "pregnant": "head/faces/${head}/shock/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/faces",
+        "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/elderly/shock",
+        "notes": "Original by Redshrike, Shock Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/female/shock",
+        "notes": "Original by Redshrike, Shock Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      },
+      {
+        "file": "head/faces/male/shock",
+        "notes": "Original by Redshrike, Shock Expression by ElizaWy, mapped to all frames by JaidynReiman",
+        "authors": [
+          "JaidynReiman",
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+          "https://opengameart.org/content/ulpc-expanded-expressions"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      },
+      {
+        "material": "eye",
+        "base": "undefined.undefined",
+        "variants": {
+          "eye.ulpc": [
+            "blue",
+            "green",
+            "purple",
+            "red",
+            "orange",
+            "yellow",
+            "brown",
+            "gray"
+          ],
+          "eye.lpcr": [
+            "black",
+            "blue",
+            "brown",
+            "gray",
+            "green",
+            "hazel",
+            "purple"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0"
       ]
     }
   },
@@ -21872,6 +30631,1191 @@ window.itemMetadata = {
         "CC-BY-SA 3.0",
         "GPL 2.0",
         "GPL 3.0"
+      ]
+    }
+  },
+  "head_nose_big": {
+    "name": "Big nose",
+    "priority": null,
+    "type_name": "nose",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "nose",
+      "head_nose_big"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 105,
+        "male": "head/nose/big/adult/",
+        "muscular": "head/nose/big/adult/",
+        "female": "head/nose/big/adult/",
+        "teen": "head/nose/big/adult/",
+        "pregnant": "head/nose/big/adult/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/nose/big",
+        "notes": "",
+        "authors": [
+          "Thane Brimhall (pennomi)",
+          "laetissima",
+          "Matthew Krohn (makrohn)"
+        ],
+        "licenses": [
+          "GPL 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-base-character-expressions"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "female": [
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "teen": [
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "muscular": [
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "pregnant": [
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ]
+    }
+  },
+  "head_nose_button": {
+    "name": "Button nose",
+    "priority": null,
+    "type_name": "nose",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "nose",
+      "head_nose_button"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 105,
+        "male": "head/nose/button/adult/",
+        "muscular": "head/nose/button/adult/",
+        "female": "head/nose/button/adult/",
+        "teen": "head/nose/button/adult/",
+        "pregnant": "head/nose/button/adult/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/nose/button",
+        "notes": "",
+        "authors": [
+          "Thane Brimhall (pennomi)",
+          "laetissima",
+          "Matthew Krohn (makrohn)"
+        ],
+        "licenses": [
+          "GPL 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-base-character-expressions"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "female": [
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "teen": [
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "muscular": [
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "pregnant": [
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ]
+    }
+  },
+  "head_nose_elderly": {
+    "name": "Elderly nose",
+    "priority": null,
+    "type_name": "nose",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "nose",
+      "head_nose_elderly"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 105,
+        "male": "head/nose/elderly/adult/",
+        "muscular": "head/nose/elderly/adult/",
+        "female": "head/nose/elderly/adult/",
+        "teen": "head/nose/elderly/adult/",
+        "pregnant": "head/nose/elderly/adult/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/nose/elderly",
+        "notes": "",
+        "authors": [
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-revised-elders"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0"
+      ]
+    }
+  },
+  "head_nose_large": {
+    "name": "Large nose",
+    "priority": null,
+    "type_name": "nose",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "nose",
+      "head_nose_large"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 105,
+        "male": "head/nose/large/adult/",
+        "muscular": "head/nose/large/adult/",
+        "female": "head/nose/large/adult/",
+        "teen": "head/nose/large/adult/",
+        "pregnant": "head/nose/large/adult/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/nose/large",
+        "notes": "",
+        "authors": [
+          "ElizaWy"
+        ],
+        "licenses": [
+          "OGA-BY 3.0"
+        ],
+        "urls": [
+          "https://github.com/ElizaWy/LPC/tree/main/Characters/Head/Head%20Overlay%2001%20-%20Large%20Nose",
+          "https://opengameart.org/content/lpc-expanded-sit-run-jump-more"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0"
+      ]
+    }
+  },
+  "head_nose_straight": {
+    "name": "Straight nose",
+    "priority": null,
+    "type_name": "nose",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "nose",
+      "head_nose_straight"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 105,
+        "male": "head/nose/straight/adult/",
+        "muscular": "head/nose/straight/adult/",
+        "female": "head/nose/straight/adult/",
+        "teen": "head/nose/straight/adult/",
+        "pregnant": "head/nose/straight/adult/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/nose/straight",
+        "notes": "",
+        "authors": [
+          "Thane Brimhall (pennomi)",
+          "laetissima",
+          "Matthew Krohn (makrohn)"
+        ],
+        "licenses": [
+          "GPL 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-base-character-expressions"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "female": [
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "teen": [
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "muscular": [
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "pregnant": [
+        "GPL 3.0",
+        "CC-BY-SA 3.0"
       ]
     }
   },
@@ -36260,6 +46204,258 @@ window.itemMetadata = {
       ]
     }
   },
+  "head_ears_avyon_skin": {
+    "name": "Feather Ears Skintone",
+    "priority": null,
+    "type_name": "ears_inner",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "child",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "furry_ears",
+      "side",
+      "head_ears_avyon_skin"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 127,
+        "male": "head/ears/avyon/skin/adult/",
+        "muscular": "head/ears/avyon/skin/adult/",
+        "female": "head/ears/avyon/skin/adult/",
+        "teen": "head/ears/avyon/skin/adult/",
+        "pregnant": "head/ears/avyon/skin/adult/",
+        "child": "head/ears/avyon/skin/child/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/ears/avyon",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "child": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ]
+    }
+  },
   "head_ears_avyon": {
     "name": "Feather Ears",
     "priority": null,
@@ -36370,6 +46566,258 @@ window.itemMetadata = {
     "preview_y_offset": 0,
     "matchBodyColor": false,
     "recolors": [],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "child": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ]
+    }
+  },
+  "head_ears_lykon_skin": {
+    "name": "Side Wolf Ears Skintone",
+    "priority": null,
+    "type_name": "ears_inner",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "child",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "furry_ears",
+      "side",
+      "head_ears_lykon_skin"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 127,
+        "male": "head/ears/lykon/skin/adult/",
+        "muscular": "head/ears/lykon/skin/adult/",
+        "female": "head/ears/lykon/skin/adult/",
+        "teen": "head/ears/lykon/skin/adult/",
+        "pregnant": "head/ears/lykon/skin/adult/",
+        "child": "head/ears/lykon/skin/child/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/ears/lykon",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
     "licenses": {
       "male": [
         "OGA-BY 3.0+",
@@ -36546,6 +46994,258 @@ window.itemMetadata = {
       ]
     }
   },
+  "head_ears_zabos_skin": {
+    "name": "Side Cat Ears Skintone",
+    "priority": null,
+    "type_name": "ears_inner",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "child",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "furry_ears",
+      "side",
+      "head_ears_zabos_skin"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 127,
+        "male": "head/ears/zabos/skin/adult/",
+        "muscular": "head/ears/zabos/skin/adult/",
+        "female": "head/ears/zabos/skin/adult/",
+        "teen": "head/ears/zabos/skin/adult/",
+        "pregnant": "head/ears/zabos/skin/adult/",
+        "child": "head/ears/zabos/skin/child/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/ears/zabos",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "child": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ]
+    }
+  },
   "head_ears_zabos": {
     "name": "Side Cat Ears",
     "priority": null,
@@ -36656,6 +47356,267 @@ window.itemMetadata = {
     "preview_y_offset": 0,
     "matchBodyColor": false,
     "recolors": [],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "child": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ]
+    }
+  },
+  "head_ears_cat_skin": {
+    "name": "Cat Ears Skintone",
+    "priority": null,
+    "type_name": "furry_ears_skin",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "child",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "furry_ears",
+      "top",
+      "head_ears_cat_skin"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 131,
+        "male": "head/ears/cat/skin/adult_front/",
+        "muscular": "head/ears/cat/skin/adult_front/",
+        "female": "head/ears/cat/skin/adult_front/",
+        "teen": "head/ears/cat/skin/adult_front/",
+        "pregnant": "head/ears/cat/skin/adult_front/",
+        "child": "head/ears/cat/skin/child_front/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "head/ears/cat/skin/adult_back/",
+        "muscular": "head/ears/cat/skin/adult_back/",
+        "female": "head/ears/cat/skin/adult_back/",
+        "pregnant": "head/ears/cat/skin/adult_back/",
+        "teen": "head/ears/cat/skin/adult_back/",
+        "child": "head/ears/cat/skin/child_back/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/ears/cat",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
     "licenses": {
       "male": [
         "OGA-BY 3.0+",
@@ -36841,6 +47802,267 @@ window.itemMetadata = {
       ]
     }
   },
+  "head_ears_wolf_skin": {
+    "name": "Wolf Ears Skintone",
+    "priority": null,
+    "type_name": "furry_ears_skin",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "child",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "furry_ears",
+      "top",
+      "head_ears_wolf_skin"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "light",
+      "amber",
+      "olive",
+      "taupe",
+      "bronze",
+      "brown",
+      "black",
+      "lavender",
+      "blue",
+      "zombie_green",
+      "green",
+      "pale_green",
+      "bright_green",
+      "dark_green",
+      "fur_black",
+      "fur_brown",
+      "fur_tan",
+      "fur_copper",
+      "fur_gold",
+      "fur_grey",
+      "fur_white",
+      "zombie"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 131,
+        "male": "head/ears/wolf/skin/adult_front/",
+        "muscular": "head/ears/wolf/skin/adult_front/",
+        "female": "head/ears/wolf/skin/adult_front/",
+        "teen": "head/ears/wolf/skin/adult_front/",
+        "pregnant": "head/ears/wolf/skin/adult_front/",
+        "child": "head/ears/wolf/skin/child_front/"
+      },
+      "layer_2": {
+        "zPos": 9,
+        "male": "head/ears/wolf/skin/adult_back/",
+        "muscular": "head/ears/wolf/skin/adult_back/",
+        "female": "head/ears/wolf/skin/adult_back/",
+        "pregnant": "head/ears/wolf/skin/adult_back/",
+        "teen": "head/ears/wolf/skin/adult_back/",
+        "child": "head/ears/wolf/skin/child_back/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/ears/wolf",
+        "notes": "",
+        "authors": [
+          "JaidynReiman"
+        ],
+        "licenses": [
+          "OGA-BY 3.0+",
+          "CC-BY 3.0+",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-furry-ears-tails-for-rpg-sprites"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "child": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0+",
+        "CC-BY 3.0+",
+        "GPL 3.0"
+      ]
+    }
+  },
   "head_ears_wolf": {
     "name": "Wolf Ears",
     "priority": null,
@@ -36992,6 +48214,8425 @@ window.itemMetadata = {
         "GPL 3.0"
       ]
     }
+  },
+  "heads_boarman_child": {
+    "name": "Boarman child",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "child"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "animal",
+      "boarman",
+      "child"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "beast",
+      "heads_boarman_child"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "child": "head/heads/boarman/child/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/boarman/child",
+        "notes": "pig by daneeklu adapted to boarman by BenCreating, adapted to child version by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Benjamin K. Smith (BenCreating)",
+          "Daniel Eddeland (daneeklu)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-style-farm-animals",
+          "https://opengameart.org/content/lpc-wild-boar",
+          "https://opengameart.org/content/lpc-boarman",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_boarman": {
+    "name": "Boarman",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "animal",
+      "boarman",
+      "adult"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "beast",
+      "heads_boarman"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/boarman/adult/",
+        "muscular": "head/heads/boarman/adult/",
+        "female": "head/heads/boarman/adult/",
+        "pregnant": "head/heads/boarman/adult/",
+        "teen": "head/heads/boarman/adult/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/boarman",
+        "notes": "pig by daneeklu adapted to boarman by BenCreating, placed to v3 bases by bluecarrot16",
+        "authors": [
+          "Benjamin K. Smith (BenCreating)",
+          "Daniel Eddeland (daneeklu)"
+        ],
+        "licenses": [
+          "CC-BY 3.0",
+          "GPL 2.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-style-farm-animals",
+          "https://opengameart.org/content/lpc-wild-boar",
+          "https://opengameart.org/content/lpc-boarman"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_minotaur_child": {
+    "name": "Minotaur child",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "child"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "minotaur",
+      "child"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "beast",
+      "heads_minotaur_child"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "child": "head/heads/minotaur/child/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/minotaur/child",
+        "notes": "original cow by daneeklu, combined with horns by Nila122 and adapted to minotaur by Evert; child version by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Evert",
+          "Nila122",
+          "Daniel Eddeland (daneeklu)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-style-farm-animals",
+          "https://opengameart.org/content/lpc-lizard-headgear",
+          "https://opengameart.org/content/lpc-faun-and-minotaur",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "ulpc.fur_tan",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_minotaur_female": {
+    "name": "Minotaur female",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "minotaur",
+      "adult"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "beast",
+      "heads_minotaur_female"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/minotaur/female/",
+        "muscular": "head/heads/minotaur/female/",
+        "female": "head/heads/minotaur/female/",
+        "pregnant": "head/heads/minotaur/female/",
+        "teen": "head/heads/minotaur/female/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/minotaur/female",
+        "notes": "original cow by daneeklu, adapted to minotaur by Evert, female version modified by bluecarrot16 to remove horns",
+        "authors": [
+          "bluecarrot16",
+          "Evert",
+          "Daniel Eddeland (daneeklu)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-style-farm-animals",
+          "https://opengameart.org/content/lpc-faun-and-minotaur",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "ulpc.fur_tan",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_minotaur": {
+    "name": "Minotaur",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "minotaur",
+      "adult"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "beast",
+      "heads_minotaur"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/minotaur/male/",
+        "muscular": "head/heads/minotaur/male/",
+        "female": "head/heads/minotaur/male/",
+        "pregnant": "head/heads/minotaur/male/",
+        "teen": "head/heads/minotaur/male/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/minotaur",
+        "notes": "original cow by daneeklu, combined with horns by Nila122 and adapted to minotaur by Evert",
+        "authors": [
+          "Evert",
+          "Nila122",
+          "Daniel Eddeland (daneeklu)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-style-farm-animals",
+          "https://opengameart.org/content/lpc-lizard-headgear",
+          "https://opengameart.org/content/lpc-faun-and-minotaur"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "ulpc.fur_tan",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_wartotaur": {
+    "name": "Wartotaur",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "animal",
+      "wartotaur"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "beast",
+      "heads_wartotaur"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/wartotaur/adult/",
+        "muscular": "head/heads/wartotaur/adult/",
+        "female": "head/heads/wartotaur/adult/",
+        "pregnant": "head/heads/wartotaur/adult/",
+        "teen": "head/heads/wartotaur/adult/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/wartotaur",
+        "notes": "original \"wart-o-taur\" concept and sprite by Redshrike, extended to 4 directions and head extracted by Evert, cleanup and hurt/cast animations by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Evert",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/tower-defense-prototyping-assets-4-monsters-some-tiles-a-background-image",
+          "https://opengameart.org/content/wartotaur-4-directions",
+          "https://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "ulpc.fur_brown",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_wolf_child": {
+    "name": "Wolf child",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "child"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "animal",
+      "child"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "beast",
+      "heads_wolf_child"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "child": "head/heads/wolf/child/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/wolf/child",
+        "notes": "original wolf animation by Redshrike, commissioned by William.Thompsonj; wolfman sprite by BenCreating, commissioned by castelonia; child version by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "Benjamin K. Smith (BenCreating)",
+          "William.Thompsonj",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-wolf-animation",
+          "https://opengameart.org/content/lpc-wolfman",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "ulpc.fur_brown",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_wolf_female": {
+    "name": "Wolf female",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "animal",
+      "adult"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "beast",
+      "heads_wolf_female"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/wolf/female/",
+        "muscular": "head/heads/wolf/female/",
+        "female": "head/heads/wolf/female/",
+        "pregnant": "head/heads/wolf/female/",
+        "teen": "head/heads/wolf/female/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/wolf/female",
+        "notes": "original wolf animation by Redshrike, commissioned by William.Thompsonj; wolfman sprite by BenCreating, commissioned by castelonia; tweaks and headless version by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "Benjamin K. Smith (BenCreating)",
+          "William.Thompsonj",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-wolf-animation",
+          "https://opengameart.org/content/lpc-wolfman",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "ulpc.fur_brown",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_wolf_male": {
+    "name": "Wolf male",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "animal",
+      "adult"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "beast",
+      "heads_wolf_male"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/wolf/male/",
+        "muscular": "head/heads/wolf/male/",
+        "female": "head/heads/wolf/male/",
+        "pregnant": "head/heads/wolf/male/",
+        "teen": "head/heads/wolf/male/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/wolf/male",
+        "notes": "original wolf animation by Redshrike, commissioned by William.Thompsonj; wolfman sprite by BenCreating, commissioned by castelonia; tweaks and headless version by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Sander Frenken (castelonia)",
+          "Benjamin K. Smith (BenCreating)",
+          "William.Thompsonj",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-wolf-animation",
+          "https://opengameart.org/content/lpc-wolfman",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "ulpc.fur_brown",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_goblin_child": {
+    "name": "Goblin child",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "child"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "goblin",
+      "child"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "fantasy",
+      "heads_goblin_child"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "child": "head/heads/goblin/child/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/goblin/child",
+        "notes": "original goblin by Redshrike, commisioned by William.Thomsponj; modular head extracted and slightly modified by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Stephen Challener (Redshrike)",
+          "William.Thomsponj"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 4.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-goblin",
+          "https://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "ulpc.green",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_goblin": {
+    "name": "Goblin",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "goblin",
+      "adult"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "fantasy",
+      "heads_goblin"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/goblin/adult/",
+        "muscular": "head/heads/goblin/adult/",
+        "female": "head/heads/goblin/adult/",
+        "pregnant": "head/heads/goblin/adult/",
+        "teen": "head/heads/goblin/adult/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/goblin",
+        "notes": "original goblin by Redshrike, commisioned by William.Thomsponj; modular head extracted and enlarged by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Stephen Challener (Redshrike)",
+          "William.Thomsponj"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 4.0",
+          "GPL 2.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-goblin",
+          "https://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "ulpc.green",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_orc_child": {
+    "name": "Orc child",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "child"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "orc",
+      "child"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "fantasy",
+      "heads_orc_child"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "child": "head/heads/orc/child/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/orc/child",
+        "notes": "child base by kheftel, orc version created by Nila122, head extracted by bluecarrot16",
+        "authors": [
+          "Nila122",
+          "kheftel",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-child-standing-template",
+          "https://opengameart.org/content/lpc-children-walk-animation"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "ulpc.green",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_orc_female": {
+    "name": "Orc female",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "orc",
+      "adult"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "fantasy",
+      "heads_orc_female"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/orc/female/",
+        "muscular": "head/heads/orc/female/",
+        "female": "head/heads/orc/female/",
+        "pregnant": "head/heads/orc/female/",
+        "teen": "head/heads/orc/female/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/orc/female",
+        "notes": "human head adapted to orc by madmarcel, hurt/cast animations made by makrohn, headless version and tweaks by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Matthew Krohn (makrohn)",
+          "Marcel van de Steeg (MadMarcel)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-female-orcogregoblintroll-base-walkcycle",
+          "https://opengameart.org/content/lpc-ladies",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "ulpc.green",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_orc_male": {
+    "name": "Orc male",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "orc",
+      "adult"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "fantasy",
+      "heads_orc_male"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/orc/male/",
+        "muscular": "head/heads/orc/male/",
+        "female": "head/heads/orc/male/",
+        "pregnant": "head/heads/orc/male/",
+        "teen": "head/heads/orc/male/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/orc/male",
+        "notes": "Sinbad the ogre design by Zi Ye, original 4-direction sprite by Redshrike, additional hurt/cast animations by makrohn, headless version by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Matthew Krohn (makrohn)",
+          "Stephen Challener (Redshrike)",
+          "Zi Ye"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/four-characters-my-lpc-entries",
+          "https://opengameart.org/content/sinbad-the-ogre",
+          "https://opengameart.org/content/lpc-male-sheets",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "ulpc.green",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_troll_child": {
+    "name": "Troll child",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "child"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "troll",
+      "child"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "fantasy",
+      "heads_troll_child"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "child": "head/heads/troll/child/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/troll/child",
+        "notes": "original \"Muscleman/Ogre/Minotaur\" by Reemax, modified to \"Troll\" by AntumDeluge, edited to LPC style and converted to modular head by bluecarrot16; child version by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "AntumDeluge",
+          "Tuomo Untinen (reemax)"
+        ],
+        "licenses": [
+          "CC-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/musclemanogreminotaur",
+          "https://opengameart.org/content/trolls-0",
+          "https://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "ulpc.green",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_troll": {
+    "name": "Troll",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "troll",
+      "adult"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "fantasy",
+      "heads_troll"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/troll/adult/",
+        "muscular": "head/heads/troll/adult/",
+        "female": "head/heads/troll/adult/",
+        "pregnant": "head/heads/troll/adult/",
+        "teen": "head/heads/troll/adult/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/troll",
+        "notes": "original \"Muscleman/Ogre/Minotaur\" by Reemax, modified to \"Troll\" by AntumDeluge, edited to LPC style and converted to modular head by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "AntumDeluge",
+          "Tuomo Untinen (reemax)"
+        ],
+        "licenses": [
+          "CC-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/musclemanogreminotaur",
+          "https://opengameart.org/content/trolls-0",
+          "https://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "ulpc.green",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_mouse_child": {
+    "name": "Mouse child",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "child"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "animal",
+      "child"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "farm",
+      "heads_mouse_child"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "child": "head/heads/mouse/child/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/mouse/child",
+        "notes": "original rabbit by Redshrike, adapted to modular head by bluecarrot16, modified to mouse head by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/bunny-rabbit-lpc-style-for-pixelfarm",
+          "http://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "ulpc.fur_white",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_mouse": {
+    "name": "Mouse",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "animal",
+      "adult"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "farm",
+      "heads_mouse"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/mouse/adult/",
+        "muscular": "head/heads/mouse/adult/",
+        "female": "head/heads/mouse/adult/",
+        "pregnant": "head/heads/mouse/adult/",
+        "teen": "head/heads/mouse/adult/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/mouse",
+        "notes": "original rabbit by Redshrike, adapted to modular head by bluecarrot16, modified to mouse head by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/bunny-rabbit-lpc-style-for-pixelfarm",
+          "http://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "ulpc.fur_tan",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_pig_child": {
+    "name": "Pig child",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "child"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "animal",
+      "child"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "farm",
+      "heads_pig_child"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "child": "head/heads/pig/child/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/pig/child",
+        "notes": "original pig by daneeklu, adapted to modular head by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Daniel Eddeland (daneeklu)"
+        ],
+        "licenses": [
+          "CC-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-style-farm-animals",
+          "http://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_pig": {
+    "name": "Pig",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "animal",
+      "adult"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "farm",
+      "heads_pig"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/pig/adult/",
+        "muscular": "head/heads/pig/adult/",
+        "female": "head/heads/pig/adult/",
+        "pregnant": "head/heads/pig/adult/",
+        "teen": "head/heads/pig/adult/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/pig",
+        "notes": "original pig by daneeklu, adapted to modular head by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Daniel Eddeland (daneeklu)"
+        ],
+        "licenses": [
+          "CC-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-style-farm-animals",
+          "http://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_rabbit_child": {
+    "name": "Rabbit child",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "child"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "animal",
+      "child"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "farm",
+      "heads_rabbit_child"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "child": "head/heads/rabbit/child/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/rabbit/child",
+        "notes": "original rabbit by Redshrike, adapted to modular head by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/bunny-rabbit-lpc-style-for-pixelfarm",
+          "http://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "ulpc.fur_white",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_rabbit": {
+    "name": "Rabbit",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "animal",
+      "adult"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "farm",
+      "heads_rabbit"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/rabbit/adult/",
+        "muscular": "head/heads/rabbit/adult/",
+        "female": "head/heads/rabbit/adult/",
+        "pregnant": "head/heads/rabbit/adult/",
+        "teen": "head/heads/rabbit/adult/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/rabbit",
+        "notes": "original rabbit by Redshrike, adapted to modular head by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/bunny-rabbit-lpc-style-for-pixelfarm",
+          "http://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "ulpc.fur_white",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_rat_child": {
+    "name": "Rat child",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "child"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "animal",
+      "child"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "farm",
+      "heads_rat_child"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "child": "head/heads/rat/child/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/rat/child",
+        "notes": "original rabbit by Redshrike, adapted to modular head by bluecarrot16, modified to rat by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/bunny-rabbit-lpc-style-for-pixelfarm",
+          "http://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "ulpc.fur_white",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_rat": {
+    "name": "Rat",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "animal",
+      "adult"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "farm",
+      "heads_rat"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/rat/adult/",
+        "muscular": "head/heads/rat/adult/",
+        "female": "head/heads/rat/adult/",
+        "pregnant": "head/heads/rat/adult/",
+        "teen": "head/heads/rat/adult/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/rat",
+        "notes": "original rabbit by Redshrike, adapted to modular head by bluecarrot16, modified to rat by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 3.0",
+          "CC-BY-SA 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/bunny-rabbit-lpc-style-for-pixelfarm",
+          "http://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "ulpc.fur_white",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_sheep_child": {
+    "name": "Sheep child",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "child"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "animal",
+      "child"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "farm",
+      "heads_sheep_child"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "child": "head/heads/sheep/child/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/sheep/child",
+        "notes": "original sheep by daneeklu, adapted to modular head by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Daniel Eddeland (daneeklu)"
+        ],
+        "licenses": [
+          "CC-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-style-farm-animals",
+          "http://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "ulpc.fur_white",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_sheep": {
+    "name": "Sheep",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "animal",
+      "adult"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "farm",
+      "heads_sheep"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/sheep/adult/",
+        "muscular": "head/heads/sheep/adult/",
+        "female": "head/heads/sheep/adult/",
+        "pregnant": "head/heads/sheep/adult/",
+        "teen": "head/heads/sheep/adult/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/sheep",
+        "notes": "original sheep by daneeklu, adapted to modular head by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Daniel Eddeland (daneeklu)"
+        ],
+        "licenses": [
+          "CC-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-style-farm-animals",
+          "http://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "ulpc.fur_white",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_human_child": {
+    "name": "Human Child",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "child"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "human",
+      "child"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "human",
+      "heads_human_child"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "child": "head/heads/human/child/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/human/child",
+        "notes": "",
+        "authors": [
+          "Stephen Challener (Redshrike)",
+          "kheftel",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/",
+          "https://opengameart.org/content/lpc-child-standing-template",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      },
+      {
+        "material": "eye",
+        "base": "undefined.undefined",
+        "variants": {
+          "eye.ulpc": [
+            "blue",
+            "green",
+            "purple",
+            "red",
+            "orange",
+            "yellow",
+            "brown",
+            "gray"
+          ],
+          "eye.lpcr": [
+            "black",
+            "blue",
+            "brown",
+            "gray",
+            "green",
+            "hazel",
+            "purple"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_human_elderly_small": {
+    "name": "Human Elderly Small",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "human",
+      "elderly",
+      "small"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "human",
+      "heads_human_elderly_small"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/human/elderly_small/",
+        "muscular": "head/heads/human/elderly_small/",
+        "female": "head/heads/human/elderly_small/",
+        "pregnant": "head/heads/human/elderly_small/",
+        "teen": "head/heads/human/elderly_small/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/human/elderly_small",
+        "notes": "original head by Redshrike, elderly & reduced size head by ElizaWy",
+        "authors": [
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY"
+        ],
+        "urls": []
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      },
+      {
+        "material": "eye",
+        "base": "undefined.undefined",
+        "variants": {
+          "eye.ulpc": [
+            "blue",
+            "green",
+            "purple",
+            "red",
+            "orange",
+            "yellow",
+            "brown",
+            "gray"
+          ],
+          "eye.lpcr": [
+            "black",
+            "blue",
+            "brown",
+            "gray",
+            "green",
+            "hazel",
+            "purple"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_human_female_elderly": {
+    "name": "Human Female Elderly",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "human",
+      "elderly"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "human",
+      "heads_human_female_elderly"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/human/female_elderly/",
+        "muscular": "head/heads/human/female_elderly/",
+        "female": "head/heads/human/female_elderly/",
+        "pregnant": "head/heads/human/female_elderly/",
+        "teen": "head/heads/human/female_elderly/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/human/female_elderly",
+        "notes": "",
+        "authors": [
+          "Benjamin K. Smith (BenCreating)",
+          "Eliza Wyatt (ElizaWy)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-revised-elders",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      },
+      {
+        "material": "eye",
+        "base": "undefined.undefined",
+        "variants": {
+          "eye.ulpc": [
+            "blue",
+            "green",
+            "purple",
+            "red",
+            "orange",
+            "yellow",
+            "brown",
+            "gray"
+          ],
+          "eye.lpcr": [
+            "black",
+            "blue",
+            "brown",
+            "gray",
+            "green",
+            "hazel",
+            "purple"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_human_female_small": {
+    "name": "Human Female Small",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "human",
+      "adult",
+      "small"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "human",
+      "heads_human_female_small"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/human/female_small/",
+        "muscular": "head/heads/human/female_small/",
+        "female": "head/heads/human/female_small/",
+        "pregnant": "head/heads/human/female_small/",
+        "teen": "head/heads/human/female_small/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/human/female_small",
+        "notes": "original head by Redshrike, reduced size head by ElizaWy",
+        "authors": [
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY"
+        ],
+        "urls": []
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      },
+      {
+        "material": "eye",
+        "base": "undefined.undefined",
+        "variants": {
+          "eye.ulpc": [
+            "blue",
+            "green",
+            "purple",
+            "red",
+            "orange",
+            "yellow",
+            "brown",
+            "gray"
+          ],
+          "eye.lpcr": [
+            "black",
+            "blue",
+            "brown",
+            "gray",
+            "green",
+            "hazel",
+            "purple"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_human_female": {
+    "name": "Human Female",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "human",
+      "adult",
+      "small"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "human",
+      "heads_human_female"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/human/female/",
+        "muscular": "head/heads/human/female/",
+        "female": "head/heads/human/female/",
+        "pregnant": "head/heads/human/female/",
+        "teen": "head/heads/human/female/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/human/female",
+        "notes": "original head by Redshrike, tweaks by BenCreating, modular version by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Benjamin K. Smith (BenCreating)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      },
+      {
+        "material": "eye",
+        "base": "undefined.undefined",
+        "variants": {
+          "eye.ulpc": [
+            "blue",
+            "green",
+            "purple",
+            "red",
+            "orange",
+            "yellow",
+            "brown",
+            "gray"
+          ],
+          "eye.lpcr": [
+            "black",
+            "blue",
+            "brown",
+            "gray",
+            "green",
+            "hazel",
+            "purple"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_human_male_elderly": {
+    "name": "Human Male Elderly",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "human",
+      "elderly"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "human",
+      "heads_human_male_elderly"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/human/male_elderly/",
+        "muscular": "head/heads/human/male_elderly/",
+        "female": "head/heads/human/male_elderly/",
+        "pregnant": "head/heads/human/male_elderly/",
+        "teen": "head/heads/human/male_elderly/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/human/male_elderly",
+        "notes": "",
+        "authors": [
+          "Benjamin K. Smith (BenCreating)",
+          "Eliza Wyatt (ElizaWy)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-revised-elders",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      },
+      {
+        "material": "eye",
+        "base": "undefined.undefined",
+        "variants": {
+          "eye.ulpc": [
+            "blue",
+            "green",
+            "purple",
+            "red",
+            "orange",
+            "yellow",
+            "brown",
+            "gray"
+          ],
+          "eye.lpcr": [
+            "black",
+            "blue",
+            "brown",
+            "gray",
+            "green",
+            "hazel",
+            "purple"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_human_male_gaunt": {
+    "name": "Human Male Gaunt",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "human",
+      "adult"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "human",
+      "heads_human_male_gaunt"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/human/male_gaunt/",
+        "muscular": "head/heads/human/male_gaunt/",
+        "female": "head/heads/human/male_gaunt/",
+        "pregnant": "head/heads/human/male_gaunt/",
+        "teen": "head/heads/human/male_gaunt/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/human/male_gaunt",
+        "notes": "original head by Redshrike, gaunt version by bluecarrot16",
+        "authors": [
+          "Stephen Challener (Redshrike)",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      },
+      {
+        "material": "eye",
+        "base": "undefined.undefined",
+        "variants": {
+          "eye.ulpc": [
+            "blue",
+            "green",
+            "purple",
+            "red",
+            "orange",
+            "yellow",
+            "brown",
+            "gray"
+          ],
+          "eye.lpcr": [
+            "black",
+            "blue",
+            "brown",
+            "gray",
+            "green",
+            "hazel",
+            "purple"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_human_male_plump": {
+    "name": "Human Male Plump",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "human",
+      "adult"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "human",
+      "heads_human_male_plump"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/human/male_plump/",
+        "muscular": "head/heads/human/male_plump/",
+        "female": "head/heads/human/male_plump/",
+        "pregnant": "head/heads/human/male_plump/",
+        "teen": "head/heads/human/male_plump/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/human/male_plump",
+        "notes": "original head by Redshrike, plump version by ??",
+        "authors": [
+          "Stephen Challener (Redshrike)",
+          "??"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      },
+      {
+        "material": "eye",
+        "base": "undefined.undefined",
+        "variants": {
+          "eye.ulpc": [
+            "blue",
+            "green",
+            "purple",
+            "red",
+            "orange",
+            "yellow",
+            "brown",
+            "gray"
+          ],
+          "eye.lpcr": [
+            "black",
+            "blue",
+            "brown",
+            "gray",
+            "green",
+            "hazel",
+            "purple"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_human_male_small": {
+    "name": "Human Male Small",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "human",
+      "adult",
+      "small"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "human",
+      "heads_human_male_small"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/human/male_small/",
+        "muscular": "head/heads/human/male_small/",
+        "female": "head/heads/human/male_small/",
+        "pregnant": "head/heads/human/male_small/",
+        "teen": "head/heads/human/male_small/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/human/male_small",
+        "notes": "original head by Redshrike, reduced size head by ElizaWy",
+        "authors": [
+          "ElizaWy",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY"
+        ],
+        "urls": []
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      },
+      {
+        "material": "eye",
+        "base": "undefined.undefined",
+        "variants": {
+          "eye.ulpc": [
+            "blue",
+            "green",
+            "purple",
+            "red",
+            "orange",
+            "yellow",
+            "brown",
+            "gray"
+          ],
+          "eye.lpcr": [
+            "black",
+            "blue",
+            "brown",
+            "gray",
+            "green",
+            "hazel",
+            "purple"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_human_male": {
+    "name": "Human Male",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "human",
+      "adult"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "human",
+      "heads_human_male"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/human/male/",
+        "muscular": "head/heads/human/male/",
+        "female": "head/heads/human/male/",
+        "pregnant": "head/heads/human/male/",
+        "teen": "head/heads/human/male/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/human/male",
+        "notes": "original head by Redshrike, tweaks by BenCreating, modular version by bluecarrot16",
+        "authors": [
+          "bluecarrot16",
+          "Benjamin K. Smith (BenCreating)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      },
+      {
+        "material": "eye",
+        "base": "undefined.undefined",
+        "variants": {
+          "eye.ulpc": [
+            "blue",
+            "green",
+            "purple",
+            "red",
+            "orange",
+            "yellow",
+            "brown",
+            "gray"
+          ],
+          "eye.lpcr": [
+            "black",
+            "blue",
+            "brown",
+            "gray",
+            "green",
+            "hazel",
+            "purple"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_alien": {
+    "name": "Alien",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "alien"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "reptile",
+      "heads_alien"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/alien/adult/",
+        "muscular": "head/heads/alien/adult/",
+        "female": "head/heads/alien/adult/",
+        "pregnant": "head/heads/alien/adult/",
+        "teen": "head/heads/alien/adult/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/alien",
+        "notes": "based on lizard originally by Nila122, modified by BenCreating, further edited by bluecarrot16. Nila122 gave blanket permission to MedicineStorm to use Nila122's LPC assets under OGA-BY 3.0 (where original or derived only from other works under OGA-BY).",
+        "authors": [
+          "bluecarrot16",
+          "Benjamin K. Smith (BenCreating)",
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/drakes-and-lizardfolk",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_lizard_child": {
+    "name": "Lizard child",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "child"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "lizard",
+      "child"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "reptile",
+      "heads_lizard_child"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "child": "head/heads/lizard/child/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/lizard/child",
+        "notes": "original lizard/drake by Nila122, reworked by BenCreating, modular head and further revisions by bluecarrot16, child version by bluecarrot16. Nila122 gave blanket permission to MedicineStorm to use Nila122's LPC assets under OGA-BY 3.0 (where original or derived only from other works under OGA-BY).",
+        "authors": [
+          "bluecarrot16",
+          "Benjamin K. Smith (BenCreating)",
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/drakes-and-lizardfolk",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "ulpc.green",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_lizard_female": {
+    "name": "Lizard female",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "lizard",
+      "adult"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "reptile",
+      "heads_lizard_female"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/lizard/female/",
+        "muscular": "head/heads/lizard/female/",
+        "female": "head/heads/lizard/female/",
+        "pregnant": "head/heads/lizard/female/",
+        "teen": "head/heads/lizard/female/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/lizard/female",
+        "notes": "original lizard/drake by Nila122, reworked by BenCreating, modular head and further revisions by bluecarrot16. Nila122 gave blanket permission to MedicineStorm to use Nila122's LPC assets under OGA-BY 3.0 (where original or derived only from other works under OGA-BY).",
+        "authors": [
+          "bluecarrot16",
+          "Benjamin K. Smith (BenCreating)",
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/drakes-and-lizardfolk",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "ulpc.green",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_lizard_male": {
+    "name": "Lizard male",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "lizard",
+      "adult"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "reptile",
+      "heads_lizard_male"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/lizard/male/",
+        "muscular": "head/heads/lizard/male/",
+        "female": "head/heads/lizard/male/",
+        "pregnant": "head/heads/lizard/male/",
+        "teen": "head/heads/lizard/male/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/lizard/male",
+        "notes": "original lizard/drake by Nila122, reworked by BenCreating, modular head and further revisions by bluecarrot16. Nila122 gave blanket permission to MedicineStorm to use Nila122's LPC assets under OGA-BY 3.0 (where original or derived only from other works under OGA-BY).",
+        "authors": [
+          "bluecarrot16",
+          "Benjamin K. Smith (BenCreating)",
+          "Nila122"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/drakes-and-lizardfolk",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "ulpc.green",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_frankenstein": {
+    "name": "Frankenstein",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "monster",
+      "frankenstein"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "undead",
+      "heads_frankenstein"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/frankenstein/adult/",
+        "muscular": "head/heads/frankenstein/adult/",
+        "female": "head/heads/frankenstein/adult/",
+        "pregnant": "head/heads/frankenstein/adult/",
+        "teen": "head/heads/frankenstein/adult/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/frankenstein",
+        "notes": "original head by Redshrike, frankenstein's monster version by bluecarrot16",
+        "authors": [
+          "Stephen Challener (Redshrike)",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
   },
   "heads_jack": {
     "name": "Jack O Lantern",
@@ -37206,6 +56847,410 @@ window.itemMetadata = {
         "GPL 3.0"
       ]
     }
+  },
+  "heads_vampire": {
+    "name": "Vampire",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "monster",
+      "vampire"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "undead",
+      "heads_vampire"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/vampire/adult/",
+        "muscular": "head/heads/vampire/adult/",
+        "female": "head/heads/vampire/adult/",
+        "pregnant": "head/heads/vampire/adult/",
+        "teen": "head/heads/vampire/adult/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/vampire",
+        "notes": "original head by Redshrike, gaunt version by bluecarrot16, vampire fangs by bluecarrot16",
+        "authors": [
+          "Stephen Challener (Redshrike)",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-folk"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": true,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "undefined.ulpc.light",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
+  },
+  "heads_zombie": {
+    "name": "Zombie",
+    "priority": null,
+    "type_name": "head",
+    "required": [
+      "male",
+      "female",
+      "teen",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering",
+      "idle",
+      "jump",
+      "run",
+      "sit",
+      "emote",
+      "climb",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "tags": [
+      "monster",
+      "zombie"
+    ],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "head",
+      "heads",
+      "undead",
+      "heads_zombie"
+    ],
+    "replace_in_path": {},
+    "variants": [],
+    "layers": {
+      "layer_1": {
+        "zPos": 100,
+        "male": "head/heads/zombie/adult/",
+        "muscular": "head/heads/zombie/adult/",
+        "female": "head/heads/zombie/adult/",
+        "pregnant": "head/heads/zombie/adult/",
+        "teen": "head/heads/zombie/adult/"
+      }
+    },
+    "credits": [
+      {
+        "file": "head/heads/zombie",
+        "notes": "",
+        "authors": [
+          "bluecarrot16",
+          "Benjamin K. Smith (BenCreating)",
+          "Sander Frenken (castelonia)",
+          "Stephen Challener (Redshrike)"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+          "https://opengameart.org/content/lpc-zombie",
+          "https://opengameart.org/content/lpc-character-bases"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": false,
+    "recolors": [
+      {
+        "material": "body",
+        "base": "ulpc.zombie",
+        "variants": {
+          "body.ulpc": [
+            "light",
+            "amber",
+            "olive",
+            "taupe",
+            "bronze",
+            "brown",
+            "black",
+            "blue",
+            "bright_green",
+            "dark_green",
+            "fur_black",
+            "fur_brown",
+            "fur_copper",
+            "fur_gold",
+            "fur_grey",
+            "fur_tan",
+            "fur_white",
+            "green",
+            "lavender",
+            "pale_green",
+            "zombie",
+            "zombie_green"
+          ],
+          "body.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee"
+          ],
+          "all.lpcr": [
+            "ivory",
+            "porcelain",
+            "peach",
+            "tan",
+            "tawny",
+            "honey",
+            "bronze",
+            "brown",
+            "coffee",
+            "aegean",
+            "amber",
+            "amethyst",
+            "apple",
+            "apricot",
+            "azure",
+            "beige",
+            "black",
+            "blue",
+            "blue_violet",
+            "cerise",
+            "cerulean",
+            "charcoal",
+            "chocolate",
+            "coral",
+            "cornflower",
+            "cyan",
+            "denim",
+            "dove",
+            "emerald",
+            "fern",
+            "forest",
+            "garnet",
+            "gray",
+            "green",
+            "heather",
+            "ice",
+            "indigo",
+            "lavender",
+            "leather",
+            "lemon",
+            "linen",
+            "mauve",
+            "midnight",
+            "mint",
+            "mustard",
+            "navy",
+            "neptune",
+            "oak",
+            "ochre",
+            "olivine",
+            "orange",
+            "pearl",
+            "periwinkle",
+            "pink",
+            "plum",
+            "powder",
+            "purple",
+            "red",
+            "red_orange",
+            "royal",
+            "salmon",
+            "sepia",
+            "shadow",
+            "silver",
+            "sky",
+            "smoke",
+            "soot",
+            "spring",
+            "swamp",
+            "teal",
+            "tumeric",
+            "umber",
+            "white",
+            "wine",
+            "yellow",
+            "source"
+          ]
+        }
+      }
+    ],
+    "licenses": {}
   },
   "neck_amulet_cross": {
     "name": "Cross amulet",
@@ -68171,6 +88216,8 @@ window.categoryTree = {
   "children": {
     "body": {
       "items": [
+        "body_color",
+        "body",
         "shadow",
         "wheelchair"
       ],
@@ -68294,7 +88341,11 @@ window.categoryTree = {
           "animations": []
         },
         "lizard": {
-          "items": [],
+          "items": [
+            "wings_lizard_bat",
+            "tail_lizard",
+            "wings_lizard"
+          ],
           "children": {},
           "priority": 90,
           "required": [],
@@ -68306,13 +88357,26 @@ window.categoryTree = {
       "animations": []
     },
     "head": {
-      "items": [],
+      "items": [
+        "head_wrinkles"
+      ],
       "children": {
         "heads": {
           "items": [],
           "children": {
             "human": {
-              "items": [],
+              "items": [
+                "heads_human_child",
+                "heads_human_elderly_small",
+                "heads_human_female",
+                "heads_human_female_elderly",
+                "heads_human_female_small",
+                "heads_human_male",
+                "heads_human_male_elderly",
+                "heads_human_male_gaunt",
+                "heads_human_male_plump",
+                "heads_human_male_small"
+              ],
               "children": {},
               "label": "Human Heads",
               "priority": 10,
@@ -68321,8 +88385,11 @@ window.categoryTree = {
             },
             "undead": {
               "items": [
+                "heads_frankenstein",
                 "heads_jack",
-                "heads_skeleton"
+                "heads_skeleton",
+                "heads_vampire",
+                "heads_zombie"
               ],
               "children": {},
               "label": "Undead Heads",
@@ -68337,7 +88404,15 @@ window.categoryTree = {
               "animations": []
             },
             "fantasy": {
-              "items": [],
+              "items": [
+                "heads_goblin",
+                "heads_goblin_child",
+                "heads_orc_child",
+                "heads_orc_female",
+                "heads_orc_male",
+                "heads_troll",
+                "heads_troll_child"
+              ],
               "children": {},
               "label": "Fantasy Heads",
               "priority": 30,
@@ -68345,7 +88420,12 @@ window.categoryTree = {
               "animations": []
             },
             "reptile": {
-              "items": [],
+              "items": [
+                "heads_alien",
+                "heads_lizard_child",
+                "heads_lizard_female",
+                "heads_lizard_male"
+              ],
               "children": {},
               "label": "Reptilean Heads",
               "priority": 30,
@@ -68353,7 +88433,17 @@ window.categoryTree = {
               "animations": []
             },
             "beast": {
-              "items": [],
+              "items": [
+                "heads_boarman",
+                "heads_boarman_child",
+                "heads_minotaur",
+                "heads_minotaur_child",
+                "heads_minotaur_female",
+                "heads_wartotaur",
+                "heads_wolf_child",
+                "heads_wolf_female",
+                "heads_wolf_male"
+              ],
               "children": {},
               "label": "Beastman Heads",
               "priority": 50,
@@ -68361,7 +88451,18 @@ window.categoryTree = {
               "animations": []
             },
             "farm": {
-              "items": [],
+              "items": [
+                "heads_mouse",
+                "heads_mouse_child",
+                "heads_pig",
+                "heads_pig_child",
+                "heads_rabbit",
+                "heads_rabbit_child",
+                "heads_rat",
+                "heads_rat_child",
+                "heads_sheep",
+                "heads_sheep_child"
+              ],
               "children": {},
               "label": "Farm Animal",
               "priority": 60,
@@ -68395,6 +88496,21 @@ window.categoryTree = {
         },
         "faces": {
           "items": [
+            "face_angry",
+            "face_angry2",
+            "face_blush",
+            "face_closed",
+            "face_closing",
+            "face_happy",
+            "face_happy2",
+            "face_look_l",
+            "face_look_r",
+            "face_neutral",
+            "face_eyeroll",
+            "face_sad",
+            "face_sad2",
+            "face_shame",
+            "face_shock",
             "face_tears"
           ],
           "children": {},
@@ -68409,7 +88525,15 @@ window.categoryTree = {
           "animations": []
         },
         "ears": {
-          "items": [],
+          "items": [
+            "head_ears_big",
+            "head_ears_down",
+            "head_ears_dragon",
+            "head_ears_elven",
+            "head_ears_hang",
+            "head_ears_long",
+            "head_ears_medium"
+          ],
           "children": {},
           "priority": 50,
           "required": [],
@@ -68421,7 +88545,9 @@ window.categoryTree = {
             "top": {
               "items": [
                 "head_ears_cat",
-                "head_ears_wolf"
+                "head_ears_cat_skin",
+                "head_ears_wolf",
+                "head_ears_wolf_skin"
               ],
               "children": {},
               "label": "Top of Head",
@@ -68432,8 +88558,11 @@ window.categoryTree = {
             "side": {
               "items": [
                 "head_ears_avyon",
+                "head_ears_avyon_skin",
                 "head_ears_zabos",
-                "head_ears_lykon"
+                "head_ears_zabos_skin",
+                "head_ears_lykon",
+                "head_ears_lykon_skin"
               ],
               "children": {},
               "label": "Side of Head",
@@ -68448,7 +88577,13 @@ window.categoryTree = {
           "animations": []
         },
         "nose": {
-          "items": [],
+          "items": [
+            "head_nose_big",
+            "head_nose_button",
+            "head_nose_elderly",
+            "head_nose_large",
+            "head_nose_straight"
+          ],
           "children": {},
           "priority": 70,
           "required": [],
@@ -68457,7 +88592,9 @@ window.categoryTree = {
         "appendages": {
           "items": [
             "head_horns_backwards",
-            "head_horns_curled"
+            "head_horns_curled",
+            "head_fins_fin",
+            "head_fins_fin_short"
           ],
           "children": {},
           "priority": 90,

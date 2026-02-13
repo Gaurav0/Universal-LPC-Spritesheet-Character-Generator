@@ -168,6 +168,7 @@ function parseJson(filePath, fileName) {
 
   // Collect recolor information
   const recolors = [];
+  let hasRecolors = false;
   if (definition.recolors !== undefined) {
     for (let n = 1; n < 10; n++) {
       const colorDef = definition.recolors[`color_${n}`];
@@ -182,13 +183,16 @@ function parseJson(filePath, fileName) {
     if (recolors.length === 0) {
       recolors.push(definition.recolors);
     }
+    if (recolors.length > 0) {
+      hasRecolors = true;
+    }
 
     // Add All Palettes
     for (const recolor of recolors) {
       // Get Alt Type if Exists
-      const variants = {};
+      const palettes = {};
       if (!recolor.base) {
-        const material = PALETTE_MATERIALS[recolor.material];
+        const material = paletteMetadata.materials[recolor.material];
         recolor.base = `${material.default}.${material.base}`;
       }
       for (const palette of recolor.palettes) {
@@ -199,12 +203,13 @@ function parseJson(filePath, fileName) {
         }
 
         // Append Palettes
-        variants[`${material}.${version}`] = Object.keys(paletteMetadata[material][version]);
+        palettes[`${material}.${version}`] = Object.keys(paletteMetadata.materials[material].palettes[version]);
       }
       delete recolor.palettes;
-      recolor.variants = variants;
+      recolor.variants = palettes;
     }
   }
+    
 
 
   // Collect metadata for this item
