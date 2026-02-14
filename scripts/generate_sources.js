@@ -50,6 +50,55 @@ function searchCredit(fileName, credits, origFileName) {
   }
 }
 
+// Parse credits from item definition and add to global list
+function parseCredits(fileName, credits, listCreditToUse, addedCreditsFor, sex, jdx) {
+  let fileNameForCreditSearch = fileName;
+  let imageFileName = '"' + fileName + '.png" ';
+  if (DEBUG && !onlyIfTemplate)
+    console.log(
+      `Searching for credits to use for ${imageFileName} in ${fileNameForCreditSearch} for layer ${jdx}`
+    );
+
+  const creditToUse = searchCredit(
+    fileNameForCreditSearch,
+    credits,
+    fileNameForCreditSearch
+  );
+  if (DEBUG && !onlyIfTemplate)
+    console.log(
+      `file name set for ${sex} is ${imageFileName} for layer ${jdx}`
+    );
+
+  if (creditToUse !== undefined) {
+    // comparing via JSON.stringify is faster than node-deep-equal library
+    if (
+      listCreditToUse !== null &&
+      JSON.stringify(listCreditToUse) !== JSON.stringify(creditToUse)
+    ) {
+      // do nothing
+    } else if (listCreditToUse === null) {
+      listCreditToUse = creditToUse;
+    }
+    for (const license of creditToUse.licenses) {
+      if (!licensesFound.includes(license)) {
+        licensesFound.push(license);
+      }
+    }
+    const licenses = '"' + creditToUse.licenses.join(",") + '" ';
+    const authors = '"' + creditToUse.authors.join(",") + '" ';
+    const urls = '"' + creditToUse.urls.join(",") + '" ';
+    const notes = '"' + creditToUse.notes.replaceAll('"', "**") + '" ';
+    let lineText = '';
+    if (!addedCreditsFor.includes(imageFileName)) {
+      const quotedShortName = '"' + fileName + '.png"';
+      lineText = `${quotedShortName},${notes},${authors},${licenses},${urls}\n`;
+    }
+    return [listCreditToUse, lineText, imageFileName];
+  } else {
+    throw Error(`missing credit inside ${fileName}`);
+  } // if creditToUse
+}
+
 // Parse Category Tree From Meta Files and Folder Paths
 function parseTree(filePath, fileName) {
   // Get Full Path
@@ -236,13 +285,12 @@ function parseJson(filePath, fileName) {
     recolors: recolors || []
   };
 
+  // Use type_name for radio button grouping (ensures only one item per type can be selected)
   let listCreditToUse = null;
   let listItemsCSV = [];
-
-  // Use type_name for radio button grouping (ensures only one item per type can be selected)
   const addedCreditsFor = [];
-  for (const variant of variants) {
-    const snakeItemName = variant.replaceAll(" ", "_");
+  for (const anim of animations) {
+    const snakeItemName = anim.replaceAll(" ", "_");
     for (const sex of requiredSexes) {
       // TODO: move any non-layer, non-variant specific code here!
       for (let jdx = 1; jdx < 10; jdx++) {
@@ -252,51 +300,29 @@ function parseJson(filePath, fileName) {
         }
         const file = layerDefinition[sex];
         if (file !== null && file !== "") {
-          let imageFileName = '"' + file + snakeItemName + '.png" ';
-          let fileNameForCreditSearch = file + snakeItemName;
-          if (DEBUG && !onlyIfTemplate)
-            console.log(
-              `Searching for credits to use for ${imageFileName} in ${fileNameForCreditSearch} for layer ${jdx}`
-            );
-          const creditToUse = searchCredit(
-            fileNameForCreditSearch,
-            credits,
-            fileNameForCreditSearch
-          );
-          if (DEBUG && !onlyIfTemplate)
-            console.log(
-              `file name set for ${sex} is ${imageFileName} for layer ${jdx}`
-            );
-          if (creditToUse !== undefined) {
-            // comparing via JSON.stringify is faster than node-deep-equal library
-            if (
-              listCreditToUse !== null &&
-              JSON.stringify(listCreditToUse) !== JSON.stringify(creditToUse)
-            ) {
-              // do nothing
-            } else if (listCreditToUse === null) {
-              listCreditToUse = creditToUse;
-            }
-            for (const license of creditToUse.licenses) {
-              if (!licensesFound.includes(license)) {
-                licensesFound.push(license);
-              }
-            }
-            const licenses = '"' + creditToUse.licenses.join(",") + '" ';
-            const authors = '"' + creditToUse.authors.join(",") + '" ';
-            const urls = '"' + creditToUse.urls.join(",") + '" ';
-            const notes = '"' + creditToUse.notes.replaceAll('"', "**") + '" ';
-            if (!addedCreditsFor.includes(imageFileName)) {
-              const quotedShortName = '"' + file + variant + '.png"';
+          // Check Variants
+          if (variants && variants.length > 0) {
+            for (const variant of variants) {
+              const variantItemName = variant.replaceAll(" ", "_");
+              const searchFileName = file + snakeItemName + "/" + variantItemName;
+              const [newCreditToUse, lineText, creditsFor] = parseCredits(searchFileName, credits, listCreditToUse, addedCreditsFor, sex, jdx);
+              listCreditToUse = newCreditToUse;
               listItemsCSV.push({
                 priority,
-                lineText: `${quotedShortName},${notes},${authors},${licenses},${urls}\n`
+                lineText
               });
-              addedCreditsFor.push(imageFileName);
+              addedCreditsFor.push(creditsFor);
             }
           } else {
-            throw Error(`missing credit inside ${fileName}`);
-          } // if creditToUse
+            const searchFileName = file + snakeItemName;
+            const [newCreditToUse, lineText, creditsFor] = parseCredits(searchFileName, credits, listCreditToUse, addedCreditsFor, sex, jdx);
+            listCreditToUse = newCreditToUse;
+            listItemsCSV.push({
+              priority,
+              lineText
+            });
+            addedCreditsFor.push(creditsFor);
+          }
         } // if file
       } // for jdx
     } // for sex

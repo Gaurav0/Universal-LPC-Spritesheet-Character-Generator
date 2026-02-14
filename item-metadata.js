@@ -5872,29 +5872,7 @@ window.itemMetadata = {
     "preview_x_offset": 0,
     "preview_y_offset": 0,
     "matchBodyColor": false,
-    "recolors": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "recolors": []
   },
   "wound_brain": {
     "name": "Brain",
@@ -5970,29 +5948,7 @@ window.itemMetadata = {
     "preview_x_offset": 0,
     "preview_y_offset": 0,
     "matchBodyColor": false,
-    "recolors": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "recolors": []
   },
   "wound_eye_left": {
     "name": "Left Eye",
@@ -6069,29 +6025,7 @@ window.itemMetadata = {
     "preview_x_offset": 0,
     "preview_y_offset": 0,
     "matchBodyColor": false,
-    "recolors": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "recolors": []
   },
   "wound_eye_right": {
     "name": "Right Eye",
@@ -6167,29 +6101,7 @@ window.itemMetadata = {
     "preview_x_offset": 0,
     "preview_y_offset": 0,
     "matchBodyColor": false,
-    "recolors": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "recolors": []
   },
   "wound_mouth": {
     "name": "Mouth",
@@ -6265,29 +6177,7 @@ window.itemMetadata = {
     "preview_x_offset": 0,
     "preview_y_offset": 0,
     "matchBodyColor": false,
-    "recolors": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "recolors": []
   },
   "wound_ribs": {
     "name": "Ribs",
@@ -6353,29 +6243,7 @@ window.itemMetadata = {
     "preview_x_offset": 0,
     "preview_y_offset": 0,
     "matchBodyColor": false,
-    "recolors": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "female": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "teen": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "muscular": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ],
-      "pregnant": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "recolors": []
   },
   "feet_plate_toe_thick": {
     "name": "Thick Plated Toe",
@@ -38771,13 +38639,7 @@ window.itemMetadata = {
     "preview_x_offset": 0,
     "preview_y_offset": 0,
     "matchBodyColor": false,
-    "recolors": [],
-    "licenses": {
-      "male": [
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
+    "recolors": []
   },
   "belt_sash_narrow": {
     "name": "Narrow sash",
@@ -41843,21 +41705,7 @@ window.itemMetadata = {
     "preview_x_offset": 0,
     "preview_y_offset": 0,
     "matchBodyColor": false,
-    "recolors": [],
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
-        "OGA-BY 3.0"
-      ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
+    "recolors": []
   },
   "weapon_sword_arming": {
     "name": "Arming Sword",
@@ -48409,7 +48257,12 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "child": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
   },
   "heads_boarman": {
     "name": "Boarman",
@@ -48611,7 +48464,28 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "CC-BY 3.0",
+        "GPL 2.0"
+      ],
+      "female": [
+        "CC-BY 3.0",
+        "GPL 2.0"
+      ],
+      "teen": [
+        "CC-BY 3.0",
+        "GPL 2.0"
+      ],
+      "muscular": [
+        "CC-BY 3.0",
+        "GPL 2.0"
+      ],
+      "pregnant": [
+        "CC-BY 3.0",
+        "GPL 2.0"
+      ]
+    }
   },
   "heads_minotaur_child": {
     "name": "Minotaur child",
@@ -48807,7 +48681,12 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "child": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
   },
   "heads_minotaur_female": {
     "name": "Minotaur female",
@@ -49009,7 +48888,28 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
   },
   "heads_minotaur": {
     "name": "Minotaur",
@@ -49211,7 +49111,28 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
   },
   "heads_wartotaur": {
     "name": "Wartotaur",
@@ -49413,7 +49334,28 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0"
+      ]
+    }
   },
   "heads_wolf_child": {
     "name": "Wolf child",
@@ -49610,7 +49552,12 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "child": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
   },
   "heads_wolf_female": {
     "name": "Wolf female",
@@ -49815,7 +49762,28 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
   },
   "heads_wolf_male": {
     "name": "Wolf male",
@@ -50020,7 +49988,28 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
   },
   "heads_goblin_child": {
     "name": "Goblin child",
@@ -50215,7 +50204,14 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "child": [
+        "OGA-BY 3.0",
+        "CC-BY 4.0",
+        "GPL 2.0",
+        "GPL 3.0"
+      ]
+    }
   },
   "heads_goblin": {
     "name": "Goblin",
@@ -50418,7 +50414,38 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "CC-BY 4.0",
+        "GPL 2.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "CC-BY 4.0",
+        "GPL 2.0",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
+        "CC-BY 4.0",
+        "GPL 2.0",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0",
+        "CC-BY 4.0",
+        "GPL 2.0",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0",
+        "CC-BY 4.0",
+        "GPL 2.0",
+        "GPL 3.0"
+      ]
+    }
   },
   "heads_orc_child": {
     "name": "Orc child",
@@ -50613,7 +50640,13 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "child": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
   },
   "heads_orc_female": {
     "name": "Orc female",
@@ -50818,7 +50851,33 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
   },
   "heads_orc_male": {
     "name": "Orc male",
@@ -51023,7 +51082,33 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
   },
   "heads_troll_child": {
     "name": "Troll child",
@@ -51216,7 +51301,11 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "child": [
+        "CC-BY 3.0"
+      ]
+    }
   },
   "heads_troll": {
     "name": "Troll",
@@ -51417,7 +51506,23 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "CC-BY 3.0"
+      ],
+      "female": [
+        "CC-BY 3.0"
+      ],
+      "teen": [
+        "CC-BY 3.0"
+      ],
+      "muscular": [
+        "CC-BY 3.0"
+      ],
+      "pregnant": [
+        "CC-BY 3.0"
+      ]
+    }
   },
   "heads_mouse_child": {
     "name": "Mouse child",
@@ -51610,7 +51715,13 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "child": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0",
+        "CC-BY-SA 3.0"
+      ]
+    }
   },
   "heads_mouse": {
     "name": "Mouse",
@@ -51811,7 +51922,33 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0",
+        "CC-BY-SA 3.0"
+      ]
+    }
   },
   "heads_pig_child": {
     "name": "Pig child",
@@ -52003,7 +52140,12 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "child": [
+        "CC-BY 3.0",
+        "GPL 3.0"
+      ]
+    }
   },
   "heads_pig": {
     "name": "Pig",
@@ -52203,7 +52345,28 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "CC-BY 3.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "CC-BY 3.0",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "CC-BY 3.0",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "CC-BY 3.0",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "CC-BY 3.0",
+        "GPL 3.0"
+      ]
+    }
   },
   "heads_rabbit_child": {
     "name": "Rabbit child",
@@ -52396,7 +52559,13 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "child": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0",
+        "CC-BY-SA 3.0"
+      ]
+    }
   },
   "heads_rabbit": {
     "name": "Rabbit",
@@ -52597,7 +52766,33 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0",
+        "CC-BY-SA 3.0"
+      ]
+    }
   },
   "heads_rat_child": {
     "name": "Rat child",
@@ -52790,7 +52985,13 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "child": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0",
+        "CC-BY-SA 3.0"
+      ]
+    }
   },
   "heads_rat": {
     "name": "Rat",
@@ -52991,7 +53192,33 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0",
+        "CC-BY-SA 3.0"
+      ]
+    }
   },
   "heads_sheep_child": {
     "name": "Sheep child",
@@ -53183,7 +53410,12 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "child": [
+        "CC-BY 3.0",
+        "GPL 3.0"
+      ]
+    }
   },
   "heads_sheep": {
     "name": "Sheep",
@@ -53383,7 +53615,28 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "CC-BY 3.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "CC-BY 3.0",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "CC-BY 3.0",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "CC-BY 3.0",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "CC-BY 3.0",
+        "GPL 3.0"
+      ]
+    }
   },
   "heads_human_child": {
     "name": "Human Child",
@@ -53603,7 +53856,13 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "child": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0",
+        "GPL 3.0"
+      ]
+    }
   },
   "heads_human_elderly_small": {
     "name": "Human Elderly Small",
@@ -53826,7 +54085,28 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "CC-BY"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "CC-BY"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
+        "CC-BY"
+      ],
+      "muscular": [
+        "OGA-BY 3.0",
+        "CC-BY"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0",
+        "CC-BY"
+      ]
+    }
   },
   "heads_human_female_elderly": {
     "name": "Human Female Elderly",
@@ -54053,7 +54333,28 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0"
+      ]
+    }
   },
   "heads_human_female_small": {
     "name": "Human Female Small",
@@ -54276,7 +54577,28 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "CC-BY"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "CC-BY"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
+        "CC-BY"
+      ],
+      "muscular": [
+        "OGA-BY 3.0",
+        "CC-BY"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0",
+        "CC-BY"
+      ]
+    }
   },
   "heads_human_female": {
     "name": "Human Female",
@@ -54504,7 +54826,33 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
   },
   "heads_human_male_elderly": {
     "name": "Human Male Elderly",
@@ -54731,7 +55079,28 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0"
+      ]
+    }
   },
   "heads_human_male_gaunt": {
     "name": "Human Male Gaunt",
@@ -54957,7 +55326,33 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
   },
   "heads_human_male_plump": {
     "name": "Human Male Plump",
@@ -55182,7 +55577,28 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
   },
   "heads_human_male_small": {
     "name": "Human Male Small",
@@ -55405,7 +55821,28 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "CC-BY"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "CC-BY"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
+        "CC-BY"
+      ],
+      "muscular": [
+        "OGA-BY 3.0",
+        "CC-BY"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0",
+        "CC-BY"
+      ]
+    }
   },
   "heads_human_male": {
     "name": "Human Male",
@@ -55632,7 +56069,33 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
   },
   "heads_alien": {
     "name": "Alien",
@@ -55833,7 +56296,33 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
   },
   "heads_lizard_child": {
     "name": "Lizard child",
@@ -56027,7 +56516,13 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "child": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
   },
   "heads_lizard_female": {
     "name": "Lizard female",
@@ -56229,7 +56724,33 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
   },
   "heads_lizard_male": {
     "name": "Lizard male",
@@ -56431,7 +56952,33 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
   },
   "heads_frankenstein": {
     "name": "Frankenstein",
@@ -56632,7 +57179,33 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
   },
   "heads_jack": {
     "name": "Jack O Lantern",
@@ -57047,7 +57620,33 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
   },
   "heads_zombie": {
     "name": "Zombie",
@@ -57250,7 +57849,28 @@ window.itemMetadata = {
         }
       }
     ],
-    "licenses": {}
+    "licenses": {
+      "male": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
   },
   "neck_amulet_cross": {
     "name": "Cross amulet",
