@@ -239,23 +239,33 @@ function parseJson(filePath, fileName) {
     // Add All Palettes
     for (const recolor of recolors) {
       // Get Alt Type if Exists
-      const palettes = {};
+      const colorPalettes = {};
+      const colorVariants = new Set();
+      const materialMeta = paletteMetadata.materials[recolor.material];
+      recolor.default = materialMeta.default;
       if (!recolor.base) {
-        const material = paletteMetadata.materials[recolor.material];
-        recolor.base = `${material.default}.${material.base}`;
+        recolor.base = `${materialMeta.default}.${materialMeta.base}`;
       }
       for (const palette of recolor.palettes) {
         let [material, version] = palette.split(".");
         if (!version) {
-            version = material;
-            material = recolor.material;
+          version = material;
+          material = recolor.material;
         }
 
         // Append Palettes
-        palettes[`${material}.${version}`] = Object.keys(paletteMetadata.materials[material].palettes[version]);
+        const keys = Object.keys(paletteMetadata.materials[material].palettes[version]);
+        colorPalettes[`${material}.${version}`] = keys;
+
+        // Determine if we need to prefix version
+        let mappedKeys = keys;
+        if (recolor.default !== version || recolor.material !== material) {
+          mappedKeys = keys.map(key => `${version}_${key}`);
+        }
+        mappedKeys.forEach(key => colorVariants.add(key));
       }
-      delete recolor.palettes;
-      recolor.variants = palettes;
+      recolor.palettes = colorPalettes;
+      recolor.variants = Array.from(colorVariants);
     }
   }
     
