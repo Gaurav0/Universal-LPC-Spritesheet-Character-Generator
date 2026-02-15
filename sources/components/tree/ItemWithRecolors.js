@@ -1,5 +1,5 @@
 // Item with recolors component
-import { state } from '../../state/state.js';
+import { state, getSelectionGroup, applyMatchBodyColor } from '../../state/state.js';
 import { capitalize } from '../../utils/helpers.js';
 import { getImageToDraw, getPaletteForItem } from '../../canvas/palette-recolor.js';
 
@@ -17,10 +17,6 @@ export const ItemWithRecolors = {
         }
         const selectedColor = state.selectedColor ?? meta.recolor;
         const isExpanded = state.expandedNodes[nodePath] || false;
-
-        // Check if item uses a palette - if so, load the source variant
-        const paletteConfig = getPaletteForItem(itemId, meta);
-        const loadColor = paletteConfig ? paletteConfig.sourceColor : selectedColor;
 
         // Build palette/color options for all recolor fields
         let paletteOptions = [];
@@ -124,6 +120,11 @@ export const ItemWithRecolors = {
             ]);
         }
 
+        // Find the Selections
+        const selectionGroup = getSelectionGroup(itemId);
+        const isSelected = state.selections[selectionGroup]?.itemId === itemId &&
+            state.selections[selectionGroup]?.variant === selectedColor;
+
         // Only show the idle preview for the asset
         const previewRow = meta.preview_row ?? 2;
         const previewCol = meta.preview_column ?? 0;
@@ -131,6 +132,15 @@ export const ItemWithRecolors = {
         const previewYOffset = meta.preview_y_offset ?? 0;
         const layer1 = meta.layers?.layer_1;
         const basePath = layer1?.[state.bodyType];
+
+        // Check if item uses a palette - if so, load the source variant
+        const paletteConfig = getPaletteForItem(itemId, meta);
+        const loadColor = paletteConfig ? paletteConfig.sourceColor : selectedColor;
+
+        // Check if this item uses a custom animation
+        const hasCustomAnimation = layer1?.custom_animation;
+        const layer1CustomAnimation = hasCustomAnimation ? layer1.custom_animation : null;
+
         let previewSrc = null;
         if (basePath) {
             // Standard animations have animation subfolders (walk, slash, etc.)
@@ -159,25 +169,88 @@ export const ItemWithRecolors = {
                     m("canvas.variant-canvas.box.p-0", {
                         width: 64,
                         height: 64,
-                        style: (compactDisplay ? "width:32px;height:32px;" : "width:64px;height:64px;"),
+                        class: (compactDisplay ? " compact-display" : ""),
+                        style: (isSelected ? " hsl(217, 71%, 53%)" : " hsl(0, 0%, 86%)"),
+                        //style: (compactDisplay ? "width:32px;height:32px;" : "width:64px;height:64px;"),
                         oncreate: async (canvasVnode) => {
                             const canvas = canvasVnode.dom;
                             const ctx = canvas.getContext('2d', { willReadFrequently: true });
-                            if (previewSrc) {
-                                const img = new Image();
-                                const imageToDraw = await getImageToDraw(img, itemId, selectedColor);
-                                const universalFrameSize = 64;
-                                const size = compactDisplay ? 32 : 64;
-                                // Master branch uses: previewColumn * universalFrameSize + previewXOffset
-                                const srcX = previewCol * universalFrameSize + previewXOffset;
-                                const srcY = previewRow * universalFrameSize + previewYOffset;
-                                ctx.clearRect(0, 0, canvas.width, canvas.height);
-                                ctx.drawImage(
-                                    imageToDraw,
-                                    srcX, srcY, universalFrameSize, universalFrameSize,
-                                    0, 0, size, size
-                                );
+
+                            // Collect all layers for this item
+                            // Only include layers that match layer_1's custom animation (if any)
+                            const layersToLoad = [];
+
+                            // Check if item uses a palette - if so, load the source variant
+                            const paletteConfig = getPaletteForItem(itemId, meta);
+                            const loadColor = paletteConfig ? paletteConfig.sourceVariant : variant;
+
+                            for (let layerNum = 1; layerNum < 10; layerNum++) {
+                                const layer = meta.layers?.[`layer_${layerNum}`];
+                                if (!layer) break;
+
+                                let layerPath = layer[state.bodyType];
+                                if (!layerPath) continue;
+
+                                // Filter: only include layers with matching custom animation
+                                if (layer1CustomAnimation) {
+                                    if (layer.custom_animation !== layer1CustomAnimation) {
+                                        continue;
+                                    }
+                                }
+
+                                // Replace template variables like ${head}
+                                if (layerPath.includes('${')) {
+                                    layerPath = replaceInPath(layerPath, state.selections, meta);
+                                }
+
+                                const hasCustomAnim = layer.custom_animation;
+                                let imagePath;
+                                if (hasCustomAnim) {
+                                    imagePath = `spritesheets/${layerPath}.png`;
+                                } else {
+                                    const defaultAnim = meta.animations.includes('walk') ? 'walk' : meta.animations[0];
+                                    imagePath = `spritesheets/${layerPath}${defaultAnim}.png`;
+                                }
+
+                                layersToLoad.push({
+                                    zPos: layer.zPos || 100,
+                                    path: imagePath
+                                });
                             }
+
+                            // Sort by zPos
+                            layersToLoad.sort((a, b) => a.zPos - b.zPos);
+
+                            // Load and draw all layers
+                            Promise.all(layersToLoad.map(layer => {
+                                return new Promise((resolve) => {
+                                    const img = new Image();
+                                    img.onload = () => resolve({ img, layer });
+                                    img.onerror = () => resolve({ img: null, layer });
+                                    img.src = layer.path;
+                                });
+                            })).then(async loadedLayers => {
+                                canvas.loadedLayers = loadedLayers;
+                                // Draw each layer in zPos order
+                                // Use universalFrameSize (64) for all calculations, matching master branch
+                                const universalFrameSize = 64;
+                                for (const { img, layer } of loadedLayers) {
+                                    if (img) {
+                                        const imageToDraw = await getImageToDraw(img, itemId, loadColor);
+                                        const size = compactDisplay ? 32 : 64;
+                                        // Master branch uses: previewColumn * universalFrameSize + previewXOffset
+                                        const srcX = previewCol * universalFrameSize + previewXOffset;
+                                        const srcY = previewRow * universalFrameSize + previewYOffset;
+                                        ctx.drawImage(
+                                            imageToDraw,
+                                            srcX, srcY, universalFrameSize, universalFrameSize,
+                                            0, 0, size, size
+                                        );
+                                    }
+                                }
+                                rootViewNode.state.imagesLoaded++;
+                                m.redraw();
+                            });
                         }
                     })
                 ]),

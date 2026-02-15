@@ -166,6 +166,15 @@ export function loadSelectionsFromHash(hashString = null) {
                 break;
               }
             }
+          } else if (meta.recolors[0]?.variants.length > 0) {
+            for (const variant of meta.recolors[0]?.variants) {
+              if (variant.toLowerCase() === variantToMatch.toLowerCase()) {
+                foundItemId = itemId;
+                matchedVariant = variant;
+                break;
+              }
+            }
+            break;
           } else if (variantToMatch === "") {
             // No variants for this item, so we can match just on name
             foundItemId = itemId;
