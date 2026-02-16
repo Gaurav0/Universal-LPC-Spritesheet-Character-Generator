@@ -100,7 +100,7 @@ export async function renderCharacter(
     const addedCustomAnimations = new Set(); // Track which custom animations we've added
 
     for (const [categoryPath, selection] of Object.entries(selections)) {
-      const { itemId, variant } = selection;
+      const { itemId, variant, recolor } = selection;
       const meta = window.itemMetadata[itemId];
 
       if (!meta) continue;
@@ -138,6 +138,7 @@ export async function renderCharacter(
           customAnimationItems.push({
             itemId,
             variant,
+            recolor,
             spritePath,
             zPos,
             layerNum,
@@ -179,6 +180,7 @@ export async function renderCharacter(
           const spritePath = getSpritePath(
             itemId,
             variant,
+            recolor,
             bodyType,
             animName,
             layerNum,
@@ -189,6 +191,7 @@ export async function renderCharacter(
           itemsToDraw.push({
             itemId,
             variant,
+            recolor,
             spritePath,
             zPos,
             layerNum,
@@ -317,7 +320,7 @@ export async function renderCharacter(
     // Draw all items in sorted z-order
     for (const { item, img, success } of loadedItems) {
       if (success && img) {
-        const imageToDraw = await getImageToDraw(img, item.itemId, item.variant);
+        const imageToDraw = await getImageToDraw(img, item.itemId, item.recolor);
         renderCtx.drawImage(imageToDraw, 0, item.yPos);
       }
     }
@@ -379,7 +382,7 @@ export async function renderCharacter(
         // Draw in zPos order
         for (const { item: areaItem, img, success } of loadedCustomImages) {
           if (success && img) {
-            const imageToUse = await getImageToDraw(img, areaItem.itemId, areaItem.variant);
+            const imageToUse = await getImageToDraw(img, areaItem.itemId, areaItem.recolor);
 
             if (areaItem.type === 'custom_sprite') {
               // Draw custom sprite directly (wheelchair background or foreground)
@@ -553,7 +556,7 @@ export async function renderSingleItem(
     // Draw layers in order
     for (const { item: sprite, img, success } of loadedSprites) {
       if (success && img) {
-        const imageToDraw = await getImageToDraw(img, itemId, variant);
+        const imageToDraw = await getImageToDraw(img, itemId, recolor);
         itemCtx.drawImage(imageToDraw, 0, sprite.yPos);
       }
     }
@@ -596,6 +599,7 @@ export async function renderSingleItem(
       const spritePath = getSpritePath(
         itemId,
         variant,
+        recolor,
         bodyType,
         animName,
         layerNum,
@@ -606,6 +610,7 @@ export async function renderSingleItem(
       spritesToDraw.push({
         itemId,
         variant,
+        recolor,
         spritePath,
         zPos,
         layerNum,
@@ -626,7 +631,7 @@ export async function renderSingleItem(
     // Draw images in order
     for (const { item: sprite, img, success } of loadedImages) {
       if (success && img) {
-        const imageToDraw = await getImageToDraw(img, itemId, variant);
+        const imageToDraw = await getImageToDraw(img, itemId, sprite.recolor);
         itemCtx.drawImage(imageToDraw, 0, sprite.yPos);
       }
     }
@@ -642,6 +647,7 @@ export async function renderSingleItem(
 export async function renderSingleItemAnimation(
   itemId,
   variant,
+  recolor,
   bodyType,
   animationName,
   selections,
@@ -711,6 +717,7 @@ export async function renderSingleItemAnimation(
     const spritePath = getSpritePath(
       itemId,
       variant,
+      recolor,
       bodyType,
       animationName,
       layerNum,
@@ -722,6 +729,7 @@ export async function renderSingleItemAnimation(
       spritePath,
       zPos,
       layerNum,
+      recolor
     });
   }
 
@@ -734,7 +742,7 @@ export async function renderSingleItemAnimation(
   // Draw images in order
   for (const { item: sprite, img, success } of loadedImages) {
     if (success && img) {
-      const imageToDraw = await getImageToDraw(img, itemId, variant);
+      const imageToDraw = await getImageToDraw(img, itemId, sprite.recolor);
       // Draw at y=0 since this canvas is only for this animation
       animCtx.drawImage(
         img,

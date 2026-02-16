@@ -1,92 +1,59 @@
-// Function to get Multiple Palettes from Recolors Config
-export function getMultiPalettes(recolors) {
-    // Check if Multiple Palettes Exist!
-    const palettes = [];
-    for (let paletteNum = 1; paletteNum < 10; paletteNum++) {
-        // Check if this palette exists
-        const colorKey = `color_${paletteNum}`;
-        const color = recolors[colorKey];
-        if (!color) break;
-
-        // Push Palettes
-        palettes.push(color);
-    }
-
-    // If No Multiple Palettes, Return Single Palette
-    if (palettes.length === 0 && recolors.type) {
-        palettes.push(recolors);
-    }
-
-    // Return Palettes
-    return palettes;
-}
-
 // Function to get palette file info
-export function getBasePalette(type, base = null) {
+export function getBasePalette(material, base = null) {
     // Check Palette Material Exists
-    const typeData = PALETTE_MATERIALS[type];
-    if (!typeData) {
-        console.error(`Palette type not found: ${type}`);
+    const materialMeta = window.paletteMetadata?.materials[material];
+    if (!materialMeta) {
+        console.error(`Palettes for ${material} not found`);
         return null;
     }
 
     // Determine Base Variant
-    let [variant, color] = base ? base.split(".") : [typeData.default, typeData.base];
-    return color;
-
-    // TO DO: Get EXACT Palette From File, it won't always be from the same palette variant!
+    let [version, recolor] = base ? base.split(".") : [materialMeta.default, materialMeta.base];
+    const colors = materialMeta.palettes[version]?.[recolor];
+    return [version, recolor, colors];
 }
 
-// Get Single Palette File
-export function getPaletteFile(type, palette) {
-    // Get Alt Type if Exists
-    let [trueType, variant] = palette.split(".");
-    if (!variant) {
-        variant = trueType;
-        trueType = type;
-    }
-
-    // Get palette data for the specified type
-    const fileData = PALETTE_FILES[trueType];
-    if (!fileData) {
-        console.error(`Palette Type does not exist: ${trueType}`);
+// Function to get palette file info
+export function getTargetPalette(material, targetColor) {
+    // Check Palette Material Exists
+    const materialMeta = window.paletteMetadata?.materials[material];
+    if (!materialMeta) {
+        console.error(`Palettes for ${material} not found`);
         return null;
     }
 
-    // Variant Does Not Exist?!
-    if (!fileData[variant]) {
-        console.error(`Palette Variant does not exist for type ${trueType}: ${variant}`);
-        return null;
+    // Split Colors
+    let [version, recolor] = targetColor.split("_");
+    if (!window.paletteMetadata?.versions[version]) {
+        version = materialMeta.default;
+        recolor = targetColor;
     }
 
-    // Return Palette File Data
-    return {
-        type: trueType,
-        file: fileData[variant]
-    };
+    // Get Palette Info
+    const colors = materialMeta.palettes[version]?.[recolor];
+    if (!colors) {
+        console.error(`Palette colors for ${material}.${version}.${recolor} not found`);
+        return null;
+    }
+    return colors;
 }
 
-// Get All Palette Files
-export function getPaletteFiles(type, palettes = null) {
-    // Get palette data for the specified type
-    let fileData = PALETTE_FILES[type];
-    if (!fileData) {
-        console.error(`Palette Type does not exist: ${type}`);
-        return null;
-    }
+/**
+ * Get palette configuration for an item from its metadata
+ * @param {string} itemId - Item identifier
+ * @param {Object} meta - Item metadata
+ * @returns {Object|null} Palette config object with {type, base, palette} or null if item doesn't use palette recoloring
+ */
+export function getPaletteForItem(itemId, meta, paletteNum = 0) {
+  if (!meta || !meta.recolors) return null;
 
-    // If palettes is null, use all available palettes for the type
-    if (palettes === null) {
-        palettes = Object.keys(fileData);
-    }
-
-    // Get List of Supported Palettes
-    const paletteData = [];
-    for (const palette of palettes) {
-        const file = getPaletteFile(type, palette);
-        if (file) {
-            paletteData.push(file);
-        }
-    }
-    return paletteData;
+  // Get Specific Palette for Item
+  const palette = meta.recolors[paletteNum];
+  const [version, source, colors] = getBasePalette(palette.material, palette.base ?? null);
+  return {
+    material: palette.material,
+    version: version || palette.default,
+    source,
+    colors
+  };
 }

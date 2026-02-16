@@ -63,7 +63,8 @@ export async function selectDefaults() {
 	const bodySelectionGroup = getSelectionGroup(bodyItemId);
 	state.selections[bodySelectionGroup] = {
 		itemId: bodyItemId,
-		variant: "light",
+		variant: "",
+		recolor: "light",
 		name: "Body color (light)",
 	};
 
@@ -73,8 +74,9 @@ export async function selectDefaults() {
 	const headSelectionGroup = getSelectionGroup(headItemId);
 	state.selections[headSelectionGroup] = {
 		itemId: headItemId,
-		variant: "light",
-		name: "Human male (light)",
+		variant: "",
+		recolor: "light",
+		name: "Human Male (light)",
 	};
 
 	// Set default expression (neutral light)
@@ -82,7 +84,8 @@ export async function selectDefaults() {
 	const expressionSelectionGroup = getSelectionGroup(expressionItemId);
 	state.selections[expressionSelectionGroup] = {
 		itemId: expressionItemId,
-		variant: "light",
+		variant: "",
+		recolor: "light",
 		name: "Neutral (light)",
 	};
 
@@ -105,12 +108,12 @@ export async function resetAll() {
 }
 
 // Apply match body color - when any body-colored part changes, update all items with matchBodyColor: true
-export function applyMatchBodyColor(variantToMatch) {
+export function applyMatchBodyColor(variantToMatch, recolorToMatch) {
 	// Only apply if feature is enabled
 	if (!state.matchBodyColorEnabled) return;
 
 	// If no variant specified, nothing to match
-	if (!variantToMatch) return;
+	if (!variantToMatch && !recolorToMatch) return;
 
 	// Update all selected items that have matchBodyColor: true
 	for (const selection of Object.values(
@@ -127,6 +130,13 @@ export function applyMatchBodyColor(variantToMatch) {
 			// Update the variant to match
 			selection.variant = variantToMatch;
 			selection.name = meta.name + ` (${variantToMatch})`;
+		}
+
+		// Check if this item has the recolor available
+		if (meta.recolors && meta.recolors[0]?.variants.includes(recolorToMatch)) {
+			// Update the recolor to match
+			selection.recolor = recolorToMatch;
+			selection.name = meta.name + ` (${recolorToMatch})`;
 		}
 	}
 }

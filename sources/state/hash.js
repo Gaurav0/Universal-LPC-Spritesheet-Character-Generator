@@ -100,8 +100,11 @@ export function getHashParamsforSelections(selections) {
     // "Body color" -> "Body_color", "Sara Shoes" -> "Sara_Shoes", "Waistband" -> "Waistband"
     const namePart = meta.name.replaceAll(" ", "_");
 
-    const variantPart = selection.variant ? `_${selection.variant}` : "";
-    const value = namePart + variantPart;
+    const variantPart = selection.variant ?? "";
+    const recolorPart = selection.recolor ?? "";
+    const uscorePart = (variantPart || recolorPart) ? "_" : "";
+    const splitPart = (variantPart && recolorPart) ? "|" : "";
+    const value = namePart + uscorePart + variantPart + splitPart + recolorPart;
 
     params[key] = value;
   }
@@ -138,9 +141,11 @@ export function loadSelectionsFromHash(hashString = null) {
     // Try from left to right to find a valid name+variant combination
     // e.g., "Tiara_tiara_silver" -> try "Tiara" + "tiara_silver" ✓
     // e.g., "Human_female_light" -> try "Human_female" + "light" ✓
+    // e.g., "Human_female_light|light" -> try "Human_female" + "light" + "light" ✓
 
     let foundItemId = null;
     let matchedVariant = "";
+    let matchedRecolor = "";
 
     // Split on underscores and try different combinations
     const parts = nameAndVariant.split("_");
@@ -148,7 +153,9 @@ export function loadSelectionsFromHash(hashString = null) {
     // Try each possible split point (from left to right)
     for (let i = 1; i <= parts.length; i++) {
       const nameToMatch = parts.slice(0, i).join("_");
-      const variantToMatch = parts.slice(i).join("_");
+      const variants = parts.slice(i).join("_");
+      const variantToMatch = variants.split("|")[0];
+      const recolorToMatch = variants.split("|")[1] || "";
 
       // Search for item with this name and variant
       for (const [itemId, meta] of Object.entries(window.itemMetadata || {})) {
@@ -163,22 +170,28 @@ export function loadSelectionsFromHash(hashString = null) {
               if (variant.toLowerCase() === variantToMatch.toLowerCase()) {
                 foundItemId = itemId;
                 matchedVariant = variant;
+                matchedRecolor = "";
                 break;
               }
             }
-          } else if (meta.recolors[0]?.variants.length > 0) {
+          }
+          if (meta.recolors[0]?.variants.length > 0) {
             for (const variant of meta.recolors[0]?.variants) {
-              if (variant.toLowerCase() === variantToMatch.toLowerCase()) {
+              if ((recolorToMatch !== "" && variant.toLowerCase() === recolorToMatch.toLowerCase()) ||
+                  (recolorToMatch === "" && variant.toLowerCase() === variantToMatch.toLowerCase())) {
                 foundItemId = itemId;
-                matchedVariant = variant;
+                matchedVariant = "";
+                matchedRecolor = variant;
                 break;
               }
             }
             break;
-          } else if (variantToMatch === "") {
+          }
+          if (variantToMatch === "") {
             // No variants for this item, so we can match just on name
             foundItemId = itemId;
             matchedVariant = "";
+            matchedRecolor = "";
             break;
           }
         }
@@ -202,11 +215,20 @@ export function loadSelectionsFromHash(hashString = null) {
 
     // Use type_name as selection group
     const selectionGroup = typeName;
-    newSelections[selectionGroup] = {
+    let newSelection = {
       itemId: foundItemId,
-      variant: matchedVariant || meta.variants?.[0] || "",
-      name: meta.name + (matchedVariant ? ` (${matchedVariant})` : ""),
+      variant: matchedVariant || (matchedRecolor != "" ? "" : meta.variants?.[0] || ""),
+      recolor: matchedRecolor || (meta.variants.length === 0 ? meta.recolors?.[0]?.variants[0] || "" : ""),
+      name: meta.name
     };
+    if (newSelection.variant || newSelection.recolor) {
+      newSelection.name += " (" +
+        (newSelection.variant ? ` ${newSelection.variant}` : "") +
+        (newSelection.variant && newSelection.recolor ? " | " : "") +
+        (newSelection.recolor ? ` ${newSelection.recolor}` : "") +
+      ")";
+    }
+    newSelections[selectionGroup] = newSelection;
   }
 
   // Now update state once with complete new selections
@@ -245,6 +267,7 @@ export function initHashChangeListener(listener) {
           Object.values(state.selections).map((s) => [
             s.itemId,
             s.variant || "",
+            s.recolor || "",
           ]),
         ),
       })

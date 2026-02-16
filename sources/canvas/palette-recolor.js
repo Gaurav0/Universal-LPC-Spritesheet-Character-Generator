@@ -7,7 +7,7 @@ import {
 } from "./webgl-palette-recolor.js";
 import { getDebugParam } from "../main.js";
 import { get2DContext } from "./canvas-utils.js";
-import { getBasePalette, getMultiPalettes, getPaletteFile, getPaletteFiles } from '../state/palettes.js';
+import { getPaletteForItem, getTargetPalette } from '../state/palettes.js';
 
 // Configuration flags
 let config = {
@@ -252,20 +252,24 @@ const loadedPalettes = {};
  * Async because palette loading is lazy (loads on first use)
  * @param {HTMLImageElement|HTMLCanvasElement} img - Source image
  * @param {string} itemId - Item identifier
- * @param {string} color - Color name
+ * @param {string} recolor - Recolor name
+ * @param {string} paletteNum - Palette number (defaults to 0)
  * @returns {Promise<HTMLImageElement|HTMLCanvasElement>} Image or recolored canvas to draw
  */
-export async function getImageToDraw(img, itemId, color) {
+export async function getImageToDraw(img, itemId, recolor, paletteNum = 0) {
+  if (!recolor) {
+    return img; // No recolor specified, return original image
+  }
   const meta = window.itemMetadata?.[itemId];
-  const paletteConfig = getPaletteForItem(itemId, meta);
+  const paletteConfig = getPaletteForItem(itemId, meta, paletteNum);
 
   // Only recolor if item uses a palette and color is not the source color
-  if (paletteConfig && color !== paletteConfig.sourceColor) {
+  if (paletteConfig && recolor !== paletteConfig.source) {
     try {
-      return await recolorWithPalette(img, color, paletteConfig.type);
+      return await recolorWithPalette(img, recolor, paletteConfig);
     } catch (err) {
       console.warn(
-        `Failed to recolor ${paletteConfig.type} color ${color}:`,
+        `Failed to recolor ${paletteConfig.material} color ${recolor}:`,
         err
       );
       return img; // Fallback to original on error
@@ -275,85 +279,23 @@ export async function getImageToDraw(img, itemId, color) {
 }
 
 /**
- * Get palette configuration for an item from its metadata
- * @param {string} itemId - Item identifier
- * @param {Object} meta - Item metadata
- * @returns {Object|null} Palette config object with {type, base, palette} or null if item doesn't use palette recoloring
- */
-export function getPaletteForItem(itemId, meta) {
-  if (!meta || !meta.recolors) return null;
-
-	// Return the recolors config from item metadata
-  const palettes = getMultiPalettes(meta.recolors);
-
-  // Gather All Palettes If Exists
-  const results = [];
-  for (const palette of palettes) {
-    results.push({
-      type: palette.type,
-      sourceColor: getBasePalette(palette.type, palette.base ?? null), // TO DO: This should be the colors, not simply the palette name, maybe?!
-      file: getPaletteFiles(palette.type, palette.palettes)
-    });
-  }
-
-	return results;
-}
-
-/**
- * Lazy-load a palette on first request
- * @param {string} paletteType - Palette type & variant (e.g., 'body.ulpc', 'hair.lpcr')
- * @returns {Promise<Object>} Palette data
- */
-async function ensurePaletteLoaded(paletteType) {
-  if (!loadedPalettes[paletteType]) {
-    const paletteFile = getPaletteFile(paletteType);
-    if (!paletteFile) {
-      throw new Error(
-        `Unknown palette type: ${paletteType} (no file mapping found)`
-      );
-    }
-
-    try {
-      loadedPalettes[paletteType] = await loadPalette(paletteFile);
-      if (DEBUG) {
-        console.log(
-          `Loaded ${paletteType} palette with ${
-            Object.keys(loadedPalettes[paletteType]).length
-          } colors`
-        );
-      }
-    } catch (err) {
-      throw new Error(
-        `Failed to load ${paletteType} palette from ${paletteFile}: ${err.message}`
-      );
-    }
-  }
-
-  return loadedPalettes[paletteType];
-}
-
-/**
  * Recolor an image using a specified palette type
  * Automatically loads the palette on first use (lazy loading)
  * @param {HTMLImageElement|HTMLCanvasElement} sourceImage - Base source image
  * @param {string} targetColor - Target color name (e.g., "amber", "bronze", "fur_copper")
- * @param {string} paletteType - Palette type to use (e.g., "body", "hair", "cloth")
+ * @param {string} sourcePalette - Original palette to source data from
  * @returns {Promise<HTMLCanvasElement>} Recolored canvas
  */
 export async function recolorWithPalette(
   sourceImage,
   targetColor,
-  paletteType
+  sourcePalette
 ) {
-  // Lazy-load palette on first use
-  const palette = await ensurePaletteLoaded(paletteType);
-
-  const sourcePalette = palette.source || palette.light;
-  const targetPalette = palette[targetColor];
-
+  // Get Target Palette
+  const targetPalette = getTargetPalette(sourcePalette.material, targetColor);
   if (!targetPalette) {
-    throw new Error(`Unknown ${paletteType} color: ${targetColor}`);
+    throw new Error(`Unknown target palette color: ${targetColor}`);
   }
 
-  return recolorImage(sourceImage, sourcePalette, targetPalette);
+  return recolorImage(sourceImage, sourcePalette.colors, targetPalette);
 }
