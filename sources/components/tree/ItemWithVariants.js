@@ -106,7 +106,7 @@ export const ItemWithVariants = {
 
 								// If this item has matchBodyColor enabled, apply to all other body-colored items
 								if (meta.matchBodyColor) {
-									applyMatchBodyColor(variant);
+									applyMatchBodyColor(variant, variant);
 								}
 							}
 						}
