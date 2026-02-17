@@ -1,4 +1,12 @@
-// Function to get palette file info
+// Palette utilities
+import { state, getSelectionGroup } from "./state.js";
+
+/**
+ * Function to get palette file info
+ * @param {string} material - Material name / identifier
+ * @param {string|null} base - The source recolor to convert from; if null, uses the default base recolor
+ * @returns {Array[version, recolor, Array<colors>]} Return list of base palette assets including version, color name, and array of hex colors
+ */
 export function getBasePalette(material, base = null) {
     // Check Palette Material Exists
     const materialMeta = window.paletteMetadata?.materials[material];
@@ -13,7 +21,12 @@ export function getBasePalette(material, base = null) {
     return [version, recolor, colors];
 }
 
-// Function to get palette file info
+/**
+ * Function to get palette file info
+ * @param {string} material - Material name / identifier
+ * @param {string} targetColor - The target recolor to retrieve
+ * @returns {Array} Array of colors for the target palette
+ */
 export function getTargetPalette(material, targetColor) {
     // Check Palette Material Exists
     const materialMeta = window.paletteMetadata?.materials[material];
@@ -23,7 +36,7 @@ export function getTargetPalette(material, targetColor) {
     }
 
     // Split Colors
-    let [version, recolor] = targetColor.split("_");
+    let [version, recolor] = targetColor.split(".");
     if (!window.paletteMetadata?.versions[version]) {
         version = materialMeta.default;
         recolor = targetColor;
@@ -56,4 +69,52 @@ export function getPaletteForItem(itemId, meta, paletteNum = 0) {
     source,
     colors
   };
+}
+
+/**
+ * Get palette options for item ID, its meta data, and the selection group it belongs to
+ * @param {string} itemId 
+ * @param {Object} meta 
+ * @returns {Array} Array of palette options for the item
+ */
+export function getPaletteOptions(itemId, meta) {
+    // Initialize Palette Options
+    const selectionGroup = getSelectionGroup(itemId);
+    const paletteOptions = [];
+    if (meta.recolors && meta.recolors.length > 0) {
+        meta.recolors.forEach((color, idx) => {
+            const subGroup = idx !== 0 ? `${selectionGroup}.${color.key}` : selectionGroup;
+            const selection = state.selections[subGroup];
+            const versions = Object.keys(color.palettes);
+
+            // Get Recolors from Selection
+            const [material, version, recolor] = parseRecolorKey(selection?.recolor, color);
+            paletteOptions.push({
+                idx,
+                label: color.label,
+                material: color.material,
+                versions,
+                selectionColor: selection?.recolor,
+                colors: getTargetPalette(material, `${version}.${recolor}`)
+            });
+        });
+    }
+    return paletteOptions;
+}
+
+/**
+ * Parse the Recolor Key to Extract Material, Version, and Recolor
+ * @param {string} recolorKey 
+ * @returns {Array} [material, version, recolor]
+ */
+export function parseRecolorKey(recolorKey, palette) {
+    if (!recolorKey) recolorKey = palette.base;
+    let [recolor, version, material] = recolorKey.split(".").reverse();
+    if (!material) {
+        material = palette.material;
+    }
+    if (!version) {
+        version = palette.default;
+    }
+    return [material, version, recolor];
 }

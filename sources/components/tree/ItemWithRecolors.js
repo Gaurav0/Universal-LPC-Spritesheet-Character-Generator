@@ -2,7 +2,8 @@
 import { state, getSelectionGroup, applyMatchBodyColor } from '../../state/state.js';
 import { capitalize, ucwords } from '../../utils/helpers.js';
 import { getImageToDraw } from '../../canvas/palette-recolor.js';
-import { getPaletteForItem } from '../../state/palettes.js'
+import { getPaletteForItem, getPaletteOptions } from '../../state/palettes.js';
+import { PaletteSelectModal } from './PaletteSelectModal.js';
 
 const classNames = window.classNames;
 
@@ -16,156 +17,42 @@ export const ItemWithRecolors = {
         if (displayName === 'Body Color') {
             nodePath = 'body-body';
         }
-        const selectedColor = state.selectedColor ?? meta.recolor;
-        const isExpanded = state.expandedNodes[nodePath] || false;
+
+        // Check Selection Status
+        const selectionGroup = getSelectionGroup(itemId);
+		const isExpanded = state.expandedNodes[nodePath] || false;
+        const isSelected = state.selections[selectionGroup]?.itemId === itemId;
 
         // Build palette/color options for all recolor fields
-        let paletteOptions = [];
-        let paletteSelectors = [];
-        let selectedPalettes = rootViewNode.state.selectedPalettes || {};
-        if (meta.recolors && meta.recolors.length > 0) {
-            meta.recolors.forEach((recolor, idx) => {
-                const palettes = Object.keys(recolor.palettes);
-                const selectedPalette = selectedPalettes[idx]?.palette || palettes[0];
-                const selectedColor = selectedPalettes[idx]?.color || recolor.variants[selectedPalette][0];
-                paletteOptions.push({
-                    idx,
-                    label: paletteMetadata.versions[recolor.version]?.label || capitalize(recolor.material),
-                    material: recolor.material,
-                    palettes,
-                    selectedPalette,
-                    colors: recolor.variants[selectedPalette],
-                    selectedColor
-                });
-                paletteSelectors.push(
-                    m("span.palette-selector.ml-2", {
-                        title: `Choose palette for ${recolor.material}`,
-                        onclick: (e) => {
-                            e.stopPropagation();
-                            rootViewNode.state.showPaletteModal = idx;
-                        }
-                    }, [
-                        m("i.fas.fa-palette"),
-                        ` ${capitalize(recolor.material)}`
-                    ])
-                );
-            });
-        }
-        console.log(paletteOptions);
+        const paletteOptions = getPaletteOptions(itemId, meta);
 
-        // Modal for palette selection (one at a time)
+
+        // Check Selection Status
         let paletteModal = null;
         if (typeof rootViewNode.state.showPaletteModal === 'number') {
             const idx = rootViewNode.state.showPaletteModal;
             const opt = paletteOptions[idx];
             const recolor = meta.recolors[idx];
-
-            // Get paletteMetadata from global
             const paletteMetadata = window.paletteMetadata;
-
-            // Determine material type (e.g., 'cloth', 'hair', 'metal', 'eyes'), fallback to 'cloth' if not found
-            const materialType = recolor.material || 'cloth';
-            const materialMeta = paletteMetadata.materials[materialType];
-
-            // Initialize Palette Selection Modal
             const paletteVersions = Object.keys(recolor.palettes || {}).map(version => {
-                const [mat, ver] = version.split('.');
-                if (mat === '') {
-                    ver = mat;
-                    mat = materialType;
-                }
+                let [ver, mat] = version.split('.').reverse();
+                if (!mat) mat = recolor.material;
                 return [mat, ver];
             });
-            console.log(paletteVersions);
-            paletteModal = m("div.palette-modal", {
-                style: {
-                    position: "fixed",
-                    top: "20%",
-                    left: "30%",
-                    background: "#fff",
-                    border: "1px solid #ccc",
-                    padding: "1em",
-                    zIndex: 1000,
-                    maxHeight: "400px",
-                    overflowY: "auto",
-                    width: "340px",
-                    borderRadius: "10px",
-                    overflowX: "hidden"
+            paletteModal = m(PaletteSelectModal, {
+                opt,
+                recolor,
+                paletteMetadata,
+                paletteVersions,
+                onClose: () => { rootViewNode.state.showPaletteModal = null; m.redraw(); },
+                onSelect: (pal, color) => {
+                    if (!rootViewNode.state.selectedPalettes) rootViewNode.state.selectedPalettes = {};
+                    rootViewNode.state.selectedPalettes[idx] = { palette: pal, color };
+                    rootViewNode.state.showPaletteModal = null;
+                    m.redraw();
                 }
-            }, [
-                m("h4", {
-                    style: {
-                        fontWeight: "bold",
-                        fontSize: "1.2rem"
-                    }
-                },
-                paletteMetadata.materials[opt.material]?.label || capitalize(opt.material)),
-                paletteVersions.map(([material, version]) => [
-                    m("div", { style: { fontWeight: "bold", margin: "0.5em 0 0.2em 0" } },
-                        (paletteMetadata.versions[version]?.label || version) +
-                        (material !== materialType ? ` - ${paletteMetadata.materials[material]?.label || capitalize(material)}` : '')
-                    ),
-                    ...Object.entries(paletteMetadata.materials[material].palettes[version]).map(([pal, colors]) =>
-                        m("div", {
-                            style: {
-                                display: "flex",
-                                alignItems: "center",
-                                marginBottom: "0.5em",
-                                cursor: "pointer"
-                            },
-                            onclick: (e) => {
-                                e.stopPropagation();
-                                if (!rootViewNode.state.selectedPalettes) rootViewNode.state.selectedPalettes = {};
-                                rootViewNode.state.selectedPalettes[idx] = { palette: pal, color: recolor.color };
-                                rootViewNode.state.showPaletteModal = null;
-                                m.redraw();
-                            }
-                        }, [
-                            m("label", {
-                                style: {
-                                    width: "50%",
-                                    display: "inline-block"
-                                }
-                            }, ucwords(pal.replace('_', ' '))),
-                            m("div", {
-                                    style: {
-                                        width: "50%",
-                                        border: "1px solid #ccc",
-                                        borderRadius: "10px",
-                                        display: "flex",
-                                        alignItems: "center",
-                                        overflowX: "hidden",
-                                        lineHeight: "1.5"
-                                    }
-                                },
-                                colors.map((color, i) =>
-                                    m("span", {
-                                        style: {
-                                            display: "inline-block",
-                                            width: "1.2rem",
-                                            height: "1rem",
-                                            padding: "0",
-                                            margin: "0",
-                                            width: `${100 / colors.length}%`,
-                                            background: color
-                                        }
-                                    })
-                                ).slice(0, materialType === 'eyes' ? 3 : 6)
-                            )
-                        ])
-                    )
-                ]),
-                m("button", {
-                    style: { marginTop: "1em" },
-                    onclick: () => { rootViewNode.state.showPaletteModal = null; m.redraw(); }
-                }, "Close")
-            ]);
+            });
         }
-
-        // Find the Selections
-        const selectionGroup = getSelectionGroup(itemId);
-        const isSelected = state.selections[selectionGroup]?.itemId === itemId &&
-            state.selections[selectionGroup]?.variant === selectedColor;
 
         // Only show the idle preview for the asset
         const previewRow = meta.preview_row ?? 2;
@@ -194,7 +81,10 @@ export const ItemWithRecolors = {
             class: classNames({
                 "search-result": isSearchMatch,
                 "has-text-grey": !isCompatible,
-            })
+            }),
+            style: {
+                "position": "relative"
+            }
         }, [
             m("div.tree-label", {
                 title: tooltipText,
@@ -300,27 +190,29 @@ export const ItemWithRecolors = {
                         })
                     ]),
                     // Small color icons for each recolor category
-                    paletteOptions.length ? m("div.ml-3.is-flex.is-align-items-center",
-                        paletteOptions.map(opt =>
-                            m("div", {
+                    paletteOptions.length ? m("div.ml-3.is-align-items-center", {
+                            style: { width: "100%" }
+                        },
+                        paletteOptions.map((opt, idx) =>
+                            m("div.is-flex", {
                                 style: {
                                     display: "flex",
                                     alignItems: "center",
                                     marginBottom: "0.5em",
-                                    cursor: "pointer"
+                                    cursor: "pointer",
+                                    width: "100%"
                                 },
                                 onclick: (e) => {
                                     e.stopPropagation();
-                                    if (!rootViewNode.state.selectedPalettes) rootViewNode.state.selectedPalettes = {};
-                                    rootViewNode.state.selectedPalettes[idx] = { palette: pal, color: recolor.color };
-                                    rootViewNode.state.showPaletteModal = null;
+                                    rootViewNode.state.showPaletteModal = idx;
                                     m.redraw();
                                 }
                             }, [
                                 m("label", {
                                     style: {
                                         width: "50%",
-                                        display: "inline-block"
+                                        display: "flex",
+                                        cursor: "pointer",
                                     }
                                 }, paletteMetadata.materials[opt.material]?.label || capitalize(opt.material)),
                                 m("div", {
@@ -331,10 +223,11 @@ export const ItemWithRecolors = {
                                             display: "flex",
                                             alignItems: "center",
                                             overflowX: "hidden",
-                                            lineHeight: "1.5"
+                                            lineHeight: "1.5",
+                                            cursor: "pointer",
                                         }
                                     },
-                                    colors.map((color, i) =>
+                                    opt.colors.map((color, i) =>
                                         m("span", {
                                             style: {
                                                 display: "inline-block",
@@ -342,11 +235,11 @@ export const ItemWithRecolors = {
                                                 height: "1rem",
                                                 padding: "0",
                                                 margin: "0",
-                                                width: `${100 / colors.length}%`,
+                                                width: `${100 / opt.colors.length}%`,
                                                 background: color
                                             }
                                         })
-                                    ).slice(0, materialType === 'eyes' ? 3 : 6)
+                                    )
                                 )
                             ])
                         )
