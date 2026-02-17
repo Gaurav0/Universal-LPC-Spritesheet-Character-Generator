@@ -86,6 +86,8 @@
       ]
     },
     "color_2": {
+      "type_name": "eyes",
+      "label": "Eye Color",
       "material": "eye",
       "palettes": [
         "eye.ulpc",
