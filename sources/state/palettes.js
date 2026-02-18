@@ -29,17 +29,20 @@ export function getBasePalette(material, base = null) {
  */
 export function getTargetPalette(material, targetColor) {
     // Check Palette Material Exists
-    const materialMeta = window.paletteMetadata?.materials[material];
+    let materialMeta = window.paletteMetadata?.materials[material];
     if (!materialMeta) {
         console.error(`Palettes for ${material} not found`);
         return null;
     }
 
-    // Split Colors
-    let [version, recolor] = targetColor.split(".");
-    if (!window.paletteMetadata?.versions[version]) {
-        version = materialMeta.default;
-        recolor = targetColor;
+    // Parse Recolor Key
+    let [newMat, version, recolor] = parseRecolorKey(targetColor, materialMeta);
+    if(newMat !== null) {
+        const newMaterialMeta = window.paletteMetadata?.materials[newMat];
+        if (newMaterialMeta) {
+            material = newMat;
+            materialMeta = newMaterialMeta;
+        }
     }
 
     // Get Palette Info
@@ -92,6 +95,7 @@ export function getPaletteOptions(itemId, meta) {
             paletteOptions.push({
                 idx,
                 label: color.label,
+                default: color.default,
                 material: color.material,
                 versions,
                 selectionColor: selection?.recolor,
@@ -104,17 +108,68 @@ export function getPaletteOptions(itemId, meta) {
 
 /**
  * Parse the Recolor Key to Extract Material, Version, and Recolor
- * @param {string} recolorKey 
+ * @param {string} recolorKey Recolor Key to parse (either "material.version.recolor" or "version.recolor" or "recolor")
+ * @param {Object} palette - Palette metadata object
  * @returns {Array} [material, version, recolor]
  */
 export function parseRecolorKey(recolorKey, palette) {
-    if (!recolorKey) recolorKey = palette.base;
+    if (!recolorKey) recolorKey = palette?.base;
     let [recolor, version, material] = recolorKey.split(".").reverse();
     if (!material) {
-        material = palette.material;
+        material = palette?.material;
     }
     if (!version) {
-        version = palette.default;
+        version = palette?.default;
     }
     return [material, version, recolor];
+}
+
+/**
+ * 
+ * @param {Object} meta - Metadata for the asset
+ * @return {Array} Array of layers to load
+ */
+export function getLayersToLoad(meta) {
+    // Check if this item uses a custom animation
+    const layer1 = meta.layers?.layer_1;
+    const hasCustomAnimation = layer1?.custom_animation;
+    const layer1CustomAnimation = hasCustomAnimation ? layer1.custom_animation : null;
+
+    // Collect all layers for this item
+    // Only include layers that match layer_1's custom animation (if any)
+    const layersToLoad = [];
+    for (let layerNum = 1; layerNum < 10; layerNum++) {
+        const layer = meta.layers?.[`layer_${layerNum}`];
+        if (!layer) break;
+
+        let layerPath = layer[state.bodyType];
+        if (!layerPath) continue;
+
+        // Filter: only include layers with matching custom animation
+        if (layer1CustomAnimation) {
+            if (layer.custom_animation !== layer1CustomAnimation) {
+                continue;
+            }
+        }
+
+        // Replace template variables like ${head}
+        if (layerPath.includes('${')) {
+            layerPath = replaceInPath(layerPath, state.selections, meta);
+        }
+
+        const hasCustomAnim = layer.custom_animation;
+        let imagePath;
+        if (hasCustomAnim) {
+            imagePath = `spritesheets/${layerPath}.png`;
+        } else {
+            const defaultAnim = meta.animations.includes('walk') ? 'walk' : meta.animations[0];
+            imagePath = `spritesheets/${layerPath}${defaultAnim}.png`;
+        }
+
+        layersToLoad.push({
+            zPos: layer.zPos || 100,
+            path: imagePath
+        });
+    }
+    return layersToLoad.sort((a, b) => a.zPos - b.zPos);
 }

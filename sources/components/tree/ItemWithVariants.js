@@ -76,9 +76,9 @@ export const ItemWithVariants = {
 					return m("div.variant-item.is-flex.is-flex-direction-column.is-align-items-center.is-clickable", {
 						key: variant,
 						class: classNames({
-              "has-background-link-light has-text-weight-bold has-text-link": isSelected,
-              "is-not-compatible": !isCompatible,
-            }),
+							"has-background-link-light has-text-weight-bold has-text-link": isSelected,
+							"is-not-compatible": !isCompatible,
+						}),
 						title: tooltipText,
 						onmouseover: (e) => {
 							if (!isCompatible) return;

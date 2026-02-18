@@ -1,4 +1,5 @@
 import { state, selectDefaults } from "./state.js";
+import { parseRecolorKey } from "./palettes.js";
 
 // Dependency injection for testability
 export function getState() {
@@ -222,10 +223,15 @@ export function loadSelectionsFromHash(hashString = null) {
       name: meta.name
     };
     if (newSelection.variant || newSelection.recolor) {
+      let recolorLabel = newSelection.recolor;
+      if (recolorLabel) {
+        const [mat, ver, recolor] = parseRecolorKey(newSelection.recolor, meta.recolors?.[0]);
+        recolorLabel = (ver !== meta.recolors?.[0]?.default ? `${ver} ${recolor}` : recolor);
+      }
       newSelection.name += " (" +
-        (newSelection.variant ? ` ${newSelection.variant}` : "") +
+        (newSelection.variant ? `${newSelection.variant}` : "") +
         (newSelection.variant && newSelection.recolor ? " | " : "") +
-        (newSelection.recolor ? ` ${newSelection.recolor}` : "") +
+        (newSelection.recolor ? `${recolorLabel}` : "") +
       ")";
     }
     newSelections[selectionGroup] = newSelection;

@@ -7,7 +7,8 @@ import {
 } from "./webgl-palette-recolor.js";
 import { getDebugParam } from "../main.js";
 import { get2DContext } from "./canvas-utils.js";
-import { getPaletteForItem, getTargetPalette } from '../state/palettes.js';
+import { state } from '../state/state.js';
+import { getPaletteForItem, getTargetPalette, getLayersToLoad } from '../state/palettes.js';
 
 // Configuration flags
 let config = {
@@ -298,4 +299,56 @@ export async function recolorWithPalette(
   }
 
   return recolorImage(sourceImage, sourcePalette.colors, targetPalette);
+}
+
+/**
+ * Draw Preview for Recolorable Asset
+ * @param {string} itemId - Item identifier
+ * @param {Object} meta - Metadata for the asset
+ * @param {Object} canvas - Canvas dom
+ * @param {string} selectedColor - Selected color for recoloring
+ */
+export async function drawRecolorPreview(itemId, meta, canvas, selectedColor) {
+  const ctx = canvas.getContext('2d', { willReadFrequently: true });
+  const compactDisplay = state.compactDisplay;
+  
+  // Only show the idle preview for the asset
+  const previewRow = meta.preview_row ?? 2;
+  const previewCol = meta.preview_column ?? 0;
+  const previewXOffset = meta.preview_x_offset ?? 0;
+  const previewYOffset = meta.preview_y_offset ?? 0;
+  const layersToLoad = getLayersToLoad(meta);
+
+  // Load and draw all layers
+  let imagesLoaded = 0;
+  Promise.all(layersToLoad.map(layer => {
+      return new Promise((resolve) => {
+          const img = new Image();
+          img.onload = () => resolve({ img, layer });
+          img.onerror = () => resolve({ img: null, layer });
+          img.src = layer.path;
+      });
+  })).then(async loadedLayers => {
+      canvas.loadedLayers = loadedLayers;
+      // Draw each layer in zPos order
+      // Use universalFrameSize (64) for all calculations, matching master branch
+      const universalFrameSize = 64;
+      for (const { img, layer } of loadedLayers) {
+          if (img) {
+              const imageToDraw = await getImageToDraw(img, itemId, selectedColor);
+              const size = compactDisplay ? 32 : 64;
+              // Master branch uses: previewColumn * universalFrameSize + previewXOffset
+              const srcX = previewCol * universalFrameSize + previewXOffset;
+              const srcY = previewRow * universalFrameSize + previewYOffset;
+              ctx.drawImage(
+                  imageToDraw,
+                  srcX, srcY, universalFrameSize, universalFrameSize,
+                  0, 0, size, size
+              );
+          }
+      }
+      imagesLoaded++;
+      m.redraw();
+  });
+  return imagesLoaded;
 }
