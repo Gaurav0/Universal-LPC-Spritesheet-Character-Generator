@@ -25557,30 +25557,7 @@ window.itemMetadata = {
         "Human_Elderly_Small": "elderly"
       }
     },
-    "variants": [
-      "light",
-      "amber",
-      "olive",
-      "taupe",
-      "bronze",
-      "brown",
-      "black",
-      "lavender",
-      "blue",
-      "zombie_green",
-      "green",
-      "pale_green",
-      "bright_green",
-      "dark_green",
-      "fur_black",
-      "fur_brown",
-      "fur_tan",
-      "fur_copper",
-      "fur_gold",
-      "fur_grey",
-      "fur_white",
-      "zombie"
-    ],
+    "variants": [],
     "layers": {
       "layer_1": {
         "zPos": 101,
@@ -25997,30 +25974,7 @@ window.itemMetadata = {
       "face_angry2"
     ],
     "replace_in_path": {},
-    "variants": [
-      "light",
-      "amber",
-      "olive",
-      "taupe",
-      "bronze",
-      "brown",
-      "black",
-      "lavender",
-      "blue",
-      "zombie_green",
-      "green",
-      "pale_green",
-      "bright_green",
-      "dark_green",
-      "fur_black",
-      "fur_brown",
-      "fur_tan",
-      "fur_copper",
-      "fur_gold",
-      "fur_grey",
-      "fur_white",
-      "zombie"
-    ],
+    "variants": [],
     "layers": {
       "layer_1": {
         "zPos": 106,
@@ -26408,30 +26362,7 @@ window.itemMetadata = {
         "Human_Elderly_Small": "elderly"
       }
     },
-    "variants": [
-      "light",
-      "amber",
-      "olive",
-      "taupe",
-      "bronze",
-      "brown",
-      "black",
-      "lavender",
-      "blue",
-      "zombie_green",
-      "green",
-      "pale_green",
-      "bright_green",
-      "dark_green",
-      "fur_black",
-      "fur_brown",
-      "fur_tan",
-      "fur_copper",
-      "fur_gold",
-      "fur_grey",
-      "fur_white",
-      "zombie"
-    ],
+    "variants": [],
     "layers": {
       "layer_1": {
         "zPos": 101,
@@ -26860,30 +26791,7 @@ window.itemMetadata = {
         "Human_Elderly_Small": "elderly"
       }
     },
-    "variants": [
-      "light",
-      "amber",
-      "olive",
-      "taupe",
-      "bronze",
-      "brown",
-      "black",
-      "lavender",
-      "blue",
-      "zombie_green",
-      "green",
-      "pale_green",
-      "bright_green",
-      "dark_green",
-      "fur_black",
-      "fur_brown",
-      "fur_tan",
-      "fur_copper",
-      "fur_gold",
-      "fur_grey",
-      "fur_white",
-      "zombie"
-    ],
+    "variants": [],
     "layers": {
       "layer_1": {
         "zPos": 101,
@@ -27267,30 +27175,7 @@ window.itemMetadata = {
         "Human_Elderly_Small": "elderly"
       }
     },
-    "variants": [
-      "light",
-      "amber",
-      "olive",
-      "taupe",
-      "bronze",
-      "brown",
-      "black",
-      "lavender",
-      "blue",
-      "zombie_green",
-      "green",
-      "pale_green",
-      "bright_green",
-      "dark_green",
-      "fur_black",
-      "fur_brown",
-      "fur_tan",
-      "fur_copper",
-      "fur_gold",
-      "fur_grey",
-      "fur_white",
-      "zombie"
-    ],
+    "variants": [],
     "layers": {
       "layer_1": {
         "zPos": 101,
@@ -27719,30 +27604,7 @@ window.itemMetadata = {
         "Human_Elderly_Small": "elderly"
       }
     },
-    "variants": [
-      "light",
-      "amber",
-      "olive",
-      "taupe",
-      "bronze",
-      "brown",
-      "black",
-      "lavender",
-      "blue",
-      "zombie_green",
-      "green",
-      "pale_green",
-      "bright_green",
-      "dark_green",
-      "fur_black",
-      "fur_brown",
-      "fur_tan",
-      "fur_copper",
-      "fur_gold",
-      "fur_grey",
-      "fur_white",
-      "zombie"
-    ],
+    "variants": [],
     "layers": {
       "layer_1": {
         "zPos": 101,
@@ -28171,30 +28033,7 @@ window.itemMetadata = {
         "Human_Elderly_Small": "elderly"
       }
     },
-    "variants": [
-      "light",
-      "amber",
-      "olive",
-      "taupe",
-      "bronze",
-      "brown",
-      "black",
-      "lavender",
-      "blue",
-      "zombie_green",
-      "green",
-      "pale_green",
-      "bright_green",
-      "dark_green",
-      "fur_black",
-      "fur_brown",
-      "fur_tan",
-      "fur_copper",
-      "fur_gold",
-      "fur_grey",
-      "fur_white",
-      "zombie"
-    ],
+    "variants": [],
     "layers": {
       "layer_1": {
         "zPos": 101,
@@ -28611,30 +28450,7 @@ window.itemMetadata = {
       "face_happy2"
     ],
     "replace_in_path": {},
-    "variants": [
-      "light",
-      "amber",
-      "olive",
-      "taupe",
-      "bronze",
-      "brown",
-      "black",
-      "lavender",
-      "blue",
-      "zombie_green",
-      "green",
-      "pale_green",
-      "bright_green",
-      "dark_green",
-      "fur_black",
-      "fur_brown",
-      "fur_tan",
-      "fur_copper",
-      "fur_gold",
-      "fur_grey",
-      "fur_white",
-      "zombie"
-    ],
+    "variants": [],
     "layers": {
       "layer_1": {
         "zPos": 106,
@@ -29022,30 +28838,7 @@ window.itemMetadata = {
         "Human_Elderly_Small": "elderly"
       }
     },
-    "variants": [
-      "light",
-      "amber",
-      "olive",
-      "taupe",
-      "bronze",
-      "brown",
-      "black",
-      "lavender",
-      "blue",
-      "zombie_green",
-      "green",
-      "pale_green",
-      "bright_green",
-      "dark_green",
-      "fur_black",
-      "fur_brown",
-      "fur_tan",
-      "fur_copper",
-      "fur_gold",
-      "fur_grey",
-      "fur_white",
-      "zombie"
-    ],
+    "variants": [],
     "layers": {
       "layer_1": {
         "zPos": 101,
@@ -29474,30 +29267,7 @@ window.itemMetadata = {
         "Human_Elderly_Small": "elderly"
       }
     },
-    "variants": [
-      "light",
-      "amber",
-      "olive",
-      "taupe",
-      "bronze",
-      "brown",
-      "black",
-      "lavender",
-      "blue",
-      "zombie_green",
-      "green",
-      "pale_green",
-      "bright_green",
-      "dark_green",
-      "fur_black",
-      "fur_brown",
-      "fur_tan",
-      "fur_copper",
-      "fur_gold",
-      "fur_grey",
-      "fur_white",
-      "zombie"
-    ],
+    "variants": [],
     "layers": {
       "layer_1": {
         "zPos": 101,
@@ -29926,30 +29696,7 @@ window.itemMetadata = {
         "Human_Elderly_Small": "elderly"
       }
     },
-    "variants": [
-      "light",
-      "amber",
-      "olive",
-      "taupe",
-      "bronze",
-      "brown",
-      "black",
-      "lavender",
-      "blue",
-      "zombie_green",
-      "green",
-      "pale_green",
-      "bright_green",
-      "dark_green",
-      "fur_black",
-      "fur_brown",
-      "fur_tan",
-      "fur_copper",
-      "fur_gold",
-      "fur_grey",
-      "fur_white",
-      "zombie"
-    ],
+    "variants": [],
     "layers": {
       "layer_1": {
         "zPos": 101,
@@ -30383,30 +30130,7 @@ window.itemMetadata = {
         "Human_Elderly_Small": "elderly"
       }
     },
-    "variants": [
-      "light",
-      "amber",
-      "olive",
-      "taupe",
-      "bronze",
-      "brown",
-      "black",
-      "lavender",
-      "blue",
-      "zombie_green",
-      "green",
-      "pale_green",
-      "bright_green",
-      "dark_green",
-      "fur_black",
-      "fur_brown",
-      "fur_tan",
-      "fur_copper",
-      "fur_gold",
-      "fur_grey",
-      "fur_white",
-      "zombie"
-    ],
+    "variants": [],
     "layers": {
       "layer_1": {
         "zPos": 101,
@@ -30824,30 +30548,7 @@ window.itemMetadata = {
       "face_sad2"
     ],
     "replace_in_path": {},
-    "variants": [
-      "light",
-      "amber",
-      "olive",
-      "taupe",
-      "bronze",
-      "brown",
-      "black",
-      "lavender",
-      "blue",
-      "zombie_green",
-      "green",
-      "pale_green",
-      "bright_green",
-      "dark_green",
-      "fur_black",
-      "fur_brown",
-      "fur_tan",
-      "fur_copper",
-      "fur_gold",
-      "fur_grey",
-      "fur_white",
-      "zombie"
-    ],
+    "variants": [],
     "layers": {
       "layer_1": {
         "zPos": 101,
@@ -31235,30 +30936,7 @@ window.itemMetadata = {
         "Human_Elderly_Small": "elderly"
       }
     },
-    "variants": [
-      "light",
-      "amber",
-      "olive",
-      "taupe",
-      "bronze",
-      "brown",
-      "black",
-      "lavender",
-      "blue",
-      "zombie_green",
-      "green",
-      "pale_green",
-      "bright_green",
-      "dark_green",
-      "fur_black",
-      "fur_brown",
-      "fur_tan",
-      "fur_copper",
-      "fur_gold",
-      "fur_grey",
-      "fur_white",
-      "zombie"
-    ],
+    "variants": [],
     "layers": {
       "layer_1": {
         "zPos": 101,
@@ -31687,30 +31365,7 @@ window.itemMetadata = {
         "Human_Elderly_Small": "elderly"
       }
     },
-    "variants": [
-      "light",
-      "amber",
-      "olive",
-      "taupe",
-      "bronze",
-      "brown",
-      "black",
-      "lavender",
-      "blue",
-      "zombie_green",
-      "green",
-      "pale_green",
-      "bright_green",
-      "dark_green",
-      "fur_black",
-      "fur_brown",
-      "fur_tan",
-      "fur_copper",
-      "fur_gold",
-      "fur_grey",
-      "fur_white",
-      "zombie"
-    ],
+    "variants": [],
     "layers": {
       "layer_1": {
         "zPos": 101,
