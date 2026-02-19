@@ -2,6 +2,34 @@
 import { state, getSelectionGroup } from "./state.js";
 
 /**
+ * Function to get multiple recolor options from selections.
+ * @param {string} itemId - The ID of the item to get recolors for
+ * @param {Array} selections - The array of selections to filter
+ * @returns {Object} An object mapping type_name to recolor
+ */
+export function getMultiRecolors(itemId, selections) {
+    // Implementation for getting multiple recolor options from selections
+    const meta = window.itemMetadata[itemId];
+
+    // Filter Selections to Item ID
+    const recolors = {};
+    for (const selection of Object.values(selections)) {
+        if (itemId !== selection.itemId) continue;
+        const meta = window.itemMetadata?.[selection.itemId];
+        if (!meta || !meta.type_name) continue;
+
+        // Process Each Item
+        if (selection.subId) {
+            const { type_name } = meta.recolors[selection.subId];
+            recolors[type_name] = selection.recolor;
+        } else {
+            recolors[meta.type_name] = selection.recolor;
+        }
+    };
+    return recolors;
+}
+
+/**
  * Function to get palette file info
  * @param {string} material - Material name / identifier
  * @param {string|null} base - The source recolor to convert from; if null, uses the default base recolor
@@ -60,18 +88,21 @@ export function getTargetPalette(material, targetColor) {
  * @param {Object} meta - Item metadata
  * @returns {Object|null} Palette config object with {type, base, palette} or null if item doesn't use palette recoloring
  */
-export function getPaletteForItem(itemId, meta, paletteNum = 0) {
+export function getPalettesForItem(itemId, meta) {
   if (!meta || !meta.recolors) return null;
 
   // Get Specific Palette for Item
-  const palette = meta.recolors[paletteNum];
-  const [version, source, colors] = getBasePalette(palette.material, palette.base ?? null);
-  return {
-    material: palette.material,
-    version: version || palette.default,
-    source,
-    colors
-  };
+  const sources = {};
+  for (const palette of meta.recolors) {
+    const [version, source, colors] = getBasePalette(palette.material, palette.base ?? null);
+    sources[palette.type_name ?? meta.type_name] = {
+        material: palette.material,
+        version: version || palette.default,
+        source,
+        colors
+    };
+  }
+  return sources;
 }
 
 /**
@@ -86,7 +117,7 @@ export function getPaletteOptions(itemId, meta) {
     const paletteOptions = [];
     if (meta.recolors && meta.recolors.length > 0) {
         meta.recolors.forEach((color, idx) => {
-            const subGroup = idx !== 0 ? `${selectionGroup}.${color.key}` : selectionGroup;
+            const subGroup = idx !== 0 ? color.type_name : selectionGroup;
             const selection = state.selections[subGroup];
             const versions = Object.keys(color.palettes);
 
@@ -97,6 +128,7 @@ export function getPaletteOptions(itemId, meta) {
                 label: color.label,
                 default: color.default,
                 material: color.material,
+                type_name: color.type_name ?? null,
                 versions,
                 selectionColor: selection?.recolor,
                 colors: getTargetPalette(material, `${version}.${recolor}`)

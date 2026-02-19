@@ -55,6 +55,16 @@ export function getSelectionGroup(itemId) {
 	return meta.type_name;
 }
 
+// Helper function to get selection group from recolor option
+// Selection group = type_name (e.g., "body", "heads", "ears")
+// This ensures only one item per type can be selected (mimics old radio button behavior)
+export function getSubSelectionGroup(itemId, idx) {
+	const meta = window.itemMetadata?.[itemId];
+	const recolor = meta?.recolors?.[idx];
+	if (!meta || !meta.type_name) return itemId;
+	return recolor?.type_name ?? meta.type_name;
+}
+
 // Select default items (body color light + human male light head)
 export async function selectDefaults() {
 	// Set default body color (light)

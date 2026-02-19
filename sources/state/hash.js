@@ -82,6 +82,35 @@ export function setHashParams(params) {
   setHash(hash);
 }
 
+export function buildNewSelection(foundItemId, matchedVariant, matchedRecolor, subId = null) {
+  // Get Meta Data for Item ID
+  const meta = window.itemMetadata[foundItemId];
+  const subMeta = meta.recolors?.[subId ?? 0];
+
+  // Build New Selection
+  let newSelection = {
+    itemId: foundItemId,
+    subId,
+    variant: matchedVariant || (matchedRecolor != "" ? "" : meta.variants?.[0] || ""),
+    recolor: matchedRecolor || (meta.variants.length === 0 ? subMeta?.variants[0] || "" : ""),
+    name: subId ? subMeta?.label : meta.name
+  };
+
+  if (newSelection.variant || newSelection.recolor) {
+    let recolorLabel = newSelection.recolor;
+    if (recolorLabel) {
+      const [mat, ver, recolor] = parseRecolorKey(newSelection.recolor, subMeta);
+      recolorLabel = (ver !== subMeta?.default ? `${ver} ${recolor}` : recolor);
+    }
+    newSelection.name += " (" +
+      (newSelection.variant ? `${newSelection.variant}` : "") +
+      (newSelection.variant && newSelection.recolor ? " | " : "") +
+      (newSelection.recolor ? `${recolorLabel}` : "") +
+    ")";
+  }
+  return newSelection;
+}
+
 export function getHashParamsforSelections(selections) {
   const params = {};
 
@@ -94,12 +123,15 @@ export function getHashParamsforSelections(selections) {
     const meta = window.itemMetadata?.[selection.itemId];
     if (!meta || !meta.type_name) continue;
 
+    // Sub ID Exists?
+    const subMeta = meta.recolors?.[selection.subId];
+
     // Use type_name as key (selection group)
-    const key = meta.type_name;
+    const key = subMeta?.type_name ?? meta.type_name;
 
     // Build name part for URL: use full name with underscores
     // "Body color" -> "Body_color", "Sara Shoes" -> "Sara_Shoes", "Waistband" -> "Waistband"
-    const namePart = meta.name.replaceAll(" ", "_");
+    const namePart = subMeta?.label.replaceAll(" ", "_") ?? meta.name.replaceAll(" ", "_");
 
     const variantPart = selection.variant ?? "";
     const recolorPart = selection.recolor ?? "";
@@ -125,6 +157,7 @@ export function loadSelectionsFromHash(hashString = null) {
 
   // Build new selections object without mutating state yet
   const newSelections = {};
+  const skippedEntries = {};
 
   // Load selections
   // Old format: type_name=Name_variant (e.g., "body=Body_color_light", "sash=Waistband_rose")
@@ -147,7 +180,7 @@ export function loadSelectionsFromHash(hashString = null) {
     let foundItemId = null;
     let matchedVariant = "";
     let matchedRecolor = "";
-
+  
     // Split on underscores and try different combinations
     const parts = nameAndVariant.split("_");
 
@@ -204,6 +237,7 @@ export function loadSelectionsFromHash(hashString = null) {
     }
 
     if (!foundItemId) {
+      skippedEntries[typeName] = nameAndVariant;
       if (window.DEBUG) {
         console.warn(
           `No item found with type_name "${typeName}" and nameAndVariant "${nameAndVariant}"`,
@@ -212,29 +246,33 @@ export function loadSelectionsFromHash(hashString = null) {
       continue;
     }
 
-    const meta = window.itemMetadata[foundItemId];
-
     // Use type_name as selection group
-    const selectionGroup = typeName;
-    let newSelection = {
-      itemId: foundItemId,
-      variant: matchedVariant || (matchedRecolor != "" ? "" : meta.variants?.[0] || ""),
-      recolor: matchedRecolor || (meta.variants.length === 0 ? meta.recolors?.[0]?.variants[0] || "" : ""),
-      name: meta.name
-    };
-    if (newSelection.variant || newSelection.recolor) {
-      let recolorLabel = newSelection.recolor;
-      if (recolorLabel) {
-        const [mat, ver, recolor] = parseRecolorKey(newSelection.recolor, meta.recolors?.[0]);
-        recolorLabel = (ver !== meta.recolors?.[0]?.default ? `${ver} ${recolor}` : recolor);
+    newSelections[typeName] = buildNewSelection(foundItemId, matchedVariant, matchedRecolor);
+  }
+
+  // Check if Skipped Entries Are Sub-Items!
+  for (const [subType, nameAndVariant] of Object.entries(skippedEntries)) {
+    // Handle sub-items logic here
+    const parts = nameAndVariant.split("_");
+    for (let i = 1; i <= parts.length; i++) {
+      const variants = parts.slice(i).join("_");
+      const recolorToMatch = variants.split("|")[1] ?? variants.split("|")[0];
+      let match = null;
+      let chosenItemId = null;
+      for (const [typeName, selection] of Object.entries(newSelections)) {
+        const recolors = window.itemMetadata[selection.itemId].recolors;
+        match = recolors?.findIndex(color => color.type_name === subType);
+        if (match !== -1 && recolors[match].variants.indexOf(recolorToMatch) !== -1) {
+          chosenItemId = selection.itemId;
+          break;
+        }
       }
-      newSelection.name += " (" +
-        (newSelection.variant ? `${newSelection.variant}` : "") +
-        (newSelection.variant && newSelection.recolor ? " | " : "") +
-        (newSelection.recolor ? `${recolorLabel}` : "") +
-      ")";
+
+      // Build New Selection
+      if (match !== -1 && chosenItemId) {
+        newSelections[subType] = buildNewSelection(chosenItemId, null, recolorToMatch, match);
+      }
     }
-    newSelections[selectionGroup] = newSelection;
   }
 
   // Now update state once with complete new selections
@@ -272,6 +310,7 @@ export function initHashChangeListener(listener) {
         ...Object.fromEntries(
           Object.values(state.selections).map((s) => [
             s.itemId,
+            s.subId,
             s.variant || "",
             s.recolor || "",
           ]),

@@ -1,7 +1,7 @@
 // Item with recolors component
-import { state, getSelectionGroup, applyMatchBodyColor } from '../../state/state.js';
+import { state, getSelectionGroup, getSubSelectionGroup, applyMatchBodyColor } from '../../state/state.js';
 import { drawRecolorPreview } from '../../canvas/palette-recolor.js';
-import { getPaletteOptions } from '../../state/palettes.js';
+import { getMultiRecolors, getPaletteOptions } from '../../state/palettes.js';
 import { PaletteSelectModal } from './PaletteSelectModal.js';
 
 const classNames = window.classNames;
@@ -22,7 +22,7 @@ export const ItemWithRecolors = {
 		const isExpanded = state.expandedNodes[nodePath] || false;
         const selection = state.selections[selectionGroup]
         const isSelected = selection?.itemId === itemId;
-        const selectedColor = selection?.recolor;
+        const selectedColors = getMultiRecolors(itemId, state.selections);
 
         // Build palette/color options for all recolor fields
         const paletteOptions = getPaletteOptions(itemId, meta);
@@ -38,15 +38,18 @@ export const ItemWithRecolors = {
                 onClose: () => { rootViewNode.state.showPaletteModal = null; m.redraw(); },
                 onSelect: (recolor) => {
                     const colorDisplayName = recolor.replaceAll("_", " ");
-                    state.selections[selectionGroup] = {
+                    const subSelect = getSubSelectionGroup(itemId, idx);
+                    const subDisplayName = opt.type_name ? opt.label : displayName;
+                    state.selections[subSelect] = {
                         itemId: itemId,
+                        subId: opt.type_name ? idx : null,
                         variant: null,
                         recolor: recolor,
-                        name: `${displayName} (${colorDisplayName})`
+                        name: `${subDisplayName} (${colorDisplayName})`
                     };
 
                     // If this item has matchBodyColor enabled, apply to all other body-colored items
-                    if (meta.matchBodyColor) {
+                    if (recolor.matchBodyColor || (subSelect === selectionGroup && meta.matchBodyColor)) {
                         applyMatchBodyColor(null, recolor);
                     }
                     rootViewNode.state.showPaletteModal = null;
@@ -112,19 +115,19 @@ export const ItemWithRecolors = {
                                 if (!isSelected) div.classList.remove('has-background-white-ter');
                             },
                             oncreate: async (canvasVnode) => {
-                                const imagesLoaded = drawRecolorPreview(itemId, meta, canvasVnode.dom, selectedColor);
+                                const imagesLoaded = drawRecolorPreview(itemId, meta, canvasVnode.dom, selectedColors);
                                 if (imagesLoaded > 0) {
                                     rootViewNode.state.imagesLoaded += imagesLoaded;
-                                    rootViewNode.state.oldSelectedColor = selectedColor;
+                                    rootViewNode.state.oldSelectedColors = selectedColors;
                                 }
                             },
                             onupdate: async (canvasVnode) => {
-                                if (rootViewNode.state.oldSelectedColor === selectedColor) {
+                                if (rootViewNode.state.oldSelectedColors === selectedColors) {
                                     return;
                                 }
-                                const imagesLoaded = drawRecolorPreview(itemId, meta, canvasVnode.dom, selectedColor);
+                                const imagesLoaded = drawRecolorPreview(itemId, meta, canvasVnode.dom, selectedColors);
                                 if (imagesLoaded > 0) {
-                                    rootViewNode.state.oldSelectedColor = selectedColor;
+                                    rootViewNode.state.oldSelectedColors = selectedColors;
                                 }
                             }
                         })

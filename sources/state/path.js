@@ -5,7 +5,7 @@ import { variantToFilename, es6DynamicTemplate } from '../utils/helpers.js';
 /**
  * Build sprite path from item metadata for a specific animation
  */
-export function getSpritePath(itemId, variant, recolor, bodyType, animName, layerNum = 1, selections = {}, meta = null) {
+export function getSpritePath(itemId, variant, recolors, bodyType, animName, layerNum = 1, selections = {}, meta = null) {
   if (!meta) {
     meta = window.itemMetadata[itemId];
   }
@@ -25,7 +25,7 @@ export function getSpritePath(itemId, variant, recolor, bodyType, animName, laye
   }
 
   // If no variant specified, try to extract from itemId
-  if (!variant && !recolor) {
+  if (!variant && !recolors) {
     const parts = itemId.split('_');
     variant = parts[parts.length - 1];
   }
@@ -37,7 +37,7 @@ export function getSpritePath(itemId, variant, recolor, bodyType, animName, laye
   }
 
   // Build full path: spritesheets/ + basePath + animation/ + variant.png
-  const fileName = !recolor ? `/${variantToFilename(variant)}` : '';
+  const fileName = !recolors ? `/${variantToFilename(variant)}` : '';
   return `spritesheets/${basePath}${animName}${fileName}.png`;
 }
 

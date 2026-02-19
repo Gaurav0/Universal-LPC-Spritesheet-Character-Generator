@@ -4,6 +4,7 @@
 import { loadImage, loadImagesInParallel } from "./load-image.js";
 import { getSpritePath } from "../state/path.js";
 import { getImageToDraw } from './palette-recolor.js';
+import { getMultiRecolors } from '../state/palettes.js';
 import { get2DContext, getZPos } from "./canvas-utils.js";
 import { variantToFilename } from "../utils/helpers.js";
 import { drawFramesToCustomAnimation } from "./draw-frames.js";
@@ -100,15 +101,18 @@ export async function renderCharacter(
     const addedCustomAnimations = new Set(); // Track which custom animations we've added
 
     for (const [categoryPath, selection] of Object.entries(selections)) {
-      const { itemId, variant, recolor } = selection;
+      const { itemId, subId, variant } = selection;
       const meta = window.itemMetadata[itemId];
 
-      if (!meta) continue;
+      if (!meta || subId) continue;
 
       // Check if this body type is supported
       if (!meta.required.includes(bodyType)) {
         continue;
       }
+
+      // Get Multiple Recolors If Available
+      const recolors = getMultiRecolors(itemId, selections);
 
       // Process all layers for this item
       for (let layerNum = 1; layerNum < 10; layerNum++) {
@@ -138,7 +142,7 @@ export async function renderCharacter(
           customAnimationItems.push({
             itemId,
             variant,
-            recolor,
+            recolors,
             spritePath,
             zPos,
             layerNum,
@@ -180,7 +184,7 @@ export async function renderCharacter(
           const spritePath = getSpritePath(
             itemId,
             variant,
-            recolor,
+            recolors,
             bodyType,
             animName,
             layerNum,
@@ -191,7 +195,7 @@ export async function renderCharacter(
           itemsToDraw.push({
             itemId,
             variant,
-            recolor,
+            recolors,
             spritePath,
             zPos,
             layerNum,
@@ -320,7 +324,7 @@ export async function renderCharacter(
     // Draw all items in sorted z-order
     for (const { item, img, success } of loadedItems) {
       if (success && img) {
-        const imageToDraw = await getImageToDraw(img, item.itemId, item.recolor);
+        const imageToDraw = await getImageToDraw(img, item.itemId, item.recolors);
         renderCtx.drawImage(imageToDraw, 0, item.yPos);
       }
     }
@@ -365,6 +369,7 @@ export async function renderCharacter(
                 itemId: item.itemId,
                 animation: item.animation,
                 needsRecolor: item.needsRecolor,
+                recolors: item.recolors,
                 variant: item.variant
               });
             }
@@ -382,7 +387,7 @@ export async function renderCharacter(
         // Draw in zPos order
         for (const { item: areaItem, img, success } of loadedCustomImages) {
           if (success && img) {
-            const imageToUse = await getImageToDraw(img, areaItem.itemId, areaItem.recolor);
+            const imageToUse = await getImageToDraw(img, areaItem.itemId, areaItem.recolors);
 
             if (areaItem.type === 'custom_sprite') {
               // Draw custom sprite directly (wheelchair background or foreground)
@@ -556,7 +561,7 @@ export async function renderSingleItem(
     // Draw layers in order
     for (const { item: sprite, img, success } of loadedSprites) {
       if (success && img) {
-        const imageToDraw = await getImageToDraw(img, itemId, recolor);
+        const imageToDraw = await getImageToDraw(img, itemId, recolors);
         itemCtx.drawImage(imageToDraw, 0, sprite.yPos);
       }
     }
@@ -599,7 +604,7 @@ export async function renderSingleItem(
       const spritePath = getSpritePath(
         itemId,
         variant,
-        recolor,
+        recolors,
         bodyType,
         animName,
         layerNum,
@@ -610,7 +615,7 @@ export async function renderSingleItem(
       spritesToDraw.push({
         itemId,
         variant,
-        recolor,
+        recolors,
         spritePath,
         zPos,
         layerNum,
@@ -631,7 +636,7 @@ export async function renderSingleItem(
     // Draw images in order
     for (const { item: sprite, img, success } of loadedImages) {
       if (success && img) {
-        const imageToDraw = await getImageToDraw(img, itemId, sprite.recolor);
+        const imageToDraw = await getImageToDraw(img, itemId, sprite.recolors);
         itemCtx.drawImage(imageToDraw, 0, sprite.yPos);
       }
     }
@@ -647,7 +652,7 @@ export async function renderSingleItem(
 export async function renderSingleItemAnimation(
   itemId,
   variant,
-  recolor,
+  recolors,
   bodyType,
   animationName,
   selections,
@@ -717,7 +722,7 @@ export async function renderSingleItemAnimation(
     const spritePath = getSpritePath(
       itemId,
       variant,
-      recolor,
+      recolors,
       bodyType,
       animationName,
       layerNum,
@@ -729,7 +734,7 @@ export async function renderSingleItemAnimation(
       spritePath,
       zPos,
       layerNum,
-      recolor
+      recolors
     });
   }
 
@@ -742,7 +747,7 @@ export async function renderSingleItemAnimation(
   // Draw images in order
   for (const { item: sprite, img, success } of loadedImages) {
     if (success && img) {
-      const imageToDraw = await getImageToDraw(img, itemId, sprite.recolor);
+      const imageToDraw = await getImageToDraw(img, itemId, sprite.recolors);
       // Draw at y=0 since this canvas is only for this animation
       animCtx.drawImage(
         img,

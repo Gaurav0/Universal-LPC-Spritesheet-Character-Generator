@@ -8,7 +8,7 @@ import {
 import { getDebugParam } from "../main.js";
 import { get2DContext } from "./canvas-utils.js";
 import { state } from '../state/state.js';
-import { getPaletteForItem, getTargetPalette, getLayersToLoad } from '../state/palettes.js';
+import { getPalettesForItem, getTargetPalette, getLayersToLoad } from '../state/palettes.js';
 
 // Configuration flags
 let config = {
@@ -244,33 +244,28 @@ export async function loadPalette(url) {
   return await response.json();
 }
 
-// Module state for loaded palettes
-// Palettes are loaded on-demand based on item metadata
-const loadedPalettes = {};
-
 /**
  * Get image to draw - applies recoloring if needed based on palette configuration
  * Async because palette loading is lazy (loads on first use)
  * @param {HTMLImageElement|HTMLCanvasElement} img - Source image
  * @param {string} itemId - Item identifier
- * @param {string} recolor - Recolor name
- * @param {string} paletteNum - Palette number (defaults to 0)
+ * @param {Object} recolors - Recolor names
  * @returns {Promise<HTMLImageElement|HTMLCanvasElement>} Image or recolored canvas to draw
  */
-export async function getImageToDraw(img, itemId, recolor, paletteNum = 0) {
-  if (!recolor) {
+export async function getImageToDraw(img, itemId, recolors) {
+  if (!recolors) {
     return img; // No recolor specified, return original image
   }
   const meta = window.itemMetadata?.[itemId];
-  const paletteConfig = getPaletteForItem(itemId, meta, paletteNum);
+  const paletteConfig = getPalettesForItem(itemId, meta);
 
   // Only recolor if item uses a palette and color is not the source color
-  if (paletteConfig && recolor !== paletteConfig.source) {
+  if (paletteConfig && recolors) {
     try {
-      return await recolorWithPalette(img, recolor, paletteConfig);
+      return await recolorWithPalette(img, recolors, paletteConfig);
     } catch (err) {
       console.warn(
-        `Failed to recolor ${paletteConfig.material} color ${recolor}:`,
+        `Failed to recolor ${paletteConfig.material} color ${JSON.stringify(recolors)}:`,
         err
       );
       return img; // Fallback to original on error
@@ -283,22 +278,26 @@ export async function getImageToDraw(img, itemId, recolor, paletteNum = 0) {
  * Recolor an image using a specified palette type
  * Automatically loads the palette on first use (lazy loading)
  * @param {HTMLImageElement|HTMLCanvasElement} sourceImage - Base source image
- * @param {string} targetColor - Target color name (e.g., "amber", "bronze", "fur_copper")
- * @param {string} sourcePalette - Original palette to source data from
+ * @param {Object} targetColors - Target color names (e.g., { primary: "amber", secondary: "bronze", accent: "fur_copper" })
+ * @param {Object} sourcePalettes - Original palettes to source data from
  * @returns {Promise<HTMLCanvasElement>} Recolored canvas
  */
 export async function recolorWithPalette(
   sourceImage,
-  targetColor,
-  sourcePalette
+  targetColors,
+  sourcePalettes
 ) {
-  // Get Target Palette
-  const targetPalette = getTargetPalette(sourcePalette.material, targetColor);
-  if (!targetPalette) {
-    throw new Error(`Unknown target palette color: ${targetColor}`);
-  }
+  // Loop All Palettes to Recolor
+  for (const [typeName, palette] of Object.entries(sourcePalettes)) {
+    // Get Target Palette
+    const targetPalette = getTargetPalette(palette.material, targetColors[typeName]);
+    if (!targetPalette) {
+      throw new Error(`Unknown target palette color: ${JSON.stringify(targetColors)}`);
+    }
 
-  return recolorImage(sourceImage, sourcePalette.colors, targetPalette);
+    sourceImage = recolorImage(sourceImage, palette.colors, targetPalette);
+  }
+  return sourceImage;
 }
 
 /**
@@ -306,9 +305,9 @@ export async function recolorWithPalette(
  * @param {string} itemId - Item identifier
  * @param {Object} meta - Metadata for the asset
  * @param {Object} canvas - Canvas dom
- * @param {string} selectedColor - Selected color for recoloring
+ * @param {Object} selectedColors - Selected colors for recoloring
  */
-export async function drawRecolorPreview(itemId, meta, canvas, selectedColor) {
+export async function drawRecolorPreview(itemId, meta, canvas, selectedColors) {
   const ctx = canvas.getContext('2d', { willReadFrequently: true });
   const compactDisplay = state.compactDisplay;
   
@@ -335,7 +334,7 @@ export async function drawRecolorPreview(itemId, meta, canvas, selectedColor) {
       const universalFrameSize = 64;
       for (const { img, layer } of loadedLayers) {
           if (img) {
-              const imageToDraw = await getImageToDraw(img, itemId, selectedColor);
+              const imageToDraw = await getImageToDraw(img, itemId, selectedColors);
               const size = compactDisplay ? 32 : 64;
               // Master branch uses: previewColumn * universalFrameSize + previewXOffset
               const srcX = previewCol * universalFrameSize + previewXOffset;
