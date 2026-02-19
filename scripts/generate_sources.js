@@ -315,7 +315,7 @@ function parseJson(filePath, fileName) {
         const file = layerDefinition[sex];
         if (file !== null && file !== "") {
           // Check Variants
-          if (variants && variants.length > 0) {
+          /*if (variants && variants.length > 0) {
             for (const variant of variants) {
               const variantItemName = variant.replaceAll(" ", "_");
               const searchFileName = file + snakeItemName + "/" + variantItemName;
@@ -327,7 +327,7 @@ function parseJson(filePath, fileName) {
               });
               addedCreditsFor.push(creditsFor);
             }
-          } else {
+          } else {*/
             const searchFileName = file + snakeItemName;
             const [newCreditToUse, lineText, creditsFor] = parseCredits(searchFileName, credits, listCreditToUse, addedCreditsFor, sex, jdx);
             listCreditToUse = newCreditToUse;
@@ -336,7 +336,7 @@ function parseJson(filePath, fileName) {
               lineText
             });
             addedCreditsFor.push(creditsFor);
-          }
+          //}
         } // if file
       } // for jdx
     } // for sex
