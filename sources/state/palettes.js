@@ -14,17 +14,16 @@ export function getMultiRecolors(itemId, selections) {
 
     // Filter Selections to Item ID
     const recolors = {};
-    for (const selection of Object.values(selections)) {
-        if (itemId !== selection.itemId) continue;
-        const meta = window.itemMetadata?.[selection.itemId];
-        if (!meta || !meta.type_name) continue;
+    for (const [typeName, selection] of Object.entries(selections)) {
+        const subMeta = window.itemMetadata?.[selection.itemId];
+        if (!subMeta || !subMeta.type_name || subMeta.type_name !== meta.type_name) continue;
 
         // Process Each Item
         if (selection.subId) {
-            const { type_name } = meta.recolors[selection.subId];
+            const { type_name } = subMeta.recolors[selection.subId];
             recolors[type_name] = selection.recolor;
         } else {
-            recolors[meta.type_name] = selection.recolor;
+            recolors[subMeta.type_name] = selection.recolor;
         }
     }
     return recolors;
