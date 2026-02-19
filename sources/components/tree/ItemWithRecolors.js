@@ -134,8 +134,8 @@ export const ItemWithRecolors = {
                     ]),
                     // Small color icons for each recolor category
                     paletteOptions.length ? m("div.ml-3.is-align-items-center", {
-                            style: { width: "100%" }
-                        },
+                        style: { width: "auto", display: "flex", flexDirection: "column", gap: "0.25em" }
+                    },
                         paletteOptions.map((opt, idx) => {
                             const dark = opt.colors[0];
                             const gradient = opt.colors.slice().reverse();
@@ -143,9 +143,10 @@ export const ItemWithRecolors = {
                                 style: {
                                     display: "flex",
                                     alignItems: "center",
-                                    marginBottom: "0.5em",
+                                    marginBottom: "0.25em",
                                     cursor: "pointer",
-                                    width: "100%"
+                                    width: "auto",
+                                    gap: "0.5em"
                                 },
                                 onclick: (e) => {
                                     e.stopPropagation();
@@ -155,24 +156,33 @@ export const ItemWithRecolors = {
                             }, [
                                 m("label", {
                                     style: {
-                                        width: "50%",
-                                        display: "flex",
+                                        width: "90px",
+                                        minWidth: "90px",
+                                        maxWidth: "90px",
+                                        display: "inline-block",
+                                        textAlign: "right",
+                                        marginRight: "0.5em",
                                         cursor: "pointer",
+                                        whiteSpace: "nowrap",
+                                        overflow: "hidden",
+                                        textOverflow: "ellipsis"
                                     }
                                 }, opt.label),
                                 m("div", {
-                                        style: {
-                                            width: "50%",
-                                            border: `1px solid ${dark}`,
-                                            borderRadius: "10px",
-                                            display: "flex",
-                                            alignItems: "center",
-                                            overflowX: "hidden",
-                                            lineHeight: "1.5",
-                                            cursor: "pointer",
-                                            background: dark
-                                        }
-                                    },
+                                    style: {
+                                        minWidth: "140px",
+                                        maxWidth: "200px",
+                                        border: `1px solid ${dark}`,
+                                        borderRadius: "10px",
+                                        display: "flex",
+                                        alignItems: "center",
+                                        overflowX: "hidden",
+                                        lineHeight: "1.5",
+                                        cursor: "pointer",
+                                        background: dark,
+                                        flexShrink: 0
+                                    }
+                                },
                                     gradient.map((color, i) =>
                                         m("span", {
                                             style: {
