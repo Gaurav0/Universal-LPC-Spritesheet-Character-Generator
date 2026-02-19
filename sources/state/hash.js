@@ -209,8 +209,8 @@ export function loadSelectionsFromHash(hashString = null) {
               }
             }
           }
-          if (meta.recolors[0]?.variants.length > 0) {
-            for (const variant of meta.recolors[0]?.variants) {
+          if (meta.recolors?.[0]?.variants.length > 0) {
+            for (const variant of meta.recolors[0].variants) {
               if ((recolorToMatch !== "" && variant.toLowerCase() === recolorToMatch.toLowerCase()) ||
                   (recolorToMatch === "" && variant.toLowerCase() === variantToMatch.toLowerCase())) {
                 foundItemId = itemId;

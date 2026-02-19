@@ -2,6 +2,8 @@
 import { state, getSelectionGroup } from '../../state/state.js';
 import { ucwords } from "../../utils/helpers.js";
 
+const classNames = window.classNames;
+
 export const PaletteSelectModal = {
     view: function(vnode) {
         const {
@@ -185,7 +187,6 @@ export const PaletteSelectModal = {
                                         m("span", {
                                             style: {
                                                 display: "inline-block",
-                                                width: "1.2rem",
                                                 height: "1rem",
                                                 padding: "0",
                                                 margin: "0",

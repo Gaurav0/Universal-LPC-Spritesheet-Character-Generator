@@ -177,7 +177,6 @@ export const ItemWithRecolors = {
                                         m("span", {
                                             style: {
                                                 display: "inline-block",
-                                                width: "1.2rem",
                                                 height: "1rem",
                                                 padding: "0",
                                                 margin: "0",

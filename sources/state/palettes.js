@@ -26,7 +26,7 @@ export function getMultiRecolors(itemId, selections) {
         } else {
             recolors[meta.type_name] = selection.recolor;
         }
-    };
+    }
     return recolors;
 }
 
