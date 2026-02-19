@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const { ucwords } = require('../sources/utils/helpers.js');
 
 const SHEETS_DIR = "sheet_definitions" + path.sep;
 const PALETTES_DIR = "palette_definitions" + path.sep;
@@ -243,6 +244,8 @@ function parseJson(filePath, fileName) {
       const colorVariants = new Set();
       const materialMeta = paletteMetadata.materials[recolor.material];
       recolor.default = materialMeta.default;
+      recolor.type_name = recolor.type_name ?? null;
+      recolor.label = recolor.label ?? paletteMetadata.materials[recolor.material]?.label ?? ucwords(recolor.key);
       if (!recolor.base) {
         recolor.base = `${materialMeta.default}.${materialMeta.base}`;
       }
@@ -258,10 +261,11 @@ function parseJson(filePath, fileName) {
         colorPalettes[`${material}.${version}`] = keys;
 
         // Determine if we need to prefix version
-        let mappedKeys = keys;
-        if (recolor.default !== version || recolor.material !== material) {
-          mappedKeys = keys.map(key => `${version}_${key}`);
-        }
+        const mappedKeys = keys.map((key) => {
+          const matPart = recolor.material !== material ? `${material}.` : "";
+          const verPart = recolor.default !== version ? `${version}.` : "";
+          return `${matPart}${verPart}${key}`;
+        });
         mappedKeys.forEach(key => colorVariants.add(key));
       }
       recolor.palettes = colorPalettes;
