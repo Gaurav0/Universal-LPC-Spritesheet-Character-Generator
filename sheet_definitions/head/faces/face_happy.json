@@ -117,23 +117,12 @@
     "face_happy"
   ],
   "recolors": {
-    "color_1": {
-      "material": "body",
-      "palettes": [
-        "ulpc",
-        "lpcr",
-        "all.lpcr"
-      ]
-    },
-    "color_2": {
-      "type_name": "eyes",
-      "label": "Eye Color",
-      "material": "eye",
-      "palettes": [
-        "eye.ulpc",
-        "lpcr"
-      ]
-    }
+    "material": "body",
+    "palettes": [
+      "ulpc",
+      "lpcr",
+      "all.lpcr"
+    ]
   },
   "type_name": "expression"
 }

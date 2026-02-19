@@ -26239,51 +26239,6 @@ window.itemMetadata = {
           "all.lpcr.wine",
           "all.lpcr.yellow"
         ]
-      },
-      {
-        "type_name": "eyes",
-        "label": "Eye Color",
-        "material": "eye",
-        "palettes": {
-          "eye.ulpc": [
-            "blue",
-            "green",
-            "purple",
-            "red",
-            "orange",
-            "yellow",
-            "brown",
-            "gray"
-          ],
-          "eye.lpcr": [
-            "black",
-            "blue",
-            "brown",
-            "gray",
-            "green",
-            "hazel",
-            "purple"
-          ]
-        },
-        "default": "ulpc",
-        "base": "ulpc.blue",
-        "variants": [
-          "blue",
-          "green",
-          "purple",
-          "red",
-          "orange",
-          "yellow",
-          "brown",
-          "gray",
-          "lpcr.black",
-          "lpcr.blue",
-          "lpcr.brown",
-          "lpcr.gray",
-          "lpcr.green",
-          "lpcr.hazel",
-          "lpcr.purple"
-        ]
       }
     ],
     "licenses": {
@@ -26672,51 +26627,6 @@ window.itemMetadata = {
           "all.lpcr.white",
           "all.lpcr.wine",
           "all.lpcr.yellow"
-        ]
-      },
-      {
-        "type_name": "eyes",
-        "label": "Eye Color",
-        "material": "eye",
-        "palettes": {
-          "eye.ulpc": [
-            "blue",
-            "green",
-            "purple",
-            "red",
-            "orange",
-            "yellow",
-            "brown",
-            "gray"
-          ],
-          "eye.lpcr": [
-            "black",
-            "blue",
-            "brown",
-            "gray",
-            "green",
-            "hazel",
-            "purple"
-          ]
-        },
-        "default": "ulpc",
-        "base": "ulpc.blue",
-        "variants": [
-          "blue",
-          "green",
-          "purple",
-          "red",
-          "orange",
-          "yellow",
-          "brown",
-          "gray",
-          "lpcr.black",
-          "lpcr.blue",
-          "lpcr.brown",
-          "lpcr.gray",
-          "lpcr.green",
-          "lpcr.hazel",
-          "lpcr.purple"
         ]
       }
     ],
@@ -28344,51 +28254,6 @@ window.itemMetadata = {
           "all.lpcr.wine",
           "all.lpcr.yellow"
         ]
-      },
-      {
-        "type_name": "eyes",
-        "label": "Eye Color",
-        "material": "eye",
-        "palettes": {
-          "eye.ulpc": [
-            "blue",
-            "green",
-            "purple",
-            "red",
-            "orange",
-            "yellow",
-            "brown",
-            "gray"
-          ],
-          "eye.lpcr": [
-            "black",
-            "blue",
-            "brown",
-            "gray",
-            "green",
-            "hazel",
-            "purple"
-          ]
-        },
-        "default": "ulpc",
-        "base": "ulpc.blue",
-        "variants": [
-          "blue",
-          "green",
-          "purple",
-          "red",
-          "orange",
-          "yellow",
-          "brown",
-          "gray",
-          "lpcr.black",
-          "lpcr.blue",
-          "lpcr.brown",
-          "lpcr.gray",
-          "lpcr.green",
-          "lpcr.hazel",
-          "lpcr.purple"
-        ]
       }
     ],
     "licenses": {
@@ -28714,51 +28579,6 @@ window.itemMetadata = {
           "all.lpcr.white",
           "all.lpcr.wine",
           "all.lpcr.yellow"
-        ]
-      },
-      {
-        "type_name": "eyes",
-        "label": "Eye Color",
-        "material": "eye",
-        "palettes": {
-          "eye.ulpc": [
-            "blue",
-            "green",
-            "purple",
-            "red",
-            "orange",
-            "yellow",
-            "brown",
-            "gray"
-          ],
-          "eye.lpcr": [
-            "black",
-            "blue",
-            "brown",
-            "gray",
-            "green",
-            "hazel",
-            "purple"
-          ]
-        },
-        "default": "ulpc",
-        "base": "ulpc.blue",
-        "variants": [
-          "blue",
-          "green",
-          "purple",
-          "red",
-          "orange",
-          "yellow",
-          "brown",
-          "gray",
-          "lpcr.black",
-          "lpcr.blue",
-          "lpcr.brown",
-          "lpcr.gray",
-          "lpcr.green",
-          "lpcr.hazel",
-          "lpcr.purple"
         ]
       }
     ],
@@ -30812,51 +30632,6 @@ window.itemMetadata = {
           "all.lpcr.white",
           "all.lpcr.wine",
           "all.lpcr.yellow"
-        ]
-      },
-      {
-        "type_name": "eyes",
-        "label": "Eye Color",
-        "material": "eye",
-        "palettes": {
-          "eye.ulpc": [
-            "blue",
-            "green",
-            "purple",
-            "red",
-            "orange",
-            "yellow",
-            "brown",
-            "gray"
-          ],
-          "eye.lpcr": [
-            "black",
-            "blue",
-            "brown",
-            "gray",
-            "green",
-            "hazel",
-            "purple"
-          ]
-        },
-        "default": "ulpc",
-        "base": "ulpc.blue",
-        "variants": [
-          "blue",
-          "green",
-          "purple",
-          "red",
-          "orange",
-          "yellow",
-          "brown",
-          "gray",
-          "lpcr.black",
-          "lpcr.blue",
-          "lpcr.brown",
-          "lpcr.gray",
-          "lpcr.green",
-          "lpcr.hazel",
-          "lpcr.purple"
         ]
       }
     ],
