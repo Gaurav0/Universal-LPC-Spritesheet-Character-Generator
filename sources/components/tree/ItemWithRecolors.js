@@ -52,7 +52,6 @@ export const ItemWithRecolors = {
                     if (recolor.matchBodyColor || (subSelect === selectionGroup && meta.matchBodyColor)) {
                         applyMatchBodyColor(null, recolor);
                     }
-                    rootViewNode.state.showPaletteModal = null;
                     m.redraw();
                 }
             });
