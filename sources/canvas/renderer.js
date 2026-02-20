@@ -751,7 +751,7 @@ export async function renderSingleItemAnimation(
       const imageToDraw = await getImageToDraw(img, itemId, sprite.recolors);
       // Draw at y=0 since this canvas is only for this animation
       animCtx.drawImage(
-        img,
+        imageToDraw,
         0,
         animYPos,
         SHEET_WIDTH,

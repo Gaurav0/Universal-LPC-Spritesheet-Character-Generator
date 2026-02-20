@@ -1,6 +1,5 @@
 const fs = require("fs");
 const path = require("path");
-const { ucwords } = require('../sources/utils/helpers.js');
 
 const SHEETS_DIR = "sheet_definitions" + path.sep;
 const PALETTES_DIR = "palette_definitions" + path.sep;
@@ -9,6 +8,20 @@ const DEBUG = false; // change this to print debug log
 const onlyIfTemplate = false; // print debugging log only if there is a template
 
 require("child_process").fork("scripts/zPositioning/parse_zpos.js");
+
+/**
+ * Helper function to capitalize strings for display
+ */
+function capitalize(str) {
+	return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+/**
+ * Helper function to capitalize all words in a string for display
+ */
+function ucwords(str) {
+	return str.split(' ').map(word => capitalize(word)).join(' ');
+}
 
 // Collect metadata for runtime use
 const licensesFound = [];
@@ -243,9 +256,13 @@ function parseJson(filePath, fileName) {
       const colorPalettes = {};
       const colorVariants = new Set();
       const materialMeta = paletteMetadata.materials[recolor.material];
+      if (!materialMeta) {
+        console.warn(`Material metadata not found for ${recolor.material}`);
+        continue;
+      }
       recolor.default = materialMeta.default;
       recolor.type_name = recolor.type_name ?? null;
-      recolor.label = recolor.label ?? paletteMetadata.materials[recolor.material]?.label ?? ucwords(recolor.key);
+      recolor.label = recolor.label ?? materialMeta.label ?? ucwords(recolor.key);
       if (!recolor.base) {
         recolor.base = `${materialMeta.default}.${materialMeta.base}`;
       }
