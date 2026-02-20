@@ -33,14 +33,20 @@ export function getMultiRecolors(itemId, selections) {
  * Function to get palette file info
  * @param {string} material - Material name / identifier
  * @param {string|null} base - The source recolor to convert from; if null, uses the default base recolor
+ * @param {Array|null} source - If base is custom, source will return the array of colors to convert from; if null, uses the default base recolor
  * @returns {Array[version, recolor, Array<colors>]} Return list of base palette assets including version, color name, and array of hex colors
  */
-export function getBasePalette(material, base = null) {
+export function getBasePalette(material, base = null, source = null) {
     // Check Palette Material Exists
     const materialMeta = window.paletteMetadata?.materials[material];
     if (!materialMeta) {
         console.error(`Palettes for ${material} not found`);
         return null;
+    }
+
+    // Is "Base" An Array?!
+    if (base === 'custom' && source !== null) {
+        return [material, base, source];
     }
 
     // Determine Base Variant
@@ -94,7 +100,7 @@ export function getPalettesForItem(itemId, meta) {
   // Get Specific Palette for Item
   const sources = {};
   for (const palette of meta.recolors) {
-    const [version, source, colors] = getBasePalette(palette.material, palette.base ?? null);
+    const [version, source, colors] = getBasePalette(palette.material, palette.base ?? null, palette.source ?? null);
     sources[palette.type_name ?? meta.type_name] = {
         material: palette.material,
         version: version || palette.default,
