@@ -91,11 +91,15 @@ function getNameWithoutVariant(typeName, nameAndVariant) {
 	const l = nameAndVariantPath.length;
 	const names = indexedMetadataCache.get(typeName) || [];
 	const variants = names.flatMap(n => n.variants || []).map(v => v.toLowerCase());
+	const recolors = names.flatMap(n => n.recolors?.[0]?.variants || []).map(v => v.toLowerCase());
 	let j = l;
 	let v = 0;
 	while (--j > 0) {
 		const part = nameAndVariantPath.slice(j, l).join('_');
 		if (variants?.includes(part.toLowerCase())) {
+			variant = part;
+			v = j;
+		} else if (recolors?.includes(part.toLowerCase())) {
 			variant = part;
 			v = j;
 		}
