@@ -16,17 +16,17 @@ export function getMultiRecolors(itemId, selections) {
     const recolors = {};
     for (const [typeName, selection] of Object.entries(selections)) {
         const subMeta = window.itemMetadata?.[selection.itemId];
-        if (!subMeta || !subMeta.type_name || subMeta.type_name !== meta.type_name) continue;
+        if (!subMeta || !subMeta.type_name || subMeta.type_name !== meta.type_name || !meta.recolors?.length) continue;
 
         // Process Each Item
         if (selection.subId) {
             const { type_name } = subMeta.recolors[selection.subId];
             recolors[type_name] = selection.recolor;
-        } else {
+        } else if(selection.recolor) {
             recolors[subMeta.type_name] = selection.recolor;
         }
     }
-    return recolors;
+    return Object.keys(recolors).length > 0 ? recolors : null;
 }
 
 /**
