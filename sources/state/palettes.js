@@ -11,17 +11,23 @@ import { replaceInPath } from './path.js';
 export function getMultiRecolors(itemId, selections) {
     // Implementation for getting multiple recolor options from selections
     const meta = window.itemMetadata[itemId];
+    const types = [meta.type_name];
+    meta.recolors.forEach(recolor => {
+        if (recolor.type_name && !types.includes(recolor.type_name)) {
+            types.push(recolor.type_name);
+        }
+    });
 
     // Filter Selections to Item ID
     const recolors = {};
     for (const [typeName, selection] of Object.entries(selections)) {
         const subMeta = window.itemMetadata?.[selection.itemId];
-        if (!subMeta || !subMeta.type_name || subMeta.type_name !== meta.type_name || !meta.recolors?.length) continue;
+        const typeName = subMeta?.recolors[selection.subId]?.type_name ?? subMeta?.type_name ?? meta.type_name;
+        if (!subMeta || !subMeta.type_name || !types.includes(typeName) || !subMeta.recolors?.length) continue;
 
         // Process Each Item
         if (selection.subId) {
-            const { type_name } = subMeta.recolors[selection.subId];
-            recolors[type_name] = selection.recolor;
+            recolors[typeName] = selection.recolor;
         } else if(selection.recolor) {
             recolors[subMeta.type_name] = selection.recolor;
         }
