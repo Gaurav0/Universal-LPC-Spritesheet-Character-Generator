@@ -164,9 +164,17 @@ export function getPaletteOptions(itemId, meta) {
             const subGroup = idx !== 0 ? color.type_name : selectionGroup;
             const selection = state.selections[subGroup];
             const versions = Object.keys(color.palettes);
+            let selectedColor = selection?.recolor;
+            if (!selectedColor) {
+                if (idx !== 0) {
+                    selectedColor = color.matchBodyColor ? bodyColor : null;
+                } else {
+                    selectedColor = bodyColor ?? null;
+                }
+            }
 
             // Get Recolors from Selection
-            const [material, version, recolor] = parseRecolorKey(selection?.recolor ?? bodyColor, color);
+            const [material, version, recolor] = parseRecolorKey(selectedColor, color);
             paletteOptions.push({
                 idx,
                 label: color.label,
@@ -174,7 +182,7 @@ export function getPaletteOptions(itemId, meta) {
                 material: color.material,
                 type_name: color.type_name ?? null,
                 versions,
-                selectionColor: selection?.recolor,
+                selectionColor: selectedColor,
                 colors: getTargetPalette(material, `${version}.${recolor}`)
             });
         });
