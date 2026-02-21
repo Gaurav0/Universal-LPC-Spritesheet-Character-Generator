@@ -278,7 +278,6 @@ describe("state/hash.js", () => {
       window.itemMetadata = {
         1: { type_name: "body", name: "Body", recolors: [ { material: "body", palettes: [ "ulpc" ], variants: [ "light" ] }, { type_name: "eye", label: "Eyes", material: "eyes", palettes: [ "ulpc" ], variants: [ "blue" ] } ] },
       };
-      //window.paletteMetadata = { materials: { body: { palettes: { ulpc: { light: [] } } } } };
 
       loadSelectionsFromHash();
       expect(getState().selections).to.deep.equal({
