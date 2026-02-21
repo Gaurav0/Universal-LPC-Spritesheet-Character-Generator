@@ -262,7 +262,7 @@ export function loadSelectionsFromHash(hashString = null) {
       for (const [typeName, selection] of Object.entries(newSelections)) {
         const recolors = window.itemMetadata[selection.itemId].recolors;
         match = recolors?.findIndex(color => color.type_name === subType);
-        if (match !== -1 && matched !== undefined && recolors[match].variants.indexOf(recolorToMatch) !== -1) {
+        if (match !== -1 && match !== undefined && recolors[match].variants.indexOf(recolorToMatch) !== -1) {
           chosenItemId = selection.itemId;
           break;
         }

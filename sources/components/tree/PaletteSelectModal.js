@@ -160,7 +160,6 @@ export const PaletteSelectModal = {
                                 onclick: (e) => {
                                     e.stopPropagation();
                                     onSelect(key);
-                                    onClose();
                                 }
                             }, [
                                 m("label", {

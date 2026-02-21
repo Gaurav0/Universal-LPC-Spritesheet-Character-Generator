@@ -26,7 +26,38 @@ export function getMultiRecolors(itemId, selections) {
             recolors[subMeta.type_name] = selection.recolor;
         }
     }
+
+    // No Results?!
+    if (meta.matchBodyColor) {
+        const bodyColor = getBodyColor(itemId, selections);
+        if (bodyColor) recolors[meta.type_name] = bodyColor;
+    }
     return Object.keys(recolors).length > 0 ? recolors : null;
+}
+
+/**
+ * Function to find body color from selections if match body color enabled
+ * @param {string} itemId - The ID of the item to get recolors for
+ * @param {Array} selections - The array of selections to filter
+ * @returns {string|null} Body color if match body color enabled on itemId, null otherwise
+ */
+export function getBodyColor(itemId, selections) {
+    // Implementation for finding body color from selections if match body color enabled
+    const meta = window.itemMetadata[itemId];
+    if (!meta || !meta.matchBodyColor) {
+        return null;
+    }
+
+    // Filter Selections to Item ID
+    let bodyColor = null;
+    for (const [typeName, selection] of Object.entries(selections)) {
+        const subMeta = window.itemMetadata?.[selection.itemId];
+        if (subMeta && subMeta.matchBodyColor) {
+            bodyColor = selection.recolor;
+            break;
+        }
+    }
+    return bodyColor;
 }
 
 /**
@@ -45,7 +76,7 @@ export function getBasePalette(material, base = null, source = null) {
     }
 
     // Is "Base" An Array?!
-    if (base === 'custom' && source !== null) {
+    if (source !== null) {
         return [material, base, source];
     }
 

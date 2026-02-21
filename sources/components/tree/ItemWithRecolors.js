@@ -1,7 +1,7 @@
 // Item with recolors component
 import { state, getSelectionGroup, getSubSelectionGroup, applyMatchBodyColor } from '../../state/state.js';
 import { drawRecolorPreview } from '../../canvas/palette-recolor.js';
-import { getMultiRecolors, getPaletteOptions } from '../../state/palettes.js';
+import { getMultiRecolors, getPaletteOptions, getPalettesForItem } from '../../state/palettes.js';
 import { PaletteSelectModal } from './PaletteSelectModal.js';
 
 const classNames = window.classNames;
@@ -72,10 +72,7 @@ export const ItemWithRecolors = {
             class: classNames({
                 "search-result": isSearchMatch,
                 "has-text-grey": !isCompatible,
-            }),
-            style: {
-                "position": "relative"
-            }
+            })
         }, [
             m("div.tree-label", {
                 title: tooltipText,
@@ -90,7 +87,44 @@ export const ItemWithRecolors = {
             paletteModal,
 			isExpanded ? m("div", [
 				m("div", { class: rootViewNode.state.isLoading ? "loading" : "" }),
-                m("div.is-flex.is-align-items-center", [
+                m("div.is-flex.is-align-items-center", {
+						title: tooltipText,
+                        onmouseover: (e) => {
+                            if (!isCompatible) return;
+                            const div = e.currentTarget;
+                            if (!isSelected) div.classList.add('has-background-white-ter');
+                        },
+                        onmouseout: (e) => {
+                            if (!isCompatible) return;
+                            const div = e.currentTarget;
+
+                            if (!isSelected) div.classList.remove('has-background-white-ter');
+                        },
+                        onclick: () => {
+                            if (!isCompatible) return; // Prevent selecting incompatible
+                            const selectionGroup = getSelectionGroup(itemId);
+
+                            if (isSelected) {
+                                delete state.selections[selectionGroup];
+                            } else {
+                                const palettes = getPalettesForItem(itemId, meta);
+                                const recolor = selectedColors[meta.type_name] ?? palettes[meta.type_name].source;
+                                const colorDisplayName = recolor.replaceAll("_", " ");
+                                state.selections[selectionGroup] = {
+                                    itemId: itemId,
+                                    subId: null,
+                                    variant: null,
+                                    recolor: recolor,
+                                    name: `${displayName} (${colorDisplayName})`
+                                };
+
+                                // If this item has matchBodyColor enabled, apply to all other body-colored items
+                                if (meta.matchBodyColor) {
+                                    applyMatchBodyColor(recolor, recolor);
+                                }
+                            }
+                        }
+                    }, [
                     m("div", {
                         class: classNames({
                             "variant-item is-flex is-flex-direction-column is-align-items-center is-clickable": true,
@@ -102,17 +136,6 @@ export const ItemWithRecolors = {
                             width: 64,
                             height: 64,
                             class: (compactDisplay ? " compact-display" : ""),
-                            onmouseover: (e) => {
-                                if (!isCompatible) return;
-                                const div = e.currentTarget;
-                                if (!isSelected) div.classList.add('has-background-white-ter');
-                            },
-                            onmouseout: (e) => {
-                                if (!isCompatible) return;
-                                const div = e.currentTarget;
-
-                                if (!isSelected) div.classList.remove('has-background-white-ter');
-                            },
                             oncreate: async (canvasVnode) => {
                                 const imagesLoaded = drawRecolorPreview(itemId, meta, canvasVnode.dom, selectedColors);
                                 if (imagesLoaded > 0) {
