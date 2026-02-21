@@ -21,6 +21,7 @@ import {
 } from "../custom-animations.js";
 import { getSortedLayers } from "./meta.js";
 import { get2DContext } from "../canvas/canvas-utils.js";
+import { getMultiRecolors } from '../state/palettes.js';
 
 // Helper to convert canvas to blob
 const canvasToBlob = (canvas) => {
