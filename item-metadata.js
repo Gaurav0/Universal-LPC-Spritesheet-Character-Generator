@@ -29718,12 +29718,6 @@ window.itemMetadata = {
         "type_name": "eyes",
         "label": "Eye Color",
         "material": "eye",
-        "base": "ulpc.blue",
-        "source": [
-          "#293d4b",
-          "#5187b3",
-          "#50d4ec"
-        ],
         "palettes": {
           "eye.ulpc": [
             "blue",
@@ -29746,6 +29740,7 @@ window.itemMetadata = {
           ]
         },
         "default": "ulpc",
+        "base": "ulpc.blue",
         "variants": [
           "blue",
           "green",

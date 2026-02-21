@@ -134,10 +134,8 @@
       "type_name": "eyes",
       "label": "Eye Color",
       "material": "eye",
-      "base": null,
-      "source": ["#293d4b", "#5187b3", "#50d4ec"],
       "palettes": [
-        "eye.ulpc",
+        "ulpc",
         "lpcr"
       ]
     }

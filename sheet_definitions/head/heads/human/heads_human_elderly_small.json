@@ -67,7 +67,7 @@
       "label": "Eye Color",
       "material": "eye",
       "palettes": [
-        "eye.ulpc",
+        "ulpc",
         "lpcr"
       ]
     }
