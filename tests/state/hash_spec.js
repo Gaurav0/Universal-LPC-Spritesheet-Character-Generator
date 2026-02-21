@@ -148,8 +148,10 @@ describe("state/hash.js", () => {
       expect(getState().selections).to.deep.equal({
         body: {
           itemId: "1",
+          subId: null,
           variant: "light",
           name: "Body (light)",
+          recolor: ''
         },
       });
     });
@@ -164,8 +166,10 @@ describe("state/hash.js", () => {
       expect(getState().selections).to.deep.equal({
         body: {
           itemId: "1",
+          subId: null,
           variant: "light",
           name: "Body_Color (light)",
+          recolor: ''
         },
       });
     });
