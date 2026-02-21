@@ -152,6 +152,7 @@ export function getPaletteOptions(itemId, meta) {
     // Initialize Palette Options
     const selectionGroup = getSelectionGroup(itemId);
     const paletteOptions = [];
+    const bodyColor = getBodyColor(itemId, state.selections);
     if (meta.recolors && meta.recolors.length > 0) {
         meta.recolors.forEach((color, idx) => {
             const subGroup = idx !== 0 ? color.type_name : selectionGroup;
@@ -159,7 +160,7 @@ export function getPaletteOptions(itemId, meta) {
             const versions = Object.keys(color.palettes);
 
             // Get Recolors from Selection
-            const [material, version, recolor] = parseRecolorKey(selection?.recolor, color);
+            const [material, version, recolor] = parseRecolorKey(selection?.recolor ?? bodyColor, color);
             paletteOptions.push({
                 idx,
                 label: color.label,
