@@ -118,6 +118,44 @@ describe("state/hash.js", () => {
         body: "Body_light",
       });
     });
+
+    it("should generate hash params for recolor selections", () => {
+      updateState({
+        bodyType: "male",
+        selections: {
+          body: { itemId: "1", recolor: "light" },
+        },
+      });
+      window.itemMetadata = {
+        1: { type_name: "body", name: "Body", recolors: [ { material: "body", palettes: [ "ulpc" ], variants: [ "light" ] } ] },
+      };
+
+      const params = getHashParamsforSelections(getState().selections);
+      expect(params).to.deep.equal({
+        sex: "male",
+        body: "Body_light",
+      });
+    });
+
+    it("should generate hash params for recolor selections containing subcolors", () => {
+      updateState({
+        bodyType: "male",
+        selections: {
+          body: { itemId: "1", recolor: "light" },
+          eyes: { itemId: "1", subId: 1, recolor: "blue" },
+        },
+      });
+      window.itemMetadata = {
+        1: { type_name: "body", name: "Body", recolors: [ { material: "body", palettes: [ "ulpc" ], variants: [ "light" ] }, { type_name: "eyes", label: "Eyes", material: "eyes", palettes: [ "ulpc" ], variants: [ "blue" ] } ] },
+      };
+
+      const params = getHashParamsforSelections(getState().selections);
+      expect(params).to.deep.equal({
+        sex: "male",
+        body: "Body_light",
+        eyes: "Eyes_blue",
+      });
+    });
   });
 
   describe("syncSelectionsToHash", () => {
@@ -171,6 +209,86 @@ describe("state/hash.js", () => {
           name: "Body_Color (light)",
           recolor: ''
         },
+      });
+    });
+
+    it("should load recolor options", () => {
+      setHash("#body=Body_light");
+      window.itemMetadata = {
+        1: { type_name: "body", name: "Body", recolors: [ { material: "body", palettes: [ "ulpc" ], variants: [ "light" ] } ] },
+      };
+
+      loadSelectionsFromHash();
+      expect(getState().selections).to.deep.equal({
+        body: {
+          itemId: "1",
+          subId: null,
+          variant: '',
+          name: "Body (light)",
+          recolor: 'light'
+        },
+      });
+    });
+
+    it("should load multiple recolor options", () => {
+      setHash("#body=Body_light&eyes=Eyes_blue");
+      window.itemMetadata = {
+        1: { type_name: "body", name: "Body", recolors: [ { material: "body", palettes: [ "ulpc" ], variants: [ "light" ] }, { type_name: "eyes", label: "Eyes", material: "eyes", palettes: [ "ulpc" ], variants: [ "blue" ] } ] },
+      };
+
+      loadSelectionsFromHash();
+      expect(getState().selections).to.deep.equal({
+        body: {
+          itemId: "1",
+          subId: null,
+          variant: '',
+          name: "Body (light)",
+          recolor: 'light'
+        },
+        eyes: {
+          itemId: "1",
+          subId: 1,
+          variant: '',
+          name: "Eyes (blue)",
+          recolor: 'blue'
+        },
+      });
+    });
+
+    it("should remove subcolor if doesn't exist on item", () => {
+      setHash("#body=Body_light&eyes=Eyes_blue");
+      window.itemMetadata = {
+        1: { type_name: "body", name: "Body", recolors: [ { material: "body", palettes: [ "ulpc" ], variants: [ "light" ] } ] },
+      };
+
+      loadSelectionsFromHash();
+      expect(getState().selections).to.deep.equal({
+        body: {
+          itemId: "1",
+          subId: null,
+          variant: '',
+          name: "Body (light)",
+          recolor: 'light'
+        }
+      });
+    });
+
+    it("should remove subcolor if type name does not match", () => {
+      setHash("#body=Body_light&eyes=Eyes_blue");
+      window.itemMetadata = {
+        1: { type_name: "body", name: "Body", recolors: [ { material: "body", palettes: [ "ulpc" ], variants: [ "light" ] }, { type_name: "eye", label: "Eyes", material: "eyes", palettes: [ "ulpc" ], variants: [ "blue" ] } ] },
+      };
+      //window.paletteMetadata = { materials: { body: { palettes: { ulpc: { light: [] } } } } };
+
+      loadSelectionsFromHash();
+      expect(getState().selections).to.deep.equal({
+        body: {
+          itemId: "1",
+          subId: null,
+          variant: '',
+          name: "Body (light)",
+          recolor: 'light'
+        }
       });
     });
   });
