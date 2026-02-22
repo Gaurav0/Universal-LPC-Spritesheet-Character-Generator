@@ -136,7 +136,7 @@ export function applyMatchBodyColor(variantToMatch, recolorToMatch) {
 		if (!meta || !meta.matchBodyColor) continue;
 
 		// Skip if subId is enabled and matchBodyColor is not enabled for this item
-		if (selection.subId !== null && !meta.recolors[selection.subId]?.matchBodyColor) continue;
+		if (selection.subId !== null && selection.subId !== undefined && !meta.recolors[selection.subId]?.matchBodyColor) continue;
 
 		// Check if this item has the variant available
 		if (meta.variants && meta.variants.includes(variantToMatch)) {

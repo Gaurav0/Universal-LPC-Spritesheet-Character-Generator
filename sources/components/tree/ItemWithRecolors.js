@@ -49,7 +49,7 @@ export const ItemWithRecolors = {
                     };
 
                     // If this item has matchBodyColor enabled, apply to all other body-colored items
-                    if (recolor.matchBodyColor || (subSelect === selectionGroup && meta.matchBodyColor)) {
+                    if (opt.matchBodyColor || (subSelect === selectionGroup && meta.matchBodyColor)) {
                         applyMatchBodyColor(null, recolor);
                     }
                     m.redraw();

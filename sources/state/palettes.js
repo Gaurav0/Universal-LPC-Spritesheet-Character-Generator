@@ -181,6 +181,7 @@ export function getPaletteOptions(itemId, meta) {
                 default: color.default,
                 material: color.material,
                 type_name: color.type_name ?? null,
+                matchBodyColor: color.matchBodyColor ?? false,
                 versions,
                 selectionColor: selectedColor,
                 colors: getTargetPalette(material, `${version}.${recolor}`)
