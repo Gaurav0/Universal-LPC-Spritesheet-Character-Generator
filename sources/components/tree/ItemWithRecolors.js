@@ -1,5 +1,5 @@
 // Item with recolors component
-import { state, getSelectionGroup, getSubSelectionGroup, applyMatchBodyColor } from '../../state/state.js';
+import { state, getSelectionGroup, selectItem, getSubSelectionGroup, applyMatchBodyColor } from '../../state/state.js';
 import { drawRecolorPreview } from '../../canvas/palette-recolor.js';
 import { getMultiRecolors, getPaletteOptions, getPalettesForItem } from '../../state/palettes.js';
 import { PaletteSelectModal } from './PaletteSelectModal.js';
@@ -37,21 +37,7 @@ export const ItemWithRecolors = {
                 opt,
                 onClose: () => { rootViewNode.state.showPaletteModal = null; m.redraw(); },
                 onSelect: (recolor) => {
-                    const colorDisplayName = recolor.replaceAll("_", " ");
-                    const subSelect = getSubSelectionGroup(itemId, idx);
-                    const subDisplayName = opt.type_name ? opt.label : displayName;
-                    state.selections[subSelect] = {
-                        itemId: itemId,
-                        subId: opt.type_name ? idx : null,
-                        variant: null,
-                        recolor: recolor,
-                        name: `${subDisplayName} (${colorDisplayName})`
-                    };
-
-                    // If this item has matchBodyColor enabled, apply to all other body-colored items
-                    if (opt.matchBodyColor || (subSelect === selectionGroup && meta.matchBodyColor)) {
-                        applyMatchBodyColor(null, recolor);
-                    }
+                    selectItem(itemId, recolor, false, opt.type_name ? idx : null);
                     m.redraw();
                 }
             });
@@ -102,27 +88,10 @@ export const ItemWithRecolors = {
                         },
                         onclick: () => {
                             if (!isCompatible) return; // Prevent selecting incompatible
-                            const selectionGroup = getSelectionGroup(itemId);
-
-                            if (isSelected) {
-                                delete state.selections[selectionGroup];
-                            } else {
-                                const palettes = getPalettesForItem(itemId, meta);
-                                const recolor = selectedColors[meta.type_name] ?? palettes[meta.type_name].source;
-                                const colorDisplayName = recolor.replaceAll("_", " ");
-                                state.selections[selectionGroup] = {
-                                    itemId: itemId,
-                                    subId: null,
-                                    variant: null,
-                                    recolor: recolor,
-                                    name: `${displayName} (${colorDisplayName})`
-                                };
-
-                                // If this item has matchBodyColor enabled, apply to all other body-colored items
-                                if (meta.matchBodyColor) {
-                                    applyMatchBodyColor(recolor, recolor);
-                                }
-                            }
+                            const palettes = getPalettesForItem(itemId, meta);
+                            const recolor = selectedColors[meta.type_name] ?? palettes[meta.type_name].source;
+                            selectItem(itemId, recolor, isSelected);
+                            m.redraw();
                         }
                     }, [
                     m("div", {

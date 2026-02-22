@@ -1,5 +1,5 @@
 // Item with variants component
-import { state, getSelectionGroup, applyMatchBodyColor } from '../../state/state.js';
+import { state, getSelectionGroup, selectItem } from '../../state/state.js';
 import { replaceInPath } from '../../state/path.js';
 import { variantToFilename, capitalize } from '../../utils/helpers.js';
 
@@ -107,22 +107,7 @@ export const ItemWithVariants = {
 						},
 						onclick: () => {
 							if (!isCompatible) return; // Prevent selecting incompatible
-							const selectionGroup = getSelectionGroup(itemId);
-
-							if (isSelected) {
-								delete state.selections[selectionGroup];
-							} else {
-								state.selections[selectionGroup] = {
-									itemId: itemId,
-									variant: variant,
-									name: `${displayName} (${variantDisplayName})`
-								};
-
-								// If this item has matchBodyColor enabled, apply to all other body-colored items
-								if (meta.matchBodyColor) {
-									applyMatchBodyColor(variant, variant);
-								}
-							}
+							selectItem(itemId, variant, isSelected);
 						}
 					}, [
 						m("span.variant-display-name.has-text-centered.is-size-7",
