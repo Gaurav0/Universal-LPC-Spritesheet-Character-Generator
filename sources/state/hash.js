@@ -251,7 +251,6 @@ export function loadSelectionsFromHash(hashString = null) {
   }
 
   // Check if Skipped Entries Are Sub-Items!
-  console.log(skippedEntries);
   for (const [subType, nameAndVariant] of Object.entries(skippedEntries)) {
     // Handle sub-items logic here
     const parts = nameAndVariant.split("_");
