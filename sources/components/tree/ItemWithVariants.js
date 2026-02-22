@@ -128,8 +128,8 @@ export const ItemWithVariants = {
 						m("span.variant-display-name.has-text-centered.is-size-7",
 							capitalize(variantDisplayName)),
 						m("canvas.variant-canvas.box.p-0", {
-							width: compactDisplay ? 32 : 64,
-							height: compactDisplay ? 32 : 64,
+							width: 64,
+							height: 64,
 							class: (compactDisplay ? " compact-display" : ""),
 							style: (isSelected ? " hsl(217, 71%, 53%)" : " hsl(0, 0%, 86%)"),
 							oncreate: (canvasVnode) => {
