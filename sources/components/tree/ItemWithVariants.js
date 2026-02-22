@@ -10,6 +10,7 @@ export const ItemWithVariants = {
 		const { itemId, meta, isSearchMatch, isCompatible, tooltipText } = vnode.attrs;
 		const compactDisplay = state.compactDisplay;
 		const displayName = meta.name;
+		const rootViewNode = vnode;
 		let nodePath = itemId;
 		if (displayName === 'Body Color') {
 			nodePath = 'body-body';
@@ -26,6 +27,18 @@ export const ItemWithVariants = {
 				title: tooltipText,
 				onclick: () => {
 					state.expandedNodes[nodePath] = !isExpanded;
+				},
+				oninit: () => {
+					rootViewNode.state.isLoading = meta.variants.length > 0;
+					rootViewNode.state.imagesToLoad = meta.variants.length;
+					rootViewNode.state.imagesLoaded = 0;
+				},
+				onupdate: () => {
+					if (isExpanded && rootViewNode.state.isLoading) {
+						if (rootViewNode.state.imagesLoaded >= rootViewNode.state.imagesToLoad) {
+							rootViewNode.state.isLoading = false;
+						}
+					}
 				}
 			}, [
 				m("span.tree-arrow", { class: isExpanded ? 'expanded' : 'collapsed' }),
@@ -33,6 +46,7 @@ export const ItemWithVariants = {
 				!isCompatible ? m("span.ml-1", "⚠️") : null
 			]),
 			isExpanded ? m("div", [
+				m("div", { class: rootViewNode.state.isLoading ? "loading" : "" }),
 				m("div.variants-container.ml-5.is-flex.is-flex-wrap-wrap",
 					meta.variants.map(variant => {
 					const selectionGroup = getSelectionGroup(itemId);
@@ -76,9 +90,9 @@ export const ItemWithVariants = {
 					return m("div.variant-item.is-flex.is-flex-direction-column.is-align-items-center.is-clickable", {
 						key: variant,
 						class: classNames({
-              "has-background-link-light has-text-weight-bold has-text-link": isSelected,
-              "is-not-compatible": !isCompatible,
-            }),
+							"has-background-link-light has-text-weight-bold has-text-link": isSelected,
+							"is-not-compatible": !isCompatible,
+						}),
 						title: tooltipText,
 						onmouseover: (e) => {
 							if (!isCompatible) return;
@@ -188,6 +202,8 @@ export const ItemWithVariants = {
 											);
 										}
 									}
+									rootViewNode.state.imagesLoaded++;
+									m.redraw();
 								});
 							},
 							onupdate: (canvasVnode) => {

@@ -79,7 +79,9 @@ export async function renderCharacter(
   addedCustomAnimations = new Set(); // Track which custom animations we've added
 
   // Import state to access custom uploaded image
-  const appState = await import("../state/state.js").then((m) => m.state);
+  const appState = await import("../state/state.js").then(m => m.state);
+  appState.isRenderingCharacter = true;
+  m.redraw();
 
   try {
     // Use provided canvas or default to main canvas
@@ -384,6 +386,9 @@ export async function renderCharacter(
       }
     }
   } finally {
+    appState.isRenderingCharacter = false;
+    m.redraw();
+
     // Mark end and measure
     if (profiler) {
       profiler.mark("renderCharacter:end");
