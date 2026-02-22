@@ -1,5 +1,5 @@
 // Item with recolors component
-import { state, getSelectionGroup, selectItem, getSubSelectionGroup, applyMatchBodyColor } from '../../state/state.js';
+import { state, getSelectionGroup, selectItem } from '../../state/state.js';
 import { drawRecolorPreview } from '../../canvas/palette-recolor.js';
 import { getMultiRecolors, getPaletteOptions, getPalettesForItem } from '../../state/palettes.js';
 import { PaletteSelectModal } from './PaletteSelectModal.js';
