@@ -359,11 +359,8 @@ function parseJson(filePath, fileName) {
   return parsed;
 } // fn parseJson
 
-// Walk Palettes Definitions and build Metadata
-const palettes = fs.readdirSync(PALETTES_DIR, { 
-  recursive: true,
-  withFileTypes: true 
-}).sort((a, b) => {
+// Sort Directory Tree By Name and Depth (Keeps Consistent across OS)
+function sortDirTree(a, b) {
   const pa = path.join(a.path, a.name);
   const pb = path.join(b.path, b.name);
 
@@ -372,7 +369,13 @@ const palettes = fs.readdirSync(PALETTES_DIR, {
   if (depthA !== depthB) return depthA - depthB;
 
   return pa.localeCompare(pb, ["en"]);
-});
+}
+
+// Walk Palettes Definitions and build Metadata
+const palettes = fs.readdirSync(PALETTES_DIR, { 
+  recursive: true,
+  withFileTypes: true 
+}).sort(sortDirTree);
 
 // Read palette_definitions/*.json line by line
 palettes.forEach(file => {
@@ -418,16 +421,7 @@ palettes.forEach(file => {
 const files = fs.readdirSync(SHEETS_DIR, { 
   recursive: true,
   withFileTypes: true 
-}).sort((a, b) => {
-  const pa = path.join(a.path, a.name);
-  const pb = path.join(b.path, b.name);
-
-  const depthA = pa.split(path.sep).length;
-  const depthB = pb.split(path.sep).length;
-  if (depthA !== depthB) return depthA - depthB;
-
-  return pa.localeCompare(pb, ["en"]);
-});
+}).sort(sortDirTree);
 
 // Initialize CSV
 const csvList = [];
