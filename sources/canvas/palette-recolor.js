@@ -52,17 +52,6 @@ function hexToRgb(hex) {
 }
 
 /**
- * Pack RGB values into single integer for fast lookup
- * @param {number} r - Red (0-255)
- * @param {number} g - Green (0-255)
- * @param {number} b - Blue (0-255)
- * @returns {number} Packed integer
- */
-function packRgb(r, g, b) {
-  return (r << 16) | (g << 8) | b;
-}
-
-/**
  * Build color mapping from source palette to target palette
  * Returns array of {source, target} pairs for tolerance-based matching
  * @param {string[]} sourcePalette - Array of hex colors
@@ -336,7 +325,6 @@ export async function drawRecolorPreview(itemId, meta, canvas, selectedColors) {
           if (img) {
               const imageToDraw = await getImageToDraw(img, itemId, selectedColors);
               const size = compactDisplay ? 32 : 64;
-              // Master branch uses: previewColumn * universalFrameSize + previewXOffset
               const srcX = previewCol * universalFrameSize + previewXOffset;
               const srcY = previewRow * universalFrameSize + previewYOffset;
               ctx.drawImage(

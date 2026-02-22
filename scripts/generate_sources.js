@@ -386,7 +386,7 @@ const palettes = fs.readdirSync(PALETTES_DIR, {
   const depthB = pb.split(path.sep).length;
   if (depthA !== depthB) return depthA - depthB;
 
-  return pa.localeCompare(pb);
+  return pa.localeCompare(pb, ["en"]);
 });
 
 // Read palette_definitions/*.json line by line
@@ -413,7 +413,7 @@ palettes.forEach(file => {
       }
       return;
     } else {
-      const filename = file.name.replaceAll("\t", "");
+      const filename = file.name;
       const [material, version] = file.name.replace(".json", "").split("_");
       try {
         if (!paletteMetadata.materials[material]) {
