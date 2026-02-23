@@ -80,7 +80,7 @@ export async function renderCharacter(
 
   // Import state to access custom uploaded image
   const appState = await import("../state/state.js").then(m => m.state);
-  appState.isRenderingCharacter = true;
+  appState.renderCharacter.isRendering = true;
   m.redraw();
 
   try {
@@ -90,6 +90,7 @@ export async function renderCharacter(
 
     if (!renderCanvas || !renderCtx) {
       console.error("Canvas not initialized");
+      appState.renderCharacter.isRendering = false;
       return;
     }
 
@@ -386,7 +387,7 @@ export async function renderCharacter(
       }
     }
   } finally {
-    appState.isRenderingCharacter = false;
+    appState.renderCharacter.isRendering = false;
     m.redraw();
 
     // Mark end and measure

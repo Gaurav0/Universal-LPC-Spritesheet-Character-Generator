@@ -19,19 +19,19 @@ export const ItemWithVariants = {
 
 		return m("div", {
 			class: classNames({
-        "search-result": isSearchMatch,
-        "has-text-grey": !isCompatible,
-      })
+				"search-result": isSearchMatch,
+				"has-text-grey": !isCompatible,
+			})
 		}, [
 			m("div.tree-label", {
 				title: tooltipText,
 				onclick: () => {
 					state.expandedNodes[nodePath] = !isExpanded;
-				},
-				oninit: () => {
-					rootViewNode.state.isLoading = meta.variants.length > 0;
-					rootViewNode.state.imagesToLoad = meta.variants.length;
-					rootViewNode.state.imagesLoaded = 0;
+					if (!state.expandedNodes[nodePath]) {
+						rootViewNode.state.isLoading = meta.variants.length > 0;
+						rootViewNode.state.imagesToLoad = meta.variants.length;
+						rootViewNode.state.imagesLoaded = 0;
+					}
 				},
 				onupdate: () => {
 					if (isExpanded && rootViewNode.state.isLoading) {
@@ -202,7 +202,7 @@ export const ItemWithVariants = {
 											);
 										}
 									}
-									rootViewNode.state.imagesLoaded++;
+									rootViewNode.state.imagesLoaded += loadedLayers.length;
 									m.redraw();
 								});
 							},
