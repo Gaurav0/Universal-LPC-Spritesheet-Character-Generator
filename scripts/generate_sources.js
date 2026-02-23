@@ -262,7 +262,7 @@ function parseJson(filePath, fileName) {
       }
       recolor.default = materialMeta.default;
       recolor.type_name = recolor.type_name ?? null;
-      recolor.label = recolor.label ?? materialMeta.label ?? ucwords(recolor.key);
+      recolor.label = recolor.label ?? materialMeta.label ?? ucwords(recolor.material);
       if (!recolor.base) {
         recolor.base = `${materialMeta.default}.${materialMeta.base}`;
       }
