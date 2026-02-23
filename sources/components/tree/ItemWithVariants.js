@@ -27,7 +27,7 @@ export const ItemWithVariants = {
 				title: tooltipText,
 				onclick: () => {
 					state.expandedNodes[nodePath] = !isExpanded;
-					if (!state.expandedNodes[nodePath]) {
+					if (state.expandedNodes[nodePath]) {
 						rootViewNode.state.isLoading = meta.variants.length > 0;
 						rootViewNode.state.imagesToLoad = meta.variants.length;
 						rootViewNode.state.imagesLoaded = 0;
