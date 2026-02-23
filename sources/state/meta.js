@@ -1,4 +1,5 @@
 import { getZPos } from '../canvas/canvas-utils.js';
+import { replaceInPath } from './path.js';
 import { state } from './state.js';
 import { variantToFilename } from '../utils/helpers.js';
 
