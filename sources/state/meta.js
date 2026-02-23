@@ -126,7 +126,7 @@ export function getLayersToLoad(meta, variant = null) {
     }
 
     layersToLoad.push({
-      zPos: layer.zPos || 100,
+      zPos: layer.zPos ?? 100,
       path: imagePath
     });
   }
