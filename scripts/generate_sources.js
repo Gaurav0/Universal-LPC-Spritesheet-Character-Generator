@@ -361,8 +361,8 @@ function parseJson(filePath, fileName) {
 
 // Sort Directory Tree By Name and Depth (Keeps Consistent across OS)
 function sortDirTree(a, b) {
-  const pa = path.join(a.path, a.name);
-  const pb = path.join(b.path, b.name);
+  const pa = path.join(a.parentPath, a.name);
+  const pb = path.join(b.parentPath, b.name);
 
   const depthA = pa.split(path.sep).length;
   const depthB = pb.split(path.sep).length;
@@ -382,7 +382,7 @@ palettes.forEach(file => {
   if (file.isDirectory()) {
     return;
   } else {
-    const fullPath = path.join(file.path, file.name);
+    const fullPath = path.join(file.parentPath, file.name);
     const json = JSON.parse(fs.readFileSync(fullPath));
     if (file.name.startsWith("meta_")) {
       // Handle Palette Metadata
@@ -430,18 +430,18 @@ files.forEach(file => {
     return;
   } else if (file.name.startsWith("meta_")) {
     // Handle Category Tree
-    parseTree(file.path, file.name);
+    parseTree(file.parentPath, file.name);
     return;
   } else {
     let parsedResult = null;
     try {
-      parsedResult = parseJson(file.path, file.name);
+      parsedResult = parseJson(file.parentPath, file.name);
     } catch (e) {
       if (DEBUG && !onlyIfTemplate)
         console.log(e);
       return;
     }
-    csvList.push({path: file.path.replace(SHEETS_DIR, ''), csv: parsedResult.csv});
+    csvList.push({path: file.parentPath.replace(SHEETS_DIR, ''), csv: parsedResult.csv});
   }
 });
 
