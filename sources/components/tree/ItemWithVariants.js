@@ -1,6 +1,7 @@
 // Item with variants component
 import { state, getSelectionGroup, applyMatchBodyColor } from '../../state/state.js';
 import { getLayersToLoad } from '../../state/meta.js';
+import { getHash } from '../../state/hash.js';
 import { variantToFilename, capitalize } from '../../utils/helpers.js';
 
 const classNames = window.classNames;
@@ -27,8 +28,18 @@ export const ItemWithVariants = {
 				rootViewNode.state.isLoading = meta.variants.length > 0;
 				rootViewNode.state.imagesToLoad = meta.variants.length * layers.length;
 				rootViewNode.state.imagesLoaded = 0;
+				rootViewNode.state.bodyType = state.bodyType;
 			},
 			onupdate: () => {
+				// Update If Changes Detected
+				if (rootViewNode.state.bodyType !== state.bodyType) {
+					rootViewNode.state.isLoading = meta.variants.length > 0;
+					rootViewNode.state.imagesToLoad = meta.variants.length * layers.length;
+					rootViewNode.state.imagesLoaded = 0;
+					rootViewNode.state.bodyType = state.bodyType;
+				}
+
+				// Reset State if Body Type Changes
 				if (isExpanded && rootViewNode.state.isLoading) {
 					if (rootViewNode.state.imagesLoaded >= rootViewNode.state.imagesToLoad) {
 						rootViewNode.state.isLoading = false;
@@ -40,11 +51,6 @@ export const ItemWithVariants = {
 				title: tooltipText,
 				onclick: () => {
 					state.expandedNodes[nodePath] = !isExpanded;
-					if (state.expandedNodes[nodePath]) {
-						rootViewNode.state.isLoading = meta.variants.length > 0;
-						rootViewNode.state.imagesToLoad = meta.variants.length * layers.length;
-						rootViewNode.state.imagesLoaded = 0;
-					}
 				}
 			}, [
 				m("span.tree-arrow", { class: isExpanded ? 'expanded' : 'collapsed' }),
@@ -176,6 +182,7 @@ export const ItemWithVariants = {
 								});
 							},
 							onupdate: (canvasVnode) => {
+								// Initialize Canvas
 								const canvas = canvasVnode.dom;
 								const ctx = canvas.getContext('2d', { willReadFrequently: true });
 								if (canvas.loadedLayers) {
@@ -195,6 +202,7 @@ export const ItemWithVariants = {
 											);
 										}
 									}
+									rootViewNode.state.imagesLoaded += canvas.loadedLayers.length;
 								}
 							}
 						})
