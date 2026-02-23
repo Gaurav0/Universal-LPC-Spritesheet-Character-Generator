@@ -1,6 +1,6 @@
 // Item with variants component
 import { state, getSelectionGroup, applyMatchBodyColor } from '../../state/state.js';
-import { getLayersToLoad } from '../../state/palettes.js';
+import { getLayersToLoad } from '../../state/meta.js';
 import { variantToFilename, capitalize } from '../../utils/helpers.js';
 
 const classNames = window.classNames;
@@ -16,7 +16,7 @@ export const ItemWithVariants = {
 			nodePath = 'body-body';
 		}
 		const isExpanded = state.expandedNodes[nodePath] || false;
-		const layers = getLayersToLoad(meta);
+		const layers = getLayersToLoad(meta, state.bodyType, state.selections);
 
 		return m("div", {
 			class: classNames({
@@ -143,7 +143,7 @@ export const ItemWithVariants = {
 								const ctx = canvas.getContext('2d', { willReadFrequently: true });
 
 								// Get Layers to Load for Variant
-								const layersToLoad = getLayersToLoad(meta, variant);
+								const layersToLoad = getLayersToLoad(meta, state.bodyType, state.selections, variant);
 
 								// Load and draw all layers
 								Promise.all(layersToLoad.map(layer => {
