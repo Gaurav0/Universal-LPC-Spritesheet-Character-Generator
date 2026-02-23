@@ -387,7 +387,7 @@ palettes.forEach(file => {
     if (file.name.startsWith("meta_")) {
       // Handle Palette Metadata
       const name = file.name.replace("meta_", "").replace(".json", "");
-      if (json.type == 'material') {
+      if (json.type === 'material') {
         if (!paletteMetadata.materials[name]) {
           paletteMetadata.materials[name] = json;
           paletteMetadata.materials[name].palettes = {};
