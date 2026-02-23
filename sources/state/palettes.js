@@ -3,7 +3,7 @@ import { state } from './state.js';
 import { variantToFilename } from '../utils/helpers.js';
 
 /**
- * 
+ * Get Layers to Load for the given metadata and variant
  * @param {Object} meta - Metadata for the asset
  * @param {string|null} variant - Variant name for the asset (optional)
  * @return {Array} Array of layers to load
