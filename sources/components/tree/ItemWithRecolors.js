@@ -7,6 +7,15 @@ import { PaletteSelectModal } from './PaletteSelectModal.js';
 const classNames = window.classNames;
 
 export const ItemWithRecolors = {
+    oncreate: function() {
+        const href = "/styles/components/tree/recolors.css";
+        if (!document.querySelector(`link[href="${href}"]`)) {
+            const link = document.createElement("link");
+            link.rel = "stylesheet";
+            link.href = href;
+            document.head.appendChild(link);
+        }
+    },
     view: function(vnode) {
         const { itemId, meta, isSearchMatch, isCompatible, tooltipText } = vnode.attrs;
         const compactDisplay = state.compactDisplay;
@@ -124,65 +133,29 @@ export const ItemWithRecolors = {
                         })
                     ]),
                     // Small color icons for each recolor category
-                    paletteOptions.length ? m("div.ml-3.is-align-items-center", {
-                        style: { width: "auto", display: "flex", flexDirection: "column", gap: "0.25em" }
-                    },
+                    paletteOptions.length ? m("div.ml-3.is-align-items-center.palette-recolor-list",
                         paletteOptions.map((opt, idx) => {
                             const dark = opt.colors[0];
                             const gradient = opt.colors.slice().reverse();
-                            return m("div.is-flex", {
-                                style: {
-                                    display: "flex",
-                                    alignItems: "center",
-                                    marginBottom: "0.25em",
-                                    cursor: "pointer",
-                                    width: "auto",
-                                    gap: "0.5em"
-                                },
+                            return m("div.is-flex.palette-recolor-item", {
                                 onclick: (e) => {
                                     e.stopPropagation();
                                     rootViewNode.state.showPaletteModal = idx;
                                     m.redraw();
                                 }
                             }, [
-                                m("label", {
+                                m("label", opt.label),
+                                m("div.palette-swatch", {
                                     style: {
-                                        width: "90px",
-                                        minWidth: "90px",
-                                        maxWidth: "90px",
-                                        display: "inline-block",
-                                        textAlign: "right",
-                                        marginRight: "0.5em",
-                                        cursor: "pointer",
-                                        whiteSpace: "nowrap",
-                                        overflow: "hidden",
-                                        textOverflow: "ellipsis"
-                                    }
-                                }, opt.label),
-                                m("div", {
-                                    style: {
-                                        minWidth: "140px",
-                                        maxWidth: "200px",
                                         border: `1px solid ${dark}`,
-                                        borderRadius: "10px",
-                                        display: "flex",
-                                        alignItems: "center",
-                                        overflowX: "hidden",
-                                        lineHeight: "1.5",
-                                        cursor: "pointer",
-                                        background: dark,
-                                        flexShrink: 0
+                                        background: dark
                                     }
                                 },
                                     gradient.map((color, i) =>
                                         m("span", {
                                             style: {
-                                                display: "inline-block",
-                                                height: "1rem",
-                                                padding: "0",
-                                                margin: "0",
                                                 width: `${100 / gradient.length}%`,
-                                                background: color
+                                                backgroundColor: color
                                             }
                                         })
                                     )
