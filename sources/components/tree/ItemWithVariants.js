@@ -13,7 +13,7 @@ export const ItemWithVariants = {
 		const displayName = meta.name;
 		const rootViewNode = vnode;
 		let nodePath = itemId;
-		if (displayName === 'Body color') {
+		if (displayName === 'Body Color') {
 			nodePath = 'body-body';
 		}
 		const isExpanded = state.expandedNodes[nodePath] || false;
