@@ -82,6 +82,7 @@ export async function renderCharacter(
     if (!renderCanvas || !renderCtx) {
       console.error("Canvas not initialized");
       appState.renderCharacter.isRendering = false;
+      m.redraw();
       return;
     }
 

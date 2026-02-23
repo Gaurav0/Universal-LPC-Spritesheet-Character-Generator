@@ -46,6 +46,6 @@ export const ScrollableContainer = {
 			classes = ""
 		} = vnode.attrs;
 
-		return m(`div.scrollable-container.mt-3${classes ? `.${classes}` : ""}`, vnode.children);
+		return m(`div.scrollable-container.mt-3`, { class: classes }, vnode.children);
 	}
 };
