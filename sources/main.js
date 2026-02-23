@@ -40,14 +40,12 @@ import { PerformanceProfiler } from './performance-profiler.js';
 
 // DEBUG mode will be turned on if on localhost and off in production
 // but this can be overridden by adding debug=(true|false) to the querystring.
-function boolMap() {
-	return {
-		true: true,
-		false: false,
-	}
-}
+const boolMap = {
+	true: true,
+	false: false,
+};
 function bool(s) {
-	return boolMap()[s] ?? null;
+	return boolMap[s] ?? null;
 }
 function isLocalhost() {
 	return window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
