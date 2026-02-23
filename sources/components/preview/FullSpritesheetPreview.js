@@ -129,9 +129,9 @@ export const FullSpritesheetPreview = {
 					])
 				])
 			]),
-			m("div", { class: state.renderCharacter.isRendering ? "loading" : "" }),
 			// Render preview canvas with drag-to-scroll
-			m(ScrollableContainer, [
+			m(ScrollableContainer, { classes: "full-spritesheet-preview" }, [
+				m("div", { class: state.renderCharacter.isRendering ? "loading" : "" }),
 				m(SpritesheetCanvas, {
 					showTransparencyGrid: state.showTransparencyGrid,
 					applyTransparencyMask: state.applyTransparencyMask,
