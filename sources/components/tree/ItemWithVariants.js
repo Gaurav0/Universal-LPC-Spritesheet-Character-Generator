@@ -1,6 +1,6 @@
 // Item with variants component
 import { state, getSelectionGroup, applyMatchBodyColor } from '../../state/state.js';
-import { getLayersToLoad } from '../../state/meta.js';
+import { getLayersToLoad } from '../../state/palettes.js';
 import { variantToFilename, capitalize } from '../../utils/helpers.js';
 
 const classNames = window.classNames;
