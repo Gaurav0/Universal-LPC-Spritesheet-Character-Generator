@@ -28,17 +28,8 @@ export const ItemWithVariants = {
 				rootViewNode.state.isLoading = meta.variants.length > 0;
 				rootViewNode.state.imagesToLoad = meta.variants.length * layers.length;
 				rootViewNode.state.imagesLoaded = 0;
-				rootViewNode.state.bodyType = state.bodyType;
 			},
 			onupdate: () => {
-				// Update If Changes Detected
-				if (rootViewNode.state.bodyType !== state.bodyType) {
-					rootViewNode.state.isLoading = meta.variants.length > 0;
-					rootViewNode.state.imagesToLoad = meta.variants.length * layers.length;
-					rootViewNode.state.imagesLoaded = 0;
-					rootViewNode.state.bodyType = state.bodyType;
-				}
-
 				// Reset State if Body Type Changes
 				if (isExpanded && rootViewNode.state.isLoading) {
 					if (rootViewNode.state.imagesLoaded >= rootViewNode.state.imagesToLoad) {
@@ -51,6 +42,11 @@ export const ItemWithVariants = {
 				title: tooltipText,
 				onclick: () => {
 					state.expandedNodes[nodePath] = !isExpanded;
+					if (isExpanded) {
+						rootViewNode.state.isLoading = meta.variants.length > 0;
+						rootViewNode.state.imagesToLoad = meta.variants.length * layers.length;
+						rootViewNode.state.imagesLoaded = 0;
+					}
 				}
 			}, [
 				m("span.tree-arrow", { class: isExpanded ? 'expanded' : 'collapsed' }),
@@ -202,7 +198,6 @@ export const ItemWithVariants = {
 											);
 										}
 									}
-									rootViewNode.state.imagesLoaded += canvas.loadedLayers.length;
 								}
 							}
 						})
