@@ -1672,86 +1672,6 @@ window.itemMetadata = {
       ]
     }
   },
-  "eyes_child": {
-    "name": "Child Eyes",
-    "priority": null,
-    "type_name": "eyes",
-    "required": [
-      "child"
-    ],
-    "animations": [
-      "walk",
-      "slash",
-      "hurt",
-      "idle",
-      "jump",
-      "sit"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "path": [
-      "head",
-      "eyes_child"
-    ],
-    "replace_in_path": {},
-    "variants": [
-      "blue",
-      "brown",
-      "gray",
-      "green",
-      "orange",
-      "purple",
-      "red",
-      "yellow"
-    ],
-    "layers": {
-      "layer_1": {
-        "zPos": 105,
-        "child": "eyes/human/child/"
-      }
-    },
-    "credits": [
-      {
-        "file": "eyes/human/child",
-        "notes": "original by Redshrike, mapped to all frames by Matthew Krohn & JaidynReiman",
-        "authors": [
-          "JaidynReiman",
-          "Matthew Krohn (makrohn)",
-          "Stephen Challener (Redshrike)"
-        ],
-        "licenses": [
-          "OGA-BY 3.0",
-          "CC-BY-SA 3.0",
-          "GPL 3.0"
-        ],
-        "urls": [
-          "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles"
-        ]
-      }
-    ],
-    "preview_row": 2,
-    "preview_column": 0,
-    "preview_x_offset": 0,
-    "preview_y_offset": 0,
-    "matchBodyColor": false,
-    "recolors": [
-      {
-        "material": "eyes",
-        "palettes": [
-          "ulpc",
-          "lpcrs"
-        ]
-      }
-    ],
-    "licenses": {
-      "child": [
-        "OGA-BY 3.0",
-        "CC-BY-SA 3.0",
-        "GPL 3.0"
-      ]
-    }
-  },
   "head_wrinkles": {
     "name": "Wrinkles",
     "priority": 80,
@@ -97369,8 +97289,7 @@ window.categoryTree = {
     },
     "head": {
       "items": [
-        "head_wrinkles",
-        "eyes_child"
+        "head_wrinkles"
       ],
       "children": {
         "heads": {
