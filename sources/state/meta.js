@@ -122,7 +122,7 @@ export function getLayersToLoad(meta, variant = null) {
             imagePath = `spritesheets/${layerPath}${variantFileName}.png`;
         } else {
             const defaultAnim = meta.animations.includes('walk') ? 'walk' : meta.animations[0];
-            imagePath = `spritesheets/${layerPath}${defaultAnim}/${variantFileName}.png`;
+            imagePath = `spritesheets/${layerPath}${defaultAnim}${variantFileName ? `/${variantFileName}` : ''}.png`;
         }
 
         layersToLoad.push({
