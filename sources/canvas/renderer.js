@@ -64,15 +64,6 @@ export async function renderCharacter(
     profiler.mark("renderCharacter:start");
   }
 
-  // Use provided canvas or default to main canvas
-  const renderCanvas = targetCanvas || canvas;
-  const renderCtx = renderCanvas.getContext('2d', { willReadFrequently: true });
-
-  if (!renderCanvas || !renderCtx) {
-    console.error("Canvas not initialized");
-    return;
-  }
-
   // Build list of items to draw
   itemsToDraw = [];
   const customAnimationItems = []; // Track items with custom animations

@@ -21,7 +21,19 @@ export const ItemWithVariants = {
 			class: classNames({
 				"search-result": isSearchMatch,
 				"has-text-grey": !isCompatible,
-			})
+			}),
+			oninit: () => {
+				rootViewNode.state.isLoading = meta.variants.length > 0;
+				rootViewNode.state.imagesToLoad = meta.variants.length;
+				rootViewNode.state.imagesLoaded = 0;
+			},
+			onupdate: () => {
+				if (isExpanded && rootViewNode.state.isLoading) {
+					if (rootViewNode.state.imagesLoaded >= rootViewNode.state.imagesToLoad) {
+						rootViewNode.state.isLoading = false;
+					}
+				}
+			}
 		}, [
 			m("div.tree-label", {
 				title: tooltipText,
@@ -31,13 +43,6 @@ export const ItemWithVariants = {
 						rootViewNode.state.isLoading = meta.variants.length > 0;
 						rootViewNode.state.imagesToLoad = meta.variants.length;
 						rootViewNode.state.imagesLoaded = 0;
-					}
-				},
-				onupdate: () => {
-					if (isExpanded && rootViewNode.state.isLoading) {
-						if (rootViewNode.state.imagesLoaded >= rootViewNode.state.imagesToLoad) {
-							rootViewNode.state.isLoading = false;
-						}
 					}
 				}
 			}, [
