@@ -1,6 +1,6 @@
 // Item with variants component
 import { state, getSelectionGroup, applyMatchBodyColor } from '../../state/state.js';
-import { replaceInPath } from '../../state/path.js';
+import { getLayersToLoad } from '../../state/meta.js';
 import { variantToFilename, capitalize } from '../../utils/helpers.js';
 
 const classNames = window.classNames;
@@ -16,6 +16,7 @@ export const ItemWithVariants = {
 			nodePath = 'body-body';
 		}
 		const isExpanded = state.expandedNodes[nodePath] || false;
+		const layers = getLayersToLoad(meta);
 
 		return m("div", {
 			class: classNames({
@@ -24,7 +25,7 @@ export const ItemWithVariants = {
 			}),
 			oninit: () => {
 				rootViewNode.state.isLoading = meta.variants.length > 0;
-				rootViewNode.state.imagesToLoad = meta.variants.length;
+				rootViewNode.state.imagesToLoad = meta.variants.length * layers.length;
 				rootViewNode.state.imagesLoaded = 0;
 			},
 			onupdate: () => {
@@ -41,7 +42,7 @@ export const ItemWithVariants = {
 					state.expandedNodes[nodePath] = !isExpanded;
 					if (state.expandedNodes[nodePath]) {
 						rootViewNode.state.isLoading = meta.variants.length > 0;
-						rootViewNode.state.imagesToLoad = meta.variants.length;
+						rootViewNode.state.imagesToLoad = meta.variants.length * layers.length;
 						rootViewNode.state.imagesLoaded = 0;
 					}
 				}
@@ -141,45 +142,8 @@ export const ItemWithVariants = {
 								const canvas = canvasVnode.dom;
 								const ctx = canvas.getContext('2d', { willReadFrequently: true });
 
-								// Collect all layers for this item
-								// Only include layers that match layer_1's custom animation (if any)
-								const layersToLoad = [];
-								for (let layerNum = 1; layerNum < 10; layerNum++) {
-									const layer = meta.layers?.[`layer_${layerNum}`];
-									if (!layer) break;
-
-									let layerPath = layer[state.bodyType];
-									if (!layerPath) continue;
-
-									// Filter: only include layers with matching custom animation
-									if (layer1CustomAnimation) {
-										if (layer.custom_animation !== layer1CustomAnimation) {
-											continue; // Skip layers with different custom animations
-										}
-									}
-
-									// Replace template variables like ${head}
-									if (layerPath.includes('${')) {
-										layerPath = replaceInPath(layerPath, state.selections, meta);
-									}
-
-									const hasCustomAnim = layer.custom_animation;
-									let imagePath;
-									if (hasCustomAnim) {
-										imagePath = `spritesheets/${layerPath}${variantToFilename(variant)}.png`;
-									} else {
-										const defaultAnim = meta.animations.includes('walk') ? 'walk' : meta.animations[0];
-										imagePath = `spritesheets/${layerPath}${defaultAnim}/${variantToFilename(variant)}.png`;
-									}
-
-									layersToLoad.push({
-										zPos: layer.zPos || 100,
-										path: imagePath
-									});
-								}
-
-								// Sort by zPos
-								layersToLoad.sort((a, b) => a.zPos - b.zPos);
+								// Get Layers to Load for Variant
+								const layersToLoad = getLayersToLoad(meta, variant);
 
 								// Load and draw all layers
 								Promise.all(layersToLoad.map(layer => {
