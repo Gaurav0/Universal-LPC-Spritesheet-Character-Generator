@@ -30,7 +30,6 @@ export const ItemWithVariants = {
 				rootViewNode.state.imagesLoaded = 0;
 			},
 			onupdate: () => {
-				// Reset State if Body Type Changes
 				if (isExpanded && rootViewNode.state.isLoading) {
 					if (rootViewNode.state.imagesLoaded >= rootViewNode.state.imagesToLoad) {
 						rootViewNode.state.isLoading = false;
