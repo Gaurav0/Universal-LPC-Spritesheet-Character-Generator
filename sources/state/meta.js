@@ -1,4 +1,5 @@
 import { getZPos } from '../canvas/canvas-utils.js';
+import { variantToFilename } from '../utils/helpers.js';
 
 /**
  * Sort Layers by zPos
