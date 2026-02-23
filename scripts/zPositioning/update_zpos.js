@@ -28,7 +28,7 @@ const sheets = fs.readdirSync(SHEETS_DIR, {
             fs.writeFileSync(fullPath, JSON.stringify(definition, null, 2));
             console.log('Updated:', file.name);
           } catch(e) {
-            return console.error(err);
+            return console.error(e);
           }
         }
         entryIdx += 1;
