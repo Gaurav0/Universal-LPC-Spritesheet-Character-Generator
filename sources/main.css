@@ -82,11 +82,11 @@ canvas {
   image-rendering: crisp-edges;
 }
 
-.full-spritesheet-preview {
+.spritesheet-preview {
   position: relative;
 }
 
-.full-spritesheet-preview .loading {
+.spritesheet-preview .loading {
   position: absolute;
   top: 1rem;
   left: 1rem;
