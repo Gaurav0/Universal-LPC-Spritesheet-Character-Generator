@@ -1,7 +1,6 @@
 // Item with variants component
 import { state, getSelectionGroup, applyMatchBodyColor } from '../../state/state.js';
 import { getLayersToLoad } from '../../state/meta.js';
-import { getHash } from '../../state/hash.js';
 import { variantToFilename, capitalize } from '../../utils/helpers.js';
 
 const classNames = window.classNames;
@@ -177,9 +176,10 @@ export const ItemWithVariants = {
 								});
 							},
 							onupdate: (canvasVnode) => {
-								// Initialize Canvas
 								const canvas = canvasVnode.dom;
 								const ctx = canvas.getContext('2d', { willReadFrequently: true });
+
+								// Process Layers Loaded for Variant
 								if (canvas.loadedLayers) {
 									// Draw each layer in zPos order
 									// Use universalFrameSize (64) for all calculations, matching master branch
