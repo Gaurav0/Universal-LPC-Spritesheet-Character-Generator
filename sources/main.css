@@ -82,6 +82,16 @@ canvas {
   image-rendering: crisp-edges;
 }
 
+.spritesheet-preview {
+  position: relative;
+}
+
+.spritesheet-preview .loading {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
 .scrollable-container {
   overflow: auto;
   max-width: 100%;

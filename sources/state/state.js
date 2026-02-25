@@ -42,6 +42,9 @@ export const state = {
 	},
 	zipIndividualFrames: {
 		isRunning: false,
+	},
+	renderCharacter: {
+		isRendering: false, // true if a character render is in progress
 	}
 };
 
