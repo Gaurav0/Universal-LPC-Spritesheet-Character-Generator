@@ -98,7 +98,7 @@ export const ItemWithRecolors = {
                         onclick: () => {
                             if (!isCompatible) return; // Prevent selecting incompatible
                             const palettes = getPalettesForItem(itemId, meta);
-                            const recolor = selectedColors[meta.type_name] ?? palettes[meta.type_name].source;
+                            const recolor = selectedColors?.[meta.type_name] ?? palettes[meta.type_name].source;
                             selectItem(itemId, recolor, isSelected);
                             m.redraw();
                         }
