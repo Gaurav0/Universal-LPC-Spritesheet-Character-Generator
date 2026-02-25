@@ -4859,7 +4859,7 @@ window.itemMetadata = {
   },
   "wound_arm": {
     "name": "Arm",
-    "priority": null,
+    "priority": 50,
     "type_name": "wound_arm",
     "required": [
       "male",
@@ -4887,21 +4887,21 @@ window.itemMetadata = {
     ],
     "replace_in_path": {},
     "variants": [
-      "arm"
+      "red"
     ],
     "layers": {
       "layer_1": {
         "zPos": 15,
-        "male": "body/wound/",
-        "muscular": "body/wound/",
-        "female": "body/wound/",
-        "pregnant": "body/wound/",
-        "teen": "body/wound/"
+        "male": "body/wound/arm/",
+        "muscular": "body/wound/arm/",
+        "female": "body/wound/arm/",
+        "pregnant": "body/wound/arm/",
+        "teen": "body/wound/arm/"
       }
     },
     "credits": [
       {
-        "file": "body/wound/arm.png",
+        "file": "body/wound/arm",
         "notes": "",
         "authors": [
           "Benjamin K. Smith (BenCreating)",
@@ -4947,7 +4947,7 @@ window.itemMetadata = {
   },
   "wound_brain": {
     "name": "Brain",
-    "priority": null,
+    "priority": 10,
     "type_name": "wound_brain",
     "required": [
       "male",
@@ -4985,21 +4985,21 @@ window.itemMetadata = {
     ],
     "replace_in_path": {},
     "variants": [
-      "brain"
+      "red"
     ],
     "layers": {
       "layer_1": {
         "zPos": 115,
-        "male": "body/wound/",
-        "muscular": "body/wound/",
-        "female": "body/wound/",
-        "pregnant": "body/wound/",
-        "teen": "body/wound/"
+        "male": "body/wound/brain/",
+        "muscular": "body/wound/brain/",
+        "female": "body/wound/brain/",
+        "pregnant": "body/wound/brain/",
+        "teen": "body/wound/brain/"
       }
     },
     "credits": [
       {
-        "file": "body/wound/brain.png",
+        "file": "body/wound/brain",
         "notes": "",
         "authors": [
           "Benjamin K. Smith (BenCreating)",
@@ -5045,7 +5045,7 @@ window.itemMetadata = {
   },
   "wound_eye_left": {
     "name": "Left Eye",
-    "priority": null,
+    "priority": 30,
     "type_name": "wound_eye_left",
     "required": [
       "male",
@@ -5083,21 +5083,21 @@ window.itemMetadata = {
     ],
     "replace_in_path": {},
     "variants": [
-      "eye_left"
+      "red"
     ],
     "layers": {
       "layer_1": {
         "zPos": 115,
-        "male": "body/wound/",
-        "muscular": "body/wound/",
-        "female": "body/wound/",
-        "pregnant": "body/wound/",
-        "teen": "body/wound/"
+        "male": "body/wound/eye_left/",
+        "muscular": "body/wound/eye_left/",
+        "female": "body/wound/eye_left/",
+        "pregnant": "body/wound/eye_left/",
+        "teen": "body/wound/eye_left/"
       }
     },
     "credits": [
       {
-        "file": "body/wound/eye_left.png",
+        "file": "body/wound/eye_left",
         "notes": "Zombie by BenCreating, commissioned by castelonia; flipped (left eye) variant by JaidynReiman",
         "authors": [
           "JaidynReiman",
@@ -5144,7 +5144,7 @@ window.itemMetadata = {
   },
   "wound_eye_right": {
     "name": "Right Eye",
-    "priority": null,
+    "priority": 40,
     "type_name": "wound_eye_right",
     "required": [
       "male",
@@ -5182,21 +5182,21 @@ window.itemMetadata = {
     ],
     "replace_in_path": {},
     "variants": [
-      "eye_right"
+      "red"
     ],
     "layers": {
       "layer_1": {
         "zPos": 115,
-        "male": "body/wound/",
-        "muscular": "body/wound/",
-        "female": "body/wound/",
-        "pregnant": "body/wound/",
-        "teen": "body/wound/"
+        "male": "body/wound/eye_right/",
+        "muscular": "body/wound/eye_right/",
+        "female": "body/wound/eye_right/",
+        "pregnant": "body/wound/eye_right/",
+        "teen": "body/wound/eye_right/"
       }
     },
     "credits": [
       {
-        "file": "body/wound/eye_right.png",
+        "file": "body/wound/eye_right",
         "notes": "",
         "authors": [
           "Benjamin K. Smith (BenCreating)",
@@ -5242,7 +5242,7 @@ window.itemMetadata = {
   },
   "wound_mouth": {
     "name": "Mouth",
-    "priority": null,
+    "priority": 20,
     "type_name": "wound_mouth",
     "required": [
       "male",
@@ -5280,21 +5280,21 @@ window.itemMetadata = {
     ],
     "replace_in_path": {},
     "variants": [
-      "mouth"
+      "red"
     ],
     "layers": {
       "layer_1": {
         "zPos": 115,
-        "male": "body/wound/",
-        "muscular": "body/wound/",
-        "female": "body/wound/",
-        "pregnant": "body/wound/",
-        "teen": "body/wound/"
+        "male": "body/wound/mouth/",
+        "muscular": "body/wound/mouth/",
+        "female": "body/wound/mouth/",
+        "pregnant": "body/wound/mouth/",
+        "teen": "body/wound/mouth/"
       }
     },
     "credits": [
       {
-        "file": "body/wound/mouth.png",
+        "file": "body/wound/mouth",
         "notes": "",
         "authors": [
           "Benjamin K. Smith (BenCreating)",
@@ -5340,7 +5340,7 @@ window.itemMetadata = {
   },
   "wound_ribs": {
     "name": "Ribs",
-    "priority": null,
+    "priority": 60,
     "type_name": "wound_ribs",
     "required": [
       "male",
@@ -5368,21 +5368,21 @@ window.itemMetadata = {
     ],
     "replace_in_path": {},
     "variants": [
-      "ribs"
+      "red"
     ],
     "layers": {
       "layer_1": {
         "zPos": 15,
-        "male": "body/wound/",
-        "muscular": "body/wound/",
-        "female": "body/wound/",
-        "pregnant": "body/wound/",
-        "teen": "body/wound/"
+        "male": "body/wound/ribs/",
+        "muscular": "body/wound/ribs/",
+        "female": "body/wound/ribs/",
+        "pregnant": "body/wound/ribs/",
+        "teen": "body/wound/ribs/"
       }
     },
     "credits": [
       {
-        "file": "body/wound/ribs.png",
+        "file": "body/wound/ribs",
         "notes": "",
         "authors": [
           "Benjamin K. Smith (BenCreating)",
@@ -33690,6 +33690,72 @@ window.itemMetadata = {
       ]
     }
   },
+  "belt_formal": {
+    "name": "Formal Belt",
+    "priority": 50,
+    "type_name": "belt",
+    "required": [
+      "male"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "torso",
+      "waist",
+      "belt_formal"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "brown"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 80,
+        "male": "torso/waist/belt_formal/"
+      }
+    },
+    "credits": [
+      {
+        "file": "torso/waist/belt_formal",
+        "notes": "",
+        "authors": [
+          "Thane Brimhall (pennomi)",
+          "laetissima",
+          "bluecarrot16"
+        ],
+        "licenses": [
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-2-characters",
+          "https://opengameart.org/content/lpc-gentleman"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": false,
+    "recolors": null,
+    "licenses": {
+      "male": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
+  },
   "belt_leather": {
     "name": "Leather Belt",
     "priority": 10,
@@ -33731,7 +33797,7 @@ window.itemMetadata = {
         "zPos": 70,
         "male": "torso/waist/belt_leather/male/",
         "female": "torso/waist/belt_leather/female/",
-        "teen": "torso/waist/belt_leather/male/"
+        "teen": "torso/waist/belt_leather/female/"
       }
     },
     "credits": [
@@ -33751,6 +33817,86 @@ window.itemMetadata = {
         "urls": [
           "https://opengameart.org/content/lpc-combat-armor-for-women",
           "https://opengameart.org/content/lpc-pirates"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": false,
+    "recolors": null,
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
+  },
+  "belt_leather2": {
+    "name": "Leather Belt Alt",
+    "priority": 10,
+    "type_name": "belt",
+    "required": [
+      "male",
+      "female",
+      "teen"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "torso",
+      "waist",
+      "belt_leather2"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "leather"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 70,
+        "male": "torso/waist/belt_leather2/male/",
+        "female": "torso/waist/belt_leather2/female/",
+        "teen": "torso/waist/belt_leather2/female/"
+      }
+    },
+    "credits": [
+      {
+        "file": "torso/waist/belt_leather2",
+        "notes": "",
+        "authors": [
+          "Johannes Sjölund (wulax)",
+          "Matthew Krohn (makrohn)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-combat-armor-for-women"
         ]
       }
     ],
@@ -33819,7 +33965,7 @@ window.itemMetadata = {
         "zPos": 70,
         "male": "torso/waist/belt_loose/male/",
         "female": "torso/waist/belt_loose/female/",
-        "teen": "torso/waist/belt_loose/male/"
+        "teen": "torso/waist/belt_loose/female/"
       }
     },
     "credits": [
@@ -33866,21 +34012,19 @@ window.itemMetadata = {
       ]
     }
   },
-  "belt_other_female": {
-    "name": "Other belts",
+  "belt_mage": {
+    "name": "Mage Belt",
     "priority": 50,
     "type_name": "belt",
     "required": [
-      "female"
+      "female",
+      "teen"
     ],
     "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
       "hurt",
-      "watering"
+      "slash",
+      "spellcast",
+      "walk"
     ],
     "tags": [],
     "required_tags": [],
@@ -33888,7 +34032,7 @@ window.itemMetadata = {
     "path": [
       "torso",
       "waist",
-      "belt_other_female"
+      "belt_mage"
     ],
     "replace_in_path": {},
     "variants": [
@@ -33897,20 +34041,18 @@ window.itemMetadata = {
       "brown",
       "gold",
       "iron",
-      "leather",
-      "silver",
-      "teal",
-      "white"
+      "silver"
     ],
     "layers": {
       "layer_1": {
-        "zPos": 70,
-        "female": "torso/waist/belt_other/female/"
+        "zPos": 90,
+        "female": "torso/waist/belt_mage/",
+        "teen": "torso/waist/belt_mage/"
       }
     },
     "credits": [
       {
-        "file": "torso/waist/belt_other/female",
+        "file": "torso/waist/belt_mage",
         "notes": "",
         "authors": [
           "Luke Mehl"
@@ -33921,53 +34063,6 @@ window.itemMetadata = {
         ],
         "urls": [
           "https://opengameart.org/content/female-mage-clothing-set"
-        ]
-      },
-      {
-        "file": "torso/waist/belt_other/female/leather.png",
-        "notes": "",
-        "authors": [
-          "Johannes Sjölund (wulax)",
-          "Matthew Krohn (makrohn)"
-        ],
-        "licenses": [
-          "OGA-BY 3.0",
-          "CC-BY-SA 3.0",
-          "GPL 3.0"
-        ],
-        "urls": [
-          "https://opengameart.org/content/lpc-combat-armor-for-women"
-        ]
-      },
-      {
-        "file": "torso/waist/belt_other/female/teal.png",
-        "notes": "",
-        "authors": [
-          "Johannes Sjölund (wulax)"
-        ],
-        "licenses": [
-          "OGA-BY 3.0",
-          "CC-BY-SA 3.0",
-          "GPL 3.0"
-        ],
-        "urls": [
-          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
-        ]
-      },
-      {
-        "file": "torso/waist/belt_other/female/white.png",
-        "notes": "",
-        "authors": [
-          "Johannes Sjölund (wulax)",
-          "Matthew Krohn (makrohn)"
-        ],
-        "licenses": [
-          "OGA-BY 3.0",
-          "CC-BY-SA 3.0",
-          "GPL 3.0"
-        ],
-        "urls": [
-          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
         ]
       }
     ],
@@ -33981,15 +34076,21 @@ window.itemMetadata = {
       "female": [
         "CC-BY-SA 3.0",
         "GPL 3.0"
+      ],
+      "teen": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
       ]
     }
   },
-  "belt_other_male": {
-    "name": "Other belts",
+  "belt_robe": {
+    "name": "Robe Belt",
     "priority": 50,
     "type_name": "belt",
     "required": [
-      "male"
+      "male",
+      "female",
+      "teen"
     ],
     "animations": [
       "spellcast",
@@ -34006,58 +34107,28 @@ window.itemMetadata = {
     "path": [
       "torso",
       "waist",
-      "belt_other_male"
+      "belt_robe"
     ],
     "replace_in_path": {},
     "variants": [
-      "formal",
-      "leather",
+      "teal",
       "white"
     ],
     "layers": {
       "layer_1": {
         "zPos": 70,
-        "male": "torso/waist/belt_other/male/"
+        "male": "torso/waist/belt_robe/male/",
+        "teen": "torso/waist/belt_robe/female/",
+        "female": "torso/waist/belt_robe/female/"
       }
     },
     "credits": [
       {
-        "file": "torso/waist/belt_other/male/formal.png",
+        "file": "torso/waist/belt_robe",
         "notes": "",
         "authors": [
-          "Thane Brimhall (pennomi)",
-          "laetissima",
-          "bluecarrot16"
-        ],
-        "licenses": [
-          "CC-BY-SA 3.0",
-          "GPL 3.0"
-        ],
-        "urls": [
-          "https://opengameart.org/content/lpc-2-characters",
-          "https://opengameart.org/content/lpc-gentleman"
-        ]
-      },
-      {
-        "file": "torso/waist/belt_other/male/leather.png",
-        "notes": "",
-        "authors": [
-          "Johannes Sjölund (wulax)"
-        ],
-        "licenses": [
-          "OGA-BY 3.0",
-          "CC-BY-SA 3.0",
-          "GPL 3.0"
-        ],
-        "urls": [
-          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
-        ]
-      },
-      {
-        "file": "torso/waist/belt_other/male/white.png",
-        "notes": "",
-        "authors": [
-          "Johannes Sjölund (wulax)"
+          "Johannes Sjölund (wulax)",
+          "Matthew Krohn (makrohn)"
         ],
         "licenses": [
           "OGA-BY 3.0",
@@ -34077,6 +34148,17 @@ window.itemMetadata = {
     "recolors": null,
     "licenses": {
       "male": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "teen": [
+        "OGA-BY 3.0",
         "CC-BY-SA 3.0",
         "GPL 3.0"
       ]
@@ -36742,13 +36824,109 @@ window.itemMetadata = {
       ]
     }
   },
+  "shield_round": {
+    "name": "Round Shield",
+    "priority": 10,
+    "type_name": "shield",
+    "required": [
+      "male",
+      "female",
+      "muscular",
+      "pregnant"
+    ],
+    "animations": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "watering"
+    ],
+    "tags": [],
+    "required_tags": [],
+    "excluded_tags": [],
+    "path": [
+      "weapons",
+      "shields",
+      "shield_round"
+    ],
+    "replace_in_path": {},
+    "variants": [
+      "brown",
+      "black",
+      "gold",
+      "green",
+      "silver",
+      "yellow"
+    ],
+    "layers": {
+      "layer_1": {
+        "zPos": 110,
+        "male": "shield/round/",
+        "muscular": "shield/round/",
+        "female": "shield/round/",
+        "pregnant": "shield/round/"
+      }
+    },
+    "credits": [
+      {
+        "file": "shield/round",
+        "notes": "",
+        "authors": [
+          "Johannes Sjölund (wulax)",
+          "Michael Whitlock (bigbeargames)",
+          "DarkwallLKE",
+          "Tuomo Untinen (reemax)"
+        ],
+        "licenses": [
+          "OGA-BY 3.0",
+          "CC-BY-SA 3.0",
+          "GPL 3.0"
+        ],
+        "urls": [
+          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+          "https://opengameart.org/content/lpc-shields-pack"
+        ]
+      }
+    ],
+    "preview_row": 2,
+    "preview_column": 0,
+    "preview_x_offset": 0,
+    "preview_y_offset": 0,
+    "matchBodyColor": false,
+    "recolors": null,
+    "licenses": {
+      "male": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "female": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "muscular": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "pregnant": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ]
+    }
+  },
   "shield_spartan": {
-    "name": "Spartan shield",
+    "name": "Spartan Shield",
     "priority": 50,
     "type_name": "shield",
     "required": [
       "male",
       "female",
+      "teen",
       "muscular",
       "pregnant"
     ],
@@ -36778,15 +36956,17 @@ window.itemMetadata = {
         "zPos": 2,
         "male": "shield/spartan/bg/",
         "muscular": "shield/spartan/bg/",
+        "teen": "shield/spartan/bg/",
         "female": "shield/spartan/bg/",
         "pregnant": "shield/spartan/bg/"
       },
       "layer_2": {
         "zPos": 110,
-        "male": "shield/spartan/fg/male/",
-        "muscular": "shield/spartan/fg/male/",
-        "female": "shield/spartan/fg/female/",
-        "pregnant": "shield/spartan/fg/female/"
+        "male": "shield/spartan/fg/",
+        "muscular": "shield/spartan/fg/",
+        "teen": "shield/spartan/fg/",
+        "female": "shield/spartan/fg/",
+        "pregnant": "shield/spartan/fg/"
       }
     },
     "credits": [
@@ -36818,340 +36998,7 @@ window.itemMetadata = {
       "female": [
         "OGA-BY 3.0"
       ],
-      "muscular": [
-        "OGA-BY 3.0"
-      ],
-      "pregnant": [
-        "OGA-BY 3.0"
-      ]
-    }
-  },
-  "shield": {
-    "name": "Shield",
-    "priority": 10,
-    "type_name": "shield",
-    "required": [
-      "male",
-      "female",
-      "muscular",
-      "pregnant"
-    ],
-    "animations": [
-      "spellcast",
-      "thrust",
-      "walk",
-      "slash",
-      "shoot",
-      "hurt",
-      "watering"
-    ],
-    "tags": [],
-    "required_tags": [],
-    "excluded_tags": [],
-    "path": [
-      "weapons",
-      "shields",
-      "shield"
-    ],
-    "replace_in_path": {},
-    "variants": [
-      "crusader",
-      "spartan",
-      "round black",
-      "round brown",
-      "round gold",
-      "round green",
-      "round silver",
-      "round yellow"
-    ],
-    "layers": {
-      "layer_1": {
-        "zPos": 110,
-        "male": "shield/male/",
-        "muscular": "shield/male/",
-        "female": "shield/female/",
-        "pregnant": "shield/female/"
-      }
-    },
-    "credits": [
-      {
-        "file": "shield/male/crusader.png",
-        "notes": "",
-        "authors": [
-          "bluecarrot16",
-          "Sander Frenken (castelonia)"
-        ],
-        "licenses": [
-          "OGA-BY 3.0"
-        ],
-        "urls": [
-          "https://opengameart.org/content/lpc-shields"
-        ]
-      },
-      {
-        "file": "shield/female/crusader.png",
-        "notes": "",
-        "authors": [
-          "bluecarrot16",
-          "Sander Frenken (castelonia)"
-        ],
-        "licenses": [
-          "OGA-BY 3.0"
-        ],
-        "urls": [
-          "https://opengameart.org/content/lpc-shields"
-        ]
-      },
-      {
-        "file": "shield/male/spartan.png",
-        "notes": "",
-        "authors": [
-          "bluecarrot16",
-          "Sander Frenken (castelonia)"
-        ],
-        "licenses": [
-          "OGA-BY 3.0"
-        ],
-        "urls": [
-          "https://opengameart.org/content/lpc-shields"
-        ]
-      },
-      {
-        "file": "shield/female/spartan.png",
-        "notes": "",
-        "authors": [
-          "bluecarrot16",
-          "Sander Frenken (castelonia)"
-        ],
-        "licenses": [
-          "OGA-BY 3.0"
-        ],
-        "urls": [
-          "https://opengameart.org/content/lpc-shields"
-        ]
-      },
-      {
-        "file": "shield/male/round_black.png",
-        "notes": "?",
-        "authors": [
-          "Johannes Sjölund (wulax)",
-          "Michael Whitlock (bigbeargames)",
-          "DarkwallLKE",
-          "Tuomo Untinen (reemax)"
-        ],
-        "licenses": [
-          "CC-BY-SA 3.0",
-          "GPL 3.0"
-        ],
-        "urls": [
-          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
-          "https://opengameart.org/content/lpc-shields-pack"
-        ]
-      },
-      {
-        "file": "shield/female/round_black.png",
-        "notes": "?",
-        "authors": [
-          "Johannes Sjölund (wulax)",
-          "Michael Whitlock (bigbeargames)",
-          "DarkwallLKE",
-          "Tuomo Untinen (reemax)"
-        ],
-        "licenses": [
-          "CC-BY-SA 3.0",
-          "GPL 3.0"
-        ],
-        "urls": [
-          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
-          "https://opengameart.org/content/lpc-shields-pack"
-        ]
-      },
-      {
-        "file": "shield/male/round_brown.png",
-        "notes": "",
-        "authors": [
-          "Johannes Sjölund (wulax)"
-        ],
-        "licenses": [
-          "OGA-BY 3.0",
-          "CC-BY-SA 3.0",
-          "GPL 3.0"
-        ],
-        "urls": [
-          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
-        ]
-      },
-      {
-        "file": "shield/female/round_brown.png",
-        "notes": "",
-        "authors": [
-          "Johannes Sjölund (wulax)"
-        ],
-        "licenses": [
-          "OGA-BY 3.0",
-          "CC-BY-SA 3.0",
-          "GPL 3.0"
-        ],
-        "urls": [
-          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
-        ]
-      },
-      {
-        "file": "shield/male/round_gold.png",
-        "notes": "?",
-        "authors": [
-          "Johannes Sjölund (wulax)",
-          "Michael Whitlock (bigbeargames)",
-          "DarkwallLKE",
-          "Tuomo Untinen (reemax)"
-        ],
-        "licenses": [
-          "CC-BY-SA 3.0",
-          "GPL 3.0"
-        ],
-        "urls": [
-          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
-          "https://opengameart.org/content/lpc-shields-pack"
-        ]
-      },
-      {
-        "file": "shield/female/round_gold.png",
-        "notes": "?",
-        "authors": [
-          "Johannes Sjölund (wulax)",
-          "Michael Whitlock (bigbeargames)",
-          "DarkwallLKE",
-          "Tuomo Untinen (reemax)"
-        ],
-        "licenses": [
-          "CC-BY-SA 3.0",
-          "GPL 3.0"
-        ],
-        "urls": [
-          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
-          "https://opengameart.org/content/lpc-shields-pack"
-        ]
-      },
-      {
-        "file": "shield/male/round_green.png",
-        "notes": "?",
-        "authors": [
-          "Johannes Sjölund (wulax)",
-          "Michael Whitlock (bigbeargames)",
-          "DarkwallLKE",
-          "Tuomo Untinen (reemax)"
-        ],
-        "licenses": [
-          "CC-BY-SA 3.0",
-          "GPL 3.0"
-        ],
-        "urls": [
-          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
-          "https://opengameart.org/content/lpc-shields-pack"
-        ]
-      },
-      {
-        "file": "shield/female/round_green.png",
-        "notes": "?",
-        "authors": [
-          "Johannes Sjölund (wulax)",
-          "Michael Whitlock (bigbeargames)",
-          "DarkwallLKE",
-          "Tuomo Untinen (reemax)"
-        ],
-        "licenses": [
-          "CC-BY-SA 3.0",
-          "GPL 3.0"
-        ],
-        "urls": [
-          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
-          "https://opengameart.org/content/lpc-shields-pack"
-        ]
-      },
-      {
-        "file": "shield/male/round_silver.png",
-        "notes": "?",
-        "authors": [
-          "Johannes Sjölund (wulax)",
-          "Michael Whitlock (bigbeargames)",
-          "DarkwallLKE",
-          "Tuomo Untinen (reemax)"
-        ],
-        "licenses": [
-          "CC-BY-SA 3.0",
-          "GPL 3.0"
-        ],
-        "urls": [
-          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
-          "https://opengameart.org/content/lpc-shields-pack"
-        ]
-      },
-      {
-        "file": "shield/female/round_silver.png",
-        "notes": "?",
-        "authors": [
-          "Johannes Sjölund (wulax)",
-          "Michael Whitlock (bigbeargames)",
-          "DarkwallLKE",
-          "Tuomo Untinen (reemax)"
-        ],
-        "licenses": [
-          "CC-BY-SA 3.0",
-          "GPL 3.0"
-        ],
-        "urls": [
-          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
-          "https://opengameart.org/content/lpc-shields-pack"
-        ]
-      },
-      {
-        "file": "shield/male/round_yellow.png",
-        "notes": "?",
-        "authors": [
-          "Johannes Sjölund (wulax)",
-          "Michael Whitlock (bigbeargames)",
-          "DarkwallLKE",
-          "Tuomo Untinen (reemax)"
-        ],
-        "licenses": [
-          "CC-BY-SA 3.0",
-          "GPL 3.0"
-        ],
-        "urls": [
-          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
-          "https://opengameart.org/content/lpc-shields-pack"
-        ]
-      },
-      {
-        "file": "shield/female/round_yellow.png",
-        "notes": "?",
-        "authors": [
-          "Johannes Sjölund (wulax)",
-          "Michael Whitlock (bigbeargames)",
-          "DarkwallLKE",
-          "Tuomo Untinen (reemax)"
-        ],
-        "licenses": [
-          "CC-BY-SA 3.0",
-          "GPL 3.0"
-        ],
-        "urls": [
-          "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
-          "https://opengameart.org/content/lpc-shields-pack"
-        ]
-      }
-    ],
-    "preview_row": 2,
-    "preview_column": 0,
-    "preview_x_offset": 0,
-    "preview_y_offset": 0,
-    "matchBodyColor": false,
-    "recolors": null,
-    "licenses": {
-      "male": [
-        "OGA-BY 3.0"
-      ],
-      "female": [
+      "teen": [
         "OGA-BY 3.0"
       ],
       "muscular": [
@@ -79396,12 +79243,12 @@ window.categoryTree = {
         },
         "wounds": {
           "items": [
-            "wound_arm",
             "wound_brain",
-            "wound_eye_left",
             "wound_mouth",
-            "wound_ribs",
-            "wound_eye_right"
+            "wound_eye_left",
+            "wound_eye_right",
+            "wound_arm",
+            "wound_ribs"
           ],
           "children": {},
           "priority": 40,
@@ -80713,11 +80560,13 @@ window.categoryTree = {
         "waist": {
           "items": [
             "belt_leather",
+            "belt_leather2",
             "belt_double",
             "belt_loose",
             "belt_belly",
-            "belt_other_female",
-            "belt_other_male",
+            "belt_formal",
+            "belt_mage",
+            "belt_robe",
             "belt_sash",
             "belt_sash_narrow",
             "belt_waistband",
@@ -81004,7 +80853,7 @@ window.categoryTree = {
       "children": {
         "shields": {
           "items": [
-            "shield",
+            "shield_round",
             "shield_kite",
             "shield_spartan"
           ],
