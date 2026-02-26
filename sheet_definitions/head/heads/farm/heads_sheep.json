@@ -57,7 +57,7 @@
   ],
   "recolors": {
     "material": "body",
-    "base": "ulpc.fur_white",
+    "base": "lpcr.ivory",
     "palettes": [
       "ulpc",
       "lpcr",

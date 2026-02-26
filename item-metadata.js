@@ -50996,6 +50996,7 @@ window.itemMetadata = {
     "recolors": [
       {
         "material": "body",
+        "base": "ulpc.fur_brown",
         "palettes": {
           "body.ulpc": [
             "light",
@@ -51113,7 +51114,6 @@ window.itemMetadata = {
         "default": "ulpc",
         "type_name": null,
         "label": "Skintone",
-        "base": "ulpc.light",
         "variants": [
           "light",
           "amber",
@@ -51313,6 +51313,7 @@ window.itemMetadata = {
     "recolors": [
       {
         "material": "body",
+        "base": "ulpc.fur_brown",
         "palettes": {
           "body.ulpc": [
             "light",
@@ -51430,7 +51431,6 @@ window.itemMetadata = {
         "default": "ulpc",
         "type_name": null,
         "label": "Skintone",
-        "base": "ulpc.light",
         "variants": [
           "light",
           "amber",
@@ -56531,7 +56531,7 @@ window.itemMetadata = {
     "recolors": [
       {
         "material": "body",
-        "base": "ulpc.fur_tan",
+        "base": "lpcr.ivory",
         "palettes": {
           "body.ulpc": [
             "light",
@@ -57815,7 +57815,7 @@ window.itemMetadata = {
     "recolors": [
       {
         "material": "body",
-        "base": "ulpc.fur_white",
+        "base": "lpcr.ivory",
         "palettes": {
           "body.ulpc": [
             "light",
@@ -58461,7 +58461,7 @@ window.itemMetadata = {
     "recolors": [
       {
         "material": "body",
-        "base": "ulpc.fur_white",
+        "base": "lpcr.ivory",
         "palettes": {
           "body.ulpc": [
             "light",
@@ -59104,7 +59104,7 @@ window.itemMetadata = {
     "recolors": [
       {
         "material": "body",
-        "base": "ulpc.fur_white",
+        "base": "lpcr.ivory",
         "palettes": {
           "body.ulpc": [
             "light",
