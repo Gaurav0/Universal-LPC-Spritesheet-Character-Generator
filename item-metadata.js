@@ -56507,10 +56507,12 @@ window.itemMetadata = {
     "credits": [
       {
         "file": "head/heads/mouse",
-        "notes": "original rabbit by Redshrike, adapted to modular head by bluecarrot16, modified to mouse head by bluecarrot16",
+        "notes": "original rabbit by Redshrike, adapted to modular head by bluecarrot16, modified to mouse head by bluecarrot16, color reduction by napsio (Vitruvian Studio) and JaidynReiman",
         "authors": [
           "bluecarrot16",
-          "Stephen Challener (Redshrike)"
+          "Stephen Challener (Redshrike)",
+          "Napsio",
+          "JaidynReiman"
         ],
         "licenses": [
           "OGA-BY 3.0",
@@ -57791,10 +57793,12 @@ window.itemMetadata = {
     "credits": [
       {
         "file": "head/heads/rabbit",
-        "notes": "original rabbit by Redshrike, adapted to modular head by bluecarrot16",
+        "notes": "original rabbit by Redshrike, adapted to modular head by bluecarrot16, color reduction by napsio (Vitruvian Studio) and JaidynReiman",
         "authors": [
           "bluecarrot16",
-          "Stephen Challener (Redshrike)"
+          "Stephen Challener (Redshrike)",
+          "Napsio",
+          "JaidynReiman"
         ],
         "licenses": [
           "OGA-BY 3.0",
@@ -58437,10 +58441,12 @@ window.itemMetadata = {
     "credits": [
       {
         "file": "head/heads/rat",
-        "notes": "original rabbit by Redshrike, adapted to modular head by bluecarrot16, modified to rat by bluecarrot16",
+        "notes": "original rabbit by Redshrike, adapted to modular head by bluecarrot16, modified to rat by bluecarrot16, color reduction by napsio (Vitruvian Studio) and JaidynReiman",
         "authors": [
           "bluecarrot16",
-          "Stephen Challener (Redshrike)"
+          "Stephen Challener (Redshrike)",
+          "Napsio",
+          "JaidynReiman"
         ],
         "licenses": [
           "OGA-BY 3.0",
@@ -59081,10 +59087,12 @@ window.itemMetadata = {
     "credits": [
       {
         "file": "head/heads/sheep",
-        "notes": "original sheep by daneeklu, adapted to modular head by bluecarrot16",
+        "notes": "original sheep by daneeklu, adapted to modular head by bluecarrot16, color reduction by napsio (Vitruvian Studio) and JaidynReiman",
         "authors": [
           "bluecarrot16",
-          "Daniel Eddeland (daneeklu)"
+          "Daniel Eddeland (daneeklu)",
+          "Napsio",
+          "JaidynReiman"
         ],
         "licenses": [
           "CC-BY 3.0",

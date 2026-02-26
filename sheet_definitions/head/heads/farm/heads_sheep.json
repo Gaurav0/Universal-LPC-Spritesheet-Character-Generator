@@ -35,10 +35,12 @@
   "credits": [
     {
       "file": "head/heads/sheep",
-      "notes": "original sheep by daneeklu, adapted to modular head by bluecarrot16",
+      "notes": "original sheep by daneeklu, adapted to modular head by bluecarrot16, color reduction by napsio (Vitruvian Studio) and JaidynReiman",
       "authors": [
         "bluecarrot16",
-        "Daniel Eddeland (daneeklu)"
+        "Daniel Eddeland (daneeklu)",
+        "Napsio",
+        "JaidynReiman"
       ],
       "licenses": [
         "CC-BY 3.0",
