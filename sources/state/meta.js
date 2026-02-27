@@ -94,10 +94,6 @@ export function getLayersToLoad(meta, bodyType, selections, variant = null) {
   const hasCustomAnimation = layer1?.custom_animation;
   const layer1CustomAnimation = hasCustomAnimation ? layer1.custom_animation : null;
 
-  // Check if item uses a palette - if so, load the source variant
-  const paletteConfig = getPaletteForItem(itemId, meta);
-  const loadVariant = paletteConfig ? paletteConfig.sourceVariant : variant;
-
   // Collect all layers for this item
   // Only include layers that match layer_1's custom animation (if any)
   const layersToLoad = [];
@@ -122,7 +118,7 @@ export function getLayersToLoad(meta, bodyType, selections, variant = null) {
 
     const hasCustomAnim = layer.custom_animation;
     let imagePath;
-    const variantFileName = variant !== null ? `${variantToFilename(loadVariant)}` : '';
+    const variantFileName = variant !== null ? `${variantToFilename(variant)}` : '';
     if (hasCustomAnim) {
       imagePath = `spritesheets/${layerPath}${variantFileName}.png`;
     } else {
