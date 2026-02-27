@@ -276,8 +276,7 @@ describe("state/hash.js", () => {
     it("should remove subcolor if type name does not match", () => {
       setHash("#body=Body_light&eyes=Eyes_blue");
       window.itemMetadata = {
-        1: { type_name: "body", name: "Body", recolors: [ { material: "body", palettes: [ "ulpc" ], variants: [ "light" ] }, { type_name: "eye", label: "Eyes", material: "eyes", palettes: [ "ulpc" ], variants: [ "blue" ] } ] },
-      };
+        1: { type_name: "body", name: "Body", recolors: [ { material: "body", palettes: [ "ulpc" ], variants: [ "light" ] }, { type_name: "eye", label: "Eyes", material: "eyes", palettes: [ "ulpc" ], variants: [ "blue" ] } ] },      };
 
       loadSelectionsFromHash();
       expect(getState().selections).to.deep.equal({
@@ -289,6 +288,80 @@ describe("state/hash.js", () => {
           recolor: 'light'
         }
       });
+    });
+
+    it("should forward to robe belt", () => {
+      setHash("#body=Body_color_light&belt=Other_belts_white");
+      window.itemMetadata = {
+        1: { type_name: "body", name: "Body_Color", variants: ["light"] },
+        2: { type_name: "belt", name: "Other_belts", variants: ["white"] },
+        3: { type_name: "belt", name: "Robe_Belt", variants: ["white"] },
+      };
+      window.aliasMetadata = {
+        belt: {
+          Other_belts_white: {
+            "typeName": "belt",
+            "name": "Robe_Belt",
+            "variant": "white"
+          }
+        }
+      };
+
+      loadSelectionsFromHash();
+      expect(getState().selections).to.deep.equal({
+        body: {
+          itemId: "1",
+          subId: null,
+          variant: "light",
+          recolor: '',
+          name: "Body_Color (light)",
+        },
+        belt: {
+          itemId: "3",
+          subId: null,
+          variant: "white",
+          recolor: '',
+          name: "Robe_Belt (white)",
+        },
+      });
+      expect(getHash()).to.equal("#sex=male&body=Body_Color_light&belt=Robe_Belt_white");
+    });
+
+    it("should forward to waist = robe belt", () => {
+      setHash("#body=Body_color_light&belt=Other_belts_white");
+      window.itemMetadata = {
+        1: { type_name: "body", name: "Body_Color", variants: ["light"] },
+        2: { type_name: "belt", name: "Other_belts", variants: ["white"] },
+        3: { type_name: "waist", name: "Robe_Belt", variants: ["white"] },
+      };
+      window.aliasMetadata = {
+        belt: {
+          Other_belts_white: {
+            typeName: "waist",
+            name: "Robe_Belt",
+            variant: "white"
+          }
+        }
+      };
+
+      loadSelectionsFromHash();
+      expect(getState().selections).to.deep.equal({
+        body: {
+          itemId: "1",
+          subId: null,
+          variant: "light",
+          recolor: '',
+          name: "Body_Color (light)",
+        },
+        waist: {
+          itemId: "3",
+          subId: null,
+          variant: "white",
+          recolor: '',
+          name: "Robe_Belt (white)",
+        },
+      });
+      expect(getHash()).to.equal("#sex=male&body=Body_Color_light&waist=Robe_Belt_white");
     });
   });
 

@@ -119,27 +119,35 @@ export function getHashParamsforSelections(selections) {
 
   // Add selections - use old format: type_name=Name_variant
   // Format: "body=Body_color_light", "shoes=Sara_sara"
-  for (const selection of Object.values(selections)) {
+  for (const [typeName, selection] of Object.entries(selections)) {
     const meta = window.itemMetadata?.[selection.itemId];
-    if (!meta || !meta.type_name) continue;
+    if (!meta || !meta.type_name) {
+      // Check if an alias is overriding this entry (e.g., "sash=Waistband_rose" instead of "waistband=Waistband_rose")
+      const name = selection.name.split(" (")[0]; // Get base name without variant (e.g., "Waistband" from "Waistband (rose)")
+      const nameAndVariant = name.replaceAll(" ", "_") + (selection.variant ? `_${selection.variant}` : "");
+      const aliasMeta = window.aliasMetadata?.[typeName]?.[nameAndVariant];
+      if (!aliasMeta || !aliasMeta.typeName) continue;
 
-    // Sub ID Exists?
-    const subMeta = meta.recolors?.[selection.subId];
+      params[aliasMeta.typeName] = `${aliasMeta.name}_${aliasMeta.variant}`;
+    } else {
+      // Sub ID Exists?
+      const subMeta = meta.recolors?.[selection.subId];
 
-    // Use type_name as key (selection group)
-    const key = subMeta?.type_name ?? meta.type_name;
+      // Use type_name as key (selection group)
+      const key = subMeta?.type_name ?? meta.type_name;
 
-    // Build name part for URL: use full name with underscores
-    // "Body color" -> "Body_color", "Sara Shoes" -> "Sara_Shoes", "Waistband" -> "Waistband"
-    const namePart = subMeta?.label.replaceAll(" ", "_") ?? meta.name.replaceAll(" ", "_");
+      // Build name part for URL: use full name with underscores
+      // "Body color" -> "Body_color", "Sara Shoes" -> "Sara_Shoes", "Waistband" -> "Waistband"
+      const namePart = subMeta?.label.replaceAll(" ", "_") ?? meta.name.replaceAll(" ", "_");
 
-    const variantPart = selection.variant ?? "";
-    const recolorPart = selection.recolor ?? "";
-    const uscorePart = (variantPart || recolorPart) ? "_" : "";
-    const splitPart = (variantPart && recolorPart) ? "|" : "";
-    const value = namePart + uscorePart + variantPart + splitPart + recolorPart;
+      const variantPart = selection.variant ?? "";
+      const recolorPart = selection.recolor ?? "";
+      const uscorePart = (variantPart || recolorPart) ? "_" : "";
+      const splitPart = (variantPart && recolorPart) ? "|" : "";
+      const value = namePart + uscorePart + variantPart + splitPart + recolorPart;
 
-    params[key] = value;
+      params[key] = value;
+    }
   }
 
   return params;
@@ -161,11 +169,18 @@ export function loadSelectionsFromHash(hashString = null) {
 
   // Load selections
   // Old format: type_name=Name_variant (e.g., "body=Body_color_light", "sash=Waistband_rose")
-  for (const [typeName, nameAndVariant] of Object.entries(params)) {
+  for (let [typeName, nameAndVariant] of Object.entries(params)) {
     // Handle special parameters
     if (typeName === "bodyType" || typeName === "sex") {
       state.bodyType = nameAndVariant;
       continue;
+    }
+
+    // Check if this is an aliased selection and resolve it to the canonical type, name, and variant
+    const aliasMeta = window.aliasMetadata?.[typeName]?.[nameAndVariant];
+    if (aliasMeta) {
+      typeName = aliasMeta.typeName;
+      nameAndVariant = `${aliasMeta.name}_${aliasMeta.variant}`;
     }
 
     // Skip "none" selections
