@@ -60262,7 +60262,7 @@ window.itemMetadata = {
         "muscular": "hat/accessory/horns_downward/fg/adult/"
       },
       "layer_2": {
-        "zPos": 125,
+        "zPos": 95,
         "female": "hat/accessory/horns_downward/bg/adult/",
         "pregnant": "hat/accessory/horns_downward/bg/adult/",
         "male": "hat/accessory/horns_downward/bg/adult/",
@@ -60388,7 +60388,7 @@ window.itemMetadata = {
         "muscular": "hat/accessory/horns_short/fg/adult/"
       },
       "layer_2": {
-        "zPos": 125,
+        "zPos": 95,
         "female": "hat/accessory/horns_short/bg/adult/",
         "pregnant": "hat/accessory/horns_short/bg/adult/",
         "male": "hat/accessory/horns_short/bg/adult/",
@@ -60514,7 +60514,7 @@ window.itemMetadata = {
         "muscular": "hat/accessory/horns_upward/fg/adult/"
       },
       "layer_2": {
-        "zPos": 125,
+        "zPos": 95,
         "female": "hat/accessory/horns_upward/bg/adult/",
         "pregnant": "hat/accessory/horns_upward/bg/adult/",
         "male": "hat/accessory/horns_upward/bg/adult/",
@@ -79209,6 +79209,103 @@ window.itemMetadata = {
       "pregnant": [
         "OGA-BY 3.0"
       ]
+    }
+  }
+};
+
+window.aliasMetadata = {
+  "belt": {
+    "Other_belts_formal": {
+      "typeName": "belt",
+      "name": "Formal_Belt",
+      "variant": "brown"
+    },
+    "Other_belts_leather": {
+      "typeName": "belt",
+      "name": "Leather_Belt_Alt",
+      "variant": "leather"
+    },
+    "Other_belts_black": {
+      "typeName": "belt",
+      "name": "Mage_Belt",
+      "variant": "black"
+    },
+    "Other_belts_bronze": {
+      "typeName": "belt",
+      "name": "Mage_Belt",
+      "variant": "bronze"
+    },
+    "Other_belts_brown": {
+      "typeName": "belt",
+      "name": "Mage_Belt",
+      "variant": "brown"
+    },
+    "Other_belts_gold": {
+      "typeName": "belt",
+      "name": "Mage_Belt",
+      "variant": "gold"
+    },
+    "Other_belts_iron": {
+      "typeName": "belt",
+      "name": "Mage_Belt",
+      "variant": "iron"
+    },
+    "Other_belts_silver": {
+      "typeName": "belt",
+      "name": "Mage_Belt",
+      "variant": "silver"
+    },
+    "Other_belts_white": {
+      "typeName": "belt",
+      "name": "Robe_Belt",
+      "variant": "white"
+    },
+    "Other_belts_teal": {
+      "typeName": "belt",
+      "name": "Robe_Belt",
+      "variant": "teal"
+    }
+  },
+  "shield": {
+    "Shields_brown": {
+      "typeName": "shield",
+      "name": "Round_Shield",
+      "variant": "brown"
+    },
+    "Shields_black": {
+      "typeName": "shield",
+      "name": "Round_Shield",
+      "variant": "black"
+    },
+    "Shields_gold": {
+      "typeName": "shield",
+      "name": "Round_Shield",
+      "variant": "gold"
+    },
+    "Shields_green": {
+      "typeName": "shield",
+      "name": "Round_Shield",
+      "variant": "green"
+    },
+    "Shields_silver": {
+      "typeName": "shield",
+      "name": "Round_Shield",
+      "variant": "silver"
+    },
+    "Shields_yellow": {
+      "typeName": "shield",
+      "name": "Round_Shield",
+      "variant": "yellow"
+    },
+    "Shields_spartan": {
+      "typeName": "shield",
+      "name": "Spartan_Shield",
+      "variant": "spartan"
+    },
+    "Shields_crusader": {
+      "typeName": "shield",
+      "name": "Crusader_shield",
+      "variant": "crusader"
     }
   }
 };

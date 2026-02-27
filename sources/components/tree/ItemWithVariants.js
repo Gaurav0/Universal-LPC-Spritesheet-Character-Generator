@@ -1,7 +1,7 @@
 // Item with variants component
 import { state, getSelectionGroup, applyMatchBodyColor } from '../../state/state.js';
-import { getImageToDraw, getPaletteForItem } from '../../canvas/palette-recolor.js';
-import { replaceInPath } from '../../state/path.js';
+import { getImageToDraw } from '../../canvas/palette-recolor.js';
+import { getLayersToLoad } from '../../state/meta.js';
 import { variantToFilename, capitalize } from '../../utils/helpers.js';
 
 const classNames = window.classNames;
@@ -17,28 +17,34 @@ export const ItemWithVariants = {
 			nodePath = 'body-body';
 		}
 		const isExpanded = state.expandedNodes[nodePath] || false;
+		const layers = getLayersToLoad(meta, state.bodyType, state.selections);
 
 		return m("div", {
 			class: classNames({
-        "search-result": isSearchMatch,
-        "has-text-grey": !isCompatible,
-      })
+				"search-result": isSearchMatch,
+				"has-text-grey": !isCompatible,
+			}),
+			oninit: () => {
+				rootViewNode.state.isLoading = meta.variants.length > 0;
+				rootViewNode.state.imagesToLoad = meta.variants.length * layers.length;
+				rootViewNode.state.imagesLoaded = 0;
+			},
+			onupdate: () => {
+				if (isExpanded && rootViewNode.state.isLoading) {
+					if (rootViewNode.state.imagesLoaded >= rootViewNode.state.imagesToLoad) {
+						rootViewNode.state.isLoading = false;
+					}
+				}
+			}
 		}, [
 			m("div.tree-label", {
 				title: tooltipText,
 				onclick: () => {
 					state.expandedNodes[nodePath] = !isExpanded;
-				},
-				oninit: () => {
-					rootViewNode.state.isLoading = meta.variants.length > 0;
-					rootViewNode.state.imagesToLoad = meta.variants.length;
-					rootViewNode.state.imagesLoaded = 0;
-				},
-				onupdate: () => {
-					if (isExpanded && rootViewNode.state.isLoading) {
-						if (rootViewNode.state.imagesLoaded >= rootViewNode.state.imagesToLoad) {
-							rootViewNode.state.isLoading = false;
-						}
+					if (state.expandedNodes[nodePath]) {
+						rootViewNode.state.isLoading = meta.variants.length > 0;
+						rootViewNode.state.imagesToLoad = meta.variants.length * layers.length;
+						rootViewNode.state.imagesLoaded = 0;
 					}
 				}
 			}, [
@@ -91,9 +97,9 @@ export const ItemWithVariants = {
 					return m("div.variant-item.is-flex.is-flex-direction-column.is-align-items-center.is-clickable", {
 						key: variant,
 						class: classNames({
-              "has-background-link-light has-text-weight-bold has-text-link": isSelected,
-              "is-not-compatible": !isCompatible,
-            }),
+							"has-background-link-light has-text-weight-bold has-text-link": isSelected,
+							"is-not-compatible": !isCompatible,
+						}),
 						title: tooltipText,
 						onmouseover: (e) => {
 							if (!isCompatible) return;
@@ -137,50 +143,8 @@ export const ItemWithVariants = {
 								const canvas = canvasVnode.dom;
 								const ctx = canvas.getContext('2d', { willReadFrequently: true });
 
-								// Collect all layers for this item
-								// Only include layers that match layer_1's custom animation (if any)
-								const layersToLoad = [];
-
-								// Check if item uses a palette - if so, load the source variant
-								const paletteConfig = getPaletteForItem(itemId, meta);
-								const loadVariant = paletteConfig ? paletteConfig.sourceVariant : variant;
-
-								for (let layerNum = 1; layerNum < 10; layerNum++) {
-									const layer = meta.layers?.[`layer_${layerNum}`];
-									if (!layer) break;
-
-									let layerPath = layer[state.bodyType];
-									if (!layerPath) continue;
-
-									// Filter: only include layers with matching custom animation
-									if (layer1CustomAnimation) {
-										if (layer.custom_animation !== layer1CustomAnimation) {
-											continue; // Skip layers with different custom animations
-										}
-									}
-
-									// Replace template variables like ${head}
-									if (layerPath.includes('${')) {
-										layerPath = replaceInPath(layerPath, state.selections, meta);
-									}
-
-									const hasCustomAnim = layer.custom_animation;
-									let imagePath;
-									if (hasCustomAnim) {
-										imagePath = `spritesheets/${layerPath}${variantToFilename(loadVariant)}.png`;
-									} else {
-										const defaultAnim = meta.animations.includes('walk') ? 'walk' : meta.animations[0];
-										imagePath = `spritesheets/${layerPath}${defaultAnim}/${variantToFilename(loadVariant)}.png`;
-									}
-
-									layersToLoad.push({
-										zPos: layer.zPos || 100,
-										path: imagePath
-									});
-								}
-
-								// Sort by zPos
-								layersToLoad.sort((a, b) => a.zPos - b.zPos);
+								// Get Layers to Load for Variant
+								const layersToLoad = getLayersToLoad(meta, state.bodyType, state.selections, variant);
 
 								// Load and draw all layers
 								Promise.all(layersToLoad.map(layer => {
@@ -209,13 +173,15 @@ export const ItemWithVariants = {
 											);
 										}
 									}
-									rootViewNode.state.imagesLoaded++;
+									rootViewNode.state.imagesLoaded += loadedLayers.length;
 									m.redraw();
 								});
 							},
 							onupdate: (canvasVnode) => {
 								const canvas = canvasVnode.dom;
 								const ctx = canvas.getContext('2d', { willReadFrequently: true });
+
+								// Process Layers Loaded for Variant
 								if (canvas.loadedLayers) {
 									// Draw each layer in zPos order
 									// Use universalFrameSize (64) for all calculations, matching master branch

@@ -65,33 +65,24 @@ export async function renderCharacter(
     profiler.mark("renderCharacter:start");
   }
 
-  // Use provided canvas or default to main canvas
-  const renderCanvas = targetCanvas || canvas;
-  const renderCtx = renderCanvas.getContext('2d', { willReadFrequently: true });
-
-  if (!renderCanvas || !renderCtx) {
-    console.error("Canvas not initialized");
-    return;
-  }
-
   // Build list of items to draw
   itemsToDraw = [];
   const customAnimationItems = []; // Track items with custom animations
   addedCustomAnimations = new Set(); // Track which custom animations we've added
 
   // Import state to access custom uploaded image
-  const appState = await import('../state/state.js').then(m => m.state);
-  appState.isRenderingCharacter = true;
+  const appState = await import("../state/state.js").then(m => m.state);
+  appState.renderCharacter.isRendering = true;
   m.redraw();
 
   try {
     // Use provided canvas or default to main canvas
     const renderCanvas = targetCanvas || canvas;
-    const renderCtx = get2DContext(renderCanvas);
+    const renderCtx = renderCanvas.getContext('2d', { willReadFrequently: true });
 
     if (!renderCanvas || !renderCtx) {
       console.error("Canvas not initialized");
-      return;
+      throw new Error("Canvas not initialized");
     }
 
     // Build list of items to draw
@@ -398,7 +389,7 @@ export async function renderCharacter(
       }
     }
   } finally {
-    appState.isRenderingCharacter = false;
+    appState.renderCharacter.isRendering = false;
     m.redraw();
 
     // Mark end and measure
