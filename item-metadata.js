@@ -56190,10 +56190,12 @@ window.itemMetadata = {
     "credits": [
       {
         "file": "head/heads/mouse/child",
-        "notes": "original rabbit by Redshrike, adapted to modular head by bluecarrot16, modified to mouse head by bluecarrot16",
+        "notes": "original rabbit by Redshrike, adapted to modular head by bluecarrot16, modified to mouse head by bluecarrot16, color reduction by napsio (Vitruvian Studio) and JaidynReiman",
         "authors": [
           "bluecarrot16",
-          "Stephen Challener (Redshrike)"
+          "Stephen Challener (Redshrike)",
+          "Napsio",
+          "JaidynReiman"
         ],
         "licenses": [
           "OGA-BY 3.0",
@@ -56214,7 +56216,7 @@ window.itemMetadata = {
     "recolors": [
       {
         "material": "body",
-        "base": "ulpc.fur_white",
+        "base": "lpcr.ivory",
         "palettes": {
           "body.ulpc": [
             "light",
@@ -57476,10 +57478,12 @@ window.itemMetadata = {
     "credits": [
       {
         "file": "head/heads/rabbit/child",
-        "notes": "original rabbit by Redshrike, adapted to modular head by bluecarrot16",
+        "notes": "original rabbit by Redshrike, adapted to modular head by bluecarrot16, color reduction by napsio (Vitruvian Studio) and JaidynReiman",
         "authors": [
           "bluecarrot16",
-          "Stephen Challener (Redshrike)"
+          "Stephen Challener (Redshrike)",
+          "Napsio",
+          "JaidynReiman"
         ],
         "licenses": [
           "OGA-BY 3.0",
@@ -57500,7 +57504,7 @@ window.itemMetadata = {
     "recolors": [
       {
         "material": "body",
-        "base": "ulpc.fur_white",
+        "base": "lpcr.ivory",
         "palettes": {
           "body.ulpc": [
             "light",
@@ -58124,10 +58128,12 @@ window.itemMetadata = {
     "credits": [
       {
         "file": "head/heads/rat/child",
-        "notes": "original rabbit by Redshrike, adapted to modular head by bluecarrot16, modified to rat by bluecarrot16",
+        "notes": "original rabbit by Redshrike, adapted to modular head by bluecarrot16, modified to rat by bluecarrot16, color reduction by napsio (Vitruvian Studio) and JaidynReiman",
         "authors": [
           "bluecarrot16",
-          "Stephen Challener (Redshrike)"
+          "Stephen Challener (Redshrike)",
+          "Napsio",
+          "JaidynReiman"
         ],
         "licenses": [
           "OGA-BY 3.0",
@@ -58148,7 +58154,7 @@ window.itemMetadata = {
     "recolors": [
       {
         "material": "body",
-        "base": "ulpc.fur_white",
+        "base": "lpcr.ivory",
         "palettes": {
           "body.ulpc": [
             "light",
@@ -58772,10 +58778,12 @@ window.itemMetadata = {
     "credits": [
       {
         "file": "head/heads/sheep/child",
-        "notes": "original sheep by daneeklu, adapted to modular head by bluecarrot16",
+        "notes": "original sheep by daneeklu, adapted to modular head by bluecarrot16, color reduction by napsio (Vitruvian Studio) and JaidynReiman",
         "authors": [
           "bluecarrot16",
-          "Daniel Eddeland (daneeklu)"
+          "Daniel Eddeland (daneeklu)",
+          "Napsio",
+          "JaidynReiman"
         ],
         "licenses": [
           "CC-BY 3.0",
@@ -58795,7 +58803,7 @@ window.itemMetadata = {
     "recolors": [
       {
         "material": "body",
-        "base": "ulpc.fur_white",
+        "base": "lpcr.ivory",
         "palettes": {
           "body.ulpc": [
             "light",
