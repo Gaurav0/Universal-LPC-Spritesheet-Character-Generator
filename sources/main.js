@@ -47,7 +47,7 @@ function boolMap() {
 	}
 }
 function bool(s) {
-	return boolMap(boolMap)[s] ?? null;
+	return boolMap()[s] ?? null;
 }
 function isLocalhost() {
 	return window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";

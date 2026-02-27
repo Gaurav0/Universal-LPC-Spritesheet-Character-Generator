@@ -20,7 +20,7 @@ export function getMultiRecolors(itemId, selections) {
 
     // Filter Selections to Item ID
     const recolors = {};
-    for (const [typeName, selection] of Object.entries(selections)) {
+    for (const [type, selection] of Object.entries(selections)) {
         const subMeta = window.itemMetadata?.[selection.itemId];
         const typeName = subMeta?.recolors[selection.subId]?.type_name ?? subMeta?.type_name ?? meta.type_name;
         if (!subMeta || !subMeta.type_name || !types.includes(typeName) || !subMeta.recolors?.length) continue;
