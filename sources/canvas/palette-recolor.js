@@ -8,7 +8,8 @@ import {
 import { getDebugParam } from "../main.js";
 import { get2DContext } from "./canvas-utils.js";
 import { state } from '../state/state.js';
-import { getPalettesForItem, getTargetPalette, getLayersToLoad } from '../state/palettes.js';
+import { getLayersToLoad } from '../state/meta.js';
+import { getPalettesForItem, getTargetPalette } from '../state/palettes.js';
 
 // Configuration flags
 let config = {
@@ -305,7 +306,7 @@ export async function drawRecolorPreview(itemId, meta, canvas, selectedColors) {
   const previewCol = meta.preview_column ?? 0;
   const previewXOffset = meta.preview_x_offset ?? 0;
   const previewYOffset = meta.preview_y_offset ?? 0;
-  const layersToLoad = getLayersToLoad(meta);
+  const layersToLoad = getLayersToLoad(meta, state.bodyType, state.selections);
 
   // Load and draw all layers
   let imagesLoaded = 0;
