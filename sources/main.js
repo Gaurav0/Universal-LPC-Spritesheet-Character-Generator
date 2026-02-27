@@ -42,7 +42,7 @@ import { PerformanceProfiler } from './performance-profiler.js';
 // but this can be overridden by adding debug=(true|false) to the querystring.
 function boolMap() {
 	return {
-		true: false,
+		true: true,
 		false: false
 	}
 }
