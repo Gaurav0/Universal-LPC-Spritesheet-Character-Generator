@@ -310,7 +310,7 @@ export async function drawRecolorPreview(itemId, meta, canvas, selectedColors) {
 
   // Load and draw all layers
   let imagesLoaded = 0;
-  Promise.all(layersToLoad.map(layer => {
+  await Promise.all(layersToLoad.map(layer => {
       return new Promise((resolve) => {
           const img = new Image();
           img.onload = () => resolve({ img, layer });
