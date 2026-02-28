@@ -87,7 +87,7 @@ export const PaletteSelectModal = {
                                     onSelect(key);
                                 }
                             }, [
-                                m("div.palette-name", ucwords(palette.replace('_', ' '))),
+                                m("div.palette-name", ucwords(palette.replaceAll('_', ' '))),
                                 m("div.palette-swatch", {
                                         style: {
                                             borderColor: dark,
