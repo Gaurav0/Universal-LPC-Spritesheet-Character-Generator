@@ -148,16 +148,10 @@ export const ItemWithRecolors = {
                                 }
                             }, [
                                 m("label", opt.label),
-                                m("div.palette-swatch", {
-                                    style: {
-                                        border: `1px solid ${dark}`,
-                                        background: dark
-                                    }
-                                },
+                                m("div.palette-swatch",
                                     gradient.map((color, i) =>
                                         m("span", {
                                             style: {
-                                                width: `${100 / gradient.length}%`,
                                                 backgroundColor: color
                                             }
                                         })

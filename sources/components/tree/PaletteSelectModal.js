@@ -27,33 +27,9 @@ export const PaletteSelectModal = {
             onclick: onClose
         });
 
-        // Try to align modal to right side of mithril filters and match exact height of chooser-column
-        const modalStyle = {};
-        const minWidth = 300;
-        if (typeof window !== 'undefined') {
-            const header = document.getElementById('header-left');
-            const chooser = document.getElementById('chooser-column');
-            const filters = document.getElementById('mithril-filters');
-            if (chooser && filters) {
-                const rect = chooser.getBoundingClientRect();
-                const hRect = header.getBoundingClientRect();
-                const fRect = filters.getBoundingClientRect();
-                const windowHeight = window.innerHeight || rect.height;
-                const clampedHeight = Math.min(rect.height, windowHeight - hRect.height - 20);
-                const newWidth = (rect.width / 4 < minWidth) ? minWidth : rect.width / 4;
-                modalStyle.left = (fRect.right - newWidth) + 'px';
-                modalStyle.top = hRect.height + 'px';
-                modalStyle.width = modalStyle.maxWidth = newWidth + 'px';
-                modalStyle.height = rect.height + 'px';
-                modalStyle.maxHeight = clampedHeight + 'px';
-                modalStyle.right = 'auto';
-            }
-        }
-
         return [
             overlay,
             m("div.palette-modal", {
-                style: modalStyle,
                 onclick: (e) => e.stopPropagation()
             }, [
                 m('header.is-flex', [
@@ -125,16 +101,9 @@ export const PaletteSelectModal = {
                                         }
                                     }),
                                     m("div.palette-swatch",
-                                        {
-                                            style: {
-                                                borderColor: dark,
-                                                backgroundColor: dark
-                                            }
-                                        },
                                         gradient.map((color, i) =>
                                             m("span", {
                                                 style: {
-                                                    width: `${100 / colors.length}%`,
                                                     backgroundColor: color
                                                 }
                                             })

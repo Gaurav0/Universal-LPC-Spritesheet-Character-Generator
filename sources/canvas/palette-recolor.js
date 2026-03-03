@@ -312,18 +312,14 @@ export async function drawRecolorPreview(itemId, meta, canvas, selectedColors, r
     return false;
   };
 
+  // Skip if canvas is not connected or renderId doesn't match (stale render)
   const ctx = canvas.getContext('2d', { willReadFrequently: true });
-  if (!ctx) {
+  if (!ctx || isStaleRender()) {
     return 0;
   }
 
-  if (isStaleRender()) {
-    return 0;
-  }
-
-  const compactDisplay = state.compactDisplay;
-  
   // Only show the idle preview for the asset
+  const compactDisplay = state.compactDisplay;
   const previewRow = meta.preview_row ?? 2;
   const previewCol = meta.preview_column ?? 0;
   const previewXOffset = meta.preview_x_offset ?? 0;
@@ -332,48 +328,41 @@ export async function drawRecolorPreview(itemId, meta, canvas, selectedColors, r
 
   // Load and draw all layers
   let imagesLoaded = 0;
-  await Promise.all(layersToLoad.map(layer => {
-      return new Promise((resolve) => {
-          const img = new Image();
-          img.onload = () => resolve({ img, layer });
-          img.onerror = () => resolve({ img: null, layer });
-          img.src = layer.path;
-      });
-  })).then(async loadedLayers => {
-      if (isStaleRender()) {
-        return;
-      }
+  const loadedLayers = await Promise.all(layersToLoad.map(layer => {
+    return new Promise((resolve) => {
+      const img = new Image();
+      img.onload = () => resolve({ img, layer });
+      img.onerror = () => resolve({ img: null, layer });
+      img.src = layer.path;
+    });
+  }));
+  if (isStaleRender()) {
+    return;
+  }
 
-      canvas.loadedLayers = loadedLayers;
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      // Draw each layer in zPos order
-      // Use universalFrameSize (64) for all calculations, matching master branch
-      const universalFrameSize = 64;
-      for (const { img, layer } of loadedLayers) {
-        if (isStaleRender()) {
-          return;
-        }
+  canvas.loadedLayers = loadedLayers;
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  // Draw each layer in zPos order
+  // Use universalFrameSize (64) for all calculations, matching master branch
+  const universalFrameSize = 64;
+  imagesLoaded = 0;
+  for (const { img, layer } of loadedLayers) {
+    if (isStaleRender()) {
+      return;
+    }
 
-          if (img) {
-              const imageToDraw = await getImageToDraw(img, itemId, selectedColors);
-          if (isStaleRender()) {
-            return;
-          }
-
-              const size = compactDisplay ? 32 : 64;
-              const srcX = previewCol * universalFrameSize + previewXOffset;
-              const srcY = previewRow * universalFrameSize + previewYOffset;
-              ctx.drawImage(
-                  imageToDraw,
-                  srcX, srcY, universalFrameSize, universalFrameSize,
-                  0, 0, size, size
-              );
-          }
-      }
+    if (img) {
+      const imageToDraw = await getImageToDraw(img, itemId, selectedColors);
+      const size = compactDisplay ? 32 : 64;
+      const srcX = previewCol * universalFrameSize + previewXOffset;
+      const srcY = previewRow * universalFrameSize + previewYOffset;
+      ctx.drawImage(
+          imageToDraw,
+          srcX, srcY, universalFrameSize, universalFrameSize,
+          0, 0, size, size
+      );
       imagesLoaded++;
-            if (!isStaleRender()) {
-              m.redraw();
-            }
-  });
+    }
+  };
   return imagesLoaded;
 }

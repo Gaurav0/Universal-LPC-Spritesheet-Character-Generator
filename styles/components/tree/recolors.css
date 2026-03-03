@@ -12,12 +12,10 @@
     cursor: pointer;
 }
 .palette-swatch span {
-    display: inline-block;
     height: 1rem;
+    flex: 1;
     padding: 0;
     margin: 0;
-    width: 17%;
-    background: color;
 }
 
 
@@ -59,17 +57,17 @@
  */
 .palette-modal {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 9vh;
+    left: 25vw;
     margin: 0;
-    width: 300px;
-    max-width: 300px;
+    width: 40vw;
+    min-width: 280px;
+    max-width: 410px;
     background: #fff;
     border: 1px solid #ccc;
     padding: 0;
     z-index: 1000;
-    max-height: 80vh;
+    max-height: 85vh;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
