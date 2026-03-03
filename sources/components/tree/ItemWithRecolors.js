@@ -44,6 +44,7 @@ export const ItemWithRecolors = {
             paletteModal = m(PaletteSelectModal, {
                 itemId,
                 opt,
+                selectedColors,
                 compactDisplay,
                 rootViewNode,
                 onClose: () => { rootViewNode.state.showPaletteModal = null; m.redraw(); },

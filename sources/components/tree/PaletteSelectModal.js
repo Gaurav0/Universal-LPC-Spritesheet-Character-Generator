@@ -10,6 +10,7 @@ export const PaletteSelectModal = {
         const {
             itemId,
             opt,
+            selectedColors,
             compactDisplay,
             rootViewNode,
             onClose,
@@ -79,7 +80,10 @@ export const PaletteSelectModal = {
                                 const gradient = colors.slice().reverse();
                                 const key = (material !== opt.material ? material + '.' : '') + (version !== opt.default ? version + '.' : '') + palette;
                                 const isSelected = selection?.itemId === itemId && selection?.recolor === key;
-                                const thisColor = { [selectionGroup]: key };
+                                const itemColors = {
+                                    ...selectedColors,
+                                    [selectionGroup]: key
+                                };
                                 return m("div.variant-item.is-flex.is-flex-direction-column.is-align-items-center.is-clickable", {
                                     class: classNames({
                                         "has-background-link-light has-text-weight-bold has-text-link": isSelected
@@ -109,7 +113,7 @@ export const PaletteSelectModal = {
                                         oncreate: async (canvasVnode) => {
                                             const renderId = (canvasVnode.dom._recolorRenderId || 0) + 1;
                                             canvasVnode.dom._recolorRenderId = renderId;
-                                            const imagesLoaded = await drawRecolorPreview(itemId, meta, canvasVnode.dom, thisColor, renderId);
+                                            const imagesLoaded = await drawRecolorPreview(itemId, meta, canvasVnode.dom, itemColors, renderId);
                                             if (imagesLoaded > 0) {
                                                 rootViewNode.state.imagesLoaded += imagesLoaded;
                                             }
@@ -117,7 +121,7 @@ export const PaletteSelectModal = {
                                         onupdate: async (canvasVnode) => {
                                             const renderId = (canvasVnode.dom._recolorRenderId || 0) + 1;
                                             canvasVnode.dom._recolorRenderId = renderId;
-                                            await drawRecolorPreview(itemId, meta, canvasVnode.dom, thisColor, renderId);
+                                            await drawRecolorPreview(itemId, meta, canvasVnode.dom, itemColors, renderId);
                                         }
                                     }),
                                     m("div.palette-swatch",
