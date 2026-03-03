@@ -1,4 +1,5 @@
 // PaletteSelectModal.js
+import { drawRecolorPreview } from '../../canvas/palette-recolor.js';
 import { state, getSelectionGroup } from '../../state/state.js';
 import { ucwords } from "../../utils/helpers.js";
 
@@ -9,11 +10,13 @@ export const PaletteSelectModal = {
         const {
             itemId,
             opt,
+            compactDisplay,
             onClose,
             onSelect
         } = vnode.attrs;
 
         // Selection Group
+        const meta = window.itemMetadata[itemId];
         const selectionGroup = opt.type_name ?? getSelectionGroup(itemId);
         const selection = state.selections[selectionGroup];
 
@@ -26,16 +29,21 @@ export const PaletteSelectModal = {
         const modalStyle = {};
         const minWidth = 300;
         if (typeof window !== 'undefined') {
+            const header = document.getElementById('header-left');
             const chooser = document.getElementById('chooser-column');
             const filters = document.getElementById('mithril-filters');
             if (chooser && filters) {
                 const rect = chooser.getBoundingClientRect();
+                const hRect = header.getBoundingClientRect();
                 const fRect = filters.getBoundingClientRect();
+                const windowHeight = window.innerHeight || rect.height;
+                const clampedHeight = Math.min(rect.height, windowHeight - hRect.height - 20);
                 const newWidth = (rect.width / 4 < minWidth) ? minWidth : rect.width / 4;
                 modalStyle.left = (fRect.right - newWidth) + 'px';
-                modalStyle.top = rect.top + 'px';
+                modalStyle.top = hRect.height + 'px';
                 modalStyle.width = modalStyle.maxWidth = newWidth + 'px';
-                modalStyle.height = modalStyle.maxHeight = rect.height + 'px';
+                modalStyle.height = rect.height + 'px';
+                modalStyle.maxHeight = clampedHeight + 'px';
                 modalStyle.right = 'auto';
             }
         }
@@ -64,47 +72,65 @@ export const PaletteSelectModal = {
                             paletteVersionMeta?.label +
                             (material !== opt.material ? ` - ${materialMeta?.label}` : '')
                         ),
-                        ...Object.entries(recolors).map(([palette, colors]) => {
-                            const dark = colors[0];
-                            const gradient = colors.slice().reverse();
-                            const key = (material !== opt.material ? material + '.' : '') + (version !== opt.default ? version + '.' : '') + palette;
-                            const isSelected = selection?.itemId === itemId && selection?.recolor === key;
-                            return m("div.palette-row", {
-                                class: classNames({
-                                    "has-background-link-light has-text-weight-bold has-text-link": isSelected
-                                }),
-                                onmouseover: (e) => {
-                                    const div = e.currentTarget;
-                                    if (!isSelected) div.classList.add('has-background-white-ter');
-                                },
-                                onmouseout: (e) => {
-                                    const div = e.currentTarget;
-
-                                    if (!isSelected) div.classList.remove('has-background-white-ter');
-                                },
-                                onclick: (e) => {
-                                    e.stopPropagation();
-                                    onSelect(key);
-                                }
-                            }, [
-                                m("div.palette-name", ucwords(palette.replaceAll('_', ' '))),
-                                m("div.palette-swatch", {
-                                        style: {
-                                            borderColor: dark,
-                                            backgroundColor: dark
-                                        }
+                        m("div.variants-container.is-flex.is-flex-wrap-wrap", [
+                            ...Object.entries(recolors).map(([palette, colors]) => {
+                                const dark = colors[0];
+                                const gradient = colors.slice().reverse();
+                                const key = (material !== opt.material ? material + '.' : '') + (version !== opt.default ? version + '.' : '') + palette;
+                                const isSelected = selection?.itemId === itemId && selection?.recolor === key;
+                                const thisColor = { [selectionGroup]: key };
+                                return m("div.variant-item.is-flex.is-flex-direction-column.is-align-items-center.is-clickable", {
+                                    class: classNames({
+                                        "has-background-link-light has-text-weight-bold has-text-link": isSelected
+                                    }),
+                                    onmouseover: (e) => {
+                                        const div = e.currentTarget;
+                                        if (!isSelected) div.classList.add('has-background-white-ter');
                                     },
-                                    gradient.map((color, i) =>
-                                        m("span", {
-                                            style: {
-                                                width: `${100 / colors.length}%`,
-                                                backgroundColor: color
+                                    onmouseout: (e) => {
+                                        const div = e.currentTarget;
+
+                                        if (!isSelected) div.classList.remove('has-background-white-ter');
+                                    },
+                                    onclick: (e) => {
+                                        e.stopPropagation();
+                                        onSelect(key);
+                                    }
+                                }, [
+                                    m("span.variant-display-name.has-text-centered.is-size-7", ucwords(palette.replaceAll('_', ' '))),
+                                    m("canvas.variant-canvas.box.p-0", {
+                                        width: compactDisplay ? 32 : 64,
+                                        height: compactDisplay ? 32 : 64,
+                                        class: (compactDisplay ? " compact-display" : ""),
+                                        oncreate: async (canvasVnode) => {
+                                            const imagesLoaded = drawRecolorPreview(itemId, meta, canvasVnode.dom, thisColor);
+                                            if (imagesLoaded > 0) {
+                                                rootViewNode.state.imagesLoaded += imagesLoaded;
                                             }
-                                        })
+                                        },
+                                        onupdate: async (canvasVnode) => {
+                                            drawRecolorPreview(itemId, meta, canvasVnode.dom, thisColor);
+                                        }
+                                    }),
+                                    m("div.palette-swatch",
+                                        {
+                                            style: {
+                                                borderColor: dark,
+                                                backgroundColor: dark
+                                            }
+                                        },
+                                        gradient.map((color, i) =>
+                                            m("span", {
+                                                style: {
+                                                    width: `${100 / colors.length}%`,
+                                                    backgroundColor: color
+                                                }
+                                            })
+                                        )
                                     )
-                                )
-                            ])
-                        })
+                                ])
+                            })
+                        ])
                     ];
                 })),
                 m('footer', " ")

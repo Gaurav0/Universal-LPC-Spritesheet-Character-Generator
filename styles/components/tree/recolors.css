@@ -113,13 +113,21 @@
     margin-bottom: 0.5em;
     cursor: pointer;
 }
-.palette-modal section .palette-row .palette-name {
-    width: 50%;
-    display: inline-block;
-    cursor: pointer;
+.palette-modal .variants-container {
+    gap: 0;
 }
-.palette-modal section .palette-row .palette-swatch {
+.palette-modal .variant-item {
     width: 50%;
+}
+.palette-modal .variant-canvas {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    padding: 0;
+}
+.palette-modal .palette-swatch {
+    width: 100%;
+    height: 1rem;
+    overflow: hidden;
 }
 .palette-modal footer {
     flex: 1 1 auto;
