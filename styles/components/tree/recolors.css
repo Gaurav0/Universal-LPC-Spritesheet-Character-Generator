@@ -116,6 +116,7 @@
 }
 .palette-modal .variant-item {
     width: 50%;
+    margin: 0 auto;
 }
 .palette-modal .variant-canvas {
     margin: 0;

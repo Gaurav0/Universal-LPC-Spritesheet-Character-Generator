@@ -7,15 +7,6 @@ import { PaletteSelectModal } from './PaletteSelectModal.js';
 const classNames = window.classNames;
 
 export const ItemWithRecolors = {
-    oncreate: function() {
-        const href = "/styles/components/tree/recolors.css";
-        if (!document.querySelector(`link[href="${href}"]`)) {
-            const link = document.createElement("link");
-            link.rel = "stylesheet";
-            link.href = href;
-            document.head.appendChild(link);
-        }
-    },
     view: function(vnode) {
         const { itemId, meta, isSearchMatch, isCompatible, tooltipText } = vnode.attrs;
         const compactDisplay = state.compactDisplay;
