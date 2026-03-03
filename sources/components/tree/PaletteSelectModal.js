@@ -11,6 +11,7 @@ export const PaletteSelectModal = {
             itemId,
             opt,
             compactDisplay,
+            rootViewNode,
             onClose,
             onSelect
         } = vnode.attrs;
