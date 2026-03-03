@@ -103,14 +103,21 @@ export const PaletteSelectModal = {
                                         width: compactDisplay ? 32 : 64,
                                         height: compactDisplay ? 32 : 64,
                                         class: (compactDisplay ? " compact-display" : ""),
+                                        onremove: (canvasVnode) => {
+                                            canvasVnode.dom._recolorRenderId = (canvasVnode.dom._recolorRenderId || 0) + 1;
+                                        },
                                         oncreate: async (canvasVnode) => {
-                                            const imagesLoaded = drawRecolorPreview(itemId, meta, canvasVnode.dom, thisColor);
+                                            const renderId = (canvasVnode.dom._recolorRenderId || 0) + 1;
+                                            canvasVnode.dom._recolorRenderId = renderId;
+                                            const imagesLoaded = await drawRecolorPreview(itemId, meta, canvasVnode.dom, thisColor, renderId);
                                             if (imagesLoaded > 0) {
                                                 rootViewNode.state.imagesLoaded += imagesLoaded;
                                             }
                                         },
                                         onupdate: async (canvasVnode) => {
-                                            drawRecolorPreview(itemId, meta, canvasVnode.dom, thisColor);
+                                            const renderId = (canvasVnode.dom._recolorRenderId || 0) + 1;
+                                            canvasVnode.dom._recolorRenderId = renderId;
+                                            await drawRecolorPreview(itemId, meta, canvasVnode.dom, thisColor, renderId);
                                         }
                                     }),
                                     m("div.palette-swatch",

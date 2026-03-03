@@ -297,8 +297,30 @@ export async function recolorWithPalette(
  * @param {Object} canvas - Canvas dom
  * @param {Object} selectedColors - Selected colors for recoloring
  */
-export async function drawRecolorPreview(itemId, meta, canvas, selectedColors) {
+export async function drawRecolorPreview(itemId, meta, canvas, selectedColors, renderId = null) {
+  if (!canvas || !canvas.isConnected) {
+    return 0;
+  }
+
+  const isStaleRender = () => {
+    if (!canvas.isConnected) {
+      return true;
+    }
+    if (typeof renderId === 'number' && canvas._recolorRenderId !== renderId) {
+      return true;
+    }
+    return false;
+  };
+
   const ctx = canvas.getContext('2d', { willReadFrequently: true });
+  if (!ctx) {
+    return 0;
+  }
+
+  if (isStaleRender()) {
+    return 0;
+  }
+
   const compactDisplay = state.compactDisplay;
   
   // Only show the idle preview for the asset
@@ -318,13 +340,26 @@ export async function drawRecolorPreview(itemId, meta, canvas, selectedColors) {
           img.src = layer.path;
       });
   })).then(async loadedLayers => {
+      if (isStaleRender()) {
+        return;
+      }
+
       canvas.loadedLayers = loadedLayers;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
       // Draw each layer in zPos order
       // Use universalFrameSize (64) for all calculations, matching master branch
       const universalFrameSize = 64;
       for (const { img, layer } of loadedLayers) {
+        if (isStaleRender()) {
+          return;
+        }
+
           if (img) {
               const imageToDraw = await getImageToDraw(img, itemId, selectedColors);
+          if (isStaleRender()) {
+            return;
+          }
+
               const size = compactDisplay ? 32 : 64;
               const srcX = previewCol * universalFrameSize + previewXOffset;
               const srcY = previewRow * universalFrameSize + previewYOffset;
@@ -336,7 +371,9 @@ export async function drawRecolorPreview(itemId, meta, canvas, selectedColors) {
           }
       }
       imagesLoaded++;
-      m.redraw();
+            if (!isStaleRender()) {
+              m.redraw();
+            }
   });
   return imagesLoaded;
 }
