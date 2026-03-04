@@ -68,7 +68,7 @@ export const PaletteSelectModal = {
                             ...Object.entries(recolors).map(([palette, colors]) => {
                                 const gradient = colors.slice().reverse();
                                 const key = (material !== opt.material ? material + '.' : '') + (version !== opt.default ? version + '.' : '') + palette;
-                                const isSelected = selection?.itemId === itemId && selection?.recolor === key;
+                                const isSelected = (selection?.itemId === itemId || selectionGroup === opt.type_name) && selection?.recolor === key;
                                 const itemColors = {
                                     ...selectedColors,
                                     [selectionGroup]: key
@@ -84,7 +84,6 @@ export const PaletteSelectModal = {
                                     },
                                     onmouseout: (e) => {
                                         const div = e.currentTarget;
-
                                         if (!isSelected) div.classList.remove('has-background-white-ter');
                                     },
                                     onclick: (e) => {

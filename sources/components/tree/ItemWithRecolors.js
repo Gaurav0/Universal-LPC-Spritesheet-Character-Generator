@@ -1,7 +1,7 @@
 // Item with recolors component
 import { state, getSelectionGroup, selectItem } from '../../state/state.js';
 import { drawRecolorPreview } from '../../canvas/palette-recolor.js';
-import { getMultiRecolors, getPaletteOptions, getPalettesForItem } from '../../state/palettes.js';
+import { getMultiRecolors, getPaletteOptions } from '../../state/palettes.js';
 import { PaletteSelectModal } from './PaletteSelectModal.js';
 
 const classNames = window.classNames;
@@ -40,7 +40,8 @@ export const ItemWithRecolors = {
                 rootViewNode,
                 onClose: () => { rootViewNode.state.showPaletteModal = null; m.redraw(); },
                 onSelect: (recolor) => {
-                    selectItem(itemId, recolor, isSelected && selectedColors[selectionGroup] === recolor, opt.type_name ? idx : null);
+                    const subSelectGroup = (opt.type_name !== meta.type_name) ? opt.type_name : selectionGroup;
+                    selectItem(itemId, recolor, isSelected && selectedColors[subSelectGroup] === recolor, opt.type_name ? idx : null);
                     m.redraw();
                 }
             });
