@@ -74,7 +74,8 @@ export const PaletteSelectModal = {
                                     ...selectedColors,
                                     [selectionGroup]: key
                                 };
-                                return m("div.variant-item.is-flex.is-flex-direction-column.is-align-items-center.is-clickable", {
+                                return m("div.cell", [
+                                  m("div.variant-item.is-flex.is-flex-direction-column.is-align-items-center.is-clickable", {
                                     class: classNames({
                                         "has-background-link-light has-text-weight-bold has-text-link": isSelected
                                     }),
@@ -91,7 +92,7 @@ export const PaletteSelectModal = {
                                         e.stopPropagation();
                                         onSelect(key);
                                     }
-                                }, [
+                                  }, [
                                     m("span.variant-display-name.has-text-centered.is-size-7", ucwords(palette.replaceAll('_', ' '))),
                                     m("canvas.variant-canvas.box.p-0", {
                                         width: compactDisplay ? 32 : 64,
@@ -124,6 +125,7 @@ export const PaletteSelectModal = {
                                         )
                                     )
                                 ])
+                              ])
                             })
                         ]) : null
                     ];
