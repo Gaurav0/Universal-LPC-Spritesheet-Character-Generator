@@ -296,12 +296,32 @@ export async function recolorWithPalette(
  * @param {Object} meta - Metadata for the asset
  * @param {Object} canvas - Canvas dom
  * @param {Object} selectedColors - Selected colors for recoloring
+ * @param {number|null} [renderId] - Optional render identifier used to detect and skip stale renders
+ * @returns {number} Numeric status code (0 if no render was performed or the render is stale)
  */
-export async function drawRecolorPreview(itemId, meta, canvas, selectedColors) {
+export async function drawRecolorPreview(itemId, meta, canvas, selectedColors, renderId = null) {
+  if (!canvas || !canvas.isConnected) {
+    return 0;
+  }
+
+  const isStaleRender = () => {
+    if (!canvas.isConnected) {
+      return true;
+    }
+    if (typeof renderId === 'number' && canvas._recolorRenderId !== renderId) {
+      return true;
+    }
+    return false;
+  };
+
+  // Skip if canvas is not connected or renderId doesn't match (stale render)
   const ctx = canvas.getContext('2d', { willReadFrequently: true });
-  const compactDisplay = state.compactDisplay;
-  
+  if (!ctx || isStaleRender()) {
+    return 0;
+  }
+
   // Only show the idle preview for the asset
+  const compactDisplay = state.compactDisplay;
   const previewRow = meta.preview_row ?? 2;
   const previewCol = meta.preview_column ?? 0;
   const previewXOffset = meta.preview_x_offset ?? 0;
@@ -310,33 +330,41 @@ export async function drawRecolorPreview(itemId, meta, canvas, selectedColors) {
 
   // Load and draw all layers
   let imagesLoaded = 0;
-  await Promise.all(layersToLoad.map(layer => {
-      return new Promise((resolve) => {
-          const img = new Image();
-          img.onload = () => resolve({ img, layer });
-          img.onerror = () => resolve({ img: null, layer });
-          img.src = layer.path;
-      });
-  })).then(async loadedLayers => {
-      canvas.loadedLayers = loadedLayers;
-      // Draw each layer in zPos order
-      // Use universalFrameSize (64) for all calculations, matching master branch
-      const universalFrameSize = 64;
-      for (const { img, layer } of loadedLayers) {
-          if (img) {
-              const imageToDraw = await getImageToDraw(img, itemId, selectedColors);
-              const size = compactDisplay ? 32 : 64;
-              const srcX = previewCol * universalFrameSize + previewXOffset;
-              const srcY = previewRow * universalFrameSize + previewYOffset;
-              ctx.drawImage(
-                  imageToDraw,
-                  srcX, srcY, universalFrameSize, universalFrameSize,
-                  0, 0, size, size
-              );
-          }
-      }
+  const loadedLayers = await Promise.all(layersToLoad.map(layer => {
+    return new Promise((resolve) => {
+      const img = new Image();
+      img.onload = () => resolve({ img, layer });
+      img.onerror = () => resolve({ img: null, layer });
+      img.src = layer.path;
+    });
+  }));
+  if (isStaleRender()) {
+    return 0;
+  }
+
+  canvas.loadedLayers = loadedLayers;
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  // Draw each layer in zPos order
+  // Use universalFrameSize (64) for all calculations, matching master branch
+  const universalFrameSize = 64;
+  imagesLoaded = 0;
+  for (const { img, layer } of loadedLayers) {
+    if (isStaleRender()) {
+      return 0;
+    }
+
+    if (img) {
+      const imageToDraw = await getImageToDraw(img, itemId, selectedColors);
+      const size = compactDisplay ? 32 : 64;
+      const srcX = previewCol * universalFrameSize + previewXOffset;
+      const srcY = previewRow * universalFrameSize + previewYOffset;
+      ctx.drawImage(
+          imageToDraw,
+          srcX, srcY, universalFrameSize, universalFrameSize,
+          0, 0, size, size
+      );
       imagesLoaded++;
-      m.redraw();
-  });
+    }
+  };
   return imagesLoaded;
 }

@@ -1,21 +1,12 @@
 // Item with recolors component
 import { state, getSelectionGroup, selectItem } from '../../state/state.js';
 import { drawRecolorPreview } from '../../canvas/palette-recolor.js';
-import { getMultiRecolors, getPaletteOptions, getPalettesForItem } from '../../state/palettes.js';
+import { getMultiRecolors, getPaletteOptions } from '../../state/palettes.js';
 import { PaletteSelectModal } from './PaletteSelectModal.js';
 
 const classNames = window.classNames;
 
 export const ItemWithRecolors = {
-    oncreate: function() {
-        const href = "/styles/components/tree/recolors.css";
-        if (!document.querySelector(`link[href="${href}"]`)) {
-            const link = document.createElement("link");
-            link.rel = "stylesheet";
-            link.href = href;
-            document.head.appendChild(link);
-        }
-    },
     view: function(vnode) {
         const { itemId, meta, isSearchMatch, isCompatible, tooltipText } = vnode.attrs;
         const compactDisplay = state.compactDisplay;
@@ -44,9 +35,13 @@ export const ItemWithRecolors = {
             paletteModal = m(PaletteSelectModal, {
                 itemId,
                 opt,
+                selectedColors,
+                compactDisplay,
+                rootViewNode,
                 onClose: () => { rootViewNode.state.showPaletteModal = null; m.redraw(); },
                 onSelect: (recolor) => {
-                    selectItem(itemId, recolor, false, opt.type_name ? idx : null);
+                    const subSelectGroup = (opt.type_name !== meta.type_name) ? opt.type_name : selectionGroup;
+                    selectItem(itemId, recolor, isSelected && selectedColors[subSelectGroup] === recolor, opt.type_name ? idx : null);
                     m.redraw();
                 }
             });
@@ -95,11 +90,9 @@ export const ItemWithRecolors = {
 
                             if (!isSelected) div.classList.remove('has-background-white-ter');
                         },
-                        onclick: () => {
-                            if (!isCompatible) return; // Prevent selecting incompatible
-                            const palettes = getPalettesForItem(itemId, meta);
-                            const recolor = selectedColors?.[meta.type_name] ?? palettes[meta.type_name].source;
-                            selectItem(itemId, recolor, isSelected);
+                        onclick: (e) => {
+                            e.stopPropagation();
+                            rootViewNode.state.showPaletteModal = 0;
                             m.redraw();
                         }
                     }, [
@@ -135,7 +128,6 @@ export const ItemWithRecolors = {
                     // Small color icons for each recolor category
                     paletteOptions.length ? m("div.ml-3.is-align-items-center.palette-recolor-list",
                         paletteOptions.map((opt, idx) => {
-                            const dark = opt.colors[0];
                             const gradient = opt.colors.slice().reverse();
                             return m("div.is-flex.palette-recolor-item", {
                                 onclick: (e) => {
@@ -145,16 +137,10 @@ export const ItemWithRecolors = {
                                 }
                             }, [
                                 m("label", opt.label),
-                                m("div.palette-swatch", {
-                                    style: {
-                                        border: `1px solid ${dark}`,
-                                        background: dark
-                                    }
-                                },
+                                m("div.palette-swatch",
                                     gradient.map((color, i) =>
                                         m("span", {
                                             style: {
-                                                width: `${100 / gradient.length}%`,
                                                 backgroundColor: color
                                             }
                                         })

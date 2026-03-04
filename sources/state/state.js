@@ -179,9 +179,10 @@ export async function initState() {
 // Select Item Asset
 export function selectItem(itemId, variant, isSelected = false, subId = null) {
 	const selectionGroup = getSelectionGroup(itemId);
+	const subSelect = subId !== null ? getSubSelectionGroup(itemId, subId) : selectionGroup;
 
 	if (isSelected) {
-		delete state.selections[selectionGroup];
+		delete state.selections[subSelect];
 	} else {
 		// Get Meta Data
 		const meta = window.itemMetadata[itemId];
@@ -189,7 +190,6 @@ export function selectItem(itemId, variant, isSelected = false, subId = null) {
 		const variantDisplayName = variant.replaceAll("_", " ");
 
 		// Get Sub Selection Items
-		const subSelect = subId !== null ? getSubSelectionGroup(itemId, subId) : selectionGroup;
 		const subMeta = !useVariants && subId !== null ? meta.recolors?.[subId] : null;
 		const displayName = subMeta?.type_name ? subMeta.label : meta.name;
 

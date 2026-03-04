@@ -12,15 +12,11 @@
     cursor: pointer;
 }
 .palette-swatch span {
-    display: inline-block;
     height: 1rem;
+    flex: 1;
     padding: 0;
     margin: 0;
-    width: 17%;
-    background: color;
 }
-
-
 
 .palette-recolor-list {
     width: auto;
@@ -59,17 +55,16 @@
  */
 .palette-modal {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 9vh;
+    left: 25vw;
+    right: 50vw;
     margin: 0;
-    width: 300px;
-    max-width: 300px;
+    min-width: 280px;
     background: #fff;
     border: 1px solid #ccc;
     padding: 0;
     z-index: 1000;
-    max-height: 80vh;
+    max-height: 85vh;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -113,13 +108,27 @@
     margin-bottom: 0.5em;
     cursor: pointer;
 }
-.palette-modal section .palette-row .palette-name {
-    width: 50%;
-    display: inline-block;
-    cursor: pointer;
+.palette-modal .variants-container.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    row-gap: 0;
+    column-gap: 10px;
 }
-.palette-modal section .palette-row .palette-swatch {
-    width: 50%;
+.palette-modal .grid > .cell {
+    justify-content: center;
+}
+.palette-modal .variant-canvas {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    padding: 0;
+}
+.palette-modal .variant-display-name {
+    white-space: nowrap;
+}
+.palette-modal .palette-swatch {
+    width: 100%;
+    height: 1rem;
+    overflow: hidden;
 }
 .palette-modal footer {
     flex: 1 1 auto;

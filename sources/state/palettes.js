@@ -1,6 +1,5 @@
 // Palette utilities
 import { state, getSelectionGroup } from "./state.js";
-import { replaceInPath } from './path.js';
 
 /**
  * Function to get multiple recolor options from selections.
