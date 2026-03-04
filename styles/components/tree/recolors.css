@@ -18,8 +18,6 @@
     margin: 0;
 }
 
-
-
 .palette-recolor-list {
     width: auto;
     display: flex;
@@ -59,10 +57,9 @@
     position: fixed;
     top: 9vh;
     left: 25vw;
+    right: 50vw;
     margin: 0;
-    width: 40vw;
     min-width: 280px;
-    max-width: 410px;
     background: #fff;
     border: 1px solid #ccc;
     padding: 0;
@@ -111,17 +108,22 @@
     margin-bottom: 0.5em;
     cursor: pointer;
 }
-.palette-modal .variants-container {
-    gap: 0;
+.palette-modal .variants-container.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    row-gap: 0;
+    column-gap: 10px;
 }
-.palette-modal .variant-item {
-    width: 50%;
-    margin: 0 auto;
+.palette-modal .grid > .cell {
+    justify-content: center;
 }
 .palette-modal .variant-canvas {
     margin: 0;
     margin-bottom: 0.5rem;
     padding: 0;
+}
+.palette-modal .variant-display-name {
+    white-space: nowrap;
 }
 .palette-modal .palette-swatch {
     width: 100%;
