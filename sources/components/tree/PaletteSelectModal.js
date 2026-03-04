@@ -54,7 +54,6 @@ export const PaletteSelectModal = {
                     return [
                         m("div.tree-label", {
                             onclick: () => {
-                                console.log('expand tree', nodePath, !isExpanded);
                                 state.expandedNodes[nodePath] = !isExpanded;
                             }
                         },
@@ -101,18 +100,13 @@ export const PaletteSelectModal = {
                                         onremove: (canvasVnode) => {
                                             canvasVnode.dom._recolorRenderId = (canvasVnode.dom._recolorRenderId || 0) + 1;
                                         },
-                                        oncreate: async (canvasVnode) => {
+                                        oncreate: (canvasVnode) => {
                                             const renderId = (canvasVnode.dom._recolorRenderId || 0) + 1;
                                             canvasVnode.dom._recolorRenderId = renderId;
                                             const imagesLoaded = drawRecolorPreview(itemId, meta, canvasVnode.dom, itemColors, renderId);
                                             if (imagesLoaded > 0) {
                                                 rootViewNode.state.imagesLoaded += imagesLoaded;
                                             }
-                                        },
-                                        onupdate: async (canvasVnode) => {
-                                            const renderId = (canvasVnode.dom._recolorRenderId || 0) + 1;
-                                            canvasVnode.dom._recolorRenderId = renderId;
-                                            drawRecolorPreview(itemId, meta, canvasVnode.dom, itemColors, renderId);
                                         }
                                     }),
                                     m("div.palette-swatch",
@@ -127,7 +121,7 @@ export const PaletteSelectModal = {
                                 ])
                               ])
                             })
-                        ]) : null
+                        ]) : null // ends expanded variant container
                     ];
                 })),
                 m('footer', " ")

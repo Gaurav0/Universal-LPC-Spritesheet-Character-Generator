@@ -40,7 +40,7 @@ export const ItemWithRecolors = {
                 rootViewNode,
                 onClose: () => { rootViewNode.state.showPaletteModal = null; m.redraw(); },
                 onSelect: (recolor) => {
-                    selectItem(itemId, recolor, false, opt.type_name ? idx : null);
+                    selectItem(itemId, recolor, isSelected && selectedColors[selectionGroup] === recolor, opt.type_name ? idx : null);
                     m.redraw();
                 }
             });
@@ -89,11 +89,9 @@ export const ItemWithRecolors = {
 
                             if (!isSelected) div.classList.remove('has-background-white-ter');
                         },
-                        onclick: () => {
-                            if (!isCompatible) return; // Prevent selecting incompatible
-                            const palettes = getPalettesForItem(itemId, meta);
-                            const recolor = selectedColors?.[meta.type_name] ?? palettes[meta.type_name].source;
-                            selectItem(itemId, recolor, isSelected);
+                        onclick: (e) => {
+                            e.stopPropagation();
+                            rootViewNode.state.showPaletteModal = 0;
                             m.redraw();
                         }
                     }, [

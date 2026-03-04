@@ -350,7 +350,7 @@ export async function drawRecolorPreview(itemId, meta, canvas, selectedColors, r
   imagesLoaded = 0;
   for (const { img, layer } of loadedLayers) {
     if (isStaleRender()) {
-      return;
+      return 0;
     }
 
     if (img) {
@@ -358,7 +358,7 @@ export async function drawRecolorPreview(itemId, meta, canvas, selectedColors, r
       const size = compactDisplay ? 32 : 64;
       const srcX = previewCol * universalFrameSize + previewXOffset;
       const srcY = previewRow * universalFrameSize + previewYOffset;
-      await ctx.drawImage(
+      ctx.drawImage(
           imageToDraw,
           srcX, srcY, universalFrameSize, universalFrameSize,
           0, 0, size, size
