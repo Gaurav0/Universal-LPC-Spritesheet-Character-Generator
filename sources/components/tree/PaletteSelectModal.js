@@ -21,6 +21,10 @@ export const PaletteSelectModal = {
         const meta = window.itemMetadata[itemId];
         const selectionGroup = opt.type_name ?? getSelectionGroup(itemId);
         const selection = state.selections[selectionGroup];
+        const nodePath = `${itemId}-${opt.idx}-${opt.versions[0]}`;
+        if (state.expandedNodes[nodePath] === undefined) {
+            state.expandedNodes[nodePath] = true;
+        }
 
         // Overlay for outside click
         const overlay = m('div.palette-modal-overlay', {
@@ -41,18 +45,28 @@ export const PaletteSelectModal = {
                 m('section',
                 opt.versions.map((cat) => {
                     const [material, version] = cat.split('.');
+                    const nodePath = `${itemId}-${opt.idx}-${cat}`;
                     const paletteMeta = window.paletteMetadata;
                     const paletteVersionMeta = paletteMeta.versions[version];
                     const materialMeta = paletteMeta.materials[material];
                     const recolors = materialMeta.palettes[version];
+                    const isExpanded = state.expandedNodes[nodePath] || false;
                     return [
-                        m("div.palette-version",
-                            paletteVersionMeta?.label +
-                            (material !== opt.material ? ` - ${materialMeta?.label}` : '')
-                        ),
-                        m("div.variants-container.is-flex.is-flex-wrap-wrap", [
+                        m("div.tree-label", {
+                            onclick: () => {
+                                console.log('expand tree', nodePath, !isExpanded);
+                                state.expandedNodes[nodePath] = !isExpanded;
+                            }
+                        },
+                        [
+                            m("span.tree-arrow", { class: isExpanded ? 'expanded' : 'collapsed' }),
+                            m("span.palette-version",
+                                paletteVersionMeta?.label +
+                                (material !== opt.material ? ` - ${materialMeta?.label}` : '')
+                            )
+                        ]),
+                        isExpanded ? m("div.variants-container.is-flex.is-flex-wrap-wrap", [
                             ...Object.entries(recolors).map(([palette, colors]) => {
-                                const dark = colors[0];
                                 const gradient = colors.slice().reverse();
                                 const key = (material !== opt.material ? material + '.' : '') + (version !== opt.default ? version + '.' : '') + palette;
                                 const isSelected = selection?.itemId === itemId && selection?.recolor === key;
@@ -89,7 +103,7 @@ export const PaletteSelectModal = {
                                         oncreate: async (canvasVnode) => {
                                             const renderId = (canvasVnode.dom._recolorRenderId || 0) + 1;
                                             canvasVnode.dom._recolorRenderId = renderId;
-                                            const imagesLoaded = await drawRecolorPreview(itemId, meta, canvasVnode.dom, itemColors, renderId);
+                                            const imagesLoaded = drawRecolorPreview(itemId, meta, canvasVnode.dom, itemColors, renderId);
                                             if (imagesLoaded > 0) {
                                                 rootViewNode.state.imagesLoaded += imagesLoaded;
                                             }
@@ -97,7 +111,7 @@ export const PaletteSelectModal = {
                                         onupdate: async (canvasVnode) => {
                                             const renderId = (canvasVnode.dom._recolorRenderId || 0) + 1;
                                             canvasVnode.dom._recolorRenderId = renderId;
-                                            await drawRecolorPreview(itemId, meta, canvasVnode.dom, itemColors, renderId);
+                                            drawRecolorPreview(itemId, meta, canvasVnode.dom, itemColors, renderId);
                                         }
                                     }),
                                     m("div.palette-swatch",
@@ -111,7 +125,7 @@ export const PaletteSelectModal = {
                                     )
                                 ])
                             })
-                        ])
+                        ]) : null
                     ];
                 })),
                 m('footer', " ")

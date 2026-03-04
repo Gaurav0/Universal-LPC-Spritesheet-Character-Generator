@@ -129,7 +129,6 @@ export const ItemWithRecolors = {
                     // Small color icons for each recolor category
                     paletteOptions.length ? m("div.ml-3.is-align-items-center.palette-recolor-list",
                         paletteOptions.map((opt, idx) => {
-                            const dark = opt.colors[0];
                             const gradient = opt.colors.slice().reverse();
                             return m("div.is-flex.palette-recolor-item", {
                                 onclick: (e) => {

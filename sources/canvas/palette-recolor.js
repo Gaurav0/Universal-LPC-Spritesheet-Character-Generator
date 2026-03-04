@@ -296,6 +296,8 @@ export async function recolorWithPalette(
  * @param {Object} meta - Metadata for the asset
  * @param {Object} canvas - Canvas dom
  * @param {Object} selectedColors - Selected colors for recoloring
+ * @param {number|null} [renderId] - Optional render identifier used to detect and skip stale renders
+ * @returns {number} Numeric status code (0 if no render was performed or the render is stale)
  */
 export async function drawRecolorPreview(itemId, meta, canvas, selectedColors, renderId = null) {
   if (!canvas || !canvas.isConnected) {
@@ -337,7 +339,7 @@ export async function drawRecolorPreview(itemId, meta, canvas, selectedColors, r
     });
   }));
   if (isStaleRender()) {
-    return;
+    return 0;
   }
 
   canvas.loadedLayers = loadedLayers;
@@ -356,7 +358,7 @@ export async function drawRecolorPreview(itemId, meta, canvas, selectedColors, r
       const size = compactDisplay ? 32 : 64;
       const srcX = previewCol * universalFrameSize + previewXOffset;
       const srcY = previewRow * universalFrameSize + previewYOffset;
-      ctx.drawImage(
+      await ctx.drawImage(
           imageToDraw,
           srcX, srcY, universalFrameSize, universalFrameSize,
           0, 0, size, size
