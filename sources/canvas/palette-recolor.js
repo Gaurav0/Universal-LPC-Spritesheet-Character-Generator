@@ -365,6 +365,6 @@ export async function drawRecolorPreview(itemId, meta, canvas, selectedColors, r
       );
       imagesLoaded++;
     }
-  };
+  }
   return imagesLoaded;
 }
