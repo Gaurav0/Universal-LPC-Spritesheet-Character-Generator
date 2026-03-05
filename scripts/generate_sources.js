@@ -32,12 +32,14 @@ const categoryTree = { items: [], children: {} };
 
 function searchCredit(fileName, credits, origFileName) {
   if (credits.count <= 0) {
-    console.error("no credits for filename:", fileName);
+    if (DEBUG)
+      console.error("no credits for filename:", fileName);
     return undefined;
   }
   if (credits.count === 1) {
     if (!credits[0].file.includes(fileName)) {
-      console.error("Wrong credit at filename:", fileName);
+      if (DEBUG)
+        console.error("Wrong credit at filename:", fileName);
     }
     return undefined;
   }
@@ -56,13 +58,13 @@ function searchCredit(fileName, credits, origFileName) {
   const index = fileName.lastIndexOf("/");
   if (index > -1) {
     return searchCredit(fileName.substring(0, index), credits, origFileName);
-  } else {
+  } else if (DEBUG) {
     console.error(
       "missing credit after searching recursively filename:",
       origFileName
     );
-    return undefined;
   }
+  return undefined;
 }
 
 // Parse credits from item definition and add to global list
@@ -125,7 +127,8 @@ function parseTree(filePath, fileName) {
   try {
     meta = JSON.parse(fs.readFileSync(fullPath));
   } catch (e) {
-    console.error("error in", fullPath);
+    if (DEBUG)
+      console.error("Error parsing json from category file ", fullPath);
     throw e;
   }
 
@@ -188,7 +191,8 @@ function writeAliases(aliases, meta) {
 
     // Target Must Exist!
     if (!targetName || !targetVariant) {
-      console.error("Alias target does not exist for", alias);
+      if (DEBUG)
+        console.warn("Alias target does not exist for", alias);
       continue;
     }
 
@@ -221,7 +225,8 @@ function parseJson(filePath, fileName) {
   try {
     definition = JSON.parse(fs.readFileSync(fullPath));
   } catch (e) {
-    console.error("error in", fullPath);
+    if (DEBUG)
+      console.error("Error parsing metadata JSON from file:", fullPath);
     throw e;
   }
 
@@ -313,7 +318,8 @@ function parseJson(filePath, fileName) {
       const colorVariants = new Set();
       const materialMeta = paletteMetadata.materials[recolor.material];
       if (!materialMeta) {
-        console.warn(`Material metadata not found for ${recolor.material}`);
+        if (DEBUG)
+          console.warn(`Material metadata not found for ${recolor.material}`);
         continue;
       }
       recolor.default = materialMeta.default;
@@ -447,7 +453,16 @@ palettes.forEach(file => {
     return;
   } else {
     const fullPath = path.join(file.parentPath, file.name);
-    const json = JSON.parse(fs.readFileSync(fullPath));
+    let json = null;
+    try {
+      json = JSON.parse(fs.readFileSync(fullPath));
+    } catch (e) {
+      if (DEBUG)
+        console.error(`Error parsing palette file json data: ${fullPath}`, e);
+      throw e;
+    }
+
+    // Handle Meta Files for Materials and Versions
     if (file.name.startsWith("meta_")) {
       // Handle Palette Metadata
       const name = file.name.replace("meta_", "").replace(".json", "");
@@ -465,17 +480,11 @@ palettes.forEach(file => {
       }
       return;
     } else {
-      const filename = file.name;
       const [material, version] = file.name.replace(".json", "").split("_");
-      try {
-        if (!paletteMetadata.materials[material]) {
-          paletteMetadata.materials[material] = { "palettes": {} };
-        }
-        paletteMetadata.materials[material].palettes[version] = json;
-      } catch (e) {
-        console.log(`Error parsing palette file: ${filename}`, e);
-        return;
+      if (!paletteMetadata.materials[material]) {
+        paletteMetadata.materials[material] = { "palettes": {} };
       }
+      paletteMetadata.materials[material].palettes[version] = json;
     }
   }
 });
@@ -502,7 +511,7 @@ files.forEach(file => {
       parsedResult = parseJson(file.parentPath, file.name);
     } catch (e) {
       if (DEBUG && !onlyIfTemplate)
-        console.log(e);
+        console.error(`Error parsing sheet file json data: ${file.parentPath}`, e);
       return;
     }
     csvList.push({path: file.parentPath.replace(SHEETS_DIR, ''), csv: parsedResult.csv});

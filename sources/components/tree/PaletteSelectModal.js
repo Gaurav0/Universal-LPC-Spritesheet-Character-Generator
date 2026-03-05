@@ -2,6 +2,7 @@
 import { drawRecolorPreview } from '../../canvas/palette-recolor.js';
 import { state, getSelectionGroup } from '../../state/state.js';
 import { ucwords } from "../../utils/helpers.js";
+import { COMPACT_FRAME_SIZE, FRAME_SIZE } from '../../state/constants.js';
 
 const classNames = window.classNames;
 
@@ -93,8 +94,8 @@ export const PaletteSelectModal = {
                                   }, [
                                     m("span.variant-display-name.has-text-centered.is-size-7", ucwords(palette.replaceAll('_', ' '))),
                                     m("canvas.variant-canvas.box.p-0", {
-                                        width: compactDisplay ? 32 : 64,
-                                        height: compactDisplay ? 32 : 64,
+                                        width: compactDisplay ? COMPACT_FRAME_SIZE : FRAME_SIZE,
+                                        height: compactDisplay ? COMPACT_FRAME_SIZE : FRAME_SIZE,
                                         class: (compactDisplay ? " compact-display" : ""),
                                         onremove: (canvasVnode) => {
                                             canvasVnode.dom._recolorRenderId = (canvasVnode.dom._recolorRenderId || 0) + 1;

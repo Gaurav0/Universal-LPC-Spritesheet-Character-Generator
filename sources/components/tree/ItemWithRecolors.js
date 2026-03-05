@@ -3,6 +3,7 @@ import { state, getSelectionGroup, selectItem } from '../../state/state.js';
 import { drawRecolorPreview } from '../../canvas/palette-recolor.js';
 import { getMultiRecolors, getPaletteOptions } from '../../state/palettes.js';
 import { PaletteSelectModal } from './PaletteSelectModal.js';
+import { COMPACT_FRAME_SIZE, FRAME_SIZE } from '../../state/constants.js';
 
 const classNames = window.classNames;
 
@@ -104,8 +105,8 @@ export const ItemWithRecolors = {
                         })
                     }, [
                         m("canvas.variant-canvas.box.p-0", {
-							width: compactDisplay ? 32 : 64,
-							height: compactDisplay ? 32 : 64,
+							width: compactDisplay ? COMPACT_FRAME_SIZE : FRAME_SIZE,
+							height: compactDisplay ? COMPACT_FRAME_SIZE : FRAME_SIZE,
                             class: (compactDisplay ? " compact-display" : ""),
                             oncreate: async (canvasVnode) => {
                                 const imagesLoaded = drawRecolorPreview(itemId, meta, canvasVnode.dom, selectedColors);

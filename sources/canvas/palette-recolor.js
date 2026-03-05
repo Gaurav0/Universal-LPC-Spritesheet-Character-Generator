@@ -10,6 +10,7 @@ import { get2DContext } from "./canvas-utils.js";
 import { state } from '../state/state.js';
 import { getLayersToLoad } from '../state/meta.js';
 import { getPalettesForItem, getTargetPalette } from '../state/palettes.js';
+import { COMPACT_FRAME_SIZE, FRAME_SIZE } from '../state/constants.js';
 
 // Configuration flags
 let config = {
@@ -254,7 +255,7 @@ export async function getImageToDraw(img, itemId, recolors) {
     try {
       return await recolorWithPalette(img, recolors, paletteConfig);
     } catch (err) {
-      console.warn(
+      console.error(
         `Failed to recolor ${paletteConfig.material} color ${JSON.stringify(recolors)}:`,
         err
       );
@@ -334,7 +335,11 @@ export async function drawRecolorPreview(itemId, meta, canvas, selectedColors, r
     return new Promise((resolve) => {
       const img = new Image();
       img.onload = () => resolve({ img, layer });
-      img.onerror = () => resolve({ img: null, layer });
+      img.onerror = () => {
+        if (DEBUG)
+          console.warn(`Failed to load image for layer ${layer.path}`);
+        resolve({ img: null, layer });
+      }
       img.src = layer.path;
     });
   }));
@@ -345,8 +350,6 @@ export async function drawRecolorPreview(itemId, meta, canvas, selectedColors, r
   canvas.loadedLayers = loadedLayers;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   // Draw each layer in zPos order
-  // Use universalFrameSize (64) for all calculations, matching master branch
-  const universalFrameSize = 64;
   imagesLoaded = 0;
   for (const { img, layer } of loadedLayers) {
     if (isStaleRender()) {
@@ -355,12 +358,12 @@ export async function drawRecolorPreview(itemId, meta, canvas, selectedColors, r
 
     if (img) {
       const imageToDraw = await getImageToDraw(img, itemId, selectedColors);
-      const size = compactDisplay ? 32 : 64;
-      const srcX = previewCol * universalFrameSize + previewXOffset;
-      const srcY = previewRow * universalFrameSize + previewYOffset;
+      const size = compactDisplay ? COMPACT_FRAME_SIZE : FRAME_SIZE;
+      const srcX = previewCol * FRAME_SIZE + previewXOffset;
+      const srcY = previewRow * FRAME_SIZE + previewYOffset;
       ctx.drawImage(
           imageToDraw,
-          srcX, srcY, universalFrameSize, universalFrameSize,
+          srcX, srcY, FRAME_SIZE, FRAME_SIZE,
           0, 0, size, size
       );
       imagesLoaded++;
