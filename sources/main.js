@@ -65,7 +65,7 @@ export const DEBUG = getDebugParam();
 // Initialize performance profiler (uses same DEBUG flag as console logging)
 export const profiler = new PerformanceProfiler({
 	enabled: DEBUG,
-	verbose: false,
+	verbose: true,
 	logSlowOperations: true
 });
 
