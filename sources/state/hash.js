@@ -159,6 +159,11 @@ export function syncSelectionsToHash() {
 }
 
 export function loadSelectionsFromHash(hashString = null) {
+  const profiler = window.profiler;
+  if (profiler) {
+    profiler.mark("hash-loadSelectionsFromHash:start");
+  }
+
   const params = hashString
     ? getHashParamsFromString(hashString)
     : getHashParams();
@@ -265,6 +270,10 @@ export function loadSelectionsFromHash(hashString = null) {
     newSelections[typeName] = buildNewSelection(foundItemId, matchedVariant, matchedRecolor);
   }
 
+  if (profiler) {
+    profiler.mark("hash-loadSelectionsFromHash:subitems:start");
+  }
+
   // Check if Skipped Entries Are Sub-Items!
   for (const [subType, nameAndVariant] of Object.entries(skippedEntries)) {
     // Handle sub-items logic here
@@ -290,6 +299,15 @@ export function loadSelectionsFromHash(hashString = null) {
     }
   }
 
+  if (profiler) {
+    profiler.mark("hash-loadSelectionsFromHash:subitems:end");
+    profiler.measure(
+      "hash-loadSelectionsFromHash:subitems",
+      "hash-loadSelectionsFromHash:subitems:start",
+      "hash-loadSelectionsFromHash:subitems:end",
+    );
+  }
+
   // Now update state once with complete new selections
   state.selections = newSelections;
 
@@ -299,6 +317,15 @@ export function loadSelectionsFromHash(hashString = null) {
   }
 
   syncSelectionsToHash(); // Ensure hash is in sync with loaded selections (handles any normalization)
+
+  if (profiler) {
+    profiler.mark("hash-loadSelectionsFromHash:end");
+    profiler.measure(
+      "hash-loadSelectionsFromHash",
+      "hash-loadSelectionsFromHash:start",
+      "hash-loadSelectionsFromHash:end",
+    );
+  }
 }
 
 // Initialize hash change listener
