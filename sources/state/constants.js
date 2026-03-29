@@ -1,5 +1,7 @@
 // Constants used throughout the application
 export const FRAME_SIZE = 64; // Size of each frame in the spritesheet
+/** Frames per row on the standard universal LPC animation sheet (13 × FRAME_SIZE wide per row). */
+export const STANDARD_ANIMATION_FRAMES_PER_ROW = 13;
 
 // License configuration - single source of truth
 export const LICENSE_CONFIG = [
